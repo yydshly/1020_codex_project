@@ -7,7 +7,7 @@
 <meta property="og:title" content="从赛博小晚，到我们的 AI 女友">
 <meta property="og:description" content="Agent + 图片情绪展示构成桌宠体验。先验证陪伴，再升级动效与 3D。">
 <meta property="og:image" content="https://yydshly.github.io/1020_codex_project/projects/001-evening-companion/repository-summary.png">
-<link rel="stylesheet" href="./style.css?v=20261020-portraits">
+<link rel="stylesheet" href="./style.css?v=20261020-clean">
 </head>
 <body>
 <header><a class="brand" href="../../">研究集 <span>/ 001</span></a><nav aria-label="页面导航"><a href="#understanding">我们的理解</a><a href="#roadmap">产品启发</a><a href="#evidence">真实实测</a></nav></header>
@@ -52,18 +52,18 @@
 <blockquote>不必一次到位：先做能陪伴的版本，再做更立体的她。</blockquote>
 </section>
 <section id="evidence">
-<div class="section-title"><span class="eyebrow">04 / 真实 Skill 实测</span><h2>规则实际交给模型后，它怎样回答？</h2></div>
-<p class="section-intro">将原版 Skill 与相关参考文本按原文提供给 Codex CLI，使用六个虚构案例实际生成回答。下方保留原始输出，点开即可核对。</p>
+<div class="section-title"><span class="eyebrow">04 / 对话表现</span><h2>面对不同问题，它怎样回答？</h2></div>
+<p class="section-intro">六个虚构案例，展示原版规则配合模型的实际回答，涵盖倾听、澄清、判断与写作。点击展开查看。</p>
 <div id="case-list"></div>
 <div class="evidence-note"><strong>证据边界</strong><p>六例来自一次批量调用，没有与“不加载 Skill”的同模型进行对照，不能据此证明能力提升。资料整理案例还出现把明确虚构的案例称为“真实业务样本”的措辞问题，实际使用仍需核对。</p><a href="./results.json" download>下载未改写的原始回答 JSON ↓</a></div>
 </section>
 <section class="closing">
-<span class="eyebrow">研究记录 / 可复现</span><h2>结论有边界，来源可核对。</h2>
-<p>本页是我们的研究整理，不是原库自带界面。原版本地运行、图鉴、源码与验证方式记录在研究说明中；未把历史改造原型当作上游能力。</p>
-<div class="closing-links"><a href="https://github.com/cyberxiaowan/cyber-xiaowan" target="_blank" rel="noreferrer">cyberxiaowan/cyber-xiaowan ↗</a><a href="https://github.com/yydshly/1020_codex_project/tree/main/projects/001-evening-companion" target="_blank" rel="noreferrer">研究说明与复现步骤 ↗</a><a href="./pet-states.json" download>原版状态配置 ↓</a></div>
-<p class="commit">研究版本 v2.2.0 · commit 19496aaba767bc6b594d1e32f51eda3ee038ef5a<br>实测输出 SHA-256：7aefcb81f2a2ee60808bfe2152e3d38ff138ac144131cd092c0b7c6d79ffec1a</p>
+<span class="eyebrow">研究来源</span><h2>回到原库，继续探索。</h2>
+<p>本页整理原库效果与我们对 AI 女友的产品启发；分阶段路线是我们的扩展设想。</p>
+<div class="closing-links"><a href="https://github.com/cyberxiaowan/cyber-xiaowan" target="_blank" rel="noreferrer">cyberxiaowan/cyber-xiaowan ↗</a><a href="https://github.com/yydshly/1020_codex_project/tree/main/projects/001-evening-companion" target="_blank" rel="noreferrer">研究说明 ↗</a></div>
+<p class="commit">研究版本 v2.2.0 · 2026-10-20</p>
 </section>
 <footer><a href="../../">← 返回项目研究集</a><span>001 / 理解原库，验证体验，逐步实现</span></footer>
 </main>
-<script type="module" src="./app.mjs?v=20261020-portraits"></script>
+<script type="module" src="./app.mjs?v=20261020-clean"></script>
 </body></html>

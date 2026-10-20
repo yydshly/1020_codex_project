@@ -93,7 +93,7 @@ try {
     button.append(number, content, arrow); button.onclick = () => showCase(i); $('case-tabs').append(button);
   });
   $('previous').onclick = () => showCase(index - 1); $('next').onclick = () => showCase(index + 1);
-  $('provenance').textContent = `运行日期：${meta.date}（北京时间） · 宿主：${meta.host}\n上游 commit：${meta.commit}\nCLI 会话：${meta.sessionId}\n输出 SHA-256：${meta.outputSha256}`;
+  $('provenance').textContent = `研究日期：${meta.date} · 版本 2.2.0`;
   showCase(0);
 } catch (error) {
   $('case-title').textContent = '实测记录读取失败';

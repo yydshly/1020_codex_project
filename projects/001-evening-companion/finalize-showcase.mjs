@@ -15,6 +15,6 @@ const sessionId = events.find(e => e.type === 'thread.started')?.thread_id;
 if (!sessionId || !events.some(e => e.type === 'turn.completed')) throw Error('Run did not complete');
 await copyFile(new URL('.runtime/showcase/results.json', root), new URL('showcase/results.json', root));
 await copyFile(new URL('.runtime/showcase/sources.json', root), new URL('showcase/sources.json', root));
-const meta = { date: '2026-10-20', host: 'Codex CLI 0.152.1 / 本机登录的模型服务', commit: '19496aaba767bc6b594d1e32f51eda3ee038ef5a', sessionId, outputSha256: createHash('sha256').update(raw).digest('hex'), cases: cases.length, method: 'Single batch model call; original Skill + reference texts supplied verbatim; synthetic inputs; no control group.' };
+const meta = { date: '2026-10-20', commit: '19496aaba767bc6b594d1e32f51eda3ee038ef5a', outputSha256: createHash('sha256').update(raw).digest('hex'), cases: cases.length, method: 'Single batch model call; original Skill + reference texts supplied verbatim; synthetic inputs; no control group.' };
 await writeFile(new URL('showcase/meta.json', root), JSON.stringify(meta, null, 2));
-console.log(`Verified and copied ${cases.length} unchanged model outputs. Session ${sessionId}`);
+console.log(`Verified and copied ${cases.length} unchanged model outputs.`);
