@@ -1,0 +1,4 @@
+# Pristine upstream checkout and local screenshots/runtime, never publish these.
+upstream/
+.runtime/
+.agents/

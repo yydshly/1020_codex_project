@@ -88,7 +88,8 @@ def catalog(projects):
     ]
     for p in projects:
         path = f"projects/{p['directory'].name}"
-        links = f"[研究说明]({path}/README.md) · [上游]({p['repo']})"
+        repo_name = text(urlparse(p["repo"]).path.strip("/"))
+        links = f"[研究说明]({path}/README.md) · [{repo_name}]({p['repo']})"
         if p["web"]:
             links += f" · [Web 产物]({path}/web/)"
         lines.append(f"| {p['id']:03d} | {text(p['name'])} | {text(p['summary'])} | {p['status']} | {links} |")
@@ -169,7 +170,7 @@ def build(projects):
             f'<article>{image}<p class="meta">{p["id"]:03d} / {p["status"]}</p>'
             f'<h2>{html.escape(p["name"])}</h2><p>{html.escape(p["summary"])}</p>'
             f'<nav><a href="{REPO}/tree/main/projects/{name}">研究说明</a>'
-            f'<a href="{html.escape(p["repo"], quote=True)}">上游仓库</a>{demo}</nav></article>'
+            f'<a href="{html.escape(p["repo"], quote=True)}">{html.escape(urlparse(p["repo"]).path.strip("/"))}</a>{demo}</nav></article>'
         )
     body = "\n".join(cards) or '<p class="empty">研究集已就绪，等待收录第一个项目。</p>'
     page = """<!doctype html>

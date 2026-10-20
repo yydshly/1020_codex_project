@@ -1,0 +1,11 @@
+{
+  "id": 1,
+  "slug": "evening-companion",
+  "name": "cyber-xiaowan · AI 女友的过渡阶段参考",
+  "summary": "以宿主 Agent 为能力底座，用图片情绪包、预设台词和状态事件构成有情绪表达的桌宠；对我们而言，是 AI 女友从图片陪伴逐步走向 3D 的过渡阶段参考。",
+  "repo": "https://github.com/cyberxiaowan/cyber-xiaowan",
+  "status": "研究中",
+  "cover": "assets/repository-summary.png",
+  "cover_alt": "从赛博小晚到我们的 AI 女友：原库的 Agent 与图片状态展示，以及先陪伴、再动效、按需升级 3D 的分阶段路线。图中角色为结构示意。",
+  "web": true
+}

@@ -9,14 +9,24 @@
 ## 项目索引
 
 <!-- PROJECTS:START -->
-当前还没有研究项目。第一个项目将从 **001** 开始。
+| 编号 | 项目 | 摘要 | 状态 | 入口 |
+| --- | --- | --- | --- | --- |
+| 001 | cyber-xiaowan · AI 女友的过渡阶段参考 | 以宿主 Agent 为能力底座，用图片情绪包、预设台词和状态事件构成有情绪表达的桌宠；对我们而言，是 AI 女友从图片陪伴逐步走向 3D 的过渡阶段参考。 | 研究中 | [研究说明](projects/001-evening-companion/README.md) · [cyberxiaowan/cyber-xiaowan](https://github.com/cyberxiaowan/cyber-xiaowan) · [Web 产物](projects/001-evening-companion/web/) |
+
+### 001 · cyber-xiaowan · AI 女友的过渡阶段参考
+
+<a href="projects/001-evening-companion/README.md"><img src="projects/001-evening-companion/assets/repository-summary.png" alt="从赛博小晚到我们的 AI 女友：原库的 Agent 与图片状态展示，以及先陪伴、再动效、按需升级 3D 的分阶段路线。图中角色为结构示意。" width="720"></a>
+
+从赛博小晚到我们的 AI 女友：原库的 Agent 与图片状态展示，以及先陪伴、再动效、按需升级 3D 的分阶段路线。图中角色为结构示意。
+
+以宿主 Agent 为能力底座，用图片情绪包、预设台词和状态事件构成有情绪表达的桌宠；对我们而言，是 AI 女友从图片陪伴逐步走向 3D 的过渡阶段参考。
 <!-- PROJECTS:END -->
 
 ## 仓库结构
 
 ```text
 projects/                 按编号组织的研究子项目
-  001-project-name/       首个项目的位置示例（尚未创建）
+  001-evening-companion/  cyber-xiaowan 研究与公开页面
     project.json         名称、简介、来源、状态、图片和演示配置
     README.md            研究说明与结论
     assets/              封面、截图、流程图
@@ -29,7 +39,7 @@ scripts/projects.py      新建项目、同步索引、校验和打包演示
 .github/workflows/       自动校验与手动 Pages 部署
 ```
 
-## 开始第一个项目
+## 新增研究项目
 
 需要 Python 3.10 或以上版本，无第三方 Python 依赖。
 

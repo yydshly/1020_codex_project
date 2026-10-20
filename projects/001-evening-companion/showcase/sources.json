@@ -1,0 +1,46 @@
+[
+  {
+    "path": "SKILL.md",
+    "sha256": "5f09505d4f1ec53a45eb8cf9deaf888eb2fcb8bfbcf08c50284703cdbae6fe7a"
+  },
+  {
+    "path": "references/core-os.md",
+    "sha256": "4c6af4aaec2bde325d9889f0036856770fcaedccd2667c44049dddf3d78c9727"
+  },
+  {
+    "path": "references/conversation.md",
+    "sha256": "6d77ecacac3f31f302ec74d3c29dbc811f473139cb824699a8e9284d7a798187"
+  },
+  {
+    "path": "references/voice-and-presence.md",
+    "sha256": "e95f071f134b2d3f040d6c8057e2f0c44b7ff739474745c5b2a5b3e67d3cdd18"
+  },
+  {
+    "path": "references/privacy.md",
+    "sha256": "0b94553d99266d85303aadca384d94e0194220c428ab7c197a55f8deb6fe9e52"
+  },
+  {
+    "path": "references/business-content.md",
+    "sha256": "c41d87a8f73b2fefe6fe3e54dba250700739e7fce6504eb057c8e10285198443"
+  },
+  {
+    "path": "references/content-partner.md",
+    "sha256": "10000cd70ef9f17d6978cccd6e2a57020c3297d5b3cf1ae640910eb460669aba"
+  },
+  {
+    "path": "references/content-editor.md",
+    "sha256": "540fc26c03366800ab0caba0ee343f045ace938905b5b4eb8680941138ca3194"
+  },
+  {
+    "path": "references/content-judgment.md",
+    "sha256": "21bb6154be058f59662734d9baa766d9602624c61b631ce2d70e3d66670f25a3"
+  },
+  {
+    "path": "references/pre-diagnosis.md",
+    "sha256": "8be4b07eaed3a9485ae4044826712dddf83d46393a13d494ab31b9358dec9096"
+  },
+  {
+    "path": "references/diagnosis-pack-template.md",
+    "sha256": "19859b07a6698ab0747c26d914cf84b02a49cf4365cb64bb935dc2d78ff31ee5"
+  }
+]

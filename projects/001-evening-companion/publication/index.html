@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>cyber-xiaowan｜AI 女友的过渡阶段参考</title>
+<meta name="description" content="理解 cyber-xiaowan：以宿主 Agent 为能力底座，配合图片情绪包、预设台词与状态事件形成桌宠体验。对我们的价值，是 AI 女友从图片陪伴逐步走向 3D 的过渡阶段参考。">
+<meta property="og:title" content="从赛博小晚，到我们的 AI 女友">
+<meta property="og:description" content="Agent + 图片情绪展示构成桌宠体验。先验证陪伴，再升级动效与 3D。">
+<meta property="og:image" content="https://yydshly.github.io/1020_codex_project/projects/001-evening-companion/repository-summary.png">
+<link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<header><a class="brand" href="../../">研究集 <span>/ 001</span></a><nav aria-label="页面导航"><a href="#understanding">我们的理解</a><a href="#roadmap">产品启发</a><a href="#evidence">真实实测</a></nav></header>
+<main>
+<section class="hero">
+<p class="eyebrow">REPOSITORY STUDY · 2026.10.20 · v2.2.0</p>
+<h1>从赛博小晚，<br>到我们的 <em>AI 女友</em>。</h1>
+<p class="lead">以 Agent 为能力底座，用图片情绪包配合状态展示，<br class="desktop">形成有情绪表达的桌宠体验。</p>
+<p class="hero-value">对我们的价值：AI 女友实现的过渡阶段参考。<br>先让陪伴发生，再逐步升级到更丰富的动效和 3D。</p>
+<div class="hero-links"><a class="button" href="#understanding">阅读研究结论 ↓</a><a href="https://github.com/cyberxiaowan/cyber-xiaowan" target="_blank" rel="noreferrer">cyberxiaowan/cyber-xiaowan ↗</a></div>
+</section>
+<figure class="guide"><a href="./repository-summary.png" target="_blank" rel="noreferrer"><img src="./repository-summary.png" width="1536" height="1024" fetchpriority="high" alt="从赛博小晚到我们的 AI 女友总结图：原库通过七张静态图片和预设台词表达 Agent 状态；我们的路线是图片加真实聊天、记忆加主动互动、动效与 2D，最后按需升级 3D。"></a><figcaption><span>我们的研究总结图 · 点击查看原图</span><span>图中角色为结构示意，扩展路线为产品设想</span></figcaption></figure>
+<section id="understanding">
+<div class="section-title"><span class="eyebrow">01 / 我们的理解</span><h2>图片承担情绪表达，Agent 承担对话与任务。</h2></div>
+<p class="section-intro">这个库把“宿主 Agent + 思考与表达 Skill + 图片桌宠”组合起来。它提供了情绪化呈现的产品形态，但还不是独立、完整的 AI 女友应用。</p>
+<div class="three-grid architecture">
+<article><span class="number">A</span><h3>宿主 Agent</h3><p>提供大模型推理、对话上下文与工具执行能力。聊天和任务在宿主中发生。</p><small>能力底座 · 依赖外部宿主</small></article>
+<article><span class="number">B</span><h3>原版 Skill</h3><p>用提示规则组织倾听、澄清、判断与写作方式，指导宿主模型如何回应。</p><small>行为与表达规则 · 仓库提供</small></article>
+<article><span class="number">C</span><h3>图片桌宠</h3><p>根据点击、命令或已接入的宿主通知切换人物图片、状态徽标和预设台词。</p><small>情绪化展示层 · 仓库提供</small></article>
+</div>
+<div class="flow" aria-label="桌宠展示流程"><span>点击 / 命令 / 宿主事件</span><b>→</b><span>设置状态</span><b>→</b><span>切图片 + 徽标 + 台词</span></div>
+<aside class="insight"><strong>它的启发是把能力和形象分开。</strong><p>不用等待角色建模、绑定、口型与动作全部完成，也能先探索有存在感、有反馈的陪伴产品。是否让人愿意持续交流，可以先用轻量形态验证。</p></aside>
+</section>
+<section id="states">
+<div class="section-title"><span class="eyebrow">02 / 桌宠实际效果</span><h2>七种画面，表达状态与情绪感。</h2></div>
+<p class="section-intro">原版是人物 JPG 卡片：上方显示台词气泡，图片上叠加状态名和 emoji。下表使用文字与符号整理原始配置；原版图片和交互请查看源库。</p>
+<div class="facts"><span><b>7</b> 张静态图片</span><span><b>21</b> 句预设台词</span><span><b>4</b> 个持续状态</span><span><b>3</b> 个临时反馈</span></div>
+<div id="state-cards" class="state-grid"></div>
+<div class="two-grid notes"><article><h3>原版怎么互动？</h3><p>单击按顺序切换，双击鼓掌，拖动移动页面内的卡片。鼓掌 6 秒、疑问 8 秒、比心 5 秒后回到待机。页面可见时每 9 秒随机抽取一条该状态的预设台词，可能重复。</p></article><article><h3>图片能接入更多效果吗？</h3><p>可以在后续改造中加入转场、缩放、粒子、序列帧或 2D 动画。原版图片本身是静态的；本次版本的图片动画选择器有层级不匹配问题，不能把源码中的动画名当作已运行的效果。</p></article></div>
+<p class="source-note">原库说明：鼓掌图为作者实拍，其余六张为同一人设生成的动作图。人物图片有单独许可，本公开页不再分发；可在 <a href="https://github.com/cyberxiaowan/cyber-xiaowan/tree/19496aaba767bc6b594d1e32f51eda3ee038ef5a/pet" target="_blank" rel="noreferrer">cyberxiaowan/cyber-xiaowan · pet</a> 查看原版。</p>
+</section>
+<section id="roadmap" class="roadmap">
+<div class="section-title"><span class="eyebrow">03 / 对我们的价值</span><h2>把 3D 变成升级项，先做出陪伴。</h2></div>
+<p class="section-intro">我们一直被 3D 实现卡住。这个库提供了一个可借鉴的过渡形态：先用图片表达情绪，把真正影响陪伴的能力逐步补齐。</p>
+<div class="steps">
+<article><span>01</span><h3>图片 + 真实聊天</h3><p>接入真实模型，用一组角色图片响应对话状态。</p><small>验证：用户愿不愿意聊</small></article>
+<article><span>02</span><h3>记忆 + 主动互动</h3><p>增加可管理的长期记忆，以及可配置的主动触发机制。</p><small>验证：能否持续陪伴</small></article>
+<article><span>03</span><h3>动效 / 2D 表现</h3><p>围绕对话反馈丰富转场、姿态和情绪表达。</p><small>验证：表现是否提升体验</small></article>
+<article><span>04</span><h3>按需升级 3D</h3><p>继续复用对话、记忆与交互逻辑，升级角色表现层。</p><small>验证：收益是否值得投入</small></article>
+</div>
+<p class="roadmap-note">以上是我们的扩展路线，尚未在原库实现。记忆、主动互动和自由聊天界面需要另行开发。</p>
+<blockquote>不必一次到位：先做能陪伴的版本，再做更立体的她。</blockquote>
+</section>
+<section id="evidence">
+<div class="section-title"><span class="eyebrow">04 / 真实 Skill 实测</span><h2>规则实际交给模型后，它怎样回答？</h2></div>
+<p class="section-intro">将原版 Skill 与相关参考文本按原文提供给 Codex CLI，使用六个虚构案例实际生成回答。下方保留原始输出，点开即可核对。</p>
+<div id="case-list"></div>
+<div class="evidence-note"><strong>证据边界</strong><p>六例来自一次批量调用，没有与“不加载 Skill”的同模型进行对照，不能据此证明能力提升。资料整理案例还出现把明确虚构的案例称为“真实业务样本”的措辞问题，实际使用仍需核对。</p><a href="./results.json" download>下载未改写的原始回答 JSON ↓</a></div>
+</section>
+<section class="closing">
+<span class="eyebrow">研究记录 / 可复现</span><h2>结论有边界，来源可核对。</h2>
+<p>本页是我们的研究整理，不是原库自带界面。原版本地运行、图鉴、源码与验证方式记录在研究说明中；未把历史改造原型当作上游能力。</p>
+<div class="closing-links"><a href="https://github.com/cyberxiaowan/cyber-xiaowan" target="_blank" rel="noreferrer">cyberxiaowan/cyber-xiaowan ↗</a><a href="https://github.com/yydshly/1020_codex_project/tree/main/projects/001-evening-companion" target="_blank" rel="noreferrer">研究说明与复现步骤 ↗</a><a href="./pet-states.json" download>原版状态配置 ↓</a></div>
+<p class="commit">研究版本 v2.2.0 · commit 19496aaba767bc6b594d1e32f51eda3ee038ef5a<br>实测输出 SHA-256：7aefcb81f2a2ee60808bfe2152e3d38ff138ac144131cd092c0b7c6d79ffec1a</p>
+</section>
+<footer><a href="../../">← 返回项目研究集</a><span>001 / 理解原库，验证体验，逐步实现</span></footer>
+</main>
+<script type="module" src="./app.mjs"></script>
+</body></html>

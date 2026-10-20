@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f1eb">
+  <title>晚伴 · 留一盏灯，陪你慢慢说</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div class="app-shell">
+  <aside class="sidebar">
+    <a class="brand" href="#home"><span class="brand-mark">☾</span><span>晚伴<small>EVENING, TOGETHER</small></span></a>
+    <div class="sidebar-caption">属于你的安静角落</div>
+    <nav aria-label="主导航">
+      <button class="nav-item active" data-view="home"><span>◌</span> 陪伴空间 <i></i></button>
+      <button class="nav-item" data-view="memories"><span>♡</span> 我们的记忆 <b id="memory-count">0</b></button>
+      <button class="nav-item" data-view="moments"><span>✧</span> 主动关心</button>
+      <button class="nav-item" data-view="settings"><span>⚙</span> 偏好设置</button>
+    </nav>
+    <div class="sidebar-note"><span class="tiny-star">✳</span><p>不急着成为更好的自己。<br>先好好过这个晚上。</p><div class="note-line"></div></div>
+    <div class="sidebar-bottom"><span class="local-dot"></span> 记忆留在这台设备<small>EXPERIMENT 001 · 本地体验版</small></div>
+  </aside>
+  <main>
+    <header class="topbar"><div class="breadcrumb">我的小世界 <span>/</span> <strong id="page-label">陪伴空间</strong></div><button id="quiet-toggle" class="quiet-button" aria-pressed="false"><span>☾</span> <span id="quiet-text">开启免打扰</span></button></header>
+    <section id="view-home" class="view">
+      <div class="page-heading"><div><p class="eyebrow">A LITTLE COMPANY, A LITTLE WARMTH</p><h1>留一盏灯，陪你慢慢说<span>。</span></h1><p class="subheading">那些没来得及说的小事，在这里，都有人听。</p></div><span class="date-label" id="today"></span></div>
+      <div class="companion-grid">
+        <section class="room-card" aria-label="晚晚的陪伴空间">
+          <div class="room-top"><span class="presence"><i></i> 晚晚在这里</span><button id="scene-toggle" class="icon-button" aria-label="切换日夜氛围" title="切换日夜氛围">☾</button></div>
+          <div class="room-greeting" id="room-greeting">今天也辛苦啦。<br>要不要，坐一会儿？</div>
+          <div class="character-wrap" id="character-wrap"><img class="character" src="./character.svg" alt="原创插画角色晚晚，穿着暖白毛衣坐在窗边，身旁有一杯热茶"><span class="float-star star-one">✦</span><span class="float-star star-two">✧</span><span class="heart-pop" id="heart-pop">♡</span></div>
+          <div class="room-bottom"><div><strong>晚晚 <span>WANWAN</span></strong><p id="mood-label">安静陪着你</p></div><button id="pet-button" class="pet-button" aria-label="和晚晚打个招呼">♡ <span>打个招呼</span></button></div>
+        </section>
+        <section class="chat-card" aria-label="和晚晚聊天">
+          <div class="chat-header"><div class="chat-avatar">晚</div><div><strong>和晚晚聊聊</strong><small><i></i> <span id="mode-label">离线演示 · 规则回应</span></small></div><button id="clear-chat" class="icon-button" aria-label="清空聊天记录" title="清空聊天记录">↺</button></div>
+          <div class="chat-messages" id="messages" role="log" aria-label="对话记录" aria-live="polite"></div>
+          <div class="suggestions" id="suggestions"><button data-prompt="今天有点累">今天有点累</button><button data-prompt="记住：我喜欢雨天和热茶">记住我的小偏好</button><button data-prompt="你还记得什么？">你还记得什么？</button></div>
+          <form id="chat-form" class="chat-composer"><label class="sr-only" for="chat-input">告诉晚晚你想说的话</label><textarea id="chat-input" rows="2" maxlength="2000" placeholder="说说今天，或者只打个招呼…" required></textarea><div class="composer-bottom"><span id="composer-note">Enter 发送 · Shift + Enter 换行</span><button class="send-button" id="send-button" type="submit" aria-label="发送消息">↑</button></div></form>
+          <div class="chat-footnote">虚构 AI 陪伴角色 · <span id="chat-footnote">演示对话在本地运行</span></div>
+        </section>
+      </div>
+      <div class="experience-heading"><h2>陪伴，不只是一句回应</h2><span>亲手试试她的小能力</span></div>
+      <div class="feature-grid">
+        <button class="feature-card" id="try-memory"><span class="feature-icon pink">♡</span><div><strong>记得你的小偏好</strong><p>告诉她一件小事，刷新后再问问。</p></div><span class="arrow">↗</span></button>
+        <button class="feature-card" id="try-care"><span class="feature-icon green">✧</span><div><strong>让关心主动发生</strong><p>10 秒后，收到她的一句问候。</p></div><span class="arrow">↗</span></button>
+        <button class="feature-card" id="mini-toggle"><span class="feature-icon amber">☾</span><div><strong>把她放在手边</strong><p>展开可拖动的迷你陪伴卡片。</p></div><span class="arrow">↗</span></button>
+      </div>
+      <footer class="page-footer"><span>从赛博小晚的思路出发，为日常留一点温柔。</span><span>文字 · 记忆 · 主动关心</span></footer>
+    </section>
+    <section id="view-memories" class="view" hidden>
+      <div class="page-heading"><div><p class="eyebrow">LITTLE THINGS THAT MATTER</p><h1>你说过的，我记着<span>。</span></h1><p class="subheading">这里的每一条记忆，都可以由你修改或删除。</p></div></div>
+      <div class="content-panel"><div class="panel-heading"><h2>我们的记忆本</h2><span class="tag">保存在当前浏览器</span></div><form id="memory-form" class="inline-form"><label class="sr-only" for="memory-input">添加一条记忆</label><input id="memory-input" maxlength="500" placeholder="例如：我喜欢雨天，不喜欢被催促" required><button class="primary-button">记下来</button></form><div id="memory-list" class="memory-list"></div><p class="panel-note">聊天中说「记住：……」「叫我……」「我喜欢……」也能保存。其他对话不会自动变成长期记忆。</p></div>
+    </section>
+    <section id="view-moments" class="view" hidden>
+      <div class="page-heading"><div><p class="eyebrow">A THOUGHT, JUST FOR YOU</p><h1>偶尔，让我先开口<span>。</span></h1><p class="subheading">一个恰好的提醒，比一连串的消息更贴心。</p></div></div>
+      <div class="content-panel"><div class="panel-heading"><h2>安排一句关心</h2><span class="tag">页面打开时生效</span></div><form id="reminder-form" class="reminder-form"><label>想让晚晚说什么<input id="reminder-text" maxlength="200" placeholder="喝口水，起来走走吧。" required></label><label>多久之后<select id="reminder-delay"><option value="10">10 秒后 · 快速体验</option><option value="60">1 分钟后</option><option value="300">5 分钟后</option><option value="1500">25 分钟后</option><option value="3600">1 小时后</option></select></label><button class="primary-button">安排好了</button></form><div id="reminder-list"></div><p class="panel-note">免打扰时暂缓，关闭页面时暂停；重新打开后补发 24 小时内到期的提醒。过期更久的提醒会略过。</p></div>
+      <div class="content-panel setting-row"><div><h2>安静时，偶尔问候</h2><p>页面可见且闲置 3 分钟后问候一次，至少间隔 30 分钟。免打扰时不发出。</p></div><button id="auto-care-toggle" class="switch" role="switch" aria-checked="false" aria-label="自动问候"><span></span></button></div>
+    </section>
+    <section id="view-settings" class="view" hidden>
+      <div class="page-heading"><div><p class="eyebrow">YOUR SPACE, YOUR PACE</p><h1>按你舒服的方式相处<span>。</span></h1><p class="subheading">什么时候开口、记住什么，都由你决定。</p></div></div>
+      <div class="content-panel"><div class="setting-row"><div><h2>对话模式</h2><p id="connection-detail">当前为离线演示，可体验规则回应、真实记忆与定时提醒。</p></div><span class="tag" id="connection-tag">离线演示</span></div><p class="panel-note">自由聊天需要本地服务连接模型，配置方法见项目 README。接入后，最近对话和保存的记忆会发送给你配置的模型服务。</p></div>
+      <div class="content-panel setting-row"><div><h2>把回应读给我听</h2><p id="voice-description">使用浏览器提供的朗读声音，音色与可用性取决于系统。</p></div><button id="voice-toggle" class="switch" role="switch" aria-checked="false" aria-label="朗读回应"><span></span></button></div>
+      <div class="content-panel"><div class="setting-row"><div><h2>属于你的数据</h2><p>聊天、记忆、提醒保存在当前浏览器；清除浏览器数据会丢失。</p></div><button id="export-data" class="secondary-button">导出记录 ↓</button></div><div class="danger-row"><span>清除这台设备上的所有聊天、记忆和提醒。</span><button id="reset-data" class="text-danger">清除本地数据</button></div></div>
+      <div class="about-note">晚伴 v0.1 · 原创插画角色 · 浏览器交互原型<br>迷你卡片仅在网页内悬浮；系统桌面常驻和语音输入尚未实现。</div>
+    </section>
+  </main>
+</div>
+<aside id="mini-pet" class="mini-pet" hidden aria-label="迷你陪伴卡片"><div id="mini-handle"><span><i class="local-dot"></i> 晚晚在这里</span><button id="close-mini" aria-label="关闭迷你卡片">×</button></div><img src="./character.svg" alt="晚晚"><p id="mini-note">我在这里，慢慢来。</p><button id="mini-chat" class="secondary-button">和我聊聊 ↗</button></aside>
+<div id="toast" class="toast" role="status" hidden></div>
+<dialog id="edit-dialog"><form id="edit-form"><h2>修改这条记忆</h2><label class="sr-only" for="edit-memory">记忆内容</label><textarea id="edit-memory" maxlength="500" required></textarea><div class="dialog-actions"><button type="button" id="cancel-edit" class="secondary-button">取消</button><button type="submit" class="primary-button">保存</button></div></form></dialog>
+<dialog id="confirm-dialog"><h2 id="confirm-title">确认清除？</h2><p id="confirm-text"></p><div class="dialog-actions"><button id="cancel-confirm" class="secondary-button">取消</button><button id="accept-confirm" class="primary-button">确认清除</button></div></dialog>
+<script type="module" src="./app.mjs"></script>
+</body></html>

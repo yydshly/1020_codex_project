@@ -78,6 +78,8 @@ class CatalogTests(unittest.TestCase):
         self.assertFalse((output / "projects/001-first/.env").exists())
         self.assertTrue((output / "covers/001-first.svg").exists())
         self.assertIn('href="projects/002-second/"', (output / "index.html").read_text(encoding="utf-8"))
+        self.assertIn('>example/repo</a>', (output / "index.html").read_text(encoding="utf-8"))
+        self.assertIn('[example/repo](https://github.com/example/repo)', projects.catalog(projects.load_projects()))
         (output / "stale.html").touch()
         projects.build(projects.load_projects())
         self.assertFalse((output / "stale.html").exists())

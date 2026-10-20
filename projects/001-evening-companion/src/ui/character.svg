@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 620" fill="none">
+<defs>
+ <linearGradient id="hair" x1="250" y1="140" x2="400" y2="390" gradientUnits="userSpaceOnUse"><stop stop-color="#4A3C3D"/><stop offset="1" stop-color="#302D39"/></linearGradient>
+ <linearGradient id="sweater" x1="230" y1="330" x2="360" y2="520" gradientUnits="userSpaceOnUse"><stop stop-color="#FFFBF1"/><stop offset="1" stop-color="#E6D8BF"/></linearGradient>
+ <linearGradient id="sky" x1="300" y1="10" x2="300" y2="300" gradientUnits="userSpaceOnUse"><stop stop-color="#C5D4C8"/><stop offset="1" stop-color="#F3DBBE"/></linearGradient>
+ <radialGradient id="blush"><stop stop-color="#EFA6A0" stop-opacity=".7"/><stop offset="1" stop-color="#EFA6A0" stop-opacity="0"/></radialGradient>
+</defs>
+<!-- Original vector illustration for Evening Companion. No upstream image assets. -->
+<ellipse cx="298" cy="577" rx="200" ry="22" fill="#988979" opacity=".13"/>
+<rect x="122" y="22" width="356" height="312" rx="170" fill="#E4DACB"/>
+<path d="M139 321V177a161 161 0 0 1 322 0v144z" fill="url(#sky)"/>
+<circle cx="392" cy="100" r="29" fill="#FFF5D9"/>
+<path d="M139 260c57-33 99-4 156-15 58-11 91-55 166-30v106H139z" fill="#A5B4A2" opacity=".5"/>
+<path d="M139 290c65-27 104-8 166-16 57-8 93-8 156 13v34H139z" fill="#8E9E90" opacity=".4"/>
+<path d="M300 28v295M138 200h324" stroke="#EAE1D4" stroke-width="10"/>
+<path d="M114 331h373" stroke="#D4C5AF" stroke-width="14" stroke-linecap="round"/>
+<path d="M107 38c-13 70-8 160-30 255l60 9c16-97 18-193 3-265" fill="#E7DDCE"/>
+<path d="M464 37c-12 98-5 184 13 263l50-8c-20-100-18-181-14-255" fill="#E7DDCE"/>
+<path d="M115 47c-2 80-6 169-21 244M488 46c-6 87 1 171 16 242" stroke="#D7CBBA" stroke-width="3"/>
+<!-- Plant -->
+<path d="M89 481c1-62-12-90-1-147M88 414l-24-29M89 436l24-35" stroke="#6C8067" stroke-width="4"/>
+<ellipse cx="81" cy="350" rx="12" ry="27" transform="rotate(-22 81 350)" fill="#81967A"/>
+<ellipse cx="62" cy="382" rx="12" ry="24" transform="rotate(-46 62 382)" fill="#8DA284"/>
+<ellipse cx="109" cy="397" rx="12" ry="25" transform="rotate(36 109 397)" fill="#758D72"/>
+<path d="M63 460h53l-8 65H73z" fill="#C0937A"/><path d="M61 460h57v12H61z" fill="#D7AA8D"/>
+<!-- Chair -->
+<rect x="170" y="340" width="267" height="183" rx="62" fill="#A7A88D"/>
+<rect x="172" y="370" width="265" height="162" rx="43" fill="#B8B79B"/>
+<path d="M201 512l-13 62M411 512l15 62" stroke="#8A725E" stroke-width="12" stroke-linecap="round"/>
+<!-- Hair silhouette -->
+<path d="M214 256c-20-90 11-154 79-159 83-8 119 56 104 136-7 46 26 94 7 147-16 36-56 50-103 36-48 17-97-6-105-37-10-38 26-80 18-123" fill="url(#hair)"/>
+<!-- Legs and shoes -->
+<path d="M240 476c-20 26-4 57 6 82l27-1 11-70z" fill="#D1BCA7"/>
+<path d="M319 483l32 77 28-5c1-35-11-69-27-83" fill="#D1BCA7"/>
+<path d="M245 545l-15 24c-6 12 13 17 28 15l30-9-13-31z" fill="#EEE5D9"/>
+<path d="M351 547l2 32c13 7 52 3 50-10l-26-25z" fill="#EEE5D9"/>
+<path d="M233 580c17 5 34-1 52-7M356 578c12 5 30 0 43-3" stroke="#BAA994" stroke-width="4" stroke-linecap="round"/>
+<!-- Body -->
+<path d="M273 282h54l5 44-65 1z" fill="#E9BFA6"/>
+<path d="M249 308c-45 7-52 57-55 108-3 39 35 59 74 47l-10 32c32 19 83 19 120-6l-11-72c33-24 35-57 18-82-11-18-34-28-54-27-17 22-57 21-82 0" fill="url(#sweater)"/>
+<path d="M260 305c6 31 64 36 76 0M257 314c9 25 59 29 70 0" stroke="#DCCDB5" stroke-width="5"/>
+<path d="M252 347l-15 74 42 24M352 343l16 70-34 23" stroke="#D8C9B1" stroke-width="3" stroke-linecap="round"/>
+<path d="M259 479c26 10 75 12 113-1M259 488c29 10 76 10 116-2" stroke="#C9BDA8" stroke-width="3"/>
+<!-- Face -->
+<ellipse cx="299" cy="219" rx="72" ry="88" fill="#F2CFB6"/>
+<ellipse cx="231" cy="232" rx="12" ry="19" fill="#EBC2A8"/><ellipse cx="367" cy="232" rx="11" ry="19" fill="#EBC2A8"/>
+<path d="M228 217c-4-49 12-95 57-99 65-15 88 28 89 95-26-18-48-46-56-68-18 34-56 59-90 72" fill="url(#hair)"/>
+<path d="M248 211c8-5 17-6 26-2M321 209c9-4 18-3 25 2" stroke="#67504B" stroke-width="3" stroke-linecap="round"/>
+<path d="M251 230q12-13 24 0M320 230q12-13 24 0" stroke="#54433F" stroke-width="4" stroke-linecap="round"/>
+<ellipse cx="254" cy="251" rx="23" ry="14" fill="url(#blush)"/><ellipse cx="341" cy="251" rx="23" ry="14" fill="url(#blush)"/>
+<path d="M297 239l-3 12h6" stroke="#D19D88" stroke-width="2" stroke-linecap="round"/>
+<path d="M283 266q15 13 29-1" stroke="#AF7168" stroke-width="3" stroke-linecap="round"/>
+<path d="M357 170l16 18M361 165l16 18" stroke="#D5B579" stroke-width="4" stroke-linecap="round"/>
+<circle cx="236" cy="253" r="4" fill="#E5C679"/>
+<!-- Hands and mug -->
+<path d="M241 424c13-21 35-27 48-18 9 7 11 25-4 33-14 8-33 8-44-2z" fill="#F2CFB6"/>
+<path d="M336 411c-15-11-36-10-43 1-8 12-3 25 14 29 15 4 29-5 36-14z" fill="#F2CFB6"/>
+<rect x="277" y="393" width="47" height="44" rx="12" fill="#A9B3A0"/>
+<path d="M325 401c23-5 23 26-2 24" stroke="#A9B3A0" stroke-width="7"/>
+<ellipse cx="300" cy="394" rx="23" ry="5" fill="#808F78"/>
+<path d="M293 378c-10-12 7-16 1-28M307 380c-9-11 8-19 3-30" stroke="#FFF9EF" stroke-width="3" stroke-linecap="round" opacity=".8"/>
+<!-- Side table -->
+<path d="M464 480l-6 90M511 480l7 90" stroke="#B29577" stroke-width="7" stroke-linecap="round"/>
+<ellipse cx="488" cy="479" rx="49" ry="13" fill="#C8AE8E"/>
+<path d="M471 461h33v12h-33z" fill="#E7DAC2"/><path d="M469 453h34v8h-34z" fill="#8D9E91"/>
+<path d="M485 427c-15-14-22 5 0 16 22-12 15-30 0-16" fill="#BC897D"/>
+</svg>

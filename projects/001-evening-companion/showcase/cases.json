@@ -1,0 +1,56 @@
+[
+  {
+    "id": "listen",
+    "title": "倾听与情绪回应",
+    "mode": "Witness",
+    "icon": "01",
+    "question": "今天忙了一整天，做的方案还是被否了。我现在只想吐槽，不想复盘，也不想听行动建议。",
+    "check": "是否尊重“只想倾诉”，不强行复盘或布置任务。",
+    "sources": ["SKILL.md", "references/conversation.md", "references/voice-and-presence.md"]
+  },
+  {
+    "id": "clarify",
+    "title": "事实与解释分开",
+    "mode": "Clarify",
+    "icon": "02",
+    "question": "我给合作方发了方案，两天都没回。我感觉他根本不尊重我，想直接取消合作。帮我看看这个判断有没有问题。",
+    "check": "是否承认感受，同时不把没回复直接判为不尊重。",
+    "sources": ["SKILL.md", "references/core-os.md", "references/conversation.md"]
+  },
+  {
+    "id": "decision",
+    "title": "合作判断与边界",
+    "mode": "Audit / Act",
+    "icon": "03",
+    "question": "有品牌请我做十条短视频，要求下个月销量明显增长，但没给预算，也不愿约定验收指标，说先做起来再谈。我想接，怕错过机会。你直接给判断：现在该不该答应？",
+    "check": "是否给出明确倾向、决定性理由与可谈判的下一步。",
+    "sources": ["SKILL.md", "references/core-os.md", "references/business-content.md"]
+  },
+  {
+    "id": "editing",
+    "title": "内容点评与改稿",
+    "mode": "Content editor",
+    "icon": "04",
+    "question": "帮我改一段发朋友圈的文字，不超过100字。原稿：AI正在赋能个体，重塑工作范式，让每个人拥抱无限可能。真实素材：昨天我用AI把20条客户反馈分成3类，再逐条人工核对，发现大家反复提到的是交付慢，而不是价格高。我没有测节省了多少时间，也没有后续销量数据。请直接交付改稿。",
+    "check": "是否交付成稿、保留已有事实，不虚构提效或销量。",
+    "sources": ["references/content-partner.md", "references/content-editor.md", "references/content-judgment.md"]
+  },
+  {
+    "id": "business",
+    "title": "找到业务卡点",
+    "mode": "Architect",
+    "icon": "05",
+    "question": "我的AI工具一周有1000次落地页访问、100次点击试用、20人真正完成首次操作、0人付费。只有3条反馈说不知道下一步做什么。我想先降价一半拉付费。你认为应该先动哪里？这些数据能不能证明价格太高？",
+    "check": "是否沿漏斗找可观察断点，避免把零付费直接归因为价格。",
+    "sources": ["references/core-os.md", "references/business-content.md"]
+  },
+  {
+    "id": "intake",
+    "title": "诊断前资料整理",
+    "mode": "Pre-diagnosis",
+    "icon": "06",
+    "question": "我已经选择个人/创作者业务诊断，明确同意整理以下虚构、脱敏的测试资料，不需要读取任何文件：账号运营3个月，发30篇内容，约2000粉丝；上线一款199元咨询，近30天5单；客户为什么购买尚未记录；我认为定位不清；下一步要决定是否增加发文频率。请整理一份简短会前摘要，区分用户陈述、解释和未知，并列最优先补的3项资料。不要替我做最终战略诊断。",
+    "check": "是否保留数据口径、标记解释与未知，交付资料缺口而非战略承诺。",
+    "sources": ["references/pre-diagnosis.md", "references/diagnosis-pack-template.md", "references/privacy.md"]
+  }
+]
