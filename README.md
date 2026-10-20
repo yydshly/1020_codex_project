@@ -11,11 +11,11 @@
 <!-- PROJECTS:START -->
 | 编号 | 项目 | 摘要 | 状态 | 入口 |
 | --- | --- | --- | --- | --- |
-| 001 | cyber-xiaowan · AI 女友的过渡阶段参考 | 以宿主 Agent 为能力底座，用图片情绪包、预设台词和状态事件构成有情绪表达的桌宠；对我们而言，是 AI 女友从图片陪伴逐步走向 3D 的过渡阶段参考。 | 研究中 | [研究说明](projects/001-evening-companion/README.md) · [cyberxiaowan/cyber-xiaowan](https://github.com/cyberxiaowan/cyber-xiaowan) · [Web 产物](projects/001-evening-companion/web/) |
+| 001 | cyber-xiaowan · AI 女友的过渡阶段参考 | 以宿主 Agent 为能力底座，用图片情绪包、预设台词和状态事件构成有情绪表达的桌宠；对我们而言，是 AI 女友从图片陪伴逐步走向 3D 的过渡阶段参考。 | 研究中 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/001-evening-companion/) · [研究说明](projects/001-evening-companion/README.md) · [cyberxiaowan/cyber-xiaowan](https://github.com/cyberxiaowan/cyber-xiaowan) |
 
 ### 001 · cyber-xiaowan · AI 女友的过渡阶段参考
 
-<a href="projects/001-evening-companion/README.md"><img src="projects/001-evening-companion/assets/repository-summary.png" alt="从赛博小晚到我们的 AI 女友：原库的 Agent 与图片状态展示，以及先陪伴、再动效、按需升级 3D 的分阶段路线。图中角色为结构示意。" width="720"></a>
+<a href="https://yydshly.github.io/1020_codex_project/projects/001-evening-companion/"><img src="projects/001-evening-companion/assets/repository-summary.png" alt="从赛博小晚到我们的 AI 女友：原库的 Agent 与图片状态展示，以及先陪伴、再动效、按需升级 3D 的分阶段路线。图中角色为结构示意。" width="720"></a>
 
 从赛博小晚到我们的 AI 女友：原库的 Agent 与图片状态展示，以及先陪伴、再动效、按需升级 3D 的分阶段路线。图中角色为结构示意。
 

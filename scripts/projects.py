@@ -11,6 +11,7 @@ from urllib.parse import urlparse
 
 ROOT = Path(__file__).resolve().parents[1]
 REPO = "https://github.com/yydshly/1020_codex_project"
+PAGES = "https://yydshly.github.io/1020_codex_project"
 START = "<!-- PROJECTS:START -->"
 END = "<!-- PROJECTS:END -->"
 STATUSES = {"待研究", "研究中", "已完成", "已归档"}
@@ -91,14 +92,15 @@ def catalog(projects):
         repo_name = text(urlparse(p["repo"]).path.strip("/"))
         links = f"[研究说明]({path}/README.md) · [{repo_name}]({p['repo']})"
         if p["web"]:
-            links += f" · [Web 产物]({path}/web/)"
+            links = f"[在线研究页]({PAGES}/{path}/) · " + links
         lines.append(f"| {p['id']:03d} | {text(p['name'])} | {text(p['summary'])} | {p['status']} | {links} |")
     for p in projects:
         if p["cover"]:
             path = f"projects/{p['directory'].name}"
+            cover_link = f"{PAGES}/{path}/" if p["web"] else f"{path}/README.md"
             lines.extend([
                 "", f"### {p['id']:03d} · {text(p['name'])}", "",
-                f'<a href="{path}/README.md"><img src="{path}/{html.escape(p["cover"], quote=True)}" '
+                f'<a href="{cover_link}"><img src="{path}/{html.escape(p["cover"], quote=True)}" '
                 f'alt="{html.escape(p["cover_alt"], quote=True)}" width="720"></a>',
                 "", text(p["cover_alt"]), "", text(p["summary"]),
             ])
@@ -165,12 +167,12 @@ def build(projects):
             (output / "covers").mkdir(exist_ok=True)
             shutil.copyfile(cover, output / "covers" / image_name)
             image = f'<img src="covers/{image_name}" alt="{html.escape(p["cover_alt"], quote=True)}" loading="lazy">'
-        demo = f'<a href="projects/{name}/">打开演示 →</a>' if p["web"] else ""
+        demo = f'<a class="live-link" href="projects/{name}/">在线研究页 →</a>' if p["web"] else ""
         cards.append(
             f'<article>{image}<p class="meta">{p["id"]:03d} / {p["status"]}</p>'
             f'<h2>{html.escape(p["name"])}</h2><p>{html.escape(p["summary"])}</p>'
-            f'<nav><a href="{REPO}/tree/main/projects/{name}">研究说明</a>'
-            f'<a href="{html.escape(p["repo"], quote=True)}">{html.escape(urlparse(p["repo"]).path.strip("/"))}</a>{demo}</nav></article>'
+            f'<nav>{demo}<a href="{REPO}/tree/main/projects/{name}">研究说明</a>'
+            f'<a href="{html.escape(p["repo"], quote=True)}">{html.escape(urlparse(p["repo"]).path.strip("/"))}</a></nav></article>'
         )
     body = "\n".join(cards) or '<p class="empty">研究集已就绪，等待收录第一个项目。</p>'
     page = """<!doctype html>
@@ -188,6 +190,7 @@ grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px}
 article{background:white;border:1px solid #dddeda;padding:24px;border-radius:12px;
 overflow-wrap:anywhere}article img{width:100%;aspect-ratio:16/9;object-fit:contain;background:#f7f6f2}
 nav{display:flex;flex-wrap:wrap;gap:16px}.empty{padding:36px 0;border-top:1px solid #ccc}
+.live-link{font-weight:700}
 footer{margin-top:60px;color:#50625e;font-size:14px}
 </style></head><body><main><header><p class="meta">RESEARCH / BUILD / SHARE</p>
 <h1>GitHub 项目研究集</h1><p>记录值得研究的开源项目，从原理理解到实践验证。</p>

@@ -80,6 +80,11 @@ class CatalogTests(unittest.TestCase):
         self.assertIn('href="projects/002-second/"', (output / "index.html").read_text(encoding="utf-8"))
         self.assertIn('>example/repo</a>', (output / "index.html").read_text(encoding="utf-8"))
         self.assertIn('[example/repo](https://github.com/example/repo)', projects.catalog(projects.load_projects()))
+        self.assertIn('[在线研究页](https://yydshly.github.io/1020_codex_project/projects/001-first/)',
+                      projects.catalog(projects.load_projects()))
+        self.assertIn('<a href="https://yydshly.github.io/1020_codex_project/projects/001-first/"><img',
+                      projects.catalog(projects.load_projects()))
+        self.assertIn('>在线研究页 →</a>', (output / "index.html").read_text(encoding="utf-8"))
         (output / "stale.html").touch()
         projects.build(projects.load_projects())
         self.assertFalse((output / "stale.html").exists())

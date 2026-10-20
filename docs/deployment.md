@@ -43,7 +43,9 @@ python -m http.server 8000 --directory _site
 gh workflow run deploy-pages.yml --ref main
 ```
 
-以后更新演示后，重新运行同一工作流。发布为手动触发；日常 push 和 PR 只校验与打包，不发布。总 README 的“Web 产物”链接指向仓库文件，不表示该演示已经上线；实际演示入口由部署后的站点提供。
+以后更新演示后，重新运行同一工作流。发布为手动触发；日常 push 和 PR 只校验与打包，不发布。总 README 索引表的“在线研究页”直接指向项目的 GitHub Pages 地址；启用 Web 的项目封面也跳转到该在线页。在线索引首页提供同名入口。“研究说明”保留为仓库文档入口，源库链接显示仓库名。
+
+当前已发布：[001 · cyber-xiaowan 研究页](https://yydshly.github.io/1020_codex_project/projects/001-evening-companion/)。新增项目完成部署后，应验证索引表的在线链接可以正常打开。
 
 GitHub Pages 只托管静态文件。需要服务器、数据库或私密 API 密钥的应用，应另行部署后端，并在子项目说明中记录地址和配置方式。浏览器端构建产物中的环境变量是公开内容。
 
