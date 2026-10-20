@@ -8,7 +8,7 @@ https://yydshly.github.io/1020_codex_project/projects/001-example-project/
 https://yydshly.github.io/1020_codex_project/projects/002-another-project/
 ```
 
-以上是规划地址；初始化不会自动启用 Pages，也没有发布示例项目。
+GitHub Pages 已开启，使用 GitHub Actions 发布。[在线索引页](https://yydshly.github.io/1020_codex_project/)为站点入口；上面的两个子项目地址仅用于说明路径规则，待对应项目收录并发布后才可访问。
 
 ## 准备一个演示
 
@@ -31,13 +31,19 @@ python -m http.server 8000 --directory _site
 
 要模拟 GitHub Pages 的仓库前缀，可将 `_site` 中的内容复制到一个临时预览目录的 `1020_codex_project/` 下，从预览目录启动 HTTP 服务，再访问 `/1020_codex_project/`。使用绝对 base 路径的应用尤其需要这一步。
 
-## 首次发布
+## 发布更新
 
-1. 在 GitHub 仓库 **Settings → Pages → Build and deployment** 中，将 Source 设为 **GitHub Actions**。
-2. 在 **Actions → Deploy Pages → Run workflow** 中选择 `main` 手动执行。
+1. 将更新提交并推送到 `main`。本仓库的 **Settings → Pages → Build and deployment → Source** 已设为 **GitHub Actions**，无需重复设置。
+2. 在 [Actions → Deploy Pages](https://github.com/yydshly/1020_codex_project/actions/workflows/deploy-pages.yml) → **Run workflow** 中选择 `main` 手动执行。
 3. 工作流成功后，从部署环境的 URL 打开站点。
 
-以后更新演示后，重新运行同一工作流。发布为手动触发；日常 push 和 PR 只校验与打包，不发布。总 README 的“Web 产物”链接指向仓库文件，不表示已经上线；实际演示入口由部署后的站点提供。
+也可以在仓库根目录通过 GitHub CLI 发布：
+
+```bash
+gh workflow run deploy-pages.yml --ref main
+```
+
+以后更新演示后，重新运行同一工作流。发布为手动触发；日常 push 和 PR 只校验与打包，不发布。总 README 的“Web 产物”链接指向仓库文件，不表示该演示已经上线；实际演示入口由部署后的站点提供。
 
 GitHub Pages 只托管静态文件。需要服务器、数据库或私密 API 密钥的应用，应另行部署后端，并在子项目说明中记录地址和配置方式。浏览器端构建产物中的环境变量是公开内容。
 
