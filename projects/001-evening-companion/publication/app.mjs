@@ -1,4 +1,5 @@
 const $ = id => document.getElementById(id);
+const upstreamImages = 'https://raw.githubusercontent.com/cyberxiaowan/cyber-xiaowan/19496aaba767bc6b594d1e32f51eda3ee038ef5a/pet/';
 const meanings = {
   idle: '挥手微笑 · 在线陪伴',
   think: '托腮思索 · 梳理问题',
@@ -17,7 +18,15 @@ try {
   const config = await read('pet-states.json');
   for (const [key, state] of Object.entries(config.states)) {
     const card = document.createElement('article');
-    const emoji = document.createElement('span'); emoji.className = 'state-emoji'; emoji.textContent = state.emoji;
+    const pictureLink = document.createElement('a'); pictureLink.className = 'state-picture';
+    pictureLink.href = `${upstreamImages}${state.image}`; pictureLink.target = '_blank'; pictureLink.rel = 'noreferrer';
+    pictureLink.setAttribute('aria-label', `查看${state.label}原版人物大图`);
+    const image = document.createElement('img'); image.src = pictureLink.href;
+    image.alt = `${state.label}原版人物图：${meanings[key]}`; image.width = 700; image.height = 700;
+    const unavailable = document.createElement('span'); unavailable.className = 'image-unavailable'; unavailable.hidden = true;
+    unavailable.textContent = '源库图片暂未加载，点击打开原图 ↗';
+    image.onerror = () => { image.hidden = true; unavailable.hidden = false; };
+    pictureLink.append(image, unavailable);
     const title = document.createElement('h3'); title.textContent = state.label;
     const meaning = document.createElement('p'); meaning.textContent = meanings[key];
     const duration = document.createElement('small'); duration.textContent = state.transient ? `${state.durationMs / 1000} 秒后回待机` : '持续至下次切换';
@@ -27,7 +36,7 @@ try {
     for (const line of state.lines) {
       const li = document.createElement('li'); li.textContent = line; lines.append(li);
     }
-    details.append(summary, lines); card.append(emoji, title, meaning, duration, details); $('state-cards').append(card);
+    details.append(summary, lines); card.append(pictureLink, title, meaning, duration, details); $('state-cards').append(card);
   }
 } catch (error) { $('state-cards').textContent = error.message; }
 try {
