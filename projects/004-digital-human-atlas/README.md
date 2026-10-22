@@ -14,6 +14,7 @@
 - [完整模型目录](notes/model-catalog.md)：网页数据生成的独立 Markdown 文档。
 - [来源与版本清单](notes/sources.json)：26 个仓库的读取时 commit、README URL 与 SHA-256。
 - [验证记录](notes/verification.md)：网页功能检查及尚未执行的测试。
+- [发布记录](notes/deployment.md)：远端提交、Pages 工作流与线上验收结果。
 - [可下载研究数据](web/research-data.json)：全部路线、模型、术语和证据元数据。
 
 这里是研究与选型工具，不是数字人推理服务。没有下载模型权重、租用 GPU 或调用付费 API，也没有声称复现模型效果。现有系统的描述来自用户报告；官方性能、用户经验和工程判断在页面中分别标注。
@@ -136,7 +137,7 @@ python src/collect_sources.py
 - 当前用户系统未提供源代码、输出录像与性能日志，架构图不代表对实际实现的审计。
 - 并发按整套部署的成功会话数计算，增加 GPU 数只增加租费，不自动线性增加并发能力。
 
-本项目已接入仓库项目目录，`web: true` 表示静态产物已准备好。本次计划提交到远端并通过 GitHub Pages 发布到上方在线地址；提交、部署状态与在线可达性需由发布流程分别确认。根仓库可以使用 `python scripts/projects.py check` 与 `python scripts/projects.py build` 验证并生成站点。
+本项目于 2026-10-23 提交到远端并完成 GitHub Pages 发布，在线总目录与研究页均已通过浏览器检查。[发布工作流](https://github.com/yydshly/1020_codex_project/actions/runs/39828244423)成功；具体提交和验收项见[发布记录](notes/deployment.md)。根仓库可以使用 `python scripts/projects.py check` 与 `python scripts/projects.py build` 验证并生成站点。
 
 页面文本为资料整理与工程分析，封面和流程图为自制示意；模型、权重和第三方素材仍适用各自许可。
 
