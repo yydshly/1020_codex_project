@@ -1,0 +1,123 @@
+Use case: infographic-diagram.
+Create ONE premium Chinese technical reference infographic, a large highly legible portrait poster, ideally 2160x3840 or higher appropriate portrait resolution. This is a dense comprehensive reference diagram, not a cover. Render all Chinese text precisely, with large enough font for zoom reading. Editorial technical atlas style matching cream paper, forest green, muted teal and ochre, precise grid, clean sans serif Chinese. No photorealistic avatars, no fake benchmark graphs or stars. Small schematic diagrams (video frames, face landmarks, mesh skeleton, Gaussian points, 2D layers) help distinguish mechanisms. Content clarity and complete information take priority over decoration.
+
+COMPOSITION:
+Header with title and brief principle; then prominent recommendation strip with two distinct conclusions. Main area: EXACTLY EIGHT numbered cards arranged 2 columns × 4 rows. Each card must contain route title, pipeline, named libraries, strengths, limits, deployment/cost guidance. Use a shared consistent hierarchy, green advantages and ochre limitations, plenty of line spacing. Bottom two full-width blocks: our implementation flow and what "best effect" means. Footer source/evidence note. All eight cards must be complete with no missing cards, duplicated routes or truncation. Do not invent factual claims or numbers. Distinguish commercial tools from open source, runtime from offline. Render exact text below, breaking long lines naturally. Can shorten connector labels ONLY if necessary, never omit caveats or library names. Keep a unified image, not multiple pages.
+
+TITLE:
+数字人技术全景图
+八种路线｜原理 × 落地 × 工具 × 优缺点
+核心判断：外观像真人、动作自然、可控与低延迟，是不同指标。
+
+RECOMMENDATION STRIP:
+最适合我们现在
+高质量动作素材＋MuseTalk 实时口型
+保留现有对话链路；先优化底片、表情切换、音画同步；Ditto 回退。
+效果上限怎么选
+复杂动作生成看 Vidu；精确空间交互看 3D；固定机位真实感先看素材质量。
+没有同条件实测，不能宣布一个模型全面最好。
+
+CARD 01:
+01 素材视频＋口型重绘
+动作已在视频里；运行时只改嘴部附近。
+落地：角色图→录制 / AI 制作片段→状态选片→语音驱动口型→同步播放
+工具：MuseTalk v1.5；Wav2Lip；LatentSync（偏离线）；RIFE（辅助插帧）
+优点：外观稳定，复用真人动作；能预审素材；我们已有实现，改造成本低。
+缺点：动作重复，无法临时组合新动作；侧脸、遮嘴、牙齿和融合易露馅。
+成本 / 边界：素材制作＋口型推理。RIFE 不能修好任意跳切；Wav2Lip 原版限非商用。
+定位：当前主线，适合固定机位聊天。
+
+CARD 02:
+02 单图驱动 / 运动迁移
+从一张图生成头部运动，或迁移已有表演。
+落地：角色图＋音频预测运动 / 驱动视频→头姿与表情→人像渲染
+工具：Ditto；LivePortrait；SadTalker
+优点：素材准备少，可产生头部变化；迁移演员的表情与姿态。
+缺点：大角度和遮挡易变形；不能等同于全身动作；身份稳定性需测。
+成本 / 边界：依实现而异。LivePortrait 原版主要靠运动驱动；SadTalker 先按离线测试。
+定位：头像聊天、回退与头部自然度实验。
+
+CARD 03:
+03 离线生成说话 / 动作视频
+先花时间生成和挑片，再进入素材库。
+落地：参考图＋语音 / 姿态→视频生成→筛选修整→入库播放
+工具：EchoMimicV2（半身、手部姿态条件）；Hallo（人像）；LatentSync（口型修整）
+优点：可挑选高质量片段；动作和表情更丰富；制作成本可摊销。
+缺点：生成等待、失败重做；动作遵循与一致性不稳定；不能直接当实时互动。
+成本 / 边界：GPU 生成时间＋挑片人力；在线播放与离线制作分开计费。
+定位：为我们的片段库生产素材。
+
+CARD 04:
+04 流式生成式数字人
+持续按输入条件生成新画面，而非循环底片。
+落地：参考图＋流式语音 / 控制条件→分块生成→音画队列→连续播放
+工具：SoulX-FlashHead Lite / Pro；SoulX-FlashTalk；LiveAvatar；Vidu S2-Avatar（商业）
+优点：减少预制循环；有机会让脸、身体与语气更协调；部分支持动作指令。
+缺点：漂移、异常帧、动作失控；流式调度复杂；不同模型能力差别很大。
+成本 / 边界：FlashHead 偏头部；重型模型实时常需多卡；能装下不等于实时。
+定位：Lite 做本地对照；Vidu 做复杂动作效果参照，非已证实最佳。
+
+CARD 05:
+05 显式 3D 角色＋动画驱动
+真正的网格、骨骼、材质和三维空间。
+落地：建模 / 现成角色→绑定→音频驱动面部→身体动画＋IK→引擎渲染
+工具：Audio2Face-3D；MetaHuman / UE；TalkingHead / Three.js；three-vrm
+优点：身份与资产稳定；可换视角、走动；可明确约束手、道具与空间关系。
+缺点：高质量角色、绑定和表演成本高；容易僵硬；面部驱动不自动生成身体动作。
+成本 / 边界：轻量角色可客户端渲染；写实云渲染另算。MetaHuman 不是纯开源方案。
+定位：需要精确空间互动时优先，非当前最低投入路线。
+
+CARD 06:
+06 NeRF / 3DGS 神经人像
+用人物视频训练可驱动的神经表示。
+落地：采集人物视频→预处理→逐角色训练→音频 / 姿态控制→神经渲染
+工具：RAD-NeRF；ER-NeRF；GeneFace++；TalkingGaussian
+优点：固定身份和训练视角内可呈现细节；可研究实时人像渲染。
+缺点：每个角色要准备数据与训练；新视角、换装和身体互动受训练范围限制。
+成本 / 边界：训练与推理分开预算；高斯 / 辐射场不等于带骨骼的通用 3D 人物。
+定位：固定人物定制，工程投入较高。
+
+CARD 07:
+07 Live2D / 立绘＋嘴型参数
+驱动分层图像、形变与嘴型，不生成真人视频。
+落地：分层立绘→绑定参数→音量 / 音素嘴型→表情状态→2D 渲染
+工具：Live2D Cubism；Rhubarb Lip Sync（离线嘴型时间轴）
+优点：客户端开销较低；表情易控、风格稳定；适合网页角色和桌宠。
+缺点：大幅转身和新视角受素材限制；照片真实感不是目标。
+成本 / 边界：主要是美术与绑定；音量张嘴不等于精准口型；Live2D 有商业授权条件。
+定位：接受风格化时，低运行成本的优先候选。
+
+CARD 08:
+08 真人 / 视频驱动实时编辑
+动作来自输入表演，模型改变外观或场景。
+落地：摄像头 / 视频流＋外观参考→实时编辑→编码与推流
+工具：Vidu S2-Editing（商业）；LivePortrait 可做局部人像运动迁移，非完整替代。
+优点：继承真人的复杂动作和节奏；表演者可直接控制动作。
+缺点：仍需真人或视频源；遮挡、快动作和身份一致性可能出错。
+成本 / 边界：表演来源＋编辑计算 / API；不是无人自主生成全部动作。
+定位：有人驱动的虚拟直播与外观转换。
+
+BOTTOM BLOCK A:
+我们的落地链路与下一步
+制作：角色图 / 形象设定 → 录制或 AI 动作视频 → 统一规格、挑片 → library.json＋预处理
+对话：SenseVoice → LLM → 情绪 TTS → 片段调度＋MuseTalk → 音画同步网页
+配套：RIFE 辅助过渡；Ditto 回退；LiveTalking / OpenSpline 是接入框架，不是新画面模型。
+演进：先测素材与口型 → 同图同音频对比 Ditto / FlashHead Lite → 确有复杂动作需求再测生成式 / 3D
+共同底座：VAD、打断、待机 / 倾听、表情时机、音画时钟、队列与失败回退。
+
+BOTTOM BLOCK B:
+“效果最好”必须先定目标
+低预算、现有系统快速提升 → 优质素材＋MuseTalk：最适合我们当前阶段。
+固定机位像真人 → 先提高底片与嘴部融合；录制 / AI 素材做盲测。
+自主复杂动作与整体生成 → Vidu 作为目标效果参照；仍要验证动作成功率、漂移与费用。
+可控走动、换视角、精准拿物 → 高质量 3D＋身体动画＋IK；需要资产与动画投入。
+低运行成本的风格化陪伴 → Live2D 或客户端 VRM / TalkingHead。
+本地人像下一项实验 → FlashHead Lite；不能把头部生成理解成全身能力。
+
+FOOTER:
+依据：数字人技术图谱 004｜官方仓库、模型卡与论文｜资料整理 2026-10-23
+效果描述是机制分析与官方能力，不是统一实测排名；本图未运行 GPU 模型。
+评估：同角色＋同语音，记录口型、身份、情绪、动作、P95 延迟、音画偏差、连续稳定与每有效会话成本。
+许可：代码、模型权重、依赖与人物素材分别核查；公开论文不等于开源权重。
+
+Ensure exact eight-card structure and all conclusion blocks. No invented numeric scores, no fake logos, no decorative charts implying measured performance. Sharp professional Chinese typography and meaningful small technical line diagrams.

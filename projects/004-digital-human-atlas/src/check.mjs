@@ -1,0 +1,17 @@
+import assert from 'node:assert/strict';
+import {readFile} from 'node:fs/promises';
+import {sources,routes,models,tests} from './content.mjs';
+const html=await readFile(new URL('../web/index.html',import.meta.url),'utf8');
+const ids=[...html.matchAll(/\bid="([^"]+)"/g)].map(m=>m[1]);
+assert.equal(ids.length,new Set(ids).size,'HTML IDs must be unique');
+for(const match of html.matchAll(/href="#([^"]+)"/g))assert(ids.includes(match[1]),`Missing anchor ${match[1]}`);
+for(const name of ['styles.css','app.js','data.js'])await readFile(new URL('../web/'+name,import.meta.url));
+assert.equal(new Set(tests.map(t=>t[0])).size,tests.length);
+assert(models.every(m=>m.refs.length>0&&m.limit&&m.input&&m.output&&m.license));
+assert(models.every(m=>routes.some(r=>r.id===m.route)||m.route==='support'));
+assert(sources.every(s=>s.url.startsWith('https://')));
+const delivered=JSON.parse(await readFile(new URL('../web/research-data.json',import.meta.url),'utf8'));
+assert.equal(delivered.models.length,models.length);
+assert.equal(delivered.evidence.repositories.length,26);
+assert(delivered.evidence.repositories.every(s=>/^[a-f0-9]{40}$/.test(s.commit)&&/^[a-f0-9]{64}$/.test(s.sha256)));
+console.log('Content, evidence, static assets and anchor integrity checks passed.');

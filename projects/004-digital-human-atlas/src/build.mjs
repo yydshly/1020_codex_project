@@ -1,0 +1,22 @@
+import { readFile, writeFile, mkdir, copyFile } from 'node:fs/promises';
+import { fileURLToPath } from 'node:url';
+import path from 'node:path';
+import {date,sources,routes,models,matrix,glossary,tests} from './content.mjs';
+const root=fileURLToPath(new URL('../',import.meta.url));
+const web=path.join(root,'web');
+const evidence=JSON.parse(await readFile(path.join(root,'notes/sources.json'),'utf8'));
+const ids=new Set(sources.map(s=>s.id));
+for(const entry of [...routes,...models])for(const id of entry.refs)if(!ids.has(id))throw new Error(`Missing source ${id}`);
+if(new Set(models.map(m=>m.id)).size!==models.length)throw new Error('Duplicate model ids');
+for(const s of evidence.repositories)if(s.status!=='verified'||!s.commit||!s.sha256)throw new Error(`Unverified upstream ${s.repository}`);
+const data={date,sources,routes,models,matrix,glossary,tests,evidence};
+await mkdir(web,{recursive:true});
+await mkdir(path.join(web,'assets'),{recursive:true});
+await copyFile(path.join(root,'assets/eight-routes-infographic.png'),path.join(web,'assets/eight-routes-infographic.png'));
+for(const name of ['index.html','styles.css','app.js'])await copyFile(path.join(root,'src',name),path.join(web,name));
+await writeFile(path.join(web,'data.js'),'window.ATLAS = '+JSON.stringify(data,null,2)+';\n');
+await writeFile(path.join(web,'research-data.json'),JSON.stringify(data,null,2)+'\n');
+const md=['# 模型与工具清单','',`资料日期：${date}。官方指标，不是本项目实测。`,''];
+for(const m of models){md.push(`## ${m.name}`,'',`- 类型：${m.type}`,`- 输入：${m.input}`,`- 输出：${m.output}`,`- 硬件：${m.hardware}`,`- 表现：${m.quality}`,`- 限制：${m.limit}`,`- 许可：${m.license}`,`- 来源：${m.refs.map(id=>{const s=sources.find(s=>s.id===id);return `[${s.title}](${s.url})`;}).join(' · ')}`,'');}
+await writeFile(path.join(root,'notes/model-catalog.md'),md.join('\n'));
+console.log(`Built atlas: ${routes.length} routes, ${models.length} tools, ${sources.length} sources, ${evidence.repositories.length} pinned upstreams.`);

@@ -12,6 +12,7 @@
 | 编号 | 项目 | 摘要 | 状态 | 入口 |
 | --- | --- | --- | --- | --- |
 | 001 | cyber-xiaowan · AI 女友的过渡阶段参考 | 以宿主 Agent 为能力底座，用图片情绪包、预设台词和状态事件构成有情绪表达的桌宠；对我们而言，是 AI 女友从图片陪伴逐步走向 3D 的过渡阶段参考。 | 研究中 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/001-evening-companion/) · [研究说明](projects/001-evening-companion/README.md) · [cyberxiaowan/cyber-xiaowan](https://github.com/cyberxiaowan/cyber-xiaowan) |
+| 004 | 数字人技术图谱 · 从素材口型到实时生成 | 研究低成本、动作自然且可实时交互的数字人：比较素材口型、单图驱动、离线与流式生成、3D、NeRF/3DGS、Live2D 和视频编辑八条路线。以优质动作素材 + MuseTalk 为当前主线，明确模型、成本与控制边界，并探索陪伴、客服导览、教学训练、虚拟直播及可插拔服务。 | 研究中 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/004-digital-human-atlas/) · [研究说明](projects/004-digital-human-atlas/README.md) · [TMElyralab/MuseTalk](https://github.com/TMElyralab/MuseTalk) |
 
 ### 001 · cyber-xiaowan · AI 女友的过渡阶段参考
 
@@ -20,6 +21,14 @@
 从赛博小晚到我们的 AI 女友：原库的 Agent 与图片状态展示，以及先陪伴、再动效、按需升级 3D 的分阶段路线。图中角色为结构示意。
 
 以宿主 Agent 为能力底座，用图片情绪包、预设台词和状态事件构成有情绪表达的桌宠；对我们而言，是 AI 女友从图片陪伴逐步走向 3D 的过渡阶段参考。
+
+### 004 · 数字人技术图谱 · 从素材口型到实时生成
+
+<a href="https://yydshly.github.io/1020_codex_project/projects/004-digital-human-atlas/"><img src="projects/004-digital-human-atlas/assets/eight-routes-infographic.png" alt="八种数字人技术全景长图：原理、代表库、落地步骤与优缺点；推荐当前采用优质动作素材 + MuseTalk，区分复杂生成效果与 3D 空间控制。人物缩略图为机制示意。" width="720"></a>
+
+八种数字人技术全景长图：原理、代表库、落地步骤与优缺点；推荐当前采用优质动作素材 + MuseTalk，区分复杂生成效果与 3D 空间控制。人物缩略图为机制示意。
+
+研究低成本、动作自然且可实时交互的数字人：比较素材口型、单图驱动、离线与流式生成、3D、NeRF/3DGS、Live2D 和视频编辑八条路线。以优质动作素材 + MuseTalk 为当前主线，明确模型、成本与控制边界，并探索陪伴、客服导览、教学训练、虚拟直播及可插拔服务。
 <!-- PROJECTS:END -->
 
 ## 仓库结构

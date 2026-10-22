@@ -1,0 +1,292 @@
+{
+  "checked_on": "2026-10-23",
+  "method": "Official repository README fetched at pinned HEAD; SHA-256 of retrieved bytes; no model inference performed.",
+  "repositories": [
+    {
+      "repository": "TMElyralab/MuseTalk",
+      "url": "https://github.com/TMElyralab/MuseTalk",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "0a89dec45a0192b824e3cf4daf96c239440c5ed8",
+      "source_url": "https://raw.githubusercontent.com/TMElyralab/MuseTalk/0a89dec45a0192b824e3cf4daf96c239440c5ed8/README.md",
+      "sha256": "63587c38fa53bd3292654a71aa6978628db02dd02cc93153030f3d0dca7721bf",
+      "bytes": 22817,
+      "status": "verified"
+    },
+    {
+      "repository": "Rudrabha/Wav2Lip",
+      "url": "https://github.com/Rudrabha/Wav2Lip",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "bac9a81e63ecc153202353372e5724b83d9e6322",
+      "source_url": "https://raw.githubusercontent.com/Rudrabha/Wav2Lip/bac9a81e63ecc153202353372e5724b83d9e6322/README.md",
+      "sha256": "8019ca16cf27529731bebed3c2f542046d6db1797cf38042cd1d27f4793ecd34",
+      "bytes": 17062,
+      "status": "verified"
+    },
+    {
+      "repository": "bytedance/LatentSync",
+      "url": "https://github.com/bytedance/LatentSync",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "a229c3948406bc2cf6eaf4873e662e70c6a04746",
+      "source_url": "https://raw.githubusercontent.com/bytedance/LatentSync/a229c3948406bc2cf6eaf4873e662e70c6a04746/README.md",
+      "sha256": "f4efe6ac062511b5de6ff65db110aa3d755fef662277c3bb4dd16dbfa02362b1",
+      "bytes": 10216,
+      "status": "verified"
+    },
+    {
+      "repository": "antgroup/ditto-talkinghead",
+      "url": "https://github.com/antgroup/ditto-talkinghead",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "c3e47eee2e626500017a0556b470d6d4182f85e8",
+      "source_url": "https://raw.githubusercontent.com/antgroup/ditto-talkinghead/c3e47eee2e626500017a0556b470d6d4182f85e8/README.md",
+      "sha256": "f39329835c98a021a6d1b2d1ac6b09751333de5ebd45995d29efbd43adfd63c0",
+      "bytes": 9074,
+      "status": "verified"
+    },
+    {
+      "repository": "KlingAIResearch/LivePortrait",
+      "url": "https://github.com/KlingAIResearch/LivePortrait",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "9b294b3d0536135442ea73cb01e6cb3ca7029dd3",
+      "source_url": "https://raw.githubusercontent.com/KlingAIResearch/LivePortrait/9b294b3d0536135442ea73cb01e6cb3ca7029dd3/readme.md",
+      "sha256": "ba9144f3a57c4acdeae3e51cdaf379b41c32ffe27ec7ff4b279265995ad01878",
+      "bytes": 21614,
+      "status": "verified"
+    },
+    {
+      "repository": "OpenTalker/SadTalker",
+      "url": "https://github.com/OpenTalker/SadTalker",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "cd4c0465ae0b54a6f85af57f5c65fec9fe23e7f8",
+      "source_url": "https://raw.githubusercontent.com/OpenTalker/SadTalker/cd4c0465ae0b54a6f85af57f5c65fec9fe23e7f8/README.md",
+      "sha256": "ee4a7802cc7735fdc3077d8d6f75fcda7012e84fce714b1cb4603c13b2552d4c",
+      "bytes": 17124,
+      "status": "verified"
+    },
+    {
+      "repository": "Soul-AILab/SoulX-FlashHead",
+      "url": "https://github.com/Soul-AILab/SoulX-FlashHead",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "9bc03de06bb0de82cd6bc477804512ae06144bf2",
+      "source_url": "https://raw.githubusercontent.com/Soul-AILab/SoulX-FlashHead/9bc03de06bb0de82cd6bc477804512ae06144bf2/README.md",
+      "sha256": "68910832b2f23db1395f1aaa980eb26e1014a2980bf62013231f5900e2b08378",
+      "bytes": 11284,
+      "status": "verified"
+    },
+    {
+      "repository": "Soul-AILab/SoulX-FlashTalk",
+      "url": "https://github.com/Soul-AILab/SoulX-FlashTalk",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "2ba2e1e801d59a9f526212a5aae5d374db8f2978",
+      "source_url": "https://raw.githubusercontent.com/Soul-AILab/SoulX-FlashTalk/2ba2e1e801d59a9f526212a5aae5d374db8f2978/README.md",
+      "sha256": "1b17b90787e8c1ebd6368562d7bf98ffccf540b9e15c326d3d14ad4dc512b296",
+      "bytes": 12367,
+      "status": "verified"
+    },
+    {
+      "repository": "Alibaba-Quark/LiveAvatar",
+      "url": "https://github.com/Alibaba-Quark/LiveAvatar",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "c3c47d031d8bf3247428333c1fe610579c71a551",
+      "source_url": "https://raw.githubusercontent.com/Alibaba-Quark/LiveAvatar/c3c47d031d8bf3247428333c1fe610579c71a551/README.md",
+      "sha256": "3e99c945e06a59f53ac9def8e01945c46c90b2a08601d7fb11527c4b482b8763",
+      "bytes": 12653,
+      "status": "verified"
+    },
+    {
+      "repository": "lipku/LiveTalking",
+      "url": "https://github.com/lipku/LiveTalking",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "c7269433a2b6ecebcd9342445d2ecc882c98b0da",
+      "source_url": "https://raw.githubusercontent.com/lipku/LiveTalking/c7269433a2b6ecebcd9342445d2ecc882c98b0da/README.md",
+      "sha256": "0a74f10d4fedcb4b2008483380f82c0cf6e2e49d5b96f67d98b16cb9275f50ac",
+      "bytes": 10217,
+      "status": "verified"
+    },
+    {
+      "repository": "antgroup/echomimic_v2",
+      "url": "https://github.com/antgroup/echomimic_v2",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "38c86809efa041884c774ee31d984a9577c0e0aa",
+      "source_url": "https://raw.githubusercontent.com/antgroup/echomimic_v2/38c86809efa041884c774ee31d984a9577c0e0aa/README.md",
+      "sha256": "ea5112f662972ce6564cc91c3d0dcdfc92318fed50052eaaad60e15ea1b049c6",
+      "bytes": 14891,
+      "status": "verified"
+    },
+    {
+      "repository": "fudan-generative-vision/hallo",
+      "url": "https://github.com/fudan-generative-vision/hallo",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "8fd7c572a3d43c2a9c1a5473219ce4fc1b6e3ed2",
+      "source_url": "https://raw.githubusercontent.com/fudan-generative-vision/hallo/8fd7c572a3d43c2a9c1a5473219ce4fc1b6e3ed2/README.md",
+      "sha256": "cf72b5dda3493fba73849283bec952f0c7537547d64677f80fc1a48e97f8ab67",
+      "bytes": 20085,
+      "status": "verified"
+    },
+    {
+      "repository": "Fictionarry/ER-NeRF",
+      "url": "https://github.com/Fictionarry/ER-NeRF",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "0cf72d8fb598d321de86b445bcd363cc2f6346a5",
+      "source_url": "https://raw.githubusercontent.com/Fictionarry/ER-NeRF/0cf72d8fb598d321de86b445bcd363cc2f6346a5/README.md",
+      "sha256": "accd10ff116ccd1eb10859812d0ff9a3ea2cb1488e1a62d3edcabac3f36ea498",
+      "bytes": 7156,
+      "status": "verified"
+    },
+    {
+      "repository": "ashawkey/RAD-NeRF",
+      "url": "https://github.com/ashawkey/RAD-NeRF",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "0de5ed259592592294677ad6cf7605f478a0de57",
+      "source_url": "https://raw.githubusercontent.com/ashawkey/RAD-NeRF/0de5ed259592592294677ad6cf7605f478a0de57/readme.md",
+      "sha256": "ec03dbb8a4f836ef5e2a96a389795831033e585f669bf85053038499a93653b7",
+      "bytes": 8607,
+      "status": "verified"
+    },
+    {
+      "repository": "yerfor/GeneFacePlusPlus",
+      "url": "https://github.com/yerfor/GeneFacePlusPlus",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "6c35651d9b731c041e3f10b0577b8ace24d65806",
+      "source_url": "https://raw.githubusercontent.com/yerfor/GeneFacePlusPlus/6c35651d9b731c041e3f10b0577b8ace24d65806/README.md",
+      "sha256": "3fa6ce9f29ee05533b0e3600cc1c6d973340dfd48b0126baf772f466b24156aa",
+      "bytes": 5239,
+      "status": "verified"
+    },
+    {
+      "repository": "Fictionarry/TalkingGaussian",
+      "url": "https://github.com/Fictionarry/TalkingGaussian",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "9bd34f732e30cd94c0a9a087a125d2dda228e258",
+      "source_url": "https://raw.githubusercontent.com/Fictionarry/TalkingGaussian/9bd34f732e30cd94c0a9a087a125d2dda228e258/README.md",
+      "sha256": "a3c59bc9494018b4280fc4c7345d2aa9e9f9bcc76bdabf412b0e6a6d8b3c85e0",
+      "bytes": 6218,
+      "status": "verified"
+    },
+    {
+      "repository": "NVIDIA/Audio2Face-3D-SDK",
+      "url": "https://github.com/NVIDIA/Audio2Face-3D-SDK",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "1ca0f02535ed774f5dbcd724a31cd486368dc783",
+      "source_url": "https://raw.githubusercontent.com/NVIDIA/Audio2Face-3D-SDK/1ca0f02535ed774f5dbcd724a31cd486368dc783/README.md",
+      "sha256": "b6415ea8c479c54ce632103fd0b6b48d7fc4a1db932f478d271d396cfe9cc0bc",
+      "bytes": 12527,
+      "status": "verified"
+    },
+    {
+      "repository": "NVIDIA/Audio2Face-3D-Training-Framework",
+      "url": "https://github.com/NVIDIA/Audio2Face-3D-Training-Framework",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "112c5eb3408afd065ac8974b2c6ea9ab0e3965c6",
+      "source_url": "https://raw.githubusercontent.com/NVIDIA/Audio2Face-3D-Training-Framework/112c5eb3408afd065ac8974b2c6ea9ab0e3965c6/README.md",
+      "sha256": "86fffdcffa6f6c411c22313607ff84789c22dccef59342a2bbbf5a18831b4a82",
+      "bytes": 11485,
+      "status": "verified"
+    },
+    {
+      "repository": "met4citizen/TalkingHead",
+      "url": "https://github.com/met4citizen/TalkingHead",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "91796631b569ec70aeba1e43f6fa1987e5e4115c",
+      "source_url": "https://raw.githubusercontent.com/met4citizen/TalkingHead/91796631b569ec70aeba1e43f6fa1987e5e4115c/README.md",
+      "sha256": "306b9a10cd7726e0ec971bf04840617a474cd6d2f8ba89b9dcf95b61331e8f37",
+      "bytes": 69657,
+      "status": "verified"
+    },
+    {
+      "repository": "pixiv/three-vrm",
+      "url": "https://github.com/pixiv/three-vrm",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "3caf7a21ee68f0d5dfa363ab3d577450bbf60136",
+      "source_url": "https://raw.githubusercontent.com/pixiv/three-vrm/3caf7a21ee68f0d5dfa363ab3d577450bbf60136/README.md",
+      "sha256": "09cd85c8a6d8b2616bd43b190ed78fd34dbc5b35cd9b1d93b196c976a09c804d",
+      "bytes": 4455,
+      "status": "verified"
+    },
+    {
+      "repository": "DanielSWolf/rhubarb-lip-sync",
+      "url": "https://github.com/DanielSWolf/rhubarb-lip-sync",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "9b9573cd21b253c9ba58739bbd1aa0b50b991bff",
+      "source_url": "https://raw.githubusercontent.com/DanielSWolf/rhubarb-lip-sync/9b9573cd21b253c9ba58739bbd1aa0b50b991bff/README.adoc",
+      "sha256": "3c7dcb74008ca9eb96f5f258ca4f82e9a49ed9614d93f89bc98bd27ac3a22b43",
+      "bytes": 23164,
+      "status": "verified"
+    },
+    {
+      "repository": "hzwer/ECCV2022-RIFE",
+      "url": "https://github.com/hzwer/ECCV2022-RIFE",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "5d8adbdd40e12c2c8f91930eff838aebe561c086",
+      "source_url": "https://raw.githubusercontent.com/hzwer/ECCV2022-RIFE/5d8adbdd40e12c2c8f91930eff838aebe561c086/README.md",
+      "sha256": "05290581ecf28621a7731486fa17ba0e4f02fc689dba0a4ccd2c905f72851498",
+      "bytes": 11007,
+      "status": "verified"
+    },
+    {
+      "repository": "FunAudioLLM/CosyVoice",
+      "url": "https://github.com/FunAudioLLM/CosyVoice",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc",
+      "source_url": "https://raw.githubusercontent.com/FunAudioLLM/CosyVoice/074ca6dc9e80a2f424f1f74b48bdd7d3fea531cc/README.md",
+      "sha256": "66436370172c2830ed98aa643b31898c65e16eee14ade68f00828d21fae602e0",
+      "bytes": 13764,
+      "status": "verified"
+    },
+    {
+      "repository": "FunAudioLLM/SenseVoice",
+      "url": "https://github.com/FunAudioLLM/SenseVoice",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "586bbdb2b052f4fe19322581825228b6810a9fb3",
+      "source_url": "https://raw.githubusercontent.com/FunAudioLLM/SenseVoice/586bbdb2b052f4fe19322581825228b6810a9fb3/README.md",
+      "sha256": "ce31cd7c065d40fa95829a191870c6f9b25feb94d23500d6bc522927857f721f",
+      "bytes": 26816,
+      "status": "verified"
+    },
+    {
+      "repository": "RVC-Boss/GPT-SoVITS",
+      "url": "https://github.com/RVC-Boss/GPT-SoVITS",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "b4570b876f5c086819ba84e3215472733c6a7b70",
+      "source_url": "https://raw.githubusercontent.com/RVC-Boss/GPT-SoVITS/b4570b876f5c086819ba84e3215472733c6a7b70/README.md",
+      "sha256": "b680976764d99f61d647394df4948a5698591dc9de1dd802d57f4598fdbb02d1",
+      "bytes": 22027,
+      "status": "verified"
+    },
+    {
+      "repository": "openspline/openspline",
+      "url": "https://github.com/openspline/openspline",
+      "checked_on": "2026-10-23",
+      "verification": "not-run",
+      "commit": "6d53966e412a9c2946f3b777735ac04aa8879b0b",
+      "source_url": "https://raw.githubusercontent.com/openspline/openspline/6d53966e412a9c2946f3b777735ac04aa8879b0b/README.md",
+      "sha256": "307188a4ead1511f3c6c7a6e30b144cbfea4bede60bc7e8b436ca56ba8397ead",
+      "bytes": 16737,
+      "status": "verified"
+    }
+  ]
+}

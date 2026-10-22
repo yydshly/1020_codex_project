@@ -1,0 +1,11 @@
+{
+  "name": "digital-human-atlas",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node src/build.mjs",
+    "preview": "python src/serve.py",
+    "check": "node --check src/app.js && node src/check.mjs"
+  }
+}

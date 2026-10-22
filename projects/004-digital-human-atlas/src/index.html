@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="研究如何以可控成本实现自然的实时数字人交互。比较八条技术路线，以动作素材＋MuseTalk 为当前主线，分析模型、效果边界与陪伴、客服、教学、直播等产品方向。"><title>数字人技术图谱 · 004 Research Atlas</title><link rel="stylesheet" href="styles.css"><script defer src="data.js"></script><script defer src="app.js"></script></head>
+<body>
+<a class="skip" href="#main">跳到正文</a>
+<aside class="sidebar" aria-label="章节导航">
+ <a class="brand" href="#overview"><span class="brand-icon">◉</span><span>RESEARCH ATLAS<small>数字人 · 技术与实践</small></span></a>
+ <div class="volume">FIELD NOTES <b>004</b></div>
+ <nav><a href="#overview">01 <span>先建立共同理解</span></a><a href="#routes">02 <span>八条技术路线</span></a><a href="#current">03 <span>我们的系统</span></a><a href="#matrix">04 <span>效果与能力对比</span></a><a href="#models">05 <span>模型与工具目录</span></a><a href="#deep">06 <span>三种实现拆解</span></a><a href="#production">07 <span>素材与情绪工程</span></a><a href="#cost">08 <span>租卡成本估算</span></a><a href="#evaluation">09 <span>测试与记录</span></a><a href="#decision">10 <span>选择与演进</span></a><a href="#products">11 <span>可扩展产品方向</span></a><a href="#glossary">12 <span>术语速查</span></a><a href="#sources">13 <span>证据与来源</span></a></nav>
+ <div class="side-note"><i class="dot"></i> 研究持续更新<br><span>资料核对 · 2026.10.23<br>没有统一实机排行榜</span></div>
+</aside>
+<main id="main">
+ <header class="topbar"><span>GitHub 项目研究集 <span class="muted">/ 004</span></span><div><button id="export" class="text-button">导出研究数据 ↗</button><button id="print" class="text-button">打印 / PDF</button></div></header>
+ <section class="hero" id="overview">
+  <p class="eyebrow">DIGITAL HUMAN / A PRACTICAL FIELD GUIDE</p>
+  <div class="intro-layout"><div class="intro-copy"><h1>让角色开口，<br>也让动作<span class="serif">像真的。</span></h1>
+  <p class="lead">研究目标：以可控的 GPU 成本，实现外观稳定、动作自然、能够实时回应的数字人。以已有 MuseTalk 系统为起点，比较八条技术路线，明确现在怎么做、何时值得升级，以及能做成哪些产品。</p>
+  <div class="hero-actions"><a class="button primary" href="#routes">探索技术路线 <span>↓</span></a><a class="button" href="#models">对比模型与工具 ↗</a></div>
+  <p class="intro-verdict"><b>当前最适合：优质动作素材＋MuseTalk 实时口型。</b><br>保留对话与语音层，Ditto 回退；FlashHead Lite 作为可替换的人像后端实验。需要精确空间动作再评估 3D，需要复杂自主动作再评估流式生成。</p>
+  </div><figure class="guide-figure"><a href="assets/eight-routes-infographic.png" target="_blank" rel="noopener" aria-label="打开八种数字人技术全景高清长图"><img src="assets/eight-routes-infographic.png" alt="八种数字人技术全景图：逐项比较原理、落地流程、工具、优缺点和成本；当前建议素材加 MuseTalk，复杂动作参考生成式，精确空间互动选 3D。" fetchpriority="high"></a><figcaption>先看一张图，再读方案细节。<a href="assets/eight-routes-infographic.png" target="_blank" rel="noopener">放大查看 ↗</a> · <a href="assets/eight-routes-infographic.png" download>下载原图 ↓</a><small>AI 绘制的机制示意；图中人物不是模型实测样片，技术细节以正文和来源为准。</small></figcaption></figure></div>
+  <div class="research-brief" aria-label="研究摘要">
+   <article><span class="label">我们要回答</span><h3>哪条路线值得投入？</h3><p>把嘴型、身体动作、表情、实时响应分别拆开，比较八条路线的输入、实现和能力边界。选择的是完整交互方案，而不只是一个画面模型。</p></article>
+   <article><span class="label">研究的意义</span><h3>把演示效果变成可验证决策</h3><p>区分模型能力与工程编排、官方指标与真实体验。用同角色同语音记录收益，让每次租卡实验只回答一个关键问题，降低重搭系统和无效算力的投入。</p></article>
+   <article><span class="label">可扩展的价值</span><h3>沉淀可复用的角色交互底座</h3><p>统一语音、状态、素材、画面后端和播放接口，可延伸到陪伴、客服导览、口语教学、虚拟直播，以及素材制作和数字人接入工具。</p><a href="#products">查看产品方向与验证入口 →</a></article>
+  </div>
+  <div class="stats"><div><b>08</b><span>技术路线</span></div><div><b id="model-count">31</b><span>模型与工具</span></div><div><b id="source-count">33</b><span>来源入口</span></div><div><b>03</b><span>证据层级</span></div></div>
+  <div class="callout"><b>当前建议：保留素材＋口型主线，把生成式人像作为可插拔实验。</b><p>这是结合“租 GPU 测试、已有 MuseTalk 系统、主要用于聊天”的工程判断，不是所有数字人产品的最优解。尚未获得你现有系统的录像、日志或源代码，不能声称已定位真实画质瓶颈。</p></div>
+ </section>
+
+ <section id="routes"><div class="section-heading"><p class="eyebrow">02 / THE LANDSCAPE</p><h2>先问：画面里的动作从哪里来？</h2><p>按动作与画面的来源分类，比把所有工具都叫“数字人模型”更有用。点选路线，查看输入、原理与边界。</p></div><div class="route-layout"><div id="route-tabs" class="route-tabs" role="tablist" aria-label="数字人技术路线"></div><article id="route-detail" class="route-detail" role="tabpanel" tabindex="0"></article></div></section>
+
+ <section id="current"><div class="section-heading"><p class="eyebrow">03 / OUR BASELINE</p><h2>我们已经搭好的，是一套完整交互链路。</h2><p>以下来自你的会话描述，标记为「用户报告」，不是本子项目重新运行的结果。</p></div>
+  <div class="architecture"><div class="lane"><span class="lane-label">前期制作</span><div>角色图 / 形象设定</div><span>→</span><div>AI 动作视频</div><span>→</span><div><code>add_clips.sh</code><small>转码 · 登记 · 预处理</small></div><span>→</span><div><code>library.json</code><small>待机 / 说话 / 情绪片段</small></div></div><div class="lane"><span class="lane-label">实时对话</span><div>用户语音</div><span>→</span><div>SenseVoice<small>ASR · 7003</small></div><span>→</span><div>MiniMax-Text-01<small>回复与对话状态</small></div><span>→</span><div>MiniMax 情绪语音<small>edge-tts 兜底</small></div></div><div class="lane"><span class="lane-label">视频输出</span><div>片段调度<small>状态 / 情绪 / 冷却</small></div><span>＋</span><div>当前语音</div><span>→</span><div>MuseTalk v1.5<small>实时口型 · 7002</small></div><span>→</span><div>Node 网页服务<small>同步播放 · 6006</small></div></div><p class="architecture-note">RIFE 辅助片段过渡 · Ditto 保留回退 · <code>start_demo.sh</code> 拉起服务。具体调用顺序、音视频时钟和回退实现仍需代码核验。</p></div>
+  <div class="two-col"><article class="note-card"><span class="label">已经有的能力 / 用户报告</span><h3>会听、会答、会说，也会按状态播放动作</h3><p>已试 Ditto 实时性和八种情绪，主力迁移至 MuseTalk；素材统一为 25fps / 768p 规格，加入预处理与片段库。显示为 768p 不代表口部生成细节达到同样分辨率。</p><p>无卡模式准备依赖与权重，可降低 GPU 空转支出。但 TensorRT 构建、CUDA 扩展编译和性能预热可能仍需目标 GPU。</p></article><article class="note-card"><span class="label">目前仍未知</span><h3>不能从架构描述推断最终画质</h3><p>没有当前输出录像、首音 / 首帧延迟、GPU 利用率、失败片段或成本账单。暂时无法判断主要问题出在底片、口型融合、情绪选择、音画时钟还是视频编码。</p><p>“关机不扣 GPU 费”是你描述的平台行为；磁盘保留费、停止与释放的区别，仍以租赁平台计费规则为准。</p></article></div>
+  <details><summary>哪些结论需要修正或保留条件？</summary><div class="detail-body"><ul><li><b>“素材＋口型最好”：</b>仅对当前成本目标与固定机位聊天较合适，不能推广为全场景最优。</li><li><b>“FlashHead 等于开源 Vidu”：</b>不成立。头部生成与复杂动作、动态参考图交互有能力差异。</li><li><b>“开源就能商用”：</b>不成立。代码、权重、依赖、角色图和声音素材需要分别确认。</li><li><b>“Vidu 是预录素材或传统 3D”：</b>S2-Avatar 的公开论文描述生成式流式模型；S2-Editing 则需要输入视频流。</li><li><b>“有 3D 表示就是完整 3D 人”：</b>运动系数、NeRF、高斯表示和可绑定网格属于不同资产与控制范式。</li></ul></div></details>
+ </section>
+
+ <section id="matrix"><div class="section-heading"><p class="eyebrow">04 / TRADEOFFS, NOT A LEADERBOARD</p><h2>真实感，有两个维度。</h2><p>外观像真人，不代表反应像真人；动作自由，也不代表动作可靠。下表是机制分析，未给未经实测的方案打分。</p></div><div class="two-col split-truth"><article><span>APPEARANCE</span><h3>外观真实度</h3><p>皮肤与牙齿细节、口型融合、手部完整性、衣服稳定、灯光、遮挡关系。</p><small>优质预录素材也能非常自然。</small></article><article><span>INTERACTION</span><h3>互动自然度</h3><p>倾听时的眼神、说话节奏、情绪协调、动作时机、被打断后的恢复与长期变化。</p><small>只提升嘴部画质，无法覆盖这些问题。</small></article></div><div class="table-wrap" tabindex="0" role="region" aria-label="技术路线能力对比，可横向滚动"><table id="route-matrix"><caption>条件性对比 · 无统一硬件、数据集或盲测分数</caption><thead><tr><th>路线</th><th>外观表现</th><th>动作自由</th><th>控制方式</th><th>长时体验</th><th>运行支出</th><th>开发投入</th></tr></thead><tbody></tbody></table></div></section>
+
+ <section id="models"><div class="section-heading"><p class="eyebrow">05 / MODEL & TOOL DIRECTORY</p><h2>模型、框架和服务，放回各自的位置。</h2><p>搜索名称或能力，最多选择四项并排对比。硬件信息保留官方测试条件，所有条目均未在本子项目运行推理。</p></div>
+  <div class="filters"><label class="search-label"><span>搜索模型 / 能力</span><input id="search" type="search" placeholder="例如：MuseTalk、3D、流式、中文" autocomplete="off"></label><label><span>技术路线</span><select id="route-filter"><option value="all">全部路线</option></select></label><label><span>部署条件</span><select id="deployment-filter"><option value="all">全部</option><option value="local">有本地运行路径</option><option value="cloud">商业云服务</option></select></label><button id="reset-filters" class="text-button">重置筛选</button></div>
+  <div class="results-head"><p id="results-count" aria-live="polite"></p><span>点击「详情」查看能力、限制与许可</span></div><div id="model-grid" class="model-grid"></div>
+  <div id="compare-tray" class="compare-tray"><span id="compare-count" aria-live="polite">已选 0 / 4</span><div id="selected-chips"></div><button id="compare-button" class="button primary" disabled>并排对比</button><button id="clear-selection" class="text-button">清空</button></div><p id="selection-feedback" class="small" role="status"></p>
+  <div id="comparison" hidden><h3>已选模型对比</h3><div class="table-wrap" tabindex="0" role="region" aria-label="所选模型对比"><table id="compare-table"></table></div></div>
+ </section>
+
+ <section id="deep"><div class="section-heading"><p class="eyebrow">06 / UNDER THE HOOD</p><h2>三个容易混淆的实现，拆开看。</h2></div>
+  <article class="deep-row"><span class="big-number">A</span><div><p class="eyebrow">VIDEO + LIP SYNC</p><h3>MuseTalk：重绘局部，不是生成整个人的动作。</h3><p>官方将它描述为潜空间单步修补。虽然网络结构借鉴扩散模型中的 U-Net，MuseTalk 本身并不是多步扩散生成模型。身体动作、镜头和大部分外观主要继承底片。</p><p>如果底片在第三秒举手，替换成任何台词，仍然会在这个位置举手。调度系统可以选择这段视频开始的时机，但不能让口型模型临时创造一个没拍过的拿杯动作。</p><div class="flow compact"><span>原视频帧</span><b>＋</b><span>当前语音特征</span><b>→</b><span>口部附近重绘</span><b>→</b><span>融合回原画面</span></div><p class="source-line" data-refs="muse"></p></div></article>
+  <article class="deep-row"><span class="big-number">B</span><div><p class="eyebrow">MESH + FACIAL ANIMATION</p><h3>真正的 3D：先有角色，再分别驱动脸和身体。</h3><p>角色需要网格、材质、骨骼与面部形变目标。音频经过 viseme 映射或 Audio2Face 等模型得到面部动画；身体动作另用动画库、动捕、程序或动作生成器。最后由 Unreal、Unity 或浏览器渲染。</p><p>面部驱动结果要重定向到角色，眼神、眨眼、呼吸和身体层需要协调。只买一个漂亮模型，通常还缺绑定、动画和渲染优化。将 3D 渲染画面再交给 MuseTalk 属于混合方案，会重新引入口部像素不一致与额外延迟，不是必需步骤。</p><div class="flow compact"><span>语音 → 面部曲线</span><b>＋</b><span>动作 → 身体骨骼</span><b>→</b><span>角色 / 场景渲染</span></div><p>网页风格化方向可看 TalkingHead / three-vrm；写实方向可看 MetaHuman 与 Audio2Face。它们不是同级产品：渲染库、资产系统与面部模型要分开选择。</p><p class="source-line" data-refs="a2f,meta,metart,talkinghead,vrm"></p></div></article>
+  <article class="deep-row"><span class="big-number">C</span><div><p class="eyebrow">STREAMING GENERATION</p><h3>Vidu S2-Avatar：让模型连续生成下一段。</h3><p>公开论文描述音视频联合扩散 Transformer：使用参考图、当前条件和历史状态，分块生成后续内容。其动作来自学习到的生成能力；训练时使用视频，并不等于运行时从录像库选片。</p><p>S2-Avatar 支持动态参考图和动作指令；S2-Editing 编辑已有输入视频，动作主要来自原表演。两种产品不能混为“都是无人主播”。论文公开也不代表模型权重可本地下载。</p><div class="flow compact"><span>角色参考</span><b>＋</b><span>音频 / 指令条件</span><b>＋</b><span>历史画面</span><b>→</b><span>下一段生成画面</span></div><p>相较素材库，它有更大的表现空间，也可能出现画面漂移和指令偏差。原帖报告过换背景造成服装异常、断线与等待，适合作为故障案例，不能当作所有版本的固定表现。</p><p class="source-line" data-refs="vidupaper,vidu,post"></p></div></article>
+ </section>
+
+ <section id="production"><div class="section-heading"><p class="eyebrow">07 / BUILD THE PERFORMANCE</p><h2>当前路线的下一步，是表演质量与调度。</h2><p>下面是针对现有系统的工程建议，尚未验证能带来多少提升。先做小规模受控测试，再扩大素材库。</p></div>
+  <div class="three-col"><article class="note-card"><span class="label">01 · 统一形象</span><h3>一套角色视觉规范</h3><p>固定脸型、发型、服装、机位、景别、灯光、背景与色彩。每次新增素材检查脸部身份、牙齿、手指、衣服纹理和配饰。</p><p>录制路线可直接得到自然表演；AI 路线需要多次生成与筛选。两种方式都能接入视频＋口型架构。</p></article><article class="note-card"><span class="label">02 · 最小素材集</span><h3>先覆盖状态，再追求数量</h3><p>从倾听、思考、平静说话、微笑说话、轻点头、情绪收束开始。建议每类先准备 2～3 条不同节奏的合格片段。</p><p>这是起步建议，不是模型要求。片段时长和起止姿势应服务于切换，不宜统一机械循环。</p></article><article class="note-card"><span class="label">03 · 可衔接动作</span><h3>用姿势约束选择下一段</h3><p>按头部角度、眼神方向、手部位置、运动速度和表情强度登记起止状态。优先选择可连接的片段，再考虑情绪标签。</p><p>大跨度动作先补专门的过渡素材。RIFE 只在运动对应合理时辅助插帧；直接跨两种姿势可能产生拉扯与重影。</p></article></div>
+  <details open><summary>建议给 library.json 增加哪些字段？</summary><div class="detail-body"><p>下面是建议数据结构，不代表当前代码已经支持。预处理时仍应校验分辨率、音视频时基、人物 ID 和模型版本。</p><pre><code>{
+  "id": "listen-neutral-02", "character_id": "avatar-a",
+  "state": "listening", "emotion": "neutral", "intensity": 0.2,
+  "duration_ms": 8200, "fps": 25,
+  "entry_pose": "front-hands-rest", "exit_pose": "front-hands-rest",
+  "gaze": "camera", "mouth_occluded": false,
+  "interruptible": true, "loop_safe": false, "cooldown_ms": 60000,
+  "safe_cut_ms": [2100, 5400, 8100],
+  "preprocess_version": "record-actual-version"
+}</code></pre></div></details>
+  <div class="two-col"><article class="note-card"><h3>情绪不是一个“开心”标签</h3><p>建议把对话意图、情绪强度和表演动作拆开。例如“安慰”可能需要温和语音、放松眉眼和小幅点头，而不是直接选择大笑片段。</p><p>表情平滑变化应有最短保持时间与冷却，避免每个 token 都触发切片。八种情绪标签可保留，但先验证各标签的素材是否足够一致。</p></article><article class="note-card"><h3>打断与时钟比补帧更基础</h3><p>以明确的播放时钟对齐音视频；记录每块语音、对应视频帧的时间戳。新会话 / 新回复要有标识，打断时同步丢弃旧音频和旧视频队列。</p><p>不要把新语音与旧表情硬拼，也不要一边已停止播音、一边嘴巴还在说。低帧率、网络抖动与队列积压需要分别监测。</p></article></div>
+ </section>
+
+ <section id="cost"><div class="section-heading"><p class="eyebrow">08 / COST WORKSHEET</p><h2>租卡便宜，不等于会话成本低。</h2><p>把开机准备、空闲和并发利用率算进去。以下默认数字仅为计算示例，<b>不是平台报价</b>；替换成你的实际账单。</p></div>
+  <div class="calculator"><form id="cost-form"><div class="input-grid"><label>单卡租金（元 / 小时）<input name="rate" type="number" min="0" step="0.1" value="5" required></label><label>GPU 数量<input name="cards" type="number" min="1" step="1" value="1" required></label><label>GPU 计费时长（小时）<input name="hours" type="number" min="0" step="0.1" value="4" required></label><label>其中 GPU 准备时长（小时）<input name="setup" type="number" min="0" step="0.1" value="1" required></label><label>实测可承载并发数<input name="concurrency" type="number" min="1" step="1" value="1" required></label><label>有效利用率（%）<input name="utilization" type="number" min="1" max="100" step="1" value="75" required></label><label>磁盘 / 网络 / 无卡模式合计（元）<input name="fixed" type="number" min="0" step="0.1" value="2" required></label><label>语音与对话 API（元 / 会话小时）<input name="extra" type="number" min="0" step="0.1" value="0" required></label><label>云数字人单价（元 / 会话小时，可选）<input name="cloud" type="number" min="0" step="0.1" placeholder="输入当前真实报价"></label></div><p class="small">并发数指整套 GPU 配置实测可持续承载的会话数；这里不会再乘 GPU 数量。准备时长必须小于总计费时长。</p></form><div class="cost-result" aria-live="polite"><span class="eyebrow">估算 · 非账单</span><p id="cost-error" role="status"></p><div class="cost-primary"><span>每有效会话小时</span><b id="unit-cost">—</b></div><dl><div><dt>GPU 租赁</dt><dd id="gpu-cost">—</dd></div><div><dt>有效会话时长</dt><dd id="session-hours">—</dd></div><div><dt>包含填写项目的总额</dt><dd id="total-cost">—</dd></div></dl><p id="cloud-comparison"></p></div></div>
+  <details><summary>公式、未计入项与原文成本</summary><div class="detail-body"><p>有效会话小时＝（GPU 计费小时−GPU 准备小时）×已测并发数×有效利用率。总成本＝单卡租金×卡数×计费小时＋固定费用＋语音对话单价×有效会话小时。单位成本＝总成本÷有效会话小时。</p><p>不包含未填写的资产制作、人工维护、训练、返工和税费。云服务对比假定同等有效会话时长，不能视为同等画质、同等并发或完整替代方案。</p><p>原帖曾报告 Vidu 折算约 169 元 / 小时，67 分钟直播连同预热与重启共 191.47 元。这是作者当时的案例，不是当前可直接购买的报价。没有将其自动填入计算器。<span data-refs="post"></span></p></div></details>
+  <div class="two-col"><article class="note-card"><h3>租 GPU 的准备顺序</h3><ol><li>无卡阶段：固定代码版本，下载权重，检查许可与磁盘容量，准备测试图和音频。</li><li>开卡阶段：核对驱动 / CUDA / TensorRT，构建必要引擎，预热，先跑单路。</li><li>记录同一 GPU 配置下的吞吐、首帧与成本；保存日志和失败样本。</li><li>结束后备份必要产物，按平台规则停止或释放实例，核对磁盘是否继续收费。</li></ol></article><article class="note-card"><h3>首轮资源选择</h3><p>有明确低成本目标时，先用单张 4090 级实例跑已有主线与 FlashHead Lite。Pro 可以在单卡生成样片，但不能按单卡实时预期。</p><p>这是基于官方路径的测试建议，不是最低配置保证。FlashTalk / LiveAvatar 的多卡实时方案应在单卡候选确实不足后再投入。<span data-refs="flash,flashtalk,liveavatar"></span></p></article></div>
+ </section>
+
+ <section id="evaluation"><div class="section-heading"><p class="eyebrow">09 / EVIDENCE BEFORE CONCLUSIONS</p><h2>用同一套题，测出差距在哪里。</h2><p>完成状态只保存在当前浏览器，不代表模型通过测试。导出记录时再填写证据位置；本页不会上传任何素材。</p></div><div class="test-header"><span id="test-progress" role="status">0 / 10 已记录</span><div><button id="export-tests" class="button">下载测试记录模板</button><button id="reset-tests" class="text-button">重置勾选</button></div></div><div id="test-list" class="test-list"></div><div class="callout"><b>记录三个速度，避免被单个 FPS 误导。</b><p>① GPU 推理吞吐；② 连续播放帧率与音画偏差；③ 从用户结束说话到看到回应的 P50 / P95。音频和视频流水线可能并行，不能机械地把每段最大延迟相加。</p></div><div class="two-col"><article class="note-card"><h3>盲测维度</h3><p>口型准确、口部融合、身份稳定、眉眼与语气协调、身体自然、重复感、动作遵循、等待可接受度。保持同一音频和画面条件，展示失败样本，不只展示精选结果。</p></article><article class="note-card"><h3>候选进入下一阶段的条件</h3><p>先与当前 MuseTalk 基线比较。在你重视的维度上有稳定提升，且延迟和每会话成本可接受，才继续接入完整服务。阈值应由你的场景填写，不在资料页伪造统一及格线。</p></article></div></section>
+
+ <section id="decision"><div class="section-heading"><p class="eyebrow">10 / CHOOSE THE NEXT EXPERIMENT</p><h2>根据目标，选择下一步。</h2></div><label class="decision-label">当前最想解决什么？<select id="goal-select"><option value="budget">保持低成本，让坐着聊天更自然</option><option value="head">减少头部僵硬与循环重复</option><option value="action">按对话临时做复杂身体动作</option><option value="space">需要走动、换视角和精准拿物</option><option value="anime">做风格化网页角色或桌宠</option></select></label><article id="decision-result" class="decision-result" aria-live="polite"></article><div class="roadmap"><div><span>现在</span><h3>建立现有基线</h3><p>保留对话、语音和前端。先记录当前真实输出、延迟和费用。</p></div><div><span>下一步</span><h3>只替换画面后端</h3><p>MuseTalk、Ditto、FlashHead 使用同样输入，比较同一能力范围。</p></div><div><span>按需扩展</span><h3>验证不同路线的价值</h3><p>复杂动作看生成式；明确空间控制看 3D。不要同时重建整个系统。</p></div></div><details><summary>统一画面后端接口的建议</summary><div class="detail-body"><p>建议抽象会话初始化、语音块输入、状态 / 情绪事件、打断、带时间戳的帧输出和销毁；明确每个后端的能力声明。</p><pre><code>startSession(character, config)
+pushAudio(sessionId, audioChunk, timestamp)
+setState(sessionId, { speaking, emotion, action })
+interrupt(sessionId, responseId)
+onFrame({ responseId, pts, frame })
+closeSession(sessionId)
+
+capabilities: { audioDriven, bodyActions, dynamicReference, streaming }</code></pre><p>同名 action 并不意味着各模型都能完成。素材库只能选择已有动作；不支持的动作应明确降级，而不是假装已执行。</p></div></details></section>
+
+ <section id="products"><div class="section-heading"><p class="eyebrow">11 / FROM RESEARCH TO PRODUCT</p><h2>一套交互底座，可以长成什么产品？</h2><p>以下是从能力拆分推导的产品假设，不代表已经验证用户需求或商业回报。先围绕一个场景完成小规模试用，再决定是否升级画面技术。</p></div>
+  <div class="product-grid">
+   <article class="note-card"><span class="label">01 / 连续对话</span><h3>陪伴角色与桌面伙伴</h3><p><b>用户价值：</b>有稳定形象、会倾听和回应的日常互动角色。</p><p><b>最小落地：</b>素材＋MuseTalk；偏风格化时用 Live2D / VRM，加入记忆、待机、主动事件与打断。</p><p><b>先验证：</b>长聊重复感、回应等待、记忆是否有用，以及每有效会话成本。</p></article>
+   <article class="note-card"><span class="label">02 / 有依据的回答</span><h3>客服、产品顾问与导览</h3><p><b>用户价值：</b>在明确业务范围内解答问题，帮助完成操作或了解产品。</p><p><b>最小落地：</b>知识库与工具调用＋固定机位角色；讲解场景用片段调度，明确兜底与人工接管。</p><p><b>先验证：</b>回答依据、任务完成率、错误恢复；外观自然度不能替代业务正确性。</p></article>
+   <article class="note-card"><span class="label">03 / 反复练习</span><h3>口语陪练与情境教学</h3><p><b>用户价值：</b>随时进行面试、外语或服务情境练习，获得可理解的反馈。</p><p><b>最小落地：</b>对话状态机＋教学内容＋角色语音，补齐发音评价、轮次管理与可调语速。</p><p><b>先验证：</b>反馈可靠性、打断体验、学习任务是否完成；不要把 ASR 转写当发音评分。</p></article>
+   <article class="note-card"><span class="label">04 / 持续播出</span><h3>虚拟直播与互动讲解</h3><p><b>用户价值：</b>围绕内容与观众互动，持续稳定播出。</p><p><b>最小落地：</b>素材＋口型＋内容队列＋推流；复杂即兴动作另测流式生成，有演员则可测试实时视频编辑。</p><p><b>先验证：</b>连续稳定、弹幕排队、异常画面、话题边界和每小时完整费用。</p></article>
+   <article class="note-card"><span class="label">05 / 提高制作效率</span><h3>角色素材与表演管理工具</h3><p><b>用户价值：</b>让创作者更快制作、挑选、管理可复用的角色动作。</p><p><b>最小落地：</b>片段上传、转码、标签、起止姿态、循环检查、口型预处理和 A/B 预览。</p><p><b>先验证：</b>每条可用素材的制作时间、通过率、人工返工量和跨片段身份一致性。</p></article>
+   <article class="note-card"><span class="label">06 / 按需换技术</span><h3>可插拔数字人服务 / SDK</h3><p><b>用户价值：</b>应用保持统一接口，按画质、成本和场景切换不同后端。</p><p><b>最小落地：</b>抽象音频块、状态、时间戳、取消与视频输出；接入 MuseTalk、Ditto，再按需求增加生成式或 3D。</p><p><b>先验证：</b>更换后端是否影响前端、并发隔离、故障回退与监控；空间任务再补动作与道具系统。</p></article>
+  </div><div class="callout"><b>建议先做深：单角色、固定机位、可打断的实时对话。</b><p>先把口型、倾听、表情和长时稳定做成可复用能力，再沿实际用户需求扩展。低成本优先不等于永远只用视频素材；3D 和生成式后端可以按需求逐步加入。</p></div>
+ </section>
+
+ <section id="glossary"><div class="section-heading"><p class="eyebrow">12 / GLOSSARY</p><h2>把术语翻译成实现问题。</h2></div><div id="glossary-list" class="glossary-grid"></div></section>
+ <section id="sources"><div class="section-heading"><p class="eyebrow">13 / PROVENANCE</p><h2>每个结论，都保留它的依据。</h2><p>资料核对日期：2026-10-23。官方数字是项目方报告，跨模型测试条件不一致。页面不声称已复现论文或跑过所有模型。</p></div><div class="three-col evidence"><article><span class="label">官方资料</span><p>仓库、模型卡、论文与产品文档。代码来源保存读取时 commit 和 README 哈希，便于后续复核。</p></article><article><span class="label">用户报告</span><p>现有 Ditto / MuseTalk / MiniMax / SenseVoice 组合、端口和脚本，来自会话。没有擅自补充成功率或实测分数。</p></article><article><span class="label">工程判断 / 待实测</span><p>路线取舍、素材策略、成本示例与演进建议。需要在你的输入、机器和预算上验证。</p></article></div><p class="small">原帖是应用作者的一手案例；不作为底层模型内部实现的证据。曾引用的 Vidu 旧文档路径本次返回“文档未找到”，已改用产品页和论文。第三方分支性能不冒充原模型性能。</p><div id="source-list" class="source-list"></div></section>
+ <footer><span>004 / DIGITAL HUMAN ATLAS</span><p>理解原理 → 保留证据 → 小步实验<br>数字人选型研究 · GitHub Pages 静态网页 · 本页不运行模型推理</p><a href="#overview">回到顶部 ↑</a></footer>
+</main>
+<dialog id="model-dialog" aria-labelledby="dialog-title"><button class="dialog-close" id="dialog-close" aria-label="关闭模型详情">×</button><div id="dialog-content"></div></dialog>
+<noscript><p class="noscript">请启用 JavaScript 查看路线选择、模型目录和计算器。静态正文仍可阅读；完整模型数据可在 data.js 或项目 README 中查阅。</p></noscript>
+</body></html>
