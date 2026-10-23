@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "note": "空白模板，不包含已验证证据；请填写后再使用。已核对原文只确认原文这样说，不代表内容已证实。",
+  "records": [],
+  "record_fields": {
+    "id": "证据唯一编号",
+    "topic": "工具、版本、事件或研究问题",
+    "claim": "原文的具体声明或观察，避免写成无条件事实",
+    "evidence_type": "官方声明 / 独立实测 / 用户反馈 / 本人测试",
+    "source_id": "来源池编号；新来源先登记",
+    "source_url": "原始链接",
+    "author": "作者或发布者",
+    "source_location": "可选：原文段落、表格或时间位置",
+    "published_at": "发布日期，未知则留空",
+    "accessed_at": "实际读取时间",
+    "version": "适用版本，未知则留空",
+    "conditions": "测试输入、设备、套餐、样本数和已知限制",
+    "origin_evidence_id": "转载引用哪条证据；原创可填自身编号；不明则留空",
+    "read_status": "未读正文 / 已核对原文",
+    "verification_status": "待验证 / 本人已测试；与读过原文分开",
+    "related_evidence_ids": "矛盾、支持或新版本关联的证据编号数组"
+  }
+}

@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>理解全景图 · AI 与效率工具信息体系</title>
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#e9ecdf;color:#243b35;font:13px/1.7 "Segoe UI","Microsoft YaHei",sans-serif}.toolbar{padding:13px 22px;background:#f7f5ef;display:flex;align-items:center;gap:12px 18px;flex-wrap:wrap;border-bottom:1px solid #cad2bc}.title{margin-right:auto}.title strong{display:block;font-size:16px}.title small{color:#6c7e63;font-size:11px}.controls{display:flex;align-items:center;gap:8px}button,a,select{font:inherit;color:#275e4d}button,.download,select{border:1px solid #bdc9ad;border-radius:4px;background:#f7f5ef;padding:7px 10px;cursor:pointer;text-decoration:none;font-size:11px}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #b58c40;outline-offset:3px}input{width:95px;accent-color:#275e4d}output{min-width:40px;text-align:center;font:11px monospace}.download{background:#275e4d;color:#fff;border-color:#275e4d}.download.secondary{background:transparent;color:#275e4d}.back{font-size:11px}.chapter-control{display:flex;align-items:center;gap:8px;font-size:11px}select{max-width:300px}.hint{margin:0;color:#6c7e63;font-size:11px}.viewer{height:calc(100dvh - var(--toolbar-height,130px));overflow:auto;padding:22px;scrollbar-gutter:stable;overscroll-behavior:contain}.canvas{width:fit-content;margin:auto;box-shadow:0 12px 35px #263e3522}img{display:block;width:1600px;height:auto;max-width:none}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}@media(max-width:600px){.toolbar{padding:12px;gap:9px}.title{width:100%}.title strong{font-size:15px}.title small{font-size:10px}.controls{gap:5px}input{width:64px}button,.download{padding:6px 8px}.viewer{padding:10px}.back{margin-left:auto}.chapter-control{width:100%}select{min-width:0;flex:1}.hint{font-size:10px}}@media print{.toolbar{display:none}.viewer{height:auto;padding:0;overflow:visible}.canvas{box-shadow:none;width:100%}img{width:100%!important}body{background:white}}
+  </style>
+  <script src="guide.js" defer></script>
+</head>
+<body>
+  <header class="toolbar" id="toolbar">
+    <div class="title"><strong>AI 与效率工具 · 我们的理解全景图</strong><small>价值 → 来源 → 处理 → 沉淀 → 日常使用 → 十二类应用 → 系统扩展 → 落地验证</small></div>
+    <div class="controls" role="group" aria-label="引导图缩放">
+      <button id="zoom-out" aria-label="缩小引导图">−</button><label class="sr-only" for="zoom">缩放比例</label><input type="range" min="15" max="150" value="70" id="zoom"><output id="zoom-value" for="zoom">70%</output><button id="zoom-in" aria-label="放大引导图">＋</button><button id="fit">适应宽度</button><button id="actual">100%</button>
+    </div>
+    <a class="download" href="source-to-evidence-guide.svg" download="AI信息体系理解全景图.svg">下载 SVG ↓</a>
+    <a class="download secondary" href="source-to-evidence-guide.png" download="AI信息体系理解全景图.png">下载 PNG ↓</a>
+    <a class="back" href="index.html#guide">返回研究页 ↗</a>
+    <div class="chapter-control"><label for="chapter">跳到章节</label><select id="chapter"><!-- CHAPTERS:START --><option value="0">全图开头</option><option value="282">01 我们总结的价值：积累来源、证据和处理方法</option><option value="1116">02 源有哪些：七个原始入口 + 三类按需补证入口</option><option value="2734">03 怎样处理：从一个真实任务出发，完成六阶段闭环</option><option value="3944">04 留下什么：三类记录 + 一个去重互补示例</option><option value="4746">05 日常怎么用：一个入口，按任务调动来源与证据</option><option value="5592">06 可以扩展到哪里：十二个方向，先以真实需求验证</option><option value="6922">07 怎样扩展系统：先跑通价值，再加采集、存储与自动化</option><option value="7736">08 怎样落地与判断有用：两周试跑，留下可核对的结果</option><!-- CHAPTERS:END --></select></div>
+    <p class="hint">一张完整长图 · 可上下滚动 · 小屏建议 100% 后拖动滚动条阅读 · 扩展方向为建议，尚未落地验证</p>
+  </header>
+  <main class="viewer" id="viewer" tabindex="0" aria-label="完整图浏览区，放大后可水平和垂直滚动">
+    <div class="canvas"><img id="guide-image" src="source-to-evidence-guide.svg" width="1600" height="8570" alt="AI与效率工具信息体系全景图：六项核心价值、七个原始来源与三类补证入口、六阶段闭环、证据记录与去重示例、日常提示词、十二类应用方向、自动化演进、两周起步和验证边界"></div>
+  </main>
+</body>
+</html>

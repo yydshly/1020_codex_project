@@ -1,0 +1,15 @@
+{
+  "id": 10,
+  "slug": "ai-evidence-workbench",
+  "name": "AI 信息工作台 · 从来源到证据与判断",
+  "summary": "以少数派、小众软件、V2EX、Buzzing、NewsNow、今日热榜、SoPilot 为入口，按需补充产品官网/更新日志、Issues 和 Show HN；读原文、追溯出处、合并同源转载、保留独立实测与反例，互补核验并沉淀证据。支持工具选型、工作流优化、更新跟踪、简报问答、趋势与选题、需求/竞品研究；可继续探索团队采用、垂直站、研究订阅和自动助手。目标是减少重复调研与遗漏，让判断可追溯、可更新、可复用。沿用已生成全景图；自动化与业务方向尚待实跑验证。",
+  "repo": "https://github.com/yydshly/1020_codex_project",
+  "repo_role": "本研究所在仓库；原帖及外部资料列于研究说明和网页来源区",
+  "source_url": "https://x.com/shenxiankk/status/2107493081146691700",
+  "source_label": "原帖来源",
+  "status": "研究中",
+  "cover": "assets/source-to-evidence-guide.svg",
+  "cover_alt": "AI 与效率工具信息体系全景图：六项价值、七个原始来源与三类补证入口、六阶段处理闭环、证据结构与去重示例、日常提示词、十二类应用方向、系统演进、两周起步与验证边界。",
+  "web": true,
+  "research_date": "2026-10-23"
+}

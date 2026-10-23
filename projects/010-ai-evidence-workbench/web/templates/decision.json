@@ -1,0 +1,15 @@
+{
+  "schema_version": 1,
+  "note": "判断与底层证据分开记录。不要把模型推断当作独立实测。",
+  "decisions": [],
+  "decision_fields": {
+    "id": "判断编号",
+    "task": "实际任务及约束",
+    "conclusion": "推荐与取舍",
+    "evidence_ids": "所引用的证据编号数组",
+    "applicable_conditions": "结论的适用条件",
+    "uncertainties": "未确认、冲突或缺失的证据",
+    "next_test": "最小验证步骤与通过条件",
+    "updated_at": "本次更新日期"
+  }
+}

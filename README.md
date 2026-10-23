@@ -18,6 +18,7 @@
 | 005 | 角色与故事工坊 · 从定制角色到短片 | 以「定制角色＋故事」为核心，通过分镜、场景视觉、图生视频与配音剪辑，把情绪转成可观看的短片，积累可延续的角色、经历与素材。阿灯样例已验证制作路线；原帖底层技术仍未确认。 | 已完成 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/005-stickman-story-lab/) · [研究说明](projects/005-stickman-story-lab/README.md) · [原帖来源](https://x.com/Jason23818126/status/2112030757724340314) |
 | 006 | 独立站实践手册 · 从需求到第一位用户 | 从“找新词建站”转向“为具体用户解决重复任务”：先发现需求、找到用户与渠道，再比较竞品、验证样例，完成最小产品和低预算部署，最终用真实交付、复用与付费检验价值。完整引导图帮助个人安排投入、判断下一步；部署有成熟路线，产品与获客仍待验证。 | 研究中 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/006-independent-site-playbook/) · [研究说明](projects/006-independent-site-playbook/README.md) · [yydshly/1020_codex_project](https://github.com/yydshly/1020_codex_project) |
 | 008 | 产品发现平台图谱 · 从发布到选择 | 研究六个产品发现与创业交流平台：Product Hunt 用新品发布、榜单、评论和长期产品主页连接创作者与用户，帮助找灵感、看竞品和组织发布；Uneed 提供工具目录、排期与滚动榜单，增加产品被发现的机会；BetaList 筛选早期项目，帮助招募注册者和测试用户；AlternativeTo 按软件替代关系与属性辅助选型，帮助比较竞品和寻找差异；Indie Hackers 分享创业过程、获客与定价经验，帮助减少经营试错；新趣集支持中文产品发布、发现与交流，降低表达和反馈的语言成本。结合六个平台的参与方式、费用、语言和使用阶段，以生成的总览图串起找方向、看竞品、找人试用、发布交流与学习经营，并用真实任务、主动复用、付费和成本判断价值；平台热度不等于市场成立。 | 已完成 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/008-product-platform-atlas/) · [研究说明](projects/008-product-platform-atlas/README.md) · [Product Hunt · 研究起点](https://www.producthunt.com/) |
+| 010 | AI 信息工作台 · 从来源到证据与判断 | 以少数派、小众软件、V2EX、Buzzing、NewsNow、今日热榜、SoPilot 为入口，按需补充产品官网/更新日志、Issues 和 Show HN；读原文、追溯出处、合并同源转载、保留独立实测与反例，互补核验并沉淀证据。支持工具选型、工作流优化、更新跟踪、简报问答、趋势与选题、需求/竞品研究；可继续探索团队采用、垂直站、研究订阅和自动助手。目标是减少重复调研与遗漏，让判断可追溯、可更新、可复用。沿用已生成全景图；自动化与业务方向尚待实跑验证。 | 研究中 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/010-ai-evidence-workbench/) · [研究说明](projects/010-ai-evidence-workbench/README.md) · [原帖来源](https://x.com/shenxiankk/status/2107493081146691700) |
 
 ### 001 · cyber-xiaowan · AI 女友的过渡阶段参考
 
@@ -74,6 +75,14 @@
 六个平台一图总览：定位、核心能力、我怎么用、对我价值、适用对象和参与条件；Product Hunt 的关键理解、实际使用顺序与市场验证依据。
 
 研究六个产品发现与创业交流平台：Product Hunt 用新品发布、榜单、评论和长期产品主页连接创作者与用户，帮助找灵感、看竞品和组织发布；Uneed 提供工具目录、排期与滚动榜单，增加产品被发现的机会；BetaList 筛选早期项目，帮助招募注册者和测试用户；AlternativeTo 按软件替代关系与属性辅助选型，帮助比较竞品和寻找差异；Indie Hackers 分享创业过程、获客与定价经验，帮助减少经营试错；新趣集支持中文产品发布、发现与交流，降低表达和反馈的语言成本。结合六个平台的参与方式、费用、语言和使用阶段，以生成的总览图串起找方向、看竞品、找人试用、发布交流与学习经营，并用真实任务、主动复用、付费和成本判断价值；平台热度不等于市场成立。
+
+### 010 · AI 信息工作台 · 从来源到证据与判断
+
+<a href="https://yydshly.github.io/1020_codex_project/projects/010-ai-evidence-workbench/"><img src="projects/010-ai-evidence-workbench/assets/source-to-evidence-guide.svg" alt="AI 与效率工具信息体系全景图：六项价值、七个原始来源与三类补证入口、六阶段处理闭环、证据结构与去重示例、日常提示词、十二类应用方向、系统演进、两周起步与验证边界。" width="720"></a>
+
+AI 与效率工具信息体系全景图：六项价值、七个原始来源与三类补证入口、六阶段处理闭环、证据结构与去重示例、日常提示词、十二类应用方向、系统演进、两周起步与验证边界。
+
+以少数派、小众软件、V2EX、Buzzing、NewsNow、今日热榜、SoPilot 为入口，按需补充产品官网/更新日志、Issues 和 Show HN；读原文、追溯出处、合并同源转载、保留独立实测与反例，互补核验并沉淀证据。支持工具选型、工作流优化、更新跟踪、简报问答、趋势与选题、需求/竞品研究；可继续探索团队采用、垂直站、研究订阅和自动助手。目标是减少重复调研与遗漏，让判断可追溯、可更新、可复用。沿用已生成全景图；自动化与业务方向尚待实跑验证。
 <!-- PROJECTS:END -->
 
 ## 仓库结构

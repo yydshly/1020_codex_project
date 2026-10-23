@@ -1,0 +1,75 @@
+{
+  "reviewed_at": "2026-10-23",
+  "sources": [
+    {
+      "id": "S03",
+      "name": "少数派",
+      "url": "https://sspai.com/",
+      "kind": "编辑与作者内容",
+      "collected_from": "编辑和社区作者发表的工具体验、教程与工作流文章。",
+      "observe": "别人怎样用 AI 和软件完成工作，哪些用法经过具体测试。",
+      "followup": "读测试过程，提取步骤、版本、样本和限制，再用自己的任务复验。",
+      "verification": "已查看本站内容与实测文章；文章质量和独立性仍需逐篇判断。"
+    },
+    {
+      "id": "S02",
+      "name": "小众软件",
+      "url": "https://www.appinn.com/",
+      "kind": "编辑介绍与用户发现",
+      "collected_from": "编辑发布的软件介绍和更新消息，以及论坛用户分享的新发现。",
+      "observe": "有哪些没注意到的 AI 小工具、桌面软件和替代品。",
+      "followup": "先列入候选，再查官网功能、费用和独立实测；介绍本身不当效果证明。",
+      "verification": "已查看本站内容；并非每篇工具介绍都包含独立测试。"
+    },
+    {
+      "id": "S04",
+      "name": "V2EX",
+      "url": "https://www.v2ex.com/",
+      "kind": "社区原生讨论",
+      "collected_from": "社区用户发布的帖子和回复，也包含开发者自荐。",
+      "observe": "大家遇到什么问题，实际使用有哪些限制、成本和替代办法。",
+      "followup": "读上下文，区分自荐与用户反馈；核对版本环境，再找独立反馈或 Issues 复核。",
+      "verification": "已查看本站讨论与节点；个例反馈不等于普遍故障。"
+    },
+    {
+      "id": "S07",
+      "name": "Buzzing",
+      "url": "https://www.buzzing.cc/",
+      "kind": "海外聚合与中文导读",
+      "collected_from": "HN、Reddit、Product Hunt 等海外站点的热门标题及原文链接。",
+      "observe": "国外正在讨论哪些 AI 动态、新工具、新项目和使用方法。",
+      "followup": "点回原站读正文与评论；Buzzing 和原站算同一条线索，避免重复计证据。",
+      "verification": "已查看本站的栏目与内容；中文标题导读不能替代原文核验。"
+    },
+    {
+      "id": "S08",
+      "name": "NewsNow",
+      "url": "https://newsnow.busiyi.world/",
+      "kind": "跨平台聚合观察",
+      "collected_from": "聚合多个站点的热门或最新条目；原帖举例有知乎、微博、HN、GitHub。",
+      "observe": "哪些话题正在受关注，有没有值得继续调查的 AI 或工具线索。",
+      "followup": "回到原始帖子或项目读取内容，再查官网和实测；与原站及其他热榜同源去重。",
+      "verification": "官方项目确认聚合定位；本轮网页未返回可读榜单，示例平台据原帖，实时可用范围待核实。"
+    },
+    {
+      "id": "S09",
+      "name": "今日热榜",
+      "url": "https://tophub.today/",
+      "kind": "热榜聚合 · 当前覆盖待核实",
+      "collected_from": "按原帖介绍，汇集资讯、社区、视频等多个站点的热门榜单。",
+      "observe": "不同平台都在关注什么，话题热度和传播方向有什么差异。",
+      "followup": "沿话题回原站查全文与独立证据；与 NewsNow 重复的话题合并观察。",
+      "verification": "本次访问返回 503，说明按原帖整理；具体栏目和当前覆盖未核实。"
+    },
+    {
+      "id": "S10",
+      "name": "SoPilot 起爆帖",
+      "url": "https://sopilot.net/zh/hot-tweets",
+      "kind": "X 热帖观察入口",
+      "collected_from": "从 X 筛选正在快速升温、可能爆火的帖子，展示互动数据与预测。",
+      "observe": "AI 圈正在关注什么工具或观点，哪些讨论正在升温。",
+      "followup": "打开 X 原帖读上下文，再补官网、实测和问题反馈；热度和预测不当真实性证明。",
+      "verification": "已查看本站说明和当前列表；起爆与浏览量预测的准确性未验证。"
+    }
+  ]
+}
