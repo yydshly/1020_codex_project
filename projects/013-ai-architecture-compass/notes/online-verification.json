@@ -1,0 +1,178 @@
+{
+  "verified_at": "2026-10-23T09:48:32.024934+00:00",
+  "content_commit": "778c5fcbd700f3b4e488752c20ec53ca124647c1",
+  "deployment_run": "https://github.com/yydshly/1020_codex_project/actions/runs/39934355843",
+  "results": [
+    {
+      "path": "projects/013-ai-architecture-compass/app.js",
+      "url": "https://yydshly.github.io/1020_codex_project/projects/013-ai-architecture-compass/app.js",
+      "status": 200,
+      "bytes": 18041,
+      "sha256": "47a3eafbc88c6fe801b8abcfe88e5ca0f043f90d418e31b1b5c39d946f86d48c",
+      "expected_sha256": "47a3eafbc88c6fe801b8abcfe88e5ca0f043f90d418e31b1b5c39d946f86d48c",
+      "matches": true
+    },
+    {
+      "path": "projects/013-ai-architecture-compass/architecture-guide.svg",
+      "url": "https://yydshly.github.io/1020_codex_project/projects/013-ai-architecture-compass/architecture-guide.svg",
+      "status": 200,
+      "bytes": 113295,
+      "sha256": "ac16865be591db0fc6f9b985fc66a7fc8e074f89134f56d27556abf3cc30ef37",
+      "expected_sha256": "ac16865be591db0fc6f9b985fc66a7fc8e074f89134f56d27556abf3cc30ef37",
+      "matches": true
+    },
+    {
+      "path": "projects/013-ai-architecture-compass/architecture-overview.png",
+      "url": "https://yydshly.github.io/1020_codex_project/projects/013-ai-architecture-compass/architecture-overview.png",
+      "status": 200,
+      "bytes": 1629827,
+      "sha256": "1ed8d03c7e220f1ceb5584077041bb123209efa6e8151c32a250baff57b6693b",
+      "expected_sha256": "1ed8d03c7e220f1ceb5584077041bb123209efa6e8151c32a250baff57b6693b",
+      "matches": true
+    },
+    {
+      "path": "projects/013-ai-architecture-compass/decision-model.js",
+      "url": "https://yydshly.github.io/1020_codex_project/projects/013-ai-architecture-compass/decision-model.js",
+      "status": 200,
+      "bytes": 5515,
+      "sha256": "ec0da15911f2d6045529f410e46f6567d342d859567ecd6171c4ae92b23dcbc1",
+      "expected_sha256": "ec0da15911f2d6045529f410e46f6567d342d859567ecd6171c4ae92b23dcbc1",
+      "matches": true
+    },
+    {
+      "path": "projects/013-ai-architecture-compass/guide.css",
+      "url": "https://yydshly.github.io/1020_codex_project/projects/013-ai-architecture-compass/guide.css",
+      "status": 200,
+      "bytes": 8245,
+      "sha256": "d4966503fe857f1117d4a98145b4d67dc64ff79ed075b110923fc2d44076754d",
+      "expected_sha256": "d4966503fe857f1117d4a98145b4d67dc64ff79ed075b110923fc2d44076754d",
+      "matches": true
+    },
+    {
+      "path": "projects/013-ai-architecture-compass/guide.html",
+      "url": "https://yydshly.github.io/1020_codex_project/projects/013-ai-architecture-compass/guide.html",
+      "status": 200,
+      "bytes": 47429,
+      "sha256": "96c4804c4a9d6ff81f5250f055393c51f2e1388277a9684e6a9b352742e2ff46",
+      "expected_sha256": "96c4804c4a9d6ff81f5250f055393c51f2e1388277a9684e6a9b352742e2ff46",
+      "matches": true
+    },
+    {
+      "path": "projects/013-ai-architecture-compass/guide.js",
+      "url": "https://yydshly.github.io/1020_codex_project/projects/013-ai-architecture-compass/guide.js",
+      "status": 200,
+      "bytes": 8284,
+      "sha256": "17d046108409026d570425301633e4299d960da4cdc3ce27f6987952cc35c9ef",
+      "expected_sha256": "17d046108409026d570425301633e4299d960da4cdc3ce27f6987952cc35c9ef",
+      "matches": true
+    },
+    {
+      "path": "projects/013-ai-architecture-compass/index.html",
+      "url": "https://yydshly.github.io/1020_codex_project/projects/013-ai-architecture-compass/index.html",
+      "status": 200,
+      "bytes": 118518,
+      "sha256": "1ecee5bc9a55c7bb1874556698fafad231581dde9e4c09fedc612db83c8ea8e5",
+      "expected_sha256": "1ecee5bc9a55c7bb1874556698fafad231581dde9e4c09fedc612db83c8ea8e5",
+      "matches": true
+    },
+    {
+      "path": "projects/013-ai-architecture-compass/mark.svg",
+      "url": "https://yydshly.github.io/1020_codex_project/projects/013-ai-architecture-compass/mark.svg",
+      "status": 200,
+      "bytes": 272,
+      "sha256": "fbcf722fcb9594ed64f1473a68212d2de3891f846e6410a68c679c4866c60f4b",
+      "expected_sha256": "fbcf722fcb9594ed64f1473a68212d2de3891f846e6410a68c679c4866c60f4b",
+      "matches": true
+    },
+    {
+      "path": "projects/013-ai-architecture-compass/overview.css",
+      "url": "https://yydshly.github.io/1020_codex_project/projects/013-ai-architecture-compass/overview.css",
+      "status": 200,
+      "bytes": 5408,
+      "sha256": "418c89f5e534b3e0fa230fe41ff49fc95563efcd38a02bd5e9b2699d941d882a",
+      "expected_sha256": "418c89f5e534b3e0fa230fe41ff49fc95563efcd38a02bd5e9b2699d941d882a",
+      "matches": true
+    },
+    {
+      "path": "projects/013-ai-architecture-compass/overview.html",
+      "url": "https://yydshly.github.io/1020_codex_project/projects/013-ai-architecture-compass/overview.html",
+      "status": 200,
+      "bytes": 8771,
+      "sha256": "e1d752da8d9a5544cbb49ec1e8ed39686958be96f24dc7df1e7f0fcf04c09ab9",
+      "expected_sha256": "e1d752da8d9a5544cbb49ec1e8ed39686958be96f24dc7df1e7f0fcf04c09ab9",
+      "matches": true
+    },
+    {
+      "path": "projects/013-ai-architecture-compass/style.css",
+      "url": "https://yydshly.github.io/1020_codex_project/projects/013-ai-architecture-compass/style.css",
+      "status": 200,
+      "bytes": 32804,
+      "sha256": "3e08e62709da192a921085f5c5b5151d65c2745282bfc7a5291559aba02144ec",
+      "expected_sha256": "3e08e62709da192a921085f5c5b5151d65c2745282bfc7a5291559aba02144ec",
+      "matches": true
+    },
+    {
+      "path": "projects/013-ai-architecture-compass/templates/ADR-001.md",
+      "url": "https://yydshly.github.io/1020_codex_project/projects/013-ai-architecture-compass/templates/ADR-001.md",
+      "status": 200,
+      "bytes": 1429,
+      "sha256": "3af16bb868f0375c98a991b9e29153e5525ee66a7caabee59b828acaff416d43",
+      "expected_sha256": "3af16bb868f0375c98a991b9e29153e5525ee66a7caabee59b828acaff416d43",
+      "matches": true
+    },
+    {
+      "path": "projects/013-ai-architecture-compass/templates/AGENTS.md",
+      "url": "https://yydshly.github.io/1020_codex_project/projects/013-ai-architecture-compass/templates/AGENTS.md",
+      "status": 200,
+      "bytes": 2151,
+      "sha256": "ce979c07077c66d8cac8aac2cc53601fa8d2488ac48fed8003e367eb2daf918a",
+      "expected_sha256": "ce979c07077c66d8cac8aac2cc53601fa8d2488ac48fed8003e367eb2daf918a",
+      "matches": true
+    },
+    {
+      "path": "projects/013-ai-architecture-compass/templates/architecture.md",
+      "url": "https://yydshly.github.io/1020_codex_project/projects/013-ai-architecture-compass/templates/architecture.md",
+      "status": 200,
+      "bytes": 2398,
+      "sha256": "d05d6e26e4e939e87743926dd7d724115f8d670434daa5f738fbbf60c3bb31b6",
+      "expected_sha256": "d05d6e26e4e939e87743926dd7d724115f8d670434daa5f738fbbf60c3bb31b6",
+      "matches": true
+    },
+    {
+      "path": "projects/013-ai-architecture-compass/templates/review-record.md",
+      "url": "https://yydshly.github.io/1020_codex_project/projects/013-ai-architecture-compass/templates/review-record.md",
+      "status": 200,
+      "bytes": 1953,
+      "sha256": "9776798881835c8657b544b6ff3e295c43a5effa5c9f873a2e8b6f8085893b5d",
+      "expected_sha256": "9776798881835c8657b544b6ff3e295c43a5effa5c9f873a2e8b6f8085893b5d",
+      "matches": true
+    },
+    {
+      "path": "projects/013-ai-architecture-compass/templates/task-card.md",
+      "url": "https://yydshly.github.io/1020_codex_project/projects/013-ai-architecture-compass/templates/task-card.md",
+      "status": 200,
+      "bytes": 1976,
+      "sha256": "c72344eeee21dae8554c9975bc10b14c11008208eb23ef7f4b652a3bf8c407f2",
+      "expected_sha256": "c72344eeee21dae8554c9975bc10b14c11008208eb23ef7f4b652a3bf8c407f2",
+      "matches": true
+    },
+    {
+      "path": "covers/013-ai-architecture-compass.png",
+      "url": "https://yydshly.github.io/1020_codex_project/covers/013-ai-architecture-compass.png",
+      "status": 200,
+      "bytes": 1629827,
+      "sha256": "1ed8d03c7e220f1ceb5584077041bb123209efa6e8151c32a250baff57b6693b",
+      "expected_sha256": "1ed8d03c7e220f1ceb5584077041bb123209efa6e8151c32a250baff57b6693b",
+      "matches": true
+    },
+    {
+      "path": "index.html",
+      "url": "https://yydshly.github.io/1020_codex_project/index.html",
+      "status": 200,
+      "bytes": 15237,
+      "sha256": "e413e8b4a2a3b837a0b96e1a3cba1c017015ae099deebc08b0b9e8e68ca198e1",
+      "expected_sha256": "e413e8b4a2a3b837a0b96e1a3cba1c017015ae099deebc08b0b9e8e68ca198e1",
+      "matches": true
+    }
+  ]
+}
