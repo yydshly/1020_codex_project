@@ -5,8 +5,8 @@
   "summary": "六个开源项目分别解决语音合成、本地内容检索、资料转播客、素材混剪、长视频选段和循环研究，重点看清模型判断与程序执行的分工。",
   "repo": "https://github.com/hexgrad/kokoro",
   "status": "研究中",
-  "cover": "assets/tool-map.svg",
-  "cover_alt": "六个 AI 工具的输入输出：查找素材、研究资料、配音、混剪、长视频切片与播客改编。按任务选用，实际效果待验证。",
+  "cover": "assets/six-tools-summary.jpg",
+  "cover_alt": "六个工具，从模型能力到可用产品：汇总每个工具的能力、原理、我们的理解、意义与使用场景，以及对学习和构建产品的价值。",
   "web": true,
   "repositories": [
     "https://github.com/hexgrad/kokoro",

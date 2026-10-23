@@ -24,7 +24,7 @@
 
 第六篇 [Local Deep Research · 问题怎样变成可核查的报告](web/index.html#/tool/ldr) 于 2026-10-23 完成深入补充：按轮次与 Agent 策略对照、搜索和阅读分工、停止条件、引用来源，以及可切换研究过程与证据练习。六篇均已有深入讲解，本机实测仍未开展。
 
-![六个工具的输入输出与工作流分支](assets/tool-map.svg)
+[![六个工具，从模型能力到可用产品：能力、原理、理解、意义、场景与个人价值总图](assets/six-tools-summary.jpg)](assets/six-tools-summary.jpg)
 
 ## 每个工具的一句话：本质能力与原理
 

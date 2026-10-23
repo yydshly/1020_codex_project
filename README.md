@@ -25,9 +25,9 @@
 
 ### 002 · 六个 AI 内容工具的原理与实践
 
-<a href="https://yydshly.github.io/1020_codex_project/projects/002-ai-content-toolkit/"><img src="projects/002-ai-content-toolkit/assets/tool-map.svg" alt="六个 AI 工具的输入输出：查找素材、研究资料、配音、混剪、长视频切片与播客改编。按任务选用，实际效果待验证。" width="720"></a>
+<a href="https://yydshly.github.io/1020_codex_project/projects/002-ai-content-toolkit/"><img src="projects/002-ai-content-toolkit/assets/six-tools-summary.jpg" alt="六个工具，从模型能力到可用产品：汇总每个工具的能力、原理、我们的理解、意义与使用场景，以及对学习和构建产品的价值。" width="720"></a>
 
-六个 AI 工具的输入输出：查找素材、研究资料、配音、混剪、长视频切片与播客改编。按任务选用，实际效果待验证。
+六个工具，从模型能力到可用产品：汇总每个工具的能力、原理、我们的理解、意义与使用场景，以及对学习和构建产品的价值。
 
 六个开源项目分别解决语音合成、本地内容检索、资料转播客、素材混剪、长视频选段和循环研究，重点看清模型判断与程序执行的分工。
 

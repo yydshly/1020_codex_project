@@ -204,7 +204,8 @@ def build(projects):
             image_name = f"{name}{cover.suffix.lower()}"
             (output / "covers").mkdir(exist_ok=True)
             shutil.copyfile(cover, output / "covers" / image_name)
-            image = f'<img src="covers/{image_name}" alt="{html.escape(p["cover_alt"], quote=True)}" loading="lazy">'
+            image = (f'<a class="cover-link" href="covers/{image_name}" title="点击查看完整引导图">'
+                     f'<img src="covers/{image_name}" alt="{html.escape(p["cover_alt"], quote=True)}" loading="lazy"></a>')
         demo = f'<a class="live-link" href="projects/{name}/">在线研究页 →</a>' if p["web"] else ""
         sources = "".join(
             f'<a href="{html.escape(url, quote=True)}">{html.escape(urlparse(url).path.strip("/"))}</a>'
@@ -234,7 +235,7 @@ a{color:#165e55;text-underline-offset:4px}a:focus-visible{outline:3px solid #165
 .meta{font-size:13px;letter-spacing:.1em;color:#50625e}.grid{display:grid;
 grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px}
 article{background:white;border:1px solid #dddeda;padding:24px;border-radius:12px;
-overflow-wrap:anywhere}article img{width:100%;aspect-ratio:16/9;object-fit:contain;background:#f7f6f2}
+overflow-wrap:anywhere}.cover-link{display:block}article img{display:block;width:100%;height:auto;background:#f7f6f2}
 nav{display:flex;flex-wrap:wrap;gap:16px}.empty{padding:36px 0;border-top:1px solid #ccc}
 .live-link{font-weight:700}
 .tool-summaries{font-size:14px;margin:24px 0}.tool-summaries>div{margin:15px 0;padding-top:12px;border-top:1px solid #e3e6df}
