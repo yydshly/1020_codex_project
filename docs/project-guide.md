@@ -38,6 +38,8 @@ python scripts/projects.py new example-project --name "项目名称" --repo "htt
 
 一个研究子项目涉及多个上游工具时，可增加 `repositories`（实际 GitHub 仓库 URL 数组）与 `tool_summaries`（每项包含 `name`、`repo`、`summary`）。每条摘要用一句话解释该工具的本质能力和原理；来源必须属于 `repositories`，摘要应覆盖全部来源。保留 `repo` 作为兼容字段，其值必须出现在数组中。README 索引与在线索引均展示所有来源和逐工具摘要；未提供这些可选字段的单仓库项目保持原有展示。
 
+研究来源是帖子或普通网页、而 `repo` 只是本研究所在仓库时，可填写 `source_url`（原网页的 HTTPS 地址）和 `source_label`（例如“原帖来源”，默认“原始来源”）。README 与在线索引的来源入口会优先展示这个链接，避免把研究仓库误标为原始来源；未配置时继续展示 `repo` / `repositories`。
+
 ## 同步与校验
 
 ```bash

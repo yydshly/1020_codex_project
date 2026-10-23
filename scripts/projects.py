@@ -42,6 +42,13 @@ def repository_urls(project):
     return project.get("repositories", [project["repo"]])
 
 
+def source_links(project):
+    """Use an explicit original page when the research repository is not the source."""
+    if "source_url" in project:
+        return [(project.get("source_label", "原始来源"), project["source_url"])]
+    return [(urlparse(url).path.strip("/"), url) for url in repository_urls(project)]
+
+
 def markdown_summary(project):
     parts = [text(project["summary"])]
     parts.extend(f"**{text(tool['name'])}**：{text(tool['summary'])}"
@@ -72,6 +79,15 @@ def load_projects():
         url = urlparse(p["repo"])
         require(url.scheme == "https" and url.netloc == "github.com" and len(url.path.strip("/").split("/")) >= 2,
                 "repo 必须为 GitHub 仓库的 HTTPS 地址")
+        if "source_url" in p:
+            require(isinstance(p["source_url"], str), "source_url 必须为 HTTPS 地址")
+            source = urlparse(p["source_url"])
+            require(source.scheme == "https" and source.hostname and not source.username and not source.password,
+                    "source_url 必须为不含登录信息的 HTTPS 地址")
+        if "source_label" in p:
+            require("source_url" in p, "source_label 必须配合 source_url 使用")
+            require(isinstance(p["source_label"], str) and p["source_label"].strip(),
+                    "source_label 必须为非空字符串")
         repositories = repository_urls(p)
         require(isinstance(repositories, list) and repositories, "repositories 必须为非空数组")
         for source in repositories:
@@ -126,8 +142,7 @@ def catalog(projects):
     ]
     for p in projects:
         path = f"projects/{p['directory'].name}"
-        sources = " · ".join(f"[{text(urlparse(url).path.strip('/'))}]({url})"
-                             for url in repository_urls(p))
+        sources = " · ".join(f"[{text(label)}]({url})" for label, url in source_links(p))
         links = f"[研究说明]({path}/README.md) · {sources}"
         if p["web"]:
             links = f"[在线研究页]({PAGES}/{path}/) · " + links
@@ -208,8 +223,8 @@ def build(projects):
                      f'<img src="covers/{image_name}" alt="{html.escape(p["cover_alt"], quote=True)}" loading="lazy"></a>')
         demo = f'<a class="live-link" href="projects/{name}/">在线研究页 →</a>' if p["web"] else ""
         sources = "".join(
-            f'<a href="{html.escape(url, quote=True)}">{html.escape(urlparse(url).path.strip("/"))}</a>'
-            for url in repository_urls(p))
+            f'<a href="{html.escape(url, quote=True)}">{html.escape(label)}</a>'
+            for label, url in source_links(p))
         summaries = "".join(
             f'<div><dt>{html.escape(tool["name"])}</dt><dd>{html.escape(tool["summary"])}</dd></div>'
             for tool in p.get("tool_summaries", []))

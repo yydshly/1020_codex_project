@@ -2,6 +2,7 @@ import argparse
 import importlib.util
 import json
 from pathlib import Path
+import re
 import tempfile
 import unittest
 
@@ -88,6 +89,38 @@ class CatalogTests(unittest.TestCase):
         (output / "stale.html").touch()
         projects.build(projects.load_projects())
         self.assertFalse((output / "stale.html").exists())
+
+    def test_explicit_source_is_the_last_link_in_readme_and_project_card(self):
+        directory = self.add(5, "stickman-story-lab", web=True)
+        (directory / "web").mkdir()
+        (directory / "web/index.html").write_text("<h1>Story lab</h1>", encoding="utf-8")
+        metadata = directory / "project.json"
+        data = json.loads(metadata.read_text(encoding="utf-8"))
+        data["repo"] = "https://github.com/yydshly/1020_codex_project"
+        data["source_url"] = "https://x.com/Jason23818126/status/2112030757724340314"
+        data["source_label"] = "原帖来源"
+        metadata.write_text(json.dumps(data), encoding="utf-8")
+
+        entries = projects.load_projects()
+        projects.sync(entries)
+        readme = (projects.ROOT / "README.md").read_text(encoding="utf-8")
+        row = next(line for line in readme.splitlines() if line.startswith("| 005 |"))
+        markdown_links = re.findall(r"\[([^\]]+)\]\(([^)]+)\)", row)
+        self.assertEqual(markdown_links[-1], (data["source_label"], data["source_url"]))
+        self.assertEqual(len(markdown_links), 3)
+        self.assertNotIn(data["repo"], [url for _, url in markdown_links])
+
+        projects.build(entries)
+        page = (projects.ROOT / "_site/index.html").read_text(encoding="utf-8")
+        article = re.search(r"<article\b[^>]*>(.*?)</article>", page, re.DOTALL)
+        self.assertIsNotNone(article)
+        navigation = re.search(r"<nav>(.*?)</nav>", article.group(1), re.DOTALL)
+        self.assertIsNotNone(navigation)
+        card_links = re.findall(r'<a\b[^>]*href="([^"]+)"[^>]*>(.*?)</a>',
+                                navigation.group(1), re.DOTALL)
+        self.assertEqual(card_links[-1], (data["source_url"], data["source_label"]))
+        self.assertEqual(len(card_links), 3)
+        self.assertNotIn(data["repo"], [url for url, _ in card_links])
 
     def test_multiple_sources_and_tool_summaries_render_in_both_indexes(self):
         directory = self.add(2, "toolkit")
