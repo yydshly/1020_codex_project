@@ -1,0 +1,3 @@
+# Keep the existing generated guide byte-for-byte across Windows/Linux checkout.
+assets/independent-site-guide.svg -text
+web/independent-site-guide.svg -text

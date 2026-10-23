@@ -1,0 +1,13 @@
+{
+  "id": 6,
+  "slug": "independent-site-playbook",
+  "name": "独立站实践手册 · 从需求到第一位用户",
+  "summary": "从“找新词建站”转向“为具体用户解决重复任务”：先发现需求、找到用户与渠道，再比较竞品、验证样例，完成最小产品和低预算部署，最终用真实交付、复用与付费检验价值。完整引导图帮助个人安排投入、判断下一步；部署有成熟路线，产品与获客仍待验证。",
+  "repo": "https://github.com/yydshly/1020_codex_project",
+  "status": "研究中",
+  "cover": "assets/independent-site-guide.svg",
+  "cover_alt": "独立站完整引导图：九阶段串联目标约束、需求与渠道、竞争与价值、样例、市场形态、开发、采购部署、首批使用、复用收费；每阶段列动作、产物、通过条件、失败回路与个人参考价值，并补充案例、预算与证据边界。",
+  "web": true,
+  "research_date": "2026-10-23",
+  "repo_role": "本研究所在仓库；外部需求证据与供应商来源见网页与 notes/research.md"
+}

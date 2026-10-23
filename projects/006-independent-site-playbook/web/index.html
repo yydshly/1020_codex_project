@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="把独立站探索整理成可验证的路线：需求发现、用户与渠道、竞品差异、交付样例、最小产品、低预算部署，再以真实使用、复用和付费检验价值。完整引导图帮助个人选题、安排投入和定位问题。">
+  <meta name="theme-color" content="#f6f5f0">
+  <title>独立站实践手册 · 从需求到第一位用户</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./content.js" defer></script>
+  <script src="./app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+  <div class="reading-progress" aria-hidden="true"><span id="reading-progress"></span></div>
+  <button class="scrim" id="scrim" aria-label="关闭目录" hidden></button>
+  <aside class="sidebar" id="sidebar" aria-label="手册目录">
+    <a class="brand" href="#overview"><span class="brand-icon" aria-hidden="true">↗</span><span>独立站实践手册<small>THE SOLO WEBSITE FIELDNOTES</small></span></a>
+    <div class="sidebar-label">研究集 / PROJECT 006</div>
+    <nav id="toc">
+      <a href="#overview" class="nav-link active"><span>00</span>先看我们的共识</a>
+      <a href="#guide" class="nav-link"><span>图</span>完整流程与参考价值</a>
+      <a href="#model" class="nav-link"><span>01</span>理解整门生意</a>
+      <a href="#directions" class="nav-link"><span>02</span>我们考虑的方向</a>
+      <a href="#opportunity" class="nav-link"><span>03</span>素材整理的价值</a>
+      <a href="#evidence" class="nav-link"><span>04</span>证据与竞争格局</a>
+      <a href="#acquisition" class="nav-link"><span>05</span>第一批用户在哪</a>
+      <a href="#workflow" class="nav-link"><span>06</span>跑通第一轮流程</a>
+      <a href="#deployment" class="nav-link"><span>07</span>网站如何交付</a>
+      <a href="#procurement" class="nav-link"><span>08</span>采购与黑五安排</a>
+      <a href="#budget" class="nav-link"><span>09</span>算一笔起步预算</a>
+      <a href="#questions" class="nav-link"><span>10</span>常见误解与解释</a>
+      <a href="#sources" class="nav-link"><span>11</span>来源与研究边界</a>
+    </nav>
+    <div class="sidebar-note"><span class="status-dot"></span>持续研究 · 尚未商业验证<p>事实有来源，建议有前提。<br>用真实任务更新这份手册。</p></div>
+    <a class="back-link" href="https://yydshly.github.io/1020_codex_project/">← 返回项目研究集 ↗</a>
+  </aside>
+  <div class="workspace">
+    <header class="topbar">
+      <button class="menu-button" id="menu-button" aria-controls="sidebar" aria-expanded="false" aria-label="打开章节目录">☰</button>
+      <span class="breadcrumb">研究 / 商业实践 <span>/ 006</span></span>
+      <label class="search-box"><span aria-hidden="true">⌕</span><input id="search" type="search" placeholder="搜索需求、获客、部署…" aria-label="搜索手册章节"><kbd>/</kbd></label>
+      <button class="text-button" id="print-button" title="打印或保存为 PDF">打印手册 <span aria-hidden="true">↗</span></button>
+    </header>
+    <main id="main">
+      <p id="search-status" class="search-status" role="status" hidden></p>
+      <noscript><div class="callout">本手册使用本地 JavaScript 展开研究内容与交互，请启用 JavaScript。研究原文和运行说明也保存在此子项目的 README 与 notes/research.md 中。</div></noscript>
+      <section class="chapter hero" id="overview" aria-labelledby="hero-title">
+        <div class="eyebrow"><span class="tiny-mark"></span>从想法到真实使用 · 个人长期经营</div>
+        <div class="hero-grid"><div><h1 id="hero-title">从一个想法，<br>走到<span class="accent-text">第一位用户。</span></h1><p class="hero-intro">这个库让我们把独立站看成一条可验证的经营流程：发现需求与用户，比较竞品、验证样例，再开发部署，以真实交付、复用和付费检验价值。用一张完整图，帮助个人选题、安排投入、判断下一步。</p><div class="hero-actions"><a class="primary-button" href="./guide.html">查看完整引导图 <span aria-hidden="true">↗</span></a><a class="secondary-link" href="#workflow">第一轮行动路线 →</a></div></div>
+        <div class="consensus-note"><div class="note-top"><span>当前核心共识</span><span aria-hidden="true">↗</span></div><h2>部署有可行路线。<br>项目价值仍需验证。</h2><p>我们要确认的是：有谁需要、如何找到、为什么选择、是否还会回来。</p><div class="note-bottom"><span>研究截至</span><strong>2026.10.23</strong></div></div></div>
+        <div class="value-chain" aria-label="项目价值的四个环节"><div><span>01 / 需求</span><strong>问题反复发生</strong><small>找到真实任务与现有做法</small></div><b aria-hidden="true">→</b><div><span>02 / 渠道</span><strong>用户可以触达</strong><small>知道第一批人从哪里来</small></div><b aria-hidden="true">→</b><div><span>03 / 交付</span><strong>结果值得使用</strong><small>省时、减少错误、完成任务</small></div><b aria-hidden="true">→</b><div><span>04 / 经营</span><strong>使用能够延续</strong><small>再次使用，并尝试实际付费</small></div></div>
+        <div class="decision-grid" id="decisions"></div>
+      </section>
+      <section class="chapter guide-chapter" id="guide" aria-labelledby="guide-title">
+        <div class="section-heading"><span class="chapter-number">图</span><div><p class="eyebrow">THE COMPLETE GUIDE, IN ONE MAP</p><h2 id="guide-title">一张图，串联我们的理解与下一步。</h2></div></div>
+        <p class="section-intro">从确定需求到独立站搭起来，再到真实使用、复用与收费。九个阶段同时说明动作、产物、通过条件、失败回路和对你的参考价值。素材整理是候选案例；图中采购与商业验证仍待执行。</p>
+        <div class="guide-actions"><a class="primary-button" href="./guide.html">打开完整图 · 可缩放浏览 ↗</a><a href="./independent-site-guide.svg" download="独立站完整引导图.svg">下载完整矢量图 ↓</a><a href="./independent-site-guide.jpg" download="独立站完整引导图.jpg">下载 JPG 长图 ↓</a></div>
+        <a class="guide-preview" href="./guide.html" aria-label="打开完整引导图，放大查看所有细节"><img src="./independent-site-guide.svg" alt="完整引导图预览：需求与渠道、竞品与价值、样例与最小产品、域名托管部署、验收与首批用户、复用付费，以及个人参考价值。"><span>这里展示图的开头 · 打开完整图查看全部细节 ↗</span></a>
+        <div class="guide-values"><div><strong>选题时有筛选尺</strong><p>把人群、任务、替代方案与渠道放在一起判断。</p></div><div><strong>执行时有路线</strong><p>每一步有产物和通过条件，知道下一步做什么。</p></div><div><strong>没结果时有回路</strong><p>区分渠道、价值、体验和成本问题，决定继续或调整。</p></div></div>
+      </section>
+      <section class="chapter" id="model" aria-labelledby="model-title">
+        <div class="section-heading"><span class="chapter-number">01</span><div><p class="eyebrow">THE BUSINESS, END TO END</p><h2 id="model-title">独立站，是一整条经营流程。</h2></div></div>
+        <p class="section-intro">产品方向、目标市场、使用入口和部署方式，是四个不同的决定。一个人可以在国内开发，把英文网页工具部署到海外，向海外用户交付服务。</p>
+        <div class="callout origin-note"><strong>讨论如何走到这里</strong><p>最初从“寻找有机会的新词”出发，后来明确偏向长期工具。新词、趋势与社区求助适合提供线索；热度与作者收入自述，都不能直接证明我们能找到用户或复制收益。现在优先跑通一条可验证的经营流程。</p></div>
+        <div class="four-decisions"><div><small>做什么</small><h3>方向与价值</h3><p>为哪类人，解决哪项反复发生的任务。</p></div><div><small>给谁用</small><h3>市场与语言</h3><p>用户在哪，使用什么语言，我们从哪里接触他们。</p></div><div><small>怎么使用</small><h3>网站与入口</h3><p>网页工具、插件或 App；首轮以浏览器访问为主。</p></div><div><small>在哪里运行</small><h3>托管与基础设施</h3><p>平台替我们运行代码，或使用自管 VPS。</p></div></div>
+        <h3 class="subheading">四个经常被混淆的环节</h3>
+        <div class="distinction-grid"><article><span class="pill muted">需求发现</span><h4>听到问题</h4><p>社区求助、访谈、现有工作流程，让我们发现用户哪里费时。抱怨是线索，还要确认频率、代价和替代方案。</p></article><article><span class="pill muted">获客</span><h4>接触合适的人</h4><p>定向联系、社区参与、合作伙伴、平台目录、搜索和内容，都可能带来用户。需要验证每条渠道是否可执行。</p></article><article><span class="pill muted">搜索与 AI 收录</span><h4>增加被发现的机会</h4><p>Google 可索引页面、AI 搜索能够引用内容，只表示有机会获得曝光，无法保证排名、推荐或实际使用。</p></article><article><span class="pill green">需求验证</span><h4>看到真实行为</h4><p>用户拿真实任务试用、完成交付、再次使用和付款，才逐步支持项目价值。访问量与免费注册只能证明部分环节。</p></article></div>
+        <details class="glossary"><summary>展开基础概念：独立站、DNS、VPS、API… <span>＋</span></summary><dl id="glossary-list"></dl></details>
+        <details class="glossary"><summary>AI 相关入口，除了搜索还有哪些？ <span>＋</span></summary><div class="ai-entry-notes"><p><strong>AI 搜索与内容引用：</strong>用户在 AI 中提问时，公开教程、案例与产品页可能被检索或引用。需要跟踪实际带来的使用，无法保证被推荐。</p><p><strong>AI 工作流中的工具调用：</strong>如果用户已经在 AI 助手或自动化流程里工作，可以在后期提供 API 或相应工具连接，让能力进入现有流程。这需要真实集成需求、权限和计费设计，不是网站收录后自动获得的入口。</p><p><strong>平台生态与合作：</strong>插件、模板、集成目录和创作者合作可能帮助触达用户；各有接入规则和维护成本。第一轮仍先用可直接访问的网页验证，渠道成立后再扩展入口。</p></div></details>
+      </section>
+      <section class="chapter" id="directions" aria-labelledby="directions-title">
+        <div class="section-heading"><span class="chapter-number">02</span><div><p class="eyebrow">CHOOSE A SMALL, REAL TASK</p><h2 id="directions-title">先选一个任务，完成一次交付。</h2></div></div>
+        <p class="section-intro">我们偏向持续有人使用的工具。当前探索过三个方向；建站内容整理调研较深，另外两个仍是候选，不能按同等证据强度对待。</p>
+        <div id="direction-tabs" class="segmented" role="tablist" aria-label="查看候选产品方向"></div><div id="direction-detail" role="tabpanel" tabindex="0"></div><div id="print-directions"></div>
+        <div class="callout"><strong>选题原则</strong><p>优先选用户容易找到、输入输出清楚、效果容易衡量的小任务。把“能实现”与“有人愿意持续用”分别验证；不必一次做成大平台。</p></div>
+      </section>
+      <section class="chapter" id="opportunity" aria-labelledby="opportunity-title">
+        <div class="section-heading"><span class="chapter-number">03</span><div><p class="eyebrow">A CONCRETE VALUE PROPOSITION</p><h2 id="opportunity-title">素材整理，究竟帮谁省下什么？</h2></div></div>
+        <p class="section-intro">这里研究的是“设计师整理客户交来的建站材料”。客户通常是一家商户，付费与复用更可能来自持续接项目的设计师、小工作室。</p>
+        <div class="role-strip"><div><span>直接使用与可能买单</span><strong>设计师 / 建站工作室</strong></div><span aria-hidden="true">← 内容交接 →</span><div><span>提供材料与确认内容</span><strong>餐厅、门店等终端客户</strong></div></div>
+        <div class="example-header"><div><span class="pill amber">示意案例 · 非真实客户成果</span><h3>一个餐厅网站项目</h3></div><div class="segmented small" role="tablist" aria-label="案例视图"><button id="example-before-tab" role="tab" aria-selected="true" aria-controls="example-before" tabindex="0">整理前</button><button id="example-after-tab" role="tab" aria-selected="false" aria-controls="example-after" tabindex="-1">交付后</button></div></div>
+        <div class="material-demo" id="example-before" role="tabpanel" aria-labelledby="example-before-tab"><div class="material-file"><span class="file-type">DOC</span><h4>餐厅介绍_新版.docx</h4><p>创始故事、部分服务描述<br>联系电话与旧文件不一致</p></div><div class="material-file offset"><span class="file-type photo">JPG</span><h4>20 张照片</h4><p>菜品、门店、团队混在一起<br>不知道各放在哪个页面</p></div><div class="material-file"><span class="file-type mail">MAIL</span><h4>几段补充邮件</h4><p>菜单更新、订位说明<br>营业时间仍然缺失</p></div><div class="demo-result"><span>设计师还要做的工作</span><p>逐份阅读 → 对齐页面 → 核实冲突 → 找出缺项 → 再问一次客户</p></div></div>
+        <div class="material-demo after" id="example-after" role="tabpanel" aria-labelledby="example-after-tab" hidden><div class="organized-pages"><div><span class="mini-check">✓</span><strong>首页</strong><small>简介、主视觉、服务入口</small></div><div><span class="mini-check">✓</span><strong>菜单页</strong><small>菜品照片、已确认描述</small></div><div><span class="mini-check">✓</span><strong>关于我们</strong><small>创始故事、团队照片</small></div></div><div class="missing-list"><h4>只向客户追问剩余缺项</h4><p><span>!</span> 两个联系电话不同，请确认最终号码</p><p><span>!</span> 补充营业时间与节假日安排</p><p><span>!</span> 提供订位链接，确认照片使用权</p><small>每段内容保留来源；不确定项交由人确认。</small></div><div class="demo-result"><span>候选交付物</span><p>按页面整理的内容包 ＋ 来源索引 ＋ 冲突与缺项报告</p></div></div>
+        <div class="value-statement"><span>核心价值假设</span><h3>减少整理、核对与解释的人工时间。</h3><p>客户不愿意推进项目、缺乏照片、尚未确定业务信息等问题，仍需要项目约定、沟通或服务协助。工具的效果要用真实项目总耗时衡量。</p></div>
+        <h3 class="subheading">值得验证的三个切口</h3><div id="gap-list" class="gap-list"></div>
+      </section>
+      <section class="chapter" id="evidence" aria-labelledby="evidence-title">
+        <div class="section-heading"><span class="chapter-number">04</span><div><p class="eyebrow">EVIDENCE BEFORE CONFIDENCE</p><h2 id="evidence-title">问题存在，机会大小仍待判断。</h2></div></div>
+        <p class="section-intro">求助说明痛点，官网说明竞争覆盖。它们都不能替代我们自己的真实用户验证。以下信息来自本次调研，未实际购买测试全部竞品。</p>
+        <div id="evidence-list" class="evidence-list"></div>
+        <div class="table-heading"><h3>竞品已覆盖到哪一步</h3><span class="data-date">价格记录：2026-10-23 · 以官网结算为准</span></div>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="竞品功能与价格比较"><table><caption class="sr-only">建站内容收集竞品的公开功能、价格和启示</caption><thead><tr><th>产品 / 定位</th><th>公开覆盖的流程</th><th>公开价格记录</th><th>对我们的启示</th></tr></thead><tbody id="competitor-rows"></tbody></table></div>
+        <div class="callout amber-callout"><strong>已经普及的功能，适合作为基础能力</strong><p>免注册提交、自动催交、按页面收集、审批、模板、可视化位置与部分平台集成，都已有竞品覆盖。更低的价格、增加 AI，仍需结合具体任务证明差异。</p></div>
+      </section>
+      <section class="chapter" id="acquisition" aria-labelledby="acquisition-title">
+        <div class="section-heading"><span class="chapter-number">05</span><div><p class="eyebrow">DISTRIBUTION IS PART OF THE PRODUCT</p><h2 id="acquisition-title">先找到人，再验证交付。</h2></div></div>
+        <p class="section-intro">第一批用户优先找持续接建站项目、亲自整理客户材料的设计师。对方有真实项目且愿意试用，才值得推进；公开服务页面只能说明匹配，不能证明购买意愿。</p>
+        <div class="channel-grid"><article><span class="channel-number">01</span><h3>直接触达</h3><p>从 <a href="https://webflow.com/hire" target="_blank" rel="noopener noreferrer">Webflow 服务商目录 ↗</a>、工作室流程页、近期相关求助筛选对象，查看是否有持续项目与明确内容交接环节。</p><strong>首轮目标：获得真实任务</strong></article><article><span class="channel-number">02</span><h3>社区与合作</h3><p>参与 webdesign / web_design 等相关讨论，先分享有用流程；有真实案例后，再与模板作者、培训者讨论合作。遵守社区规则。</p><strong>中期目标：可重复的渠道</strong></article><article><span class="channel-number">03</span><h3>搜索与 AI 入口</h3><p>发布具体检查模板、教程、前后对比案例和清晰的产品页面。跟踪来源到实际完成任务的转化，不保证收录、排名或 AI 推荐。</p><strong>长期目标：持续被发现</strong></article></div>
+        <h3 class="subheading">可从这些公开候选开始研究</h3><div id="prospect-list" class="prospect-list"></div>
+        <div class="outreach-panel"><div><p class="eyebrow">OUTREACH DRAFT</p><h3>邀约一个具体结果</h3><p>每次根据对方真实流程调整。此处只是文案草稿，没有发送任何消息。</p><button class="secondary-button" id="copy-outreach">复制英文邀约</button><span id="copy-status" role="status"></span></div><textarea id="outreach" readonly aria-label="英文试用邀约草稿">Hi [Name], I saw that your website process includes collecting content from clients. I’m testing a way to turn documents and images clients have already sent into a page-by-page content pack, with sources, conflicts and a short missing-items list. I’m looking for three designers to try this on one real project. I can prepare the first pack free, with your permission. Would that help with an upcoming project?</textarea></div>
+      </section>
+      <section class="chapter" id="workflow" aria-labelledby="workflow-title">
+        <div class="section-heading"><span class="chapter-number">06</span><div><p class="eyebrow">ONE COMPLETE LEARNING CYCLE</p><h2 id="workflow-title">第一轮，要跑完哪些事情？</h2></div></div>
+        <p class="section-intro">先走完需求、样例、上线、获客、交付与复用，再决定投入多少。初期可以人工辅助，但要记录自己的人工介入，才能知道自动化后的价值与成本。</p>
+        <div class="milestone-banner"><span>第一轮里程碑</span><strong>一个可访问的网站 · 一位真实用户 · 一份完成的交付</strong><small>继续尝试一次付费或第二次使用；这里是实验目标，尚未完成。</small></div>
+        <div id="workflow-list" class="workflow-list"></div>
+        <div class="validation-grid"><article><h3>一轮验证怎么设</h3><p>可先筛约 30 个对象，争取 8—10 次交流，再找 3 个真实项目。数字用于安排实验，不是承诺获客转化率。</p></article><article><h3>继续投入的信号</h3><p>例如 3 位试用者里，至少 2 位愿意带来下一项目，其中有人付款；总处理时间下降，人工修正也可控。此门槛是决策参考，不是统计证明。</p></article><article><h3>需要调整的信号</h3><p>用户只点赞不愿提供项目；整理工作本来很少；输出检查比手工更慢；实际需求主要是文案代写。分别调整定位、流程或服务形态。</p></article></div>
+        <h3 class="subheading">每一轮记录什么，才知道卡在哪里</h3><div class="table-scroll" tabindex="0" role="region" aria-label="首轮验证记录"><table><thead><tr><th>环节</th><th>记录真实行为</th><th>帮助我们判断</th></tr></thead><tbody><tr><td>触达与访问</td><td>来自哪里、是否匹配目标用户、是否愿意交流</td><td>渠道能否持续找到合适的人</td></tr><tr><td>开始与完成任务</td><td>是否提供真实材料、在哪里中断、是否得到可用结果</td><td>承诺是否清楚，使用流程是否可行</td></tr><tr><td>交付与修正</td><td>准备、处理、检查、返工总耗时；人工介入和 API 成本</td><td>究竟节省了什么，单位交付是否划算</td></tr><tr><td>再次使用与付款</td><td>有下一任务时是否回来、是否接受具体报价并实际支付</td><td>长期价值与收费假设是否获得支持</td></tr></tbody></table></div>
+        <div class="checklist-panel"><div class="checklist-heading"><div><h3>我的第一轮执行清单</h3><p>勾选只保存在本浏览器，代表个人执行记录，不自动改变研究结论。</p></div><span id="checklist-progress" class="pill green">0 / 8</span></div><div id="checklist"></div><div class="checklist-actions"><button class="text-button" id="export-plan">导出执行记录 ↓</button><button class="text-button" id="reset-checklist">清空勾选</button></div><p id="storage-status" class="small-note" role="status"></p></div>
+      </section>
+      <section class="chapter" id="deployment" aria-labelledby="deployment-title">
+        <div class="section-heading"><span class="chapter-number">07</span><div><p class="eyebrow">A SOLVABLE DELIVERY LAYER</p><h2 id="deployment-title">部署有路可走，按产品选环境。</h2></div></div>
+        <p class="section-intro">首轮以海外用户、英文网页工具为候选路线。用户通过手机或电脑浏览器访问；我们的网站与云平台可以同时成立，原生 App 并非第一阶段的必要条件。</p>
+        <div class="architecture"><div><span>用户入口</span><strong>你的 .com 域名</strong><small>Porkbun 注册 · 域名按年持有</small></div><b aria-hidden="true">↓ DNS 指向</b><div><span>网站与轻量接口</span><strong>Cloudflare 托管</strong><small>展示、交互、API 请求与结果返回</small></div><b aria-hidden="true">↓ 按需连接</b><div class="architecture-services"><span>数据 / 文件 / 外部能力</span><strong>D1 · R2 · AI API</strong><small>需要保存和处理时才开启对应服务</small></div></div>
+        <div class="deployment-options"><article class="recommended"><span class="pill green">起步主方案</span><h3>Cloudflare 托管</h3><p>适合展示页、浏览器工具、清单、轻量后台与外部 AI API 调用。先试免费方案，确认运行限制或用量不足时再升级。平台承担部分基础设施维护。</p><a href="https://developers.cloudflare.com/workers/platform/pricing/" target="_blank" rel="noopener noreferrer">官方计费 ↗</a></article><article><span class="pill muted">需要完整环境时</span><h3>DigitalOcean VPS</h3><p>需要自有常驻程序、特定 Python/Node 依赖或后台处理时再考虑。自己维护系统、进程、部署、日志与备份；2GB 是否够用仍要用真实任务测试。</p><a href="https://www.digitalocean.com/pricing/droplets" target="_blank" rel="noopener noreferrer">官方配置 ↗</a></article><article><span class="pill muted">另一种托管选择</span><h3>Vercel Pro</h3><p>适合偏重 Next.js 发布体验的项目。Pro $20/月起；免费 Hobby 限个人非商业用途。官方账单以银行卡流程为主，本手册未确认 PayPal 可直接订阅。</p><a href="https://vercel.com/pricing" target="_blank" rel="noopener noreferrer">价格与商业限制 ↗</a></article></div>
+        <div class="callout"><strong>域名、托管和代码是不同资产</strong><p>域名可以在一家注册、网站放在另一家。代码保留在自己的 Git 仓库，数据保留可导出的备份；迁移托管通常可以继续使用同一域名。地区优先跟随目标用户，并实际测试访问与依赖连接。</p></div>
+      </section>
+      <section class="chapter" id="procurement" aria-labelledby="procurement-title">
+        <div class="section-heading"><span class="chapter-number">08</span><div><p class="eyebrow">BUY ONLY WHAT THIS STAGE NEEDS</p><h2 id="procurement-title">先买一个域名，其余按需开通。</h2></div></div>
+        <p class="section-intro">个人、低预算、具备可付款 PayPal 的起步建议。以下是采购方案，尚未注册域名、开通付费套餐或发生采购。价格可能变化，以结算页面为准。</p>
+        <div class="table-scroll" tabindex="0" role="region" aria-label="域名和部署采购清单"><table class="procurement-table"><thead><tr><th>项目</th><th>明确选择</th><th>参考费用</th><th>购买时机 / 注意点</th></tr></thead><tbody>
+        <tr><td><span class="pill green">名字确定即买</span><strong>域名</strong></td><td><a href="https://porkbun.com/tld/com" target="_blank" rel="noopener noreferrer">Porkbun 普通 .com ↗</a><small>先注册 1 年</small></td><td>$11.08 / 年<small>当前注册、续费同价</small></td><td>名字未定先用临时网址。PayPal 可买、可手动续费，不能用 PayPal 自动扣续费；设置提醒。</td></tr>
+        <tr><td><span class="pill green">现在开始</span><strong>DNS / HTTPS</strong></td><td>Cloudflare 免费服务</td><td>$0</td><td>绑定正式域名时配置。与 Workers Paid 是不同产品，起步无需购买网站 Pro 套餐。</td></tr>
+        <tr><td><span class="pill green">现在开始</span><strong>网站托管</strong></td><td>Cloudflare Workers Free<small>含静态资源托管</small></td><td>$0 起</td><td>先部署可访问的第一版，验证输入、处理、输出和错误情况。</td></tr>
+        <tr><td><span class="pill amber">按需开通</span><strong>后端升级</strong></td><td>Cloudflare Workers Paid</td><td>$5 / 月起</td><td>免费方案不够再开；用量超出包含额度另计，并非无限资源。</td></tr>
+        <tr><td><span class="pill amber">按需开通</span><strong>文件 / 数据</strong></td><td>R2 文件存储 / D1 数据库</td><td>免费额度内 $0</td><td>有上传和保存功能再开。各自按量计费，存储与备份不是同一件事。</td></tr>
+        <tr><td><span class="pill muted">备用选项</span><strong>完整服务器</strong></td><td>DigitalOcean Basic Regular<small>1核 · 2GB · 50GB SSD</small></td><td>$12 / 月<small>含周备份约 $14.40 / 月</small></td><td>需要完整运行环境再创建，创建即计费；关机仍收费。PayPal $5 验证预付款抵首账单。</td></tr>
+        </tbody></table></div>
+        <div class="timeline"><article><span>现在 · 10 月</span><h3>准备与小规模上线</h3><p>账号准备、确定域名、试部署、做交付样例。用最小投入学习实际资源需求。</p></article><article><span>11 月 20—30 日 · 复核窗口</span><h3>只比较明确需要的促销</h3><p>黑五为 11 月 27 日，网络星期一为 11 月 30 日。日期窗口是复核计划，不代表商家活动已公布。</p></article><article><span>黑五之后</span><h3>按真实需求继续投入</h3><p>年付只有在规格匹配、续费清晰且经过测试时才值得买；否则继续免费或月度付费。</p></article></div>
+        <div class="callout amber-callout"><strong>本次没有确认到可执行的 2026 黑五优惠</strong><p>Porkbun 活动页仍显示上一轮结束，未核实到 Cloudflare 或 DigitalOcean Droplets 的本年具体折扣。促销文章、限期新客额度与长期低价要分别看待。主方案不依赖黑五。<a href="https://porkbun.com/event/blackfriday" target="_blank" rel="noopener noreferrer">查看官方活动页 ↗</a></p></div>
+      </section>
+      <section class="chapter" id="budget" aria-labelledby="budget-title">
+        <div class="section-heading"><span class="chapter-number">09</span><div><p class="eyebrow">A SMALL BUDGET, WITH CLEAR ASSUMPTIONS</p><h2 id="budget-title">算一笔起步投入。</h2></div></div>
+        <p class="section-intro">这是基于公开单价的预算估算器，不是实时报价或购买入口。开发时间、已有编程工具订阅、税费、超额资源与收款手续费未计入。</p>
+        <div class="budget-calculator"><form id="budget-form"><label for="hosting">部署路线</label><select id="hosting"><option value="free">Cloudflare Free · $0/月</option><option value="workers" selected>Workers Paid · $5/月起</option><option value="vps">DigitalOcean 2GB · $12/月</option></select><div class="range-heading"><label for="months">试验周期</label><output id="months-label" for="months">3 个月</output></div><input type="range" id="months" min="1" max="12" value="3"><div class="budget-input-grid"><div><label for="ai-budget">AI API 预算 / 月（美元）</label><input type="number" id="ai-budget" min="0" max="10000" step="1" value="0"></div><div><label for="storage-budget">额外存储等 / 月（美元）</label><input type="number" id="storage-budget" min="0" max="10000" step="1" value="0"></div></div><label class="checkbox-label"><input type="checkbox" id="include-domain" checked>计入一个 .com 域名首年 $11.08</label><label class="checkbox-label disabled" id="backup-label"><input type="checkbox" id="include-backup" checked disabled>VPS 周备份：服务器费用的 20%</label></form><div class="budget-result" aria-live="polite"><span class="eyebrow">本轮预计现金投入 / USD</span><div class="total"><span>$</span><output id="budget-total">26.08</output></div><div id="budget-breakdown"></div><p id="budget-assumption">低流量、资源在包含额度内；AI 与额外存储按你填写的预算计入。</p><small>域名按年支付，本轮只计一次。软件开发时间与推广时间仍是投入的一部分。</small></div></div>
+        <div class="budget-baselines"><div><span>域名 ＋ 免费托管</span><strong>$11.08</strong><small>三个月基础预算</small></div><div><span>域名 ＋ Workers Paid</span><strong>$26.08</strong><small>三个月，额度内</small></div><div><span>域名 ＋ VPS ＋ 周备份</span><strong>$54.28</strong><small>三个月，未税</small></div></div>
+      </section>
+      <section class="chapter" id="questions" aria-labelledby="questions-title">
+        <div class="section-heading"><span class="chapter-number">10</span><div><p class="eyebrow">KEEP THE MEANING CLEAR</p><h2 id="questions-title">把容易误解的地方讲清楚。</h2></div></div><div id="faq-list" class="faq-list"></div>
+      </section>
+      <section class="chapter" id="sources" aria-labelledby="sources-title">
+        <div class="section-heading"><span class="chapter-number">11</span><div><p class="eyebrow">SOURCES & RESEARCH BOUNDARIES</p><h2 id="sources-title">每个结论，都保留来处。</h2></div></div>
+        <div class="source-boundary"><p><strong>已完成：</strong>方向讨论、公开需求与竞品调研、部署选型及预算方案、本研究网页与完整引导图。</p><p><strong>尚未完成：</strong>真实访谈、候选商业工具上线、实际获客、付费验证、采购与商业运行测试。研究网页的公开展示与商业工具验证是不同的里程碑，浏览器中的个人清单勾选不会改变研究事实。</p><p><strong>阅读口径：</strong>官网能力是供应商公开说明；社区内容是个人自述；产品切口与实验门槛是我们的建议。没有访问量、转化率或收入保证。</p></div>
+        <div class="source-tools"><label for="source-filter">筛选来源</label><select id="source-filter"><option value="all">全部来源</option><option value="official">官方产品与文档</option><option value="community">社区与从业者</option><option value="other">其他参考</option></select><span id="source-count" class="small-note"></span></div><ol id="source-list" class="source-list"></ol>
+      </section>
+      <footer><a class="brand footer-brand" href="#overview"><span class="brand-icon" aria-hidden="true">↗</span><span>独立站实践手册</span></a><p>研究集 006 · 更新于 2026.10.23<br>把判断留给证据，把下一步落到真实任务。</p><a href="#overview">回到顶部 ↑</a></footer>
+    </main>
+  </div>
+</body>
+</html>

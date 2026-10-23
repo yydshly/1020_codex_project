@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f4ec">
+  <title>完整引导图 · 从需求判断到独立站与真实使用</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml">
+  <style>
+    *{box-sizing:border-box}body{margin:0;background:#e8ecdf;color:#24372f;font:14px/1.7 "Segoe UI","Microsoft YaHei",sans-serif}a{color:#285f49;text-underline-offset:4px}button,select,input{font:inherit}button,a,select,input{touch-action:manipulation}button{cursor:pointer}button:focus-visible,a:focus-visible,select:focus-visible,input:focus-visible,[tabindex]:focus-visible{outline:3px solid #a68544;outline-offset:3px}.toolbar{display:flex;align-items:center;gap:13px;flex-wrap:wrap;background:#f6f5ef;padding:13px 23px;border-bottom:1px solid #cbd5bf;position:relative;z-index:2;box-shadow:0 4px 15px #233a2410}.title{margin-right:auto}.title strong{display:block;font-size:15px}.title small{font-size:10px;color:#859275}button,.download{border:1px solid #c4d0b8;padding:7px 12px;background:#fbfcf6;border-radius:5px;color:#345b3d;font-size:12px;text-decoration:none;white-space:nowrap}.download{background:#285f49;color:#fff;border-color:#285f49}#zoom-value{font:12px monospace;min-width:43px;text-align:center}input[type=range]{width:100px;accent-color:#285f49}select{max-width:240px;border:1px solid #ccd6c3;background:transparent;border-radius:5px;padding:7px;font-size:11px;color:#4f6a42}.zoom-tools{display:flex;gap:8px;align-items:center}.viewer{height:calc(100dvh - var(--toolbar-height,90px));overflow:auto;padding:20px;scrollbar-gutter:stable}.canvas{width:fit-content;margin:auto;background:#f5f4ec;box-shadow:0 10px 35px #24382220;border:1px solid #cdd8c1}#guide-image{display:block;width:1800px;height:auto;max-width:none}.back{font-size:11px;margin-left:6px}.sr-only{position:absolute;width:1px;height:1px;clip:rect(0,0,0,0);overflow:hidden}@media(max-width:650px){.toolbar{padding:12px 15px;gap:10px}.title{width:100%}.title strong{font-size:14px}.title small{font-size:10px}input[type=range]{width:65px}.zoom-tools{gap:6px}.zoom-tools button{padding:6px 9px}.download{padding:7px 10px}.viewer{padding:10px}select{max-width:190px}.back{margin-left:auto}#fit{font-size:11px}}@media print{.toolbar{display:none}.viewer{height:auto;overflow:visible;padding:0}.canvas{width:100%;box-shadow:none;border:0}#guide-image{width:100%!important;height:auto}body{background:white}}
+  </style>
+  <script src="./guide-sections.js" defer></script>
+  <script src="./guide-viewer.js" defer></script>
+</head>
+<body>
+  <header class="toolbar" id="toolbar">
+    <div class="title"><strong>完整引导图 · 从需求到独立站</strong><small>先总览，放大后滚动阅读细节 · 9 阶段 / 判断节点 / 失败回路 · 研究快照 2026.10.23</small></div>
+    <div class="zoom-tools" role="group" aria-label="图像缩放"><button id="zoom-out" aria-label="缩小引导图">−</button><label class="sr-only" for="zoom">缩放百分比</label><input id="zoom" type="range" min="10" max="150" value="60"><output id="zoom-value" for="zoom">60%</output><button id="zoom-in" aria-label="放大引导图">＋</button><button id="fit">适应宽度</button><button id="actual">原尺寸</button></div>
+    <label class="sr-only" for="section">跳转图中章节</label><select id="section"><option value="0">回到图的开头</option></select>
+    <a class="download" href="./independent-site-guide.svg" download="独立站完整引导图.svg">下载完整 SVG ↓</a>
+    <a class="download" href="./independent-site-guide.jpg" download="独立站完整引导图.jpg">下载 JPG ↓</a>
+    <a class="back" href="./index.html#guide">返回研究手册 ↗</a>
+  </header>
+  <main class="viewer" id="viewer" tabindex="0" aria-label="完整引导图浏览区，可滚动查看，使用顶部按钮放大细节">
+    <div class="canvas"><img id="guide-image" src="./independent-site-guide.svg" width="1800" alt="独立站完整引导图：从目标约束、任务与用户、竞争与差异、交付样例、市场与形态、最小产品、采购部署、首批使用，到复用与收费。包含案例、竞品、渠道、预算和个人参考价值。"></div>
+  </main>
+</body>
+</html>
