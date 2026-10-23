@@ -47,6 +47,8 @@ gh workflow run deploy-pages.yml --ref main
 
 当前已发布：[001 · cyber-xiaowan 研究页](https://yydshly.github.io/1020_codex_project/projects/001-evening-companion/)。新增项目完成部署后，应验证索引表的在线链接可以正常打开。
 
+2026-10-23 新增并验证：[006 · 独立站实践手册](https://yydshly.github.io/1020_codex_project/projects/006-independent-site-playbook/) · [完整引导图](https://yydshly.github.io/1020_codex_project/projects/006-independent-site-playbook/guide.html)。本次沿用原图，发布结果与图片校验记录见[006 发布记录](../projects/006-independent-site-playbook/notes/release.md)。
+
 GitHub Pages 只托管静态文件。需要服务器、数据库或私密 API 密钥的应用，应另行部署后端，并在子项目说明中记录地址和配置方式。浏览器端构建产物中的环境变量是公开内容。
 
 参考：[GitHub Pages 介绍](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) · [自定义部署工作流](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)

@@ -141,7 +141,7 @@ python -m http.server 8066 --directory projects/006-independent-site-playbook/we
 
 新增完整图已通过 SVG 解析、双份文件一致性与浏览器文字边界检查；375 行文字未超出画布。图页的缩放、原尺寸、主题区域跳转已实际验证。JPG 为浏览器渲染导出，完整尺寸 1800 × 8387；后续修改 SVG 时需同时重新导出 JPG。
 
-![网页首页预览](assets/page-preview.jpg)
+![正式发布的研究网页首页](assets/published-preview.jpg)
 
 ---
 
