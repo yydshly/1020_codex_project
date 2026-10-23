@@ -1,0 +1,2 @@
+# Preserve published evidence bytes: SHA256 seals cover exact files, including line endings.
+** -text
