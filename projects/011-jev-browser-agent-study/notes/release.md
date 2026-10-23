@@ -32,6 +32,15 @@
 
 [线上首屏](../assets/published-preview.jpg) / [研究结论与扩展模块](../assets/published-directions.jpg)。
 
+## 详细图在正文直接展示
+
+- 更新提交：`07ef4d0383bf9f3b591d1833c114d0554b6e3152`，已推送到远端 `main`。
+- [Deploy Pages #39931683574](https://github.com/yydshly/1020_codex_project/actions/runs/39931683574) 和推送检查均成功。
+- 主网页 `#detailed-map` 默认按正文宽度完整展开详细长图，正文自然滚动可读至图末；新增首屏直达入口及原地放大、适应宽度控制。
+- 原地放大显示 2000px 宽度，在图区域内双向滚动；操作后仍留在当前网页。390px 视口下完整展示和放大模式均无整页横向溢出。
+- 线上实测默认图片高度与浏览区高度一致、无最大高度限制；放大与恢复正常，无控制台警告或错误。13 项线上资源与本次更新提交一致。
+- 横图和详细图均沿用原文件，没有重新生成。[正文展示截图](../assets/published-inline-map.jpg)，最新核验结果见 [online-verification.json](online-verification.json)。
+
 ## 沿用原图
 
 PNG SHA-256：`2d562c2d31209ff6a02b7becc20d320dc670aa6d1493cfcfcf5ea08fe7f266f7`。
