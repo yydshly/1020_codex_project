@@ -1,0 +1,62 @@
+{
+  "waveform": {
+    "provider": "MiniMax",
+    "model": "speech-2.8-hd",
+    "voice_id": "male-qn-qingse",
+    "file": "waveform.mp3",
+    "text": "录音保存的，是随时间变化的一串波形数值。麦克风把空气振动变成电信号，采样和量化再把电信号变成数字。音高主要和周期重复的快慢有关，响度与振幅和能量有关，音色则与不同频率成分的比例，以及声音起落的过程有关。波形不同，不一定就是音色不同。例如，同一个人说话更响了，波形也会变。下面可以调节参数，边看波形，边听声音。这里的短音只是原理演示，不是人声。",
+    "speed": 0.95,
+    "request_sha256": "5a56cc0253e49daffe7b583845e2f5b99b2e7857cf4301782892f9501a8ae0ef",
+    "audio_sha256": "6065650ad40e344e05dd36863b667e13b7c7fa49a3893dad1d1c7378d49f09be",
+    "bytes": 696372,
+    "duration_ms": 43416,
+    "sample_rate": 32000,
+    "format": "mp3",
+    "purpose": "Educational narration, not a Kokoro inference sample."
+  },
+  "vector": {
+    "provider": "MiniMax",
+    "model": "speech-2.8-hd",
+    "voice_id": "male-qn-qingse",
+    "file": "vector.mp3",
+    "text": "波形中的数字按时间排列，可以还原声音。音色向量中的数字，则是模型学会使用的特征，需要配合文字和生成模型，才能产生新的声音。你可以把它理解成声音配方。每一个数字通常没有单独的中文含义，不能直接说某一维就是温柔度。模型权重保存生成规律，音色向量提供声音和风格条件，最终波形才是这一次说话的结果。同一个人的不同录音，提取出来的向量也不一定完全相同。",
+    "speed": 0.95,
+    "request_sha256": "f5bbf320536923b8238988eb88b23e760764ec8ad436adf39073e51c479b8fa7",
+    "audio_sha256": "7a14de48aeb61fd177ff92317facff03d3cb76b6038e5c0605f43eb77a47c668",
+    "bytes": 642228,
+    "duration_ms": 40032,
+    "sample_rate": 32000,
+    "format": "mp3",
+    "purpose": "Educational narration, not a Kokoro inference sample."
+  },
+  "encoder": {
+    "provider": "MiniMax",
+    "model": "speech-2.8-hd",
+    "voice_id": "male-qn-qingse",
+    "file": "encoder.mp3",
+    "text": "一种典型的说话人编码器，通过认人的任务学习声音特征。你说今天下雨了，再说我想喝水，虽然内容不同，模型应该给出接近的向量。另一个人也说今天下雨了，虽然内容相同，向量却应该能够区分。反复训练后，模型逐渐保留跨句子仍有辨识度的声音特征。这不是删除某个频段，也不是把文字从声音里减掉。内容和音色的分离并不完美，情绪、口音和录音条件，都可能影响结果。",
+    "speed": 0.95,
+    "request_sha256": "d27a571f839b4209d7d478642e59f6413aba87d008be9c5c67a7d72752e86a43",
+    "audio_sha256": "7c0b4033bf6b576fb228487e8b3c542a9ed7536fd3d8ac9270fd448b15078e5c",
+    "bytes": 689460,
+    "duration_ms": 42984,
+    "sample_rate": 32000,
+    "format": "mp3",
+    "purpose": "Educational narration, not a Kokoro inference sample."
+  },
+  "kokoro": {
+    "provider": "MiniMax",
+    "model": "speech-2.8-hd",
+    "voice_id": "male-qn-qingse",
+    "file": "kokoro.mp3",
+    "text": "回到我们研究的这个语音模型。它已经能把文字转换成音素，结合已有的声音风格，预测时长和音高等信息，再生成波形。标准版本能够加载预设音色，也支持混合已有音色。但是，官方没有发布配套的参考音频编码器，所以不能直接把你的录音传进去，就自动得到你的音色。支持参考录音的声音克隆模型，需要额外学会从录音提取声音条件，并让生成模型理解这些条件。",
+    "speed": 0.95,
+    "request_sha256": "8dad1509a2fd018b12537a2c708cfacad5a5b78959a652459e8369e815895f4b",
+    "audio_sha256": "989b7fd7ec33591d4f176e423c737d174d344f990a91936020cb8cf4658c3cb9",
+    "bytes": 620916,
+    "duration_ms": 38700,
+    "sample_rate": 32000,
+    "format": "mp3",
+    "purpose": "Educational narration, not a Kokoro inference sample."
+  }
+}

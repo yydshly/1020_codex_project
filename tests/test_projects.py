@@ -89,6 +89,47 @@ class CatalogTests(unittest.TestCase):
         projects.build(projects.load_projects())
         self.assertFalse((output / "stale.html").exists())
 
+    def test_multiple_sources_and_tool_summaries_render_in_both_indexes(self):
+        directory = self.add(2, "toolkit")
+        metadata = directory / "project.json"
+        data = json.loads(metadata.read_text())
+        data["repositories"] = [data["repo"], "https://github.com/second/tool"]
+        data["tool_summaries"] = [
+            dict(name="First", repo=data["repo"], summary="生成 | <语音>"),
+            dict(name="Second", repo=data["repositories"][1], summary="按内容检索文件。"),
+        ]
+        metadata.write_text(json.dumps(data), encoding="utf-8")
+        entries = projects.load_projects()
+        catalog = projects.catalog(entries)
+        projects.build(entries)
+        page = (projects.ROOT / "_site/index.html").read_text(encoding="utf-8")
+        for url in data["repositories"]:
+            self.assertIn(f"]({url})", catalog)
+            self.assertIn(f'href="{url}"', page)
+        self.assertIn("**First**：生成 &#124; &lt;语音&gt;", catalog)
+        self.assertIn("<dt>Second</dt><dd>按内容检索文件。</dd>", page)
+        self.assertIn("&lt;语音&gt;", page)
+        self.assertNotIn("<语音>", page)
+
+    def test_invalid_or_incomplete_multi_source_metadata_is_rejected(self):
+        directory = self.add(2, "toolkit")
+        metadata = directory / "project.json"
+        original = json.loads(metadata.read_text())
+        cases = [
+            dict(repositories=[]),
+            dict(repositories="https://github.com/example/repo"),
+            dict(repositories=[original["repo"], original["repo"]]),
+            dict(repositories=[original["repo"], "javascript:alert(1)"]),
+            dict(repositories=[original["repo"], "https://github.com/second/tool"],
+                 tool_summaries=[dict(name="First", repo=original["repo"], summary="一句说明。")]),
+            dict(tool_summaries=[dict(name="First", repo="https://github.com/other/tool", summary="一句说明。")]),
+        ]
+        for changes in cases:
+            with self.subTest(changes=changes):
+                metadata.write_text(json.dumps({**original, **changes}), encoding="utf-8")
+                with self.assertRaises(ValueError):
+                    projects.load_projects()
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="从简单到复杂理解六个 AI 内容工具：效果、能力、底层原理和可复核的研究证据。">
+  <meta name="color-scheme" content="light">
+  <title>六个 AI 内容工具 · 研究笔记</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%231e4b40'/%3E%3Cpath d='M10 12h20M10 20h14M10 28h20' stroke='%23eee9dc' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./styles.css">
+  <script defer src="./data.js"></script>
+  <script defer src="./kokoro-learning.js"></script>
+  <script defer src="./digup-learning.js"></script>
+  <script defer src="./podcastfy-learning.js"></script>
+  <script defer src="./video-factory-learning.js"></script>
+  <script defer src="./shorts-learning.js"></script>
+  <script defer src="./ldr-learning.js"></script>
+  <script defer src="./summary-page.js"></script>
+  <script defer src="./app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#content">跳到正文</a>
+  <aside class="sidebar" aria-label="研究导航">
+    <a class="brand" href="#/">
+      <span class="brand-icon" aria-hidden="true">研</span>
+      <span>工具研究笔记<small>AI CONTENT / VOL. 002</small></span>
+    </a>
+    <button id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="sidebar-body">展开目录</button>
+    <div id="sidebar-body" class="sidebar-body">
+      <nav class="main-nav" aria-label="主要页面">
+        <a href="#/" data-nav="home"><span aria-hidden="true">◈</span> 研究总览</a>
+        <a href="#/summary" data-nav="summary"><span aria-hidden="true">◎</span> 一图总览</a>
+        <a href="#/compare" data-nav="compare"><span aria-hidden="true">▤</span> 能力对照</a>
+        <a href="#/experiments" data-nav="experiments"><span aria-hidden="true">⌁</span> 实验记录</a>
+      </nav>
+      <p class="nav-label">学习路径 <span>简单 → 复杂</span></p>
+      <nav id="tool-nav" class="tool-nav" aria-label="按学习顺序浏览工具"></nav>
+      <div class="sidebar-note">
+        <span class="tiny-label">阅读进度</span>
+        <p><strong id="read-count">0</strong><span> / 6 篇已读</span></p>
+        <div class="read-track"><span id="read-fill"></span></div>
+        <small>由你标记，仅保存在此浏览器。</small>
+      </div>
+      <a class="sidebar-link" href="#/glossary">名词速查 <span aria-hidden="true">↗</span></a>
+    </div>
+  </aside>
+  <div class="workspace">
+    <header class="topbar"><span>研究集 <span aria-hidden="true">/</span> 002 <span aria-hidden="true">/</span> <span id="breadcrumb">研究总览</span></span><span class="date"><i aria-hidden="true"></i> 持续研究中 · 2026.10.20</span></header>
+    <main id="content" tabindex="-1"></main>
+    <footer>六个 AI 内容工具的原理与实践 <span>官方来源可追溯 · 研究与实测分开记录</span></footer>
+  </div>
+  <div id="announcement" class="sr-only" aria-live="polite"></div>
+  <noscript><p class="noscript">请启用 JavaScript 以浏览研究笔记。离线说明位于子项目 README.md。</p></noscript>
+</body>
+</html>

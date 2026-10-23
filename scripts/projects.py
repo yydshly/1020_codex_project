@@ -37,6 +37,18 @@ def local_file(directory, relative):
     return path
 
 
+def repository_urls(project):
+    """Multi-tool studies retain all upstream sources; older entries use repo."""
+    return project.get("repositories", [project["repo"]])
+
+
+def markdown_summary(project):
+    parts = [text(project["summary"])]
+    parts.extend(f"**{text(tool['name'])}**：{text(tool['summary'])}"
+                 for tool in project.get("tool_summaries", []))
+    return "<br>".join(parts)
+
+
 def load_projects():
     projects = []
     ids = set()
@@ -60,6 +72,31 @@ def load_projects():
         url = urlparse(p["repo"])
         require(url.scheme == "https" and url.netloc == "github.com" and len(url.path.strip("/").split("/")) >= 2,
                 "repo 必须为 GitHub 仓库的 HTTPS 地址")
+        repositories = repository_urls(p)
+        require(isinstance(repositories, list) and repositories, "repositories 必须为非空数组")
+        for source in repositories:
+            require(isinstance(source, str), "repositories 中的来源必须为字符串")
+            parsed = urlparse(source)
+            require(parsed.scheme == "https" and parsed.netloc == "github.com"
+                    and len(parsed.path.strip("/").split("/")) >= 2,
+                    "repositories 必须为 GitHub 仓库的 HTTPS 地址")
+        require(len(set(repositories)) == len(repositories), "repositories 中的来源不能重复")
+        require(p["repo"] in repositories, "repo 必须包含在 repositories 中")
+        if "tool_summaries" in p:
+            descriptions = p["tool_summaries"]
+            require(isinstance(descriptions, list) and descriptions, "tool_summaries 必须为非空数组")
+            names = set()
+            sources = set()
+            for tool in descriptions:
+                require(isinstance(tool, dict), "工具摘要必须为对象")
+                for key in ("name", "repo", "summary"):
+                    require(isinstance(tool.get(key), str) and tool[key].strip(),
+                            f"工具摘要 {key} 必须为非空字符串")
+                require(tool["name"] not in names, "工具摘要名称不能重复")
+                require(tool["repo"] in repositories, "工具摘要来源必须属于 repositories")
+                names.add(tool["name"])
+                sources.add(tool["repo"])
+            require(sources == set(repositories), "工具摘要必须覆盖所有 repositories 来源")
         require(p["status"] in STATUSES, "不支持的研究状态")
         require(type(p.get("web")) is bool, "web 必须为布尔值")
         require(isinstance(p.get("cover"), str), "cover 必须为字符串")
@@ -89,11 +126,12 @@ def catalog(projects):
     ]
     for p in projects:
         path = f"projects/{p['directory'].name}"
-        repo_name = text(urlparse(p["repo"]).path.strip("/"))
-        links = f"[研究说明]({path}/README.md) · [{repo_name}]({p['repo']})"
+        sources = " · ".join(f"[{text(urlparse(url).path.strip('/'))}]({url})"
+                             for url in repository_urls(p))
+        links = f"[研究说明]({path}/README.md) · {sources}"
         if p["web"]:
             links = f"[在线研究页]({PAGES}/{path}/) · " + links
-        lines.append(f"| {p['id']:03d} | {text(p['name'])} | {text(p['summary'])} | {p['status']} | {links} |")
+        lines.append(f"| {p['id']:03d} | {text(p['name'])} | {markdown_summary(p)} | {p['status']} | {links} |")
     for p in projects:
         if p["cover"]:
             path = f"projects/{p['directory'].name}"
@@ -168,11 +206,19 @@ def build(projects):
             shutil.copyfile(cover, output / "covers" / image_name)
             image = f'<img src="covers/{image_name}" alt="{html.escape(p["cover_alt"], quote=True)}" loading="lazy">'
         demo = f'<a class="live-link" href="projects/{name}/">在线研究页 →</a>' if p["web"] else ""
+        sources = "".join(
+            f'<a href="{html.escape(url, quote=True)}">{html.escape(urlparse(url).path.strip("/"))}</a>'
+            for url in repository_urls(p))
+        summaries = "".join(
+            f'<div><dt>{html.escape(tool["name"])}</dt><dd>{html.escape(tool["summary"])}</dd></div>'
+            for tool in p.get("tool_summaries", []))
+        if summaries:
+            summaries = f'<dl class="tool-summaries">{summaries}</dl>'
         cards.append(
             f'<article>{image}<p class="meta">{p["id"]:03d} / {p["status"]}</p>'
-            f'<h2>{html.escape(p["name"])}</h2><p>{html.escape(p["summary"])}</p>'
+            f'<h2>{html.escape(p["name"])}</h2><p>{html.escape(p["summary"])}</p>{summaries}'
             f'<nav>{demo}<a href="{REPO}/tree/main/projects/{name}">研究说明</a>'
-            f'<a href="{html.escape(p["repo"], quote=True)}">{html.escape(urlparse(p["repo"]).path.strip("/"))}</a></nav></article>'
+            f'{sources}</nav></article>'
         )
     body = "\n".join(cards) or '<p class="empty">研究集已就绪，等待收录第一个项目。</p>'
     page = """<!doctype html>
@@ -191,6 +237,8 @@ article{background:white;border:1px solid #dddeda;padding:24px;border-radius:12p
 overflow-wrap:anywhere}article img{width:100%;aspect-ratio:16/9;object-fit:contain;background:#f7f6f2}
 nav{display:flex;flex-wrap:wrap;gap:16px}.empty{padding:36px 0;border-top:1px solid #ccc}
 .live-link{font-weight:700}
+.tool-summaries{font-size:14px;margin:24px 0}.tool-summaries>div{margin:15px 0;padding-top:12px;border-top:1px solid #e3e6df}
+.tool-summaries dt{font-weight:700;color:#165e55}.tool-summaries dd{margin:5px 0 0}
 footer{margin-top:60px;color:#50625e;font-size:14px}
 </style></head><body><main><header><p class="meta">RESEARCH / BUILD / SHARE</p>
 <h1>GitHub 项目研究集</h1><p>记录值得研究的开源项目，从原理理解到实践验证。</p>

@@ -1,0 +1,245 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="3734" viewBox="0 0 1920 3734" role="img" aria-labelledby="title desc"><title id="title">六个工具，从模型能力到可用产品</title><desc id="desc">六个工具的总体作用、能力、原理、我们的理解、意义、使用场景与个人价值。基于固定版本研究，不是实测结果。</desc><style>text{font-family:'Microsoft YaHei','Noto Sans CJK SC',sans-serif}*{box-sizing:border-box}</style><rect width="100%" height="100%" fill="#f6f5f0"/><text x="80" y="64" font-size="21" fill="#596b60" font-weight="500">AI CONTENT TOOLKIT / RESEARCH NOTEBOOK 002</text>
+<text x="80" y="142" font-size="62" fill="#255746" font-weight="700">六个工具，从模型能力到可用产品</text>
+<text x="80" y="199" font-size="27" fill="#596b60" font-weight="400">六个独立的开源项目，覆盖资料检索、问题研究、对话改编、语音合成与视频制作。既有直接提供模型能力的工具，也有把现成模型与程序组织起来</text>
+<text x="80" y="239" font-size="27" fill="#596b60" font-weight="400">的产品。</text>
+<rect x="80" y="299" width="1760" height="58" rx="12" fill="#255746" stroke="none"/>
+<text x="110" y="338" font-size="26" fill="#fffefa" font-weight="600">你提供：目标 + 原始资料或素材 + 判断标准</text>
+<rect x="80" y="385" width="568" height="200" rx="14" fill="#e7ede3" stroke="none"/>
+<text x="356" y="375" font-size="25" fill="#596b60" font-weight="400">↓</text>
+<text x="106" y="428" font-size="31" fill="#255746" font-weight="600">查找与研究</text>
+<text x="106" y="465" font-size="21" fill="#263b34" font-weight="500">DigUp · Local Deep Research</text>
+<text x="106" y="504" font-size="23" fill="#263b34" font-weight="400">本地资料 / 一个研究问题</text>
+<text x="106" y="539" font-size="23" fill="#263b34" font-weight="400">↓  文件与位置 / 报告与引用</text>
+<text x="106" y="569" font-size="20" fill="#596b60" font-weight="400">让资料可找，让问题有依据</text>
+<rect x="676" y="385" width="568" height="200" rx="14" fill="#e7ede3" stroke="none"/>
+<text x="952" y="375" font-size="25" fill="#596b60" font-weight="400">↓</text>
+<text x="702" y="428" font-size="31" fill="#255746" font-weight="600">改编与表达</text>
+<text x="702" y="465" font-size="21" fill="#263b34" font-weight="500">Podcastfy · Kokoro</text>
+<text x="702" y="504" font-size="23" fill="#263b34" font-weight="400">来源资料 / 已确定的文稿</text>
+<text x="702" y="539" font-size="23" fill="#263b34" font-weight="400">↓  对话播客 / 合成语音</text>
+<text x="702" y="569" font-size="20" fill="#596b60" font-weight="400">让内容变成可以听的表达</text>
+<rect x="1272" y="385" width="568" height="200" rx="14" fill="#e7ede3" stroke="none"/>
+<text x="1548" y="375" font-size="25" fill="#596b60" font-weight="400">↓</text>
+<text x="1298" y="428" font-size="31" fill="#255746" font-weight="600">剪辑与成片</text>
+<text x="1298" y="465" font-size="21" fill="#263b34" font-weight="500">Short Video Factory · Shorts</text>
+<text x="1298" y="504" font-size="23" fill="#263b34" font-weight="400">素材与文稿 / 已有长视频</text>
+<text x="1298" y="539" font-size="23" fill="#263b34" font-weight="400">↓  素材混剪 / 原片精选片段</text>
+<text x="1298" y="569" font-size="20" fill="#596b60" font-weight="400">把制作步骤交给程序执行</text>
+<text x="80" y="620" font-size="23" fill="#596b60" font-weight="400">能力地图：按任务选择工具；它们并非一个库的六个模块，也不要求全部串联。</text>
+<text x="80" y="690" font-size="33" fill="#255746" font-weight="600">01—06 / 用同一套问题，理解每一个工具</text>
+<rect x="80" y="720" width="568" height="967" rx="18" fill="#fffefa" stroke="#cdd5c9"/>
+<text x="106" y="759" font-size="20" fill="#9b4d34" font-weight="500">01 / 语音合成模型与推理库</text>
+<text x="106" y="808" font-size="31" fill="#255746" font-weight="700">Kokoro</text>
+<text x="106" y="850" font-size="23" fill="#263b34" font-weight="500">把确定的文稿，变成带指定音色的语音。</text>
+<rect x="106" y="897" width="154.66666666666666" height="84" rx="7" fill="#e7ede3" stroke="none"/>
+<text x="118" y="926" font-size="20" fill="#255746" font-weight="500">文本与音素</text>
+<text x="264.66666666666663" y="944" font-size="18" fill="#596b60" font-weight="400">→</text>
+<rect x="286.66666666666663" y="897" width="154.66666666666666" height="84" rx="7" fill="#e7ede3" stroke="none"/>
+<text x="298.66666666666663" y="926" font-size="20" fill="#255746" font-weight="500">时长与韵律</text>
+<text x="445.33333333333326" y="944" font-size="18" fill="#596b60" font-weight="400">→</text>
+<rect x="467.3333333333333" y="897" width="154.66666666666666" height="84" rx="7" fill="#e7ede3" stroke="none"/>
+<text x="479.3333333333333" y="926" font-size="20" fill="#255746" font-weight="500">音频波形</text>
+<text x="106" y="1008" font-size="21" fill="#255746" font-weight="600">能力</text>
+<text x="106" y="1039" font-size="22" fill="#263b34" font-weight="400">按语言、音色和语速合成语音，可在本地加载权重推</text>
+<text x="106" y="1072" font-size="22" fill="#263b34" font-weight="400">理。</text>
+<text x="106" y="1119" font-size="21" fill="#255746" font-weight="600">原理</text>
+<text x="106" y="1150" font-size="22" fill="#263b34" font-weight="400">模型结合音素与风格条件，预测时长、音高等，再解</text>
+<text x="106" y="1183" font-size="22" fill="#263b34" font-weight="400">码出采样值。</text>
+<text x="106" y="1230" font-size="21" fill="#255746" font-weight="600">我们的理解</text>
+<text x="106" y="1261" font-size="22" fill="#263b34" font-weight="400">权重提供发声能力，音色向量提供风格条件；音色与</text>
+<text x="106" y="1294" font-size="22" fill="#263b34" font-weight="400">频谱、包络等有关。输出波形是采样值，不是转录文</text>
+<text x="106" y="1327" font-size="22" fill="#263b34" font-weight="400">字。</text>
+<text x="106" y="1374" font-size="21" fill="#255746" font-weight="600">意义</text>
+<text x="106" y="1405" font-size="22" fill="#263b34" font-weight="400">把“怎么发声”变成可复用的模型能力。</text>
+<text x="106" y="1452" font-size="21" fill="#255746" font-weight="600">使用场景</text>
+<text x="106" y="1483" font-size="22" fill="#263b34" font-weight="400">文章朗读、固定文稿配音、语音功能原型。</text>
+<path d="M106 1528L622 1528" fill="none" stroke="#cdd5c9" stroke-width="2"/>
+<text x="106" y="1558" font-size="20" fill="#9b4d34" font-weight="600">要记住的边界</text>
+<text x="106" y="1589" font-size="21" fill="#596b60" font-weight="400">标准入口没有任意录音克隆的完整流程；配套编码器未</text>
+<text x="106" y="1621" font-size="21" fill="#596b60" font-weight="400">公开。中文发音仍需试听。</text>
+<text x="106" y="1659" font-size="18" fill="#596b60" font-weight="400">研究版本 dfb907a</text>
+<rect x="676" y="720" width="568" height="934" rx="18" fill="#fffefa" stroke="#cdd5c9"/>
+<text x="702" y="759" font-size="20" fill="#9b4d34" font-weight="500">02 / 模型编码 + 本地混合检索</text>
+<text x="702" y="808" font-size="31" fill="#255746" font-weight="700">DigUp</text>
+<text x="702" y="850" font-size="23" fill="#263b34" font-weight="500">用内容描述，找回本地文件及相关位置。</text>
+<rect x="702" y="897" width="154.66666666666666" height="84" rx="7" fill="#e7ede3" stroke="none"/>
+<text x="714" y="926" font-size="20" fill="#255746" font-weight="500">文件解析分片</text>
+<text x="860.6666666666666" y="944" font-size="18" fill="#596b60" font-weight="400">→</text>
+<rect x="882.6666666666666" y="897" width="154.66666666666666" height="84" rx="7" fill="#e7ede3" stroke="none"/>
+<text x="894.6666666666666" y="926" font-size="20" fill="#255746" font-weight="500">向量 + 关键</text>
+<text x="894.6666666666666" y="954" font-size="20" fill="#255746" font-weight="500">词</text>
+<text x="1041.3333333333333" y="944" font-size="18" fill="#596b60" font-weight="400">→</text>
+<rect x="1063.3333333333333" y="897" width="154.66666666666666" height="84" rx="7" fill="#e7ede3" stroke="none"/>
+<text x="1075.3333333333333" y="926" font-size="20" fill="#255746" font-weight="500">候选与位置</text>
+<text x="702" y="1008" font-size="21" fill="#255746" font-weight="600">能力</text>
+<text x="702" y="1039" font-size="22" fill="#263b34" font-weight="400">检索文字、图片和音视频内容，返回文件、页码或时</text>
+<text x="702" y="1072" font-size="22" fill="#263b34" font-weight="400">间窗口。</text>
+<text x="702" y="1119" font-size="21" fill="#255746" font-weight="600">原理</text>
+<text x="702" y="1150" font-size="22" fill="#263b34" font-weight="400">跨模态编码产生可比较的向量，与关键词结果校准融</text>
+<text x="702" y="1183" font-size="22" fill="#263b34" font-weight="400">合；位置来自索引元数据。</text>
+<text x="702" y="1230" font-size="21" fill="#255746" font-weight="600">我们的理解</text>
+<text x="702" y="1261" font-size="22" fill="#263b34" font-weight="400">共享语义空间来自训练时的对齐。图片可直接编码，</text>
+<text x="702" y="1294" font-size="22" fill="#263b34" font-weight="400">不必先生成文字描述；索引不是训练。</text>
+<text x="702" y="1341" font-size="21" fill="#255746" font-weight="600">意义</text>
+<text x="702" y="1372" font-size="22" fill="#263b34" font-weight="400">把“我记得内容”变成可执行的搜索。</text>
+<text x="702" y="1419" font-size="21" fill="#255746" font-weight="600">使用场景</text>
+<text x="702" y="1450" font-size="22" fill="#263b34" font-weight="400">个人资料库、素材查找、文档与录音定位。</text>
+<path d="M702 1495L1218 1495" fill="none" stroke="#cdd5c9" stroke-width="2"/>
+<text x="702" y="1525" font-size="20" fill="#9b4d34" font-weight="600">要记住的边界</text>
+<text x="702" y="1556" font-size="21" fill="#596b60" font-weight="400">向量相近只代表相关性；采样、索引覆盖和中文精确词</text>
+<text x="702" y="1588" font-size="21" fill="#596b60" font-weight="400">匹配都会影响结果。</text>
+<text x="702" y="1626" font-size="18" fill="#596b60" font-weight="400">研究版本 7db9537</text>
+<rect x="1272" y="720" width="568" height="934" rx="18" fill="#fffefa" stroke="#cdd5c9"/>
+<text x="1298" y="759" font-size="20" fill="#9b4d34" font-weight="500">03 / 资料 → 文稿 → 语音的工作流</text>
+<text x="1298" y="808" font-size="31" fill="#255746" font-weight="700">Podcastfy</text>
+<text x="1298" y="850" font-size="23" fill="#263b34" font-weight="500">把资料改编成分角色讲解的对话播客。</text>
+<rect x="1298" y="897" width="154.66666666666666" height="84" rx="7" fill="#e7ede3" stroke="none"/>
+<text x="1310" y="926" font-size="20" fill="#255746" font-weight="500">提取来源</text>
+<text x="1456.6666666666667" y="944" font-size="18" fill="#596b60" font-weight="400">→</text>
+<rect x="1478.6666666666667" y="897" width="154.66666666666666" height="84" rx="7" fill="#e7ede3" stroke="none"/>
+<text x="1490.6666666666667" y="926" font-size="20" fill="#255746" font-weight="500">LLM 写对话</text>
+<text x="1637.3333333333335" y="944" font-size="18" fill="#596b60" font-weight="400">→</text>
+<rect x="1659.3333333333333" y="897" width="154.66666666666666" height="84" rx="7" fill="#e7ede3" stroke="none"/>
+<text x="1671.3333333333333" y="926" font-size="20" fill="#255746" font-weight="500">TTS 与合并</text>
+<text x="1298" y="1008" font-size="21" fill="#255746" font-weight="600">能力</text>
+<text x="1298" y="1039" font-size="22" fill="#263b34" font-weight="400">整合支持的资料入口，设置语言、角色与风格，再生</text>
+<text x="1298" y="1072" font-size="22" fill="#263b34" font-weight="400">成播客音频。</text>
+<text x="1298" y="1119" font-size="21" fill="#255746" font-weight="600">原理</text>
+<text x="1298" y="1150" font-size="22" fill="#263b34" font-weight="400">提取正文或字幕，提示现成语言模型写对话，再按角</text>
+<text x="1298" y="1183" font-size="22" fill="#263b34" font-weight="400">色调用语音后端并拼接。</text>
+<text x="1298" y="1230" font-size="21" fill="#255746" font-weight="600">我们的理解</text>
+<text x="1298" y="1261" font-size="22" fill="#263b34" font-weight="400">理解、改写靠 LLM，发声靠 TTS；产品负责连接流</text>
+<text x="1298" y="1294" font-size="22" fill="#263b34" font-weight="400">程。类似资料转音频解读这一类能力。</text>
+<text x="1298" y="1341" font-size="21" fill="#255746" font-weight="600">意义</text>
+<text x="1298" y="1372" font-size="22" fill="#263b34" font-weight="400">减少从资料到“能听懂的讲解”的制作步骤。</text>
+<text x="1298" y="1419" font-size="21" fill="#255746" font-weight="600">使用场景</text>
+<text x="1298" y="1450" font-size="22" fill="#263b34" font-weight="400">学习资料听读、文章解读、播客内容原型。</text>
+<path d="M1298 1495L1814 1495" fill="none" stroke="#cdd5c9" stroke-width="2"/>
+<text x="1298" y="1525" font-size="20" fill="#9b4d34" font-weight="600">要记住的边界</text>
+<text x="1298" y="1556" font-size="21" fill="#596b60" font-weight="400">主流程不训练新模型。说得自然不等于事实可靠，来源</text>
+<text x="1298" y="1588" font-size="21" fill="#596b60" font-weight="400">提取与改写都需核对。</text>
+<text x="1298" y="1626" font-size="18" fill="#596b60" font-weight="400">研究版本 053b54a</text>
+<rect x="80" y="1717" width="568" height="934" rx="18" fill="#fffefa" stroke="#cdd5c9"/>
+<text x="106" y="1756" font-size="20" fill="#9b4d34" font-weight="500">04 / 按时长组织的素材制作流程</text>
+<text x="106" y="1805" font-size="31" fill="#255746" font-weight="700">Short Video Factory</text>
+<text x="106" y="1847" font-size="23" fill="#263b34" font-weight="500">用文稿和已有素材，批量合成配音短视频。</text>
+<rect x="106" y="1894" width="154.66666666666666" height="84" rx="7" fill="#e7ede3" stroke="none"/>
+<text x="118" y="1923" font-size="20" fill="#255746" font-weight="500">文稿 → 配音</text>
+<text x="264.66666666666663" y="1941" font-size="18" fill="#596b60" font-weight="400">→</text>
+<rect x="286.66666666666663" y="1894" width="154.66666666666666" height="84" rx="7" fill="#e7ede3" stroke="none"/>
+<text x="298.66666666666663" y="1923" font-size="20" fill="#255746" font-weight="500">按时长抽片</text>
+<text x="445.33333333333326" y="1941" font-size="18" fill="#596b60" font-weight="400">→</text>
+<rect x="467.3333333333333" y="1894" width="154.66666666666666" height="84" rx="7" fill="#e7ede3" stroke="none"/>
+<text x="479.3333333333333" y="1923" font-size="20" fill="#255746" font-weight="500">字幕 + 合成</text>
+<text x="106" y="2005" font-size="21" fill="#255746" font-weight="600">能力</text>
+<text x="106" y="2036" font-size="22" fill="#263b34" font-weight="400">组织文案、TTS、素材截取、字幕和背景音乐，通过 </text>
+<text x="106" y="2069" font-size="22" fill="#263b34" font-weight="400">FFmpeg 导出。</text>
+<text x="106" y="2116" font-size="21" fill="#255746" font-weight="600">原理</text>
+<text x="106" y="2147" font-size="22" fill="#263b34" font-weight="400">配音总时长作为目标，随机取素材与起点，累计覆</text>
+<text x="106" y="2180" font-size="22" fill="#263b34" font-weight="400">盖；TTS 边界用于字幕时间。</text>
+<text x="106" y="2227" font-size="21" fill="#255746" font-weight="600">我们的理解</text>
+<text x="106" y="2258" font-size="22" fill="#263b34" font-weight="400">它擅长自动执行剪辑。已查主路径没有按文稿语义选</text>
+<text x="106" y="2291" font-size="22" fill="#263b34" font-weight="400">画面；素材相关性需先把关。</text>
+<text x="106" y="2338" font-size="21" fill="#255746" font-weight="600">意义</text>
+<text x="106" y="2369" font-size="22" fill="#263b34" font-weight="400">把重复的素材拼装、叠字和音轨合成自动化。</text>
+<text x="106" y="2416" font-size="21" fill="#255746" font-weight="600">使用场景</text>
+<text x="106" y="2447" font-size="22" fill="#263b34" font-weight="400">已有合适素材的讲解、产品介绍、批量视频草稿。</text>
+<path d="M106 2492L622 2492" fill="none" stroke="#cdd5c9" stroke-width="2"/>
+<text x="106" y="2522" font-size="20" fill="#9b4d34" font-weight="600">要记住的边界</text>
+<text x="106" y="2553" font-size="21" fill="#596b60" font-weight="400">不等于理解整条长视频、提炼精彩瞬间。片段能填满配</text>
+<text x="106" y="2585" font-size="21" fill="#596b60" font-weight="400">音，不代表画面讲对内容。</text>
+<text x="106" y="2623" font-size="18" fill="#596b60" font-weight="400">研究版本 bc32e35</text>
+<rect x="676" y="1717" width="568" height="934" rx="18" fill="#fffefa" stroke="#cdd5c9"/>
+<text x="702" y="1756" font-size="20" fill="#9b4d34" font-weight="500">05 / 基于转录选段的剪辑流程</text>
+<text x="702" y="1805" font-size="31" fill="#255746" font-weight="700">AI YouTube Shorts Generator</text>
+<text x="702" y="1847" font-size="23" fill="#263b34" font-weight="500">从已有长视频，挑出适合独立呈现的短片。</text>
+<rect x="702" y="1894" width="154.66666666666666" height="84" rx="7" fill="#e7ede3" stroke="none"/>
+<text x="714" y="1923" font-size="20" fill="#255746" font-weight="500">语音 → 带时</text>
+<text x="714" y="1951" font-size="20" fill="#255746" font-weight="500">转录</text>
+<text x="860.6666666666666" y="1941" font-size="18" fill="#596b60" font-weight="400">→</text>
+<rect x="882.6666666666666" y="1894" width="154.66666666666666" height="84" rx="7" fill="#e7ede3" stroke="none"/>
+<text x="894.6666666666666" y="1923" font-size="20" fill="#255746" font-weight="500">LLM 选区间</text>
+<text x="1041.3333333333333" y="1941" font-size="18" fill="#596b60" font-weight="400">→</text>
+<rect x="1063.3333333333333" y="1894" width="154.66666666666666" height="84" rx="7" fill="#e7ede3" stroke="none"/>
+<text x="1075.3333333333333" y="1923" font-size="20" fill="#255746" font-weight="500">原片截取裁切</text>
+<text x="702" y="2005" font-size="21" fill="#255746" font-weight="600">能力</text>
+<text x="702" y="2036" font-size="22" fill="#263b34" font-weight="400">分析讲话内容、给出候选区间和标题，截取原画面、</text>
+<text x="702" y="2069" font-size="22" fill="#263b34" font-weight="400">保留原声；本地可裁竖屏。</text>
+<text x="702" y="2116" font-size="21" fill="#255746" font-weight="600">原理</text>
+<text x="702" y="2147" font-size="22" fill="#263b34" font-weight="400">语音识别提供时间文本，LLM 选段，程序检查时间和</text>
+<text x="702" y="2180" font-size="22" fill="#263b34" font-weight="400">重叠，再剪辑；人脸检测另管裁切。</text>
+<text x="702" y="2227" font-size="21" fill="#255746" font-weight="600">我们的理解</text>
+<text x="702" y="2258" font-size="22" fill="#263b34" font-weight="400">像读带时间的访谈稿后提出剪辑建议。二次创作主要</text>
+<text x="702" y="2291" font-size="22" fill="#263b34" font-weight="400">是选段与构图，不是重新配音拍摄。</text>
+<text x="702" y="2338" font-size="21" fill="#255746" font-weight="600">意义</text>
+<text x="702" y="2369" font-size="22" fill="#263b34" font-weight="400">减少翻找长片和逐段裁切的时间。</text>
+<text x="702" y="2416" font-size="21" fill="#255746" font-weight="600">使用场景</text>
+<text x="702" y="2447" font-size="22" fill="#263b34" font-weight="400">访谈、播客录像、讲话主导的课程或分享。</text>
+<path d="M702 2492L1218 2492" fill="none" stroke="#cdd5c9" stroke-width="2"/>
+<text x="702" y="2522" font-size="20" fill="#9b4d34" font-weight="600">要记住的边界</text>
+<text x="702" y="2553" font-size="21" fill="#596b60" font-weight="400">选段 LLM 不直接看画面。无声精彩场面可能漏掉；长</text>
+<text x="702" y="2585" font-size="21" fill="#596b60" font-weight="400">片切点和裁切效果需要回看。</text>
+<text x="702" y="2623" font-size="18" fill="#596b60" font-weight="400">研究版本 3d11f2e</text>
+<rect x="1272" y="1717" width="568" height="934" rx="18" fill="#fffefa" stroke="#cdd5c9"/>
+<text x="1298" y="1756" font-size="20" fill="#9b4d34" font-weight="500">06 / 研究策略 + 模型工具循环</text>
+<text x="1298" y="1805" font-size="31" fill="#255746" font-weight="700">Local Deep Research</text>
+<text x="1298" y="1847" font-size="23" fill="#263b34" font-weight="500">围绕问题反复找资料，形成带来源的报告。</text>
+<rect x="1298" y="1894" width="154.66666666666666" height="84" rx="7" fill="#e7ede3" stroke="none"/>
+<text x="1310" y="1923" font-size="20" fill="#255746" font-weight="500">问题与范围</text>
+<text x="1456.6666666666667" y="1941" font-size="18" fill="#596b60" font-weight="400">→</text>
+<rect x="1478.6666666666667" y="1894" width="154.66666666666666" height="84" rx="7" fill="#e7ede3" stroke="none"/>
+<text x="1490.6666666666667" y="1923" font-size="20" fill="#255746" font-weight="500">搜索 / 阅读</text>
+<text x="1490.6666666666667" y="1951" font-size="20" fill="#255746" font-weight="500">循环</text>
+<text x="1637.3333333333335" y="1941" font-size="18" fill="#596b60" font-weight="400">→</text>
+<rect x="1659.3333333333333" y="1894" width="154.66666666666666" height="84" rx="7" fill="#e7ede3" stroke="none"/>
+<text x="1671.3333333333333" y="1923" font-size="20" fill="#255746" font-weight="500">综合与引用</text>
+<text x="1298" y="2005" font-size="21" fill="#255746" font-weight="600">能力</text>
+<text x="1298" y="2036" font-size="22" fill="#263b34" font-weight="400">配置模型与来源，多轮搜索、按需读取；详细报告可</text>
+<text x="1298" y="2069" font-size="22" fill="#263b34" font-weight="400">继续分章节研究。</text>
+<text x="1298" y="2116" font-size="21" fill="#255746" font-weight="600">原理</text>
+<text x="1298" y="2147" font-size="22" fill="#263b34" font-weight="400">source-based 按轮次搜集；Agent 由模型选择工</text>
+<text x="1298" y="2180" font-size="22" fill="#263b34" font-weight="400">具，程序执行并返回结果，直到回答或触及边界。</text>
+<text x="1298" y="2227" font-size="21" fill="#255746" font-weight="600">我们的理解</text>
+<text x="1298" y="2258" font-size="22" fill="#263b34" font-weight="400">用户定目标，模型做语义判断，程序管工具、上下文</text>
+<text x="1298" y="2291" font-size="22" fill="#263b34" font-weight="400">和来源。循环更新任务资料，不训练权重。</text>
+<text x="1298" y="2338" font-size="21" fill="#255746" font-weight="600">意义</text>
+<text x="1298" y="2369" font-size="22" fill="#263b34" font-weight="400">把研究步骤组织成可配置、可追溯的过程。</text>
+<text x="1298" y="2416" font-size="21" fill="#255746" font-weight="600">使用场景</text>
+<text x="1298" y="2447" font-size="22" fill="#263b34" font-weight="400">专题学习、技术方案梳理、资料调查与报告草稿。</text>
+<path d="M1298 2492L1814 2492" fill="none" stroke="#cdd5c9" stroke-width="2"/>
+<text x="1298" y="2522" font-size="20" fill="#9b4d34" font-weight="600">要记住的边界</text>
+<text x="1298" y="2553" font-size="21" fill="#596b60" font-weight="400">不是每次都先全面规划，也不保证越查越对。结束或带</text>
+<text x="1298" y="2585" font-size="21" fill="#596b60" font-weight="400">引用，都不等于证据充分。</text>
+<text x="1298" y="2623" font-size="18" fill="#596b60" font-weight="400">研究版本 683a967</text>
+<text x="80" y="2707" font-size="33" fill="#255746" font-weight="600">把六个工具放在一起，我们真正理解了什么？</text>
+<rect x="80" y="2735" width="568" height="158" rx="12" fill="#f2e8da"/>
+<text x="104" y="2773" font-size="26" fill="#255746" font-weight="600">向量的用途不同</text>
+<text x="104" y="2811" font-size="23" fill="#263b34" font-weight="400">音色向量控制声音风格；语义向量衡量内容相关</text>
+<text x="104" y="2846" font-size="23" fill="#263b34" font-weight="400">性。都由数字构成，也不能直接互换。</text>
+<rect x="676" y="2735" width="568" height="158" rx="12" fill="#f2e8da"/>
+<text x="700" y="2773" font-size="26" fill="#255746" font-weight="600">制作视频有两条路</text>
+<text x="700" y="2811" font-size="23" fill="#263b34" font-weight="400">Video Factory 按时长拼已有素材；Shorts 读</text>
+<text x="700" y="2846" font-size="23" fill="#263b34" font-weight="400">长片转录来选段。输入不同，自动化目标不同。</text>
+<rect x="1272" y="2735" width="568" height="158" rx="12" fill="#f2e8da"/>
+<text x="1296" y="2773" font-size="26" fill="#255746" font-weight="600">使用模型不等于训练</text>
+<text x="1296" y="2811" font-size="23" fill="#263b34" font-weight="400">推理、建索引、反复搜索主要使用已有权重。训练</text>
+<text x="1296" y="2846" font-size="23" fill="#263b34" font-weight="400">是调整模型参数，不能混为一谈。</text>
+<text x="80" y="2958" font-size="40" fill="#255746" font-weight="700">对你有什么价值？</text>
+<rect x="80" y="2998" width="54" height="54" rx="12" fill="#255746" stroke="none"/>
+<text x="98" y="3034" font-size="26" fill="#fffefa" font-weight="600">1</text>
+<text x="162" y="3024" font-size="28" fill="#255746" font-weight="600">看懂产品的能力来源</text>
+<text x="162" y="3062" font-size="25" fill="#263b34" font-weight="400">区分模型判断、数据处理和规则执行；理解“效果好”到底依赖哪一层，知道该检查哪里。</text>
+<rect x="80" y="3124" width="54" height="54" rx="12" fill="#255746" stroke="none"/>
+<text x="98" y="3160" font-size="26" fill="#fffefa" font-weight="600">2</text>
+<text x="162" y="3150" font-size="28" fill="#255746" font-weight="600">知道类似产品如何落地</text>
+<text x="162" y="3188" font-size="25" fill="#263b34" font-weight="400">先定义输入与输出，再组合模型、工具、数据格式和控制逻辑；不必默认从训练基础模型开始。</text>
+<rect x="80" y="3250" width="54" height="54" rx="12" fill="#255746" stroke="none"/>
+<text x="98" y="3286" font-size="26" fill="#fffefa" font-weight="600">3</text>
+<text x="162" y="3276" font-size="28" fill="#255746" font-weight="600">把学习转化为可验证的原型</text>
+<text x="162" y="3314" font-size="25" fill="#263b34" font-weight="400">选一个具体任务，跑通最小流程，记录正确性、耗时和人工返工，再决定是否值得继续投入。</text>
+<rect x="80" y="3376" width="1760" height="122" rx="14" fill="#e7ede3" stroke="none"/>
+<text x="108" y="3418" font-size="25" fill="#263b34" font-weight="400">例如：研究问题 → LDR 报告 → 人工核查 → Podcastfy 对话播客。若更换配音后端为 Kokoro，还需适配接口、格式与音色。</text>
+<text x="80" y="3533" font-size="31" fill="#255746" font-weight="600">对你的核心价值：从“知道工具能做什么”，走到“能解释它为什么有效、知道哪里会失效，并能设计自己的实现”。</text>
+<path d="M80 3604L1840 3604" fill="none" stroke="#cdd5c9" stroke-width="2"/>
+<text x="80" y="3642" font-size="21" fill="#596b60" font-weight="400">这里是能力关系与可组合思路，不是已经打通的流水线。六项均基于固定版本文档与代码整理；上游工具本机实测仍为 0。</text>
+<text x="80" y="3684" font-size="20" fill="#596b60" font-weight="400">整理日期 2026-10-23  ·  详细图解、固定源码与验证计划见本地「AI 内容工具研究笔记」。</text></svg>

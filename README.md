@@ -12,6 +12,7 @@
 | 编号 | 项目 | 摘要 | 状态 | 入口 |
 | --- | --- | --- | --- | --- |
 | 001 | cyber-xiaowan · AI 女友的过渡阶段参考 | 以宿主 Agent 为能力底座，用图片情绪包、预设台词和状态事件构成有情绪表达的桌宠；对我们而言，是 AI 女友从图片陪伴逐步走向 3D 的过渡阶段参考。 | 研究中 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/001-evening-companion/) · [研究说明](projects/001-evening-companion/README.md) · [cyberxiaowan/cyber-xiaowan](https://github.com/cyberxiaowan/cyber-xiaowan) |
+| 002 | 六个 AI 内容工具的原理与实践 | 六个开源项目分别解决语音合成、本地内容检索、资料转播客、素材混剪、长视频选段和循环研究，重点看清模型判断与程序执行的分工。<br>**Kokoro**：语音合成模型及推理库，将文字转为音素，结合音色条件预测时长与韵律并生成语音波形。<br>**DigUp**：本地内容检索工具，将文件分片编码为语义向量并结合关键词索引，按描述返回文件及页码或时间位置。<br>**Podcastfy**：播客制作工作流，先提取资料并由语言模型改写成分角色对话，再调用语音后端配音合并。<br>**Short Video Factory**：自动混剪工具，以配音时长为目标随机截取已有素材，再叠字幕、合成音乐并导出视频。<br>**AI YouTube Shorts Generator**：长视频切片工具，让大模型读取带时间的语音转录来选段，再截取原画面与原声并按需裁切画幅。<br>**Local Deep Research**：深度研究编排工具，通过固定轮次或模型工具调用循环搜索和读取资料，最后综合为带引用的研究报告。 | 研究中 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/002-ai-content-toolkit/) · [研究说明](projects/002-ai-content-toolkit/README.md) · [hexgrad/kokoro](https://github.com/hexgrad/kokoro) · [ARahim3/DigUp](https://github.com/ARahim3/DigUp) · [souzatharsis/podcastfy](https://github.com/souzatharsis/podcastfy) · [YILS-LIN/short-video-factory](https://github.com/YILS-LIN/short-video-factory) · [Anil-matcha/AI-Youtube-Shorts-Generator](https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator) · [LearningCircuit/local-deep-research](https://github.com/LearningCircuit/local-deep-research) |
 | 004 | 数字人技术图谱 · 从素材口型到实时生成 | 研究低成本、动作自然且可实时交互的数字人：比较素材口型、单图驱动、离线与流式生成、3D、NeRF/3DGS、Live2D 和视频编辑八条路线。以优质动作素材 + MuseTalk 为当前主线，明确模型、成本与控制边界，并探索陪伴、客服导览、教学训练、虚拟直播及可插拔服务。 | 研究中 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/004-digital-human-atlas/) · [研究说明](projects/004-digital-human-atlas/README.md) · [TMElyralab/MuseTalk](https://github.com/TMElyralab/MuseTalk) |
 
 ### 001 · cyber-xiaowan · AI 女友的过渡阶段参考
@@ -21,6 +22,14 @@
 从赛博小晚到我们的 AI 女友：原库的 Agent 与图片状态展示，以及先陪伴、再动效、按需升级 3D 的分阶段路线。图中角色为结构示意。
 
 以宿主 Agent 为能力底座，用图片情绪包、预设台词和状态事件构成有情绪表达的桌宠；对我们而言，是 AI 女友从图片陪伴逐步走向 3D 的过渡阶段参考。
+
+### 002 · 六个 AI 内容工具的原理与实践
+
+<a href="https://yydshly.github.io/1020_codex_project/projects/002-ai-content-toolkit/"><img src="projects/002-ai-content-toolkit/assets/tool-map.svg" alt="六个 AI 工具的输入输出：查找素材、研究资料、配音、混剪、长视频切片与播客改编。按任务选用，实际效果待验证。" width="720"></a>
+
+六个 AI 工具的输入输出：查找素材、研究资料、配音、混剪、长视频切片与播客改编。按任务选用，实际效果待验证。
+
+六个开源项目分别解决语音合成、本地内容检索、资料转播客、素材混剪、长视频选段和循环研究，重点看清模型判断与程序执行的分工。
 
 ### 004 · 数字人技术图谱 · 从素材口型到实时生成
 

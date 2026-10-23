@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675" role="img" aria-labelledby="title desc">
+  <title id="title">六个 AI 内容工具的输入与输出</title>
+  <desc id="desc">DigUp 找素材，Local Deep Research 做研究，Kokoro 做配音；短视频工厂组合素材，YouTube Shorts Generator 切长视频，Podcastfy 把资料改编成播客。它们可按任务选择，并非必须顺次使用。</desc>
+  <rect width="1200" height="675" fill="#f4f3ee"/>
+  <g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+    <text x="60" y="67" fill="#50706b" font-size="16" letter-spacing="2">002 / AI CONTENT TOOLKIT</text>
+    <text x="60" y="123" fill="#173c36" font-size="38" font-weight="700">六个工具，六种输入与输出</text>
+    <text x="60" y="161" fill="#526560" font-size="19">按任务选择工具；图中的联系是研究思路，不代表已完成集成。</text>
+    <g fill="#fff" stroke="#d3ddd6" stroke-width="2">
+      <rect x="60" y="204" width="340" height="172" rx="16"/>
+      <rect x="430" y="204" width="340" height="172" rx="16"/>
+      <rect x="800" y="204" width="340" height="172" rx="16"/>
+      <rect x="60" y="405" width="340" height="172" rx="16"/>
+      <rect x="430" y="405" width="340" height="172" rx="16"/>
+      <rect x="800" y="405" width="340" height="172" rx="16"/>
+    </g>
+    <g fill="#18705d" font-size="15" font-weight="700">
+      <text x="84" y="238">01 / 查找</text><text x="454" y="238">02 / 研究</text><text x="824" y="238">03 / 配音</text>
+      <text x="84" y="439">04 / 制作新视频</text><text x="454" y="439">05 / 从原片提取</text><text x="824" y="439">06 / 改编为节目</text>
+    </g>
+    <g fill="#173c36" font-size="23" font-weight="700">
+      <text x="84" y="278">DigUp</text><text x="454" y="278">Local Deep Research</text><text x="824" y="278">Kokoro</text>
+      <text x="84" y="479">Short Video Factory</text><text x="454" y="479" font-size="19">AI YouTube Shorts Generator</text><text x="824" y="479">Podcastfy</text>
+    </g>
+    <g fill="#526560" font-size="18">
+      <text x="84" y="318">文件夹 + 描述 → 匹配的素材</text><text x="84" y="348">理解：语义检索</text>
+      <text x="454" y="318">研究问题 → 带引用的报告</text><text x="454" y="348">理解：搜索与综合</text>
+      <text x="824" y="318">文稿 + 音色 → 语音</text><text x="824" y="348">理解：文本到声音</text>
+      <text x="84" y="519">提示词 + 素材 → 混剪视频</text><text x="84" y="549">理解：组件协作</text>
+      <text x="454" y="519">长视频 → 高光短片</text><text x="454" y="549">理解：筛选与裁切</text>
+      <text x="824" y="519">资料 → 对话稿 → 播客</text><text x="824" y="549">理解：改写与合成</text>
+    </g>
+    <text x="60" y="629" fill="#526560" font-size="17">文档与部分代码已核对 · 安装、中文效果、性能和费用待实测 · 2026-10-20</text>
+  </g>
+</svg>

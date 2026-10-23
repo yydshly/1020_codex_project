@@ -1,0 +1,61 @@
+{
+  "id": 2,
+  "slug": "ai-content-toolkit",
+  "name": "六个 AI 内容工具的原理与实践",
+  "summary": "六个开源项目分别解决语音合成、本地内容检索、资料转播客、素材混剪、长视频选段和循环研究，重点看清模型判断与程序执行的分工。",
+  "repo": "https://github.com/hexgrad/kokoro",
+  "status": "研究中",
+  "cover": "assets/tool-map.svg",
+  "cover_alt": "六个 AI 工具的输入输出：查找素材、研究资料、配音、混剪、长视频切片与播客改编。按任务选用，实际效果待验证。",
+  "web": true,
+  "repositories": [
+    "https://github.com/hexgrad/kokoro",
+    "https://github.com/ARahim3/DigUp",
+    "https://github.com/souzatharsis/podcastfy",
+    "https://github.com/YILS-LIN/short-video-factory",
+    "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator",
+    "https://github.com/LearningCircuit/local-deep-research"
+  ],
+  "research_date": "2026-10-20",
+  "source_post": "https://x.com/goan999999/status/2111807626329965049",
+  "study_order": [
+    "kokoro",
+    "digup",
+    "podcastfy",
+    "video-factory",
+    "shorts",
+    "ldr"
+  ],
+  "tool_summaries": [
+    {
+      "name": "Kokoro",
+      "repo": "https://github.com/hexgrad/kokoro",
+      "summary": "语音合成模型及推理库，将文字转为音素，结合音色条件预测时长与韵律并生成语音波形。"
+    },
+    {
+      "name": "DigUp",
+      "repo": "https://github.com/ARahim3/DigUp",
+      "summary": "本地内容检索工具，将文件分片编码为语义向量并结合关键词索引，按描述返回文件及页码或时间位置。"
+    },
+    {
+      "name": "Podcastfy",
+      "repo": "https://github.com/souzatharsis/podcastfy",
+      "summary": "播客制作工作流，先提取资料并由语言模型改写成分角色对话，再调用语音后端配音合并。"
+    },
+    {
+      "name": "Short Video Factory",
+      "repo": "https://github.com/YILS-LIN/short-video-factory",
+      "summary": "自动混剪工具，以配音时长为目标随机截取已有素材，再叠字幕、合成音乐并导出视频。"
+    },
+    {
+      "name": "AI YouTube Shorts Generator",
+      "repo": "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator",
+      "summary": "长视频切片工具，让大模型读取带时间的语音转录来选段，再截取原画面与原声并按需裁切画幅。"
+    },
+    {
+      "name": "Local Deep Research",
+      "repo": "https://github.com/LearningCircuit/local-deep-research",
+      "summary": "深度研究编排工具，通过固定轮次或模型工具调用循环搜索和读取资料，最后综合为带引用的研究报告。"
+    }
+  ]
+}

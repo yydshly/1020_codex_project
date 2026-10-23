@@ -1,0 +1,281 @@
+{
+  "checked_on": "2026-10-20",
+  "verification": "Official repository documentation and metadata; no runtime validation",
+  "repositories": [
+    {
+      "requested_repository": "ARahim3/DigUp",
+      "repository": "ARahim3/DigUp",
+      "url": "https://github.com/ARahim3/DigUp",
+      "branch": "main",
+      "commit": "7db9537712995d14e50e0e44baa00f721b98f1c6",
+      "commit_date": "2026-10-18T05:27:36Z",
+      "license": "MIT",
+      "readme_url": "https://github.com/ARahim3/DigUp/blob/7db9537712995d14e50e0e44baa00f721b98f1c6/README.md",
+      "inspected_files": [
+        {
+          "path": "Sources/DigUpKit/Searcher.swift",
+          "url": "https://github.com/ARahim3/DigUp/blob/7db9537712995d14e50e0e44baa00f721b98f1c6/Sources/DigUpKit/Searcher.swift"
+        },
+        {
+          "path": "Sources/DigUpKit/Indexer.swift",
+          "url": "https://github.com/ARahim3/DigUp/blob/7db9537712995d14e50e0e44baa00f721b98f1c6/Sources/DigUpKit/Indexer.swift"
+        },
+        {
+          "path": "Sources/DigUpKit/Model.swift",
+          "url": "https://github.com/ARahim3/DigUp/blob/7db9537712995d14e50e0e44baa00f721b98f1c6/Sources/DigUpKit/Model.swift"
+        },
+        {
+          "path": "Sources/DigUpKit/IndexStore.swift",
+          "url": "https://github.com/ARahim3/DigUp/blob/7db9537712995d14e50e0e44baa00f721b98f1c6/Sources/DigUpKit/IndexStore.swift"
+        },
+        {
+          "path": "Sources/DigUpKit/Vectors.swift",
+          "url": "https://github.com/ARahim3/DigUp/blob/7db9537712995d14e50e0e44baa00f721b98f1c6/Sources/DigUpKit/Vectors.swift"
+        },
+        {
+          "path": "Sources/DigUpKit/Extractors.swift",
+          "url": "https://github.com/ARahim3/DigUp/blob/7db9537712995d14e50e0e44baa00f721b98f1c6/Sources/DigUpKit/Extractors.swift"
+        },
+        {
+          "path": "Sources/LlamaRuntime/LlamaEmbedder.swift",
+          "url": "https://github.com/ARahim3/DigUp/blob/7db9537712995d14e50e0e44baa00f721b98f1c6/Sources/LlamaRuntime/LlamaEmbedder.swift"
+        }
+      ]
+    },
+    {
+      "requested_repository": "LearningCircuit/local-deep-research",
+      "repository": "LearningCircuit/local-deep-research",
+      "url": "https://github.com/LearningCircuit/local-deep-research",
+      "branch": "main",
+      "commit": "683a967df20fe98ec0ddc99668041e22b95ff78b",
+      "commit_date": "2026-10-19T20:42:02Z",
+      "license": "MIT",
+      "readme_url": "https://github.com/LearningCircuit/local-deep-research/blob/683a967df20fe98ec0ddc99668041e22b95ff78b/README.md",
+      "inspected_files": [
+        {
+          "path": "pyproject.toml",
+          "url": "https://github.com/LearningCircuit/local-deep-research/blob/683a967df20fe98ec0ddc99668041e22b95ff78b/pyproject.toml"
+        },
+        {
+          "path": "src/local_deep_research/search_system.py",
+          "url": "https://github.com/LearningCircuit/local-deep-research/blob/683a967df20fe98ec0ddc99668041e22b95ff78b/src/local_deep_research/search_system.py"
+        },
+        {
+          "path": "src/local_deep_research/advanced_search_system/strategies/langgraph_agent_strategy.py",
+          "url": "https://github.com/LearningCircuit/local-deep-research/blob/683a967df20fe98ec0ddc99668041e22b95ff78b/src/local_deep_research/advanced_search_system/strategies/langgraph_agent_strategy.py"
+        },
+        {
+          "path": "src/local_deep_research/advanced_search_system/strategies/source_based_strategy.py",
+          "url": "https://github.com/LearningCircuit/local-deep-research/blob/683a967df20fe98ec0ddc99668041e22b95ff78b/src/local_deep_research/advanced_search_system/strategies/source_based_strategy.py"
+        },
+        {
+          "path": "src/local_deep_research/advanced_search_system/tools/fetch/__init__.py",
+          "url": "https://github.com/LearningCircuit/local-deep-research/blob/683a967df20fe98ec0ddc99668041e22b95ff78b/src/local_deep_research/advanced_search_system/tools/fetch/__init__.py"
+        },
+        {
+          "path": "src/local_deep_research/report_generator.py",
+          "url": "https://github.com/LearningCircuit/local-deep-research/blob/683a967df20fe98ec0ddc99668041e22b95ff78b/src/local_deep_research/report_generator.py"
+        },
+        {
+          "path": "src/local_deep_research/citation_handler.py",
+          "url": "https://github.com/LearningCircuit/local-deep-research/blob/683a967df20fe98ec0ddc99668041e22b95ff78b/src/local_deep_research/citation_handler.py"
+        },
+        {
+          "path": "src/local_deep_research/citation_handlers/standard_citation_handler.py",
+          "url": "https://github.com/LearningCircuit/local-deep-research/blob/683a967df20fe98ec0ddc99668041e22b95ff78b/src/local_deep_research/citation_handlers/standard_citation_handler.py"
+        }
+      ],
+      "deep_reviewed_on": "2026-10-23"
+    },
+    {
+      "requested_repository": "hexgrad/kokoro",
+      "repository": "hexgrad/kokoro",
+      "url": "https://github.com/hexgrad/kokoro",
+      "branch": "main",
+      "commit": "dfb907a02bba8152ca444717ca5d78747ccb4bec",
+      "commit_date": "2025-08-06T22:28:53Z",
+      "license": "Apache-2.0",
+      "readme_url": "https://github.com/hexgrad/kokoro/blob/dfb907a02bba8152ca444717ca5d78747ccb4bec/README.md",
+      "inspected_files": [
+        {
+          "path": "kokoro/pipeline.py",
+          "url": "https://github.com/hexgrad/kokoro/blob/dfb907a02bba8152ca444717ca5d78747ccb4bec/kokoro/pipeline.py"
+        },
+        {
+          "path": "pyproject.toml",
+          "url": "https://github.com/hexgrad/kokoro/blob/dfb907a02bba8152ca444717ca5d78747ccb4bec/pyproject.toml"
+        },
+        {
+          "path": "kokoro/model.py",
+          "url": "https://github.com/hexgrad/kokoro/blob/dfb907a02bba8152ca444717ca5d78747ccb4bec/kokoro/model.py"
+        }
+      ]
+    },
+    {
+      "requested_repository": "YILS-LIN/short-video-factory",
+      "repository": "YILS-LIN/short-video-factory",
+      "url": "https://github.com/YILS-LIN/short-video-factory",
+      "branch": "main",
+      "commit": "bc32e3515b38df548ff0608f7325b7806e8cfa20",
+      "commit_date": "2026-10-16T09:12:19Z",
+      "license": "AGPL-3.0",
+      "readme_url": "https://github.com/YILS-LIN/short-video-factory/blob/bc32e3515b38df548ff0608f7325b7806e8cfa20/README.md",
+      "inspected_files": [
+        {
+          "path": "electron/lib/edge-tts.ts",
+          "url": "https://github.com/YILS-LIN/short-video-factory/blob/bc32e3515b38df548ff0608f7325b7806e8cfa20/electron/lib/edge-tts.ts"
+        },
+        {
+          "path": "src/lib/llm/providers.ts",
+          "url": "https://github.com/YILS-LIN/short-video-factory/blob/bc32e3515b38df548ff0608f7325b7806e8cfa20/src/lib/llm/providers.ts"
+        },
+        {
+          "path": "package.json",
+          "url": "https://github.com/YILS-LIN/short-video-factory/blob/bc32e3515b38df548ff0608f7325b7806e8cfa20/package.json"
+        },
+        {
+          "path": "electron/ffmpeg/index.ts",
+          "url": "https://github.com/YILS-LIN/short-video-factory/blob/bc32e3515b38df548ff0608f7325b7806e8cfa20/electron/ffmpeg/index.ts"
+        },
+        {
+          "path": "src/views/Home/index.vue",
+          "url": "https://github.com/YILS-LIN/short-video-factory/blob/bc32e3515b38df548ff0608f7325b7806e8cfa20/src/views/Home/index.vue"
+        },
+        {
+          "path": "src/views/Home/components/VideoManage.vue",
+          "url": "https://github.com/YILS-LIN/short-video-factory/blob/bc32e3515b38df548ff0608f7325b7806e8cfa20/src/views/Home/components/VideoManage.vue"
+        },
+        {
+          "path": "src/lib/llm/generate.ts",
+          "url": "https://github.com/YILS-LIN/short-video-factory/blob/bc32e3515b38df548ff0608f7325b7806e8cfa20/src/lib/llm/generate.ts"
+        },
+        {
+          "path": "src/lib/llm/prompts.ts",
+          "url": "https://github.com/YILS-LIN/short-video-factory/blob/bc32e3515b38df548ff0608f7325b7806e8cfa20/src/lib/llm/prompts.ts"
+        },
+        {
+          "path": "electron/effect-engine/subtitle-render-service.ts",
+          "url": "https://github.com/YILS-LIN/short-video-factory/blob/bc32e3515b38df548ff0608f7325b7806e8cfa20/electron/effect-engine/subtitle-render-service.ts"
+        },
+        {
+          "path": "src/effect-engine/renderer/subtitle-render-runtime.ts",
+          "url": "https://github.com/YILS-LIN/short-video-factory/blob/bc32e3515b38df548ff0608f7325b7806e8cfa20/src/effect-engine/renderer/subtitle-render-runtime.ts"
+        }
+      ],
+      "deep_reviewed_on": "2026-10-23"
+    },
+    {
+      "requested_repository": "Anil-matcha/AI-Youtube-Shorts-Generator",
+      "repository": "Anil-matcha/AI-Youtube-Shorts-Generator",
+      "url": "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator",
+      "branch": "main",
+      "commit": "3d11f2e6ecbbb9757d788e1bd05695c01f3e6c6c",
+      "commit_date": "2026-10-11T11:19:33Z",
+      "license": "MIT",
+      "readme_url": "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator/blob/3d11f2e6ecbbb9757d788e1bd05695c01f3e6c6c/README.md",
+      "inspected_files": [
+        {
+          "path": "shorts_generator/local/clipper.py",
+          "url": "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator/blob/3d11f2e6ecbbb9757d788e1bd05695c01f3e6c6c/shorts_generator/local/clipper.py"
+        },
+        {
+          "path": "shorts_generator/local/llm.py",
+          "url": "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator/blob/3d11f2e6ecbbb9757d788e1bd05695c01f3e6c6c/shorts_generator/local/llm.py"
+        },
+        {
+          "path": "shorts_generator/highlights.py",
+          "url": "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator/blob/3d11f2e6ecbbb9757d788e1bd05695c01f3e6c6c/shorts_generator/highlights.py"
+        },
+        {
+          "path": "shorts_generator/pipeline.py",
+          "url": "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator/blob/3d11f2e6ecbbb9757d788e1bd05695c01f3e6c6c/shorts_generator/pipeline.py"
+        },
+        {
+          "path": "shorts_generator/local/transcriber.py",
+          "url": "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator/blob/3d11f2e6ecbbb9757d788e1bd05695c01f3e6c6c/shorts_generator/local/transcriber.py"
+        },
+        {
+          "path": "shorts_generator/local/downloader.py",
+          "url": "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator/blob/3d11f2e6ecbbb9757d788e1bd05695c01f3e6c6c/shorts_generator/local/downloader.py"
+        },
+        {
+          "path": "shorts_generator/clipper.py",
+          "url": "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator/blob/3d11f2e6ecbbb9757d788e1bd05695c01f3e6c6c/shorts_generator/clipper.py"
+        },
+        {
+          "path": "shorts_generator/transcriber.py",
+          "url": "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator/blob/3d11f2e6ecbbb9757d788e1bd05695c01f3e6c6c/shorts_generator/transcriber.py"
+        },
+        {
+          "path": "shorts_generator/config.py",
+          "url": "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator/blob/3d11f2e6ecbbb9757d788e1bd05695c01f3e6c6c/shorts_generator/config.py"
+        },
+        {
+          "path": "main.py",
+          "url": "https://github.com/Anil-matcha/AI-Youtube-Shorts-Generator/blob/3d11f2e6ecbbb9757d788e1bd05695c01f3e6c6c/main.py"
+        }
+      ],
+      "deep_reviewed_on": "2026-10-23"
+    },
+    {
+      "requested_repository": "souzatharsis/podcastfy",
+      "repository": "souzatharsis/podcastfy",
+      "url": "https://github.com/souzatharsis/podcastfy",
+      "branch": "main",
+      "commit": "053b54a0917e35edb2808049499292361ccaae7b",
+      "commit_date": "2026-05-04T14:49:10Z",
+      "license": "Apache-2.0",
+      "readme_url": "https://github.com/souzatharsis/podcastfy/blob/053b54a0917e35edb2808049499292361ccaae7b/README.md",
+      "inspected_files": [
+        {
+          "path": "usage/config.md",
+          "url": "https://github.com/souzatharsis/podcastfy/blob/053b54a0917e35edb2808049499292361ccaae7b/usage/config.md"
+        },
+        {
+          "path": "usage/local_llm.md",
+          "url": "https://github.com/souzatharsis/podcastfy/blob/053b54a0917e35edb2808049499292361ccaae7b/usage/local_llm.md"
+        },
+        {
+          "path": "podcastfy/text_to_speech.py",
+          "url": "https://github.com/souzatharsis/podcastfy/blob/053b54a0917e35edb2808049499292361ccaae7b/podcastfy/text_to_speech.py"
+        },
+        {
+          "path": "pyproject.toml",
+          "url": "https://github.com/souzatharsis/podcastfy/blob/053b54a0917e35edb2808049499292361ccaae7b/pyproject.toml"
+        },
+        {
+          "path": "podcastfy/content_generator.py",
+          "url": "https://github.com/souzatharsis/podcastfy/blob/053b54a0917e35edb2808049499292361ccaae7b/podcastfy/content_generator.py"
+        },
+        {
+          "path": "podcastfy/content_parser/content_extractor.py",
+          "url": "https://github.com/souzatharsis/podcastfy/blob/053b54a0917e35edb2808049499292361ccaae7b/podcastfy/content_parser/content_extractor.py"
+        },
+        {
+          "path": "podcastfy/client.py",
+          "url": "https://github.com/souzatharsis/podcastfy/blob/053b54a0917e35edb2808049499292361ccaae7b/podcastfy/client.py"
+        },
+        {
+          "path": "podcastfy/config.yaml",
+          "url": "https://github.com/souzatharsis/podcastfy/blob/053b54a0917e35edb2808049499292361ccaae7b/podcastfy/config.yaml"
+        },
+        {
+          "path": "podcastfy/conversation_config.yaml",
+          "url": "https://github.com/souzatharsis/podcastfy/blob/053b54a0917e35edb2808049499292361ccaae7b/podcastfy/conversation_config.yaml"
+        },
+        {
+          "path": "podcastfy/content_parser/website_extractor.py",
+          "url": "https://github.com/souzatharsis/podcastfy/blob/053b54a0917e35edb2808049499292361ccaae7b/podcastfy/content_parser/website_extractor.py"
+        },
+        {
+          "path": "podcastfy/content_parser/youtube_transcriber.py",
+          "url": "https://github.com/souzatharsis/podcastfy/blob/053b54a0917e35edb2808049499292361ccaae7b/podcastfy/content_parser/youtube_transcriber.py"
+        },
+        {
+          "path": "podcastfy/content_parser/pdf_extractor.py",
+          "url": "https://github.com/souzatharsis/podcastfy/blob/053b54a0917e35edb2808049499292361ccaae7b/podcastfy/content_parser/pdf_extractor.py"
+        }
+      ]
+    }
+  ]
+}

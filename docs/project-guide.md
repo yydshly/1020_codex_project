@@ -36,6 +36,8 @@ python scripts/projects.py new example-project --name "项目名称" --repo "htt
 
 `web` 为 `true` 时，必须提供 `web/index.html`。该目录只能放公开发布的静态产物；应用源码和构建配置放在 `src/` 或其他独立目录。
 
+一个研究子项目涉及多个上游工具时，可增加 `repositories`（实际 GitHub 仓库 URL 数组）与 `tool_summaries`（每项包含 `name`、`repo`、`summary`）。每条摘要用一句话解释该工具的本质能力和原理；来源必须属于 `repositories`，摘要应覆盖全部来源。保留 `repo` 作为兼容字段，其值必须出现在数组中。README 索引与在线索引均展示所有来源和逐工具摘要；未提供这些可选字段的单仓库项目保持原有展示。
+
 ## 同步与校验
 
 ```bash
