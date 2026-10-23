@@ -1,0 +1,112 @@
+{
+  "verified_at_utc": "2026-10-23T09:15:07.997819+00:00",
+  "content_commit": "5bb5265899f37215feac33ccd461e50297c3b346",
+  "base_url": "https://yydshly.github.io/1020_codex_project/",
+  "resources": [
+    {
+      "url": "https://yydshly.github.io/1020_codex_project/projects/011-jev-browser-agent-study/index.html",
+      "status": 200,
+      "bytes": 45950,
+      "sha256": "8089ac266eb3680701d9237799eb5c7a51fc603186fca4a302d9f4f46d1d19a2",
+      "expected_sha256": "8089ac266eb3680701d9237799eb5c7a51fc603186fca4a302d9f4f46d1d19a2",
+      "matches_commit": true
+    },
+    {
+      "url": "https://yydshly.github.io/1020_codex_project/projects/011-jev-browser-agent-study/architecture.html",
+      "status": 200,
+      "bytes": 8078,
+      "sha256": "67545b21cf2c4b4730dd14065eff095a59bf8be44b72548729b62aa43b0c5e95",
+      "expected_sha256": "67545b21cf2c4b4730dd14065eff095a59bf8be44b72548729b62aa43b0c5e95",
+      "matches_commit": true
+    },
+    {
+      "url": "https://yydshly.github.io/1020_codex_project/projects/011-jev-browser-agent-study/guide.html",
+      "status": 200,
+      "bytes": 7353,
+      "sha256": "1c1f32e7948ffcd91188cc62715e3abe274dfd17bada8c13dc600807663c01c1",
+      "expected_sha256": "1c1f32e7948ffcd91188cc62715e3abe274dfd17bada8c13dc600807663c01c1",
+      "matches_commit": true
+    },
+    {
+      "url": "https://yydshly.github.io/1020_codex_project/projects/011-jev-browser-agent-study/style.css",
+      "status": 200,
+      "bytes": 37983,
+      "sha256": "2584d26f99359e5d6c750696537ceef6eea088eabe93400e54f9c15203144a4b",
+      "expected_sha256": "2584d26f99359e5d6c750696537ceef6eea088eabe93400e54f9c15203144a4b",
+      "matches_commit": true
+    },
+    {
+      "url": "https://yydshly.github.io/1020_codex_project/projects/011-jev-browser-agent-study/app.js",
+      "status": 200,
+      "bytes": 14918,
+      "sha256": "37e778705ea4c25b47a6d6915e0199a8c653981278d80a2fc1f3226404874ecf",
+      "expected_sha256": "37e778705ea4c25b47a6d6915e0199a8c653981278d80a2fc1f3226404874ecf",
+      "matches_commit": true
+    },
+    {
+      "url": "https://yydshly.github.io/1020_codex_project/projects/011-jev-browser-agent-study/assets/browser-agent-architecture.svg",
+      "status": 200,
+      "bytes": 9724,
+      "sha256": "dfaf4f997a68e00bde84d19b52070cb15d153c5ae1d42d261d75ef0fec4d11f7",
+      "expected_sha256": "dfaf4f997a68e00bde84d19b52070cb15d153c5ae1d42d261d75ef0fec4d11f7",
+      "matches_commit": true
+    },
+    {
+      "url": "https://yydshly.github.io/1020_codex_project/projects/011-jev-browser-agent-study/assets/browser-agent-architecture.png",
+      "status": 200,
+      "bytes": 240245,
+      "sha256": "2d562c2d31209ff6a02b7becc20d320dc670aa6d1493cfcfcf5ea08fe7f266f7",
+      "expected_sha256": "2d562c2d31209ff6a02b7becc20d320dc670aa6d1493cfcfcf5ea08fe7f266f7",
+      "matches_commit": true,
+      "matches_approved_original": true
+    },
+    {
+      "url": "https://yydshly.github.io/1020_codex_project/projects/011-jev-browser-agent-study/assets/browser-choice-guide.svg",
+      "status": 200,
+      "bytes": 53799,
+      "sha256": "cf4c2e714e83c55138d70d4f597e9d97934adb07b82f93952951289314b5093e",
+      "expected_sha256": "cf4c2e714e83c55138d70d4f597e9d97934adb07b82f93952951289314b5093e",
+      "matches_commit": true
+    },
+    {
+      "url": "https://yydshly.github.io/1020_codex_project/projects/011-jev-browser-agent-study/assets/browser-choice-guide.png",
+      "status": 200,
+      "bytes": 1436923,
+      "sha256": "3010b3329ef102153180d1d4188009b76796bdfd21d6b06bbca89c7b897dc09b",
+      "expected_sha256": "3010b3329ef102153180d1d4188009b76796bdfd21d6b06bbca89c7b897dc09b",
+      "matches_commit": true
+    },
+    {
+      "url": "https://yydshly.github.io/1020_codex_project/projects/011-jev-browser-agent-study/docs/research.md",
+      "status": 200,
+      "bytes": 24571,
+      "sha256": "aec085a9423a617067028d0f0af1ce1ad6acf8cea1dedc2caa9979f4e6cffaf4",
+      "expected_sha256": "aec085a9423a617067028d0f0af1ce1ad6acf8cea1dedc2caa9979f4e6cffaf4",
+      "matches_commit": true
+    },
+    {
+      "url": "https://yydshly.github.io/1020_codex_project/projects/011-jev-browser-agent-study/docs/sources.json",
+      "status": 200,
+      "bytes": 9003,
+      "sha256": "70a3d9a228dfac69ade0a1c41b62b3793e9644c251a9c0383c5d1105ea4951b5",
+      "expected_sha256": "70a3d9a228dfac69ade0a1c41b62b3793e9644c251a9c0383c5d1105ea4951b5",
+      "matches_commit": true
+    },
+    {
+      "url": "https://yydshly.github.io/1020_codex_project/covers/011-jev-browser-agent-study.svg",
+      "status": 200,
+      "bytes": 9724,
+      "sha256": "dfaf4f997a68e00bde84d19b52070cb15d153c5ae1d42d261d75ef0fec4d11f7",
+      "expected_sha256": "dfaf4f997a68e00bde84d19b52070cb15d153c5ae1d42d261d75ef0fec4d11f7",
+      "matches_commit": true
+    },
+    {
+      "url": "https://yydshly.github.io/1020_codex_project/index.html",
+      "status": 200,
+      "bytes": 14055,
+      "sha256": "e4c2acee15daa620d06011281b6ebadaba8bcf541614ad4a71e52259bd37ed7c",
+      "expected_sha256": "e4c2acee15daa620d06011281b6ebadaba8bcf541614ad4a71e52259bd37ed7c",
+      "matches_commit": true
+    }
+  ]
+}

@@ -19,7 +19,18 @@
 
 ## 验证状态
 
-发布准备中；推送、工作流结果和线上核验完成后补记。
+已完成提交、推送、GitHub Pages 部署与线上核验。
+
+- 内容提交：`5bb5265899f37215feac33ccd461e50297c3b346`，已推送至远端 `main`。
+- [Deploy Pages #39930267359](https://github.com/yydshly/1020_codex_project/actions/runs/39930267359) 的 build / deploy 均成功；[推送检查 #39930240642](https://github.com/yydshly/1020_codex_project/actions/runs/39930240642) 也通过。
+- 独立发布目录校验 9 个项目；8 项已有维护测试、静态构建、三个 HTML 页资源与锚点、JavaScript 语法检查均通过。
+- 线上核对 13 项资源：研究页、两张图查看器、样式、脚本、四张图、底稿、来源索引、目录封面及站点索引，全部 HTTP 200，字节与发布提交一致。
+- 在线目录摘要已包含库的能力、复用价值、适用任务和待实现扩展方向。
+- 浏览器实际确认首屏摘要、五项扩展、1920 × 1080 横图、100% / 适应窗口及返回研究页；没有控制台警告或错误。新增模块在 390px 视口下没有横向溢出。
+- 横向 PNG 与认可原图逐字节相同，没有重新绘制。线上资源哈希见[online-verification.json](online-verification.json)。
+- 发布通过独立工作树完成，只提交 011 内容、其目录条目和发布记录。
+
+[线上首屏](../assets/published-preview.jpg) / [研究结论与扩展模块](../assets/published-directions.jpg)。
 
 ## 沿用原图
 
