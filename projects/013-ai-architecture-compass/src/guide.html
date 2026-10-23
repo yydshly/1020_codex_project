@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f5f3ed"><title>完整引导图 · AI 开发架构手册</title>
+  <link rel="icon" href="mark.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="guide.css">
+  <script src="guide.js" defer></script>
+</head>
+<body class="guide-page">
+  <a class="skip" href="#guide-content">跳到阅读区</a>
+  <header class="topbar"><a class="brand" href="index.html"><img src="mark.svg" width="30" height="30" alt=""><span>架构手册<small>COMPLETE FIELD MAP</small></span></a><div class="toplinks"><a href="overview.html">一图速览 ↗</a><a href="index.html#map">返回手册 ←</a></div></header>
+  <main class="guide-main">
+    <div class="guide-heading"><div><p class="eyebrow">ONE MAP / THREE WAYS TO READ</p><h1>代码是基石，需求是目标。</h1><p>逐章理解怎样选结构、约束实现、留下证据。初次阅读可先看<a href="overview.html">一图速览 →</a></p></div><a class="button secondary" href="architecture-guide.svg" download="AI开发架构完整引导图.svg">下载完整 SVG ↓</a></div>
+    <div class="guide-route" aria-label="阅读主线"><span><b>目标</b>明确验收</span><i>→</i><span><b>边界</b>选择结构</span><i>→</i><span><b>实现</b>约束代码</span><i>→</i><span><b>证据</b>检验与调整</span></div>
+    <div class="guide-workspace">
+      <aside class="guide-sidebar"><p class="eyebrow">七个章节，一条主线</p><nav class="chapter-list" aria-label="引导图章节">@@CHAPTERS@@</nav><div class="method-shortcut"><label for="method-jump">直接找一种架构</label><select id="method-jump"><option value="">选择方法…</option>@@METHOD_OPTIONS@@</select></div><p class="guide-side-note">按章看图保留上下文。文字阅读适合窄屏与细读。完整原图始终可以下载。</p></aside>
+      <div id="guide-content" class="guide-content">
+        <div class="reader-toolbar"><div class="reader-modes" role="group" aria-label="阅读方式"><button data-view="chapter" aria-pressed="true">按章看图</button><button data-view="text" aria-pressed="false">文字阅读</button><button data-view="full" aria-pressed="false">整图浏览</button></div><span id="chapter-count" class="mono">01 / 07</span></div>
+        <div class="chapter-heading"><p id="chapter-purpose">@@FIRST_SUMMARY@@</p><h2 id="chapter-title">@@FIRST_TITLE@@</h2></div>
+        <div id="image-reader">
+          <div class="map-tools" role="group" aria-label="图像缩放"><button id="fit-width">适应宽度</button><button id="actual-size">接近原尺寸</button><div class="zoom-cluster"><button id="zoom-out" aria-label="缩小图像">−</button><label for="zoom" class="sr-only">相对适应宽度的缩放</label><input id="zoom" type="range" min="50" max="800" step="5" value="100"><button id="zoom-in" aria-label="放大图像">＋</button><output id="zoom-value" for="zoom">100%</output></div></div>
+          <div class="map-viewport" id="map-viewport" tabindex="0" role="region" aria-label="可滚动的引导图阅读区域" aria-describedby="map-help"><div id="map-canvas"><img id="full-map" src="architecture-guide.svg" width="1800" height="@@MAPHEIGHT@@" alt="@@FIRST_TITLE@@，可切换文字阅读获取完整内容"></div></div>
+          <p class="map-help" id="map-help">100% 表示适应阅读区宽度；放大后可横向、纵向滚动。缩放会尽量保持当前阅读位置。<a href="architecture-guide.svg" target="_blank" rel="noopener noreferrer">单独打开原图 ↗</a></p>
+        </div>
+        <div id="text-reader" class="text-reader" hidden>@@TEXT_CHAPTERS@@</div>
+        <div class="reader-bottom"><button id="previous-chapter" disabled>← 上一章</button><p id="reader-status" role="status" aria-live="polite">从共同理解开始。</p><button id="next-chapter">下一章 →</button></div>
+        <a id="chapter-detail-link" class="text-link" href="index.html#understanding">到手册继续阅读与实践 ↗</a>
+      </div>
+    </div>
+    <p class="guide-caption">同一份完整引导图 · 1800 × @@MAPHEIGHT@@ · 12 种方法 / 7 个章节。概念参考原始资料，组合与案例为教学建议，实际检查结果需在目标项目获得。文字视图与图使用同一份架构资料。</p>
+    <noscript><p>章节切换和缩放需要 JavaScript。你仍可<a href="architecture-guide.svg">打开完整原图</a>，或<a href="index.html">阅读静态手册与来源</a>。</p></noscript>
+  </main>
+  <script type="application/json" id="guide-layout">@@LAYOUT@@</script>
+</body></html>

@@ -1,0 +1,15 @@
+{
+  "id": 13,
+  "slug": "ai-architecture-compass",
+  "name": "AI 开发架构手册 · 代码是基石，需求是目标",
+  "summary": "代码是基石，需求是目标：探索如何持续把控 AI 实现。按六类问题理解 DDD、分层、垂直切片、六边形、整洁、洋葱、模块化单体、微服务、插件式、事件驱动、CQRS、事件溯源的场景与组合，将选择落实为规则归属、代码边界、自动检查和交付证据。一图速览建立全貌，详细手册帮助实践。",
+  "repo": "https://github.com/yydshly/1020_codex_project",
+  "source_url": "https://martinfowler.com/bliki/DomainDrivenDesign.html",
+  "source_label": "架构参考起点",
+  "repo_role": "原创讨论与静态手册所在仓库；各方法的原始资料列于网页和研究说明",
+  "status": "研究中",
+  "cover": "assets/architecture-overview.png",
+  "cover_alt": "AI 开发架构一图速览：代码是基石，需求是目标；六类问题与十二种方法，选择与组合，以及从目标、边界、实现到检查证据的持续把控。",
+  "web": true,
+  "research_date": "2026-10-23"
+}

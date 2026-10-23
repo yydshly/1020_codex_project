@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="代码是基石，需求是目标。用一张快速引导图理解六类架构问题、十二种方法，以及如何选择组合、约束 AI 实现并验证交付。">
+  <meta name="theme-color" content="#f5f3ed"><title>一图速览 · 代码是基石，需求是目标</title>
+  <link rel="icon" href="mark.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="overview.css">
+</head>
+<body class="overview-page">
+  <a class="skip" href="#overview-main">跳到正文</a>
+  <header class="topbar"><a class="brand" href="index.html"><img src="mark.svg" width="30" height="30" alt=""><span>架构手册<small>QUICK UNDERSTANDING / 013</small></span></a><div class="overview-nav"><a href="guide.html">详细引导图 ↗</a><a href="index.html">返回手册 ←</a></div></header>
+  <main class="overview-main" id="overview-main">
+    <div class="overview-heading"><div><p class="eyebrow">一图速览 / 从共同理解到实际能力</p><h1>代码是基石，<br>需求是目标。</h1><p>我们要把控的是：AI 持续实现需求时，代码如何保持清楚的规则与边界，长期承载项目。</p></div><div class="overview-actions"><a class="button primary" href="architecture-overview.png" target="_blank" rel="noopener noreferrer">放大查看原图 ↗</a><a class="button secondary" href="architecture-overview.png" download="AI开发架构一图速览.png">下载快速引导图 ↓</a><a class="text-link" href="#reading-notes">阅读文字解读 ↓</a></div></div>
+
+    <figure class="overview-figure"><a href="architecture-overview.png" target="_blank" rel="noopener noreferrer" aria-label="在新标签页放大查看 AI 开发架构一图速览"><img src="architecture-overview.png" width="1536" height="1024" alt="代码是基石，需求是目标。快速引导图展示六类架构问题、十二种方法，以及选择组合、确定边界、落实检查、用证据调整的主线。详细文字解读见图后。" fetchpriority="high"></a><figcaption>从主线建立全貌，再按问题找到方法；需要放大时打开原图。图中概念的文字解读和对应入口如下。</figcaption></figure>
+
+    <section class="overview-section" id="reading-notes" aria-labelledby="understand-heading"><div class="overview-section-heading"><p class="eyebrow">01 / 我们真正要掌握的能力</p><h2 id="understand-heading">把目标、结构与证据接起来。</h2></div><div class="overview-capabilities"><article><span>会选择</span><h3>先找实际压力</h3><p>业务规则复杂、外部服务变化、读写差异或部署压力，分别需要不同方法。</p></article><article><span>会组合</span><h3>让方法各司其职</h3><p>明确谁负责规则、哪些操作一起成功、哪份数据是事实来源。</p></article><article><span>能约束</span><h3>把意图写进代码</h3><p>确定模块公开入口、依赖方向、规则所有者，并接入可执行检查。</p></article><article><span>可验证</span><h3>用真实结果判断</h3><p>检查关键行为和失败路径，记录已验证范围，按新证据调整结构。</p></article></div></section>
+
+    <section class="overview-section" aria-labelledby="methods-heading"><div class="overview-section-heading"><p class="eyebrow">02 / 六类问题，十二种方法</p><h2 id="methods-heading">先问要控制什么，再选架构。</h2><p>这些方法处在不同层次；同层的相近方法可以择一表达，不同层的方法可以组合。点击名称进入手册对应条目。</p></div><div class="overview-methods">
+      <article><span class="overview-number">01 / 业务建模</span><h3>业务概念与规则归谁？</h3><p class="overview-method-links"><a href="index.html#method-ddd">DDD · 领域驱动设计 ↗</a></p><p>统一业务语言，划清上下文与模型边界。优先用于规则复杂、概念容易混淆的领域。</p></article>
+      <article><span class="overview-number">02 / 代码组织</span><h3>代码按职责还是用例放？</h3><p class="overview-method-links"><a href="index.html#method-layered">分层 ↗</a><a href="index.html#method-vertical">垂直切片 ↗</a></p><p>分层让技术职责清楚；垂直切片让一个用例的改动集中。根据变化方式选择组织方式。</p></article>
+      <article><span class="overview-number">03 / 依赖控制</span><h3>核心如何隔离外部变化？</h3><p class="overview-method-links"><a href="index.html#method-hexagonal">六边形 ↗</a><a href="index.html#method-clean">整洁 ↗</a><a href="index.html#method-onion">洋葱 ↗</a></p><p>通过接口与依赖方向保护核心规则，让模型服务、数据库或界面变化有明确落点。</p></article>
+      <article><span class="overview-number">04 / 部署与边界</span><h3>模块如何协作和发布？</h3><p class="overview-method-links"><a href="index.html#method-modular">模块化单体 ↗</a><a href="index.html#method-microservices">微服务 ↗</a></p><p>先厘清责任与数据归属；存在独立发布或扩容需求时，再评估拆分服务及运维成本。</p></article>
+      <article><span class="overview-number">05 / 协作与扩展</span><h3>如何接入扩展与后续任务？</h3><p class="overview-method-links"><a href="index.html#method-plugin">插件式 ↗</a><a href="index.html#method-event">事件驱动 ↗</a></p><p>插件式统一扩展契约；事件驱动用发生的事实衔接后续处理，并承担重试与一致性设计。</p></article>
+      <article><span class="overview-number">06 / 数据与状态</span><h3>读写与历史如何表达？</h3><p class="overview-method-links"><a href="index.html#method-cqrs">CQRS ↗</a><a href="index.html#method-sourcing">事件溯源 ↗</a></p><p>CQRS 分开读写模型；事件溯源以事件历史作为状态来源。两者分别判断采用理由与代价。</p></article>
+    </div><p class="overview-note">重要数据首先需要完整性、保存、兼容与恢复验证；它本身不会自动要求微服务或事件溯源。</p></section>
+
+    <section class="overview-section" aria-labelledby="combine-heading"><div class="overview-section-heading"><p class="eyebrow">03 / 一个有条件的起步组合</p><h2 id="combine-heading">每加一种方法，都说明理由。</h2></div><div class="overview-example"><p><strong>假设一个有多个业务能力的 AI 应用：</strong>整体用模块化单体明确责任；复杂规则所在的模块用 DDD 建模；模型、存储等外部服务通过端口与适配器接入。简单用例保留直接清楚的实现。</p><p>组合之后，继续写清规则所有者、共同成功的边界和权威数据。用一次真实需求验证改动能否集中、规则是否保持一致。</p><a class="text-link" href="index.html#compose">根据自己的项目压力选组合 →</a></div></section>
+
+    <section class="overview-section" aria-labelledby="control-heading"><div class="overview-section-heading"><p class="eyebrow">04 / 持续把控每一次 AI 实现</p><h2 id="control-heading">意图进入结构，交付留下证据。</h2></div><ol class="overview-loop"><li><strong>目标与规则</strong><p>说明要实现什么、必须保持什么、什么失败不能接受。</p></li><li><strong>边界与代码</strong><p>定位规则所有者、公开入口、允许依赖与本次改动范围。</p></li><li><strong>检查与证据</strong><p>运行结构检查、行为测试和必要集成验证，记录实际结果。</p></li><li><strong>复查与调整</strong><p>遇到规则重复、改动扩散或真实压力变化，更新决策与约束。</p></li></ol><div class="overview-practice"><p><strong>留下四种可继承的材料：</strong>架构说明保存当前结构，ADR 保存重要取舍，项目指令规定 AI 工作方式，检查与 CI 执行可自动判断的规则。</p><p>文字指令无法保证 AI 永远遵守架构。检查覆盖能判断的约束；业务模型与重要取舍仍需结合真实场景审查。</p><div class="overview-next"><a class="button primary" href="index.html#workbench">填写本次实现约束卡 →</a><a class="button secondary" href="guide.html">按章阅读详细引导图 →</a></div></div></section>
+    <footer class="overview-footer"><p>概念依据见<a href="index.html#references">原始资料</a>；组合与流程为本次讨论的归纳。图用于快速理解，真实项目中的检查与效果需要实际验证。</p><a class="text-link" href="#overview-main">回到图前 ↑</a></footer>
+  </main>
+</body>
+</html>

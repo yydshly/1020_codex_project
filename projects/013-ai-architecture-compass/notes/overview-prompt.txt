@@ -1,0 +1,30 @@
+Use case: infographic-diagram
+Asset type: Chinese architecture learning overview, a polished standalone landscape infographic for an existing cream and forest-green educational website.
+Primary request: Create one clear, elegant, readable quick-understanding map about controlling AI project implementation. The central principle is “代码是基石，需求是目标”. Show how architecture methods create boundaries and verification rather than promising automatic quality.
+Canvas: landscape 3:2, 1536×1024 or higher resolution. Flat editorial vector-like infographic, warm ivory #f5f3ed background, dark forest green #183f35, restrained terracotta and muted sage accents, crisp Chinese sans serif typography, thin connectors, ample whitespace. No photography, no 3D effects, no browser mockup. Each label must be precisely spelled in simplified Chinese. All text stays inside safe margins and is large enough to read.
+Composition: top headline takes 16% height. Then a horizontal four-step connected journey takes 17%. Middle 3 columns × 2 rows of six distinct architecture family cards takes 41%, each with a small simple diagram/icon and three lines of exact text. Bottom takes 22%, with a conditional combination strip then an implementation/check feedback loop. Clear hierarchy, do not cram extra text.
+Text, verbatim:
+Top small eyebrow: “AI 项目开发 · 一图建立理解”
+Main title: “代码是基石，需求是目标”
+Subtitle: “让每次实现有边界，让持续演进有依据”
+Journey four boxes left to right with arrows:
+“需求目标” / “明确用户任务与验收”
+“业务与边界” / “确定概念、规则与责任”
+“代码基石” / “用模块、接口控制变化”
+“验证证据” / “用结果检验并调整”
+Cards:
+“01 业务建模” / “DDD” / “让业务规则有归属”
+“02 代码组织” / “分层 · 垂直切片” / “让每次改动有位置”
+“03 依赖控制” / “六边形 · 整洁 · 洋葱” / “让核心隔离外部变化”
+“04 整体与部署” / “模块化单体 · 微服务” / “明确模块与发布边界”
+“05 协作与扩展” / “插件式 · 事件驱动” / “管理扩展和异步协作”
+“06 数据与状态” / “CQRS · 事件溯源” / “明确读写与事实来源”
+Combination strip:
+“按问题组合，逐步增加”
+“多业务模块 → 模块化单体　｜　复杂规则 → DDD　｜　外部变化 → 六边形”
+Bottom feedback loop with four connected steps and a return arrow:
+“写清约束” → “小步实现” → “自动检查＋行为验证” → “记录决策与调整”
+Bottom footer:
+“会选方法 · 会组合边界 · 能约束实现 · 可验证结果”
+Small footnote: “架构是工具；从当前问题出发，采用最小有效组合。”
+Constraints: render ONLY the provided text, keep all six method groups and all twelve method names. Keep arrows semantically correct and no dense tiny-text footnotes. Do not imply all methods are required together. Elegant technical editorial poster, high legibility.

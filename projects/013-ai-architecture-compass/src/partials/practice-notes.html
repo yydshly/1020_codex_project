@@ -1,0 +1,10 @@
+<div class="traceability">
+  <p class="eyebrow">FOLLOW ONE RULE / 顺着一条规则检查</p>
+  <h3>把需求，连到真正保护它的代码。</h3>
+  <p class="caption">不变量是无论从哪个入口操作都必须成立的规则。给关键规则一个编号，下一次需求变化时，就能找到它的所有者和证据。</p>
+  <div class="rule-chain" aria-label="需求到证据的对应关系"><span>用户采纳建议</span><b>→</b><span>INV-02：旧建议不能覆盖新正文</span><b>→</b><span>内容模块的采纳入口</span><b>→</b><span>两个请求同时提交旧版本</span><b>→</b><span>实际存储仅允许一个成功</span></div>
+  <div class="practice-pair"><article><h4>代码边界怎样生效</h4><p>写清楚谁能调用谁、谁能写数据。通过包的公开出口和导入规则检查跨界，再用场景验证绕过入口会破坏什么规则。文件夹分开后，还要检查真实调用关系。</p></article><article><h4>并发时怎样保护规则</h4><p>版本匹配与写入需要原子地维护约束。例如让存储执行带版本条件的更新，检查受影响记录。先读取并检查、稍后单独保存，会留下两个请求同时通过的窗口。<a href="https://martinfowler.com/eaaCatalog/optimisticOfflineLock.html" target="_blank" rel="noopener noreferrer">并发控制参考 ↗</a></p></article></div>
+  <div class="evidence-levels"><article><span>01 / 写下规则</span><strong>只能表明设计意图</strong><p>例如：核心不得导入厂商 SDK。</p></article><article><span>02 / 接入检查</span><strong>说明有检查能力</strong><p>确认规则覆盖正确文件，违规样例确实会被拦下。</p></article><article><span>03 / 执行并留证据</span><strong>证明本次覆盖范围</strong><p>记录代码版本、场景、结果与未验证范围。</p></article></div>
+  <p class="caption">业务含义仍需人结合目标判断。自动检查负责它能够覆盖的部分；合入阻断还需要实际配置并确认 CI 的必要检查。</p>
+</div>
+<details class="evolution-panel"><summary>什么时候值得调整架构？</summary><div class="evolution-grid"><article><h4>看到具体压力</h4><p>同一规则有多份实现、一次局部改动反复牵动无关模块、替换供应商需要修改业务规则。记录真实改动作为依据。</p></article><article><h4>做最小调整</h4><p>先试统一规则入口、修正模块所有权或隔离一个外部接入。涉及数据时准备兼容和恢复办法，用下一次真实需求检验收益。</p></article><article><h4>保留改变的理由</h4><p>在 ADR 关联原决定，更新依赖约束与检查。若新增抽象只带来转发和重复维护，也应考虑简化。</p></article></div></details>
