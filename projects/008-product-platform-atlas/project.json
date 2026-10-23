@@ -1,0 +1,15 @@
+{
+  "id": 8,
+  "slug": "product-platform-atlas",
+  "name": "产品发现平台图谱 · 从发布到选择",
+  "summary": "研究六个产品发现与创业交流平台：Product Hunt 用新品发布、榜单、评论和长期产品主页连接创作者与用户，帮助找灵感、看竞品和组织发布；Uneed 提供工具目录、排期与滚动榜单，增加产品被发现的机会；BetaList 筛选早期项目，帮助招募注册者和测试用户；AlternativeTo 按软件替代关系与属性辅助选型，帮助比较竞品和寻找差异；Indie Hackers 分享创业过程、获客与定价经验，帮助减少经营试错；新趣集支持中文产品发布、发现与交流，降低表达和反馈的语言成本。结合六个平台的参与方式、费用、语言和使用阶段，以生成的总览图串起找方向、看竞品、找人试用、发布交流与学习经营，并用真实任务、主动复用、付费和成本判断价值；平台热度不等于市场成立。",
+  "repo": "https://github.com/yydshly/1020_codex_project",
+  "repo_role": "本研究所在仓库；研究对象是六个外部平台，不是它们的源码仓库",
+  "source_url": "https://www.producthunt.com/",
+  "source_label": "Product Hunt · 研究起点",
+  "status": "已完成",
+  "cover": "assets/platform-overview-2026-10-23.png",
+  "cover_alt": "六个平台一图总览：定位、核心能力、我怎么用、对我价值、适用对象和参与条件；Product Hunt 的关键理解、实际使用顺序与市场验证依据。",
+  "web": true,
+  "research_date": "2026-10-23"
+}

@@ -1,0 +1,166 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="3510" viewBox="0 0 1600 3510" role="img" aria-labelledby="title desc">
+<title id="title">产品发现平台完整理解图</title>
+<desc id="desc">六个平台的定位、核心差异、选择路径、市场验证动作与失败回路。事实来自官方资料，方法属于研究归纳。</desc>
+<defs><marker id="arrow" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8" fill="#c74d30"/></marker></defs>
+<rect width="1600" height="3510" fill="#f6f4ee"/>
+<g font-family="Microsoft YaHei, PingFang SC, Noto Sans CJK SC, sans-serif">
+<text x="70" y="65" font-size="20" fill="#c74d30" font-weight="700">FIELDNOTES / 008      产品 · 创作者 · 被发现的方式</text>
+<text x="70" y="134" font-size="54" fill="#203431" font-weight="700">产品发现平台完整理解图</text>
+<text x="70" y="181" font-size="25" fill="#53645e" font-weight="400">从 Product Hunt 出发：理解平台 → 选择入口 → 收集线索 → 用真实行为验证</text>
+<rect x="70" y="218" width="1460" height="143" rx="18" fill="#203431" stroke="#203431"/>
+<text x="100" y="264" font-size="21" fill="#efb77e" font-weight="700">核心理解</text>
+<text x="100" y="304" font-size="26" fill="#ffffff" font-weight="700">平台围绕不同的内容中心连接产品与人；发布、关注、使用与付费是不同层次的结果。</text>
+<text x="100" y="338" font-size="21" fill="#d4ded8" font-weight="400">Product Hunt 的管理是主页、团队和发布记录管理；并非产品开发、订单或客户管理系统。</text>
+<text x="70" y="425" font-size="22" fill="#c74d30" font-weight="700">01</text>
+<text x="130" y="425" font-size="34" fill="#203431" font-weight="700">先看内容中心，再看功能</text>
+<text x="130" y="461" font-size="19" fill="#53645e" font-weight="400">四类定位是我们的归纳，不是官方分类，也不是平台效果排名。</text>
+<rect x="70" y="485" width="350" height="103" rx="18" fill="#eeeae0" stroke="#dddcd2"/>
+<text x="92" y="524" font-size="26" fill="#203431" font-weight="700">产品发布</text>
+<text x="92" y="559" font-size="17" fill="#53645e" font-weight="400">Product Hunt · Uneed · 新趣集</text>
+<rect x="440" y="485" width="350" height="103" rx="18" fill="#eeeae0" stroke="#dddcd2"/>
+<text x="462" y="524" font-size="26" fill="#203431" font-weight="700">早期项目</text>
+<text x="462" y="559" font-size="17" fill="#53645e" font-weight="400">BetaList</text>
+<rect x="810" y="485" width="350" height="103" rx="18" fill="#eeeae0" stroke="#dddcd2"/>
+<text x="832" y="524" font-size="26" fill="#203431" font-weight="700">软件替代</text>
+<text x="832" y="559" font-size="17" fill="#53645e" font-weight="400">AlternativeTo</text>
+<rect x="1180" y="485" width="350" height="103" rx="18" fill="#eeeae0" stroke="#dddcd2"/>
+<text x="1202" y="524" font-size="26" fill="#203431" font-weight="700">创业过程</text>
+<text x="1202" y="559" font-size="17" fill="#53645e" font-weight="400">Indie Hackers</text>
+<text x="70" y="658" font-size="22" fill="#c74d30" font-weight="700">02</text>
+<text x="130" y="658" font-size="34" fill="#203431" font-weight="700">六个平台：各自解决什么问题</text>
+<text x="130" y="694" font-size="19" fill="#53645e" font-weight="400">下列能力与参与机制依据官方资料归纳；费用、收录与语言要求在实际操作前复核。</text>
+<rect x="70" y="717" width="720" height="246" rx="18" fill="#ffffff" stroke="#dddcd2"/>
+<text x="96" y="760" font-size="31" fill="#c74d30" font-weight="700">Product Hunt</text>
+<text x="96" y="797" font-size="23" fill="#203431" font-weight="700">今天有什么值得关注的新产品？</text>
+<text x="96" y="834" font-size="20" fill="#53645e" font-weight="400">中心：产品 + 一次次发布。价值：正式亮相、早期反馈与长期产品档案。</text>
+<text x="96" y="871.0" font-size="20" fill="#53645e" font-weight="400">参与：个人账号提交；团队可认领和管理产品主页。</text>
+<text x="96" y="908.0" font-size="18" fill="#886039" font-weight="400">边界：发布不等于首页推荐；排名不等于收入或质量认证。</text>
+<rect x="810" y="717" width="720" height="246" rx="18" fill="#ffffff" stroke="#dddcd2"/>
+<text x="836" y="760" font-size="31" fill="#6b50a0" font-weight="700">Uneed</text>
+<text x="836" y="797" font-size="23" fill="#203431" font-weight="700">我的产品如何获得展示，并持续被找到？</text>
+<text x="836" y="834" font-size="20" fill="#53645e" font-weight="400">中心：产品目录 + 发布排期 + 滚动榜单。价值：发布展示与后续发现渠</text>
+<text x="836" y="865.0" font-size="20" fill="#53645e" font-weight="400">道。</text>
+<text x="836" y="902.0" font-size="20" fill="#53645e" font-weight="400">参与：提交资料后，在控制台选择发布方案和排期。</text>
+<text x="836" y="939.0" font-size="18" fill="#886039" font-weight="400">边界：免费发布有保留条件；外链和曝光不保证搜索排名或客户。</text>
+<rect x="70" y="983" width="720" height="246" rx="18" fill="#ffffff" stroke="#dddcd2"/>
+<text x="96" y="1026" font-size="31" fill="#3465a1" font-weight="700">BetaList</text>
+<text x="96" y="1063" font-size="23" fill="#203431" font-weight="700">哪些创业项目刚起步，可以抢先体验？</text>
+<text x="96" y="1100" font-size="20" fill="#53645e" font-weight="400">中心：经过编辑筛选的早期创业项目。价值：招募早期注册者与测试用户。</text>
+<text x="96" y="1137.0" font-size="20" fill="#53645e" font-weight="400">参与：提交项目与独立官网，编辑审核后展示。</text>
+<text x="96" y="1174.0" font-size="18" fill="#886039" font-weight="400">边界：成熟或已大量曝光的产品不符合其主要收录方向。</text>
+<rect x="810" y="983" width="720" height="246" rx="18" fill="#ffffff" stroke="#dddcd2"/>
+<text x="836" y="1026" font-size="31" fill="#26746c" font-weight="700">AlternativeTo</text>
+<text x="836" y="1063" font-size="23" fill="#203431" font-weight="700">这个软件有没有更适合我的替代品？</text>
+<text x="836" y="1100" font-size="20" fill="#53645e" font-weight="400">中心：软件条目 + 属性 + 替代关系。价值：在相关竞品与用户需求旁被</text>
+<text x="836" y="1131.0" font-size="20" fill="#53645e" font-weight="400">发现。</text>
+<text x="836" y="1168.0" font-size="20" fill="#53645e" font-weight="400">参与：社区贡献软件资料和相关替代推荐。</text>
+<text x="836" y="1205.0" font-size="18" fill="#886039" font-weight="400">边界：被列为替代品不意味着功能完全等价，仍需实际试用。</text>
+<rect x="70" y="1249" width="720" height="246" rx="18" fill="#ffffff" stroke="#dddcd2"/>
+<text x="96" y="1292" font-size="31" fill="#315b8b" font-weight="700">Indie Hackers</text>
+<text x="96" y="1329" font-size="23" fill="#203431" font-weight="700">别人怎样找到客户，把产品做成生意？</text>
+<text x="96" y="1366" font-size="20" fill="#53645e" font-weight="400">中心：创业者 + 项目进展 + 经营经验。价值：获取经营经验、同行反馈</text>
+<text x="96" y="1397.0" font-size="20" fill="#53645e" font-weight="400">与长期关系。</text>
+<text x="96" y="1434.0" font-size="20" fill="#53645e" font-weight="400">参与：分享项目进展、经营问题和经验。</text>
+<text x="96" y="1471.0" font-size="18" fill="#886039" font-weight="400">边界：案例和收入分享不能自动视为独立审计或普遍结果。</text>
+<rect x="810" y="1249" width="720" height="246" rx="18" fill="#ffffff" stroke="#dddcd2"/>
+<text x="836" y="1292" font-size="31" fill="#98612e" font-weight="700">新趣集</text>
+<text x="836" y="1329" font-size="23" fill="#203431" font-weight="700">有什么值得尝试的产品？我的作品如何被发现？</text>
+<text x="836" y="1366" font-size="20" fill="#53645e" font-weight="400">中心：产品 + 分类榜单 + 社区文章。价值：降低中文产品表达与交流的</text>
+<text x="836" y="1397.0" font-size="20" fill="#53645e" font-weight="400">语言成本。</text>
+<text x="836" y="1434.0" font-size="20" fill="#53645e" font-weight="400">参与：网页表单或 AI 助手起草，用户复核后提交。</text>
+<text x="836" y="1471.0" font-size="18" fill="#886039" font-weight="400">边界：支持中文不代表用户规模或转化效果与其他平台相同。</text>
+<text x="70" y="1566" font-size="22" fill="#c74d30" font-weight="700">03</text>
+<text x="130" y="1566" font-size="34" fill="#203431" font-weight="700">按任务选择入口</text>
+<text x="130" y="1602" font-size="19" fill="#53645e" font-weight="400">产品可属于个人或企业。社区条目并不自动代表官方声明；Product Hunt 不限定某个 AI 模型。</text>
+<rect x="70" y="1626" width="1460" height="54" rx="8" fill="#ffffff" stroke="#dddcd2"/>
+<text x="94" y="1661" font-size="22" fill="#c74d30" font-weight="700">发现方向</text>
+<text x="270" y="1661" font-size="22" fill="#203431" font-weight="700">PH / BetaList / 新趣集</text>
+<text x="785" y="1661" font-size="22" fill="#53645e" font-weight="400">收集任务、人群和反复出现的问题</text>
+<rect x="70" y="1690" width="1460" height="54" rx="8" fill="#ffffff" stroke="#dddcd2"/>
+<text x="94" y="1725" font-size="22" fill="#c74d30" font-weight="700">发布作品</text>
+<text x="270" y="1725" font-size="22" fill="#203431" font-weight="700">PH / Uneed / 新趣集</text>
+<text x="785" y="1725" font-size="22" fill="#53645e" font-weight="400">准备演示、体验链接与反馈入口</text>
+<rect x="70" y="1754" width="1460" height="54" rx="8" fill="#ffffff" stroke="#dddcd2"/>
+<text x="94" y="1789" font-size="22" fill="#c74d30" font-weight="700">招募内测</text>
+<text x="270" y="1789" font-size="22" fill="#203431" font-weight="700">BetaList</text>
+<text x="785" y="1789" font-size="22" fill="#53645e" font-weight="400">核对早期阶段条件，安排真实体验</text>
+<rect x="70" y="1818" width="1460" height="54" rx="8" fill="#ffffff" stroke="#dddcd2"/>
+<text x="94" y="1853" font-size="22" fill="#c74d30" font-weight="700">研究竞品</text>
+<text x="270" y="1853" font-size="22" fill="#203431" font-weight="700">AlternativeTo / PH</text>
+<text x="785" y="1853" font-size="22" fill="#53645e" font-weight="400">找替代关系，回到官网并实测</text>
+<rect x="70" y="1882" width="1460" height="54" rx="8" fill="#ffffff" stroke="#dddcd2"/>
+<text x="94" y="1917" font-size="22" fill="#c74d30" font-weight="700">学习经营</text>
+<text x="270" y="1917" font-size="22" fill="#203431" font-weight="700">Indie Hackers</text>
+<text x="785" y="1917" font-size="22" fill="#53645e" font-weight="400">看渠道、代价、失败与适用条件</text>
+<text x="70" y="2010" font-size="22" fill="#c74d30" font-weight="700">04</text>
+<text x="130" y="2010" font-size="34" fill="#203431" font-weight="700">从平台线索走向需求证据</text>
+<text x="130" y="2046" font-size="19" fill="#53645e" font-weight="400">这是建议流程，未在本研究中执行用户招募、投放或收入验证。中文市场需要中文目标用户的证据。</text>
+<rect x="70" y="2072" width="276" height="232" rx="18" fill="#ffffff" stroke="#dddcd2"/>
+<text x="88" y="2110" font-size="20" fill="#c74d30" font-weight="700">01</text>
+<text x="88" y="2150" font-size="27" fill="#203431" font-weight="700">圈定任务</text>
+<text x="88" y="2190" font-size="16.5" fill="#53645e" font-weight="400">动作：确定人群、场景和任务</text>
+<text x="88" y="2224" font-size="16.5" fill="#53645e" font-weight="400">产物：一句可验证的问题描述</text>
+<text x="88" y="2258" font-size="16.5" fill="#53645e" font-weight="400">条件：目标用户可以接触到</text>
+<path d="M347 2125 L363 2125" stroke="#c74d30" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="366" y="2072" width="276" height="232" rx="18" fill="#ffffff" stroke="#dddcd2"/>
+<text x="384" y="2110" font-size="20" fill="#c74d30" font-weight="700">02</text>
+<text x="384" y="2150" font-size="27" fill="#203431" font-weight="700">收集问题</text>
+<text x="384" y="2190" font-size="16.5" fill="#53645e" font-weight="400">动作：记录重复困难与替代办法</text>
+<text x="384" y="2224" font-size="16.5" fill="#53645e" font-weight="400">产物：问题原话、日期和来源</text>
+<text x="384" y="2258" font-size="16.5" fill="#53645e" font-weight="400">条件：确有频率或成本</text>
+<path d="M643 2125 L659 2125" stroke="#c74d30" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="662" y="2072" width="276" height="232" rx="18" fill="#ffffff" stroke="#dddcd2"/>
+<text x="680" y="2110" font-size="20" fill="#c74d30" font-weight="700">03</text>
+<text x="680" y="2150" font-size="27" fill="#203431" font-weight="700">同任务比较</text>
+<text x="680" y="2190" font-size="16.5" fill="#53645e" font-weight="400">动作：用相同材料试用竞品</text>
+<text x="680" y="2224" font-size="16.5" fill="#53645e" font-weight="400">产物：结果、步骤与价格差异</text>
+<text x="680" y="2258" font-size="16.5" fill="#53645e" font-weight="400">条件：有值得验证的改善</text>
+<path d="M939 2125 L955 2125" stroke="#c74d30" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="958" y="2072" width="276" height="232" rx="18" fill="#ffffff" stroke="#dddcd2"/>
+<text x="976" y="2110" font-size="20" fill="#c74d30" font-weight="700">04</text>
+<text x="976" y="2150" font-size="27" fill="#203431" font-weight="700">小样交付</text>
+<text x="976" y="2190" font-size="16.5" fill="#53645e" font-weight="400">动作：访谈后交付可用结果</text>
+<text x="976" y="2224" font-size="16.5" fill="#53645e" font-weight="400">产物：真实任务完成记录</text>
+<text x="976" y="2258" font-size="16.5" fill="#53645e" font-weight="400">条件：用户愿意投入材料</text>
+<path d="M1235 2125 L1251 2125" stroke="#c74d30" stroke-width="3" fill="none" marker-end="url(#arrow)"/>
+<rect x="1254" y="2072" width="276" height="232" rx="18" fill="#ffffff" stroke="#dddcd2"/>
+<text x="1272" y="2110" font-size="20" fill="#c74d30" font-weight="700">05</text>
+<text x="1272" y="2150" font-size="27" fill="#203431" font-weight="700">复用与付费</text>
+<text x="1272" y="2190" font-size="16.5" fill="#53645e" font-weight="400">动作：观察回访、购买与推荐</text>
+<text x="1272" y="2224" font-size="16.5" fill="#53645e" font-weight="400">产物：价值与获客成本证据</text>
+<text x="1272" y="2258" font-size="16.5" fill="#53645e" font-weight="400">条件：持续价值与成本可行</text>
+<rect x="70" y="2330" width="1460" height="100" rx="18" fill="#e7eee8" stroke="#dddcd2"/>
+<text x="98" y="2370" font-size="23" fill="#203431" font-weight="700">实施衔接</text>
+<text x="267" y="2370" font-size="21" fill="#53645e" font-weight="400">先确认有用的结果，再做最小实现；根据使用场景选择网页／App、部署与域名。技术上线后继续观察使用。</text>
+<text x="98" y="2408" font-size="21" fill="#26746c" font-weight="700">个人参考</text>
+<text x="267" y="2408" font-size="20" fill="#53645e" font-weight="400">用六个平台降低搜索成本，把时间投入到用户、任务和可验证的差异；不因榜单热度直接扩张功能。</text>
+<rect x="70" y="2460" width="1460" height="207" rx="18" fill="#f3e9dd" stroke="#e5d4bf"/>
+<text x="98" y="2501" font-size="27" fill="#886039" font-weight="700">失败回路：证据不足时，回到对应问题</text>
+<text x="98" y="2545" font-size="23" fill="#203431" font-weight="400">不愿意试用 → 重查人群与表达 → 回到「圈定任务」</text>
+<text x="98" y="2586" font-size="23" fill="#203431" font-weight="400">使用后不回来 → 检查结果质量、任务频率与替代优势 → 回到「同任务比较／小样交付」</text>
+<text x="98" y="2627" font-size="23" fill="#203431" font-weight="400">经常用但不付费 → 检查购买者、定价和交付成本 → 调整实验；不可行时停止投入</text>
+<text x="70" y="2740" font-size="22" fill="#c74d30" font-weight="700">05</text>
+<text x="130" y="2740" font-size="34" fill="#203431" font-weight="700">用证据约束结论</text>
+<text x="130" y="2776" font-size="19" fill="#53645e" font-weight="400">每个数字都要说明样本、时间、来源与人群。不要把海外科技社区反馈直接外推为整个中文市场。</text>
+<rect x="70" y="2802" width="1460" height="124" rx="18" fill="#203431" stroke="#203431"/>
+<text x="100" y="2848" font-size="27" fill="#ffffff" font-weight="700">点赞／夸赞  →  注册／留邮箱  →  完成真实任务  →  主动再用  →  购买／续费／推荐</text>
+<text x="100" y="2893" font-size="22" fill="#d4ded8" font-weight="400">关注信号逐渐接近价值证据；仍需验证购买者、任务频率、留存、渠道成本和适用范围。</text>
+<rect x="70" y="2950" width="473" height="141" rx="18" fill="#ffffff" stroke="#dddcd2"/>
+<text x="94" y="2990" font-size="25" fill="#26746c" font-weight="700">有来源的事实</text>
+<text x="94" y="3026" font-size="21" fill="#53645e" font-weight="400">平台定位、主页结构、参与和收录规则。当前</text>
+<text x="94" y="3058.55" font-size="21" fill="#53645e" font-weight="400">方案可能变化。</text>
+<rect x="563" y="2950" width="473" height="141" rx="18" fill="#ffffff" stroke="#dddcd2"/>
+<text x="587" y="2990" font-size="25" fill="#886039" font-weight="700">我们的判断</text>
+<text x="587" y="3026" font-size="21" fill="#53645e" font-weight="400">四类内容中心、选用路径、实测与验证流程。</text>
+<text x="587" y="3058.55" font-size="21" fill="#53645e" font-weight="400">没有做流量排名。</text>
+<rect x="1056" y="2950" width="473" height="141" rx="18" fill="#ffffff" stroke="#dddcd2"/>
+<text x="1080" y="2990" font-size="25" fill="#6b50a0" font-weight="700">尚未验证</text>
+<text x="1080" y="3026" font-size="21" fill="#53645e" font-weight="400">获客效果、付费意愿和市场规模；示例产品是</text>
+<text x="1080" y="3058.55" font-size="21" fill="#53645e" font-weight="400">假设案例。</text>
+<text x="70" y="3150" font-size="30" fill="#203431" font-weight="700">资料与阅读方式</text>
+<text x="70" y="3193" font-size="22" fill="#53645e" font-weight="400">官方来源：Product Hunt 帮助中心与产品页、Uneed 发布说明、BetaList 帮助与标准、AlternativeTo 关于与 FAQ、Indie Hackers 栏目</text>
+<text x="70" y="3227.1" font-size="22" fill="#53645e" font-weight="400">、新趣集关于与发布页。完整 19 项链接见网页「来源与边界」及研究笔记。</text>
+<text x="70" y="3307" font-size="22" fill="#53645e" font-weight="400">范围：汇总对话理解与六个平台的比较，不展开自建平台的扩展规划。未购买推广、提交产品或测量转化。资料快照：2026-10-23。</text>
+<text x="70" y="3430" font-size="20" fill="#c74d30" font-weight="700">008 / PRODUCT PLATFORM ATLAS</text>
+<text x="70" y="3470" font-size="19" fill="#53645e" font-weight="400">独立研究整理 · 非平台官方页面 · SVG 矢量图可放大阅读</text>
+</g></svg>
