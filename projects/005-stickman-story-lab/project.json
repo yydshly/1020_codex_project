@@ -1,0 +1,14 @@
+{
+  "id": 5,
+  "slug": "stickman-story-lab",
+  "name": "角色与故事工坊 · 从定制角色到短片",
+  "summary": "以「定制角色＋故事」为核心，通过分镜、场景视觉、图生视频与配音剪辑，把情绪转成可观看的短片，积累可延续的角色、经历与素材。阿灯样例已验证制作路线；原帖底层技术仍未确认。",
+  "repo": "https://github.com/yydshly/1020_codex_project",
+  "status": "已完成",
+  "cover": "assets/understanding-map-v1.png",
+  "cover_alt": "角色与故事工坊中文研究总图：对照原帖火柴人动画与原创阿灯短片，梳理定制角色与故事的本质、分镜到图生视频及后期的实现流程、创作价值、扩展方向和验证边界。",
+  "web": true,
+  "research_date": "2026-10-23",
+  "source_post": "https://x.com/Jason23818126/status/2112030757724340314",
+  "repo_role": "本研究所在仓库；上游开源地址尚未核实"
+}

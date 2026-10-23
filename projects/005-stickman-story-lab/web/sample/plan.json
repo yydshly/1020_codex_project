@@ -1,0 +1,201 @@
+{
+  "title": "第二副餐具",
+  "status": "30秒完整故事已完成：六个图生视频镜头、中文配音、环境声、中文字幕与剪辑",
+  "duration_seconds": 30,
+  "aspect_ratio": "16:9",
+  "emotion": "想被关心，却不敢开口；最终试着发出邀请，并获得一个温和的回应。",
+  "human_decision": "决定情绪的真实来源和表达尺度，审核角色行为与情节；不要求人独自写完故事。",
+  "model_contribution": "模型辅助角色设定、故事与分镜，ImageGen生成六张场景首帧，Kling V3生成六条视频，中文TTS生成对白，FFmpeg剪辑和混音。",
+  "character": {
+    "name": "阿灯",
+    "role": "想有人一起吃饭，却很少主动邀请的独居小机器人",
+    "desire": "有人自愿留下来，和它分享一顿饭",
+    "fear": "自己的邀请会给别人添麻烦，也怕被拒绝",
+    "habit": "总会留出一个座位，把关心藏在替别人准备东西里",
+    "turn": "从默默等待，走到小声发出邀请；没有突然变成外向角色",
+    "visual_invariants": [
+      "奶油白圆角矩形头，炭黑椭圆眼，无嘴",
+      "短黄铜天线，末端一颗暗琥珀色灯珠",
+      "小巧梨形躯干，胸口一个方形琥珀灯",
+      "鼠尾草绿短围巾，结在角色左侧",
+      "深色细关节四肢，圆润三指手，宽圆奶油白鞋"
+    ],
+    "style": "带水粉笔触的柔和绘本动画；哑光材质，奶油白、鼠尾草绿、少量暖琥珀；情绪依靠停顿、视线和肩膀动作。"
+  },
+  "story": "阿灯每晚坐在摆着两副餐具的小桌旁。门外传来脚步，来人却只是问路。指完方向后，阿灯看着准备离开的旅者，终于问：你吃饭了吗？旅者留下来，阿灯急忙擦净备用杯外沿的薄灰。空着的位置终于有人坐下。",
+  "shots": [
+    {
+      "id": "S01",
+      "time": "00–05秒",
+      "duration": 5,
+      "title": "空着的位置",
+      "emotion": "期待已经成为习惯",
+      "image": "固定广角。小餐桌上有两只浅色碗，阿灯坐在左侧，右侧椅子空着；靠空椅的旧杯子长期未使用。傍晚窗光，灯光很轻。",
+      "action": "整理餐碗，手收回后看向空位；动作克制，留出等待。",
+      "sound": "轻微椅脚摩擦声，安静的室内底噪。",
+      "check": "观众先看到空位，再看到阿灯的目光；不要落泪、配悲伤字幕或大幅叹气。",
+      "status": "completed",
+      "start": 0,
+      "first_frame": "s01-first-frame-v1.png",
+      "task_id": "1036222",
+      "generation_prompt": "One continuous five second shot. The ivory robot sits alone at the table and gently nudges the spare bowl toward the empty chair, then rests its hand and quietly looks at that empty place. Small deliberate motion and a still pause. Keep both bowls and chairs. Locked camera, stable room and character. No guest enters. Quiet room ambience, no speech, no music, no text.",
+      "actual_credits": 88
+    },
+    {
+      "id": "S02",
+      "time": "05–10秒",
+      "duration": 5,
+      "title": "门外的脚步",
+      "emotion": "期待突然被唤起",
+      "image": "中近景，阿灯在桌边，门在画面右侧背景；保持同一餐桌和灯位。",
+      "action": "听到脚步，阿灯抬头、肩膀微微挺起，向门看去。",
+      "sound": "脚步由远至近，在门外停住。",
+      "check": "先有脚步，再有抬头反应；动作要小，不突然弹跳。",
+      "status": "completed",
+      "start": 5,
+      "first_frame": "s02-first-frame-v1.png",
+      "task_id": "1036228",
+      "generation_prompt": "One continuous five second shot. The ivory robot hears approaching footsteps offscreen, lifts its head toward the doorway on the right, and slightly straightens its shoulders with restrained hope. It remains seated, hands on the table. Keep the same face, scarf, antenna and room. Locked camera, no cut. Soft footsteps and quiet room ambience, no dialogue, no music, no text.",
+      "actual_credits": 88
+    },
+    {
+      "id": "S03",
+      "time": "10–15秒",
+      "duration": 5,
+      "title": "只是问路",
+      "emotion": "失落，但努力礼貌",
+      "image": "门口双人中景。阿灯在门内左侧；门外是一位灰蓝色方头旅者机器人，背小帆布包，不与主角同款。",
+      "action": "旅者举起折叠地图，阿灯指向街道；旅者点头并准备离开。",
+      "sound": "成片10.15–12.17秒，旅者：“请问，车站怎么走？”；13.10–14.02秒，阿灯：“往那边。”配合纸张轻响与室内底噪。",
+      "check": "旅者不是来找阿灯的；明确视线和指路方向，保持两者身份区分。",
+      "status": "completed",
+      "start": 10,
+      "first_frame": "s03-first-frame-v1.png",
+      "task_id": "1036226",
+      "generation_prompt": "One continuous five second shot. The blue traveler holds up the paper map to ask directions. The ivory robot looks at it, then briefly points to the street on the right. The traveler nods, lowers the map and begins to turn toward the street, staying in frame. Gentle polite acting. Keep both robots distinct and their feet planted. Locked camera. Quiet ambience and paper rustle, no speech, no music, no text.",
+      "actual_credits": 88
+    },
+    {
+      "id": "S04",
+      "time": "15–20秒",
+      "duration": 5,
+      "title": "第一次邀请",
+      "emotion": "害怕被拒绝，仍试着开口",
+      "image": "固定中全景。仅阿灯在门内左侧，朝画外右侧的旅者看；室内左后方可见餐桌和空椅。右手停在胸前，准备邀请，尚未伸出。",
+      "action": "先看向画外旅者，停顿；头低一点，随后抬起，右手缓慢张开、朝屋内做小幅邀请动作。",
+      "sound": "成片17.00–18.64秒，阿灯：“你……吃饭了吗？”；已加入中文配音，保留室内底噪与邀请后的停顿。角色无嘴，不要求嘴型。",
+      "check": "原始五秒测试已纳入成片；先低头停顿，再抬头伸手，后配中文邀请。",
+      "status": "completed",
+      "start": 15,
+      "first_frame": "s04-first-frame-v1.png",
+      "task_id": "1036213"
+    },
+    {
+      "id": "S05",
+      "time": "20–25秒",
+      "duration": 5,
+      "title": "藏不住的准备",
+      "emotion": "紧张里透出小小的喜悦",
+      "image": "餐桌侧面的中近景，阿灯与空位前的旧杯子同框；旅者只在背景入座。",
+      "action": "拿布擦拭备用杯，随后放低杯子；切回两人同桌的广角。",
+      "sound": "成片20.25–21.87秒，旅者：“好啊，谢谢你。”；配合布擦杯壁与陶瓷轻响。",
+      "check": "灰在长期未用的备用杯外沿，不在刚盛好的食物里；不安排清洁特效或夸张尘云。",
+      "status": "completed",
+      "start": 20,
+      "first_frame": "s05-first-frame-v1.png",
+      "task_id": "1036229",
+      "generation_prompt": "One continuous five second shot. The ivory robot holds the small ceramic cup steadily in its left hand and wipes its outer rim once with the cloth in its right hand, a little hurried with shy happiness, then sets the cup down carefully. The blue guest stays softly out of focus in the background. Preserve hands, cup, scarf and table. Locked camera. Quiet cloth and ceramic sounds, no speech, no music, no text.",
+      "actual_credits": 88
+    },
+    {
+      "id": "S06",
+      "time": "25–30秒",
+      "duration": 5,
+      "title": "空位有人了",
+      "emotion": "被回应后的安稳",
+      "image": "回到S01的固定广角与同一桌面布局。旅者坐在右侧，阿灯在左侧，两只碗的位置保持不变。",
+      "action": "阿灯肩膀慢慢放松，抬眼看对方；两人静静坐着，留两秒余味。",
+      "sound": "极轻的餐具声和室内底噪；不加入胜利音效，不用字幕总结道理。",
+      "check": "用同机位的前后变化交代关系改变；不拥抱、不突然大笑，不把情绪推过头。",
+      "status": "completed",
+      "start": 25,
+      "first_frame": "s06-first-frame-v1.png",
+      "task_id": "1036230",
+      "generation_prompt": "One continuous five second shot. Both robots remain seated across the table. The ivory robot on the left slowly relaxes its shoulders and looks up toward the blue guest on the right. The guest returns a small friendly nod. Hold the peaceful shared moment for the final two seconds. Keep bowls, cup, chairs and characters unchanged. Locked camera, no cut. Soft room ambience, no speech, no music, no text.",
+      "actual_credits": 88
+    }
+  ],
+  "i2v": {
+    "shot": "S04",
+    "model": "Kling V3",
+    "resolution": "1080",
+    "duration": 5,
+    "aspect_ratio": "16:9",
+    "sound": true,
+    "count": 1,
+    "status": "completed",
+    "input_role": "单张首帧；角色设定图仅用于制作首帧，不直接提交拼版设定图",
+    "prompt": "A single continuous five second shot. The small robot in the reference hesitates, lowers its gaze, then raises its head and gently opens its right hand to invite an unseen guest inside. Feet remain still. Locked camera. Preserve the robot, scarf, doorway and room. Subtle natural movement. Quiet room ambience, no speech, no music, no text.",
+    "estimated_credits": 60,
+    "first_frame": "s04-first-frame-v1.png",
+    "attempts": 5,
+    "task_id": "1036213",
+    "fallback": {
+      "model": "Seedance 1.5 Pro",
+      "resolution": 720,
+      "duration": 5,
+      "count": 1,
+      "sound": true,
+      "estimated_credits": 48,
+      "status": "not_used"
+    },
+    "attempt_history": [
+      {
+        "model": "Seedance 2.0 Fast",
+        "mode": "first_last_frames",
+        "attempts": 2,
+        "result": "10061 no task id"
+      },
+      {
+        "model": "Kling V3",
+        "mode": "first_last_frames",
+        "attempts": 1,
+        "result": "10061 no task id"
+      },
+      {
+        "model": "Kling V3",
+        "mode": "single_image",
+        "attempts": 1,
+        "result": "10061 no task id"
+      },
+      {
+        "model": "Kling V3",
+        "mode": "single_image",
+        "attempts": 1,
+        "prompt_characters": 340,
+        "result": "submitted",
+        "task_id": "1036213"
+      }
+    ],
+    "video": "s04-invitation-v2.mp4",
+    "previous_service_error_code": "10061",
+    "observed_credit_change": 88
+  },
+  "review": [
+    "角色外形、围巾方向、天线和胸灯是否保持一致",
+    "是否先犹豫，再作邀请，动作顺序是否清楚",
+    "是否保持锁定机位、脚不滑动、手指与关节不变形",
+    "两套餐具和空椅是否稳定，是否出现多余人物",
+    "是否传达克制的期待，需人观看后判断；不预设情绪成功",
+    "若未听音频，不把声音要求记为通过"
+  ],
+  "film": {
+    "file": "second-place-30s-v1.mp4",
+    "duration": 30,
+    "resolution": "1920x1080",
+    "fps": 24,
+    "captions": "second-place-30s-zh.vtt",
+    "new_credits": 440,
+    "total_video_credits": 528
+  }
+}

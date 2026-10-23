@@ -1,0 +1,10 @@
+{
+  "name": "stickman-story-lab",
+  "private": true,
+  "scripts": {
+    "render:map": "node src/render_understanding_map.cjs"
+  },
+  "devDependencies": {
+    "@resvg/resvg-js": "2.6.2"
+  }
+}

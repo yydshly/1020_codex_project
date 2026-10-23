@@ -1,0 +1,140 @@
+{
+  "title": "第二副餐具 · 制作记录",
+  "version": "v1",
+  "completed_date": "2026-10-23",
+  "film": {
+    "file": "sample/second-place-30s-v1.mp4",
+    "duration_seconds": 30,
+    "resolution": "1920x1080",
+    "fps": 24,
+    "video_codec": "H.264",
+    "audio_codec": "AAC",
+    "audio_sample_rate": 48000,
+    "subtitles": "简体中文字幕已烧录，另有独立WebVTT",
+    "music": false
+  },
+  "tools": {
+    "images": "内置ImageGen；底层模型版本与种子未知",
+    "video": "ChatArt / Kling V3",
+    "voices": "Microsoft Edge online TTS via edge-tts",
+    "edit": "FFmpeg"
+  },
+  "editing": [
+    {
+      "id": "S01",
+      "start": 0,
+      "end": 5,
+      "source": "downloads/shots/s01-original-v1.mp4",
+      "edit": "trim to 5 seconds"
+    },
+    {
+      "id": "S02",
+      "start": 5,
+      "end": 10,
+      "source": "downloads/shots/s02-original-v1.mp4",
+      "edit": "crop 1600x900 at 0,70 to exclude unintended edge passerby"
+    },
+    {
+      "id": "S03",
+      "start": 10,
+      "end": 15,
+      "source": "downloads/shots/s03-original-v1.mp4",
+      "edit": "trim to 5 seconds"
+    },
+    {
+      "id": "S04",
+      "start": 15,
+      "end": 20,
+      "source": "sample/s04-invitation-v2.mp4",
+      "edit": "trim to 5 seconds"
+    },
+    {
+      "id": "S05",
+      "start": 20,
+      "end": 25,
+      "source": "downloads/shots/s05-original-v1.mp4",
+      "edit": "trim to 5 seconds"
+    },
+    {
+      "id": "S06",
+      "start": 25,
+      "end": 30,
+      "source": "downloads/shots/s06-original-v1.mp4",
+      "edit": "trim to 5 seconds",
+      "ending": "最后0.8秒淡出"
+    }
+  ],
+  "voices": [
+    {
+      "id": "ask_way",
+      "speaker": "旅者",
+      "text": "请问，车站怎么走？",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-10%",
+      "pitch": "-2Hz",
+      "start": 10.15,
+      "subtitle_end": 12.65,
+      "trimmed_duration": 2.021,
+      "end": 12.171
+    },
+    {
+      "id": "directions",
+      "speaker": "阿灯",
+      "text": "往那边。",
+      "voice": "zh-CN-YunxiaNeural",
+      "rate": "-12%",
+      "pitch": "-4Hz",
+      "start": 13.1,
+      "subtitle_end": 14.6,
+      "trimmed_duration": 0.921,
+      "end": 14.021
+    },
+    {
+      "id": "invitation",
+      "speaker": "阿灯",
+      "text": "你……吃饭了吗？",
+      "voice": "zh-CN-YunxiaNeural",
+      "rate": "-18%",
+      "pitch": "-4Hz",
+      "start": 17.0,
+      "subtitle_end": 19.6,
+      "trimmed_duration": 1.641,
+      "end": 18.642
+    },
+    {
+      "id": "accept",
+      "speaker": "旅者",
+      "text": "好啊，谢谢你。",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-12%",
+      "pitch": "-2Hz",
+      "start": 20.25,
+      "subtitle_end": 22.8,
+      "trimmed_duration": 1.617,
+      "end": 21.867
+    }
+  ],
+  "audio": {
+    "method": "移除生成视频自带音轨，加入中文合成对白与程序生成的统一室内底噪、脚步、纸张、擦布及陶瓷声。",
+    "voice_cloning": false,
+    "music": false
+  },
+  "cost": {
+    "currency": "ChatArt积分",
+    "per_video": 88,
+    "video_count": 6,
+    "total_video_credits": 528,
+    "scope": "六条已成功生成视频；不含图片、配音或其他服务费用。"
+  },
+  "limitations": [
+    "S02原始视频右边缘出现多余路人，成片以1600×900局部重新构图后输出1080p。",
+    "杯子花纹、围巾细节和手部形态仍有轻微跨镜差异。",
+    "声音曾通过自动转写核对台词；自动识别不能代替主观听审。",
+    "早期提交返回10061；精简提示词后成功，确切根因未确认。"
+  ],
+  "verification": [
+    "成片30.000秒、720帧，视频元数据与预期一致。",
+    "四句中文台词的自动识别结果与台词一致，实际字幕画面未见缺字方框。",
+    "此前已在浏览器完整播放至30秒，章节跳转可用。"
+  ]
+}

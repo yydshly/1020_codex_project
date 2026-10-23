@@ -1,0 +1,43 @@
+{
+  "title": "角色定制身份，故事赋予灵魂",
+  "date": "2026-10-23",
+  "method": "本地SVG研究图排版，resvg渲染PNG；嵌入真实截帧，不改动原始画面。",
+  "imagegen_attempts": {
+    "count": 2,
+    "result": "failed",
+    "error": "network error: error sending request",
+    "output": null
+  },
+  "final_generator": "src/render_understanding_map.cjs",
+  "dimensions": [
+    2700,
+    4980
+  ],
+  "sources": [
+    {
+      "file": "assets/shot-10.jpg",
+      "from": "原帖视频",
+      "second": 10
+    },
+    {
+      "file": "assets/shot-50.jpg",
+      "from": "原帖视频",
+      "second": 50
+    },
+    {
+      "file": "assets/story-actual-04s.png",
+      "from": "web/sample/second-place-30s-v1.mp4",
+      "second": 4
+    },
+    {
+      "file": "assets/story-actual-28s.png",
+      "from": "web/sample/second-place-30s-v1.mp4",
+      "second": 28
+    }
+  ],
+  "outputs": [
+    "web/assets/understanding-map-v1.png",
+    "web/assets/understanding-map-v1.svg"
+  ],
+  "source_post": "https://x.com/Jason23818126/status/2112030757724340314"
+}

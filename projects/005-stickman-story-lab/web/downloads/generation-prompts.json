@@ -1,0 +1,122 @@
+{
+  "title": "第二副餐具 · 实际生成提示词",
+  "note": "保留实际提交文字。提示词表达目标，不等同于已验证的生成结果。图片由内置ImageGen生成，底层模型版本与随机种子未知。",
+  "character": {
+    "output": "sample/adeng-character-v1.png",
+    "prompt": "Create an original character design sheet for a short animated film called \"The Second Place Setting\". Main character A-Deng, a small timid but kind domestic robot who wants company but struggles to ask. Art direction: tactile hand-painted storybook animation with soft gouache texture, quiet restrained acting, matte objects, warm ivory and muted sage, no glossy sci-fi, no neon, no logos. Robot invariant design: rounded rectangular ivory enamel head with small rounded corners, dark charcoal oval eyes and no mouth, single short brass antenna tipped with a dim amber bead, small rounded pear-shaped ivory body with one recessed square amber chest light, short muted-sage fabric neck scarf tied on robot's left, slim dark jointed arms ending in simple rounded three-finger mitt-like hands, short dark legs with broad ivory shoes. Slight wear at edges, approachable proportions: head about one third total height, not a known franchise robot. Landscape character reference sheet on clean warm off-white paper. Left two thirds show consistent full-body front, three-quarter and side views, generous spacing, neutral standing poses. Right third shows three close-up expressive head-and-shoulder poses: listening with a tiny head tilt, shy anticipation with shoulders lifted, relief with shoulders relaxed. Emotional cues from posture and eye direction, never from human mouth. Small sage and ivory swatches at bottom. No written text, no panel labels, no watermarks. This is a design reference sheet, NOT a movie frame. Carefully consistent anatomy, scarf, antenna and chest light in all views."
+  },
+  "shots": [
+    {
+      "id": "S01",
+      "title": "空着的位置",
+      "first_frame": {
+        "output": "sample/s01-first-frame-v1.png",
+        "reference_images": [
+          "sample/adeng-character-v1.png",
+          "sample/s04-first-frame-v1.png"
+        ],
+        "prompt": "Create a single widescreen 16:9 cinematic first frame for shot S01 of the same animated story. Reference 1 is A-Deng's exact character identity; reference 2 is the existing film's exact visual style and room continuity. Reframe to INSIDE this same small rustic dining room, looking diagonally at the same worn square wooden dining table. A-Deng sits at the LEFT side of the table, with an EMPTY wooden chair clearly at the RIGHT side. Two matching cream ceramic bowls at the two places, a small old ceramic cup by the empty place, the same tiny white flowers, warm hanging lamp, plaster and timber walls. Blue evening seen near the same blue wooden door in right background. A-Deng is small, ivory worn rectangular rounded head, two oval dark eyes, NO mouth, brass antenna and amber tip, square amber chest lamp, sage scarf knot on robot left, slim dark joints and ivory round shoes. His right hand rests gently near the empty place on the table, BEFORE a tiny adjustment to the spare bowl. His gaze is at the empty chair. Quiet longing expressed by an empty place, not sadness or tears. Camera medium-wide at seated eye level, show the table top and both chairs and room. Match the painterly volumetric gouache material and amber/blue light of reference 2 precisely. Single image, no panels, no text, no marks, no extra characters. This table layout will be repeated exactly for the ending shot."
+      },
+      "image_to_video": {
+        "model": "Kling V3",
+        "resolution": "1080p",
+        "duration_seconds": 5,
+        "input": "sample/s01-first-frame-v1.png",
+        "prompt": "One continuous five second shot. The ivory robot sits alone at the table and gently nudges the spare bowl toward the empty chair, then rests its hand and quietly looks at that empty place. Small deliberate motion and a still pause. Keep both bowls and chairs. Locked camera, stable room and character. No guest enters. Quiet room ambience, no speech, no music, no text."
+      }
+    },
+    {
+      "id": "S02",
+      "title": "门外的脚步",
+      "first_frame": {
+        "output": "sample/s02-first-frame-v1.png",
+        "reference_images": [
+          "sample/s01-first-frame-v1.png"
+        ],
+        "prompt": "Create a new single 16:9 first frame for the next shot of this EXACT animated film. Use the supplied dining-room frame as exact identity, lighting, texture and room reference. Camera moves to a medium close-up of A-Deng seated in the same LEFT chair, ivory rounded rectangular head with two black oval eyes and NO mouth, amber antenna, sage scarf, amber square chest lamp. His head is initially slightly lowered toward the bowl, hands rest on the table, shoulders a little slumped. The blue wooden doorway remains visible softly out of focus on screen RIGHT background. Show from torso up, with the cream bowl and tablecloth along bottom edge. This is BEFORE hearing footsteps and looking toward the door; do not already turn his head strongly. Quiet anticipation, warm lamp on left and cool evening on right. Keep worn gouache/painted clay texture exactly. Single cinematic image, no panels, no letters, no additional characters."
+      },
+      "image_to_video": {
+        "model": "Kling V3",
+        "resolution": "1080p",
+        "duration_seconds": 5,
+        "input": "sample/s02-first-frame-v1.png",
+        "prompt": "One continuous five second shot. The ivory robot hears approaching footsteps offscreen, lifts its head toward the doorway on the right, and slightly straightens its shoulders with restrained hope. It remains seated, hands on the table. Keep the same face, scarf, antenna and room. Locked camera, no cut. Soft footsteps and quiet room ambience, no dialogue, no music, no text."
+      }
+    },
+    {
+      "id": "S03",
+      "title": "只是问路",
+      "first_frame": {
+        "output": "sample/s03-first-frame-v1.png",
+        "reference_images": [
+          "sample/adeng-character-v1.png",
+          "sample/s04-first-frame-v1.png"
+        ],
+        "prompt": "Create a single widescreen 16:9 first frame for shot S03, SAME film and doorway as reference 2, same A-Deng as reference 1. Preserve its beautiful tactile painterly volumetric storybook style, warm amber indoors and cool blue evening outside. Medium-wide TWO CHARACTER scene, camera just outside the doorway. A-Deng stands INSIDE on screen LEFT, same ivory rounded rectangular head, black oval eyes, no mouth, brass amber antenna, square amber chest lamp, sage scarf tied on its left, dark jointed limbs and ivory shoes. At screen RIGHT outside stands a distinct friendly traveler robot, similar height: muted slate-blue SQUARE head with softly beveled corners, two small round dark eyes, NO mouth, NO antenna, NO chest light, slate-blue rectangular body, tan canvas crossbody satchel and small brown shoes, no scarf. Traveler holds one small folded paper map with both hands at waist level, angled for A-Deng to see. A-Deng looks at the map attentively, right hand lowered before pointing directions. Keep original blue wooden door visible at right edge, table with two cream bowls and empty chair inside left background. Both full upper bodies and hands readable. Gentle, polite encounter; the visitor is asking directions, not yet being invited. No text, lettering, tears, smiles, extra characters or extra limbs."
+      },
+      "image_to_video": {
+        "model": "Kling V3",
+        "resolution": "1080p",
+        "duration_seconds": 5,
+        "input": "sample/s03-first-frame-v1.png",
+        "prompt": "One continuous five second shot. The blue traveler holds up the paper map to ask directions. The ivory robot looks at it, then briefly points to the street on the right. The traveler nods, lowers the map and begins to turn toward the street, staying in frame. Gentle polite acting. Keep both robots distinct and their feet planted. Locked camera. Quiet ambience and paper rustle, no speech, no music, no text."
+      }
+    },
+    {
+      "id": "S04",
+      "title": "第一次邀请",
+      "first_frame": {
+        "output": "sample/s04-first-frame-v1.png",
+        "reference_images": [
+          "sample/adeng-character-v1.png"
+        ],
+        "prompt": "Create a SINGLE landscape 16:9 cinematic storyboard START FRAME for shot S04 of an original 30-second short \"The Second Place Setting\". Reference image supplied: the A-Deng character design sheet; its role is IDENTITY AND PAINTED STYLE REFERENCE ONLY, do not recreate the sheet or its multiple characters. Exactly ONE robot in this scene. Match the main full-body front/three-quarter character faithfully: ivory rounded rectangular head, two charcoal oval eyes, NO mouth, short brass antenna with dim amber bead, matte ivory small body, square amber chest light, muted sage scarf with knot on character's LEFT, dark slim jointed limbs, broad ivory shoes, simple rounded hands. Keep character silhouette recognizable.\nScene: a quiet modest domestic doorway at dusk. Medium full shot showing robot from antenna to feet. A-Deng stands just inside the OPEN doorway, slightly left of center, body turned three-quarter toward camera right, looking toward an unseen traveler OUTSIDE the right edge of frame. The robot's RIGHT hand is held close to its chest, partially curled in restrained hesitation, clearly separated from torso, not yet reaching or inviting. Left arm relaxed. Both feet planted. The camera is outside looking diagonally into the room. Inside on camera left behind the robot: a small wooden table with EXACTLY TWO shallow cream bowls and two seats, one empty chair clearly visible, a spare ceramic cup. Simple stable room geography, doorway on camera right, table farther inside on camera left, no other characters or silhouettes.\nEmotion: wanting someone to stay while afraid to ask; show a slight inward shoulder posture and attentive gaze, no tears, no smile, no exaggerated sadness. Soft muted blue-grey dusk outside, gentle warm practical lamp inside, no theatrical light beams. Tactile gouache and pencil storybook animation matching reference, quiet matte surfaces. Leave space near its right hand for the later small invitation gesture toward the interior on camera left. Not a finished gesture. Locked-camera framing, coherent perspective, natural anatomy. Single full-bleed scene, no panels, text, labels, captions, borders, logos or watermarks."
+      },
+      "image_to_video": {
+        "model": "Kling V3",
+        "resolution": "1080p",
+        "duration_seconds": 5,
+        "input": "sample/s04-first-frame-v1.png",
+        "prompt": "A single continuous five second shot. The small robot in the reference hesitates, lowers its gaze, then raises its head and gently opens its right hand to invite an unseen guest inside. Feet remain still. Locked camera. Preserve the robot, scarf, doorway and room. Subtle natural movement. Quiet room ambience, no speech, no music, no text."
+      }
+    },
+    {
+      "id": "S05",
+      "title": "藏不住的准备",
+      "first_frame": {
+        "output": "sample/s05-first-frame-v1.png",
+        "reference_images": [
+          "sample/s01-first-frame-v1.png",
+          "sample/s03-first-frame-v1.png"
+        ],
+        "prompt": "Create a single widescreen 16:9 first frame for shot S05 of this exact film. Reference 1 establishes the EXACT dining table, ceramic cup with blue flower motif, bowls, warm lamp and A-Deng. Reference 2 establishes the exact slate-blue traveler with square head, round eyes and tan satchel. Medium-close shot from table side: ivory A-Deng in foreground on LEFT, sage scarf, amber antenna and square chest lamp intact, NO mouth. He has just picked up the small cream cup with blue flower motif in his LEFT hand, and holds a small plain linen cleaning cloth in his RIGHT hand near the cup's OUTER rim, BEFORE wiping. Cup stable, clear readable hands. A very subtle dull dusty mark on outside rim only, no dirt in food. The friendly slate-blue guest is now seated softly out of focus at the RIGHT table place in background, satchel at chair side, NOT holding map. Two bowls remain on table. A-Deng's lowered gaze focuses on cup, a little shy and eager to make it nice. Intimate warm amber light, same painterly tactile material and room. No text, panels, extra fingers, extra robots, magic, tears or smile."
+      },
+      "image_to_video": {
+        "model": "Kling V3",
+        "resolution": "1080p",
+        "duration_seconds": 5,
+        "input": "sample/s05-first-frame-v1.png",
+        "prompt": "One continuous five second shot. The ivory robot holds the small ceramic cup steadily in its left hand and wipes its outer rim once with the cloth in its right hand, a little hurried with shy happiness, then sets the cup down carefully. The blue guest stays softly out of focus in the background. Preserve hands, cup, scarf and table. Locked camera. Quiet cloth and ceramic sounds, no speech, no music, no text."
+      }
+    },
+    {
+      "id": "S06",
+      "title": "空位有人了",
+      "first_frame": {
+        "output": "sample/s06-first-frame-v1.png",
+        "reference_images": [
+          "sample/s01-first-frame-v1.png",
+          "sample/s03-first-frame-v1.png"
+        ],
+        "prompt": "Create the ending first frame, one single widescreen 16:9 image. EDIT reference 1's composition: preserve EXACT same camera, table geometry, tablecloth, vase of small white flowers, two blue-floral cream bowls, little matching cup, lamp, chairs, wall and blue door. Preserve A-Deng seated at LEFT with ivory rounded rectangular head, black oval eyes, no mouth, sage scarf, amber antenna and square chest lamp. The EMPTY RIGHT CHAIR is now occupied by the slate-blue square-headed traveler from reference 2, with two round black eyes, no mouth, no antenna, no chest lamp; tan satchel hanging at chair side and brown shoes. The guest faces A-Deng gently. The cup is clean and on table by the guest's bowl. A-Deng's shoulders are still slightly held up, hands resting near his own bowl, head modestly inclined BEFORE relaxing and making eye contact. Only two robots. Quiet companionship, no hugging or celebration. Match every lighting, texture, style and scene detail of reference 1; this is a deliberate before/after rhyme showing that the empty seat is occupied. No map on table, no text, no panels, no extra props."
+      },
+      "image_to_video": {
+        "model": "Kling V3",
+        "resolution": "1080p",
+        "duration_seconds": 5,
+        "input": "sample/s06-first-frame-v1.png",
+        "prompt": "One continuous five second shot. Both robots remain seated across the table. The ivory robot on the left slowly relaxes its shoulders and looks up toward the blue guest on the right. The guest returns a small friendly nod. Hold the peaceful shared moment for the final two seconds. Keep bowls, cup, chairs and characters unchanged. Locked camera, no cut. Soft room ambience, no speech, no music, no text."
+      }
+    }
+  ]
+}

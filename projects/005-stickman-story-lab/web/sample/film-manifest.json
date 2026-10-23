@@ -1,0 +1,114 @@
+{
+  "title": "第二副餐具",
+  "duration_seconds": 30,
+  "resolution": "1920x1080",
+  "fps": 24,
+  "shots": [
+    {
+      "id": "S01",
+      "start": 0,
+      "end": 5,
+      "source": "../downloads/shots/s01-original-v1.mp4",
+      "task_id": "1036222",
+      "edit": "trim to 5 seconds"
+    },
+    {
+      "id": "S02",
+      "start": 5,
+      "end": 10,
+      "source": "../downloads/shots/s02-original-v1.mp4",
+      "task_id": "1036228",
+      "edit": "crop 1600x900 at 0,70 to exclude unintended edge passerby"
+    },
+    {
+      "id": "S03",
+      "start": 10,
+      "end": 15,
+      "source": "../downloads/shots/s03-original-v1.mp4",
+      "task_id": "1036226",
+      "edit": "trim to 5 seconds"
+    },
+    {
+      "id": "S04",
+      "start": 15,
+      "end": 20,
+      "source": "s04-invitation-v2.mp4",
+      "task_id": "1036213",
+      "edit": "trim to 5 seconds"
+    },
+    {
+      "id": "S05",
+      "start": 20,
+      "end": 25,
+      "source": "../downloads/shots/s05-original-v1.mp4",
+      "task_id": "1036229",
+      "edit": "trim to 5 seconds"
+    },
+    {
+      "id": "S06",
+      "start": 25,
+      "end": 30,
+      "source": "../downloads/shots/s06-original-v1.mp4",
+      "task_id": "1036230",
+      "edit": "trim to 5 seconds"
+    }
+  ],
+  "voices": [
+    {
+      "id": "ask_way",
+      "speaker": "旅者",
+      "text": "请问，车站怎么走？",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-10%",
+      "pitch": "-2Hz",
+      "start": 10.15,
+      "subtitle_end": 12.65,
+      "trimmed_duration": 2.021,
+      "end": 12.171
+    },
+    {
+      "id": "directions",
+      "speaker": "阿灯",
+      "text": "往那边。",
+      "voice": "zh-CN-YunxiaNeural",
+      "rate": "-12%",
+      "pitch": "-4Hz",
+      "start": 13.1,
+      "subtitle_end": 14.6,
+      "trimmed_duration": 0.921,
+      "end": 14.021
+    },
+    {
+      "id": "invitation",
+      "speaker": "阿灯",
+      "text": "你……吃饭了吗？",
+      "voice": "zh-CN-YunxiaNeural",
+      "rate": "-18%",
+      "pitch": "-4Hz",
+      "start": 17.0,
+      "subtitle_end": 19.6,
+      "trimmed_duration": 1.641,
+      "end": 18.642
+    },
+    {
+      "id": "accept",
+      "speaker": "旅者",
+      "text": "好啊，谢谢你。",
+      "voice": "zh-CN-XiaoxiaoNeural",
+      "rate": "-12%",
+      "pitch": "-2Hz",
+      "start": 20.25,
+      "subtitle_end": 22.8,
+      "trimmed_duration": 1.617,
+      "end": 21.867
+    }
+  ],
+  "audio": "Original TTS dialogue and procedural Foley; provider clip audio discarded",
+  "music": false,
+  "subtitles": "Burned-in Simplified Chinese, plus companion WebVTT",
+  "new_video_credits": 440,
+  "previous_s04_credits": 88,
+  "total_video_credits": 528,
+  "image_generation": "built-in ImageGen; model version/seed unknown",
+  "output": "second-place-30s-v1.mp4"
+}
