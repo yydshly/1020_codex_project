@@ -16,6 +16,19 @@
 - [总览引导图查看器](https://yydshly.github.io/1020_codex_project/projects/008-product-platform-atlas/overview.html)
 - [PNG 原图](https://yydshly.github.io/1020_codex_project/projects/008-product-platform-atlas/platform-overview-2026-10-23.png)
 
-## 校验状态
+## 校验结果
 
-发布前完成子项目资料与链接校验、脚本语法检查、目录同步、仓库检查和既有测试。线上状态及原图 SHA-256 在部署完成后记录。
+- 内容提交：`ec7f0bc88e99d448b4b56854f858bd247e8dae9e`，已推送至 `origin/main`。
+- [GitHub Pages 发布工作流](https://github.com/yydshly/1020_codex_project/actions/runs/39920955520)成功，部署的内容提交与上述一致。
+- 发布前：资料与链接校验、两个交互脚本的语法检查、目录同步、仓库检查、8 项既有测试、静态构建全部通过。
+- 发布后：站点首页、008 研究页、总览图查看器和 PNG 原图均返回 HTTP 200；线上索引摘要包含六个平台及各自的能力与价值。
+- 浏览器实测：软件选型筛选正确显示 AlternativeTo；原图加载为 1536 像素，原始尺寸显示 100%，适应宽度显示 78%；未发现脚本错误。
+- 线上图片为 2,008,815 字节，与生成原图、本地 assets 和 web 副本的 SHA-256 一致：
+
+```text
+56e9d2306d9dd98691b4b3adc8026b46b3b56c99d8d90b64dd24277bd9c2ef2a
+```
+
+![线上总览引导图](../assets/published-overview.jpg)
+
+发布在独立工作树完成，仅提交 008 研究内容、目录条目与发布说明；未纳入主工作区其他未完成项目。保留现有站点的其他已发布内容。

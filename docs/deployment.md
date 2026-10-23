@@ -1,5 +1,7 @@
 # 多个 Web 演示的部署
 
+2026-10-23 新增并验证：[008 · 产品发现平台图谱](https://yydshly.github.io/1020_codex_project/projects/008-product-platform-atlas/) · [生成的总览引导图](https://yydshly.github.io/1020_codex_project/projects/008-product-platform-atlas/overview.html)。摘要覆盖 Product Hunt、Uneed、BetaList、AlternativeTo、Indie Hackers、新趣集的能力与个人价值；引导图沿用已生成 PNG，线上文件与原图哈希一致。详见[008 发布记录](../projects/008-product-platform-atlas/notes/release.md)。
+
 GitHub Pages 为每个仓库提供一个静态站点。本仓库把多个子项目的演示打包到该站点的不同子路径：
 
 ```text
