@@ -1,0 +1,16 @@
+{
+  "id": 11,
+  "slug": "jev-browser-agent-study",
+  "name": "Jev Ultrafast · 从网页选项到自动执行",
+  "summary": "把网页 DOM/ARIA 控件转成候选操作，由 Jev 结合目标、当前状态与历史选择，程序检查后驱动浏览器并循环观察。价值是复用动态网页 Agent 的观察、执行、重试与调试骨架，可用于查询筛选、导航和普通表单原型；可继续开发其他模型适配、复杂控件支持、任务恢复、业务验收与对比评测。扩展属于待实现方向，DONE 仍需独立核验。",
+  "repo": "https://github.com/browser-use/jev-ultrafast",
+  "status": "研究中",
+  "cover": "assets/browser-agent-architecture.svg",
+  "cover_alt": "Jev Ultrafast 核心架构与执行循环横图：业务定义目标与独立验收，库从当前网页抽取操作和状态，Jev结合上下文选操作与目标，浏览器执行并重新观察；填字时调用文字助手，模型DONE后业务校验结果。",
+  "web": true,
+  "research_date": "2026-10-23",
+  "upstream_version": "0.1.0",
+  "upstream_commit": "1231850a0bf1a0c0341fe408ef1668dbbfdfac46",
+  "upstream_license": "MIT",
+  "verification_scope": "上游源码与官方资料核对；本项目静态网页和教学交互检查；未实跑上游或真实订房"
+}

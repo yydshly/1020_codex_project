@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Jev Ultrafast 研究汇总：程序从DOM生成可选操作，Jev结合目标、页面状态和历史选择，程序检查执行并循环，DONE后业务独立验收。梳理通用Agent骨架的价值、酒店教学、性能证据及需要开发的模型适配、控件、恢复与评测方向。">
+  <meta name="theme-color" content="#f6f8fc">
+  <title>Jev Ultrafast · 从网页选项到自动执行</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%232c57d8'/%3E%3Cpath d='M11 12h9v16h-9M25 12h4v16h-4' fill='none' stroke='white' stroke-width='3'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">跳到正文</a>
+<header class="site-header">
+  <a class="brand" href="#intro"><span class="brand-mark" aria-hidden="true">[·]</span><span>JEV / 研究笔记<span class="brand-sub">项目 011 · 网页 Agent</span></span></a>
+  <nav class="top-nav" aria-label="主要导航"><a href="#hotel">酒店流程</a><a href="#value">库的价值</a><a href="#models">模型与速度</a><a href="architecture.html">横向架构图 ↗</a></nav>
+  <a class="source-link" href="https://github.com/browser-use/jev-ultrafast" target="_blank" rel="noreferrer">原始仓库 <span aria-hidden="true">↗</span></a>
+</header>
+<div class="page-shell">
+  <aside class="sidebar" aria-label="章节目录">
+    <p class="eyebrow">阅读路线</p>
+    <nav id="section-nav">
+      <a href="#intro" class="active"><span>01</span> 核心理解</a>
+      <a href="#architecture"><span>02</span> 谁负责什么</a>
+      <a href="#hotel"><span>03</span> 酒店流程 · 逐步看</a>
+      <a href="#elements"><span>04</span> 选项从哪里来</a>
+      <a href="#value"><span>05</span> 库比直调多了什么</a>
+      <a href="#research-directions"><span>05+</span> 研究结论与扩展</a>
+      <a href="#models"><span>06</span> Jev、训练与速度</a>
+      <a href="#replacement"><span>07</span> 换成开源模型</a>
+      <a href="#scenarios"><span>08</span> 场景与能力边界</a>
+      <a href="#implementation"><span>09</span> 源码与运行方式</a>
+      <a href="#evidence"><span>10</span> 证据与完整资料</a>
+      <a href="#faq"><span>11</span> 常见理解误区</a>
+    </nav>
+    <div class="sidebar-foot"><span class="status-dot"></span> 源码与文档研究<br><span>资料核对 · 2026.10.23<br>上游 v0.1.0 · MIT</span></div>
+  </aside>
+  <main id="main">
+    <section id="intro" class="hero section-observe" aria-labelledby="hero-title">
+      <div class="hero-meta"><span class="pill">核心定位：应用层浏览器 Agent</span><span class="muted">browser-use / jev-ultrafast</span></div>
+      <h1 id="hero-title">把网页上的操作，<br>变成模型的<span class="blue">选择。</span></h1>
+      <p class="hero-lead"><strong>程序从 DOM 列出可选操作，Jev 结合目标、状态与历史选下一步。</strong><br>程序检查目标是否仍有效，再操作浏览器、读取新页面并继续循环；模型返回 DONE 后，由业务程序独立验收结果。</p>
+      <div class="hero-research-summary"><p><strong>核心价值</strong>复用观察、决策接入、检查、执行、历史与停止条件，得到一套通用网页 Agent 运行骨架。</p><p><strong>适合用来做什么</strong>搭建动态网页任务原型，或保持相同执行层，比较不同模型的选择质量与任务耗时。</p><a href="#research-directions">看我们的研究结论与可扩展方向 ↓</a></div>
+      <div class="hero-actions"><a class="button primary" href="architecture.html">一张横图看核心架构 <span aria-hidden="true">↗</span></a><a class="button quiet" href="#hotel">跟着酒店案例走一遍 ↓</a></div>
+      <figure class="architecture-hero" aria-labelledby="architecture-hero-caption">
+        <a class="architecture-preview" href="architecture.html" aria-label="放大查看核心架构与执行循环横图"><img src="assets/browser-agent-architecture.svg" width="1920" height="1080" alt="Jev Ultrafast 核心架构与执行循环：业务给目标与验收规则，库从网页抽取操作，Jev结合上下文选择，浏览器执行后重新观察；需要填字时调用文字助手，DONE后由业务独立验收。"></a>
+        <figcaption id="architecture-hero-caption"><div><strong>核心架构与执行循环</strong><span>先用一张横图看清分工与回路，再按下方章节展开研究。</span></div><a href="architecture.html">放大浏览 ↗</a><a href="assets/browser-agent-architecture.png" download>保存 PNG ↓</a></figcaption>
+      </figure>
+      <div class="takeaway-row"><p><span>能力的粒度</span>点击哪个按钮、填写哪个输入框。</p><p><span>库的价值</span>把模型判断接成持续运行的网页流程。</p><p><span>业务的责任</span>定义目标，并独立验证实际结果。</p></div>
+      <p class="source-note">理解依据：<a href="https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/README.md" target="_blank" rel="noreferrer">上游说明</a>、<a href="https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/jev_ultrafast/agent.py" target="_blank" rel="noreferrer">运行循环</a>。本页交互全部为本地教学示意，未接入模型或真实酒店网站。</p>
+    </section>
+
+    <section id="architecture" class="section section-observe" aria-labelledby="architecture-title">
+      <div class="section-heading"><span class="section-number">02 / 分工</span><h2 id="architecture-title">先分清四件事，再看整套系统。</h2><p>业务、执行框架、模型与浏览器，各自有不同的责任。</p></div>
+      <div class="role-stack">
+        <article><span class="role-label">目标层</span><div><h3>你的业务程序</h3><p>提供网址、城市、日期、人数等要求，决定何时开始，并检查最后的页面是否真正满足条件。</p></div><span class="role-output">产物：任务与验收规则</span></article>
+        <article class="role-highlight"><span class="role-label">编排层</span><div><h3>jev-ultrafast 这个库</h3><p>连接浏览器、读取控件、组织问题、调用模型、检查并执行动作、保存历史，再启动下一轮。</p></div><span class="role-output">产物：可运行的执行循环</span></article>
+        <article><span class="role-label">判断层</span><div><h3>Jev + 文字助手</h3><p>Jev 选“做什么、对哪个元素做”；选到填字时，独立的文字模型才根据目标和字段生成内容。</p></div><span class="role-output">产物：选择与字段文字</span></article>
+        <article><span class="role-label">操作层</span><div><h3>Browser Harness + Chrome</h3><p>底层连接浏览器、读取真实网页元素、发送鼠标和文字输入。编号背后对应程序观察到的 DOM 节点。</p></div><span class="role-output">产物：实际页面变化</span></article>
+      </div>
+      <div class="split-note"><strong>一次预测包含多个问题</strong><p>原版把 <code>operation</code> 与 <code>click_target</code>、<code>type_text_target</code>、适用时的 <code>select_target</code> 放在同一个请求里。选择“填字”时，只执行对应的填字目标。我们之前用 A/B/C 演示，是便于理解的简化表达。</p></div>
+      <div class="context-grid"><article><h3>共同上下文有用吗？</h3><p>每个问题都看到同一份页面状态；目标位于问题指令中。库每轮重新发送网页标题、网址、可见文字、控件及最近最多 10 条动作。</p></article><article><h3>并行意味着什么？</h3><p>同一请求的多个问题并行评估，问题之间不依赖彼此的回答。下一步操作后的新页面仍需下一次请求观察；未公开内部每个选项如何计算。</p></article></div>
+      <p class="source-note"><a href="https://docs.typesafe.ai/patterns/fan-out" target="_blank" rel="noreferrer">官方并行机制</a> · <a href="https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/jev_ultrafast/model.py" target="_blank" rel="noreferrer">实际请求结构</a></p>
+    </section>
+
+    <section id="hotel" class="section section-observe" aria-labelledby="hotel-title">
+      <div class="section-heading"><span class="section-number">03 / 把流程走一遍</span><h2 id="hotel-title">同一个酒店任务，每一步是谁在做？</h2><p>用“上一轮 / 下一轮”观察页面状态、模型选择和程序执行如何配合。</p></div>
+      <div class="notice"><span class="notice-label">教学模拟</span><p>下方酒店、价格和页面均为虚构。点击只切换本页示例，不访问酒店平台、不调用模型、不订房。目标停在“搜索筛选并打开详情”。</p></div>
+      <div class="task-strip"><span>任务</span><p>查杭州酒店，10 月 30 日入住、31 日离店，2 位成人，可免费取消，打开「清溪酒店」详情。</p><span class="task-date">2026 年 · 示例条件</span></div>
+      <div class="simulation" id="simulation">
+        <div class="browser-mock" aria-label="虚构酒店网站当前状态">
+          <div class="browser-bar"><div class="window-dots" aria-hidden="true"><i></i><i></i><i></i></div><span>hotel.example / 本地示例</span><span aria-hidden="true">↻</span></div>
+          <div class="hotel-site"><div class="hotel-brand"><span class="hotel-symbol" aria-hidden="true">⌂</span> 旅居 <span>寻找下一处停留</span></div>
+            <div class="hotel-head"><p class="eyebrow">STAY A LITTLE LONGER</p><h3 id="hotel-headline">下一站，住在哪里？</h3></div>
+            <div class="hotel-fields"><div class="hotel-field" id="mock-city"><span><b>[1]</b> 城市</span><strong id="hotel-city">选择城市</strong></div><div class="hotel-field" id="mock-dates"><span><b>[2]</b> 入住 / 离店</span><strong id="hotel-dates">选择日期</strong></div><div class="hotel-field"><span><b>[3]</b> 住客</span><strong>2 位成人 · 1 间房</strong></div></div>
+            <div class="hotel-suggestion" id="hotel-suggestion" hidden><b>[5]</b> 杭州 · 浙江，中国 <span>城市建议</span></div>
+            <div class="hotel-calendar" id="hotel-calendar" hidden><strong>2026 年 10 月</strong><div class="calendar-days"><span>27</span><span>28</span><span>29</span><span id="day-in">30</span><span id="day-out">31</span></div><p id="calendar-caption">选择入住日期</p></div>
+            <div class="hotel-controls"><div class="mock-checkbox" id="mock-cancel"><span class="checkbox-shape" id="cancel-check" aria-hidden="true"></span><span><b>[4]</b> 免费取消</span></div><div class="mock-search" id="mock-search">[6] 搜索酒店 →</div></div>
+            <div class="hotel-placeholder" id="hotel-placeholder"><div class="landscape" aria-hidden="true"><span></span><i></i></div><p>把旅行计划，变成下一次出发。</p></div>
+            <div class="hotel-loading" id="hotel-loading" hidden><span class="loading-dots" aria-hidden="true">•••</span><p>正在显示匹配结果</p></div>
+            <div class="hotel-results" id="hotel-results" hidden><div class="hotel-result-art" aria-hidden="true"><i></i><i></i><i></i></div><div><span class="tiny-label">虚构酒店 · 教学数据</span><h4>清溪酒店</h4><p>杭州 · 2 位成人 · 免费取消</p><span class="hotel-price">¥ 425 <small>/ 晚，示意价格</small></span><span class="result-link" id="mock-detail">[7] 查看详情 ↗</span></div></div>
+            <div class="hotel-detail" id="hotel-detail" hidden><span class="tiny-label">详情页 · 教学模拟</span><h4>清溪酒店</h4><p>杭州 · 2026.10.30 — 10.31 · 2 位成人</p><p class="cancel-policy">✓ 当前示例展示可免费取消的条件</p><div class="detail-note">已打开详情。本例到此结束，没有创建订单或付款。</div></div>
+          </div>
+        </div>
+        <div class="decision-panel"><div class="decision-top"><span class="pill blue-pill" id="sim-role">本轮 · Jev 抉择</span><span id="sim-progress" class="muted">01 / 11</span></div><h3 id="sim-title">城市输入框为空</h3><p id="sim-observation" class="sim-observation"></p>
+          <div class="decision-entry"><span class="entry-label">01 程序观察 · 页面状态与候选节选</span><ul id="sim-options" class="option-list"></ul></div>
+          <div class="decision-entry model-answer"><span class="entry-label">02 模型返回 · 示意</span><pre id="sim-answer"></pre></div>
+          <div class="decision-entry"><span class="entry-label" id="sim-execute-label">03 程序执行</span><p id="sim-execute"></p></div>
+          <p class="sim-history" id="sim-history"></p>
+        </div>
+      </div>
+      <div class="sim-toolbar"><div><button class="button small" id="sim-prev" type="button">← 上一轮</button><button class="button primary small" id="sim-next" type="button">下一轮 →</button></div><div><button class="button quiet small" id="sim-play" type="button" aria-pressed="false">自动演示</button><button class="button quiet small" id="sim-reset" type="button">从头看</button></div></div>
+      <ol class="step-track" id="step-track" aria-label="酒店流程进度"></ol><p class="sr-only" id="sim-announcement" role="status" aria-live="polite"></p>
+      <div class="two-column-text"><article><h3>页面变了，为什么还要再问？</h3><p>输入城市后才会出现联想结果；点击日期后才会出现日历。库每次从真实新页面生成候选，模型不能在第一轮就确定所有后续元素。</p></article><article><h3>“完成”还需要业务核验</h3><p>模型返回 DONE 是停止信号。你的程序还应独立检查城市、日期、人数、筛选和详情页。真实预订还需要额外的业务流程与验证。</p></article></div>
+    </section>
+
+    <section id="elements" class="section section-observe" aria-labelledby="elements-title">
+      <div class="section-heading"><span class="section-number">04 / 网页如何变成选项</span><h2 id="elements-title">代码读取网页结构，按规则识别操作。</h2><p>网页内部有元素类型、名称、值和状态。程序读取这些信息，无需先让另一个模型“出题”。</p></div>
+      <div class="dom-explainer"><div class="code-panel"><div class="code-title"><span>网页内部的 HTML · 简化示意</span></div><pre><code>&lt;input type="text" placeholder="城市"&gt;
+&lt;button&gt;搜索酒店&lt;/button&gt;
+&lt;input type="checkbox"&gt; 免费取消
+&lt;select&gt;…成人数量…&lt;/select&gt;</code></pre></div><div class="mapping-list"><p><code>input / textarea</code><span>可编辑时 → 填字，也提供点击</span></p><p><code>button / a[href]</code><span>常见按钮、链接 → 点击</span></p><p><code>select / option</code><span>为可选的实际选项生成 SELECT</span></p><p><code>role / aria-*</code><span>识别有语义标记的自定义控件</span></p></div></div>
+      <div class="rule-lab"><div class="lab-top"><div><span class="tiny-label">本页可操作实验</span><h3>改变控件状态，看候选如何改变</h3></div><span class="pill">代码规则演示 · 非上游完整实现</span></div><div class="lab-controls"><label><input id="toggle-disabled" type="checkbox"> 禁用搜索按钮</label><label><input id="toggle-readonly" type="checkbox"> 城市框设为只读</label><label><input id="toggle-hidden" type="checkbox"> 隐藏免费取消</label></div><div class="lab-grid"><div class="sample-controls" id="sample-controls"><label>城市<input id="sample-city" type="text" value="杭州" aria-label="示例城市"></label><button id="sample-search" type="button">搜索酒店</button><label id="sample-cancel-wrap" class="sample-check"><input id="sample-cancel" type="checkbox" checked> 免费取消</label><p id="sample-feedback" class="muted">修改上方状态，观察右侧列表。</p></div><div class="lab-output"><span class="entry-label">根据本页真实 DOM 生成的候选</span><ul id="lab-actions"></ul><p id="lab-status" role="status" aria-live="polite"></p></div></div></div>
+      <div class="check-strip"><span><b>观察时</b> 过滤隐藏、禁用、窗口外的控件</span><span><b>执行前</b> 再核对页面、元素与中心点遮挡</span><span><b>识别边界</b> 未标注的自定义控件可能漏识别</span></div>
+      <details><summary>源码里的规则与数量限制</summary><div class="details-body"><p>名称按 aria-labelledby、aria-label、关联 label、文字、title、placeholder 等规则提取，但并非完整的可访问名称标准。支持常见 HTML 与 ARIA 控件；排除 password、file、hidden 类型。候选控件中心点须位于当前视口；每快照最多保留 250 个底层动作，正文最多 6,000 字符。滚动、等待等由程序补充，DONE / BLOCKED 在模型请求中加入。</p><p>真正执行时会重新读取元素位置并检查遮挡；只读控件不生成填字操作，但仍可能保留点击。上面的实验只解释这一部分规则。</p></div></details>
+      <p class="source-note"><a href="https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/jev_ultrafast/snapshot.js" target="_blank" rel="noreferrer">snapshot.js：发现与编号</a> · <a href="https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/jev_ultrafast/browser.py" target="_blank" rel="noreferrer">browser.py：执行前检查</a></p>
+    </section>
+
+    <section id="value" class="section section-observe" aria-labelledby="value-title">
+      <div class="section-heading"><span class="section-number">05 / 为什么用这个库</span><h2 id="value-title">直调 Jev 得到判断；库把判断接成行动。</h2><p>如果你自己实现同样的浏览器循环，最终能力可以一样。库的价值是复用已有代码与执行优化。</p></div>
+      <div class="comparison"><article class="comparison-direct"><span class="tiny-label">直接调用 Jev</span><h3>返回“填写城市框”，然后调用结束。</h3><div class="comparison-path"><span>你整理页面与候选</span><b>↓</b><span class="decision-chip">Jev 选择动作</span><b>↓</b><span>你写代码执行、更新状态并再次调用</span></div><p>打开浏览器、读取页面、执行输入、记录历史、恢复失效状态等，仍由你的程序完成。</p></article><article class="comparison-library"><span class="tiny-label">通过 jev-ultrafast</span><h3>执行选择，观察新页面，再问下一轮。</h3><div class="comparison-path"><span>你提供网址与任务</span><b>↓</b><span class="decision-chip">库运行浏览器 ↔ Jev 抉择</span><b>↓</b><span>你读取进度，并独立核验结果</span></div><p>通用循环已经连接；酒店业务条件、特殊网站兼容和最终结果校验仍需补充。</p></article></div>
+      <div class="table-wrap"><table><caption>同一个酒店任务，工作由谁承担</caption><thead><tr><th>工作</th><th>只使用 Jev API</th><th>使用这个库</th></tr></thead><tbody><tr><th>发现城市框、日期按钮等</th><td>自行读取与整理</td><td>已有 DOM 快照和动作空间</td></tr><tr><th>组织目标、页面和历史</th><td>自行设计请求</td><td>已有请求结构和最近历史</td></tr><tr><th>执行后观察、遇到失效重选</th><td>自行写循环和检查</td><td>已有基础循环与 freshness 检查</td></tr><tr><th>查看模型选择和耗时</th><td>自行记录与搭界面</td><td>已有本地 inspector 和轨迹</td></tr><tr><th>验证酒店是否符合条件</th><td>业务程序负责</td><td>仍由业务程序独立校验</td></tr><tr><th>适配登录、复杂控件和交易流程</th><td>自行实现</td><td>仍可能需要扩展，MVP 有限制</td></tr></tbody></table></div>
+      <div class="value-summary"><strong>值得复用的是通用执行骨架。</strong><p>目标经常变化、页面需要逐步观察时，可用它做原型或模型比较基线。若已有成熟执行框架，主要参考它的页面快照、调用方式和延迟优化；固定且稳定的业务，也可以直接写确定步骤。</p></div>
+    </section>
+
+    <section id="research-directions" class="section section-observe" aria-labelledby="research-directions-title">
+      <div class="section-heading"><span class="section-number">05+ / 研究结论与下一步</span><h2 id="research-directions-title">我们的研究结论与可扩展方向。</h2><p>可复用的核心是一条“观察 → 选择 → 检查执行 → 重新观察”的闭环。模型负责有歧义的下一步，程序保留操作边界、执行记录与独立验收。</p></div>
+      <div class="research-verdict"><span class="research-label">我们的判断</span><p>它的价值覆盖模型 API 之外的通用运行工作，适合作为网页 Agent 原型和模型比较基线。固定、稳定的任务可先评估脚本；真实站点兼容与完整业务交付仍要逐项验证。</p></div>
+      <div class="direction-heading"><h3>沿现有分层可以继续扩展什么？</h3><span class="direction-status">以下均为设想 / 需要开发，当前研究页未实现</span></div>
+      <div class="direction-grid">
+        <article class="direction-card"><span class="direction-number">01 / 决策层</span><h3>模型适配与切换</h3><p class="direction-entry">入口：<a data-source-file="jev_ultrafast/model.py" href="#implementation">model.py / choose()</a></p><p>保留网页状态和动作契约，增加决策适配器，接严格选项 ID 或候选分数；文字助手单独配置。模型输出必须映射到已观察到的动作。</p><p class="direction-check"><strong>验证：</strong>同一任务与执行层下，对比成功率、总耗时和无效步骤。</p></article>
+        <article class="direction-card"><span class="direction-number">02 / 观察与执行层</span><h3>复杂网页控件</h3><p class="direction-entry">入口：<a data-source-file="jev_ultrafast/snapshot.js" href="#implementation">snapshot.js</a> ＋ <a data-source-file="jev_ultrafast/browser.py" href="#implementation">browser.py</a></p><p>按类型补 iframe、Shadow DOM、嵌套滚动、标签页与日期控件的观察和操作路径，同时维护节点身份、当前状态与执行前检查。</p><p class="direction-check"><strong>验证：</strong>为每种控件准备本地页面，检查候选是否准确、动作是否生效。</p></article>
+        <article class="direction-card"><span class="direction-number">03 / 运行循环</span><h3>任务恢复与继续执行</h3><p class="direction-entry">入口：<a data-source-file="jev_ultrafast/agent.py" href="#implementation">agent.py / 预测与执行循环</a></p><p>区分页面失效、加载超时与无进展；增加有预算的重观测和重选。保存阶段检查点，恢复前先核对当前页面，避免重复执行已完成的操作。</p><p class="direction-check"><strong>验证：</strong>模拟加载延迟、遮挡和中断，检查能否继续且不重复产生副作用。</p></article>
+        <article class="direction-card"><span class="direction-number">04 / 业务层</span><h3>独立验收与任务组合</h3><p class="direction-entry">入口：业务程序对 Agent 的调用与返回处理</p><p>将“查询 → 筛选 → 打开详情”拆成可检查阶段；给每阶段定义输入、输出与结果校验器。DONE 后核对实际城市、日期、人数和政策，再决定下一阶段。</p><p class="direction-check"><strong>验证：</strong>故意放入不匹配结果，确保模型说完成时，业务仍能拒绝错误结果。</p></article>
+        <article class="direction-card direction-wide"><span class="direction-number">05 / 研究与评测</span><h3>建立可比较的任务集</h3><p class="direction-entry">入口：本地测试页面、执行轨迹与 <a data-source-file="docs/performance.md" href="#evidence">performance.md 的计时口径</a></p><p>固定任务、浏览器、模型版本、文字助手和验收条件，比较脚本、Jev 与替代模型；同时记录成功率、全程 p50/p95、无效步骤、恢复成本和每次成功任务费用。</p><p class="direction-check"><strong>验证：</strong>保留失败样例和完整轨迹，区分模型选错、网页识别、浏览器执行和业务条件问题。</p></article>
+      </div>
+      <p class="direction-next"><strong>建议起步：</strong>先用一个本地页面跑通目标与独立验收，再更换决策器做同任务对照，最后根据实际收益扩展真实站点与恢复能力。上述方向不代表已支持登录、订房或付款。</p>
+    </section>
+
+    <section id="models" class="section section-observe" aria-labelledby="models-title">
+      <div class="section-heading"><span class="section-number">06 / Jev 与速度</span><h2 id="models-title">选择题架构、模型能力、程序效率，要分开看。</h2><p>普通模型也能选择。Jev 是这个库采用的决策服务，它的训练和推理实现属于独立产品。</p></div>
+      <div class="model-pair"><article><span class="tiny-label">常见生成式模型 · 简化描述</span><h3>读取输入，再逐 token 生成答案。</h3><p>可以只输出 A/B/C，也能使用 JSON Schema 约束。短输出可减少生成等待，但仍有输入计算、推理和服务排队成本。</p></article><article><span class="tiny-label">Jev · TypeSafe 官方描述</span><h3>返回决策与概率，并行处理多个问题。</h3><p>官方称采用专门架构、并行采样器及 RLCD 后训练。公开资料不足以确认基座、参数量、网络细节或完整损失与奖励公式。</p></article></div>
+      <div class="training-note"><h3>RLCD 训练方向是什么？</h3><p>官方称其优化目标是“经过校准的决策”：一批被赋予约 80% 概率的判断，希望实际发生比例也接近 80%。这是群体统计目标，不能保证单次判断正确。训练目标与推理计算方式也要分开：RLCD 解释优化方向，并行输出与执行优化解释延迟来源。</p><p class="source-note"><a href="https://docs.typesafe.ai/introduction/machine-learning-primer" target="_blank" rel="noreferrer">官方训练说明</a> · <a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev" target="_blank" rel="noreferrer">官方发布说明</a></p></div>
+      <div class="metric-grid"><article><span>录制中 Jev 单次请求中位数</span><strong>178 <small>ms</small></strong><p>一条 Google Flights 轨迹，共 17 次请求。</p></article><article><span>同一航班任务录制耗时</span><strong>7.073 <small>s</small></strong><p>初始页面观察之后，到模型 DONE。</p></article><article><span>优化前后任务中位耗时</span><strong>−25 <small>%</small></strong><p>相同模型设置，执行层优化比较。</p></article></div>
+      <div class="table-wrap"><table><caption>作者公布的观测，与它能支持的结论</caption><thead><tr><th>证据</th><th>公布结果</th><th>应如何理解</th></tr></thead><tbody><tr><th>航班任务优化对比</th><td>9.450 → 7.092 秒；浏览器协议调用中位数 1,092 → 101</td><td>前后同 Jev 1.13 + Mercury；各 3 次，属于同任务执行优化。</td></tr><tr><th>Wikipedia 烟雾检查</th><td>2.798 秒，打开指定文章</td><td>单项示例，不是跨任务成功率基准。</td></tr><tr><th>本地酒店测试页</th><td>1.896 秒，搜索、筛选并打开酒店</td><td>本地 fixture，不代表真实酒店网站预订。</td></tr></tbody></table></div>
+      <div class="evidence-boundary"><strong>计时与成本边界</strong><p>7.073 秒包含模型调用、文字生成、浏览器工作、失效决策与加载等待；不包含浏览器启动、首次导航和独立终检。两次文字生成约 $0.00006272，仅为文字助手费用，不是总任务费用。仓库没有同条件替换决策模型的完整比较，不能据此宣称比所有普通模型快多少倍。</p></div>
+      <details><summary>概率、confidence 与“选对了”有什么区别？</summary><div class="details-body"><p>Choice 返回所有选项的概率；confidence 是由分布计算的集中程度。官方 Choice 公式是 <code>(pmax − 1/n) / (1 − 1/n)</code>，并非某个答案的正确率。原库检查概率格式和最大值一致性，没有按 confidence 阈值自动拒绝执行。合法选项仍可能选错，模型 DONE 仍需独立验证。</p></div></details>
+      <p class="source-note"><a href="https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/docs/performance.md" target="_blank" rel="noreferrer">完整测量报告</a> · <a href="https://docs.typesafe.ai/confidence" target="_blank" rel="noreferrer">confidence 定义</a></p>
+    </section>
+
+    <section id="replacement" class="section section-observe" aria-labelledby="replacement-title">
+      <div class="section-heading"><span class="section-number">07 / 换成其他模型</span><h2 id="replacement-title">可以保留选择题架构，逐步替换决策层。</h2><p>原库的 Jev 接口不是通用 Chat API。需要改造 <code>choose()</code> 的请求和返回适配，并同步处理日志中的概率字段。</p></div>
+      <ol class="replacement-list"><li><span class="route-number">01</span><div><h3>先用结构化输出，验证能否选对。</h3><p>把合法“动作＋目标”绑定到候选编号，用 enum 或约束解码输出一个编号，再映射回真实动作。不需要从头训练。只设置“请输出 JSON”不能替代合法候选约束。</p><span class="route-tag">改推理接口 · 通用模型可做</span></div></li><li><span class="route-number">02</span><div><h3>开源模型可以直接读取候选分数。</h3><p>对一道题，使用在答案位置各为单 token 的 A/B/C 编号，直接读取下一 token 的 logits 并在候选中归一化。无需继续生成长回答；这是已有词表输出层的用法，不自动获得 Jev 的多问题并行能力。</p><span class="route-tag">可不训练 · 需要权重或分数访问</span></div></li><li><span class="route-number">03</span><div><h3>精度不足再微调；概率先验证、再校准。</h3><p>分数表示对答案的偏好，不天然等于正确率。可用独立标注集做温度缩放等后处理；若总选错，则需要改进任务数据和选择能力。新增随机分类头一般需要训练；动态网页候选还需能读取每轮候选，不能只固定几类业务标签。</p><span class="route-tag">不要求从零训练，也不要求 RLCD</span></div></li></ol>
+      <div class="next-action"><h3>怎样做一次有意义的比较？</h3><p>固定网页任务、起始页面、浏览器配置、文字助手与结果校验器，只替换决策适配层。记录任务成功率、总耗时 p50 / p95、决策请求数、无效步骤和每次成功任务费用。先看整段任务，再看单次响应。</p></div>
+      <p class="source-note"><a href="https://docs.vllm.ai/en/latest/features/structured_outputs/" target="_blank" rel="noreferrer">vLLM 约束输出</a> · <a href="https://huggingface.co/docs/transformers/en/main_classes/output#transformers.modeling_outputs.CausalLMOutput" target="_blank" rel="noreferrer">模型分数接口</a> · <a href="https://proceedings.mlr.press/v70/guo17a.html" target="_blank" rel="noreferrer">温度缩放研究</a></p>
+    </section>
+
+    <section id="scenarios" class="section section-observe" aria-labelledby="scenarios-title">
+      <div class="section-heading"><span class="section-number">08 / 使用场景</span><h2 id="scenarios-title">适合动态网页原型，具体网站仍需验证。</h2><p>它提供的是细粒度的点击、填字、选择、滚动与等待。更大的业务目标由这些动作组合完成。</p></div>
+      <div class="scenario-grid"><article><span class="scenario-index">A</span><h3>网页查询与筛选</h3><p>给不同城市、日期、条件，让模型根据页面决定下一步。适用于能由常见 HTML 控件表达的任务。</p><span>酒店检索 / 航班查询 / 商品筛选</span></article><article><span class="scenario-index">B</span><h3>语义导航与普通表单</h3><p>根据名称和上下文寻找入口、打开文章或填写普通字段；仍需要业务信息与验收标准。</p><span>知识站查找 / 信息录入 / 页面导航</span></article><article><span class="scenario-index">C</span><h3>研究与执行基线</h3><p>学习 DOM 到动作的转换，比较不同决策器，定位模型、浏览器通信与页面加载各自的耗时。</p><span>Agent 原型 / 模型对比 / 延迟研究</span></article></div>
+      <div class="boundary-columns"><article><h3>当前 MVP 的限制</h3><ul class="plain-list"><li>不遍历 Shadow DOM 与 iframe。</li><li>Canvas、上传、新弹出标签页、嵌套滚动和任意键盘控件尚未覆盖。</li><li>密码、文件与隐藏类型输入被排除。</li><li>与现有 Chrome profile 共用环境；不是隔离的通用交易系统。</li><li>模型选合法操作，也可能不满足业务意图。</li></ul></article><article><h3>遇到这些情况，需要另做设计</h3><ul class="plain-list"><li>固定、稳定、低歧义的重复任务：确定步骤可能更直接。</li><li>已有可靠业务 API：可先评估直接请求，是否还需要 UI 操作。</li><li>登录、验证码、复杂预订与付款：没有已验证的完整通用流程。</li><li>长任务、跨页复杂状态：需要扩展恢复、预算和业务校验。</li><li>原版演示上限 60 动作、120 次预测，连续无进展会停止。</li></ul></article></div>
+      <p class="source-note">语言边界：TypeSafe 官方说明英语是主要训练语言，中文等 CJK 输入可接受，但准确性需要在自己的任务上另测。本页中文酒店流程是教学数据，不是中文模型能力实测。<a href="https://docs.typesafe.ai/models" target="_blank" rel="noreferrer">官方语言说明 ↗</a></p>
+    </section>
+
+    <section id="implementation" class="section section-observe" aria-labelledby="implementation-title">
+      <div class="section-heading"><span class="section-number">09 / 从源码到使用</span><h2 id="implementation-title">代码不大，适合按循环顺序阅读。</h2><p>下面是上游用法摘要。本研究页没有安装或运行上游 Agent，也不收集 API Key。</p></div>
+      <div class="table-wrap"><table><caption>上游关键文件阅读索引 · 固定到本次研究 commit</caption><thead><tr><th>文件</th><th>读什么</th><th>对应疑问</th></tr></thead><tbody><tr><th><a data-source-file="jev_ultrafast/snapshot.js" href="#evidence">snapshot.js ↗</a></th><td>控件发现、名称、状态、动作和节点映射</td><td>程序怎么知道哪些能点、哪些能填？</td></tr><tr><th><a data-source-file="jev_ultrafast/model.py" href="#evidence">model.py ↗</a></th><td>operation / target 问题、概率验证、文字助手</td><td>Jev 到底接收什么、返回什么？</td></tr><tr><th><a data-source-file="jev_ultrafast/agent.py" href="#evidence">agent.py ↗</a></th><td>预测、执行、重试、历史、停止预算</td><td>谁负责让流程持续跑下去？</td></tr><tr><th><a data-source-file="jev_ultrafast/browser.py" href="#evidence">browser.py ↗</a></th><td>浏览器连接、实时位置、遮挡、输入</td><td>一个编号如何变成实际点击？</td></tr><tr><th><a data-source-file="jev_ultrafast/questions.py" href="#evidence">questions.py ↗</a></th><td>规则、目标解释、文字输出约束</td><td>如何避免重复已满足步骤？</td></tr><tr><th><a data-source-file="docs/performance.md" href="#evidence">performance.md ↗</a></th><td>计时口径、保留失败、支持范围</td><td>演示证明了什么？</td></tr></tbody></table></div>
+      <div class="code-panel code-install"><div class="code-title"><span>上游安装与演示 · PowerShell</span><button type="button" class="copy-button" data-copy="install-code">复制</button></div><pre id="install-code"><code>git clone https://github.com/browser-use/jev-ultrafast.git
+cd jev-ultrafast
+git checkout 1231850a0bf1a0c0341fe408ef1668dbbfdfac46
+uv sync
+Copy-Item .env.example .env
+# 在本地 .env 配置 TYPESAFE_API_KEY 和 TEXT_MODEL_API_KEY
+uv run jev
+# 打开 http://127.0.0.1:8766</code></pre></div>
+      <div class="setup-notes"><p><strong>环境</strong> Python ≥ 3.12；Chrome 通过 Browser Harness 连接。必要时运行 <code>uv run browser-harness --doctor</code>。</p><p><strong>配置</strong> Jev 决策使用 TypeSafe API。<code>TEXT_MODEL_*</code> 只控制独立文字助手；示例环境使用 OpenRouter / Mercury，源码缺省值另有不同，复现时明确固定环境。</p><p><strong>复现</strong> 上游研究 commit 为 <code class="commit">1231850a0bf1a0c0341fe408ef1668dbbfdfac46</code>。官方 Models 页当前区分稳定别名与预览版；重现实验应固定实际版本。</p></div>
+      <div class="code-panel"><div class="code-title"><span>你提供网址与目标 · Python 用法示意</span><button type="button" class="copy-button" data-copy="agent-code">复制</button></div><pre id="agent-code"><code>from jev_ultrafast import Agent
+
+# 替换成经你验证支持的真实网址；example.com 仅作占位。
+with Agent(
+    "https://example.com/hotels",
+    "查杭州酒店，筛选免费取消，打开一家匹配酒店的详情。",
+) as agent:
+    for state in agent.run():
+        print(state["elapsed_ms"], state["status"])
+
+# 实际业务应另外检查城市、日期、筛选与打开结果。</code></pre></div><p id="copy-status" class="sr-only" role="status" aria-live="polite"></p>
+    </section>
+
+    <section id="evidence" class="section section-observe" aria-labelledby="evidence-title">
+      <div class="section-heading"><span class="section-number">10 / 证据与资料</span><h2 id="evidence-title">研究细节与来源，保留进一步核对的入口。</h2><p>核心架构见顶部横图；网页正文展开酒店教学、候选生成、模型差异与适用边界。以下保留详细研究总图和底稿。资料核对日期为 2026-10-23，源码结论固定 commit。</p></div>
+      <a class="guide-preview" href="guide.html"><div><span class="tiny-label">详细资料 · 可独立阅读与保存</span><h3>详细研究总图：保留整个探究过程</h3><p>架构回路、候选生成、六个理解转折、模型与训练、11 步酒店教学、三种实现对比、速度证据、使用场景与个人价值。</p><span class="text-link">放大浏览详细研究总图 ↗</span></div><div class="guide-preview-image"><img src="assets/browser-choice-guide.svg" alt="详细研究总图：架构循环、我们的探究、模型差异、酒店流程与复用价值" loading="lazy"></div></a>
+      <div class="download-row"><a class="button small" href="assets/browser-choice-guide.png" download>保存详细总图 PNG ↓</a><a class="button small" href="assets/browser-choice-guide.svg" download>下载详细总图 SVG ↓</a><a class="button small" href="docs/research.md" download>下载研究底稿 ↓</a><a class="button small" href="docs/sources.json" download>下载来源索引 ↓</a></div>
+      <div class="verification-grid"><article><span class="verification-label">已核对</span><p>上游 README、核心源码、性能报告，以及 TypeSafe 官方模型接口与训练说明。</p></article><article><span class="verification-label">本页实现</span><p>原创静态页面、酒店步骤演示、DOM 规则实验、完整 SVG 图与来源整理。</p></article><article><span class="verification-label">未验证</span><p>未实跑上游、未调用付费模型、未测试真实酒店预订，也未重现 Jev 的私有训练。</p></article></div>
+      <ol class="source-list"><li><span class="source-kind">源码事实</span><div><a href="https://github.com/browser-use/jev-ultrafast/tree/1231850a0bf1a0c0341fe408ef1668dbbfdfac46" target="_blank" rel="noreferrer">browser-use / jev-ultrafast · 固定研究版本 ↗</a><p>v0.1.0、MIT；核心循环、DOM 读取、模型请求与执行检查。</p></div></li><li><span class="source-kind">作者测量</span><div><a data-source-file="docs/performance.md" href="#evidence">性能报告与测量边界 ↗</a><p>Google Flights、Wikipedia、本地酒店示例。保留范围限制与开发失败记录。</p></div></li><li><span class="source-kind">官方声明</span><div><a href="https://docs.typesafe.ai/concepts/state" target="_blank" rel="noreferrer">TypeSafe：共享上下文、Choice、并行与 confidence ↗</a><p><a href="https://docs.typesafe.ai/primitives/choice" target="_blank" rel="noreferrer">Choice</a> · <a href="https://docs.typesafe.ai/patterns/fan-out" target="_blank" rel="noreferrer">并行问题</a> · <a href="https://docs.typesafe.ai/confidence" target="_blank" rel="noreferrer">置信度</a> · <a href="https://docs.typesafe.ai/models" target="_blank" rel="noreferrer">版本与语言</a></p></div></li><li><span class="source-kind">官方声明</span><div><a href="https://docs.typesafe.ai/introduction/machine-learning-primer" target="_blank" rel="noreferrer">TypeSafe：RLCD 与决策模型 ↗</a><p><a href="https://typesafe.ai/blog/introducing-system-one-models-and-jev" target="_blank" rel="noreferrer">发布文章</a>描述训练方向和并行输出；不等于完整公开模型实现。</p></div></li><li><span class="source-kind">实现参考</span><div><a href="https://huggingface.co/docs/transformers/en/main_classes/output#transformers.modeling_outputs.CausalLMOutput" target="_blank" rel="noreferrer">Hugging Face：语言模型输出分数 ↗</a><p>支持直接读取 logits；<a href="https://docs.vllm.ai/en/latest/features/structured_outputs/" target="_blank" rel="noreferrer">vLLM</a> 提供 choice / JSON 等输出约束。</p></div></li><li><span class="source-kind">原始研究</span><div><a href="https://proceedings.mlr.press/v70/guo17a.html" target="_blank" rel="noreferrer">On Calibration of Modern Neural Networks ↗</a><p>概率校准与温度缩放的基础研究；并非 Jev 私有训练配方。</p></div></li></ol>
+    </section>
+
+    <section id="faq" class="section section-observe" aria-labelledby="faq-title">
+      <div class="section-heading"><span class="section-number">11 / 把误区说清楚</span><h2 id="faq-title">我们讨论过的几个关键问题。</h2></div>
+      <div class="faq-list"><details><summary>是不是先让普通模型生成选择题，再交给 Jev？</summary><div class="details-body"><p>程序依据网页控件和规则生成候选。Jev 负责选择；只有填字操作选中后，文字助手才生成具体字段内容。</p></div></details><details><summary>是不是只把选项喂给模型，上下文不重要？</summary><div class="details-body"><p>目标、页面状态、控件当前值和历史都是选择依据。同样的搜索按钮，在输入框空着和已经填写时，应该采取的操作不同。</p></div></details><details><summary>是不是每个选项分别发一次请求，然后投票？</summary><div class="details-body"><p>库一次请求发送多个问题，拿到每个问题的概率和选择。它没有为每个选项单独发请求再投票；内部网络如何计算每个选项，未充分公开。</p></div></details><details><summary>Jev 会自动记住前几轮吗？</summary><div class="details-body"><p>这个库由程序保存历史，每轮重新发送最近最多 10 条已执行动作。跨请求的连续性由调用方组织，不应假定服务自动记忆。</p></div></details><details><summary>普通大模型能做，为什么还用 Jev？</summary><div class="details-body"><p>可以替换。使用 Jev 的理由要由同任务下的成功率、总耗时和成本决定；现有仓库测量不能证明它对所有任务优于普通模型。</p></div></details><details><summary>换成开源模型，必须重新训练吗？</summary><div class="details-body"><p>不必。可以先做候选约束或直接读单 token 编号分数；需要可信概率时验证与校准，选择能力不足再微调。输出层变化不自动复制 Jev 的全部能力。</p></div></details><details><summary>这个库是酒店业务系统，能直接下单吗？</summary><div class="details-body"><p>它是通用浏览器 Agent 的早期实现。上游酒店验证是本地 fixture 的搜索、筛选和打开详情。真实平台下单、登录、付款等需要额外适配与验证。</p></div></details><details><summary>完整性从哪里判断？</summary><div class="details-body"><p>模型 DONE 只是模型判断。成功要检查实际页面或业务状态；可以把日期、路线、筛选条件、详情 URL 等写成独立检查器，像上游航班示例那样验收。</p></div></details></div>
+    </section>
+    <footer class="page-footer"><div><strong>011 / Jev Ultrafast 研究</strong><p>网页能力选择与执行循环 · 研究整理 2026.10.23</p></div><a href="#intro">回到顶部 ↑</a><p class="footer-note">原创教学页面与示意图；上游代码为 MIT。页面不保存个人信息，不发送模型请求。研究资料可从来源区下载。</p></footer>
+  </main>
+</div>
+</body>
+</html>

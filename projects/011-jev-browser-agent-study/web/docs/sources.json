@@ -1,0 +1,199 @@
+{
+  "schema_version": 1,
+  "checked_at": "2026-10-23",
+  "timezone": "Asia/Shanghai",
+  "upstream": {
+    "repository": "browser-use/jev-ultrafast",
+    "repository_url": "https://github.com/browser-use/jev-ultrafast",
+    "branch": "main",
+    "commit": "1231850a0bf1a0c0341fe408ef1668dbbfdfac46",
+    "commit_date": "2026-09-18T16:28:35Z",
+    "commit_url": "https://github.com/browser-use/jev-ultrafast/commit/1231850a0bf1a0c0341fe408ef1668dbbfdfac46",
+    "version": "0.1.0",
+    "license": "MIT",
+    "license_holder": "Browser Use",
+    "commit_checked_via": "GitHub connector GET /repos/browser-use/jev-ultrafast/commits/main"
+  },
+  "verification": {
+    "code_reviewed": true,
+    "upstream_files_fetched_individually": true,
+    "repository_cloned": false,
+    "paid_model_calls": false,
+    "upstream_benchmarks_reproduced": false,
+    "live_booking_tested": false,
+    "description": "本子项目是研究汇总与教学演示，不是已接入真实网站的自动预订Agent。"
+  },
+  "sources": [
+    {
+      "id": "repo-readme",
+      "title": "README.md",
+      "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/README.md",
+      "type": "upstream_source",
+      "checked_at": "2026-10-23",
+      "commit": "1231850a0bf1a0c0341fe408ef1668dbbfdfac46",
+      "scope": "项目定位、使用方法、动作循环与MVP边界"
+    },
+    {
+      "id": "model",
+      "title": "jev_ultrafast/model.py",
+      "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/jev_ultrafast/model.py",
+      "type": "upstream_source",
+      "checked_at": "2026-10-23",
+      "commit": "1231850a0bf1a0c0341fe408ef1668dbbfdfac46",
+      "scope": "动态操作/目标问题、TypeSafe请求、历史、文字helper与响应验证"
+    },
+    {
+      "id": "agent",
+      "title": "jev_ultrafast/agent.py",
+      "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/jev_ultrafast/agent.py",
+      "type": "upstream_source",
+      "checked_at": "2026-10-23",
+      "commit": "1231850a0bf1a0c0341fe408ef1668dbbfdfac46",
+      "scope": "Agent状态、predict/act/tick、stale重试、预算与无进展中止"
+    },
+    {
+      "id": "snapshot",
+      "title": "jev_ultrafast/snapshot.js",
+      "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/jev_ultrafast/snapshot.js",
+      "type": "upstream_source",
+      "checked_at": "2026-10-23",
+      "commit": "1231850a0bf1a0c0341fe408ef1668dbbfdfac46",
+      "scope": "DOM/ARIA候选抽取、标签、可见性、身份与动作上限"
+    },
+    {
+      "id": "browser",
+      "title": "jev_ultrafast/browser.py",
+      "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/jev_ultrafast/browser.py",
+      "type": "upstream_source",
+      "checked_at": "2026-10-23",
+      "commit": "1231850a0bf1a0c0341fe408ef1668dbbfdfac46",
+      "scope": "Browser Harness/CDP、freshness检查、遮挡检测、输入与等待"
+    },
+    {
+      "id": "questions",
+      "title": "jev_ultrafast/questions.py",
+      "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/jev_ultrafast/questions.py",
+      "type": "upstream_source",
+      "checked_at": "2026-10-23",
+      "commit": "1231850a0bf1a0c0341fe408ef1668dbbfdfac46",
+      "scope": "指令边界、动作语义、MAX_STEPS=60"
+    },
+    {
+      "id": "performance",
+      "title": "docs/performance.md",
+      "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/docs/performance.md",
+      "type": "upstream_source",
+      "checked_at": "2026-10-23",
+      "commit": "1231850a0bf1a0c0341fe408ef1668dbbfdfac46",
+      "scope": "作者发布的任务耗时、对照设计、收费范围和限制"
+    },
+    {
+      "id": "package",
+      "title": "pyproject.toml",
+      "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/pyproject.toml",
+      "type": "upstream_source",
+      "checked_at": "2026-10-23",
+      "commit": "1231850a0bf1a0c0341fe408ef1668dbbfdfac46",
+      "scope": "版本0.1.0、Python>=3.12、依赖、MIT"
+    },
+    {
+      "id": "env",
+      "title": ".env.example",
+      "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/.env.example",
+      "type": "upstream_source",
+      "checked_at": "2026-10-23",
+      "commit": "1231850a0bf1a0c0341fe408ef1668dbbfdfac46",
+      "scope": "Jev与文字helper独立配置、示例Mercury/OpenRouter"
+    },
+    {
+      "id": "license",
+      "title": "LICENSE",
+      "url": "https://github.com/browser-use/jev-ultrafast/blob/1231850a0bf1a0c0341fe408ef1668dbbfdfac46/LICENSE",
+      "type": "upstream_source",
+      "checked_at": "2026-10-23",
+      "commit": "1231850a0bf1a0c0341fe408ef1668dbbfdfac46",
+      "scope": "MIT许可证与Browser Use版权"
+    },
+    {
+      "id": "typesafe-training",
+      "title": "TypeSafe：AI primer",
+      "url": "https://docs.typesafe.ai/introduction/machine-learning-primer",
+      "type": "official_claim",
+      "checked_at": "2026-10-23",
+      "scope": "官方对RLCD与校准决策的训练目标说明；非公开训练代码。"
+    },
+    {
+      "id": "typesafe-fanout",
+      "title": "TypeSafe：Speculative fan-out",
+      "url": "https://docs.typesafe.ai/patterns/fan-out",
+      "type": "official_claim",
+      "checked_at": "2026-10-23",
+      "scope": "一个请求包含多个问题，官方说明并行评估，代码决定采用哪些答案。"
+    },
+    {
+      "id": "typesafe-state",
+      "title": "TypeSafe：State",
+      "url": "https://docs.typesafe.ai/concepts/state",
+      "type": "official_documentation",
+      "checked_at": "2026-10-23",
+      "scope": "每次请求评估一份state；同请求问题共享state并独立判断。"
+    },
+    {
+      "id": "typesafe-blog",
+      "title": "TypeSafe：Introducing System One Models & Jev",
+      "url": "https://typesafe.ai/blog/introducing-system-one-models-and-jev",
+      "type": "official_claim",
+      "checked_at": "2026-10-23",
+      "scope": "2026-09-15发布文，自述新架构、parallel sampler、RLCD；性能与可靠性属于官方声明。"
+    },
+    {
+      "id": "typesafe-confidence",
+      "title": "TypeSafe：Confidence",
+      "url": "https://docs.typesafe.ai/confidence",
+      "type": "official_documentation",
+      "checked_at": "2026-10-23",
+      "scope": "Choice的confidence是由概率分布计算的统计量，不等同于实测正确率。"
+    },
+    {
+      "id": "typesafe-models",
+      "title": "TypeSafe：Models",
+      "url": "https://docs.typesafe.ai/models",
+      "type": "official_documentation",
+      "checked_at": "2026-10-23",
+      "scope": "2026-10-23查看时latest指1.13.0、preview指1.14.0，英语/CJK边界。别名与价格会变动。"
+    },
+    {
+      "id": "hf-logits",
+      "title": "Hugging Face：CausalLMOutput",
+      "url": "https://huggingface.co/docs/transformers/en/main_classes/output#transformers.modeling_outputs.CausalLMOutput",
+      "type": "primary_documentation",
+      "checked_at": "2026-10-23",
+      "scope": "语言模型返回SoftMax前逐词表logits；替代选择器方案的基础，不代表能复现Jev。"
+    },
+    {
+      "id": "calibration-paper",
+      "title": "Guo et al.：On Calibration of Modern Neural Networks",
+      "url": "https://proceedings.mlr.press/v70/guo17a.html",
+      "type": "research_paper",
+      "checked_at": "2026-10-23",
+      "scope": "ICML 2017；讨论概率校准与温度缩放，不是对本项目或Jev的实验。"
+    }
+  ],
+  "evidence_labels": {
+    "source_fact": "源码或上游文档可直接核对",
+    "official_claim": "模型供应商的公开声明，未经本项目独立验证",
+    "our_inference": "基于事实作出的工程解释或选择建议",
+    "teaching_example": "用于理解的简化场景或模拟，不代表原版请求结构或真实运行",
+    "not_reproduced": "作者公布结果，本项目未复测"
+  },
+  "critical_boundaries": [
+    "原版请求按operation与各类target问题组织；A/B/C完整动作列表是教学简化或替代设计。",
+    "同请求多个问题并行，与后续浏览器步骤串行观察是两种不同层级。",
+    "模型只做选择；库读取、校验、执行、记录并循环。",
+    "模型输出合法并不保证满足业务目标；DONE需独立校验。",
+    "25%是相同模型设置下运行时代码优化对照，不是Jev与普通LLM对照。",
+    "本地酒店fixture的搜索/筛选/打开详情不等于真实网站下单、支付或订房成功。",
+    "官方模型架构、RLCD和parallel sampler的说法不能扩展为已知完整实现或一次前向计算。",
+    "token分数、归一化概率、confidence统计量、任务正确率需要区分。"
+  ]
+}

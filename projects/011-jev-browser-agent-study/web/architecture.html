@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#2457d6">
+  <title>核心架构与执行循环 · jev-ultrafast</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%232c57d8'/%3E%3Cpath d='M11 12h9v16h-9M25 12h4v16h-4' fill='none' stroke='white' stroke-width='3'/%3E%3C/svg%3E">
+  <style>
+    :root { color-scheme: light; --ink:#14283f; --muted:#53657a; --blue:#2457d6; --line:#dce3ed; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:#edf1f6; color:var(--ink); font:14px/1.6 "Segoe UI","Microsoft YaHei",sans-serif; }
+    .toolbar { display:flex; align-items:center; flex-wrap:wrap; gap:12px 20px; padding:15px 24px; background:white; border-bottom:1px solid var(--line); }
+    .title { margin-right:auto; }
+    h1 { margin:0; font-size:17px; font-weight:700; }
+    .subtitle { display:block; color:var(--muted); font-size:12px; margin-top:3px; }
+    .controls { display:flex; align-items:center; gap:7px; flex-wrap:wrap; }
+    button,.download,.back { color:var(--blue); font:inherit; text-decoration:none; }
+    button,.download { border:1px solid var(--line); border-radius:6px; padding:7px 10px; background:white; cursor:pointer; white-space:nowrap; }
+    button:hover { background:#eaf0ff; border-color:#b0c1ed; }
+    .download { background:var(--blue); border-color:var(--blue); color:white; }
+    .back { white-space:nowrap; text-decoration:underline; text-underline-offset:4px; }
+    button:focus-visible,a:focus-visible,input:focus-visible,.viewer:focus-visible { outline:3px solid #16867d; outline-offset:3px; }
+    input { width:100px; accent-color:var(--blue); }
+    output { min-width:46px; text-align:center; font-variant-numeric:tabular-nums; color:var(--muted); }
+    .viewer { height:calc(100dvh - var(--toolbar-height,102px)); min-height:260px; overflow:auto; padding:24px; scrollbar-gutter:stable; }
+    .canvas { width:fit-content; margin:0 auto; background:white; box-shadow:0 12px 40px #14283f18; }
+    .canvas img { display:block; width:1920px; height:auto; max-width:none; }
+    .sr-only { position:absolute; width:1px; height:1px; margin:-1px; padding:0; border:0; overflow:hidden; clip-path:inset(50%); white-space:nowrap; }
+    @media(max-width:700px) { .toolbar { padding:12px; gap:10px; }.title { width:100%; }h1 { font-size:15px; }.subtitle { font-size:11px; }.viewer { padding:12px; }input { width:78px; }.controls { gap:5px; }button,.download { padding:6px 8px; font-size:12px; }.back { font-size:12px; margin-left:auto; } }
+    @media print { .toolbar { display:none; }.viewer { height:auto; overflow:visible; padding:0; }.canvas { width:100%; box-shadow:none; }.canvas img { width:100%!important; }body { background:white; } }
+  </style>
+</head>
+<body>
+  <header class="toolbar" id="toolbar">
+    <div class="title"><h1>jev-ultrafast · 核心架构与执行循环</h1><span class="subtitle">业务给目标 / 库抽取操作 / Jev 做选择 / 浏览器执行 / 重新观察 / 独立验收</span></div>
+    <div class="controls" role="group" aria-label="缩放控制">
+      <button id="zoom-out" type="button" aria-label="缩小">−</button>
+      <label class="sr-only" for="zoom">缩放比例</label><input id="zoom" type="range" min="10" max="180" value="75" step="1">
+      <output id="zoom-value" for="zoom" aria-live="polite">75%</output>
+      <button id="zoom-in" type="button" aria-label="放大">＋</button>
+      <button id="fit" type="button">适应窗口</button><button id="fit-width" type="button">适应宽度</button><button id="actual" type="button">100%</button>
+    </div>
+    <a class="download" href="assets/browser-agent-architecture.png" download="jev-ultrafast核心架构与执行循环.png">下载 PNG ↓</a>
+    <a class="download" href="assets/browser-agent-architecture.svg" download="jev-ultrafast核心架构与执行循环.svg">下载 SVG ↓</a>
+    <a class="back" href="index.html#intro">返回研究页</a>
+  </header>
+  <main id="viewer" class="viewer" tabindex="0" aria-label="横向架构图浏览区，可使用方向键滚动；加减键缩放，0 适应窗口，W 适应宽度，1 原始大小">
+    <div class="canvas"><img id="guide-image" src="assets/browser-agent-architecture.svg" width="1920" height="1080" alt="jev-ultrafast 核心架构与执行循环横图：业务提供目标，库从网页提取控件和可选操作，Jev结合目标、状态和历史选择操作与目标，文字助手按需生成字段值，浏览器执行后重新观察，模型DONE后由业务独立验收。"></div>
+  </main>
+  <noscript><p style="padding:16px">当前显示原始大小，可滚动阅读；<a href="assets/browser-agent-architecture.svg">直接打开原图</a>。</p></noscript>
+  <script>
+    (() => {
+      const viewer = document.getElementById('viewer');
+      const toolbar = document.getElementById('toolbar');
+      const image = document.getElementById('guide-image');
+      const range = document.getElementById('zoom');
+      const label = document.getElementById('zoom-value');
+      const naturalWidth = Number(image.getAttribute('width'));
+      const naturalHeight = Number(image.getAttribute('height'));
+      let scale = .75, fitMode = 'window';
+      function resizeToolbar() { document.documentElement.style.setProperty('--toolbar-height', `${toolbar.getBoundingClientRect().height}px`); }
+      function setScale(value, fitting = null) {
+        const next = Math.max(.1, Math.min(1.8, value));
+        const centerX = (viewer.scrollLeft + viewer.clientWidth / 2) / scale;
+        const centerY = (viewer.scrollTop + viewer.clientHeight / 2) / scale;
+        scale = next; fitMode = fitting;
+        image.style.width = `${naturalWidth * scale}px`;
+        range.value = Math.round(scale * 100);
+        label.value = `${Math.round(scale * 100)}%`;
+        if (!fitting) { viewer.scrollLeft = centerX * scale - viewer.clientWidth / 2; viewer.scrollTop = centerY * scale - viewer.clientHeight / 2; }
+      }
+      function fit(mode = 'window') {
+        resizeToolbar();
+        const css = getComputedStyle(viewer);
+        const width = viewer.clientWidth - parseFloat(css.paddingLeft) - parseFloat(css.paddingRight);
+        const height = viewer.clientHeight - parseFloat(css.paddingTop) - parseFloat(css.paddingBottom);
+        setScale(mode === 'width' ? width / naturalWidth : Math.min(width / naturalWidth, height / naturalHeight), mode);
+        viewer.scrollLeft = 0; viewer.scrollTop = 0;
+      }
+      range.addEventListener('input', () => setScale(Number(range.value) / 100));
+      document.getElementById('zoom-out').addEventListener('click', () => setScale(scale - .1));
+      document.getElementById('zoom-in').addEventListener('click', () => setScale(scale + .1));
+      document.getElementById('fit').addEventListener('click', () => fit('window'));
+      document.getElementById('fit-width').addEventListener('click', () => fit('width'));
+      document.getElementById('actual').addEventListener('click', () => setScale(1));
+      viewer.addEventListener('keydown', event => {
+        if (event.key === '+' || event.key === '=') { event.preventDefault(); setScale(scale + .1); }
+        else if (event.key === '-') { event.preventDefault(); setScale(scale - .1); }
+        else if (event.key === '0') { event.preventDefault(); fit('window'); }
+        else if (event.key.toLowerCase() === 'w') { event.preventDefault(); fit('width'); }
+        else if (event.key === '1') { event.preventDefault(); setScale(1); }
+        else if (event.key === 'Home' && (event.ctrlKey || event.metaKey)) { event.preventDefault(); viewer.scrollTo(0, 0); }
+      });
+      new ResizeObserver(() => { resizeToolbar(); if (fitMode) fit(fitMode); }).observe(toolbar);
+      window.addEventListener('resize', () => { resizeToolbar(); if (fitMode) fit(fitMode); });
+      fit('window');
+    })();
+  </script>
+</body>
+</html>
