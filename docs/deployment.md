@@ -56,3 +56,6 @@ GitHub Pages 只托管静态文件。需要服务器、数据库或私密 API �
 参考：[GitHub Pages 介绍](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) · [自定义部署工作流](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
 
 2026-10-23 新增并验证：[005 · 角色与故事工坊](https://yydshly.github.io/1020_codex_project/projects/005-stickman-story-lab/) · [研究总图](https://yydshly.github.io/1020_codex_project/projects/005-stickman-story-lab/#understanding)。摘要以定制角色＋故事的能力与价值为主，沿用既有引导图；成片、23份素材与线上原图哈希已验证，详见[005发布记录](../projects/005-stickman-story-lab/notes/release.md)。
+
+
+2026-10-23 新增并验证：[010 · AI 信息工作台](https://yydshly.github.io/1020_codex_project/projects/010-ai-evidence-workbench/) · [理解全景图](https://yydshly.github.io/1020_codex_project/projects/010-ai-evidence-workbench/guide.html)。摘要列出七个原始来源和官网、Issues、Show HN 等补证入口，说明同源去重、互补核验、证据沉淀、扩展方向与价值；沿用已生成完整图。Pages 工作流成功，12 项线上资源与提交一致，PNG 与原图哈希相同；SVG 仅按仓库要求统一换行。详见 [010 发布记录](../projects/010-ai-evidence-workbench/notes/release.md)。

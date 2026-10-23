@@ -21,7 +21,7 @@
 - [原始 SVG](assets/source-to-evidence-guide.svg)
 - [PNG 完整长图](assets/source-to-evidence-guide.png)：1600 × 8570，可保存或分享。
 
-![网页顶部来源清单：逐项解释七个来源的信息从哪里来、供我们观察什么、后续怎样处理](assets/desktop-preview.png)
+![网页顶部来源清单：逐项解释七个来源的信息从哪里来、供我们观察什么、后续怎样处理](assets/online-preview.png)
 
 ![AI与效率工具理解全景图：价值、七个来源与三类补证入口、处理闭环、证据记录、日常用法、十二类扩展方向、系统演进与落地验证](assets/source-to-evidence-guide.svg)
 

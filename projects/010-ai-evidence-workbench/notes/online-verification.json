@@ -1,0 +1,83 @@
+{
+  "base_url": "https://yydshly.github.io/1020_codex_project/projects/010-ai-evidence-workbench/",
+  "deployed_commit": "61669a2d56cdc890a081bdfc365a71936437369d",
+  "files": [
+    {
+      "file": "index.html",
+      "status": 200,
+      "sha256": "7ebc99334f7da287b31042077f1f28066d77cb51a0c777ede64321142d524769",
+      "matches_committed_bytes": true
+    },
+    {
+      "file": "guide.html",
+      "status": 200,
+      "sha256": "4fd834fdbf77ea8bf72f148336d1ab1e8f50014fb83217e60f32c3c5e178b924",
+      "matches_committed_bytes": true
+    },
+    {
+      "file": "source-to-evidence-guide.svg",
+      "status": 200,
+      "sha256": "71d2915ed924a194bf881fe1169d18680cfa58bf1b6d9ec10b034a74722560d8",
+      "matches_committed_bytes": true,
+      "original_sha256": "4dd2440755979d11e59b859a4205ab1874f994dc605b9c836bc8b49483fa6af6",
+      "original_comparison": "Same SVG after repository LF line-ending normalization"
+    },
+    {
+      "file": "source-to-evidence-guide.png",
+      "status": 200,
+      "sha256": "f08c635a5f1b3fa64437905a864bf05f932bee437d528926fc3190525d78bc75",
+      "matches_committed_bytes": true,
+      "original_sha256": "f08c635a5f1b3fa64437905a864bf05f932bee437d528926fc3190525d78bc75",
+      "original_comparison": "Exact bytes"
+    },
+    {
+      "file": "styles.css",
+      "status": 200,
+      "sha256": "6bb9267f17d1fb111fe2fa46940bfe44a37126eac5df1379b00474eddd8082ab",
+      "matches_committed_bytes": true
+    },
+    {
+      "file": "app.js",
+      "status": 200,
+      "sha256": "11f8c3f25f63c8a99e891363d2e67827c043ea8628904e65385898d20847ec13",
+      "matches_committed_bytes": true
+    },
+    {
+      "file": "data.js",
+      "status": 200,
+      "sha256": "9b90722021caac77ec3af5adedcda37ea4009c2d5870e5d2490618b69851305a",
+      "matches_committed_bytes": true
+    },
+    {
+      "file": "guide.js",
+      "status": 200,
+      "sha256": "205f375231c47608b399d8467e9bda6eb6f2d13548821c608a74154bac48d480",
+      "matches_committed_bytes": true
+    },
+    {
+      "file": "favicon.svg",
+      "status": 200,
+      "sha256": "a57a53113e3fc9c85598b165b3409a0c49cafa800d53482d3c10e4fcf5ee957f",
+      "matches_committed_bytes": true
+    },
+    {
+      "file": "templates/sources.json",
+      "status": 200,
+      "sha256": "17adb6b30f733bb3337a475d0343fc702399ee67e26bfc9b65c363dcf78cb294",
+      "matches_committed_bytes": true
+    },
+    {
+      "file": "templates/evidence.json",
+      "status": 200,
+      "sha256": "d12b62737c12821895d7f69f8616be28625f5324b8524af8575db2533b667441",
+      "matches_committed_bytes": true
+    },
+    {
+      "file": "templates/decision.json",
+      "status": 200,
+      "sha256": "9d522891214439fc159a2455d1757ba382a3deef44d05aa10f80065037720ff7",
+      "matches_committed_bytes": true
+    }
+  ],
+  "index_summary_verified": true
+}
