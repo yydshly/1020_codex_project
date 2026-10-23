@@ -1,0 +1,136 @@
+{
+  "judge": "J2",
+  "order": [
+    "Y",
+    "X"
+  ],
+  "scores": {
+    "X": {
+      "story": 18,
+      "motion": 16,
+      "readability": 17,
+      "craft": 10,
+      "truth": 10,
+      "total": 71
+    },
+    "Y": {
+      "story": 17,
+      "motion": 12,
+      "readability": 16,
+      "craft": 9,
+      "truth": 10,
+      "total": 64
+    }
+  },
+  "preferred": "X",
+  "hard_gates": {
+    "X": {
+      "format": "pass",
+      "decode": "pass",
+      "no_major_fabrication": "pass",
+      "critical_information_visible": "pass"
+    },
+    "Y": {
+      "format": "pass",
+      "decode": "pass",
+      "no_major_fabrication": "pass",
+      "critical_information_visible": "pass"
+    }
+  },
+  "issues": {
+    "X": [
+      {
+        "time": "2.9–3.1 / 4.9–5.1 / 8.9–9.1 / 12.4–12.6 / 16.4–16.6",
+        "severity": "medium",
+        "finding": "转场反复将主体文字淡出至近空白，再让下一组文字显现；保留书签与矩形轮廓，但内容交接更多靠相同淡出/收拢公式。"
+      },
+      {
+        "time": "0.0–2.6 / 9.4–12.2 / 17.0–19.8",
+        "severity": "medium",
+        "finding": "长停留期主要是卡片轻微漂移、书签与细线移动，新增信息有限；未把每次移动充分转化成阅读或因果动作。"
+      },
+      {
+        "time": "5.4–8.6 / 12.8–16.2",
+        "severity": "low",
+        "finding": "标题清楚，但原理页多项标签与实验页多个指标同时出现，按20秒观看需快速阅读；实验页底部说明距容器边缘较近。"
+      }
+    ],
+    "Y": [
+      {
+        "time": "3.1–3.3 / 6.1–6.3 / 9.1–9.3 / 12.1–12.3 / 15.1–15.3 / 17.65–17.85",
+        "severity": "high",
+        "finding": "多次转场出现同一文字的数层位移重影，旧文案与新文案在竖向揭示边缘同时存在；6.2秒标题与流程卡交叠，9.2秒波形穿入旧流程卡，15.2秒问题文案与来源行混在一起，文字交接不干净。"
+      },
+      {
+        "time": "0.0–3.0 / 4.6–6.0 / 6.4–9.0 / 12.4–15.0",
+        "severity": "medium",
+        "finding": "不少时间主要靠卡片平移、下划线、进度短线维持变化；原理三步先在总览展示，再在下一页重复，20秒叙事效率下降。"
+      },
+      {
+        "time": "15.4–17.4",
+        "severity": "low",
+        "finding": "实验问题和待实测标记清楚，但没有具体输入样本；观众知道测数字，较难立即复述怎样开始一个可重复实验。"
+      }
+    ]
+  },
+  "strengths": {
+    "X": [
+      "首帧完整提出“收藏之后怎么真正弄懂”，原理→代码来源→具体样本实验→研究集结尾的静音主线清楚。",
+      "5.4–8.6秒三步原理有箭头、音素、韵律柱形和波形，对内容关系的可视化较完整。",
+      "12.8–16.2秒给出“Kokoro，编号2026.”样本，记录字段与待实测标签并列，使继续研究有明确落点。",
+      "橙色书签贯穿收藏卡、原理焦点、来源行、实验卡和结尾标识，为跨场景提供可辨认连续元素。"
+    ],
+    "Y": [
+      "首帧问题、持续品牌标识、最终名称与网址均清楚，阶段顺序基本完整。",
+      "9.4–12.0秒音高滑杆与波形周期变化有明确关系，并清楚写出“浏览器合成教学示意”“非Kokoro实测”。",
+      "12.4–15.0秒pipeline.py/model.py及固定版本可追溯；15.4–17.4秒将结果标为待填写，没有伪造实测。",
+      "纸白、深绿和浅绿延续真实产品色彩，常态画面的留白与主次较稳。"
+    ]
+  },
+  "confidence": "中等。主要信息、事实标注、构图与转场叠字证据较明确；未主观听音及原速连续播放，不能给整体视听品质认证。X较优是本次匿名视觉样本的判断，不推断制作条件或一般因果。",
+  "limitations": [
+    "未进行真实主观听音；音质、听感、声画节拍同步均unverified，音频技术10分不计入本90分。",
+    "采用静音抽帧检查，未以原速连续播放，也未人工逐一检查全部1200帧；运动平滑性与速度判断把握低于构图和文字证据。",
+    "每条查看全部100张0.2秒抽帧，并从MP4另抽观察到的转场中点±0.1秒；短于抽样间隔的其他问题可能漏检。",
+    "未逐字测量4.5:1对比度；透明过渡中的低对比已按视觉问题记录。",
+    "参考片查看20张覆盖0–51.3秒的抽帧，未完整连续播放，未比较音乐。",
+    "格式和完整解码采用匿名analysis的技术测量，本人另从原MP4实际抽帧并独立复核SHA256；未重跑整片decode。"
+  ],
+  "artifact_sha256": {
+    "X": "ec965dc71fa55452c052235c7a72fac10af0d40336398b79d801b8d424c921f7",
+    "Y": "351273de3dd7255c932de2134728091713d0f28c8f715b7f1cc1152de3577841"
+  },
+  "files_viewed": [
+    "analysis-Y/blind-2fps.jpg",
+    "analysis-X/blind-2fps.jpg",
+    "analysis-Y/dense-1.jpg",
+    "analysis-Y/dense-2.jpg",
+    "analysis-Y/dense-3.jpg",
+    "analysis-Y/dense-4.jpg",
+    "analysis-X/dense-1.jpg",
+    "analysis-X/dense-2.jpg",
+    "analysis-X/dense-3.jpg",
+    "analysis-X/dense-4.jpg",
+    "judge-2/Y-transition-sheet-1.jpg",
+    "judge-2/Y-transition-sheet-2.jpg",
+    "judge-2/Y-transition-sheet-3.jpg",
+    "judge-2/X-transition-sheet-1.jpg",
+    "judge-2/X-transition-sheet-2.jpg",
+    "judge-2/reference-sheet-1.jpg",
+    "judge-2/X-full-6.jpg",
+    "judge-2/X-full-14.jpg",
+    "judge-2/Y-full-10.jpg",
+    "judge-2/Y-full-16.jpg",
+    "inputs/brief.md",
+    "inputs/rubric.json",
+    "inputs/product/README.md",
+    "inputs/product/project.json",
+    "inputs/product/notes/07-experiments.md",
+    "inputs/product/notes/sources.json",
+    "inputs/product/web/kokoro-learning.js (检索节选)",
+    "inputs/product/web/app.js (检索节选)",
+    "inputs/product/web/styles.css (首行及检索节选)",
+    "analysis-X/measurements.json",
+    "analysis-Y/measurements.json"
+  ]
+}

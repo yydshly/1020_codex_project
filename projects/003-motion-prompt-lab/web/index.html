@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="研究模型自主能力提升时通用流程提示的增益变化：用真实成片与同预算盲评，提炼目标、情绪、风格、氛围、动画目的和验收标准，说明怎样简化提示词。跨代趋势仍待验证。">
+  <title>动效提示词研究 · 从长流程到清晰意图</title>
+  <meta property="og:title" content="动效提示词研究 · 从长流程到清晰意图">
+  <meta property="og:description" content="模型越能自主完成通用步骤，流程提醒的增益可能越小。保留目标、情绪、风格、氛围、动画目的与验收标准，用真实成片和盲评检验。跨代趋势仍待验证。">
+  <meta property="og:image" content="https://yydshly.github.io/1020_codex_project/projects/003-motion-prompt-lab/media/understanding/understanding-map-2026-10-23.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://yydshly.github.io/1020_codex_project/projects/003-motion-prompt-lab/">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="compare.css">
+  <link rel="stylesheet" href="v3-compare.css">
+  <link rel="stylesheet" href="hub.css">
+  <link rel="stylesheet" href="controlled.css">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='10' fill='%2319362f'/%3E%3Ctext x='8' y='29' fill='%23f3f2e9' font-size='28'%3Em%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <a class="skip" href="#main">跳转到正文</a>
+  <header class="masthead">
+    <a class="brand" href="#main"><span class="brand-mark">m<span>↗</span></span><span>动效提示词实验室<small>FIELDNOTES / EXPERIMENT 003</small></span></a>
+    <nav aria-label="主要导航"><a href="#research-map">研究总览</a><a href="#controlled">公平对照</a><a href="#prompt-understanding">我们的理解</a><a href="#full-prompts">提示词</a><a href="#compare">历史三版</a><a href="#research-evidence">评审资料</a></nav>
+    <a class="repo-link" href="https://github.com/yydshly/1020_codex_project" target="_blank" rel="noreferrer">研究集 ↗</a>
+  </header>
+  <main id="main">
+    <section class="hero section">
+      <div class="hero-copy"><p class="eyebrow"><span class="live-dot"></span> 实践与理解 / 2026.10.23</p>
+        <h1>简化重复流程，<br>说清<span class="serif">创作意图</span>。</h1>
+        <p class="intro">随着模型自主能力提升，通用步骤提示的额外收益可能减少。<br>更值得表达：受众与目标、情绪、风格、氛围、动画目的，以及怎样判断效果。</p>
+        <div class="hero-actions"><a class="button primary" href="#prompt-simplification">看怎样简化提示词 <span>↗</span></a><a class="text-link" href="#controlled">查看同预算盲评 ↓</a></div>
+        <div class="hero-note"><span>观察与推测</span><p>本次两组 70 / 67.5，评审偏好相反。<br>跨代模型的收益变化仍待验证。</p></div>
+      </div>
+      <div class="hero-visual">
+        <a href="#understanding-map" class="poster-link understanding-hero" aria-label="查看研究理解总图">
+          <img src="media/understanding/understanding-map-2026-10-23.png" alt="长提示词研究总图：价值、本质、实际效果、简化方向与证据边界。" width="2400" height="4886">
+        </a>
+        <div class="visual-caption"><span><i></i> 我们的理解 / 已生成的引导总图</span><span>点击查看高清与下载</span></div>
+        <div class="specimen"><span>003</span><div><strong>用结果判断值得保留的要求</strong><p>原文、实际输入、成片、评分、耗时与失败记录。</p></div><span class="arrow">↗</span></div>
+      </div>
+    </section>
+    <div class="statement"><span>这次检验</span><p><strong>原文是否真的执行，结果是否真的达标</strong>，分开记录。<br>不把完成渲染当作完成全部创作要求。</p><a href="#compare">查看成片与执行证据 ↓</a></div>
+
+    <section id="research-map" class="section hub-overview">
+  <div class="section-head"><div><p class="eyebrow">RESEARCH / THE WHOLE PICTURE</p><h2>从一份提示词，到可复查的实验。</h2></div><p>这是完整研究入口。<br>网页承接材料，影片才是动效产物。</p></div>
+  <div class="hub-status"><strong>新增研究：同条件、同时间预算的公平对照</strong><p><a href="#controlled">先看匿名成片，再看盲评分与耗时 ↓</a>。这次新实验与历史 V1/V2/V3 分开记录。历史 V3 仍停留在第二轮待返修，第三轮只有准备工作；新增实验不代表旧版已经通过验收。</p></div>
+  <div class="hub-map">
+    <article><span>01 / 起点</span><h3>作者分享的提示词</h3><p>原链接是提示词帖。已核对的主帖只有提示词附图，未附源码库或成片，不能拿宣传评价代替实际效果。</p><a href="https://x.com/CarsonYangk8s/status/2111520791246606757" target="_blank" rel="noreferrer">作者主帖 ↗</a></article>
+    <article><span>02 / 场景</span><h3>我们的研究集</h3><p>GitHub 项目研究集是本次选择的演示对象。片中 Kokoro 波形是教学示意，不是模型实际合成的人声。</p><a href="https://github.com/yydshly/1020_codex_project" target="_blank" rel="noreferrer">演示对象的仓库 ↗</a></article>
+    <article><span>03 / 产物</span><h3>三次实际制作</h3><p>V1 简化实现，V2 另写执行指令，V3 读取原文加独立 brief。三版都是真实 MP4，制作流程与投入不同。</p><a href="#compare">同步播放三版 ↓</a></article>
+    <article><span>04 / 判断</span><h3>成片与证据一起看</h3><p>区分输入完整、流程执行、质量达标。保留盲读、逐镜检查、测量、失败记录，以及仍需人耳确认的项目。</p><a href="#research-analysis">阅读当前分析 ↓</a></article>
+  </div>
+  <nav class="hub-route" aria-label="研究阅读顺序"><a href="#full-prompts">① 提示词与输入</a><a href="#compare">② 三版效果</a><a href="#research-analysis">③ 差异与价值</a><a href="#research-evidence">④ 评审与资料</a><a href="#v2-comparison">⑤ 历史记录</a></nav>
+</section>
+
+    <section id="controlled" class="section controlled-section">
+  <div class="section-head"><div><p class="eyebrow">CONTROLLED TRIAL / 01</p><h2>同样的条件，长提示词多带来了什么？</h2></div><p>一次新的配对实验。<br>先看匿名成片，再揭晓组别与评分。</p></div>
+  <div class="controlled-constants"><span><b>同场景</b>研究集 · Kokoro</span><span><b>同规格</b>20 秒 / 720p / 60 fps</span><span><b>同上限</b>20 分钟 / 12 次评审</span><span><b>同模型配置</b>新上下文 · 默认继承</span></div>
+  <p class="controlled-scope">原文组 = 共同要求 + 未改写的原提示词；明确需求组 = 相同目标、素材和质量标准，制作方法自主决定。两组串行执行，均不读取旧版实现。时间预算包含内部评审和渲染；公共准备与最终盲评另列。</p>
+  <p class="small"><a href="#prompt-understanding">讨论后的理解：从提示词里提取目标、感受、动画目的与验收标准 ↓</a></p>
+  <div id="controlled-status" class="hub-status" role="status">正在加载实验进度…</div>
+  <div id="controlled-player-area" hidden>
+    <div class="controlled-players">
+      <figure><figcaption><strong>影片 X</strong><span>匿名候选</span></figcaption><video id="controlled-x" muted playsinline preload="metadata" controls aria-label="匿名影片X"></video><a id="controlled-download-x" download>下载影片 X</a></figure>
+      <figure><figcaption><strong>影片 Y</strong><span>匿名候选</span></figcaption><video id="controlled-y" muted playsinline preload="metadata" controls aria-label="匿名影片Y"></video><a id="controlled-download-y" download>下载影片 Y</a></figure>
+    </div>
+    <div class="controlled-controls">
+      <div><button id="controlled-play" class="button primary">同步播放</button><button id="controlled-restart" class="button secondary">从头播放</button><label>试听 <select id="controlled-audio"><option value="none">静音</option><option value="X">影片 X</option><option value="Y">影片 Y</option></select></label></div>
+      <label for="controlled-seek">同帧定位 <output id="controlled-time">0.00 / 20.00 s</output></label><input id="controlled-seek" type="range" min="0" max="1199" value="0" step="1">
+      <p id="controlled-play-status" class="small" role="status">同步播放为近似同步；拖动滑块暂停并定位。默认静音，避免双音轨干扰。</p>
+    </div>
+    <button id="controlled-reveal" class="button primary" aria-expanded="false" aria-controls="controlled-results">揭晓条件、盲评分与耗时 ↓</button>
+  </div>
+  <div id="controlled-results" hidden>
+    <div class="controlled-verdict"><p class="eyebrow">RESULT / 本次观察</p><h3 id="controlled-verdict-title"></h3><p id="controlled-verdict-body"></p></div>
+    <div class="comparison-table"><table><caption>匿名评分先封存，之后才关联条件。视觉盲评满分 90，音频技术单列 10 分。</caption><thead><tr><th scope="col">比较项</th><th scope="col">影片 X</th><th scope="col">影片 Y</th></tr></thead><tbody id="controlled-metrics"></tbody></table></div>
+    <div id="controlled-judge-cards" class="controlled-judge-cards"></div>
+    <div class="controlled-verdict"><h3>额外价值体现在哪里，代价又是什么？</h3><div id="controlled-analysis"></div></div>
+    <h3>制作与评测的时间分开记录</h3><p id="controlled-overhead"></p>
+    <p class="small">耗时由协调端观察器记录，包含调度、输入阅读、生成、内部评审、渲染及重试；每组上限 1,200 秒。实际 token、金额、服务端模型快照与采样种子无法取得，不宣称等 token 或等费用。</p>
+    <div id="controlled-result-links" class="controlled-links"></div>
+  </div>
+  <details class="prompt-complete"><summary>实验协议、评分标准与输入：制作前已冻结</summary><div>
+    <p>两组接收同一批冻结的真实产品资料、本地字体和官方参考片；不借用历史影片或实现。相同工具额度意味着两组都可调用独立评审，是否、何时调用由各自输入决定。预算到期即封存，未完成也算结果。</p>
+    <div class="controlled-links"><a href="files/controlled/protocol.json" download>预注册协议与素材 SHA256</a><a href="files/controlled/rubric.json" download>统一评分标准</a><a href="files/controlled/common-brief.md" download>共同任务与成片要求</a><a href="files/controlled/common-rules.md" download>共同预算与运行规则</a></div>
+    <h4>明确需求组的完整输入</h4><button class="button secondary" id="controlled-copy" disabled>复制完整输入</button><span id="controlled-copy-status" class="small" role="status"></span><pre id="controlled-input" tabindex="0">正在读取…</pre>
+    <h4>原文组的完整输入构成</h4><p>上面的共同任务与运行规则，加上<a href="https://x.com/CarsonYangk8s/status/2111520795575116016" target="_blank" rel="noreferrer">作者原提示词全文</a>。原始源文件保持 3,821 字符 / 9,143 字节；拼接输入保存时仅转为 Windows 换行，正文逐字相同。按统一 LF 换行计，原文组 5,845 字符，明确需求组 2,079 字符。<a href="files/controlled/input-integrity.json">磁盘原始 SHA 与换行归一化校验</a>分开记录。原文不在本站全文转载，原始文件及拼接输入均私存。<a href="#full-prompts">查看原帖嵌入与来源说明</a>。</p>
+    <p class="small">同一父配置继承不等于已锁定供应端模型版本。文件隔离靠代理指令执行，未使用 OS 沙箱。本次预提供资料，比较的是制作阶段；不包含从零搜索素材的能力。每组只有一次生成，不能推断长提示词在所有任务上更强或更弱。</p>
+  </div></details>
+</section>
+
+    <section id="prompt-understanding" class="section understanding-section" aria-labelledby="understanding-title">
+  <div class="section-head"><div><p class="eyebrow">OUR UNDERSTANDING / 2026.10.23</p><h2 id="understanding-title">从长提示词里，最值得留下什么？</h2></div><p>基于本次实践与后续讨论的整理。<br>这里包含使用建议，也标明尚未验证的推测。</p></div>
+  <figure id="understanding-map" class="understanding-map">
+    <figcaption><div><h3>一图总览：价值、效果与我们的理解</h3><p>包含真实成片抽帧、对照结果、情绪与风格等六项要求、表达模板与证据边界。点击图片打开高清原图。</p></div><a class="button secondary" href="media/understanding/understanding-map-2026-10-23.png" target="_blank" rel="noreferrer">打开高清图 ↗</a></figcaption>
+    <a class="understanding-map-preview" href="media/understanding/understanding-map-2026-10-23.png" target="_blank" rel="noreferrer"><img src="media/understanding/understanding-map-2026-10-23.png" width="2400" height="4886" alt="长提示词研究总图：库的价值与原提示词本质、X明确需求70分与Y原文67.5分的实际对照、目标情绪风格氛围动画目的和判断标准、需求模板，以及未验证的跨代趋势。"></a>
+    <div class="hub-route"><a href="media/understanding/understanding-map-2026-10-23.png" download>下载高清 PNG · 2400 × 4886 ↓</a><a href="media/understanding/understanding-map-2026-10-23.svg" download>下载可编辑 SVG ↓</a><a href="files/understanding-map-production.json">查看制作与数据记录</a></div>
+  </figure>
+  <div class="understanding-lead">
+    <p class="eyebrow">目前形成的理解</p>
+    <h3>把希望作品产生的效果说清楚。</h3>
+    <p>给谁看，希望观众理解什么、感到什么、最后愿意做什么。情绪、氛围和动画方向都围绕这个目的展开；同时说明怎样才算做好。</p>
+  </div>
+  <div class="understanding-parts">
+    <article><span>01 / 通用方法</span><h3>模型已经会做的步骤，额外收益可能减少</h3><p>分析、计划、检查、迭代仍然有用。如果模型本来就能做好这些步骤，重复提醒的增量收益可能有限；具体收益需要看实际执行和结果。</p></article>
+    <article><span>02 / 创作意图</span><h3>你的目标、偏好与取舍仍然需要表达</h3><p>受众、内容重点、情绪变化、氛围和审美参考包含任务独有的信息。模型能力更强，也需要知道你希望作品产生什么效果。</p></article>
+    <article><span>03 / 验收与证据</span><h3>流程要求要落实到检查与返修</h3><p>明确静音能否理解、文字能否读完、事实是否可信、动作是否解释关系。评审意见应对应实际画面与修改；步骤数量和文字篇幅本身不能证明质量。</p></article>
+  </div>
+  <div id="prompt-simplification" class="understanding-simplification" aria-labelledby="simplification-title">
+    <p class="eyebrow">怎样简化，仍保留想要的效果</p><h3 id="simplification-title">压缩通用方法，把任务独有的信息说具体。</h3>
+    <ol>
+      <li><strong>合并重复流程。</strong>把多处“先分析、做计划、反复检查”合为一次任务与验收要求。根据实际任务决定是否需要分阶段方案、独立评审或试渲染。</li>
+      <li><strong>压缩空泛口号，表达目标与感受。</strong>交代给谁看、理解什么、希望产生什么行动；把“高级、震撼”展开为情绪起点、变化与结尾感受。</li>
+      <li><strong>用少量明确的风格规则与参考。</strong>说明配色、字级、材料、留白、节奏怎样支持氛围，并指出参考中真正要借鉴的地方。</li>
+      <li><strong>用效果标准组织动效要求。</strong>说明动画要解释的关系、注意力位置和持续对象，以可理解、可读、真实作为检查依据，具体实现由模型选择。</li>
+      <li><strong>按实际偏差补充约束。</strong>发现叠字就指定对应秒数和阅读问题，发现内容中断就要求明确交接；保留必要的事实来源、预算、技术限制与交付格式，再检查修改结果。</li>
+    </ol>
+    <p class="small">这些是本次讨论形成的使用建议；下方表达示例尚未通过新一轮对照验证。简化的对象是冗余指令，独立评审与真实验收仍按任务需要执行。</p>
+  </div>
+  <div class="understanding-example">
+    <div><p class="eyebrow">把目的和表现连起来</p><h3>同一个场景，可以怎样表达？</h3><p>“连续变形”说明采用什么表现方式；“让研究过程连贯、每一步都有依据”说明它为什么值得采用。两者一起表达，才能判断动作是否服务内容。</p></div>
+    <dl class="understanding-brief">
+      <div><dt>受众与目标</dt><dd>面向开发者，让观众理解：收藏项目之后，怎样查原理、找依据、开始验证。</dd></div>
+      <div><dt>情绪变化</dt><dd>从“收藏了却没弄懂”的困惑，走向“知道下一步怎么做”的掌控感。</dd></div>
+      <div><dt>风格</dt><dd>暖白与深绿、清晰字级、克制的平面图形；让同一对象保持稳定的视觉身份。</dd></div>
+      <div><dt>氛围</dt><dd>安静、清晰、可信，像有人带着你逐步研究。</dd></div>
+      <div><dt>动画承担的任务</dt><dd>收藏卡展开成原理图，原理节点对应源码，再进入实验记录。持续保留对象身份，让观众看懂信息之间的关系。</dd></div>
+      <div><dt>判断标准</dt><dd>静音也能理解主线；关键文字有阅读时间；每次变化解释一步关系；教学示意、待验证内容与真实结果区分清楚。</dd></div>
+    </dl>
+  </div>
+  <div class="understanding-wording" aria-labelledby="understanding-brief-title">
+    <h3 id="understanding-brief-title">把这些要求写成一段</h3>
+    <p class="small">以下是讨论后形成的表达示例，尚未用于新一轮制作。它不是作者原文，也不是上方两组的实际输入。</p>
+    <blockquote>为开发者制作一条 20 秒产品介绍动画，让观众理解从收藏项目、查明原理、核对来源到开展实验的过程。情绪从“收藏后仍然困惑”逐步走向“知道下一步怎么做”的掌控感。采用暖白与深绿、清晰字级和克制的平面图形，营造安静、清晰、可信的氛围。让同一张收藏卡展开成原理图，原理节点对应源码，再进入实验记录；每次动画都解释一步关系。验收时检查：静音可理解主线，关键文字有足够阅读时间，示例与真实结果清楚区分，连续变化保持对象和语义可追踪。</blockquote>
+    <p>“高级、震撼、流畅”等词可以表达偏好；补上感受的变化、注意力的位置和动作要解释的关系，会让要求更具体。实现方法可以交给模型选择，必要的技术限制、预算和交付格式仍应明确。</p>
+  </div>
+  <div class="understanding-evidence">
+    <article><span>本次观察支持到哪里</span><h3>同等时间内，没有观察到全文附加带来一致提升</h3><p>明确需求组 70/90，原文组 67.5/90；两位评审偏好相反。对照组也获得了共同质量要求。原文组未在时限内完成全部评审流程，所以本次结果只覆盖固定预算下的增量收益。<a href="#controlled">查看成片、评分与限制 ↑</a></p></article>
+    <article><span>尚未验证的推测</span><h3>通用过程提示的收益，可能随模型能力变化</h3><p>如果模型能自主完成更多通用步骤，这些提醒的额外价值可能减少。本次没有比较不同代际模型，也没有验证无限制执行原文的最终效果，不能据此宣布长提示词普遍失去价值。</p></article>
+  </div>
+  <p class="source-note">相关官方指导：OpenAI 建议对推理模型使用清晰直接的提示，明确目标和约束；某些通用思考指令未必提升效果。这一建议并不证明上述跨代趋势。<a href="https://developers.openai.com/api/docs/guides/reasoning-best-practices#how-to-prompt-reasoning-models-effectively" target="_blank" rel="noreferrer">阅读官方指导 ↗</a></p>
+  <div class="hub-route"><a href="files/prompt-understanding.md" download>下载本次理解与表达示例 ↓</a><a href="#full-prompts">查看原文来源和实际输入 ↓</a></div>
+</section>
+
+    <section id="full-prompts" class="section">
+      <div class="section-head"><div><p class="eyebrow">PROMPTS / SOURCE & EXECUTION</p><h2>把提示词、实际输入与执行结果连起来。</h2></div><p>作者原文、另写指令、补充 brief，<br>三者明确区分。</p></div>
+      <p>V3 直接读取作者完整原文，具体任务只填在<a href="files/v3/brief-input.md">独立 brief</a>中；原文的来源与完整性见<a href="files/v3/source-manifest.json">来源清单</a>。原文全文请在作者原帖阅读，本站不全文转载第三方长文。下方留存的是 V2 为本项目另写的执行提示词，它不是 V3 使用的原文。</p>
+      <div class="prompt-links"><a class="button primary" href="https://x.com/CarsonYangk8s/status/2111520795575116016" target="_blank" rel="noreferrer">打开原提示词全文 ↗</a><a class="button secondary" href="files/original-prompt-guide.md" download>下载历史要求对应表 ↓</a><a class="button secondary" href="files/v2-execution-prompt.md" download>下载 V2 执行指令 ↓</a></div>
+
+      <div class="prompt-origin-grid"><article><h3>作者原文：创作与验收规约</h3><p>原文约束素材真实性、内容交接、声音、独立评审与交付。它本身不包含这次演示对象的具体资料。下面的结构解读是本站分析，不冒充原文。</p><p class="source-note">原始输入：3,821 字符 / 9,143 UTF-8 字节；通过对应帖子转存接口取得，直连 X 返回 403。完整性 SHA 见来源清单，未独立认证转存内容与作者当前版本完全一致。</p></article><article><h3>V3 输入：原文 + 独立 brief</h3><p>原文保持独立；brief 填研究集主题、开发者观众、20 秒横屏、事实来源与落版入口。音乐和音效的相对音量冲突，按原文允许的 brief 优先级明确处理。</p><p>“原文已读取”是输入事实；“原文全部执行完毕”和“质量全部通过”仍未成立。</p></article></div>
+      <div class="prompt-flow" aria-label="V3输入与输出关系"><span>作者原文</span><b>＋</b><span>独立 brief</span><b>→</b><span>制作与独立评审</span><b>→</b><span>当前 R2：仍需返修</span></div>
+      <details class="prompt-complete"><summary>作者原提示词 · 在本页加载官方原帖</summary><div><p class="source-note">通过 X 官方嵌入展示，本站不复制发布第三方全文。外部网络受限时，请使用上方原文入口；不会以本站改写文本冒充原文。</p><button id="load-original-post" class="button secondary">加载作者原帖</button><div class="source-embed"><blockquote class="twitter-tweet" data-dnt="true"><a href="https://x.com/CarsonYangk8s/status/2111520795575116016">查看作者发布的完整提示词</a></blockquote></div></div></details>
+      <details class="prompt-complete" open><summary>V3 完整 brief · 本次与原文一起提供的实际任务输入</summary><div><p class="small">以下内容直接读取 brief-input.md，不是对原文的替换或重写。</p><button id="copy-v3-brief" class="button secondary" disabled>复制 V3 完整 brief</button> <span id="v3-copy-status" role="status" class="small"></span><pre id="v3-brief-text" tabindex="0">正在读取完整输入…</pre><a href="files/v3/brief-input.md" download>下载 V3 brief 原文件 ↓</a></div></details>
+      <details class="prompt-complete"><summary>展开 V2 完整执行提示词 · 历史输入</summary><div><p class="small">可直接复制；这是 V2 项目专用指令，不是作者原文，也不是 V3 的输入。</p><button id="copy-complete-prompt" class="button secondary" disabled>复制完整提示词</button> <span id="complete-copy-status" role="status" class="small"></span><pre id="complete-prompt" tabindex="0">正在读取全文…</pre><a href="files/v2-execution-prompt.md" download>下载 Markdown 文件 ↓</a></div></details>
+      <p class="source-note"><a href="#prompt">查看 11 个模块的结构解读 ↓</a> · <a href="#research-analysis">查看提示词价值与当前效果分析 ↓</a></p>
+    </section>
+    <section id="compare" class="section compare-section">
+  <div class="section-head"><div><p class="eyebrow">V3 / ORIGINAL PROMPT RUN</p><h2>三版效果，连同各自的输入与缺陷。</h2></div><p>原文保持原样，brief单独提供。<br>结果、失败项和评审记录放在一起。</p></div>
+  <div class="version-explanation"><strong>“第三版”究竟指什么？</strong><p>此前只有 V1、V2 两个作品。“三轮渲染”是 V2 内部修订后导出三次，不是第三个作品。这里的 <b>V3</b> 才是本轮新增的原文执行实验；V3 自己也可能经过多次评审和渲染。</p></div>
+  <div class="run-inputs">
+    <article><span class="tag">V1</span><h3>简化实现</h3><p>五个独立场景与重复遮罩。未完整执行原文创作要求。</p></article>
+    <article><span class="tag">V2</span><h3>另写的执行指令</h3><p>补做连续变形，多轮修订；使用另行编写的项目指令，不能称作原文严格复现。</p></article>
+    <article><span class="tag amber">V3 / 本次</span><h3>原文 + 独立 brief</h3><p>新执行代理直接读取未改写全文，从方案开始制作；按原文安排独立评审和迭代。</p></article>
+  </div>
+  <div id="triple-comparison" class="comparison">
+    <div class="tri-players">
+      <figure class="compare-card" data-version="1"><figcaption><strong>V1 · 简化实现</strong><span>历史文件保留</span></figcaption><video id="tri-v1" muted playsinline preload="metadata" poster="media/poster.png" aria-label="三版对比：V1"><source src="media/research-film.mp4" type="video/mp4"></video><a href="media/research-film.mp4" download>下载 V1 ↓</a></figure>
+      <figure class="compare-card" data-version="2"><figcaption><strong>V2 · 另写指令</strong><span>历史文件保留</span></figcaption><video id="tri-v2" muted playsinline preload="metadata" poster="media/v2/poster.png" aria-label="三版对比：V2"><source src="media/v2/research-film-v2.mp4" type="video/mp4"></video><a href="media/v2/research-film-v2.mp4" download>下载 V2 ↓</a></figure>
+      <figure class="compare-card" data-version="3"><figcaption><strong>V3 · 原文执行实验</strong><span id="v3-version-note">第二轮 · 尚需返修</span></figcaption><video id="tri-v3" playsinline preload="metadata" poster="media/v3/round-02-poster.png" aria-label="三版对比：V3"><source src="media/v3/round-02.mp4" type="video/mp4"></video><a href="media/v3/round-02.mp4" download>下载 V3 第二轮 ↓</a></figure>
+    </div>
+    <div class="compare-controls">
+      <div class="compare-buttons"><button id="tri-play" class="button primary">同步播放三版</button><button id="tri-restart" class="button secondary">从头重播</button><button id="tri-mute" class="button secondary" aria-pressed="true">关闭 V3 声音</button></div>
+      <div class="tri-views" role="group" aria-label="选择对比布局"><button data-tri-view="all" aria-pressed="true">三版一起看</button><button data-tri-view="13" aria-pressed="false">V1 对比 V3</button><button data-tri-view="23" aria-pressed="false">V2 对比 V3</button><button data-tri-view="3" aria-pressed="false">放大 V3</button></div>
+      <label for="tri-seek"><span>共同时间轴 / 拖动即暂停</span><output id="tri-time">0.00 / 20.00 s · 第 1 帧</output></label><input id="tri-seek" type="range" min="0" max="1199" step="1" value="0">
+      <p id="tri-status" class="small" role="status">三版近似同步，默认仅听 V3。小字请使用“放大 V3”或下载原尺寸影片。</p>
+    </div>
+  </div>
+  <div class="v3-verdict"><p class="eyebrow">WHAT ACTUALLY HAPPENED</p><h3 id="v3-result-title">读取本轮实际验收结论…</h3><p id="v3-result-body"></p><div id="v3-failed-items"></div></div>
+  <details class="prompt-complete"><summary>逐轮审片与中间产物 · 都属于 V3 内部迭代</summary><div><p>分镜退回、逐镜检查和整片复核分别留存。这里的轮次不是新增作品版本。</p><div id="v3-review-links" class="download-list"></div></div></details>
+  <div class="comparison-table"><table><caption>同一场景与规格；制作流程和投入不同，不能只把差异归因于提示词。</caption><thead><tr><th>可核查项目</th><th>V1</th><th>V2</th><th>V3</th></tr></thead><tbody id="tri-metrics"><tr><td colspan="4">正在读取结果…</td></tr></tbody></table></div>
+  <p class="small">低运动检测仅统计持续至少 0.5 秒的片段，更短的停滞不在该累计值中。像素变化不能证明动作有意义，也不代表导演或审美质量通过。</p>
+  <details class="prompt-complete"><summary>核查原文输入与当前阶段证据 · 不等于最终验收</summary><div>
+    <p>原文取自指定帖子的完整正文，共 <b>3,821 个字符</b>，作为独立输入保存。没有用 V2 的执行版替换原文。原帖直连返回403，本次通过对应帖子的转存接口取得正文；来源与完整性记录可以下载核查。</p>
+    <p class="small">SHA-256：<code class="source-hash">ab01c038ef3b71821bad85b2ddb45ca37891c5fa2d019adb59572de6bbfcb037</code></p>
+    <div class="prompt-links"><a class="button primary" href="https://x.com/CarsonYangk8s/status/2111520795575116016" target="_blank" rel="noreferrer">阅读作者原文 ↗</a><a class="button secondary" href="files/v3/source-manifest.json" download>下载原文完整性记录 ↓</a><a class="button secondary" href="files/v3/brief-input.md" download>下载独立 brief 输入 ↓</a></div>
+    <p>仅填任务字段；原文中音效应高于/低于音乐的矛盾，按其明确的 brief 优先规则，选择“音效低于音乐”。其他未达成项保留在报告中，不用修改 brief 来豁免。</p>
+    <label for="v3-quality-filter" class="small">筛选验收状态 </label><select id="v3-quality-filter" aria-label="筛选验收状态"><option value="all">全部条款</option><option value="FAIL">未通过</option><option value="UNVERIFIED">未验证</option><option value="PASS">已通过</option><option value="N/A">不适用</option></select>
+    <p class="small">以下是当前影片与流程的重点核查。完整 179 项底稿可下载，但它形成于早期、尚未完成最终签署，不代表 179 项全部通过。</p><div id="v3-quality-list"><p>正在读取逐条验收结果…</p></div>
+  </div></details>
+  <div class="v2-docs"><div><h3>V3 执行证据</h3><div class="download-list">
+    <a href="files/v3/snapshots/round-02-brief.md" download>第二轮对应方案 <span>MD ↓</span></a>
+    <a href="files/v3/snapshots/round-02-facts.json" download>第二轮事实输入 · 含评审指出的引用问题 <span>JSON ↓</span></a>
+    <a href="files/v3/style-guide.md" download>风格手册 <span>MD ↓</span></a>
+    <a href="files/v3/snapshots/round-02-timing.json" download>第二轮对应时间轴 <span>JSON ↓</span></a>
+    <a href="files/v3/ledger.md" download>逐轮评审与修订账本 <span>MD ↓</span></a>
+    <a href="files/v3/quality-inventory-draft.json" download>179 项要求底稿 · 非最终验收 <span>MD ↓</span></a>
+    <p class="small">最终执行审计尚未完成，当前没有可下载的最终审计结论。</p>
+    <a href="files/v3/reproduce.md" download>实际复现命令与环境前提 <span>MD ↓</span></a>
+    <a href="files/v3/measurements-round-02.json" download>当前 V3 第二轮实际文件测量 <span>JSON ↓</span></a>
+    <a href="files/v3/human-review.md" download>仍需亲眼、亲耳确认的项目 <span>MD ↓</span></a>
+    <a href="media/v3/round-02-contact.jpg" target="_blank">V3 第二轮影片抽帧总览 <span>JPG ↗</span></a>
+  </div></div><div class="audio-panel"><p class="eyebrow">V3 / ORIGINAL SCORE</p><h3>纯音乐与实际影片</h3><audio controls preload="none" src="media/v3/music-only.m4a" aria-label="V3纯音乐"></audio><a class="text-link" href="media/v3/music-only.m4a" download>下载 V3 纯音乐 ↓</a><p>原文执行是本次的输入与过程约束；“全部质量标准通过”需要另外的证据。失败与无法核验也属于这次实验的真实结果。</p><a href="#v2-comparison">查看原 V1 / V2 对比与记录 ↓</a></div></div>
+</section>
+
+    <section id="research-analysis" class="section">
+  <div class="section-head"><div><p class="eyebrow">HISTORICAL ANALYSIS / V1–V3</p><h2>历史三版：原文更完整，效果就更好吗？</h2></div><p>以下分析只针对历史三版。<br><a href="#controlled">新的同预算盲评另见公平对照 ↑</a></p></div>
+  <div class="hub-status"><strong>目前不能说 V3 优于 V2，更不能说达到了能力上限。</strong><p>V3 第二轮全画面低运动累计 3.017 秒，V2 为 1.183 秒，采用相同 −50 dB、持续至少 0.5 秒的检测口径。V3 独立评审还发现遮字、重复标题与后段内容重复。增加流程和条款，并没有自动消除这些问题。</p><a href="files/v3/review-round-02.md">对应成片的独立报告 ↗</a></div>
+  <div class="hub-map analysis-cards">
+    <article><span>差异来自哪里</span><h3>输入与创作选择都变了</h3><p>V1 使用五镜与重复遮罩；V2 以档案、工作台和文档的连续变化组织画面；V3 重新采集真实页面、字体和 favicon，以工具卡与研究证据为主线。它们并非同一模板只换一句提示词。</p></article>
+    <article><span>工具做了什么</span><h3>渲染成功不等于导演成功</h3><p>V1 用 Canvas，V2/V3 用 SVG、resvg 与 FFmpeg。这里没有使用 Remotion。无论采用哪种渲染框架，构图、信息推进、动作交接和审美判断仍然需要实现与检查。</p></article>
+    <article><span>提示词的实际价值</span><h3>把缺陷变得可见、可追踪</h3><p>独立评审找到了虚构点击、名称遮挡、错误引用上下文、低运动与编码偏色。它提供了返修依据；本实验尚不能量化这些收益是否抵得上额外制作成本。</p></article>
+    <article><span>不能推出什么</span><h3>一次制作不构成因果结论</h3><p>没有固定相同模型、预算、工具与随机条件进行多样本盲评。因此不能证明长提示词更优、短提示词更差，也不能用这些片子代表原作者展示过的结果。</p></article>
+  </div>
+  <div class="hub-reference"><div><p class="eyebrow">REFERENCE / NOT A PROMPT OUTPUT</p><h3>行业参考：Introducing Linear Agent</h3><p>这是制作时另选的官方产品片，不是原作者成片，也不是此提示词生成的成果。参考片用输入、结果和文档形成推动叙事；V3 后半段仍较多停留在栏目展示，这是独立评审指出的差距。</p><a href="https://linear.app/changelog/2026-03-24-introducing-linear-agent" target="_blank" rel="noreferrer">在 Linear 官网观看参考片 ↗</a><p class="small">参考研究记录包含实际文件哈希、逐帧差分和获取限制。</p><a href="files/v3/references.md">查看参考研究记录 ↗</a></div><div><h3>接下来真正需要验证的事</h3><ul><li>修复两处交接遮字、结尾双标题和后半段停滞。</li><li>核对教学披露的引用上下文，收紧来源按钮的真实操作语义。</li><li>重新导出完整影片，再由全新评审盲读与逐项复核。</li><li>补完主观听感及最终执行审计，才能讨论终稿验收。</li></ul><p class="small">以上是未完成工作，不是本页宣称已经实现的能力。</p></div></div>
+</section>
+
+    <section id="research-evidence" class="section hub-evidence">
+  <div class="section-head"><div><p class="eyebrow">EVIDENCE / REVIEW & ITERATION</p><h2>过程留在页面里，结论对应实际文件。</h2></div><p>更新于 2026.10.23<br>当前成片：V3 / Round 02</p></div>
+  <ol class="hub-timeline"><li><b>资料与方案</b><p>原文完整性记录、真实产品采集、参考研究、三个候选方向与分镜。</p></li><li><b>分镜三次评审</b><p>前两次退回，第三次允许进入制作；这不等于影片可以发布。</p></li><li><b>4 秒样片与八场首评</b><p>样片验证渲染链路；八场首评均发现需返修问题，历史视频保留。</p></li><li><b>两次完整 V3 导出</b><p>每轮先独立无声盲读，再做完整评审；两轮结论均为“再改一轮”。另有两次渲染中断，不计完成导出。</p></li><li><b>当前停留点</b><p>第三轮修订准备与编码探针已有记录；未发现第三轮完整 MP4。最终验收、完整执行闭环仍待完成。</p></li></ol>
+  <div class="hub-reader"><label for="evidence-select">在页面中阅读原始记录</label><select id="evidence-select"><option value="files/v3/review-round-02.md">V3 第二轮 · 独立整片评审</option><option value="files/v3/blind-story-round-02.md">V3 第二轮 · 先看画面后的无声复述</option><option value="files/v3/review-round-01.md">V3 第一轮 · 独立整片评审</option><option value="files/v3/ledger.md">V3 · 逐轮修订账本</option><option value="files/v3/human-review.md">V3 · 人工待核事项</option><option value="files/v3/references.md">V3 · 参考与素材研究</option><option value="files/v3/reproduce.md">V3 · 复现命令与前提</option><option value="files/v2-final-review.md">V2 · 最终独立评审</option><option value="files/review.md">V1 · 首次独立评审</option></select><p class="small">以下为原始 Markdown 记录。历史报告按对应轮次保留，不回写成通过。</p><pre id="evidence-reader" tabindex="0">正在读取…</pre><a id="evidence-download" href="files/v3/review-round-02.md" download>下载当前记录 ↓</a></div>
+  <details class="prompt-complete"><summary>全部可交付资料目录 · 按版本归档</summary><div id="all-artifacts" class="artifact-index"></div></details>
+</section>
+
+
+    <section id="v2-comparison" class="section compare-section">
+      <div class="section-head"><div><p class="eyebrow">V2 / CONTINUITY STUDY</p><h2>从换页面，走向同一物体的连续变化。</h2></div><p>同一真实场景 · 同样 20 秒 / 60 fps<br>第二轮制作投入更多，属于迭代对比，非受控 A/B。</p></div>
+      <div class="experiment-meta"><span><b>主线</b>标记 → 档案 → 工作台 → 文档 → 档案</span><span><b>画面</b>原生 SVG / resvg</span><span><b>声音</b>原创程序音乐，默认仅播放 V2</span></div>
+      <div id="comparison" class="comparison">
+        <div class="compare-players">
+          <figure class="compare-card"><figcaption><strong>V1 · 原版本</strong><span>五镜 / 重复遮罩</span></figcaption><video id="compare-v1" muted playsinline preload="auto" poster="media/poster.png" aria-label="对比左侧：原版 V1"><source src="media/research-film.mp4" type="video/mp4"></video><a href="media/research-film.mp4" download>下载保留的 V1 MP4 ↓</a></figure>
+          <figure class="compare-card"><figcaption><strong>V2 · 另写执行提示词</strong><span>八段 / 连续几何</span></figcaption><video id="compare-v2" playsinline preload="auto" poster="media/v2/poster.png" aria-label="对比右侧：连续变形 V2"><source src="media/v2/research-film-v2.mp4" type="video/mp4"></video><a href="media/v2/research-film-v2.mp4" download>下载保留的 V2 MP4 ↓</a></figure>
+        </div>
+        <div class="compare-controls">
+          <div class="compare-buttons"><button id="compare-play" class="button primary">同步播放</button><button id="compare-restart" class="button secondary">从头重播</button><button id="compare-mute" class="button secondary" aria-pressed="true">关闭 V2 声音</button><button id="compare-focus" class="button secondary" aria-pressed="false">放大查看 V2</button></div>
+          <label for="compare-seek"><span>同帧定位 / 拖动即暂停</span><output id="compare-time">0.00 / 20.00 s · 第 1 帧</output></label>
+          <input id="compare-seek" type="range" min="0" max="1199" step="1" value="0">
+          <p id="compare-status" class="small" role="status">播放时近似同步；拖动时间轴可将两版定位到同一帧。窄屏时两版上下排列。</p>
+          <div class="compare-chapters" aria-label="V2章节定位">
+            <button data-frame-v2="60">01 标记成档案<small>1.0s</small></button><button data-frame-v2="210">02 档案展开<small>3.5s</small></button><button data-frame-v2="330">03 条目变工作台<small>5.5s</small></button><button data-frame-v2="510">04 文稿到语音<small>8.5s</small></button><button data-frame-v2="654">05 图回到文档<small>10.9s</small></button><button data-frame-v2="828">06 来源与实验<small>13.8s</small></button><button data-frame-v2="954">07 收拢归档<small>15.9s</small></button><button data-frame-v2="1080">08 名称与入口<small>18.0s</small></button>
+          </div>
+        </div>
+      </div>
+      <div class="v2-note"><strong>这次重点看什么</strong><p>不是整屏换场：星形和卡片共用轮廓；选中的行变成工作台；波形随原理图回到 README；文件从同一页背后展开，再归档。附属文字错开出现，光标走弧线，普通动作使用 3 个、高速转场使用 7 个时间样本合成运动模糊。</p><p>演示的是研究产品及 Kokoro 原理，未运行 Kokoro 模型。“实验待验证”保留在影片中。</p></div>
+      <div class="comparison-table"><table><caption class="small">以下数值来自各自最终 MP4；低运动采用 −50 dB、持续 0.5 秒阈值。</caption><thead><tr><th scope="col">检查项目</th><th scope="col">V1</th><th scope="col">V2</th></tr></thead><tbody id="compare-metrics"><tr><td colspan="3">正在载入两版测量记录…</td></tr></tbody></table></div>
+      <p class="small">低运动检测只衡量像素变化；它不能证明动作有意义。主体区域排除了页眉页脚。两版实现和迭代投入不同，不能把差异全部归因于提示词长度。</p>
+      <div class="v2-note"><strong>这次的能力判断</strong><p>连续轮廓变形、对象交接和分层动效已实际完成，经过三次完整渲染及逐镜检查，修正了多处叠字和遮挡。最终独立总审认为可以作为连贯的二维实验片交付。</p><p>严格质量线仍未全部通过：全画面低运动累计 1.183 秒，部分过渡表现偏保守，全部感知声画峰值和音乐听感未完成验证。它展示了这次迭代能达到的效果，不能据此宣称达到商业参考水准或模型能力上限。<a href="files/v2-quality.md" download>查看逐项结论 ↓</a></p></div>
+      <div class="v2-docs">
+        <div><h3>V2 制作证据</h3><div class="download-list">
+          <a href="media/v2/contact-sheet-decoded.jpg" target="_blank">最终视频的 20 帧总览 <span>JPG ↗</span></a>
+          <a href="files/v2-quality.md" download>逐项质量结论与能力边界 <span>MD ↓</span></a>
+          <a href="files/v2-final-review.md" download>完整成片独立审片 <span>MD ↓</span></a>
+          <a href="files/v2-verification.json" download>最终影片实际测量 <span>JSON ↓</span></a>
+          <a href="files/v2-ledger.md" download>发现、修改与复核记录 <span>MD ↓</span></a>
+          <a href="files/v2-brief.md" download>方向选择与八镜分镜 <span>MD ↓</span></a>
+          <a href="files/v2-facts.json" download>事实、来源及文件哈希 <span>JSON ↓</span></a>
+          <a href="files/timing-v2.json" download>V2 统一时间轴 <span>JSON ↓</span></a>
+          <a href="files/v2-references.md" download>实际参考片段观察 <span>MD ↓</span></a>
+        </div></div>
+        <div><h3>三个风格帧与声音</h3><p class="small">档案、原理、证据三个阶段。点击查看原尺寸；风格帧不替代成片审查。</p><div class="v2-frame-links"><a href="media/v2/style-108.png" target="_blank"><img src="media/v2/style-108.png" alt="V2研究档案风格帧"></a><a href="media/v2/style-486.png" target="_blank"><img src="media/v2/style-486.png" alt="V2原理图风格帧"></a><a href="media/v2/style-810.png" target="_blank"><img src="media/v2/style-810.png" alt="V2文件层展开风格帧"></a></div><div class="audio-panel"><label for="v2-music">V2 原创纯音乐 / 不含动作音效</label><audio id="v2-music" controls preload="none" src="media/v2/music-only.m4a"></audio><a class="text-link" href="media/v2/music-only.m4a" download>下载纯音乐 ↓</a><p class="small">声音由代码合成。响度与峰值已测量，听感仍由你直接试听判断。</p></div></div>
+      </div>
+    </section>
+
+
+
+    <section id="prompt" class="section">
+      <div class="section-head"><div><p class="eyebrow">V1 / ORIGINAL READING NOTES</p><h2>一份提示词，三种不同的作用。</h2></div><p>保留第一轮阅读理解；它不是 V3 的执行依据。<br><a href="https://x.com/CarsonYangk8s/status/2111520795575116016" target="_blank" rel="noreferrer">阅读米开朗基杨分享的原帖 ↗</a></p></div>
+      <div class="three-principles">
+        <article><span class="mini-number">A</span><h3>你要决定什么</h3><p>观众、目的、事实来源与交付格式。这些是任务信息，模型再强也不能凭空知道。</p><span class="tag">保留为硬约束</span></article>
+        <article><span class="mini-number">B</span><h3>怎样减少遗漏</h3><p>先形成方案，再验证渲染，最后检查成片。把抽象目标变成能检查的中间产物。</p><span class="tag">保留为工作流程</span></article>
+        <article><span class="mini-number">C</span><h3>哪些留给创作判断</h3><p>剪辑密度、运动方式、3D 与留白。经验规则需要服务内容，不能自动成为通用标准。</p><span class="tag amber">按场景选用</span></article>
+      </div>
+      <div class="prompt-workbench">
+        <div class="workbench-top"><h3>模块地图 <span>11</span></h3><div class="filters" role="group" aria-label="筛选提示词模块"><button class="active" data-filter="all" aria-pressed="true">全部</button><button data-filter="keep" aria-pressed="false">需求与流程</button><button data-filter="adapt" aria-pressed="false">按需调整</button></div></div>
+        <div id="module-grid" class="module-grid"></div>
+      </div>
+      <div class="editor-note"><span>批注 / 需要纠正的地方</span><p>音效音量的两处要求互相冲突；“版式不重复”和“始终运动”可能妨碍理解；独立评审有价值，但没有测量和视觉证据的“通过”仍然只是一句话。这些是本次阅读后的判断，不是原作者的结论。</p></div>
+      <details class="short-brief"><summary><span>V1 留存的短需求 · 仅历史记录</span><span>展开 +</span></summary><div><p>这是第一轮的理解辅助，没有参与同条件 A/B 测试。V2 另写的执行指令留存在上方；V3 使用作者原文，此短版本没有参与 V3。</p><pre id="short-prompt">为「GitHub 项目研究集」制作 20 秒、16:9 的产品介绍片。
+观众是希望从收藏工具走向理解和实践的开发者。
+只引用提供的仓库资料，明确区分“已有内容”与“已验证能力”。
+采用暖白与深绿的编辑设计，以一张研究卡片串联目录、原理和证据。
+先给分镜和代表帧，先渲染 4 秒验证字体、编码与声音，再完成全片。
+保留确定性时间轴；配乐和动作锚点同步；最终网址至少留出 3 秒阅读。
+交付 MP4、纯音乐、抽帧图、来源、时间轴与检查记录。
+请实际检查输出并记录缺陷。不要把指标合格写成审美优秀，
+也不要把一次成功归因于提示词的长度。</pre><button id="copy-prompt" class="button secondary">复制这份短需求</button><span id="copy-status" role="status"></span></div></details>
+    </section>
+
+    <section id="experiment" class="experiment section">
+      <div class="section-head"><div><p class="eyebrow">V1 / ORIGINAL RECORD</p><h2>保留第一版，连同它的问题。</h2></div><p>以下为原 V1 影片与测量，不代表后续版本结论。<br><a href="#compare">返回三版对比 ↑</a></p></div>
+      <div class="experiment-meta"><span><b>目标</b>让人理解研究集的价值</span><span><b>素材</b>001 / 002 号研究内容</span><span><b>方式</b>代码绘制 + 原创合成配乐</span></div>
+      <div class="tabs" role="tablist" aria-label="实验视图">
+        <button id="tab-film" role="tab" aria-selected="true" aria-controls="panel-film" tabindex="0" data-tab="film">01 成片与时间轴</button>
+        <button id="tab-frames" role="tab" aria-selected="false" aria-controls="panel-frames" tabindex="-1" data-tab="frames">02 抽帧看结构</button>
+        <button id="tab-evidence" role="tab" aria-selected="false" aria-controls="panel-evidence" tabindex="-1" data-tab="evidence">03 证据与交付</button>
+      </div>
+      <div id="panel-film" role="tabpanel" aria-labelledby="tab-film">
+        <div class="player-layout">
+          <div class="player-shell"><video id="film" controls playsinline preload="metadata" poster="media/poster.png" aria-label="GitHub 项目研究集 20 秒实验片"><source src="media/research-film.mp4" type="video/mp4">你的浏览器不支持播放，请下载 MP4。</video><div class="player-foot"><span>无旁白 · 开启声音可听原创电子节拍</span><a href="media/research-film.mp4" download>下载 MP4 ↓</a></div></div>
+          <aside class="scene-notes"><p class="eyebrow">SHOT NOTES / 分镜</p><div id="scene-list"></div><p class="scene-disclaimer">界面按真实字段重构，并非操作录屏。视频展示研究内容，不代表所有工具已完成实测。</p></aside>
+        </div>
+        <div class="timeline"><label for="scrub">逐镜定位 <output id="time-label">00.0 / 20.0 s</output></label><input id="scrub" type="range" min="0" max="19.98" step="0.016667" value="0"><div><span>收藏</span><span>目录</span><span>原理</span><span>证据</span><span>落版</span></div></div>
+      </div>
+      <div id="panel-frames" role="tabpanel" aria-labelledby="tab-frames" hidden><p class="panel-intro">从最终编码的 MP4 每秒抽取一帧（0.5、1.5 … 19.5 秒）。先静音看一遍：你能复述出它在讲什么吗？</p><a href="media/contact-sheet-decoded.jpg" target="_blank"><img class="contact-sheet" src="media/contact-sheet-decoded.jpg" alt="20 秒成片的二十张抽帧，按从左到右、从上到下排列。" width="1280" height="900"></a><p class="small">这张图来自最终视频解码；每 0.2 秒的独立审片抽帧记录另见评审文件。</p></div>
+      <div id="panel-evidence" role="tabpanel" aria-labelledby="tab-evidence" hidden>
+        <div class="evidence-layout"><div><h3>可复查的工作产物</h3><div class="download-list">
+          <a href="files/brief.md" download>需求与分镜 <span>BRIEF ↗</span></a><a href="files/facts.json" download>事实与文案来源 <span>JSON ↗</span></a><a href="files/timing.json" download>场景和节拍时间轴 <span>JSON ↗</span></a><a href="files/style-guide.md" download>风格手册 <span>MD ↗</span></a><a href="files/verification.json" download>技术测量结果 <span>JSON ↗</span></a><a href="files/review.md" download>首次独立审片 <span>MD ↗</span></a><a href="files/final-review.md" download>编号修正后的独立复核 <span>MD ↗</span></a><a href="files/ledger.md" download>制作与修改记录 <span>MD ↗</span></a>
+        </div></div><div class="audio-panel"><p class="eyebrow">SOUND / 原创程序音乐</p><h3>先听声音，再看画面。</h3><p>120 BPM，20 秒。和弦、节拍与短音效由代码合成，无人声；这不是对音乐生成模型的测试。</p><label for="music">纯音乐版本</label><audio id="music" controls preload="none" src="media/music-only.m4a"></audio><a class="text-link" href="media/music-only.m4a" download>下载纯音乐 ↓</a><hr><p class="small">字体使用 Noto Sans CJK SC；离线渲染固定文件哈希。视频中只有栅格化字形，网页阅读使用系统字体。</p></div></div>
+      </div>
+    </section>
+
+    <section id="findings" class="section findings">
+      <div class="section-head"><div><p class="eyebrow">V1 / ORIGINAL FINDINGS</p><h2>第一版的测量与能力判断。</h2></div><p>保留最初结果，避免用第二版覆盖历史。<br><a href="files/v2-quality.md">V2 质量检查另见完整报告 ↗</a></p></div>
+      <div id="metric-grid" class="metric-grid"><p>正在读取实际测量记录…</p></div>
+      <div class="measurement-warning"><strong>尚未通过的原帖要求</strong><p id="motion-result">机器检测发现多段低运动区间；四次相同遮罩没有实现内容连续变形。技术输出合格，不代表原提示词的动效质量线已经通过。</p></div>
+      <div class="verdict-grid">
+        <article><span class="verdict-label green">本次确实做到</span><h3>把流程变成可检查的产物</h3><ul><li>真实资料转为分镜和产品信息。</li><li>代码绘制中文 UI、文字与转场。</li><li>固定帧率编码，并合成原创配乐。</li><li>输出成片、来源和测量记录。</li></ul></article>
+        <article><span class="verdict-label amber">实际还有差距</span><h3>工整不等于有惊喜</h3><ul><li>多段主体停滞，接近动态信息幻灯片。</li><li>四次重复遮罩，原设想的连续变形未实现。</li><li>音乐为程序合成；听感仍需人耳评价。</li><li>未完成与顶级参考片的逐镜对标。</li></ul></article>
+        <article><span class="verdict-label grey">本次不能证明</span><h3>长提示词是否更优</h3><ul><li>没有同模型、同预算的短提示词对照组。</li><li>制作过程含实施调整，并非原文零修改。</li><li>没有测试角色表演、3D、对白或竖屏。</li><li>不是原帖指定模型的性能复现。</li></ul></article>
+      </div>
+      <div class="review-callout"><div><p class="eyebrow">INDEPENDENT REVIEW</p><h3>成片之后，再给判断。</h3></div><div id="review-summary"><p>独立评审结果见交付文件。技术参数通过，不自动等于审美标准通过。</p></div><a href="files/review.md" download>查看完整审片 ↗</a></div>
+      <div class="conclusion"><span class="quote-mark">“</span><p>把细节用来约束<strong>真实与可交付</strong>，<br>把反馈用来提升<strong>表达与审美</strong>。</p><div>本次建议：保留需求、事实、时间轴与审片；<br>把运动口诀当备选手法，把发现的真实问题变成下一轮规则。</div></div>
+      <details class="next-test"><summary>从历史三版到公平对照</summary><p>上面的 V1 历史结论不包含受控对照。现在新增了<a href="#controlled">同场景、同时间预算的配对实验</a>，匿名比较两条全新影片。每组仍只有一个样本，多次重复与跨场景验证尚未进行。</p></details>
+    </section>
+  </main>
+  <footer><div><span class="brand-mark">m↗</span><p>研究 003 · 从规则到成片<br><span>完整研究页 · 更新于 2026.10.23 · 保留未通过与未验证项</span></p></div><a href="https://x.com/CarsonYangk8s/status/2111520795575116016">提示词来源 ↗</a><a href="files/experiment.json" download>实验说明 ↓</a><a href="#main">回到顶部 ↑</a></footer>
+  <script src="app.js" defer></script>
+  <script src="compare.js" defer></script>
+  <script src="v3-compare.js" defer></script>
+  <script src="hub.js" defer></script>
+  <script src="controlled.js" defer></script>
+</body></html>

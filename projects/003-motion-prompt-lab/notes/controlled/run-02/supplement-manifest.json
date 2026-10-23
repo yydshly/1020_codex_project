@@ -1,0 +1,209 @@
+{
+  "note": "Post-deadline archival of unchanged pre-deadline artifacts; no producer work added. Original source files retained privately.",
+  "files": [
+    {
+      "file": "mix-master.wav",
+      "sha256": "cf26e1b5f00a156b04a56dbde248a30bc5314d8fe0c68aafd56607d64aa8fc6f",
+      "bytes": 5760102,
+      "mtime_utc": "2026-10-23T03:52:48.487116+00:00"
+    },
+    {
+      "file": "mix-original.wav",
+      "sha256": "df8d02753d3a3ad4a13d6e6937f0ebe234a11dbab92176a5c35092ad33ffee99",
+      "bytes": 5760044,
+      "mtime_utc": "2026-10-23T03:49:46.196892+00:00"
+    },
+    {
+      "file": "music-only.wav",
+      "sha256": "e2140c552fe7c58e8b2fc9b08eccd81654f1982c211ddc995833461cc3de2d0f",
+      "bytes": 5760102,
+      "mtime_utc": "2026-10-23T03:52:48.632064+00:00"
+    },
+    {
+      "file": "music-original.wav",
+      "sha256": "a20fb710963148013391dd0dfbd825caf1e10be03e77fc6f1f092d9016d0c312",
+      "bytes": 5760044,
+      "mtime_utc": "2026-10-23T03:49:46.098500+00:00"
+    },
+    {
+      "file": "output-music-only.mp4",
+      "sha256": "8ca4a2a3fee5c7c07fe8f88c705982c860803fb2092a0cad0e58045422661978",
+      "bytes": 2996680,
+      "mtime_utc": "2026-10-23T04:01:29.984918+00:00"
+    },
+    {
+      "file": "output.mp4",
+      "sha256": "2257b999e84acc992d801f2037b32a74fa187ed92bdb36218c6e7a58d74fe33d",
+      "bytes": 2991187,
+      "mtime_utc": "2026-10-23T04:01:28.769828+00:00"
+    },
+    {
+      "file": "produce.ps1",
+      "sha256": "e8efc501acbe7e85ef79002bb03581e3eaeb1bb383722c616925823511f49c22",
+      "bytes": 888,
+      "mtime_utc": "2026-10-23T03:55:41.893572+00:00"
+    },
+    {
+      "file": "render.cjs",
+      "sha256": "ed92f4c4b5eab8b485e49414d52299c9de350544659bf6226daa233de3e4874f",
+      "bytes": 13498,
+      "mtime_utc": "2026-10-23T03:59:49.763663+00:00"
+    },
+    {
+      "file": "sfx-original.wav",
+      "sha256": "6c83b28d790e4698311dbb1b7d4afa547df1ea0cdbfb74a2b6c5b138399a6a7e",
+      "bytes": 5760044,
+      "mtime_utc": "2026-10-23T03:49:46.142029+00:00"
+    },
+    {
+      "file": "video-silent.mp4",
+      "sha256": "f81b4b6613c60c3ba63d7ebef1f44aca08a8855fd5cc4bde2333cd5067712340",
+      "bytes": 2240043,
+      "mtime_utc": "2026-10-23T04:01:14.203225+00:00"
+    },
+    {
+      "file": "evidence/contact-sheet.jpg",
+      "sha256": "7ff998acb9a0d901c83247e71d79d2ce53311a09d25070f84e3240a75f367430",
+      "bytes": 97706,
+      "mtime_utc": "2026-10-23T04:01:31.904365+00:00"
+    },
+    {
+      "file": "evidence/dense-5fps.jpg",
+      "sha256": "6faeae3bb6191f1b40950a9abec3d9ca1d36ea4c916b1ccfc69106fd58c19ee5",
+      "bytes": 184519,
+      "mtime_utc": "2026-10-23T04:01:32.658598+00:00"
+    },
+    {
+      "file": "evidence/frame-00.png",
+      "sha256": "148de795411e001e91a9358995ad441f0e7702f1a894c96ee96a663dd903af12",
+      "bytes": 94783,
+      "mtime_utc": "2026-10-23T03:52:49.288681+00:00"
+    },
+    {
+      "file": "evidence/frame-01.png",
+      "sha256": "46646eec3d2d44bb761869adb1a0a4de06bced54ebf6442aea7e90840f2adb8f",
+      "bytes": 97007,
+      "mtime_utc": "2026-10-23T03:52:49.336888+00:00"
+    },
+    {
+      "file": "evidence/frame-02.png",
+      "sha256": "aa3f433221e2506487db30f257409e7c0153d2e35f10654af005f6bb05064d5e",
+      "bytes": 97874,
+      "mtime_utc": "2026-10-23T03:52:49.387647+00:00"
+    },
+    {
+      "file": "evidence/frame-03.png",
+      "sha256": "668ff48c78cdd95b60218e8496a708f3bd8a4f03b2f6a3558df04b5ec3557526",
+      "bytes": 99175,
+      "mtime_utc": "2026-10-23T03:52:49.438560+00:00"
+    },
+    {
+      "file": "evidence/frame-04.png",
+      "sha256": "435bd0c230b24697fc898d19515930f3ca48d6a5cb20d581dc97ee5066199269",
+      "bytes": 99339,
+      "mtime_utc": "2026-10-23T03:52:49.505750+00:00"
+    },
+    {
+      "file": "evidence/frame-05.png",
+      "sha256": "eb526f823bdc9fdbe69730f099266c8e01ee47e490ea8c75671aa554011a9cc1",
+      "bytes": 99058,
+      "mtime_utc": "2026-10-23T03:52:49.576933+00:00"
+    },
+    {
+      "file": "evidence/frame-06.png",
+      "sha256": "9d6f0cb26168d4620790b988392fac38a026185ae8171472c6b4a0c9e97e3751",
+      "bytes": 97910,
+      "mtime_utc": "2026-10-23T03:52:49.641089+00:00"
+    },
+    {
+      "file": "evidence/frame-07.png",
+      "sha256": "2e4ebb24b2c13df4903ff67b6f2484bb05cede47abf96a0c16d4049a17e1c3ef",
+      "bytes": 89153,
+      "mtime_utc": "2026-10-23T03:52:49.689994+00:00"
+    },
+    {
+      "file": "evidence/frame-08.png",
+      "sha256": "3745a6ac28d9d8c4321056f5fd10dd76ed1e817b3a7afb398587248f9b304943",
+      "bytes": 82024,
+      "mtime_utc": "2026-10-23T03:52:49.741405+00:00"
+    },
+    {
+      "file": "evidence/frame-09.png",
+      "sha256": "6269b31b2d2307193e4156a175502ab94f11bba9c04da9a7c14706e0ac052836",
+      "bytes": 82014,
+      "mtime_utc": "2026-10-23T03:52:49.794950+00:00"
+    },
+    {
+      "file": "evidence/frame-10.png",
+      "sha256": "f8eb143841504e4655aaae3248ee36963e1a008b5d14f775e3b1857a7ea77c1c",
+      "bytes": 61906,
+      "mtime_utc": "2026-10-23T03:52:49.846466+00:00"
+    },
+    {
+      "file": "evidence/frame-11.png",
+      "sha256": "43977eb0b9d00364dca625e7f452330b054938a764ff947b4a60858f761880d4",
+      "bytes": 108587,
+      "mtime_utc": "2026-10-23T03:52:49.892282+00:00"
+    },
+    {
+      "file": "evidence/frame-12.png",
+      "sha256": "a1cca5c563080845bd23e2f30389d70cf1cc5abc2e8ddcdd46de0152d6c1f697",
+      "bytes": 108633,
+      "mtime_utc": "2026-10-23T03:52:49.944559+00:00"
+    },
+    {
+      "file": "evidence/frame-13.png",
+      "sha256": "af671ad992e2ac599ca3adb6952f76b239a40ed3b33644906c7733fd19a528c3",
+      "bytes": 70895,
+      "mtime_utc": "2026-10-23T03:52:49.992259+00:00"
+    },
+    {
+      "file": "evidence/frame-14.png",
+      "sha256": "7e413851a87066a55bdda8555f2d0397d21cfd17330e55b9d7c2abe258870614",
+      "bytes": 84046,
+      "mtime_utc": "2026-10-23T03:52:50.034495+00:00"
+    },
+    {
+      "file": "evidence/frame-15.png",
+      "sha256": "e3f755ac7919dd3b768c615f1f84ba57ea625c83fd0e2bae8742e4c624a0aa64",
+      "bytes": 83970,
+      "mtime_utc": "2026-10-23T03:52:50.077909+00:00"
+    },
+    {
+      "file": "evidence/narrative-2fps.jpg",
+      "sha256": "a7a5d49320436272dcefe3838b8f1d0750b92cf34d16434a076eab7f05c5b51b",
+      "bytes": 163365,
+      "mtime_utc": "2026-10-23T04:01:32.280935+00:00"
+    },
+    {
+      "file": "evidence/reference-study.jpg",
+      "sha256": "a9229f4d90d9b32cac230b59636333a6e64741fe8cb1c357e0a62ce11f339fcb",
+      "bytes": 35118,
+      "mtime_utc": "2026-10-23T03:44:24.520713+00:00"
+    },
+    {
+      "file": "evidence/storyboard-preview.jpg",
+      "sha256": "c99cc0b3f91fa6953f69664c07ebeeb16e50eb460d5db10d7386d61de0869075",
+      "bytes": 126734,
+      "mtime_utc": "2026-10-23T03:47:57.266397+00:00"
+    },
+    {
+      "file": "evidence/review-temp/frame14.jpg",
+      "sha256": "1a98ca3a907833990c5a7fd53459b563f1969b4c335b87fdf30859cf770ba547",
+      "bytes": 43247,
+      "mtime_utc": "2026-10-23T03:56:58.390098+00:00"
+    },
+    {
+      "file": "evidence/review-temp/reference-sheet.jpg",
+      "sha256": "70648d576392df1d4ad7b5f9f4e80f205363a525e68f4a4a78b7d27e16d5dbaa",
+      "bytes": 105233,
+      "mtime_utc": "2026-10-23T03:56:58.178756+00:00"
+    },
+    {
+      "file": "evidence/review-temp/transitions.jpg",
+      "sha256": "d0da7b78e7ce4b8c7686e5edb9766933a91550d2f244623ba5b399c8f928b49c",
+      "bytes": 139002,
+      "mtime_utc": "2026-10-23T03:57:24.562967+00:00"
+    }
+  ]
+}

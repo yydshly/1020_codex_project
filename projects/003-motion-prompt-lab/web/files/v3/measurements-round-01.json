@@ -1,0 +1,37 @@
+{
+  "file": "web/media/v3/round-01.mp4",
+  "sha256": "4e91158ff794c5f3eb00b1efddfcc8f090010dab2bc30502dbd994dba2748360",
+  "duration": 20.0,
+  "video": {
+    "width": 1280,
+    "height": 720,
+    "r_frame_rate": "60/1",
+    "avg_frame_rate": "60/1",
+    "nb_frames": "1200",
+    "pix_fmt": "yuv420p"
+  },
+  "loudness_lufs": -14.06,
+  "true_peak_dbtp": -4.95,
+  "freeze": {
+    "-50dB": {
+      "durations_seconds": [
+        0.8,
+        0.5667000000000009
+      ],
+      "total_seconds": 1.366700000000001,
+      "longest_seconds": 0.8,
+      "definition": "FFmpeg perceptual near-freeze threshold; not identical-frame freeze"
+    },
+    "-60dB": {
+      "durations_seconds": [],
+      "total_seconds": 0,
+      "longest_seconds": 0,
+      "definition": "FFmpeg perceptual near-freeze threshold; not identical-frame freeze"
+    }
+  },
+  "identical_frames": {
+    "adjacent_pairs": 0,
+    "longest_repeat_seconds": 0.0
+  },
+  "scope": "Automated actual artifact measurements; subjective hearing, pixel handoff and every-word checks require independent review."
+}

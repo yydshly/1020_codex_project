@@ -1,0 +1,11 @@
+{
+  "attempt": "full-01-attempt-b",
+  "completed_full_movie": false,
+  "written_frame_count": 1063,
+  "last_written_frame": 1062,
+  "exit_code": 1,
+  "error_text": "No additional stderr stack was returned on second native exit.",
+  "diagnosis": "Native renderer process remained unreliable across a long run; cause not conclusively profiled.",
+  "fix": "Use a fresh renderer worker per150-frame scene. Fresh final worker produced1050..1199. Then a separate FFmpeg process encoded all1200 frames into round-01.mp4.",
+  "remaining_risk": "Native resource behavior is a reproducibility limitation; sharded render-all.mjs isolates worker lifetimes."
+}

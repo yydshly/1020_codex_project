@@ -1,0 +1,13 @@
+{
+  "source_url": "https://x.com/CarsonYangk8s/status/2111520795575116016",
+  "retrieval_url": "https://api.fxtwitter.com/CarsonYangk8s/status/2111520795575116016",
+  "retrieved_date": "2026-10-20",
+  "source_id": "2111520795575116016",
+  "author": "CarsonYangk8s",
+  "characters": 3821,
+  "utf8_bytes": 9143,
+  "sha256": "ab01c038ef3b71821bad85b2ddb45ca37891c5fa2d019adb59572de6bbfcb037",
+  "raw_file": ".cache/v3-source/original-prompt.txt",
+  "handling": "Exact tweet.text UTF-8 bytes, no normalization, rewriting, deletions or appended newline. Private working cache; not republished. Brief is a separate input.",
+  "direct_x_fetch": "403; full text obtained from third-party syndication endpoint for the exact post ID."
+}

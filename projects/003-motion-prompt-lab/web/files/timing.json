@@ -1,0 +1,18 @@
+{
+  "fps": 60,
+  "duration": 20,
+  "width": 1280,
+  "height": 720,
+  "bpm": 120,
+  "beatFrames": 30,
+  "scenes": [
+    {"id":"hook","label":"收藏之后","start":0,"end":240},
+    {"id":"catalog","label":"真实项目","start":240,"end":480},
+    {"id":"method","label":"研究过程","start":480,"end":720},
+    {"id":"evidence","label":"可追溯入口","start":720,"end":960},
+    {"id":"end","label":"研究集落版","start":960,"end":1200}
+  ],
+  "actionFrames": [0, 60, 120, 240, 300, 360, 480, 540, 600, 720, 780, 840, 960, 1020, 1080],
+  "voice": [],
+  "notes": "节拍由代码按 120 BPM 精确生成，故无需做录音节拍检测。所有场景起点和动作锚点都来自本文件。动作起始对齐节拍不等于所有视觉峰值都已逐一测量。"
+}

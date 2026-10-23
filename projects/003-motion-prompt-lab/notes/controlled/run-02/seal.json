@@ -1,0 +1,144 @@
+{
+  "reason": "producer_finished",
+  "start_utc": "2026-10-23T03:42:48.640525+00:00",
+  "deadline_utc": "2026-10-23T04:02:48.640525+00:00",
+  "observed_finish_utc": "2026-10-23T04:02:48.632600+00:00",
+  "elapsed_seconds": 1199.992075,
+  "budget_seconds": 1200,
+  "files": [
+    {
+      "file": "audio.py",
+      "sha256": "4c690afc9f217d83eb0b6b832859eca00d61dfe9a43b74418be3390271888bae",
+      "bytes": 3359,
+      "mtime_utc": "2026-10-23T03:49:45.149733+00:00"
+    },
+    {
+      "file": "bridge-clean.py",
+      "sha256": "cf9e367314fdbe122408b03f8045cad3fb2068730f79d875c275a91583ffee13",
+      "bytes": 584,
+      "mtime_utc": "2026-10-23T03:59:49.706518+00:00"
+    },
+    {
+      "file": "bridge-fix.py",
+      "sha256": "c3dfdebafe0f53573bc3bdf3e1bab2c87c915be3bcf18f6e57cac4a303ca71b5",
+      "bytes": 1278,
+      "mtime_utc": "2026-10-23T03:59:01.852997+00:00"
+    },
+    {
+      "file": "contrast.py",
+      "sha256": "b02f6402b76dd4559e66598f97fbc7be7a059eff902fdec4111027bd79902c18",
+      "bytes": 1185,
+      "mtime_utc": "2026-10-23T03:55:41.894572+00:00"
+    },
+    {
+      "file": "dispatch.json",
+      "sha256": "0037c596d1f3d580c9bae54f450b7f27fa27e4621fdd968e071257f878a3d28c",
+      "bytes": 141,
+      "mtime_utc": "2026-10-23T03:42:48.760995+00:00"
+    },
+    {
+      "file": "facts.md",
+      "sha256": "968bcc23e24d3131709eb5941f17001321e14435ef7dfda16c61b9e4e49acce0",
+      "bytes": 1995,
+      "mtime_utc": "2026-10-23T03:55:41.894572+00:00"
+    },
+    {
+      "file": "finalize.py",
+      "sha256": "f55bfe608f8695cc00f9ba1c1dfded86f4bfd4673c12666eda4f81718790c1b4",
+      "bytes": 2884,
+      "mtime_utc": "2026-10-23T04:02:48.074769+00:00"
+    },
+    {
+      "file": "ledger.md",
+      "sha256": "69382a94683d2d8b5320890211123ac0a16bd2b276cf617640848d7aa57faef5",
+      "bytes": 3221,
+      "mtime_utc": "2026-10-23T04:02:48.152419+00:00"
+    },
+    {
+      "file": "master.py",
+      "sha256": "e587bd452fc591b36335095ce82b5945b275facfe685d53b518f7a2dddc61786",
+      "bytes": 792,
+      "mtime_utc": "2026-10-23T03:52:48.252370+00:00"
+    },
+    {
+      "file": "motion-fix.py",
+      "sha256": "9894dc40d78b9a93d5bbab1a69a120571dbf80182b76c8762ef878a0f066d4d5",
+      "bytes": 709,
+      "mtime_utc": "2026-10-23T03:57:21.472204+00:00"
+    },
+    {
+      "file": "output.mp4",
+      "sha256": "2257b999e84acc992d801f2037b32a74fa187ed92bdb36218c6e7a58d74fe33d",
+      "bytes": 2991187,
+      "mtime_utc": "2026-10-23T04:01:28.769828+00:00"
+    },
+    {
+      "file": "README.md",
+      "sha256": "5b21ec5caeb1f6a2aca0b91887bd67db159eaa2febdf64dff019cd0f32d1760e",
+      "bytes": 1622,
+      "mtime_utc": "2026-10-23T03:55:41.892580+00:00"
+    },
+    {
+      "file": "refine.py",
+      "sha256": "b4d8958d5e5757f9ed384d21e0bb0d65b55d9bc1e42ed7a15916bfdc0a0e02ea",
+      "bytes": 1110,
+      "mtime_utc": "2026-10-23T03:52:48.169482+00:00"
+    },
+    {
+      "file": "result.json",
+      "sha256": "3a532357f8b1275009b8a3a79328cb978e5f4cd14ce59454c561a87f24ef3848",
+      "bytes": 1229,
+      "mtime_utc": "2026-10-23T04:02:48.141242+00:00"
+    },
+    {
+      "file": "revise.py",
+      "sha256": "cb9949c8f83816e15ed48201a463e131dd8843ccfe30424792bdf9d5aafd4d50",
+      "bytes": 2562,
+      "mtime_utc": "2026-10-23T03:51:14.889819+00:00"
+    },
+    {
+      "file": "storyboard.md",
+      "sha256": "f2c28818eaec43d04adeddeceafde536815fd2986d7cc79cf2b8e92c4bc2c759",
+      "bytes": 2234,
+      "mtime_utc": "2026-10-23T03:44:24.559622+00:00"
+    },
+    {
+      "file": "sync.py",
+      "sha256": "78608b696c5a621fa7538ae5a784c29f4274c66e4a19a4a6e3f40a5d8fa0d76f",
+      "bytes": 689,
+      "mtime_utc": "2026-10-23T03:54:06.234576+00:00"
+    },
+    {
+      "file": "evidence/audio-design.json",
+      "sha256": "e83221f5e3bbdc93b530bf7ca7793d072fc323ebb0518b0e125367ace6c0ec26",
+      "bytes": 408,
+      "mtime_utc": "2026-10-23T03:49:46.231399+00:00"
+    },
+    {
+      "file": "evidence/contrast.json",
+      "sha256": "eee59e60b6e61185d2193414006acf2978fd1d2324d88fc33a65377e96d151ee",
+      "bytes": 2029,
+      "mtime_utc": "2026-10-23T03:55:41.960337+00:00"
+    },
+    {
+      "file": "evidence/ffprobe.json",
+      "sha256": "56f3fa0e13b088c3477c3548727ba2d525dda19ad6f947197b4c73dc123de7e0",
+      "bytes": 4546,
+      "mtime_utc": "2026-10-23T04:01:33.413500+00:00"
+    },
+    {
+      "file": "evidence/frame-times.json",
+      "sha256": "5d8d054b5f73c856c8904abdf05dddf9d076450859659747a65b53012f717960",
+      "bytes": 64,
+      "mtime_utc": "2026-10-23T03:52:50.078417+00:00"
+    },
+    {
+      "file": "evidence/quality.json",
+      "sha256": "12d886d6cb3b8fb25b2328ea8facf1447567d1f2208ae14667b1505bd62f41e3",
+      "bytes": 842,
+      "mtime_utc": "2026-10-23T04:02:48.141242+00:00"
+    }
+  ],
+  "output_present": true,
+  "observer": "coordinator watcher, 0.5s polling; dispatch-to-completion includes scheduling and internal review; excludes common setup and external judging"
+}

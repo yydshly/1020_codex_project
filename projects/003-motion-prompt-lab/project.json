@@ -1,0 +1,14 @@
+{
+  "id": 3,
+  "slug": "motion-prompt-lab",
+  "name": "动效提示词研究 · 从长流程到清晰意图",
+  "summary": "模型越能自主完成通用步骤，流程提醒的增益可能越小。通过原提示词、真实成片与同预算盲评，提炼简化方向：压缩重复步骤，保留受众目标、情绪、风格、氛围、动画目的及验收标准；跨代趋势仍待验证。",
+  "repo": "https://github.com/yydshly/1020_codex_project",
+  "status": "研究中",
+  "cover": "assets/understanding-map-2026-10-23.png",
+  "cover_alt": "长提示词研究总图：库的价值与原文规约、真实成片与同预算盲评、目标情绪风格氛围动画目的和验收标准，以及模型能力提升时通用步骤提示增益可能减少的判断与证据边界。",
+  "web": true,
+  "source_post": "https://x.com/CarsonYangk8s/status/2111520795575116016",
+  "research_date": "2026-10-20",
+  "updated_date": "2026-10-23"
+}

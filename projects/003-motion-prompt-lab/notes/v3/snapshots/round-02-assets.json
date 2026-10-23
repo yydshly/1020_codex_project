@@ -1,0 +1,193 @@
+{
+  "capturedAt": "2026-10-20",
+  "productSource": "projects/002-ai-content-toolkit/web",
+  "capture": {
+    "method": "Playwright headless Chromium, Python HTTP server 127.0.0.1:8764",
+    "viewport": [
+      2560,
+      1440
+    ],
+    "deviceScaleFactor": 1,
+    "routes": [
+      "#/",
+      "#/compare",
+      "#/experiments",
+      "#/tool/kokoro"
+    ],
+    "browserAndServerClosed": true,
+    "CUAUsed": false
+  },
+  "brand": {
+    "faviconSource": "index.html link[rel=icon] data:image/svg+xml; URL-decoded unmodified",
+    "faviconScope": "002-ai-content-toolkit, not a verified root repository logo",
+    "sidebarMark": "HTML text 研",
+    "rootRepositoryLogoFound": false
+  },
+  "palette": {
+    "paper": "#f6f5f0",
+    "white": "#fffefa",
+    "ink": "#263b34",
+    "green": "#255746",
+    "deep": "#163f33",
+    "orange": "#ac573b"
+  },
+  "fontStack": "Segoe UI, Microsoft YaHei, PingFang SC, sans-serif",
+  "fontFilesOrigin": "C:/Windows/Fonts; private local fixed copies only",
+  "reference": {
+    "title": "Introducing Linear Agent",
+    "published": "2026-03-24",
+    "page": "https://linear.app/changelog/2026-03-24-introducing-linear-agent",
+    "media": "https://webassets.linear.app/files/ornj730p/production/c8530d6578e71e2e6c1461778f1fe599bb5f0e00.mp4",
+    "complete": true,
+    "frames": 1646,
+    "fps": 30,
+    "duration": 54.86666666666667,
+    "rights": "Publicly served official media, private study only; not licensed for inclusion or redistribution"
+  },
+  "files": [
+    {
+      "path": ".cache/v3-source/fonts/msyh.ttc",
+      "bytes": 19704352,
+      "sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f",
+      "usage": "real_product_reference"
+    },
+    {
+      "path": ".cache/v3-source/fonts/NotoSansCJKsc-Regular.otf",
+      "bytes": 16437364,
+      "sha256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+      "usage": "real_product_reference"
+    },
+    {
+      "path": ".cache/v3-source/fonts/segoeui.ttf",
+      "bytes": 960076,
+      "sha256": "704eada12961a27fd271f7d3b09e2066520e758390c1776744eff430fee30f6e",
+      "usage": "real_product_reference"
+    },
+    {
+      "path": ".cache/v3-source/product/capture-metadata.json",
+      "bytes": 10534,
+      "sha256": "aec02cc9fb2e5af029b2c6e21ef8c165602eb9e0773472cb2049bf8eabdfc4eb",
+      "usage": "real_product_reference"
+    },
+    {
+      "path": ".cache/v3-source/product/compare-2560x1440.png",
+      "bytes": 162438,
+      "sha256": "87925c37b592b82b0f9a74a33a90b35e45013e7ced9c6da9fc40eff6c8f3b94a",
+      "usage": "real_product_reference"
+    },
+    {
+      "path": ".cache/v3-source/product/experiments-2560x1440.png",
+      "bytes": 165863,
+      "sha256": "2a9ea93b4293e1d1ef192966c544ab5057138da287d1685631a63771f675ab32",
+      "usage": "real_product_reference"
+    },
+    {
+      "path": ".cache/v3-source/product/fonts/consola.ttf",
+      "bytes": 453088,
+      "sha256": "cf00b507b3286870cc5064ebd0633c303f70b491a4af25eec2d32df413db0179",
+      "usage": "real_product_reference"
+    },
+    {
+      "path": ".cache/v3-source/product/fonts/georgia.ttf",
+      "bytes": 219712,
+      "sha256": "38dffcaf1fac89492f7c56c600a14daf36ae42f7c21985cd4134ae113124a58f",
+      "usage": "real_product_reference"
+    },
+    {
+      "path": ".cache/v3-source/product/fonts/msyh.ttc",
+      "bytes": 19704352,
+      "sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f",
+      "usage": "real_product_reference"
+    },
+    {
+      "path": ".cache/v3-source/product/fonts/segoeui.ttf",
+      "bytes": 960076,
+      "sha256": "704eada12961a27fd271f7d3b09e2066520e758390c1776744eff430fee30f6e",
+      "usage": "real_product_reference"
+    },
+    {
+      "path": ".cache/v3-source/product/kokoro-2560x1440.png",
+      "bytes": 156537,
+      "sha256": "54a25441c51a9deccc41384bc475670bd1b8c437d2f0a9755f9e5215a4ca2367",
+      "usage": "real_product_reference"
+    },
+    {
+      "path": ".cache/v3-source/product/overview-2560x1440.png",
+      "bytes": 188935,
+      "sha256": "002baa8b398f23c92958776a034dfbecf3fcc932276d5de09398ab79991f2bd6",
+      "usage": "real_product_reference"
+    },
+    {
+      "path": ".cache/v3-source/product/source-favicon.svg",
+      "bytes": 192,
+      "sha256": "d30d2cce0fdf872d88a94da9b783fa05903233ed8c239ce55fd1699836cda43a",
+      "usage": "real_product_reference"
+    },
+    {
+      "path": ".cache/v3-source/reference/linear-agent-analysis.json",
+      "bytes": 1264,
+      "sha256": "1eb9bf11639c04ff97f40b84f7c49692a98ca6ba8da158fb79c2748de6662c40",
+      "usage": "private_reference_only"
+    },
+    {
+      "path": ".cache/v3-source/reference/linear-agent-cut-neighbors.jpg",
+      "bytes": 238732,
+      "sha256": "9730c79453a4317c76b78a13882a97a02baeb43456eb6b0c85761fb5e3d65122",
+      "usage": "private_reference_only"
+    },
+    {
+      "path": ".cache/v3-source/reference/linear-agent-dense-1.jpg",
+      "bytes": 239238,
+      "sha256": "ef9972ff252d6ffc3d4723625cd7b8a3fe3ef3958d1685e7f656e8d6e67c5732",
+      "usage": "private_reference_only"
+    },
+    {
+      "path": ".cache/v3-source/reference/linear-agent-dense-2.jpg",
+      "bytes": 246620,
+      "sha256": "c61f30b6c3506f7edbb3ce1208ebecbec0306ddb87a925074459c68b7ad9dd32",
+      "usage": "private_reference_only"
+    },
+    {
+      "path": ".cache/v3-source/reference/linear-agent-dense-3.jpg",
+      "bytes": 232382,
+      "sha256": "6862548fa1b78d9732d7e7239dc77e11fa5d5a7685298eeaf52aaf5ef949e283",
+      "usage": "private_reference_only"
+    },
+    {
+      "path": ".cache/v3-source/reference/linear-agent-dense-4.jpg",
+      "bytes": 8925,
+      "sha256": "2d80a72d46fee9155da8c1c0896534972ce49758b1d9537a78a4d1b08f944452",
+      "usage": "private_reference_only"
+    },
+    {
+      "path": ".cache/v3-source/reference/linear-agent-frame-difference.csv",
+      "bytes": 30875,
+      "sha256": "5bc51d99af6debafa329f43e95b4903434a62480a41632e5af7b93347930143c",
+      "usage": "private_reference_only"
+    },
+    {
+      "path": ".cache/v3-source/reference/linear-agent-media-urls.json",
+      "bytes": 55,
+      "sha256": "7fb23520b0cf0a43369b62a7f9398a6fff75ddd903c16779d45fdd190789115a",
+      "usage": "private_reference_only"
+    },
+    {
+      "path": ".cache/v3-source/reference/linear-agent-page.html",
+      "bytes": 289250,
+      "sha256": "dcebdc2797113494dc03bb61e8e3478b90621c3a13139897ed0cee78b648cb3d",
+      "usage": "private_reference_only"
+    },
+    {
+      "path": ".cache/v3-source/reference/linear-agent-release.html",
+      "bytes": 521373,
+      "sha256": "0593f9afcea29ade0334c67fa4026592522751adb0724215aef783614e3642e5",
+      "usage": "private_reference_only"
+    },
+    {
+      "path": ".cache/v3-source/reference/linear-agent.mp4",
+      "bytes": 6293220,
+      "sha256": "6ecb1d9ff89d9c6ca0b71ceef0a0160a9ea9208773191b14e97776130318d1da",
+      "usage": "private_reference_only"
+    }
+  ]
+}

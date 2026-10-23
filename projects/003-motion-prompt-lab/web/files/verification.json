@@ -1,0 +1,80 @@
+{
+  "video": {
+    "width": 1280,
+    "height": 720,
+    "fps": 60.0,
+    "frames": 1200,
+    "duration": 20.0,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "container_duration": 20.0
+  },
+  "audio": {
+    "integrated_lufs": -14.02,
+    "true_peak_dbtp": -3.1,
+    "loudness_range_lu": 1.3,
+    "measurement": "FFmpeg loudnorm on decoded final MP4"
+  },
+  "freeze": {
+    "events": [
+      "freeze_start: 0",
+      "freeze_duration: 0.516667",
+      "freeze_end: 0.516667",
+      "freeze_start: 0.516667",
+      "freeze_duration: 0.866667",
+      "freeze_end: 1.38333",
+      "freeze_start: 1.38333",
+      "freeze_duration: 0.95",
+      "freeze_end: 2.33333",
+      "freeze_start: 2.33333",
+      "freeze_duration: 1.38333",
+      "freeze_end: 3.71667",
+      "freeze_start: 5.48333",
+      "freeze_duration: 2.23333",
+      "freeze_end: 7.71667",
+      "freeze_start: 9.46667",
+      "freeze_duration: 2.25",
+      "freeze_end: 11.7167",
+      "freeze_start: 13.5833",
+      "freeze_duration: 2.13333",
+      "freeze_end: 15.7167",
+      "freeze_start: 17.0833"
+    ],
+    "low_motion_seconds": 13.25,
+    "threshold_db": -50,
+    "duration_threshold_seconds": 0.5,
+    "limitation": "Full-frame pixel test only. A moving timer masks static main content; does NOT prove purposeful movement or satisfy the original artistic freeze rule."
+  },
+  "black": {
+    "events": [],
+    "limitation": "No detected black interval is not a compositional quality judgment."
+  },
+  "contrast": {
+    "ink_on_paper": 11.61,
+    "muted_on_paper": 5.67,
+    "mint_on_dark": 9.63,
+    "ink_on_orange": 5.69,
+    "limitation": "Design color pairs; does not measure every anti-aliased or transitional pixel."
+  },
+  "sync": {
+    "scene_start_frames": [
+      0,
+      240,
+      480,
+      720,
+      960
+    ],
+    "beat_frames": 30,
+    "scene_anchor_error_frames": 0,
+    "limitation": "Code anchor positions only; perceived visual peaks are not all measured. Audio has no dialogue."
+  },
+  "sha256": "8b7d1c540c1a1851de5d5011631baf2001b6acf3bd4b2dd3ec331c160dcb7867",
+  "scope": "One locally produced, iterated sample. No controlled prompt comparison, no claimed model speed benchmark.",
+  "not_verified": [
+    "Industry-best-reference parity",
+    "All motion perceptual peaks within one frame",
+    "All composition safe margins algorithmically verified",
+    "Narrative clarity with independent audience",
+    "3D / character performance / speech / vertical layout"
+  ]
+}

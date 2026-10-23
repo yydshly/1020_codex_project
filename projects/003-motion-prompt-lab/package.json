@@ -1,0 +1,20 @@
+{
+  "name": "motion-prompt-lab",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node src/build.mjs",
+    "audio": "python src/audio.py",
+    "render": "node src/render.mjs",
+    "verify": "python src/verify.py",
+    "audio:v2": "python src/audio-v2.py",
+    "render:v2": "node src/render-v2.mjs full",
+    "verify:v2": "python src/verify-v2.py",
+    "preview": "python src/serve.py"
+  },
+  "dependencies": {
+    "@napi-rs/canvas": "0.1.80",
+    "@resvg/resvg-js": "2.6.2"
+  }
+}

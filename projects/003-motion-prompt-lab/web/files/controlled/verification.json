@@ -1,0 +1,20 @@
+{
+  "protocol_hash_unchanged": true,
+  "shared_files_unchanged": 22,
+  "input_conditions_verified": true,
+  "original_text_unchanged_except_windows_newlines": true,
+  "videos": [
+    {
+      "label": "X",
+      "sha256": "ec965dc71fa55452c052235c7a72fac10af0d40336398b79d801b8d424c921f7",
+      "http_range": 206
+    },
+    {
+      "label": "Y",
+      "sha256": "351273de3dd7255c932de2134728091713d0f28c8f715b7f1cc1152de3577841",
+      "http_range": 206
+    }
+  ],
+  "blind_scores_unchanged_since_sealing": true,
+  "checked_utc": "2026-10-23T04:13:52.907444+00:00"
+}

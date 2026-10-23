@@ -1,0 +1,35 @@
+{
+  "status": "completed_with_limitations",
+  "start_utc": "2026-10-23T03:42:48.640525+00:00",
+  "finished_utc": "2026-10-23T04:02:48.141241+00:00",
+  "elapsed_seconds": 1199.501,
+  "output_file": "output.mp4",
+  "review_agent_count": 4,
+  "render_count": 6,
+  "known_issues": [
+    "Independent completed-candidate review found a visible craft/motion gap from the reference; final version added geometric handoffs but has not received a full new numerical score.",
+    "Ancillary UI labels and source paths are smaller than primary narrative text."
+  ],
+  "unverified": [
+    "Subjective audio quality and listening comfort",
+    "Perceptual music/SFX balance and exact codec playback A/V alignment",
+    "Quality parity with the reference",
+    "Full independent numerical review after final geometric amendments"
+  ],
+  "unfinished_requirements": [
+    "Cannot claim the target of matching reference quality has been achieved."
+  ],
+  "deliverables": [
+    "output.mp4",
+    "output-music-only.mp4",
+    "music-only.wav",
+    "render.cjs",
+    "audio.py",
+    "master.py",
+    "produce.ps1",
+    "evidence/contact-sheet.jpg",
+    "evidence/quality.json",
+    "facts.md",
+    "ledger.md"
+  ]
+}

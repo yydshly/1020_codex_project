@@ -1,0 +1,104 @@
+{
+  "mix_raw_loudnorm": {
+    "input_i": "-26.48",
+    "input_tp": "-8.72",
+    "input_lra": "3.10",
+    "input_thresh": "-36.48",
+    "output_i": "-14.92",
+    "output_tp": "-1.00",
+    "output_lra": "1.50",
+    "output_thresh": "-24.92",
+    "normalization_type": "dynamic",
+    "target_offset": "0.92"
+  },
+  "music_rms_db": -27.896972571189448,
+  "sfx_rms_db": -57.428040035024694,
+  "detected_max_error_frames": 0,
+  "event_spectral_measurements": [
+    {
+      "id": "transition-1",
+      "kind": "whoosh",
+      "energy_band_5_95_hz": [
+        595.0,
+        755.0
+      ],
+      "centroid_hz": 675.0
+    },
+    {
+      "id": "transition-2",
+      "kind": "whoosh",
+      "energy_band_5_95_hz": [
+        595.0,
+        755.0
+      ],
+      "centroid_hz": 675.0
+    },
+    {
+      "id": "transition-3",
+      "kind": "whoosh",
+      "energy_band_5_95_hz": [
+        595.0,
+        755.0
+      ],
+      "centroid_hz": 675.0
+    },
+    {
+      "id": "transition-4",
+      "kind": "whoosh",
+      "energy_band_5_95_hz": [
+        595.0,
+        755.0
+      ],
+      "centroid_hz": 675.0
+    },
+    {
+      "id": "transition-5",
+      "kind": "whoosh",
+      "energy_band_5_95_hz": [
+        595.0,
+        755.0
+      ],
+      "centroid_hz": 675.0
+    },
+    {
+      "id": "transition-6",
+      "kind": "whoosh",
+      "energy_band_5_95_hz": [
+        595.0,
+        755.0
+      ],
+      "centroid_hz": 675.0
+    },
+    {
+      "id": "transition-7",
+      "kind": "whoosh",
+      "energy_band_5_95_hz": [
+        595.0,
+        755.0
+      ],
+      "centroid_hz": 675.0
+    },
+    {
+      "id": "click-0",
+      "kind": "click",
+      "energy_band_5_95_hz": [
+        1685.7,
+        1885.7
+      ],
+      "centroid_hz": 1790.5
+    },
+    {
+      "id": "click-2",
+      "kind": "click",
+      "energy_band_5_95_hz": [
+        1685.7,
+        1885.7
+      ],
+      "centroid_hz": 1790.5
+    }
+  ],
+  "spectral_scope": "Energy bands measured from generated event PCM, not perceived masking in final AAC mix.",
+  "seed": 7311,
+  "generation": "original code synthesis, no generative audio model, no artist reference",
+  "listening": "Audio-only preview exported before complete movie; subjective hearing cannot be certified by an agent without audio listening capability."
+}

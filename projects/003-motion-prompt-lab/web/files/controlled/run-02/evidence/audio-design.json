@@ -1,0 +1,26 @@
+{
+  "bpm": 120,
+  "beat_seconds": 0.5,
+  "event_seconds": [
+    0,
+    3,
+    5,
+    9,
+    12.5,
+    16.5
+  ],
+  "event_frame_offsets": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "music_rms_dbfs": -21.411018370228625,
+  "sfx_rms_dbfs": -56.93114008639036,
+  "sfx_below_music_db": 35.52012171616173,
+  "seed": 230102,
+  "voice": false,
+  "subjective_listening": "unverified"
+}

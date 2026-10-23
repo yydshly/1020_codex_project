@@ -1,0 +1,15 @@
+{
+  "scope": "Actual current in-app browser playback of a second one-second RGB lossless codec probe with explicit color metadata, not the final film",
+  "probe_sha256": "6e0d1db8cc48bfb33fabd3613a6802c0f06d4a949bff3fed249553459aeb8e49",
+  "method": "CUA: reload local test page with the new video URL, click play, inspect actual rendered media state and screenshot against the source PNG",
+  "duration": 1,
+  "currentTime": 1,
+  "ended": true,
+  "readyState": 4,
+  "error": null,
+  "playback_transport": "PASS",
+  "visual_color_compatibility": "PASS_WITH_SCOPE",
+  "observation": "The paper background and dark green return to visually expected appearance. The severe pink-purple/bright-green shift in the first probe is absent.",
+  "limitations": "Visual comparison, not a pixel colorimeter. This one-second still does not establish final full-film decode performance or support in other browsers.",
+  "screenshot": "assets/v3-rgb-tagged-browser-probe.png"
+}

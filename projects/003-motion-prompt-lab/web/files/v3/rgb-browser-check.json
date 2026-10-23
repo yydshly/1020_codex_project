@@ -1,0 +1,16 @@
+{
+  "scope": "Actual current in-app browser playback of the one-second RGB lossless codec engineering probe, not the final film",
+  "probe_sha256": "094fbe2d22ee78097c04d7e062e35633f8f4186caee898f3f0063a6e9ad5bc7e",
+  "method": "CUA: open local HTML video, click play, read rendered media state, visually inspect and save screenshot",
+  "duration": 1,
+  "currentTime": 1,
+  "ended": true,
+  "readyState": 4,
+  "videoWidth": 1280,
+  "videoHeight": 720,
+  "error": null,
+  "playback_transport": "PASS",
+  "visual_color_compatibility": "FAIL",
+  "observation": "Paper background appears pink-purple and dark green appears bright green. Playback success does not establish correct displayed colors.",
+  "screenshot": "assets/v3-rgb-browser-probe.png"
+}

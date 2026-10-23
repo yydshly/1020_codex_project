@@ -1,0 +1,257 @@
+{
+  "versionNote": "第二轮 / 20 秒 / 尚需返修",
+  "title": "V3 原文执行实验尚未完成验收，第二轮结论仍是“再改一轮”。",
+  "body": "已有三次分镜评审、八场首评、两次完整影片与两次独立整片评审。每轮整片先做无声盲读，再检查原文、事实、转场与音轨。V3 第三轮只有修订准备与工程探针，没有完整成片；不能把流程进行中写成原文全部执行完成。",
+  "issues": [
+    "第二轮仍有交接遮字、结尾重复标题、第七场近静止，以及后半段内容重复。",
+    "教学披露有一条跨工具引用上下文错误；“官方来源”模拟按钮的语义仍需修正。",
+    "主观音质、音效听感与整体观看体验未完成可靠听审。最终执行审计与质量闭环尚未完成。",
+    "179 项清单是早期证据底稿，不能当作最终逐条通过证明。"
+  ],
+  "metrics": [
+    [
+      "实际输入",
+      "简化需求",
+      "另写项目指令",
+      "原文 + 独立 brief"
+    ],
+    [
+      "画面生成",
+      "Canvas 2D",
+      "SVG / resvg / FFmpeg",
+      "SVG / resvg / FFmpeg"
+    ],
+    [
+      "时长 / 帧率",
+      "20 s / 60 fps",
+      "20 s / 60 fps",
+      "20 s / 60 fps"
+    ],
+    [
+      "≥0.5 秒低运动段累计（−50 dB）",
+      "13.25 s",
+      "1.183 s",
+      "3.017 s"
+    ],
+    [
+      "被测 MP4 解码响度",
+      "−14.02 LUFS",
+      "−14.04 LUFS",
+      "−14.05 LUFS"
+    ],
+    [
+      "被测 MP4 解码真峰值",
+      "−3.10 dBTP",
+      "−5.62 dBTP",
+      "−4.92 dBTP"
+    ],
+    [
+      "当前判断",
+      "重复遮罩与停滞明显",
+      "可作二维实验片交付；严格标准仍未全过",
+      "第二轮整片评审：再改一轮"
+    ],
+    [
+      "成片身份",
+      "V1 原文件保留",
+      "V2 原文件保留",
+      "V3 Round 02；不是终稿"
+    ]
+  ],
+  "requirements": [
+    {
+      "id": "INPUT",
+      "status": "PASS",
+      "label": "原文输入完整性",
+      "detail": "原文缓存 3,821 字符、9,143 字节，哈希与 source-manifest.json 一致；只证明本地输入完整性，不独立认证第三方转存的远端真实性。"
+    },
+    {
+      "id": "BRIEF",
+      "status": "PASS",
+      "label": "独立任务输入",
+      "detail": "brief-input.md 单独提供主题、观众、规格与来源；未用 V2 指令替代原文。"
+    },
+    {
+      "id": "REVIEWS",
+      "status": "PASS",
+      "label": "已完成阶段有独立评审",
+      "detail": "存在三份分镜、八份场景首评、两份整片评审，以及两份先行无声盲读。报告存在不等于质量通过。"
+    },
+    {
+      "id": "FORMAT",
+      "status": "PASS",
+      "label": "第二轮影片规格",
+      "detail": "measurements-round-02.json：1280×720、60fps、1,200帧、20秒。"
+    },
+    {
+      "id": "AUDIO",
+      "status": "PASS",
+      "label": "第二轮响度、真峰值与主要事件时序",
+      "detail": "最终 AAC 测得 −14.05 LUFS / −4.92 dBTP；独立评审的残差模板匹配为 0 帧偏移。这不代表音效听感通过。"
+    },
+    {
+      "id": "HANDOFF",
+      "status": "FAIL",
+      "label": "交接遮挡与重复标题",
+      "detail": "review-round-02.md：05→06 标识穿过 Kokoro；07→08 标识压标题，存在两份标题残影。"
+    },
+    {
+      "id": "MOTION",
+      "status": "FAIL",
+      "label": "后段运动与内容推进",
+      "detail": "同口径 −50dB 检测累计3.017秒低运动，最长1.267秒；评审另指出第七场感知近静止及实验页重复状态。机器指标不替代导演判断。"
+    },
+    {
+      "id": "FACT-CONTEXT",
+      "status": "FAIL",
+      "label": "教学披露的引用上下文",
+      "detail": "第二轮 facts 中 demo 引用来自 Podcastfy，而实际画面用于 Kokoro；词句存在不等于引用上下文正确。历史输入快照保留。"
+    },
+    {
+      "id": "REFERENCE",
+      "status": "FAIL",
+      "label": "与实际参考片的表现比较",
+      "detail": "独立评审认为后半段仍偏资料板轮播，不能与实际查看的 Linear 参考并列而不显弱。"
+    },
+    {
+      "id": "HEARING",
+      "status": "UNVERIFIED",
+      "label": "人耳听感与频段遮蔽",
+      "detail": "实际设备播放与技术测量已做；没有据此伪称亲耳确认音乐适配、音效清晰或不存在遮蔽。"
+    },
+    {
+      "id": "FINAL",
+      "status": "UNVERIFIED",
+      "label": "最终执行审计与全部质量闭环",
+      "detail": "只有早期179项底稿；没有最终审计文件与已通过的终稿影片。"
+    },
+    {
+      "id": "VOICE",
+      "status": "N/A",
+      "label": "旁白与对白同步",
+      "detail": "本次 brief 选择音乐加音效，没有配音；不能外推为已验证对白能力。"
+    }
+  ],
+  "artifacts": [
+    {
+      "href": "files/v3/review-storyboard.md",
+      "label": "review-storyboard.md"
+    },
+    {
+      "href": "files/v3/review-storyboard-r2.md",
+      "label": "review-storyboard-r2.md"
+    },
+    {
+      "href": "files/v3/review-storyboard-r3.md",
+      "label": "review-storyboard-r3.md"
+    },
+    {
+      "href": "files/v3/review-scene01.md",
+      "label": "review-scene01.md"
+    },
+    {
+      "href": "files/v3/review-scene02.md",
+      "label": "review-scene02.md"
+    },
+    {
+      "href": "files/v3/review-scene03.md",
+      "label": "review-scene03.md"
+    },
+    {
+      "href": "files/v3/review-scene04.md",
+      "label": "review-scene04.md"
+    },
+    {
+      "href": "files/v3/review-scene05.md",
+      "label": "review-scene05.md"
+    },
+    {
+      "href": "files/v3/review-scene06.md",
+      "label": "review-scene06.md"
+    },
+    {
+      "href": "files/v3/review-scene07.md",
+      "label": "review-scene07.md"
+    },
+    {
+      "href": "files/v3/review-scene08.md",
+      "label": "review-scene08.md"
+    },
+    {
+      "href": "files/v3/blind-story-round-01.md",
+      "label": "blind-story-round-01.md"
+    },
+    {
+      "href": "files/v3/review-round-01.md",
+      "label": "review-round-01.md"
+    },
+    {
+      "href": "files/v3/blind-story-round-02.md",
+      "label": "blind-story-round-02.md"
+    },
+    {
+      "href": "files/v3/review-round-02.md",
+      "label": "review-round-02.md"
+    },
+    {
+      "href": "files/v3/history-index.json",
+      "label": "history-index.json"
+    },
+    {
+      "href": "files/v3/render-abort-01.json",
+      "label": "render-abort-01.json"
+    },
+    {
+      "href": "files/v3/render-abort-02.json",
+      "label": "render-abort-02.json"
+    },
+    {
+      "href": "media/v3/proof.mp4",
+      "label": "正式构建前的 4 秒样片"
+    },
+    {
+      "href": "media/v3/round-01.mp4",
+      "label": "V3 第一轮完整影片 · 评审退回"
+    },
+    {
+      "href": "media/v3/round-02.mp4",
+      "label": "V3 第二轮完整影片 · 评审退回"
+    },
+    {
+      "href": "media/v3/history/scene01-r1.mp4",
+      "label": "第 1 场首评影片 · 历史原文件"
+    },
+    {
+      "href": "media/v3/history/scene02-r1.mp4",
+      "label": "第 2 场首评影片 · 历史原文件"
+    },
+    {
+      "href": "media/v3/history/scene03-r1.mp4",
+      "label": "第 3 场首评影片 · 历史原文件"
+    },
+    {
+      "href": "media/v3/history/scene04-r1.mp4",
+      "label": "第 4 场首评影片 · 历史原文件"
+    },
+    {
+      "href": "media/v3/history/scene05-r1.mp4",
+      "label": "第 5 场首评影片 · 历史原文件"
+    },
+    {
+      "href": "media/v3/history/scene06-r1.mp4",
+      "label": "第 6 场首评影片 · 历史原文件"
+    },
+    {
+      "href": "media/v3/history/scene07-r1.mp4",
+      "label": "第 7 场首评影片 · 历史原文件"
+    },
+    {
+      "href": "media/v3/history/scene08-r1.mp4",
+      "label": "第 8 场首评影片 · 历史原文件"
+    }
+  ],
+  "video_file": "media/v3/round-02.mp4",
+  "video_sha256": "5b02258af372e89a3d54a1e26ebcebb1bd35052c2ea5aecadbb0b768c89f23e2",
+  "review_file": "files/v3/review-round-02.md",
+  "status": "needs_revision"
+}

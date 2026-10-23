@@ -1,0 +1,7 @@
+{
+  "frames": 1200,
+  "seconds": 28.64,
+  "renderer": "@napi-rs/canvas 0.1.80",
+  "fontSHA256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+  "output": "web/media/research-film.mp4"
+}

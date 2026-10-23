@@ -1,0 +1,47 @@
+<section id="compare" class="section compare-section">
+  <div class="section-head"><div><p class="eyebrow">V3 / ORIGINAL PROMPT RUN</p><h2>三版效果，连同各自的输入与缺陷。</h2></div><p>原文保持原样，brief单独提供。<br>结果、失败项和评审记录放在一起。</p></div>
+  <div class="version-explanation"><strong>“第三版”究竟指什么？</strong><p>此前只有 V1、V2 两个作品。“三轮渲染”是 V2 内部修订后导出三次，不是第三个作品。这里的 <b>V3</b> 才是本轮新增的原文执行实验；V3 自己也可能经过多次评审和渲染。</p></div>
+  <div class="run-inputs">
+    <article><span class="tag">V1</span><h3>简化实现</h3><p>五个独立场景与重复遮罩。未完整执行原文创作要求。</p></article>
+    <article><span class="tag">V2</span><h3>另写的执行指令</h3><p>补做连续变形，多轮修订；使用另行编写的项目指令，不能称作原文严格复现。</p></article>
+    <article><span class="tag amber">V3 / 本次</span><h3>原文 + 独立 brief</h3><p>新执行代理直接读取未改写全文，从方案开始制作；按原文安排独立评审和迭代。</p></article>
+  </div>
+  <div id="triple-comparison" class="comparison">
+    <div class="tri-players">
+      <figure class="compare-card" data-version="1"><figcaption><strong>V1 · 简化实现</strong><span>历史文件保留</span></figcaption><video id="tri-v1" muted playsinline preload="metadata" poster="media/poster.png" aria-label="三版对比：V1"><source src="media/research-film.mp4" type="video/mp4"></video><a href="media/research-film.mp4" download>下载 V1 ↓</a></figure>
+      <figure class="compare-card" data-version="2"><figcaption><strong>V2 · 另写指令</strong><span>历史文件保留</span></figcaption><video id="tri-v2" muted playsinline preload="metadata" poster="media/v2/poster.png" aria-label="三版对比：V2"><source src="media/v2/research-film-v2.mp4" type="video/mp4"></video><a href="media/v2/research-film-v2.mp4" download>下载 V2 ↓</a></figure>
+      <figure class="compare-card" data-version="3"><figcaption><strong>V3 · 原文执行实验</strong><span id="v3-version-note">第二轮 · 尚需返修</span></figcaption><video id="tri-v3" playsinline preload="metadata" poster="media/v3/round-02-poster.png" aria-label="三版对比：V3"><source src="media/v3/round-02.mp4" type="video/mp4"></video><a href="media/v3/round-02.mp4" download>下载 V3 第二轮 ↓</a></figure>
+    </div>
+    <div class="compare-controls">
+      <div class="compare-buttons"><button id="tri-play" class="button primary">同步播放三版</button><button id="tri-restart" class="button secondary">从头重播</button><button id="tri-mute" class="button secondary" aria-pressed="true">关闭 V3 声音</button></div>
+      <div class="tri-views" role="group" aria-label="选择对比布局"><button data-tri-view="all" aria-pressed="true">三版一起看</button><button data-tri-view="13" aria-pressed="false">V1 对比 V3</button><button data-tri-view="23" aria-pressed="false">V2 对比 V3</button><button data-tri-view="3" aria-pressed="false">放大 V3</button></div>
+      <label for="tri-seek"><span>共同时间轴 / 拖动即暂停</span><output id="tri-time">0.00 / 20.00 s · 第 1 帧</output></label><input id="tri-seek" type="range" min="0" max="1199" step="1" value="0">
+      <p id="tri-status" class="small" role="status">三版近似同步，默认仅听 V3。小字请使用“放大 V3”或下载原尺寸影片。</p>
+    </div>
+  </div>
+  <div class="v3-verdict"><p class="eyebrow">WHAT ACTUALLY HAPPENED</p><h3 id="v3-result-title">读取本轮实际验收结论…</h3><p id="v3-result-body"></p><div id="v3-failed-items"></div></div>
+  <details class="prompt-complete"><summary>逐轮审片与中间产物 · 都属于 V3 内部迭代</summary><div><p>分镜退回、逐镜检查和整片复核分别留存。这里的轮次不是新增作品版本。</p><div id="v3-review-links" class="download-list"></div></div></details>
+  <div class="comparison-table"><table><caption>同一场景与规格；制作流程和投入不同，不能只把差异归因于提示词。</caption><thead><tr><th>可核查项目</th><th>V1</th><th>V2</th><th>V3</th></tr></thead><tbody id="tri-metrics"><tr><td colspan="4">正在读取结果…</td></tr></tbody></table></div>
+  <p class="small">低运动检测仅统计持续至少 0.5 秒的片段，更短的停滞不在该累计值中。像素变化不能证明动作有意义，也不代表导演或审美质量通过。</p>
+  <details class="prompt-complete"><summary>核查原文输入与当前阶段证据 · 不等于最终验收</summary><div>
+    <p>原文取自指定帖子的完整正文，共 <b>3,821 个字符</b>，作为独立输入保存。没有用 V2 的执行版替换原文。原帖直连返回403，本次通过对应帖子的转存接口取得正文；来源与完整性记录可以下载核查。</p>
+    <p class="small">SHA-256：<code class="source-hash">ab01c038ef3b71821bad85b2ddb45ca37891c5fa2d019adb59572de6bbfcb037</code></p>
+    <div class="prompt-links"><a class="button primary" href="https://x.com/CarsonYangk8s/status/2111520795575116016" target="_blank" rel="noreferrer">阅读作者原文 ↗</a><a class="button secondary" href="files/v3/source-manifest.json" download>下载原文完整性记录 ↓</a><a class="button secondary" href="files/v3/brief-input.md" download>下载独立 brief 输入 ↓</a></div>
+    <p>仅填任务字段；原文中音效应高于/低于音乐的矛盾，按其明确的 brief 优先规则，选择“音效低于音乐”。其他未达成项保留在报告中，不用修改 brief 来豁免。</p>
+    <label for="v3-quality-filter" class="small">筛选验收状态 </label><select id="v3-quality-filter" aria-label="筛选验收状态"><option value="all">全部条款</option><option value="FAIL">未通过</option><option value="UNVERIFIED">未验证</option><option value="PASS">已通过</option><option value="N/A">不适用</option></select>
+    <p class="small">以下是当前影片与流程的重点核查。完整 179 项底稿可下载，但它形成于早期、尚未完成最终签署，不代表 179 项全部通过。</p><div id="v3-quality-list"><p>正在读取逐条验收结果…</p></div>
+  </div></details>
+  <div class="v2-docs"><div><h3>V3 执行证据</h3><div class="download-list">
+    <a href="files/v3/snapshots/round-02-brief.md" download>第二轮对应方案 <span>MD ↓</span></a>
+    <a href="files/v3/snapshots/round-02-facts.json" download>第二轮事实输入 · 含评审指出的引用问题 <span>JSON ↓</span></a>
+    <a href="files/v3/style-guide.md" download>风格手册 <span>MD ↓</span></a>
+    <a href="files/v3/snapshots/round-02-timing.json" download>第二轮对应时间轴 <span>JSON ↓</span></a>
+    <a href="files/v3/ledger.md" download>逐轮评审与修订账本 <span>MD ↓</span></a>
+    <a href="files/v3/quality-inventory-draft.json" download>179 项要求底稿 · 非最终验收 <span>MD ↓</span></a>
+    <p class="small">最终执行审计尚未完成，当前没有可下载的最终审计结论。</p>
+    <a href="files/v3/reproduce.md" download>实际复现命令与环境前提 <span>MD ↓</span></a>
+    <a href="files/v3/measurements-round-02.json" download>当前 V3 第二轮实际文件测量 <span>JSON ↓</span></a>
+    <a href="files/v3/human-review.md" download>仍需亲眼、亲耳确认的项目 <span>MD ↓</span></a>
+    <a href="media/v3/round-02-contact.jpg" target="_blank">V3 第二轮影片抽帧总览 <span>JPG ↗</span></a>
+  </div></div><div class="audio-panel"><p class="eyebrow">V3 / ORIGINAL SCORE</p><h3>纯音乐与实际影片</h3><audio controls preload="none" src="media/v3/music-only.m4a" aria-label="V3纯音乐"></audio><a class="text-link" href="media/v3/music-only.m4a" download>下载 V3 纯音乐 ↓</a><p>原文执行是本次的输入与过程约束；“全部质量标准通过”需要另外的证据。失败与无法核验也属于这次实验的真实结果。</p><a href="#v2-comparison">查看原 V1 / V2 对比与记录 ↓</a></div></div>
+</section>

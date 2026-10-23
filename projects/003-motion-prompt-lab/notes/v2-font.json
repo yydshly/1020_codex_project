@@ -1,0 +1,7 @@
+{
+  "originalSHA256": "2c76254f6fc379fddfce0a7e84fb5385bb135d3e399294f6eeb6680d0365b74b",
+  "subsetSHA256": "50ab00133fe2b8204ff3df0bc60f57454951c9934b52d0372a7419cfd58c7605",
+  "subsetBytes": 57852,
+  "license": "SIL OFL1.1",
+  "method": "fontTools4.60.1; all characters in src/film-v2.mjs; no system fallback"
+}

@@ -1,0 +1,29 @@
+{
+  "scope": "One-second still codec engineering probe, not full movie or creative render",
+  "codec": "libx264rgb CRF0 rgb24",
+  "max_rgb_error": 0,
+  "changed_pixels": 0,
+  "browser_playback": "Plays but FAIL color presentation: parent actual CUA saw pink/purple paper and vivid green instead of source colors.",
+  "source_file": ".cache/v3-source/color-proof-source.png",
+  "output": ".cache/v3-source/color-proof-rgb.mp4",
+  "sha256": {
+    ".cache/v3-source/color-proof-source.png": "881187bfdd3cd24b49d1f17036e9630229e29d12ce3aaf0c548ac8a4ed7ddce6",
+    ".cache/v3-source/color-proof-rgb.mp4": "094fbe2d22ee78097c04d7e062e35633f8f4186caee898f3f0063a6e9ad5bc7e",
+    ".cache/v3-source/color-proof-decoded.png": "7bc8bb5d0f786527b1af275a79f37560eeff255c3a18b0ee0a8a4cacfad79735"
+  },
+  "browser_evidence": "assets/v3-rgb-browser-probe.png",
+  "tagged_probe": {
+    "output": ".cache/v3-source/color-proof-rgb-tagged.mp4",
+    "explicit_tags": [
+      "primaries bt709",
+      "transfer iec61966-2-1",
+      "matrix rgb",
+      "full range",
+      "MOV write_colr"
+    ],
+    "max_rgb_error": 0,
+    "browser_result": "Parent CUA actual play to 1s end, error null; paper/green visually matched source. Only this IAB one-second probe tested; not all browsers or final long video.",
+    "browser_evidence": "assets/v3-rgb-tagged-browser-probe.png",
+    "sha256": "6e0d1db8cc48bfb33fabd3613a6802c0f06d4a949bff3fed249553459aeb8e49"
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "font_stack": "Segoe UI, Microsoft YaHei",
+  "runtime_files": [
+    "msyh.ttc.subset.ttf",
+    "segoeui.ttf.subset.ttf"
+  ],
+  "source": "C:/Windows/Fonts; original local copies; final rendered raster output only, no public font redistribution",
+  "unused": "NotoSansCJKsc-Regular.otf retained as abandoned early attempt, not loaded by V3 renderer",
+  "files": [
+    {
+      "file": ".cache/v3-source/fonts/msyh.ttc",
+      "bytes": 19704352,
+      "sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f"
+    },
+    {
+      "file": ".cache/v3-source/fonts/segoeui.ttf",
+      "bytes": 960076,
+      "sha256": "704eada12961a27fd271f7d3b09e2066520e758390c1776744eff430fee30f6e"
+    },
+    {
+      "file": ".cache/v3-source/fonts/msyh.ttc.subset.ttf",
+      "bytes": 510624,
+      "sha256": "e8f4e95de829bed80a0e208f80e7e8e45df37f4407f59185fe23ed44607e325a"
+    },
+    {
+      "file": ".cache/v3-source/fonts/segoeui.ttf.subset.ttf",
+      "bytes": 35952,
+      "sha256": "3da8af95d66b4b5404c46ebeb0c34a31b1cfabc6bd6c59b90dda072d1ab282c1"
+    }
+  ],
+  "subsetting": "fontTools 4.60.1; preserved preceding subset coverage and added current source glyphs. Added previously absent \u4e13 and \u2197 for round03."
+}

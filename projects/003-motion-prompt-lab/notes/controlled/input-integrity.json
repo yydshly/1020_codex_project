@@ -1,0 +1,25 @@
+{
+  "note": "Windows write_text wrote CRLF; registered input hashes were LF-normalized. No text changes. Original source hash remains raw source. Actual disk SHA separately recorded before run02 dispatch.",
+  "records": [
+    {
+      "run": "run-01",
+      "actual_disk_sha256": "0068d159a6a151b9cc690b762d5c914f0a07212f7baeb9a290e29fd3402204e2",
+      "actual_bytes": 13965,
+      "normalized_chars": 5845,
+      "actual_chars": 5970,
+      "registered_normalized_sha256": "c4d456e17ae1c566b8d8d42c27b883ca8fd5333e5d37fff7b560df6704ca7229",
+      "normalized_sha256_matches": true,
+      "original_text_matches_after_newline_normalization": true
+    },
+    {
+      "run": "run-02",
+      "actual_disk_sha256": "77a3163b30fbe2d93e3d028ad77d1140446b76d6bbed785bbf41e1477dc0b950",
+      "actual_bytes": 4882,
+      "normalized_chars": 2079,
+      "actual_chars": 2099,
+      "registered_normalized_sha256": "fb22bda00b92cf271673013eba99d9c2335664aa607d3f05c2afeaed1efc8e90",
+      "normalized_sha256_matches": true,
+      "original_text_matches_after_newline_normalization": null
+    }
+  ]
+}

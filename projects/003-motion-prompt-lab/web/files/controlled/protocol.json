@@ -1,0 +1,203 @@
+{
+  "id": "controlled-20261023",
+  "registered_utc": "2026-10-23T03:21:56.840632+00:00",
+  "scenario": "GitHub 项目研究集 / Kokoro 条目 / 20秒产品片",
+  "per_condition_seconds": 1200,
+  "max_internal_review_agents": 12,
+  "max_render_workers": 2,
+  "runs": 2,
+  "production_order": "随机一次，串行执行；映射私存直到盲评封存",
+  "contexts": "fork_turns=none；相同父模型/推理配置继承；不指定覆盖",
+  "model_snapshot": "not_exposed",
+  "token_budget": "not_measurable",
+  "cost": "not_measurable",
+  "controls": [
+    "同一brief",
+    "同一质量标准",
+    "同一冻结事实/素材/参考",
+    "同一机器/依赖",
+    "同一时间上限",
+    "同一可用评审工具额度",
+    "不读取旧版实现",
+    "外部评测同标准、匿名、逆序复核"
+  ],
+  "treatment": "原提示词逐字附加到共同输入；对照仅明确目标/成片标准，不规定内部制作流程",
+  "original_sha256": "ab01c038ef3b71821bad85b2ddb45ca37891c5fa2d019adb59572de6bbfcb037",
+  "original_bytes": 9143,
+  "original_chars": 3821,
+  "source_url": "https://x.com/CarsonYangk8s/status/2111520795575116016",
+  "limitations": [
+    "一组一条，无多次随机重复",
+    "实际token、供应端快照、采样种子不能锁定",
+    "文件隔离依赖指令约束，无OS沙箱",
+    "共同素材由协调员预采集，测试不包含从零搜索素材成本",
+    "相同上限不保证消耗相同",
+    "生产按调度起点计时，环境负载非完全可控",
+    "评审为同系列模型的代理，非人类观众；主观听感未验证"
+  ],
+  "shared_manifest": [
+    {
+      "file": "brief.md",
+      "sha256": "a09fe304a7bd0c036e7481d786a6ddc9759f18324bba903bc448df15decfd1cd",
+      "bytes": 2441
+    },
+    {
+      "file": "captures/capture-metadata.json",
+      "sha256": "aec02cc9fb2e5af029b2c6e21ef8c165602eb9e0773472cb2049bf8eabdfc4eb",
+      "bytes": 10534
+    },
+    {
+      "file": "captures/compare-2560x1440.png",
+      "sha256": "87925c37b592b82b0f9a74a33a90b35e45013e7ced9c6da9fc40eff6c8f3b94a",
+      "bytes": 162438
+    },
+    {
+      "file": "captures/experiments-2560x1440.png",
+      "sha256": "2a9ea93b4293e1d1ef192966c544ab5057138da287d1685631a63771f675ab32",
+      "bytes": 165863
+    },
+    {
+      "file": "captures/kokoro-2560x1440.png",
+      "sha256": "54a25441c51a9deccc41384bc475670bd1b8c437d2f0a9755f9e5215a4ca2367",
+      "bytes": 156537
+    },
+    {
+      "file": "captures/overview-2560x1440.png",
+      "sha256": "002baa8b398f23c92958776a034dfbecf3fcc932276d5de09398ab79991f2bd6",
+      "bytes": 188935
+    },
+    {
+      "file": "captures/source-favicon.svg",
+      "sha256": "d30d2cce0fdf872d88a94da9b783fa05903233ed8c239ce55fd1699836cda43a",
+      "bytes": 192
+    },
+    {
+      "file": "fonts/msyh.ttc",
+      "sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f",
+      "bytes": 19704352
+    },
+    {
+      "file": "fonts/segoeui.ttf",
+      "sha256": "704eada12961a27fd271f7d3b09e2066520e758390c1776744eff430fee30f6e",
+      "bytes": 960076
+    },
+    {
+      "file": "product/notes/07-experiments.md",
+      "sha256": "cb12ec7903de47491376894f4bd0a1446e3bc251266a2dc164432a5dd8303bab",
+      "bytes": 3635
+    },
+    {
+      "file": "product/notes/sources.json",
+      "sha256": "af783d41e8e5ea736913112c3a1e78698a53acd1ed6c558695029c0b6e487c68",
+      "bytes": 14637
+    },
+    {
+      "file": "product/project.json",
+      "sha256": "eaf18e2edd5579c5923c2476b246d54f2c3cad917a08050be3703c734ab2d5b0",
+      "bytes": 1192
+    },
+    {
+      "file": "product/README.md",
+      "sha256": "58ae69381da652db99c2ad93f3ef75ad1ba4f2f41bd3e7b6eaac28defd450b18",
+      "bytes": 12889
+    },
+    {
+      "file": "product/web/app.js",
+      "sha256": "6854cc1a12b52b4da062b7685658d77049fa3bc22e1a333682ec7c62fc5ced91",
+      "bytes": 25115
+    },
+    {
+      "file": "product/web/data.js",
+      "sha256": "1839890fb99b78a5fd44190706861b821f69a54a50923ca00e47637a4a3274b5",
+      "bytes": 95525
+    },
+    {
+      "file": "product/web/index.html",
+      "sha256": "cd247704afb49c8d236eff01a784cbba401284d61d637ca2d07a5ad1ba53eb67",
+      "bytes": 3417
+    },
+    {
+      "file": "product/web/kokoro-learning.js",
+      "sha256": "efd19b6c646d0e6879d5c485a31fa87d02c5b12b08306512052cbc24aa8dfd12",
+      "bytes": 21038
+    },
+    {
+      "file": "product/web/styles.css",
+      "sha256": "d21cdb85b0a478d3777efb599c924c8935bf588c4bf2df84227feb4567aba5d2",
+      "bytes": 54951
+    },
+    {
+      "file": "reference.mp4",
+      "sha256": "6ecb1d9ff89d9c6ca0b71ceef0a0160a9ea9208773191b14e97776130318d1da",
+      "bytes": 6293220
+    },
+    {
+      "file": "repository-README.md",
+      "sha256": "031d3b41fcb87d7775b4c35872985b87a20c0e3af63b621fd3c72eaf1c27fd25",
+      "bytes": 8493
+    },
+    {
+      "file": "rubric.json",
+      "sha256": "50397b57bc14c4c0b876af3d3614d5a11a157f4e9d81f6d9280c547bba4ce785",
+      "bytes": 2316
+    },
+    {
+      "file": "run-rules.md",
+      "sha256": "8e727a42a1e80d32b99d2f3da3b7ca1895a80173a565f824b9b974bf8cb21ccb",
+      "bytes": 2248
+    }
+  ],
+  "rubric": {
+    "version": 1,
+    "primary": "两名盲评的共同可判断维度（90 分）均值，另列音频技术（10 分），不计算缺失主观听感的伪满分",
+    "dimensions": [
+      {
+        "id": "story",
+        "name": "内容与静音理解",
+        "max": 20,
+        "anchors": "0无法理解，10能辨主题但因果弱，20首秒钩子/过程/结尾清楚"
+      },
+      {
+        "id": "motion",
+        "name": "连续变形与运动设计",
+        "max": 25,
+        "anchors": "0静态拼板，12有衔接但重复/停滞，25内容驱动、连续交接、速度层次、无穿字"
+      },
+      {
+        "id": "readability",
+        "name": "阅读与版式",
+        "max": 20,
+        "anchors": "0关键信息不可读，10偶发遮挡或仓促，20文字清晰、节奏合适、安全边距充分"
+      },
+      {
+        "id": "craft",
+        "name": "视觉完成度与参考差距",
+        "max": 15,
+        "anchors": "0粗糙错误，7可用但显模板化，15层次/构图/细节足以接近参考；高分必须有具体证据"
+      },
+      {
+        "id": "truth",
+        "name": "事实与产品真实性",
+        "max": 10,
+        "anchors": "0重大编造，5来源/演示属性含混，10UI与事实可追溯，教学和待实测标注明确"
+      }
+    ],
+    "technical_audio": {
+      "max": 10,
+      "loudness": 4,
+      "true_peak": 3,
+      "audio_present_full_length": 3,
+      "subjective_listening": "unverified; 不计入视觉盲评分"
+    },
+    "hard_gates": [
+      "20s/1280x720/60fps",
+      "可解码完整MP4",
+      "无重大虚构事实",
+      "无关键信息遮挡或缺失"
+    ],
+    "sampling": "每0.2秒抽帧；先仅2fps无声拼版复述；之后密集检查转场，至少包含每个转场中点前后0.1秒",
+    "low_motion": "FFmpeg freezedetect=n=-50dB:d=0.5，仅是像素指标，不替代语义评审；20秒阈值总计<=2/3s且单段<=0.5s",
+    "winner_rule": "只有两位盲评同方向且90分尺度均值差>=5，才说本次观察有方向性优势；否则无明确优势。N=1，不推断一般因果效果。硬门槛失败单列，不被平均分掩盖。",
+    "blinding": "评审只读匿名媒体/公共事实/统一rubric；不见提示词/制作代码/耗时/组别。第二位评审交换展示顺序。评分保存并计算SHA256后揭盲。"
+  }
+}

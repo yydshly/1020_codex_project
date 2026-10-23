@@ -1,0 +1,22 @@
+{
+  "static_references": 91,
+  "unique_ids": 98,
+  "internal_anchors": "PASS",
+  "films": {
+    "media/research-film.mp4": {
+      "sha256": "8b7d1c540c1a1851de5d5011631baf2001b6acf3bd4b2dd3ec331c160dcb7867",
+      "http_range": "206 / exact bytes"
+    },
+    "media/v2/research-film-v2.mp4": {
+      "sha256": "d9076d830cee88ee085405451933c87889b851e2ed73a6cc1ea60978c55505de",
+      "http_range": "206 / exact bytes"
+    },
+    "media/v3/round-02.mp4": {
+      "sha256": "5b02258af372e89a3d54a1e26ebcebb1bd35052c2ea5aecadbb0b768c89f23e2",
+      "http_range": "206 / exact bytes"
+    }
+  },
+  "original_input_sha256": "ab01c038ef3b71821bad85b2ddb45ca37891c5fa2d019adb59572de6bbfcb037",
+  "original_input_unchanged": true,
+  "scope": "Local artifact identity, links and HTTP streaming; browser interaction checked separately."
+}

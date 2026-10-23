@@ -1,0 +1,396 @@
+{
+  "fps": 60,
+  "duration_frames": 1200,
+  "bpm": 144,
+  "beats_frames": [
+    0,
+    25,
+    50,
+    75,
+    100,
+    125,
+    150,
+    175,
+    200,
+    225,
+    250,
+    275,
+    300,
+    325,
+    350,
+    375,
+    400,
+    425,
+    450,
+    475,
+    500,
+    525,
+    550,
+    575,
+    600,
+    625,
+    650,
+    675,
+    700,
+    725,
+    750,
+    775,
+    800,
+    825,
+    850,
+    875,
+    900,
+    925,
+    950,
+    975,
+    1000,
+    1025,
+    1050,
+    1075,
+    1100,
+    1125,
+    1150,
+    1175
+  ],
+  "climax_frames": [
+    675
+  ],
+  "voice_intervals": [],
+  "scenes": [
+    {
+      "id": 1,
+      "start_frame": 0,
+      "end_frame": 150
+    },
+    {
+      "id": 2,
+      "start_frame": 150,
+      "end_frame": 300
+    },
+    {
+      "id": 3,
+      "start_frame": 300,
+      "end_frame": 450
+    },
+    {
+      "id": 4,
+      "start_frame": 450,
+      "end_frame": 600
+    },
+    {
+      "id": 5,
+      "start_frame": 600,
+      "end_frame": 775
+    },
+    {
+      "id": 6,
+      "start_frame": 775,
+      "end_frame": 900
+    },
+    {
+      "id": 7,
+      "start_frame": 900,
+      "end_frame": 1050
+    },
+    {
+      "id": 8,
+      "start_frame": 1050,
+      "end_frame": 1200
+    }
+  ],
+  "events": [
+    {
+      "id": "transition-1",
+      "frame": 150,
+      "kind": "whoosh"
+    },
+    {
+      "id": "transition-2",
+      "frame": 300,
+      "kind": "whoosh"
+    },
+    {
+      "id": "transition-3",
+      "frame": 450,
+      "kind": "whoosh"
+    },
+    {
+      "id": "transition-4",
+      "frame": 600,
+      "kind": "whoosh"
+    },
+    {
+      "id": "transition-5",
+      "frame": 775,
+      "kind": "whoosh"
+    },
+    {
+      "id": "transition-6",
+      "frame": 900,
+      "kind": "whoosh"
+    },
+    {
+      "id": "transition-7",
+      "frame": 1050,
+      "kind": "whoosh"
+    },
+    {
+      "id": "click-0",
+      "frame": 225,
+      "kind": "click"
+    },
+    {
+      "id": "click-2",
+      "frame": 475,
+      "kind": "click"
+    }
+  ],
+  "motion": {
+    "reveal_frames": 34,
+    "exit_frames": 18,
+    "stagger_frames": 12,
+    "breath_period_frames": 180,
+    "camera_frames": 100,
+    "click_pulse_frames": 24,
+    "input_click_local": 25,
+    "node_reveal_delay": 26,
+    "node_stagger_frames": 10,
+    "slow_reveal_frames": 30,
+    "transition_min_scale": 0.04,
+    "breath_amplitude": 5,
+    "shutter_samples": [
+      -0.2,
+      -0.133333,
+      -0.066667,
+      0,
+      0.066667,
+      0.133333,
+      0.2
+    ],
+    "spring_decay_frames": 6,
+    "spring_radians_per_frame": 0.7
+  },
+  "measurement_status": "measured PCM onset error; rendered image sync still requires separate check",
+  "detected_beats_frames": [
+    0,
+    25,
+    50,
+    75,
+    100,
+    125,
+    150,
+    175,
+    200,
+    225,
+    250,
+    275,
+    300,
+    325,
+    350,
+    375,
+    400,
+    425,
+    450,
+    475,
+    500,
+    525,
+    550,
+    575,
+    600,
+    625,
+    650,
+    675,
+    700,
+    725,
+    750,
+    775,
+    800,
+    825,
+    850,
+    875,
+    900,
+    925,
+    950,
+    975,
+    1000,
+    1025,
+    1050,
+    1075,
+    1100,
+    1125,
+    1150,
+    1175
+  ],
+  "beat_detection_method": "PCM 5ms energy, first crossing 12% local peak within each expected onset window; detection uses audio values.",
+  "detected_max_error_frames": 0,
+  "handoff": {
+    "anchors": [
+      [
+        1115,
+        100,
+        -3
+      ],
+      [
+        210,
+        245,
+        0
+      ],
+      [
+        190,
+        360,
+        0
+      ],
+      [
+        1120,
+        115,
+        8
+      ],
+      [
+        1100,
+        540,
+        0
+      ],
+      [
+        170,
+        260,
+        -5
+      ],
+      [
+        1120,
+        500,
+        0
+      ],
+      [
+        640,
+        185,
+        0
+      ]
+    ],
+    "half_span_frames": 18,
+    "shape": "source favicon continuous; bridges 2/3/4/5/7 carry selected card, voice plot, page record, Kokoro record and study rule respectively; bridges 1/6 retain bookmark contraction",
+    "full_screen_occlusion": false,
+    "arc_height": 40,
+    "arc_heights": [
+      40,
+      40,
+      40,
+      40,
+      40,
+      40,
+      150
+    ],
+    "record_curve": [
+      [
+        1100,
+        540
+      ],
+      [
+        1100,
+        650
+      ],
+      [
+        170,
+        650
+      ],
+      [
+        170,
+        260
+      ]
+    ]
+  },
+  "audio_event_definition": {
+    "click": "PCM transient onset at event frame",
+    "whoosh": "symmetric 0.2s envelope energy crest at event frame; starts 6 frames earlier",
+    "transition": "event frame is actual content handoff midpoint, not first anticipation frame"
+  },
+  "measured_sfx_events": [
+    {
+      "id": "transition-1",
+      "planned_frame": 150,
+      "observed_frame": 149.995,
+      "error_frames": -0.005,
+      "measurement": "actual separate PCM stem; final mix masking/AAC requires independent check"
+    },
+    {
+      "id": "transition-2",
+      "planned_frame": 300,
+      "observed_frame": 299.995,
+      "error_frames": -0.005,
+      "measurement": "actual separate PCM stem; final mix masking/AAC requires independent check"
+    },
+    {
+      "id": "transition-3",
+      "planned_frame": 450,
+      "observed_frame": 449.995,
+      "error_frames": -0.005,
+      "measurement": "actual separate PCM stem; final mix masking/AAC requires independent check"
+    },
+    {
+      "id": "transition-4",
+      "planned_frame": 600,
+      "observed_frame": 599.995,
+      "error_frames": -0.005,
+      "measurement": "actual separate PCM stem; final mix masking/AAC requires independent check"
+    },
+    {
+      "id": "transition-5",
+      "planned_frame": 775,
+      "observed_frame": 774.995,
+      "error_frames": -0.005,
+      "measurement": "actual separate PCM stem; final mix masking/AAC requires independent check"
+    },
+    {
+      "id": "transition-6",
+      "planned_frame": 900,
+      "observed_frame": 899.995,
+      "error_frames": -0.005,
+      "measurement": "actual separate PCM stem; final mix masking/AAC requires independent check"
+    },
+    {
+      "id": "transition-7",
+      "planned_frame": 1050,
+      "observed_frame": 1049.995,
+      "error_frames": -0.005,
+      "measurement": "actual separate PCM stem; final mix masking/AAC requires independent check"
+    },
+    {
+      "id": "click-0",
+      "planned_frame": 225,
+      "observed_frame": 225.001,
+      "error_frames": 0.001,
+      "measurement": "actual separate PCM stem; final mix masking/AAC requires independent check"
+    },
+    {
+      "id": "click-2",
+      "planned_frame": 475,
+      "observed_frame": 475.001,
+      "error_frames": 0.001,
+      "measurement": "actual separate PCM stem; final mix masking/AAC requires independent check"
+    }
+  ],
+  "key_actions": [
+    {
+      "id": "recap",
+      "frame": 925,
+      "meaning": "unfold source-described study pathway, no click claimed"
+    },
+    {
+      "id": "principle",
+      "frame": 325,
+      "meaning": "editorial unfolding of source-described principle; no product click"
+    },
+    {
+      "id": "records",
+      "frame": 625,
+      "meaning": "editorial reveal of existing unmeasured records; no product click"
+    },
+    {
+      "id": "source-evidence",
+      "frame": 800,
+      "meaning": "editorial source evidence reveal, no simulated navigation click"
+    }
+  ],
+  "music_energy_focus_frame": 675,
+  "music_energy_width_frames": 125,
+  "climax_detection_method": "Actual music PCM mean-square energy per 25-frame beat window; strongest window start. A measured energy peak, not a claim about subjective musical drama."
+}

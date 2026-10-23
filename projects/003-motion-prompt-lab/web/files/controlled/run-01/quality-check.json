@@ -1,0 +1,39 @@
+{
+  "specification": {
+    "width": 1280,
+    "height": 720,
+    "fps": "60/1",
+    "duration_seconds": 20,
+    "decoded_frames": 1200
+  },
+  "audio": {
+    "integrated_LUFS": -14.08,
+    "true_peak_dBTP": -1.6,
+    "voice": false,
+    "sfx_below_music_per_event_min_dB": 17.34,
+    "subjective_listening": "unverified"
+  },
+  "freeze": {
+    "filter": "freezedetect=n=-50dB:d=0.5",
+    "detected_segments": 0,
+    "note": "No >=0.5s segments detected; does not certify absence of all brief static intervals or semantic stagnation."
+  },
+  "contrast_min": 4.978,
+  "sampled_brand_pixel_margin_min": 37,
+  "evidence": [
+    "probe-final.json",
+    "loudness-final.txt",
+    "freeze-final.txt",
+    "contrast.json",
+    "safe-margins.json",
+    "event-audio-check.json"
+  ],
+  "subjective_reference_parity": "not established",
+  "full_reviewer": "pending",
+  "known_limitations": [
+    "Earlier full intermediate versions did not each get their own complete independent review.",
+    "Several scene reviews used limited stills instead of full 0.2s sampling.",
+    "Motion is planar product UI; reference-level subjective craft not established.",
+    "Playback/listening subjective check unverified."
+  ]
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "boundary_frame": 150,
+    "source_png_mae": 0.0,
+    "changed_pixels": 0
+  },
+  {
+    "boundary_frame": 300,
+    "source_png_mae": 0.0,
+    "changed_pixels": 0
+  },
+  {
+    "boundary_frame": 450,
+    "source_png_mae": 0.0,
+    "changed_pixels": 0
+  },
+  {
+    "boundary_frame": 600,
+    "source_png_mae": 0.0,
+    "changed_pixels": 0
+  },
+  {
+    "boundary_frame": 750,
+    "source_png_mae": 0.0,
+    "changed_pixels": 0
+  },
+  {
+    "boundary_frame": 900,
+    "source_png_mae": 0.0,
+    "changed_pixels": 0
+  },
+  {
+    "boundary_frame": 1050,
+    "source_png_mae": 0.0,
+    "changed_pixels": 0
+  }
+]

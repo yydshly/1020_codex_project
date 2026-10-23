@@ -1,0 +1,70 @@
+{
+  "created_utc": "2026-10-20T13:43:33.915915+00:00",
+  "note": "Scene first-review artifacts. These are internal V3 revisions, not additional comparison versions.",
+  "files": [
+    {
+      "scene": 1,
+      "round": 1,
+      "source": ".cache/v3-source/rounds/scene01-r1.mp4",
+      "href": "media/v3/history/scene01-r1.mp4",
+      "sha256": "529e955d63fe6c6c2ff5e5f37439d00b3b03f927c95f711b9bad70dcff76d8ec",
+      "copy": "byte-for-byte; no re-encoding"
+    },
+    {
+      "scene": 2,
+      "round": 1,
+      "source": ".cache/v3-source/rounds/scene02-r1.mp4",
+      "href": "media/v3/history/scene02-r1.mp4",
+      "sha256": "08b0c044ec1289eb8dae39e8d517b5df46d8355b229704127d2876e2854df154",
+      "copy": "byte-for-byte; no re-encoding"
+    },
+    {
+      "scene": 3,
+      "round": 1,
+      "source": ".cache/v3-source/rounds/scene03-r1.mp4",
+      "href": "media/v3/history/scene03-r1.mp4",
+      "sha256": "eb6ae9a60323a378b7f49063545d4affc7e76c4b899f9509b5254c83eb1bc62b",
+      "copy": "byte-for-byte; no re-encoding"
+    },
+    {
+      "scene": 4,
+      "round": 1,
+      "source": ".cache/v3-source/rounds/scene04-r1.mp4",
+      "href": "media/v3/history/scene04-r1.mp4",
+      "sha256": "38c9eb67eb65fe2107051c8517fa9e46bd85633eea0e2b8e8e1a992f67fd8cc7",
+      "copy": "byte-for-byte; no re-encoding"
+    },
+    {
+      "scene": 5,
+      "round": 1,
+      "source": ".cache/v3-source/rounds/scene05-r1.mp4",
+      "href": "media/v3/history/scene05-r1.mp4",
+      "sha256": "b09417e00149577ed2432d9860e2a8a6b3ad1e522cfff34dfe478f292f6f5f1a",
+      "copy": "byte-for-byte; no re-encoding"
+    },
+    {
+      "scene": 6,
+      "round": 1,
+      "source": ".cache/v3-source/rounds/scene06-r1.mp4",
+      "href": "media/v3/history/scene06-r1.mp4",
+      "sha256": "91bece05a11d4c11ddbe22e902d1f3611239f198e774763e1ab5cada10f138b3",
+      "copy": "byte-for-byte; no re-encoding"
+    },
+    {
+      "scene": 7,
+      "round": 1,
+      "source": ".cache/v3-source/rounds/scene07-r1.mp4",
+      "href": "media/v3/history/scene07-r1.mp4",
+      "sha256": "165edc7d61d5302aa707789b65f9e162b1a925e49961f375335ffd02eabc5368",
+      "copy": "byte-for-byte; no re-encoding"
+    },
+    {
+      "scene": 8,
+      "round": 1,
+      "source": ".cache/v3-source/rounds/scene08-r1.mp4",
+      "href": "media/v3/history/scene08-r1.mp4",
+      "sha256": "57c8b039bfc26389856cf6b9d952a2e9fcb375ada86ed7abf4366941bdb261ef",
+      "copy": "byte-for-byte; no re-encoding"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-20",
+  "url": "http://127.0.0.1:8033/#compare",
+  "final_video_sha256": "d9076d830cee88ee085405451933c87889b851e2ed73a6cc1ea60978c55505de",
+  "browser_checks": [
+    "IAB: both final comparison players duration20, readyState4, no media error, seeking to13.8 showed the revised expanded document layers.",
+    "Synchronized playback started both players; final restart sample observed0.223880s and0.222821s, both paused=false.",
+    "V1 stays muted. V2 mute toggle was exercised, then restored to unmuted before handoff.",
+    "Both players reached20seconds and paused at playback end.",
+    "Chapter8.5s and13.8s located both players at the same time and paused them.",
+    "Range Home then ArrowRight located both videos at0.016666s; frame-step keyboard navigation works.",
+    "Focus-V2 toggle hid V1 and enlarged V2; restoring comparison returned both figures.",
+    "Complete execution prompt expanded and copied successfully. Source and served content match, over4500 characters.",
+    "1280px iframe: desktop comparison visually showed two players side by side.",
+    "390px iframe: players stack, controls wrap, time slider and eight chapter buttons remain visible; comparison table scrolls horizontally within its wrapper.",
+    "Final browser left at comparison section, both videos paused at0, V1 muted and V2 sound enabled.",
+    "Temporary layout-test.html removed after verification."
+  ],
+  "screenshot": "assets/v2-comparison-preview.png",
+  "limitations": [
+    "Playback is approximately synchronized; one observed small drift is not a guarantee for all devices.",
+    "Iframe dimensions test responsive layout, not a real phone or mobile browser.",
+    "Audio technical levels measured separately; no claim of human listening review.",
+    "Static links and both video HTTP206 byte ranges are checked in v2-web-static-check.json."
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "recorded_utc": "2026-10-23T03:30:55.735773+00:00",
+  "os": "Windows-10-10.0.26200-SP0",
+  "node": "v22.15.0",
+  "python": "3.10.11",
+  "ffmpeg": "ffmpeg version n6.1.3-20250831 Copyright (c) 2000-2025 the FFmpeg developers",
+  "dependencies": {
+    "@napi-rs/canvas": "0.1.80",
+    "@resvg/resvg-js": "2.6.2"
+  },
+  "files": [
+    {
+      "file": "src/measure-controlled.py",
+      "sha256": "329c3890f25e7b384a340285675b9f5ddbc3b97c6ae3c4c46ed5afad22ea6f17"
+    },
+    {
+      "file": "notes/controlled/measurement-rules.md",
+      "sha256": "35eb92c3d3bf3dee56c898efd97c310d4b814f108e2636caa98c2b337f672fa2"
+    }
+  ]
+}

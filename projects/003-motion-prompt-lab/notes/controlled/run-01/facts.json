@@ -1,0 +1,144 @@
+{
+  "frozen_sources": [
+    "../shared/product/web/data.js",
+    "../shared/product/web/app.js",
+    "../shared/product/web/styles.css",
+    "../shared/product/notes/07-experiments.md",
+    "../shared/product/README.md",
+    "../shared/captures/source-favicon.svg"
+  ],
+  "claims": [
+    {
+      "screen": "Kokoro / 一段文字，怎样变成声音？",
+      "quote": "一段文字，怎样变成声音？",
+      "url": "https://github.com/hexgrad/kokoro"
+    },
+    {
+      "screen": "文稿 + 语言 + 音色 / 语音波形",
+      "quote": "文稿 + 语言 + 音色 → 语音波形 / WAV",
+      "url": "https://github.com/hexgrad/kokoro/blob/dfb907a02bba8152ca444717ca5d78747ccb4bec/README.md"
+    },
+    {
+      "screen": "文字→音素→时长与韵律→波形解码",
+      "quote": "发音处理 → 时长与韵律 → 波形解码",
+      "details": [
+        {
+          "title": "文稿与语言",
+          "tag": "准备",
+          "body": "选择语言代码、音色与文本。语言决定前端如何处理发音；音色提供声音风格。两者不是同一个参数。",
+          "input": "文字、语言代码、音色名称",
+          "output": "待处理的文本段与音色张量",
+          "code": "KPipeline · load_voice",
+          "source": "kokoro/pipeline.py"
+        },
+        {
+          "title": "文字转音素",
+          "tag": "语言前端",
+          "body": "Misaki 将文字转换成表示发音的音素。模型随后看到的是音素对应的编号，而不是直接朗读屏幕上的汉字或字母。",
+          "input": "文本段",
+          "output": "音素序列",
+          "code": "KPipeline.g2p",
+          "source": "kokoro/pipeline.py"
+        },
+        {
+          "title": "预测时长与韵律",
+          "tag": "神经网络",
+          "body": "模型编码音素，结合风格信息预测每个音素的时长，再预测音高等信息。speed 参与时长计算，影响节奏。",
+          "input": "音素编号 + 风格张量",
+          "output": "对齐后的特征、音高等预测",
+          "code": "KModel.forward_with_tokens",
+          "source": "kokoro/model.py"
+        },
+        {
+          "title": "解码为波形",
+          "tag": "声音生成",
+          "body": "解码器把文本特征、音高预测和音色风格转成音频采样值。到这里才有可以被保存和播放的声音数据。",
+          "input": "对齐特征 + 声学预测 + 音色",
+          "output": "音频波形",
+          "code": "self.decoder(...)",
+          "source": "kokoro/model.py"
+        },
+        {
+          "title": "保存与试听",
+          "tag": "交付",
+          "body": "官方示例把输出保存为 24 kHz WAV。试听错读和停顿，再决定是否重写文稿或调整参数。",
+          "input": "音频采样值",
+          "output": "可播放的 WAV 文件",
+          "code": "soundfile.write",
+          "source": "README"
+        }
+      ],
+      "url": "https://github.com/hexgrad/kokoro/blob/dfb907a02bba8152ca444717ca5d78747ccb4bec/kokoro/model.py"
+    },
+    {
+      "screen": "来源与版本 / pipeline.py / model.py / dfb907a",
+      "quote": {
+        "requested_repository": "hexgrad/kokoro",
+        "repository": "hexgrad/kokoro",
+        "url": "https://github.com/hexgrad/kokoro",
+        "branch": "main",
+        "commit": "dfb907a02bba8152ca444717ca5d78747ccb4bec",
+        "commit_date": "2025-08-06T22:28:53Z",
+        "license": "Apache-2.0",
+        "readme_url": "https://github.com/hexgrad/kokoro/blob/dfb907a02bba8152ca444717ca5d78747ccb4bec/README.md",
+        "inspected_files": [
+          {
+            "path": "kokoro/pipeline.py",
+            "url": "https://github.com/hexgrad/kokoro/blob/dfb907a02bba8152ca444717ca5d78747ccb4bec/kokoro/pipeline.py"
+          },
+          {
+            "path": "pyproject.toml",
+            "url": "https://github.com/hexgrad/kokoro/blob/dfb907a02bba8152ca444717ca5d78747ccb4bec/pyproject.toml"
+          },
+          {
+            "path": "kokoro/model.py",
+            "url": "https://github.com/hexgrad/kokoro/blob/dfb907a02bba8152ca444717ca5d78747ccb4bec/kokoro/model.py"
+          }
+        ]
+      },
+      "url": "https://github.com/hexgrad/kokoro"
+    },
+    {
+      "screen": "数字能否读正确？/ 错读与遗漏 / 待实测",
+      "quote": {
+        "title": "用六类句子检验“读得出来”与“读得正确”",
+        "material": "准备普通句子、多音字、人名、数字、英文缩写和长句各一条；先做英文基础链路，再测中文。",
+        "steps": [
+          "固定模型、音色与设备，保留输入原文。",
+          "分别记录首次加载和后续生成时间。",
+          "逐句试听，标记错读、遗漏、重复和异常停顿。",
+          "改变一个参数后重试，比较可听差别。"
+        ],
+        "metrics": [
+          "错读与遗漏",
+          "音频时长",
+          "生成耗时 / 音频时长",
+          "峰值内存",
+          "人工修正次数"
+        ],
+        "next": "本机安装并合成一组可复现的中英文样本。"
+      },
+      "url": "../shared/product/notes/07-experiments.md"
+    },
+    {
+      "screen": "声音基础 / 浏览器合成教学示意 / 非 Kokoro 实测",
+      "quote": "可调短音由浏览器合成。两者均为教学材料，不是 Kokoro 的效果测试。",
+      "url": "../shared/product/web/kokoro-learning.js:28"
+    },
+    {
+      "screen": "GitHub 项目研究集 / github.com/yydshly/1020_codex_project",
+      "quote": "共同任务指定的产品名与落版网址",
+      "url": "../shared/brief.md"
+    },
+    {
+      "screen": "收藏之后，下一步？/ 让收藏，成为理解。/ 每一步，都有来源。/ 用小实验，继续研究。",
+      "quote": "原创编辑性提问与导航性文案，不是功能效果或用户数据声明",
+      "url": "../shared/brief.md"
+    }
+  ],
+  "disclosures": [
+    "All UI is code reconstruction from frozen real product; camera layouts simplified for legibility.",
+    "All waveform values are teaching illustration, not Kokoro model execution.",
+    "No model installed or tested; experiment stays pending."
+  ]
+}

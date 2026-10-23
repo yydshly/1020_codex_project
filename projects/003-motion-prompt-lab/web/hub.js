@@ -1,0 +1,10 @@
+(() => {
+  const textFile=async path=>{const r=await fetch(path);if(!r.ok)throw Error(r.status);return r.text();};
+  textFile('files/v3/brief-input.md').then(t=>{document.querySelector('#v3-brief-text').textContent=t;document.querySelector('#copy-v3-brief').disabled=false;}).catch(()=>document.querySelector('#v3-brief-text').textContent='载入失败，请使用下方下载链接。');
+  document.querySelector('#copy-v3-brief').addEventListener('click',async()=>{const result=document.querySelector('#v3-copy-status');try{await navigator.clipboard.writeText(document.querySelector('#v3-brief-text').textContent);result.textContent='已复制完整 brief；作者原文仍是独立输入。';}catch{result.textContent='浏览器未允许复制，可选中文本或下载文件。';}});
+  const select=document.querySelector('#evidence-select'),reader=document.querySelector('#evidence-reader');let generation=0;
+  async function readEvidence(){const current=++generation;reader.textContent='正在读取…';document.querySelector('#evidence-download').href=select.value;try{const t=await textFile(select.value);if(current===generation)reader.textContent=t;}catch{if(current===generation)reader.textContent='载入失败，请使用下载链接。';}}
+  select.addEventListener('change',readEvidence);readEvidence();
+  fetch('files/hub-artifacts.json').then(r=>{if(!r.ok)throw Error(r.status);return r.json();}).then(groups=>{const root=document.querySelector('#all-artifacts');groups.forEach(group=>{const section=document.createElement('section'),heading=document.createElement('h3');heading.textContent=group.label;section.append(heading);group.items.forEach(item=>{const a=document.createElement('a');a.href=item.href;a.textContent=item.label;a.setAttribute('download','');section.append(a);});root.append(section);});}).catch(()=>document.querySelector('#all-artifacts').textContent='目录载入失败，可使用本页各章节的资料链接。');
+  document.querySelector('#load-original-post').addEventListener('click',e=>{e.currentTarget.disabled=true;e.currentTarget.textContent='已请求作者原帖；加载受限时请使用原文链接';const s=document.createElement('script');s.src='https://platform.twitter.com/widgets.js';s.async=true;s.charset='utf-8';document.body.append(s);});
+})();

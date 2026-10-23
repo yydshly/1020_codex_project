@@ -1,0 +1,35 @@
+<section id="controlled" class="section controlled-section">
+  <div class="section-head"><div><p class="eyebrow">CONTROLLED TRIAL / 01</p><h2>同样的条件，长提示词多带来了什么？</h2></div><p>一次新的配对实验。<br>先看匿名成片，再揭晓组别与评分。</p></div>
+  <div class="controlled-constants"><span><b>同场景</b>研究集 · Kokoro</span><span><b>同规格</b>20 秒 / 720p / 60 fps</span><span><b>同上限</b>20 分钟 / 12 次评审</span><span><b>同模型配置</b>新上下文 · 默认继承</span></div>
+  <p class="controlled-scope">原文组 = 共同要求 + 未改写的原提示词；明确需求组 = 相同目标、素材和质量标准，制作方法自主决定。两组串行执行，均不读取旧版实现。时间预算包含内部评审和渲染；公共准备与最终盲评另列。</p>
+  <p class="small"><a href="#prompt-understanding">讨论后的理解：从提示词里提取目标、感受、动画目的与验收标准 ↓</a></p>
+  <div id="controlled-status" class="hub-status" role="status">正在加载实验进度…</div>
+  <div id="controlled-player-area" hidden>
+    <div class="controlled-players">
+      <figure><figcaption><strong>影片 X</strong><span>匿名候选</span></figcaption><video id="controlled-x" muted playsinline preload="metadata" controls aria-label="匿名影片X"></video><a id="controlled-download-x" download>下载影片 X</a></figure>
+      <figure><figcaption><strong>影片 Y</strong><span>匿名候选</span></figcaption><video id="controlled-y" muted playsinline preload="metadata" controls aria-label="匿名影片Y"></video><a id="controlled-download-y" download>下载影片 Y</a></figure>
+    </div>
+    <div class="controlled-controls">
+      <div><button id="controlled-play" class="button primary">同步播放</button><button id="controlled-restart" class="button secondary">从头播放</button><label>试听 <select id="controlled-audio"><option value="none">静音</option><option value="X">影片 X</option><option value="Y">影片 Y</option></select></label></div>
+      <label for="controlled-seek">同帧定位 <output id="controlled-time">0.00 / 20.00 s</output></label><input id="controlled-seek" type="range" min="0" max="1199" value="0" step="1">
+      <p id="controlled-play-status" class="small" role="status">同步播放为近似同步；拖动滑块暂停并定位。默认静音，避免双音轨干扰。</p>
+    </div>
+    <button id="controlled-reveal" class="button primary" aria-expanded="false" aria-controls="controlled-results">揭晓条件、盲评分与耗时 ↓</button>
+  </div>
+  <div id="controlled-results" hidden>
+    <div class="controlled-verdict"><p class="eyebrow">RESULT / 本次观察</p><h3 id="controlled-verdict-title"></h3><p id="controlled-verdict-body"></p></div>
+    <div class="comparison-table"><table><caption>匿名评分先封存，之后才关联条件。视觉盲评满分 90，音频技术单列 10 分。</caption><thead><tr><th scope="col">比较项</th><th scope="col">影片 X</th><th scope="col">影片 Y</th></tr></thead><tbody id="controlled-metrics"></tbody></table></div>
+    <div id="controlled-judge-cards" class="controlled-judge-cards"></div>
+    <div class="controlled-verdict"><h3>额外价值体现在哪里，代价又是什么？</h3><div id="controlled-analysis"></div></div>
+    <h3>制作与评测的时间分开记录</h3><p id="controlled-overhead"></p>
+    <p class="small">耗时由协调端观察器记录，包含调度、输入阅读、生成、内部评审、渲染及重试；每组上限 1,200 秒。实际 token、金额、服务端模型快照与采样种子无法取得，不宣称等 token 或等费用。</p>
+    <div id="controlled-result-links" class="controlled-links"></div>
+  </div>
+  <details class="prompt-complete"><summary>实验协议、评分标准与输入：制作前已冻结</summary><div>
+    <p>两组接收同一批冻结的真实产品资料、本地字体和官方参考片；不借用历史影片或实现。相同工具额度意味着两组都可调用独立评审，是否、何时调用由各自输入决定。预算到期即封存，未完成也算结果。</p>
+    <div class="controlled-links"><a href="files/controlled/protocol.json" download>预注册协议与素材 SHA256</a><a href="files/controlled/rubric.json" download>统一评分标准</a><a href="files/controlled/common-brief.md" download>共同任务与成片要求</a><a href="files/controlled/common-rules.md" download>共同预算与运行规则</a></div>
+    <h4>明确需求组的完整输入</h4><button class="button secondary" id="controlled-copy" disabled>复制完整输入</button><span id="controlled-copy-status" class="small" role="status"></span><pre id="controlled-input" tabindex="0">正在读取…</pre>
+    <h4>原文组的完整输入构成</h4><p>上面的共同任务与运行规则，加上<a href="https://x.com/CarsonYangk8s/status/2111520795575116016" target="_blank" rel="noreferrer">作者原提示词全文</a>。原始源文件保持 3,821 字符 / 9,143 字节；拼接输入保存时仅转为 Windows 换行，正文逐字相同。按统一 LF 换行计，原文组 5,845 字符，明确需求组 2,079 字符。<a href="files/controlled/input-integrity.json">磁盘原始 SHA 与换行归一化校验</a>分开记录。原文不在本站全文转载，原始文件及拼接输入均私存。<a href="#full-prompts">查看原帖嵌入与来源说明</a>。</p>
+    <p class="small">同一父配置继承不等于已锁定供应端模型版本。文件隔离靠代理指令执行，未使用 OS 沙箱。本次预提供资料，比较的是制作阶段；不包含从零搜索素材的能力。每组只有一次生成，不能推断长提示词在所有任务上更强或更弱。</p>
+  </div></details>
+</section>

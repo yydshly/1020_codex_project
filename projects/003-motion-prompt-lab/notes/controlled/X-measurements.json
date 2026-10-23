@@ -1,0 +1,24 @@
+{
+  "label": "X",
+  "sha256": "ec965dc71fa55452c052235c7a72fac10af0d40336398b79d801b8d424c921f7",
+  "bytes": 2991187,
+  "duration": 20.0,
+  "width": 1280,
+  "height": 720,
+  "fps": "60/1",
+  "decoded_frames": 1200,
+  "decode_ok": true,
+  "format_pass": true,
+  "loudness_lufs": -14.01,
+  "true_peak_dbtp": -2.92,
+  "audio_technical_score_out_of_10": 10,
+  "subjective_audio": "unverified",
+  "freeze": {
+    "filter": "freezedetect=n=-50dB:d=0.5",
+    "events": [],
+    "total": 0,
+    "longest": 0,
+    "threshold_pass": true
+  },
+  "measured_utc": "2026-10-23T04:03:33.381654+00:00"
+}

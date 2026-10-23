@@ -1,0 +1,8 @@
+{
+  "source": ".cache/v3-source/original-prompt.txt",
+  "sha256": "ab01c038ef3b71821bad85b2ddb45ca37891c5fa2d019adb59572de6bbfcb037",
+  "bytes": 9143,
+  "read_evidence": "Read full original UTF-8 text before starting production; re-read full original after context restoration before round-02 revision. No replacement prompt was used.",
+  "recorded_utc": "2026-10-20T14:10:08.559178+00:00",
+  "source_integrity_scope": "Matches supplied source-manifest hash; does not claim independent authenticity of remote third-party transcription."
+}

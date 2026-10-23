@@ -1,0 +1,144 @@
+{
+  "video": {
+    "width": 1280,
+    "height": 720,
+    "fps": 60.0,
+    "frames": 1200,
+    "duration": 20.0,
+    "codec": "h264",
+    "pixel_format": "yuv420p",
+    "container_duration": 20.0
+  },
+  "audio": {
+    "integrated_lufs": -14.04,
+    "true_peak_dbtp": -5.62,
+    "loudness_range_lu": 0.4,
+    "sample_rate": 48000,
+    "channels": 2,
+    "measurement": "FFmpeg loudnorm on decoded final MP4",
+    "human_listening_review": false
+  },
+  "freeze": {
+    "events": [
+      "freeze_start: 17.6833",
+      "freeze_duration: 0.633333",
+      "freeze_end: 18.3167",
+      "freeze_start: 18.8",
+      "freeze_duration: 0.55",
+      "freeze_end: 19.35"
+    ],
+    "intervals": [
+      [
+        17.6833,
+        18.3167
+      ],
+      [
+        18.8,
+        19.35
+      ]
+    ],
+    "low_motion_seconds": 1.183,
+    "longest_seconds": 0.633,
+    "threshold_db": -50,
+    "duration_threshold_seconds": 0.5,
+    "target_total_seconds": 0.667,
+    "target_longest_seconds": 0.5,
+    "machine_gate_pass": false,
+    "limitation": "Pixel-level low-motion detection; does not establish meaningful movement or perceptual quality."
+  },
+  "core_freeze": {
+    "events": [],
+    "intervals": [],
+    "low_motion_seconds": 0,
+    "longest_seconds": 0,
+    "threshold_db": -50,
+    "duration_threshold_seconds": 0.5,
+    "target_total_seconds": 0.667,
+    "target_longest_seconds": 0.5,
+    "machine_gate_pass": true,
+    "limitation": "Pixel-level low-motion detection; does not establish meaningful movement or perceptual quality.",
+    "crop": {
+      "x": 60,
+      "y": 100,
+      "width": 1160,
+      "height": 520,
+      "excludes": "header and footer"
+    }
+  },
+  "black": {
+    "events": []
+  },
+  "contrast": {
+    "ink_on_paper": 11.61,
+    "muted_on_paper": 5.67,
+    "paper_on_ink": 11.61,
+    "mint_on_ink": 8.43,
+    "ink_on_gold": 5.69,
+    "scope": "Stable design-color pairs only; transition opacity and anti-aliased edges excluded."
+  },
+  "timing": {
+    "scene_start_frames": [
+      0,
+      150,
+      300,
+      450,
+      600,
+      750,
+      900,
+      1020,
+      1200
+    ],
+    "composition_intervals_seconds": [
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.5,
+      2.0,
+      3.0
+    ],
+    "beat_frames": 30,
+    "action_frames": [
+      0,
+      60,
+      120,
+      150,
+      180,
+      270,
+      300,
+      360,
+      390,
+      450,
+      480,
+      510,
+      570,
+      600,
+      660,
+      690,
+      720,
+      750,
+      810,
+      870,
+      900,
+      930,
+      960,
+      990,
+      1020,
+      1080,
+      1140
+    ],
+    "all_action_anchors_on_beat": true,
+    "scope": "Source anchor check. Does not claim all visible/perceived peaks have been measured within one frame."
+  },
+  "sha256": "d9076d830cee88ee085405451933c87889b851e2ed73a6cc1ea60978c55505de",
+  "v1_sha256": "8b7d1c540c1a1851de5d5011631baf2001b6acf3bd4b2dd3ec331c160dcb7867",
+  "scope": "Second iterated production of the same subject. Different pipeline and effort; not a controlled prompt A/B or general capability ceiling.",
+  "not_verified": [
+    "Human listening quality",
+    "Professional reference parity",
+    "All perceptual audiovisual peaks within one frame",
+    "Independent human audience comprehension",
+    "3D, character acting, speech, vertical layout, actual Kokoro inference"
+  ]
+}

@@ -1,0 +1,14 @@
+[
+  {
+    "run": "run-01",
+    "source_archive": "media/controlled/run-01-source.zip",
+    "source_archive_sha256": "d250bf5491e5b88c985e4c9a697d02cb4084741b58706bd7ab8bfa785df687e7",
+    "extra_artifacts": 126
+  },
+  {
+    "run": "run-02",
+    "source_archive": "media/controlled/run-02-source.zip",
+    "source_archive_sha256": "9798e46a1cc64ca3206b457f09c46f87bf7fdf3db2184b9ae915adf79275de9e",
+    "extra_artifacts": 34
+  }
+]

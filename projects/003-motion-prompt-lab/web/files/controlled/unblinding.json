@@ -1,0 +1,43 @@
+{
+  "unblinded_at_utc": "2026-10-23T04:13:38.073920+00:00",
+  "judge_seal_sha256": "22fa6bfdf1586530e20bd38a02627fd2c3c5b387908b0dfd22f97e2f9c15471d",
+  "mapping": [
+    {
+      "label": "X",
+      "run": "run-02",
+      "original_sha256": "2257b999e84acc992d801f2037b32a74fa187ed92bdb36218c6e7a58d74fe33d",
+      "anonymous_sha256": "ec965dc71fa55452c052235c7a72fac10af0d40336398b79d801b8d424c921f7",
+      "compressed_stream_hashes": {
+        "v:0": "SHA256=db84513bdf9088885383861cc11bc45541ef11a2d04c1a2adb70691529122112",
+        "a:0?": "SHA256=1ac3bbcf6d3e4240a3a0810c9c2166b1a0c52fb0cdbcd36d779ca5fd793a6b65"
+      },
+      "status": "completed",
+      "condition": "明确需求"
+    },
+    {
+      "label": "Y",
+      "run": "run-01",
+      "original_sha256": "e2bf0c37c78b8540e096cd33499beb2be9dd3e969af9816751c46f47bb3c9381",
+      "anonymous_sha256": "351273de3dd7255c932de2134728091713d0f28c8f715b7f1cc1152de3577841",
+      "compressed_stream_hashes": {
+        "v:0": "SHA256=f7a74a87c16a5b2a6d4029e47f835f6fb51feac6dfe8ad2f5d0627dad904e118",
+        "a:0?": "SHA256=53bac7cf18b0254bbe13ee16de4b856668cac3ae141645a7eb3d7d9b1f82e698"
+      },
+      "status": "completed",
+      "condition": "原提示词"
+    }
+  ],
+  "means_out_of_90": {
+    "X": 70.0,
+    "Y": 67.5
+  },
+  "original_minus_requirements_by_judge": [
+    2,
+    -7
+  ],
+  "original_minus_requirements_mean": -2.5,
+  "preregistered_directional_advantage": false,
+  "rule": "Both judges must agree on direction AND mean absolute gap >=5/90. Neither condition holds.",
+  "evaluation_window_seconds": 501.318078,
+  "evaluation_window": "Anonymous evaluation start through score sealing; common measurement, judge dispatch/review, and coordinator sealing included."
+}

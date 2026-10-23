@@ -1,0 +1,156 @@
+{
+  "reason": "deadline",
+  "start_utc": "2026-10-23T03:22:03.309526+00:00",
+  "deadline_utc": "2026-10-23T03:42:03.309526+00:00",
+  "observed_finish_utc": "2026-10-23T03:42:03.525529+00:00",
+  "elapsed_seconds": 1200.216003,
+  "budget_seconds": 1200,
+  "files": [
+    {
+      "file": "audio-source.json",
+      "sha256": "7c1e43d2f77e3d35ef53182ae0b5f784976a46c29dd597c5e3fc35ea4fec132e",
+      "bytes": 241,
+      "mtime_utc": "2026-10-23T03:34:42.133002+00:00"
+    },
+    {
+      "file": "brief.md",
+      "sha256": "2e4fcea3b7c8e4ca55108d1b65d2d0e62d36e9557fc7e96a55296a2090b11ef1",
+      "bytes": 2900,
+      "mtime_utc": "2026-10-23T03:24:33.481331+00:00"
+    },
+    {
+      "file": "contrast.json",
+      "sha256": "703a7d3ff5672f1c7b2b011b2f1d879264a6c4478c73d8718cdccdce4ec36756",
+      "bytes": 354,
+      "mtime_utc": "2026-10-23T03:39:20.598775+00:00"
+    },
+    {
+      "file": "dispatch.json",
+      "sha256": "ca411a893a531480328d2581ccfe4805c3062feb09c0aadd6084b264bf1a3013",
+      "bytes": 141,
+      "mtime_utc": "2026-10-23T03:22:03.507772+00:00"
+    },
+    {
+      "file": "event-audio-check.json",
+      "sha256": "ffc78bec66c8babd164cc8cc0d4d2d5d0bd90d5a431a65f65df674f7cb096b7b",
+      "bytes": 1746,
+      "mtime_utc": "2026-10-23T03:41:28.102178+00:00"
+    },
+    {
+      "file": "facts.json",
+      "sha256": "3a404c367e777b800301632126704aadd755bb04d2d59b7ccf31ba43b8ad939b",
+      "bytes": 6389,
+      "mtime_utc": "2026-10-23T03:34:42.137135+00:00"
+    },
+    {
+      "file": "finalize.py",
+      "sha256": "b5008c08c38448d91b6fc6a7dc2b5b225b22551d17a451cf1a5461401c2ef2d4",
+      "bytes": 2224,
+      "mtime_utc": "2026-10-23T03:41:26.905772+00:00"
+    },
+    {
+      "file": "ledger.md",
+      "sha256": "fe013e6729e6021936a007b16c0d3456d0068ad193085e9f25dfcc3b01ac762b",
+      "bytes": 3465,
+      "mtime_utc": "2026-10-23T03:41:26.898263+00:00"
+    },
+    {
+      "file": "output.mp4",
+      "sha256": "e2bf0c37c78b8540e096cd33499beb2be9dd3e969af9816751c46f47bb3c9381",
+      "bytes": 4320725,
+      "mtime_utc": "2026-10-23T03:38:56.214375+00:00"
+    },
+    {
+      "file": "patch-end.py",
+      "sha256": "5ff3bc2ba30499a5547f888590d3df939a3fd1077d81b84bff3016e735964902",
+      "bytes": 264,
+      "mtime_utc": "2026-10-23T03:37:10.420654+00:00"
+    },
+    {
+      "file": "patch-motion.py",
+      "sha256": "1ecd053e42136e8189075341ccdc1e0c3bab4399d8d2d8a9e4acbd91da99e87a",
+      "bytes": 1361,
+      "mtime_utc": "2026-10-23T03:33:27.937825+00:00"
+    },
+    {
+      "file": "patch-result.py",
+      "sha256": "293b31e9a1d9c39ec657998ca20865474c28ae22c4812aa49904b90f220c35bc",
+      "bytes": 1017,
+      "mtime_utc": "2026-10-23T03:34:41.000856+00:00"
+    },
+    {
+      "file": "patch.py",
+      "sha256": "ba17867b4fb76651280300a5b8ae8c76aed4d43194540dc05b9613231acc7e3a",
+      "bytes": 502,
+      "mtime_utc": "2026-10-23T03:29:36.119671+00:00"
+    },
+    {
+      "file": "prepare.py",
+      "sha256": "68f771d18431151ca38491f1547bc9570e349af5b7b8dcb21d27a261d4ca05fd",
+      "bytes": 5767,
+      "mtime_utc": "2026-10-23T03:34:41.082732+00:00"
+    },
+    {
+      "file": "probe-final.json",
+      "sha256": "b934ba059804e86a2276caddc45f5bd925911727b26d8e4034832978ecbe49b7",
+      "bytes": 512,
+      "mtime_utc": "2026-10-23T03:39:01.461831+00:00"
+    },
+    {
+      "file": "probe.json",
+      "sha256": "b934ba059804e86a2276caddc45f5bd925911727b26d8e4034832978ecbe49b7",
+      "bytes": 512,
+      "mtime_utc": "2026-10-23T03:30:58.383876+00:00"
+    },
+    {
+      "file": "qc.py",
+      "sha256": "9737be48e9d7a2b13f2eec7ae324122c70161ed6565c5213b11aaf3eec618919",
+      "bytes": 1473,
+      "mtime_utc": "2026-10-23T03:38:35.855531+00:00"
+    },
+    {
+      "file": "quality-check.json",
+      "sha256": "75f357dda1c8f6c3b10a07538999e27b8a2e7ff8e66afe746510460dd5355bfb",
+      "bytes": 1241,
+      "mtime_utc": "2026-10-23T03:41:28.102178+00:00"
+    },
+    {
+      "file": "README.md",
+      "sha256": "9089810aca8e6fbb5ee95f341d323b087db5fee64ecdfdeb1af059e1d5d4ee4d",
+      "bytes": 1220,
+      "mtime_utc": "2026-10-23T03:38:35.856606+00:00"
+    },
+    {
+      "file": "render.mjs",
+      "sha256": "3e7b9ae17f4fa0495f20b97cb0043ffc5ec11719bf252b9bd8acd3932a018976",
+      "bytes": 12142,
+      "mtime_utc": "2026-10-23T03:37:10.499263+00:00"
+    },
+    {
+      "file": "safe-margins.json",
+      "sha256": "87f4fec10043d73f229001a74cc1511631dae83541d7a7c1f7404b9df6bdf945",
+      "bytes": 12013,
+      "mtime_utc": "2026-10-23T03:39:20.599296+00:00"
+    },
+    {
+      "file": "storyboard.md",
+      "sha256": "2e4fcea3b7c8e4ca55108d1b65d2d0e62d36e9557fc7e96a55296a2090b11ef1",
+      "bytes": 2900,
+      "mtime_utc": "2026-10-23T03:24:33.481331+00:00"
+    },
+    {
+      "file": "style-guide.md",
+      "sha256": "d1fbf48474bc0280b0620650f36c38eb0f97b463ab055a7a90eacda59c4522fc",
+      "bytes": 869,
+      "mtime_utc": "2026-10-23T03:41:26.904767+00:00"
+    },
+    {
+      "file": "timing.json",
+      "sha256": "4100b2d929b2002f1a608187910fe769ea1df072ef9433f545b3e71aad2901b3",
+      "bytes": 1965,
+      "mtime_utc": "2026-10-23T03:34:41.423560+00:00"
+    }
+  ],
+  "output_present": true,
+  "observer": "coordinator watcher, 0.5s polling; dispatch-to-completion includes scheduling and internal review; excludes common setup and external judging"
+}

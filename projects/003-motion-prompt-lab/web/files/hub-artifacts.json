@@ -1,0 +1,614 @@
+[
+  {
+    "label": "V3 · 原文执行实验 / 尚未验收",
+    "items": [
+      {
+        "label": "v3/assets.json",
+        "href": "files/v3/assets.json"
+      },
+      {
+        "label": "v3/audio-measurements.json",
+        "href": "files/v3/audio-measurements.json"
+      },
+      {
+        "label": "v3/blind-story-round-01.md",
+        "href": "files/v3/blind-story-round-01.md"
+      },
+      {
+        "label": "v3/blind-story-round-02.md",
+        "href": "files/v3/blind-story-round-02.md"
+      },
+      {
+        "label": "v3/brief-input.md",
+        "href": "files/v3/brief-input.md"
+      },
+      {
+        "label": "v3/brief.md",
+        "href": "files/v3/brief.md"
+      },
+      {
+        "label": "v3/build-b.md",
+        "href": "files/v3/build-b.md"
+      },
+      {
+        "label": "v3/color-codec-probe.json",
+        "href": "files/v3/color-codec-probe.json"
+      },
+      {
+        "label": "v3/environment.json",
+        "href": "files/v3/environment.json"
+      },
+      {
+        "label": "v3/facts.json",
+        "href": "files/v3/facts.json"
+      },
+      {
+        "label": "v3/font-lock.json",
+        "href": "files/v3/font-lock.json"
+      },
+      {
+        "label": "v3/handoff-source-measurements.json",
+        "href": "files/v3/handoff-source-measurements.json"
+      },
+      {
+        "label": "v3/history-index.json",
+        "href": "files/v3/history-index.json"
+      },
+      {
+        "label": "v3/human-review.md",
+        "href": "files/v3/human-review.md"
+      },
+      {
+        "label": "v3/ledger.md",
+        "href": "files/v3/ledger.md"
+      },
+      {
+        "label": "v3/measurements-round-01.json",
+        "href": "files/v3/measurements-round-01.json"
+      },
+      {
+        "label": "v3/measurements-round-02.json",
+        "href": "files/v3/measurements-round-02.json"
+      },
+      {
+        "label": "v3/original-read-evidence.json",
+        "href": "files/v3/original-read-evidence.json"
+      },
+      {
+        "label": "v3/quality-inventory-draft.json",
+        "href": "files/v3/quality-inventory-draft.json"
+      },
+      {
+        "label": "v3/references.md",
+        "href": "files/v3/references.md"
+      },
+      {
+        "label": "v3/render-abort-01.json",
+        "href": "files/v3/render-abort-01.json"
+      },
+      {
+        "label": "v3/render-abort-02.json",
+        "href": "files/v3/render-abort-02.json"
+      },
+      {
+        "label": "v3/reproduce.md",
+        "href": "files/v3/reproduce.md"
+      },
+      {
+        "label": "v3/review-round-01.md",
+        "href": "files/v3/review-round-01.md"
+      },
+      {
+        "label": "v3/review-round-02.md",
+        "href": "files/v3/review-round-02.md"
+      },
+      {
+        "label": "v3/review-scene01.md",
+        "href": "files/v3/review-scene01.md"
+      },
+      {
+        "label": "v3/review-scene02.md",
+        "href": "files/v3/review-scene02.md"
+      },
+      {
+        "label": "v3/review-scene03.md",
+        "href": "files/v3/review-scene03.md"
+      },
+      {
+        "label": "v3/review-scene04.md",
+        "href": "files/v3/review-scene04.md"
+      },
+      {
+        "label": "v3/review-scene05.md",
+        "href": "files/v3/review-scene05.md"
+      },
+      {
+        "label": "v3/review-scene06.md",
+        "href": "files/v3/review-scene06.md"
+      },
+      {
+        "label": "v3/review-scene07.md",
+        "href": "files/v3/review-scene07.md"
+      },
+      {
+        "label": "v3/review-scene08.md",
+        "href": "files/v3/review-scene08.md"
+      },
+      {
+        "label": "v3/review-storyboard-r2.md",
+        "href": "files/v3/review-storyboard-r2.md"
+      },
+      {
+        "label": "v3/review-storyboard-r3.md",
+        "href": "files/v3/review-storyboard-r3.md"
+      },
+      {
+        "label": "v3/review-storyboard.md",
+        "href": "files/v3/review-storyboard.md"
+      },
+      {
+        "label": "v3/rgb-browser-check.json",
+        "href": "files/v3/rgb-browser-check.json"
+      },
+      {
+        "label": "v3/rgb-tagged-browser-check.json",
+        "href": "files/v3/rgb-tagged-browser-check.json"
+      },
+      {
+        "label": "v3/round-02-manifest.json",
+        "href": "files/v3/round-02-manifest.json"
+      },
+      {
+        "label": "v3/scene-artifacts.json",
+        "href": "files/v3/scene-artifacts.json"
+      },
+      {
+        "label": "v3/snapshots/round-02-assets.json",
+        "href": "files/v3/snapshots/round-02-assets.json"
+      },
+      {
+        "label": "v3/snapshots/round-02-brief.md",
+        "href": "files/v3/snapshots/round-02-brief.md"
+      },
+      {
+        "label": "v3/snapshots/round-02-facts.json",
+        "href": "files/v3/snapshots/round-02-facts.json"
+      },
+      {
+        "label": "v3/snapshots/round-02-font-lock.json",
+        "href": "files/v3/snapshots/round-02-font-lock.json"
+      },
+      {
+        "label": "v3/snapshots/round-02-timing.json",
+        "href": "files/v3/snapshots/round-02-timing.json"
+      },
+      {
+        "label": "v3/source-manifest.json",
+        "href": "files/v3/source-manifest.json"
+      },
+      {
+        "label": "v3/storyboard.md",
+        "href": "files/v3/storyboard.md"
+      },
+      {
+        "label": "v3/style-guide.md",
+        "href": "files/v3/style-guide.md"
+      },
+      {
+        "label": "v3/timing.json",
+        "href": "files/v3/timing.json"
+      },
+      {
+        "label": "v3/web-static-check.json",
+        "href": "files/v3/web-static-check.json"
+      },
+      {
+        "label": "v3/web-ui-check.json",
+        "href": "files/v3/web-ui-check.json"
+      }
+    ]
+  },
+  {
+    "label": "V2 · 另写指令的历史记录",
+    "items": [
+      {
+        "label": "v2-audio.json",
+        "href": "files/v2-audio.json"
+      },
+      {
+        "label": "v2-brief.md",
+        "href": "files/v2-brief.md"
+      },
+      {
+        "label": "v2-execution-prompt.md",
+        "href": "files/v2-execution-prompt.md"
+      },
+      {
+        "label": "v2-facts.json",
+        "href": "files/v2-facts.json"
+      },
+      {
+        "label": "v2-final-review.md",
+        "href": "files/v2-final-review.md"
+      },
+      {
+        "label": "v2-first-render-verification.json",
+        "href": "files/v2-first-render-verification.json"
+      },
+      {
+        "label": "v2-font.json",
+        "href": "files/v2-font.json"
+      },
+      {
+        "label": "v2-geometry.json",
+        "href": "files/v2-geometry.json"
+      },
+      {
+        "label": "v2-ledger.md",
+        "href": "files/v2-ledger.md"
+      },
+      {
+        "label": "v2-quality.md",
+        "href": "files/v2-quality.md"
+      },
+      {
+        "label": "v2-references.md",
+        "href": "files/v2-references.md"
+      },
+      {
+        "label": "v2-render.json",
+        "href": "files/v2-render.json"
+      },
+      {
+        "label": "v2-sample-review.md",
+        "href": "files/v2-sample-review.md"
+      },
+      {
+        "label": "v2-scene01-review.md",
+        "href": "files/v2-scene01-review.md"
+      },
+      {
+        "label": "v2-scene02-review.md",
+        "href": "files/v2-scene02-review.md"
+      },
+      {
+        "label": "v2-scene03-review.md",
+        "href": "files/v2-scene03-review.md"
+      },
+      {
+        "label": "v2-scene04-review.md",
+        "href": "files/v2-scene04-review.md"
+      },
+      {
+        "label": "v2-scene05-review.md",
+        "href": "files/v2-scene05-review.md"
+      },
+      {
+        "label": "v2-scene06-review.md",
+        "href": "files/v2-scene06-review.md"
+      },
+      {
+        "label": "v2-scene07-review.md",
+        "href": "files/v2-scene07-review.md"
+      },
+      {
+        "label": "v2-scene08-review.md",
+        "href": "files/v2-scene08-review.md"
+      },
+      {
+        "label": "v2-second-render-verification.json",
+        "href": "files/v2-second-render-verification.json"
+      },
+      {
+        "label": "v2-story-review.md",
+        "href": "files/v2-story-review.md"
+      },
+      {
+        "label": "v2-style-guide.md",
+        "href": "files/v2-style-guide.md"
+      },
+      {
+        "label": "v2-verification.json",
+        "href": "files/v2-verification.json"
+      },
+      {
+        "label": "v2-web-static-check.json",
+        "href": "files/v2-web-static-check.json"
+      },
+      {
+        "label": "v2-web-verification.json",
+        "href": "files/v2-web-verification.json"
+      }
+    ]
+  },
+  {
+    "label": "V1 与总体研究记录",
+    "items": [
+      {
+        "label": "brief.md",
+        "href": "files/brief.md"
+      },
+      {
+        "label": "experiment.json",
+        "href": "files/experiment.json"
+      },
+      {
+        "label": "facts.json",
+        "href": "files/facts.json"
+      },
+      {
+        "label": "final-review.md",
+        "href": "files/final-review.md"
+      },
+      {
+        "label": "font-provenance.json",
+        "href": "files/font-provenance.json"
+      },
+      {
+        "label": "ledger.md",
+        "href": "files/ledger.md"
+      },
+      {
+        "label": "original-prompt-guide.md",
+        "href": "files/original-prompt-guide.md"
+      },
+      {
+        "label": "prompt-understanding.md",
+        "href": "files/prompt-understanding.md"
+      },
+      {
+        "label": "render.json",
+        "href": "files/render.json"
+      },
+      {
+        "label": "review.md",
+        "href": "files/review.md"
+      },
+      {
+        "label": "style-guide.md",
+        "href": "files/style-guide.md"
+      },
+      {
+        "label": "understanding-infographic-prompt.md",
+        "href": "files/understanding-infographic-prompt.md"
+      },
+      {
+        "label": "understanding-map-production.json",
+        "href": "files/understanding-map-production.json"
+      },
+      {
+        "label": "verification.json",
+        "href": "files/verification.json"
+      },
+      {
+        "label": "web-verification.json",
+        "href": "files/web-verification.json"
+      }
+    ]
+  },
+  {
+    "label": "公平对照 · 同预算匿名评测",
+    "items": [
+      {
+        "label": "controlled/analysis.md",
+        "href": "files/controlled/analysis.md"
+      },
+      {
+        "label": "controlled/archive-manifest.json",
+        "href": "files/controlled/archive-manifest.json"
+      },
+      {
+        "label": "controlled/common-brief.md",
+        "href": "files/controlled/common-brief.md"
+      },
+      {
+        "label": "controlled/common-rules.md",
+        "href": "files/controlled/common-rules.md"
+      },
+      {
+        "label": "controlled/coordinator-log.md",
+        "href": "files/controlled/coordinator-log.md"
+      },
+      {
+        "label": "controlled/evaluation-instructions.md",
+        "href": "files/controlled/evaluation-instructions.md"
+      },
+      {
+        "label": "controlled/input-integrity.json",
+        "href": "files/controlled/input-integrity.json"
+      },
+      {
+        "label": "controlled/judge-1/report.md",
+        "href": "files/controlled/judge-1/report.md"
+      },
+      {
+        "label": "controlled/judge-1/scores.json",
+        "href": "files/controlled/judge-1/scores.json"
+      },
+      {
+        "label": "controlled/judge-1/silent-retelling.md",
+        "href": "files/controlled/judge-1/silent-retelling.md"
+      },
+      {
+        "label": "controlled/judge-2/report.md",
+        "href": "files/controlled/judge-2/report.md"
+      },
+      {
+        "label": "controlled/judge-2/scores.json",
+        "href": "files/controlled/judge-2/scores.json"
+      },
+      {
+        "label": "controlled/judge-2/silent-retelling.md",
+        "href": "files/controlled/judge-2/silent-retelling.md"
+      },
+      {
+        "label": "controlled/judge-seal.json",
+        "href": "files/controlled/judge-seal.json"
+      },
+      {
+        "label": "controlled/measurement-manifest.json",
+        "href": "files/controlled/measurement-manifest.json"
+      },
+      {
+        "label": "controlled/measurement-rules.md",
+        "href": "files/controlled/measurement-rules.md"
+      },
+      {
+        "label": "controlled/protocol.json",
+        "href": "files/controlled/protocol.json"
+      },
+      {
+        "label": "controlled/requirements-full-input.md",
+        "href": "files/controlled/requirements-full-input.md"
+      },
+      {
+        "label": "controlled/requirements-instruction.md",
+        "href": "files/controlled/requirements-instruction.md"
+      },
+      {
+        "label": "controlled/results.json",
+        "href": "files/controlled/results.json"
+      },
+      {
+        "label": "controlled/rubric.json",
+        "href": "files/controlled/rubric.json"
+      },
+      {
+        "label": "controlled/run-01/audio-source.json",
+        "href": "files/controlled/run-01/audio-source.json"
+      },
+      {
+        "label": "controlled/run-01/brief.md",
+        "href": "files/controlled/run-01/brief.md"
+      },
+      {
+        "label": "controlled/run-01/contrast.json",
+        "href": "files/controlled/run-01/contrast.json"
+      },
+      {
+        "label": "controlled/run-01/dispatch.json",
+        "href": "files/controlled/run-01/dispatch.json"
+      },
+      {
+        "label": "controlled/run-01/event-audio-check.json",
+        "href": "files/controlled/run-01/event-audio-check.json"
+      },
+      {
+        "label": "controlled/run-01/facts.json",
+        "href": "files/controlled/run-01/facts.json"
+      },
+      {
+        "label": "controlled/run-01/ledger.md",
+        "href": "files/controlled/run-01/ledger.md"
+      },
+      {
+        "label": "controlled/run-01/probe-final.json",
+        "href": "files/controlled/run-01/probe-final.json"
+      },
+      {
+        "label": "controlled/run-01/probe.json",
+        "href": "files/controlled/run-01/probe.json"
+      },
+      {
+        "label": "controlled/run-01/quality-check.json",
+        "href": "files/controlled/run-01/quality-check.json"
+      },
+      {
+        "label": "controlled/run-01/README.md",
+        "href": "files/controlled/run-01/README.md"
+      },
+      {
+        "label": "controlled/run-01/safe-margins.json",
+        "href": "files/controlled/run-01/safe-margins.json"
+      },
+      {
+        "label": "controlled/run-01/seal.json",
+        "href": "files/controlled/run-01/seal.json"
+      },
+      {
+        "label": "controlled/run-01/storyboard.md",
+        "href": "files/controlled/run-01/storyboard.md"
+      },
+      {
+        "label": "controlled/run-01/style-guide.md",
+        "href": "files/controlled/run-01/style-guide.md"
+      },
+      {
+        "label": "controlled/run-01/supplement-manifest.json",
+        "href": "files/controlled/run-01/supplement-manifest.json"
+      },
+      {
+        "label": "controlled/run-01/timing.json",
+        "href": "files/controlled/run-01/timing.json"
+      },
+      {
+        "label": "controlled/run-02/dispatch.json",
+        "href": "files/controlled/run-02/dispatch.json"
+      },
+      {
+        "label": "controlled/run-02/evidence/audio-design.json",
+        "href": "files/controlled/run-02/evidence/audio-design.json"
+      },
+      {
+        "label": "controlled/run-02/evidence/contrast.json",
+        "href": "files/controlled/run-02/evidence/contrast.json"
+      },
+      {
+        "label": "controlled/run-02/evidence/ffprobe.json",
+        "href": "files/controlled/run-02/evidence/ffprobe.json"
+      },
+      {
+        "label": "controlled/run-02/evidence/frame-times.json",
+        "href": "files/controlled/run-02/evidence/frame-times.json"
+      },
+      {
+        "label": "controlled/run-02/evidence/quality.json",
+        "href": "files/controlled/run-02/evidence/quality.json"
+      },
+      {
+        "label": "controlled/run-02/facts.md",
+        "href": "files/controlled/run-02/facts.md"
+      },
+      {
+        "label": "controlled/run-02/ledger.md",
+        "href": "files/controlled/run-02/ledger.md"
+      },
+      {
+        "label": "controlled/run-02/README.md",
+        "href": "files/controlled/run-02/README.md"
+      },
+      {
+        "label": "controlled/run-02/result.json",
+        "href": "files/controlled/run-02/result.json"
+      },
+      {
+        "label": "controlled/run-02/seal.json",
+        "href": "files/controlled/run-02/seal.json"
+      },
+      {
+        "label": "controlled/run-02/storyboard.md",
+        "href": "files/controlled/run-02/storyboard.md"
+      },
+      {
+        "label": "controlled/run-02/supplement-manifest.json",
+        "href": "files/controlled/run-02/supplement-manifest.json"
+      },
+      {
+        "label": "controlled/unblinding.json",
+        "href": "files/controlled/unblinding.json"
+      },
+      {
+        "label": "controlled/verification.json",
+        "href": "files/controlled/verification.json"
+      },
+      {
+        "label": "controlled/X-measurements.json",
+        "href": "files/controlled/X-measurements.json"
+      },
+      {
+        "label": "controlled/Y-measurements.json",
+        "href": "files/controlled/Y-measurements.json"
+      }
+    ]
+  }
+]

@@ -1,0 +1,21 @@
+{
+  "final_file": "output.mp4",
+  "sha256": "2257b999e84acc992d801f2037b32a74fa187ed92bdb36218c6e7a58d74fe33d",
+  "width": 1280,
+  "height": 720,
+  "fps": "60/1",
+  "duration_seconds": 20.0,
+  "frame_count": 1200,
+  "audio_duration_seconds": 20.0,
+  "loudness_lufs": -14.01,
+  "true_peak_dbtp": -2.92,
+  "decode_errors": "",
+  "freeze_detector": "freezedetect=n=-50dB:d=0.5",
+  "freeze_events": [],
+  "detected_freeze_total_seconds": 0,
+  "minimum_settled_text_contrast": 4.602,
+  "sfx_vs_music": "full-track RMS 35.52 dB lower; separate stems retained",
+  "sync": "120 BPM; designed principal transition midpoints and event samples at 0,3,5,9,12.5,16.5 seconds; all on exact beat grid",
+  "subjective_listening": "unverified",
+  "reference_parity": "not established; independent reviewer identified remaining craft gap"
+}

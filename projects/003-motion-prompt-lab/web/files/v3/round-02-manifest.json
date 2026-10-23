@@ -1,0 +1,27 @@
+{
+  "completed_full_render": 2,
+  "file": "web/media/v3/round-02.mp4",
+  "build_command": "node src/v3/render-all.mjs round-02",
+  "from_zero_all_1200_frames": true,
+  "workers": 8,
+  "worker_result": "all exit0",
+  "render_aborts_before_this": 2,
+  "sha256": {
+    "notes/v3/timing.json": "4e1ba7e7c9ab7f23622d5ecc6d67491cfa641c5d9f4c1207447a15d02e55429f",
+    "web/media/v3/music-raw.wav": "f0d2ec434fa8961d3ef26917e1050bfdacee5c8500d80c464cb0b8ee3e3d6d12",
+    "web/media/v3/sfx-raw.wav": "033775869e1ba141b447451593f4e29cc0d35d1409eb62c0d37882030a3b7190",
+    "web/media/v3/mix-raw.wav": "ef03cdd3b2284fcdd1cac6208472cdb3b45c332b5768d53ac4ac95f6c183b29e",
+    "web/media/v3/mix.wav": "b4d91430a68dfbb80ddb0b2596340901c50123123f33b770cbc5192f83f7bc99",
+    "web/media/v3/round-02.mp4": "5b02258af372e89a3d54a1e26ebcebb1bd35052c2ea5aecadbb0b768c89f23e2",
+    "src\\v3\\audio.py": "c8f723c03aae6eadf7d1b1dea4a6abb6dd7906aa6825fed83c3035f06210cba9",
+    "src\\v3\\render-all.mjs": "6a4eed883901eab3208f56b98cfdf504e54544d7e65c5a8384cb49195999b9b7",
+    "src\\v3\\render.mjs": "0fd70460f089f24508850e2f1983993d5752b9566f98dc17c5d1cded0a61186b",
+    "src\\v3\\scenes-a.mjs": "406f3dd6e55ebf989d3a3ed7c5a5102f6bda1348ac2e79c24d7e4efb9a3bcebd",
+    "src\\v3\\scenes-b.mjs": "c896879e43718421df3e1ed00bd4c02af4e76c181af2eb78ba9012df8d2a6902",
+    "src\\v3\\scenes-c.mjs": "bbf3b13935be4fd1301079e190d80be7fed25877d947865126cc29a7fdcf8aa7",
+    "src\\v3\\shared.mjs": "b270e70f8a8e8097c6743ff986fe9948c391ccb48a951dfaecf8e93093e3e940",
+    "src\\v3\\transitions.mjs": "01f16664efb548f7534ab0ce9208a7e6888877c17a649d56db7971e390123179",
+    "src\\v3\\verify.py": "1e9ffd581b8df8b74f824603fd7180f7c8d11ddce96ec372609627629a824bc0"
+  },
+  "critic": "full_critic_r2; stage A in progress"
+}

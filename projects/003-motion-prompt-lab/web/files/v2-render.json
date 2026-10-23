@@ -1,0 +1,36 @@
+{
+  "seconds": 238.09,
+  "frames": 1200,
+  "width": 1280,
+  "height": 720,
+  "fps": 60,
+  "renderer": "SVG / resvg-js 2.6.2",
+  "motionBlur": {
+    "lag": 9,
+    "anticipation": 12,
+    "settle": 24,
+    "shutterFrames": 0.5,
+    "samples": 3,
+    "fastSamples": 7,
+    "fastRanges": [
+      [
+        150,
+        180
+      ],
+      [
+        300,
+        360
+      ],
+      [
+        390,
+        450
+      ],
+      [
+        930,
+        990
+      ]
+    ]
+  },
+  "sha256": "d9076d830cee88ee085405451933c87889b851e2ed73a6cc1ea60978c55505de",
+  "fontSHA256": "50ab00133fe2b8204ff3df0bc60f57454951c9934b52d0372a7419cfd58c7605"
+}

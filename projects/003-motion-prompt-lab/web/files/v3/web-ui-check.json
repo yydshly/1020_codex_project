@@ -1,0 +1,22 @@
+{
+  "date": "2026-10-23",
+  "scope": "Complete research website, showing existing V3 Round 02; not a new film review or final execution audit",
+  "method": "Actual in-app browser through CUA",
+  "checks": {
+    "old_preview_redirects_to_complete_page": "PASS",
+    "v3_brief_loaded_in_page": "1154 characters; copy button reported success",
+    "v2_complete_instruction_loaded": "4947 characters",
+    "official_original_post_embed": "Official X iframe appeared; screenshot visually confirmed author post and prompt image. External service availability is not guaranteed.",
+    "three_video_playback": "All three actual MP4 files loaded as 20 seconds, played, and paused without media errors. Only V3 unmuted.",
+    "focus_v3_and_restore": "PASS; V1/V2 hidden then restored",
+    "in_page_review_reader": "Round 02 report loaded; selection changed to actual ledger text",
+    "failure_filter": "Four visible FAIL entries: handoff, motion, fact context, reference comparison",
+    "default_viewport_horizontal_overflow": false,
+    "console_errors_observed": []
+  },
+  "limits": [
+    "Playback synchronization is approximate.",
+    "Visual and technical website checks do not change the film's 'revise again' result.",
+    "Original third-party prompt remains supplied through its source and official embed; not republished as a local full-text file."
+  ]
+}

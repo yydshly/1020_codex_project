@@ -1,0 +1,430 @@
+{
+  "claims": [
+    {
+      "id": "title",
+      "screen_text": "GitHub 项目研究集",
+      "original_quote": "GitHub 项目研究集",
+      "source_file": "README.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/README.md",
+      "source_sha256": "9b708a6441e6917cf2a7d1418be8abcf3fd87e58e51bda79787f5a721b9b376c",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/9b708a6441e6917cf2a7d1418be8abcf3fd87e58e51bda79787f5a721b9b376c/README.md",
+      "source_snapshot_sha256": "9b708a6441e6917cf2a7d1418be8abcf3fd87e58e51bda79787f5a721b9b376c"
+    },
+    {
+      "id": "purpose",
+      "screen_text": "理解原理",
+      "original_quote": "从理解原理、运行验证，到改造实践与 Web 演示",
+      "source_file": "README.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/README.md",
+      "source_sha256": "9b708a6441e6917cf2a7d1418be8abcf3fd87e58e51bda79787f5a721b9b376c",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/9b708a6441e6917cf2a7d1418be8abcf3fd87e58e51bda79787f5a721b9b376c/README.md",
+      "source_snapshot_sha256": "9b708a6441e6917cf2a7d1418be8abcf3fd87e58e51bda79787f5a721b9b376c"
+    },
+    {
+      "id": "run",
+      "screen_text": "运行验证",
+      "original_quote": "从理解原理、运行验证，到改造实践与 Web 演示",
+      "source_file": "README.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/README.md",
+      "source_sha256": "9b708a6441e6917cf2a7d1418be8abcf3fd87e58e51bda79787f5a721b9b376c",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/9b708a6441e6917cf2a7d1418be8abcf3fd87e58e51bda79787f5a721b9b376c/README.md",
+      "source_snapshot_sha256": "9b708a6441e6917cf2a7d1418be8abcf3fd87e58e51bda79787f5a721b9b376c"
+    },
+    {
+      "id": "practice",
+      "screen_text": "改造实践",
+      "original_quote": "从理解原理、运行验证，到改造实践与 Web 演示",
+      "source_file": "README.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/README.md",
+      "source_sha256": "9b708a6441e6917cf2a7d1418be8abcf3fd87e58e51bda79787f5a721b9b376c",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/9b708a6441e6917cf2a7d1418be8abcf3fd87e58e51bda79787f5a721b9b376c/README.md",
+      "source_snapshot_sha256": "9b708a6441e6917cf2a7d1418be8abcf3fd87e58e51bda79787f5a721b9b376c"
+    },
+    {
+      "id": "status",
+      "screen_text": "研究中",
+      "original_quote": "状态为 **研究中**",
+      "source_file": "projects/002-ai-content-toolkit/README.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/README.md",
+      "source_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4/README.md",
+      "source_snapshot_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4"
+    },
+    {
+      "id": "tools",
+      "screen_text": "六个 AI 内容工具",
+      "original_quote": "六个 AI 内容工具的原理与实践",
+      "source_file": "projects/002-ai-content-toolkit/README.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/README.md",
+      "source_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4/README.md",
+      "source_snapshot_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4"
+    },
+    {
+      "id": "kokoro",
+      "screen_text": "Kokoro",
+      "original_quote": "Kokoro",
+      "source_file": "projects/002-ai-content-toolkit/README.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/README.md",
+      "source_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4/README.md",
+      "source_snapshot_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4"
+    },
+    {
+      "id": "digup",
+      "screen_text": "DigUp",
+      "original_quote": "DigUp",
+      "source_file": "projects/002-ai-content-toolkit/README.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/README.md",
+      "source_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4/README.md",
+      "source_snapshot_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4"
+    },
+    {
+      "id": "podcastfy",
+      "screen_text": "Podcastfy",
+      "original_quote": "Podcastfy",
+      "source_file": "projects/002-ai-content-toolkit/README.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/README.md",
+      "source_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4/README.md",
+      "source_snapshot_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4"
+    },
+    {
+      "id": "ldr",
+      "screen_text": "Local Deep Research",
+      "original_quote": "Local Deep Research",
+      "source_file": "projects/002-ai-content-toolkit/README.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/README.md",
+      "source_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4/README.md",
+      "source_snapshot_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4"
+    },
+    {
+      "id": "svf",
+      "screen_text": "Short Video Factory",
+      "original_quote": "Short Video Factory",
+      "source_file": "projects/002-ai-content-toolkit/README.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/README.md",
+      "source_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4/README.md",
+      "source_snapshot_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4"
+    },
+    {
+      "id": "shorts",
+      "screen_text": "AI YouTube Shorts Generator",
+      "original_quote": "AI YouTube Shorts Generator",
+      "source_file": "projects/002-ai-content-toolkit/README.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/README.md",
+      "source_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4/README.md",
+      "source_snapshot_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4"
+    },
+    {
+      "id": "process",
+      "screen_text": "文稿 + 音色 → 语音",
+      "original_quote": "文稿 + 音色 → 语音",
+      "source_file": "projects/002-ai-content-toolkit/README.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/README.md",
+      "source_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4/README.md",
+      "source_snapshot_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4"
+    },
+    {
+      "id": "demo",
+      "screen_text": "教学示意",
+      "original_quote": "两者均为教学材料，不是 Kokoro 的效果测试。",
+      "source_file": "projects/002-ai-content-toolkit/web/kokoro-learning.js",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/web/kokoro-learning.js",
+      "kind": "disclosure anchored to the actual Kokoro teaching page; film diagram is code-built and not a model run",
+      "source_snapshot": ".cache/v3-source/facts/efd19b6c646d0e6879d5c485a31fa87d02c5b12b08306512052cbc24aa8dfd12/kokoro-learning.js",
+      "source_snapshot_sha256": "efd19b6c646d0e6879d5c485a31fa87d02c5b12b08306512052cbc24aa8dfd12"
+    },
+    {
+      "id": "pending",
+      "screen_text": "待实测",
+      "original_quote": "所有结果目前均为待实测",
+      "source_file": "projects/002-ai-content-toolkit/notes/07-experiments.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/notes/07-experiments.md",
+      "source_sha256": "cb12ec7903de47491376894f4bd0a1446e3bc251266a2dc164432a5dd8303bab",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/cb12ec7903de47491376894f4bd0a1446e3bc251266a2dc164432a5dd8303bab/07-experiments.md",
+      "source_snapshot_sha256": "cb12ec7903de47491376894f4bd0a1446e3bc251266a2dc164432a5dd8303bab"
+    },
+    {
+      "id": "evidence",
+      "screen_text": "官方来源",
+      "original_quote": "官方来源可追溯",
+      "source_file": "projects/002-ai-content-toolkit/web/index.html",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/web/index.html",
+      "source_sha256": "7f3bd4b9236ec2d6ca20cdf9e8794f7de7357e33bdc0415b93d74b1325b505e0",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/7f3bd4b9236ec2d6ca20cdf9e8794f7de7357e33bdc0415b93d74b1325b505e0/index.html",
+      "source_snapshot_sha256": "7f3bd4b9236ec2d6ca20cdf9e8794f7de7357e33bdc0415b93d74b1325b505e0"
+    },
+    {
+      "id": "version",
+      "screen_text": "固定版本",
+      "original_quote": "固定版本证据来自",
+      "source_file": "projects/002-ai-content-toolkit/README.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/README.md",
+      "source_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4/README.md",
+      "source_snapshot_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4"
+    },
+    {
+      "id": "boundary",
+      "screen_text": "研究与实测分开记录",
+      "original_quote": "研究与实测分开记录",
+      "source_file": "projects/002-ai-content-toolkit/web/index.html",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/web/index.html",
+      "source_sha256": "7f3bd4b9236ec2d6ca20cdf9e8794f7de7357e33bdc0415b93d74b1325b505e0",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/7f3bd4b9236ec2d6ca20cdf9e8794f7de7357e33bdc0415b93d74b1325b505e0/index.html",
+      "source_snapshot_sha256": "7f3bd4b9236ec2d6ca20cdf9e8794f7de7357e33bdc0415b93d74b1325b505e0"
+    },
+    {
+      "id": "nav1",
+      "screen_text": "研究总览",
+      "original_quote": "研究总览",
+      "source_file": "projects/002-ai-content-toolkit/web/index.html",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/web/index.html",
+      "source_sha256": "7f3bd4b9236ec2d6ca20cdf9e8794f7de7357e33bdc0415b93d74b1325b505e0",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/7f3bd4b9236ec2d6ca20cdf9e8794f7de7357e33bdc0415b93d74b1325b505e0/index.html",
+      "source_snapshot_sha256": "7f3bd4b9236ec2d6ca20cdf9e8794f7de7357e33bdc0415b93d74b1325b505e0"
+    },
+    {
+      "id": "nav2",
+      "screen_text": "能力对照",
+      "original_quote": "能力对照",
+      "source_file": "projects/002-ai-content-toolkit/web/index.html",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/web/index.html",
+      "source_sha256": "7f3bd4b9236ec2d6ca20cdf9e8794f7de7357e33bdc0415b93d74b1325b505e0",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/7f3bd4b9236ec2d6ca20cdf9e8794f7de7357e33bdc0415b93d74b1325b505e0/index.html",
+      "source_snapshot_sha256": "7f3bd4b9236ec2d6ca20cdf9e8794f7de7357e33bdc0415b93d74b1325b505e0"
+    },
+    {
+      "id": "nav3",
+      "screen_text": "实验记录",
+      "original_quote": "实验记录",
+      "source_file": "projects/002-ai-content-toolkit/web/index.html",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/web/index.html",
+      "source_sha256": "7f3bd4b9236ec2d6ca20cdf9e8794f7de7357e33bdc0415b93d74b1325b505e0",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/7f3bd4b9236ec2d6ca20cdf9e8794f7de7357e33bdc0415b93d74b1325b505e0/index.html",
+      "source_snapshot_sha256": "7f3bd4b9236ec2d6ca20cdf9e8794f7de7357e33bdc0415b93d74b1325b505e0"
+    },
+    {
+      "id": "brand",
+      "screen_text": "研",
+      "original_quote": "class=\"brand-icon\" aria-hidden=\"true\">研",
+      "source_file": "projects/002-ai-content-toolkit/web/index.html",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/web/index.html",
+      "source_sha256": "7f3bd4b9236ec2d6ca20cdf9e8794f7de7357e33bdc0415b93d74b1325b505e0",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/7f3bd4b9236ec2d6ca20cdf9e8794f7de7357e33bdc0415b93d74b1325b505e0/index.html",
+      "source_snapshot_sha256": "7f3bd4b9236ec2d6ca20cdf9e8794f7de7357e33bdc0415b93d74b1325b505e0"
+    },
+    {
+      "id": "sound",
+      "screen_text": "声音基础",
+      "original_quote": "Kokoro 声音基础",
+      "source_file": "projects/002-ai-content-toolkit/README.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/README.md",
+      "source_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4/README.md",
+      "source_snapshot_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4"
+    },
+    {
+      "id": "text",
+      "screen_text": "文稿",
+      "original_quote": "文稿 + 音色 → 语音",
+      "source_file": "projects/002-ai-content-toolkit/README.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/README.md",
+      "source_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4/README.md",
+      "source_snapshot_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4"
+    },
+    {
+      "id": "voice",
+      "screen_text": "音色",
+      "original_quote": "文稿 + 音色 → 语音",
+      "source_file": "projects/002-ai-content-toolkit/README.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/README.md",
+      "source_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4/README.md",
+      "source_snapshot_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4"
+    },
+    {
+      "id": "speech",
+      "screen_text": "语音",
+      "original_quote": "文稿 + 音色 → 语音",
+      "source_file": "projects/002-ai-content-toolkit/README.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/README.md",
+      "source_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4",
+      "kind": "exact or abbreviated source text",
+      "source_snapshot": ".cache/v3-source/facts/0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4/README.md",
+      "source_snapshot_sha256": "0df1f6e64e7036fb95e62280f355be25cc621682380245a7070e783a59ba4ba4"
+    },
+    {
+      "id": "url",
+      "screen_text": "github.com/yydshly/1020_codex_project",
+      "original_quote": "https://github.com/yydshly/1020_codex_project",
+      "source_file": "notes/v3/brief-input.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project",
+      "kind": "user-provided destination",
+      "source_snapshot": ".cache/v3-source/facts/8920b056712c0d2dea56d03f85a3be8efd838199554bc778d4eae13d847cbe81/brief-input.md",
+      "source_snapshot_sha256": "8920b056712c0d2dea56d03f85a3be8efd838199554bc778d4eae13d847cbe81"
+    },
+    {
+      "id": "repo-name",
+      "screen_text": "hexgrad/kokoro",
+      "original_quote": "hexgrad/kokoro",
+      "source_file": "projects/002-ai-content-toolkit/notes/sources.json",
+      "source_url": "https://github.com/hexgrad/kokoro",
+      "source_snapshot": ".cache/v3-source/facts/0a4962f5980b697bfbcf668bb99251b3cd9f277249bfb07fa1fd929db1986cfa/sources.json",
+      "source_snapshot_sha256": "0a4962f5980b697bfbcf668bb99251b3cd9f277249bfb07fa1fd929db1986cfa"
+    },
+    {
+      "id": "commit",
+      "screen_text": "dfb907a02bba",
+      "original_quote": "dfb907a02bba8152ca444717ca5d78747ccb4bec",
+      "source_file": "projects/002-ai-content-toolkit/notes/sources.json",
+      "source_url": "https://github.com/hexgrad/kokoro/tree/dfb907a02bba8152ca444717ca5d78747ccb4bec",
+      "source_snapshot": ".cache/v3-source/facts/0a4962f5980b697bfbcf668bb99251b3cd9f277249bfb07fa1fd929db1986cfa/sources.json",
+      "source_snapshot_sha256": "0a4962f5980b697bfbcf668bb99251b3cd9f277249bfb07fa1fd929db1986cfa"
+    },
+    {
+      "id": "read",
+      "screen_text": "阅读研究",
+      "original_quote": "阅读研究",
+      "source_file": "projects/002-ai-content-toolkit/web/app.js",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/web/app.js",
+      "source_snapshot": ".cache/v3-source/facts/962064412851a4183fc8c0be78dcb246aa8d4a6d603512e0ade4329a28ea6dfd/app.js",
+      "source_snapshot_sha256": "962064412851a4183fc8c0be78dcb246aa8d4a6d603512e0ade4329a28ea6dfd"
+    },
+    {
+      "id": "amplitude",
+      "screen_text": "相对振幅",
+      "original_quote": "相对振幅",
+      "source_file": "projects/002-ai-content-toolkit/web/kokoro-learning.js",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/web/kokoro-learning.js",
+      "source_snapshot": ".cache/v3-source/facts/efd19b6c646d0e6879d5c485a31fa87d02c5b12b08306512052cbc24aa8dfd12/kokoro-learning.js",
+      "source_snapshot_sha256": "efd19b6c646d0e6879d5c485a31fa87d02c5b12b08306512052cbc24aa8dfd12"
+    },
+    {
+      "source_file": "projects/002-ai-content-toolkit/notes/07-experiments.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/notes/07-experiments.md",
+      "source_sha256": "cb12ec7903de47491376894f4bd0a1446e3bc251266a2dc164432a5dd8303bab",
+      "source_snapshot": ".cache/v3-source/facts/cb12ec7903de47491376894f4bd0a1446e3bc251266a2dc164432a5dd8303bab/07-experiments.md",
+      "source_snapshot_sha256": "cb12ec7903de47491376894f4bd0a1446e3bc251266a2dc164432a5dd8303bab",
+      "id": "sample-label",
+      "screen_text": "样本",
+      "original_quote": "准备的样本",
+      "kind": "exact source text; planned sample/metrics, not measured results"
+    },
+    {
+      "source_file": "projects/002-ai-content-toolkit/notes/07-experiments.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/notes/07-experiments.md",
+      "source_sha256": "cb12ec7903de47491376894f4bd0a1446e3bc251266a2dc164432a5dd8303bab",
+      "source_snapshot": ".cache/v3-source/facts/cb12ec7903de47491376894f4bd0a1446e3bc251266a2dc164432a5dd8303bab/07-experiments.md",
+      "source_snapshot_sha256": "cb12ec7903de47491376894f4bd0a1446e3bc251266a2dc164432a5dd8303bab",
+      "id": "sample",
+      "screen_text": "中英文短文各一份",
+      "original_quote": "中英文短文各一份，包含专有名词和数字",
+      "kind": "exact source text; planned sample/metrics, not measured results"
+    },
+    {
+      "source_file": "projects/002-ai-content-toolkit/notes/07-experiments.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/notes/07-experiments.md",
+      "source_sha256": "cb12ec7903de47491376894f4bd0a1446e3bc251266a2dc164432a5dd8303bab",
+      "source_snapshot": ".cache/v3-source/facts/cb12ec7903de47491376894f4bd0a1446e3bc251266a2dc164432a5dd8303bab/07-experiments.md",
+      "source_snapshot_sha256": "cb12ec7903de47491376894f4bd0a1446e3bc251266a2dc164432a5dd8303bab",
+      "id": "sample-features",
+      "screen_text": "专有名词和数字",
+      "original_quote": "中英文短文各一份，包含专有名词和数字",
+      "kind": "exact source text; planned sample/metrics, not measured results"
+    },
+    {
+      "source_file": "projects/002-ai-content-toolkit/notes/07-experiments.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/notes/07-experiments.md",
+      "source_sha256": "cb12ec7903de47491376894f4bd0a1446e3bc251266a2dc164432a5dd8303bab",
+      "source_snapshot": ".cache/v3-source/facts/cb12ec7903de47491376894f4bd0a1446e3bc251266a2dc164432a5dd8303bab/07-experiments.md",
+      "source_snapshot_sha256": "cb12ec7903de47491376894f4bd0a1446e3bc251266a2dc164432a5dd8303bab",
+      "id": "metric-label",
+      "screen_text": "记录指标",
+      "original_quote": "记录指标",
+      "kind": "exact source text; planned sample/metrics, not measured results"
+    },
+    {
+      "source_file": "projects/002-ai-content-toolkit/notes/07-experiments.md",
+      "source_url": "https://github.com/yydshly/1020_codex_project/blob/main/projects/002-ai-content-toolkit/notes/07-experiments.md",
+      "source_sha256": "cb12ec7903de47491376894f4bd0a1446e3bc251266a2dc164432a5dd8303bab",
+      "source_snapshot": ".cache/v3-source/facts/cb12ec7903de47491376894f4bd0a1446e3bc251266a2dc164432a5dd8303bab/07-experiments.md",
+      "source_snapshot_sha256": "cb12ec7903de47491376894f4bd0a1446e3bc251266a2dc164432a5dd8303bab",
+      "id": "metrics",
+      "screen_text": "错读、生成秒数、音频秒数、设备",
+      "original_quote": "错读、生成秒数、音频秒数、设备",
+      "kind": "exact source text; planned sample/metrics, not measured results"
+    }
+  ],
+  "limitations": [
+    "No tool installation, performance, pricing, testimonial or integration result is claimed.",
+    "All waveform imagery is code-built teaching illustration, labeled 教学示意."
+  ],
+  "visual_sources": {
+    "stylesheet": "projects/002-ai-content-toolkit/web/styles.css",
+    "favicon": "projects/003-motion-prompt-lab/.cache/v3-source/product/source-favicon.svg",
+    "captured_pages": "projects\\003-motion-prompt-lab\\.cache\\v3-source\\product",
+    "palette": [
+      "#f6f5f0",
+      "#fffefa",
+      "#263b34",
+      "#1e4b40",
+      "#eee9dc",
+      "#ac573b"
+    ],
+    "font_family_source": "Segoe UI, Microsoft YaHei, PingFang SC",
+    "fixed_fonts": [
+      {
+        "file": "projects\\003-motion-prompt-lab\\.cache\\v3-source\\fonts\\msyh.ttc",
+        "sha256": "d79c55e68b1131eea0cc1c47be4f572d964f28c682e143db2ad09c1e4cb07a3f",
+        "private_only": true
+      },
+      {
+        "file": "projects\\003-motion-prompt-lab\\.cache\\v3-source\\fonts\\segoeui.ttf",
+        "sha256": "704eada12961a27fd271f7d3b09e2066520e758390c1776744eff430fee30f6e",
+        "private_only": true
+      },
+      {
+        "file": "projects\\003-motion-prompt-lab\\.cache\\v3-source\\fonts\\msyh.ttc.subset.ttf",
+        "sha256": "072582924737b5e5d61bafa619cb78e242ccb740237f41ee9f72912f7433a3be",
+        "private_only": true
+      },
+      {
+        "file": "projects\\003-motion-prompt-lab\\.cache\\v3-source\\fonts\\segoeui.ttf.subset.ttf",
+        "sha256": "821a488dfb1a27a92b47508526cc5e0d5847689aaa8d0b7976579b49b1802d3f",
+        "private_only": true
+      }
+    ]
+  }
+}

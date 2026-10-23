@@ -1,0 +1,2959 @@
+{
+  "schema_version": 1,
+  "document_type": "clause_evidence_inventory_draft_not_film_review",
+  "created_at_utc": "2026-10-20T13:51:57.466059+00:00",
+  "project_path": "projects/003-motion-prompt-lab",
+  "scope": "仅V3原文条款与现有文档/代码证据清单；未观看视频、图片或听音，未读取V1/V2，未修改主quality.json。最终成片审核后更新实际状态。",
+  "numbering": "id = section + 原文条号/分支 + 子项；brief与deliverables按原文顺序编号；拆分项保留原父条号。条款为简短意译，不替代私有原文。",
+  "status_semantics": {
+    "PASS": "仅在reason限定范围内有现有证据支持。配置、文件存在或流程执行的PASS不代表最终作品质量通过。",
+    "FAIL": "适用范围及目标版本明确，且有现有证据证明未满足；本快照不将旧轮失败直接移植为尚未完成的最终影片结论。",
+    "UNVERIFIED": "尚未执行、证据不足、仅有计划/旧轮证据，或属于待最终成片/听审判断。不是PASS，也不是豁免。",
+    "N/A": "由明确模式、无对白、无3D、仅单画幅等条件导致不适用；原因逐条写明。"
+  },
+  "axis_separation": {
+    "original_text_integrity": {
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/source-manifest.json",
+        ".cache/v3-source/original-prompt.txt"
+      ],
+      "actual_sha256": "ab01c038ef3b71821bad85b2ddb45ca37891c5fa2d019adb59572de6bbfcb037",
+      "manifest_sha256": "ab01c038ef3b71821bad85b2ddb45ca37891c5fa2d019adb59572de6bbfcb037",
+      "reason": "当前缓存字节哈希与既有采集manifest及制作记录一致。来源链为原帖ID对应的第三方转发接口；本次未重新联网比较原站，未宣称重新独立认证远端逐字一致。未改写原文件。"
+    },
+    "workflow_execution": {
+      "status": "UNVERIFIED",
+      "reason": "已有资料收集、参考研究、分镜迭代、声音先行、样片、组件与场景初评；完整渲染、新评审全项复核和最终交付闭环尚未完成。"
+    },
+    "final_quality_achievement": {
+      "status": "UNVERIFIED",
+      "reason": "未观看最终影片且最终完整MP4尚未完成；不作发布结论。原文保持原样、流程部分执行与质量达到是三种不同判断。"
+    }
+  },
+  "explicit_brief_override": {
+    "original_conflict": "audio与quality_bar对音效相对音乐的高低要求冲突",
+    "selected": "音效低于音乐；无配音，因而人声相对关系分支不适用。",
+    "evidence": [
+      "notes/v3/brief-input.md",
+      "notes/v3/brief.md"
+    ],
+    "does_not_waive": [
+      "先声音后画面",
+      "节拍检测",
+      "最终音画同步",
+      "频段安排",
+      "约−14LUFS",
+      "真峰值≤−1dBTP",
+      "无削波",
+      "纯音乐导出",
+      "主观声音质量"
+    ]
+  },
+  "historical_failure_preservation": [
+    {
+      "scope": "场景首评；只适用于报告记录的SHA，不是本清单的新审片",
+      "evidence": [
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/ledger.md"
+      ],
+      "finding": "scene01真峰+2.18dBTP，scene04约−0.8917dBTP，scene06约−0.6dBTP；账本记录修复AAC试编码，最终MP4仍须复测。"
+    },
+    {
+      "scope": "场景首评",
+      "evidence": [
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "finding": "03/06/07/08近静止单段分别约0.883333/1.3167/0.683/0.866667秒；不可因完全重复帧为零就注销这些问题。"
+    },
+    {
+      "scope": "场景首评",
+      "evidence": [
+        "notes/v3/review-scene02.md"
+      ],
+      "finding": "scene02稳定状态文字对比度约4.316–4.395:1；代码改色不自动证明最终编码通过。"
+    },
+    {
+      "scope": "场景首评",
+      "evidence": [
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "finding": "旧轮存在内容交接、空白点击、遮字及与参考差距等问题；后续修复必须由新评审核对，清单不自作审美判断。"
+    }
+  ],
+  "summary_counts": {
+    "PASS": 68,
+    "UNVERIFIED": 77,
+    "N/A": 34
+  },
+  "section_counts": {
+    "role": 5,
+    "brief": 15,
+    "modes": 20,
+    "assets": 11,
+    "craft": 29,
+    "audio": 19,
+    "build": 14,
+    "workflow": 22,
+    "critic_loop": 15,
+    "quality_bar": 19,
+    "deliverables": 10
+  },
+  "requirements": [
+    {
+      "id": "role.1",
+      "section": "role",
+      "number": "1",
+      "requirement": "承担导演、创意技术及全流程代码制作职责",
+      "status": "PASS",
+      "evidence": [
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs",
+        "src/v3/audio.py",
+        "notes/v3/audio-measurements.json",
+        "notes/v3/timing.json",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "存在SVG组件、原创音频代码、逐帧渲染编码程序和独立评审记录；这里只确认制作方式及职责覆盖。"
+    },
+    {
+      "id": "role.2",
+      "section": "role",
+      "number": "2",
+      "requirement": "创作决策与同类优秀作品及brief参考比较",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/references.md",
+        ".cache/v3-source/reference/linear-agent-analysis.json",
+        ".cache/v3-source/reference/linear-agent-frame-difference.csv",
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "已研究一部完整官方参考并有场景比较记录；不能证明每项决策均已比较或最佳同类范围已充分覆盖。"
+    },
+    {
+      "id": "role.3",
+      "section": "role",
+      "number": "3",
+      "requirement": "完成标准包含与优秀参考并列的作品质量",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/references.md",
+        ".cache/v3-source/reference/linear-agent-analysis.json",
+        ".cache/v3-source/reference/linear-agent-frame-difference.csv",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "现有场景初评均要求返修；最新完整影片尚未完成，本项最终质量UNVERIFIED，不能以无代码错误代替。"
+    },
+    {
+      "id": "role.4",
+      "section": "role",
+      "number": "4",
+      "requirement": "原要求作为最低标准而非创作上限",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md",
+        "notes/v3/ledger.md"
+      ],
+      "reason": "brief明确不降低其它质量要求，账本保留失败及待核项；本项仅确认执行口径。"
+    },
+    {
+      "id": "role.5",
+      "section": "role",
+      "number": "5",
+      "requirement": "冲突依brief、brief指定套件、默认要求的顺序处理",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "本次未指定套件；brief明确选择音效低于音乐，仅覆盖这一冲突。"
+    },
+    {
+      "id": "brief.0",
+      "section": "brief",
+      "number": "0",
+      "requirement": "空白字段由执行者选择，并在brief记录选择与理由",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "style与toolchain留空，brief分别说明纸白深绿风格及SVG/resvg/FFmpeg工具链和理由。"
+    },
+    {
+      "id": "brief.1",
+      "section": "brief",
+      "number": "1",
+      "requirement": "填写或选定mode字段",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "已明确选择：product。字段设定通过不等于最终输出符合或质量达标。"
+    },
+    {
+      "id": "brief.2",
+      "section": "brief",
+      "number": "2",
+      "requirement": "填写或选定subject字段",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "已明确选择：GitHub项目研究集及真实仓库。字段设定通过不等于最终输出符合或质量达标。"
+    },
+    {
+      "id": "brief.3",
+      "section": "brief",
+      "number": "3",
+      "requirement": "填写或选定viewer字段",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "已明确选择：收藏开源工具并希望理解原理、实际验证的开发者。字段设定通过不等于最终输出符合或质量达标。"
+    },
+    {
+      "id": "brief.4",
+      "section": "brief",
+      "number": "4",
+      "requirement": "填写或选定end_state字段",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "已明确选择：认知研究集名称、用途与仓库入口。字段设定通过不等于最终输出符合或质量达标。"
+    },
+    {
+      "id": "brief.5",
+      "section": "brief",
+      "number": "5",
+      "requirement": "填写或选定length字段",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "已明确选择：20秒、16:9、1280×720。字段设定通过不等于最终输出符合或质量达标。"
+    },
+    {
+      "id": "brief.6",
+      "section": "brief",
+      "number": "6",
+      "requirement": "填写或选定frame_rate字段",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "已明确选择：60fps，与UI/产品默认值一致。字段设定通过不等于最终输出符合或质量达标。"
+    },
+    {
+      "id": "brief.7",
+      "section": "brief",
+      "number": "7",
+      "requirement": "填写或选定brand字段",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "已明确选择：从真实产品采集，不虚构官方logo。字段设定通过不等于最终输出符合或质量达标。"
+    },
+    {
+      "id": "brief.8",
+      "section": "brief",
+      "number": "8",
+      "requirement": "填写或选定facts字段",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "已明确选择：指定本地README、研究与来源文件。字段设定通过不等于最终输出符合或质量达标。"
+    },
+    {
+      "id": "brief.9",
+      "section": "brief",
+      "number": "9",
+      "requirement": "填写或选定assets字段",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "已明确选择：真实产品页、源码及官方来源。字段设定通过不等于最终输出符合或质量达标。"
+    },
+    {
+      "id": "brief.10",
+      "section": "brief",
+      "number": "10",
+      "requirement": "填写或选定style字段",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "已明确选择：执行者选定纸白、深绿与阅读工作台。字段设定通过不等于最终输出符合或质量达标。"
+    },
+    {
+      "id": "brief.11",
+      "section": "brief",
+      "number": "11",
+      "requirement": "填写或选定sound字段",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "已明确选择：音乐加音效，无对白；音效低于音乐。字段设定通过不等于最终输出符合或质量达标。"
+    },
+    {
+      "id": "brief.12",
+      "section": "brief",
+      "number": "12",
+      "requirement": "填写或选定autonomy字段",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "已明确选择：unattended。字段设定通过不等于最终输出符合或质量达标。"
+    },
+    {
+      "id": "brief.13",
+      "section": "brief",
+      "number": "13",
+      "requirement": "填写或选定toolchain字段",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "已明确选择：执行者选定SVG组件、resvg、FFmpeg及Python音频。字段设定通过不等于最终输出符合或质量达标。"
+    },
+    {
+      "id": "brief.14",
+      "section": "brief",
+      "number": "14",
+      "requirement": "填写或选定sign_off字段",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "已明确选择：研究集名称与真实仓库网址。字段设定通过不等于最终输出符合或质量达标。"
+    },
+    {
+      "id": "modes.showreel.1",
+      "section": "modes",
+      "number": "showreel.1",
+      "requirement": "以手艺为主题",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "本次明确为product，showreel分支不适用；通用事实与质量要求仍适用。"
+    },
+    {
+      "id": "modes.showreel.2",
+      "section": "modes",
+      "number": "showreel.2",
+      "requirement": "单一核心创意持续变化，避免特效拼盘",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "本次明确为product，showreel分支不适用；通用事实与质量要求仍适用。"
+    },
+    {
+      "id": "modes.showreel.3",
+      "section": "modes",
+      "number": "showreel.3",
+      "requirement": "覆盖字体、图形、UI及3D或模拟能力",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "本次明确为product，showreel分支不适用；通用事实与质量要求仍适用。"
+    },
+    {
+      "id": "modes.showreel.4",
+      "section": "modes",
+      "number": "showreel.4",
+      "requirement": "包含有机自然时刻及值得重看的转场",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "本次明确为product，showreel分支不适用；通用事实与质量要求仍适用。"
+    },
+    {
+      "id": "modes.showreel.5",
+      "section": "modes",
+      "number": "showreel.5",
+      "requirement": "构图间隔1至2.5秒并安排一至两次停顿",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "本次明确为product，showreel分支不适用；通用事实与质量要求仍适用。"
+    },
+    {
+      "id": "modes.showreel.6",
+      "section": "modes",
+      "number": "showreel.6",
+      "requirement": "不虚构客户、标志或数据",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "本次明确为product，showreel分支不适用；通用事实与质量要求仍适用。"
+    },
+    {
+      "id": "modes.product.1",
+      "section": "modes",
+      "number": "product.1",
+      "requirement": "产品承担叙事核心",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md",
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "现有分镜或实现仅能证明设计意图；最终完整MP4及相应独立验证尚未完成，本清单不作审片判断。"
+    },
+    {
+      "id": "modes.product.2",
+      "section": "modes",
+      "number": "product.2",
+      "requirement": "使用真实产品标识",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/assets.json",
+        "notes/v3/references.md",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "已采集原favicon且渲染器读取原SVG；标识属于002研究页、不是根仓库官方logo。最终使用范围与画面保真仍待核验。"
+    },
+    {
+      "id": "modes.product.3",
+      "section": "modes",
+      "number": "product.3",
+      "requirement": "将真实UI重建为可动组件",
+      "status": "PASS",
+      "evidence": [
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs",
+        "notes/v3/assets.json",
+        "notes/v3/references.md",
+        "notes/v3/build-b.md"
+      ],
+      "reason": "可见独立SVG面板、文字、滑块及卡片组件；构建记录对应真实页面。通过仅指代码重建方式，最终视觉保真另核。"
+    },
+    {
+      "id": "modes.product.4",
+      "section": "modes",
+      "number": "product.4",
+      "requirement": "每次操作均呈现明确结果",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "场景初评对部分结果可见性有肯定，但scene07初评发现点击空白等问题；代码已修订，最终成片仍需全量复核。"
+    },
+    {
+      "id": "modes.product.5",
+      "section": "modes",
+      "number": "product.5",
+      "requirement": "以产品名称和真实网址收尾",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "原场景08报告记载完整名称网址连续132帧可读；该报告只对旧场景SHA有效，最终MP4尚待核验。"
+    },
+    {
+      "id": "modes.product.6",
+      "section": "modes",
+      "number": "product.6",
+      "requirement": "构图切换间隔1.4至3.5秒",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "计划八镜各2.5秒在范围内；时间表不证明实际构图变化，最终全片待验。"
+    },
+    {
+      "id": "modes.launch-story.1",
+      "section": "modes",
+      "number": "launch-story.1",
+      "requirement": "由角色表演讲述发布",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "本次为product且无角色发布故事，launch-story分支不适用。"
+    },
+    {
+      "id": "modes.launch-story.2",
+      "section": "modes",
+      "number": "launch-story.2",
+      "requirement": "先提出二至三个剧本再选择",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "本次为product且无角色发布故事，launch-story分支不适用。"
+    },
+    {
+      "id": "modes.launch-story.3",
+      "section": "modes",
+      "number": "launch-story.3",
+      "requirement": "姿态清晰、表情有停留并安排笑点",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "本次为product且无角色发布故事，launch-story分支不适用。"
+    },
+    {
+      "id": "modes.launch-story.4",
+      "section": "modes",
+      "number": "launch-story.4",
+      "requirement": "仅一至两项事实并融入故事",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "本次为product且无角色发布故事，launch-story分支不适用。"
+    },
+    {
+      "id": "modes.explainer.1",
+      "section": "modes",
+      "number": "explainer.1",
+      "requirement": "围绕单一因果展开",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "本次为product且无旁白，explainer分支不适用；通用可理解性与文字要求保留。"
+    },
+    {
+      "id": "modes.explainer.2",
+      "section": "modes",
+      "number": "explainer.2",
+      "requirement": "按钩子至回顾的七阶段组织故事",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "本次为product且无旁白，explainer分支不适用；通用可理解性与文字要求保留。"
+    },
+    {
+      "id": "modes.explainer.3",
+      "section": "modes",
+      "number": "explainer.3",
+      "requirement": "旁白速度为每分钟125至145词",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "本次为product且无旁白，explainer分支不适用；通用可理解性与文字要求保留。"
+    },
+    {
+      "id": "modes.explainer.4",
+      "section": "modes",
+      "number": "explainer.4",
+      "requirement": "画面文字避免复述旁白",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "本次为product且无旁白，explainer分支不适用；通用可理解性与文字要求保留。"
+    },
+    {
+      "id": "assets.1.a",
+      "section": "assets",
+      "number": "1.a",
+      "requirement": "以输出两倍分辨率采集真实产品",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/assets.json",
+        "notes/v3/references.md",
+        ".cache/v3-source/product/capture-metadata.json"
+      ],
+      "reason": "记录四个真实路由以2560×1440采集，对应1280×720输出。"
+    },
+    {
+      "id": "assets.1.b",
+      "section": "assets",
+      "number": "1.b",
+      "requirement": "从源头取得SVG标识且不重画",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/assets.json",
+        "notes/v3/references.md",
+        ".cache/v3-source/product/source-favicon.svg",
+        "src/v3/render.mjs"
+      ],
+      "reason": "原页面data-URI直接解码的favicon被渲染器读取；明确属于002研究页，未声称根项目有独立官方logo。"
+    },
+    {
+      "id": "assets.1.c",
+      "section": "assets",
+      "number": "1.c",
+      "requirement": "真实产品颜色与字体取样",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/assets.json",
+        "notes/v3/references.md",
+        "notes/v3/style-guide.md",
+        "web/media/v3/style-1.png",
+        "web/media/v3/style-2.png",
+        "web/media/v3/style-3.png"
+      ],
+      "reason": "资产记录说明CSS/computedStyle取样与系统字体固定副本及SHA；最终编码色值另核。"
+    },
+    {
+      "id": "assets.2.a",
+      "section": "assets",
+      "number": "2.a",
+      "requirement": "不把原始截图作为静态整板上片",
+      "status": "PASS",
+      "evidence": [
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "当前SVG组件源无整张页面截图嵌入；采集截图仅作重建参考。此处为实现审查。"
+    },
+    {
+      "id": "assets.2.b",
+      "section": "assets",
+      "number": "2.b",
+      "requirement": "拆分并重建面板、图标和文字以便独立动画",
+      "status": "PASS",
+      "evidence": [
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs",
+        "notes/v3/build-b.md"
+      ],
+      "reason": "场景函数分别生成SVG文字、卡片、滑块、路径等对象。"
+    },
+    {
+      "id": "assets.3.a",
+      "section": "assets",
+      "number": "3.a",
+      "requirement": "生成图片仅供风格或角色参考，再用代码重建",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md",
+        "notes/v3/assets.json",
+        "notes/v3/references.md"
+      ],
+      "reason": "未使用生成图片；现有风格帧由正式SVG代码生成，不属于生成式图像素材。"
+    },
+    {
+      "id": "assets.3.b",
+      "section": "assets",
+      "number": "3.b",
+      "requirement": "生成图片上片需brief授权且标注概念图",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md",
+        "notes/v3/assets.json",
+        "notes/v3/references.md"
+      ],
+      "reason": "无生成图片上片，故该条件分支不适用；教学示意等披露仍在通用质量项核对。"
+    },
+    {
+      "id": "assets.4.a",
+      "section": "assets",
+      "number": "4.a",
+      "requirement": "参考作品仅用于研究",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/references.md",
+        ".cache/v3-source/reference/linear-agent-analysis.json",
+        ".cache/v3-source/reference/linear-agent-frame-difference.csv",
+        "notes/v3/assets.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "参考文件标为私有研究用途，代码使用自有UI与原创音频，未引用参考媒体。"
+    },
+    {
+      "id": "assets.4.b",
+      "section": "assets",
+      "number": "4.b",
+      "requirement": "通过逐帧差分及密集拼版分析剪辑与节奏",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/references.md",
+        ".cache/v3-source/reference/linear-agent-analysis.json",
+        ".cache/v3-source/reference/linear-agent-frame-difference.csv"
+      ],
+      "reason": "完整Linear参考1646帧差分、四张密集拼版及候选剪辑邻帧分析已记录；明确非穷尽剪辑识别。"
+    },
+    {
+      "id": "assets.4.c",
+      "section": "assets",
+      "number": "4.c",
+      "requirement": "提炼可迁移的创作原则",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/references.md",
+        ".cache/v3-source/reference/linear-agent-analysis.json",
+        ".cache/v3-source/reference/linear-agent-frame-difference.csv",
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "references记录操作目标、结果和镜头焦点组织原则，brief说明所选叙事方向。"
+    },
+    {
+      "id": "assets.4.d",
+      "section": "assets",
+      "number": "4.d",
+      "requirement": "不照搬参考画面、排版或音乐",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/references.md",
+        ".cache/v3-source/reference/linear-agent-analysis.json",
+        ".cache/v3-source/reference/linear-agent-frame-difference.csv",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs",
+        "src/v3/audio.py",
+        "notes/v3/audio-measurements.json",
+        "notes/v3/timing.json"
+      ],
+      "reason": "代码及说明采用自身UI、配色和原创合成音轨；最终完整视觉相似性不是本清单的审片范围。"
+    },
+    {
+      "id": "craft.1.a",
+      "section": "craft",
+      "number": "1.a",
+      "requirement": "首帧为独立成立的完整画面",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/review-scene01.md",
+        "notes/v3/style-guide.md",
+        "web/media/v3/style-1.png",
+        "web/media/v3/style-2.png",
+        "web/media/v3/style-3.png"
+      ],
+      "reason": "旧scene01和风格帧评审曾确认首帧完整；新完整影片首帧仍待最终SHA对应审查。"
+    },
+    {
+      "id": "craft.1.b",
+      "section": "craft",
+      "number": "1.b",
+      "requirement": "第一秒内建立钩子",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "现有分镜或实现仅能证明设计意图；最终完整MP4及相应独立验证尚未完成，本清单不作审片判断。"
+    },
+    {
+      "id": "craft.2.a",
+      "section": "craft",
+      "number": "2.a",
+      "requirement": "同一物体、形状或词贯穿全片",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "现有分镜或实现仅能证明设计意图；最终完整MP4及相应独立验证尚未完成，本清单不作审片判断。"
+    },
+    {
+      "id": "craft.2.b",
+      "section": "craft",
+      "number": "2.b",
+      "requirement": "各交接前后主体保持像素位置一致",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "现有分镜或实现仅能证明设计意图；最终完整MP4及相应独立验证尚未完成，本清单不作审片判断。"
+    },
+    {
+      "id": "craft.3.a",
+      "section": "craft",
+      "number": "3.a",
+      "requirement": "由内容自身的前冲、擦过或展开形成转场",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "多份旧场景报告发现整页淡化，账本记录已改为内容收拢/展开；本清单未看片，修订后的自然性待新评审。"
+    },
+    {
+      "id": "craft.3.b",
+      "section": "craft",
+      "number": "3.b",
+      "requirement": "硬切必须匹配尺度、方向、主体并落在节拍",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "分镜与渲染器拟采用连续交接而非硬切；是否存在实际硬切、及其匹配和卡拍，需要最终成片确认，暂不以计划标N/A。"
+    },
+    {
+      "id": "craft.4.a",
+      "section": "craft",
+      "number": "4.a",
+      "requirement": "形成一个主运动与错开的次级运动",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "现有分镜或实现仅能证明设计意图；最终完整MP4及相应独立验证尚未完成，本清单不作审片判断。"
+    },
+    {
+      "id": "craft.4.b",
+      "section": "craft",
+      "number": "4.b",
+      "requirement": "避免所有元素同时启停",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "现有分镜或实现仅能证明设计意图；最终完整MP4及相应独立验证尚未完成，本清单不作审片判断。"
+    },
+    {
+      "id": "craft.5.a",
+      "section": "craft",
+      "number": "5.a",
+      "requirement": "速度持续变化，入场可读且离场迅速",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "现有分镜或实现仅能证明设计意图；最终完整MP4及相应独立验证尚未完成，本清单不作审片判断。"
+    },
+    {
+      "id": "craft.5.b",
+      "section": "craft",
+      "number": "5.b",
+      "requirement": "不用线性缓动",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "现有分镜或实现仅能证明设计意图；最终完整MP4及相应独立验证尚未完成，本清单不作审片判断。"
+    },
+    {
+      "id": "craft.5.c",
+      "section": "craft",
+      "number": "5.c",
+      "requirement": "运用预备、跟随、挤压拉伸、弹簧与弧线",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "现有分镜或实现仅能证明设计意图；最终完整MP4及相应独立验证尚未完成，本清单不作审片判断。"
+    },
+    {
+      "id": "craft.6",
+      "section": "craft",
+      "number": "6",
+      "requirement": "每个动作带来可见结果",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "现有分镜或实现仅能证明设计意图；最终完整MP4及相应独立验证尚未完成，本清单不作审片判断。"
+    },
+    {
+      "id": "craft.7.a",
+      "section": "craft",
+      "number": "7.a",
+      "requirement": "文字以入场、遮罩或显现参与动效",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "现有分镜或实现仅能证明设计意图；最终完整MP4及相应独立验证尚未完成，本清单不作审片判断。"
+    },
+    {
+      "id": "craft.7.b",
+      "section": "craft",
+      "number": "7.b",
+      "requirement": "每词约0.3秒、整体至少0.7秒以确保读完",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "现有分镜或实现仅能证明设计意图；最终完整MP4及相应独立验证尚未完成，本清单不作审片判断。"
+    },
+    {
+      "id": "craft.7.c",
+      "section": "craft",
+      "number": "7.c",
+      "requirement": "复杂背景中为文字提供底板",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "现有分镜或实现仅能证明设计意图；最终完整MP4及相应独立验证尚未完成，本清单不作审片判断。"
+    },
+    {
+      "id": "craft.7.d",
+      "section": "craft",
+      "number": "7.d",
+      "requirement": "删除画面已表达的冗余文字",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "现有分镜或实现仅能证明设计意图；最终完整MP4及相应独立验证尚未完成，本清单不作审片判断。"
+    },
+    {
+      "id": "craft.8.a",
+      "section": "craft",
+      "number": "8.a",
+      "requirement": "变换景别及版式，含近景、全景、俯视和大字",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "现有分镜或实现仅能证明设计意图；最终完整MP4及相应独立验证尚未完成，本清单不作审片判断。"
+    },
+    {
+      "id": "craft.8.b",
+      "section": "craft",
+      "number": "8.b",
+      "requirement": "主体充分占据画面",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "现有分镜或实现仅能证明设计意图；最终完整MP4及相应独立验证尚未完成，本清单不作审片判断。"
+    },
+    {
+      "id": "craft.8.c",
+      "section": "craft",
+      "number": "8.c",
+      "requirement": "避免重复版式",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "现有分镜或实现仅能证明设计意图；最终完整MP4及相应独立验证尚未完成，本清单不作审片判断。"
+    },
+    {
+      "id": "craft.9.a",
+      "section": "craft",
+      "number": "9.a",
+      "requirement": "停留时仍有可见细微运动，避免对象冻结",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "旧场景03/06/07/08分别记录0.883333/1.3167/0.683/0.866667秒近静止；当前代码已调整呼吸及内容运动，最终输出待复测，不能用零重复帧替代感知冻结验证。"
+    },
+    {
+      "id": "craft.9.b",
+      "section": "craft",
+      "number": "9.b",
+      "requirement": "镜头运动有内容动机",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "现有分镜或实现仅能证明设计意图；最终完整MP4及相应独立验证尚未完成，本清单不作审片判断。"
+    },
+    {
+      "id": "craft.9.c",
+      "section": "craft",
+      "number": "9.c",
+      "requirement": "快速运动加入运动模糊",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "现有分镜或实现仅能证明设计意图；最终完整MP4及相应独立验证尚未完成，本清单不作审片判断。"
+    },
+    {
+      "id": "craft.11.a",
+      "section": "craft",
+      "number": "11.a",
+      "requirement": "每项效果均有内容理由",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "现有分镜或实现仅能证明设计意图；最终完整MP4及相应独立验证尚未完成，本清单不作审片判断。"
+    },
+    {
+      "id": "craft.11.b",
+      "section": "craft",
+      "number": "11.b",
+      "requirement": "避免装饰粒子、滥用渐变和预制故障效果",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "现有分镜或实现仅能证明设计意图；最终完整MP4及相应独立验证尚未完成，本清单不作审片判断。"
+    },
+    {
+      "id": "craft.10.a",
+      "section": "craft",
+      "number": "10.a",
+      "requirement": "仅在解释空间关系时采用3D",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md",
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json"
+      ],
+      "reason": "brief与分镜明确本片研究页无需3D空间解释，选择不使用3D，符合条件而非豁免其它工艺。"
+    },
+    {
+      "id": "craft.10.b",
+      "section": "craft",
+      "number": "10.b",
+      "requirement": "3D使用产品摄影式灯光",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "本片无3D场景，该条件分支不适用。"
+    },
+    {
+      "id": "craft.10.c",
+      "section": "craft",
+      "number": "10.c",
+      "requirement": "3D机位35至55度",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "本片无3D场景，该条件分支不适用。"
+    },
+    {
+      "id": "craft.10.d",
+      "section": "craft",
+      "number": "10.d",
+      "requirement": "3D采用真实材质",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "本片无3D场景，该条件分支不适用。"
+    },
+    {
+      "id": "craft.10.e",
+      "section": "craft",
+      "number": "10.e",
+      "requirement": "3D标签由HTML跟踪场景位置",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "本片无3D场景，该条件分支不适用。"
+    },
+    {
+      "id": "audio.0",
+      "section": "audio",
+      "number": "0",
+      "requirement": "先制作声音，再按声音组织画面",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/ledger.md",
+        "notes/v3/audio-playback.log",
+        "notes/v3/audio-playback-r2.log",
+        "notes/v3/build-b.md"
+      ],
+      "reason": "账本及构建交接记录声音先行、音频播放、4秒样片后再开展正式组件构建；通过的是流程记录，不是听感。"
+    },
+    {
+      "id": "audio.1.a",
+      "section": "audio",
+      "number": "1.a",
+      "requirement": "音乐能量匹配画面且保持克制音量",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "src/v3/audio.py",
+        "notes/v3/audio-measurements.json",
+        "notes/v3/timing.json",
+        "notes/v3/audio-playback.log",
+        "notes/v3/audio-playback-r2.log",
+        "notes/v3/ledger.md"
+      ],
+      "reason": "有原创音轨与响度记录，但设备播放不能证明主观听感；最终音画匹配及听感未核。"
+    },
+    {
+      "id": "audio.1.b",
+      "section": "audio",
+      "number": "1.b",
+      "requirement": "音乐提示中不使用品牌或艺人名",
+      "status": "PASS",
+      "evidence": [
+        "src/v3/audio.py",
+        "notes/v3/audio-measurements.json"
+      ],
+      "reason": "实际采用代码原创合成，无生成音乐提示、品牌或艺人模仿输入。"
+    },
+    {
+      "id": "audio.1.c",
+      "section": "audio",
+      "number": "1.c",
+      "requirement": "为画面调整音轨，不为音乐扭曲画面",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "src/v3/audio.py",
+        "notes/v3/audio-measurements.json",
+        "notes/v3/timing.json",
+        "notes/v3/storyboard.md",
+        "notes/v3/ledger.md"
+      ],
+      "reason": "有统一节拍及20秒设计；尚无最终剪辑与听审证据证明所有音乐取舍服务画面。"
+    },
+    {
+      "id": "audio.2.a",
+      "section": "audio",
+      "number": "2.a",
+      "requirement": "检测节拍并写入timing.json",
+      "status": "PASS",
+      "evidence": [
+        "src/v3/audio.py",
+        "notes/v3/audio-measurements.json",
+        "notes/v3/timing.json"
+      ],
+      "reason": "代码从音乐PCM能量测攻击起点，timing保存48个检测节拍及最大0帧偏差；此结果不等于最终编码同步。"
+    },
+    {
+      "id": "audio.2.b",
+      "section": "audio",
+      "number": "2.b",
+      "requirement": "timing记录高潮、人声区间及对齐节拍的关键动作",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/timing.json"
+      ],
+      "reason": "已有climax_frames、空voice_intervals、events与key_actions；无对白选择解释空人声区间。"
+    },
+    {
+      "id": "audio.2.c",
+      "section": "audio",
+      "number": "2.c",
+      "requirement": "所有动画时间由timing.json读取",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs",
+        "src/v3/audio.py",
+        "notes/v3/audio-measurements.json",
+        "notes/v3/timing.json"
+      ],
+      "reason": "主场景边界、节拍及多数动作参数来自timing；尚未完成所有动画时间常量的严格审计，不能以存在timing文件证明穷尽。"
+    },
+    {
+      "id": "audio.3.a",
+      "section": "audio",
+      "number": "3.a",
+      "requirement": "音效仅对应实际可见事件",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "src/v3/audio.py",
+        "notes/v3/audio-measurements.json",
+        "notes/v3/timing.json",
+        "notes/v3/storyboard.md",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "旧scene07曾有空白点击；当前timing已改为无点击的recap动作。最终音效与画面逐事件映射仍需复查。"
+    },
+    {
+      "id": "audio.3.b",
+      "section": "audio",
+      "number": "3.b",
+      "requirement": "每次换场配置轻柔过渡声",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "src/v3/audio.py",
+        "notes/v3/audio-measurements.json",
+        "notes/v3/timing.json"
+      ],
+      "reason": "timing有七次whoosh，代码生成对应音效；轻柔程度及最终可听性尚未确认。"
+    },
+    {
+      "id": "audio.3.c",
+      "section": "audio",
+      "number": "3.c",
+      "requirement": "真实操作配置相应点击或撞击声",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "src/v3/audio.py",
+        "notes/v3/audio-measurements.json",
+        "notes/v3/timing.json"
+      ],
+      "reason": "当前事件表有五次click；是否覆盖全部真实操作及是否可辨待最终逐事件核对，无碰撞事件不强造撞击声。"
+    },
+    {
+      "id": "audio.3.d",
+      "section": "audio",
+      "number": "3.d",
+      "requirement": "不同音效安排各自频段",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "src/v3/audio.py"
+      ],
+      "reason": "代码使用1800Hz点击及平滑噪声过渡，尚无频谱分离测量或可靠耳听证据。"
+    },
+    {
+      "id": "audio.3.e",
+      "section": "audio",
+      "number": "3.e",
+      "requirement": "按brief解决音效相对音乐音量的冲突",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "brief显式选择音效低于音乐，覆盖原audio的相反默认；不覆盖响度、峰值、同步、频段等其它要求。此PASS仅为冲突处理选择。"
+    },
+    {
+      "id": "audio.4.a",
+      "section": "audio",
+      "number": "4.a",
+      "requirement": "有配音时每角色试两种声音",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md",
+        "notes/v3/timing.json"
+      ],
+      "reason": "brief为音乐加音效，无配音、对白或说话角色，voice_intervals为空。"
+    },
+    {
+      "id": "audio.4.b",
+      "section": "audio",
+      "number": "4.b",
+      "requirement": "每句台词录制两个版本",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md",
+        "notes/v3/timing.json"
+      ],
+      "reason": "brief为音乐加音效，无配音、对白或说话角色，voice_intervals为空。"
+    },
+    {
+      "id": "audio.4.c",
+      "section": "audio",
+      "number": "4.c",
+      "requirement": "嘴型随响度变化，静音时闭嘴不动",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md",
+        "notes/v3/timing.json"
+      ],
+      "reason": "brief为音乐加音效，无配音、对白或说话角色，voice_intervals为空。"
+    },
+    {
+      "id": "audio.4.d",
+      "section": "audio",
+      "number": "4.d",
+      "requirement": "对白期间降低音乐",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md",
+        "notes/v3/timing.json"
+      ],
+      "reason": "brief为音乐加音效，无配音、对白或说话角色，voice_intervals为空。"
+    },
+    {
+      "id": "audio.5.a",
+      "section": "audio",
+      "number": "5.a",
+      "requirement": "混音综合响度约为−14LUFS",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "src/v3/audio.py",
+        "notes/v3/audio-measurements.json",
+        "notes/v3/timing.json",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/ledger.md"
+      ],
+      "reason": "账本记载修订AAC试编码−14.06LUFS；早期片段/PCM不能替代最终完整MP4音轨，最终测量待完成。"
+    },
+    {
+      "id": "audio.5.b",
+      "section": "audio",
+      "number": "5.b",
+      "requirement": "最终音轨真峰值不高于−1dBTP",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/ledger.md"
+      ],
+      "reason": "旧scene01曾为+2.18dBTP，04/06也超限；账本记载修订AAC试编码−4.90dBTP。最终MP4尚未对应复测，未将修复声明计PASS。"
+    },
+    {
+      "id": "audio.5.c",
+      "section": "audio",
+      "number": "5.c",
+      "requirement": "另行导出纯音乐版本",
+      "status": "PASS",
+      "evidence": [
+        "web/media/v3/music-only.wav",
+        "web/media/v3/music-only.m4a",
+        "src/v3/audio.py"
+      ],
+      "reason": "music-only.wav及m4a存在，代码从music-raw单独导出，不含sfx分轨；不代表主观音乐质量通过。"
+    },
+    {
+      "id": "build.1.a",
+      "section": "build",
+      "number": "1.a",
+      "requirement": "所有画面与音频采用代码制作",
+      "status": "PASS",
+      "evidence": [
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs",
+        "src/v3/audio.py",
+        "notes/v3/audio-measurements.json",
+        "notes/v3/timing.json"
+      ],
+      "reason": "SVG组件及Python原创合成实现存在，标识是允许的真实源资产。"
+    },
+    {
+      "id": "build.1.b",
+      "section": "build",
+      "number": "1.b",
+      "requirement": "内容在统一时间线上合成",
+      "status": "PASS",
+      "evidence": [
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs",
+        "notes/v3/timing.json"
+      ],
+      "reason": "renderer以全局帧选择组件，音轨事件由同一timing按帧采样；最终同步质量另验。"
+    },
+    {
+      "id": "build.1.c",
+      "section": "build",
+      "number": "1.c",
+      "requirement": "字体及素材固定本地版本",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/assets.json",
+        "notes/v3/references.md",
+        "src/v3/render.mjs"
+      ],
+      "reason": "资产表含本地文件SHA，renderer关闭系统字体自动加载，显式使用固定字体子集与本地SVG。"
+    },
+    {
+      "id": "build.1.d",
+      "section": "build",
+      "number": "1.d",
+      "requirement": "逐帧渲染并以FFmpeg编码",
+      "status": "PASS",
+      "evidence": [
+        "src/v3/render.mjs",
+        "web/media/v3/proof.mp4",
+        "notes/v3/ledger.md",
+        "notes/v3/build-b.md",
+        "notes/v3/history-index.json",
+        "notes/v3/scene-artifacts.json"
+      ],
+      "reason": "代码输出PNG序列再调用FFmpeg，已有4秒样片和场景导出记录。"
+    },
+    {
+      "id": "build.1.e",
+      "section": "build",
+      "number": "1.e",
+      "requirement": "API密钥使用环境变量",
+      "status": "N/A",
+      "evidence": [
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs",
+        "src/v3/audio.py",
+        "notes/v3/audio-measurements.json",
+        "notes/v3/timing.json"
+      ],
+      "reason": "当前渲染及音频生成无需API密钥，不新增密钥或推断使用了未记录服务。"
+    },
+    {
+      "id": "build.2",
+      "section": "build",
+      "number": "2",
+      "requirement": "正式构建前完整渲染3至5秒测试",
+      "status": "PASS",
+      "evidence": [
+        "web/media/v3/proof.mp4",
+        "notes/v3/ledger.md",
+        "notes/v3/build-b.md"
+      ],
+      "reason": "proof.mp4存在；账本记为4秒240帧，构建B记录确认在测试完成之后开始组件构建。不是全片质量验收。"
+    },
+    {
+      "id": "build.3.a",
+      "section": "build",
+      "number": "3.a",
+      "requirement": "动画数值确定地随帧号计算",
+      "status": "PASS",
+      "evidence": [
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs",
+        "src/v3/audio.py",
+        "notes/v3/audio-measurements.json",
+        "notes/v3/timing.json"
+      ],
+      "reason": "当前场景函数以帧号取值，音频按采样位置及帧事件合成；此为实现方式审阅。"
+    },
+    {
+      "id": "build.3.b",
+      "section": "build",
+      "number": "3.b",
+      "requirement": "不用实时计时器驱动动画",
+      "status": "PASS",
+      "evidence": [
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "读取的全部V3场景、共享及渲染代码不使用实时计时器驱动画面。"
+    },
+    {
+      "id": "build.3.c",
+      "section": "build",
+      "number": "3.c",
+      "requirement": "随机过程必须有固定种子",
+      "status": "PASS",
+      "evidence": [
+        "src/v3/audio.py"
+      ],
+      "reason": "音频使用numpy default_rng(7311)，画面场景不使用随机数。"
+    },
+    {
+      "id": "build.4.a",
+      "section": "build",
+      "number": "4.a",
+      "requirement": "构建前定义共享设计变量、缓动及交接位置",
+      "status": "PASS",
+      "evidence": [
+        "src/v3/shared.mjs",
+        "notes/v3/timing.json",
+        "notes/v3/ledger.md"
+      ],
+      "reason": "共享颜色/缓动函数与timing交接合同存在，账本记载制作前分镜修订；当前实现仍须最终验证效果。"
+    },
+    {
+      "id": "build.4.b",
+      "section": "build",
+      "number": "4.b",
+      "requirement": "场景组织为独立组件",
+      "status": "PASS",
+      "evidence": [
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "scene01至scene08为独立函数，分布于三个场景模块。"
+    },
+    {
+      "id": "build.4.c",
+      "section": "build",
+      "number": "4.c",
+      "requirement": "并行开展多个构建任务",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/build-b.md",
+        "notes/v3/ledger.md"
+      ],
+      "reason": "存在独立构建B记录与多代理协作说明，但本次读取文件不足以证明构建任务实际并发时间区间。"
+    },
+    {
+      "id": "build.5.a",
+      "section": "build",
+      "number": "5.a",
+      "requirement": "每种画幅独立构图而非直接裁切",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "本次仅请求单一16:9画幅，未要求多画幅衍生。16:9本身构图质量仍待核。"
+    },
+    {
+      "id": "build.5.b",
+      "section": "build",
+      "number": "5.b",
+      "requirement": "9:16构图避开平台界面遮挡区",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "没有9:16交付要求或竖屏版本。"
+    },
+    {
+      "id": "workflow.1.a",
+      "section": "workflow",
+      "number": "1.a",
+      "requirement": "将每条事实、源句及链接登记到facts.json",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/facts.json"
+      ],
+      "reason": "现有31条claim含screen_text、original_quote、source_url及源快照信息；仅证明清单结构与登记，最终逐字覆盖另核。"
+    },
+    {
+      "id": "workflow.1.b",
+      "section": "workflow",
+      "number": "1.b",
+      "requirement": "收集真实素材",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/assets.json",
+        "notes/v3/references.md"
+      ],
+      "reason": "四页产品采集、原SVG、字体及来源清单已存在。"
+    },
+    {
+      "id": "workflow.2.a",
+      "section": "workflow",
+      "number": "2.a",
+      "requirement": "研究参考作品",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/references.md",
+        ".cache/v3-source/reference/linear-agent-analysis.json",
+        ".cache/v3-source/reference/linear-agent-frame-difference.csv"
+      ],
+      "reason": "已完成一部官方参考的全片差分与密集拼版研究，并如实披露未取得的其它参考。"
+    },
+    {
+      "id": "workflow.2.b",
+      "section": "workflow",
+      "number": "2.b",
+      "requirement": "公开发布内容需研究当前观众讨论",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/references.md",
+        ".cache/v3-source/reference/linear-agent-analysis.json",
+        ".cache/v3-source/reference/linear-agent-frame-difference.csv"
+      ],
+      "reason": "记录2026年一手讨论与来源，并说明样本范围和日期限制。"
+    },
+    {
+      "id": "workflow.3.a",
+      "section": "workflow",
+      "number": "3.a",
+      "requirement": "提出二至三个方向后选择并说明",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "brief记录三个候选方向、选中研究卡旅程及取舍理由。"
+    },
+    {
+      "id": "workflow.3.b",
+      "section": "workflow",
+      "number": "3.b",
+      "requirement": "描述三个标志性时刻且不用特效名称",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "brief以纸签、原理关系、待实测和仓库入口的内容变化描述三个时刻。"
+    },
+    {
+      "id": "workflow.4.a",
+      "section": "workflow",
+      "number": "4.a",
+      "requirement": "分镜含时间、内容、目的、声音、退场及延续元素",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json"
+      ],
+      "reason": "分镜表及R1/R2/R3修订覆盖所需列项；计划可执行不等于成片达标。"
+    },
+    {
+      "id": "workflow.4.b",
+      "section": "workflow",
+      "number": "4.b",
+      "requirement": "分镜所讲故事在静音下仍成立",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "分镜评审可复述预期故事，但最终无声全片2fps检验尚未进行。"
+    },
+    {
+      "id": "workflow.4.c",
+      "section": "workflow",
+      "number": "4.c",
+      "requirement": "分镜节点按自主度执行确认",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "brief选择unattended，不在◆等待人工确认；独立分镜评审仍已执行，不能因此省略。"
+    },
+    {
+      "id": "workflow.5.a",
+      "section": "workflow",
+      "number": "5.a",
+      "requirement": "建立不超过六色的风格手册",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/style-guide.md",
+        "web/media/v3/style-1.png",
+        "web/media/v3/style-2.png",
+        "web/media/v3/style-3.png",
+        "src/v3/shared.mjs"
+      ],
+      "reason": "手册给出六色；共享变量deep与green为同值，总计六个唯一颜色。最终编码色彩另验。"
+    },
+    {
+      "id": "workflow.5.b",
+      "section": "workflow",
+      "number": "5.b",
+      "requirement": "风格手册规定本地字体、质感及动效语言",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/style-guide.md",
+        "web/media/v3/style-1.png",
+        "web/media/v3/style-2.png",
+        "web/media/v3/style-3.png"
+      ],
+      "reason": "记录固定字体、纸页质感、运动词汇和安全区。"
+    },
+    {
+      "id": "workflow.5.c",
+      "section": "workflow",
+      "number": "5.c",
+      "requirement": "用代码渲染三张风格帧",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/style-guide.md",
+        "web/media/v3/style-1.png",
+        "web/media/v3/style-2.png",
+        "web/media/v3/style-3.png",
+        "src/v3/render.mjs"
+      ],
+      "reason": "renderer styles模式生成0/365/685三帧，三个PNG存在且有独立风格帧评审。"
+    },
+    {
+      "id": "workflow.5.d",
+      "section": "workflow",
+      "number": "5.d",
+      "requirement": "需要时补充角色设定及关键姿势",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "无角色演出或角色设计需求。"
+    },
+    {
+      "id": "workflow.5.e",
+      "section": "workflow",
+      "number": "5.e",
+      "requirement": "风格节点按自主度执行确认",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "unattended无需◆人工确认；风格帧独立评审仍保留。"
+    },
+    {
+      "id": "workflow.6.a",
+      "section": "workflow",
+      "number": "6.a",
+      "requirement": "先建立声音与时间轴",
+      "status": "PASS",
+      "evidence": [
+        "src/v3/audio.py",
+        "notes/v3/audio-measurements.json",
+        "notes/v3/timing.json",
+        "notes/v3/ledger.md"
+      ],
+      "reason": "先行音轨、节拍检测、timing与制作顺序记录存在。"
+    },
+    {
+      "id": "workflow.6.b",
+      "section": "workflow",
+      "number": "6.b",
+      "requirement": "先单独播放混合音频",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/audio-playback.log",
+        "notes/v3/audio-playback-r2.log",
+        "notes/v3/ledger.md"
+      ],
+      "reason": "ffplay无画面设备播放日志覆盖约20秒；只是实际播放发生，不等于模型听过或听感通过。"
+    },
+    {
+      "id": "workflow.6.c",
+      "section": "workflow",
+      "number": "6.c",
+      "requirement": "声音节点按自主度执行确认",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "unattended无需◆人工确认，未豁免播放及音频核验。"
+    },
+    {
+      "id": "workflow.7.a",
+      "section": "workflow",
+      "number": "7.a",
+      "requirement": "完成构建与合成",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs",
+        "notes/v3/history-index.json",
+        "notes/v3/scene-artifacts.json"
+      ],
+      "reason": "已有八段场景与样片，最终完整MP4在本次清单快照时尚未交付。"
+    },
+    {
+      "id": "workflow.7.b",
+      "section": "workflow",
+      "number": "7.b",
+      "requirement": "持续评审返修直至质量标准达到",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md",
+        "notes/v3/ledger.md"
+      ],
+      "reason": "已有三轮分镜及八场初评与修复记录；全片闭环及最终质量尚未证实，不能把循环启动视为完成。"
+    },
+    {
+      "id": "workflow.8.a",
+      "section": "workflow",
+      "number": "8.a",
+      "requirement": "完成规定交付物",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md",
+        "notes/v3/ledger.md"
+      ],
+      "reason": "部分文档、音乐和样片已存在，完整最终影片、交付拼版及最终验收仍待完成。"
+    },
+    {
+      "id": "workflow.8.b",
+      "section": "workflow",
+      "number": "8.b",
+      "requirement": "交付节点按自主度执行确认",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "unattended无需◆人工确认；仍需如实交代未核及失败项。"
+    },
+    {
+      "id": "workflow.8.c",
+      "section": "workflow",
+      "number": "8.c",
+      "requirement": "收到要求时把流程保存为可复用skill",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "当前输入未要求保存skill，不将条件性任务视为缺失交付。"
+    },
+    {
+      "id": "critic_loop.0.a",
+      "section": "critic_loop",
+      "number": "0.a",
+      "requirement": "制作者不能给自己的作品签质量结论",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md",
+        "notes/v3/ledger.md"
+      ],
+      "reason": "现有独立评审报告声明未读取制作代码/过程，制作账本区分修复与待新评审；仅确认现有评审记录的职责分离。"
+    },
+    {
+      "id": "critic_loop.0.b",
+      "section": "critic_loop",
+      "number": "0.b",
+      "requirement": "分镜后派全新且未见制作过程的评审",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "已有三位独立分镜评审的分轮报告，R1/R2返修、R3仅允许进入制作。"
+    },
+    {
+      "id": "critic_loop.0.c",
+      "section": "critic_loop",
+      "number": "0.c",
+      "requirement": "每个场景完成后派全新独立评审",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md",
+        "notes/v3/history-index.json",
+        "notes/v3/scene-artifacts.json"
+      ],
+      "reason": "八个场景均有独立初评，报告包含各自被评SHA及隔离范围；仅表示初评已执行，后续重渲仍需新评审。"
+    },
+    {
+      "id": "critic_loop.0.d",
+      "section": "critic_loop",
+      "number": "0.d",
+      "requirement": "每次完整渲染后派全新独立评审",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md",
+        "notes/v3/ledger.md"
+      ],
+      "reason": "现有记录是分镜与场景评审；完整成片及对应新评审闭环尚未提供。"
+    },
+    {
+      "id": "critic_loop.0.e",
+      "section": "critic_loop",
+      "number": "0.e",
+      "requirement": "评审自行每0.2秒抽帧并加密转场",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "八份场景报告均记录独立抽帧与边界加密方式及私有证据；此PASS只覆盖已发生的场景首评。"
+    },
+    {
+      "id": "critic_loop.0.f",
+      "section": "critic_loop",
+      "number": "0.f",
+      "requirement": "评审实际测量并按严重度标时间点",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "场景报告有尺寸、帧率、像素/冻结/音频等实测和P1/P2时间点；未声称每项都已验证。"
+    },
+    {
+      "id": "critic_loop.0.g",
+      "section": "critic_loop",
+      "number": "0.g",
+      "requirement": "评审给出发布或继续返修结论",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "八场首评均明确再改一轮；分镜R3只允许制作，不冒充发布批准。"
+    },
+    {
+      "id": "critic_loop.1",
+      "section": "critic_loop",
+      "number": "1",
+      "requirement": "完整渲染后仅看无声2fps拼版复述故事",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md",
+        "notes/v3/ledger.md"
+      ],
+      "reason": "部分场景有无声拼版解读，但它们不能替代完整影片且限定只看单张2fps拼版的检验。"
+    },
+    {
+      "id": "critic_loop.2.a",
+      "section": "critic_loop",
+      "number": "2.a",
+      "requirement": "完整渲染后逐个核对打点与timing误差≤1帧",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "src/v3/audio.py",
+        "notes/v3/audio-measurements.json",
+        "notes/v3/timing.json",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "PCM检测与部分画面时点存在；最终编码音轨和画面逐事件配对未闭环，旧评审明确保留UNVERIFIED。"
+    },
+    {
+      "id": "critic_loop.2.b",
+      "section": "critic_loop",
+      "number": "2.b",
+      "requirement": "每句台词与timing误差≤1帧",
+      "status": "N/A",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md"
+      ],
+      "reason": "无台词或对白。通用打点同步仍适用。"
+    },
+    {
+      "id": "critic_loop.3",
+      "section": "critic_loop",
+      "number": "3",
+      "requirement": "完整渲染后核对所有画面文字的事实出处",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/facts.json",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "旧场景报告有逐字映射，部分源真实性已核；最终重渲全部文字与固定源的独立核查仍待完成。"
+    },
+    {
+      "id": "critic_loop.4",
+      "section": "critic_loop",
+      "number": "4",
+      "requirement": "完整渲染后进行严格导演审片",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md",
+        "notes/v3/references.md",
+        ".cache/v3-source/reference/linear-agent-analysis.json",
+        ".cache/v3-source/reference/linear-agent-frame-difference.csv"
+      ],
+      "reason": "已有各场景导演意见；最终全片并排参考审片尚未发生，不由本清单代评。"
+    },
+    {
+      "id": "critic_loop.5.a",
+      "section": "critic_loop",
+      "number": "5.a",
+      "requirement": "优先修复最严重问题再重渲染",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/ledger.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene06.md",
+        "src/v3/shared.mjs",
+        "src/v3/render.mjs",
+        "src/v3/scenes-a.mjs",
+        "src/v3/scenes-b.mjs",
+        "src/v3/scenes-c.mjs"
+      ],
+      "reason": "账本记录音频峰值和共性转场修复；全部场景问题是否按严重性完成并重渲尚未闭环。"
+    },
+    {
+      "id": "critic_loop.5.b",
+      "section": "critic_loop",
+      "number": "5.b",
+      "requirement": "返修后用新评审复查此前全部项目",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md",
+        "notes/v3/ledger.md"
+      ],
+      "reason": "分镜已换新评审复核；当前场景初评后的所有项目复查及完整渲染复查尚待执行。"
+    },
+    {
+      "id": "critic_loop.5.c",
+      "section": "critic_loop",
+      "number": "5.c",
+      "requirement": "每轮写入ledger并记录修改前后数字",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/ledger.md",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "账本记录部分数值变化与分轮过程，但尚无覆盖全部场景发现的前后复测数值与最终轮闭环。"
+    },
+    {
+      "id": "quality_bar.measurable.1.a",
+      "section": "quality_bar",
+      "number": "measurable.1.a",
+      "requirement": "最终时长精确符合brief",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md",
+        "notes/v3/history-index.json",
+        "notes/v3/scene-artifacts.json"
+      ],
+      "reason": "最终完整MP4及该项全片独立验证尚未完成。现有源代码、计划、旧场景抽样或设备播放均不能替代最终质量结论；历史失败与限制仍保留于所引报告。"
+    },
+    {
+      "id": "quality_bar.measurable.1.b",
+      "section": "quality_bar",
+      "number": "measurable.1.b",
+      "requirement": "最终画面尺寸精确符合brief",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md",
+        "notes/v3/history-index.json",
+        "notes/v3/scene-artifacts.json"
+      ],
+      "reason": "最终完整MP4及该项全片独立验证尚未完成。现有源代码、计划、旧场景抽样或设备播放均不能替代最终质量结论；历史失败与限制仍保留于所引报告。"
+    },
+    {
+      "id": "quality_bar.measurable.1.c",
+      "section": "quality_bar",
+      "number": "measurable.1.c",
+      "requirement": "最终帧率精确符合brief",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md",
+        "notes/v3/history-index.json",
+        "notes/v3/scene-artifacts.json"
+      ],
+      "reason": "最终完整MP4及该项全片独立验证尚未完成。现有源代码、计划、旧场景抽样或设备播放均不能替代最终质量结论；历史失败与限制仍保留于所引报告。"
+    },
+    {
+      "id": "quality_bar.measurable.2",
+      "section": "quality_bar",
+      "number": "measurable.2",
+      "requirement": "最终首帧为完成画面",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/review-scene01.md",
+        "notes/v3/style-guide.md",
+        "web/media/v3/style-1.png",
+        "web/media/v3/style-2.png",
+        "web/media/v3/style-3.png"
+      ],
+      "reason": "最终完整MP4及该项全片独立验证尚未完成。现有源代码、计划、旧场景抽样或设备播放均不能替代最终质量结论；历史失败与限制仍保留于所引报告。"
+    },
+    {
+      "id": "quality_bar.measurable.3.a",
+      "section": "quality_bar",
+      "number": "measurable.3.a",
+      "requirement": "每30秒累计冻结不超过1秒",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md"
+      ],
+      "reason": "最终完整MP4及该项全片独立验证尚未完成。现有源代码、计划、旧场景抽样或设备播放均不能替代最终质量结论；历史失败与限制仍保留于所引报告。"
+    },
+    {
+      "id": "quality_bar.measurable.3.b",
+      "section": "quality_bar",
+      "number": "measurable.3.b",
+      "requirement": "任何单段静止不超过0.5秒",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "最终完整MP4及该项全片独立验证尚未完成。现有源代码、计划、旧场景抽样或设备播放均不能替代最终质量结论；历史失败与限制仍保留于所引报告。"
+    },
+    {
+      "id": "quality_bar.measurable.4.a",
+      "section": "quality_bar",
+      "number": "measurable.4.a",
+      "requirement": "文字对比度至少4.5:1",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "最终完整MP4及该项全片独立验证尚未完成。现有源代码、计划、旧场景抽样或设备播放均不能替代最终质量结论；历史失败与限制仍保留于所引报告。"
+    },
+    {
+      "id": "quality_bar.measurable.4.b",
+      "section": "quality_bar",
+      "number": "measurable.4.b",
+      "requirement": "元素不发生遮挡冲突",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "最终完整MP4及该项全片独立验证尚未完成。现有源代码、计划、旧场景抽样或设备播放均不能替代最终质量结论；历史失败与限制仍保留于所引报告。"
+    },
+    {
+      "id": "quality_bar.measurable.4.c",
+      "section": "quality_bar",
+      "number": "measurable.4.c",
+      "requirement": "有意义内容处于安全边距内",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/style-guide.md",
+        "web/media/v3/style-1.png",
+        "web/media/v3/style-2.png",
+        "web/media/v3/style-3.png",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "最终完整MP4及该项全片独立验证尚未完成。现有源代码、计划、旧场景抽样或设备播放均不能替代最终质量结论；历史失败与限制仍保留于所引报告。"
+    },
+    {
+      "id": "quality_bar.measurable.5",
+      "section": "quality_bar",
+      "number": "measurable.5",
+      "requirement": "编码画面的品牌颜色准确",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/assets.json",
+        "notes/v3/references.md",
+        "notes/v3/style-guide.md",
+        "web/media/v3/style-1.png",
+        "web/media/v3/style-2.png",
+        "web/media/v3/style-3.png",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "最终完整MP4及该项全片独立验证尚未完成。现有源代码、计划、旧场景抽样或设备播放均不能替代最终质量结论；历史失败与限制仍保留于所引报告。"
+    },
+    {
+      "id": "quality_bar.measurable.6",
+      "section": "quality_bar",
+      "number": "measurable.6",
+      "requirement": "剪辑点和动作打点偏离节拍不超过1帧",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "src/v3/audio.py",
+        "notes/v3/audio-measurements.json",
+        "notes/v3/timing.json",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "最终完整MP4及该项全片独立验证尚未完成。现有源代码、计划、旧场景抽样或设备播放均不能替代最终质量结论；历史失败与限制仍保留于所引报告。"
+    },
+    {
+      "id": "quality_bar.measurable.7.a",
+      "section": "quality_bar",
+      "number": "measurable.7.a",
+      "requirement": "最终综合响度约−14LUFS",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "src/v3/audio.py",
+        "notes/v3/audio-measurements.json",
+        "notes/v3/timing.json",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/ledger.md"
+      ],
+      "reason": "最终完整MP4及该项全片独立验证尚未完成。现有源代码、计划、旧场景抽样或设备播放均不能替代最终质量结论；历史失败与限制仍保留于所引报告。"
+    },
+    {
+      "id": "quality_bar.measurable.7.b",
+      "section": "quality_bar",
+      "number": "measurable.7.b",
+      "requirement": "最终音轨无削波",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/ledger.md"
+      ],
+      "reason": "最终完整MP4及该项全片独立验证尚未完成。现有源代码、计划、旧场景抽样或设备播放均不能替代最终质量结论；历史失败与限制仍保留于所引报告。"
+    },
+    {
+      "id": "quality_bar.measurable.7.c",
+      "section": "quality_bar",
+      "number": "measurable.7.c",
+      "requirement": "音效低于音乐及适用的人声",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md",
+        "src/v3/audio.py",
+        "notes/v3/audio-measurements.json",
+        "notes/v3/timing.json"
+      ],
+      "reason": "最终完整MP4及该项全片独立验证尚未完成。现有源代码、计划、旧场景抽样或设备播放均不能替代最终质量结论；历史失败与限制仍保留于所引报告。"
+    },
+    {
+      "id": "quality_bar.measurable.8",
+      "section": "quality_bar",
+      "number": "measurable.8",
+      "requirement": "最终影片静音仍可理解",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/storyboard.md",
+        "notes/v3/timing.json",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "最终完整MP4及该项全片独立验证尚未完成。现有源代码、计划、旧场景抽样或设备播放均不能替代最终质量结论；历史失败与限制仍保留于所引报告。"
+    },
+    {
+      "id": "quality_bar.measurable.9.a",
+      "section": "quality_bar",
+      "number": "measurable.9.a",
+      "requirement": "全部说法有facts.json出处",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/facts.json",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "最终完整MP4及该项全片独立验证尚未完成。现有源代码、计划、旧场景抽样或设备播放均不能替代最终质量结论；历史失败与限制仍保留于所引报告。"
+    },
+    {
+      "id": "quality_bar.measurable.9.b",
+      "section": "quality_bar",
+      "number": "measurable.9.b",
+      "requirement": "不虚构评价、评分、价格、效果或真实人物",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/facts.json",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "最终完整MP4及该项全片独立验证尚未完成。现有源代码、计划、旧场景抽样或设备播放均不能替代最终质量结论；历史失败与限制仍保留于所引报告。"
+    },
+    {
+      "id": "quality_bar.measurable.9.c",
+      "section": "quality_bar",
+      "number": "measurable.9.c",
+      "requirement": "生成或示意内容明确披露",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/facts.json",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "最终完整MP4及该项全片独立验证尚未完成。现有源代码、计划、旧场景抽样或设备播放均不能替代最终质量结论；历史失败与限制仍保留于所引报告。"
+    },
+    {
+      "id": "quality_bar.judgment.1",
+      "section": "quality_bar",
+      "number": "judgment.1",
+      "requirement": "与参考作品并列时质量不显弱",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/references.md",
+        ".cache/v3-source/reference/linear-agent-analysis.json",
+        ".cache/v3-source/reference/linear-agent-frame-difference.csv",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "最终完整MP4及该项全片独立验证尚未完成。现有源代码、计划、旧场景抽样或设备播放均不能替代最终质量结论；历史失败与限制仍保留于所引报告。"
+    },
+    {
+      "id": "deliverables.1",
+      "section": "deliverables",
+      "number": "1",
+      "requirement": "交付每种所需画幅的最终MP4",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/brief-input.md",
+        "notes/v3/brief.md",
+        "notes/v3/history-index.json",
+        "notes/v3/scene-artifacts.json"
+      ],
+      "reason": "本次仅16:9；已有proof和场景片段，尚无最终完整MP4，不把片段或试片当最终交付。"
+    },
+    {
+      "id": "deliverables.2",
+      "section": "deliverables",
+      "number": "2",
+      "requirement": "交付一版纯音乐",
+      "status": "PASS",
+      "evidence": [
+        "web/media/v3/music-only.wav",
+        "web/media/v3/music-only.m4a",
+        "src/v3/audio.py"
+      ],
+      "reason": "独立music-only.wav与m4a存在；文件存在不等于音乐听感通过。"
+    },
+    {
+      "id": "deliverables.3",
+      "section": "deliverables",
+      "number": "3",
+      "requirement": "交付10至20帧缩略图拼版",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/ledger.md"
+      ],
+      "reason": "现有私有评审拼版不等于最终交付的10至20帧全片拼版，尚待最终影片导出。"
+    },
+    {
+      "id": "deliverables.4",
+      "section": "deliverables",
+      "number": "4",
+      "requirement": "交付brief.md",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/brief.md"
+      ],
+      "reason": "文件已存在并可读取；这里只确认该文档交付存在，内容闭环及最终质量对应其它条款。"
+    },
+    {
+      "id": "deliverables.5",
+      "section": "deliverables",
+      "number": "5",
+      "requirement": "交付facts.json",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/facts.json"
+      ],
+      "reason": "文件已存在并可读取；这里只确认该文档交付存在，内容闭环及最终质量对应其它条款。"
+    },
+    {
+      "id": "deliverables.6",
+      "section": "deliverables",
+      "number": "6",
+      "requirement": "交付风格手册",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/style-guide.md"
+      ],
+      "reason": "文件已存在并可读取；这里只确认该文档交付存在，内容闭环及最终质量对应其它条款。"
+    },
+    {
+      "id": "deliverables.7",
+      "section": "deliverables",
+      "number": "7",
+      "requirement": "交付timing.json",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/timing.json"
+      ],
+      "reason": "文件已存在并可读取；这里只确认该文档交付存在，内容闭环及最终质量对应其它条款。"
+    },
+    {
+      "id": "deliverables.8",
+      "section": "deliverables",
+      "number": "8",
+      "requirement": "交付ledger.md",
+      "status": "PASS",
+      "evidence": [
+        "notes/v3/ledger.md"
+      ],
+      "reason": "文件已存在并可读取；这里只确认该文档交付存在，内容闭环及最终质量对应其它条款。"
+    },
+    {
+      "id": "deliverables.9",
+      "section": "deliverables",
+      "number": "9",
+      "requirement": "交付质量标准检查结果",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md",
+        "notes/v3/ledger.md"
+      ],
+      "reason": "目前存在阶段评审，本文件为条款证据底稿；最终质量结果尚待完整影片验证，不能以本清单代签。"
+    },
+    {
+      "id": "deliverables.10",
+      "section": "deliverables",
+      "number": "10",
+      "requirement": "交代仍需人亲眼和亲耳确认的事项",
+      "status": "UNVERIFIED",
+      "evidence": [
+        "notes/v3/audio-playback.log",
+        "notes/v3/audio-playback-r2.log",
+        "notes/v3/ledger.md",
+        "notes/v3/review-storyboard.md",
+        "notes/v3/review-storyboard-r2.md",
+        "notes/v3/review-storyboard-r3.md",
+        "notes/v3/review-scene01.md",
+        "notes/v3/review-scene02.md",
+        "notes/v3/review-scene03.md",
+        "notes/v3/review-scene04.md",
+        "notes/v3/review-scene05.md",
+        "notes/v3/review-scene06.md",
+        "notes/v3/review-scene07.md",
+        "notes/v3/review-scene08.md"
+      ],
+      "reason": "各阶段记录已披露听感/全片等限制，但独立最终交付说明尚未完成。"
+    }
+  ]
+}

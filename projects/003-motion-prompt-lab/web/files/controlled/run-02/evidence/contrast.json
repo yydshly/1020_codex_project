@@ -1,0 +1,96 @@
+{
+  "method": "WCAG sRGB relative luminance; settled text colors, excluding intentional transitional alpha and antialias edge pixels",
+  "pairs": [
+    {
+      "foreground": "ink",
+      "background": "paper",
+      "ratio": 10.946,
+      "passes_4_5": true
+    },
+    {
+      "foreground": "ink",
+      "background": "white",
+      "ratio": 11.84,
+      "passes_4_5": true
+    },
+    {
+      "foreground": "ink",
+      "background": "pale",
+      "ratio": 10.025,
+      "passes_4_5": true
+    },
+    {
+      "foreground": "muted",
+      "background": "paper",
+      "ratio": 6.07,
+      "passes_4_5": true
+    },
+    {
+      "foreground": "muted",
+      "background": "white",
+      "ratio": 6.565,
+      "passes_4_5": true
+    },
+    {
+      "foreground": "muted",
+      "background": "pale",
+      "ratio": 5.559,
+      "passes_4_5": true
+    },
+    {
+      "foreground": "green",
+      "background": "paper",
+      "ratio": 7.603,
+      "passes_4_5": true
+    },
+    {
+      "foreground": "green",
+      "background": "white",
+      "ratio": 8.224,
+      "passes_4_5": true
+    },
+    {
+      "foreground": "green",
+      "background": "pale",
+      "ratio": 6.964,
+      "passes_4_5": true
+    },
+    {
+      "foreground": "orange",
+      "background": "paper",
+      "ratio": 4.602,
+      "passes_4_5": true
+    },
+    {
+      "foreground": "orange",
+      "background": "white",
+      "ratio": 4.978,
+      "passes_4_5": true
+    },
+    {
+      "foreground": "white",
+      "background": "deep",
+      "ratio": 11.606,
+      "passes_4_5": true
+    },
+    {
+      "foreground": "light",
+      "background": "deep",
+      "ratio": 9.293,
+      "passes_4_5": true
+    },
+    {
+      "foreground": "brown",
+      "background": "sand",
+      "ratio": 6.383,
+      "passes_4_5": true
+    },
+    {
+      "foreground": "white",
+      "background": "green",
+      "ratio": 8.224,
+      "passes_4_5": true
+    }
+  ],
+  "minimum": 4.602
+}

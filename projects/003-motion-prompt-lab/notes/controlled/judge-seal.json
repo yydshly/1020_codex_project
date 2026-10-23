@@ -1,0 +1,30 @@
+{
+  "sealed_at_utc": "2026-10-23T04:11:46.405820+00:00",
+  "files": [
+    {
+      "file": "judge-1/scores.json",
+      "sha256": "72c52d6ee5fcae439fed21e8ff8680e332949c60103c00b0d62e74eaadf89ad0"
+    },
+    {
+      "file": "judge-1/report.md",
+      "sha256": "ed13dac02016c3a16f46c386765c667e47385e3b189696f9f8327a2c5ae53c76"
+    },
+    {
+      "file": "judge-1/silent-retelling.md",
+      "sha256": "a6ab1fd9fb09e11e2a0ae629f858cc21020a16ac29f03328ea15305032e5cf10"
+    },
+    {
+      "file": "judge-2/scores.json",
+      "sha256": "6c3a8891a582fa9d131400440e5265b62e336f727198efa46eac065c0a0b098d"
+    },
+    {
+      "file": "judge-2/report.md",
+      "sha256": "966eea650199fb730fdbc64619a7b4ae68647e080b0f70ebd8aababd2661e865"
+    },
+    {
+      "file": "judge-2/silent-retelling.md",
+      "sha256": "3fea4d80e4d9162049c5698e8f2d83a4113822112ce2484c93d40b8f33fd5068"
+    }
+  ],
+  "note": "Both judges finalized independently. Files copied byte-for-byte before combined unblinded results."
+}

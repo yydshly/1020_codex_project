@@ -1,0 +1,139 @@
+{
+  "judge": "J1",
+  "order": [
+    "X",
+    "Y"
+  ],
+  "scores": {
+    "X": {
+      "story": 18,
+      "motion": 13,
+      "readability": 18,
+      "craft": 10,
+      "truth": 10,
+      "total": 69
+    },
+    "Y": {
+      "story": 18,
+      "motion": 16,
+      "readability": 16,
+      "craft": 11,
+      "truth": 10,
+      "total": 71
+    }
+  },
+  "preferred": "Y",
+  "hard_gates": {
+    "X": {
+      "format": "pass",
+      "decode": "pass",
+      "no_major_fabrication": "pass",
+      "critical_information_visible": "pass"
+    },
+    "Y": {
+      "format": "pass",
+      "decode": "pass",
+      "no_major_fabrication": "pass",
+      "critical_information_visible": "pass"
+    }
+  },
+  "issues": {
+    "X": [
+      {
+        "time": "2.9–3.1 / 4.9–5.1 / 8.9–9.1 / 12.4–12.6 / 16.4–16.6",
+        "severity": "medium",
+        "finding": "转场反复使用旧信息淡出、浅色块留下、再显新信息；3.0秒几乎空白，仅有书签与窗口。信息连续性弱于容器的连续性。"
+      },
+      {
+        "time": "5.4–8.6 / 9.4–12.2 / 13.0–16.2",
+        "severity": "medium",
+        "finding": "主要构图长时间保持，动作集中在移动书签、进度线、波形或条形变化；书签有导读作用，但多数阶段未展示操作引发结果的因果。"
+      },
+      {
+        "time": "12.8–16.2",
+        "severity": "low",
+        "finding": "实验信息完整但两卡细节多，20秒片中一次读完样本、问题、指标及状态需要较高注意力。"
+      }
+    ],
+    "Y": [
+      {
+        "time": "3.2 / 6.2 / 9.2 / 12.2 / 15.2 / 17.7",
+        "severity": "medium",
+        "finding": "多处快速转场的字形呈数份偏移重影；9.2秒波形与旧原理三卡同时占据内容区，产生截断和杂乱的交接。是短暂转场问题，未持续遮挡关键信息。"
+      },
+      {
+        "time": "0.0–3.0 / 12.4–15.0 / 18.0–19.8",
+        "severity": "medium",
+        "finding": "卡片缓慢漂移和下划线增长占据部分时长，实际新信息较少；末尾保持阅读有必要，但不能把细小位移全部视作有意义导演动作。"
+      },
+      {
+        "time": "15.4–17.4",
+        "severity": "low",
+        "finding": "小实验提出数字朗读问题并明确待实测，但没有具体样本文本，验证步骤的可执行感比有明确输入的呈现弱。"
+      }
+    ]
+  },
+  "strengths": {
+    "X": [
+      "0秒钩子完整，5.4–8.6秒三阶段原理与箭头清楚，7秒原图教学示意/非模型运行可读。",
+      "9.4–12.2秒将原理对应到pipeline.py和model.py，13–16秒给出具体测试文本、记录指标和待实测状态。",
+      "橙色书签贯穿各段并引导视线；18秒品牌、仓库地址与三步行动清楚。"
+    ],
+    "Y": [
+      "首秒问题、鼠标进入按钮与随后研究页建立可识别的产品操作路径。",
+      "6.4–9秒三阶段逐项强调，9.4–12秒滑块位置与波形周期变化在语义上匹配，教学属性显著。",
+      "Kokoro卡片从入口到正文、来源、实验及结尾持续出现，构图有左右分栏和全宽变化。",
+      "16秒明确验证计划/待实测/结果待填写，18秒品牌与完整仓库地址清晰。"
+    ]
+  },
+  "confidence": "中等。200张0.2秒密集帧、首读80帧、全部观察到的大转场中点±0.1秒、自抽原图与产品事实相互印证；Y仅领先2分，属于轻微偏好，不是明确胜出。连续播放与主观听音未验证。",
+  "limitations": [
+    "未进行实时连续播放或主观听音，主观音质、节奏及音画同步为unverified；帧样本不能证明所有60fps瞬间均无瑕疵。",
+    "参考片实际自行抽取并查看约每3秒一帧的拼版，未逐帧检查参考的全部转场，因此只比较可见构图、焦点与细节，不给参考速度曲线作确定结论。",
+    "未逐字逐像素测量全部文字4.5:1对比度；格式和冻结统计引用匿名measurements.json，另自行完整解码两条MP4。",
+    "首读严格X后Y且先保存；密集检查时先看X dense-1，随后Y dense-1，再完成X dense-2..4及Y dense-2..4，属于密集阶段交错，未完全整条X完毕才看Y。",
+    "真实产品源码仅阅读与任务相关的内容/样式/事实摘录，未运行网页逐控件比对；未检查交付源码、纯音乐等非成片产物。"
+  ],
+  "artifact_sha256": {
+    "X": "ec965dc71fa55452c052235c7a72fac10af0d40336398b79d801b8d424c921f7",
+    "Y": "351273de3dd7255c932de2134728091713d0f28c8f715b7f1cc1152de3577841"
+  },
+  "files_viewed": [
+    "analysis-X/blind-2fps.jpg",
+    "analysis-Y/blind-2fps.jpg",
+    "analysis-X/dense-1.jpg",
+    "analysis-X/dense-2.jpg",
+    "analysis-X/dense-3.jpg",
+    "analysis-X/dense-4.jpg",
+    "analysis-Y/dense-1.jpg",
+    "analysis-Y/dense-2.jpg",
+    "analysis-Y/dense-3.jpg",
+    "analysis-Y/dense-4.jpg",
+    "judge-1/X-transitions.jpg",
+    "judge-1/Y-transitions.jpg",
+    "judge-1/reference-3sec.jpg",
+    "judge-1/X-7.00.jpg",
+    "judge-1/X-14.00.jpg",
+    "judge-1/X-18.00.jpg",
+    "judge-1/Y-4.40.jpg",
+    "judge-1/Y-4.50.jpg",
+    "judge-1/Y-4.60.jpg",
+    "judge-1/Y-9.20.jpg",
+    "judge-1/Y-10.00.jpg",
+    "judge-1/Y-16.00.jpg",
+    "judge-1/Y-18.00.jpg",
+    "inputs/brief.md",
+    "inputs/rubric.json",
+    "inputs/repository-README.md",
+    "inputs/product/notes/07-experiments.md",
+    "inputs/product/notes/sources.json (Kokoro摘录)",
+    "inputs/product/web/data.js (摘录)",
+    "inputs/product/web/kokoro-learning.js (摘录)",
+    "inputs/product/web/styles.css (摘录)",
+    "analysis-X/measurements.json",
+    "analysis-Y/measurements.json",
+    "X.mp4 (自行抽帧/完整解码/哈希)",
+    "Y.mp4 (自行抽帧/完整解码/哈希)",
+    "inputs/reference.mp4 (自行抽帧)"
+  ]
+}

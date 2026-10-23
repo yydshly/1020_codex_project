@@ -1,0 +1,75 @@
+{
+  "method": "Per-event 220ms RMS comparison of pre-mix stems; normalization applies shared gain. Event sample starts are integer frame multiples. Musical grid constructed at 120BPM; no human listening claim.",
+  "events": [
+    {
+      "frame": 60,
+      "sfx_below_music_db": 17.37,
+      "design_alignment_frames": 0
+    },
+    {
+      "frame": 270,
+      "sfx_below_music_db": 18.26,
+      "design_alignment_frames": 0
+    },
+    {
+      "frame": 180,
+      "sfx_below_music_db": 21.81,
+      "design_alignment_frames": 0
+    },
+    {
+      "frame": 360,
+      "sfx_below_music_db": 24.37,
+      "design_alignment_frames": 0
+    },
+    {
+      "frame": 540,
+      "sfx_below_music_db": 21.47,
+      "design_alignment_frames": 0
+    },
+    {
+      "frame": 720,
+      "sfx_below_music_db": 23.42,
+      "design_alignment_frames": 0
+    },
+    {
+      "frame": 900,
+      "sfx_below_music_db": 21.84,
+      "design_alignment_frames": 0
+    },
+    {
+      "frame": 1050,
+      "sfx_below_music_db": 21.63,
+      "design_alignment_frames": 0
+    },
+    {
+      "frame": 240,
+      "sfx_below_music_db": 18.51,
+      "design_alignment_frames": 0
+    },
+    {
+      "frame": 420,
+      "sfx_below_music_db": 18.02,
+      "design_alignment_frames": 0
+    },
+    {
+      "frame": 480,
+      "sfx_below_music_db": 18.63,
+      "design_alignment_frames": 0
+    },
+    {
+      "frame": 600,
+      "sfx_below_music_db": 17.71,
+      "design_alignment_frames": 0
+    },
+    {
+      "frame": 780,
+      "sfx_below_music_db": 17.34,
+      "design_alignment_frames": 0
+    },
+    {
+      "frame": 960,
+      "sfx_below_music_db": 18.55,
+      "design_alignment_frames": 0
+    }
+  ]
+}

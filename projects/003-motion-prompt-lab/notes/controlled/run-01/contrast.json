@@ -1,0 +1,26 @@
+[
+  {
+    "pair": "ink/paper",
+    "ratio": 10.946
+  },
+  {
+    "pair": "green/paper",
+    "ratio": 7.603
+  },
+  {
+    "pair": "white/green",
+    "ratio": 8.224
+  },
+  {
+    "pair": "ink/pale",
+    "ratio": 10.025
+  },
+  {
+    "pair": "green/pale",
+    "ratio": 6.964
+  },
+  {
+    "pair": "orange/white",
+    "ratio": 4.978
+  }
+]

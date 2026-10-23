@@ -1,0 +1,8 @@
+{
+  "static_references": 47,
+  "unique_ids": 39,
+  "internal_anchors": "pass",
+  "both_video_byte_ranges": "206 / exact bytes",
+  "full_prompt": "HTTP content matches source; >4500 characters",
+  "scope": "Static and HTTP checks. Does not simulate browser interactions."
+}

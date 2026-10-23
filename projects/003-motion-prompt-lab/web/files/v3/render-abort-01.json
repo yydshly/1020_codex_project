@@ -1,0 +1,9 @@
+{
+  "attempt": "full-01-attempt-a",
+  "completed_full_movie": false,
+  "last_progress_frame": 750,
+  "error": "@napi-rs/canvas Create skia surface failed",
+  "diagnosis": "Repeated native canvas allocation in motion-blur loop exhausted a native surface allocation; exact native memory root cause not independently profiled.",
+  "fix": "Reuse two canvas surfaces; explicit Node GC every25 frames with --expose-gc. Resume deterministic unchanged stable frame PNGs; rerender every transition because seam contract was refined.",
+  "review_requirement": "No complete MP4 was produced by aborted attempt; retained as tool failure, not a completed render or passed review."
+}
