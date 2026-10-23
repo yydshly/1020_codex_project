@@ -19,7 +19,7 @@
 
 - [在线研究网页](https://yydshly.github.io/1020_codex_project/projects/011-jev-browser-agent-study/) / [在线横向架构图](https://yydshly.github.io/1020_codex_project/projects/011-jev-browser-agent-study/architecture.html)。发布状态见[发布记录](notes/release.md)。
 - [核心横图查看器](web/architecture.html)：先看四方分工、执行循环、文字助手与独立验收；支持缩放和图片下载。
-- [详细研究网页](web/index.html)：展开核心价值、架构分工、酒店教学、模型训练、速度、替换方案与边界。
+- [详细研究网页](web/index.html)：展开核心价值、架构分工、酒店教学、模型训练、速度、替换方案与边界；[详细研究图](web/index.html#detailed-map)直接在正文完整展示，并支持原地放大。
 - [详细研究总图查看器](web/guide.html)：进一步查阅整个探究过程，支持适应宽度、100%、缩放和方向键滚动。
 - [详细研究底稿](notes/research.md) / [结构化来源索引](notes/sources.json)。
 - [本地验证记录](notes/verification.md)。

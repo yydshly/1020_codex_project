@@ -164,3 +164,15 @@ window.addEventListener("scroll",function () {
   requestAnimationFrame(function () { updateSectionNavigation();navFrame=false; });
 },{passive:true});
 updateSectionNavigation();
+
+const detailedMapFrame=byId("detailed-map-frame");
+function setDetailedMapEnlarged(enlarged) {
+  detailedMapFrame.classList.toggle("is-enlarged",enlarged);
+  byId("detailed-map-fit").setAttribute("aria-pressed",String(!enlarged));
+  byId("detailed-map-actual").setAttribute("aria-pressed",String(enlarged));
+  byId("detailed-map-status").textContent=enlarged ? "已原地放大，可在图内滚动或用方向键移动。" : "已完整展开，向下阅读即可。";
+  detailedMapFrame.scrollTop=0;
+  detailedMapFrame.scrollLeft=0;
+}
+byId("detailed-map-fit").addEventListener("click",function () { setDetailedMapEnlarged(false); });
+byId("detailed-map-actual").addEventListener("click",function () { setDetailedMapEnlarged(true); });
