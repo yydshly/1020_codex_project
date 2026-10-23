@@ -21,4 +21,16 @@
 
 正式地址：https://yydshly.github.io/1020_codex_project/projects/005-stickman-story-lab/
 
-在线部署和正式站点验证结果将在发布后追加。
+## 正式部署验证
+
+- 内容提交：[9dd833a3c13cbf9c24d1ea41544586a0267c5875](https://github.com/yydshly/1020_codex_project/commit/9dd833a3c13cbf9c24d1ea41544586a0267c5875)。
+- [Deploy Pages 39915091030](https://github.com/yydshly/1020_codex_project/actions/runs/39915091030)：构建与部署均成功。
+- [提交校验39915021493](https://github.com/yydshly/1020_codex_project/actions/runs/39915021493)：成功。
+- 正式站点33个页面及资源URL均返回HTTP 200。总索引已展示“定制角色＋故事”的能力与价值摘要。
+- 线上PNG与SVG的SHA-256均与上述现有原图一致。
+- 成片Range请求返回206，0—99字节区间实际为100字节。
+- 浏览器实际打开正式地址；视频按钮和25秒章节跳转经刷新后正常，播放到30秒结束，无媒体错误。首次导航时自定义按钮未响应，刷新后复核正常，未据此推断具体原因。
+- 素材库加载23份内容，“研究总图”分类显示1/23，窄窗口无横向溢出。
+- [线上检查数据](published-verification.json)；[正式页面截图](../assets/published-preview.png)。
+
+网站仅展示研究、制作过程与已有成果；未提供在线生成服务，未宣称已独立复现原帖底层方案。

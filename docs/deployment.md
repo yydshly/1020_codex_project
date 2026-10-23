@@ -52,3 +52,5 @@ gh workflow run deploy-pages.yml --ref main
 GitHub Pages 只托管静态文件。需要服务器、数据库或私密 API 密钥的应用，应另行部署后端，并在子项目说明中记录地址和配置方式。浏览器端构建产物中的环境变量是公开内容。
 
 参考：[GitHub Pages 介绍](https://docs.github.com/en/pages/getting-started-with-github-pages/what-is-github-pages) · [自定义部署工作流](https://docs.github.com/en/pages/getting-started-with-github-pages/using-custom-workflows-with-github-pages)
+
+2026-10-23 新增并验证：[005 · 角色与故事工坊](https://yydshly.github.io/1020_codex_project/projects/005-stickman-story-lab/) · [研究总图](https://yydshly.github.io/1020_codex_project/projects/005-stickman-story-lab/#understanding)。摘要以定制角色＋故事的能力与价值为主，沿用既有引导图；成片、23份素材与线上原图哈希已验证，详见[005发布记录](../projects/005-stickman-story-lab/notes/release.md)。

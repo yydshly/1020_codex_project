@@ -1,0 +1,192 @@
+{
+  "date": "2026-10-23",
+  "url": "https://yydshly.github.io/1020_codex_project/projects/005-stickman-story-lab/",
+  "checked_urls": 33,
+  "all_http_200": true,
+  "guide_hashes": {
+    "understanding-map-v1.png": "40b3e9e1bff864af26ba715b816078bd88717ecb4f3eaa165b0eddc9aade4f15",
+    "understanding-map-v1.svg": "c9433bfc877813e79d7bb97155696855a7cb2420453624d18a5787f3129bbb44"
+  },
+  "video_range": {
+    "status": 206,
+    "content_range": "bytes 0-99/16711202",
+    "length": 100
+  },
+  "parent_summary_verified": true,
+  "responses": [
+    {
+      "path": "",
+      "status": 200,
+      "bytes": "12736"
+    },
+    {
+      "path": "robot-sample.html",
+      "status": 200,
+      "bytes": "11544"
+    },
+    {
+      "path": "research.html",
+      "status": 200,
+      "bytes": "12928"
+    },
+    {
+      "path": "library.html",
+      "status": 200,
+      "bytes": "3093"
+    },
+    {
+      "path": "library-manifest.json",
+      "status": 200,
+      "bytes": "14092"
+    },
+    {
+      "path": "home.js",
+      "status": 200,
+      "bytes": "1964"
+    },
+    {
+      "path": "home.css",
+      "status": 200,
+      "bytes": "10833"
+    },
+    {
+      "path": "library.js",
+      "status": 200,
+      "bytes": "6901"
+    },
+    {
+      "path": "sample/sample.js",
+      "status": 200,
+      "bytes": "4639"
+    },
+    {
+      "path": "assets/understanding-map-v1.svg",
+      "status": 200,
+      "bytes": "10522565"
+    },
+    {
+      "path": "assets/understanding-map-v1.png",
+      "status": 200,
+      "bytes": "2081934"
+    },
+    {
+      "path": "sample/second-place-30s-v1.mp4",
+      "status": 200,
+      "bytes": "16711202"
+    },
+    {
+      "path": "sample/adeng-character-v1.png",
+      "status": 200,
+      "bytes": "2391690"
+    },
+    {
+      "path": "sample/s01-first-frame-v1.png",
+      "status": 200,
+      "bytes": "2121000"
+    },
+    {
+      "path": "sample/s02-first-frame-v1.png",
+      "status": 200,
+      "bytes": "1957878"
+    },
+    {
+      "path": "sample/s03-first-frame-v1.png",
+      "status": 200,
+      "bytes": "2174788"
+    },
+    {
+      "path": "sample/s04-first-frame-v1.png",
+      "status": 200,
+      "bytes": "2137623"
+    },
+    {
+      "path": "sample/s05-first-frame-v1.png",
+      "status": 200,
+      "bytes": "2047480"
+    },
+    {
+      "path": "sample/s06-first-frame-v1.png",
+      "status": 200,
+      "bytes": "2120233"
+    },
+    {
+      "path": "downloads/shots/s01-original-v1.mp4",
+      "status": 200,
+      "bytes": "1971254"
+    },
+    {
+      "path": "downloads/shots/s02-original-v1.mp4",
+      "status": 200,
+      "bytes": "2333106"
+    },
+    {
+      "path": "downloads/shots/s03-original-v1.mp4",
+      "status": 200,
+      "bytes": "2483908"
+    },
+    {
+      "path": "sample/s04-invitation-v2.mp4",
+      "status": 200,
+      "bytes": "1956154"
+    },
+    {
+      "path": "downloads/shots/s05-original-v1.mp4",
+      "status": 200,
+      "bytes": "2958864"
+    },
+    {
+      "path": "downloads/shots/s06-original-v1.mp4",
+      "status": 200,
+      "bytes": "2009822"
+    },
+    {
+      "path": "downloads/voices/ask_way.wav",
+      "status": 200,
+      "bytes": "194106"
+    },
+    {
+      "path": "downloads/voices/directions.wav",
+      "status": 200,
+      "bytes": "88444"
+    },
+    {
+      "path": "downloads/voices/invitation.wav",
+      "status": 200,
+      "bytes": "157628"
+    },
+    {
+      "path": "downloads/voices/accept.wav",
+      "status": 200,
+      "bytes": "155256"
+    },
+    {
+      "path": "sample/second-place-30s-zh.vtt",
+      "status": 200,
+      "bytes": "255"
+    },
+    {
+      "path": "downloads/creative-plan.json",
+      "status": 200,
+      "bytes": "6566"
+    },
+    {
+      "path": "downloads/generation-prompts.json",
+      "status": 200,
+      "bytes": "15138"
+    },
+    {
+      "path": "downloads/production-record.json",
+      "status": 200,
+      "bytes": "3897"
+    }
+  ],
+  "browser": {
+    "duration": 30,
+    "ended": true,
+    "media_error": null,
+    "chapter_playback_after_reload": true,
+    "library_total": 23,
+    "overview_category_count": 1,
+    "horizontal_overflow": false
+  }
+}
