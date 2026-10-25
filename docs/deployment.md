@@ -1,5 +1,8 @@
 # 多个 Web 演示的部署
 
+2026-10-25 新增并验证：[015 · 江山时序能力研究](https://yydshly.github.io/1020_codex_project/projects/015-jiangshan-atlas/) · [016 · 三维历史地图](https://yydshly.github.io/1020_codex_project/projects/016-dongpo-journey/) · [017 · 源库与我们的能力、原理、效果及扩展摘要](https://yydshly.github.io/1020_codex_project/projects/017-abyss-expedition/research.html#capability-summary) · [一图总览](https://yydshly.github.io/1020_codex_project/projects/017-abyss-expedition/overview.html)。目录进入研究档案，原深海入口保留。Pages成功；587项线上资源核对通过，原作SVG浮雕、016新增真三维、017独立流程与后续铁路目标分别说明。详见[发布记录与验收边界](releases/map-research-20261025.md)。
+
+
 2026-10-25 新增并验证：[012 · 入库之间 C1 练车与复盘](https://yydshly.github.io/1020_codex_project/projects/012-parking-lab/) · [我们的理解与进展](https://yydshly.github.io/1020_codex_project/projects/012-parking-lab/progress.html#understanding) · [完整22章演示](https://yydshly.github.io/1020_codex_project/projects/012-parking-lab/courses.html?course=all)。完整摘要与生成引导图已接入站点目录；492项模型测试、191段语音校验、课程入口与子路径检查通过，Pages成功。211个线上唯一目标已覆盖核验，四项瞬时请求失败单独复核通过；引导图和站点封面与认可原图哈希一致。详见[012发布记录与边界](../projects/012-parking-lab/notes/release-20261025.md)。
 
 2026-10-23 新增并验证：[011 · Jev Ultrafast 研究](https://yydshly.github.io/1020_codex_project/projects/011-jev-browser-agent-study/) · [横向架构图](https://yydshly.github.io/1020_codex_project/projects/011-jev-browser-agent-study/architecture.html)。摘要说明网页操作抽取、Jev 选择与程序执行循环、通用 Agent 骨架的价值和五条待实现扩展；沿用认可的 1920 × 1080 横图，PNG 与原图字节一致。Pages 成功，13 项线上资源与发布提交一致，详见[011 发布记录](../projects/011-jev-browser-agent-study/notes/release.md)。
