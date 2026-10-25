@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>入库之间 · 全量检查分析 · 2026-10-24</title>
+<style>body{margin:0;background:#f3f5f3;color:#25332e;font:16px/1.75 system-ui,"Microsoft YaHei",sans-serif}main{max-width:1060px;margin:auto;padding:36px 24px 80px}h1{font-size:30px;line-height:1.35}h2{margin-top:42px;font-size:23px}h3{margin-top:28px;font-size:19px}a{color:#195b79}p{max-width:940px}table{width:100%;border-collapse:collapse;background:white;margin:20px 0}th,td{padding:12px;border:1px solid #dce3de;text-align:left;vertical-align:top}th{background:#e9efeb}.lead{font-size:19px}.note{padding:16px 20px;border-left:4px solid #4a7261;background:#e9f0eb}.p1{color:#9a4028;font-weight:700}.p2{color:#7b6122;font-weight:700}figure{margin:24px 0;background:#fff;padding:12px;border:1px solid #dce3de;border-radius:8px}figure img{display:block;width:100%;height:auto;max-height:900px;object-fit:contain;background:#eef1ef}figcaption{padding:12px 4px 4px;font-size:14px;color:#52615a}code{font-size:14px;background:#eaf0ec;padding:2px 5px;border-radius:3px}small{color:#63736a}details{margin:20px 0}summary{cursor:pointer;font-weight:600}li{margin:8px 0}@media(max-width:650px){main{padding:22px 14px}table{font-size:13px}td,th{padding:8px}h1{font-size:25px}}</style></head><body><main>
+<p><small>2026-10-24 · 当前本地构建 index-L0xOqOMh.js / index-oV8a99Z0.css · 本轮实际截图与只读代码检查</small></p>
+<h1>入库之间：全量检查分析</h1>
+<p class="lead">当前已有可体验的教学闭环。下一轮应优先修正复盘判断、看镜视角的衔接与各模式的观察指令，再提高镜内参照和驾驶舱的真实感。</p>
+<div class="note">本轮完成实际浏览器操作、当前代码审查、178 项自动测试及 42 段 MiniMax 语音包验证。发现一处现有测试没有覆盖的复盘误判。未修改产品功能；仅恢复已停止的本地预览服务，并新增本审查目录。</div>
+
+<h2>检查范围与步骤</h2>
+<table><thead><tr><th>步骤</th><th>实际检查</th><th>健康情况</th><th>本轮证据</th></tr></thead><tbody>
+<tr><td>1</td><td>现有驾驶页、重新进入、首页入口</td><td>入口清晰；预览服务原先停止，恢复后可以重新进入</td><td>01、02</td></tr>
+<tr><td>2</td><td>六步新手：定位→认镜→右打→保持→两镜确认→主动回正</td><td>完整手动走通；观察是否理解仍靠用户点击确认</td><td>03—07</td></tr>
+<tr><td>3</td><td>右侧回正短练：真实语音→慢放→接手</td><td>流程可用；示范和接手会重置正前视角</td><td>08、09</td></tr>
+<tr><td>4</td><td>提前回正→四张镜面对比→从出错前重练</td><td>本次正确识别偏早，重练清除旧输入；特定回轮过程存在代码复现误判</td><td>10、复现脚本</td></tr>
+<tr><td>5</td><td>完整语音示范前几段→动态接手→自己倒车→暂停→轨迹复盘</td><td>实际走通；记录不足时没有编造此前转向动作</td><td>12、13</td></tr>
+<tr><td>6</td><td>座椅调高、双镜推荐、撤销、恢复原眼位</td><td>功能可用；完成推荐后缺少双镜效果验收</td><td>14</td></tr>
+<tr><td>7</td><td>保留的原分步示范，第 3 / 12 步</td><td>仍可访问；旧文字要求寻找此时镜里看不到的后轮、库角</td><td>16</td></tr>
+<tr><td>8</td><td>跟车外观、驾驶位、1280×1000 与 390×844 视口、键盘</td><td>没有出现横向溢出；小字、密集控件及 Space 按钮操作需要修正</td><td>11、15，DOM 尺寸与键盘实测</td></tr>
+<tr><td>9</td><td>自动测试、语音包、控制台、渲染与记录代码</td><td>178/178，通过语音校验，已检查页面控制台无 error / warn；静止页面仍反复渲染两镜</td><td>tests.txt、代码行引用</td></tr>
+</tbody></table>
+
+<h2>需要优先修正的四项</h2>
+<h3><span class="p1">P1 · 01</span> 特定回轮过程，复盘会把不安全的直倒姿态判为合适</h3>
+<p>复盘从“开始回正前”的姿态，重新模拟一次假设持续倒车的回轮过程。实际操作如果是停住后原地回正，或回轮时调整低速设定，预测过程可能与已录下的实际过程不同。<code>review.js:98</code> 调用的 <code>judgeCenter</code> 没有采用实际回正完成姿态；<code>main.js:200</code> 也没有记录当时的刹车、车速设定等输入。</p>
+<table><thead><tr><th>只读复现</th><th>实际完成后的状态</th><th>当前复盘结论</th></tr></thead><tbody>
+<tr><td>示范第 1495 帧停车接手，仅按 X 原地回正</td><td>移动 0 m，残余夹角 3.104°；模型继续直倒约 3.379 m 触线</td><td>good / safe，预测残余 2.966°</td></tr>
+<tr><td>示范第 1484 帧，以 2.5 km/h 倒车时按 X，并将低速设定改为允许的 1.2 km/h</td><td>残余夹角 3.478°；模型继续直倒约 2.878 m 触线</td><td>good / safe，预测残余 2.914°</td></tr>
+</tbody></table>
+<p>这些数值只描述本模型的复现，不是实车角度阈值或考试判罚。问题也不代表所有复盘均错误。建议分开评价开始回轮的时机、实际回轮过程，以及完成后的车身姿态和边线余量；依据真实记录解释偏差原因。</p>
+<p>代码：<a href="../../src/review.js">review.js:31—37、98</a>，<a href="../../src/steering-coach.js">steering-coach.js:9、54—60</a>，<a href="../../src/main.js">main.js:200</a>。<a href="reproduce-review.mjs">最小复现脚本</a> · <a href="review-reproduction.jsonl">本轮实际运行输出</a>。</p>
+
+<h3><span class="p1">P1 · 02</span> 右倒库示范、接手、重练会把视线转离右镜</h3>
+<p>实际先看右镜，再点击“准备好了，我来判断”，画面恢复正前方，只见方向盘和一侧左镜。学员需要重新找右镜，观察上下文被打断。<a href="../../src/main.js">main.js:269、288、305</a> 的三个入口均显式设置 <code>setGaze('forward')</code>。新实体镜替代常驻双镜后，这个旧默认值的影响更大。</p>
+<p>建议：示范初次带到入库侧镜；自己判断和重练保留上一观察方向，并用轻量提示提醒交替确认另一侧。保留用户主动转头，避免示范或接手时无说明地改视角。</p>
+<figure><img src="09-practice-handoff.png" alt="右倒库短练接手后被转回正前，右镜不在画面内"><figcaption>步骤 3 · 09：提示“比较车身与库线”，接手后的主画面却是正前方。当前视口下部分场景控件位于画面下方。</figcaption></figure>
+
+<h3><span class="p1">P1 · 03</span> 不同模式的观察指导尚未统一</h3>
+<p>六步新手已经明确“库线还没进入镜子，看不到正常”；原分步示范第 3 步却仍要求看后轮、库角和边线。此时的实体镜主要是路面，车内提示也写着“建立车身与库角的对应”。旧文字没有随当前镜域和遮挡更新，可能让用户再次怀疑自己看错。</p>
+<p>建议将所有模式共用同一份“当前能看到什么、当前该看什么、下一步做什么”的指导数据。只有参照进入实际可见范围后，才要求学员找它；后轮不可见时改用车身边缘、库线和间隙，不强求看轮胎。</p>
+<p>代码：<a href="../../src/lesson.js">lesson.js:8—9，LESSON_STEPS 转向说明</a>；与 <a href="../../src/main.js">main.js:535—579、683—690</a> 的可见性指导对照。</p>
+<figure><img src="16-original-lesson.png" alt="旧分步示范要求看后轮和库角，实际小镜仅能辨认路面"><figcaption>步骤 7 · 16：第 3 / 12 步保留模式仍可用，但侧栏观察文字与当前镜中内容不一致。</figcaption></figure>
+
+<h3><span class="p1">P1 · 04</span> 一键调镜的几何合格，尚未转化成容易辨认的画面</h3>
+<p>本轮认镜和接近平行的截图中，车身往往只是镜内侧很细的暗边；灰色路面和车身阴影占据大部分画面。标注写“车身”可以帮助定位，却不足以让新手建立车身轮廓、库线夹角与两侧间隙的空间关系。</p>
+<p><a href="../../src/mirror-fit.js">mirror-fit.js:14—24、69—81</a> 优化的是少量参考点的几何投影，不是最终图像的车身占比、对比度和可读性。默认眼位推荐后，两侧 body 参考点距内侧边约 7.55% / 6.58%，这些数值<strong>不是</strong>渲染画面中的车身像素比例。<a href="../../src/mirror-optics.js">mirror-optics.js:50—57</a> 也明确使用单虚拟视点近似非中心凸面反射，近距离车身可能有视差。</p>
+<p>建议：先校正真实车身侧面、车门内饰和光照，使镜内车身轮廓可辨；完成推荐后显示两镜验收，要求确认车身、侧后地面及所需库线。尺寸放大继续作为教学辅助，不能为“更好看”扩大镜域或移动参照。车型、座椅和镜片仍需实测对照。</p>
+<figure><img src="04-recognize-mirror.png" alt="新手认镜时车身只表现为窄暗边，放大区域大部分是沥青"><figcaption>步骤 2 · 04：新手能读到“车身”的标签，但实体形态仍难辨。</figcaption></figure>
+<figure><img src="05-near-straight-right.png" alt="接近回正时右镜黄线进入画面，但车身边缘依然细暗"><figcaption>步骤 2 · 05：黄线进入后，夹角比较依然依赖非常窄的车身参照。</figcaption></figure>
+
+<h2>随后应做的体验与真实感优化</h2>
+<table><thead><tr><th>优先级</th><th>问题与影响</th><th>建议及验收方式</th></tr></thead><tbody>
+<tr><td class="p2">P2 · 05</td><td>新手以“我认清了”“两边看过了”通过观察步骤；可以一路点过而没有判断。四图复盘信息正确时，重点仍不够突出。</td><td>增加一次真实辨认：点出车身或库线、选择夹角在变大还是变小。复盘先放大一面关键镜，标出本次与示范的一个主要差别，再展开双镜与轨迹。</td></tr>
+<tr><td class="p2">P2 · 06</td><td>异常时大部分指导是停住并重练。用户能知道错了，却未学习如何观察偏左、偏右、夹角与余量，以及什么情况还有修正空间。<a href="../../src/steering-coach.js">steering-coach.js:85—91</a>。</td><td>增加受控的纠偏短练：偏差→先看哪面镜→判断能否继续→小幅调整→再次确认。依据车辆预测和余量给出有限纠偏，不能无条件教“向窄的一侧打”之类口诀。</td></tr>
+<tr><td class="p2">P2 · 07</td><td>驾驶舱仍有大块裸白平面、简化窗框、缺少内饰接缝与材质层次；外部车辆和树木的轮廓仍明显由基础几何组成。仪表指针固定，见<a href="../../src/vehicle-visuals.js">vehicle-visuals.js:43—57、116—118、145</a>。</td><td>选定一个具体教练车型，用同一套内外结构校核眼点、窗框、后视镜和车身。优先做内饰包覆、车门结构、镜壳和仪表反馈；再做塑料、布料、橡胶的材质与自然光照。场地增加适度磨损、接缝和周边背景，同时保持标线清楚。</td></tr>
+<tr><td class="p2">P2 · 08</td><td>新手、短练、车内训练、分步示范、语音示范与带练等入口重叠；从“返回自由练习”实际进入的是车内训练。部分页面同时有顶部、场景、底部多处暂停与调镜入口。</td><td>主流程统一为“看示范→自己判断→看差别→再练一次”，其他模式保留在更多选项。始终显示当前由谁驾驶、当前任务和一个主要按钮；回正、刹车、观察控制保持固定位置。</td></tr>
+<tr><td class="p2">P2 · 09</td><td>C1 当前仍是方向专项：S/W 代替换挡与半联动，X 自动回中；停稳、换挡、离合及熄火未模拟。短练起点取自同一条示范姿态，容易记住固定过程。</td><td>先增加起点距离、车身初始夹角和轻微偏移的分级变化，检查学员是否仍会看镜判断；之后再单独增加 C1 踏板与换挡模块。教学辅助、方向专项与完整考试模拟应标清范围。</td></tr>
+<tr><td class="p2">P2 · 10</td><td>键盘 Space 被全局驾驶快捷键拦截。实测聚焦“继续语音带练”时 Space 无效，Enter 可触发。<a href="../../src/main.js">main.js:1447—1455、1492</a>。</td><td>驾驶快捷键仅在驾驶区域或明确启用时生效；表单、按钮、链接及组合键保留原生行为。增加键盘走完主流程的浏览器验证。</td></tr>
+<tr><td class="p2">P2 · 11</td><td>390×844 下没有横向溢出，但看镜按钮约 42×31 px、10 px 字，调座椅字实际降到 8 px。用户一边控制一边观察时阅读成本高。截图不能证明完整无障碍。</td><td>练习控制使用更大触点和文字；状态不只靠低对比颜色。把看镜、回正、刹车安排在触手可及的固定区域，支持横屏驾驶布局。另测屏幕阅读器、缩放与真实触屏。</td></tr>
+<tr><td class="p2">P2 · 12</td><td>欢迎页、暂停和俯视仍持续 RAF，每帧都渲染两侧至少 512×324 的离屏镜面，再渲染主世界。<a href="../../src/main.js">main.js:1763—1765、1812—1815</a>，<a href="../../src/mirrors.js">mirrors.js:157—168</a>。</td><td>静止画面按变化重绘，移动时按可见镜面与质量档位更新；远处设施使用合批/实例。只确认存在冗余渲染，未测具体 FPS、耗电或所有设备表现。</td></tr>
+<tr><td class="p2">P2 · 13</td><td>本轮开始时预览服务已经停止，已加载页面仍能操作，新开页面连接失败；另一旧标签页将语音错误直接显示为英文 Failed to fetch。练习记录主要保存在内存，只有座椅/镜设置有 localStorage 恢复。</td><td>增加稳定的一键启动、连接状态自检和明确的中文恢复提示；按用户选择保存练习进度、最近错误与设置版本，让中断后能继续。开发预览服务停止不等同于已证明产品运行时崩溃。</td></tr>
+</tbody></table>
+
+<h2>建议实施顺序与可核验的完成条件</h2>
+<ol>
+<li><strong>先修判断与指导一致性：</strong>原地回轮、刹车回轮、变速回轮及左右两侧都用实际记录判断；任何模式不要求寻找不可见参照。为已发现两个误判增加回归用例。</li>
+<li><strong>再完成镜面训练闭环：</strong>固定眼位→双镜验收→示范→接手保留观察方向→独立判断→同设置对比→保留错误原因重练。让首次使用者无需额外解释就能指出车身、库线和差异。</li>
+<li><strong>然后重做车型细节与操作体感：</strong>按一个实际车型校核车舱，调整材质和场地细节，连接仪表与实际状态；逐步减少快捷回正和自动控速的依赖。</li>
+<li><strong>并行处理运行与可访问性：</strong>修 Space、字体与触点，暂停状态停止无效渲染，支持进度恢复与一键启动。</li>
+</ol>
+
+<h2>本轮有效基础与验证边界</h2>
+<p>六步入门、右短练、提前回正四图对比、出错前重练、语音示范接手和轨迹复盘都实际操作通过。轨迹复盘能区分“未记录打方向起点”与“还未记录回正”，这应保留。实体镜与放大使用同一反射纹理/UV；本轮没有证据表明应再次扩大镜域或额外翻转画面。</p>
+<p><code>npm test</code>：178/178；<code>speech:verify</code>：42 段、6,322,248 字节、390.64 秒；本轮完成的浏览器流程控制台 error / warn 为空。这些结果不能替代教学有效性、车型实测或完整可访问性验证。</p>
+<p>当前默认/推荐工程镜域计算约为左侧横向 26.3°、右侧 22.7°；它们是代码参数的结果，非实测校准结论。单虚拟视点拟合的最大采样射线原点偏差约 13—20 mm，也不能直接当作屏幕误差或真实镜片精度。</p>
+<p>考试标准状态本轮在全国标准信息公共服务平台复核：<a href="https://std.samr.gov.cn/hb/search/stdHBDetailedCNF?id=E424B54CA6246DD7E05397BE0A0A5C54">GA 1026—2022</a> 标为现行；<a href="https://std.samr.gov.cn/hb/search/stdHBDetailed?id=E43786AD3BDE16FEE05397BE0A0A1F3A">GA 1029—2022</a> 的检索登记标为现行。标准状态及考试依据，不构成眼位、车型点位或训练效果认证。</p>
+<p>本轮未人工驾驶完整两侧考试路线、未穷举全部 21 段完整语音示范、未做左侧全部错误分支、网络故障注入、浏览器差异、踏板/方向盘设备、长时功耗或真人学员验证。未执行实车镜片和眼位测量。当前结论是跨模块审查，不能称为所有状态、全部设备与实车训练均验收。</p>
+
+<h2>本轮其余截图与步骤注释</h2>
+<details><summary>步骤 1—2：首页、定位、左镜和入门完成</summary>
+<figure><img loading="lazy" src="01-current-driver.png" alt="本轮检查开始时原驾驶页面"><figcaption>01：原驾驶页，已有用户操作状态；本轮记录起点。</figcaption></figure>
+<figure><img loading="lazy" src="02-start.png" alt="首页按顺序进入练习"><figcaption>02：主入口清晰，语音包已经就绪。</figcaption></figure>
+<figure><img loading="lazy" src="03-orientation.png" alt="白车和黄线库框的俯视定位"><figcaption>03：能辨认自己的车与目标车库；场景仍是工程参考。</figcaption></figure>
+<figure><img loading="lazy" src="06-near-straight-left.png" alt="左镜接近平行的画面"><figcaption>06：左镜与右镜分别查看，车身参照仍然细暗。</figcaption></figure>
+<figure><img loading="lazy" src="07-beginner-complete.png" alt="新手回正完成后进入独立判断"><figcaption>07：D、S、X 依次亲手完成后，进入短练的下一步入口明确。</figcaption></figure></details>
+<details open><summary>步骤 3—4：短练与镜面对比</summary>
+<figure><img loading="lazy" src="08-judgment-ready.png" alt="短练示范入口的正前画面"><figcaption>08：短练默认正前，右镜未成为主观察对象。进入状态瞬间的空白过渡图已重新采集，未作为缺陷证据。</figcaption></figure>
+<figure><img loading="lazy" src="10-judgment-review.png" alt="提前回正的四张镜面比较"><figcaption>10：这次偏早结果正确；可直接从出错前重练。四张图需要更清楚地解释关键差别。</figcaption></figure></details>
+<details><summary>步骤 5—6：完整语音接手、轨迹复盘与座椅推荐</summary>
+<figure><img loading="lazy" src="12-voice-handoff.png" alt="语音示范接手准备"><figcaption>12：语音提醒先看右镜，但接手时仍是正前；短练与完整带练均需要统一观察衔接。</figcaption></figure>
+<figure><img loading="lazy" src="13-route-review.png" alt="短记录轨迹与完整同侧示范对比"><figcaption>13：本段从已有转角接手，复盘正确承认没有记录此前打方向，不硬判早晚。</figcaption></figure>
+<figure><img loading="lazy" src="14-seat-fit.png" alt="调整座椅后推荐双镜"><figcaption>14：调高至 1.29 m 后推荐成功，随后撤销镜角并恢复原 1.28 / 1.10 m；本轮未保留试验性眼位变化。</figcaption></figure></details>
+<details open><summary>步骤 8：窄屏与场地真实感</summary>
+<figure><img loading="lazy" src="11-mobile-controls.png" alt="390宽度下镜面和控制按钮"><figcaption>11：没有横向溢出；镜面、文字与按键的占比仍需专门为触屏调整。</figcaption></figure>
+<figure><img loading="lazy" src="15-yard-exterior.png" alt="当前场地和白色工程参考车外观"><figcaption>15：道路与黄线比原型初版清楚，车舱外形、树木和建筑仍有明显基础几何感。</figcaption></figure></details>
+<details><summary>步骤 9：连接恢复</summary><figure><img loading="lazy" src="18-connection-recovery.png" alt="旧标签页显示MiniMax暂不可用和英文Failed to fetch"><figcaption>18：另一旧页的语音状态没有自行恢复，提供重新检查及字幕入口，但错误信息不够清楚。服务恢复后本轮实际点击了重新检查。</figcaption></figure></details>
+<p><small>所有图片均为本轮实际页面截图，保留原始视口构图；没有生成替代验收图片。报告与复现代码只写入 notes/full-audit-20261024，不更改练习应用源码。</small></p>
+</main></body></html>

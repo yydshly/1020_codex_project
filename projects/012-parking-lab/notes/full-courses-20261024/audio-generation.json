@@ -1,0 +1,212 @@
+{
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voiceId": "male-qn-qingse",
+  "generated": 22,
+  "old_clips_unchanged": 48,
+  "active_clips": 70,
+  "active_bytes": 16155384,
+  "active_seconds": 1002.204,
+  "course_bytes": 7453176,
+  "course_seconds": 463.464,
+  "clips": [
+    {
+      "key": "course2_reverse_parking",
+      "file": "audio/minimax/course2_reverse_parking-51e869d3ea11.mp3",
+      "text": "先确认前轮越过控制线，低速右倒库，车身快直时主动回正，全部入库后停稳。出库到另一端，再左倒库，最后回到起始端。镜内点位需按考试车和座椅校准，不照搬固定秒数。",
+      "sha256": "4f92ab6a50046fd19a5c222a90aee1832f1fe17841e07b10ea4bf28b0c1169fe",
+      "bytes": 349620,
+      "duration": 21.744,
+      "decode": "passed"
+    },
+    {
+      "key": "course2_hill_start",
+      "file": "audio/minimax/course2_hill_start-e8e40a65d524.mp3",
+      "text": "一挡低速上坡，按本车校准参照控制与右边线的距离和停车位置。停稳后协调离合、加速与制动，建立驱动力再解除驻车制动，平稳起步，防止后溜和熄火。",
+      "sha256": "1a79691b801a5bb455beee8941567a9a3e219f976a1fe232f74a1253d55f0088",
+      "bytes": 291444,
+      "duration": 18.108,
+      "decode": "passed"
+    },
+    {
+      "key": "course2_side_parking",
+      "file": "audio/minimax/course2_side_parking-f9ed976f075a.mp3",
+      "text": "驶到侧方车位前方停稳，换倒挡。先观察右镜和车尾走势，配合小幅调整倒入车位，车身顺直后回正并停稳。驶出前打左转向灯，确认左后方安全，再缓慢驶离，留意车头和后轮余量。",
+      "sha256": "032553a42bb54e23f4e4606ed73e91618ff5c18d0814027f8ad6d31695107dab",
+      "bytes": 354804,
+      "duration": 22.068,
+      "decode": "passed"
+    },
+    {
+      "key": "course2_curve_driving",
+      "file": "audio/minimax/course2_curve_driving-01f27cceba7a.mp3",
+      "text": "低速进入曲线，视线向前看道路走向，兼顾两侧边线和后轮轨迹。转向要连续、适量，随着弯道逐步回轮和换向。车头进入下一弯不代表后轮已经过弯，避免只盯近处和猛打方向。",
+      "sha256": "32b620437a73dd6d5de618799debfa5b042bed95ae4f94d0e6e87459ac0160dc",
+      "bytes": 340404,
+      "duration": 21.168,
+      "decode": "passed"
+    },
+    {
+      "key": "course2_right_angle",
+      "file": "audio/minimax/course2_right_angle-16ba3557bf99.mp3",
+      "text": "低速接近直角，先看出口方向，按本车标定参照开始转向。转弯中留意内侧后轮和外侧车头，确认车身逐渐通过拐角。接近出口方向时主动回轮，车身顺直后沿出口驶离。",
+      "sha256": "6632654d26cadee01aa46b7a025efdc4789b0bd6ed24344146f8466fbe901a5a",
+      "bytes": 332916,
+      "duration": 20.7,
+      "decode": "passed"
+    },
+    {
+      "key": "course3_prepare",
+      "file": "audio/minimax/course3_prepare-76dc39001c6a.mp3",
+      "text": "上车前观察车辆四周和车底，检查车身、轮胎及周围风险。确认安全后上车，关好车门，调整座椅和后视镜，系好安全带，检查仪表、挡位与驻车制动。准备项目按当地考试设备要求完成。",
+      "sha256": "93c6c60e23e7efc30c67b1e18d64c90d89f80269aaf2aa1c7a9cafdc4d858643",
+      "bytes": 350772,
+      "duration": 21.816,
+      "decode": "passed"
+    },
+    {
+      "key": "course3_lights",
+      "file": "audio/minimax/course3_lights-16a722939372.mp3",
+      "text": "车辆停稳后听完整指令，再操作灯光。照明良好、会车和近距离跟车用近光；照明不良且不影响他人时按需用远光。按场景交替远近光示意，故障难以移动时按规定示警。模拟结束按口令复位。",
+      "sha256": "9a9d4e5487e264e164bb98bb5260dcb9544b1db099619bf0306db7fc2ae4efd2",
+      "bytes": 388788,
+      "duration": 24.192,
+      "decode": "passed"
+    },
+    {
+      "key": "course3_start",
+      "file": "audio/minimax/course3_start-dd2cad8b005c.mp3",
+      "text": "起步前检查挡位和制动，打左转向灯，观察左镜、左后方及前方，确认安全。踩离合挂一挡，协调离合与加速，解除驻车制动，平稳进入车道，车辆顺直后关闭转向灯。",
+      "sha256": "93f805e5acf09cd90ee906b2d94a6302f3e234c52f0516960d1b7d44c8c2186e",
+      "bytes": 335220,
+      "duration": 20.844,
+      "decode": "passed"
+    },
+    {
+      "key": "course3_straight",
+      "file": "audio/minimax/course3_straight-562986ccb774.mp3",
+      "text": "视线放远，兼顾近处道路、左右后视镜和车速。保持车道内稳定行驶，按道路情况合理控制速度和挡位。发现偏移时小幅、及时修正，不死盯方向盘，也不要用大幅来回转向纠偏。",
+      "sha256": "30dc4902246e304e959261ee66f4f3f8dcd6a06a0b68603924209d70c98b0551",
+      "bytes": 345012,
+      "duration": 21.456,
+      "decode": "passed"
+    },
+    {
+      "key": "course3_gears",
+      "file": "audio/minimax/course3_gears-a859ac7c5949.mp3",
+      "text": "根据路况和车速合理加减挡。换挡前确认条件，离合踩到底，按正确挡位路径操作，协调离合和加速使车辆平顺。减速后选择匹配挡位，不低头找挡，也不机械追求统一换挡时速。",
+      "sha256": "f778b5c699f83a98f8196f594e7e6620e9373c76f2160c937c6d6a019607bd2e",
+      "bytes": 339252,
+      "duration": 21.096,
+      "decode": "passed"
+    },
+    {
+      "key": "course3_lane_change",
+      "file": "audio/minimax/course3_lane_change-d976f38ad0ba.mp3",
+      "text": "先观察目标车道和后方，打转向灯，确认安全并留足信号提示时间后，小幅平顺变道。进入目标车道后回正并关闭转向灯。每次只完成一条车道的变更，不连续横跨多条车道。",
+      "sha256": "8a20002adfedd9da6940d7295bb054d41455633758877866235dde85a93f51b9",
+      "bytes": 320244,
+      "duration": 19.908,
+      "decode": "passed"
+    },
+    {
+      "key": "course3_intersection",
+      "file": "audio/minimax/course3_intersection-f1b496f3a383.mp3",
+      "text": "提前观察交通信号、标志标线、路口两侧和行人，合理减速，按通行规则进入。绿灯也要确认路口可以安全通过，不抢黄灯、不闯红灯，不在拥堵时贸然驶入路口。通过后继续观察。",
+      "sha256": "4a5c2f521be4dd530a2857c2061cabd8747f65728cb3aa5ad2b2727a3fbd5d52",
+      "bytes": 331188,
+      "duration": 20.592,
+      "decode": "passed"
+    },
+    {
+      "key": "course3_left_turn",
+      "file": "audio/minimax/course3_left_turn-8dd5fdfa80b7.mp3",
+      "text": "提前进入合适车道，打左转向灯，观察信号、对向车辆、左右道路和行人。确认安全后低速转弯，按标线进入正确车道，不切入对向。车身转向出口后逐渐回正，完成转弯再关闭转向灯。",
+      "sha256": "edb4414a8e9521ea5163bc7679db670f37afd2238921a9b707134056964eda35",
+      "bytes": 349044,
+      "duration": 21.708,
+      "decode": "passed"
+    },
+    {
+      "key": "course3_right_turn",
+      "file": "audio/minimax/course3_right_turn-b4da1b6c060d.mp3",
+      "text": "提前打右转向灯，减速观察信号、右侧非机动车、行人与转弯出口。允许右转也不代表优先通行，先让冲突交通通过，再低速转入正确车道，留意右侧后轮轨迹，顺直后关灯。",
+      "sha256": "13646dd6e94e503f9122bba9f6865e8947b131b3fe1aa177a3470ee1064b8e8d",
+      "bytes": 316788,
+      "duration": 19.692,
+      "decode": "passed"
+    },
+    {
+      "key": "course3_crosswalk",
+      "file": "audio/minimax/course3_crosswalk-319272ab3b13.mp3",
+      "text": "提前识别人行横道，减速观察两侧和被遮挡区域。遇行人正在通过时，在停止线前停稳让行，不能催促或绕行抢过。确认行人安全通过、前方畅通后再平稳起步，并继续留意新的行人。",
+      "sha256": "e1407ba892a1d98ee1ff1885318d046e7b506e3c2d5b7719f86671baab66d4eb",
+      "bytes": 334068,
+      "duration": 20.772,
+      "decode": "passed"
+    },
+    {
+      "key": "course3_school",
+      "file": "audio/minimax/course3_school-4347805d6895.mp3",
+      "text": "提前识别学校区域，减速并提高观察频率，留意儿童、接送车辆和遮挡处。保持足够空间，随时准备停车让行，不能以没有语音提示或暂时看不到行人为由忽略学校区域。",
+      "sha256": "c6324789d6bffda6c3643e20f7ba5ce951812c9715ecc579293193e318c2a1c0",
+      "bytes": 294324,
+      "duration": 18.288,
+      "decode": "passed"
+    },
+    {
+      "key": "course3_bus",
+      "file": "audio/minimax/course3_bus-48d38b05760a.mp3",
+      "text": "提前识别公交站并减速，观察公交车起步、上下车乘客和车前车后的遮挡区域。留足侧向空间，必要时停车让行，不与起步公交车争道，也不从其盲区内贸然加速通过。",
+      "sha256": "db048f4356a239225ed17ef1c78e51acd4cb927b5643f095e7dad97fb3d70319",
+      "bytes": 305844,
+      "duration": 19.008,
+      "decode": "passed"
+    },
+    {
+      "key": "course3_meeting",
+      "file": "audio/minimax/course3_meeting-ca6c0cb24e55.mp3",
+      "text": "观察对向车辆、道路宽度及两侧空间，合理控制车速和车道位置，保持安全横向间距。道路狭窄或有障碍时，按规则提前让行，不抢道；会车时仍要留意本侧路边行人和非机动车。",
+      "sha256": "cad05efe7617f9d69841d86ec393555d78461b6540b61eeb9408b881e54a25f4",
+      "bytes": 326004,
+      "duration": 20.268,
+      "decode": "passed"
+    },
+    {
+      "key": "course3_overtake",
+      "file": "audio/minimax/course3_overtake-5f4b3edcb2af.mp3",
+      "text": "先判断是否允许超车，再观察前方和左后方，打左转向灯并确认安全。平顺驶入左侧同向车道，保持足够横向间距通过前车。与被超车辆拉开安全距离后，观察右后方，打右灯再返回。",
+      "sha256": "33c59f6621080feee1565a7868bdf54624b1fad30a5752dd8225e6f8d6bf0c81",
+      "bytes": 328884,
+      "duration": 20.448,
+      "decode": "passed"
+    },
+    {
+      "key": "course3_uturn",
+      "file": "audio/minimax/course3_uturn-d03431811060.mp3",
+      "text": "提前选择允许掉头且空间充足的位置，打左转向灯，减速观察对向车、行人与非机动车。确认安全后低速掉头，持续核对车头外摆和后轮轨迹，进入正确返回车道，顺直后关灯。",
+      "sha256": "6b66d5cb6fed6e96b1bee80bbec4f3a4fc4d1990504e072ad332bb75046fabab",
+      "bytes": 343860,
+      "duration": 21.384,
+      "decode": "passed"
+    },
+    {
+      "key": "course3_night",
+      "file": "audio/minimax/course3_night-0abdfcfa8f0a.mp3",
+      "text": "夜间按照明和交通条件正确使用灯光，控制在可安全停车的视距内行驶。接近对向车辆及时改近光，避免眩目；通过需示意的路段按规定交替灯光，并持续观察行人与路侧。没有夜间实考时另做模拟灯光。",
+      "sha256": "7c9b1612a9401713e5a5f20d1796c45177bb952cd44b839e1f720663a32988f9",
+      "bytes": 383604,
+      "duration": 23.868,
+      "decode": "passed"
+    },
+    {
+      "key": "course3_pull_over",
+      "file": "audio/minimax/course3_pull_over-8fa95299f671.mp3",
+      "text": "听到停车指令后，先观察右镜、右后方和路边条件，打右转向灯，选择允许停车的位置，减速平顺靠边。停稳后按要求操作挡位和驻车制动，关闭转向灯。结束下车前再次观察侧后方，确认安全再开门。",
+      "sha256": "f02e7024d2319d6d0f87638fe4af8270540a451f426ae5b20fa4ac5ed97c2c5c",
+      "bytes": 391092,
+      "duration": 24.336,
+      "decode": "passed"
+    }
+  ]
+}

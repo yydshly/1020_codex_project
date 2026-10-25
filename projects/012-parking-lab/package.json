@@ -1,0 +1,21 @@
+{
+  "name": "parking-lab",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 127.0.0.1 --port 4312 --strictPort",
+    "build": "vite build",
+    "preview": "vite preview --host 127.0.0.1 --port 4312 --strictPort",
+    "speech:generate": "node scripts/generate-minimax-narration.mjs",
+    "speech:verify": "node scripts/verify-minimax-narration.mjs",
+    "progress:verify": "node scripts/verify-project-progress.mjs",
+    "test": "node --test src/vehicle.test.js src/car-body.test.js src/vehicle-visuals.test.js src/driving-yard.test.js src/lesson.test.js src/cockpit.test.js src/mirror-optics.test.js src/mirror-fit.test.js src/mirror-observation.test.js src/mirrors.test.js src/mirror-surface.test.js src/driver-view.test.js src/observation-guide.test.js src/correction.test.js src/alignment.test.js src/voice-guide.test.js src/narration.test.js src/review.test.js src/review-map.test.js src/beginner.test.js src/steering-coach.test.js src/judgment.test.js src/speech-catalog.test.js src/speech-flow.test.js scripts/minimax-tts.test.mjs src/exam-courses.test.js src/course-playback.test.js src/course-environment.test.js src/course-kinematics.test.js src/course-coaching.test.js src/course-operation-visuals.test.js src/course-integration.test.js src/course-driving.test.js src/course-mirror-settings.test.js src/course-mirrors.test.js src/course-safety.test.js src/course-observation.test.js src/course-interior-mirror.test.js src/course-practice.test.js src/course-playlist.test.js src/course-mirror-collision.test.js src/course-observation-plan.test.js src/course-view-follow.test.js src/course-lesson-guide.test.js src/course-reference-guide.test.js src/course-route-guide.test.js src/course-practice-view.test.js src/course-mirror-recognition.test.js src/course-review-guide.test.js src/parking-practice-return.test.js"
+  },
+  "dependencies": {
+    "three": "0.186.1"
+  },
+  "devDependencies": {
+    "vite": "8.3.5"
+  }
+}

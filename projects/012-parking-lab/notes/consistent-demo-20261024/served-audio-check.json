@@ -1,0 +1,25 @@
+{
+  "time": "2026-10-24T12:35:50.625Z",
+  "servedManifestClips": 191,
+  "manifestMatchesSource": true,
+  "clips": [
+    {
+      "key": "coursecue2_reverse_parking_ready",
+      "status": 200,
+      "bytes": 82932,
+      "sha256Matches": true
+    },
+    {
+      "key": "coursecue3_lights_low",
+      "status": 200,
+      "bytes": 80052,
+      "sha256Matches": true
+    },
+    {
+      "key": "coursecue3_pull_over_center",
+      "status": 200,
+      "bytes": 101364,
+      "sha256Matches": true
+    }
+  ]
+}

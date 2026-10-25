@@ -1,0 +1,256 @@
+TAP version 13
+# Subtest: every existing chapter has specific feasible tasks and honest basic-control scope
+ok 1 - every existing chapter has specific feasible tasks and honest basic-control scope
+  ---
+  duration_ms: 2.9559
+  type: 'test'
+  ...
+# Subtest: waiting through the chapter duration never awards travel or a completed driving lesson
+ok 2 - waiting through the chapter duration never awards travel or a completed driving lesson
+  ---
+  duration_ms: 58.2496
+  type: 'test'
+  ...
+# Subtest: real keyboard physics can finish the straight basic task by distance, observation and stable control
+ok 3 - real keyboard physics can finish the straight basic task by distance, observation and stable control
+  ---
+  duration_ms: 55.8968
+  type: 'test'
+  ...
+# Subtest: an inherited camera direction does not count as an explicit observation action
+ok 4 - an inherited camera direction does not count as an explicit observation action
+  ---
+  duration_ms: 2.2033
+  type: 'test'
+  ...
+# Subtest: stationary light tasks advance only on the chosen state, work while paused, and retain a wrong answer in review
+ok 5 - stationary light tasks advance only on the chosen state, work while paused, and retain a wrong answer in review
+  ---
+  duration_ms: 4.192
+  type: 'test'
+  ...
+# Subtest: a correctly answered complete light sequence finishes without a fake examination score
+ok 6 - a correctly answered complete light sequence finishes without a fake examination score
+  ---
+  duration_ms: 2.5396
+  type: 'test'
+  ...
+# Subtest: a risk review restores the full pre-error physics snapshot and drops later observations and actions
+ok 7 - a risk review restores the full pre-error physics snapshot and drops later observations and actions
+  ---
+  duration_ms: 10.8554
+  type: 'test'
+  ...
+# Subtest: a proximity warning remains feedback rather than silently ending an attempt
+ok 8 - a proximity warning remains feedback rather than silently ending an attempt
+  ---
+  duration_ms: 4.6857
+  type: 'test'
+  ...
+# Subtest: same-frame edge warnings cannot replace a blocking collision or road departure in the review summary
+ok 9 - same-frame edge warnings cannot replace a blocking collision or road departure in the review summary
+  ---
+  duration_ms: 6.6981
+  type: 'test'
+  ...
+# Subtest: later observation clicks do not erase an earlier unobserved start
+ok 10 - later observation clicks do not erase an earlier unobserved start
+  ---
+  duration_ms: 5.2237
+  type: 'test'
+  ...
+# Subtest: countersteering within one lane change does not request the opposite indicator
+ok 11 - countersteering within one lane change does not request the opposite indicator
+  ---
+  duration_ms: 13.2553
+  type: 'test'
+  ...
+# Subtest: post-parking shoulder checks are not awarded for views visited before parking
+ok 12 - post-parking shoulder checks are not awarded for views visited before parking
+  ---
+  duration_ms: 6.8908
+  type: 'test'
+  ...
+# Subtest: crosswalk restart requires fresh observations after the actual stop
+ok 13 - crosswalk restart requires fresh observations after the actual stop
+  ---
+  duration_ms: 10.4132
+  type: 'test'
+  ...
+# Subtest: steering feedback compares operation positions, not different driving speeds or elapsed seconds
+ok 14 - steering feedback compares operation positions, not different driving speeds or elapsed seconds
+  ---
+  duration_ms: 4.2496
+  type: 'test'
+  ...
+# Subtest: prepare is an observation-only task, and comparison data keeps real world positions
+ok 15 - prepare is an observation-only task, and comparison data keeps real world positions
+  ---
+  duration_ms: 1.7667
+  type: 'test'
+  ...
+# Subtest: all 22 basic lessons are reachable with valid observations and spatially correct operations
+ok 16 - all 22 basic lessons are reachable with valid observations and spatially correct operations
+  ---
+  duration_ms: 712.8598
+  type: 'test'
+  ...
+# Subtest: gentle overtaking is checked by actual lateral movement even below the old steering threshold
+ok 17 - gentle overtaking is checked by actual lateral movement even below the old steering threshold
+  ---
+  duration_ms: 13.3893
+  type: 'test'
+  ...
+# Subtest: stationary wheel presets can be followed by observation before a correctly signaled start
+ok 18 - stationary wheel presets can be followed by observation before a correctly signaled start
+  ---
+  duration_ms: 1.7134
+  type: 'test'
+  ...
+# Subtest: multiple corrected retries do not retain the old moving steering violation in statistics
+ok 19 - multiple corrected retries do not retain the old moving steering violation in statistics
+  ---
+  duration_ms: 58.5092
+  type: 'test'
+  ...
+# Subtest: paused light feedback and repeated retries preserve the answered prefix without preserving the mistake
+ok 20 - paused light feedback and repeated retries preserve the answered prefix without preserving the mistake
+  ---
+  duration_ms: 5.8646
+  type: 'test'
+  ...
+# Subtest: choosing the expected light while rolling explains the stationary requirement rather than a wrong lamp
+ok 21 - choosing the expected light while rolling explains the stationary requirement rather than a wrong lamp
+  ---
+  duration_ms: 2.623
+  type: 'test'
+  ...
+# Subtest: preparation observations while moving do not fill a stationary preparation checklist
+ok 22 - preparation observations while moving do not fill a stationary preparation checklist
+  ---
+  duration_ms: 2.7997
+  type: 'test'
+  ...
+# Subtest: parking observations made before the stop cannot count as after it at the same paused timestamp
+ok 23 - parking observations made before the stop cannot count as after it at the same paused timestamp
+  ---
+  duration_ms: 4.83
+  type: 'test'
+  ...
+# Subtest: only an incomplete voluntary review can continue in place and it preserves progress and warning history
+ok 24 - only an incomplete voluntary review can continue in place and it preserves progress and warning history
+  ---
+  duration_ms: 3.6424
+  type: 'test'
+  ...
+# Subtest: continuing an incomplete endpoint review does not immediately reopen it, but completion and new risks still review
+ok 25 - continuing an incomplete endpoint review does not immediately reopen it, but completion and new risks still review
+  ---
+  duration_ms: 9.0079
+  type: 'test'
+  ...
+# Subtest: a takeover near the endpoint can complete its actual remaining route without an impossible three-meter minimum
+ok 26 - a takeover near the endpoint can complete its actual remaining route without an impossible three-meter minimum
+  ---
+  duration_ms: 3.3619
+  type: 'test'
+  ...
+# Subtest: a takeover never awards already completed turning, lane change, parking or acceleration from an inherited pose
+ok 27 - a takeover never awards already completed turning, lane change, parking or acceleration from an inherited pose
+  ---
+  duration_ms: 30.9796
+  type: 'test'
+  ...
+# Subtest: all 22 reference chapters remain physically contained and avoid their actual scripted obstacles
+ok 28 - all 22 reference chapters remain physically contained and avoid their actual scripted obstacles
+  ---
+  duration_ms: 2266.7591
+  type: 'test'
+  ...
+# Subtest: scripted crossing traffic is swept even when the ego is stationary and no render context is supplied
+ok 29 - scripted crossing traffic is swept even when the ego is stationary and no render context is supplied
+  ---
+  duration_ms: 7.7668
+  type: 'test'
+  ...
+# Subtest: a rotating actor sweeps its corners even if the centre and both endpoint clearances are unchanged
+ok 30 - a rotating actor sweeps its corners even if the centre and both endpoint clearances are unchanged
+  ---
+  duration_ms: 2.4239
+  type: 'test'
+  ...
+# Subtest: nearby traffic warnings distinguish closing, constant close following, and leaving the target
+ok 31 - nearby traffic warnings distinguish closing, constant close following, and leaving the target
+  ---
+  duration_ms: 2.546
+  type: 'test'
+  ...
+# Subtest: an already unsafe initial pose does not manufacture a last safe pose or claim to have stopped before contact
+ok 32 - an already unsafe initial pose does not manufacture a last safe pose or claim to have stopped before contact
+  ---
+  duration_ms: 1.3251
+  type: 'test'
+  ...
+# Subtest: the audited A-then-W excursion now warns and blocks before crossing the opposing solid divider
+ok 33 - the audited A-then-W excursion now warns and blocks before crossing the opposing solid divider
+  ---
+  duration_ms: 26.4003
+  type: 'test'
+  ...
+# Subtest: road containment tests the whole bumper and concave junction, while legal lane changes and turns remain allowed
+ok 34 - road containment tests the whole bumper and concave junction, while legal lane changes and turns remain allowed
+  ---
+  duration_ms: 41.577
+  type: 'test'
+  ...
+# Subtest: a swept box collision cannot tunnel through a bus-sized object at low frame rates, forwards or backwards
+ok 35 - a swept box collision cannot tunnel through a bus-sized object at low frame rates, forwards or backwards
+  ---
+  duration_ms: 5.8088
+  type: 'test'
+  ...
+# Subtest: relative actor motion detects a pedestrian crossing the stationary full car between samples
+ok 36 - relative actor motion detects a pedestrian crossing the stationary full car between samples
+  ---
+  duration_ms: 1.8673
+  type: 'test'
+  ...
+# Subtest: actual scene actors override fallback scripts and overhead objects do not collide at road level
+ok 37 - actual scene actors override fallback scripts and overhead objects do not collide at road level
+  ---
+  duration_ms: 1.0254
+  type: 'test'
+  ...
+# Subtest: swept actor heights and ramp elevation separate objects below the road from objects on it
+ok 38 - swept actor heights and ramp elevation separate objects below the road from objects on it
+  ---
+  duration_ms: 0.9964
+  type: 'test'
+  ...
+# Subtest: the real bay mouth stays open, but the full body and rear bumper cannot cross closed bay boundaries
+ok 39 - the real bay mouth stays open, but the full body and rear bumper cannot cross closed bay boundaries
+  ---
+  duration_ms: 1.6546
+  type: 'test'
+  ...
+# Subtest: oriented collision checks do not reject separated parallel cars just because their world AABBs overlap
+ok 40 - oriented collision checks do not reject separated parallel cars just because their world AABBs overlap
+  ---
+  duration_ms: 0.3102
+  type: 'test'
+  ...
+# Subtest: fallback actor centres and model extents correspond to scene anchors, including the corrected overtaking gap
+ok 41 - fallback actor centres and model extents correspond to scene anchors, including the corrected overtaking gap
+  ---
+  duration_ms: 0.3352
+  type: 'test'
+  ...
+1..41
+# tests 41
+# suites 0
+# pass 41
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 2758.4828

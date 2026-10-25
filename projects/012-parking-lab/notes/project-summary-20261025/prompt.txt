@@ -1,0 +1,92 @@
+Use case: infographic-diagram.
+Create ONE finished, polished Chinese project-summary infographic, a tall portrait poster approximately 2400 x 3600 pixels (2:3), highest practical resolution. It must be a comprehensive but readable editorial information graphic, NOT a collage of random cards and NOT a webpage screenshot. All copy must be accurate simplified Chinese, generously spaced, legible when zoomed, with a clear top-to-bottom reading sequence.
+
+Project: 入库之间, a C1 3D driving-training prototype. Audience: its owner and collaborators. Purpose: summarize what was implemented, how exploration changed the product, representative effects, current limitations, and prioritized future work.
+
+REFERENCE IMAGES:
+Image 1 = supporting actual product screenshot of original reverse-parking driver view and left exterior mirror. Use its cockpit/mirror portion as a small framed product-effects insert.
+Image 2 = supporting actual product screenshot of driving review and trajectory comparison. Use as a framed review-effects insert.
+Image 3 = existing project progress webpage, STYLE reference and a small third effects insert. Preserve the actual recognizable UI content within the screenshot inserts; do not invent improved photorealistic product screens or alter their numerical results. Small screenshot text need not be transcribed. Captions describe representative UI evidence. The surrounding infographic copy is the primary reading layer.
+
+ART DIRECTION:
+Warm off-white paper (#F4F6F1), deep forest-green headings (#263E32), sage-green panels, restrained amber only for open issues. Clean Chinese sans-serif typography, fine rules, asymmetric editorial grid with strong alignment. Confident and candid engineering project journal. Rich in useful information, with breathing room. Large typographic title, numerical metrics, short exploration arrows, 3 screenshot frames, a training-loop strip, and a clear roadmap. Use simple vector-like line icons (steering wheel, mirror, voice, route) sparingly. No glossy sci-fi style, fake certification seals, award icons, code wallpaper, watermark, QR codes, or decorative unreadable microtext.
+
+CONTENT — all of the following meaning and numbers must appear, grouped into 6 visually distinct sections. Keep exact Chinese wording below; layout and line breaks can change. Do not add claims.
+
+HEADER:
+入库之间
+C1 3D 练车项目 · 一图总结
+从可控倒库原型，到科二科三示范、驾驶与复盘
+状态快照 / 2026.10.25
+当前阶段：可体验的教学原型
+
+KEY METRICS in a single strong row:
+22 章教学项目（科二 5 + 科三 17）
+191 段真实 MiniMax 语音
+492 项模型测试通过
+5 个倒库专项入口
+
+SECTION 01 — 已经实现
+Six short capability groups:
+全量示范 / 全景认路线 · 分步操作 · 连续播放
+自己驾驶 / 方向与控速 · 灯光 · 驻车
+车内观察 / 内外后视镜 · 前方 · 肩后盲区
+语音与切镜 / 先提醒再示范 · 暂停重听 · 手动优先
+风险分类 / 车身越界 · 轮胎压线 · 碰撞与外镜擦碰
+练后闭环 / 错误与改法 · 轨迹对照 · 出错前重练
+A small note: 121 段步骤提醒 + 22 段总讲解 + 原倒库 48 段 = 191 段
+
+SECTION 02 — 探索中，我们修正了什么
+Five readable problem → improvement rows:
+全景看懂，车内仍不会判断 → 固定眼位、实体镜面与可见参照
+把回正当作车身摆正 → 区分前轮回中、车身朝向与整体偏边
+语音、镜头、提示各走各的 → 按讲解与动作阶段协调，留够看镜时间
+到位置、补看一下就算完成 → 核对整车几何、观察时机与完整过程
+只列错项，不知道从哪重练 → 明确首错、改法、回退点，保留练习记录
+
+SECTION 03 — 当前效果
+Arrange three screenshot inserts using the provided references, clear frames and simple accurate captions:
+驾驶位与实体后视镜
+错误说明、轨迹对照与重练
+项目进展与完整体验入口
+Small shared qualifier: 代表性页面效果；镜面与车辆仍为工程参考。
+
+SECTION 04 — 已接通的练习闭环
+A clear horizontal or gently wrapping arrow sequence, five nodes:
+看示范 → 自己操作 → 对照复盘 → 出错前重练 → 再独立练习
+Under the sequence:
+复盘回答三件事：先改哪项 / 具体怎么改 / 从哪里继续
+暂停时可观察、设灯；按 P 后转向与踏板才响应。X 只回中前轮。
+
+SECTION 05 — 遗留问题与后续扩展
+Three distinguishable groups, with amber open-state labels. Do NOT give them implemented checkmarks.
+优先补强 / 待完成
+整科实时语音带练仍待补齐
+看过视角尚不等于看懂危险
+部分早晚反馈仍参照模型点位
+22 章人工全路径验收待补
+
+后续建设 / 待接入
+指定教练车的眼位与镜面实测标定
+完整 C1 离合、换挡、熄火与坡起仿真
+练习记录保存、刷新续练与常错项追踪
+移动端、弱设备与首次加载优化
+
+远期扩展 / 规划方向
+车型与城市考线配置、随机交通情境、理论学习
+
+SECTION 06 — 验证与边界
+Use a clear, readable closing panel, NOT tiny legal text:
+自动测试通过，不等于实考合格。
+已人工走通代表性流程；尚未手动驾驶完全部 22 章。
+挡位与离合仍自动配合，尚未按指定实车标定。
+当前练习在页面内存，刷新会丢失。
+22 章是教学串联，不是当地考线或官方评分。
+
+FOOTER:
+完整入口：progress.html
+科二科三：courses.html · 倒库专项：index.html
+已实现 / 待完善 / 后续扩展，明确区分。
+
+FINAL QUALITY CHECK:
+Keep all numbers accurate: 22 = 5+17; 191 = 121+22+48; 492 tests; five specialty entries. Avoid claiming that 492 tests prove complete manual validation. Do not claim full live voice coaching for manually driven subject 2/3. Do not claim realistic clutch simulation or real-car calibration. Do not fabricate extra UI screens. Ensure no text collisions or cut-off sections. Return exactly one complete infographic image.

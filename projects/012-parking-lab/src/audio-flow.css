@@ -1,0 +1,70 @@
+/* Show only verified audio-package status; JavaScript owns readiness. */
+.speech-connection {
+  display: flex;
+  align-items: center;
+  flex-basis: 100%;
+  gap: 9px;
+  min-width: 0;
+  padding: 5px 0;
+  color: #6c694d;
+}
+.speech-connection::before {
+  content: "";
+  flex: 0 0 8px;
+  height: 8px;
+  border: 2px solid #aa9255;
+  border-radius: 50%;
+}
+.speech-connection-copy { display: flex; align-items: baseline; flex-wrap: wrap; gap: 3px 10px; min-width: 0; font-size: 12px; line-height: 1.5; }
+#speech-provider-label { color: inherit; font-size: 12px; font-weight: 600; }
+#speech-provider-detail { color: #677660; overflow-wrap: anywhere; }
+#speech-provider-detail:empty { display: none; }
+.speech-connection[data-state="ready"] { color: #3e6c48; }
+.speech-connection[data-state="ready"]::before { background: #5c8759; border-color: #5c8759; }
+.speech-connection[data-state="error"], .speech-connection[data-state="unconfigured"] { color: #97572d; }
+.speech-connection[data-state="error"]::before, .speech-connection[data-state="unconfigured"]::before { border-color: #b06a38; border-radius: 2px; }
+.speech-connection-actions { display: flex; flex-shrink: 0; align-items: center; flex-wrap: wrap; gap: 6px; margin-left: auto; }
+.speech-connection-actions:not(:has(button:not([hidden]))) { display: none; }
+.speech-connection-actions button { min-height: 29px; padding: 4px 9px; border: 1px solid #cbd7c1; border-radius: 5px; color: #456749; background: #f6f9f0; font-size: 12px; line-height: 1.5; }
+.speech-connection-actions button:hover { border-color: #809a72; background: #edf3e5; }
+.speech-connection-actions button:disabled { opacity: .5; cursor: wait; }
+.speech-connection-actions button:focus-visible { outline: 3px solid #b48b43; outline-offset: 3px; }
+.workspace.welcome-active .training-toolbar > #speech-connection { display: flex !important; order: -1; }
+
+/* The current step is a location, not a success state or clickable control. */
+.judgment-flow { display: flex; align-items: center; gap: 7px; list-style: none; margin: 0 0 10px; padding: 0 0 9px; border-bottom: 1px solid #d9e3d0; }
+.judgment-flow li { display: flex; align-items: center; gap: 6px; min-width: 0; color: #6a7c5f; font-size: 12px; line-height: 1.5; white-space: nowrap; }
+.judgment-flow li:not(:last-child)::after { content: "→"; margin: 0 5px; color: #a1b196; font-weight: 400; }
+.judgment-flow li > span { display: grid; place-items: center; width: 21px; height: 21px; flex: 0 0 21px; border: 1px solid #b9cbb0; border-radius: 50%; font-size: 11px; font-weight: 500; }
+.judgment-flow li[aria-current="step"] { color: #2f593d; font-weight: 650; }
+.judgment-flow li[aria-current="step"] > span { border-color: #315f45; background: #315f45; color: #fff; }
+#judgment-instruction { margin-bottom: 5px; }
+.judgment-speech-note { margin: 0 0 9px; color: #697952; font-size: 12px; line-height: 1.5; }
+.judgment-speech-note:empty { display: none; }
+.judgment-speech-note[data-state="error"] { color: #97572d; }
+
+/* Keep the new connection row from pushing driving controls below short screens. */
+@media (min-width: 601px) and (max-height: 800px) {
+  .workspace.coaching-active { margin-top: 12px; }
+  .workspace.coaching-active .training-toolbar { gap: 6px 12px; }
+  .workspace.coaching-active .voice-panel { padding: 8px 12px; }
+  .workspace.coaching-active .voice-guidance { padding: 6px 9px; margin: 6px 0 8px; }
+  .workspace.coaching-active .voice-more { margin-top: 4px; }
+}
+@media (max-width: 600px) {
+  .speech-connection { align-items: flex-start; gap: 7px; }
+  .speech-connection::before { margin-top: 5px; }
+  .speech-connection-copy { column-gap: 7px; font-size: 11px; }
+  #speech-provider-label { font-size: 11px; }
+  .speech-connection-actions { flex-shrink: 1; justify-content: flex-end; }
+  .speech-connection-actions button { padding: 4px 7px; font-size: 11px; }
+  .judgment-flow { justify-content: space-between; gap: 3px; margin-bottom: 8px; padding-bottom: 7px; }
+  .judgment-flow li { gap: 4px; font-size: 11px; }
+  .judgment-flow li > span { width: 18px; height: 18px; flex-basis: 18px; font-size: 10px; }
+  .judgment-flow li:not(:last-child)::after { margin: 0 2px; font-size: 10px; }
+  .judgment-speech-note { font-size: 11px; }
+}
+@media (max-width: 370px) {
+  .judgment-flow li { gap: 3px; font-size: 10px; }
+  .judgment-flow li:not(:last-child)::after { display: none; }
+}

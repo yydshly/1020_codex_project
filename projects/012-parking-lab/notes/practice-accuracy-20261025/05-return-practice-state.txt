@@ -1,0 +1,209 @@
+Browser tab: 12, Title: "C1 科二 · 科三完整演示｜入库之间", URL: "http://127.0.0.1:4312/courses.html?course=subject3&chapter=crosswalk&mode=drive".
+0 AXWebArea C1 科二 · 科三完整演示｜入库之间, URL: 127.0.0.1:4312/courses.html?course=subject3&chapter=crosswalk&mode=drive
+	1 container
+		2 link Description: 入库之间 DRIVING CLASS, Value: 127.0.0.1:4312/
+		3 text C1 手动挡 · 全项目教学演示
+		4 link Description: 返回倒库专项, Value: 127.0.0.1:4312/
+	5 container
+		6 text 从开始准备，到完成最后一项
+		7 heading 科目三 · C1 道路项目全量演示, Value: 1, ID: course-title
+			8 text 科目三 · C1 道路项目全量演示
+		9 text 上车准备、模拟灯光、起步、各道路项目、夜间行驶，直至靠边停车与安全结束。
+		10 container 选择完整演示科目
+			11 checkbox 科目二 · 五项, Value: 0
+			12 checkbox 科目三 · 道路与灯光, Value: 1
+			13 checkbox 科二 + 科三 · 全量, Value: 0
+		14 text 17 个章节 · 全项目教学串联
+		346 text MiniMax 已就绪 · 121 段操作提醒 + 22 段总讲解
+		16 button 从头看完整科三, ID: course-start-all
+		17 text 每项先用全景讲路线和完成要求，再进入驾驶位：看哪里、看到什么变化、怎样操作。可暂停、逐步重看，随时接手练习。
+		18 container Description: 全部演示项目, ID: course-directory
+			19 text COURSE OUTLINE
+			20 container
+				21 text 全项目目录
+				22 text 17 项
+			23 content list chapter-list
+				24 button 01 上车准备 00:22
+					25 text 01
+					26 text 上车准备
+					27 text 00:22
+				28 button 02 模拟夜间灯光 00:32
+					29 text 02
+					30 text 模拟夜间灯光
+					31 text 00:32
+				32 button 03 起步 00:21
+					33 text 03
+					34 text 起步
+					35 text 00:21
+				36 button 04 直线行驶 00:26
+					37 text 04
+					38 text 直线行驶
+					39 text 00:26
+				40 button 05 加减挡位操作 00:32
+					41 text 05
+					42 text 加减挡位操作
+					43 text 00:32
+				44 button 06 变更车道 00:25
+					45 text 06
+					46 text 变更车道
+					47 text 00:25
+				48 button 07 直行通过路口 00:30
+					49 text 07
+					50 text 直行通过路口
+					51 text 00:30
+				52 button 08 路口左转弯 00:36
+					53 text 08
+					54 text 路口左转弯
+					55 text 00:36
+				56 button 09 路口右转弯 00:36
+					57 text 09
+					58 text 路口右转弯
+					59 text 00:36
+				60 button 10 通过人行横道线 00:28
+					61 text 10
+					62 text 通过人行横道线
+					63 text 00:28
+				64 button 11 通过学校区域 00:25
+					65 text 11
+					66 text 通过学校区域
+					67 text 00:25
+				68 button 12 通过公共汽车站 00:24
+					69 text 12
+					70 text 通过公共汽车站
+					71 text 00:24
+				72 button 13 会车 00:26
+					73 text 13
+					74 text 会车
+					75 text 00:26
+				76 button 14 超车 00:32
+					77 text 14
+					78 text 超车
+					79 text 00:32
+				80 button 15 掉头 00:36
+					81 text 15
+					82 text 掉头
+					83 text 00:36
+				84 button 16 夜间行驶 00:32
+					85 text 16
+					86 text 夜间行驶
+					87 text 00:32
+				88 button 17 靠边停车与安全结束 00:26
+					89 text 17
+					90 text 靠边停车与安全结束
+					91 text 00:26
+		92 container 完整演示播放器
+			284 text 科目三 · 第 10 项 / 17
+			94 heading 通过人行横道线, Value: 2, ID: chapter-title
+				285 text 通过人行横道线
+			287 text 本章练习复盘
+			97 container 选择示范或自己驾驶
+				98 checkbox 看示范, Value: 0, ID: course-mode-demo
+				99 checkbox 自己驾驶, Value: 1, ID: course-mode-drive
+				100 button 全量演示 · 科二 + 科三 22 章, ID: course-complete-entry
+			288 container Description: 自己驾驶基础操控, ID: manual-panel
+				289 container Description: 本章练后复盘, ID: practice-review
+					290 text 本次练习尚有未完成项
+					291 text 有目标尚未完成
+					292 text 已完成 0 / 7 项；还需要：切回前方观察。
+					293 container practice-review-metrics
+						294 text 模拟用时
+						295 text 1.0 s
+						296 text 行驶路程
+						297 text 0.0 m
+						298 text 最高车速
+						299 text 0.0 km/h
+						300 text 切换观察
+						301 text 3 次
+					302 content list practice-review-errors
+						303 container
+							304 AXListMarker 1. 
+							305 text 本次没有记录到已覆盖的道路或碰撞风险；请继续核对未完成目标。
+					306 button 继续完成目标, ID: practice-resume
+					307 button 从本项起点重练, ID: practice-review-restart
+					308 button 对照本项示范, ID: practice-review-demo
+					309 container
+						310 button (expanded) 对照本次与示范轨迹、查看目标检查, Secondary Actions: Collapse
+							311 text 对照本次与示范轨迹、查看目标检查
+						312 text 本次没有可比较的行驶轨迹，请对照下方操作目标与错误记录。模拟用时在教学暂停时冻结。
+						313 content list practice-review-checks
+							314 text 待完成 · 切回前方观察
+							315 text 待完成 · 在斑马线停止线前停稳一次
+							316 text 待完成 · 停稳后转头扫视前方左侧冲突区
+							317 text 待完成 · 停稳后转头扫视前方右侧冲突区
+							318 text 待完成 · 停稳后切回前方观察
+							319 text 待完成 · 停稳后重新核对两侧与前方，再起步
+							320 text 待完成 · 沿本项目教学道路驶至出口
+						321 text 本轮为模型基础练习，不生成实考分数。 切换观察视角只记录观察动作，不等于已经确认交通安全。 挡位和离合仍自动配合；本轮不评价手动换挡、离合脚感、熄火及坡道后溜控制。 轨迹和转向位置只对照本模型示范；不能把距离差当作实车型号的统一操作点位。
+				322 text 基础控制 · 挡位和离合自动配合；风险提醒与目标检查不等于实考评分。
+				323 text 还有目标未完成。可以在当前位置继续完成目标，或从本项起点重练。
+			118 container
+				119 button Description: 上一项演示, ID: course-prev
+				120 button 查看本次复盘, ID: course-play
+				121 button Description: 下一项演示, ID: course-next
+				122 button 从本项起点练, ID: course-replay
+			123 content list 本章学习顺序
+				124 text 1 全景认路线与要求
+				125 text 2 车内看变化与操作
+				126 text 3 自己驾驶与复盘
+			127 container Description: 驾驶区域，W前进、S倒车、A和D转向、空格刹车、X回正、P暂停, ID: course-scene
+				128 container 演示视角
+					129 checkbox 驾驶位, Value: 1
+					130 checkbox 操作近景, Value: 0, ID: operation-closeup
+					131 checkbox 全景, Value: 0
+					132 checkbox 俯视, Value: 0
+				347 text 自己驾驶 · 通过人行横道线
+				216 container Description: 后视镜教学放大, ID: course-mirror-zoom
+					217 container
+						344 text 左镜 · 镜面展开
+						219 pop up button (collapsed, settable) Description: 放大镜面显示方式, Value: 镜面展开, ID: course-mirror-projection, Secondary Actions: Expand
+							220 menu
+								221 驾驶位斜视
+								222 (selected) 镜面展开
+						223 button Description: 收起后视镜教学放大, ID: course-mirror-zoom-close
+					345 text 展开辅助 · 消除斜视透视，镜内视野不增加
+				134 image 科目二科目三三维示范场景
+			135 container 示范车辆状态
+				348 text 暂停时车速
+				349 text 0 km/h
+				138 text 挡位
+				350 text N 挡
+				351 text 转向灯关闭
+				352 text 灯光关闭
+				353 text 前轮回正
+				333 text 离合
+				354 text 松开
+				335 text 脚刹
+				355 text 松开
+				337 text 油门
+				356 text 松开
+				339 text 驻车
+				357 text 松开
+				358 text 离合松开 · 脚刹松开 · 驻车松开
+			342 text 左外镜 · 从驾驶位看同侧车身与左后方道路；C 回前方。
+			153 container 观察方向
+				154 text 前方路况 · 行人、横向道路与出口
+				155 checkbox 前左方 1, Value: 0
+				156 checkbox 正前方 C, Value: 0
+				157 checkbox 前右方 3, Value: 0
+				158 text 镜面与侧后方 · 后车、侧后空间与盲区
+				159 checkbox 左外镜 Q, Value: 1
+				160 checkbox 内后视镜 M, Value: 0
+				161 checkbox 右外镜 E, Value: 0
+				162 checkbox 左后方 Z, Value: 0
+				163 checkbox 右后方 B, Value: 0
+			164 checkbox 专注观看, Value: 0, ID: course-focus
+			165 container 后视镜辅助
+				359 text 道路观察镜位
+				167 button (collapsed) 暂停调镜, ID: course-mirror-adjust, Secondary Actions: Expand
+				168 checkbox 放大左镜, Value: 1
+				169 checkbox 放大右镜, Value: 0
+				170 text Q / E 只转头看镜；放大用于辨认。
+			171 button (collapsed) 外镜擦碰小案例, Secondary Actions: Expand
+				172 text 外镜擦碰小案例
+		173 button (collapsed) 考试项目依据与适用范围, Secondary Actions: Expand
+			174 text 考试项目依据与适用范围
+	175 container
+		176 text 完整看一遍，再回到具体项目练习。
+		177 link Description: 倒车入库专项 →, Value: 127.0.0.1:4312/
+
+The focused UI element is 167 button (collapsed) 暂停调镜, ID: course-mirror-adjust, Secondary Actions: Expand

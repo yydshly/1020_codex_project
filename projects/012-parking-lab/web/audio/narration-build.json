@@ -1,0 +1,204 @@
+{
+    "voice":  "Microsoft Huihui Desktop",
+    "rate":  0,
+    "sampleRate":  22050,
+    "bits":  16,
+    "channels":  1,
+    "clips":  {
+                  "intro":  {
+                                "text":  "先调整座椅和左右后视镜，让车身和地面边线都能看清。本示范用于理解 C 一倒车入库，实际点位请以你的教练车和教练指导为准。",
+                                "sha256":  "3694a55e9bccf97d2ee70802932205b23d5b6add4a1879c76f4beadc8ab18d72",
+                                "bytes":  650910
+                            },
+                  "straight":  {
+                                   "text":  "保持方向回正，慢速直线倒车。练习时按住 S，观察右镜里的库角逐渐靠近。",
+                                   "sha256":  "86fdac6c71aa01c51669e605462aea6974310a45739ba00ca6379b2736c67564",
+                                   "bytes":  428766
+                               },
+                  "prepare_right":  {
+                                        "text":  "看右镜，直倒，准备右转。",
+                                        "sha256":  "eb0f2366bb5698cc22009d42649eba611930a8870fc62425f564d944c7d7367a",
+                                        "bytes":  162260
+                                    },
+                  "prepare_left":  {
+                                       "text":  "看左镜，直倒，准备左转。",
+                                       "sha256":  "5796231711ca317d777f9565ebe9eed148a2f747fa2d727e7f4be71cec6db136",
+                                       "bytes":  162486
+                                   },
+                  "right_turn":  {
+                                     "text":  "右打方向，按 D。低速倒车，看右镜后轮和库角。",
+                                     "sha256":  "fb23c9b0fffde3be2fbe0aa6538c4feb6710c60c90fc7bda863206d896699172",
+                                     "bytes":  293872
+                                 },
+                  "hold_right":  {
+                                     "text":  "方向已到位。看右镜的后轮和库角，兼顾左侧间隙。",
+                                     "sha256":  "55f887b1e06f42d4a1210662b452b3781af0a940c86ba7bbd80cae40df479c40",
+                                     "bytes":  294952
+                                 },
+                  "hold_left":  {
+                                    "text":  "方向已到位。看左镜的后轮和库角，兼顾右侧间隙。",
+                                    "sha256":  "c54777731ec8443a01bb20af7930664b1b1a825aeb89c70252e69cc430b0330f",
+                                    "bytes":  298920
+                                },
+                  "right_align":  {
+                                      "text":  "保持当前方向，低速倒车。看右镜后轮和库角，兼顾左侧间隙。",
+                                      "sha256":  "a5dfc94c8eb08500b43aabe0a58be6fc93a89d36d3b6e293148bbdf7f70b8ac0",
+                                      "bytes":  356900
+                                  },
+                  "prepare_center_right":  {
+                                               "text":  "看右镜、左镜，准备回正。",
+                                               "sha256":  "8c1493571ed0aab9d0c583c15ec46cbc989e738f1002263b2e0e14ac4fb8a5d6",
+                                               "bytes":  163144
+                                           },
+                  "prepare_center_left":  {
+                                              "text":  "看左镜、右镜，准备回正。",
+                                              "sha256":  "cc7cdd90f05026835d74d1b172725f017014b1a1f28505d13fd0d309ac069b6e",
+                                              "bytes":  163804
+                                          },
+                  "center":  {
+                                 "text":  "回正，按 X。低速倒车，交替看两侧镜。",
+                                 "sha256":  "f22660189b03ad762ec31c3723b4aeb1e96d46f78e2c8d815cc59dab7abc5076",
+                                 "bytes":  268746
+                             },
+                  "park":  {
+                               "text":  "方向回正后继续慢速直倒，左右镜确认间距。车身全部入库，车尾到达停车参照后，按空格停稳。",
+                               "sha256":  "3d0a32053016d0faa5eb3e995ba9b76b61b3ade1752618b3864598cdd094f230",
+                               "bytes":  521784
+                           },
+                  "brake":  {
+                                "text":  "刹车，按空格。确认车头车尾都在库内。",
+                                "sha256":  "7d9fb94c2e6bb6f16e8cccc1e05924e61f02379c537588d9ce21592556058849",
+                                "bytes":  253094
+                            },
+                  "exit_left":  {
+                                    "text":  "换为前进，先直线驶出。车头和库口有足够空间后，再向左打方向，驶向 B 控制线。",
+                                    "sha256":  "ee5f2e4ab378ea169321e807a581cb21dd05c0d6354034388acc82334fbf4d40",
+                                    "bytes":  472842
+                                },
+                  "control_b":  {
+                                    "text":  "确认两只前轮都越过 B 控制线，再停车准备倒车。接下来练习另一侧入库。",
+                                    "sha256":  "230750a09286287d3d1505dcbf4cab3b69979e8d916e2d53a1719e4c10b0f677",
+                                    "bytes":  396122
+                                },
+                  "left_straight":  {
+                                        "text":  "从 B 端开始慢速倒车，先保持方向回正。这次主要观察左镜里的库角。",
+                                        "sha256":  "fa545a5ffdfcec1365e977a4e494fcd014389ac5474a57ad2fdf0dd7744986ac",
+                                        "bytes":  384232
+                                    },
+                  "left_turn":  {
+                                    "text":  "左打方向，按 A。低速倒车，看左镜后轮和库角。",
+                                    "sha256":  "e0069388b85d1b9f5eff452d075b7aab6aef14a52d99463cb256614d91aade15",
+                                    "bytes":  297176
+                                },
+                  "left_align":  {
+                                     "text":  "保持当前方向，低速倒车。看左镜后轮和库角，兼顾右侧间隙。",
+                                     "sha256":  "eb4eb759a3506aefa78e9daa0e484c5d39f67b83f734b0047836ca26168a873e",
+                                     "bytes":  359992
+                                 },
+                  "exit_right":  {
+                                     "text":  "先直线前进驶出库口，留足空间后再向右打方向，返回 A 控制线。",
+                                     "sha256":  "54fc85ef86868839cab5ecbf91b24ec436319f9150860b1b64f0a7bc6c471c57",
+                                     "bytes":  355798
+                                 },
+                  "finish":  {
+                                 "text":  "完成两侧倒车入库，并返回 A 端。现在可以进入语音跟练，自己控制车辆，按照看镜、转向、回正的顺序练习。",
+                                 "sha256":  "3173fde401e969996038e5327a28e4582914035c6d4c1bb1cc580eb7e29643af",
+                                 "bytes":  597614
+                             },
+                  "warning_line":  {
+                                       "text":  "先按空格刹车。车身已触及场地边线，暂停观察，再复盘转向时机。",
+                                       "sha256":  "363e432f4e1f7a857030c806f70efda4098725d6a5fe3dfe3d36a067a5d142bf",
+                                       "bytes":  389526
+                                   },
+                  "warning_sequence":  {
+                                           "text":  "本次倒车前，尚未确认两只前轮都越过指定控制线。请复盘起步位置和操作顺序。",
+                                           "sha256":  "6f0b944a177f935c55f9af7c10b1194fc333fbb37f58fdeda15e36ab101ea14d",
+                                           "bytes":  425888
+                                       },
+                  "warning_time":  {
+                                       "text":  "本次练习用时已超过二百一十秒。可以先完成观察和操作，再重练整套流程。",
+                                       "sha256":  "a122dd560bdb081cd27168ba5f4bd4a5080f403927716ffbcd5998836c89b82c",
+                                       "bytes":  423904
+                                   },
+                  "practice_intro":  {
+                                         "text":  "现在由你驾驶，语音会跟随车辆进度提示。W 前进，S 倒车，A 和 D 打方向，X 回正，空格刹车。Q 和 E 看左右镜，P 暂停观察。",
+                                         "sha256":  "d3b0bb2ce09b3782ea0aee286acee73276a6300f1c048730200bb5935ecf2f0c",
+                                         "bytes":  758552
+                                     },
+                  "takeover_short":  {
+                                         "text":  "现在由你操作，先看提示，准备好再继续。",
+                                         "sha256":  "01ec7166ab9c4eab09b4319f45099d47ad4da4e2b2e3c27b8c637b0fc2228f87",
+                                         "bytes":  240510
+                                     },
+                  "stopped":  {
+                                  "text":  "车辆已在库内停稳。确认方向，接下来先直线前进，再按流程转向出库。",
+                                  "sha256":  "d88731b682962e89d1334e814d82ecbbc2ad6e3afef9a838da772175eced7e6c",
+                                  "bytes":  407822
+                              },
+                  "alignment_intro":  {
+                                          "text":  "按住 S 慢速倒车，看镜判断车身与边线。接近平行时按 X，亲自体会回正所需的时间。",
+                                          "sha256":  "0def0a35c39b53009f2d7f0faa83d78e97bde99af4b9f37c13f67687e7aae3ce",
+                                          "bytes":  471964
+                                      },
+                  "alignment_early":  {
+                                          "text":  "这次回正偏早，车身仍带着入库角度。复盘镜中的车身和边线，下次稍晚一些开始回正。",
+                                          "sha256":  "22517b987632935055396916761c8207763b575aec9d1ea99266b70a8a9f6120",
+                                          "bytes":  472180
+                                      },
+                  "alignment_late":  {
+                                         "text":  "这次回正偏晚，车身已经转过平行方向。下次更早准备，给回正过程留出时间。",
+                                         "sha256":  "f8dda95edc9c7c05ad34365cc836f1fd736da9b9ee223f915c23bf8f2f0e363d",
+                                         "bytes":  435804
+                                     },
+                  "alignment_good":  {
+                                         "text":  "这次回正后车身接近平行。继续通过左右镜比较间距，慢速完成后续入库。",
+                                         "sha256":  "66bd3ef39fe352badcc75157cbd84579b88c23cc7297a400fe7b42eed3ccd24c",
+                                         "bytes":  395680
+                                     },
+                  "beginner_mirror":  {
+                                          "text":  "先认右后视镜。镜子内侧的橙色部分是自己的车身。找到后轮标签，再找到库角标签。找到了以后，点击我找到了。",
+                                          "sha256":  "5ae48d221f648d98e4138f7695ffd4397394074b0a915470b16f2d811deb1b8e",
+                                          "bytes":  622502
+                                      },
+                  "beginner_turn":  {
+                                        "text":  "现在只练向右打方向。按住 D，系统帮你低速倒车。看右镜里的后轮向库角靠近，方向到位会自动停住。",
+                                        "sha256":  "fd57630db11b668aac4eb44490d103d4e345725e0adea900be2333e9271c22ee",
+                                        "bytes":  566962
+                                    },
+                  "beginner_hold":  {
+                                        "text":  "松开 D，方向会保持，不会自己回正。现在只按住 S 倒车，看车身和库边线的夹角慢慢变小，接近平行会自动停住。",
+                                        "sha256":  "378e9dd5146a2840244e74f132f76331755874c50a0e436a46b36a29ff39364f",
+                                        "bytes":  622278
+                                    },
+                  "beginner_compare":  {
+                                           "text":  "车已经停住。先看右镜里车身和库边线，再看左镜。两边都接近平行时，才准备回方向。",
+                                           "sha256":  "a688f08f6895ee700dca2c8224df64c94ba3d222e32264136864dd37e40e205d",
+                                           "bytes":  511840
+                                       },
+                  "beginner_center":  {
+                                          "text":  "现在按一次 X，把前轮回正。系统帮你保持低速，回正完成会自动停住。记住，松开方向键不等于回正。",
+                                          "sha256":  "769d42eea98139118353086c53fa2ecfc3e728cd1dd4af61054afae522a2fd3f",
+                                          "bytes":  587460
+                                      },
+                  "beginner_finish":  {
+                                          "text":  "你已经体验了向右打方向、保持方向和主动回正。接下来练习自己判断回正时机，看完示范后亲手操作，再对照两侧镜面。",
+                                          "sha256":  "3fbd4c6bb113b147a707c02a985c71ca59c50700a38a62844195333edd589f7f",
+                                          "bytes":  626456
+                                      },
+                  "recovery_early":  {
+                                         "text":  "先刹车停稳。前轮虽然回正，车身仍有夹角。对照两侧镜面，再从回正前重练。",
+                                         "sha256":  "1620eb4ac177a486565864bc127ccfb42b4131e683b2b3cc16afcdbdf320dd2d",
+                                         "bytes":  470642
+                                     },
+                  "recovery_clearance":  {
+                                             "text":  "先刹车停稳。继续直倒可能碰线。看两侧车身与库线的间隙，暂停复盘，再从错误前重练。",
+                                             "sha256":  "1e64e3151a5fb9c78506e043ffb7d63d0586745d72adee7ec35bd620f2cd59a1",
+                                             "bytes":  522444
+                                         },
+                  "recovery_wrong_direction":  {
+                                                   "text":  "先刹车停稳。这次转向与当前入库侧相反。核对左右镜和车尾方向，再重新练习。",
+                                                   "sha256":  "9bab4a2be64166287960753c2bdc0145af2955a0db6dc63d7b4f86ca60bc9e7b",
+                                                   "bytes":  473736
+                                               }
+              }
+}

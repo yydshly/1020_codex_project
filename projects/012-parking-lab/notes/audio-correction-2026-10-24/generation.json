@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-24",
+  "provider": "minimax",
+  "model": "speech-2.8-hd",
+  "voiceId": "male-qn-qingse",
+  "generated": {
+    "clips": 11,
+    "bytes": 2450172,
+    "seconds": 151.956
+  },
+  "activePackage": {
+    "clips": 48,
+    "bytes": 7834176,
+    "seconds": 484.488
+  },
+  "previousManifestClipsPreserved": 42,
+  "clips": [
+    {
+      "key": "straight",
+      "file": "audio/minimax/straight-ee47a4a2b57e.mp3",
+      "bytes": 245364,
+      "duration": 15.228,
+      "sha256": "3866392e205d17ee6931690536bb59ea5b22b5385757b15b06ea30adf35e410e",
+      "decoded": true,
+      "codec": "mp3",
+      "sampleRate": 32000,
+      "channels": 1,
+      "decodedDuration": 15.228
+    },
+    {
+      "key": "left_straight",
+      "file": "audio/minimax/left_straight-5b209bf850d8.mp3",
+      "bytes": 277044,
+      "duration": 17.208,
+      "sha256": "fe75059ff175c31b21bf26209225579d055cc7b382e53938b6ae1633fead5a3c",
+      "decoded": true,
+      "codec": "mp3",
+      "sampleRate": 32000,
+      "channels": 1,
+      "decodedDuration": 17.208
+    },
+    {
+      "key": "beginner_mirror",
+      "file": "audio/minimax/beginner_mirror-e666105036a7.mp3",
+      "bytes": 285108,
+      "duration": 17.712,
+      "sha256": "e348e4ae41578c12efb151f8351f8627bb3766891a58377d0fac7338bfbf8bae",
+      "decoded": true,
+      "codec": "mp3",
+      "sampleRate": 32000,
+      "channels": 1,
+      "decodedDuration": 17.712
+    },
+    {
+      "key": "beginner_hold",
+      "file": "audio/minimax/beginner_hold-a44a71e8f071.mp3",
+      "bytes": 290868,
+      "duration": 18.072,
+      "sha256": "7f09e8e2f2f499308f6e3a7a15f09c15ff6d4cacbee85a3bd1c7a98c605ea12d",
+      "decoded": true,
+      "codec": "mp3",
+      "sampleRate": 32000,
+      "channels": 1,
+      "decodedDuration": 18.072
+    },
+    {
+      "key": "beginner_compare",
+      "file": "audio/minimax/beginner_compare-4a3368fd45ad.mp3",
+      "bytes": 251700,
+      "duration": 15.624,
+      "sha256": "e2c40ac42e0bd464e8329aedfc346ff061c1f7907d74e64afe71e670753f7790",
+      "decoded": true,
+      "codec": "mp3",
+      "sampleRate": 32000,
+      "channels": 1,
+      "decodedDuration": 15.624
+    },
+    {
+      "key": "correction_intro",
+      "file": "audio/minimax/correction_intro-363dbefa7845.mp3",
+      "bytes": 236724,
+      "duration": 14.688,
+      "sha256": "3075fb8ffe2713011d1f7f88a310638d1cf2da0cf686ecc7876bb470450f6c2a",
+      "decoded": true,
+      "codec": "mp3",
+      "sampleRate": 32000,
+      "channels": 1,
+      "decodedDuration": 14.688
+    },
+    {
+      "key": "correction_left_tight",
+      "file": "audio/minimax/correction_left_tight-1afaf37d346a.mp3",
+      "bytes": 179124,
+      "duration": 11.088,
+      "sha256": "2732e11b30b3386ff0e429c3c7a8bafc000413b8e75ffaff9b419c863a3d0ed8",
+      "decoded": true,
+      "codec": "mp3",
+      "sampleRate": 32000,
+      "channels": 1,
+      "decodedDuration": 11.088
+    },
+    {
+      "key": "correction_right_tight",
+      "file": "audio/minimax/correction_right_tight-9a9ff14dc175.mp3",
+      "bytes": 166452,
+      "duration": 10.296,
+      "sha256": "d907f24cc8aa4379bb5861530c75afe97ce21e85e164c90f1594b82c4ec61ef0",
+      "decoded": true,
+      "codec": "mp3",
+      "sampleRate": 32000,
+      "channels": 1,
+      "decodedDuration": 10.296
+    },
+    {
+      "key": "correction_return",
+      "file": "audio/minimax/correction_return-cc9478b18eaf.mp3",
+      "bytes": 138228,
+      "duration": 8.532,
+      "sha256": "a4f58ffe3285da5a4480962a9db2bdde301d5a6629af4e6a8ef0c196bae9ca8b",
+      "decoded": true,
+      "codec": "mp3",
+      "sampleRate": 32000,
+      "channels": 1,
+      "decodedDuration": 8.532
+    },
+    {
+      "key": "correction_good",
+      "file": "audio/minimax/correction_good-d0556fa855a5.mp3",
+      "bytes": 215988,
+      "duration": 13.392,
+      "sha256": "e7f6b426fda355be921d8cdafc56c36fd47bce69f7662bf08c33c85cc83e87a1",
+      "decoded": true,
+      "codec": "mp3",
+      "sampleRate": 32000,
+      "channels": 1,
+      "decodedDuration": 13.392
+    },
+    {
+      "key": "correction_retry",
+      "file": "audio/minimax/correction_retry-b012cb6a3705.mp3",
+      "bytes": 163572,
+      "duration": 10.116,
+      "sha256": "46bd43fa7720e917bd5d8562d82f81361d719090196af0a2ea65cf9562c4ba71",
+      "decoded": true,
+      "codec": "mp3",
+      "sampleRate": 32000,
+      "channels": 1,
+      "decodedDuration": 10.116
+    }
+  ]
+}

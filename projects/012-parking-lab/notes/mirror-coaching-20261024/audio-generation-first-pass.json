@@ -1,0 +1,57 @@
+{
+  "provider": "MiniMax",
+  "model": "speech-2.8-hd",
+  "voice": "male-qn-qingse",
+  "generated": 5,
+  "old_files_preserved_and_verified": 48,
+  "active_clips": 48,
+  "active_bytes": 8593920,
+  "active_duration_seconds": 531.972,
+  "clips": [
+    {
+      "key": "judgment_intro",
+      "file": "audio/minimax/judgment_intro-9c8d1a94099f.mp3",
+      "text": "先看同一面镜中，车身和库侧线的关系，再核对另一侧。辨认辅助用青色描出可见车身参照，金色标出库侧线。库底的横线不用于判断入库方向。这段示范演到前轮回正就停，再由你判断时机。",
+      "sha256": "508687e908d19741129b6390ba385f188ee9f266c06de4313c124683b319f030",
+      "bytes": 361140,
+      "duration": 22.464,
+      "decode": "passed"
+    },
+    {
+      "key": "correction_intro",
+      "file": "audio/minimax/correction_intro-9eaa3fbf8bd6.mp3",
+      "text": "这次练车尾带小夹角入库。先认本车车身、库侧线和库底线。看同一面镜的近远间隙，再核对另一侧，判断继续直倒时车尾会向哪侧逼线。不要把两面镜中的画面宽窄直接当成实际距离。系统辅助低速，你只练方向和主动回正。",
+      "sha256": "f46ed2ad6e0180f7468970b33c96b58c97f77fdf0a3aa13408d4df95657cf38a",
+      "bytes": 412404,
+      "duration": 25.668,
+      "decode": "passed"
+    },
+    {
+      "key": "correction_left_tight",
+      "file": "audio/minimax/correction_left_tight-146b57cbb433.mp3",
+      "text": "这次车尾向左斜入。先看左镜，方向盘向右小幅转，让车尾走势逐渐向右调整。车头会向左外摆，留意前方，也要核对右镜。逼线趋势改善后主动回正；前轮回中不等于车身已直。",
+      "sha256": "508b6d558cf301ffd5381f014d07a42e939ddafebf0409b6c7f02b2ec4ac707e",
+      "bytes": 363444,
+      "duration": 22.608,
+      "decode": "passed"
+    },
+    {
+      "key": "correction_right_tight",
+      "file": "audio/minimax/correction_right_tight-506daf64b887.mp3",
+      "text": "这次车尾向右斜入。先看右镜，方向盘向左小幅转，让车尾走势逐渐向左调整。车头会向右外摆，留意前方，也要核对左镜。逼线趋势改善后主动回正；前轮回中不等于车身已直。",
+      "sha256": "b18ba23355423d62b30324d747b5ab281ede8522dfce217e23fee27d86355f3e",
+      "bytes": 361716,
+      "duration": 22.5,
+      "decode": "passed"
+    },
+    {
+      "key": "correction_retry",
+      "file": "audio/minimax/correction_retry-39ffae8895a8.mp3",
+      "text": "先停住。重新分清车身、库侧线和库底线，看车尾是向哪边斜入。对照同一面镜里的变化，再从操作前重练。这道题只练斜入纠偏，不是车身平行后的整体偏移。",
+      "sha256": "51ca05713ffc958486e3ab7849d3d7eaf6928d2b2e6d80e1290fd1416fc75b2b",
+      "bytes": 304116,
+      "duration": 18.9,
+      "decode": "passed"
+    }
+  ]
+}

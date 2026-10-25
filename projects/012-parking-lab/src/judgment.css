@@ -1,0 +1,155 @@
+/* Short mirror-judgment practice keeps the current task next to the real scene. */
+.training-toolbar .judgment-entry { padding: 11px 15px; border: 1px solid #b3c6a8; border-radius: 8px; background: #eef4e7; color: #345b40; font-size: 13px; font-weight: 550; line-height: 1.4; white-space: nowrap; }
+.training-toolbar .judgment-entry:hover { background: #e4eedb; }
+.training-toolbar .judgment-entry[aria-pressed="true"] { background: #315f45; border-color: #315f45; color: #fff; }
+.workspace.judgment-active .training-toolbar .beginner-entry[aria-pressed="false"],
+.workspace.coaching-active .training-toolbar .beginner-entry[aria-pressed="false"] { background: #f3f6ee; border-color: #c7d5bc; color: #617854; box-shadow: none; }
+.welcome-shortcut { display: flex; align-items: center; flex-wrap: wrap; gap: 4px 8px; margin: 18px 0 0; color: #728466; font-size: 12px; }
+#welcome-judgment { padding: 4px 0; background: none; color: #496b44; font-size: 12px; text-decoration: underline; text-underline-offset: 3px; }
+.judgment-panel { grid-column: 1 / -1; padding: 13px 16px 10px; margin-bottom: 11px; border: 1px solid #cbdac0; border-radius: 11px; background: #f1f5ea; color: #294632; }
+.judgment-heading { display: flex; align-items: center; justify-content: space-between; gap: 12px; }
+.judgment-heading > div:first-child { min-width: 0; }
+#judgment-progress { display: block; margin-bottom: 5px; color: #61794f; font-size: 11px; line-height: 1.4; }
+#judgment-title { display: block; font-size: 19px; font-weight: 650; line-height: 1.4; }
+.judgment-sides { display: flex; flex-shrink: 0; gap: 3px; padding: 3px; background: #e3ecd9; border-radius: 7px; }
+.judgment-sides button { min-height: 31px; padding: 6px 10px; border-radius: 5px; background: transparent; color: #5d7550; font-size: 12px; }
+.judgment-sides button[aria-pressed="true"] { background: #fffef8; color: #31583d; box-shadow: 0 1px 4px #35513914; }
+#judgment-instruction { margin: 7px 0 10px; color: #3d573d; font-size: 14px; line-height: 1.55; }
+.judgment-main-actions { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; }
+.judgment-main-actions button { min-height: 43px; padding: 10px 15px; border: 1px solid #bdcdb2; border-radius: 7px; background: #fbfcf7; color: #3e6244; font-size: 14px; font-weight: 550; line-height: 1.4; }
+.judgment-main-actions button.judgment-primary { background: #315f45; border-color: #315f45; color: #fff; }
+.judgment-main-actions button:hover { border-color: #809e70; }
+.judgment-main-actions button.judgment-primary:hover { background: #264f37; }
+#judgment-reverse { touch-action: none; user-select: none; -webkit-user-select: none; }
+#judgment-reverse:active, #judgment-reverse.held { background: #dfebd5; border-color: #739966; box-shadow: inset 0 1px 3px #28523622; }
+#judgment-action:active, #judgment-action.held { background: #193f2b; }
+#judgment-pause kbd { margin-left: 6px; font-size: 11px; }
+#judgment-status { margin: 8px 0 0; color: #5c714f; font-size: 12px; line-height: 1.5; }
+#judgment-status:empty { display: none; }
+.judgment-footer { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 5px 13px; margin-top: 9px; padding-top: 7px; border-top: 1px solid #d9e3d0; }
+.judgment-scope { color: #697d5d; font-size: 10px; line-height: 1.6; }
+.judgment-secondary-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+.judgment-secondary-actions button { padding: 4px 0; background: none; color: #57734b; font-size: 11px; line-height: 1.5; text-decoration: underline; text-underline-offset: 3px; }
+.judgment-panel button:disabled { opacity: .45; cursor: default; }
+.judgment-panel button:focus-visible, #judgment-mode:focus-visible, #welcome-judgment:focus-visible { outline: 3px solid #b48b43; outline-offset: 3px; }
+.judgment-comparison { margin-top: 13px; }
+.judgment-mirror-columns { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 13px; }
+.judgment-mirror-set { min-width: 0; padding: 11px; border: 1px solid #b7ccb9; border-radius: 8px; background: #f9fbf6; }
+.judgment-mirror-set h3 { margin: 0 0 9px; color: #355d44; font-size: 14px; line-height: 1.4; font-weight: 600; }
+.judgment-reference-set { border-color: #d3c7a6; background: #fbfaf3; }
+.judgment-reference-set h3 { color: #806d40; }
+.judgment-mirror-pair { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 8px; }
+.judgment-mirror-pair figure { min-width: 0; margin: 0; }
+.judgment-mirror-pair figcaption { margin-bottom: 5px; color: #64795b; font-size: 11px; }
+.judgment-mirror-pair img { display: block; width: 100%; aspect-ratio: 1.58; object-fit: contain; border-radius: 5px; background: #dce5d5; border: 1px solid #c8d5bf; }
+.judgment-mirror-pair img:not([src]) { visibility: hidden; }
+#review-center-card #review-judgment { display: inline-block; margin: 4px 0 0 12px; padding: 6px 9px; border: 1px solid #c2d2b6; border-radius: 5px; background: #edf4e5; color: #3d6847; font-size: 11px; }
+#judgment-comparison-note { margin: 10px 0 0; color: #5f7355; font-size: 12px; line-height: 1.6; }
+.workspace.judgment-active { grid-template-columns: minmax(0, 1fr); }
+.workspace.judgment-active #voice-panel,
+.workspace.judgment-active #practice-review,
+.workspace.judgment-active #beginner-panel,
+.workspace.judgment-active .sidebar,
+.workspace.judgment-active .control-deck,
+.workspace.judgment-active #alignment-drill,
+.workspace.judgment-active #lesson-controls,
+.workspace.judgment-active .lesson-overlay,
+.workspace.judgment-active .mirror-coach,
+.workspace.judgment-active .scene-feedback,
+.workspace.judgment-active .scene-caption,
+.workspace.judgment-active .driver-controls,
+.workspace.judgment-active .training-scope { display: none !important; }
+.workspace.judgment-active .training-toolbar { gap: 8px 12px; margin-bottom: 10px; }
+.workspace.judgment-active .scene-area { grid-column: 1 / -1; height: calc(100vh - 360px); height: calc(100dvh - 360px); min-height: 360px; max-height: 580px; }
+.workspace.judgment-active:has(#judgment-comparison:not([hidden])) .scene-area { display: none !important; }
+.judgment-active .mirror-card { top: 78px; width: 32%; max-width: 330px; }
+.judgment-active .mirror-card.focused { top: 70px; width: 44%; max-width: 355px; }
+.judgment-active .mirror-heading > span { font-size: 12px !important; }
+.judgment-active .mirror-recommendation { font-size: 9px; }
+.judgment-active #mirror-bar .mirror-marker { font-size: 10px !important; }
+.workspace.welcome-active #judgment-panel, .workspace.beginner-active #judgment-panel { display: none !important; }
+
+/* Keep the existing audio controls and listeners, fold secondary choices. */
+.voice-main-controls { display: flex; align-items: center; flex-wrap: wrap; gap: 8px 12px; }
+.voice-main-controls .voice-review-entry { padding-top: 0; }
+.voice-more { margin-top: 9px; color: #637e52; font-size: 11px; }
+.voice-more > summary { width: fit-content; cursor: pointer; list-style-position: inside; padding: 4px 0; }
+.voice-more[open] { padding-bottom: 3px; }
+.voice-more #voice-subtitle { margin: 8px 0 10px; color: #627955; font-size: 12px; line-height: 1.65; }
+.voice-more .voice-options { margin-top: 10px; }
+.workspace.coaching-active { grid-template-columns: minmax(0, 1fr); }
+.workspace.coaching-active .sidebar,
+.workspace.coaching-active #alignment-drill,
+.workspace.coaching-active .lesson-overlay,
+.workspace.coaching-active .mirror-coach,
+.workspace.coaching-active .scene-feedback,
+.workspace.coaching-active .scene-caption,
+.workspace.coaching-active .training-scope { display: none !important; }
+.workspace.coaching-active .training-toolbar { gap: 8px 12px; margin-bottom: 10px; }
+.workspace.coaching-active .voice-panel { padding: 11px 15px; }
+.workspace.coaching-active #voice-title { font-size: 17px; color: #31553d; }
+.workspace.coaching-active .voice-heading { margin-bottom: 5px; font-size: 10px; }
+.workspace.coaching-active .voice-guidance { gap: 12px; padding: 8px 11px; margin: 8px 0 10px; }
+.workspace.coaching-active .voice-guidance span { font-size: 10px; color: #6b805e; }
+.workspace.coaching-active .voice-guidance strong { font-size: 12px; line-height: 1.5; }
+.workspace.coaching-active .voice-main-controls .voice-actions button,
+.workspace.coaching-active .voice-main-controls .voice-review-entry button { min-height: 38px; font-size: 13px; padding: 8px 12px; }
+.workspace.coaching-active .voice-review-entry > span { display: none; }
+.workspace.coaching-active .scene-area { grid-column: 1 / -1; height: calc(100vh - 530px); height: calc(100dvh - 530px); min-height: 280px; max-height: 500px; }
+.coaching-active .mirror-card { top: 60px; max-width: 180px; }
+.coaching-active .mirror-card.focused { top: 60px; max-width: 260px; }
+.coaching-active .driver-controls { bottom: 8px; padding: 3px; gap: 3px; }
+.coaching-active .driver-controls button { padding: 5px 8px; }
+.coaching-active .driver-controls > span { display: none; }
+.coaching-active .scene-area.driver-view.gaze-right .driver-controls { left: 16px; right: auto; transform: none; }
+.coaching-active .scene-area.driver-view.gaze-left .driver-controls { right: 16px; left: auto; transform: none; }
+.workspace.coaching-active .control-deck { grid-row: auto; padding: 10px 0; gap: 8px; }
+.coaching-active .telemetry { gap: 10px; }
+.coaching-active .speed strong { font-size: 26px; }
+.coaching-active .gear-readout { padding-right: 10px; gap: 4px; }
+.coaching-active .gear-readout > span { font-size: 20px; }
+.coaching-active .steering-readout svg { width: 33px; height: 33px; }
+.coaching-active .steering-readout strong { font-size: 13px; }
+.coaching-active .drive-controls { order: 0; flex-basis: auto; margin-top: 0; }
+.coaching-active .drive-controls p { font-size: 8px; }
+.coaching-active .pedal-stack button { width: 43px; }
+.coaching-active .drive-buttons > button { width: 37px; }
+.coaching-active .drive-buttons > button.brake-button { width: 45px; }
+.workspace.coaching-active.review-active.review-in-car .scene-area { height: 48vh; min-height: 390px; }
+@media (max-width: 850px) {
+  .judgment-panel { padding: 12px 13px 9px; }
+  #judgment-title { font-size: 18px; }
+  .judgment-scope { max-width: 430px; }
+  .judgment-mirror-columns { gap: 10px; }
+  .judgment-mirror-set { padding: 9px; }
+  .judgment-mirror-set h3 { font-size: 13px; }
+  .coaching-active .session-actions { margin-left: auto; }
+}
+@media (min-width: 601px) and (max-width: 1000px) {
+  .judgment-mirror-pair { grid-template-columns: minmax(0, 1fr); gap: 12px; }
+  .judgment-mirror-pair figcaption { font-size: 12px; }
+}
+@media (max-width: 600px) {
+  .judgment-heading { align-items: flex-start; gap: 8px; }
+  #judgment-title { font-size: 16px; }
+  #judgment-progress { font-size: 10px; }
+  .judgment-sides { flex-direction: column; padding: 2px; }
+  .judgment-sides button { min-height: 28px; padding: 4px 7px; font-size: 11px; }
+  #judgment-instruction { font-size: 13px; }
+  .judgment-main-actions { gap: 6px; }
+  .judgment-main-actions button { min-height: 43px; font-size: 13px; padding: 9px 12px; }
+  .judgment-mirror-columns { grid-template-columns: minmax(0, 1fr); }
+  .judgment-mirror-pair { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+  .judgment-mirror-set h3 { font-size: 14px; }
+  .workspace.judgment-active .scene-area { min-height: 350px; height: 48vh; }
+  .judgment-active .mirror-card { width: 34%; min-width: 105px; }
+  .judgment-active .mirror-card.focused { width: 56%; min-width: 170px; }
+  .judgment-active .mirror-heading > span { font-size: 10px !important; }
+  .workspace.coaching-active .voice-guidance { grid-template-columns: 1fr 1fr; }
+  .workspace.coaching-active .voice-guidance > div:last-child { grid-column: 1 / -1; border-left: 0; border-top: 1px solid #dce5d3; padding: 6px 0 0; }
+  .workspace.coaching-active .voice-guidance > div:last-child span { display: inline; margin-right: 6px; }
+  .workspace.coaching-active .voice-guidance > div:last-child strong { display: inline; }
+  .workspace.coaching-active .voice-guidance strong { font-size: 11px; }
+  .coaching-active .drive-controls { flex-basis: 100%; order: 3; }
+  .coaching-active .mirror-card.focused { max-width: 260px; }
+}

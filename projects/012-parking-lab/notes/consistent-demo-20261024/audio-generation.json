@@ -1,0 +1,989 @@
+{
+  "verifiedAt": "2026-10-24T12:23:07.652468+00:00",
+  "provider": "minimax",
+  "model": "speech-2.8-hd",
+  "voiceId": "male-qn-qingse",
+  "speed": 0.95,
+  "newRequestBatches": [
+    115,
+    6
+  ],
+  "automaticRetries": false,
+  "original70MetadataAndHashesUnchanged": true,
+  "totalClips": 191,
+  "totalBytes": 27569676,
+  "totalSeconds": 1702.62,
+  "newClipsCount": 121,
+  "newBytes": 11414292,
+  "newSeconds": 700.416,
+  "clips": {
+    "coursecue2_reverse_parking_ready": {
+      "file": "audio/minimax/coursecue2_reverse_parking_ready-1c043821fc50.mp3",
+      "text": "先看两侧和后方，踩稳制动，停稳后挂倒挡。",
+      "sha256": "ab8ab9facac5ef9d0e571c3c8a3c50b43d763c9f0573979b0e1791775bc7e28c",
+      "bytes": 82932,
+      "duration": 5.076,
+      "decoded": true
+    },
+    "coursecue2_reverse_parking_straight_back": {
+      "file": "audio/minimax/coursecue2_reverse_parking_straight_back-80f2ca7ea18d.mp3",
+      "text": "先认右镜车身和地面，直线慢倒，等库角进入镜面。",
+      "sha256": "bc3727de0ec2b68171db8cbbedc1465ac581e498fae36dcf89a3ddb2b832a976",
+      "bytes": 100212,
+      "duration": 6.156,
+      "decoded": true
+    },
+    "coursecue2_reverse_parking_right_turn": {
+      "file": "audio/minimax/coursecue2_reverse_parking_right_turn-e44fb3b60f1f.mp3",
+      "text": "右镜到本车参照时向右打方向，留意左前方外摆。",
+      "sha256": "97f790f356e7ae24339181b19509592cc75a990a5afbe287ab4618d853e83431",
+      "bytes": 94452,
+      "duration": 5.796,
+      "decoded": true
+    },
+    "coursecue2_reverse_parking_approach_alignment": {
+      "file": "audio/minimax/coursecue2_reverse_parking_approach_alignment-9e390560c492.mp3",
+      "text": "交替看两镜，车身快与库线平行，准备主动回轮。",
+      "sha256": "f07b88c26ce52cf92b84820e5a6d3d44db922ae607c96227031180f6a94ef694",
+      "bytes": 95604,
+      "duration": 5.868,
+      "decoded": true
+    },
+    "coursecue2_reverse_parking_right_center": {
+      "file": "audio/minimax/coursecue2_reverse_parking_right_center-374ac38a0ec8.mp3",
+      "text": "车身快直时向左回轮至前轮回中，继续核对两侧。",
+      "sha256": "b4bf77221c4b51f205939d1f92524f6a442c5aab00bcbcd4d535720c9a9a16ef",
+      "bytes": 93876,
+      "duration": 5.76,
+      "decoded": true
+    },
+    "coursecue2_reverse_parking_right_stop": {
+      "file": "audio/minimax/coursecue2_reverse_parking_right_stop-545d81f5eeb5.mp3",
+      "text": "两侧都要看，确认全车入库，踩离合和制动停稳。",
+      "sha256": "a44970a4998798ebed4ee35f98b79614a51a3e4f2ab9eee65f13eb39bc7989a3",
+      "bytes": 93300,
+      "duration": 5.724,
+      "decoded": true
+    },
+    "coursecue2_reverse_parking_transfer": {
+      "file": "audio/minimax/coursecue2_reverse_parking_transfer-f6f63257e032.mp3",
+      "text": "停稳换一挡，先看出口，再驶出换边，留意车头。",
+      "sha256": "0e2292f4556edccf64261b2ed03d06b0c403087504bb59ff7555a192bae3e7fc",
+      "bytes": 97908,
+      "duration": 6.012,
+      "decoded": true
+    },
+    "coursecue2_reverse_parking_far_ready": {
+      "file": "audio/minimax/coursecue2_reverse_parking_far_ready-566fed301132.mp3",
+      "text": "看另一端控制线，前轮越线后停稳，准备挂倒挡。",
+      "sha256": "18906dbee1abaf5e4ff97124a42464c6b4b14b3506123f1a3006568ebd0ed2a9",
+      "bytes": 88116,
+      "duration": 5.4,
+      "decoded": true
+    },
+    "coursecue2_reverse_parking_left_straight_back": {
+      "file": "audio/minimax/coursecue2_reverse_parking_left_straight_back-d3acdaba5c89.mp3",
+      "text": "挂倒挡后直线慢倒，左镜找库角，兼顾右镜。",
+      "sha256": "ae8496c27edcce73ed8c790f374f7a1b5dabbb29c319c3bd69bf73f9f9188e03",
+      "bytes": 95028,
+      "duration": 5.832,
+      "decoded": true
+    },
+    "coursecue2_reverse_parking_left_turn": {
+      "file": "audio/minimax/coursecue2_reverse_parking_left_turn-367f04706aa3.mp3",
+      "text": "左镜到本车参照时向左打方向，留意右前方外摆。",
+      "sha256": "e61efe75929c3ec54738c094e026efb4db5b1e9d0cf494d6b5024d6ace137f9a",
+      "bytes": 97332,
+      "duration": 5.976,
+      "decoded": true
+    },
+    "coursecue2_reverse_parking_left_center": {
+      "file": "audio/minimax/coursecue2_reverse_parking_left_center-245968cafaab.mp3",
+      "text": "车身快直时向右回轮至前轮回中，再核对两侧。",
+      "sha256": "61f9b3c5210d7ccf0496c28d1c77491ad9a5ef679a8eacb409c841c96a925622",
+      "bytes": 100788,
+      "duration": 6.192,
+      "decoded": true
+    },
+    "coursecue2_reverse_parking_left_stop": {
+      "file": "audio/minimax/coursecue2_reverse_parking_left_stop-ca4d3d358438.mp3",
+      "text": "确认车身平行且全车入库，踩离合和制动停稳。",
+      "sha256": "a732044969e80c21ded211a4d258fa908b19efa4e87c63c5c32dd5815a9f204e",
+      "bytes": 93300,
+      "duration": 5.724,
+      "decoded": true
+    },
+    "coursecue2_reverse_parking_return": {
+      "file": "audio/minimax/coursecue2_reverse_parking_return-72ad1cdba463.mp3",
+      "text": "停稳换一挡，观察出口，缓慢驶出回到起始端。",
+      "sha256": "6d0173c00c0b27f569161b9108b998e886ca38d391d2cb6fc84199ba182b5bc6",
+      "bytes": 102516,
+      "duration": 6.3,
+      "decoded": true
+    },
+    "coursecue2_reverse_parking_finish": {
+      "file": "audio/minimax/coursecue2_reverse_parking_finish-3e4c8bd61c65.mp3",
+      "text": "看控制线和车头位置，回到起始端后平稳停住。",
+      "sha256": "cc02953c24db5604f14159c97d3cea4472b79815c76ccc56e294862761d1b75d",
+      "bytes": 94452,
+      "duration": 5.796,
+      "decoded": true
+    },
+    "coursecue2_hill_start_approach": {
+      "file": "audio/minimax/coursecue2_hill_start_approach-168710153713.mp3",
+      "text": "先看前方和右边线，一挡低速上坡，稳住车速。",
+      "sha256": "ea73bcbe56b0052d3d9cd2feae652617fd37734ba2603b37b9f5dc6513413748",
+      "bytes": 89844,
+      "duration": 5.508,
+      "decoded": true
+    },
+    "coursecue2_hill_start_prepare_stop": {
+      "file": "audio/minimax/coursecue2_hill_start_prepare_stop-b1703ecb3fde.mp3",
+      "text": "按本车停车参照判断位置，右脚准备平稳制动。",
+      "sha256": "b0ed0d57da14bf1e021161371326b37967ee363469ac4897ca6e73a7cb8ac0ad",
+      "bytes": 86388,
+      "duration": 5.292,
+      "decoded": true
+    },
+    "coursecue2_hill_start_hold": {
+      "file": "audio/minimax/coursecue2_hill_start_hold-ba90b241051b.mp3",
+      "text": "踩离合和制动停稳，拉起驻车制动，防止后溜。",
+      "sha256": "9c2567a56024e71565b6bb6f1747a4950151dbc5bbe9d482280e6dd01221b2e8",
+      "bytes": 78900,
+      "duration": 4.824,
+      "decoded": true
+    },
+    "coursecue2_hill_start_bite": {
+      "file": "audio/minimax/coursecue2_hill_start_bite-ba88b0ad7354.mp3",
+      "text": "先看前方，稳住车，缓抬离合建立驱动力再松驻车。",
+      "sha256": "78c683ee24448205ac60a5fed1ae28f10f93d50578a67472b0395bc62731a4c4",
+      "bytes": 110004,
+      "duration": 6.768,
+      "decoded": true
+    },
+    "coursecue2_hill_start_leave": {
+      "file": "audio/minimax/coursecue2_hill_start_leave-e045022e6968.mp3",
+      "text": "确认车辆向前走稳，再平顺抬离合，继续看前方。",
+      "sha256": "deb9b30ebd4973988c6c9406c756e81dae9a7f35886a27adcd0c4d269fe1cd81",
+      "bytes": 84660,
+      "duration": 5.184,
+      "decoded": true
+    },
+    "coursecue2_side_parking_ready": {
+      "file": "audio/minimax/coursecue2_side_parking_ready-42d29111d687.mp3",
+      "text": "右镜认清车位，兼顾两侧和后方，停稳挂倒挡。",
+      "sha256": "327b2ff3291558bcb772645f28b391de4a31af60f09933f2117901805200a0bd",
+      "bytes": 90996,
+      "duration": 5.58,
+      "decoded": true
+    },
+    "coursecue2_side_parking_right_turn": {
+      "file": "audio/minimax/coursecue2_side_parking_right_turn-dd3e5ecd29f5.mp3",
+      "text": "看右镜车尾和库边，低速向右打方向，兼顾左前方。",
+      "sha256": "823b829696fc7ef1b8503eb0c431f815478263173119655a61063713e62e3f27",
+      "bytes": 94452,
+      "duration": 5.796,
+      "decoded": true
+    },
+    "coursecue2_side_parking_countersteer": {
+      "file": "audio/minimax/coursecue2_side_parking_countersteer-bce4742b9bf8.mp3",
+      "text": "交替看两镜，向左回轮并反向转向，让车身逐渐摆直。",
+      "sha256": "e481ac951df4481476fd8e9cd45c6db391962b1f463391d3a548fbf77d54e03d",
+      "bytes": 120948,
+      "duration": 7.452,
+      "decoded": true
+    },
+    "coursecue2_side_parking_park": {
+      "file": "audio/minimax/coursecue2_side_parking_park-9c3c40fa27c8.mp3",
+      "text": "全车入位后回中停稳，打左灯，再看左镜与左后方。",
+      "sha256": "eb92002da31d31e7239d6ffa0831ed1ee0580d90e7cac0226b72c53da6c31389",
+      "bytes": 105972,
+      "duration": 6.516,
+      "decoded": true
+    },
+    "coursecue2_side_parking_exit": {
+      "file": "audio/minimax/coursecue2_side_parking_exit-b43b48174ccf.mp3",
+      "text": "确认左后方和车头安全，一挡缓行，向左驶出车位。",
+      "sha256": "88bd64d8743083328fa1f82aeaee9e3235a44d04ae2dc75948729e735d6b06b8",
+      "bytes": 106548,
+      "duration": 6.552,
+      "decoded": true
+    },
+    "coursecue2_curve_driving_enter": {
+      "file": "audio/minimax/coursecue2_curve_driving_enter-c346d85dbafe.mp3",
+      "text": "先看第一弯的走向，低速入弯，兼顾两侧边线。",
+      "sha256": "8e440ebdd919a3a5703d6ca785b9148371bc4286d036b566b028efb293e8878b",
+      "bytes": 89268,
+      "duration": 5.472,
+      "decoded": true
+    },
+    "coursecue2_curve_driving_first_curve": {
+      "file": "audio/minimax/coursecue2_curve_driving_first_curve-236e4e37af77.mp3",
+      "text": "看前方弯道和内侧余量，适量向右转，别只盯车头。",
+      "sha256": "909ef70188928f620c7afa72cfbe992ad1e48f84a91c6f8ee20d46a6b1cf6779",
+      "bytes": 96756,
+      "duration": 5.94,
+      "decoded": true
+    },
+    "coursecue2_curve_driving_change_curve": {
+      "file": "audio/minimax/coursecue2_curve_driving_change_curve-a1711427d67b.mp3",
+      "text": "先看下一弯，逐步回中，再随左弯平顺转向。",
+      "sha256": "6d00e5cda28d9071506f514ac7502540965b739174acc9a340c5f308df2e2540",
+      "bytes": 88692,
+      "duration": 5.436,
+      "decoded": true
+    },
+    "coursecue2_curve_driving_exit": {
+      "file": "audio/minimax/coursecue2_curve_driving_exit-01aa32936296.mp3",
+      "text": "看出口和两侧余量，确认后部通过后，逐渐回正。",
+      "sha256": "541cffec13569c96f98e23c8739418a83d701c92993888d00885fabe3119bc10",
+      "bytes": 88116,
+      "duration": 5.4,
+      "decoded": true
+    },
+    "coursecue2_right_angle_approach": {
+      "file": "audio/minimax/coursecue2_right_angle_approach-e5a320479e64.mp3",
+      "text": "看出口和两侧边线，低速接近这个左转直角。",
+      "sha256": "e497d3838c762025c38b01e12d13e6751537c3954f76a255a999da6bdbbaef04",
+      "bytes": 76020,
+      "duration": 4.644,
+      "decoded": true
+    },
+    "coursecue2_right_angle_prepare_turn": {
+      "file": "audio/minimax/coursecue2_right_angle_prepare_turn-bb26d2c99d76.mp3",
+      "text": "按本车标定参照找转向位置，稳住低速再转向。",
+      "sha256": "866f4e487ea4a107dcffbcd9fa68f39dba5d79ab6f205a07599819cfb7d64676",
+      "bytes": 100212,
+      "duration": 6.156,
+      "decoded": true
+    },
+    "coursecue2_right_angle_left_turn": {
+      "file": "audio/minimax/coursecue2_right_angle_left_turn-4ca369c43642.mp3",
+      "text": "向左转向，兼顾左后部与内侧线、右前方的空间。",
+      "sha256": "5539f2aabacc2f4d499bfa631462c0d82ef8a93bc4418642f2f7886a74ba5cd5",
+      "bytes": 104820,
+      "duration": 6.444,
+      "decoded": true
+    },
+    "coursecue2_right_angle_center": {
+      "file": "audio/minimax/coursecue2_right_angle_center-a24ca0eca2e7.mp3",
+      "text": "看出口方向，车身快顺直时回轮，前轮回中后驶出。",
+      "sha256": "cf2404ab7f85059e91796f2877e009f3a99c3e50817184f767bd8f41cea09dd3",
+      "bytes": 96756,
+      "duration": 5.94,
+      "decoded": true
+    },
+    "coursecue3_prepare_walkaround": {
+      "file": "audio/minimax/coursecue3_prepare_walkaround-3980c9c554e9.mp3",
+      "text": "先绕车观察轮胎和周围，确认车前车后没有障碍。",
+      "sha256": "2e2d5048281d1aadd8b0de5d732244f5bc544aed038bd03359964a953ef2ea5e",
+      "bytes": 88116,
+      "duration": 5.4,
+      "decoded": true
+    },
+    "coursecue3_prepare_open_door": {
+      "file": "audio/minimax/coursecue3_prepare_open_door-1c5fb1ab7e2c.mp3",
+      "text": "开门前先看后方来车，确认安全，再小幅开门上车。",
+      "sha256": "24651b925bc83c962b7901503e4186a1d28a5064e86dafb4536abb1cbb330340",
+      "bytes": 101364,
+      "duration": 6.228,
+      "decoded": true
+    },
+    "coursecue3_prepare_close_door": {
+      "file": "audio/minimax/coursecue3_prepare_close_door-61c7b02f047d.mp3",
+      "text": "坐稳后关好车门，确认车门已经关严。",
+      "sha256": "4e3a157f8e041bcc1ccc5fc6b112e1ade97b986465596141b98283d838c55dce",
+      "bytes": 77748,
+      "duration": 4.752,
+      "decoded": true
+    },
+    "coursecue3_prepare_seat": {
+      "file": "audio/minimax/coursecue3_prepare_seat-cc44c6fb164d.mp3",
+      "text": "先调座椅和靠背，让离合能踩到底，坐姿稳定。",
+      "sha256": "e05ab592ef53f6d672cec882413a33c9f4b0a97519e0d246618b027bdc763dcf",
+      "bytes": 88116,
+      "duration": 5.4,
+      "decoded": true
+    },
+    "coursecue3_prepare_mirrors": {
+      "file": "audio/minimax/coursecue3_prepare_mirrors-e9624d4be5ab.mp3",
+      "text": "保持坐姿再调镜，车身留少量，兼顾后方与地面。",
+      "sha256": "5843f083f84575ea174ac8324175a43f9ea47c614d8cbe2aaaf4595ba6e8ddd6",
+      "bytes": 103668,
+      "duration": 6.372,
+      "decoded": true
+    },
+    "coursecue3_prepare_belt": {
+      "file": "audio/minimax/coursecue3_prepare_belt-d5294522e948.mp3",
+      "text": "拉出安全带扣牢，理顺带身，确认没有扭转。",
+      "sha256": "87d46b7edb1a6207128413fb3d1ac7f591606fa2568b772a6674332c7c6ad58c",
+      "bytes": 80052,
+      "duration": 4.896,
+      "decoded": true
+    },
+    "coursecue3_prepare_check": {
+      "file": "audio/minimax/coursecue3_prepare_check-5ebba10c84d2.mp3",
+      "text": "最后看挡位、制动和仪表，确认状态后等待起步。",
+      "sha256": "d0040c72e3ce940bde2d30761caed11987384d4254c983d3096e81e64189fd36",
+      "bytes": 93876,
+      "duration": 5.76,
+      "decoded": true
+    },
+    "coursecue3_lights_wait": {
+      "file": "audio/minimax/coursecue3_lights_wait-6548b36f7fe2.mp3",
+      "text": "车辆保持停稳，先听完整口令，再操作灯光。",
+      "sha256": "dd6dee744c5850bcfe057821777496dca3419df987256278fe441e98863a8b05",
+      "bytes": 85812,
+      "duration": 5.256,
+      "decoded": true
+    },
+    "coursecue3_lights_low": {
+      "file": "audio/minimax/coursecue3_lights_low-77232b8c0513.mp3",
+      "text": "夜间有路灯且照明良好，打开近光灯。",
+      "sha256": "94319625bbf556d27779c63d1f9ecb21bcc914613671ba7a33f392161626a789",
+      "bytes": 80052,
+      "duration": 4.896,
+      "decoded": true
+    },
+    "coursecue3_lights_high": {
+      "file": "audio/minimax/coursecue3_lights_high-9452028c1524.mp3",
+      "text": "照明不良，确认不影响他人后，使用远光灯。",
+      "sha256": "3ea872243f71d45fafd0bd5a9e444621e60e448cf3e8eaca780fee4a1b138f09",
+      "bytes": 76020,
+      "duration": 4.644,
+      "decoded": true
+    },
+    "coursecue3_lights_meeting": {
+      "file": "audio/minimax/coursecue3_lights_meeting-59cfacc62a2b.mp3",
+      "text": "夜间会车，及时切换近光，避免照射对方。",
+      "sha256": "e1e1475910233c9e9502134a4e4936df359c3be17e9a1c9718058f07630bbbfe",
+      "bytes": 77172,
+      "duration": 4.716,
+      "decoded": true
+    },
+    "coursecue3_lights_flash": {
+      "file": "audio/minimax/coursecue3_lights_flash-394feb8b2a03.mp3",
+      "text": "夜间通过急弯、坡路等，交替使用远近光示意。",
+      "sha256": "b01307a40b50c337804619304ade418a5f20b868b75b41e15590cab477a674c9",
+      "bytes": 80628,
+      "duration": 4.932,
+      "decoded": true
+    },
+    "coursecue3_lights_following": {
+      "file": "audio/minimax/coursecue3_lights_following-02835636fdbb.mp3",
+      "text": "同方向近距离跟车，使用近光灯，避免眩目。",
+      "sha256": "74608a7f356e9573a4728d902bc12daf174928f5f695abb52785658f16f20a4a",
+      "bytes": 88116,
+      "duration": 5.4,
+      "decoded": true
+    },
+    "coursecue3_lights_hazard": {
+      "file": "audio/minimax/coursecue3_lights_hazard-445950884657.mp3",
+      "text": "故障难以移动，开启示廓灯和危险报警闪光灯。",
+      "sha256": "c6b2031a6ca6aecbfe884a85e9e0353111d484964f32a79daf333f705c340d3a",
+      "bytes": 99636,
+      "duration": 6.12,
+      "decoded": true
+    },
+    "coursecue3_lights_off": {
+      "file": "audio/minimax/coursecue3_lights_off-b5bcc5eecead.mp3",
+      "text": "模拟灯光结束，按口令关闭灯光并复位。",
+      "sha256": "5145563db68fb523bf558af94947cbf51411a6dda3146f22e954ebf99e350b8a",
+      "bytes": 82356,
+      "duration": 5.04,
+      "decoded": true
+    },
+    "coursecue3_start_ready": {
+      "file": "audio/minimax/coursecue3_start_ready-dc3f1c85b459.mp3",
+      "text": "先看挡位、制动和仪表，踩稳制动，准备挂一挡。",
+      "sha256": "bff184246deb4f7cca2c105e12fd4741cad4b76e6bb49b9dc728a9159d117c8e",
+      "bytes": 93300,
+      "duration": 5.724,
+      "decoded": true
+    },
+    "coursecue3_start_signal": {
+      "file": "audio/minimax/coursecue3_start_signal-a28535bdb555.mp3",
+      "text": "先打左灯，再看左镜、左后方和前方，确认空间。",
+      "sha256": "e899720a7ba00a8b28a7dd4dce1e9fa8d9f979b7bdf0aaf3a84b62c98160e4f1",
+      "bytes": 92148,
+      "duration": 5.652,
+      "decoded": true
+    },
+    "coursecue3_start_move": {
+      "file": "audio/minimax/coursecue3_start_move-473bcaa15e6e.mp3",
+      "text": "看前方，一挡缓抬离合，建立驱动力后解除驻车。",
+      "sha256": "f7624d165bf0329bbb498e9c47793f37ec7baa37ac6a44c4f04cbf564545ee46",
+      "bytes": 99636,
+      "duration": 6.12,
+      "decoded": true
+    },
+    "coursecue3_start_center": {
+      "file": "audio/minimax/coursecue3_start_center-aa6a19d6ee73.mp3",
+      "text": "进入车道后看前方，车身顺直、前轮回中，再关灯。",
+      "sha256": "b487ebf941a168c5aa2064c51f2c7770e284e737835ae7502c59ef32d45b4324",
+      "bytes": 97332,
+      "duration": 5.976,
+      "decoded": true
+    },
+    "coursecue3_straight_far_reference": {
+      "file": "audio/minimax/coursecue3_straight_far_reference-d6bb155407ad.mp3",
+      "text": "把视线放远，先看道路走向，稳住方向和车速。",
+      "sha256": "a75ae04cae53511eb21056a190bc6d7626cb353b6a0f77a75a558178d3b5a2b6",
+      "bytes": 95028,
+      "duration": 5.832,
+      "decoded": true
+    },
+    "coursecue3_straight_scan": {
+      "file": "audio/minimax/coursecue3_straight_scan-af22ce789621.mp3",
+      "text": "远近交替观察，顺带扫看后视镜，保持跟车距离。",
+      "sha256": "01dc09ac03a704e27b500b403d17648c47ef28cddeeda75526cbf0d47f6603e3",
+      "bytes": 89268,
+      "duration": 5.472,
+      "decoded": true
+    },
+    "coursecue3_straight_correct": {
+      "file": "audio/minimax/coursecue3_straight_correct-512976ca7d7f.mp3",
+      "text": "出现偏移才小幅修方向，偏移趋势减弱就及时回中。",
+      "sha256": "e5d7d7be9cedbedb025f6c62438d5249de27ccd4c6d2ec364a022ea2e9d6d3b5",
+      "bytes": 107124,
+      "duration": 6.588,
+      "decoded": true
+    },
+    "coursecue3_gears_first": {
+      "file": "audio/minimax/coursecue3_gears_first-38edbef4219b.mp3",
+      "text": "视线保持看前方，一挡平稳加速，不低头看挡位。",
+      "sha256": "69433ff37fa9dc0bc23a9aa0b3cbb50a3ebcd5efbf911f8c7aae6ecf7e071046",
+      "bytes": 90996,
+      "duration": 5.58,
+      "decoded": true
+    },
+    "coursecue3_gears_second": {
+      "file": "audio/minimax/coursecue3_gears_second-23c7ff1cc757.mp3",
+      "text": "先松油门，离合踩到底，挂二挡后平顺抬离合。",
+      "sha256": "d86809da8a359eb7f60b71311ec0d6d4fe72edda9718f1b14973ad33fec17523",
+      "bytes": 93300,
+      "duration": 5.724,
+      "decoded": true
+    },
+    "coursecue3_gears_third": {
+      "file": "audio/minimax/coursecue3_gears_third-eb72398f5449.mp3",
+      "text": "路况允许再松油踩离合，换三挡，平顺接合再加速。",
+      "sha256": "05c06f26001c10005079dd3b461db0ed4edd8896620771f7bdf4d40123aacc00",
+      "bytes": 108276,
+      "duration": 6.66,
+      "decoded": true
+    },
+    "coursecue3_gears_down_second": {
+      "file": "audio/minimax/coursecue3_gears_down_second-619d9f85f3b8.mp3",
+      "text": "先看前方减速，再踩离合换二挡，别低头看挡。",
+      "sha256": "81329f75f9b9fd15fd065622bcc68c4768aa0d274bdfb4257ec15e6106a347f3",
+      "bytes": 82356,
+      "duration": 5.04,
+      "decoded": true
+    },
+    "coursecue3_gears_down_first": {
+      "file": "audio/minimax/coursecue3_gears_down_first-650c3ee0a4c4.mp3",
+      "text": "低速路段先减速，踩离合换一挡，避免高挡拖行。",
+      "sha256": "0c3b62979c0a9a5c3a0057347f753b3fa2059d6d249b8571b3dffde0b40d715a",
+      "bytes": 92148,
+      "duration": 5.652,
+      "decoded": true
+    },
+    "coursecue3_lane_change_left_signal": {
+      "file": "audio/minimax/coursecue3_lane_change_left_signal-b5105dd339e1.mp3",
+      "text": "打左灯，看左镜和左后方，再确认前方及目标车道。",
+      "sha256": "f0c458367109c4e1140373adb4fa71d19b978f1a0dbb6e21d7ad7bb4abe9c4a3",
+      "bytes": 99636,
+      "duration": 6.12,
+      "decoded": true
+    },
+    "coursecue3_lane_change_left_move": {
+      "file": "audio/minimax/coursecue3_lane_change_left_move-c1f2a77be432.mp3",
+      "text": "确认左侧安全，小幅向左转向，一次只变一条车道。",
+      "sha256": "40a279699221b565e0ed3e87f4c16bacdde485c0b4632d6535c9f718bff5e925",
+      "bytes": 99060,
+      "duration": 6.084,
+      "decoded": true
+    },
+    "coursecue3_lane_change_left_countersteer": {
+      "file": "audio/minimax/coursecue3_lane_change_left_countersteer-38782dc21f95.mp3",
+      "text": "看前方和车道位置，向右回轮修直，逐步减小斜角。",
+      "sha256": "2efcab7373ae60bf0cbc032ff7d45c206042d9c49f7e53f245eac62fe62ddad9",
+      "bytes": 100212,
+      "duration": 6.156,
+      "decoded": true
+    },
+    "coursecue3_lane_change_left_center": {
+      "file": "audio/minimax/coursecue3_lane_change_left_center-543d8231a4e1.mp3",
+      "text": "车身快与车道平行，及时回中，顺直后关闭左灯。",
+      "sha256": "f92ab89a4f7ea635f3cdca7694d0fb3115058ebd106d416632efd723137685db",
+      "bytes": 95028,
+      "duration": 5.832,
+      "decoded": true
+    },
+    "coursecue3_lane_change_right_signal": {
+      "file": "audio/minimax/coursecue3_lane_change_right_signal-9564d7f8ffe8.mp3",
+      "text": "先打右灯，看右镜和右后方，安全后再准备返回。",
+      "sha256": "b28f55753ebdf44d63b2ce168e7a0d6cc8d5b239a66406d640837fe3ec0aafc8",
+      "bytes": 100212,
+      "duration": 6.156,
+      "decoded": true
+    },
+    "coursecue3_lane_change_right_move": {
+      "file": "audio/minimax/coursecue3_lane_change_right_move-348c30c51de0.mp3",
+      "text": "再次确认右侧安全，小幅向右转向，平顺返回车道。",
+      "sha256": "c74beda166b78e302e96c587063c1c86f5333b3c2035ee7c8606ced298299b2c",
+      "bytes": 94452,
+      "duration": 5.796,
+      "decoded": true
+    },
+    "coursecue3_lane_change_right_countersteer": {
+      "file": "audio/minimax/coursecue3_lane_change_right_countersteer-8c9d48296f35.mp3",
+      "text": "看前方和车道位置，向左回轮修直，别继续向右偏。",
+      "sha256": "d39a14d9d918edbb4a200953a341a8de0c73ae2b765d0f6c3d274f495fb8f108",
+      "bytes": 93876,
+      "duration": 5.76,
+      "decoded": true
+    },
+    "coursecue3_lane_change_right_center": {
+      "file": "audio/minimax/coursecue3_lane_change_right_center-06181b317eaf.mp3",
+      "text": "车身快与车道平行，前轮及时回中，顺直后关右灯。",
+      "sha256": "41638698694076fcbf19cdbc3db60c1db00997623a99d655314aa1fabdd75d19",
+      "bytes": 104820,
+      "duration": 6.444,
+      "decoded": true
+    },
+    "coursecue3_intersection_approach": {
+      "file": "audio/minimax/coursecue3_intersection_approach-23efe9f2c549.mp3",
+      "text": "提前看信号和路口两侧，松油减速，准备制动。",
+      "sha256": "30822c77b984bea7aa74cbe8195c6ce450cbdfecf56b5d68dcdf8a52cedcb494",
+      "bytes": 94452,
+      "duration": 5.796,
+      "decoded": true
+    },
+    "coursecue3_intersection_check": {
+      "file": "audio/minimax/coursecue3_intersection_check-717cc7109ae7.mp3",
+      "text": "看行人、横向车和出口，允许通行且出口畅通再进。",
+      "sha256": "e6b564e4289dc6866cc88984d4662aa196bf49e2137c89893bb9bbc6ff3732b4",
+      "bytes": 105972,
+      "duration": 6.516,
+      "decoded": true
+    },
+    "coursecue3_intersection_cross": {
+      "file": "audio/minimax/coursecue3_intersection_cross-b32584cf3e6a.mp3",
+      "text": "看行驶方向，持续扫看两侧冲突，平稳通过不抢行。",
+      "sha256": "47faef9b895551e8d33fd6d1f8812855eb0484843dae855cd44350379586921a",
+      "bytes": 100212,
+      "duration": 6.156,
+      "decoded": true
+    },
+    "coursecue3_intersection_leave": {
+      "file": "audio/minimax/coursecue3_intersection_leave-b9c7b904c423.mp3",
+      "text": "驶离路口后再看前方车流，按路况平顺恢复车速。",
+      "sha256": "2f8178cbe912f64a693cfaaa5466203245363670973f0f0eda04057fd2ca8fa6",
+      "bytes": 97908,
+      "duration": 6.012,
+      "decoded": true
+    },
+    "coursecue3_left_turn_signal": {
+      "file": "audio/minimax/coursecue3_left_turn_signal-4f1572f15492.mp3",
+      "text": "打左灯并减速，先看信号、车道和对向来车。",
+      "sha256": "e206f158c8f3c6fd8fb27c075a53a15b36c5be7a587f33ef2069b519f08af78a",
+      "bytes": 86388,
+      "duration": 5.292,
+      "decoded": true
+    },
+    "coursecue3_left_turn_yield": {
+      "file": "audio/minimax/coursecue3_left_turn_yield-c49206e5b8a4.mp3",
+      "text": "再看行人、对向来车和出口，冲突解除后再转。",
+      "sha256": "6bdff8878e5f1f0f452ec7cac7ce0e85eb0edb97cbc42e8e98b4b5ef90e1cbe5",
+      "bytes": 81780,
+      "duration": 5.004,
+      "decoded": true
+    },
+    "coursecue3_left_turn_turn": {
+      "file": "audio/minimax/coursecue3_left_turn_turn-a80267aee43c.mp3",
+      "text": "看正确出口，低速向左转向，别切入对向车道。",
+      "sha256": "101602692979b6a8ce5c1dd5904230386b63b5e2434b6f9ff790d903c1680f86",
+      "bytes": 89268,
+      "duration": 5.472,
+      "decoded": true
+    },
+    "coursecue3_left_turn_center": {
+      "file": "audio/minimax/coursecue3_left_turn_center-c5e9e08b7df6.mp3",
+      "text": "车身快顺出口时回轮，顺直后关灯，继续看前方。",
+      "sha256": "c56bef98ec01fc797d7aa6858b18ecdb37a941ed771d2e9cc310b445351bfcbc",
+      "bytes": 94452,
+      "duration": 5.796,
+      "decoded": true
+    },
+    "coursecue3_right_turn_signal": {
+      "file": "audio/minimax/coursecue3_right_turn_signal-7f9e29354b8a.mp3",
+      "text": "打右灯并减速，先看信号和右侧交通。",
+      "sha256": "d9f2108a374fcff034414653914f354bda8d330250f15406bdae11d033ab4031",
+      "bytes": 80628,
+      "duration": 4.932,
+      "decoded": true
+    },
+    "coursecue3_right_turn_blind_spot": {
+      "file": "audio/minimax/coursecue3_right_turn_blind_spot-9ffe66757902.mp3",
+      "text": "看右镜，再核对右后方盲区，有行人和骑行者先让。",
+      "sha256": "6d50178f14ab831fbad2fe5f76e27d2e4184fda3d582a4d459964b6f8f6760f0",
+      "bytes": 93300,
+      "duration": 5.724,
+      "decoded": true
+    },
+    "coursecue3_right_turn_turn": {
+      "file": "audio/minimax/coursecue3_right_turn_turn-e5d1a4a27631.mp3",
+      "text": "确认安全，低速向右转，兼顾右后部与出口空间。",
+      "sha256": "5b63ff517fc864b25f22293e5689cf508443c6ec14c5c738f15a4b5da0b88495",
+      "bytes": 90996,
+      "duration": 5.58,
+      "decoded": true
+    },
+    "coursecue3_right_turn_center": {
+      "file": "audio/minimax/coursecue3_right_turn_center-9408047a0522.mp3",
+      "text": "看出口方向，车身快顺直时回轮，顺直后关闭右灯。",
+      "sha256": "d7640dda893283a9d2c7f9bb35cf9fc026ed27e37f139a3c00b1f384d44e47b6",
+      "bytes": 100788,
+      "duration": 6.192,
+      "decoded": true
+    },
+    "coursecue3_crosswalk_approach": {
+      "file": "audio/minimax/coursecue3_crosswalk_approach-91e3c237c6ac.mp3",
+      "text": "先看斑马线两侧和遮挡处，松油减速，准备制动。",
+      "sha256": "e2adc773503f6e70ce5d3b1d4da21a2f7a7351d1e697f6135c6779c5db23c9e7",
+      "bytes": 89844,
+      "duration": 5.508,
+      "decoded": true
+    },
+    "coursecue3_crosswalk_stop": {
+      "file": "audio/minimax/coursecue3_crosswalk_stop-91fd0c51ca94.mp3",
+      "text": "有行人通过，在停止线前平稳制动，停稳让行。",
+      "sha256": "410fb9741c924294bb7faab4cd72e948e90ee2c4a4cd955a37d94f4228206aad",
+      "bytes": 85236,
+      "duration": 5.22,
+      "decoded": true
+    },
+    "coursecue3_crosswalk_wait": {
+      "file": "audio/minimax/coursecue3_crosswalk_wait-2fe99dd4bf26.mp3",
+      "text": "保持停稳，继续看另一侧和遮挡处，不催促不绕行。",
+      "sha256": "7ff08b73af8b30e0e2f56665fcded73b6d6214700de09f687e2773d0912a9782",
+      "bytes": 105396,
+      "duration": 6.48,
+      "decoded": true
+    },
+    "coursecue3_crosswalk_restart": {
+      "file": "audio/minimax/coursecue3_crosswalk_restart-80571d725ab5.mp3",
+      "text": "确认行人安全通过、前方畅通，一挡平稳重新起步。",
+      "sha256": "2bc43b41ffb6a2007a7715079ec9690c990d3660de4a12eb229b810d2b07c690",
+      "bytes": 95028,
+      "duration": 5.832,
+      "decoded": true
+    },
+    "coursecue3_school_approach": {
+      "file": "audio/minimax/coursecue3_school_approach-62c5328c8c8a.mp3",
+      "text": "发现学校标志，提前松油减速，观察路侧环境。",
+      "sha256": "33472f97452248ba03721913149a7e29319266be7df65b5ccf2e8d136ed1fe47",
+      "bytes": 89844,
+      "duration": 5.508,
+      "decoded": true
+    },
+    "coursecue3_school_slow": {
+      "file": "audio/minimax/coursecue3_school_slow-d041d99e5bb8.mp3",
+      "text": "看儿童、接送车辆和遮挡处，保持低速，准备停住。",
+      "sha256": "421fcc9635ad2157f328610c7beb801a159a76abf4e2ebca0578c62988b82acb",
+      "bytes": 95028,
+      "duration": 5.832,
+      "decoded": true
+    },
+    "coursecue3_school_scan": {
+      "file": "audio/minimax/coursecue3_school_scan-63f07585a08e.mp3",
+      "text": "持续看两侧和前方，有人进入通行路径就停车让行。",
+      "sha256": "03837540f30d7ddf0bb5a207453cdf821ed76d8f43db4796dfed684f4fe3a953",
+      "bytes": 97332,
+      "duration": 5.976,
+      "decoded": true
+    },
+    "coursecue3_school_leave": {
+      "file": "audio/minimax/coursecue3_school_leave-a61a95a26aad.mp3",
+      "text": "确认驶离学校区域且道路安全，再逐步恢复车速。",
+      "sha256": "1eba0d3dc6b6fbc151a5ed0fbf55bc2d672a48af8bda1325550286170b01e0e6",
+      "bytes": 84660,
+      "duration": 5.184,
+      "decoded": true
+    },
+    "coursecue3_bus_approach": {
+      "file": "audio/minimax/coursecue3_bus_approach-abf09b020d2f.mp3",
+      "text": "看到公交站，提前减速，看站台、公交车和乘客。",
+      "sha256": "90336eae5dfeedd80f8e38847b0a7f7d160da6bd071b2a993409df02f1f1d90f",
+      "bytes": 95028,
+      "duration": 5.832,
+      "decoded": true
+    },
+    "coursecue3_bus_occlusion": {
+      "file": "audio/minimax/coursecue3_bus_occlusion-67e093f2fd0b.mp3",
+      "text": "重点看公交车前后遮挡，留出空间，随时准备制动。",
+      "sha256": "2b6f73dc51aca03aa53f11288b2979749f1faa098f420aeeac7e8c79a6c3928b",
+      "bytes": 90420,
+      "duration": 5.544,
+      "decoded": true
+    },
+    "coursecue3_bus_pass": {
+      "file": "audio/minimax/coursecue3_bus_pass-b1f22cea2a4a.mp3",
+      "text": "保持低速，持续看乘客和车头盲区，不抢行。",
+      "sha256": "bab3747c9a4d7fa0e0f12c3e6f1c23cfcddbfa4d6cf76efedeb49e1e2cec20cd",
+      "bytes": 88692,
+      "duration": 5.436,
+      "decoded": true
+    },
+    "coursecue3_bus_leave": {
+      "file": "audio/minimax/coursecue3_bus_leave-16cdaa68dcd3.mp3",
+      "text": "确认驶离站点、前方畅通，再平顺恢复车速。",
+      "sha256": "576ba1c2325757a569030a736af49e05f7b54ff8afc9a0a3eb36ea59a1b0770f",
+      "bytes": 94452,
+      "duration": 5.796,
+      "decoded": true
+    },
+    "coursecue3_meeting_approach": {
+      "file": "audio/minimax/coursecue3_meeting_approach-b0c9e113b89e.mp3",
+      "text": "看对向车和道路宽度，提前减速，保持本车道。",
+      "sha256": "1770c27b9787026cd46d9d637fc5c4b25d7a411699b4da7b006031e705af364c",
+      "bytes": 89844,
+      "duration": 5.508,
+      "decoded": true
+    },
+    "coursecue3_meeting_space": {
+      "file": "audio/minimax/coursecue3_meeting_space-dd10783c6b1e.mp3",
+      "text": "看本侧路边和横向间距，稳住方向，不抢道。",
+      "sha256": "0da2e9ae4647acccd6cc84633f9442e64ad76e3dd90524f1b62fc71503d0afac",
+      "bytes": 90996,
+      "duration": 5.58,
+      "decoded": true
+    },
+    "coursecue3_meeting_pass": {
+      "file": "audio/minimax/coursecue3_meeting_pass-fea1dd7a272a.mp3",
+      "text": "会车时继续看前方和路侧，平稳通过，不猛打方向。",
+      "sha256": "9974cdd8f4a475a72a5bf196ad985995143eec83fc1b7284655f97e51035a621",
+      "bytes": 105396,
+      "duration": 6.48,
+      "decoded": true
+    },
+    "coursecue3_overtake_left_signal": {
+      "file": "audio/minimax/coursecue3_overtake_left_signal-3eff4248bae7.mp3",
+      "text": "确认允许超车，打左灯，看左镜、左后方和前方。",
+      "sha256": "cbc52431ff6d58ea08aaffbc70def9a067aeb14671fced5f9647dc39063aec2f",
+      "bytes": 109428,
+      "duration": 6.732,
+      "decoded": true
+    },
+    "coursecue3_overtake_left_move": {
+      "file": "audio/minimax/coursecue3_overtake_left_move-625ba77a9291.mp3",
+      "text": "确认目标车道安全，小幅向左变道，留足横向空间。",
+      "sha256": "16b436133e0455a949539f2393dfc13eaff322424300c31c522cc825bd498810",
+      "bytes": 102516,
+      "duration": 6.3,
+      "decoded": true
+    },
+    "coursecue3_overtake_left_countersteer": {
+      "file": "audio/minimax/coursecue3_overtake_left_countersteer-f9a374059db5.mp3",
+      "text": "看前方和车道位置，向右回轮修直，保持横向空间。",
+      "sha256": "f4388db24c65368ff90cf0c186336b37ba92c001201fffff992e6379f4f9b72e",
+      "bytes": 93876,
+      "duration": 5.76,
+      "decoded": true
+    },
+    "coursecue3_overtake_pass": {
+      "file": "audio/minimax/coursecue3_overtake_pass-304b3b6b4a64.mp3",
+      "text": "进入左侧车道后回中，看右镜拉开距离，别急着回切。",
+      "sha256": "968e2ad09ff421566746dfc891d1d3fb8b07bea64fa6a322e08ca9badd54edc1",
+      "bytes": 91572,
+      "duration": 5.616,
+      "decoded": true
+    },
+    "coursecue3_overtake_right_signal": {
+      "file": "audio/minimax/coursecue3_overtake_right_signal-d6157e6af9df.mp3",
+      "text": "先打右灯，看右镜和右后方，距离足够再准备返回。",
+      "sha256": "54a97d033c0ef4cf329d3c48602ae460c29228a132ffc9e638d0227c67384acb",
+      "bytes": 111732,
+      "duration": 6.876,
+      "decoded": true
+    },
+    "coursecue3_overtake_right_move": {
+      "file": "audio/minimax/coursecue3_overtake_right_move-e08c43d97d23.mp3",
+      "text": "确认右侧和被超车辆间距足够，再平顺向右返回。",
+      "sha256": "5032403334c8e86015a623bb4262b2548854602c68ab38ee7d0acdc823ca72e8",
+      "bytes": 97332,
+      "duration": 5.976,
+      "decoded": true
+    },
+    "coursecue3_overtake_right_countersteer": {
+      "file": "audio/minimax/coursecue3_overtake_right_countersteer-7dcbd227a31b.mp3",
+      "text": "看前方车道位置，向左回轮修直，别继续向右偏。",
+      "sha256": "14b623eb35ce8554f2059e47c12f28bc38d5b31385b0ecd9ef75231b5b553dd8",
+      "bytes": 90996,
+      "duration": 5.58,
+      "decoded": true
+    },
+    "coursecue3_overtake_center": {
+      "file": "audio/minimax/coursecue3_overtake_center-3c2fd20cc73d.mp3",
+      "text": "回到原车道后及时回中，车身顺直，再关闭右灯。",
+      "sha256": "cd3a7d09a546b46bf592d0a3a403e434e47726711d6532ea247872320c6ce1a1",
+      "bytes": 90996,
+      "duration": 5.58,
+      "decoded": true
+    },
+    "coursecue3_uturn_signal": {
+      "file": "audio/minimax/coursecue3_uturn_signal-704be4deac3f.mp3",
+      "text": "确认此处允许掉头，打左灯减速，观察对向交通。",
+      "sha256": "a3dc5e48fdbef73dd7d55ef9ec0ab288dcc6bd73cb9683389ecea72af356f458",
+      "bytes": 97332,
+      "duration": 5.976,
+      "decoded": true
+    },
+    "coursecue3_uturn_check": {
+      "file": "audio/minimax/coursecue3_uturn_check-50ad12ee96fb.mp3",
+      "text": "再看行人、骑行者和对向车，确认安全再进入开口。",
+      "sha256": "30cf108e59bdee6b0ccc41592c15c88daee0bdc53e7723f086e022cd2e90cb77",
+      "bytes": 93300,
+      "duration": 5.724,
+      "decoded": true
+    },
+    "coursecue3_uturn_turn": {
+      "file": "audio/minimax/coursecue3_uturn_turn-0b0c2df951d6.mp3",
+      "text": "低速向左转，兼顾车头外摆和后部空间，不抢行。",
+      "sha256": "98fdccc36dee8d4332d0abb12af5755e3657f41006c3cba7d07a94f8b1f3bacb",
+      "bytes": 96756,
+      "duration": 5.94,
+      "decoded": true
+    },
+    "coursecue3_uturn_center": {
+      "file": "audio/minimax/coursecue3_uturn_center-c39aa8ddf661.mp3",
+      "text": "看正确返回车道，逐步回轮，车身顺直后关闭左灯。",
+      "sha256": "e419a4dabc02c316fb5d3b2380d4f952e6bbd99eacf9b1a0847e5592386566d0",
+      "bytes": 105396,
+      "duration": 6.48,
+      "decoded": true
+    },
+    "coursecue3_night_high": {
+      "file": "audio/minimax/coursecue3_night_high-fe651d3c6b0d.mp3",
+      "text": "照明不良，先确认不会眩目，再按需要使用远光。",
+      "sha256": "ece22dd3af895a66c48c5b4173fa447143fbb0a5a1d2208c625778d55b23064c",
+      "bytes": 96756,
+      "duration": 5.94,
+      "decoded": true
+    },
+    "coursecue3_night_low": {
+      "file": "audio/minimax/coursecue3_night_low-0ed6dbd35d28.mp3",
+      "text": "发现对向车，提前切到近光，视线兼顾路侧。",
+      "sha256": "a6d961165f9cab11258fc299e663c9db35b3eb73baf7266a4d92ce78b084c7af",
+      "bytes": 88116,
+      "duration": 5.4,
+      "decoded": true
+    },
+    "coursecue3_night_flash": {
+      "file": "audio/minimax/coursecue3_night_flash-039285f4290d.mp3",
+      "text": "前方路段需要示意，先减速观察，再交替远近光。",
+      "sha256": "2b6e51914882570a58e0f159ed71a98e25164c5a22c158422069d3e7cc021bfa",
+      "bytes": 95028,
+      "duration": 5.832,
+      "decoded": true
+    },
+    "coursecue3_night_continue": {
+      "file": "audio/minimax/coursecue3_night_continue-e41102070935.mp3",
+      "text": "切回近光，在看得清且能停住的距离内平稳行驶。",
+      "sha256": "fec561f652321f587d042a39b33197fd0a63a301a8835a5444e05a02c6f3ddae",
+      "bytes": 95604,
+      "duration": 5.868,
+      "decoded": true
+    },
+    "coursecue3_pull_over_choose": {
+      "file": "audio/minimax/coursecue3_pull_over_choose-09a04b2081d9.mp3",
+      "text": "先看右镜、右后方和路边，选择允许停车的位置。",
+      "sha256": "b75f2b144d6053d46cecae0ac8197861e1ac89dbd1b9c1c4d1e74bfdfde68dc9",
+      "bytes": 101364,
+      "duration": 6.228,
+      "decoded": true
+    },
+    "coursecue3_pull_over_signal": {
+      "file": "audio/minimax/coursecue3_pull_over_signal-0ad797eceab5.mp3",
+      "text": "打右灯，减速观察行人和骑行者，确认安全再靠边。",
+      "sha256": "2f9873ef692b4acdb0ef65c6978ba0e7e1eca1fe23eff19d5e033160406ef4a9",
+      "bytes": 99060,
+      "duration": 6.084,
+      "decoded": true
+    },
+    "coursecue3_pull_over_stop": {
+      "file": "audio/minimax/coursecue3_pull_over_stop-3bdf6c176428.mp3",
+      "text": "看路缘和车身位置，踩离合与制动，平稳停住。",
+      "sha256": "ba634048063405b73bbe283531d1fa53473aa58cbc8bbbfb9b803b01fe674457",
+      "bytes": 92148,
+      "duration": 5.652,
+      "decoded": true
+    },
+    "coursecue3_pull_over_secure": {
+      "file": "audio/minimax/coursecue3_pull_over_secure-b17f6b1b4756.mp3",
+      "text": "车辆停稳，拉起驻车制动，挂空挡，关闭转向灯。",
+      "sha256": "da95e5b960036bc54a59a1cfe8744fa145c8216dfa720b1dd0480165df510e47",
+      "bytes": 96756,
+      "duration": 5.94,
+      "decoded": true
+    },
+    "coursecue3_pull_over_leave": {
+      "file": "audio/minimax/coursecue3_pull_over_leave-91f69ecb35c4.mp3",
+      "text": "先看左镜和左后方，确认安全，再解安全带开门。",
+      "sha256": "08a82bb4ce56fb5677c9b3cdd898653c84b1da92aed3856ca98acd05f3fa483d",
+      "bytes": 95028,
+      "duration": 5.832,
+      "decoded": true
+    },
+    "coursecue2_side_parking_entry_center": {
+      "file": "audio/minimax/coursecue2_side_parking_entry_center-f87650652c4c.mp3",
+      "text": "车身快与库边平行，向右回轮至前轮回中，继续慢倒。",
+      "sha256": "ad20829e02b723b70f7c2af1b5a3212f5e0ae934c3103b23554ebbe39fffa2ca",
+      "bytes": 100212,
+      "duration": 6.156,
+      "decoded": true
+    },
+    "coursecue2_side_parking_exit_countersteer": {
+      "file": "audio/minimax/coursecue2_side_parking_exit_countersteer-4aa77c5866b7.mp3",
+      "text": "看车头和两侧余量，向右回轮修直，逐步对准道路。",
+      "sha256": "42747169f89ef210c3a7bf6c9fd9fb131c75247185f95bab6fbf63c2dbc4de21",
+      "bytes": 101364,
+      "duration": 6.228,
+      "decoded": true
+    },
+    "coursecue2_side_parking_exit_center": {
+      "file": "audio/minimax/coursecue2_side_parking_exit_center-c8a4bcae2be3.mp3",
+      "text": "车身快与道路平行，及时回中，顺直后关闭左灯。",
+      "sha256": "f2321e3229893239affb2535c752a666a68a84de4dca4f6c300f0e8bae572358",
+      "bytes": 93876,
+      "duration": 5.76,
+      "decoded": true
+    },
+    "coursecue3_pull_over_right_move": {
+      "file": "audio/minimax/coursecue3_pull_over_right_move-af0cdd11fd51.mp3",
+      "text": "看右镜与路缘，确认右后方安全后，小幅向右靠边。",
+      "sha256": "73750918d67f8e83fbc27a250a35cfee9cd6013501c0c240cd8b409e7e3a01be",
+      "bytes": 93300,
+      "duration": 5.724,
+      "decoded": true
+    },
+    "coursecue3_pull_over_countersteer": {
+      "file": "audio/minimax/coursecue3_pull_over_countersteer-16f6c2d2ecea.mp3",
+      "text": "看路缘与车身位置，向左回轮修直，减小车身斜角。",
+      "sha256": "48311bbd1451f86fe8220a1934ed639ced59dd3c19e3f5d1fef78eb3a6d8fab0",
+      "bytes": 99636,
+      "duration": 6.12,
+      "decoded": true
+    },
+    "coursecue3_pull_over_center": {
+      "file": "audio/minimax/coursecue3_pull_over_center-38e02c927cea.mp3",
+      "text": "车身快与路缘平行，及时回中，保持余量准备停稳。",
+      "sha256": "e4a8e4e2e97cd12f743eac89156ab15b2a6961a3f3fc62404b5dc8ac07f8fa82",
+      "bytes": 101364,
+      "duration": 6.228,
+      "decoded": true
+    }
+  }
+}

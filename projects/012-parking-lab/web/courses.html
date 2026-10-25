@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="theme-color" content="#f4f6f1"/><title>C1 科二 · 科三完整演示｜入库之间</title><meta name="description" content="C1科目二五项、科目三道路驾驶各项目与模拟灯光的3D教学串联，支持真实MiniMax讲解、驾驶位、暂停、逐项跳转。"/>  <script type="module" crossorigin src="./assets/courses-CSEGyYOh.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-P2Xu9kJm.js">
+  <link rel="modulepreload" crossorigin href="./assets/driver-view-DHM2OUpk.js">
+  <link rel="stylesheet" crossorigin href="./assets/driver-view-BiJ2tKHW.css">
+  <link rel="stylesheet" crossorigin href="./assets/courses-DwRdB_FQ.css">
+</head>
+<body>
+  <header class="course-header"><a class="course-brand" href="./">入库之间 <small>DRIVING CLASS</small></a><span>C1 手动挡 · 全项目教学演示</span><nav class="course-header-links" aria-label="项目导航"><a href="./progress.html" target="_blank" rel="noopener" aria-label="项目进展与全部体验入口，在新标签页打开">项目进展 ↗</a><a href="./">返回倒库专项</a></nav></header>
+  <main class="course-app">
+    <section class="course-intro"><div><p class="eyebrow">从开始准备，到完成最后一项</p><h1 id="course-title">科目二 · 完整演示</h1><p id="course-summary"></p></div><div class="subject-switch" role="group" aria-label="选择完整演示科目"><button data-subject="subject2" aria-pressed="true">科目二 · 五项</button><button data-subject="subject3" aria-pressed="false">科目三 · 道路与灯光</button><button data-subject="all" aria-pressed="false">科二 + 科三 · 全量</button></div></section>
+    <section class="course-start"><div><strong id="course-count"></strong><span id="course-speech" role="status" aria-live="polite">正在检查 MiniMax 讲解</span></div><button id="course-start-all" class="primary">从头看完整科二</button><p>每项先用全景讲路线和完成要求，再进入驾驶位：看哪里、看到什么变化、怎样操作。可暂停、逐步重看，随时接手练习。</p></section>
+    <div class="course-layout">
+      <button id="directory-backdrop" class="directory-backdrop" aria-label="关闭项目目录" hidden></button><nav class="chapter-nav" id="course-directory" aria-label="全部演示项目"><div class="chapter-nav-title"><div><small>COURSE OUTLINE</small><strong>全项目目录 <span id="chapter-count"></span></strong></div><button id="directory-close" type="button">关闭</button></div><ol id="chapter-list"></ol></nav>
+      <section class="course-player" aria-label="完整演示播放器">
+        <div class="chapter-heading"><div class="chapter-heading-copy"><span id="chapter-position" class="eyebrow"></span><h2 id="chapter-title" tabindex="-1"></h2></div><div class="chapter-heading-tools"><button id="course-directory-toggle" type="button" aria-controls="course-directory" aria-expanded="false">项目目录 <span id="directory-current"></span></button><span id="playback-status" role="status" aria-live="polite">准备观看</span></div></div>
+        <div class="course-mode-switch" role="group" aria-label="选择示范或自己驾驶"><button id="course-mode-demo" aria-pressed="true">看示范</button><button id="course-mode-drive" aria-pressed="false">自己驾驶</button><button id="course-complete-entry" class="complete-demo-button" type="button">全量演示 · 科二 + 科三 22 章</button></div>
+        <section id="manual-panel" class="manual-panel" aria-label="自己驾驶基础操控" hidden>
+          <div id="practice-live" class="practice-live">
+            <div class="practice-heading"><strong id="practice-title">本章基础练习</strong><span id="practice-progress-text"></span></div>
+            <p id="practice-objective"></p><div class="practice-current"><span>接下来</span><strong id="practice-current-task"></strong><button id="practice-observe" type="button" hidden>按提示观察</button></div>
+            <p id="practice-feedback" class="practice-feedback" role="status" aria-live="polite" hidden></p>
+            <progress id="practice-progress" max="1" value="0" aria-label="本章练习目标完成进度"></progress>
+            <details class="practice-goals"><summary>查看练习目标与适用范围</summary><ul id="practice-checks"></ul><p id="practice-scope"></p><p>分开检查：镜壳/支架与实体擦碰、车身越界、轮胎接触对向实线。镜子伸出车身不等于轮胎压线，低路沿也不等于碰到镜壳。</p><p id="practice-limitations"></p></details>
+            <div class="practice-actions"><button id="practice-restart" type="button">从本项起点练</button><button id="practice-finish" type="button">结束并复盘</button><button id="practice-demo" type="button">看本项示范</button></div>
+          </div>
+          <section id="practice-review" class="practice-review" aria-label="本章练后复盘" hidden>
+            <div class="practice-heading"><strong id="practice-review-title" tabindex="-1">本次练习复盘</strong><span id="practice-review-result"></span></div><p id="practice-review-summary"></p>
+            <section id="practice-review-coach" class="practice-review-coach" aria-label="这次怎么改"><div><span id="practice-review-focus-label">先改哪项</span><strong id="practice-review-focus"></strong></div><div><span>怎么做</span><p id="practice-review-action"></p></div><div><span>从哪里继续</span><p id="practice-review-retry-point"></p></div></section>
+            <div id="practice-review-metrics" class="practice-review-metrics"></div><ol id="practice-review-errors" class="practice-review-errors"></ol>
+            <div class="practice-actions"><button id="practice-resume" class="primary" type="button" hidden>继续完成目标</button><button id="practice-retry" class="primary" type="button">从出错前重练</button><button id="practice-review-restart" type="button">从本项起点重练</button><button id="practice-review-demo" type="button">对照本项示范</button></div>
+            <details class="practice-review-detail" open><summary>对照本次与示范轨迹、查看目标检查</summary><canvas id="practice-review-map" width="780" height="300" aria-label="本次轨迹与模型示范轨迹对比">蓝色为本次轨迹，金色为模型示范。</canvas><p id="practice-review-caption"></p><ul id="practice-review-checks"></ul><p id="practice-review-limitations"></p></details>
+          </section>
+          <p class="manual-limit">基础控制 · 挡位和离合自动配合；风险提醒与目标检查不等于实考评分。</p><p id="manual-status" role="status"></p>
+          <details id="manual-controls" class="manual-help"><summary>驾驶按键、灯光与驻车</summary>
+          <div class="manual-drive-pad" aria-label="按住按钮驾驶"><button data-drive-input="forward" tabindex="-1" aria-label="按住前进，W键">W 前进</button><button data-drive-input="reverse" tabindex="-1" aria-label="按住倒车，S键">S 倒车</button><button data-drive-input="left" tabindex="-1" aria-label="按住左转，A键">A 左转</button><button data-drive-input="right" tabindex="-1" aria-label="按住右转，D键">D 右转</button><button data-drive-input="brake" tabindex="-1" aria-label="按住刹车，空格键">空格 刹车</button><button id="manual-center">X 回正</button></div>
+          <div class="manual-light-controls" role="group" aria-label="自己控制灯光"><button id="manual-left-signal" aria-pressed="false">左灯 J</button><button id="manual-right-signal" aria-pressed="false">右灯 L</button><button id="manual-low-light" data-manual-light="low" aria-pressed="false">近光</button><button id="manual-high-light" data-manual-light="high" aria-pressed="false">远光</button><button data-manual-light="flash" aria-pressed="false">远近交替</button><button data-manual-light="parking" aria-pressed="false">示廓灯</button><button data-manual-light="hazard" aria-pressed="false">示廓＋双闪</button><button data-manual-light="fog" aria-pressed="false">雾灯</button><button id="manual-lights-off" data-manual-light="off" aria-pressed="true">关闭灯光</button><button id="manual-parking-brake" aria-pressed="false">驻车 H</button></div><small>松开方向键保持转角，X 回正，空格刹车，P 暂停。1 / 3 看前方左 / 右侧路况，C 看正前方；Q / E 看外镜，M 看内镜，Z / B 看左右后方。驻车制动请停稳后操作；回看示范后可还原刚才的车辆、练习与观察状态。</small></details>
+        </section>
+        <div id="course-risk-alert" class="course-risk-alert" role="alert" hidden></div>
+        <div class="playback-controls"><button id="course-prev" aria-label="上一项演示">上一项</button><button id="course-play" class="primary">播放本项</button><button id="course-next" aria-label="下一项演示">下一项</button><button id="course-skip-speech" hidden>直接看动作</button><button id="course-return-practice" hidden>回到刚才练习</button><button id="course-takeover-new" hidden title="结束保留的练习，从当前示范位置开始新练习">从当前示范另开练习</button><button id="course-replay">重看本项</button></div>
+        <ol class="lesson-flow" aria-label="本章学习顺序"><li id="lesson-stage-overview">1 全景认路线与要求</li><li id="lesson-stage-steps">2 车内看变化与操作</li><li id="lesson-stage-practice">3 自己驾驶与复盘</li></ol>
+        <section id="chapter-briefing" class="chapter-briefing demo-only" aria-label="全景导览与完成要求" hidden>
+          <div class="briefing-heading"><div><span>先理解这项要做什么</span><h3 id="briefing-goal"></h3></div><button id="course-enter-steps" type="button">直接进入车内分步</button></div>
+          <dl class="briefing-grid"><div><dt>完整动作路线</dt><dd id="briefing-route"></dd></div><div><dt>做到什么才算完成</dt><dd id="briefing-standard"></dd></div><div><dt>坐进车里重点看</dt><dd id="briefing-watch"></dd></div></dl>
+          <p class="briefing-legend">蓝色实线：前进　金色虚线：倒车　箭头：行驶方向。路线只作教学对照，车内镜面不显示辅助线。</p>
+        </section>
+        <div class="operation-toolbar demo-only" aria-label="逐步操作示范"><div><span id="operation-step"></span><strong id="operation-title"></strong><small id="operation-state"></small></div><div class="operation-step-actions"><button id="operation-prev" aria-label="上一个操作步骤">上一步</button><button id="operation-replay">重看这步</button><button id="operation-next" aria-label="下一个操作步骤">下一步</button></div><p id="operation-instruction" class="sr-only"></p></div>
+        <div class="auto-observe-toolbar demo-only"><label><input id="course-auto-observe" type="checkbox" checked/>自动跟随观察</label><span id="course-auto-observe-state" role="status" aria-live="polite"></span><button id="course-auto-observe-resume" type="button" hidden>恢复自动观察</button></div>
+        <div class="current-cue demo-only" id="step-lesson-guide"><div><span id="cue-look-label">当前镜头看哪里</span><strong id="cue-look"></strong><p><b id="cue-see-label">本步判断：</b><span id="cue-see"></span></p></div><div><span id="cue-action-label">怎样操作</span><strong id="cue-action"></strong><p><b>完成条件：</b><span id="cue-complete"></span></p></div><details class="lesson-caution"><summary>本步观察与注意</summary><p id="cue-step-watch"></p><p id="cue-caution"></p></details></div>
+        <div id="course-reference-help" class="course-reference-help" hidden><p id="course-reference-status" class="sr-only" role="status"></p><div><button id="course-reference-detail" type="button">放大当前镜面 · 视野不变</button><button id="course-reference-fit" type="button">按眼位推荐停车镜位</button><button id="course-reference-overview" type="button">全景对照本步</button></div></div>
+        <div id="course-scene" class="course-scene" tabindex="0" aria-label="驾驶区域，W前进、S倒车、A和D转向、空格刹车、X回正、P暂停">
+          <div id="scene-loading">正在准备 3D 教学场景…</div>
+          <div class="scene-views" role="group" aria-label="演示视角"><button data-course-view="driver" aria-pressed="true">驾驶位</button><button data-course-view="controls" id="operation-closeup" aria-pressed="false">操作近景</button><button data-course-view="orbit" aria-pressed="false">全景</button><button data-course-view="top" aria-pressed="false">俯视</button></div>
+          <div id="scene-auto-look" class="scene-auto-look demo-only" aria-hidden="true"></div>
+          <div id="scene-transition" class="scene-transition">教学场景 · 不同项目按章节切换</div>
+          <div id="operation-view-caption" class="operation-view-caption" hidden></div>
+          <section id="course-mirror-zoom" class="course-mirror-zoom" aria-label="后视镜教学放大" hidden>
+            <header><strong id="course-mirror-zoom-title">左镜 · 驾驶位放大</strong><div class="mirror-zoom-actions"><select id="course-mirror-projection" aria-label="放大镜面显示方式"><option value="driver">驾驶位斜视</option><option value="unfolded">镜面展开</option></select><button id="course-mirror-zoom-close" type="button" aria-label="收起后视镜教学放大">收起</button></div></header>
+            <div id="course-mirror-zoom-image"></div>
+            <small id="course-mirror-recognition" role="status" hidden></small>
+            <small id="course-mirror-zoom-description">同一驾驶眼位 · 保留镜壳倾斜与遮挡</small>
+          </section>
+        <section id="course-mirror-panel" class="course-mirror-panel" aria-label="暂停调整后视镜" hidden>
+          <div class="mirror-panel-heading"><strong>先固定坐姿，再调左右镜</strong><button id="course-mirror-adjust-close" type="button">完成 · 保持暂停</button></div>
+          <p id="course-mirror-adjust-status" role="status">已暂停，调好后请手动继续。</p>
+          <label class="mirror-profile-select">使用场景 <select id="course-mirror-profile"><option value="road">道路观察 · 看后侧交通</option><option value="parking">低速看线 · 看车身与地面</option></select></label>
+          <p id="course-mirror-profile-help"></p>
+          <div class="mirror-adjust-actions"><button id="course-mirror-body-reference" type="button">看清车身与后方</button><button id="course-mirror-recommend" type="button">后方视野优先</button><button id="course-inner-fit" type="button">按眼位调内镜</button><button id="course-mirror-undo" type="button">撤销本次调节</button><button id="course-mirror-outer-edit" type="button">调整左右外镜</button><small>多看一些车身，外侧视野会相应减少；倒库看近线请选低速看线，两组角度分别保存。</small></div>
+          <div class="mirror-adjust-grid">
+            <fieldset><legend>左镜 · 车身应在镜面右侧内缘</legend><label>左右角度 <output id="mirror-leftYaw-value"></output><input data-mirror-setting="leftYaw" id="mirror-leftYaw" aria-label="左镜左右角度" type="range" min="-5" max="25" step="0.1"/></label><label>俯仰角度 <output id="mirror-leftPitch-value"></output><input data-mirror-setting="leftPitch" id="mirror-leftPitch" aria-label="左镜俯仰角度" type="range" min="-38" max="5" step="0.1"/></label></fieldset>
+            <fieldset><legend>右镜 · 车身应在镜面左侧内缘</legend><label>左右角度 <output id="mirror-rightYaw-value"></output><input data-mirror-setting="rightYaw" id="mirror-rightYaw" aria-label="右镜左右角度" type="range" min="-5" max="25" step="0.1"/></label><label>俯仰角度 <output id="mirror-rightPitch-value"></output><input data-mirror-setting="rightPitch" id="mirror-rightPitch" aria-label="右镜俯仰角度" type="range" min="-38" max="5" step="0.1"/></label></fieldset>
+          </div>
+          <details class="mirror-seat-settings"><summary>调整驾驶位眼位</summary><p>挪动眼位会改变镜中画面；需要时再点推荐，不会自动追踪车位。</p><label>眼位高度 <output id="mirror-seatHeight-value"></output><input data-mirror-setting="seatHeight" id="mirror-seatHeight" aria-label="驾驶位眼位高度" type="range" min="1.15" max="1.38" step="0.01"/></label><label>眼位前后 <output id="mirror-seatFore-value"></output><input data-mirror-setting="seatFore" id="mirror-seatFore" aria-label="驾驶位眼位前后" type="range" min="0.9" max="1.3" step="0.01"/></label></details>
+        </section>
+        </div>
+        <div class="driving-instruments" aria-label="示范车辆状态">
+          <div class="speed-reading"><small id="speed-context">该时刻车速</small><strong id="hud-speed">0 km/h</strong></div>
+          <div class="gear-reading"><small>挡位</small><strong id="hud-gear">N 挡</strong></div>
+          <div class="vehicle-signals"><span id="hud-signal">转向灯关闭</span><span id="hud-lights">灯光关闭</span><span id="hud-steer">前轮回正</span></div>
+          <div class="pedal-readings"><span><small>离合</small><strong id="hud-clutch">松开</strong></span><span><small>脚刹</small><strong id="hud-brake">制动</strong></span><span><small>油门</small><strong id="hud-throttle">松开</strong></span><span><small>驻车</small><strong id="hud-parking">拉起</strong></span></div>
+          <span id="hud-controls" class="sr-only"></span>
+        </div>
+        <p id="course-observation-status" class="course-observation-status" role="status" aria-live="polite"></p>
+        <div class="scene-tools"><div class="scene-gaze" role="group" aria-label="观察方向"><span>前方路况 · 行人、横向道路与出口</span><button data-course-gaze="front-left" aria-pressed="false">前左方 1</button><button data-course-gaze="forward" aria-pressed="true">正前方 C</button><button data-course-gaze="front-right" aria-pressed="false">前右方 3</button><span>镜面与侧后方 · 后车、侧后空间与盲区</span><button data-course-gaze="left">左外镜 Q</button><button data-course-gaze="rear">内后视镜 M</button><button data-course-gaze="right">右外镜 E</button><button data-course-gaze="left-back">左后方 Z</button><button data-course-gaze="right-back">右后方 B</button></div><button id="course-focus" type="button" aria-pressed="false">专注观看</button></div>
+        <div class="course-mirror-tools" aria-label="后视镜辅助"><span id="course-mirror-profile-name">道路观察镜位</span><button id="course-mirror-adjust" type="button" aria-expanded="false" aria-controls="course-mirror-panel">暂停调镜</button><button data-mirror-zoom="left" type="button" aria-pressed="false">放大左镜</button><button data-mirror-zoom="right" type="button" aria-pressed="false">放大右镜</button><small>Q / E 只转头看镜；放大用于辨认。</small></div>
+        <details class="course-contact-cases"><summary>外镜擦碰小案例</summary><p>预设在公交车旁的危险净空，只用于辨别镜壳、支架与车身的区别。先看右镜，再点“继续驾驶”并轻按 W；也可提前刹停。原章节目标与复盘保留。</p><button id="course-case-housing" type="button">从镜壳案例接手</button><button id="course-case-support" type="button">从支架案例接手</button></details>
+        <div id="speech-recovery" class="speech-recovery demo-only" hidden><p>讲解暂未播出，车辆保持暂停。可重试，或明确选择本段用字幕继续。</p><button id="course-retry-speech">重试讲解</button><button id="course-subtitles">本段用字幕继续</button></div>
+        <div id="speech-caption" class="speech-caption demo-only" hidden><span>教练讲解</span><p id="course-caption"></p></div>
+        <label class="course-timeline demo-only" for="course-timeline"><span>整科动作进度 <output id="course-time"></output></span><input id="course-timeline" type="range" min="0" max="1" step="0.1" value="0" aria-label="整科演示进度"/></label>
+        <div class="course-options demo-only"><label class="voice-option"><input id="course-voice" type="checkbox" checked/>MiniMax 语音</label><label>讲解 <select id="course-guidance" aria-label="语音示范方式"><option value="steps">关键步骤同步</option><option value="overview">本项总讲解</option></select></label><label>播放 <select id="course-play-mode" aria-label="课程播放方式"><option value="continuous">整科连续播放</option><option value="checkpoint">每项结束暂停</option></select></label><label>动作速度 <select id="course-rate" aria-label="演示动作速度"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option><option value="4">4×</option></select></label><small id="course-rate-note" hidden></small><span hidden><input id="course-continuous" type="checkbox" checked/><input id="course-checkpoints" type="checkbox"/></span></div>
+        <details class="chapter-notes"><summary>本项要点与完整字幕</summary><p id="chapter-objective"></p><p id="chapter-risk"></p><p id="chapter-narration" class="chapter-narration"></p></details>
+        <div id="course-completed" class="course-completed demo-only" hidden><strong id="course-completed-title">本整科演示已结束</strong><p id="course-completed-copy">已走完目录中的全部项目。可以重看某一项，或切换另一科目。</p><button id="course-restart">重新看整科</button></div>
+      </section>
+    </div>
+    <details class="course-basis"><summary>考试项目依据与适用范围</summary><p>C1 科二五项；科三包括道路驾驶技能各项目、模拟灯光及夜间驾驶说明。此页展示全项目教学串联，章节可切换场景，不是某地真实考线，不把教学片段时长或距离当作实考里程。项目顺序、具体口令和当地新增内容以考场与教练指导为准。科三安全文明驾驶常识理论（通常称科四）不在本页 3D 道路演示内。</p><p>参照 <a href="https://jtgl.beijing.gov.cn/jgj/jgxx/flfg/gabgz/543498902/index.html" target="_blank" rel="noopener">公安部令第 172 号</a> 与 <a href="https://www.qingdao.gov.cn/zwgk/xxgk/gaj/xxgkml_551/gzxx/202607/t20260723_10683434.shtml" target="_blank" rel="noopener">公安机关全流程说明</a>。车辆与离合操作为教学示意，未做真实车型脚感标定。</p></details>
+  </main><footer class="course-footer">完整看一遍，再回到具体项目练习。<a href="./">倒车入库专项 →</a></footer>
+</body></html>

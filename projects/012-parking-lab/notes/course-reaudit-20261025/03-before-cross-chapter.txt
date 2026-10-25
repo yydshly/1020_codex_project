@@ -1,0 +1,217 @@
+Browser tab: 13, Title: "C1 科二 · 科三完整演示｜入库之间", URL: "http://127.0.0.1:4312/courses.html?course=all&chapter=hill-start".
+0 AXWebArea C1 科二 · 科三完整演示｜入库之间, URL: 127.0.0.1:4312/courses.html?course=all&chapter=hill-start
+	1 container
+		2 link Description: 入库之间 DRIVING CLASS, Value: 127.0.0.1:4312/
+		3 text C1 手动挡 · 全项目教学演示
+		4 link Description: 返回倒库专项, Value: 127.0.0.1:4312/
+	5 container
+		6 text 从开始准备，到完成最后一项
+		7 heading 科目二 + 科目三 · C1 全量演示, Value: 1, ID: course-title
+			8 text 科目二 + 科目三 · C1 全量演示
+		9 text 按科目二 5 项、科目三 17 项连续演示，从倒车入库到靠边停车与安全结束。
+		10 container 选择完整演示科目
+			11 checkbox 科目二 · 五项, Value: 0
+			12 checkbox 科目三 · 道路与灯光, Value: 0
+			13 checkbox 科二 + 科三 · 全量, Value: 1
+		14 text 22 个章节 · 全项目教学串联
+		253 text MiniMax 已就绪 · 121 段操作提醒 + 22 段总讲解
+		16 button 播放科二 + 科三完整 22 章, ID: course-start-all
+		17 text 每项先用全景讲路线和完成要求，再进入驾驶位：看哪里、看到什么变化、怎样操作。可暂停、逐步重看，随时接手练习。
+		18 container Description: 全部演示项目, ID: course-directory
+			19 text COURSE OUTLINE
+			20 container
+				21 text 全项目目录
+				22 text 22 项
+			23 content list chapter-list
+				24 button 01 科目二 · 倒车入库 · 两侧完整路线 01:10
+					25 text 01
+					26 text 科目二 · 倒车入库 · 两侧完整路线
+					27 text 01:10
+				28 button 02 科目二 · 坡道定点停车和起步 00:40
+					29 text 02
+					30 text 科目二 · 坡道定点停车和起步
+					31 text 00:40
+				32 button 03 科目二 · 侧方停车 · 入位与驶出 00:38
+					33 text 03
+					34 text 科目二 · 侧方停车 · 入位与驶出
+					35 text 00:38
+				36 button 04 科目二 · 曲线行驶 · S 弯 00:46
+					37 text 04
+					38 text 科目二 · 曲线行驶 · S 弯
+					39 text 00:46
+				40 button 05 科目二 · 直角转弯 00:33
+					41 text 05
+					42 text 科目二 · 直角转弯
+					43 text 00:33
+				44 button 06 科目三 · 上车准备 00:22
+					45 text 06
+					46 text 科目三 · 上车准备
+					47 text 00:22
+				48 button 07 科目三 · 模拟夜间灯光 00:32
+					49 text 07
+					50 text 科目三 · 模拟夜间灯光
+					51 text 00:32
+				52 button 08 科目三 · 起步 00:21
+					53 text 08
+					54 text 科目三 · 起步
+					55 text 00:21
+				56 button 09 科目三 · 直线行驶 00:26
+					57 text 09
+					58 text 科目三 · 直线行驶
+					59 text 00:26
+				60 button 10 科目三 · 加减挡位操作 00:32
+					61 text 10
+					62 text 科目三 · 加减挡位操作
+					63 text 00:32
+				64 button 11 科目三 · 变更车道 00:25
+					65 text 11
+					66 text 科目三 · 变更车道
+					67 text 00:25
+				68 button 12 科目三 · 直行通过路口 00:30
+					69 text 12
+					70 text 科目三 · 直行通过路口
+					71 text 00:30
+				72 button 13 科目三 · 路口左转弯 00:36
+					73 text 13
+					74 text 科目三 · 路口左转弯
+					75 text 00:36
+				76 button 14 科目三 · 路口右转弯 00:36
+					77 text 14
+					78 text 科目三 · 路口右转弯
+					79 text 00:36
+				80 button 15 科目三 · 通过人行横道线 00:28
+					81 text 15
+					82 text 科目三 · 通过人行横道线
+					83 text 00:28
+				84 button 16 科目三 · 通过学校区域 00:25
+					85 text 16
+					86 text 科目三 · 通过学校区域
+					87 text 00:25
+				88 button 17 科目三 · 通过公共汽车站 00:24
+					89 text 17
+					90 text 科目三 · 通过公共汽车站
+					91 text 00:24
+				92 button 18 科目三 · 会车 00:26
+					93 text 18
+					94 text 科目三 · 会车
+					95 text 00:26
+				96 button 19 科目三 · 超车 00:32
+					97 text 19
+					98 text 科目三 · 超车
+					99 text 00:32
+				100 button 20 科目三 · 掉头 00:36
+					101 text 20
+					102 text 科目三 · 掉头
+					103 text 00:36
+				104 button 21 科目三 · 夜间行驶 00:32
+					105 text 21
+					106 text 科目三 · 夜间行驶
+					107 text 00:32
+				108 button 22 科目三 · 靠边停车与安全结束 00:26
+					109 text 22
+					110 text 科目三 · 靠边停车与安全结束
+					111 text 00:26
+		112 container 完整演示播放器
+			199 text 全量 2 / 22 · 科目二 第 2 项 / 5
+			114 heading 坡道定点停车和起步, Value: 2, ID: chapter-title
+				200 text 坡道定点停车和起步
+			201 text 先看全景 · 路线与要求
+			117 container 选择示范或自己驾驶
+				118 checkbox 看示范, Value: 1, ID: course-mode-demo
+				119 checkbox 自己驾驶, Value: 0, ID: course-mode-drive
+			138 container
+				139 button Description: 上一项演示, ID: course-prev
+				140 button 播放全景介绍, ID: course-play
+				141 button Description: 下一项演示, ID: course-next
+				142 button 重看本项 · 含全景, ID: course-replay
+			143 content list 本章学习顺序
+				144 text 1 全景认路线与要求
+				145 text 2 车内看变化与操作
+				146 text 3 自己驾驶与复盘
+			202 container Description: 全景导览与完成要求, ID: chapter-briefing
+				203 text 先理解这项要做什么
+				204 heading 看懂上坡定点停车、保持车辆、建立驱动力和向前起步的先后关系。, Value: 3, ID: briefing-goal
+					205 text 看懂上坡定点停车、保持车辆、建立驱动力和向前起步的先后关系。
+				206 button 直接进入车内分步, ID: course-enter-steps
+				207 definition list
+					208 container 完整动作路线
+						209 text 完整动作路线
+					210 text 低速上坡 → 接近停车参照 → 制动驻车 → 建立驱动力 → 解除驻车并驶离。
+					211 container 做到什么才算完成
+						212 text 做到什么才算完成
+					213 text 在目标位置顺直停稳并保持车辆；有稳定驱动力后再解除驻车、平稳向前。停车参照与离合结合位置按车型校准，本原型不作真实坡起评分。
+					214 container 坐进车里重点看
+						215 text 坐进车里重点看
+					216 text 全景先认坡道、右边线和停车标线；车内看前方停车参照，短看右镜确认车身与边线关系。
+				217 text 蓝色实线：前进　金色虚线：倒车　箭头：行驶方向。路线只作教学对照，车内镜面不显示辅助线。
+			218 checkbox (settable, integer) Description: 自动跟随观察, Value: 1, ID: course-auto-observe
+			219 text 自动观察：全景导览 · 先认路线与完成要求（已停住）
+			147 container Description: 驾驶区域，W前进、S倒车、A和D转向、空格刹车、X回正、P暂停, ID: course-scene
+				148 container 演示视角
+					149 checkbox 驾驶位, Value: 0
+					150 checkbox 操作近景, Value: 0, ID: operation-closeup
+					151 checkbox 全景, Value: 1
+					152 checkbox 俯视, Value: 0
+				254 text 第 2 项教学场景 · 坡道定点停车和起步
+				154 image 科目二科目三三维示范场景
+			155 container 示范车辆状态
+				255 text 全景说明 · 停住
+				256 text 0 km/h
+				158 text 挡位
+				257 text N 挡
+				258 text 离合踩下 · 脚刹制动 · 驻车松开
+			225 text 全景 · 教学辅助；按 C 回到驾驶位观察。
+			173 container 观察方向
+				174 text 前方路况 · 行人、横向道路与出口
+				175 checkbox 前左方 1, Value: 0
+				176 checkbox 正前方 C, Value: 1
+				177 checkbox 前右方 3, Value: 0
+				178 text 镜面与侧后方 · 后车、侧后空间与盲区
+				179 checkbox 左外镜 Q, Value: 0
+				180 checkbox 内后视镜 M, Value: 0
+				181 checkbox 右外镜 E, Value: 0
+				182 checkbox 左后方 Z, Value: 0
+				183 checkbox 右后方 B, Value: 0
+			184 checkbox 专注观看, Value: 0, ID: course-focus
+			185 container 后视镜辅助
+				186 text 低速看线镜位
+				187 button (collapsed) 暂停调镜, ID: course-mirror-adjust, Secondary Actions: Expand
+				188 checkbox 放大左镜, Value: 0
+				189 checkbox 放大右镜, Value: 0
+				190 text Q / E 只转头看镜；放大用于辨认。
+			191 button (collapsed) 外镜擦碰小案例, Secondary Actions: Expand
+				192 text 外镜擦碰小案例
+			226 container
+				227 text 整科动作进度
+				259 text 01:10 / 11:56（动作）
+				229 slider (settable, float) Description: 整科演示进度, Value: 70.30000305175781, Details: 70.3, ID: course-timeline
+			230 checkbox (settable, integer) Description: MiniMax 语音, Value: 1, ID: course-voice
+			231 container
+				232 text 讲解
+				233 pop up button (collapsed, settable) Description: 语音示范方式, Value: 关键步骤同步, ID: course-guidance, Secondary Actions: Expand
+					234 menu
+						235 (selected) 关键步骤同步
+						236 本项总讲解
+			237 container
+				238 text 播放
+				239 pop up button (collapsed, settable) Description: 课程播放方式, Value: 整科连续播放, ID: course-play-mode, Secondary Actions: Expand
+					240 menu
+						241 (selected) 整科连续播放
+						242 每项结束暂停
+			243 container
+				244 text 动作速度
+				245 pop up button (collapsed, settable) Description: 演示动作速度, Value: 1×, ID: course-rate, Secondary Actions: Expand
+					246 menu
+						247 0.5×
+						248 (selected) 1×
+						249 2×
+						250 4×
+			251 button (collapsed) 本项要点与完整字幕, Secondary Actions: Expand
+				252 text 本项要点与完整字幕
+		193 button (collapsed) 考试项目依据与适用范围, Secondary Actions: Expand
+			194 text 考试项目依据与适用范围
+	195 container
+		196 text 完整看一遍，再回到具体项目练习。
+		197 link Description: 倒车入库专项 →, Value: 127.0.0.1:4312/
+
+The focused UI element is 141 button Description: 下一项演示, ID: course-next

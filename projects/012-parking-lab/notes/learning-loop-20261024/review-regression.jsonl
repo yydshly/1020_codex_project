@@ -1,0 +1,2 @@
+{"name":"stopped-X","actualResidualDeg":3.1041143712223405,"actualMovedM":0,"actualKind":"early","actualStraightSafe":false,"actualStraightCrossesAtM":3.378881971639057,"reviewKind":"wrong","reviewPredictedResidualDeg":3.1041143712223405,"reviewSaysSafe":false}
+{"name":"slider-1.2-kmh","actualResidualDeg":3.4778115743322564,"actualMovedM":0.1265046296296486,"actualKind":"early","actualStraightSafe":false,"actualStraightCrossesAtM":2.8783893143736092,"reviewKind":"wrong","reviewPredictedResidualDeg":3.4778115743322564,"reviewSaysSafe":false}

@@ -1,0 +1,186 @@
+TAP version 13
+# Subtest: side and back references stay on their real stripes and readable correction references expose a continuous segment
+ok 1 - side and back references stay on their real stripes and readable correction references expose a continuous segment
+  ---
+  duration_ms: 56.5256
+  type: 'test'
+  ...
+# Subtest: a single visible slice or a back stripe cannot stand in for a readable side stripe
+not ok 2 - a single visible slice or a back stripe cannot stand in for a readable side stripe
+  ---
+  duration_ms: 8.2258
+  type: 'test'
+  location: 'F:\\codex_project\\1020_codex_project\\projects\\012-parking-lab\\src\\mirror-observation.test.js:27:1'
+  failureType: 'testCodeFailure'
+  error: |-
+    Expected values to be strictly equal:
+    
+    false !== true
+    
+  code: 'ERR_ASSERTION'
+  name: 'AssertionError'
+  expected: true
+  actual: false
+  operator: 'strictEqual'
+  stack: |-
+    TestContext.<anonymous> (file:///F:/codex_project/1020_codex_project/projects/012-parking-lab/src/mirror-observation.test.js:32:10)
+    Test.runInAsyncScope (node:async_hooks:214:14)
+    Test.run (node:internal/test_runner/test:1047:25)
+    Test.processPendingSubtests (node:internal/test_runner/test:744:18)
+    Test.postRun (node:internal/test_runner/test:1173:19)
+    Test.run (node:internal/test_runner/test:1101:12)
+    async startSubtestAfterBootstrap (node:internal/test_runner/harness:296:3)
+  ...
+# Subtest: occlusion acceptance applies to body, ground, side and back references without moving points
+ok 3 - occlusion acceptance applies to body, ground, side and back references without moving points
+  ---
+  duration_ms: 2.9649
+  type: 'test'
+  ...
+# Subtest: beginner turn start and end cannot claim a bay corner or line is visible in either mirror
+ok 4 - beginner turn start and end cannot claim a bay corner or line is visible in either mirror
+  ---
+  duration_ms: 32.0661
+  type: 'test'
+  ...
+# Subtest: right-entry references appear later on the correct side, followed by the left mirror
+ok 5 - right-entry references appear later on the correct side, followed by the left mirror
+  ---
+  duration_ms: 16.8289
+  type: 'test'
+  ...
+# Subtest: sampling contains only the physical same-side stripe and does not invent a bay entrance cross-line
+ok 6 - sampling contains only the physical same-side stripe and does not invent a bay entrance cross-line
+  ---
+  duration_ms: 8.2763
+  type: 'test'
+  ...
+# Subtest: body and ground markers use real vehicle-relative points and the exact current optical projection
+ok 7 - body and ground markers use real vehicle-relative points and the exact current optical projection
+  ---
+  duration_ms: 18.0652
+  type: 'test'
+  ...
+# Subtest: manual mirror and eye changes update observations without modifying settings or the other mirror
+ok 8 - manual mirror and eye changes update observations without modifying settings or the other mirror
+  ---
+  duration_ms: 16.7934
+  type: 'test'
+  ...
+# Subtest: per-frame recognition matches observation points without running a bay-line scan
+ok 9 - per-frame recognition matches observation points without running a bay-line scan
+  ---
+  duration_ms: 54.5187
+  type: 'test'
+  ...
+# Subtest: capture highlights real side-panel height and suppresses annotated references behind solid geometry
+ok 10 - capture highlights real side-panel height and suppresses annotated references behind solid geometry
+  ---
+  duration_ms: 75.7465
+  type: 'test'
+  ...
+# Subtest: live mirrors use fitted world cameras and unflipped ray UVs; magnifying preserves both
+ok 11 - live mirrors use fitted world cameras and unflipped ray UVs; magnifying preserves both
+  ---
+  duration_ms: 13.4757
+  type: 'test'
+  ...
+# Subtest: review capture uses live optics, only flips pixel rows, and restores renderer/material/car state
+ok 12 - review capture uses live optics, only flips pixel rows, and restores renderer/material/car state
+  ---
+  duration_ms: 9.892
+  type: 'test'
+  ...
+# Subtest: capture restores renderer and vehicle visibility even if scene rendering throws
+ok 13 - capture restores renderer and vehicle visibility even if scene rendering throws
+  ---
+  duration_ms: 6.3644
+  type: 'test'
+  ...
+# Subtest: live source and overlay failures both restore every renderer setting and vehicle visibility
+ok 14 - live source and overlay failures both restore every renderer setting and vehicle visibility
+  ---
+  duration_ms: 22.4299
+  type: 'test'
+  ...
+# Subtest: labels use physical mirror projection and real Three ray occlusion, respecting hidden/transparent objects
+ok 15 - labels use physical mirror projection and real Three ray occlusion, respecting hidden/transparent objects
+  ---
+  duration_ms: 11.5969
+  type: 'test'
+  ...
+# Subtest: recognition guides are opt-in and place body/ground markers only at physically visible unoccluded references
+ok 16 - recognition guides are opt-in and place body/ground markers only at physically visible unoccluded references
+  ---
+  duration_ms: 16.7857
+  type: 'test'
+  ...
+# Subtest: observations respect solid occlusion and keep pose, side, mirror and eye caches separate
+ok 17 - observations respect solid occlusion and keep pose, side, mirror and eye caches separate
+  ---
+  duration_ms: 46.9288
+  type: 'test'
+  ...
+# Subtest: physical mirrors update with hidden DOM cards and share source textures / UVs without extra flips
+ok 18 - physical mirrors update with hidden DOM cards and share source textures / UVs without extra flips
+  ---
+  duration_ms: 8.3483
+  type: 'test'
+  ...
+# Subtest: prepare supports source -> main scene -> teaching overlay ordering and reuses physical geometry until calibration/root changes
+ok 19 - prepare supports source -> main scene -> teaching overlay ordering and reuses physical geometry until calibration/root changes
+  ---
+  duration_ms: 8.0193
+  type: 'test'
+  ...
+# Subtest: physical prepare/capture failures restore both reflective surfaces and unified interior visibility
+ok 20 - physical prepare/capture failures restore both reflective surfaces and unified interior visibility
+  ---
+  duration_ms: 20.7791
+  type: 'test'
+  ...
+# Subtest: all modes can describe missing body or stripe without demanding hidden references
+ok 21 - all modes can describe missing body or stripe without demanding hidden references
+  ---
+  duration_ms: 0.9812
+  type: 'test'
+  ...
+# Subtest: a tiny visible side-line fragment does not unlock trajectory judgment
+ok 22 - a tiny visible side-line fragment does not unlock trajectory judgment
+  ---
+  duration_ms: 0.2929
+  type: 'test'
+  ...
+# Subtest: a visible bay-back stripe is identified separately and cannot replace the side stripe
+ok 23 - a visible bay-back stripe is identified separately and cannot replace the side stripe
+  ---
+  duration_ms: 1.6182
+  type: 'test'
+  ...
+# Subtest: recognition must use available references and does not accept the wheel or mirror frame
+ok 24 - recognition must use available references and does not accept the wheel or mirror frame
+  ---
+  duration_ms: 0.3274
+  type: 'test'
+  ...
+# Subtest: a visible corner or stripe cannot replace an occluded body reference in the observation gate
+ok 25 - a visible corner or stripe cannot replace an occluded body reference in the observation gate
+  ---
+  duration_ms: 0.2021
+  type: 'test'
+  ...
+# Subtest: recognition is available only for explicitly visible references, with unique valid answer choices
+ok 26 - recognition is available only for explicitly visible references, with unique valid answer choices
+  ---
+  duration_ms: 0.2356
+  type: 'test'
+  ...
+1..26
+# tests 26
+# suites 0
+# pass 25
+# fail 1
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 397.059

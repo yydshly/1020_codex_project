@@ -1,0 +1,23 @@
+/* Keep the driving controls visible on laptop displays and in Codex's side panel. */
+@media (min-width: 851px) and (max-height: 850px) {
+  .header { height: 78px; }
+  .workspace { margin-top: 18px; }
+  .scene-area { height: calc(100vh - 239px); min-height: 380px; }
+  .sidebar { max-height: calc(100vh - 239px); overflow-y: auto; scrollbar-width: thin; scrollbar-color: #d3ddca transparent; padding-top: 4px; padding-right: 5px; }
+  .sidebar h2 { font-size: 24px; margin-top: 13px; }
+  .mission-card { margin-top: 17px; padding: 13px 15px; }
+  .mission-card > div:nth-child(2) { margin: 10px 0 11px; }
+  .guide-header { margin-top: 17px; }
+  .steps { margin: 13px 0 16px; }
+  .steps li { padding-bottom: 12px; }
+  .steps p { margin-top: 4px; }
+  .display-options { padding: 8px 0; }
+  .tip { margin-top: 11px; }
+  .prototype-note { margin-top: 11px; }
+  .control-deck { padding-top: 16px; padding-bottom: 16px; }
+  footer { padding-top: 12px; padding-bottom: 15px; }
+}
+@media (min-width: 851px) and (max-height: 680px) {
+  .scene-area { min-height: 340px; }
+  .sidebar { max-height: 410px; }
+}

@@ -1,0 +1,22 @@
+/* Normal mirrors are rendered on the car. Only the requested teaching loupe
+   remains a screen overlay; it shares the physical mirror's source and UVs. */
+.driver-view #mirror-bar .mirror-card:not(.focused) { display: none !important; }
+.driver-view #mirror-bar .mirror-card.focused { border-color: #56636b; background: transparent; box-shadow: 0 6px 24px #11182066; }
+.driver-view #mirror-bar .mirror-heading,
+.driver-view #mirror-bar .mirror-footer { background: #202c34; }
+.driver-view #mirror-bar .mirror-card.focused .mirror-magnification { background: #1e2d38ed; border-color: #a1b7c4; color: #f2f5f6; }
+.driver-view .driver-controls { background: #f7f8f4f2; border-color: #b8c3c8; gap: 3px; }
+.driver-view .driver-controls button { min-height: 31px; font-size: 11px; color: #3b515e; }
+.driver-view .driver-controls button.active { background: #365665; color: #f2f6f8; }
+#teaching-mirror-toggle { border-left: 1px solid #c4cdd0; border-radius: 0 5px 5px 0; }
+#teaching-mirror-toggle[aria-pressed="true"] { background: #e0e8ec; color: #284c60; }
+.driver-view .mirror-coach { background: #f7f9f5eb; border-color: #c5d0d5; }
+.scene-area { background: #d7e0e7; }
+.workspace.coaching-active .scene-area { min-height: 420px; height: calc(100dvh - 330px); max-height: 600px; }
+.workspace.judgment-active .scene-area.driver-view .driver-controls { display: flex !important; }
+#scene-pause { position: absolute; right: 16px; bottom: 16px; z-index: 5; pointer-events: auto; padding: 6px 11px; min-height: 30px; border: 1px solid #a5b7c0; border-radius: 6px; background: #eff5f6f0; color: #345461; font-size: 11px; font-weight: 600; }
+@media (max-width: 620px) {
+  .driver-view .driver-controls { max-width: calc(100% - 20px); gap: 1px; padding: 3px; }
+  .driver-view .driver-controls button { padding: 7px 6px; font-size: 10px; }
+  .driver-view .driver-controls kbd { display: none; }
+}

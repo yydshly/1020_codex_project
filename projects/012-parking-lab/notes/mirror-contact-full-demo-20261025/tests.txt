@@ -1,0 +1,2216 @@
+
+> parking-lab@0.1.0 test
+> node --test src/vehicle.test.js src/car-body.test.js src/vehicle-visuals.test.js src/driving-yard.test.js src/lesson.test.js src/cockpit.test.js src/mirror-optics.test.js src/mirror-fit.test.js src/mirror-observation.test.js src/mirrors.test.js src/mirror-surface.test.js src/driver-view.test.js src/observation-guide.test.js src/correction.test.js src/alignment.test.js src/voice-guide.test.js src/narration.test.js src/review.test.js src/review-map.test.js src/beginner.test.js src/steering-coach.test.js src/judgment.test.js src/speech-catalog.test.js src/speech-flow.test.js scripts/minimax-tts.test.mjs src/exam-courses.test.js src/course-playback.test.js src/course-environment.test.js src/course-kinematics.test.js src/course-coaching.test.js src/course-operation-visuals.test.js src/course-integration.test.js src/course-driving.test.js src/course-mirror-settings.test.js src/course-mirrors.test.js src/course-safety.test.js src/course-observation.test.js src/course-interior-mirror.test.js src/course-practice.test.js src/course-playlist.test.js src/course-mirror-collision.test.js
+
+TAP version 13
+# Subtest: request uses the documented non-streaming hex API with the existing project voice
+ok 1 - request uses the documented non-streaming hex API with the existing project voice
+  ---
+  duration_ms: 2.5469
+  type: 'test'
+  ...
+# Subtest: private env parsing handles BOM, export, quoted values and the legacy endpoint alias without executing text
+ok 2 - private env parsing handles BOM, export, quoted values and the legacy endpoint alias without executing text
+  ---
+  duration_ms: 1.5656
+  type: 'test'
+  ...
+# Subtest: configuration fails without credentials and rejects credential-bearing or untrusted URLs
+ok 3 - configuration fails without credentials and rejects credential-bearing or untrusted URLs
+  ---
+  duration_ms: 1.7216
+  type: 'test'
+  ...
+# Subtest: complete MP3 output is decoded and duration is converted from milliseconds to seconds
+ok 4 - complete MP3 output is decoded and duration is converted from milliseconds to seconds
+  ---
+  duration_ms: 1.8703
+  type: 'test'
+  ...
+# Subtest: 200 API failures never expose provider error messages or secrets
+ok 5 - 200 API failures never expose provider error messages or secrets
+  ---
+  duration_ms: 0.4755
+  type: 'test'
+  ...
+# Subtest: incomplete, malformed, non-MP3 or durationless responses cannot be published as valid audio
+ok 6 - incomplete, malformed, non-MP3 or durationless responses cannot be published as valid audio
+  ---
+  duration_ms: 1.2996
+  type: 'test'
+  ...
+# Subtest: native fetch uses Bearer authentication only in headers and refuses credential redirects
+ok 7 - native fetch uses Bearer authentication only in headers and refuses credential redirects
+  ---
+  duration_ms: 1.6412
+  type: 'test'
+  ...
+# Subtest: network, HTTP and unreadable-response errors are sanitized without automatic retries
+ok 8 - network, HTTP and unreadable-response errors are sanitized without automatic retries
+  ---
+  duration_ms: 1.3942
+  type: 'test'
+  ...
+# Subtest: public configuration and filenames cannot contain authentication data
+ok 9 - public configuration and filenames cannot contain authentication data
+  ---
+  duration_ms: 1.8987
+  type: 'test'
+  ...
+# Subtest: cache requires exact provider, configuration, text, filename, byte size and hash
+ok 10 - cache requires exact provider, configuration, text, filename, byte size and hash
+  ---
+  duration_ms: 1.2731
+  type: 'test'
+  ...
+# Subtest: clip selection limits paid requests and treats --key only as a fixed narration identifier
+ok 11 - clip selection limits paid requests and treats --key only as a fixed narration identifier
+  ---
+  duration_ms: 0.9353
+  type: 'test'
+  ...
+# Subtest: request interval defaults to 6500 ms and accepts only bounded decimal integers
+ok 12 - request interval defaults to 6500 ms and accepts only bounded decimal integers
+  ---
+  duration_ms: 1.2548
+  type: 'test'
+  ...
+# Subtest: both short exercises start stationary, inside the course, with symmetric poses
+ok 13 - both short exercises start stationary, inside the course, with symmetric poses
+  ---
+  duration_ms: 3.6912
+  type: 'test'
+  ...
+# Subtest: timely active centering produces a straight pose on both sides with the actual vehicle model
+ok 14 - timely active centering produces a straight pose on both sides with the actual vehicle model
+  ---
+  duration_ms: 15.471
+  type: 'test'
+  ...
+# Subtest: early centering retains a body angle even though the front wheels reach zero
+ok 15 - early centering retains a body angle even though the front wheels reach zero
+  ---
+  duration_ms: 2.9685
+  type: 'test'
+  ...
+# Subtest: the former four-degree pass band does not pass a pose whose straight continuation crosses a line
+ok 16 - the former four-degree pass band does not pass a pose whose straight continuation crosses a line
+  ---
+  duration_ms: 5.3674
+  type: 'test'
+  ...
+# Subtest: late and absent centering stop the exercise instead of silently passing
+ok 17 - late and absent centering stop the exercise instead of silently passing
+  ---
+  duration_ms: 13.4199
+  type: 'test'
+  ...
+# Subtest: ready and completed exercises stay frozen; a forward input gets specific feedback
+ok 18 - ready and completed exercises stay frozen; a forward input gets specific feedback
+  ---
+  duration_ms: 0.6814
+  type: 'test'
+  ...
+# Subtest: crossing the course boundary takes priority over a centering result
+ok 19 - crossing the course boundary takes priority over a centering result
+  ---
+  duration_ms: 0.2551
+  type: 'test'
+  ...
+# Subtest: rewinding before the return manoeuvre removes its old observation; replaying it restores the result
+ok 20 - rewinding before the return manoeuvre removes its old observation; replaying it restores the result
+  ---
+  duration_ms: 3.4721
+  type: 'test'
+  ...
+# Subtest: the novice starts at the existing right-turn reference with a fresh stationary recording
+ok 21 - the novice starts at the existing right-turn reference with a fresh stationary recording
+  ---
+  duration_ms: 3.4687
+  type: 'test'
+  ...
+# Subtest: each step permits only its one taught action and takes care of the slow reverse input
+ok 22 - each step permits only its one taught action and takes care of the slow reverse input
+  ---
+  duration_ms: 0.7232
+  type: 'test'
+  ...
+# Subtest: wrong keys or no held key cannot move or steer a stationary car
+ok 23 - wrong keys or no held key cannot move or steer a stationary car
+  ---
+  duration_ms: 0.879
+  type: 'test'
+  ...
+# Subtest: the complete paused lesson follows the real model inside the lines at multiple frame rates
+ok 24 - the complete paused lesson follows the real model inside the lines at multiple frame rates
+  ---
+  duration_ms: 48.0884
+  type: 'test'
+  ...
+# Subtest: completion requires the actual taught threshold rather than elapsed time or the wrong step
+ok 25 - completion requires the actual taught threshold rather than elapsed time or the wrong step
+  ---
+  duration_ms: 0.3289
+  type: 'test'
+  ...
+# Subtest: crossing the course line takes priority even if a taught action reaches its target
+ok 26 - crossing the course line takes priority even if a taught action reaches its target
+  ---
+  duration_ms: 0.1727
+  type: 'test'
+  ...
+# Subtest: wheel arches preserve the body envelope in vehicle-local coordinates
+ok 27 - wheel arches preserve the body envelope in vehicle-local coordinates
+  ---
+  duration_ms: 25.1582
+  type: 'test'
+  ...
+# Subtest: each wheel arch opens through both sides directly over its axle
+ok 28 - each wheel arch opens through both sides directly over its axle
+  ---
+  duration_ms: 15.1931
+  type: 'test'
+  ...
+# Subtest: door panels and material above or beyond the arches still block side views
+ok 29 - door panels and material above or beyond the arches still block side views
+  ---
+  duration_ms: 14.3119
+  type: 'test'
+  ...
+# Subtest: the curved arch clears the existing tire while its outer face stays inside the body
+ok 30 - the curved arch clears the existing tire while its outer face stays inside the body
+  ---
+  duration_ms: 8.7416
+  type: 'test'
+  ...
+# Subtest: version 2 calibration restores independently; old settings are not silently migrated
+ok 31 - version 2 calibration restores independently; old settings are not silently migrated
+  ---
+  duration_ms: 3.9635
+  type: 'test'
+  ...
+# Subtest: calibration is immutable and restricted to the physical model adjustment ranges
+ok 32 - calibration is immutable and restricted to the physical model adjustment ranges
+  ---
+  duration_ms: 0.4655
+  type: 'test'
+  ...
+# Subtest: finite mirror frames and the driver eye use the same vehicle coordinates
+ok 33 - finite mirror frames and the driver eye use the same vehicle coordinates
+  ---
+  duration_ms: 0.7063
+  type: 'test'
+  ...
+# Subtest: center ray matches each mirror adjustment at the fixed reference eye
+ok 34 - center ray matches each mirror adjustment at the fixed reference eye
+  ---
+  duration_ms: 0.8624
+  type: 'test'
+  ...
+# Subtest: sampled curved surface rays obey reflection law and equal incidence/reflection angles
+ok 35 - sampled curved surface rays obey reflection law and equal incidence/reflection angles
+  ---
+  duration_ms: 1.8881
+  type: 'test'
+  ...
+# Subtest: moving the seat changes reflected views without secretly re-adjusting either mirror
+ok 36 - moving the seat changes reflected views without secretly re-adjusting either mirror
+  ---
+  duration_ms: 2.0092
+  type: 'test'
+  ...
+# Subtest: left mirror adjustments do not alter the right mirror, seat, or old settings
+ok 37 - left mirror adjustments do not alter the right mirror, seat, or old settings
+  ---
+  duration_ms: 0.1856
+  type: 'test'
+  ...
+# Subtest: world points along reflected rays project back to the finite mirror, including edges and near field
+ok 38 - world points along reflected rays project back to the finite mirror, including edges and near field
+  ---
+  duration_ms: 38.2473
+  type: 'test'
+  ...
+# Subtest: finite aperture excludes outside rays, points behind the reflected ray, and invalid targets
+ok 39 - finite aperture excludes outside rays, points behind the reflected ray, and invalid targets
+  ---
+  duration_ms: 1.1911
+  type: 'test'
+  ...
+# Subtest: geometry and inverse projection rotate and translate with the vehicle
+ok 40 - geometry and inverse projection rotate and translate with the vehicle
+  ---
+  duration_ms: 3.3954
+  type: 'test'
+  ...
+# Subtest: valid extreme adjustments remain finite and project visible mirror corners accurately
+ok 41 - valid extreme adjustments remain finite and project visible mirror corners accurately
+  ---
+  duration_ms: 4.4922
+  type: 'test'
+  ...
+# Subtest: legacy perspective envelope derives its field of view from actual reflected edge rays
+ok 42 - legacy perspective envelope derives its field of view from actual reflected edge rays
+  ---
+  duration_ms: 0.302
+  type: 'test'
+  ...
+# Subtest: mirror coaching follows the practiced side and alternates both mirrors near alignment
+ok 43 - mirror coaching follows the practiced side and alternates both mirrors near alignment
+  ---
+  duration_ms: 0.1566
+  type: 'test'
+  ...
+# Subtest: both correction observations start stationary, inside the course, with symmetric recoverable deviations
+ok 44 - both correction observations start stationary, inside the course, with symmetric recoverable deviations
+  ---
+  duration_ms: 5.6131
+  type: 'test'
+  ...
+# Subtest: from straight reverse, rear trajectory bends with the steering while the front swings opposite
+ok 45 - from straight reverse, rear trajectory bends with the steering while the front swings opposite
+  ---
+  duration_ms: 3.3925
+  type: 'test'
+  ...
+# Subtest: correct symmetric small turns reach the 8 cm margin and pass only after active centering actually finishes
+ok 46 - correct symmetric small turns reach the 8 cm margin and pass only after active centering actually finishes
+  ---
+  duration_ms: 958.9913
+  type: 'test'
+  ...
+# Subtest: turning toward the tight side stops either exercise with a specific direction error
+ok 47 - turning toward the tight side stops either exercise with a specific direction error
+  ---
+  duration_ms: 2.4893
+  type: 'test'
+  ...
+# Subtest: X before any correction and X after a short insufficient correction do not pass
+ok 48 - X before any correction and X after a short insufficient correction do not pass
+  ---
+  duration_ms: 9.2121
+  type: 'test'
+  ...
+# Subtest: an unsafe completed return past the opposite heading is late rather than early
+ok 49 - an unsafe completed return past the opposite heading is late rather than early
+  ---
+  duration_ms: 5.1204
+  type: 'test'
+  ...
+# Subtest: inaction reaches a boundary, overholding stops, and a prolonged stationary brake reaches the time limit
+ok 50 - inaction reaches a boundary, overholding stops, and a prolonged stationary brake reaches the time limit
+  ---
+  duration_ms: 1508.7277
+  type: 'test'
+  ...
+# Subtest: observation and result phases reject motion controls and cannot advance the drill
+ok 51 - observation and result phases reject motion controls and cannot advance the drill
+  ---
+  duration_ms: 1.2157
+  type: 'test'
+  ...
+# Subtest: the assisted reverse remains low-speed and its brake actually stops the car
+ok 52 - the assisted reverse remains low-speed and its brake actually stops the car
+  ---
+  duration_ms: 20.9747
+  type: 'test'
+  ...
+# Subtest: optional steering limits leave ordinary vehicle inputs unchanged and bound the correction turn
+ok 53 - optional steering limits leave ordinary vehicle inputs unchanged and bound the correction turn
+  ---
+  duration_ms: 74.2283
+  type: 'test'
+  ...
+# Subtest: all 22 chapters bind every cue to one unique short narration at the actual animation time
+ok 54 - all 22 chapters bind every cue to one unique short narration at the actual animation time
+  ---
+  duration_ms: 8.5197
+  type: 'test'
+  ...
+# Subtest: physical operations use supported kinds and targets, while observation stays separate from control operation
+ok 55 - physical operations use supported kinds and targets, while observation stays separate from control operation
+  ---
+  duration_ms: 0.9664
+  type: 'test'
+  ...
+# Subtest: both reverse entries teach opposite return-wheel directions and preserve stops and forward transfer
+ok 56 - both reverse entries teach opposite return-wheel directions and preserve stops and forward transfer
+  ---
+  duration_ms: 0.8142
+  type: 'test'
+  ...
+# Subtest: preparation demonstrates door closure, seating, mirrors and belt before final checks
+ok 57 - preparation demonstrates door closure, seating, mirrors and belt before final checks
+  ---
+  duration_ms: 0.9486
+  type: 'test'
+  ...
+# Subtest: every simulated-light command names the corresponding operation, including position and hazard lamps
+ok 58 - every simulated-light command names the corresponding operation, including position and hazard lamps
+  ---
+  duration_ms: 0.9738
+  type: 'test'
+  ...
+# Subtest: C1 sequences teach clutch and braking order, hill hold before release, and secure parking before door opening
+ok 59 - C1 sequences teach clutch and braking order, hill hold before release, and secure parking before door opening
+  ---
+  duration_ms: 0.5101
+  type: 'test'
+  ...
+# Subtest: turning, blind spots and returning to a lane have distinct actionable guidance
+ok 60 - turning, blind spots and returning to a lane have distinct actionable guidance
+  ---
+  duration_ms: 2.5964
+  type: 'test'
+  ...
+# Subtest: bindings are independent, preserve stable keys when cue time changes, and reject unreviewed cue count changes
+ok 61 - bindings are independent, preserve stable keys when cue time changes, and reject unreviewed cue count changes
+  ---
+  duration_ms: 1.8036
+  type: 'test'
+  ...
+# Subtest: handover and resets are independent and preserve source time / signed wheel travel
+ok 62 - handover and resets are independent and preserve source time / signed wheel travel
+  ---
+  duration_ms: 11.891
+  type: 'test'
+  ...
+# Subtest: a forward-to-reverse request brakes to rest before engaging R and moving backwards
+ok 63 - a forward-to-reverse request brakes to rest before engaging R and moving backwards
+  ---
+  duration_ms: 11.9685
+  type: 'test'
+  ...
+# Subtest: releasing direction keys holds the front wheels and X actively returns them to centre
+ok 64 - releasing direction keys holds the front wheels and X actively returns them to centre
+  ---
+  duration_ms: 4.1168
+  type: 'test'
+  ...
+# Subtest: fixed substeps produce the same driving outcome at 30, 60 and 120 frames per second
+ok 65 - fixed substeps produce the same driving outcome at 30, 60 and 120 frames per second
+  ---
+  duration_ms: 17.3444
+  type: 'test'
+  ...
+# Subtest: bicycle yaw, arc displacement and signed travel agree at a fixed held steering angle
+ok 66 - bicycle yaw, arc displacement and signed travel agree at a fixed held steering angle
+  ---
+  duration_ms: 0.6563
+  type: 'test'
+  ...
+# Subtest: speed-dependent steering and held-angle speed limits prevent high-speed full-lock turns
+ok 67 - speed-dependent steering and held-angle speed limits prevent high-speed full-lock turns
+  ---
+  duration_ms: 18.4061
+  type: 'test'
+  ...
+# Subtest: Space braking overrides acceleration and coordinated shifts never show throttle with clutch down
+ok 68 - Space braking overrides acceleration and coordinated shifts never show throttle with clutch down
+  ---
+  duration_ms: 3.4848
+  type: 'test'
+  ...
+# Subtest: a latched parking brake holds a stopped car against acceleration until explicitly released
+ok 69 - a latched parking brake holds a stopped car against acceleration until explicitly released
+  ---
+  duration_ms: 4.9481
+  type: 'test'
+  ...
+# Subtest: the entire car stops inside the teaching bounds and cannot continue indefinitely after a boundary stop
+ok 70 - the entire car stops inside the teaching bounds and cannot continue indefinitely after a boundary stop
+  ---
+  duration_ms: 8.9961
+  type: 'test'
+  ...
+# Subtest: signals and lights are explicit persistent controls and hill pose agrees with the finite ramp geometry
+ok 71 - signals and lights are explicit persistent controls and hill pose agrees with the finite ramp geometry
+  ---
+  duration_ms: 3.1013
+  type: 'test'
+  ...
+# Subtest: all course vehicle envelopes clear scenery, entrances and raised pavement
+ok 72 - all course vehicle envelopes clear scenery, entrances and raised pavement
+  ---
+  duration_ms: 51.2796
+  type: 'test'
+  ...
+# Subtest: intersection and right-angle exits remain clear beyond the final demo pose
+ok 73 - intersection and right-angle exits remain clear beyond the final demo pose
+  ---
+  duration_ms: 1.0732
+  type: 'test'
+  ...
+# Subtest: detailed environment is batched and supplies finite geometry at bounded draw-call cost
+ok 74 - detailed environment is batched and supplies finite geometry at bounded draw-call cost
+  ---
+  duration_ms: 522.1822
+  type: 'test'
+  ...
+# Subtest: both whole courses visit every synchronized instruction exactly once without skipping at 4x
+ok 75 - both whole courses visit every synchronized instruction exactly once without skipping at 4x
+  ---
+  duration_ms: 106.7169
+  type: 'test'
+  ...
+# Subtest: a simulated-light instruction holds the old switch state until the spoken reminder finishes
+ok 76 - a simulated-light instruction holds the old switch state until the spoken reminder finishes
+  ---
+  duration_ms: 0.7955
+  type: 'test'
+  ...
+# Subtest: chapters decorated with teaching steps use the same physical sampler as the original runtime chapter
+ok 77 - chapters decorated with teaching steps use the same physical sampler as the original runtime chapter
+  ---
+  duration_ms: 1.0986
+  type: 'test'
+  ...
+# Subtest: replaying a chosen light operation speaks before changing its switch, even when overview was selected
+ok 78 - replaying a chosen light operation speaks before changing its switch, even when overview was selected
+  ---
+  duration_ms: 0.5263
+  type: 'test'
+  ...
+# Subtest: interior reflection obeys the plane-mirror virtual-eye law throughout full car yaw and hill pitch
+ok 79 - interior reflection obeys the plane-mirror virtual-eye law throughout full car yaw and hill pitch
+  ---
+  duration_ms: 298.7537
+  type: 'test'
+  ...
+# Subtest: the real driver sees the mirror before its frame and a central rear target through the real rear window
+ok 80 - the real driver sees the mirror before its frame and a central rear target through the real rear window
+  ---
+  duration_ms: 244.8641
+  type: 'test'
+  ...
+# Subtest: static interior mirrors cache, seat changes alter the eye but not glass, and interrupted draws restore state
+ok 81 - static interior mirrors cache, seat changes alter the eye but not glass, and interrupted draws restore state
+  ---
+  duration_ms: 208.0913
+  type: 'test'
+  ...
+# Subtest: explicit interior adjustment follows the current eye and keeps rear-window visibility without moving its mounting centre
+ok 82 - explicit interior adjustment follows the current eye and keeps rear-window visibility without moving its mounting centre
+  ---
+  duration_ms: 150.962
+  type: 'test'
+  ...
+# Subtest: interior adjustment keeps its roof anchor fixed and can restore an earlier exact mirror state
+ok 83 - interior adjustment keeps its roof anchor fixed and can restore an earlier exact mirror state
+  ---
+  duration_ms: 200.2619
+  type: 'test'
+  ...
+# Subtest: every chapter has one position / speed / heading / steering / wheel-distance motion at arbitrary seeks
+ok 84 - every chapter has one position / speed / heading / steering / wheel-distance motion at arbitrary seeks
+  ---
+  duration_ms: 548.8496
+  type: 'test'
+  ...
+# Subtest: all moving chapters have gears matching travel direction and no moving parking brake or inherited clutch-down
+ok 85 - all moving chapters have gears matching travel direction and no moving parking brake or inherited clutch-down
+  ---
+  duration_ms: 156.0563
+  type: 'test'
+  ...
+# Subtest: decorating chapters with teaching metadata retains continuous physics through a shallow chapter copy
+ok 86 - decorating chapters with teaching metadata retains continuous physics through a shallow chapter copy
+  ---
+  duration_ms: 4.5411
+  type: 'test'
+  ...
+# Subtest: hill, crosswalk, departure, side parking and final stop have continuous zero-speed holds and restarts
+ok 87 - hill, crosswalk, departure, side parking and final stop have continuous zero-speed holds and restarts
+  ---
+  duration_ms: 2.1472
+  type: 'test'
+  ...
+# Subtest: lane changes and overtaking show turn-in, opposite return-wheel input and straight front wheels in each lane
+ok 88 - lane changes and overtaking show turn-in, opposite return-wheel input and straight front wheels in each lane
+  ---
+  duration_ms: 1.0771
+  type: 'test'
+  ...
+# Subtest: normal lane changes never mistake settling lateral velocity for a foot-brake instruction
+ok 89 - normal lane changes never mistake settling lateral velocity for a foot-brake instruction
+  ---
+  duration_ms: 37.7173
+  type: 'test'
+  ...
+# Subtest: signed wheel travel is seek-independent, decreases in reverse and increases after the forward transfer
+ok 90 - signed wheel travel is seek-independent, decreases in reverse and increases after the forward transfer
+  ---
+  duration_ms: 4.4211
+  type: 'test'
+  ...
+# Subtest: sparse teaching trajectories retain their original anchors, stop positions, road corridor and chapter durations
+ok 91 - sparse teaching trajectories retain their original anchors, stop positions, road corridor and chapter durations
+  ---
+  duration_ms: 21.074
+  type: 'test'
+  ...
+# Subtest: parking sampler preserves original 120Hz vehicle frames and cues announce steering before actual input
+ok 92 - parking sampler preserves original 120Hz vehicle frames and cues announce steering before actual input
+  ---
+  duration_ms: 43.8273
+  type: 'test'
+  ...
+# Subtest: every physical housing, open rim and support uses its actual convex mesh vertices, with glass excluded
+ok 93 - every physical housing, open rim and support uses its actual convex mesh vertices, with glass excluded
+  ---
+  duration_ms: 395.2425
+  type: 'test'
+  ...
+# Subtest: world transform carries the root lift, yaw and hill pitch exactly once, while local hulls stay cached
+ok 94 - world transform carries the root lift, yaw and hill pitch exactly once, while local hulls stay cached
+  ---
+  duration_ms: 308.7827
+  type: 'test'
+  ...
+# Subtest: adjusting only the reflector and driver eye never turns or expands the fixed collision housing
+ok 95 - adjusting only the reflector and driver eye never turns or expands the fixed collision housing
+  ---
+  duration_ms: 176.3715
+  type: 'test'
+  ...
+# Subtest: mesh changes invalidate the actual hull cache and descendant transforms preserve support angles
+ok 96 - mesh changes invalidate the actual hull cache and descendant transforms preserve support angles
+  ---
+  duration_ms: 177.1964
+  type: 'test'
+  ...
+# Subtest: rounded corner empty space and height clearances remain outside the real hull instead of becoming an inflated body
+ok 97 - rounded corner empty space and height clearances remain outside the real hull instead of becoming an inflated body
+  ---
+  duration_ms: 132.5667
+  type: 'test'
+  ...
+# Subtest: course initialization preserves legacy seat and parking angles while using an independent road profile
+ok 98 - course initialization preserves legacy seat and parking angles while using an independent road profile
+  ---
+  duration_ms: 5.174
+  type: 'test'
+  ...
+# Subtest: road defaults expose the adjacent rear lane at 10m / 30m and the horizon through the original finite mirror
+ok 99 - road defaults expose the adjacent rear lane at 10m / 30m and the horizon through the original finite mirror
+  ---
+  duration_ms: 22.9499
+  type: 'test'
+  ...
+# Subtest: seat edits change reflection through the fixed mirrors without automatically retargeting either profile
+ok 100 - seat edits change reflection through the fixed mirrors without automatically retargeting either profile
+  ---
+  duration_ms: 1.8108
+  type: 'test'
+  ...
+# Subtest: angle edits, resolving and recommendation keep the two profiles isolated
+ok 101 - angle edits, resolving and recommendation keep the two profiles isolated
+  ---
+  duration_ms: 82.1496
+  type: 'test'
+  ...
+# Subtest: explicit road recommendation is bounded, repeatable and depends on the eye rather than prior mirror angles
+ok 102 - explicit road recommendation is bounded, repeatable and depends on the eye rather than prior mirror angles
+  ---
+  duration_ms: 152.7172
+  type: 'test'
+  ...
+# Subtest: course storage round-trips separately and rejects malformed or old schemas without touching legacy data
+ok 103 - course storage round-trips separately and rejects malformed or old schemas without touching legacy data
+  ---
+  duration_ms: 1.1516
+  type: 'test'
+  ...
+# Subtest: clear body reference is explicit, repeatable, eye-dependent and isolated from defaults, legacy storage and the other profile
+ok 104 - clear body reference is explicit, repeatable, eye-dependent and isolated from defaults, legacy storage and the other profile
+  ---
+  duration_ms: 264.1995
+  type: 'test'
+  ...
+# Subtest: clear recommendations show a genuine 15-25% inner-width body strip with rear subjects through the unchanged finite mirror
+ok 105 - clear recommendations show a genuine 15-25% inner-width body strip with rear subjects through the unchanged finite mirror
+  ---
+  duration_ms: 2956.0897
+  type: 'test'
+  ...
+# Subtest: invalid settings are ignored, numeric limits clamp idempotently and unknown fields cannot leak into config
+ok 106 - invalid settings are ignored, numeric limits clamp idempotently and unknown fields cannot leak into config
+  ---
+  duration_ms: 2.0275
+  type: 'test'
+  ...
+# Subtest: manual forward/reverse turns preserve world stripe projection in both mirrors without an extra horizontal flip
+ok 107 - manual forward/reverse turns preserve world stripe projection in both mirrors without an extra horizontal flip
+  ---
+  duration_ms: 181.6695
+  type: 'test'
+  ...
+# Subtest: manual hill yaw and pitch obey reflection at the real glass with one root-height compensation
+ok 108 - manual hill yaw and pitch obey reflection at the real glass with one root-height compensation
+  ---
+  duration_ms: 73.8008
+  type: 'test'
+  ...
+# Subtest: course sources follow full car transform and refresh on static setting changes, while unchanged frames cache
+ok 109 - course sources follow full car transform and refresh on static setting changes, while unchanged frames cache
+  ---
+  duration_ms: 508.3555
+  type: 'test'
+  ...
+# Subtest: source capture restores all renderer/visibility state, including an interrupted draw and existing clipping
+ok 110 - source capture restores all renderer/visibility state, including an interrupted draw and existing clipping
+  ---
+  duration_ms: 298.9267
+  type: 'test'
+  ...
+# Subtest: teaching magnification uses identical physical UVs and restores renderer viewport without flipping or expanding the field
+ok 111 - teaching magnification uses identical physical UVs and restores renderer viewport without flipping or expanding the field
+  ---
+  duration_ms: 205.4581
+  type: 'test'
+  ...
+# Subtest: default magnification keeps the right mirror oblique with isotropic scaling and the original perspective divisor
+ok 112 - default magnification keeps the right mirror oblique with isotropic scaling and the original perspective divisor
+  ---
+  duration_ms: 223.4071
+  type: 'test'
+  ...
+# Subtest: each magnified mirror remains tied to the same driver eye on a hill and restores all render state after failure
+ok 113 - each magnified mirror remains tied to the same driver eye on a hill and restores all render state after failure
+  ---
+  duration_ms: 168.6431
+  type: 'test'
+  ...
+# Subtest: default perspective magnification retains actual housing occlusion instead of exposing clipped inner glass
+ok 114 - default perspective magnification retains actual housing occlusion instead of exposing clipped inner glass
+  ---
+  duration_ms: 464.6834
+  type: 'test'
+  ...
+# Subtest: road mirrors retain a small real inner body strip and reveal actual adjacent rear traffic at 10 and 30 metres
+ok 115 - road mirrors retain a small real inner body strip and reveal actual adjacent rear traffic at 10 and 30 metres
+  ---
+  duration_ms: 1085.4033
+  type: 'test'
+  ...
+# Subtest: the actual driver eye sees both inner mirror references without a support arm crossing the glass
+ok 116 - the actual driver eye sees both inner mirror references without a support arm crossing the glass
+  ---
+  duration_ms: 131.3944
+  type: 'test'
+  ...
+# Subtest: mirror clipping removes virtual-eye-side false reflections but keeps reflected scenery and every convex edge
+ok 117 - mirror clipping removes virtual-eye-side false reflections but keeps reflected scenery and every convex edge
+  ---
+  duration_ms: 126.8504
+  type: 'test'
+  ...
+# Subtest: course shoulder observation reaches the rear quarter without moving the driver eye
+ok 118 - course shoulder observation reaches the rear quarter without moving the driver eye
+  ---
+  duration_ms: 11.4464
+  type: 'test'
+  ...
+# Subtest: rear observation aims at the actual interior mirror and preserves original front/side views
+ok 119 - rear observation aims at the actual interior mirror and preserves original front/side views
+  ---
+  duration_ms: 3.1421
+  type: 'test'
+  ...
+# Subtest: all observation views share a single seat eye, while shoulder views retain the car pillars and expose a usable rear-quarter sightline
+ok 120 - all observation views share a single seat eye, while shoulder views retain the car pillars and expose a usable rear-quarter sightline
+  ---
+  duration_ms: 349.2924
+  type: 'test'
+  ...
+# Subtest: wheel roll comes from signed path distance and seeks deterministically through stops and reverse
+ok 121 - wheel roll comes from signed path distance and seeks deterministically through stops and reverse
+  ---
+  duration_ms: 1.9635
+  type: 'test'
+  ...
+# Subtest: teaching focus never overrides pedal, gear or light state from the actual pose
+ok 122 - teaching focus never overrides pedal, gear or light state from the actual pose
+  ---
+  duration_ms: 1.2701
+  type: 'test'
+  ...
+# Subtest: hazard keeps position shells lit without road beams and retains brake-lamp priority
+ok 123 - hazard keeps position shells lit without road beams and retains brake-lamp priority
+  ---
+  duration_ms: 0.8417
+  type: 'test'
+  ...
+# Subtest: course-only cabin opening exposes real pedals while leaving the separate shared sedan untouched
+ok 124 - course-only cabin opening exposes real pedals while leaving the separate shared sedan untouched
+  ---
+  duration_ms: 645.9314
+  type: 'test'
+  ...
+# Subtest: door, seat and belt actions are reversible on seek and do not move the calibrated mirrors
+ok 125 - door, seat and belt actions are reversible on seek and do not move the calibrated mirrors
+  ---
+  duration_ms: 273.1046
+  type: 'test'
+  ...
+# Subtest: exterior lamp traversal excludes headlight controls and groups without materials
+ok 126 - exterior lamp traversal excludes headlight controls and groups without materials
+  ---
+  duration_ms: 192.1215
+  type: 'test'
+  ...
+# Subtest: operation cameras frame readable controls and keep switches, lamps and three pedals unoccluded
+ok 127 - operation cameras frame readable controls and keep switches, lamps and three pedals unoccluded
+  ---
+  duration_ms: 386.5643
+  type: 'test'
+  ...
+# Subtest: a positive front-wheel left steer turns the wheel rim left in driver and controls camera projections
+ok 128 - a positive front-wheel left steer turns the wheel rim left in driver and controls camera projections
+  ---
+  duration_ms: 116.8708
+  type: 'test'
+  ...
+# Subtest: continuous narration and action advance through every chapter and stop at the end
+ok 129 - continuous narration and action advance through every chapter and stop at the end
+  ---
+  duration_ms: 7.5916
+  type: 'test'
+  ...
+# Subtest: jumping and skipping invalidate pending narration so old audio cannot start another chapter
+ok 130 - jumping and skipping invalidate pending narration so old audio cannot start another chapter
+  ---
+  duration_ms: 0.4947
+  type: 'test'
+  ...
+# Subtest: lecture pause and action pause freeze different phases and neither advances movement
+ok 131 - lecture pause and action pause freeze different phases and neither advances movement
+  ---
+  duration_ms: 0.34
+  type: 'test'
+  ...
+# Subtest: chapter checkpoint waits and resumes to the next project rather than replaying the finished one
+ok 132 - chapter checkpoint waits and resumes to the next project rather than replaying the finished one
+  ---
+  duration_ms: 0.2081
+  type: 'test'
+  ...
+# Subtest: global seeking selects the correct chapter, stops playback and preserves user settings
+ok 133 - global seeking selects the correct chapter, stops playback and preserves user settings
+  ---
+  duration_ms: 0.4656
+  type: 'test'
+  ...
+# Subtest: speech errors require an explicit user choice and cannot silently start motion
+ok 134 - speech errors require an explicit user choice and cannot silently start motion
+  ---
+  duration_ms: 0.2786
+  type: 'test'
+  ...
+# Subtest: muting a paused lecture preserves the learner pause and cancels the old narration token
+ok 135 - muting a paused lecture preserves the learner pause and cancels the old narration token
+  ---
+  duration_ms: 0.3856
+  type: 'test'
+  ...
+# Subtest: synchronized coaching gates each operation before its action, including at four-times speed
+ok 136 - synchronized coaching gates each operation before its action, including at four-times speed
+  ---
+  duration_ms: 0.4242
+  type: 'test'
+  ...
+# Subtest: pausing or muting a synchronized cue never advances the vehicle or replays the consumed cue
+ok 137 - pausing or muting a synchronized cue never advances the vehicle or replays the consumed cue
+  ---
+  duration_ms: 0.685
+  type: 'test'
+  ...
+# Subtest: seek resumes with the current operation reminder without rewinding or replaying earlier steps
+ok 138 - seek resumes with the current operation reminder without rewinding or replaying earlier steps
+  ---
+  duration_ms: 0.6721
+  type: 'test'
+  ...
+# Subtest: voice off runs all actions continuously and original chapter-overview narration remains selectable
+ok 139 - voice off runs all actions continuously and original chapter-overview narration remains selectable
+  ---
+  duration_ms: 0.2965
+  type: 'test'
+  ...
+# Subtest: cue failure retries the same operation and a late old clip cannot release the hold
+ok 140 - cue failure retries the same operation and a late old clip cannot release the hold
+  ---
+  duration_ms: 0.1626
+  type: 'test'
+  ...
+# Subtest: a completed cue while lecture-paused stays paused, and the next chapter starts its own first cue
+ok 141 - a completed cue while lecture-paused stays paused, and the next chapter starts its own first cue
+  ---
+  duration_ms: 0.1127
+  type: 'test'
+  ...
+# Subtest: the complete playlist preserves all 22 chapters in subject order without copying any sampler-backed data
+ok 142 - the complete playlist preserves all 22 chapters in subject order without copying any sampler-backed data
+  ---
+  duration_ms: 6.6844
+  type: 'test'
+  ...
+# Subtest: section and per-chapter metadata identify both subjects with local and complete numbering
+ok 143 - section and per-chapter metadata identify both subjects with local and complete numbering
+  ---
+  duration_ms: 2.2347
+  type: 'test'
+  ...
+# Subtest: decorated playlist chapters retain continuous physical sampling at keyframes and between frames
+ok 144 - decorated playlist chapters retain continuous physical sampling at keyframes and between frames
+  ---
+  duration_ms: 25.0745
+  type: 'test'
+  ...
+# Subtest: continuous playback voices all 121 existing operation cues once, in order, at both normal and fast speed
+ok 145 - continuous playback voices all 121 existing operation cues once, in order, at both normal and fast speed
+  ---
+  duration_ms: 7.0725
+  type: 'test'
+  ...
+# Subtest: the complete playlist reuses the existing MiniMax cue and overview catalog without requiring new speech
+ok 146 - the complete playlist reuses the existing MiniMax cue and overview catalog without requiring new speech
+  ---
+  duration_ms: 5.5544
+  type: 'test'
+  ...
+# Subtest: muting still traverses both subjects and seeking the subject boundary lands on subject three preparation
+ok 147 - muting still traverses both subjects and seeking the subject boundary lands on subject three preparation
+  ---
+  duration_ms: 2.3871
+  type: 'test'
+  ...
+# Subtest: partial or ambiguous input cannot silently produce an incomplete full-course entry
+ok 148 - partial or ambiguous input cannot silently produce an incomplete full-course entry
+  ---
+  duration_ms: 1.2228
+  type: 'test'
+  ...
+# Subtest: a mirror-only contact keeps its own part and position through review and error-before retry
+ok 149 - a mirror-only contact keeps its own part and position through review and error-before retry
+  ---
+  duration_ms: 20.4166
+  type: 'test'
+  ...
+# Subtest: every existing chapter has specific feasible tasks and honest basic-control scope
+ok 150 - every existing chapter has specific feasible tasks and honest basic-control scope
+  ---
+  duration_ms: 2.071
+  type: 'test'
+  ...
+# Subtest: waiting through the chapter duration never awards travel or a completed driving lesson
+ok 151 - waiting through the chapter duration never awards travel or a completed driving lesson
+  ---
+  duration_ms: 184.548
+  type: 'test'
+  ...
+# Subtest: real keyboard physics can finish the straight basic task by distance, observation and stable control
+ok 152 - real keyboard physics can finish the straight basic task by distance, observation and stable control
+  ---
+  duration_ms: 119.8305
+  type: 'test'
+  ...
+# Subtest: an inherited camera direction does not count as an explicit observation action
+ok 153 - an inherited camera direction does not count as an explicit observation action
+  ---
+  duration_ms: 33.8412
+  type: 'test'
+  ...
+# Subtest: stationary light tasks advance only on the chosen state, work while paused, and retain a wrong answer in review
+ok 154 - stationary light tasks advance only on the chosen state, work while paused, and retain a wrong answer in review
+  ---
+  duration_ms: 10.3234
+  type: 'test'
+  ...
+# Subtest: a correctly answered complete light sequence finishes without a fake examination score
+ok 155 - a correctly answered complete light sequence finishes without a fake examination score
+  ---
+  duration_ms: 4.9561
+  type: 'test'
+  ...
+# Subtest: a risk review restores the full pre-error physics snapshot and drops later observations and actions
+ok 156 - a risk review restores the full pre-error physics snapshot and drops later observations and actions
+  ---
+  duration_ms: 13.2785
+  type: 'test'
+  ...
+# Subtest: a proximity warning remains feedback rather than silently ending an attempt
+ok 157 - a proximity warning remains feedback rather than silently ending an attempt
+  ---
+  duration_ms: 5.2667
+  type: 'test'
+  ...
+# Subtest: same-frame edge warnings cannot replace a blocking collision or road departure in the review summary
+ok 158 - same-frame edge warnings cannot replace a blocking collision or road departure in the review summary
+  ---
+  duration_ms: 9.2294
+  type: 'test'
+  ...
+# Subtest: later observation clicks do not erase an earlier unobserved start
+ok 159 - later observation clicks do not erase an earlier unobserved start
+  ---
+  duration_ms: 4.3619
+  type: 'test'
+  ...
+# Subtest: countersteering within one lane change does not request the opposite indicator
+ok 160 - countersteering within one lane change does not request the opposite indicator
+  ---
+  duration_ms: 36.3498
+  type: 'test'
+  ...
+# Subtest: post-parking shoulder checks are not awarded for views visited before parking
+ok 161 - post-parking shoulder checks are not awarded for views visited before parking
+  ---
+  duration_ms: 20.5609
+  type: 'test'
+  ...
+# Subtest: crosswalk restart requires fresh observations after the actual stop
+ok 162 - crosswalk restart requires fresh observations after the actual stop
+  ---
+  duration_ms: 15.9388
+  type: 'test'
+  ...
+# Subtest: steering feedback compares operation positions, not different driving speeds or elapsed seconds
+ok 163 - steering feedback compares operation positions, not different driving speeds or elapsed seconds
+  ---
+  duration_ms: 9.6726
+  type: 'test'
+  ...
+# Subtest: prepare is an observation-only task, and comparison data keeps real world positions
+ok 164 - prepare is an observation-only task, and comparison data keeps real world positions
+  ---
+  duration_ms: 3.5874
+  type: 'test'
+  ...
+# Subtest: all 22 basic lessons are reachable with valid observations and spatially correct operations
+ok 165 - all 22 basic lessons are reachable with valid observations and spatially correct operations
+  ---
+  duration_ms: 1594.9323
+  type: 'test'
+  ...
+# Subtest: gentle overtaking is checked by actual lateral movement even below the old steering threshold
+ok 166 - gentle overtaking is checked by actual lateral movement even below the old steering threshold
+  ---
+  duration_ms: 23.7255
+  type: 'test'
+  ...
+# Subtest: stationary wheel presets can be followed by observation before a correctly signaled start
+ok 167 - stationary wheel presets can be followed by observation before a correctly signaled start
+  ---
+  duration_ms: 3.7624
+  type: 'test'
+  ...
+# Subtest: multiple corrected retries do not retain the old moving steering violation in statistics
+ok 168 - multiple corrected retries do not retain the old moving steering violation in statistics
+  ---
+  duration_ms: 61.2942
+  type: 'test'
+  ...
+# Subtest: paused light feedback and repeated retries preserve the answered prefix without preserving the mistake
+ok 169 - paused light feedback and repeated retries preserve the answered prefix without preserving the mistake
+  ---
+  duration_ms: 3.5846
+  type: 'test'
+  ...
+# Subtest: choosing the expected light while rolling explains the stationary requirement rather than a wrong lamp
+ok 170 - choosing the expected light while rolling explains the stationary requirement rather than a wrong lamp
+  ---
+  duration_ms: 2.0335
+  type: 'test'
+  ...
+# Subtest: preparation observations while moving do not fill a stationary preparation checklist
+ok 171 - preparation observations while moving do not fill a stationary preparation checklist
+  ---
+  duration_ms: 1.1825
+  type: 'test'
+  ...
+# Subtest: parking observations made before the stop cannot count as after it at the same paused timestamp
+ok 172 - parking observations made before the stop cannot count as after it at the same paused timestamp
+  ---
+  duration_ms: 3.1428
+  type: 'test'
+  ...
+# Subtest: only an incomplete voluntary review can continue in place and it preserves progress and warning history
+ok 173 - only an incomplete voluntary review can continue in place and it preserves progress and warning history
+  ---
+  duration_ms: 5.007
+  type: 'test'
+  ...
+# Subtest: continuing an incomplete endpoint review does not immediately reopen it, but completion and new risks still review
+ok 174 - continuing an incomplete endpoint review does not immediately reopen it, but completion and new risks still review
+  ---
+  duration_ms: 19.8583
+  type: 'test'
+  ...
+# Subtest: a takeover near the endpoint can complete its actual remaining route without an impossible three-meter minimum
+ok 175 - a takeover near the endpoint can complete its actual remaining route without an impossible three-meter minimum
+  ---
+  duration_ms: 10.8747
+  type: 'test'
+  ...
+# Subtest: a takeover never awards already completed turning, lane change, parking or acceleration from an inherited pose
+ok 176 - a takeover never awards already completed turning, lane change, parking or acceleration from an inherited pose
+  ---
+  duration_ms: 35.8263
+  type: 'test'
+  ...
+# Subtest: all 22 reference chapters remain physically contained and avoid their actual scripted obstacles
+ok 177 - all 22 reference chapters remain physically contained and avoid their actual scripted obstacles
+  ---
+  duration_ms: 3716.4278
+  type: 'test'
+  ...
+# Subtest: scripted crossing traffic is swept even when the ego is stationary and no render context is supplied
+ok 178 - scripted crossing traffic is swept even when the ego is stationary and no render context is supplied
+  ---
+  duration_ms: 7.9434
+  type: 'test'
+  ...
+# Subtest: a rotating actor sweeps its corners even if the centre and both endpoint clearances are unchanged
+ok 179 - a rotating actor sweeps its corners even if the centre and both endpoint clearances are unchanged
+  ---
+  duration_ms: 3.9151
+  type: 'test'
+  ...
+# Subtest: nearby traffic warnings distinguish closing, constant close following, and leaving the target
+ok 180 - nearby traffic warnings distinguish closing, constant close following, and leaving the target
+  ---
+  duration_ms: 2.7544
+  type: 'test'
+  ...
+# Subtest: an already unsafe initial pose does not manufacture a last safe pose or claim to have stopped before contact
+ok 181 - an already unsafe initial pose does not manufacture a last safe pose or claim to have stopped before contact
+  ---
+  duration_ms: 1.4579
+  type: 'test'
+  ...
+# Subtest: the audited A-then-W excursion now warns and blocks before crossing the opposing solid divider
+ok 182 - the audited A-then-W excursion now warns and blocks before crossing the opposing solid divider
+  ---
+  duration_ms: 43.8526
+  type: 'test'
+  ...
+# Subtest: road containment tests the whole bumper and concave junction, while legal lane changes and turns remain allowed
+ok 183 - road containment tests the whole bumper and concave junction, while legal lane changes and turns remain allowed
+  ---
+  duration_ms: 53.1814
+  type: 'test'
+  ...
+# Subtest: a swept box collision cannot tunnel through a bus-sized object at low frame rates, forwards or backwards
+ok 184 - a swept box collision cannot tunnel through a bus-sized object at low frame rates, forwards or backwards
+  ---
+  duration_ms: 4.4866
+  type: 'test'
+  ...
+# Subtest: relative actor motion detects a pedestrian crossing the stationary full car between samples
+ok 185 - relative actor motion detects a pedestrian crossing the stationary full car between samples
+  ---
+  duration_ms: 1.2711
+  type: 'test'
+  ...
+# Subtest: actual scene actors override fallback scripts and overhead objects do not collide at road level
+ok 186 - actual scene actors override fallback scripts and overhead objects do not collide at road level
+  ---
+  duration_ms: 0.893
+  type: 'test'
+  ...
+# Subtest: swept actor heights and ramp elevation separate objects below the road from objects on it
+ok 187 - swept actor heights and ramp elevation separate objects below the road from objects on it
+  ---
+  duration_ms: 1.5693
+  type: 'test'
+  ...
+# Subtest: the real bay mouth stays open, but the full body and rear bumper cannot cross closed bay boundaries
+ok 188 - the real bay mouth stays open, but the full body and rear bumper cannot cross closed bay boundaries
+  ---
+  duration_ms: 2.9108
+  type: 'test'
+  ...
+# Subtest: oriented collision checks do not reject separated parallel cars just because their world AABBs overlap
+ok 189 - oriented collision checks do not reject separated parallel cars just because their world AABBs overlap
+  ---
+  duration_ms: 0.3895
+  type: 'test'
+  ...
+# Subtest: fallback actor centres and model extents correspond to scene anchors, including the corrected overtaking gap
+ok 190 - fallback actor centres and model extents correspond to scene anchors, including the corrected overtaking gap
+  ---
+  duration_ms: 0.6736
+  type: 'test'
+  ...
+# Subtest: actual left/right mirror hulls stop before a thin post in forward and reverse sweeps without widening the body
+ok 191 - actual left/right mirror hulls stop before a thin post in forward and reverse sweeps without widening the body
+  ---
+  duration_ms: 198.4031
+  type: 'test'
+  ...
+# Subtest: mirror contact uses actual rounded convex corners rather than the enclosing OBB empty space
+ok 192 - mirror contact uses actual rounded convex corners rather than the enclosing OBB empty space
+  ---
+  duration_ms: 55.2096
+  type: 'test'
+  ...
+# Subtest: positive millimetre obstacle dimensions are not silently widened by attachment narrowphase
+ok 193 - positive millimetre obstacle dimensions are not silently widened by attachment narrowphase
+  ---
+  duration_ms: 0.3817
+  type: 'test'
+  ...
+# Subtest: both real mirror stalks have independent narrowphase instead of being lost outside the body and housing
+ok 194 - both real mirror stalks have independent narrowphase instead of being lost outside the body and housing
+  ---
+  duration_ms: 63.0418
+  type: 'test'
+  ...
+# Subtest: low kerbs, painted lines, and overhead objects are independent of external-mirror collision height
+ok 195 - low kerbs, painted lines, and overhead objects are independent of external-mirror collision height
+  ---
+  duration_ms: 54.742
+  type: 'test'
+  ...
+# Subtest: an external-mirror overlap at the initial position is explicit, while leaving a clear close position is allowed
+ok 196 - an external-mirror overlap at the initial position is explicit, while leaving a clear close position is allowed
+  ---
+  duration_ms: 48.6111
+  type: 'test'
+  ...
+# Subtest: actual mirror tilt and road pitch transform the hull in 3D, and intermediate yaw/pitch contacts are swept
+ok 197 - actual mirror tilt and road pitch transform the hull in 3D, and intermediate yaw/pitch contacts are swept
+  ---
+  duration_ms: 56.3108
+  type: 'test'
+  ...
+# Subtest: almost parallel wall clearance uses the SLERP axis instead of exhausting thousands of pitch steps
+ok 198 - almost parallel wall clearance uses the SLERP axis instead of exhausting thousands of pitch steps
+  ---
+  duration_ms: 46.2127
+  type: 'test'
+  ...
+# Subtest: all 22 complete reference chapters also avoid mirror-housing blocking with actual mesh geometry enabled
+ok 199 - all 22 complete reference chapters also avoid mirror-housing blocking with actual mesh geometry enabled
+  ---
+  duration_ms: 3559.7269
+  type: 'test'
+  ...
+# Subtest: looking at either physical mirror aims at its true centre at every supported seat position
+ok 200 - looking at either physical mirror aims at its true centre at every supported seat position
+  ---
+  duration_ms: 6.1139
+  type: 'test'
+  ...
+# Subtest: looking ahead keeps a stable slightly downward driving view without changing seat or mirror settings
+ok 201 - looking ahead keeps a stable slightly downward driving view without changing seat or mirror settings
+  ---
+  duration_ms: 1.9814
+  type: 'test'
+  ...
+# Subtest: wide layouts cap horizontal field at 100 degrees while tall layouts keep a 55 degree vertical field
+ok 202 - wide layouts cap horizontal field at 100 degrees while tall layouts keep a 55 degree vertical field
+  ---
+  duration_ms: 0.4485
+  type: 'test'
+  ...
+# Subtest: all bay and course paint is planar at the shared paint surface, not raised boxes
+ok 203 - all bay and course paint is planar at the shared paint surface, not raised boxes
+  ---
+  duration_ms: 38.7838
+  type: 'test'
+  ...
+# Subtest: bay paint preserves the physical bay boundary centres and 10 cm line width
+ok 204 - bay paint preserves the physical bay boundary centres and 10 cm line width
+  ---
+  duration_ms: 41.3569
+  type: 'test'
+  ...
+# Subtest: lane boundaries and both dashed control lines retain COURSE coordinates
+ok 205 - lane boundaries and both dashed control lines retain COURSE coordinates
+  ---
+  duration_ms: 10.7873
+  type: 'test'
+  ...
+# Subtest: grid, green fill, dimensions and target guides start hidden without hiding real paint
+ok 206 - grid, green fill, dimensions and target guides start hidden without hiding real paint
+  ---
+  duration_ms: 6.1873
+  type: 'test'
+  ...
+# Subtest: walls, fences, signs, buildings, barriers and tree geometry remain outside driving bounds
+ok 207 - walls, fences, signs, buildings, barriers and tree geometry remain outside driving bounds
+  ---
+  duration_ms: 31.3963
+  type: 'test'
+  ...
+# Subtest: the road retains metre dimensions and reuses the caller texture without changing its sampling
+ok 208 - the road retains metre dimensions and reuses the caller texture without changing its sampling
+  ---
+  duration_ms: 8.2146
+  type: 'test'
+  ...
+# Subtest: C1 catalog covers five field projects and all sixteen road projects plus separate simulated lights
+ok 209 - C1 catalog covers five field projects and all sixteen road projects plus separate simulated lights
+  ---
+  duration_ms: 4.0477
+  type: 'test'
+  ...
+# Subtest: every chapter has stable narrated guidance, valid ordered poses and ordered observation cues
+ok 210 - every chapter has stable narrated guidance, valid ordered poses and ordered observation cues
+  ---
+  duration_ms: 20.5767
+  type: 'test'
+  ...
+# Subtest: moving projects contain substantial motion, static preparation/lights stay stationary and interpolation clamps
+ok 211 - moving projects contain substantial motion, static preparation/lights stay stationary and interpolation clamps
+  ---
+  duration_ms: 21.1931
+  type: 'test'
+  ...
+# Subtest: original reverse parking retains both reverse entries, parked positions and A/B transfer
+ok 212 - original reverse parking retains both reverse entries, parked positions and A/B transfer
+  ---
+  duration_ms: 0.8839
+  type: 'test'
+  ...
+# Subtest: hill chapter includes raised stationary hold and forward restart without a backward roll
+ok 213 - hill chapter includes raised stationary hold and forward restart without a backward roll
+  ---
+  duration_ms: 1.2803
+  type: 'test'
+  ...
+# Subtest: side parking reaches a fully contained stationary bay pose and then leaves forwards
+ok 214 - side parking reaches a fully contained stationary bay pose and then leaves forwards
+  ---
+  duration_ms: 0.7156
+  type: 'test'
+  ...
+# Subtest: right-angle trajectory keeps the full car on the agreed L road rather than a narrow circular ribbon
+ok 215 - right-angle trajectory keeps the full car on the agreed L road rather than a narrow circular ribbon
+  ---
+  duration_ms: 2.2572
+  type: 'test'
+  ...
+# Subtest: left/right intersections exit in right-hand traffic lanes, not opposing lanes
+ok 216 - left/right intersections exit in right-hand traffic lanes, not opposing lanes
+  ---
+  duration_ms: 0.4053
+  type: 'test'
+  ...
+# Subtest: simulated lights cover high, low, alternating, hazard and final reset while parked
+ok 217 - simulated lights cover high, low, alternating, hazard and final reset while parked
+  ---
+  duration_ms: 0.7945
+  type: 'test'
+  ...
+# Subtest: crosswalk yields before the crossing and overtaking returns only after passing the lead vehicle
+ok 218 - crosswalk yields before the crossing and overtaking returns only after passing the lead vehicle
+  ---
+  duration_ms: 2.1959
+  type: 'test'
+  ...
+# Subtest: both starts use symmetric stationary demonstration poses with time and distance reset
+ok 219 - both starts use symmetric stationary demonstration poses with time and distance reset
+  ---
+  duration_ms: 381.4418
+  type: 'test'
+  ...
+# Subtest: same-speed references and successful actual continuations fit the bay throughout the supported speed range
+ok 220 - same-speed references and successful actual continuations fit the bay throughout the supported speed range
+  ---
+  duration_ms: 1174.3569
+  type: 'test'
+  ...
+# Subtest: a body angle under four degrees does not pass when straight continuation will cross a line
+ok 221 - a body angle under four degrees does not pass when straight continuation will cross a line
+  ---
+  duration_ms: 249.7625
+  type: 'test'
+  ...
+# Subtest: early, late and missing decisions have distinct feedback with no running action prompts
+ok 222 - early, late and missing decisions have distinct feedback with no running action prompts
+  ---
+  duration_ms: 635.4787
+  type: 'test'
+  ...
+# Subtest: actual line contact takes priority and interrupted or forward practice stays unfinished
+ok 223 - actual line contact takes priority and interrupted or forward practice stays unfinished
+  ---
+  duration_ms: 90.3903
+  type: 'test'
+  ...
+# Subtest: retry preserves the recorded prefix and old result but clears decision state before the new attempt
+ok 224 - retry preserves the recorded prefix and old result but clears decision state before the new attempt
+  ---
+  duration_ms: 206.4439
+  type: 'test'
+  ...
+# Subtest: an immediate decision retries at the earliest available pose without reusing the old X input
+ok 225 - an immediate decision retries at the earliest available pose without reusing the old X input
+  ---
+  duration_ms: 84.5989
+  type: 'test'
+  ...
+# Subtest: distance replay and action-moment comparison are explicit and return independent pose copies
+ok 226 - distance replay and action-moment comparison are explicit and return independent pose copies
+  ---
+  duration_ms: 73.5399
+  type: 'test'
+  ...
+# Subtest: all twelve teaching steps have valid monotonic timeline checkpoints
+ok 227 - all twelve teaching steps have valid monotonic timeline checkpoints
+  ---
+  duration_ms: 2.3569
+  type: 'test'
+  ...
+# Subtest: the complete two-sided demonstration stays inside exam field lines
+ok 228 - the complete two-sided demonstration stays inside exam field lines
+  ---
+  duration_ms: 171.5182
+  type: 'test'
+  ...
+# Subtest: both front-wheel contact points pass each control line and both parks fully stop
+ok 229 - both front-wheel contact points pass each control line and both parks fully stop
+  ---
+  duration_ms: 1.6243
+  type: 'test'
+  ...
+# Subtest: demonstration transitions never teleport the car or reset its clock
+ok 230 - demonstration transitions never teleport the car or reset its clock
+  ---
+  duration_ms: 6.1783
+  type: 'test'
+  ...
+# Subtest: practice progression recognizes the full demonstration and detects early reversal
+ok 231 - practice progression recognizes the full demonstration and detects early reversal
+  ---
+  duration_ms: 49.7049
+  type: 'test'
+  ...
+# Subtest: live coaching changes from straight reversing to steering, centering, and stopping
+ok 232 - live coaching changes from straight reversing to steering, centering, and stopping
+  ---
+  duration_ms: 3.6753
+  type: 'test'
+  ...
+# Subtest: recommendation fits a small inner body reference and near/far ground for both current-eye mirrors
+ok 233 - recommendation fits a small inner body reference and near/far ground for both current-eye mirrors
+  ---
+  duration_ms: 104.8315
+  type: 'test'
+  ...
+# Subtest: the full supported seating rectangle yields bounded, honestly reported usable presets
+ok 234 - the full supported seating rectangle yields bounded, honestly reported usable presets
+  ---
+  duration_ms: 1071.4591
+  type: 'test'
+  ...
+# Subtest: recommendation ignores old wrong mirror angles and vehicle/bay state and is exactly idempotent
+ok 235 - recommendation ignores old wrong mirror angles and vehicle/bay state and is exactly idempotent
+  ---
+  duration_ms: 70.2638
+  type: 'test'
+  ...
+# Subtest: single-side application preserves the other mirror and never changes the seat
+ok 236 - single-side application preserves the other mirror and never changes the seat
+  ---
+  duration_ms: 10.852
+  type: 'test'
+  ...
+# Subtest: moving the eye produces a new recommendation and an applied preset stays fixed until requested again
+ok 237 - moving the eye produces a new recommendation and an applied preset stays fixed until requested again
+  ---
+  duration_ms: 32.2463
+  type: 'test'
+  ...
+# Subtest: unsupported eyes are explicitly limited, while invalid inputs fail without inventing calibration
+ok 238 - unsupported eyes are explicitly limited, while invalid inputs fail without inventing calibration
+  ---
+  duration_ms: 15.662
+  type: 'test'
+  ...
+# Subtest: side and back references stay on their real stripes and readable correction references expose a continuous segment
+ok 239 - side and back references stay on their real stripes and readable correction references expose a continuous segment
+  ---
+  duration_ms: 265.8568
+  type: 'test'
+  ...
+# Subtest: a single visible slice or a back stripe cannot stand in for a readable side stripe
+ok 240 - a single visible slice or a back stripe cannot stand in for a readable side stripe
+  ---
+  duration_ms: 37.4213
+  type: 'test'
+  ...
+# Subtest: occlusion acceptance applies to body, ground, side and back references without moving points
+ok 241 - occlusion acceptance applies to body, ground, side and back references without moving points
+  ---
+  duration_ms: 16.0368
+  type: 'test'
+  ...
+# Subtest: beginner turn start and end cannot claim a bay corner or line is visible in either mirror
+ok 242 - beginner turn start and end cannot claim a bay corner or line is visible in either mirror
+  ---
+  duration_ms: 151.6494
+  type: 'test'
+  ...
+# Subtest: right-entry references appear later on the correct side, followed by the left mirror
+ok 243 - right-entry references appear later on the correct side, followed by the left mirror
+  ---
+  duration_ms: 102.2286
+  type: 'test'
+  ...
+# Subtest: sampling contains only the physical same-side stripe and does not invent a bay entrance cross-line
+ok 244 - sampling contains only the physical same-side stripe and does not invent a bay entrance cross-line
+  ---
+  duration_ms: 38.0639
+  type: 'test'
+  ...
+# Subtest: body and ground markers use real vehicle-relative points and the exact current optical projection
+ok 245 - body and ground markers use real vehicle-relative points and the exact current optical projection
+  ---
+  duration_ms: 111.4121
+  type: 'test'
+  ...
+# Subtest: manual mirror and eye changes update observations without modifying settings or the other mirror
+ok 246 - manual mirror and eye changes update observations without modifying settings or the other mirror
+  ---
+  duration_ms: 83.8399
+  type: 'test'
+  ...
+# Subtest: per-frame recognition matches observation points without running a bay-line scan
+ok 247 - per-frame recognition matches observation points without running a bay-line scan
+  ---
+  duration_ms: 367.4227
+  type: 'test'
+  ...
+# Subtest: finite curved mirrors produce stable orthonormal cameras with bounded near-field approximation
+ok 248 - finite curved mirrors produce stable orthonormal cameras with bounded near-field approximation
+  ---
+  duration_ms: 47.1074
+  type: 'test'
+  ...
+# Subtest: UV grid follows PlaneGeometry order and covers the physical rays without an extra flip
+ok 249 - UV grid follows PlaneGeometry order and covers the physical rays without an extra flip
+  ---
+  duration_ms: 31.1649
+  type: 'test'
+  ...
+# Subtest: seat height and fore/aft position both change the reflected view, while left and right differ
+ok 250 - seat height and fore/aft position both change the reflected view, while left and right differ
+  ---
+  duration_ms: 41.7711
+  type: 'test'
+  ...
+# Subtest: virtual-eye fitting is stable under vehicle translation and rotation
+ok 251 - virtual-eye fitting is stable under vehicle translation and rotation
+  ---
+  duration_ms: 22.5605
+  type: 'test'
+  ...
+# Subtest: display aspect changes render coverage, not the sampled physical field of view
+ok 252 - display aspect changes render coverage, not the sampled physical field of view
+  ---
+  duration_ms: 11.4518
+  type: 'test'
+  ...
+# Subtest: invalid sampling dimensions and render aspect are rejected before allocating
+ok 253 - invalid sampling dimensions and render aspect are rejected before allocating
+  ---
+  duration_ms: 1.4109
+  type: 'test'
+  ...
+# Subtest: physical mirror vertices, outward normals and source UVs match the same finite optical surface
+ok 254 - physical mirror vertices, outward normals and source UVs match the same finite optical surface
+  ---
+  duration_ms: 102.3988
+  type: 'test'
+  ...
+# Subtest: a vehicle-mounted FrontSide surface is hit at the correct world location after translation and rotation
+ok 255 - a vehicle-mounted FrontSide surface is hit at the correct world location after translation and rotation
+  ---
+  duration_ms: 50.5895
+  type: 'test'
+  ...
+# Subtest: root-height compensation updates in place; moving only the eye changes UVs without moving physical glass
+ok 256 - root-height compensation updates in place; moving only the eye changes UVs without moving physical glass
+  ---
+  duration_ms: 15.3446
+  type: 'test'
+  ...
+# Subtest: mismatched geometry and invalid root heights cannot silently shift or corrupt the mirror
+ok 257 - mismatched geometry and invalid root heights cannot silently shift or corrupt the mirror
+  ---
+  duration_ms: 6.6578
+  type: 'test'
+  ...
+# Subtest: shared mirror clipping rejects virtual-eye-side false objects and preserves true rays / convex edges in world and car coordinates
+ok 258 - shared mirror clipping rejects virtual-eye-side false objects and preserves true rays / convex edges in world and car coordinates
+  ---
+  duration_ms: 65.2624
+  type: 'test'
+  ...
+# Subtest: original parking prepare applies one clip per mirror and restores caller clips before main / teaching views, including legacy fixtures
+ok 259 - original parking prepare applies one clip per mirror and restores caller clips before main / teaching views, including legacy fixtures
+  ---
+  duration_ms: 71.3204
+  type: 'test'
+  ...
+# Subtest: original review capture removes the source clip before each image pass and restores clip references on source / overlay failures
+ok 260 - original review capture removes the source clip before each image pass and restores clip references on source / overlay failures
+  ---
+  duration_ms: 35.2586
+  type: 'test'
+  ...
+# Subtest: capture highlights real side-panel height and suppresses annotated references behind solid geometry
+ok 261 - capture highlights real side-panel height and suppresses annotated references behind solid geometry
+  ---
+  duration_ms: 362.5433
+  type: 'test'
+  ...
+# Subtest: live mirrors use fitted world cameras and unflipped ray UVs; magnifying preserves both
+ok 262 - live mirrors use fitted world cameras and unflipped ray UVs; magnifying preserves both
+  ---
+  duration_ms: 27.1412
+  type: 'test'
+  ...
+# Subtest: review capture uses live optics, only flips pixel rows, and restores renderer/material/car state
+ok 263 - review capture uses live optics, only flips pixel rows, and restores renderer/material/car state
+  ---
+  duration_ms: 19.4902
+  type: 'test'
+  ...
+# Subtest: capture restores renderer and vehicle visibility even if scene rendering throws
+ok 264 - capture restores renderer and vehicle visibility even if scene rendering throws
+  ---
+  duration_ms: 8.751
+  type: 'test'
+  ...
+# Subtest: live source and overlay failures both restore every renderer setting and vehicle visibility
+ok 265 - live source and overlay failures both restore every renderer setting and vehicle visibility
+  ---
+  duration_ms: 73.9604
+  type: 'test'
+  ...
+# Subtest: labels use physical mirror projection and real Three ray occlusion, respecting hidden/transparent objects
+ok 266 - labels use physical mirror projection and real Three ray occlusion, respecting hidden/transparent objects
+  ---
+  duration_ms: 54.6436
+  type: 'test'
+  ...
+# Subtest: recognition guides are opt-in and place body/ground markers only at physically visible unoccluded references
+ok 267 - recognition guides are opt-in and place body/ground markers only at physically visible unoccluded references
+  ---
+  duration_ms: 44.4168
+  type: 'test'
+  ...
+# Subtest: observations respect solid occlusion and keep pose, side, mirror and eye caches separate
+ok 268 - observations respect solid occlusion and keep pose, side, mirror and eye caches separate
+  ---
+  duration_ms: 200.3015
+  type: 'test'
+  ...
+# Subtest: physical mirrors update with hidden DOM cards and share source textures / UVs without extra flips
+ok 269 - physical mirrors update with hidden DOM cards and share source textures / UVs without extra flips
+  ---
+  duration_ms: 13.685
+  type: 'test'
+  ...
+# Subtest: prepare supports source -> main scene -> teaching overlay ordering and reuses physical geometry until calibration/root changes
+ok 270 - prepare supports source -> main scene -> teaching overlay ordering and reuses physical geometry until calibration/root changes
+  ---
+  duration_ms: 19.7506
+  type: 'test'
+  ...
+# Subtest: physical prepare/capture failures restore both reflective surfaces and unified interior visibility
+ok 271 - physical prepare/capture failures restore both reflective surfaces and unified interior visibility
+  ---
+  duration_ms: 34.3917
+  type: 'test'
+  ...
+# Subtest: narration finishes and loads assets relative to the configured app base
+ok 272 - narration finishes and loads assets relative to the configured app base
+  ---
+  duration_ms: 17.259
+  type: 'test'
+  ...
+# Subtest: replacement cancels old clip; stale completion cannot stop its replacement
+ok 273 - replacement cancels old clip; stale completion cannot stop its replacement
+  ---
+  duration_ms: 3.7972
+  type: 'test'
+  ...
+# Subtest: pause while loading stays paused when the pending play promise resolves
+ok 274 - pause while loading stays paused when the pending play promise resolves
+  ---
+  duration_ms: 2.3996
+  type: 'test'
+  ...
+# Subtest: blocked autoplay reports actionable error and allows a later new play
+ok 275 - blocked autoplay reports actionable error and allows a later new play
+  ---
+  duration_ms: 2.5867
+  type: 'test'
+  ...
+# Subtest: missing media reports failure; persistent volume and rate are clamped
+ok 276 - missing media reports failure; persistent volume and rate are clamped
+  ---
+  duration_ms: 0.938
+  type: 'test'
+  ...
+# Subtest: unknown narration key settles without creating an audio request
+ok 277 - unknown narration key settles without creating an audio request
+  ---
+  duration_ms: 1.0734
+  type: 'test'
+  ...
+# Subtest: playback progress reports timing and preserves it while paused
+ok 278 - playback progress reports timing and preserves it while paused
+  ---
+  duration_ms: 12.6389
+  type: 'test'
+  ...
+# Subtest: quick pause and resume ignores the cancelled earlier play attempt
+ok 279 - quick pause and resume ignores the cancelled earlier play attempt
+  ---
+  duration_ms: 1.9594
+  type: 'test'
+  ...
+# Subtest: legacy Huihui audio retains its original source and exact generation provenance
+ok 280 - legacy Huihui audio retains its original source and exact generation provenance
+  ---
+  duration_ms: 352.2717
+  type: 'test'
+  ...
+# Subtest: every generated voice contains non-silent playable PCM speech
+ok 281 - every generated voice contains non-silent playable PCM speech
+  ---
+  duration_ms: 202.3799
+  type: 'test'
+  ...
+# Subtest: missing MiniMax package never falls back to legacy speech or pretends playback ended
+ok 282 - missing MiniMax package never falls back to legacy speech or pretends playback ended
+  ---
+  duration_ms: 1.6065
+  type: 'test'
+  ...
+# Subtest: all modes can describe missing body or stripe without demanding hidden references
+ok 283 - all modes can describe missing body or stripe without demanding hidden references
+  ---
+  duration_ms: 4.4241
+  type: 'test'
+  ...
+# Subtest: a tiny visible side-line fragment does not unlock trajectory judgment
+ok 284 - a tiny visible side-line fragment does not unlock trajectory judgment
+  ---
+  duration_ms: 0.5894
+  type: 'test'
+  ...
+# Subtest: a visible bay-back stripe is identified separately and cannot replace the side stripe
+ok 285 - a visible bay-back stripe is identified separately and cannot replace the side stripe
+  ---
+  duration_ms: 2.0321
+  type: 'test'
+  ...
+# Subtest: a visible entrance edge is never described as a bay-back stripe
+ok 286 - a visible entrance edge is never described as a bay-back stripe
+  ---
+  duration_ms: 0.4275
+  type: 'test'
+  ...
+# Subtest: recognition must use available references and does not accept the wheel or mirror frame
+ok 287 - recognition must use available references and does not accept the wheel or mirror frame
+  ---
+  duration_ms: 0.4829
+  type: 'test'
+  ...
+# Subtest: a visible corner or stripe cannot replace an occluded body reference in the observation gate
+ok 288 - a visible corner or stripe cannot replace an occluded body reference in the observation gate
+  ---
+  duration_ms: 0.2744
+  type: 'test'
+  ...
+# Subtest: recognition is available only for explicitly visible references, with unique valid answer choices
+ok 289 - recognition is available only for explicitly visible references, with unique valid answer choices
+  ---
+  duration_ms: 0.6268
+  type: 'test'
+  ...
+# Subtest: partial attempts keep the full reference and match distance from the initial spatial pose
+ok 290 - partial attempts keep the full reference and match distance from the initial spatial pose
+  ---
+  duration_ms: 4.5159
+  type: 'test'
+  ...
+# Subtest: different clocks and stored lifetime distances do not change the comparison
+ok 291 - different clocks and stored lifetime distances do not change the comparison
+  ---
+  duration_ms: 1.5539
+  type: 'test'
+  ...
+# Subtest: reference origin uses heading to distinguish coincident poses
+ok 292 - reference origin uses heading to distinguish coincident poses
+  ---
+  duration_ms: 0.4029
+  type: 'test'
+  ...
+# Subtest: empty and stationary tracks remain finite and preserve source event indices
+ok 293 - empty and stationary tracks remain finite and preserve source event indices
+  ---
+  duration_ms: 1.8005
+  type: 'test'
+  ...
+# Subtest: the projection retains real lateral errors using one scale for both axes
+ok 294 - the projection retains real lateral errors using one scale for both axes
+  ---
+  duration_ms: 2.7259
+  type: 'test'
+  ...
+# Subtest: renderer replaces the map and supplies stable accessible labels for empty and populated states
+ok 295 - renderer replaces the map and supplies stable accessible labels for empty and populated states
+  ---
+  duration_ms: 17.9394
+  type: 'test'
+  ...
+# Subtest: stationary steering recordings can open review, but idle snapshots cannot
+ok 296 - stationary steering recordings can open review, but idle snapshots cannot
+  ---
+  duration_ms: 5.1028
+  type: 'test'
+  ...
+# Subtest: sampled steering changes distinguish early, late, and appropriate turns on both sides
+ok 297 - sampled steering changes distinguish early, late, and appropriate turns on both sides
+  ---
+  duration_ms: 832.3291
+  type: 'test'
+  ...
+# Subtest: actual completed returns retain early, late, and appropriate timing feedback symmetrically
+ok 298 - actual completed returns retain early, late, and appropriate timing feedback symmetrically
+  ---
+  duration_ms: 487.5123
+  type: 'test'
+  ...
+# Subtest: the previous five-degree return advice is reviewed as early when its resulting straight path is unsafe
+ok 299 - the previous five-degree return advice is reviewed as early when its resulting straight path is unsafe
+  ---
+  duration_ms: 204.3992
+  type: 'test'
+  ...
+# Subtest: a turn begun toward the wrong side is identified separately from timing
+ok 300 - a turn begun toward the wrong side is identified separately from timing
+  ---
+  duration_ms: 18.9436
+  type: 'test'
+  ...
+# Subtest: taking over partway through a turn does not invent its missing start
+ok 301 - taking over partway through a turn does not invent its missing start
+  ---
+  duration_ms: 4.6858
+  type: 'test'
+  ...
+# Subtest: a takeover after centering leaves both unavailable operations unobserved
+ok 302 - a takeover after centering leaves both unavailable operations unobserved
+  ---
+  duration_ms: 0.9043
+  type: 'test'
+  ...
+# Subtest: taking over while the wheels are already unwinding cannot establish the missing return start
+ok 303 - taking over while the wheels are already unwinding cannot establish the missing return start
+  ---
+  duration_ms: 1.536
+  type: 'test'
+  ...
+# Subtest: a partial steering correction followed by restoring the turn is not judged as early centering
+ok 304 - a partial steering correction followed by restoring the turn is not judged as early centering
+  ---
+  duration_ms: 12.1297
+  type: 'test'
+  ...
+# Subtest: explicit centering input is pending until neutral, while retaining its recorded start for review
+ok 305 - explicit centering input is pending until neutral, while retaining its recorded start for review
+  ---
+  duration_ms: 6.0097
+  type: 'test'
+  ...
+# Subtest: a stopped X return uses the actual unchanged body pose instead of inventing reverse movement
+ok 306 - a stopped X return uses the actual unchanged body pose instead of inventing reverse movement
+  ---
+  duration_ms: 37.8322
+  type: 'test'
+  ...
+# Subtest: changing to 1.2 km/h while returning cannot inherit a safe verdict at the previous speed
+ok 307 - changing to 1.2 km/h while returning cannot inherit a safe verdict at the previous speed
+  ---
+  duration_ms: 32.0766
+  type: 'test'
+  ...
+# Subtest: braking during the return is described as an observed process problem, not invented start timing
+ok 308 - braking during the return is described as an observed process problem, not invented start timing
+  ---
+  duration_ms: 3.4648
+  type: 'test'
+  ...
+# Subtest: a safe stationary return is judged from its actual pose without claiming moving-return timing
+ok 309 - a safe stationary return is judged from its actual pose without claiming moving-return timing
+  ---
+  duration_ms: 11.8965
+  type: 'test'
+  ...
+# Subtest: one or two degrees of remaining steering stay pending until the recorded wheels actually reach zero
+ok 310 - one or two degrees of remaining steering stay pending until the recorded wheels actually reach zero
+  ---
+  duration_ms: 2.5455
+  type: 'test'
+  ...
+# Subtest: a return that begins outside a line cannot pass just because its neutral ending is safe
+ok 311 - a return that begins outside a line cannot pass just because its neutral ending is safe
+  ---
+  duration_ms: 3.9168
+  type: 'test'
+  ...
+# Subtest: new input metadata can identify a pending return without requiring the legacy explicit field
+ok 312 - new input metadata can identify a pending return without requiring the legacy explicit field
+  ---
+  duration_ms: 1.5346
+  type: 'test'
+  ...
+# Subtest: outbound turns in phases one and three are excluded from parking attempts
+ok 313 - outbound turns in phases one and three are excluded from parking attempts
+  ---
+  duration_ms: 19.004
+  type: 'test'
+  ...
+# Subtest: the complete demonstration separates two entries and treats both as appropriate
+ok 314 - the complete demonstration separates two entries and treats both as appropriate
+  ---
+  duration_ms: 60.2741
+  type: 'test'
+  ...
+# Subtest: normal guided actions including a quarter-second reaction delay do not get false timing errors
+ok 315 - normal guided actions including a quarter-second reaction delay do not get false timing errors
+  ---
+  duration_ms: 1964.5677
+  type: 'test'
+  ...
+# Subtest: missing actions are distinguished from completed late actions
+ok 316 - missing actions are distinguished from completed late actions
+  ---
+  duration_ms: 7.6357
+  type: 'test'
+  ...
+# Subtest: crossing a line alone never establishes early or late steering
+ok 317 - crossing a line alone never establishes early or late steering
+  ---
+  duration_ms: 0.4133
+  type: 'test'
+  ...
+# Subtest: retry picks an existing pose before the earliest issue and stays inside the entry recording
+ok 318 - retry picks an existing pose before the earliest issue and stays inside the entry recording
+  ---
+  duration_ms: 13.3236
+  type: 'test'
+  ...
+# Subtest: re-recording from the recommended pose does not inherit discarded mistakes
+ok 319 - re-recording from the recommended pose does not inherit discarded mistakes
+  ---
+  duration_ms: 94.0958
+  type: 'test'
+  ...
+# Subtest: duplicate paused snapshots and elapsed-time changes cannot create steering events
+ok 320 - duplicate paused snapshots and elapsed-time changes cannot create steering events
+  ---
+  duration_ms: 0.4095
+  type: 'test'
+  ...
+# Subtest: only a complete MiniMax package for the current captions resolves to public audio URLs
+ok 321 - only a complete MiniMax package for the current captions resolves to public audio URLs
+  ---
+  duration_ms: 4.7284
+  type: 'test'
+  ...
+# Subtest: an absent manifest or an HTML fallback cannot be presented as a ready voice package
+ok 322 - an absent manifest or an HTML fallback cannot be presented as a ready voice package
+  ---
+  duration_ms: 1.2051
+  type: 'test'
+  ...
+# Subtest: live cue preparation verifies cached audio bytes and rejects truncated or substituted responses
+ok 323 - live cue preparation verifies cached audio bytes and rejects truncated or substituted responses
+  ---
+  duration_ms: 20.3057
+  type: 'test'
+  ...
+# Subtest: a loading lecture cannot start its action, and ended only signals readiness
+ok 324 - a loading lecture cannot start its action, and ended only signals readiness
+  ---
+  duration_ms: 25.2325
+  type: 'test'
+  ...
+# Subtest: asynchronous media failure and request rejection report error without advancing
+ok 325 - asynchronous media failure and request rejection report error without advancing
+  ---
+  duration_ms: 2.752
+  type: 'test'
+  ...
+# Subtest: cancellation settles without making a stopped lecture look completed
+ok 326 - cancellation settles without making a stopped lecture look completed
+  ---
+  duration_ms: 1.8678
+  type: 'test'
+  ...
+# Subtest: late success or failure from an old session cannot affect the replacement
+ok 327 - late success or failure from an old session cannot affect the replacement
+  ---
+  duration_ms: 2.0964
+  type: 'test'
+  ...
+# Subtest: a failed lecture can retry successfully without its old error contaminating the new attempt
+ok 328 - a failed lecture can retry successfully without its old error contaminating the new attempt
+  ---
+  duration_ms: 6.5271
+  type: 'test'
+  ...
+# Subtest: invalid completion and rejected UI callbacks cannot silently advance or leak a rejected promise
+ok 329 - invalid completion and rejected UI callbacks cannot silently advance or leak a rejected promise
+  ---
+  duration_ms: 2.0343
+  type: 'test'
+  ...
+# Subtest: ordinary and narrated coaching give the same actions and complete both sides at selectable speeds
+ok 330 - ordinary and narrated coaching give the same actions and complete both sides at selectable speeds
+  ---
+  duration_ms: 3607.5812
+  type: 'test'
+  ...
+# Subtest: the previous five-degree ordinary cue now prepares, then uses the shared physical return window
+ok 331 - the previous five-degree ordinary cue now prepares, then uses the shared physical return window
+  ---
+  duration_ms: 0.5498
+  type: 'test'
+  ...
+# Subtest: early returns at five or six degrees request observation before a predicted and actual line crossing
+ok 332 - early returns at five or six degrees request observation before a predicted and actual line crossing
+  ---
+  duration_ms: 12.0981
+  type: 'test'
+  ...
+# Subtest: a neutral wheel midway through a badly started turn is recovery, not a fresh full-lock instruction
+ok 333 - a neutral wheel midway through a badly started turn is recovery, not a fresh full-lock instruction
+  ---
+  duration_ms: 4.4257
+  type: 'test'
+  ...
+# Subtest: small residual angle with poor lateral clearance is unsafe without inventing early or late timing
+ok 334 - small residual angle with poor lateral clearance is unsafe without inventing early or late timing
+  ---
+  duration_ms: 0.9001
+  type: 'test'
+  ...
+# Subtest: wrong steering and passing parallel give distinct stop instructions on either side
+ok 335 - wrong steering and passing parallel give distinct stop instructions on either side
+  ---
+  duration_ms: 0.1431
+  type: 'test'
+  ...
+# Subtest: straight prediction is pure and preserves safe demonstration and paused poses
+ok 336 - straight prediction is pure and preserves safe demonstration and paused poses
+  ---
+  duration_ms: 3.7277
+  type: 'test'
+  ...
+# Subtest: mirror support brackets leave the real driver eye aperture clear in legacy default and recommended parking settings
+ok 337 - mirror support brackets leave the real driver eye aperture clear in legacy default and recommended parking settings
+  ---
+  duration_ms: 753.8841
+  type: 'test'
+  ...
+# Subtest: training sedan keeps the vehicle body, wheelbase, track and tire contact geometry
+ok 338 - training sedan keeps the vehicle body, wheelbase, track and tire contact geometry
+  ---
+  duration_ms: 106.112
+  type: 'test'
+  ...
+# Subtest: the sculpted body retains open wheel arches and solid door panels
+ok 339 - the sculpted body retains open wheel arches and solid door panels
+  ---
+  duration_ms: 93.8436
+  type: 'test'
+  ...
+# Subtest: a single shared cabin has transparent window openings and genuine sloping pillar occlusion
+ok 340 - a single shared cabin has transparent window openings and genuine sloping pillar occlusion
+  ---
+  duration_ms: 89.1256
+  type: 'test'
+  ...
+# Subtest: physical mirror surfaces share the optical frame and remain clear of their backing and pillars
+ok 341 - physical mirror surfaces share the optical frame and remain clear of their backing and pillars
+  ---
+  duration_ms: 100.5438
+  type: 'test'
+  ...
+# Subtest: near-side steering wheel stays separate from the instrument cluster over its full rotation
+ok 342 - near-side steering wheel stays separate from the instrument cluster over its full rotation
+  ---
+  duration_ms: 92.2253
+  type: 'test'
+  ...
+# Subtest: wheel assemblies fit inside the body instead of protruding into the mirror view
+ok 343 - wheel assemblies fit inside the body instead of protruding into the mirror view
+  ---
+  duration_ms: 5.4708
+  type: 'test'
+  ...
+# Subtest: control lines use the two front tire contact centers, independently of the body sides
+ok 344 - control lines use the two front tire contact centers, independently of the body sides
+  ---
+  duration_ms: 1.3347
+  type: 'test'
+  ...
+# Subtest: front-wheel control checks transform the actual axle with the vehicle heading
+ok 345 - front-wheel control checks transform the actual axle with the vehicle heading
+  ---
+  duration_ms: 0.5009
+  type: 'test'
+  ...
+# Subtest: forward and reverse move in opposite directions from the starting pose
+ok 346 - forward and reverse move in opposite directions from the starting pose
+  ---
+  duration_ms: 4.1165
+  type: 'test'
+  ...
+# Subtest: right steering while reversing turns the tail toward the bay
+ok 347 - right steering while reversing turns the tail toward the bay
+  ---
+  duration_ms: 2.2937
+  type: 'test'
+  ...
+# Subtest: brake stops a reversing car without making it drive forward
+ok 348 - brake stops a reversing car without making it drive forward
+  ---
+  duration_ms: 4.0612
+  type: 'test'
+  ...
+# Subtest: success requires the whole car inside the bay, facing out, and stopped
+ok 349 - success requires the whole car inside the bay, facing out, and stopped
+  ---
+  duration_ms: 1.2567
+  type: 'test'
+  ...
+# Subtest: outer boundary cannot be crossed by the bumper
+ok 350 - outer boundary cannot be crossed by the bumper
+  ---
+  duration_ms: 10.3414
+  type: 'test'
+  ...
+# Subtest: integrating the same inputs at 30 and 120 fps produces consistent motion
+ok 351 - integrating the same inputs at 30 and 120 fps produces consistent motion
+  ---
+  duration_ms: 4.1721
+  type: 'test'
+  ...
+# Subtest: letting go of steering holds the angle; active centering returns it to zero
+ok 352 - letting go of steering holds the angle; active centering returns it to zero
+  ---
+  duration_ms: 3.7189
+  type: 'test'
+  ...
+# Subtest: early entry guidance recognizes body and ground without requiring a hidden corner or rear tire
+ok 353 - early entry guidance recognizes body and ground without requiring a hidden corner or rear tire
+  ---
+  duration_ms: 107.8891
+  type: 'test'
+  ...
+# Subtest: voice tour covers the full continuous path, with an observation cue before each action
+ok 354 - voice tour covers the full continuous path, with an observation cue before each action
+  ---
+  duration_ms: 4.3502
+  type: 'test'
+  ...
+# Subtest: the left tour separately teaches turn, alignment, centering, and parking at mirrored poses
+ok 355 - the left tour separately teaches turn, alignment, centering, and parking at mirrored poses
+  ---
+  duration_ms: 1.8751
+  type: 'test'
+  ...
+# Subtest: manual observation cues follow actual poses on both sides, independently of elapsed time
+ok 356 - manual observation cues follow actual poses on both sides, independently of elapsed time
+  ---
+  duration_ms: 10.5147
+  type: 'test'
+  ...
+# Subtest: turn preparation allows about four seconds of observation at actual reverse speeds on either side
+ok 357 - turn preparation allows about four seconds of observation at actual reverse speeds on either side
+  ---
+  duration_ms: 2.2385
+  type: 'test'
+  ...
+# Subtest: selected speed gives preparation before starting and slower speech extends the observation window
+ok 358 - selected speed gives preparation before starting and slower speech extends the observation window
+  ---
+  duration_ms: 1.5807
+  type: 'test'
+  ...
+# Subtest: a held turn gives mirror observation rather than repeating the steering command
+ok 359 - a held turn gives mirror observation rather than repeating the steering command
+  ---
+  duration_ms: 0.8556
+  type: 'test'
+  ...
+# Subtest: the complete two-sided motion produces ordered look, prepare, act, hold, and parking cues
+ok 360 - the complete two-sided motion produces ordered look, prepare, act, hold, and parking cues
+  ---
+  duration_ms: 405.8015
+  type: 'test'
+  ...
+# Subtest: centering cues scale with reverse speed and stay active while the front wheels unwind
+ok 361 - centering cues scale with reverse speed and stay active while the front wheels unwind
+  ---
+  duration_ms: 3.1784
+  type: 'test'
+  ...
+# Subtest: both sides park without crossing lines at every selectable speed extreme with immediate or delayed reactions
+ok 362 - both sides park without crossing lines at every selectable speed extreme with immediate or delayed reactions
+  ---
+  duration_ms: 1543.7862
+  type: 'test'
+  ...
+# Subtest: guidance metadata supports every cue and safely handles unknown keys
+ok 363 - guidance metadata supports every cue and safely handles unknown keys
+  ---
+  duration_ms: 0.8418
+  type: 'test'
+  ...
+# Subtest: passing parallel never tells the driver to keep the same turn
+ok 364 - passing parallel never tells the driver to keep the same turn
+  ---
+  duration_ms: 0.2749
+  type: 'test'
+  ...
+# Subtest: manual cues recognize exits, the B control line, and the completed route
+ok 365 - manual cues recognize exits, the B control line, and the completed route
+  ---
+  duration_ms: 0.1449
+  type: 'test'
+  ...
+# Subtest: line, sequence, and time warnings have priority after a practice actually starts
+ok 366 - line, sequence, and time warnings have priority after a practice actually starts
+  ---
+  duration_ms: 0.1774
+  type: 'test'
+  ...
+# Subtest: short drill preparation and results give specific feedback instead of full-route directions
+ok 367 - short drill preparation and results give specific feedback instead of full-route directions
+  ---
+  duration_ms: 0.2324
+  type: 'test'
+  ...
+1..367
+# tests 367
+# suites 0
+# pass 367
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 9345.5824

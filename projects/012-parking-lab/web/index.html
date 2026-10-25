@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#f7f8f4" />
+  <meta name="description" content="一个可以自己驾驶、切换视角、暂停回看轨迹的 3D 倒车入库练习场。" />
+  <title>入库之间 · 3D 练车场</title>
+  <script type="module" crossorigin src="./assets/main-DQpwj_wi.js"></script>
+  <link rel="modulepreload" crossorigin href="./assets/modulepreload-polyfill-P2Xu9kJm.js">
+  <link rel="modulepreload" crossorigin href="./assets/driver-view-DHM2OUpk.js">
+  <link rel="modulepreload" crossorigin href="./assets/progress-catalog-Bjplf4My.js">
+  <link rel="stylesheet" crossorigin href="./assets/driver-view-BiJ2tKHW.css">
+  <link rel="stylesheet" crossorigin href="./assets/main-CvPaUAhB.css">
+</head>
+<body>
+  <svg class="icon-defs" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><defs>
+    <symbol id="i-car" viewBox="0 0 24 24"><path d="m5 9 2-5h10l2 5M4 9h16v9H4zM7 18v2m10-2v2M7 13h1m8 0h1M9 4h6"/></symbol>
+    <symbol id="i-top" viewBox="0 0 24 24"><rect x="8" y="3" width="8" height="18" rx="3"/><path d="M8 8h8M8 16h8M4 7v10m16-10v10"/></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></symbol>
+    <symbol id="i-orbit" viewBox="0 0 24 24"><path d="m12 3 9 5v9l-9 5-9-5V8zM3 8l9 5 9-5m-9 5v9"/></symbol>
+    <symbol id="i-reset" viewBox="0 0 24 24"><path d="M3 10a9 9 0 1 1 2 8M3 4v6h6"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M8 5v14M16 5v14"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="m8 4 12 8-12 8z"/></symbol>
+    <symbol id="i-path" viewBox="0 0 24 24"><circle cx="5" cy="18" r="2"/><circle cx="19" cy="6" r="2"/><path d="M5 16V9a4 4 0 0 1 4-4h2a4 4 0 0 1 0 8h2a6 6 0 0 0 6-6"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="m9 5 7 7-7 7M3 12h13"/></symbol>
+    <symbol id="i-info" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-11v1"/></symbol>
+  </defs></svg>
+  <div class="app-shell">
+    <header class="header">
+      <a href="./" class="brand" aria-label="入库之间首页"><span class="brand-icon"><svg><use href="#i-car"/></svg></span><span>入库之间<small>PARKING LAB</small></span></a>
+      <nav class="header-center"><span class="status-dot"></span>3D 练车场<span class="nav-divider"></span><span>C1 科二 · 科三全项目</span></nav>
+      <div class="header-actions"><a class="project-progress-link" href="./progress.html" target="_blank" rel="noopener" aria-label="项目进展与全部体验入口，在新标签页打开">项目进展 ↗</a><button class="help-button" id="help-button"><svg><use href="#i-info"/></svg>操作指南<span class="key-hint">?</span></button></div>
+    </header>
+
+    <main class="workspace welcome-active">
+      <section id="welcome-panel" class="welcome-panel" aria-labelledby="welcome-title">
+        <p class="welcome-eyebrow">C1 手动挡 · 从准备到完成</p>
+        <h1 id="welcome-title">先看完整的科二、科三</h1>
+        <p class="welcome-intro">选择科目与项目，先看示范，再切换自己驾驶；每章都有目标、反馈与复盘重练。</p>
+        <a class="welcome-understanding" href="./progress.html#understanding" target="_blank" rel="noopener" aria-label="项目理解与引导图，在新标签页打开">先看项目理解与引导图 <span aria-hidden="true">→</span><small>实现、探索、效果与后续方向，一起看清楚。</small></a>
+        <a class="complete-demo-entry" href="./courses.html?course=all"><span>完整全量演示</span><strong>科目二 + 科目三 · 从头看到结束 →</strong><small>科二 5 项 + 科三 17 章 · 连续播放 · MiniMax 同步讲解</small></a>
+        <div class="full-course-entry"><a href="./courses.html?course=subject2"><span>科目二</span><strong>五项完整演示 →</strong><small>倒库 · 坡起 · 侧方 · 曲线 · 直角</small></a><a href="./courses.html?course=subject3"><span>科目三</span><strong>道路与灯光全项目 →</strong><small>上车准备 · 灯光 · 道路驾驶 · 靠边停车</small></a></div>
+        <ol class="welcome-path" aria-label="练习顺序">
+          <li><span>1</span><strong>选科目，看完整示范</strong></li>
+          <li><span>2</span><strong>自己驾驶，按目标练习</strong></li>
+          <li><span>3</span><strong>对照复盘，出错前重练</strong></li>
+        </ol>
+        <div class="welcome-actions">
+          <button id="welcome-start" type="button">倒库新手 · 从这里开始 <span aria-hidden="true">→</span></button>
+          <button id="welcome-practice" type="button">倒库专项 · 直接跟练</button>
+        </div>
+        <p class="welcome-shortcut">想先练一小段？<button id="welcome-judgment" type="button">看镜判断回正 <span aria-hidden="true">→</span></button></p>
+      </section>
+      <div class="training-toolbar">
+        <a class="full-course-toolbar" href="./courses.html?course=all">科二 + 科三 · 全量演示 →</a>
+        <button id="beginner-mode" class="beginner-entry" type="button" aria-pressed="false">第一次练？从这里开始</button>
+        <button id="judgment-mode" class="judgment-entry" type="button" aria-pressed="false">看镜判断回正 · 短练</button>
+        <details id="other-modes" class="other-modes"><summary>其他练习方式</summary><div class="training-modes" role="group" aria-label="练习方式"><button id="practice-mode" class="active" aria-pressed="true">自己练习</button><button id="lesson-mode" aria-pressed="false"><svg><use href="#i-play"/></svg>分步示范</button><button id="cockpit-mode" aria-pressed="false"><svg><use href="#i-eye"/></svg>车内训练</button><button id="voice-mode" aria-pressed="false">语音示范与带练 <small>新增</small></button></div></details>
+        <button id="correction-mode" type="button" aria-pressed="false">镜面辨认与纠偏</button>
+        <span class="training-scope">C1 · 观察、方向与路线专项</span>
+        <label class="mirror-assist-control" title="教学放大时可选显示后轮与库角标签，帮助辨认镜中位置"><input id="mirror-assist-toggle" type="checkbox"/>镜内辨认辅助</label>
+        <div class="mirror-fit-control"><div class="mirror-fit-actions"><button id="mirror-auto-fit" type="button" aria-describedby="mirror-fit-status">帮我调好后视镜</button><button id="mirror-fit-undo" type="button" hidden>撤销这次调镜</button></div><small id="mirror-fit-status" role="status" aria-live="polite" aria-atomic="true">先固定座椅，再调整两侧镜</small></div>
+        <section id="speech-connection" class="speech-connection" data-state="checking" aria-label="教练语音包状态" aria-busy="true">
+          <div class="speech-connection-copy" role="status" aria-live="polite" aria-atomic="true"><strong id="speech-provider-label">正在检查教练语音包</strong><span id="speech-provider-detail">语音包准备就绪后即可播放讲解。</span></div>
+          <div class="speech-connection-actions"><button id="speech-retry" type="button" hidden>重新检查</button><button id="speech-subtitles" type="button" hidden>先用字幕练习</button><button id="speech-voice" type="button" hidden>启用 MiniMax 语音</button></div>
+        </section>
+        <div id="lesson-controls" class="lesson-controls" hidden><button id="lesson-prev" aria-label="上一步示范">‹</button><button id="lesson-play"><svg><use href="#i-play"/></svg><span>播放本步</span></button><button id="lesson-next" aria-label="下一步示范">下一步 ›</button><label class="auto-stop"><input id="lesson-auto-stop" type="checkbox" checked/>关键点暂停</label><label class="lesson-speed-label"><select id="lesson-speed" aria-label="示范播放速度"><option value="0.5">0.5×</option><option value="1" selected>1×</option><option value="2">2×</option></select></label><button id="take-over">从这里接手练习</button></div>
+        <section id="voice-panel" class="voice-panel" hidden aria-label="语音示范与带练">
+          <div class="voice-heading"><span id="voice-session-label">完整演示 · 先听讲解，再看动作</span><span id="voice-status" role="status">准备就绪</span></div>
+          <strong id="voice-title">坐在驾驶位，听一遍完整倒库</strong>
+          <div class="voice-guidance" aria-label="看镜与操作顺序"><div><span>看哪里</span><strong id="voice-look"></strong></div><div><span id="voice-action-label">现在做</span><strong id="voice-action"></strong></div><div><span>接下来</span><strong id="voice-upcoming"></strong></div></div>
+          <div class="voice-main-controls"><div class="voice-actions"><button id="voice-play" class="voice-primary">开始完整示范</button><button id="voice-takeover">从这里跟练</button><button id="voice-return-practice" hidden>继续刚才跟练</button></div><div class="voice-review-entry" id="voice-review-entry" hidden><button id="practice-review-open">暂停并复盘</button><span>看打方向与回正时机，对照示范轨迹，从出错前再练。</span></div></div>
+          <details id="voice-more" class="voice-more"><summary>更多示范与设置</summary>
+            <p id="voice-subtitle">从 A 端右倒库，出库到 B 端，再左倒库并返回起点。每个动作前都有中文语音与字幕，可随时暂停或接手。</p>
+            <div class="voice-actions"><button id="voice-prev" aria-label="上一段语音示范">上一段</button><button id="voice-next" aria-label="下一段语音示范">下一段</button><button id="voice-practice">从起点语音带练</button><button id="voice-retry" hidden>重练接手位置</button><button id="voice-review" hidden>再看这段示范</button><button id="voice-repeat">重听讲解</button></div>
+            <div class="voice-options"><label><input id="voice-enabled" type="checkbox" checked/>语音讲解</label><label>音量<input id="voice-volume" aria-label="讲解音量" type="range" min="0" max="1" step="0.1" value="0.8"/></label><label>语速<select id="voice-rate" aria-label="讲解语速"><option value="0.85">慢速</option><option value="1" selected>正常</option><option value="1.2">稍快</option></select></label><span id="voice-guidance-note">示范讲解时会教学暂停；自己练习时提示跟随车辆动作。</span></div>
+          </details>
+          <p id="voice-error" class="voice-error" hidden></p>
+        </section>
+        <section id="practice-review" class="practice-review" hidden aria-label="跟练复盘">
+          <div class="review-heading"><div><span class="review-eyebrow">跟练复盘 · 观察与方向</span><h2 id="review-title">看看这次的操作时机</h2></div><button id="review-close" aria-label="关闭复盘，回到暂停练习">返回练习 ×</button></div>
+          <div id="review-attempts" class="review-attempts" role="group" aria-label="选择倒库记录"></div>
+          <p id="review-summary" class="review-summary"></p>
+          <div class="review-findings">
+            <article id="review-turn-card"><span>01 · 打方向</span><strong id="review-turn-title"></strong><p id="review-turn-text"></p><button id="review-turn-jump">看打方向这一刻 ↗</button></article>
+            <article id="review-center-card"><span>02 · 回正</span><strong id="review-center-title"></strong><p id="review-center-text"></p><button id="review-center-jump">看回正这一刻 ↗</button><button id="review-judgment" type="button">看镜重练回正时机</button></article>
+          </div>
+          <div id="review-comparison" class="review-comparison"><svg id="review-map" role="img" aria-label="本次跟练与同侧示范的轨迹对比"></svg></div>
+          <div class="review-timeline"><label for="review-timeline">拖动回看 <output id="review-position"></output></label><input id="review-timeline" type="range" min="0" max="0" value="0" aria-label="跟练复盘位置"/></div>
+          <div class="review-actions"><button id="review-retry" class="review-primary">从出错前重练</button><button id="review-camera">驾驶位看当前点</button><button id="review-continue">从当前点继续</button></div>
+          <p id="review-retry-note" class="review-retry-note"></p>
+          <small class="review-scope">早晚是本模型的练习反馈，以操作时的位置与姿态判断；不是实考评分或可通用的实车点位。</small>
+        </section>
+        <section id="alignment-drill" class="alignment-drill" hidden aria-label="看镜回正专项">
+          <div class="drill-copy"><span id="drill-label">看镜回正专项</span><strong id="drill-title">看镜判断，再亲手回方向</strong><p id="drill-instruction">从接近顺直的位置接手；完成后自动教学暂停，对照车身姿态。</p></div>
+          <div class="drill-actions"><button id="drill-right">练右倒库</button><button id="drill-left">练左倒库</button><button id="drill-go" hidden>开始这段</button><button id="drill-retry" hidden>再练这侧</button><button id="drill-switch" hidden>换到左倒库</button><button id="drill-review" hidden>俯视对照</button><button id="drill-exit" hidden>返回自由练习</button></div>
+          <div id="drill-result" class="drill-result" role="status" hidden><p id="drill-result-text"></p><div id="drill-metrics"></div><small>模型专项反馈，非考试分数；暂停用于教学，真实考试按规定完成连续操作。</small></div>
+        </section>
+      </div>
+      <section id="beginner-panel" class="beginner-panel" hidden aria-labelledby="beginner-title" aria-describedby="beginner-instruction">
+        <div class="beginner-copy">
+          <small id="beginner-progress">新手一步一步</small>
+          <strong id="beginner-title">先看清车和车库在哪里</strong>
+          <p id="beginner-instruction">先看俯视图：这辆车由你控制，标线围出的空位就是要倒进的车库。</p>
+          <p id="beginner-assist">车辆已停住，可以慢慢观察。</p>
+          <div id="recognition-check" class="recognition-check" hidden>
+            <strong id="recognition-question"></strong>
+            <div id="recognition-options" class="recognition-options" role="group" aria-label="镜面辨认选项"></div>
+            <p id="recognition-feedback" role="status" aria-live="polite"></p>
+          </div>
+        </div>
+        <div class="beginner-actions">
+          <div class="beginner-primary-actions">
+            <button id="beginner-next" type="button">我看到了，下一步</button>
+            <button id="beginner-action" type="button" hidden aria-describedby="beginner-assist">按住 D 向右打方向</button>
+            <button id="beginner-full" type="button" hidden>进入完整语音带练</button>
+          </div>
+          <div class="beginner-secondary-actions">
+            <button id="beginner-orientation" type="button">看车和库的位置</button>
+            <button id="beginner-replay" type="button">重看这一步</button>
+            <button id="beginner-exit" type="button">返回完整练习</button>
+          </div>
+        </div>
+        <div class="beginner-notes">
+          <p id="beginner-status" role="status" aria-live="polite" aria-atomic="true"></p>
+          <small class="beginner-scope">分解教学会自动停住；完整练习由你控制车速。</small>
+        </div>
+      </section>
+      <section id="judgment-panel" class="judgment-panel" hidden aria-labelledby="judgment-title" aria-describedby="judgment-instruction">
+        <ol id="judgment-flow" class="judgment-flow" aria-label="短练进度"><li data-judgment-stage="demo" aria-current="step"><span aria-hidden="true">1</span>看示范</li><li data-judgment-stage="practice"><span aria-hidden="true">2</span>自己判断</li><li data-judgment-stage="compare"><span aria-hidden="true">3</span>对照镜面</li><li data-judgment-stage="retry"><span aria-hidden="true">4</span>重练</li></ol>
+        <div class="judgment-heading"><div><small id="judgment-progress">回正时机 · 短练</small><strong id="judgment-title">只练一件事：什么时候回正</strong></div><div class="judgment-sides" role="group" aria-label="选择短练方向"><button type="button" data-judgment-side="right" aria-pressed="true">右倒库</button><button type="button" data-judgment-side="left" aria-pressed="false">左倒库</button></div></div>
+        <p id="judgment-instruction">看车身与库线的夹角，再决定什么时候按 X。</p>
+        <p id="judgment-speech-note" class="judgment-speech-note" role="status" aria-live="polite" aria-atomic="true">先听讲解，再看镜中变化。</p>
+        <div class="judgment-main-actions"><button id="judgment-next" class="judgment-primary" type="button">先看一小段示范</button><button id="judgment-reverse" type="button" hidden>按住 S · 倒车</button><button id="judgment-action" class="judgment-primary" type="button" hidden>按一下 X · 回正</button><button id="judgment-pause" type="button" hidden>暂停观察 <kbd>P</kbd></button><button id="judgment-retry" class="judgment-primary" type="button" hidden>从出错前重练</button></div>
+        <p id="judgment-status" role="status" aria-live="polite" aria-atomic="true"></p>
+        <div id="judgment-comparison" class="judgment-comparison" hidden>
+          <div class="judgment-mirror-columns">
+            <section class="judgment-mirror-set" aria-labelledby="judgment-actual-title"><h3 id="judgment-actual-title">你操作时镜面</h3><div class="judgment-mirror-pair"><figure><figcaption>左镜</figcaption><img id="judgment-actual-left" alt="本次操作时的真实左后视镜画面"/></figure><figure><figcaption>右镜</figcaption><img id="judgment-actual-right" alt="本次操作时的真实右后视镜画面"/></figure></div></section>
+            <section class="judgment-mirror-set judgment-reference-set" aria-labelledby="judgment-reference-title"><h3 id="judgment-reference-title">示范回正时镜面</h3><div class="judgment-mirror-pair"><figure><figcaption>左镜</figcaption><img id="judgment-reference-left" alt="示范回正时的真实左后视镜画面"/></figure><figure><figcaption>右镜</figcaption><img id="judgment-reference-right" alt="示范回正时的真实右后视镜画面"/></figure></div></section>
+          </div>
+          <p id="judgment-comparison-note">比较车身边缘与库线的夹角。两组画面使用同一组座椅与镜面设置。</p>
+        </div>
+        <div class="judgment-footer"><small class="judgment-scope">短练辅助低速；完整练习由你控速。</small><div class="judgment-secondary-actions"><button id="judgment-again" type="button" hidden>重练整段</button><button id="judgment-full" type="button" hidden>完整语音带练</button><button id="judgment-exit" type="button">返回自由练习</button></div></div>
+      </section>
+      <section id="correction-panel" class="correction-panel" hidden aria-labelledby="correction-title">
+        <div class="correction-heading"><div><small id="correction-stage">认镜 → 判断车尾走势 → 小幅纠偏 → 回正对比</small><h2 id="correction-title">先看两面镜，判断哪一侧会越倒越紧</h2></div><div role="group" aria-label="选择纠偏场景"><button data-correction-side="left" aria-pressed="true">场景一</button><button data-correction-side="right" aria-pressed="false">场景二</button></div></div>
+        <p id="correction-instruction"></p>
+        <div id="correction-direction" class="correction-direction"></div>
+        <div id="correction-recognize" class="recognition-options" role="group" aria-label="判断继续直倒时的逼线趋势"><button data-tight-side="left">车尾会更逼近左侧线</button><button data-tight-side="right">车尾会更逼近右侧线</button><button data-tight-side="equal">两侧走势一样</button></div>
+        <div class="correction-actions"><button id="correction-start" hidden>开始小幅纠偏</button><button id="correction-left" data-correction-control="left" hidden>按住 A · 方向盘向左</button><button id="correction-right" data-correction-control="right" hidden>按住 D · 方向盘向右</button><button id="correction-center" hidden>前轮回正 X</button><button id="correction-pause" hidden>暂停观察 P</button><button id="correction-retry" hidden>从操作前重练</button><button id="correction-recognition">回到镜面辨认</button><button id="correction-exit">返回完整练习</button></div>
+        <details class="correction-explainer"><summary>看镜和修方向，怎样才不会理解反？</summary><p>左右都按坐在驾驶位的车辆左右。倒车时，方向盘向哪边转，是让车尾轨迹逐渐向哪边弯；车头向相反方向外摆。车辆需要边移动边改变朝向，不会横着平移。</p><p>本专项只练带小夹角的斜入纠偏。车身已经平行、只是整体偏边时，需要另一种调整过程，不能直接套用本题答案。只看一张静止镜面或两镜的像素宽窄，也不能准确判断动态余量。</p></details>
+        <p id="correction-status" role="status" aria-live="polite"></p>
+        <div id="correction-comparison" class="correction-comparison" hidden><figure><figcaption id="correction-before-title">操作前的紧侧镜面</figcaption><img id="correction-before" alt="纠偏操作前的实际镜面"/></figure><figure><figcaption>这次回正后的同一镜面</figcaption><img id="correction-after" alt="本次小幅纠偏后的实际镜面"/></figure><p id="correction-comparison-note"></p></div>
+        <small>专项辅助：系统控制 1.5 km/h 低速，限制小幅转角，关键观察点会教学暂停；A / D 转向、X 主动回正、空格制动，P 暂停。完整练习仍由你控速。</small>
+      </section>
+      <section class="scene-area" aria-label="3D 倒车入库练习场">
+        <div id="scene" tabindex="0" aria-label="3D 驾驶区域；W 前进，S 倒车，A D 转向，空格刹车，P 暂停，V 切换视角"></div>
+        <div class="scene-topbar">
+          <div class="scene-tag"><span class="status-dot"></span><span id="scene-mode">自由练习</span><details id="mirror-calibration-note" class="mirror-calibration-note"><summary>镜面参考</summary><p>常态镜面位于车门镜壳上；教学放大沿用同一镜内视野。按当前座椅推荐后仍可微调。</p></details><span class="tag-line"></span><span>训练场 01</span></div>
+          <button id="scene-auto-fit" type="button">帮我调好后视镜</button>
+          <div class="view-switch" role="group" aria-label="切换视角">
+            <button class="active" data-view="orbit" aria-pressed="true"><svg><use href="#i-orbit"/></svg><span>跟车</span></button>
+            <button data-view="driver" aria-pressed="false"><svg><use href="#i-eye"/></svg><span>驾驶位</span></button>
+            <button data-view="top" aria-pressed="false"><svg><use href="#i-top"/></svg><span>俯视</span></button>
+          </div>
+        </div>
+        <button id="scene-pause" type="button">暂停 P</button>
+        <div class="scene-caption"><span>C1 · 科目二 · REVERSE PARKING</span><h1>看清参照，<br>把每次转向练明白。</h1><p>A 端 → 右倒库 → B 端 → 左倒库 → 返回 A 端</p></div>
+        <div class="lesson-overlay" id="lesson-overlay" hidden><span id="lesson-counter">步骤 01 / 12</span><strong id="lesson-title"></strong><p id="lesson-action"></p></div>
+        <div class="mirror-bar" id="mirror-bar" hidden>
+          <article class="mirror-card mirror-left" id="mirror-left"><div class="mirror-heading"><span>左后视镜</span><small class="mirror-recommendation">观察车身 / 库角</small></div><button class="mirror-image" id="left-mirror-image" aria-label="左后视镜，点击切换教学放大，镜内视野不变"><span class="mirror-magnification">教学放大 · 视野不变</span><span class="mirror-marker body-marker" id="left-body-marker" hidden>车身</span><span class="mirror-marker ground-marker" id="left-ground-marker" hidden>地面</span><span class="mirror-marker side-line-marker" id="left-side-line-marker" hidden>库侧线</span><span class="mirror-marker back-line-marker" id="left-back-line-marker" hidden>库底线</span><span class="mirror-marker entrance-line-marker" id="left-entrance-line-marker" hidden>库口外沿</span><span class="mirror-marker wheel-marker" id="left-wheel-marker" hidden>后轮</span><span class="mirror-marker corner-marker" id="left-corner-marker" hidden>库角</span></button><div class="mirror-footer"><span><span class="mirror-normal-action">教学放大 <kbd>Q</kbd></span><span class="mirror-expanded-action">点镜面收起</span></span><button data-adjust-mirror="left" aria-label="调节左后视镜">调镜</button></div></article>
+          <article class="mirror-card mirror-right" id="mirror-right"><div class="mirror-heading"><span>右后视镜</span><small class="mirror-recommendation">观察车身 / 库角</small></div><button class="mirror-image" id="right-mirror-image" aria-label="右后视镜，点击切换教学放大，镜内视野不变"><span class="mirror-magnification">教学放大 · 视野不变</span><span class="mirror-marker body-marker" id="right-body-marker" hidden>车身</span><span class="mirror-marker ground-marker" id="right-ground-marker" hidden>地面</span><span class="mirror-marker side-line-marker" id="right-side-line-marker" hidden>库侧线</span><span class="mirror-marker back-line-marker" id="right-back-line-marker" hidden>库底线</span><span class="mirror-marker entrance-line-marker" id="right-entrance-line-marker" hidden>库口外沿</span><span class="mirror-marker wheel-marker" id="right-wheel-marker" hidden>后轮</span><span class="mirror-marker corner-marker" id="right-corner-marker" hidden>库角</span></button><div class="mirror-footer"><span><span class="mirror-normal-action">教学放大 <kbd>E</kbd></span><span class="mirror-expanded-action">点镜面收起</span></span><button data-adjust-mirror="right" aria-label="调节右后视镜">调镜</button></div></article>
+        </div>
+        <section id="beginner-scene-guide" class="beginner-scene-guide" hidden aria-labelledby="beginner-scene-title"><h3 id="beginner-scene-title">先认位置，再看镜子</h3><p id="beginner-scene-text">车辆已停住。先看清自己的车和要倒进的车库，不用操作方向。</p></section>
+        <div id="driver-controls" class="driver-controls" hidden><button data-gaze="left">看左镜 <kbd>Q</kbd></button><button data-gaze="forward" class="active">看正前 <kbd>C</kbd></button><button data-gaze="right">看右镜 <kbd>E</kbd></button><button id="teaching-mirror-toggle" type="button" aria-pressed="false">教学放大</button><button id="adjust-seat">调座椅</button><span>拖动转头 · 点实体镜面可教学放大</span></div>
+        <div id="mirror-coach" class="mirror-coach" hidden><span>车内观察</span><strong id="mirror-coach-title"></strong><p id="mirror-coach-text"></p></div>
+        <section id="view-adjuster" class="view-adjuster" hidden aria-label="车内视野实时调节"><button id="close-view-adjuster" aria-label="关闭视野调节">×</button><h3 id="view-adjust-title">调节右后视镜</h3><p>已教学暂停，边调边看。完成后关闭面板，按 P 继续。</p><button id="view-adjust-auto" type="button">按当前眼位推荐</button><label><span id="view-adjust-a-label">向内 / 向外</span><output id="view-adjust-a-output"></output><input type="range" id="view-adjust-a" aria-label="视野调节第一项"/></label><label><span id="view-adjust-b-label">向下 / 向上</span><output id="view-adjust-b-output"></output><input type="range" id="view-adjust-b" aria-label="视野调节第二项"/></label><small id="view-adjust-tip">镜面内侧保留少量车身，同时看清侧后方与地面参照。</small></section>
+        <div class="scene-feedback" id="feedback" role="status"><span class="feedback-dot"></span><span id="feedback-text">按住 S 开始倒车，A / D 调整方向</span></div>
+        <div class="scene-legend"><span><i class="rear-color"></i>后轮轨迹</span><span><i class="front-color"></i>前轮轨迹</span><span><i class="prediction-color"></i>预计路线</span></div>
+        <div class="scene-corner"><span class="compass">N ↑</span><span>1 格 ≈ 1 m</span></div>
+        <div class="loading" id="loading"><span class="loading-wheel"></span><p>正在准备练习场…</p></div>
+      </section>
+
+      <aside class="sidebar">
+        <div class="lesson-label">考试导向练习 <span>C1 / 科目二</span></div>
+        <h2>倒车入库<span>看镜、稳速、主动回正，再完成两侧路线。</span></h2>
+        <div class="lesson-badges"><span>手动挡方向专项</span><span>两侧倒库</span><span>控制线</span></div>
+        <div class="mission-card"><span class="mini-label">完整项目路线 <span id="course-clock">00:00 / 03:30</span></span><div><span class="target-symbol">P</span><p id="route-title">A 端 → 右倒库<small>两前轮已越 A 控制线，可准备倒车</small></p></div><div class="mission-state" id="mission-state"><span></span>等待出发</div><p id="route-flow">右倒库 → 出库到 B → 左倒库 → 返回 A</p></div>
+        <section id="cockpit-panel" class="cockpit-panel" hidden>
+          <h3>坐在车里，练会判断</h3><p>先在镜内辨认少量车身与库线，交替看两侧余量。看镜时仍可控制车速和方向；需要时可开启辨认辅助。</p>
+          <div class="cockpit-exercises"><button id="cockpit-start">从起点练</button><button id="cockpit-corner">库角观察</button><button id="cockpit-align">回正观察</button><button id="cockpit-demonstrate">车内看示范</button></div>
+          <button id="cockpit-review" class="cockpit-review">暂停 · 俯视对照复盘 ↗</button>
+          <details id="cockpit-setup"><summary>座椅与后视镜调节</summary><p>调节时会教学暂停，完成后点“继续练习”。先固定座椅，再分别调两侧镜：内侧保留少量车身，同时看见后轮附近地面；之后保持这一组设置练习。</p>
+            <button id="setup-auto-fit" type="button">一键调好两侧镜</button>
+            <label>座椅高低 <output id="seatHeight-output">1.28 m</output><input data-cockpit-setting="seatHeight" type="range" min="1.15" max="1.38" step="0.01" value="1.28" aria-label="座椅高低"/></label>
+            <label>座椅前后 <output id="seatFore-output">1.10 m</output><input data-cockpit-setting="seatFore" type="range" min="0.90" max="1.30" step="0.01" value="1.10" aria-label="座椅前后"/></label>
+            <fieldset><legend>左后视镜</legend><label>向内 / 向外 <output id="left-yaw-output">9°</output><input data-cockpit-setting="left.yaw" type="range" min="-5" max="25" step="0.1" value="9" aria-label="左镜左右角度"/></label><label>向下 / 向上 <output id="left-pitch-output">−18°</output><input data-cockpit-setting="left.pitch" type="range" min="-38" max="-5" step="0.1" value="-18" aria-label="左镜上下角度"/></label></fieldset>
+            <fieldset><legend>右后视镜</legend><label>向内 / 向外 <output id="right-yaw-output">10°</output><input data-cockpit-setting="right.yaw" type="range" min="-5" max="25" step="0.1" value="10" aria-label="右镜左右角度"/></label><label>向下 / 向上 <output id="right-pitch-output">−18°</output><input data-cockpit-setting="right.pitch" type="range" min="-38" max="-5" step="0.1" value="-18" aria-label="右镜上下角度"/></label></fieldset>
+            <button id="reset-cockpit-settings">恢复初始座椅与镜面</button><small id="cockpit-save-status">座椅与镜面设置会保存在当前浏览器</small>
+          </details>
+          <label class="cockpit-check"><input id="mirror-labels" type="checkbox"/>教学放大辨认辅助（可选）：后轮 / 库角</label><label class="cockpit-check"><input id="mirror-trails" type="checkbox"/>车内显示轨迹与模型参照</label>
+          <p class="cockpit-scope">镜面为可调的近似反射视场，座椅位置会影响观察。真实考试车的曲面镜、视野和点位仍需实车校准。</p>
+        </section>
+        <section id="lesson-detail" class="lesson-detail" hidden><h3>此时看哪里</h3><p id="lesson-observe"></p><div id="lesson-risk"></div><details><summary>选择示范步骤</summary><ol id="lesson-step-list"></ol></details></section>
+        <div id="practice-guide"><div class="guide-header"><h3>驾驶提示</h3><span>以观察来判断</span></div><ol class="steps"><li id="step-1" class="current"><span>1</span><div>确认越线，直线倒车<p>先核对两前轮，再看转向参照。</p></div></li><li id="step-2"><span>2</span><div>打方向，观察库角<p>低速半联动，留意内侧后轮和外侧车头。</p></div></li><li id="step-3"><span>3</span><div>近乎平行，主动回正<p>松开转向保持角度，按 X 回正再停稳。</p></div></li></ol><label class="creep-label" for="creep-speed">低速设定 <span>简化半联动 · <output id="creep-output">2.5</output> km/h</span></label><input id="creep-speed" type="range" min="1.2" max="3.6" step="0.1" value="2.5" aria-label="低速练习车速"/></div>
+        <div class="display-options"><div><svg><use href="#i-path"/></svg><label for="show-trail">显示行驶轨迹</label><input type="checkbox" id="show-trail" checked role="switch"/></div><div><svg><use href="#i-top"/></svg><label for="show-guide">教学网格与参照</label><input type="checkbox" id="show-guide" role="switch"/></div></div>
+        <div class="tip"><span>练习小提示</span><p id="coach-tip">倒车时，车尾会向打方向的一侧移动。试着暂停并切到俯视，观察前后轮走过的路线。</p></div>
+        <button id="exam-rules-button" class="exam-rules-button"><svg><use href="#i-info"/></svg>考试要点与依据 ↗</button>
+        <p class="prototype-note">C1 方向专项 · 离合脚感、换挡联锁与熄火尚未模拟</p>
+      </aside>
+
+      <section class="control-deck" aria-label="驾驶控制和回放">
+        <div class="telemetry"><div class="speed"><strong id="speed">0.0</strong><span>km/h</span></div><div class="gear-readout"><span id="gear">R</span><small id="motion-status">准备倒车</small></div><div class="steering-readout"><svg id="steering-wheel" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="25"/><circle cx="32" cy="32" r="7"/><path d="m8 23 18 6m30-6-18 6m-6 10v18"/></svg><div><strong id="steer-angle">0°</strong><button id="center-steering">回正 <kbd>X</kbd></button></div></div></div>
+        <div class="drive-controls"><div class="drive-buttons" aria-label="按住按钮驾驶"><button data-control="left" aria-label="向左转向">←</button><div class="pedal-stack"><button data-control="forward" aria-label="前进，按住驾驶">↑ <span>前进</span></button><button data-control="reverse" aria-label="倒车，按住驾驶">↓ <span>倒车</span></button></div><button data-control="right" aria-label="向右转向">→</button><button class="brake-button" data-control="brake" aria-label="刹车，按住制动">刹车</button></div><p><kbd>W</kbd><kbd>S</kbd> 前进 / 倒车 <span>·</span> <kbd>A</kbd><kbd>D</kbd> 转向 <span>·</span> <kbd>空格</kbd> 刹车</p></div>
+        <div class="session-actions"><button class="pause-button" id="pause-button"><svg><use href="#i-pause"/></svg><span>暂停 · 看轨迹</span><kbd>P</kbd></button><button class="reset-button" id="reset-button"><svg><use href="#i-reset"/></svg>重新开始</button></div>
+        <div class="replay-strip" id="replay-strip" hidden><div><span class="replay-dot"></span><strong id="replay-label">暂停观察</strong><span id="replay-time">00:00 / 00:00</span></div><input id="timeline" type="range" min="0" max="0" value="0" aria-label="拖动查看历史轨迹"/><button id="resume-here">从这里继续 <svg><use href="#i-arrow"/></svg></button><p id="replay-note">教学暂停不计作实考停车；从这里继续会重录之后的轨迹。</p></div>
+      </section>
+    </main>
+    <footer><span>让空间感，在一次次尝试里长出来。</span><span><span class="footer-dot"></span>本地原型 <span class="footer-divider">/</span> V 切换视角 · P 暂停 · R 重置</span></footer>
+  </div>
+
+  <dialog id="help-dialog"><button class="dialog-close" id="close-help" aria-label="关闭操作指南">×</button><span class="mini-label">C1 · 科目二 · 观察与方向专项</span><h2>先看一遍，再自己练。</h2><p>从 A 端两前轮越线处出发，右倒库、出库至 B 端、左倒库，再返回 A 端。示范可逐步播放、关键点暂停，也能从当前位置接手。</p><div class="help-grid"><span><kbd>W / ↑</kbd>按住前进</span><span><kbd>S / ↓</kbd>按住倒车</span><span><kbd>A / ←</kbd>向左打方向</span><span><kbd>D / →</kbd>向右打方向</span><span><kbd>空格</kbd>刹车</span><span><kbd>X</kbd>主动回正</span><span><kbd>V</kbd>切换视角</span><span><kbd>P</kbd>教学暂停</span></div><p>松开 A/D 保持方向角，按 X 或点“回正”主动回方向。低速设定简化了 C1 半联动控速，未模拟离合脚感、换挡联锁和熄火。实车的镜沿、肩线等点位须由教练按车型和座椅校准。</p><button id="start-practice" class="start-practice">开始练习 <svg><use href="#i-arrow"/></svg></button></dialog>
+  <dialog id="exam-rules-dialog"><button class="dialog-close" id="close-exam-rules" aria-label="关闭考试要点">×</button><span class="mini-label">中国大陆 · 小型汽车 · 已核对 2026-10-23</span><h2>按考试流程，练观察和方向。</h2><ul class="exam-rules-list"><li>完整路线：一端控制线外倒入库内停稳 → 出库驶向另一端、两前轮均越线 → 再倒入库内停稳 → 出库回到起点。</li><li>项目限时 3.5 分钟（210 秒）。车身出线、倒库不入、倒车前两前轮未越控制线或超时，属于专项不合格情形。</li><li>进退中途停车每次扣 5 分。规定的库内停车与教学暂停，不能和途中停车混为一谈。</li><li>本场地按小型载客汽车尺寸构建：库宽 2.3 m、库长为车长加 0.7 m、车道宽及库边至控制线距离均为 6.7 m。</li></ul><p>示范中的转向参照和回正角度仅适配本模型。真实考试要先固定座椅、后视镜，并由教练校准点位；本原型不提供完整考试成绩。</p><p class="rule-sources">依据：<a href="https://ywtb.mps.gov.cn/gabzh/portal/stdDetail/309760" target="_blank" rel="noreferrer">公安部 · GA 1026—2022</a>（5.2.2、6.2.3.1）；<a href="https://www.anche.cn/Uploads/20230814052814_254484.pdf" target="_blank" rel="noreferrer">GA 1029—2022 原文镜像</a>（6.3.1、表 3）。</p></dialog>
+</body>
+</html>
