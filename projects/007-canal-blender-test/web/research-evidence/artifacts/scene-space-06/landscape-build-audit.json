@@ -1,0 +1,5397 @@
+{
+  "scope": "A finite complete neighbourhood around the preserved detailed canal core, about 72 by 70 metres; surrounding land remains landscape, not an infinite city.",
+  "added_objects": {
+    "SPACE06_RoadFoundations": {
+      "min": [
+        -35.0,
+        -36.75,
+        -0.1599999964237213
+      ],
+      "max": [
+        35.0,
+        26.350000381469727,
+        0.824999988079071
+      ]
+    },
+    "SPACE06_ContinuousStoneRoads": {
+      "min": [
+        -35.0,
+        -36.75,
+        0.8199999928474426
+      ],
+      "max": [
+        35.0,
+        26.350000381469727,
+        0.8550000190734863
+      ]
+    },
+    "SPACE06_HouseGroundingAndDoorPaths": {
+      "min": [
+        -31.139999389648438,
+        -43.84000015258789,
+        0.6200000047683716
+      ],
+      "max": [
+        30.84000015258789,
+        17.940000534057617,
+        0.8550000190734863
+      ]
+    },
+    "SPACE06_FivePlantedGreenSpaces": {
+      "min": [
+        -30.808866500854492,
+        -32.09269714355469,
+        0.6939986348152161
+      ],
+      "max": [
+        30.18735122680664,
+        23.254302978515625,
+        0.8024905323982239
+      ]
+    },
+    "SPACE06_TreeTrunksAndBranches": {
+      "min": [
+        -44.550418853759766,
+        -50.860565185546875,
+        0.6458947658538818
+      ],
+      "max": [
+        44.61499786376953,
+        34.731021881103516,
+        6.992320537567139
+      ]
+    },
+    "SPACE06_IrregularLeafClusters": {
+      "min": [
+        -45.28928756713867,
+        -51.58037185668945,
+        3.6101136207580566
+      ],
+      "max": [
+        45.386497497558594,
+        35.39086151123047,
+        8.069069862365723
+      ]
+    },
+    "SPACE06_RiverEdgeReedPatches": {
+      "min": [
+        -49.22380828857422,
+        -18.297630310058594,
+        0.6995092630386353
+      ],
+      "max": [
+        48.55147933959961,
+        4.124516487121582,
+        1.5877065658569336
+      ]
+    }
+  },
+  "added_object_count": 7,
+  "added_triangles": 21976,
+  "new_lights": 0,
+  "old_edge_changes": {
+    "hidden_gate_rails_and_bars": [
+      "EXT_Access boundary gate bar",
+      "EXT_Access boundary gate bar.001",
+      "EXT_Access boundary gate bar.002",
+      "EXT_Access boundary gate bar.003",
+      "EXT_Access boundary gate bar.004",
+      "EXT_Access boundary gate bar.005",
+      "EXT_Access boundary gate bar.006",
+      "EXT_Access boundary gate bar.007",
+      "EXT_Access boundary gate bar.008",
+      "EXT_Access boundary gate bar.009",
+      "EXT_Access boundary gate bar.010",
+      "EXT_Access boundary gate bar.011",
+      "EXT_Access boundary gate bar.012",
+      "EXT_Access boundary gate bar.013",
+      "EXT_Access boundary gate bar.014",
+      "EXT_Access boundary gate bar.015",
+      "EXT_Access boundary gate bar.016",
+      "EXT_Access boundary gate bar.017",
+      "EXT_Access boundary gate bar.018",
+      "EXT_Access boundary gate bar.019",
+      "EXT_Access boundary gate bar.020",
+      "EXT_Access boundary gate bar.021",
+      "EXT_Access boundary gate bar.022",
+      "EXT_Access boundary gate bar.023",
+      "EXT_Access boundary gate bar.024",
+      "EXT_Access boundary gate bar.025",
+      "EXT_Access boundary gate bar.026",
+      "EXT_Access boundary gate bar.027",
+      "EXT_Access boundary gate rail",
+      "EXT_Access boundary gate rail.001",
+      "EXT_Access boundary gate rail.002",
+      "EXT_Access boundary gate rail.003",
+      "EXT_Access boundary gate rail.004",
+      "EXT_Access boundary gate rail.005",
+      "EXT_Access boundary gate rail.006",
+      "EXT_Access boundary gate rail.007"
+    ],
+    "gate_fields": [
+      "hide_render",
+      "hide_viewport"
+    ],
+    "gate_posts_preserved": true,
+    "curb_openings": [
+      {
+        "object": "EXT_Outer alley curb",
+        "old_mesh": "EXT_Outer alley curb",
+        "new_mesh": "SPACE06_LoweredCrossing_EXT_Outer alley curb",
+        "modified_world_y": [
+          6.85,
+          8.9
+        ],
+        "new_top": 0.855,
+        "remaining_long_side_unchanged": true
+      },
+      {
+        "object": "EXT_Outer alley curb.001",
+        "old_mesh": "EXT_Outer alley curb.001",
+        "new_mesh": "SPACE06_LoweredCrossing_EXT_Outer alley curb.001",
+        "modified_world_y": [
+          6.85,
+          8.9
+        ],
+        "new_top": 0.855,
+        "remaining_long_side_unchanged": true
+      }
+    ]
+  },
+  "terrain_changes": [
+    {
+      "object": "ROAM01_North continuous terrain",
+      "old_mesh": "ROAM01_North continuous terrain",
+      "new_mesh": "SPACE06_DevelopmentGrade_ROAM01_North continuous terrain",
+      "changed_z_vertices": 59,
+      "changed_indices": [
+        497,
+        498,
+        499,
+        500,
+        501,
+        508,
+        509,
+        510,
+        511,
+        512,
+        519,
+        520,
+        521,
+        522,
+        523,
+        530,
+        531,
+        532,
+        533,
+        534,
+        545,
+        556,
+        567,
+        578,
+        589,
+        930,
+        941,
+        952,
+        963,
+        970,
+        971,
+        972,
+        973,
+        974,
+        981,
+        982,
+        983,
+        984,
+        985,
+        992,
+        993,
+        994,
+        995,
+        996,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1014,
+        1015,
+        1016,
+        1017,
+        1018,
+        1025,
+        1026,
+        1027,
+        1028,
+        1029
+      ],
+      "protected_cell_vertex_count": 210,
+      "protected_cell_vertices": {
+        "_public_excerpt": true,
+        "_reason": "long repeated evidence array",
+        "_original_item_count": 210,
+        "_original_data_retained_locally": true,
+        "_explicit_failure_item_count": 0,
+        "_first_item": 594,
+        "_last_item": 919
+      },
+      "xy_topology_materials_unchanged": true,
+      "max_lowering": 0.26284080743789673
+    },
+    {
+      "object": "ROAM01_South continuous terrain",
+      "old_mesh": "ROAM01_South continuous terrain",
+      "new_mesh": "SPACE06_DevelopmentGrade_ROAM01_South continuous terrain",
+      "changed_z_vertices": 59,
+      "changed_indices": [
+        497,
+        498,
+        499,
+        500,
+        501,
+        508,
+        509,
+        510,
+        511,
+        512,
+        519,
+        520,
+        521,
+        522,
+        523,
+        530,
+        531,
+        532,
+        533,
+        534,
+        545,
+        556,
+        567,
+        578,
+        589,
+        930,
+        941,
+        952,
+        963,
+        970,
+        971,
+        972,
+        973,
+        974,
+        981,
+        982,
+        983,
+        984,
+        985,
+        992,
+        993,
+        994,
+        995,
+        996,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1014,
+        1015,
+        1016,
+        1017,
+        1018,
+        1025,
+        1026,
+        1027,
+        1028,
+        1029
+      ],
+      "protected_cell_vertex_count": 210,
+      "protected_cell_vertices": {
+        "_public_excerpt": true,
+        "_reason": "long repeated evidence array",
+        "_original_item_count": 210,
+        "_original_data_retained_locally": true,
+        "_explicit_failure_item_count": 0,
+        "_first_item": 594,
+        "_last_item": 919
+      },
+      "xy_topology_materials_unchanged": true,
+      "max_lowering": 0.7392401695251465
+    }
+  ],
+  "terrain_protection": {
+    "rectangle_xy": [
+      -26.0,
+      -38.0,
+      24.0,
+      28.0
+    ],
+    "whole_intersecting_cells_frozen": true,
+    "waterline_and_first_0_6m_preserved": true,
+    "outside_development_fade_metres": 8
+  },
+  "road_plan": {
+    "coordinate_system": "Blender XY metres",
+    "source": "rainy-canal-space-05.blend",
+    "road_rectangles": [
+      {
+        "id": "north-backstreet-west",
+        "bounds": [
+          -34.5,
+          6.9,
+          -13.4,
+          9.1
+        ],
+        "height": 0.855
+      },
+      {
+        "id": "north-backstreet-east",
+        "bounds": [
+          12.1,
+          6.9,
+          34.5,
+          9.1
+        ],
+        "height": 0.855
+      },
+      {
+        "id": "north-west-cross",
+        "bounds": [
+          -34.5,
+          0.5,
+          -31.5,
+          26.35
+        ],
+        "height": 0.855
+      },
+      {
+        "id": "north-east-cross",
+        "bounds": [
+          31.5,
+          -2.3,
+          34.5,
+          26.35
+        ],
+        "height": 0.855
+      },
+      {
+        "id": "north-top-street",
+        "bounds": [
+          -34.5,
+          24.05,
+          34.5,
+          26.35
+        ],
+        "height": 0.855
+      },
+      {
+        "id": "far-west-cross",
+        "bounds": [
+          -34.5,
+          -36.75,
+          -31.5,
+          -12.0
+        ],
+        "height": 0.855
+      },
+      {
+        "id": "far-east-cross",
+        "bounds": [
+          31.5,
+          -36.75,
+          34.5,
+          -14.0
+        ],
+        "height": 0.855
+      },
+      {
+        "id": "south-street",
+        "bounds": [
+          -34.5,
+          -36.75,
+          34.5,
+          -34.25
+        ],
+        "height": 0.855
+      }
+    ],
+    "curved_quays": [
+      {
+        "id": "near-quay-west",
+        "bank_side": 1,
+        "x_range": [
+          -35.0,
+          -25.457500457763672
+        ],
+        "centerline": [
+          [
+            -35.0,
+            0.9989818847954407
+          ],
+          [
+            -34.0,
+            0.7178249786281296
+          ],
+          [
+            -33.0,
+            0.45729082841441093
+          ],
+          [
+            -32.0,
+            0.22562853653572168
+          ],
+          [
+            -31.0,
+            0.031087205373499516
+          ],
+          [
+            -30.0,
+            -0.11808406269081961
+          ],
+          [
+            -29.0,
+            -0.21363616527579887
+          ],
+          [
+            -28.0,
+            -0.24731999999999965
+          ],
+          [
+            -27.0,
+            -0.24731999999999965
+          ],
+          [
+            -26.0,
+            -0.24731999999999965
+          ],
+          [
+            -25.457500457763672,
+            -0.24731999999999965
+          ]
+        ],
+        "section_ranges": [
+          [
+            -35.0,
+            -0.31101811520455924,
+            2.3089818847954406
+          ],
+          [
+            -34.0,
+            -0.5921750213718704,
+            2.0278249786281295
+          ],
+          [
+            -33.0,
+            -0.852709171585589,
+            1.7672908284144109
+          ],
+          [
+            -32.0,
+            -1.0843714634642783,
+            1.5356285365357216
+          ],
+          [
+            -31.0,
+            -1.2789127946265004,
+            1.3410872053734995
+          ],
+          [
+            -30.0,
+            -1.4280840626908196,
+            1.1919159373091803
+          ],
+          [
+            -29.0,
+            -1.5236361652757988,
+            1.096363834724201
+          ],
+          [
+            -28.0,
+            -1.5573199999999996,
+            1.0626800000000003
+          ],
+          [
+            -27.0,
+            -1.5573199999999996,
+            1.0626800000000003
+          ],
+          [
+            -26.0,
+            -1.5573199999999996,
+            1.0626800000000003
+          ],
+          [
+            -25.457500457763672,
+            -1.5573199999999996,
+            1.0626800000000003
+          ]
+        ],
+        "navigation_rectangles": [
+          {
+            "id": "near-quay-west-00",
+            "bounds": [
+              -35.0,
+              -0.2860181152045592,
+              -33.6,
+              1.8956746380948517
+            ]
+          },
+          {
+            "id": "near-quay-west-01",
+            "bounds": [
+              -34.4,
+              -0.45672503988601687,
+              -32.6,
+              1.6456993389293717
+            ]
+          },
+          {
+            "id": "near-quay-west-02",
+            "bounds": [
+              -33.4,
+              -0.7264981847669453,
+              -31.6,
+              1.4278955390514967
+            ]
+          },
+          {
+            "id": "near-quay-west-03",
+            "bounds": [
+              -32.4,
+              -0.9706991122654182,
+              -30.6,
+              1.2505123408426626
+            ]
+          },
+          {
+            "id": "near-quay-west-04",
+            "bounds": [
+              -31.4,
+              -1.1810787200000006,
+              -29.6,
+              1.121798846684308
+            ]
+          },
+          {
+            "id": "near-quay-west-05",
+            "bounds": [
+              -30.4,
+              -1.3493879055892528,
+              -28.6,
+              1.0500041589578673
+            ]
+          },
+          {
+            "id": "near-quay-west-06",
+            "bounds": [
+              -29.4,
+              -1.4673775666517408,
+              -27.6,
+              1.0376800000000004
+            ]
+          },
+          {
+            "id": "near-quay-west-07",
+            "bounds": [
+              -28.4,
+              -1.5267986008060241,
+              -26.6,
+              1.0376800000000004
+            ]
+          },
+          {
+            "id": "near-quay-west-08",
+            "bounds": [
+              -27.4,
+              -1.5323199999999997,
+              -25.6,
+              1.0376800000000004
+            ]
+          },
+          {
+            "id": "near-quay-west-09",
+            "bounds": [
+              -26.4,
+              -1.5323199999999997,
+              -25.457500457763672,
+              1.0376800000000004
+            ]
+          }
+        ],
+        "height": {
+          "old_edge_x": -25.457500457763672,
+          "direction": -1,
+          "start_z": 0.85,
+          "end_z": 0.855,
+          "ramp_length": 2.0
+        }
+      },
+      {
+        "id": "near-quay-east",
+        "bank_side": 1,
+        "x_range": [
+          24.0,
+          35.0
+        ],
+        "centerline": [
+          [
+            24.0,
+            -0.24731999999999965
+          ],
+          [
+            25.0,
+            -0.2778377229080936
+          ],
+          [
+            26.0,
+            -0.36469585733882004
+          ],
+          [
+            27.0,
+            -0.5008518518518515
+          ],
+          [
+            28.0,
+            -0.679263155006859
+          ],
+          [
+            29.0,
+            -0.8928872153635112
+          ],
+          [
+            30.0,
+            -1.1346814814814812
+          ],
+          [
+            31.0,
+            -1.3976034019204386
+          ],
+          [
+            32.0,
+            -1.6746104252400544
+          ],
+          [
+            33.0,
+            -1.9586599999999994
+          ],
+          [
+            34.0,
+            -2.242709574759946
+          ],
+          [
+            35.0,
+            -2.519716598079561
+          ]
+        ],
+        "section_ranges": [
+          [
+            24.0,
+            -1.5573199999999996,
+            1.0626800000000003
+          ],
+          [
+            25.0,
+            -1.5878377229080936,
+            1.0321622770919063
+          ],
+          [
+            26.0,
+            -1.67469585733882,
+            0.9453041426611799
+          ],
+          [
+            27.0,
+            -1.8108518518518515,
+            0.8091481481481484
+          ],
+          [
+            28.0,
+            -1.989263155006859,
+            0.630736844993141
+          ],
+          [
+            29.0,
+            -2.202887215363511,
+            0.4171127846364886
+          ],
+          [
+            30.0,
+            -2.444681481481481,
+            0.17531851851851865
+          ],
+          [
+            31.0,
+            -2.7076034019204385,
+            -0.0876034019204388
+          ],
+          [
+            32.0,
+            -2.9846104252400543,
+            -0.3646104252400546
+          ],
+          [
+            33.0,
+            -3.2686599999999992,
+            -0.6486599999999996
+          ],
+          [
+            34.0,
+            -3.552709574759946,
+            -0.9327095747599463
+          ],
+          [
+            35.0,
+            -3.829716598079561,
+            -1.2097165980795612
+          ]
+        ],
+        "navigation_rectangles": [
+          {
+            "id": "near-quay-east-00",
+            "bounds": [
+              24.0,
+              -1.5323199999999997,
+              25.4,
+              0.9787854898216736
+            ]
+          },
+          {
+            "id": "near-quay-east-01",
+            "bounds": [
+              24.6,
+              -1.543475401481482,
+              26.4,
+              0.871363105185185
+            ]
+          },
+          {
+            "id": "near-quay-east-02",
+            "bounds": [
+              25.6,
+              -1.6086424774759938,
+              27.4,
+              0.7174598810425244
+            ]
+          },
+          {
+            "id": "near-quay-east-03",
+            "bounds": [
+              26.6,
+              -1.7259244341289437,
+              28.4,
+              0.5241183688340193
+            ]
+          },
+          {
+            "id": "near-quay-east-04",
+            "bounds": [
+              27.6,
+              -1.88827872,
+              29.4,
+              0.2983811200000005
+            ]
+          },
+          {
+            "id": "near-quay-east-05",
+            "bounds": [
+              28.6,
+              -2.088662783648834,
+              30.4,
+              0.04729068598079635
+            ]
+          },
+          {
+            "id": "near-quay-east-06",
+            "bounds": [
+              29.6,
+              -2.3200340736351164,
+              31.4,
+              -0.222110381783264
+            ]
+          },
+          {
+            "id": "near-quay-east-07",
+            "bounds": [
+              30.6,
+              -2.5753500385185193,
+              32.4,
+              -0.5027795318518514
+            ]
+          },
+          {
+            "id": "near-quay-east-08",
+            "bounds": [
+              31.6,
+              -2.847568126858711,
+              33.4,
+              -0.7876742127846358
+            ]
+          },
+          {
+            "id": "near-quay-east-09",
+            "bounds": [
+              32.6,
+              -3.129645787215363,
+              34.4,
+              -1.0697518731412887
+            ]
+          },
+          {
+            "id": "near-quay-east-10",
+            "bounds": [
+              33.6,
+              -3.4145404681481475,
+              35.0,
+              -1.2347165980795611
+            ]
+          }
+        ],
+        "height": {
+          "old_edge_x": 24.0,
+          "direction": 1,
+          "start_z": 0.85,
+          "end_z": 0.855,
+          "ramp_length": 2.0
+        }
+      },
+      {
+        "id": "far-quay-west",
+        "bank_side": -1,
+        "x_range": [
+          -35.0,
+          -25.457500457763672
+        ],
+        "centerline": [
+          [
+            -35.0,
+            -11.245891308772645
+          ],
+          [
+            -34.0,
+            -11.489429871768778
+          ],
+          [
+            -33.0,
+            -11.715104970486465
+          ],
+          [
+            -32.0,
+            -11.915771219214328
+          ],
+          [
+            -31.0,
+            -12.084283232240992
+          ],
+          [
+            -30.0,
+            -12.213495623855078
+          ],
+          [
+            -29.0,
+            -12.296263008345207
+          ],
+          [
+            -28.0,
+            -12.32544
+          ],
+          [
+            -27.0,
+            -12.32544
+          ],
+          [
+            -26.0,
+            -12.32544
+          ],
+          [
+            -25.457500457763672,
+            -12.32544
+          ]
+        ],
+        "section_ranges": [
+          [
+            -35.0,
+            -12.795891308772644,
+            -9.695891308772644
+          ],
+          [
+            -34.0,
+            -13.039429871768776,
+            -9.939429871768777
+          ],
+          [
+            -33.0,
+            -13.265104970486464,
+            -10.165104970486464
+          ],
+          [
+            -32.0,
+            -13.465771219214329,
+            -10.365771219214329
+          ],
+          [
+            -31.0,
+            -13.634283232240993,
+            -10.534283232240993
+          ],
+          [
+            -30.0,
+            -13.763495623855077,
+            -10.663495623855077
+          ],
+          [
+            -29.0,
+            -13.846263008345206,
+            -10.746263008345206
+          ],
+          [
+            -28.0,
+            -13.87544,
+            -10.77544
+          ],
+          [
+            -27.0,
+            -13.87544,
+            -10.77544
+          ],
+          [
+            -26.0,
+            -13.87544,
+            -10.77544
+          ],
+          [
+            -25.457500457763672,
+            -13.87544,
+            -10.77544
+          ]
+        ],
+        "navigation_rectangles": [
+          {
+            "id": "far-quay-west-00",
+            "bounds": [
+              -35.0,
+              -12.770891308772644,
+              -33.6,
+              -10.057243668569102
+            ]
+          },
+          {
+            "id": "far-quay-west-01",
+            "bounds": [
+              -34.4,
+              -12.918757920683898,
+              -32.6,
+              -10.273772673576227
+            ]
+          },
+          {
+            "id": "far-quay-west-02",
+            "bounds": [
+              -33.4,
+              -13.15243585139833,
+              -31.6,
+              -10.462434674308977
+            ]
+          },
+          {
+            "id": "far-quay-west-03",
+            "bounds": [
+              -32.4,
+              -13.363963086407491,
+              -30.6,
+              -10.616084285055974
+            ]
+          },
+          {
+            "id": "far-quay-west-04",
+            "bounds": [
+              -31.4,
+              -13.546194239999998,
+              -29.6,
+              -10.727576120105843
+            ]
+          },
+          {
+            "id": "far-quay-west-05",
+            "bounds": [
+              -30.4,
+              -13.69198392646448,
+              -28.6,
+              -10.789764793747201
+            ]
+          },
+          {
+            "id": "far-quay-west-06",
+            "bounds": [
+              -29.4,
+              -13.794186760089557,
+              -27.6,
+              -10.80044
+            ]
+          },
+          {
+            "id": "far-quay-west-07",
+            "bounds": [
+              -28.4,
+              -13.84565735516385,
+              -26.6,
+              -10.80044
+            ]
+          },
+          {
+            "id": "far-quay-west-08",
+            "bounds": [
+              -27.4,
+              -13.850439999999999,
+              -25.6,
+              -10.80044
+            ]
+          },
+          {
+            "id": "far-quay-west-09",
+            "bounds": [
+              -26.4,
+              -13.850439999999999,
+              -25.457500457763672,
+              -10.80044
+            ]
+          }
+        ],
+        "height": {
+          "old_edge_x": -25.457500457763672,
+          "direction": -1,
+          "start_z": 0.85,
+          "end_z": 0.855,
+          "ramp_length": 2.0
+        }
+      },
+      {
+        "id": "far-quay-east",
+        "bank_side": -1,
+        "x_range": [
+          24.0,
+          35.0
+        ],
+        "centerline": [
+          [
+            24.0,
+            -12.32544
+          ],
+          [
+            25.0,
+            -12.363553360768176
+          ],
+          [
+            26.0,
+            -12.472029849108367
+          ],
+          [
+            27.0,
+            -12.642074074074074
+          ],
+          [
+            28.0,
+            -12.864890644718791
+          ],
+          [
+            29.0,
+            -13.131684170096023
+          ],
+          [
+            30.0,
+            -13.433659259259258
+          ],
+          [
+            31.0,
+            -13.762020521262002
+          ],
+          [
+            32.0,
+            -14.107972565157752
+          ],
+          [
+            33.0,
+            -14.462720000000001
+          ],
+          [
+            34.0,
+            -14.81746743484225
+          ],
+          [
+            35.0,
+            -15.163419478737996
+          ]
+        ],
+        "section_ranges": [
+          [
+            24.0,
+            -13.87544,
+            -10.77544
+          ],
+          [
+            25.0,
+            -13.913553360768175,
+            -10.813553360768175
+          ],
+          [
+            26.0,
+            -14.022029849108366,
+            -10.922029849108366
+          ],
+          [
+            27.0,
+            -14.192074074074073,
+            -11.092074074074073
+          ],
+          [
+            28.0,
+            -14.414890644718792,
+            -11.314890644718792
+          ],
+          [
+            29.0,
+            -14.681684170096021,
+            -11.581684170096022
+          ],
+          [
+            30.0,
+            -14.983659259259257,
+            -11.883659259259257
+          ],
+          [
+            31.0,
+            -15.312020521262001,
+            -12.212020521262001
+          ],
+          [
+            32.0,
+            -15.65797256515775,
+            -12.557972565157751
+          ],
+          [
+            33.0,
+            -16.01272,
+            -12.91272
+          ],
+          [
+            34.0,
+            -16.36746743484225,
+            -13.26746743484225
+          ],
+          [
+            35.0,
+            -16.713419478737997,
+            -13.613419478737997
+          ]
+        ],
+        "navigation_rectangles": [
+          {
+            "id": "far-quay-east-00",
+            "bounds": [
+              24.0,
+              -13.850439999999999,
+              25.4,
+              -10.873992922688615
+            ]
+          },
+          {
+            "id": "far-quay-east-01",
+            "bounds": [
+              24.6,
+              -13.864371899259258,
+              26.4,
+              -11.008151952592593
+            ]
+          },
+          {
+            "id": "far-quay-east-02",
+            "bounds": [
+              25.6,
+              -13.945758583484224,
+              27.4,
+              -11.200360562743484
+            ]
+          },
+          {
+            "id": "far-quay-east-03",
+            "bounds": [
+              26.6,
+              -14.092231160713304,
+              28.4,
+              -11.441823362194787
+            ]
+          },
+          {
+            "id": "far-quay-east-04",
+            "bounds": [
+              27.6,
+              -14.29499424,
+              29.4,
+              -11.72374496
+            ]
+          },
+          {
+            "id": "far-quay-east-05",
+            "bounds": [
+              28.6,
+              -14.545252430397806,
+              30.4,
+              -12.037329965212619
+            ]
+          },
+          {
+            "id": "far-quay-east-06",
+            "bounds": [
+              29.6,
+              -14.834210340960219,
+              31.4,
+              -12.373782986886146
+            ]
+          },
+          {
+            "id": "far-quay-east-07",
+            "bounds": [
+              30.6,
+              -15.15307258074074,
+              32.4,
+              -12.724308634074074
+            ]
+          },
+          {
+            "id": "far-quay-east-08",
+            "bounds": [
+              31.6,
+              -15.493043758792865,
+              33.4,
+              -13.080111515829904
+            ]
+          },
+          {
+            "id": "far-quay-east-09",
+            "bounds": [
+              32.6,
+              -15.845328484170096,
+              34.4,
+              -13.432396241207133
+            ]
+          },
+          {
+            "id": "far-quay-east-10",
+            "bounds": [
+              33.6,
+              -16.201131365925928,
+              35.0,
+              -13.638419478737998
+            ]
+          }
+        ],
+        "height": {
+          "old_edge_x": 24.0,
+          "direction": 1,
+          "start_z": 0.85,
+          "end_z": 0.855,
+          "ramp_length": 2.0
+        }
+      }
+    ],
+    "trees": [
+      {
+        "id": "space06-tree-01",
+        "x": -28,
+        "blender_y": 4.3,
+        "height": 5.5,
+        "trunk_radius": 0.21,
+        "collider_radius": 0.28,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-02",
+        "x": -28,
+        "blender_y": 21.1,
+        "height": 5.0,
+        "trunk_radius": 0.16,
+        "collider_radius": 0.24,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-03",
+        "x": -22.4,
+        "blender_y": 21.2,
+        "height": 4.8,
+        "trunk_radius": 0.16,
+        "collider_radius": 0.24,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-04",
+        "x": 17.8,
+        "blender_y": 21.2,
+        "height": 5.2,
+        "trunk_radius": 0.16,
+        "collider_radius": 0.24,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-05",
+        "x": 26.8,
+        "blender_y": 21.1,
+        "height": 5.0,
+        "trunk_radius": 0.16,
+        "collider_radius": 0.24,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-06",
+        "x": -27.1,
+        "blender_y": -26,
+        "height": 5.2,
+        "trunk_radius": 0.16,
+        "collider_radius": 0.24,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-07",
+        "x": -26.1,
+        "blender_y": -30,
+        "height": 4.7,
+        "trunk_radius": 0.16,
+        "collider_radius": 0.24,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-08",
+        "x": 26.2,
+        "blender_y": -26,
+        "height": 5.1,
+        "trunk_radius": 0.16,
+        "collider_radius": 0.24,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-09",
+        "x": 26.9,
+        "blender_y": -30.1,
+        "height": 4.6,
+        "trunk_radius": 0.16,
+        "collider_radius": 0.24,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-10",
+        "x": -41,
+        "blender_y": 5,
+        "height": 6.2,
+        "trunk_radius": 0.21,
+        "collider_radius": 0.28,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-11",
+        "x": -43,
+        "blender_y": -19,
+        "height": 5.8,
+        "trunk_radius": 0.21,
+        "collider_radius": 0.28,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-12",
+        "x": -41,
+        "blender_y": -37,
+        "height": 6.5,
+        "trunk_radius": 0.21,
+        "collider_radius": 0.28,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-13",
+        "x": 41,
+        "blender_y": 4,
+        "height": 6.1,
+        "trunk_radius": 0.21,
+        "collider_radius": 0.28,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-14",
+        "x": 43,
+        "blender_y": -23,
+        "height": 6.4,
+        "trunk_radius": 0.21,
+        "collider_radius": 0.28,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-15",
+        "x": 41,
+        "blender_y": -40,
+        "height": 5.7,
+        "trunk_radius": 0.21,
+        "collider_radius": 0.28,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-16",
+        "x": -29,
+        "blender_y": 33,
+        "height": 5.8,
+        "trunk_radius": 0.21,
+        "collider_radius": 0.28,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-17",
+        "x": -12,
+        "blender_y": 33,
+        "height": 6.4,
+        "trunk_radius": 0.21,
+        "collider_radius": 0.28,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-18",
+        "x": 13,
+        "blender_y": 33,
+        "height": 6.0,
+        "trunk_radius": 0.21,
+        "collider_radius": 0.28,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-19",
+        "x": 30,
+        "blender_y": 33,
+        "height": 6.1,
+        "trunk_radius": 0.21,
+        "collider_radius": 0.28,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-20",
+        "x": -28,
+        "blender_y": -49,
+        "height": 6.2,
+        "trunk_radius": 0.21,
+        "collider_radius": 0.28,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-21",
+        "x": -12,
+        "blender_y": -49,
+        "height": 5.9,
+        "trunk_radius": 0.21,
+        "collider_radius": 0.28,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-22",
+        "x": 12,
+        "blender_y": -49,
+        "height": 6.4,
+        "trunk_radius": 0.21,
+        "collider_radius": 0.28,
+        "lowest_branch_above_ground": 2.35
+      },
+      {
+        "id": "space06-tree-23",
+        "x": 29,
+        "blender_y": -49,
+        "height": 5.8,
+        "trunk_radius": 0.21,
+        "collider_radius": 0.28,
+        "lowest_branch_above_ground": 2.35
+      }
+    ],
+    "retained_gate_posts": [
+      {
+        "id": "old-gate-post-01",
+        "x": -21,
+        "blender_y": -1.45,
+        "radius": 0.12
+      },
+      {
+        "id": "old-gate-post-02",
+        "x": -21,
+        "blender_y": 0.45,
+        "radius": 0.12
+      },
+      {
+        "id": "old-gate-post-03",
+        "x": -21,
+        "blender_y": -14.55,
+        "radius": 0.12
+      },
+      {
+        "id": "old-gate-post-04",
+        "x": -21,
+        "blender_y": -10.75,
+        "radius": 0.12
+      },
+      {
+        "id": "old-gate-post-05",
+        "x": 13,
+        "blender_y": -1.45,
+        "radius": 0.12
+      },
+      {
+        "id": "old-gate-post-06",
+        "x": 13,
+        "blender_y": 0.45,
+        "radius": 0.12
+      },
+      {
+        "id": "old-gate-post-07",
+        "x": 13,
+        "blender_y": -14.55,
+        "radius": 0.12
+      },
+      {
+        "id": "old-gate-post-08",
+        "x": 13,
+        "blender_y": -10.75,
+        "radius": 0.12
+      }
+    ],
+    "road_top": 0.855,
+    "old_quay_core_bounds": {
+      "near": [
+        -25.457500457763672,
+        -1.52,
+        24.0,
+        1.1
+      ],
+      "far": [
+        -25.457500457763672,
+        -15.35,
+        24.0,
+        -10.85
+      ]
+    },
+    "notes": [
+      "Curve navigation rectangles are conservative .025m inside the physical river-following ribbon; adjacent rectangles overlap .8m.",
+      "Source gates rail/bar open, columns remain.",
+      "Near central route should retain y=-.55 to avoid cafe furniture.",
+      "Cross north-east begins at y=-2.3; far-east ends at y=-14.0."
+    ]
+  },
+  "road_union_cells": [
+    {
+      "x": [
+        -35.0,
+        -34.5
+      ],
+      "y_at_start": [
+        -12.795891308772644,
+        -9.695891308772644
+      ],
+      "y_at_end": [
+        -12.91766059027071,
+        -9.81766059027071
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -35.0,
+        -34.5
+      ],
+      "y_at_start": [
+        -0.31101811520455924,
+        2.3089818847954406
+      ],
+      "y_at_end": [
+        -0.4515965682882148,
+        2.168403431711785
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -34.5,
+        -34.0
+      ],
+      "y_at_start": [
+        -36.75,
+        -9.81766059027071
+      ],
+      "y_at_end": [
+        -36.75,
+        -9.939429871768777
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-west-cross",
+        "south-street",
+        "far-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -34.5,
+        -34.0
+      ],
+      "y_at_start": [
+        -0.4515965682882148,
+        26.35
+      ],
+      "y_at_end": [
+        -0.5921750213718704,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-west",
+        "north-west-cross",
+        "north-backstreet-west",
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        -34.0,
+        -33.0
+      ],
+      "y_at_start": [
+        -36.75,
+        -9.939429871768777
+      ],
+      "y_at_end": [
+        -36.75,
+        -10.165104970486464
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-west-cross",
+        "south-street",
+        "far-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -34.0,
+        -33.0
+      ],
+      "y_at_start": [
+        -0.5921750213718704,
+        26.35
+      ],
+      "y_at_end": [
+        -0.852709171585589,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-west",
+        "north-west-cross",
+        "north-backstreet-west",
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        -33.0,
+        -32.0
+      ],
+      "y_at_start": [
+        -36.75,
+        -10.165104970486464
+      ],
+      "y_at_end": [
+        -36.75,
+        -10.365771219214329
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-west-cross",
+        "south-street",
+        "far-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -33.0,
+        -32.0
+      ],
+      "y_at_start": [
+        -0.852709171585589,
+        26.35
+      ],
+      "y_at_end": [
+        -1.0843714634642783,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-west",
+        "north-west-cross",
+        "north-backstreet-west",
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        -32.0,
+        -31.5
+      ],
+      "y_at_start": [
+        -36.75,
+        -10.365771219214329
+      ],
+      "y_at_end": [
+        -36.75,
+        -10.450027225727661
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-west-cross",
+        "south-street",
+        "far-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -32.0,
+        -31.5
+      ],
+      "y_at_start": [
+        -1.0843714634642783,
+        26.35
+      ],
+      "y_at_end": [
+        -1.1816421290453893,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-west",
+        "north-west-cross",
+        "north-backstreet-west",
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        -31.5,
+        -31.0
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        -31.5,
+        -31.0
+      ],
+      "y_at_start": [
+        -13.55002722572766,
+        -10.450027225727661
+      ],
+      "y_at_end": [
+        -13.634283232240993,
+        -10.534283232240993
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -31.5,
+        -31.0
+      ],
+      "y_at_start": [
+        -1.1816421290453893,
+        1.4383578709546105
+      ],
+      "y_at_end": [
+        -1.2789127946265004,
+        1.3410872053734995
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -31.5,
+        -31.0
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-west"
+      ]
+    },
+    {
+      "x": [
+        -31.5,
+        -31.0
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        -31.0,
+        -30.0
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        -31.0,
+        -30.0
+      ],
+      "y_at_start": [
+        -13.634283232240993,
+        -10.534283232240993
+      ],
+      "y_at_end": [
+        -13.763495623855077,
+        -10.663495623855077
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -31.0,
+        -30.0
+      ],
+      "y_at_start": [
+        -1.2789127946265004,
+        1.3410872053734995
+      ],
+      "y_at_end": [
+        -1.4280840626908196,
+        1.1919159373091803
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -31.0,
+        -30.0
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-west"
+      ]
+    },
+    {
+      "x": [
+        -31.0,
+        -30.0
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        -30.0,
+        -29.0
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        -30.0,
+        -29.0
+      ],
+      "y_at_start": [
+        -13.763495623855077,
+        -10.663495623855077
+      ],
+      "y_at_end": [
+        -13.846263008345206,
+        -10.746263008345206
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -30.0,
+        -29.0
+      ],
+      "y_at_start": [
+        -1.4280840626908196,
+        1.1919159373091803
+      ],
+      "y_at_end": [
+        -1.5236361652757988,
+        1.096363834724201
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -30.0,
+        -29.0
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-west"
+      ]
+    },
+    {
+      "x": [
+        -30.0,
+        -29.0
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        -29.0,
+        -28.0
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        -29.0,
+        -28.0
+      ],
+      "y_at_start": [
+        -13.846263008345206,
+        -10.746263008345206
+      ],
+      "y_at_end": [
+        -13.87544,
+        -10.77544
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -29.0,
+        -28.0
+      ],
+      "y_at_start": [
+        -1.5236361652757988,
+        1.096363834724201
+      ],
+      "y_at_end": [
+        -1.5573199999999996,
+        1.0626800000000003
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -29.0,
+        -28.0
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-west"
+      ]
+    },
+    {
+      "x": [
+        -29.0,
+        -28.0
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        -28.0,
+        -27.457500457763672
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        -28.0,
+        -27.457500457763672
+      ],
+      "y_at_start": [
+        -13.87544,
+        -10.77544
+      ],
+      "y_at_end": [
+        -13.87544,
+        -10.77544
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -28.0,
+        -27.457500457763672
+      ],
+      "y_at_start": [
+        -1.5573199999999996,
+        1.0626800000000003
+      ],
+      "y_at_end": [
+        -1.5573199999999996,
+        1.0626800000000003
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -28.0,
+        -27.457500457763672
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-west"
+      ]
+    },
+    {
+      "x": [
+        -28.0,
+        -27.457500457763672
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        -27.457500457763672,
+        -27.0
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        -27.457500457763672,
+        -27.0
+      ],
+      "y_at_start": [
+        -13.87544,
+        -10.77544
+      ],
+      "y_at_end": [
+        -13.87544,
+        -10.77544
+      ],
+      "top": [
+        0.855,
+        0.8538562488555907
+      ],
+      "sources": [
+        "far-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -27.457500457763672,
+        -27.0
+      ],
+      "y_at_start": [
+        -1.5573199999999996,
+        1.0626800000000003
+      ],
+      "y_at_end": [
+        -1.5573199999999996,
+        1.0626800000000003
+      ],
+      "top": [
+        0.855,
+        0.8538562488555907
+      ],
+      "sources": [
+        "near-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -27.457500457763672,
+        -27.0
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-west"
+      ]
+    },
+    {
+      "x": [
+        -27.457500457763672,
+        -27.0
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        -27.0,
+        -26.0
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        -27.0,
+        -26.0
+      ],
+      "y_at_start": [
+        -13.87544,
+        -10.77544
+      ],
+      "y_at_end": [
+        -13.87544,
+        -10.77544
+      ],
+      "top": [
+        0.8538562488555907,
+        0.8513562488555908
+      ],
+      "sources": [
+        "far-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -27.0,
+        -26.0
+      ],
+      "y_at_start": [
+        -1.5573199999999996,
+        1.0626800000000003
+      ],
+      "y_at_end": [
+        -1.5573199999999996,
+        1.0626800000000003
+      ],
+      "top": [
+        0.8538562488555907,
+        0.8513562488555908
+      ],
+      "sources": [
+        "near-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -27.0,
+        -26.0
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-west"
+      ]
+    },
+    {
+      "x": [
+        -27.0,
+        -26.0
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        -26.0,
+        -25.457500457763672
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        -26.0,
+        -25.457500457763672
+      ],
+      "y_at_start": [
+        -13.87544,
+        -10.77544
+      ],
+      "y_at_end": [
+        -13.87544,
+        -10.77544
+      ],
+      "top": [
+        0.8513562488555908,
+        0.85
+      ],
+      "sources": [
+        "far-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -26.0,
+        -25.457500457763672
+      ],
+      "y_at_start": [
+        -1.5573199999999996,
+        1.0626800000000003
+      ],
+      "y_at_end": [
+        -1.5573199999999996,
+        1.0626800000000003
+      ],
+      "top": [
+        0.8513562488555908,
+        0.85
+      ],
+      "sources": [
+        "near-quay-west"
+      ]
+    },
+    {
+      "x": [
+        -26.0,
+        -25.457500457763672
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-west"
+      ]
+    },
+    {
+      "x": [
+        -26.0,
+        -25.457500457763672
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        -25.457500457763672,
+        -13.4
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        -25.457500457763672,
+        -13.4
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-west"
+      ]
+    },
+    {
+      "x": [
+        -25.457500457763672,
+        -13.4
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        -13.4,
+        12.1
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        -13.4,
+        12.1
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        12.1,
+        24.0
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        12.1,
+        24.0
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-east"
+      ]
+    },
+    {
+      "x": [
+        12.1,
+        24.0
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        24.0,
+        25.0
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        24.0,
+        25.0
+      ],
+      "y_at_start": [
+        -13.87544,
+        -10.77544
+      ],
+      "y_at_end": [
+        -13.913553360768175,
+        -10.813553360768175
+      ],
+      "top": [
+        0.85,
+        0.8525
+      ],
+      "sources": [
+        "far-quay-east"
+      ]
+    },
+    {
+      "x": [
+        24.0,
+        25.0
+      ],
+      "y_at_start": [
+        -1.5573199999999996,
+        1.0626800000000003
+      ],
+      "y_at_end": [
+        -1.5878377229080936,
+        1.0321622770919063
+      ],
+      "top": [
+        0.85,
+        0.8525
+      ],
+      "sources": [
+        "near-quay-east"
+      ]
+    },
+    {
+      "x": [
+        24.0,
+        25.0
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-east"
+      ]
+    },
+    {
+      "x": [
+        24.0,
+        25.0
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        25.0,
+        25.796915908272414
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        25.0,
+        25.796915908272414
+      ],
+      "y_at_start": [
+        -13.913553360768175,
+        -10.813553360768175
+      ],
+      "y_at_end": [
+        -14.0,
+        -10.9
+      ],
+      "top": [
+        0.8525,
+        0.854492289770681
+      ],
+      "sources": [
+        "far-quay-east"
+      ]
+    },
+    {
+      "x": [
+        25.0,
+        25.796915908272414
+      ],
+      "y_at_start": [
+        -1.5878377229080936,
+        1.0321622770919063
+      ],
+      "y_at_end": [
+        -1.6570563519988033,
+        0.9629436480011966
+      ],
+      "top": [
+        0.8525,
+        0.854492289770681
+      ],
+      "sources": [
+        "near-quay-east"
+      ]
+    },
+    {
+      "x": [
+        25.0,
+        25.796915908272414
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-east"
+      ]
+    },
+    {
+      "x": [
+        25.0,
+        25.796915908272414
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        25.796915908272414,
+        26.0
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        25.796915908272414,
+        26.0
+      ],
+      "y_at_start": [
+        -14.0,
+        -10.9
+      ],
+      "y_at_end": [
+        -14.022029849108366,
+        -10.922029849108366
+      ],
+      "top": [
+        0.854492289770681,
+        0.855
+      ],
+      "sources": [
+        "far-quay-east"
+      ]
+    },
+    {
+      "x": [
+        25.796915908272414,
+        26.0
+      ],
+      "y_at_start": [
+        -1.6570563519988033,
+        0.9629436480011966
+      ],
+      "y_at_end": [
+        -1.67469585733882,
+        0.9453041426611799
+      ],
+      "top": [
+        0.854492289770681,
+        0.855
+      ],
+      "sources": [
+        "near-quay-east"
+      ]
+    },
+    {
+      "x": [
+        25.796915908272414,
+        26.0
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-east"
+      ]
+    },
+    {
+      "x": [
+        25.796915908272414,
+        26.0
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        26.0,
+        27.0
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        26.0,
+        27.0
+      ],
+      "y_at_start": [
+        -14.022029849108366,
+        -10.922029849108366
+      ],
+      "y_at_end": [
+        -14.192074074074073,
+        -11.092074074074073
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-quay-east"
+      ]
+    },
+    {
+      "x": [
+        26.0,
+        27.0
+      ],
+      "y_at_start": [
+        -1.67469585733882,
+        0.9453041426611799
+      ],
+      "y_at_end": [
+        -1.8108518518518515,
+        0.8091481481481484
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-east"
+      ]
+    },
+    {
+      "x": [
+        26.0,
+        27.0
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-east"
+      ]
+    },
+    {
+      "x": [
+        26.0,
+        27.0
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        27.0,
+        28.0
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        27.0,
+        28.0
+      ],
+      "y_at_start": [
+        -14.192074074074073,
+        -11.092074074074073
+      ],
+      "y_at_end": [
+        -14.414890644718792,
+        -11.314890644718792
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-quay-east"
+      ]
+    },
+    {
+      "x": [
+        27.0,
+        28.0
+      ],
+      "y_at_start": [
+        -1.8108518518518515,
+        0.8091481481481484
+      ],
+      "y_at_end": [
+        -1.989263155006859,
+        0.630736844993141
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-east"
+      ]
+    },
+    {
+      "x": [
+        27.0,
+        28.0
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-east"
+      ]
+    },
+    {
+      "x": [
+        27.0,
+        28.0
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        28.0,
+        28.61199494464655
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        28.0,
+        28.61199494464655
+      ],
+      "y_at_start": [
+        -14.414890644718792,
+        -11.314890644718792
+      ],
+      "y_at_end": [
+        -14.578166933514087,
+        -11.478166933514087
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-quay-east"
+      ]
+    },
+    {
+      "x": [
+        28.0,
+        28.61199494464655
+      ],
+      "y_at_start": [
+        -1.989263155006859,
+        0.630736844993141
+      ],
+      "y_at_end": [
+        -2.1199999999999997,
+        0.5000000000000001
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-east"
+      ]
+    },
+    {
+      "x": [
+        28.0,
+        28.61199494464655
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-east"
+      ]
+    },
+    {
+      "x": [
+        28.0,
+        28.61199494464655
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        28.61199494464655,
+        29.0
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        28.61199494464655,
+        29.0
+      ],
+      "y_at_start": [
+        -14.578166933514087,
+        -11.478166933514087
+      ],
+      "y_at_end": [
+        -14.681684170096021,
+        -11.581684170096022
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-quay-east"
+      ]
+    },
+    {
+      "x": [
+        28.61199494464655,
+        29.0
+      ],
+      "y_at_start": [
+        -2.1199999999999997,
+        0.5000000000000001
+      ],
+      "y_at_end": [
+        -2.202887215363511,
+        0.4171127846364886
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-east"
+      ]
+    },
+    {
+      "x": [
+        28.61199494464655,
+        29.0
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-east"
+      ]
+    },
+    {
+      "x": [
+        28.61199494464655,
+        29.0
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        29.0,
+        29.401633943582052
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        29.0,
+        29.401633943582052
+      ],
+      "y_at_start": [
+        -14.681684170096021,
+        -11.581684170096022
+      ],
+      "y_at_end": [
+        -14.802967616020194,
+        -11.702967616020194
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-quay-east"
+      ]
+    },
+    {
+      "x": [
+        29.0,
+        29.401633943582052
+      ],
+      "y_at_start": [
+        -2.202887215363511,
+        0.4171127846364886
+      ],
+      "y_at_end": [
+        -2.2999999999999994,
+        0.3200000000000002
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-east"
+      ]
+    },
+    {
+      "x": [
+        29.0,
+        29.401633943582052
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-east"
+      ]
+    },
+    {
+      "x": [
+        29.0,
+        29.401633943582052
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        29.401633943582052,
+        30.0
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        29.401633943582052,
+        30.0
+      ],
+      "y_at_start": [
+        -14.802967616020194,
+        -11.702967616020194
+      ],
+      "y_at_end": [
+        -14.983659259259257,
+        -11.883659259259257
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-quay-east"
+      ]
+    },
+    {
+      "x": [
+        29.401633943582052,
+        30.0
+      ],
+      "y_at_start": [
+        -2.2999999999999994,
+        0.3200000000000002
+      ],
+      "y_at_end": [
+        -2.444681481481481,
+        0.17531851851851865
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-east"
+      ]
+    },
+    {
+      "x": [
+        29.401633943582052,
+        30.0
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-east"
+      ]
+    },
+    {
+      "x": [
+        29.401633943582052,
+        30.0
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        30.0,
+        30.354307143391875
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        30.0,
+        30.354307143391875
+      ],
+      "y_at_start": [
+        -14.983659259259257,
+        -11.883659259259257
+      ],
+      "y_at_end": [
+        -15.1,
+        -12.0
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-quay-east"
+      ]
+    },
+    {
+      "x": [
+        30.0,
+        30.354307143391875
+      ],
+      "y_at_start": [
+        -2.444681481481481,
+        0.17531851851851865
+      ],
+      "y_at_end": [
+        -2.5378365960473137,
+        0.08216340395268587
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-east"
+      ]
+    },
+    {
+      "x": [
+        30.0,
+        30.354307143391875
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-east"
+      ]
+    },
+    {
+      "x": [
+        30.0,
+        30.354307143391875
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        30.354307143391875,
+        31.0
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        30.354307143391875,
+        31.0
+      ],
+      "y_at_start": [
+        -15.1,
+        -12.0
+      ],
+      "y_at_end": [
+        -15.312020521262001,
+        -12.212020521262001
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-quay-east"
+      ]
+    },
+    {
+      "x": [
+        30.354307143391875,
+        31.0
+      ],
+      "y_at_start": [
+        -2.5378365960473137,
+        0.08216340395268587
+      ],
+      "y_at_end": [
+        -2.7076034019204385,
+        -0.0876034019204388
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-east"
+      ]
+    },
+    {
+      "x": [
+        30.354307143391875,
+        31.0
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-east"
+      ]
+    },
+    {
+      "x": [
+        30.354307143391875,
+        31.0
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        31.0,
+        31.5
+      ],
+      "y_at_start": [
+        -36.75,
+        -34.25
+      ],
+      "y_at_end": [
+        -36.75,
+        -34.25
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "south-street"
+      ]
+    },
+    {
+      "x": [
+        31.0,
+        31.5
+      ],
+      "y_at_start": [
+        -15.312020521262001,
+        -12.212020521262001
+      ],
+      "y_at_end": [
+        -15.484996543209876,
+        -12.384996543209876
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-quay-east"
+      ]
+    },
+    {
+      "x": [
+        31.0,
+        31.5
+      ],
+      "y_at_start": [
+        -2.7076034019204385,
+        -0.0876034019204388
+      ],
+      "y_at_end": [
+        -2.8461069135802464,
+        -0.2261069135802467
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-east"
+      ]
+    },
+    {
+      "x": [
+        31.0,
+        31.5
+      ],
+      "y_at_start": [
+        6.9,
+        9.1
+      ],
+      "y_at_end": [
+        6.9,
+        9.1
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-backstreet-east"
+      ]
+    },
+    {
+      "x": [
+        31.0,
+        31.5
+      ],
+      "y_at_start": [
+        24.05,
+        26.35
+      ],
+      "y_at_end": [
+        24.05,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        31.5,
+        32.0
+      ],
+      "y_at_start": [
+        -36.75,
+        -12.384996543209876
+      ],
+      "y_at_end": [
+        -36.75,
+        -12.557972565157751
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-east-cross",
+        "south-street",
+        "far-quay-east"
+      ]
+    },
+    {
+      "x": [
+        31.5,
+        32.0
+      ],
+      "y_at_start": [
+        -2.8461069135802464,
+        26.35
+      ],
+      "y_at_end": [
+        -2.9846104252400543,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-east",
+        "north-east-cross",
+        "north-backstreet-east",
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        32.0,
+        33.0
+      ],
+      "y_at_start": [
+        -36.75,
+        -12.557972565157751
+      ],
+      "y_at_end": [
+        -36.75,
+        -12.91272
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-east-cross",
+        "south-street",
+        "far-quay-east"
+      ]
+    },
+    {
+      "x": [
+        32.0,
+        33.0
+      ],
+      "y_at_start": [
+        -2.9846104252400543,
+        26.35
+      ],
+      "y_at_end": [
+        -3.2686599999999992,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-east",
+        "north-east-cross",
+        "north-backstreet-east",
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        33.0,
+        34.0
+      ],
+      "y_at_start": [
+        -36.75,
+        -12.91272
+      ],
+      "y_at_end": [
+        -36.75,
+        -13.26746743484225
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-east-cross",
+        "south-street",
+        "far-quay-east"
+      ]
+    },
+    {
+      "x": [
+        33.0,
+        34.0
+      ],
+      "y_at_start": [
+        -3.2686599999999992,
+        26.35
+      ],
+      "y_at_end": [
+        -3.552709574759946,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-east",
+        "north-east-cross",
+        "north-backstreet-east",
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        34.0,
+        34.5
+      ],
+      "y_at_start": [
+        -36.75,
+        -13.26746743484225
+      ],
+      "y_at_end": [
+        -36.75,
+        -13.440443456790124
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-east-cross",
+        "south-street",
+        "far-quay-east"
+      ]
+    },
+    {
+      "x": [
+        34.0,
+        34.5
+      ],
+      "y_at_start": [
+        -3.552709574759946,
+        26.35
+      ],
+      "y_at_end": [
+        -3.6912130864197534,
+        26.35
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-east",
+        "north-east-cross",
+        "north-backstreet-east",
+        "north-top-street"
+      ]
+    },
+    {
+      "x": [
+        34.5,
+        35.0
+      ],
+      "y_at_start": [
+        -16.540443456790122,
+        -13.440443456790124
+      ],
+      "y_at_end": [
+        -16.713419478737997,
+        -13.613419478737997
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "far-quay-east"
+      ]
+    },
+    {
+      "x": [
+        34.5,
+        35.0
+      ],
+      "y_at_start": [
+        -3.6912130864197534,
+        -1.0712130864197538
+      ],
+      "y_at_end": [
+        -3.829716598079561,
+        -1.2097165980795612
+      ],
+      "top": [
+        0.855,
+        0.855
+      ],
+      "sources": [
+        "near-quay-east"
+      ]
+    }
+  ],
+  "house_grounding": [
+    {
+      "id": "near_west_corner",
+      "support_bounds_xy": [
+        -24.14,
+        1.46,
+        -17.86,
+        6.54
+      ],
+      "top": 0.855,
+      "bottom": 0.62
+    },
+    {
+      "id": "near_east_corner",
+      "support_bounds_xy": [
+        14.26,
+        1.46,
+        20.740000000000002,
+        6.54
+      ],
+      "top": 0.855,
+      "bottom": 0.62
+    },
+    {
+      "id": "near_east_end",
+      "support_bounds_xy": [
+        24.76,
+        1.46,
+        30.84,
+        6.54
+      ],
+      "top": 0.855,
+      "bottom": 0.62
+    },
+    {
+      "id": "north_west_01",
+      "support_bounds_xy": [
+        -31.14,
+        11.66,
+        -24.86,
+        17.94
+      ],
+      "top": 0.855,
+      "bottom": 0.62
+    },
+    {
+      "id": "north_west_02",
+      "support_bounds_xy": [
+        -22.84,
+        11.76,
+        -16.16,
+        17.84
+      ],
+      "top": 0.855,
+      "bottom": 0.62
+    },
+    {
+      "id": "north_east_01",
+      "support_bounds_xy": [
+        14.66,
+        11.559999999999999,
+        21.34,
+        17.64
+      ],
+      "top": 0.855,
+      "bottom": 0.62
+    },
+    {
+      "id": "north_east_02",
+      "support_bounds_xy": [
+        24.259999999999998,
+        11.559999999999999,
+        30.54,
+        17.64
+      ],
+      "top": 0.855,
+      "bottom": 0.62
+    },
+    {
+      "id": "far_west_01",
+      "support_bounds_xy": [
+        -31.14,
+        -21.64,
+        -24.86,
+        -16.159999999999997
+      ],
+      "top": 0.855,
+      "bottom": 0.62
+    },
+    {
+      "id": "far_west_02",
+      "support_bounds_xy": [
+        -23.54,
+        -21.64,
+        -17.46,
+        -16.159999999999997
+      ],
+      "top": 0.855,
+      "bottom": 0.62
+    },
+    {
+      "id": "far_east_01",
+      "support_bounds_xy": [
+        14.159999999999998,
+        -21.84,
+        20.64,
+        -16.16
+      ],
+      "top": 0.855,
+      "bottom": 0.62
+    },
+    {
+      "id": "far_east_02",
+      "support_bounds_xy": [
+        23.86,
+        -21.84,
+        30.14,
+        -16.16
+      ],
+      "top": 0.855,
+      "bottom": 0.62
+    },
+    {
+      "id": "south_01",
+      "support_bounds_xy": [
+        -30.54,
+        -43.839999999999996,
+        -24.46,
+        -37.76
+      ],
+      "top": 0.855,
+      "bottom": 0.62
+    },
+    {
+      "id": "south_02",
+      "support_bounds_xy": [
+        -21.240000000000002,
+        -43.64,
+        -14.76,
+        -37.760000000000005
+      ],
+      "top": 0.855,
+      "bottom": 0.62
+    },
+    {
+      "id": "south_03",
+      "support_bounds_xy": [
+        -10.940000000000001,
+        -43.64,
+        -4.66,
+        -37.760000000000005
+      ],
+      "top": 0.855,
+      "bottom": 0.62
+    },
+    {
+      "id": "south_04",
+      "support_bounds_xy": [
+        -0.3400000000000002,
+        -43.64,
+        6.34,
+        -37.760000000000005
+      ],
+      "top": 0.855,
+      "bottom": 0.62
+    },
+    {
+      "id": "south_05",
+      "support_bounds_xy": [
+        11.16,
+        -43.64,
+        17.64,
+        -37.760000000000005
+      ],
+      "top": 0.855,
+      "bottom": 0.62
+    },
+    {
+      "id": "south_06",
+      "support_bounds_xy": [
+        22.66,
+        -43.64,
+        29.34,
+        -37.760000000000005
+      ],
+      "top": 0.855,
+      "bottom": 0.62
+    }
+  ],
+  "green_spaces": [
+    {
+      "id": "west-bridgehead-green",
+      "bounds_xy": [
+        -31,
+        1.5,
+        -25.5,
+        6.4
+      ],
+      "shape": "Irregular planted oval with a terrain-following edge, no rectangular grass plate."
+    },
+    {
+      "id": "north-west-garden",
+      "bounds_xy": [
+        -30.5,
+        18.7,
+        -16,
+        23.4
+      ],
+      "shape": "Irregular planted oval with a terrain-following edge, no rectangular grass plate."
+    },
+    {
+      "id": "north-east-garden",
+      "bounds_xy": [
+        14.5,
+        18.5,
+        30.5,
+        23.4
+      ],
+      "shape": "Irregular planted oval with a terrain-following edge, no rectangular grass plate."
+    },
+    {
+      "id": "far-west-court-green",
+      "bounds_xy": [
+        -30.5,
+        -32.2,
+        -23.5,
+        -23.3
+      ],
+      "shape": "Irregular planted oval with a terrain-following edge, no rectangular grass plate."
+    },
+    {
+      "id": "far-east-court-green",
+      "bounds_xy": [
+        22.5,
+        -32.2,
+        30.5,
+        -23.5
+      ],
+      "shape": "Irregular planted oval with a terrain-following edge, no rectangular grass plate."
+    }
+  ],
+  "trees": [
+    {
+      "id": "space06-tree-01",
+      "x": -28,
+      "blender_y": 4.3,
+      "height": 5.5,
+      "trunk_radius": 0.21,
+      "collider_radius": 0.28,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 0.6900005340576172,
+      "trunk_bounds": {
+        "min": [
+          -29.455785751342773,
+          2.57308030128479,
+          0.6458947658538818
+        ],
+        "max": [
+          -26.41493034362793,
+          6.037942886352539,
+          5.584414482116699
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          -30.17878532409668,
+          1.8665311541573266,
+          4.323807847009716
+        ],
+        "max": [
+          -25.69076156616211,
+          6.698723316192627,
+          6.417600534057617
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-02",
+      "x": -28,
+      "blender_y": 21.1,
+      "height": 5.0,
+      "trunk_radius": 0.16,
+      "collider_radius": 0.24,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 0.6945285797119141,
+      "trunk_bounds": {
+        "min": [
+          -29.356706619262695,
+          19.340404510498047,
+          0.6525908708572388
+        ],
+        "max": [
+          -26.570728302001953,
+          22.757749557495117,
+          5.106441974639893
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          -30.115276336669922,
+          18.687448501586914,
+          3.8857996123330074
+        ],
+        "max": [
+          -25.78275323987675,
+          23.418119430541992,
+          5.952128579711913
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-03",
+      "x": -22.4,
+      "blender_y": 21.2,
+      "height": 4.8,
+      "trunk_radius": 0.16,
+      "collider_radius": 0.24,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 0.7339305877685547,
+      "trunk_bounds": {
+        "min": [
+          -23.88941764831543,
+          19.565509796142578,
+          0.6919930577278137
+        ],
+        "max": [
+          -21.187026977539062,
+          22.56473731994629,
+          5.081151008605957
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          -24.62186050415039,
+          18.870126865410867,
+          4.074122960784479
+        ],
+        "max": [
+          -20.370859315687774,
+          23.255932578873924,
+          5.803530587768554
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-04",
+      "x": 17.8,
+      "blender_y": 21.2,
+      "height": 5.2,
+      "trunk_radius": 0.16,
+      "collider_radius": 0.24,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 0.7680625915527344,
+      "trunk_bounds": {
+        "min": [
+          16.16206169128418,
+          19.444528579711914,
+          0.7261247634887695
+        ],
+        "max": [
+          19.14202308654785,
+          22.66856575012207,
+          5.311569690704346
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          15.415104624813406,
+          18.774938264374036,
+          4.152024341181464
+        ],
+        "max": [
+          19.866050720214844,
+          23.304582595825195,
+          6.213662591552734
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-05",
+      "x": 26.8,
+      "blender_y": 21.1,
+      "height": 5.0,
+      "trunk_radius": 0.16,
+      "collider_radius": 0.24,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 0.6972866058349609,
+      "trunk_bounds": {
+        "min": [
+          25.258512496948242,
+          19.587873458862305,
+          0.6553488969802856
+        ],
+        "max": [
+          28.4084415435791,
+          22.743288040161133,
+          5.107378959655762
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          24.533457109861146,
+          18.947580337524414,
+          3.856349729827262
+        ],
+        "max": [
+          29.221100315844296,
+          23.38764190673828,
+          5.95488660583496
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-06",
+      "x": -27.1,
+      "blender_y": -26,
+      "height": 5.2,
+      "trunk_radius": 0.16,
+      "collider_radius": 0.24,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 0.6900005340576172,
+      "trunk_bounds": {
+        "min": [
+          -28.430696487426758,
+          -27.74696922302246,
+          0.6480628252029419
+        ],
+        "max": [
+          -25.57219123840332,
+          -24.64227867126465,
+          5.122982025146484
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          -29.160303115844727,
+          -28.433918682685846,
+          3.9951112192434803
+        ],
+        "max": [
+          -24.769065010337577,
+          -23.964980327410988,
+          6.135600534057617
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-07",
+      "x": -26.1,
+      "blender_y": -30,
+      "height": 4.7,
+      "trunk_radius": 0.16,
+      "collider_radius": 0.24,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 0.6972408294677734,
+      "trunk_bounds": {
+        "min": [
+          -27.569969177246094,
+          -31.14943504333496,
+          0.6553031206130981
+        ],
+        "max": [
+          -24.47562026977539,
+          -28.443344116210938,
+          4.92166805267334
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          -28.307546615600586,
+          -31.815269996674544,
+          3.794395990454954
+        ],
+        "max": [
+          -23.723453521728516,
+          -27.78364372253418,
+          5.6728408294677735
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-08",
+      "x": 26.2,
+      "blender_y": -26,
+      "height": 5.1,
+      "trunk_radius": 0.16,
+      "collider_radius": 0.24,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 0.69000244140625,
+      "trunk_bounds": {
+        "min": [
+          24.801959991455078,
+          -27.729736328125,
+          0.6480650901794434
+        ],
+        "max": [
+          27.49863624572754,
+          -24.60859489440918,
+          5.138648986816406
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          24.057350158691406,
+          -28.390562057495117,
+          4.024713891458216
+        ],
+        "max": [
+          28.248210906982422,
+          -23.911107716921624,
+          6.0416024414062495
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-09",
+      "x": 26.9,
+      "blender_y": -30.1,
+      "height": 4.6,
+      "trunk_radius": 0.16,
+      "collider_radius": 0.24,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 0.6900043487548828,
+      "trunk_bounds": {
+        "min": [
+          25.421245574951172,
+          -31.306663513183594,
+          0.6480666399002075
+        ],
+        "max": [
+          28.37082290649414,
+          -28.844894409179688,
+          4.8567705154418945
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          24.630544757066705,
+          -31.981903076171875,
+          3.6101136488635723
+        ],
+        "max": [
+          29.12872314453125,
+          -28.172447204589844,
+          5.5716043487548825
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-10",
+      "x": -41,
+      "blender_y": 5,
+      "height": 6.2,
+      "trunk_radius": 0.21,
+      "collider_radius": 0.28,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 0.7303810119628906,
+      "trunk_bounds": {
+        "min": [
+          -42.99637985229492,
+          3.5257129669189453,
+          0.6862756609916687
+        ],
+        "max": [
+          -39.18624496459961,
+          7.006410598754883,
+          6.09481143951416
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          -43.7509765625,
+          2.7995226973797185,
+          4.7819283112405575
+        ],
+        "max": [
+          -38.45107650756836,
+          7.65726900100708,
+          7.11598101196289
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-11",
+      "x": -43,
+      "blender_y": -19,
+      "height": 5.8,
+      "trunk_radius": 0.21,
+      "collider_radius": 0.28,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 0.7769145965576172,
+      "trunk_bounds": {
+        "min": [
+          -44.550418853759766,
+          -21.043323516845703,
+          0.73280930519104
+        ],
+        "max": [
+          -41.11857223510742,
+          -17.200889587402344,
+          5.878824234008789
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          -45.28928756713867,
+          -21.710370735805274,
+          4.434308758910827
+        ],
+        "max": [
+          -40.38428996100901,
+          -16.55526351928711,
+          6.786514596557617
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-12",
+      "x": -41,
+      "blender_y": -37,
+      "height": 6.5,
+      "trunk_radius": 0.21,
+      "collider_radius": 0.28,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 0.7980155944824219,
+      "trunk_bounds": {
+        "min": [
+          -42.84780502319336,
+          -39.04773712158203,
+          0.7539101243019104
+        ],
+        "max": [
+          -39.042728424072266,
+          -34.95676803588867,
+          6.522903919219971
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          -43.578968153040684,
+          -39.723976135253906,
+          5.142879953895262
+        ],
+        "max": [
+          -38.24091652719803,
+          -34.316776275634766,
+          7.465615594482421
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-13",
+      "x": 41,
+      "blender_y": 4,
+      "height": 6.1,
+      "trunk_radius": 0.21,
+      "collider_radius": 0.28,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 0.8544750213623047,
+      "trunk_bounds": {
+        "min": [
+          39.5034065246582,
+          2.0392520427703857,
+          0.8103696703910828
+        ],
+        "max": [
+          42.92008972167969,
+          5.639764785766602,
+          6.24805212020874
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          38.73847441082524,
+          1.3266930853779177,
+          4.7380426453265585
+        ],
+        "max": [
+          43.6593193768848,
+          6.296026706695557,
+          7.146075021362304
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-14",
+      "x": 43,
+      "blender_y": -23,
+      "height": 6.4,
+      "trunk_radius": 0.21,
+      "collider_radius": 0.28,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 1.0314292907714844,
+      "trunk_bounds": {
+        "min": [
+          41.382179260253906,
+          -25.08824348449707,
+          0.9873239994049072
+        ],
+        "max": [
+          44.61499786376953,
+          -20.895414352416992,
+          6.678841590881348
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          40.642887115478516,
+          -25.763187408447266,
+          5.128166845102724
+        ],
+        "max": [
+          45.38649803893036,
+          -20.2183837890625,
+          7.605029290771484
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-15",
+      "x": 41,
+      "blender_y": -40,
+      "height": 5.7,
+      "trunk_radius": 0.21,
+      "collider_radius": 0.28,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 1.2347869873046875,
+      "trunk_bounds": {
+        "min": [
+          39.30549240112305,
+          -41.500972747802734,
+          1.1906815767288208
+        ],
+        "max": [
+          42.99022674560547,
+          -38.324005126953125,
+          5.868752956390381
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          38.609718322753906,
+          -42.16401290893555,
+          4.933316599552992
+        ],
+        "max": [
+          43.77757310831772,
+          -37.645565032958984,
+          7.150386987304687
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-16",
+      "x": -29,
+      "blender_y": 33,
+      "height": 5.8,
+      "trunk_radius": 0.21,
+      "collider_radius": 0.28,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 1.0294475555419922,
+      "trunk_bounds": {
+        "min": [
+          -30.795204162597656,
+          31.05879020690918,
+          0.9853416681289673
+        ],
+        "max": [
+          -27.188566207885742,
+          34.458675384521484,
+          5.910786151885986
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          -31.590847591068627,
+          30.425899505615234,
+          4.6921592978270645
+        ],
+        "max": [
+          -26.437223277225065,
+          35.119754791259766,
+          7.039047555541992
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-17",
+      "x": -12,
+      "blender_y": 33,
+      "height": 6.4,
+      "trunk_radius": 0.21,
+      "collider_radius": 0.28,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 1.3070049285888672,
+      "trunk_bounds": {
+        "min": [
+          -13.92612361907959,
+          31.03655242919922,
+          1.2628992795944214
+        ],
+        "max": [
+          -10.385523796081543,
+          34.731021881103516,
+          6.992320537567139
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          -14.654582977294922,
+          30.384067564571072,
+          5.600711916196566
+        ],
+        "max": [
+          -9.637480735778809,
+          35.39086151123047,
+          7.880604928588867
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-18",
+      "x": 13,
+      "blender_y": 33,
+      "height": 6.0,
+      "trunk_radius": 0.21,
+      "collider_radius": 0.28,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 1.516195297241211,
+      "trunk_bounds": {
+        "min": [
+          10.942955017089844,
+          31.488224029541016,
+          1.4720896482467651
+        ],
+        "max": [
+          14.65054702758789,
+          34.45452117919922,
+          6.868776321411133
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          10.202146157293363,
+          30.828094482421875,
+          5.327471208039922
+        ],
+        "max": [
+          15.409842701671838,
+          35.126380920410156,
+          7.7137952972412105
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-19",
+      "x": 30,
+      "blender_y": 33,
+      "height": 6.1,
+      "trunk_radius": 0.21,
+      "collider_radius": 0.28,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 1.4445667266845703,
+      "trunk_bounds": {
+        "min": [
+          28.12406349182129,
+          31.341272354125977,
+          1.4004608392715454
+        ],
+        "max": [
+          31.817005157470703,
+          34.448143005371094,
+          6.894437313079834
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          27.384333302283647,
+          30.657540993026164,
+          5.356638223317647
+        ],
+        "max": [
+          32.525765276304284,
+          35.07656253192311,
+          7.736166726684569
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-20",
+      "x": -28,
+      "blender_y": -49,
+      "height": 6.2,
+      "trunk_radius": 0.21,
+      "collider_radius": 0.28,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 1.4434242248535156,
+      "trunk_bounds": {
+        "min": [
+          -29.614830017089844,
+          -50.596458435058594,
+          1.3993183374404907
+        ],
+        "max": [
+          -25.967086791992188,
+          -47.23161697387695,
+          6.822049140930176
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          -30.354450225830078,
+          -51.245384216308594,
+          5.425044892887271
+        ],
+        "max": [
+          -25.162107901016444,
+          -46.55268136735955,
+          7.829024224853515
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-21",
+      "x": -12,
+      "blender_y": -49,
+      "height": 5.9,
+      "trunk_radius": 0.21,
+      "collider_radius": 0.28,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 1.3515148162841797,
+      "trunk_bounds": {
+        "min": [
+          -13.667724609375,
+          -50.818641662597656,
+          1.3074091672897339
+        ],
+        "max": [
+          -10.017558097839355,
+          -47.099735260009766,
+          6.612382411956787
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          -14.392382621765137,
+          -51.47716522216797,
+          5.111713945379536
+        ],
+        "max": [
+          -9.26584243774414,
+          -46.4426155090332,
+          7.45511481628418
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-22",
+      "x": 12,
+      "blender_y": -49,
+      "height": 6.4,
+      "trunk_radius": 0.21,
+      "collider_radius": 0.28,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 1.4954700469970703,
+      "trunk_bounds": {
+        "min": [
+          10.243613243103027,
+          -50.860565185546875,
+          1.4513643980026245
+        ],
+        "max": [
+          14.126895904541016,
+          -47.221229553222656,
+          6.92488431930542
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          9.458051960109946,
+          -51.5803704314751,
+          5.602354418569858
+        ],
+        "max": [
+          14.86349105834961,
+          -46.55131123652648,
+          8.069070046997071
+        ]
+      },
+      "new_light": false
+    },
+    {
+      "id": "space06-tree-23",
+      "x": 29,
+      "blender_y": -49,
+      "height": 5.8,
+      "trunk_radius": 0.21,
+      "collider_radius": 0.28,
+      "lowest_branch_above_ground": 2.35,
+      "base_z": 1.6612415313720703,
+      "trunk_bounds": {
+        "min": [
+          27.028568267822266,
+          -50.85789489746094,
+          1.6171356439590454
+        ],
+        "max": [
+          30.614879608154297,
+          -47.2431526184082,
+          6.772313594818115
+        ]
+      },
+      "crown_bounds": {
+        "min": [
+          26.300933837890625,
+          -51.502498626708984,
+          5.660596446642302
+        ],
+        "max": [
+          31.419520329865467,
+          -46.585994720458984,
+          7.67084153137207
+        ]
+      },
+      "new_light": false
+    }
+  ],
+  "river_reed_patch_count": 60,
+  "new_materials": {
+    "SPACE06_Grass": {
+      "srgb": "777b58",
+      "roughness": 0.92
+    },
+    "SPACE06_GrassShade": {
+      "srgb": "5b6a4c",
+      "roughness": 0.93
+    },
+    "SPACE06_GrassDry": {
+      "srgb": "8b8863",
+      "roughness": 0.94
+    },
+    "SPACE06_Leaf": {
+      "srgb": "687b53",
+      "roughness": 0.86
+    },
+    "SPACE06_LeafLight": {
+      "srgb": "829062",
+      "roughness": 0.88
+    },
+    "SPACE06_LeafShade": {
+      "srgb": "506448",
+      "roughness": 0.88
+    },
+    "SPACE06_Bark": {
+      "srgb": "665648",
+      "roughness": 0.88
+    },
+    "SPACE06_Reed": {
+      "srgb": "7d875e",
+      "roughness": 0.91
+    }
+  },
+  "material_aliases": {},
+  "saved_or_exported": false,
+  "notes": [
+    "Original water geometry and existing buildings/routes are unchanged.",
+    "New roads follow the real curved water boundary, with single unioned tops at intersections.",
+    "Source gate bars open while original posts remain; only upper crossing sections of two curbs lower.",
+    "Trees use branching trunks, irregular small leaf masses and pointed sprays rather than one round crown."
+  ]
+}

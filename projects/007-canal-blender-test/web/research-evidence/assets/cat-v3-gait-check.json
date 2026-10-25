@@ -1,0 +1,118 @@
+{
+  "schema_version": 1,
+  "recorded_utc": "2026-10-24 01:01:20 UTC",
+  "scope": "Numeric playback of the frozen asset rig in real Chromium JavaScript, using Three.js matrices and actual createCat/update/getDebugState. This complements, rather than replaces, the final visible street and study recordings.",
+  "implementation": {
+    "runtime": "../web/roam-cat-v3.js",
+    "sha256": "40a2196fee7d02c2239bcd49d9c0c3cc16dd3e4ee4ca099e59a65ad412794b8d",
+    "controller": "../web/roam-cat-v3-controller.js",
+    "controller_sha256": "318a5c044cdb9156cf8952b0d62b23430fec98e455a838e9dab5e40d2b201158",
+    "rig": "../web/models/cat-v3-rig.glb",
+    "rig_sha256": "6c8d0f0133805e0727cc6cdfc558456d670e0d33a5158685084413e7786a77f1",
+    "rig_metadata_sha256": "8d067bc3456a0b32f9d0d66f46c27d9fe464c6dd618458893f49fd2404c4b5ea",
+    "preserved_source": "../web/models/cat-v3-reference-source.glb",
+    "source_sha256": "8ea4b332421972870000da7374e54c0d3f3b47c588e0b7a656ea37a3a3114a09"
+  },
+  "test_conditions": {
+    "fps": [
+      30,
+      60,
+      120
+    ],
+    "command_speeds_metres_per_second": [
+      0.4,
+      0.6
+    ],
+    "duration_seconds": 12,
+    "segments": [
+      {
+        "time": "0–4 seconds",
+        "command": "forward"
+      },
+      {
+        "time": "4–9 seconds",
+        "command": "180-degree reverse"
+      },
+      {
+        "time": "9–12 seconds",
+        "command": "release and settle"
+      }
+    ],
+    "acceleration_m_s2": 1.8,
+    "deceleration_m_s2": 2.8,
+    "turn_limit_rad_s": 2.2,
+    "translation_gate": "smoothstep readiness in the final 0.12 radians (approximately 7 degrees); translation stops outside that window",
+    "ground": "Flat plane y=0 supplied through sampleHeight",
+    "measurements": "Every simulation frame, all four feet. Speeds ramp using the same bounds and heading readiness as the frozen v3 controller."
+  },
+  "definitions": {
+    "maximum_ik_reach_error_metres": "Maximum absolute difference between requested hip-to-ankle distance and the distance reachable by the two-bone chain. Includes swing, support and settling phases; it is not a full surface-mesh deformation measurement.",
+    "maximum_stance_rendered_sole_y_metres": "Maximum absolute y of the reconstructed sole point from the rendered paw bone while that foot is in stance. On the flat test ground y=0, this is vertical foot-ground error.",
+    "maximum_stance_target_slide_metres": "Maximum horizontal displacement of a foot target across consecutive frames classified as stance for the same foot. Zero refers to target locking, not a proof that every skin vertex has zero sliding."
+  },
+  "cases": [
+    {
+      "fps": 30,
+      "speed_m_s": 0.4,
+      "maximum_ik_reach_error_metres": 0.0013976406993501944,
+      "maximum_stance_rendered_sole_y_metres": 0.001254610553347614,
+      "maximum_stance_target_slide_metres": 0
+    },
+    {
+      "fps": 30,
+      "speed_m_s": 0.6,
+      "maximum_ik_reach_error_metres": 0.0017207445786597275,
+      "maximum_stance_rendered_sole_y_metres": 0.0015424553501898267,
+      "maximum_stance_target_slide_metres": 0
+    },
+    {
+      "fps": 60,
+      "speed_m_s": 0.4,
+      "maximum_ik_reach_error_metres": 0.001340158619464793,
+      "maximum_stance_rendered_sole_y_metres": 1.3866730770584201e-08,
+      "maximum_stance_target_slide_metres": 0
+    },
+    {
+      "fps": 60,
+      "speed_m_s": 0.6,
+      "maximum_ik_reach_error_metres": 8.085508139887843e-05,
+      "maximum_stance_rendered_sole_y_metres": 7.302229381820485e-05,
+      "maximum_stance_target_slide_metres": 0
+    },
+    {
+      "fps": 120,
+      "speed_m_s": 0.4,
+      "maximum_ik_reach_error_metres": 0.002071210750877378,
+      "maximum_stance_rendered_sole_y_metres": 0.0018512507583390778,
+      "maximum_stance_target_slide_metres": 0
+    },
+    {
+      "fps": 120,
+      "speed_m_s": 0.6,
+      "maximum_ik_reach_error_metres": 0.0021890516493015266,
+      "maximum_stance_rendered_sole_y_metres": 0.0007309329611373747,
+      "maximum_stance_target_slide_metres": 0
+    }
+  ],
+  "aggregate": {
+    "maximum_ik_reach_error_metres": 0.0021890516493015266,
+    "maximum_stance_rendered_sole_y_metres": 0.0018512507583390778,
+    "maximum_stance_target_slide_metres": 0
+  },
+  "context": {
+    "earlier_problem": "The old exponential 180-degree root turn produced approximately 18.7 cm of requested limb overreach. Merely limiting heading speed while allowing substantial sideways translation still produced about 3.7 cm. These rejected variants are not the delivered runtime.",
+    "fixes": [
+      "Exact touchdown phase crossing instead of freezing the previous swing frame.",
+      "16 mm walking compression and 23 cm steady stride.",
+      "Feet step during root rotation; linear movement resumes only close to the desired heading.",
+      "After a pivot, short steps resume without resetting footfall phase or planted world contacts."
+    ]
+  },
+  "limitations": [
+    "Kinematic walk and pivot only; no running, jumping or animal dynamics.",
+    "Flat numerical ground and the specified speeds/frame rates; not an exhaustive guarantee for arbitrary slopes, collisions, frame stalls or commands.",
+    "Sole point reconstruction uses the measured rig offsets and bone pose. The separately recorded actual browser views are required to assess skin deformation and perceived contact.",
+    "The numerical loop reproduced controller acceleration and heading gating. The final street recording separately exercises the real application controller end to end."
+  ],
+  "old_files_modified": false
+}

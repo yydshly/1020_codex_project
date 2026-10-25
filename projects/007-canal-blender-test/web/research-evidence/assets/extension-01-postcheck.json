@@ -1,0 +1,127 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-23T11:45:18.777083+00:00",
+  "passed": true,
+  "method": "Independent read-only reopen of saved candidate in Blender; recomputed original-file and website SHA256 hashes; no render, save, scene editing or webpage modification.",
+  "checks": {
+    "candidate_exists": true,
+    "candidate_hash_matches_stats": true,
+    "saved_audit_passed_without_violations": true,
+    "independent_reopened_candidate_audit_passed": true,
+    "old_files_unchanged": true,
+    "websites_unchanged": true,
+    "ledger_exactly_two_completed_attempts": true,
+    "preview_images_match_ledger": true,
+    "saved_audit_counts_match_reopened_candidate": true,
+    "stats_added_counts_match_independent_audit": true,
+    "stats_rendered_previews_match_ledger": true,
+    "sampled_route_reports_pass": true
+  },
+  "frozen_source": {
+    "file": "artifacts/rainy-canal-v5-wet-preview-02.blend",
+    "sha256": "6eb7edb0e46958e59b5bf073e07d35294682a65bfb68a1df76390e279d65744f"
+  },
+  "candidate": {
+    "file": "rainy-canal-extension-01.blend",
+    "bytes": 18989956,
+    "sha256": "9e573a5908ffe288264d99dd7c9bec3a5e9eb32654e2b027428471f719a3f62f"
+  },
+  "preservation": {
+    "baseline_listed_old_files_checked": 97,
+    "changed_old_files": [],
+    "website_file_counts": {
+      "project_web": 56,
+      "built_site_007": 56
+    },
+    "all_original_objects_preserved": true,
+    "original_object_count": 2109
+  },
+  "candidate_counts": {
+    "objects": 2246,
+    "mesh_objects": 2143,
+    "curve_objects": 76,
+    "vertices": 164460,
+    "faces": 131160,
+    "curve_points": 1685,
+    "modifiers": 743,
+    "lights": 20,
+    "cameras": 7
+  },
+  "added_counts": {
+    "objects": 137,
+    "mesh_objects": 128,
+    "curve_objects": 4,
+    "vertices": 4814,
+    "faces": 3595,
+    "curve_points": 132,
+    "modifiers": 57,
+    "lights": 0,
+    "cameras": 5
+  },
+  "independent_audit": {
+    "check_count": 301,
+    "violations": []
+  },
+  "render_ledger": {
+    "maximum_attempts": 2,
+    "attempt_count": 2,
+    "completed_count": 2,
+    "render_seconds": 54.237,
+    "previews": [
+      {
+        "file": "assets/extension-01-review-01.png",
+        "bytes": 948201,
+        "resolution": [
+          1104,
+          622
+        ],
+        "sha256": "ce74f64c754f5208c2b5b62f98c1cf4b73d782c20143f28ad5e8bef21bbd544f",
+        "matches_ledger": true,
+        "valid_png_header": true,
+        "status": "complete"
+      },
+      {
+        "file": "assets/extension-01-review-02.png",
+        "bytes": 955404,
+        "resolution": [
+          1104,
+          622
+        ],
+        "sha256": "63752986f8d3798baa2c46088801b6d82f69fa1b9482eb594c3fe681ef0048e3",
+        "matches_ledger": true,
+        "valid_png_header": true,
+        "status": "complete"
+      }
+    ]
+  },
+  "route_scope": {
+    "reported_routes": {
+      "both_banks_loop": {
+        "sample_count": 285,
+        "sampled_checks_passed": true,
+        "maximum_floor_deviation": 0.12
+      },
+      "rear_lane_loop": {
+        "sample_count": 237,
+        "sampled_checks_passed": true,
+        "maximum_floor_deviation": 0.12
+      }
+    },
+    "claim": "Only sampled centerline floor-support and 0.48-metre-wide body-ray checks passed. Routes were not independently rerun during this postcheck.",
+    "not_validated": [
+      "playable first-person roaming",
+      "continuous or full-area collision safety",
+      "navigation mesh",
+      "controller movement and step handling",
+      "building interiors or enterability"
+    ]
+  },
+  "evidence_sha256": {
+    "extension-baseline.json": "8b35a07fbcf02d14d2e74cac6d0f55680cad241d82d2966251e216ee25267ca1",
+    "extension-01-audit.json": "4239bfc96fb3df08a6bea6acd04a70646635adbdafce52b23b2e00e4d040e55b",
+    "extension-01-stats.json": "b5d84c7517120be232a3f74a35244459cdb2bc70cfef14f955bd5b3ff467de23",
+    "extension-render-ledger.json": "0a1154e29736f4b548511f66cd57d12e448e89631a30a0bc25b83ad3863121d3",
+    "extension-01-routes.json": "0da04ae65ab9e4bc1c80a6eb5511c7da56904df07d952e90e59569c2b7bb250b"
+  },
+  "postcheck_seconds": 9.196
+}

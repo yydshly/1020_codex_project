@@ -1,0 +1,1108 @@
+{
+  "checked_utc": "2026-10-24T00:39:20.392662+00:00",
+  "url": "http://127.0.0.1:8062/roam-refine.html",
+  "passed": true,
+  "checks": {
+    "independent_refine_entry": true,
+    "same_scene_asset_no_expansion": true,
+    "loaded_cat_starts_on_walkable_street": true,
+    "camera_is_closer_to_street_height": true,
+    "keyboard_moves_cat_with_collision": true,
+    "walk_speed_bounded": true,
+    "pause_stops_frames_and_position": true,
+    "pause_clears_velocity": true,
+    "resume_does_not_keep_held_input": true,
+    "reset_restores_entry_and_zero_velocity": true,
+    "sample_street_tour_moves": true,
+    "desktop_no_horizontal_overflow": true,
+    "actual_canvas_walk_recorded": true,
+    "mobile_loads_same_refined_entry": true,
+    "mobile_controls_are_visible": true,
+    "mobile_pointer_moves_cat": true,
+    "mobile_no_horizontal_overflow": true,
+    "no_browser_or_shader_errors": true,
+    "all_previous_project_files_preserved": true
+  },
+  "observations": {
+    "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "second_view": {
+      "version": "refine-01",
+      "speed": 0,
+      "velocity": {
+        "x": 0,
+        "z": 0
+      },
+      "camera": {
+        "position": {
+          "x": -6.232808488217935,
+          "y": 2.111173461465378,
+          "z": 3.2338956264655425
+        },
+        "target": {
+          "x": -5.72325128694567,
+          "y": 1.27,
+          "z": 0.0053812020830494856
+        },
+        "fov": 53
+      },
+      "refinedStreet": {
+        "minX": -7,
+        "maxX": 3
+      },
+      "cat": {
+        "version": "anatomy-study-01",
+        "root": [
+          -5.8,
+          0.85,
+          0.55
+        ],
+        "gait": {
+          "speed": 0,
+          "phase": 0,
+          "stanceFeet": 4
+        },
+        "feet": [
+          {
+            "name": "hind-left",
+            "stance": true,
+            "world": [
+              -5.95895,
+              0.864875,
+              0.6124
+            ],
+            "local": [
+              -0.06240000000000001,
+              0.014874999999999972,
+              -0.15894999999999992
+            ],
+            "groundClearance": -2.949029909160572e-17
+          },
+          {
+            "name": "hind-right",
+            "stance": true,
+            "world": [
+              -5.95895,
+              0.864875,
+              0.48760000000000003
+            ],
+            "local": [
+              0.0624,
+              0.014874999999999972,
+              -0.15894999999999992
+            ],
+            "groundClearance": -2.949029909160572e-17
+          },
+          {
+            "name": "front-left",
+            "stance": true,
+            "world": [
+              -5.65635,
+              0.864875,
+              0.6028
+            ],
+            "local": [
+              -0.05279999999999995,
+              0.014874999999999972,
+              0.14365000000000006
+            ],
+            "groundClearance": -2.949029909160572e-17
+          },
+          {
+            "name": "front-right",
+            "stance": true,
+            "world": [
+              -5.65635,
+              0.864875,
+              0.49720000000000003
+            ],
+            "local": [
+              0.05280000000000002,
+              0.014874999999999972,
+              0.14365000000000006
+            ],
+            "groundClearance": -2.949029909160572e-17
+          }
+        ]
+      },
+      "loaded": true,
+      "paused": false,
+      "mode": "follow",
+      "tour": false,
+      "tourIndex": 0,
+      "distance": 0,
+      "place": "店前石街",
+      "frames": 65,
+      "asset": "roam-02.glb",
+      "position": {
+        "x": -5.8,
+        "y": 0.85,
+        "z": 0.55
+      },
+      "walkable": true,
+      "visited": [
+        "店前石街"
+      ]
+    },
+    "clip": {
+      "file": "roam-refine-01-walk.webm",
+      "bytes": 1077314,
+      "seconds_requested": 7,
+      "seconds_wall": 7.345,
+      "rendered_frames": 437,
+      "travel_metres": 4.376,
+      "mime_type": "video/webm;codecs=vp9",
+      "content": "Live browser canvas: walk along the sampled street, then settle. No generated/interpolated frames. Frame count describes this headless verification session only."
+    },
+    "desktop": {
+      "initial": {
+        "version": "refine-01",
+        "speed": 0,
+        "velocity": {
+          "x": 0,
+          "z": 0
+        },
+        "camera": {
+          "position": {
+            "x": -8.31598481937199,
+            "y": 2.111173461465378,
+            "z": 1.6459083626007425
+          },
+          "target": {
+            "x": -5.295758290175528,
+            "y": 1.27,
+            "z": 0.33036325882654977
+          },
+          "fov": 53
+        },
+        "refinedStreet": {
+          "minX": -7,
+          "maxX": 3
+        },
+        "cat": {
+          "version": "anatomy-study-01",
+          "root": [
+            -5.8,
+            0.85,
+            0.55
+          ],
+          "gait": {
+            "speed": 0,
+            "phase": 0,
+            "stanceFeet": 4
+          },
+          "feet": [
+            {
+              "name": "hind-left",
+              "stance": true,
+              "world": [
+                -5.95895,
+                0.864875,
+                0.6124
+              ],
+              "local": [
+                -0.06240000000000001,
+                0.014874999999999972,
+                -0.15894999999999992
+              ],
+              "groundClearance": -2.949029909160572e-17
+            },
+            {
+              "name": "hind-right",
+              "stance": true,
+              "world": [
+                -5.95895,
+                0.864875,
+                0.48760000000000003
+              ],
+              "local": [
+                0.0624,
+                0.014874999999999972,
+                -0.15894999999999992
+              ],
+              "groundClearance": -2.949029909160572e-17
+            },
+            {
+              "name": "front-left",
+              "stance": true,
+              "world": [
+                -5.65635,
+                0.864875,
+                0.6028
+              ],
+              "local": [
+                -0.05279999999999995,
+                0.014874999999999972,
+                0.14365000000000006
+              ],
+              "groundClearance": -2.949029909160572e-17
+            },
+            {
+              "name": "front-right",
+              "stance": true,
+              "world": [
+                -5.65635,
+                0.864875,
+                0.49720000000000003
+              ],
+              "local": [
+                0.05280000000000002,
+                0.014874999999999972,
+                0.14365000000000006
+              ],
+              "groundClearance": -2.949029909160572e-17
+            }
+          ]
+        },
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 0,
+        "distance": 0,
+        "place": "店前石街",
+        "frames": 5,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -5.8,
+          "y": 0.85,
+          "z": 0.55
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      },
+      "moved": {
+        "version": "refine-01",
+        "speed": 0.7199999999999998,
+        "velocity": {
+          "x": 0.6600982383156716,
+          "z": -0.28752446117251723
+        },
+        "camera": {
+          "position": {
+            "x": -8.232563658664976,
+            "y": 2.111173461465378,
+            "z": 1.60957191615927
+          },
+          "target": {
+            "x": -5.158237779853202,
+            "y": 1.27,
+            "z": 0.27046231024731054
+          },
+          "fov": 53
+        },
+        "refinedStreet": {
+          "minX": -7,
+          "maxX": 3
+        },
+        "cat": {
+          "version": "anatomy-study-01",
+          "root": [
+            -5.662479489677674,
+            0.85,
+            0.4900990514207608
+          ],
+          "gait": {
+            "speed": 0.7199999999999998,
+            "phase": 0.01620745760778486,
+            "stanceFeet": 3
+          },
+          "feet": [
+            {
+              "name": "hind-left",
+              "stance": true,
+              "world": [
+                -5.777914429472401,
+                0.864875,
+                0.5979810969184551
+              ],
+              "local": [
+                -0.05542192645786996,
+                0.014874999999999972,
+                -0.14796003221774884
+              ],
+              "groundClearance": -2.949029909160572e-17
+            },
+            {
+              "name": "hind-right",
+              "stance": true,
+              "world": [
+                -5.891079669143951,
+                0.864875,
+                0.5066061019552176
+              ],
+              "local": [
+                0.07233836463893444,
+                0.014874999999999972,
+                -0.21748031122546693
+              ],
+              "groundClearance": -2.949029909160572e-17
+            },
+            {
+              "name": "front-left",
+              "stance": false,
+              "world": [
+                -5.582834011160563,
+                0.8804147444730862,
+                0.5338014387965591
+              ],
+              "local": [
+                -0.0708828115599921,
+                0.030414744473086227,
+                0.05682365648138549
+              ],
+              "groundClearance": 0.01553974447308623
+            },
+            {
+              "name": "front-right",
+              "stance": true,
+              "world": [
+                -5.559141043900067,
+                0.864875,
+                0.3962480744697223
+              ],
+              "local": [
+                0.04709620742690381,
+                0.014874999999999972,
+                0.13141075867826724
+              ],
+              "groundClearance": -2.949029909160572e-17
+            }
+          ]
+        },
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 0,
+        "distance": 0.15000004800001115,
+        "place": "店前石街",
+        "frames": 93,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -5.662479489677674,
+          "y": 0.85,
+          "z": 0.4900990514207608
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      },
+      "paused": {
+        "version": "refine-01",
+        "speed": 0,
+        "velocity": {
+          "x": 0,
+          "z": 0
+        },
+        "camera": {
+          "position": {
+            "x": -8.204651387659155,
+            "y": 2.111173461465378,
+            "z": 1.597413936914351
+          },
+          "target": {
+            "x": -5.125298877761249,
+            "y": 1.27,
+            "z": 0.2561148396348017
+          },
+          "fov": 53
+        },
+        "refinedStreet": {
+          "minX": -7,
+          "maxX": 3
+        },
+        "cat": {
+          "version": "anatomy-study-01",
+          "root": [
+            -5.629540587585721,
+            0.85,
+            0.475751580808252
+          ],
+          "gait": {
+            "speed": 0.7200000000000131,
+            "phase": 0.21865077535878197,
+            "stanceFeet": 3
+          },
+          "feet": [
+            {
+              "name": "hind-left",
+              "stance": true,
+              "world": [
+                -5.777914429472401,
+                0.864875,
+                0.5979810969184551
+              ],
+              "local": [
+                -0.05488209332678094,
+                0.014874999999999972,
+                -0.18423573865246223
+              ],
+              "groundClearance": -2.949029909160572e-17
+            },
+            {
+              "name": "hind-right",
+              "stance": true,
+              "world": [
+                -5.891079669143951,
+                0.864875,
+                0.5066061019552176
+              ],
+              "local": [
+                0.07331837166484814,
+                0.014874999999999972,
+                -0.2529409200464536
+              ],
+              "groundClearance": -2.949029909160572e-17
+            },
+            {
+              "name": "front-left",
+              "stance": false,
+              "world": [
+                -5.4353022278330085,
+                0.8784307237049962,
+                0.45184325405307246
+              ],
+              "local": [
+                -0.05353645942771011,
+                0.02843072370499622,
+                0.18823919889226504
+              ],
+              "groundClearance": 0.013555723704996218
+            },
+            {
+              "name": "front-right",
+              "stance": true,
+              "world": [
+                -5.559141043900067,
+                0.864875,
+                0.3962480744697223
+              ],
+              "local": [
+                0.0458546873721971,
+                0.014874999999999972,
+                0.09578231004348867
+              ],
+              "groundClearance": -2.949029909160572e-17
+            }
+          ]
+        },
+        "loaded": true,
+        "paused": true,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 0,
+        "distance": 0.18592804800001198,
+        "place": "店前石街",
+        "frames": 96,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -5.629540587585721,
+          "y": 0.85,
+          "z": 0.475751580808252
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      },
+      "tour": {
+        "version": "refine-01",
+        "speed": 0.7199999999999308,
+        "velocity": {
+          "x": 0.7199999999999308,
+          "z": 0
+        },
+        "camera": {
+          "position": {
+            "x": -8.215082822926297,
+            "y": 2.111173461465378,
+            "z": 1.6459083626007425
+          },
+          "target": {
+            "x": -5.13373417017555,
+            "y": 1.27,
+            "z": 0.33036325882654977
+          },
+          "fov": 53
+        },
+        "refinedStreet": {
+          "minX": -7,
+          "maxX": 3
+        },
+        "cat": {
+          "version": "anatomy-study-01",
+          "root": [
+            -5.637975880000021,
+            0.85,
+            0.55
+          ],
+          "gait": {
+            "speed": 0.7199999999999308,
+            "phase": 0.08587780449500569,
+            "stanceFeet": 3
+          },
+          "feet": [
+            {
+              "name": "hind-left",
+              "stance": true,
+              "world": [
+                -5.796162973116509,
+                0.864875,
+                0.6124
+              ],
+              "local": [
+                -0.06240000000000001,
+                0.014874999999999972,
+                -0.1581870931164877
+              ],
+              "groundClearance": -2.949029909160572e-17
+            },
+            {
+              "name": "hind-right",
+              "stance": true,
+              "world": [
+                -5.874515744470853,
+                0.864875,
+                0.48760000000000003
+              ],
+              "local": [
+                0.0624,
+                0.014874999999999972,
+                -0.23653986447083142
+              ],
+              "groundClearance": -2.949029909160572e-17
+            },
+            {
+              "name": "front-left",
+              "stance": false,
+              "world": [
+                -5.543572630555119,
+                0.900714200062367,
+                0.6028
+              ],
+              "local": [
+                -0.05279999999999995,
+                0.05071420006236704,
+                0.09440324944490186
+              ],
+              "groundClearance": 0.035839200062367044
+            },
+            {
+              "name": "front-right",
+              "stance": true,
+              "world": [
+                -5.519662340917679,
+                0.864875,
+                0.49720000000000003
+              ],
+              "local": [
+                0.05280000000000002,
+                0.014874999999999972,
+                0.11831353908234198
+              ],
+              "groundClearance": -2.949029909160572e-17
+            }
+          ]
+        },
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": true,
+        "tourIndex": 1,
+        "distance": 0.3479521679999905,
+        "place": "店前石街",
+        "frames": 148,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -5.637975880000021,
+          "y": 0.85,
+          "z": 0.55
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      },
+      "final": {
+        "version": "refine-01",
+        "speed": 0,
+        "velocity": {
+          "x": 0,
+          "z": 0
+        },
+        "camera": {
+          "position": {
+            "x": -3.939831276699776,
+            "y": 2.111173461465378,
+            "z": 1.6459083626007425
+          },
+          "target": {
+            "x": -0.9195956161752039,
+            "y": 1.27,
+            "z": 0.33036325882654977
+          },
+          "fov": 53
+        },
+        "refinedStreet": {
+          "minX": -7,
+          "maxX": 3
+        },
+        "cat": {
+          "version": "anatomy-study-01",
+          "root": [
+            -1.4238373259996757,
+            0.85,
+            0.55
+          ],
+          "gait": {
+            "speed": 0,
+            "phase": 0.8627194381196289,
+            "stanceFeet": 4
+          },
+          "feet": [
+            {
+              "name": "hind-left",
+              "stance": true,
+              "world": [
+                -1.5827873259996756,
+                0.864875,
+                0.6124
+              ],
+              "local": [
+                -0.06240000000000001,
+                0.014874999999999972,
+                -0.15894999999999992
+              ],
+              "groundClearance": -2.949029909160572e-17
+            },
+            {
+              "name": "hind-right",
+              "stance": true,
+              "world": [
+                -1.5827873259996756,
+                0.864875,
+                0.48760000000000003
+              ],
+              "local": [
+                0.0624,
+                0.014874999999999972,
+                -0.15894999999999992
+              ],
+              "groundClearance": -2.949029909160572e-17
+            },
+            {
+              "name": "front-left",
+              "stance": true,
+              "world": [
+                -1.2801873259996757,
+                0.864875,
+                0.6028
+              ],
+              "local": [
+                -0.05279999999999995,
+                0.014874999999999972,
+                0.14365000000000006
+              ],
+              "groundClearance": -2.949029909160572e-17
+            },
+            {
+              "name": "front-right",
+              "stance": true,
+              "world": [
+                -1.2801873259996757,
+                0.864875,
+                0.49720000000000003
+              ],
+              "local": [
+                0.05280000000000002,
+                0.014874999999999972,
+                0.14365000000000006
+              ],
+              "groundClearance": -2.949029909160572e-17
+            }
+          ]
+        },
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 1,
+        "distance": 4.789734804000302,
+        "place": "店前石街",
+        "frames": 595,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -1.4238373259996757,
+          "y": 0.85,
+          "z": 0.55
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      }
+    },
+    "mobile": {
+      "initial": {
+        "version": "refine-01",
+        "speed": 0,
+        "velocity": {
+          "x": 0,
+          "z": 0
+        },
+        "camera": {
+          "position": {
+            "x": -8.52100126595356,
+            "y": 2.090719084726678,
+            "z": 1.7029758759068843
+          },
+          "target": {
+            "x": -5.293587171245125,
+            "y": 1.27,
+            "z": 0.3354165736304734
+          },
+          "fov": 62
+        },
+        "refinedStreet": {
+          "minX": -7,
+          "maxX": 3
+        },
+        "cat": {
+          "version": "anatomy-study-01",
+          "root": [
+            -5.8,
+            0.85,
+            0.55
+          ],
+          "gait": {
+            "speed": 0,
+            "phase": 0,
+            "stanceFeet": 4
+          },
+          "feet": [
+            {
+              "name": "hind-left",
+              "stance": true,
+              "world": [
+                -5.95895,
+                0.864875,
+                0.6124
+              ],
+              "local": [
+                -0.06240000000000001,
+                0.014874999999999972,
+                -0.15894999999999992
+              ],
+              "groundClearance": -2.949029909160572e-17
+            },
+            {
+              "name": "hind-right",
+              "stance": true,
+              "world": [
+                -5.95895,
+                0.864875,
+                0.48760000000000003
+              ],
+              "local": [
+                0.0624,
+                0.014874999999999972,
+                -0.15894999999999992
+              ],
+              "groundClearance": -2.949029909160572e-17
+            },
+            {
+              "name": "front-left",
+              "stance": true,
+              "world": [
+                -5.65635,
+                0.864875,
+                0.6028
+              ],
+              "local": [
+                -0.05279999999999995,
+                0.014874999999999972,
+                0.14365000000000006
+              ],
+              "groundClearance": -2.949029909160572e-17
+            },
+            {
+              "name": "front-right",
+              "stance": true,
+              "world": [
+                -5.65635,
+                0.864875,
+                0.49720000000000003
+              ],
+              "local": [
+                0.05280000000000002,
+                0.014874999999999972,
+                0.14365000000000006
+              ],
+              "groundClearance": -2.949029909160572e-17
+            }
+          ]
+        },
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 0,
+        "distance": 0,
+        "place": "店前石街",
+        "frames": 5,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -5.8,
+          "y": 0.85,
+          "z": 0.55
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      },
+      "moved": {
+        "version": "refine-01",
+        "speed": 0.7199999999999711,
+        "velocity": {
+          "x": 0.6629404303699866,
+          "z": -0.2809092127019246
+        },
+        "camera": {
+          "position": {
+            "x": -8.454478800441091,
+            "y": 2.090719084726678,
+            "z": 1.6747881646766805
+          },
+          "target": {
+            "x": -5.177616725665013,
+            "y": 1.27,
+            "z": 0.2862761605975612
+          },
+          "fov": 62
+        },
+        "refinedStreet": {
+          "minX": -7,
+          "maxX": 3
+        },
+        "cat": {
+          "version": "anatomy-study-01",
+          "root": [
+            -5.6840295544198876,
+            0.85,
+            0.5008595869670879
+          ],
+          "gait": {
+            "speed": 0.7199999999999711,
+            "phase": 0.8709991172562819,
+            "stanceFeet": 3
+          },
+          "feet": [
+            {
+              "name": "hind-left",
+              "stance": false,
+              "world": [
+                -5.857640600833885,
+                0.9027824611341884,
+                0.6066854773756701
+              ],
+              "local": [
+                -0.03436220005379953,
+                0.052782461134188385,
+                -0.2003974893185916
+              ],
+              "groundClearance": 0.037907461134188386
+            },
+            {
+              "name": "hind-right",
+              "stance": true,
+              "world": [
+                -5.890745555003582,
+                0.864875,
+                0.5060737512338287
+              ],
+              "local": [
+                0.07136714264201674,
+                0.014874999999999972,
+                -0.19407581857983341
+              ],
+              "groundClearance": -2.949029909160572e-17
+            },
+            {
+              "name": "front-left",
+              "stance": true,
+              "world": [
+                -5.588681942043556,
+                0.864875,
+                0.5388894498444484
+              ],
+              "local": [
+                -0.07050440784558686,
+                0.014874999999999972,
+                0.07460942387313492
+              ],
+              "groundClearance": -2.949029909160572e-17
+            },
+            {
+              "name": "front-right",
+              "stance": true,
+              "world": [
+                -5.557721606396501,
+                0.864875,
+                0.39849520346460854
+              ],
+              "local": [
+                0.048584694519575804,
+                0.014874999999999972,
+                0.15515054689610572
+              ],
+              "groundClearance": -2.949029909160572e-17
+            }
+          ]
+        },
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 0,
+        "distance": 0.12595207200000716,
+        "place": "店前石街",
+        "frames": 27,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -5.6840295544198876,
+          "y": 0.85,
+          "z": 0.5008595869670879
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      },
+      "final": {
+        "version": "refine-01",
+        "speed": 0,
+        "velocity": {
+          "x": 0,
+          "z": 0
+        },
+        "camera": {
+          "position": {
+            "x": -8.52100126595356,
+            "y": 2.090719084726678,
+            "z": 1.7029758759068843
+          },
+          "target": {
+            "x": -5.293587171245125,
+            "y": 1.27,
+            "z": 0.3354165736304734
+          },
+          "fov": 62
+        },
+        "refinedStreet": {
+          "minX": -7,
+          "maxX": 3
+        },
+        "cat": {
+          "version": "anatomy-study-01",
+          "root": [
+            -5.8,
+            0.85,
+            0.55
+          ],
+          "gait": {
+            "speed": 0,
+            "phase": 0,
+            "stanceFeet": 4
+          },
+          "feet": [
+            {
+              "name": "hind-left",
+              "stance": true,
+              "world": [
+                -5.95895,
+                0.864875,
+                0.6124
+              ],
+              "local": [
+                -0.06240000000000001,
+                0.014874999999999972,
+                -0.15894999999999992
+              ],
+              "groundClearance": -2.949029909160572e-17
+            },
+            {
+              "name": "hind-right",
+              "stance": true,
+              "world": [
+                -5.95895,
+                0.864875,
+                0.48760000000000003
+              ],
+              "local": [
+                0.0624,
+                0.014874999999999972,
+                -0.15894999999999992
+              ],
+              "groundClearance": -2.949029909160572e-17
+            },
+            {
+              "name": "front-left",
+              "stance": true,
+              "world": [
+                -5.65635,
+                0.864875,
+                0.6028
+              ],
+              "local": [
+                -0.05279999999999995,
+                0.014874999999999972,
+                0.14365000000000006
+              ],
+              "groundClearance": -2.949029909160572e-17
+            },
+            {
+              "name": "front-right",
+              "stance": true,
+              "world": [
+                -5.65635,
+                0.864875,
+                0.49720000000000003
+              ],
+              "local": [
+                0.05280000000000002,
+                0.014874999999999972,
+                0.14365000000000006
+              ],
+              "groundClearance": -2.949029909160572e-17
+            }
+          ]
+        },
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 0,
+        "distance": 0.15561868800000678,
+        "place": "店前石街",
+        "frames": 63,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -5.8,
+          "y": 0.85,
+          "z": 0.55
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      }
+    }
+  },
+  "errors": [],
+  "seconds": 21.391,
+  "scope": "Real Chromium, same existing scene, independent refinement entry. Functional assertions do not establish realism; two street views and a live canvas walk are visual review evidence. No Cycles render or full-scene expansion."
+}

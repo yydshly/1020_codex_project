@@ -1,0 +1,385 @@
+{
+  "source": "rainy-canal-v5-preview-02.blend",
+  "candidate": "rainy-canal-v5-wet-preview-02.blend",
+  "candidate_sha256": "6eb7edb0e46958e59b5bf073e07d35294682a65bfb68a1df76390e279d65744f",
+  "baseline": "v5-wet-baseline.json",
+  "performed_before_render": true,
+  "passed": true,
+  "checks": {
+    "frozen_v5_source_hash_unchanged": true,
+    "project_web_and_built_site_007_unchanged": true,
+    "complexity_counts_unchanged": true,
+    "object_set_unchanged": true,
+    "all_geometry_transforms_visibility_modifiers_lights_cameras_frozen": true,
+    "worlds_unchanged": true,
+    "node_groups_unchanged": true,
+    "locked_scene_unchanged": true,
+    "material_set_unchanged": true,
+    "all_material_node_link_counts_unchanged": true,
+    "wet_material_graph_and_non_parameter_properties_frozen:Canal water": true,
+    "non_wet_material_frozen:Distant blue grey plaster": true,
+    "non_wet_material_frozen:Distant dim amber window": true,
+    "non_wet_material_frozen:book_blue": true,
+    "non_wet_material_frozen:book_red": true,
+    "non_wet_material_frozen:book_tan": true,
+    "non_wet_material_frozen:brass": true,
+    "non_wet_material_frozen:fabric": true,
+    "non_wet_material_frozen:glass": true,
+    "non_wet_material_frozen:iron": true,
+    "non_wet_material_frozen:leaf": true,
+    "non_wet_material_frozen:leaf_light": true,
+    "non_wet_material_frozen:mortar": true,
+    "non_wet_material_frozen:olive": true,
+    "wet_material_graph_and_non_parameter_properties_frozen:paving": true,
+    "wet_material_graph_and_non_parameter_properties_frozen:paving_alt": true,
+    "non_wet_material_frozen:plaster": true,
+    "non_wet_material_frozen:plaster_alt": true,
+    "non_wet_material_frozen:roof": true,
+    "non_wet_material_frozen:roof_alt": true,
+    "non_wet_material_frozen:rubber": true,
+    "non_wet_material_frozen:soil": true,
+    "non_wet_material_frozen:stone": true,
+    "non_wet_material_frozen:stone_light": true,
+    "non_wet_material_frozen:teal": true,
+    "non_wet_material_frozen:terracotta": true,
+    "non_wet_material_frozen:warm_glow": true,
+    "non_wet_material_frozen:wood": true,
+    "non_wet_material_frozen:wood_light": true
+  },
+  "violations": [],
+  "wet_material_parameter_changes": [
+    {
+      "material": "Canal water",
+      "changes": [
+        {
+          "path": "nodes.nodes.Small reflection breakup.inputs[0].default",
+          "before": 0.20000000298023224,
+          "after": 0.3400000035762787
+        },
+        {
+          "path": "nodes.nodes.Small reflection breakup.inputs[1].default",
+          "before": 0.02800000086426735,
+          "after": 0.03500000014901161
+        }
+      ]
+    },
+    {
+      "material": "paving",
+      "changes": [
+        {
+          "path": "nodes.nodes.Weathering Partial wet ground coverage.inputs[1].default",
+          "before": 0.4300000071525574,
+          "after": 0.3400000035762787
+        },
+        {
+          "path": "nodes.nodes.Weathering Partial wet ground coverage.inputs[2].default",
+          "before": 0.6499999761581421,
+          "after": 0.5600000023841858
+        },
+        {
+          "path": "nodes.nodes.Weathering Wet stone darkening amount.inputs[1].default",
+          "before": 0.6000000238418579,
+          "after": 0.800000011920929
+        },
+        {
+          "path": "nodes.nodes.Weathering Partial thin water film.inputs[4].default",
+          "before": 0.8199999928474426,
+          "after": 0.949999988079071
+        },
+        {
+          "path": "nodes.nodes.Weathering Smooth rainwater coat.inputs[3].default",
+          "before": 0.30000001192092896,
+          "after": 0.2199999988079071
+        }
+      ]
+    },
+    {
+      "material": "paving_alt",
+      "changes": [
+        {
+          "path": "nodes.nodes.Weathering Partial wet ground coverage.inputs[1].default",
+          "before": 0.4300000071525574,
+          "after": 0.3400000035762787
+        },
+        {
+          "path": "nodes.nodes.Weathering Partial wet ground coverage.inputs[2].default",
+          "before": 0.6499999761581421,
+          "after": 0.5600000023841858
+        },
+        {
+          "path": "nodes.nodes.Weathering Wet stone darkening amount.inputs[1].default",
+          "before": 0.6000000238418579,
+          "after": 0.800000011920929
+        },
+        {
+          "path": "nodes.nodes.Weathering Partial thin water film.inputs[4].default",
+          "before": 0.8199999928474426,
+          "after": 0.949999988079071
+        },
+        {
+          "path": "nodes.nodes.Weathering Smooth rainwater coat.inputs[3].default",
+          "before": 0.30000001192092896,
+          "after": 0.2199999988079071
+        }
+      ]
+    }
+  ],
+  "baseline_counts": {
+    "objects": 2109,
+    "mesh_objects": 2015,
+    "curve_objects": 72,
+    "vertices": 159646,
+    "faces": 127565,
+    "curve_points": 1553,
+    "modifiers": 686,
+    "lights": 20,
+    "cameras": 2
+  },
+  "candidate_counts": {
+    "objects": 2109,
+    "mesh_objects": 2015,
+    "curve_objects": 72,
+    "vertices": 159646,
+    "faces": 127565,
+    "curve_points": 1553,
+    "modifiers": 686,
+    "lights": 20,
+    "cameras": 2
+  },
+  "baseline_material_graph_counts": {
+    "book_blue": {
+      "nodes": 2,
+      "links": 1
+    },
+    "book_red": {
+      "nodes": 2,
+      "links": 1
+    },
+    "book_tan": {
+      "nodes": 2,
+      "links": 1
+    },
+    "brass": {
+      "nodes": 2,
+      "links": 1
+    },
+    "Canal water": {
+      "nodes": 9,
+      "links": 10
+    },
+    "Distant blue grey plaster": {
+      "nodes": 7,
+      "links": 7
+    },
+    "Distant dim amber window": {
+      "nodes": 2,
+      "links": 1
+    },
+    "fabric": {
+      "nodes": 7,
+      "links": 7
+    },
+    "glass": {
+      "nodes": 5,
+      "links": 4
+    },
+    "iron": {
+      "nodes": 2,
+      "links": 1
+    },
+    "leaf": {
+      "nodes": 2,
+      "links": 1
+    },
+    "leaf_light": {
+      "nodes": 2,
+      "links": 1
+    },
+    "mortar": {
+      "nodes": 9,
+      "links": 10
+    },
+    "olive": {
+      "nodes": 7,
+      "links": 7
+    },
+    "paving": {
+      "nodes": 20,
+      "links": 27
+    },
+    "paving_alt": {
+      "nodes": 20,
+      "links": 27
+    },
+    "plaster": {
+      "nodes": 17,
+      "links": 21
+    },
+    "plaster_alt": {
+      "nodes": 17,
+      "links": 21
+    },
+    "roof": {
+      "nodes": 7,
+      "links": 7
+    },
+    "roof_alt": {
+      "nodes": 7,
+      "links": 7
+    },
+    "rubber": {
+      "nodes": 2,
+      "links": 1
+    },
+    "soil": {
+      "nodes": 7,
+      "links": 7
+    },
+    "stone": {
+      "nodes": 18,
+      "links": 23
+    },
+    "stone_light": {
+      "nodes": 18,
+      "links": 23
+    },
+    "teal": {
+      "nodes": 7,
+      "links": 7
+    },
+    "terracotta": {
+      "nodes": 7,
+      "links": 7
+    },
+    "warm_glow": {
+      "nodes": 2,
+      "links": 1
+    },
+    "wood": {
+      "nodes": 8,
+      "links": 8
+    },
+    "wood_light": {
+      "nodes": 8,
+      "links": 8
+    }
+  },
+  "candidate_material_graph_counts": {
+    "book_blue": {
+      "nodes": 2,
+      "links": 1
+    },
+    "book_red": {
+      "nodes": 2,
+      "links": 1
+    },
+    "book_tan": {
+      "nodes": 2,
+      "links": 1
+    },
+    "brass": {
+      "nodes": 2,
+      "links": 1
+    },
+    "Canal water": {
+      "nodes": 9,
+      "links": 10
+    },
+    "Distant blue grey plaster": {
+      "nodes": 7,
+      "links": 7
+    },
+    "Distant dim amber window": {
+      "nodes": 2,
+      "links": 1
+    },
+    "fabric": {
+      "nodes": 7,
+      "links": 7
+    },
+    "glass": {
+      "nodes": 5,
+      "links": 4
+    },
+    "iron": {
+      "nodes": 2,
+      "links": 1
+    },
+    "leaf": {
+      "nodes": 2,
+      "links": 1
+    },
+    "leaf_light": {
+      "nodes": 2,
+      "links": 1
+    },
+    "mortar": {
+      "nodes": 9,
+      "links": 10
+    },
+    "olive": {
+      "nodes": 7,
+      "links": 7
+    },
+    "paving": {
+      "nodes": 20,
+      "links": 27
+    },
+    "paving_alt": {
+      "nodes": 20,
+      "links": 27
+    },
+    "plaster": {
+      "nodes": 17,
+      "links": 21
+    },
+    "plaster_alt": {
+      "nodes": 17,
+      "links": 21
+    },
+    "roof": {
+      "nodes": 7,
+      "links": 7
+    },
+    "roof_alt": {
+      "nodes": 7,
+      "links": 7
+    },
+    "rubber": {
+      "nodes": 2,
+      "links": 1
+    },
+    "soil": {
+      "nodes": 7,
+      "links": 7
+    },
+    "stone": {
+      "nodes": 18,
+      "links": 23
+    },
+    "stone_light": {
+      "nodes": 18,
+      "links": 23
+    },
+    "teal": {
+      "nodes": 7,
+      "links": 7
+    },
+    "terracotta": {
+      "nodes": 7,
+      "links": 7
+    },
+    "warm_glow": {
+      "nodes": 2,
+      "links": 1
+    },
+    "wood": {
+      "nodes": 8,
+      "links": 8
+    },
+    "wood_light": {
+      "nodes": 8,
+      "links": 8
+    }
+  }
+}

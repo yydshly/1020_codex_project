@@ -1,0 +1,1198 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-24T14:14:06.326760+00:00",
+  "passed": true,
+  "checks": {
+    "only_two_old_objects_data_changed": true,
+    "replacement_data_is_new_space05_mesh_with_same_slots": true,
+    "batch_only_removes_exact13_first_gate_and_rear_stub_components": true,
+    "rear_wall_left_and_right_slab_bounds_exact": true,
+    "rear_wall_two_closed_eight_vertex_six_face_slabs": true,
+    "rear_wall_only_opening_volume_removed": true,
+    "new_objects_only_space05_geometry": true,
+    "new_geometry_within_small_gap_and_courtyard_envelopes": true,
+    "old_materials_frozen": true,
+    "new_materials_space05_prefix": true,
+    "old_node_groups_frozen": true,
+    "new_node_groups_space05_prefix": true,
+    "worlds_frozen": true,
+    "view_layers_frozen": true,
+    "old_collections_frozen": true,
+    "new_collections_independent_space05": true,
+    "old_layer_visibility_frozen": true,
+    "scene_camera_lights_settings_frozen": true,
+    "original522_routes_pass": true,
+    "original33_support_samples_unchanged": true,
+    "background_water_pass": true,
+    "new_route_and_authorized_floor_have_support_body_clearance": true,
+    "entry_and_courtyard_seams_within1cm": true,
+    "old136_hashes_included": true,
+    "all141_old_files_unchanged": true,
+    "source_hash_matches_space03": true,
+    "candidate_and_glb_match_manifest": true,
+    "glb_net_triangle_increase_at_most6500": true,
+    "glb_no_camera_lights": true,
+    "audit_leaves_saved_blends_and_navigation_unchanged": true
+  },
+  "source": {
+    "file": "rainy-canal-space-03.blend",
+    "sha256": "4c7e9c0093960ea796f2d7a888129da7c7a9d9c10b5b6d5486c2cb405f8c0178",
+    "counts": {
+      "objects": 1845,
+      "mesh_objects": 1737,
+      "curve_objects": 76,
+      "vertices": 131095,
+      "faces": 87246,
+      "curve_points": 1685,
+      "modifiers": 713,
+      "lights": 20,
+      "cameras": 12
+    }
+  },
+  "candidate": {
+    "file": "rainy-canal-space-05.blend",
+    "sha256": "044cd7c478b9a098cf74aac92dda459da0ce72d49579d4180f4748fb1ffd3436",
+    "counts": {
+      "objects": 1850,
+      "mesh_objects": 1742,
+      "curve_objects": 76,
+      "vertices": 133079,
+      "faces": 88870,
+      "curve_points": 1685,
+      "modifiers": 713,
+      "lights": 20,
+      "cameras": 12
+    }
+  },
+  "changed_old_objects": {
+    "EXT_Opposite rear boundary": [
+      "data"
+    ],
+    "SPACE01_Opposite row courtyard boundaries": [
+      "data"
+    ]
+  },
+  "unexpected_changes": {},
+  "added_objects": [
+    "SPACE05_CourtAndPassageLaidStone",
+    "SPACE05_CourtAndPassageSolidSupport",
+    "SPACE05_CourtyardSideReturnsAndCoping",
+    "SPACE05_OpenLaneEntranceFrame",
+    "SPACE05_PassageSideDrain"
+  ],
+  "material_node_differences": {
+    "materials": {
+      "missing": [],
+      "changed": [],
+      "new": []
+    },
+    "node_groups": {
+      "missing": [],
+      "changed": [],
+      "new": []
+    }
+  },
+  "removed_batch_components": [
+    {
+      "first_vertex": 0,
+      "vertex_count": 8,
+      "face_count": 6,
+      "bounds": {
+        "min": [
+          -8.199999809265137,
+          -16.579999923706055,
+          0.8500000238418579
+        ],
+        "max": [
+          -7.539999961853027,
+          -16.3799991607666,
+          2.049999952316284
+        ]
+      },
+      "volume": 0.15840056041876477,
+      "closed": true,
+      "sha256": "9ccc93d11f30f2aa883b87fd1d0ae4bc668c9ef68589a2892691afa9cd97d629"
+    },
+    {
+      "first_vertex": 8,
+      "vertex_count": 8,
+      "face_count": 6,
+      "bounds": {
+        "min": [
+          -8.229999542236328,
+          -16.610000610351562,
+          0.8500000238418579
+        ],
+        "max": [
+          -7.510000228881836,
+          -16.350000381469727,
+          1.0800000429153442
+        ]
+      },
+      "volume": 0.043056000024080276,
+      "closed": true,
+      "sha256": "9382e544d586ad5633d2954ae99caf6da94a360064858505b2c883feafac35e7"
+    },
+    {
+      "first_vertex": 16,
+      "vertex_count": 8,
+      "face_count": 6,
+      "bounds": {
+        "min": [
+          -8.239999771118164,
+          -16.6200008392334,
+          2.049999952316284
+        ],
+        "max": [
+          -7.5,
+          -16.34000015258789,
+          2.140000104904175
+        ]
+      },
+      "volume": 0.018648071214556694,
+      "closed": true,
+      "sha256": "82b31505f69c81cabac1888a49d049d89d69313b7a1eb70fe084dbe14c12ba0d"
+    },
+    {
+      "first_vertex": 24,
+      "vertex_count": 8,
+      "face_count": 6,
+      "bounds": {
+        "min": [
+          -6.559999942779541,
+          -16.579999923706055,
+          0.8500000238418579
+        ],
+        "max": [
+          -5.900000095367432,
+          -16.3799991607666,
+          2.049999952316284
+        ]
+      },
+      "volume": 0.15840056041876477,
+      "closed": true,
+      "sha256": "a32f530d21d95c16d0456827ae49f703a1886d2e3c6a8bbb9a68a0aa6bfcbbb1"
+    },
+    {
+      "first_vertex": 32,
+      "vertex_count": 8,
+      "face_count": 6,
+      "bounds": {
+        "min": [
+          -6.590000152587891,
+          -16.610000610351562,
+          0.8500000238418579
+        ],
+        "max": [
+          -5.869999885559082,
+          -16.350000381469727,
+          1.0800000429153442
+        ]
+      },
+      "volume": 0.04305605714519818,
+      "closed": true,
+      "sha256": "dadbb06fc0caef36d89ce5b2cc0066f45adadad8f564934c6ec7fd29bd883492"
+    },
+    {
+      "first_vertex": 40,
+      "vertex_count": 8,
+      "face_count": 6,
+      "bounds": {
+        "min": [
+          -6.599999904632568,
+          -16.6200008392334,
+          2.049999952316284
+        ],
+        "max": [
+          -5.860000133514404,
+          -16.34000015258789,
+          2.140000104904175
+        ]
+      },
+      "volume": 0.018648071214556694,
+      "closed": true,
+      "sha256": "de8d8a7eb81453bcb37312d3a4e44f1c9a0a2b76c7448b3657ec0bca00d2c7b0"
+    },
+    {
+      "first_vertex": 48,
+      "vertex_count": 8,
+      "face_count": 6,
+      "bounds": {
+        "min": [
+          -7.539999961853027,
+          -16.530000686645508,
+          0.8500000238418579
+        ],
+        "max": [
+          -6.559999942779541,
+          -16.43000030517578,
+          2.009999990463257
+        ]
+      },
+      "volume": 0.11368043224016824,
+      "closed": true,
+      "sha256": "977fc399991a4c1ea41fafa1e7593d86e8c00f87b5b55419f685ac3dd85fc480"
+    },
+    {
+      "first_vertex": 56,
+      "vertex_count": 8,
+      "face_count": 6,
+      "bounds": {
+        "min": [
+          -7.639999866485596,
+          -16.604999542236328,
+          0.8500000238418579
+        ],
+        "max": [
+          -7.510000228881836,
+          -16.354999542236328,
+          2.2100000381469727
+        ]
+      },
+      "volume": 0.044199876487255096,
+      "closed": true,
+      "sha256": "987f1e4810921b55339ed34970d9d3c5b68a19bed8cc6d26f50644cd168dea19"
+    },
+    {
+      "first_vertex": 64,
+      "vertex_count": 8,
+      "face_count": 6,
+      "bounds": {
+        "min": [
+          -6.590000152587891,
+          -16.604999542236328,
+          0.8500000238418579
+        ],
+        "max": [
+          -6.460000038146973,
+          -16.354999542236328,
+          2.2100000381469727
+        ]
+      },
+      "volume": 0.04420004040002823,
+      "closed": true,
+      "sha256": "d1b6e68c076652da609bbabe851f1dae394151ff75bb3bd7c234224ee7c28c43"
+    },
+    {
+      "first_vertex": 72,
+      "vertex_count": 8,
+      "face_count": 6,
+      "bounds": {
+        "min": [
+          -7.699999809265137,
+          -16.6299991607666,
+          2.194999933242798
+        ],
+        "max": [
+          -6.400000095367432,
+          -16.329999923706055,
+          2.305000066757202
+        ]
+      },
+      "volume": 0.04289993271231651,
+      "closed": true,
+      "sha256": "05eb5149de1e460080d4cedd26363c4f7a072293d9506417c894db2f76439a33"
+    },
+    {
+      "first_vertex": 80,
+      "vertex_count": 8,
+      "face_count": 6,
+      "bounds": {
+        "min": [
+          -7.150000095367432,
+          -22.350000381469727,
+          0.8500000238418579
+        ],
+        "max": [
+          -6.949999809265137,
+          -21.360000610351562,
+          2.0
+        ]
+      },
+      "volume": 0.22770026822884878,
+      "closed": true,
+      "sha256": "6026acbbf64eaf07b1f038aaa73ea40afdeb20307c7f048fefa6032b6788cdc7"
+    },
+    {
+      "first_vertex": 88,
+      "vertex_count": 8,
+      "face_count": 6,
+      "bounds": {
+        "min": [
+          -7.179999828338623,
+          -22.3799991607666,
+          0.8500000238418579
+        ],
+        "max": [
+          -6.920000076293945,
+          -21.329999923706055,
+          1.0800000429153442
+        ]
+      },
+      "volume": 0.0627899020910263,
+      "closed": true,
+      "sha256": "cbe28f7df4e9fa3b2ec75e99be26b35b82f46998764fad6b3330382615815fc9"
+    },
+    {
+      "first_vertex": 96,
+      "vertex_count": 8,
+      "face_count": 6,
+      "bounds": {
+        "min": [
+          -7.190000057220459,
+          -22.389999389648438,
+          2.0
+        ],
+        "max": [
+          -6.909999847412109,
+          -21.31999969482422,
+          2.0899999141693115
+        ]
+      },
+      "volume": 0.026963985835512475,
+      "closed": true,
+      "sha256": "c24bdf0aa15b3c2c49540c909f752fb663a6bd5bffb6818e3f34c56170b2be43"
+    }
+  ],
+  "retained_batch_component_count": 25,
+  "rear_wall_opening": {
+    "before": {
+      "components": [
+        {
+          "first_vertex": 0,
+          "vertex_count": 8,
+          "face_count": 6,
+          "bounds": {
+            "min": [
+              -21.0,
+              -22.470001220703125,
+              0.8500000238418579
+            ],
+            "max": [
+              13.0,
+              -22.229999542236328,
+              2.0500001907348633
+            ]
+          },
+          "volume": 9.792000452677408,
+          "closed": true,
+          "sha256": "237b9b998416277a9a8de9d2e9818e976f3f71f67a2063d4436de5e6ac09fb6d"
+        }
+      ],
+      "bounds": {
+        "min": [
+          -21.0,
+          -22.470001220703125,
+          0.8500000238418579
+        ],
+        "max": [
+          13.0,
+          -22.229999542236328,
+          2.0500001907348633
+        ]
+      }
+    },
+    "after": {
+      "components": [
+        {
+          "first_vertex": 0,
+          "vertex_count": 8,
+          "face_count": 6,
+          "bounds": {
+            "min": [
+              -21.0,
+              -22.470001220703125,
+              0.8500000238418579
+            ],
+            "max": [
+              -7.970000267028809,
+              -22.229999542236328,
+              2.0500001907348633
+            ]
+          },
+          "volume": 3.752640088399251,
+          "closed": true,
+          "sha256": "4b9ef067ad5adfb058e85b25e57ee57e7813c6fc52639301c4005e0305e7a2ca"
+        },
+        {
+          "first_vertex": 8,
+          "vertex_count": 8,
+          "face_count": 6,
+          "bounds": {
+            "min": [
+              -6.130000114440918,
+              -22.470001220703125,
+              0.8500000238418579
+            ],
+            "max": [
+              13.0,
+              -22.229999542236328,
+              2.0500001907348633
+            ]
+          },
+          "volume": 5.5094404220581055,
+          "closed": true,
+          "sha256": "b7c8ca14c8ce8735994bb9d9a6681e882c882c2134f068604068527c15d0b30c"
+        }
+      ],
+      "bounds": {
+        "min": [
+          -21.0,
+          -22.470001220703125,
+          0.8500000238418579
+        ],
+        "max": [
+          13.0,
+          -22.229999542236328,
+          2.0500001907348633
+        ]
+      }
+    },
+    "expected_removed_volume": 0.529923779755154,
+    "removed_volume": 0.5299199422200527
+  },
+  "new_object_scope": [
+    {
+      "object": "SPACE05_CourtAndPassageLaidStone",
+      "bounds": {
+        "min": [
+          -12.196000099182129,
+          -25.996000289916992,
+          0.8029999732971191
+        ],
+        "max": [
+          -5.984000205993652,
+          -15.48432731628418,
+          0.8550000190734863
+        ]
+      },
+      "outside_count": 0,
+      "first_outside": []
+    },
+    {
+      "object": "SPACE05_CourtAndPassageSolidSupport",
+      "bounds": {
+        "min": [
+          -12.199999809265137,
+          -26.0,
+          0.6600000262260437
+        ],
+        "max": [
+          -5.980000019073486,
+          -15.480327606201172,
+          0.8500000238418579
+        ]
+      },
+      "outside_count": 0,
+      "first_outside": []
+    },
+    {
+      "object": "SPACE05_CourtyardSideReturnsAndCoping",
+      "bounds": {
+        "min": [
+          -12.329999923706055,
+          -26.0,
+          0.6600000262260437
+        ],
+        "max": [
+          -5.96999979019165,
+          -22.200000762939453,
+          2.1050000190734863
+        ]
+      },
+      "outside_count": 0,
+      "first_outside": []
+    },
+    {
+      "object": "SPACE05_OpenLaneEntranceFrame",
+      "bounds": {
+        "min": [
+          -8.1899995803833,
+          -16.700000762939453,
+          0.8299999833106995
+        ],
+        "max": [
+          -5.909999847412109,
+          -16.260000228881836,
+          3.2300000190734863
+        ]
+      },
+      "outside_count": 0,
+      "first_outside": []
+    },
+    {
+      "object": "SPACE05_PassageSideDrain",
+      "bounds": {
+        "min": [
+          -6.114999771118164,
+          -21.899999618530273,
+          0.8379999995231628
+        ],
+        "max": [
+          -6.025000095367432,
+          -17.0,
+          0.8569999933242798
+        ]
+      },
+      "outside_count": 0,
+      "first_outside": []
+    }
+  ],
+  "original_routes": {
+    "scope": "Sampled centerline floor support and 0.48m-wide body-ray checks only, not a navmesh, full-area collision certification or a playable controller.",
+    "floor_tolerance": 0.17,
+    "known_existing_paving_gaps": "Original stone joints can be about 0.12m lower than stone tops; a future walking controller needs step tolerance or a separate collision proxy.",
+    "routes": {
+      "both_banks_loop": {
+        "sample_count": 285,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      },
+      "rear_lane_loop": {
+        "sample_count": 237,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      }
+    }
+  },
+  "original_support_samples": {
+    "rear_cafe": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_ShopRearWallApron"
+    },
+    "rear_bookshop": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_ShopRearWallApron"
+    },
+    "rear_pottery": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_ShopRearWallApron"
+    },
+    "west_side": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_ShopWestSideInfill"
+    },
+    "east_side": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_ShopEastSideInfill"
+    },
+    "rear_boundary": {
+      "hit": true,
+      "height": 0.845206618309021,
+      "object": "EXT_B02_RearLaneBoundaryShoulder"
+    },
+    "far_house_01_front": {
+      "hit": true,
+      "height": 0.925000011920929,
+      "object": "SPACE03_Opposite_01_WindowDoorJoinery"
+    },
+    "far_house_02_front": {
+      "hit": true,
+      "height": 0.925000011920929,
+      "object": "SPACE03_Opposite_02_WindowDoorJoinery"
+    },
+    "far_house_03_front": {
+      "hit": true,
+      "height": 0.925000011920929,
+      "object": "SPACE03_Opposite_03_WindowDoorJoinery"
+    },
+    "bridge_-18_-0.55_-1.6": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_Return bridge landing.001"
+    },
+    "bridge_-18_-0.55_-1.95": {
+      "hit": true,
+      "height": 0.8882484436035156,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_-0.55_-10.4": {
+      "hit": true,
+      "height": 0.8794219493865967,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_-0.55_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_Return bridge landing"
+    },
+    "bridge_-18_0_-1.6": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_Return bridge landing.001"
+    },
+    "bridge_-18_0_-1.95": {
+      "hit": true,
+      "height": 0.8882484436035156,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_0_-10.4": {
+      "hit": true,
+      "height": 0.8794219493865967,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_0_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_-18_0.55_-1.6": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_Return bridge landing.001"
+    },
+    "bridge_-18_0.55_-1.95": {
+      "hit": true,
+      "height": 0.8882484436035156,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_0.55_-10.4": {
+      "hit": true,
+      "height": 0.8794219493865967,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_0.55_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_Return bridge landing"
+    },
+    "bridge_9.4_-0.55_-1.6": {
+      "hit": true,
+      "height": 0.8472225069999695,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_9.4_-0.55_-1.95": {
+      "hit": true,
+      "height": 0.9506124258041382,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_-0.55_-10.4": {
+      "hit": true,
+      "height": 0.9261985421180725,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_-0.55_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_9.4_0_-1.6": {
+      "hit": true,
+      "height": 0.8472225069999695,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_9.4_0_-1.95": {
+      "hit": true,
+      "height": 0.9506124258041382,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_0_-10.4": {
+      "hit": true,
+      "height": 0.9261985421180725,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_0_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_9.4_0.55_-1.6": {
+      "hit": true,
+      "height": 0.8472224473953247,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_9.4_0.55_-1.95": {
+      "hit": true,
+      "height": 0.9506124258041382,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_0.55_-10.4": {
+      "hit": true,
+      "height": 0.9261985421180725,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_0.55_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "Rounded quay coping stones"
+    }
+  },
+  "background_water": {
+    "passed": true,
+    "ray_count": 294,
+    "failures": [],
+    "outer_endpoint_inset_m": 0.05,
+    "scope": "Sampled finite background water surface only; no navigation or hydrodynamic claim."
+  },
+  "runtime_navigation": {
+    "route": [
+      [
+        -7.05,
+        -12.65
+      ],
+      [
+        -7.05,
+        -15.05
+      ],
+      [
+        -7.05,
+        -17.2
+      ],
+      [
+        -7.05,
+        -21.75
+      ],
+      [
+        -7.05,
+        -23.35
+      ],
+      [
+        -10.95,
+        -23.35
+      ],
+      [
+        -10.95,
+        -24.95
+      ],
+      [
+        -7.05,
+        -24.95
+      ],
+      [
+        -7.05,
+        -23.35
+      ],
+      [
+        -7.05,
+        -12.65
+      ]
+    ],
+    "zones": [
+      {
+        "id": "courtyard-street-connector",
+        "minX": -7.95,
+        "maxX": -6.15,
+        "minZ": 15.15,
+        "maxZ": 16.7,
+        "rise": 0
+      },
+      {
+        "id": "courtyard-alley",
+        "minX": -7.95,
+        "maxX": -6.25,
+        "minZ": 16.3,
+        "maxZ": 23.45,
+        "rise": 0
+      },
+      {
+        "id": "courtyard-interior",
+        "minX": -11.95,
+        "maxX": -6.35,
+        "minZ": 22.8,
+        "maxZ": 25.6,
+        "rise": 0
+      }
+    ],
+    "spawns": {
+      "original": {
+        "x": -12.8,
+        "y": 0.85,
+        "z": 0.55
+      },
+      "courtyardEntrance": {
+        "x": -7.05,
+        "y": 0.85,
+        "z": 12.65
+      },
+      "courtyardCenter": {
+        "x": -9.35,
+        "y": 0.855,
+        "z": 24.15
+      }
+    },
+    "metadata": {
+      "coordinateSystem": "Three Y-up: Blender (x,y,z) maps to (x,z,-y).",
+      "source": "rainy-canal-space-05.blend",
+      "preservedNavigationSource": "roam-navigation.js",
+      "obstacleMethod": "Conservative low-height world bounds inspected read-only; circles and rectangles are navigation proxies, not full mesh collision.",
+      "scope": "Existing exterior banks, bridges and rear lane plus one opposite-bank alley and closed courtyard. House interiors, water and other gardens remain inaccessible.",
+      "courtyardRoute": "Street entrance, passage between houses 1/2, courtyard circuit and return through the same entrance; no shortcut across building corners.",
+      "courtyardSurface": {
+        "height": 0.855,
+        "rampStartZ": 15.6853,
+        "rampEndZ": 16.05,
+        "note": "Linear five-millimetre rise matching SPACE05 paving; original quays and bridges retain their previous heights."
+      },
+      "bridgeHeight": "0.85 + rise*sin(pi*t), t=clamp((10.55-worldZ)/8.795,0,1); flat landing connectors join both banks."
+    }
+  },
+  "runtime_navigation_sha256": "55b576f91c746f20758f1b31bdb19eeb1012ea388d5bddb9ecc8257ef12e2939",
+  "new_mesh_navigation_checks": {
+    "passed": true,
+    "route_sample_count": 220,
+    "new_zone_grid_count": 382,
+    "counts": {
+      "floor_rays": 1042,
+      "headroom_rays": 660,
+      "body_rays": 3300,
+      "grid_headroom_rays": 382,
+      "grid_body_radius_rays": 3056,
+      "portal_rays": 150
+    },
+    "floor_min": 0.7300000190734863,
+    "floor_max": 0.8550000786781311,
+    "failures": {
+      "floor": [],
+      "body": [],
+      "headroom": [],
+      "new_zone_grid": [],
+      "portal": [],
+      "house_footprint": []
+    },
+    "seam_samples": [
+      {
+        "point": [
+          -7.65,
+          -15.66
+        ],
+        "height": 0.8500000238418579,
+        "object": "SPACE05_CourtAndPassageLaidStone"
+      },
+      {
+        "point": [
+          -7.65,
+          -15.7
+        ],
+        "height": 0.8502015471458435,
+        "object": "SPACE05_CourtAndPassageLaidStone"
+      },
+      {
+        "point": [
+          -7.65,
+          -15.78
+        ],
+        "height": 0.8512983322143555,
+        "object": "SPACE05_CourtAndPassageLaidStone"
+      },
+      {
+        "point": [
+          -7.65,
+          -15.82
+        ],
+        "height": 0.8518466949462891,
+        "object": "SPACE05_CourtAndPassageLaidStone"
+      },
+      {
+        "point": [
+          -7.65,
+          -22.4
+        ],
+        "height": 0.8550000190734863,
+        "object": "SPACE05_CourtAndPassageLaidStone"
+      },
+      {
+        "point": [
+          -7.65,
+          -22.47
+        ],
+        "height": 0.8550000190734863,
+        "object": "SPACE05_CourtAndPassageLaidStone"
+      },
+      {
+        "point": [
+          -7.65,
+          -22.55
+        ],
+        "height": 0.8550000190734863,
+        "object": "SPACE05_CourtAndPassageLaidStone"
+      },
+      {
+        "point": [
+          -7.05,
+          -15.66
+        ],
+        "height": 0.8500000238418579,
+        "object": "SPACE05_CourtAndPassageLaidStone"
+      },
+      {
+        "point": [
+          -7.05,
+          -15.7
+        ],
+        "height": 0.8502015471458435,
+        "object": "SPACE05_CourtAndPassageLaidStone"
+      },
+      {
+        "point": [
+          -7.05,
+          -15.78
+        ],
+        "height": 0.8512983322143555,
+        "object": "SPACE05_CourtAndPassageLaidStone"
+      },
+      {
+        "point": [
+          -7.05,
+          -15.82
+        ],
+        "height": 0.8518467545509338,
+        "object": "SPACE05_CourtAndPassageLaidStone"
+      },
+      {
+        "point": [
+          -7.05,
+          -22.4
+        ],
+        "height": 0.8550000190734863,
+        "object": "SPACE05_CourtAndPassageLaidStone"
+      },
+      {
+        "point": [
+          -7.05,
+          -22.47
+        ],
+        "height": 0.8550000190734863,
+        "object": "SPACE05_CourtAndPassageLaidStone"
+      },
+      {
+        "point": [
+          -7.05,
+          -22.55
+        ],
+        "height": 0.8550000190734863,
+        "object": "SPACE05_CourtAndPassageLaidStone"
+      },
+      {
+        "point": [
+          -6.45,
+          -15.66
+        ],
+        "height": 0.8500000238418579,
+        "object": "SPACE05_CourtAndPassageLaidStone"
+      },
+      {
+        "point": [
+          -6.45,
+          -15.7
+        ],
+        "height": 0.8502015471458435,
+        "object": "SPACE05_CourtAndPassageLaidStone"
+      },
+      {
+        "point": [
+          -6.45,
+          -15.78
+        ],
+        "height": 0.8512983322143555,
+        "object": "SPACE05_CourtAndPassageLaidStone"
+      },
+      {
+        "point": [
+          -6.45,
+          -15.82
+        ],
+        "height": 0.8518467545509338,
+        "object": "SPACE05_CourtAndPassageLaidStone"
+      },
+      {
+        "point": [
+          -6.45,
+          -22.4
+        ],
+        "height": 0.8550000190734863,
+        "object": "SPACE05_CourtAndPassageLaidStone"
+      },
+      {
+        "point": [
+          -6.45,
+          -22.47
+        ],
+        "height": 0.8550000190734863,
+        "object": "SPACE05_CourtAndPassageLaidStone"
+      },
+      {
+        "point": [
+          -6.45,
+          -22.55
+        ],
+        "height": 0.8550000190734863,
+        "object": "SPACE05_CourtAndPassageLaidStone"
+      }
+    ],
+    "legacy_unchanged_quay_joint_samples": [
+      {
+        "point": [
+          -7.29,
+          -13.214705882352941
+        ],
+        "height": 0.7300000190734863,
+        "object": "Quayside foundation 01"
+      },
+      {
+        "point": [
+          -7.05,
+          -13.214705882352941
+        ],
+        "height": 0.7300000190734863,
+        "object": "Quayside foundation 01"
+      },
+      {
+        "point": [
+          -6.81,
+          -13.214705882352941
+        ],
+        "height": 0.7300000190734863,
+        "object": "Quayside foundation 01"
+      },
+      {
+        "point": [
+          -7.05,
+          -14.48529411764706
+        ],
+        "height": 0.7300000190734863,
+        "object": "Quayside foundation 01"
+      },
+      {
+        "point": [
+          -7.05,
+          -14.626470588235295
+        ],
+        "height": 0.8274998664855957,
+        "object": "Individually worn wet quay paving"
+      },
+      {
+        "point": [
+          -7.05,
+          -14.767647058823531
+        ],
+        "height": 0.8274999260902405,
+        "object": "Individually worn wet quay paving"
+      },
+      {
+        "point": [
+          -7.05,
+          -14.908823529411766
+        ],
+        "height": 0.8274999260902405,
+        "object": "Individually worn wet quay paving"
+      },
+      {
+        "point": [
+          -7.29,
+          -15.48
+        ],
+        "height": 0.828792929649353,
+        "object": "Individually worn wet quay paving"
+      },
+      {
+        "point": [
+          -7.05,
+          -15.48
+        ],
+        "height": 0.828792929649353,
+        "object": "Individually worn wet quay paving"
+      },
+      {
+        "point": [
+          -6.81,
+          -15.48
+        ],
+        "height": 0.8100482821464539,
+        "object": "Individually worn wet quay paving"
+      },
+      {
+        "point": [
+          -6.81,
+          -15.473611111111111
+        ],
+        "height": 0.8249258995056152,
+        "object": "Individually worn wet quay paving"
+      },
+      {
+        "point": [
+          -7.05,
+          -14.879166666666666
+        ],
+        "height": 0.8274998664855957,
+        "object": "Individually worn wet quay paving"
+      },
+      {
+        "point": [
+          -7.05,
+          -14.730555555555556
+        ],
+        "height": 0.8274998664855957,
+        "object": "Individually worn wet quay paving"
+      },
+      {
+        "point": [
+          -7.05,
+          -14.581944444444446
+        ],
+        "height": 0.8274999260902405,
+        "object": "Individually worn wet quay paving"
+      },
+      {
+        "point": [
+          -6.81,
+          -13.838888888888889
+        ],
+        "height": 0.828819751739502,
+        "object": "Individually worn wet quay paving"
+      },
+      {
+        "point": [
+          -7.05,
+          -13.838888888888889
+        ],
+        "height": 0.828819751739502,
+        "object": "Individually worn wet quay paving"
+      },
+      {
+        "point": [
+          -7.29,
+          -13.838888888888889
+        ],
+        "height": 0.828819751739502,
+        "object": "Individually worn wet quay paving"
+      }
+    ],
+    "body_base_height_source": "Actual runtime createNavigation().sampleHeight at each center point; old quay uses its existing .85m collision plane across up to .12m-deep visual joints. Newly added floor and ramp use the runtime profile, verified separately against geometry.",
+    "runtime_body_base_min": 0.85,
+    "runtime_body_base_max": 0.855,
+    "seams_within_1cm_of_source_floor": true,
+    "scope": "15cm route samples, 0.48m body width, 2m height; 24cm grid of runtime-authorized new floor plus radius rays. Not a continuous physics proof."
+  },
+  "preservation": {
+    "baseline": "artifacts/scene-space-05/preserved-files.json",
+    "count": 141,
+    "changed_before": [],
+    "changed_after": []
+  },
+  "glb": {
+    "file": "space-05.glb",
+    "sha256": "43e8ff78e83233ff9703ae2339b69f9d9a96de454ea7e6862ee4b6e36ba8434f",
+    "bytes": 10824056,
+    "meshes": 34,
+    "primitives": 34,
+    "vertices": 271179,
+    "triangles": 177260,
+    "binary_bytes": 10790400,
+    "net_triangle_increase": 3248
+  },
+  "seconds": 18.466,
+  "limitations": [
+    "No save, render or browser control. Old source files are preserved; two wall batches intentionally change data only in this new copy.",
+    "Read-only Node import supplies the real runtime route and authorized new-zone grid; Blender rays independently check actual geometry rather than reproducing the navigation predicates.",
+    "Route/body/grid/portal samples are regressions and do not prove every possible continuous movement, arbitrary camera path or inaccessible room."
+  ]
+}

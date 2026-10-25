@@ -1,0 +1,76 @@
+{
+  "version": "extension-01",
+  "status": "First additive exterior layout completed; not a finished environment.",
+  "source": "../artifacts/rainy-canal-v5-wet-preview-02.blend",
+  "candidate": "../artifacts/rainy-canal-extension-01.blend",
+  "preservation": {
+    "original_files_overwritten": false,
+    "original_objects_materials_lights_world_modified": false,
+    "new_root_collection": "EXT_Expansion01",
+    "rollback": "Open the preserved source, or exclude EXT_Expansion01 and use the original camera in the new file.",
+    "pixel_identity_with_additions_visible": false,
+    "note": "New geometry can change silhouettes, shadows and reflections even though all original scene data remains unchanged."
+  },
+  "additions": [
+    "Three closed exterior houses on the opposite bank.",
+    "Applied rear window and door panels on the original shops; no openings cut.",
+    "Rear lane and side connections around the original shop row.",
+    "A timber return footbridge linking both banks into a loop.",
+    "Low boundary walls and access gates defining a limited exterior area.",
+    "Five independent review cameras."
+  ],
+  "cost": {
+    "added_objects_including_cameras": 137,
+    "added_mesh_vertices": 4814,
+    "added_mesh_faces": 3595,
+    "added_curve_points": 132,
+    "added_lights": 0,
+    "added_materials": 0,
+    "render_count": 2,
+    "preview_resolution": [
+      1104,
+      622
+    ],
+    "render_seconds_total": 54.237
+  },
+  "visual_review": [
+    {
+      "image": "extension-01-review-01.png",
+      "purpose": "Overview of the two banks, return bridge and exterior layout.",
+      "observed": "Both-bank loop and added opposite houses are visible. New houses remain simplified and darker than the original storefronts. A conspicuous blue strip remains outside the left local boundary."
+    },
+    {
+      "image": "extension-01-review-02.png",
+      "purpose": "Reverse view of the original shop backs and new rear lane.",
+      "observed": "Rear wall details and rear circulation space are present. Dark stretched ground planes and abrupt distant edges are exposed from this angle; background completion is still required."
+    }
+  ],
+  "navigation": {
+    "sampled_routes_passed": [
+      "both_banks_loop",
+      "rear_lane_loop"
+    ],
+    "sample_count_total": 522,
+    "unsupported_samples": 0,
+    "body_ray_obstructions": 0,
+    "maximum_floor_deviation_m": 0.12,
+    "playable_controller_or_navmesh_added": false,
+    "limitation": "Centerline floor and body-ray diagnostics are not full collision or navigability certification. Existing paving joints require step handling or a future collision proxy."
+  },
+  "limits": [
+    "Unseen areas are inferred design additions, not recovered facts from the single reference image.",
+    "All buildings remain exterior-only; doors are closed and interiors are not enterable.",
+    "Original lighting was preserved, leaving rear areas and new houses dark.",
+    "Distant terrain and water edges outside the bounded area remain unfinished.",
+    "New-house detailing is intentionally lower than the original storefronts.",
+    "The website and its existing 3D scene were not updated."
+  ],
+  "recommended_next_step": "Review and approve the exterior layout first. Then address exposed boundaries and ground-level collision continuity additively before increasing prop density or adding interiors.",
+  "evidence": [
+    "extension-01-audit.json",
+    "extension-01-routes.json",
+    "extension-01-stats.json",
+    "extension-render-ledger.json",
+    "extension-plan.svg"
+  ]
+}

@@ -1,0 +1,1734 @@
+{
+  "checked_utc": "2026-10-24T04:58:35.977154+00:00",
+  "passed": true,
+  "checks": {
+    "separate_v6_study_loads": true,
+    "finite_base_and_morph_geometry": true,
+    "blink_diagnostic_available": true,
+    "base_geometry_preserved": true,
+    "honest_scope_label": true,
+    "open_control_opens_eyelids": true,
+    "half_control_holds_half_closed": true,
+    "closed_control_closes_eyelids": true,
+    "closed_geometry_is_finite": true,
+    "close_side_view_available": true,
+    "single_blink_closes_and_reopens": true,
+    "automatic_blink_occurs": true,
+    "left_head_control_retained": true,
+    "right_head_control_retained": true,
+    "lower_head_control_retained": true,
+    "v5_comparison_available": true,
+    "v5_blink_controls_remain_available": true,
+    "v5_unsupported_half_control_disabled": true,
+    "v5_head_controls_remain_available": true,
+    "v5_closed_comparison_works": true,
+    "walking_moves_actual_root": true,
+    "walking_head_yaw_remains_bounded": true,
+    "walking_foot_reach_error_below_25mm": true,
+    "walking_geometry_is_finite": true,
+    "walking_stops_cleanly": true,
+    "actual_head_and_blink_video_saved": true,
+    "final_video_has_no_capture_gap_over_150ms": true,
+    "desktop_no_horizontal_overflow": true,
+    "mobile_half_control_works": true,
+    "mobile_head_and_blink_controls_work": true,
+    "mobile_eyes_reopen": true,
+    "mobile_no_horizontal_overflow": true,
+    "mobile_model_visible": true,
+    "all_previous_files_unchanged": true,
+    "source_asset_frozen_during_check": true,
+    "no_browser_or_shader_errors": true
+  },
+  "errors": [],
+  "observations": {
+    "source": {
+      "sha256Start": {
+        "web\\cat-v6-face-study.html": "3970c43d6e8651bfff0aa77f39861c6520a4bfca434b6bb1e1e93eee390c4716",
+        "web\\cat-v6-face-study.js": "e2afd95b24fa786993d0e9a0751c029330d95a4faca44d5e347c52596e6db0be",
+        "web\\cat-v6-face.js": "93702343e94243718661ceaee8cfc19ec7dda8d4a793796895af2288148d2954",
+        "web\\cat-v6-lid-material.js": "39001e6cd0dafba1de90c812ea71388e338cd4c48ab8ecc46da8513fc5a5c3de",
+        "web\\models\\cat-v6-lid-surface.json": "119db47c3eed6506fc5c0fd70e999d6119bea2490c5cb4b41dbe9595b89e0d77",
+        "web\\models\\cat-v3-rig.glb": "6c8d0f0133805e0727cc6cdfc558456d670e0d33a5158685084413e7786a77f1",
+        "web\\models\\cat-v5-face.glb": "5661824659aa02bfb99f71a18d0f4e9a1bbb11eafefb56afcb4d21a486aed9a7"
+      },
+      "sha256End": {
+        "web\\cat-v6-face-study.html": "3970c43d6e8651bfff0aa77f39861c6520a4bfca434b6bb1e1e93eee390c4716",
+        "web\\cat-v6-face-study.js": "e2afd95b24fa786993d0e9a0751c029330d95a4faca44d5e347c52596e6db0be",
+        "web\\cat-v6-face.js": "93702343e94243718661ceaee8cfc19ec7dda8d4a793796895af2288148d2954",
+        "web\\cat-v6-lid-material.js": "39001e6cd0dafba1de90c812ea71388e338cd4c48ab8ecc46da8513fc5a5c3de",
+        "web\\models\\cat-v6-lid-surface.json": "119db47c3eed6506fc5c0fd70e999d6119bea2490c5cb4b41dbe9595b89e0d77",
+        "web\\models\\cat-v3-rig.glb": "6c8d0f0133805e0727cc6cdfc558456d670e0d33a5158685084413e7786a77f1",
+        "web\\models\\cat-v5-face.glb": "5661824659aa02bfb99f71a18d0f4e9a1bbb11eafefb56afcb4d21a486aed9a7"
+      }
+    },
+    "initial": {
+      "ready": true,
+      "version": "cat-v6-face-study",
+      "frames": 24,
+      "mode": "current",
+      "view": "face",
+      "attention": "natural",
+      "blinkMode": "auto",
+      "walking": false,
+      "speed": 0,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "geometry": {
+        "meshes": 2,
+        "triangles": 51976,
+        "invalid": 0,
+        "morphTargets": 0
+      },
+      "cat": {
+        "version": "asset-rig-03",
+        "root": [
+          0,
+          0,
+          0
+        ],
+        "gait": {
+          "speed": 0,
+          "phase": 0,
+          "stanceFeet": 4,
+          "maxReachError": 0,
+          "angularSpeed": 0
+        },
+        "bones": 21,
+        "feet": [
+          {
+            "name": "fore_left",
+            "stance": true,
+            "world": [
+              -0.0427,
+              0,
+              0.1127
+            ],
+            "renderedWorld": [
+              -0.042700000000000085,
+              2.375029221901581e-09,
+              0.1127000035351656
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "fore_right",
+            "stance": true,
+            "world": [
+              0.0422,
+              0,
+              0.1027
+            ],
+            "renderedWorld": [
+              0.04220000000000006,
+              4.195416618280046e-09,
+              0.1027000031809942
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_left",
+            "stance": true,
+            "world": [
+              -0.0541,
+              0,
+              -0.1337
+            ],
+            "renderedWorld": [
+              -0.05409999999999999,
+              2.30973482701069e-09,
+              -0.1336999991154973
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_right",
+            "stance": true,
+            "world": [
+              0.052,
+              0,
+              -0.1638
+            ],
+            "renderedWorld": [
+              0.05200000000000003,
+              5.570814656796763e-09,
+              -0.1637999959983902
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          }
+        ],
+        "attention": {
+          "version": "head-attention-04",
+          "enabled": true,
+          "mode": "natural",
+          "appliedDegrees": {
+            "yaw": 0,
+            "pitch": 0
+          },
+          "requestedDegrees": {
+            "yaw": 0,
+            "pitch": 0
+          },
+          "yawLimit": 8,
+          "elapsed": 0.4166,
+          "eyeControl": false,
+          "mouthControl": false
+        },
+        "blink": {
+          "mode": "auto",
+          "amount": 0,
+          "left": 0,
+          "right": 0,
+          "count": 0,
+          "active": false,
+          "duration": 0.28,
+          "kind": "separate-skinned-eyelids",
+          "baseGeometryUnchanged": true,
+          "baseMorphCount": 0,
+          "addedTriangles": 2976,
+          "addedVertices": 1672,
+          "independentGaze": false,
+          "mouthControl": false
+        }
+      }
+    },
+    "addedGeometry": {
+      "addedTriangles": 2976,
+      "addedVertices": 1672
+    },
+    "open": {
+      "ready": true,
+      "version": "cat-v6-face-study",
+      "frames": 61,
+      "mode": "current",
+      "view": "face",
+      "attention": "off",
+      "blinkMode": "open",
+      "walking": false,
+      "speed": 0,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "geometry": {
+        "meshes": 2,
+        "triangles": 51976,
+        "invalid": 0,
+        "morphTargets": 0
+      },
+      "cat": {
+        "version": "asset-rig-03",
+        "root": [
+          0,
+          0,
+          0
+        ],
+        "gait": {
+          "speed": 0,
+          "phase": 0,
+          "stanceFeet": 4,
+          "maxReachError": 0,
+          "angularSpeed": 0
+        },
+        "bones": 21,
+        "feet": [
+          {
+            "name": "fore_left",
+            "stance": true,
+            "world": [
+              -0.0427,
+              0,
+              0.1127
+            ],
+            "renderedWorld": [
+              -0.042700000000000085,
+              2.254287291558743e-09,
+              0.11270000374909728
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "fore_right",
+            "stance": true,
+            "world": [
+              0.0422,
+              0,
+              0.1027
+            ],
+            "renderedWorld": [
+              0.04220000000000006,
+              4.052063774795389e-09,
+              0.102700003464443
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_left",
+            "stance": true,
+            "world": [
+              -0.0541,
+              0,
+              -0.1337
+            ],
+            "renderedWorld": [
+              -0.05409999999999999,
+              2.3162728332581928e-09,
+              -0.13369999911694316
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_right",
+            "stance": true,
+            "world": [
+              0.052,
+              0,
+              -0.1638
+            ],
+            "renderedWorld": [
+              0.05200000000000003,
+              5.578871226097348e-09,
+              -0.16379999600129888
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          }
+        ],
+        "attention": {
+          "version": "head-attention-04",
+          "enabled": false,
+          "mode": "natural",
+          "appliedDegrees": {
+            "yaw": 0,
+            "pitch": 0
+          },
+          "requestedDegrees": {
+            "yaw": 0,
+            "pitch": 0
+          },
+          "yawLimit": 8,
+          "elapsed": 1.0332000000000003,
+          "eyeControl": false,
+          "mouthControl": false
+        },
+        "blink": {
+          "mode": "open",
+          "amount": 0,
+          "left": 0,
+          "right": 0,
+          "count": 0,
+          "active": false,
+          "duration": 0.28,
+          "kind": "separate-skinned-eyelids",
+          "baseGeometryUnchanged": true,
+          "baseMorphCount": 0,
+          "addedTriangles": 2976,
+          "addedVertices": 1672,
+          "independentGaze": false,
+          "mouthControl": false
+        }
+      }
+    },
+    "half": {
+      "ready": true,
+      "version": "cat-v6-face-study",
+      "frames": 96,
+      "mode": "current",
+      "view": "face",
+      "attention": "off",
+      "blinkMode": "half",
+      "walking": false,
+      "speed": 0,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "geometry": {
+        "meshes": 2,
+        "triangles": 51976,
+        "invalid": 0,
+        "morphTargets": 0
+      },
+      "cat": {
+        "version": "asset-rig-03",
+        "root": [
+          0,
+          0,
+          0
+        ],
+        "gait": {
+          "speed": 0,
+          "phase": 0,
+          "stanceFeet": 4,
+          "maxReachError": 0,
+          "angularSpeed": 0
+        },
+        "bones": 21,
+        "feet": [
+          {
+            "name": "fore_left",
+            "stance": true,
+            "world": [
+              -0.0427,
+              0,
+              0.1127
+            ],
+            "renderedWorld": [
+              -0.04270000000000007,
+              2.756458609975976e-09,
+              0.11270000287667892
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "fore_right",
+            "stance": true,
+            "world": [
+              0.0422,
+              0,
+              0.1027
+            ],
+            "renderedWorld": [
+              0.04220000000000004,
+              4.634207247111721e-09,
+              0.10270000234125619
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_left",
+            "stance": true,
+            "world": [
+              -0.0541,
+              0,
+              -0.1337
+            ],
+            "renderedWorld": [
+              -0.05409999999999999,
+              2.288132232297624e-09,
+              -0.13369999911091462
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_right",
+            "stance": true,
+            "world": [
+              0.052,
+              0,
+              -0.1638
+            ],
+            "renderedWorld": [
+              0.05200000000000003,
+              5.544181114203184e-09,
+              -0.1637999959888947
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          }
+        ],
+        "attention": {
+          "version": "head-attention-04",
+          "enabled": false,
+          "mode": "natural",
+          "appliedDegrees": {
+            "yaw": 0,
+            "pitch": 0
+          },
+          "requestedDegrees": {
+            "yaw": 0,
+            "pitch": 0
+          },
+          "yawLimit": 8,
+          "elapsed": 1.6498999999999981,
+          "eyeControl": false,
+          "mouthControl": false
+        },
+        "blink": {
+          "mode": "hold",
+          "amount": 0.5,
+          "left": 0.5,
+          "right": 0.5,
+          "count": 0,
+          "active": false,
+          "duration": 0.28,
+          "kind": "separate-skinned-eyelids",
+          "baseGeometryUnchanged": true,
+          "baseMorphCount": 0,
+          "addedTriangles": 2976,
+          "addedVertices": 1672,
+          "independentGaze": false,
+          "mouthControl": false
+        }
+      }
+    },
+    "closed": {
+      "ready": true,
+      "version": "cat-v6-face-study",
+      "frames": 134,
+      "mode": "current",
+      "view": "face",
+      "attention": "off",
+      "blinkMode": "closed",
+      "walking": false,
+      "speed": 0,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "geometry": {
+        "meshes": 2,
+        "triangles": 51976,
+        "invalid": 0,
+        "morphTargets": 0
+      },
+      "cat": {
+        "version": "asset-rig-03",
+        "root": [
+          0,
+          0,
+          0
+        ],
+        "gait": {
+          "speed": 0,
+          "phase": 0,
+          "stanceFeet": 4,
+          "maxReachError": 0,
+          "angularSpeed": 0
+        },
+        "bones": 21,
+        "feet": [
+          {
+            "name": "fore_left",
+            "stance": true,
+            "world": [
+              -0.0427,
+              0,
+              0.1127
+            ],
+            "renderedWorld": [
+              -0.04270000000000006,
+              3.2284063686272013e-09,
+              0.11270000209604647
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "fore_right",
+            "stance": true,
+            "world": [
+              0.0422,
+              0,
+              0.1027
+            ],
+            "renderedWorld": [
+              0.04220000000000003,
+              5.156895820090934e-09,
+              0.10270000139124046
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_left",
+            "stance": true,
+            "world": [
+              -0.0541,
+              0,
+              -0.1337
+            ],
+            "renderedWorld": [
+              -0.05409999999999999,
+              2.2595493184840443e-09,
+              -0.13369999910530303
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_right",
+            "stance": true,
+            "world": [
+              0.052,
+              0,
+              -0.1638
+            ],
+            "renderedWorld": [
+              0.05200000000000003,
+              5.5089094119775694e-09,
+              -0.1637999959766018
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          }
+        ],
+        "attention": {
+          "version": "head-attention-04",
+          "enabled": false,
+          "mode": "natural",
+          "appliedDegrees": {
+            "yaw": 0,
+            "pitch": 0
+          },
+          "requestedDegrees": {
+            "yaw": 0,
+            "pitch": 0
+          },
+          "yawLimit": 8,
+          "elapsed": 2.2831999999999986,
+          "eyeControl": false,
+          "mouthControl": false
+        },
+        "blink": {
+          "mode": "closed",
+          "amount": 1,
+          "left": 1,
+          "right": 1,
+          "count": 0,
+          "active": false,
+          "duration": 0.28,
+          "kind": "separate-skinned-eyelids",
+          "baseGeometryUnchanged": true,
+          "baseMorphCount": 0,
+          "addedTriangles": 2976,
+          "addedVertices": 1672,
+          "independentGaze": false,
+          "mouthControl": false
+        }
+      }
+    },
+    "trigger": {
+      "samples": 82,
+      "invalid": 0,
+      "min": 0,
+      "max": 1,
+      "last": 0,
+      "durationMs": 1353.6000000238419,
+      "states": [
+        {
+          "timeMs": 0.7999999761577783,
+          "blink": {
+            "mode": "open",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 0,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 17.399999976158142,
+          "blink": {
+            "mode": "open",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 0,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 317.39999997615814,
+          "blink": {
+            "mode": "open",
+            "amount": 0.000480167999999892,
+            "left": 0,
+            "right": 0.000960335999999784,
+            "count": 0,
+            "active": true,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 650.6999999761583,
+          "blink": {
+            "mode": "open",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 1,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 983.9999999761585,
+          "blink": {
+            "mode": "open",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 1,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 1317.2999999761578,
+          "blink": {
+            "mode": "open",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 1,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        }
+      ]
+    },
+    "auto": {
+      "samples": 483,
+      "invalid": 0,
+      "min": 0,
+      "max": 1,
+      "last": 0,
+      "durationMs": 8045.799999952316,
+      "states": [
+        {
+          "timeMs": 11.299999952316284,
+          "blink": {
+            "mode": "open",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 1,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 27.899999952316648,
+          "blink": {
+            "mode": "open",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 1,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 327.89999995231665,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 1,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 661.1999999523159,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 1,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 994.5999999523165,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 1,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 1327.8999999523166,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 1,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 1661.199999952316,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 1,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 1994.5999999523165,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 1,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 2327.7999999523163,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 1,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 2661.0999999523156,
+          "blink": {
+            "mode": "auto",
+            "amount": 0.07114917647057456,
+            "left": 0.09952242295947908,
+            "right": 0.04277592998167005,
+            "count": 1,
+            "active": true,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 2994.499999952317,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 2,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 3327.7999999523163,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 2,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 3661.0999999523156,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 2,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 3994.3999999523166,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 2,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 4327.799999952316,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 2,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 4661.099999952316,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 2,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 4994.399999952317,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 2,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 5327.799999952316,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 2,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 5660.999999952317,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 2,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 5994.299999952316,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 2,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 6327.699999952316,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 2,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 6660.999999952317,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 2,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 6994.299999952316,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 2,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 7327.699999952316,
+          "blink": {
+            "mode": "auto",
+            "amount": 0.8705940165926,
+            "left": 0.8497070299259339,
+            "right": 0.8914810032592663,
+            "count": 2,
+            "active": true,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 7660.999999952317,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 3,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        },
+        {
+          "timeMs": 7994.299999952316,
+          "blink": {
+            "mode": "auto",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 3,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": true,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false
+          }
+        }
+      ]
+    },
+    "left": {
+      "version": "head-attention-04",
+      "enabled": true,
+      "mode": "manual",
+      "appliedDegrees": {
+        "yaw": -7.901727245621573,
+        "pitch": 0
+      },
+      "requestedDegrees": {
+        "yaw": -8,
+        "pitch": 0
+      },
+      "yawLimit": 8,
+      "elapsed": 14.149399999999938,
+      "eyeControl": false,
+      "mouthControl": false
+    },
+    "right": {
+      "version": "head-attention-04",
+      "enabled": true,
+      "mode": "manual",
+      "appliedDegrees": {
+        "yaw": 7.804371440467867,
+        "pitch": 0
+      },
+      "requestedDegrees": {
+        "yaw": 8,
+        "pitch": 0
+      },
+      "yawLimit": 8,
+      "elapsed": 14.999299999999922,
+      "eyeControl": false,
+      "mouthControl": false
+    },
+    "down": {
+      "version": "head-attention-04",
+      "enabled": true,
+      "mode": "manual",
+      "appliedDegrees": {
+        "yaw": 0.08777590252528353,
+        "pitch": 3.9552003807678693
+      },
+      "requestedDegrees": {
+        "yaw": 0,
+        "pitch": 4
+      },
+      "yawLimit": 8,
+      "elapsed": 15.84939999999991,
+      "eyeControl": false,
+      "mouthControl": false
+    },
+    "previous": {
+      "ready": true,
+      "version": "cat-v6-face-study",
+      "frames": 996,
+      "mode": "previous",
+      "view": "threequarter",
+      "attention": "natural",
+      "blinkMode": "open",
+      "walking": false,
+      "speed": 0,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "geometry": {
+        "meshes": 1,
+        "triangles": 49000,
+        "invalid": 0,
+        "morphTargets": 2
+      },
+      "cat": {
+        "version": "asset-rig-03",
+        "root": [
+          0,
+          0,
+          0
+        ],
+        "gait": {
+          "speed": 0,
+          "phase": 0,
+          "stanceFeet": 4,
+          "maxReachError": 0,
+          "angularSpeed": 0
+        },
+        "bones": 21,
+        "feet": [
+          {
+            "name": "fore_left",
+            "stance": true,
+            "world": [
+              -0.0427,
+              0,
+              0.1127
+            ],
+            "renderedWorld": [
+              -0.04270000000000008,
+              2.6459232652098486e-09,
+              0.11270000306486763
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "fore_right",
+            "stance": true,
+            "world": [
+              0.0422,
+              0,
+              0.1027
+            ],
+            "renderedWorld": [
+              0.04220000000000005,
+              4.508897026578307e-09,
+              0.10270000257694242
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_left",
+            "stance": true,
+            "world": [
+              -0.0541,
+              0,
+              -0.1337
+            ],
+            "renderedWorld": [
+              -0.05409999999999999,
+              2.294536276259418e-09,
+              -0.13369999911224223
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_right",
+            "stance": true,
+            "world": [
+              0.052,
+              0,
+              -0.1638
+            ],
+            "renderedWorld": [
+              0.05200000000000003,
+              5.5520788522223086e-09,
+              -0.16379999599169112
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          }
+        ],
+        "attention": {
+          "version": "head-attention-04",
+          "enabled": true,
+          "mode": "natural",
+          "appliedDegrees": {
+            "yaw": 0,
+            "pitch": 0
+          },
+          "requestedDegrees": {
+            "yaw": 0,
+            "pitch": 4
+          },
+          "yawLimit": 8,
+          "elapsed": 0,
+          "eyeControl": false,
+          "mouthControl": false
+        },
+        "blink": {
+          "mode": "open",
+          "amount": 0,
+          "left": 0,
+          "right": 0,
+          "count": 0,
+          "active": false,
+          "duration": 0.28,
+          "eyelidMorphs": true,
+          "independentGaze": false,
+          "mouthControl": false
+        }
+      }
+    },
+    "walking": {
+      "ready": true,
+      "version": "cat-v6-face-study",
+      "frames": 1165,
+      "mode": "current",
+      "view": "threequarter",
+      "attention": "right",
+      "blinkMode": "auto",
+      "walking": true,
+      "speed": 0.6,
+      "position": [
+        0,
+        0,
+        0.8149600380000014
+      ],
+      "geometry": {
+        "meshes": 2,
+        "triangles": 51976,
+        "invalid": 0,
+        "morphTargets": 0
+      },
+      "cat": {
+        "version": "asset-rig-03",
+        "root": [
+          0,
+          0,
+          0.8149600380000014
+        ],
+        "gait": {
+          "speed": 0.6000000000000022,
+          "phase": 0.1702764441481963,
+          "stanceFeet": 3,
+          "maxReachError": 0,
+          "angularSpeed": 0
+        },
+        "bones": 21,
+        "feet": [
+          {
+            "name": "fore_left",
+            "stance": false,
+            "world": [
+              -0.0427,
+              0.018794354348136873,
+              0.9945132795963398
+            ],
+            "renderedWorld": [
+              -0.04269999991402991,
+              0.018794363863955055,
+              0.9945132633728128
+            ],
+            "groundClearance": 0.018794354348136873,
+            "reachError": 0
+          },
+          {
+            "name": "fore_right",
+            "stance": true,
+            "world": [
+              0.0422,
+              0,
+              0.9326462632574953
+            ],
+            "renderedWorld": [
+              0.04220000002878668,
+              1.2403661313331593e-08,
+              0.9326462528226466
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_left",
+            "stance": true,
+            "world": [
+              -0.0541,
+              0,
+              0.7201465061320179
+            ],
+            "renderedWorld": [
+              -0.054099999999989115,
+              1.939344983215019e-09,
+              0.7201465066526099
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_right",
+            "stance": true,
+            "world": [
+              0.052,
+              0,
+              0.6051461906287905
+            ],
+            "renderedWorld": [
+              0.052000000012499006,
+              4.251601251614723e-09,
+              0.6051461959015297
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          }
+        ],
+        "attention": {
+          "version": "head-attention-04",
+          "enabled": true,
+          "mode": "manual",
+          "appliedDegrees": {
+            "yaw": 3.999829586887691,
+            "pitch": 0
+          },
+          "requestedDegrees": {
+            "yaw": 8,
+            "pitch": 0
+          },
+          "yawLimit": 4,
+          "elapsed": 1.649900000000002,
+          "eyeControl": false,
+          "mouthControl": false
+        },
+        "blink": {
+          "mode": "auto",
+          "amount": 0,
+          "left": 0,
+          "right": 0,
+          "count": 3,
+          "active": false,
+          "duration": 0.28,
+          "kind": "separate-skinned-eyelids",
+          "baseGeometryUnchanged": true,
+          "baseMorphCount": 0,
+          "addedTriangles": 2976,
+          "addedVertices": 1672,
+          "independentGaze": false,
+          "mouthControl": false
+        }
+      }
+    },
+    "video": {
+      "path": "assets/cat-v6-face-final-motion.webm",
+      "bytes": 1095566,
+      "rawPath": "assets/cat-v6-face-final-motion-raw.webm",
+      "prerollRemovedSeconds": 3,
+      "blinkEventsInRaw": [
+        {
+          "action": "left",
+          "timeMs": 3775.2999999523163
+        },
+        {
+          "action": "right",
+          "timeMs": 6141.399999976158
+        },
+        {
+          "action": "down",
+          "timeMs": 8523.600000023842
+        }
+      ],
+      "durationSeconds": 8.083,
+      "decodedFrames": 243,
+      "maximumFrameGapSeconds": 0.05000000000000071,
+      "note": "Real canvas recording. The raw recording is retained; only its initial 3-second capture warmup was removed."
+    },
+    "mobileClosed": {
+      "ready": true,
+      "version": "cat-v6-face-study",
+      "frames": 132,
+      "mode": "current",
+      "view": "face",
+      "attention": "left",
+      "blinkMode": "closed",
+      "walking": false,
+      "speed": 0,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "geometry": {
+        "meshes": 2,
+        "triangles": 51976,
+        "invalid": 0,
+        "morphTargets": 0
+      },
+      "cat": {
+        "version": "asset-rig-03",
+        "root": [
+          0,
+          0,
+          0
+        ],
+        "gait": {
+          "speed": 0,
+          "phase": 0,
+          "stanceFeet": 4,
+          "maxReachError": 0,
+          "angularSpeed": 0
+        },
+        "bones": 21,
+        "feet": [
+          {
+            "name": "fore_left",
+            "stance": true,
+            "world": [
+              -0.0427,
+              0,
+              0.1127
+            ],
+            "renderedWorld": [
+              -0.042700000000000064,
+              3.2023175569606543e-09,
+              0.11270000213826482
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "fore_right",
+            "stance": true,
+            "world": [
+              0.0422,
+              0,
+              0.1027
+            ],
+            "renderedWorld": [
+              0.04220000000000003,
+              5.128433781809161e-09,
+              0.10270000144165865
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_left",
+            "stance": true,
+            "world": [
+              -0.0541,
+              0,
+              -0.1337
+            ],
+            "renderedWorld": [
+              -0.05409999999999999,
+              2.2611799030403112e-09,
+              -0.13369999910560942
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_right",
+            "stance": true,
+            "world": [
+              0.052,
+              0,
+              -0.1638
+            ],
+            "renderedWorld": [
+              0.05200000000000003,
+              5.510922537754759e-09,
+              -0.16379999597729475
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          }
+        ],
+        "attention": {
+          "version": "head-attention-04",
+          "enabled": true,
+          "mode": "manual",
+          "appliedDegrees": {
+            "yaw": -7.998995944979903,
+            "pitch": 0
+          },
+          "requestedDegrees": {
+            "yaw": -8,
+            "pitch": 0
+          },
+          "yawLimit": 8,
+          "elapsed": 2.216537999999998,
+          "eyeControl": false,
+          "mouthControl": false
+        },
+        "blink": {
+          "mode": "closed",
+          "amount": 1,
+          "left": 1,
+          "right": 1,
+          "count": 0,
+          "active": false,
+          "duration": 0.28,
+          "kind": "separate-skinned-eyelids",
+          "baseGeometryUnchanged": true,
+          "baseMorphCount": 0,
+          "addedTriangles": 2976,
+          "addedVertices": 1672,
+          "independentGaze": false,
+          "mouthControl": false
+        }
+      }
+    },
+    "mobileViewport": {
+      "x": 0,
+      "y": 304.390625,
+      "width": 390,
+      "height": 456
+    }
+  },
+  "scope": "Real head controls, 3D lid closure/half/reopening and edge views, walking, V5 comparison and mobile layout. Screenshots still require visual review for plausible anatomy; numerical values alone do not establish a good blink."
+}

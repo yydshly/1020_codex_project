@@ -1,0 +1,913 @@
+{
+  "passed": true,
+  "reports": [
+    {
+      "radius": 0.18,
+      "routeSamples": 12253,
+      "errors": [],
+      "errorCount": 0,
+      "inheritedErrors": [],
+      "doors": [
+        {
+          "id": "near_west_corner/front-door",
+          "secondary": false,
+          "position": {
+            "x": -21.2,
+            "z": -1.1800000000000002
+          },
+          "walkable": true
+        },
+        {
+          "id": "near_west_corner/left-door",
+          "secondary": true,
+          "position": {
+            "x": -25.220000000000002,
+            "z": -4
+          },
+          "walkable": true
+        },
+        {
+          "id": "near_east_corner/front-door",
+          "secondary": false,
+          "position": {
+            "x": 20.6,
+            "z": -1.1800000000000002
+          },
+          "walkable": true
+        },
+        {
+          "id": "near_east_end/front-door",
+          "secondary": false,
+          "position": {
+            "x": 27.4,
+            "z": -1.1800000000000002
+          },
+          "walkable": true
+        },
+        {
+          "id": "near_east_end/right-door",
+          "secondary": true,
+          "position": {
+            "x": 31.32,
+            "z": -4
+          },
+          "walkable": true
+        },
+        {
+          "id": "north_west_01/front-door",
+          "secondary": false,
+          "position": {
+            "x": -27.7,
+            "z": -9.13
+          },
+          "walkable": true
+        },
+        {
+          "id": "north_west_01/left-door",
+          "secondary": true,
+          "position": {
+            "x": -31.32,
+            "z": -12.65
+          },
+          "walkable": true
+        },
+        {
+          "id": "north_west_02/front-door",
+          "secondary": false,
+          "position": {
+            "x": -20.7,
+            "z": -9.13
+          },
+          "walkable": true
+        },
+        {
+          "id": "north_east_01/front-door",
+          "secondary": false,
+          "position": {
+            "x": 20,
+            "z": -9.13
+          },
+          "walkable": true
+        },
+        {
+          "id": "north_east_02/front-door",
+          "secondary": false,
+          "position": {
+            "x": 27.3,
+            "z": -9.13
+          },
+          "walkable": true
+        },
+        {
+          "id": "north_east_02/right-door",
+          "secondary": true,
+          "position": {
+            "x": 31.320000000000004,
+            "z": -12.65
+          },
+          "walkable": true
+        },
+        {
+          "id": "far_west_01/front-door",
+          "secondary": false,
+          "position": {
+            "x": -27.5,
+            "z": 15.78
+          },
+          "walkable": true
+        },
+        {
+          "id": "far_west_01/right-door",
+          "secondary": true,
+          "position": {
+            "x": -31.32,
+            "z": 18.9
+          },
+          "walkable": true
+        },
+        {
+          "id": "far_west_02/front-door",
+          "secondary": false,
+          "position": {
+            "x": -21,
+            "z": 15.78
+          },
+          "walkable": true
+        },
+        {
+          "id": "far_east_01/front-door",
+          "secondary": false,
+          "position": {
+            "x": 19.6,
+            "z": 15.78
+          },
+          "walkable": true
+        },
+        {
+          "id": "far_east_02/front-door",
+          "secondary": false,
+          "position": {
+            "x": 27.1,
+            "z": 15.78
+          },
+          "walkable": true
+        },
+        {
+          "id": "far_east_02/left-door",
+          "secondary": true,
+          "position": {
+            "x": 31.320000000000004,
+            "z": 18.9
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_01/front-door",
+          "secondary": false,
+          "position": {
+            "x": -27.8,
+            "z": 36.73
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_01/right-door",
+          "secondary": true,
+          "position": {
+            "x": -31.320000000000004,
+            "z": 40.15
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_02/front-door",
+          "secondary": false,
+          "position": {
+            "x": -21.4,
+            "z": 36.73
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_03/front-door",
+          "secondary": false,
+          "position": {
+            "x": -7.5,
+            "z": 36.73
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_04/front-door",
+          "secondary": false,
+          "position": {
+            "x": -0.6999999999999996,
+            "z": 36.73
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_05/front-door",
+          "secondary": false,
+          "position": {
+            "x": 20.5,
+            "z": 36.73
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_06/front-door",
+          "secondary": false,
+          "position": {
+            "x": 27.4,
+            "z": 36.73
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_06/left-door",
+          "secondary": true,
+          "position": {
+            "x": 31.32,
+            "z": 40.15
+          },
+          "walkable": true
+        },
+        {
+          "id": "proxy_south_house/front-door",
+          "secondary": false,
+          "position": {
+            "x": -8.7,
+            "z": 32.42
+          },
+          "walkable": true
+        },
+        {
+          "id": "proxy_south_house/right-door",
+          "secondary": true,
+          "position": {
+            "x": -4.279999999999999,
+            "z": 29.3
+          },
+          "walkable": true
+        },
+        {
+          "id": "proxy_south_wing/front-door",
+          "secondary": false,
+          "position": {
+            "x": 0.2,
+            "z": 34.07
+          },
+          "walkable": true
+        },
+        {
+          "id": "proxy_south_wing/left-door",
+          "secondary": true,
+          "position": {
+            "x": -2.9699999999999998,
+            "z": 31.3
+          },
+          "walkable": true
+        },
+        {
+          "id": "proxy_north_range/front-door",
+          "secondary": false,
+          "position": {
+            "x": -2.9999999999999996,
+            "z": -23.470000000000002
+          },
+          "walkable": true
+        },
+        {
+          "id": "proxy_north_wing/front-door",
+          "secondary": false,
+          "position": {
+            "x": 3.2250000000000005,
+            "z": -22.870000000000005
+          },
+          "walkable": true
+        }
+      ],
+      "doorFailures": []
+    },
+    {
+      "radius": 0.24,
+      "routeSamples": 12253,
+      "errors": [],
+      "errorCount": 0,
+      "inheritedErrors": [],
+      "doors": [
+        {
+          "id": "near_west_corner/front-door",
+          "secondary": false,
+          "position": {
+            "x": -21.2,
+            "z": -1.12
+          },
+          "walkable": true
+        },
+        {
+          "id": "near_west_corner/left-door",
+          "secondary": true,
+          "position": {
+            "x": -25.28,
+            "z": -4
+          },
+          "walkable": true
+        },
+        {
+          "id": "near_east_corner/front-door",
+          "secondary": false,
+          "position": {
+            "x": 20.6,
+            "z": -1.12
+          },
+          "walkable": true
+        },
+        {
+          "id": "near_east_end/front-door",
+          "secondary": false,
+          "position": {
+            "x": 27.4,
+            "z": -1.12
+          },
+          "walkable": true
+        },
+        {
+          "id": "near_east_end/right-door",
+          "secondary": true,
+          "position": {
+            "x": 31.38,
+            "z": -4
+          },
+          "walkable": true
+        },
+        {
+          "id": "north_west_01/front-door",
+          "secondary": false,
+          "position": {
+            "x": -27.7,
+            "z": -9.07
+          },
+          "walkable": true
+        },
+        {
+          "id": "north_west_01/left-door",
+          "secondary": true,
+          "position": {
+            "x": -31.38,
+            "z": -12.65
+          },
+          "walkable": true
+        },
+        {
+          "id": "north_west_02/front-door",
+          "secondary": false,
+          "position": {
+            "x": -20.7,
+            "z": -9.07
+          },
+          "walkable": true
+        },
+        {
+          "id": "north_east_01/front-door",
+          "secondary": false,
+          "position": {
+            "x": 20,
+            "z": -9.07
+          },
+          "walkable": true
+        },
+        {
+          "id": "north_east_02/front-door",
+          "secondary": false,
+          "position": {
+            "x": 27.3,
+            "z": -9.07
+          },
+          "walkable": true
+        },
+        {
+          "id": "north_east_02/right-door",
+          "secondary": true,
+          "position": {
+            "x": 31.380000000000003,
+            "z": -12.65
+          },
+          "walkable": true
+        },
+        {
+          "id": "far_west_01/front-door",
+          "secondary": false,
+          "position": {
+            "x": -27.5,
+            "z": 15.719999999999999
+          },
+          "walkable": true
+        },
+        {
+          "id": "far_west_01/right-door",
+          "secondary": true,
+          "position": {
+            "x": -31.38,
+            "z": 18.9
+          },
+          "walkable": true
+        },
+        {
+          "id": "far_west_02/front-door",
+          "secondary": false,
+          "position": {
+            "x": -21,
+            "z": 15.719999999999999
+          },
+          "walkable": true
+        },
+        {
+          "id": "far_east_01/front-door",
+          "secondary": false,
+          "position": {
+            "x": 19.6,
+            "z": 15.719999999999999
+          },
+          "walkable": true
+        },
+        {
+          "id": "far_east_02/front-door",
+          "secondary": false,
+          "position": {
+            "x": 27.1,
+            "z": 15.719999999999999
+          },
+          "walkable": true
+        },
+        {
+          "id": "far_east_02/left-door",
+          "secondary": true,
+          "position": {
+            "x": 31.380000000000003,
+            "z": 18.9
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_01/front-door",
+          "secondary": false,
+          "position": {
+            "x": -27.8,
+            "z": 36.67
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_01/right-door",
+          "secondary": true,
+          "position": {
+            "x": -31.380000000000003,
+            "z": 40.15
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_02/front-door",
+          "secondary": false,
+          "position": {
+            "x": -21.4,
+            "z": 36.67
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_03/front-door",
+          "secondary": false,
+          "position": {
+            "x": -7.5,
+            "z": 36.67
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_04/front-door",
+          "secondary": false,
+          "position": {
+            "x": -0.6999999999999996,
+            "z": 36.67
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_05/front-door",
+          "secondary": false,
+          "position": {
+            "x": 20.5,
+            "z": 36.67
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_06/front-door",
+          "secondary": false,
+          "position": {
+            "x": 27.4,
+            "z": 36.67
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_06/left-door",
+          "secondary": true,
+          "position": {
+            "x": 31.38,
+            "z": 40.15
+          },
+          "walkable": true
+        },
+        {
+          "id": "proxy_south_house/front-door",
+          "secondary": false,
+          "position": {
+            "x": -8.7,
+            "z": 32.48
+          },
+          "walkable": true
+        },
+        {
+          "id": "proxy_south_house/right-door",
+          "secondary": true,
+          "position": {
+            "x": -4.219999999999999,
+            "z": 29.3
+          },
+          "walkable": true
+        },
+        {
+          "id": "proxy_south_wing/front-door",
+          "secondary": false,
+          "position": {
+            "x": 0.2,
+            "z": 34.129999999999995
+          },
+          "walkable": true
+        },
+        {
+          "id": "proxy_south_wing/left-door",
+          "secondary": true,
+          "position": {
+            "x": -3.03,
+            "z": 31.3
+          },
+          "walkable": true
+        },
+        {
+          "id": "proxy_north_range/front-door",
+          "secondary": false,
+          "position": {
+            "x": -2.9999999999999996,
+            "z": -23.53
+          },
+          "walkable": true
+        },
+        {
+          "id": "proxy_north_wing/front-door",
+          "secondary": false,
+          "position": {
+            "x": 3.2250000000000005,
+            "z": -22.930000000000003
+          },
+          "walkable": true
+        }
+      ],
+      "doorFailures": []
+    },
+    {
+      "radius": 0.3,
+      "routeSamples": 12253,
+      "errors": [],
+      "errorCount": 0,
+      "inheritedErrors": [
+        {
+          "name": "both_banks_loop",
+          "segment": 3,
+          "position": {
+            "x": 8.080962800875273,
+            "z": 12.65
+          }
+        },
+        {
+          "name": "both_banks_loop",
+          "segment": 3,
+          "position": {
+            "x": 8.021006564551422,
+            "z": 12.65
+          }
+        },
+        {
+          "name": "both_banks_loop",
+          "segment": 3,
+          "position": {
+            "x": 7.9610503282275715,
+            "z": 12.65
+          }
+        },
+        {
+          "name": "both_banks_loop",
+          "segment": 3,
+          "position": {
+            "x": 7.901094091903721,
+            "z": 12.65
+          }
+        },
+        {
+          "name": "both_banks_loop",
+          "segment": 3,
+          "position": {
+            "x": 7.841137855579869,
+            "z": 12.65
+          }
+        }
+      ],
+      "doors": [
+        {
+          "id": "near_west_corner/front-door",
+          "secondary": false,
+          "position": {
+            "x": -21.2,
+            "z": -1.06
+          },
+          "walkable": true
+        },
+        {
+          "id": "near_west_corner/left-door",
+          "secondary": true,
+          "position": {
+            "x": -25.34,
+            "z": -4
+          },
+          "walkable": true
+        },
+        {
+          "id": "near_east_corner/front-door",
+          "secondary": false,
+          "position": {
+            "x": 20.6,
+            "z": -1.06
+          },
+          "walkable": true
+        },
+        {
+          "id": "near_east_end/front-door",
+          "secondary": false,
+          "position": {
+            "x": 27.4,
+            "z": -1.06
+          },
+          "walkable": true
+        },
+        {
+          "id": "near_east_end/right-door",
+          "secondary": true,
+          "position": {
+            "x": 31.439999999999998,
+            "z": -4
+          },
+          "walkable": true
+        },
+        {
+          "id": "north_west_01/front-door",
+          "secondary": false,
+          "position": {
+            "x": -27.7,
+            "z": -9.010000000000002
+          },
+          "walkable": true
+        },
+        {
+          "id": "north_west_01/left-door",
+          "secondary": true,
+          "position": {
+            "x": -31.439999999999998,
+            "z": -12.65
+          },
+          "walkable": true
+        },
+        {
+          "id": "north_west_02/front-door",
+          "secondary": false,
+          "position": {
+            "x": -20.7,
+            "z": -9.010000000000002
+          },
+          "walkable": true
+        },
+        {
+          "id": "north_east_01/front-door",
+          "secondary": false,
+          "position": {
+            "x": 20,
+            "z": -9.010000000000002
+          },
+          "walkable": true
+        },
+        {
+          "id": "north_east_02/front-door",
+          "secondary": false,
+          "position": {
+            "x": 27.3,
+            "z": -9.010000000000002
+          },
+          "walkable": true
+        },
+        {
+          "id": "north_east_02/right-door",
+          "secondary": true,
+          "position": {
+            "x": 31.44,
+            "z": -12.65
+          },
+          "walkable": true
+        },
+        {
+          "id": "far_west_01/front-door",
+          "secondary": false,
+          "position": {
+            "x": -27.5,
+            "z": 15.66
+          },
+          "walkable": true
+        },
+        {
+          "id": "far_west_01/right-door",
+          "secondary": true,
+          "position": {
+            "x": -31.439999999999998,
+            "z": 18.9
+          },
+          "walkable": true
+        },
+        {
+          "id": "far_west_02/front-door",
+          "secondary": false,
+          "position": {
+            "x": -21,
+            "z": 15.66
+          },
+          "walkable": true
+        },
+        {
+          "id": "far_east_01/front-door",
+          "secondary": false,
+          "position": {
+            "x": 19.6,
+            "z": 15.66
+          },
+          "walkable": true
+        },
+        {
+          "id": "far_east_02/front-door",
+          "secondary": false,
+          "position": {
+            "x": 27.1,
+            "z": 15.66
+          },
+          "walkable": true
+        },
+        {
+          "id": "far_east_02/left-door",
+          "secondary": true,
+          "position": {
+            "x": 31.44,
+            "z": 18.9
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_01/front-door",
+          "secondary": false,
+          "position": {
+            "x": -27.8,
+            "z": 36.61
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_01/right-door",
+          "secondary": true,
+          "position": {
+            "x": -31.44,
+            "z": 40.15
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_02/front-door",
+          "secondary": false,
+          "position": {
+            "x": -21.4,
+            "z": 36.61
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_03/front-door",
+          "secondary": false,
+          "position": {
+            "x": -7.5,
+            "z": 36.61
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_04/front-door",
+          "secondary": false,
+          "position": {
+            "x": -0.6999999999999996,
+            "z": 36.61
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_05/front-door",
+          "secondary": false,
+          "position": {
+            "x": 20.5,
+            "z": 36.61
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_06/front-door",
+          "secondary": false,
+          "position": {
+            "x": 27.4,
+            "z": 36.61
+          },
+          "walkable": true
+        },
+        {
+          "id": "south_06/left-door",
+          "secondary": true,
+          "position": {
+            "x": 31.439999999999998,
+            "z": 40.15
+          },
+          "walkable": true
+        },
+        {
+          "id": "proxy_south_house/front-door",
+          "secondary": false,
+          "position": {
+            "x": -8.7,
+            "z": 32.54
+          },
+          "walkable": true
+        },
+        {
+          "id": "proxy_south_house/right-door",
+          "secondary": true,
+          "position": {
+            "x": -4.159999999999999,
+            "z": 29.3
+          },
+          "walkable": true
+        },
+        {
+          "id": "proxy_south_wing/front-door",
+          "secondary": false,
+          "position": {
+            "x": 0.2,
+            "z": 34.19
+          },
+          "walkable": true
+        },
+        {
+          "id": "proxy_south_wing/left-door",
+          "secondary": true,
+          "position": {
+            "x": -3.09,
+            "z": 31.3
+          },
+          "walkable": true
+        },
+        {
+          "id": "proxy_north_range/front-door",
+          "secondary": false,
+          "position": {
+            "x": -2.9999999999999996,
+            "z": -23.59
+          },
+          "walkable": true
+        },
+        {
+          "id": "proxy_north_wing/front-door",
+          "secondary": false,
+          "position": {
+            "x": 3.2250000000000005,
+            "z": -22.990000000000002
+          },
+          "walkable": true
+        }
+      ],
+      "doorFailures": []
+    }
+  ]
+}

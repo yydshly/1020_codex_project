@@ -1,0 +1,4763 @@
+{
+  "scope": "Final shader-only repair; geometry/support/navigation-volume and all-old-file results are reused from the accepted r2 report, with current geometry metadata and shared source inputs independently checked.",
+  "checkedUTC": "2026-10-25T03:36:26.173Z",
+  "passed": true,
+  "checks": {
+    "unchangedSPACE10SourceMatchesManifestAndAcceptedAudit": true,
+    "everyInheritedBufferUVIndexTransformRemainsUnchanged": true,
+    "everyInheritedMaterialObjectRemainsUnmodified": true,
+    "allInheritedVisibilityShadowAndCasterSettingsUnchanged": true,
+    "inheritedLightsFogSkyExposureAndEnvironmentUnchanged": true,
+    "newMeshNamesAreSPACE11Only": true,
+    "newGeometryWithin60000TrianglesAndFiveDrawCalls": true,
+    "actualGeometryCountsAgreeWithMetadataWithoutExtraShadowCasters": true,
+    "newActualGeometryWithinApprovedBlenderXYEnvelope": true,
+    "materialChangesRestrictedToTwoExistingEarthBatches": true,
+    "everyEarthShaderRetainsPriorCallbacksAndUniforms": true,
+    "existingGroundShadowReceiverCorrectionPreservedExactly": true,
+    "developedInteriorColourRoughnessAndExtraShadowBiasExactlyUnchanged": true,
+    "actualReceiverPlaneHelperCorrectAtBothResolutionsAndBoundedWithDegenerateInputs": true,
+    "alreadyAcceptedGeometryMetadataAndBudgetUnchanged": true,
+    "reapplicationIsIdempotent": true,
+    "borrowedLeafCardGeometryAndAlphaRemainOwnedByInheritedLayer": true,
+    "noNewTextureAllocation": true,
+    "newLayerUpdatePreservesInheritedAnimatedLightsAndWorld": true,
+    "updatesKeepAllInheritedGeometryAndNavigationUnchanged": true,
+    "updatesKeepNewGeometryAndInstancePlacementsStable": true,
+    "disposeRestoresEveryInheritedMaterialReference": true,
+    "disposeRestoresEveryInheritedVisibilityAndShadowFlag": true,
+    "disposeRemovesOnly11OwnedMeshesAndNoInheritedLights": true,
+    "disposeDoesNotReleaseAnyBorrowedGeometryMaterialTexture": true,
+    "baseDisposeCalledExactlyOnce": true,
+    "ownedResourcesDisposedExactlyOnce": true,
+    "prior1391PassReferencedAndAllSharedCurrentInputsStillUnchanged": true,
+    "controllerUsesExisting10ModelAndNavigation": true
+  },
+  "evidence": {
+    "strictDevelopedMask": {
+      "passed": true,
+      "developedBounds": [
+        -36,
+        -44,
+        36,
+        26.5
+      ],
+      "rows": [
+        {
+          "mesh": "ROAM01_Surface__soil",
+          "uniform": [
+            -36,
+            -44,
+            36,
+            26.5
+          ],
+          "actualExpressions": {
+            "q": "abs(s11P-(s11Developed.xy+s11Developed.zw)*.5)-(s11Developed.zw-s11Developed.xy)*.5",
+            "s11Outside": "length(max(q,vec2(0.)))+min(max(q.x,q.y),0.)",
+            "s11OutsideMask": "smoothstep(0.,2.8,s11Outside)",
+            "s11Band": "s11OutsideMask*smoothstep(.65,4.0,s11Outside+(s11Patch-.5)*2.4)",
+            "s11Envelope": "smoothstep(-68.,-63.,s11P.x)*(1.-smoothstep(63.,68.,s11P.x))\n          *smoothstep(-75.,-70.,s11P.y)*(1.-smoothstep(57.,62.,s11P.y))"
+          },
+          "interiorSamples": 14433,
+          "maximumInteriorChange": 0,
+          "failures": 0,
+          "fragmentOnly": true,
+          "exactAllowedDirectionalChunk": true,
+          "passed": true
+        },
+        {
+          "mesh": "ROAM01_Surface__EXT_B02_DampMineralGround",
+          "uniform": [
+            -36,
+            -44,
+            36,
+            26.5
+          ],
+          "actualExpressions": {
+            "q": "abs(s11P-(s11Developed.xy+s11Developed.zw)*.5)-(s11Developed.zw-s11Developed.xy)*.5",
+            "s11Outside": "length(max(q,vec2(0.)))+min(max(q.x,q.y),0.)",
+            "s11OutsideMask": "smoothstep(0.,2.8,s11Outside)",
+            "s11Band": "s11OutsideMask*smoothstep(.65,4.0,s11Outside+(s11Patch-.5)*2.4)",
+            "s11Envelope": "smoothstep(-68.,-63.,s11P.x)*(1.-smoothstep(63.,68.,s11P.x))\n          *smoothstep(-75.,-70.,s11P.y)*(1.-smoothstep(57.,62.,s11P.y))"
+          },
+          "interiorSamples": 14433,
+          "maximumInteriorChange": 0,
+          "failures": 0,
+          "fragmentOnly": true,
+          "exactAllowedDirectionalChunk": true,
+          "passed": true
+        }
+      ],
+      "method": "Small independent GLSL-expression evaluator executes the emitted mask and all four output writes at developed-grid/boundary and actual terrain-vertex fragments, across arbitrary noise extrema; also verifies the expanded Three directional-shadow chunk differs only by the approved local bias."
+    },
+    "receiverPlaneNumerics": {
+      "passed": true,
+      "records": [
+        {
+          "mesh": "ROAM01_Surface__soil",
+          "actualExpressions": {
+            "projected": "coordinate.xyz/max(abs(coordinate.w),.000001)",
+            "determinant": "dx.x*dy.y-dx.y*dy.x",
+            "gradient": "vec2(dx.z*dy.y-dy.z*dx.y,dy.z*dx.x-dx.z*dy.x)/det",
+            "required": [
+              ".00070*(1024./max(mapSize.x,1.))",
+              "2.*dot(abs(gradient),1./max(mapSize,vec2(1.)))"
+            ],
+            "result": "clamp(required-.00020,0.,.00120)",
+            "guard": 1e-12
+          },
+          "realSlopeSamples": [
+            {
+              "xy": [
+                -25,
+                32
+              ],
+              "resolution": 1024,
+              "value": 0.0007832347707281896,
+              "required": 0.0009832347707281895,
+              "det": 0.00514334206346456,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false,
+              "expectedRequired": 0.0009832347707281895,
+              "expectedExtra": 0.0007832347707281896,
+              "passed": true
+            },
+            {
+              "xy": [
+                -25,
+                32
+              ],
+              "resolution": 2048,
+              "value": 0.0002916173853640948,
+              "required": 0.0004916173853640948,
+              "det": 0.00514334206346456,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false,
+              "expectedRequired": 0.0004916173853640948,
+              "expectedExtra": 0.0002916173853640948,
+              "passed": true
+            },
+            {
+              "xy": [
+                -27,
+                34
+              ],
+              "resolution": 1024,
+              "value": 0.0007943972812722637,
+              "required": 0.0009943972812722637,
+              "det": 0.0035989152634596944,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false,
+              "expectedRequired": 0.0009943972812722637,
+              "expectedExtra": 0.0007943972812722637,
+              "passed": true
+            },
+            {
+              "xy": [
+                -27,
+                34
+              ],
+              "resolution": 2048,
+              "value": 0.00029719864063613185,
+              "required": 0.0004971986406361318,
+              "det": 0.0035989152634596944,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false,
+              "expectedRequired": 0.0004971986406361318,
+              "expectedExtra": 0.00029719864063613185,
+              "passed": true
+            },
+            {
+              "xy": [
+                -29,
+                36
+              ],
+              "resolution": 1024,
+              "value": 0.0007921775152517516,
+              "required": 0.0009921775152517515,
+              "det": 0.003576291593728218,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false,
+              "expectedRequired": 0.0009921775152517515,
+              "expectedExtra": 0.0007921775152517516,
+              "passed": true
+            },
+            {
+              "xy": [
+                -29,
+                36
+              ],
+              "resolution": 2048,
+              "value": 0.0002960887576258758,
+              "required": 0.0004960887576258758,
+              "det": 0.003576291593728218,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false,
+              "expectedRequired": 0.0004960887576258758,
+              "expectedExtra": 0.0002960887576258758,
+              "passed": true
+            },
+            {
+              "xy": [
+                -22.4047,
+                31.3078
+              ],
+              "resolution": 1024,
+              "value": 0.0008473929455388194,
+              "required": 0.0010473929455388194,
+              "det": 0.005106312958677537,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false,
+              "expectedRequired": 0.0010473929455388194,
+              "expectedExtra": 0.0008473929455388194,
+              "passed": true
+            },
+            {
+              "xy": [
+                -22.4047,
+                31.3078
+              ],
+              "resolution": 2048,
+              "value": 0.0003236964727694097,
+              "required": 0.0005236964727694097,
+              "det": 0.005106312958677537,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false,
+              "expectedRequired": 0.0005236964727694097,
+              "expectedExtra": 0.0003236964727694097,
+              "passed": true
+            },
+            {
+              "xy": [
+                -25.4551,
+                35.5377
+              ],
+              "resolution": 1024,
+              "value": 0.0008584469676787509,
+              "required": 0.001058446967678751,
+              "det": 0.0015118744101229559,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false,
+              "expectedRequired": 0.001058446967678751,
+              "expectedExtra": 0.0008584469676787509,
+              "passed": true
+            },
+            {
+              "xy": [
+                -25.4551,
+                35.5377
+              ],
+              "resolution": 2048,
+              "value": 0.0003292234838393755,
+              "required": 0.0005292234838393755,
+              "det": 0.0015118744101229559,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false,
+              "expectedRequired": 0.0005292234838393755,
+              "expectedExtra": 0.0003292234838393755,
+              "passed": true
+            }
+          ],
+          "stress": [
+            {
+              "name": "zero derivatives",
+              "resolution": 1024,
+              "value": 0.0005,
+              "required": 0.0007,
+              "det": 0,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": true
+            },
+            {
+              "name": "zero derivatives",
+              "resolution": 2048,
+              "value": 0.00015,
+              "required": 0.00035,
+              "det": 0,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": true
+            },
+            {
+              "name": "near singular",
+              "resolution": 1024,
+              "value": 0.0005,
+              "required": 0.0007,
+              "det": 9.992007221626409e-15,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": true
+            },
+            {
+              "name": "near singular",
+              "resolution": 2048,
+              "value": 0.00015,
+              "required": 0.00035,
+              "det": 9.992007221626409e-15,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": true
+            },
+            {
+              "name": "steep clamped",
+              "resolution": 1024,
+              "value": 0.0012,
+              "required": 39062.49999999999,
+              "det": 1.0000000000000002e-10,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false
+            },
+            {
+              "name": "steep clamped",
+              "resolution": 2048,
+              "value": 0.0012,
+              "required": 19531.249999999996,
+              "det": 1.0000000000000002e-10,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false
+            },
+            {
+              "name": "negative determinant",
+              "resolution": 1024,
+              "value": 0.0012,
+              "required": 1.3671875000000002,
+              "det": -1e-06,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false
+            },
+            {
+              "name": "negative determinant",
+              "resolution": 2048,
+              "value": 0.0012,
+              "required": 0.6835937500000001,
+              "det": -1e-06,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false
+            }
+          ],
+          "zeroW": {
+            "value": 0.0012,
+            "required": 1.3671875000000002,
+            "det": 1e-06,
+            "p": [
+              1000000,
+              2000000,
+              3000000
+            ],
+            "usedFallback": false
+          },
+          "passed": true
+        },
+        {
+          "mesh": "ROAM01_Surface__EXT_B02_DampMineralGround",
+          "actualExpressions": {
+            "projected": "coordinate.xyz/max(abs(coordinate.w),.000001)",
+            "determinant": "dx.x*dy.y-dx.y*dy.x",
+            "gradient": "vec2(dx.z*dy.y-dy.z*dx.y,dy.z*dx.x-dx.z*dy.x)/det",
+            "required": [
+              ".00070*(1024./max(mapSize.x,1.))",
+              "2.*dot(abs(gradient),1./max(mapSize,vec2(1.)))"
+            ],
+            "result": "clamp(required-.00020,0.,.00120)",
+            "guard": 1e-12
+          },
+          "realSlopeSamples": [
+            {
+              "xy": [
+                -25,
+                32
+              ],
+              "resolution": 1024,
+              "value": 0.0007832347707281896,
+              "required": 0.0009832347707281895,
+              "det": 0.00514334206346456,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false,
+              "expectedRequired": 0.0009832347707281895,
+              "expectedExtra": 0.0007832347707281896,
+              "passed": true
+            },
+            {
+              "xy": [
+                -25,
+                32
+              ],
+              "resolution": 2048,
+              "value": 0.0002916173853640948,
+              "required": 0.0004916173853640948,
+              "det": 0.00514334206346456,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false,
+              "expectedRequired": 0.0004916173853640948,
+              "expectedExtra": 0.0002916173853640948,
+              "passed": true
+            },
+            {
+              "xy": [
+                -27,
+                34
+              ],
+              "resolution": 1024,
+              "value": 0.0007943972812722637,
+              "required": 0.0009943972812722637,
+              "det": 0.0035989152634596944,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false,
+              "expectedRequired": 0.0009943972812722637,
+              "expectedExtra": 0.0007943972812722637,
+              "passed": true
+            },
+            {
+              "xy": [
+                -27,
+                34
+              ],
+              "resolution": 2048,
+              "value": 0.00029719864063613185,
+              "required": 0.0004971986406361318,
+              "det": 0.0035989152634596944,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false,
+              "expectedRequired": 0.0004971986406361318,
+              "expectedExtra": 0.00029719864063613185,
+              "passed": true
+            },
+            {
+              "xy": [
+                -29,
+                36
+              ],
+              "resolution": 1024,
+              "value": 0.0007921775152517516,
+              "required": 0.0009921775152517515,
+              "det": 0.003576291593728218,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false,
+              "expectedRequired": 0.0009921775152517515,
+              "expectedExtra": 0.0007921775152517516,
+              "passed": true
+            },
+            {
+              "xy": [
+                -29,
+                36
+              ],
+              "resolution": 2048,
+              "value": 0.0002960887576258758,
+              "required": 0.0004960887576258758,
+              "det": 0.003576291593728218,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false,
+              "expectedRequired": 0.0004960887576258758,
+              "expectedExtra": 0.0002960887576258758,
+              "passed": true
+            },
+            {
+              "xy": [
+                -22.4047,
+                31.3078
+              ],
+              "resolution": 1024,
+              "value": 0.0008473929455388194,
+              "required": 0.0010473929455388194,
+              "det": 0.005106312958677537,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false,
+              "expectedRequired": 0.0010473929455388194,
+              "expectedExtra": 0.0008473929455388194,
+              "passed": true
+            },
+            {
+              "xy": [
+                -22.4047,
+                31.3078
+              ],
+              "resolution": 2048,
+              "value": 0.0003236964727694097,
+              "required": 0.0005236964727694097,
+              "det": 0.005106312958677537,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false,
+              "expectedRequired": 0.0005236964727694097,
+              "expectedExtra": 0.0003236964727694097,
+              "passed": true
+            },
+            {
+              "xy": [
+                -25.4551,
+                35.5377
+              ],
+              "resolution": 1024,
+              "value": 0.0008584469676787509,
+              "required": 0.001058446967678751,
+              "det": 0.0015118744101229559,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false,
+              "expectedRequired": 0.001058446967678751,
+              "expectedExtra": 0.0008584469676787509,
+              "passed": true
+            },
+            {
+              "xy": [
+                -25.4551,
+                35.5377
+              ],
+              "resolution": 2048,
+              "value": 0.0003292234838393755,
+              "required": 0.0005292234838393755,
+              "det": 0.0015118744101229559,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false,
+              "expectedRequired": 0.0005292234838393755,
+              "expectedExtra": 0.0003292234838393755,
+              "passed": true
+            }
+          ],
+          "stress": [
+            {
+              "name": "zero derivatives",
+              "resolution": 1024,
+              "value": 0.0005,
+              "required": 0.0007,
+              "det": 0,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": true
+            },
+            {
+              "name": "zero derivatives",
+              "resolution": 2048,
+              "value": 0.00015,
+              "required": 0.00035,
+              "det": 0,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": true
+            },
+            {
+              "name": "near singular",
+              "resolution": 1024,
+              "value": 0.0005,
+              "required": 0.0007,
+              "det": 9.992007221626409e-15,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": true
+            },
+            {
+              "name": "near singular",
+              "resolution": 2048,
+              "value": 0.00015,
+              "required": 0.00035,
+              "det": 9.992007221626409e-15,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": true
+            },
+            {
+              "name": "steep clamped",
+              "resolution": 1024,
+              "value": 0.0012,
+              "required": 39062.49999999999,
+              "det": 1.0000000000000002e-10,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false
+            },
+            {
+              "name": "steep clamped",
+              "resolution": 2048,
+              "value": 0.0012,
+              "required": 19531.249999999996,
+              "det": 1.0000000000000002e-10,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false
+            },
+            {
+              "name": "negative determinant",
+              "resolution": 1024,
+              "value": 0.0012,
+              "required": 1.3671875000000002,
+              "det": -1e-06,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false
+            },
+            {
+              "name": "negative determinant",
+              "resolution": 2048,
+              "value": 0.0012,
+              "required": 0.6835937500000001,
+              "det": -1e-06,
+              "p": [
+                0.1,
+                0.2,
+                0.3
+              ],
+              "usedFallback": false
+            }
+          ],
+          "zeroW": {
+            "value": 0.0012,
+            "required": 1.3671875000000002,
+            "det": 1e-06,
+            "p": [
+              1000000,
+              2000000,
+              3000000
+            ],
+            "usedFallback": false
+          },
+          "passed": true
+        }
+      ],
+      "method": "Actual GLSL helper expressions evaluated independently against exact foreground GLB triangle coordinates projected by the inherited directional-light shadow matrix, at 1024/2048; zero/near-singular Jacobian, steep slope, negative determinant and zero-w guards also exercised."
+    },
+    "reusedGeometryAudit": "artifacts/scene-space-11/runtime-validation-final-r2.json",
+    "metadata": {
+      "version": "space-11-bounded-river-and-meadow-edge",
+      "envelopeBlenderXY": [
+        -68,
+        -75,
+        68,
+        62
+      ],
+      "physicalBoundsThreeXYZ": {
+        "min": [
+          -66.49677884951234,
+          0.18579481542110443,
+          -52.26634469628334
+        ],
+        "max": [
+          65.33858591504395,
+          10.58457039296627,
+          71.65351665019989
+        ]
+      },
+      "treeCount": 20,
+      "trees": [
+        {
+          "id": "space11-tree-01",
+          "group": "northwest",
+          "x": -42,
+          "blender_y": 38,
+          "height": 7.2,
+          "prototypeId": "space06-tree-10",
+          "baseWorld": [
+            -42,
+            1.2923437063063048,
+            -38
+          ],
+          "support": {
+            "blender": [
+              -42,
+              38,
+              1.2923437063063048
+            ],
+            "normalThree": [
+              0.03730718178281337,
+              0.9979241453458563,
+              0.05249356458811517
+            ],
+            "bankDistance": 36.6784072053735,
+            "roadGap": 13.855414104240984,
+            "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+          },
+          "scale": [
+            1.3403485389951497,
+            1.1612903225806452,
+            1.3636164908510064
+          ],
+          "angle": 0.34209085709160403,
+          "branchVertexRange": {
+            "start": 0,
+            "count": 2928
+          },
+          "canopyWidthMultiplier": 1.2,
+          "originalLeafInstances": 430,
+          "additionalLeafInstances": 151,
+          "leafInstanceRange": {
+            "start": 0,
+            "count": 581
+          },
+          "leafBounds": {
+            "min": [
+              -45.35744707335986,
+              5.899982224962759,
+              -41.14556858100423
+            ],
+            "max": [
+              -39.06591093928928,
+              8.341954646985732,
+              -34.852897135080504
+            ]
+          },
+          "branchBounds": {
+            "min": [
+              -44.62557601928711,
+              1.2582440376281738,
+              -40.34347152709961
+            ],
+            "max": [
+              -39.650028228759766,
+              7.844936370849609,
+              -35.148529052734375
+            ]
+          }
+        },
+        {
+          "id": "space11-tree-02",
+          "group": "northwest",
+          "x": -36,
+          "blender_y": 37,
+          "height": 6.6,
+          "prototypeId": "space06-tree-17",
+          "baseWorld": [
+            -36,
+            1.1999148804099917,
+            -37
+          ],
+          "support": {
+            "blender": [
+              -36,
+              37,
+              1.1999148804099917
+            ],
+            "normalThree": [
+              -0.0005729466078143723,
+              0.9980888444950375,
+              0.06179263893657246
+            ],
+            "bankDistance": 37.237487555465094,
+            "roadGap": 10.755115062146011,
+            "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+          },
+          "scale": [
+            1.185499155015335,
+            1.0312499999999998,
+            1.1242666737744
+          ],
+          "angle": 3.32931564594307,
+          "branchVertexRange": {
+            "start": 2928,
+            "count": 2928
+          },
+          "canopyWidthMultiplier": 1.2,
+          "originalLeafInstances": 448,
+          "additionalLeafInstances": 157,
+          "leafInstanceRange": {
+            "start": 581,
+            "count": 605
+          },
+          "leafBounds": {
+            "min": [
+              -38.82821192459211,
+              5.638407394370218,
+              -39.81530849897269
+            ],
+            "max": [
+              -33.296959096601164,
+              7.820387604726632,
+              -34.11001780971138
+            ]
+          },
+          "branchBounds": {
+            "min": [
+              -38.13573455810547,
+              1.1696336269378662,
+              -39.23666000366211
+            ],
+            "max": [
+              -33.80434036254883,
+              7.208343505859375,
+              -34.77522277832031
+            ]
+          }
+        },
+        {
+          "id": "space11-tree-03",
+          "group": "northwest",
+          "x": -39,
+          "blender_y": 43,
+          "height": 6.5,
+          "prototypeId": "space06-tree-22",
+          "baseWorld": [
+            -39,
+            1.5321317254609426,
+            -43
+          ],
+          "support": {
+            "blender": [
+              -39,
+              43,
+              1.5321317254609426
+            ],
+            "normalThree": [
+              -0.015024803411418722,
+              0.9982474221038384,
+              0.0572393181780617
+            ],
+            "bankDistance": 42.36514497862813,
+            "roadGap": 17.24739110706312,
+            "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+          },
+          "scale": [
+            1.1259671962787978,
+            1.015625,
+            1.0760698637979658
+          ],
+          "angle": 2.6730591873017016,
+          "branchVertexRange": {
+            "start": 5856,
+            "count": 2928
+          },
+          "canopyWidthMultiplier": 1.2,
+          "originalLeafInstances": 448,
+          "additionalLeafInstances": 157,
+          "leafInstanceRange": {
+            "start": 1186,
+            "count": 605
+          },
+          "leafBounds": {
+            "min": [
+              -41.695878672605694,
+              5.892411054582055,
+              -45.558095294547826
+            ],
+            "max": [
+              -36.33316453338597,
+              7.9431086351440285,
+              -40.723182879238685
+            ]
+          },
+          "branchBounds": {
+            "min": [
+              -40.93909454345703,
+              1.5023093223571777,
+              -45.058509826660156
+            ],
+            "max": [
+              -36.79689025878906,
+              7.447930812835693,
+              -41.192779541015625
+            ]
+          }
+        },
+        {
+          "id": "space11-tree-04",
+          "group": "northwest",
+          "x": -33,
+          "blender_y": 46,
+          "height": 7.6,
+          "prototypeId": "space06-tree-10",
+          "baseWorld": [
+            -33,
+            1.8125902813532235,
+            -46
+          ],
+          "support": {
+            "blender": [
+              -33,
+              46,
+              1.8125902813532235
+            ],
+            "normalThree": [
+              -0.028868886364964992,
+              0.9975536571954742,
+              0.06366544130045042
+            ],
+            "bankDistance": 47.072709171585586,
+            "roadGap": 19.65,
+            "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+          },
+          "scale": [
+            1.387522214454869,
+            1.225806451612903,
+            1.4393551388483852
+          ],
+          "angle": 1.0735952223160339,
+          "branchVertexRange": {
+            "start": 8784,
+            "count": 2928
+          },
+          "canopyWidthMultiplier": 1.2,
+          "originalLeafInstances": 430,
+          "additionalLeafInstances": 151,
+          "leafInstanceRange": {
+            "start": 1791,
+            "count": 581
+          },
+          "leafBounds": {
+            "min": [
+              -36.11746434378653,
+              6.676208717712813,
+              -49.729931393048915
+            ],
+            "max": [
+              -29.984107370255582,
+              9.253846274292616,
+              -42.744284930257905
+            ]
+          },
+          "branchBounds": {
+            "min": [
+              -35.42036056518555,
+              1.776596188545227,
+              -48.77672576904297
+            ],
+            "max": [
+              -30.55965805053711,
+              8.729215621948242,
+              -43.50223159790039
+            ]
+          }
+        },
+        {
+          "id": "space11-tree-05",
+          "group": "northwest",
+          "x": -43,
+          "blender_y": 48,
+          "height": 7.1,
+          "prototypeId": "space06-tree-17",
+          "baseWorld": [
+            -43,
+            1.7845239428686455,
+            -48
+          ],
+          "support": {
+            "blender": [
+              -43,
+              48,
+              1.7845239428686455
+            ],
+            "normalThree": [
+              -0.009356009348337387,
+              0.9988377018982079,
+              0.04728329890966415
+            ],
+            "bankDistance": 46.529235937309174,
+            "roadGap": 23.25881553304037,
+            "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+          },
+          "scale": [
+            1.1947692710808475,
+            1.1093749999999998,
+            1.2790561634898474
+          ],
+          "angle": 3.531129610064738,
+          "branchVertexRange": {
+            "start": 11712,
+            "count": 2928
+          },
+          "canopyWidthMultiplier": 1.2,
+          "originalLeafInstances": 448,
+          "additionalLeafInstances": 157,
+          "leafInstanceRange": {
+            "start": 2372,
+            "count": 605
+          },
+          "leafBounds": {
+            "min": [
+              -45.93196133492127,
+              6.559265889704647,
+              -51.10581078404413
+            ],
+            "max": [
+              -40.43779735947817,
+              8.906547631148667,
+              -44.617118235146755
+            ]
+          },
+          "branchBounds": {
+            "min": [
+              -45.26203918457031,
+              1.7519487142562866,
+              -50.48005294799805
+            ],
+            "max": [
+              -40.86338424682617,
+              8.248136520385742,
+              -45.38311767578125
+            ]
+          }
+        },
+        {
+          "id": "space11-tree-06",
+          "group": "northeast",
+          "x": 31,
+          "blender_y": 38,
+          "height": 6.8,
+          "prototypeId": "space06-tree-22",
+          "baseWorld": [
+            31,
+            2.0919909484394665,
+            -38
+          ],
+          "support": {
+            "blender": [
+              31,
+              38,
+              2.0919909484394665
+            ],
+            "normalThree": [
+              -0.0016957716757928815,
+              0.9916694234170553,
+              0.12879782225685568
+            ],
+            "bankDistance": 40.927603401920436,
+            "roadGap": 11.649999999999999,
+            "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+          },
+          "scale": [
+            1.214490641137061,
+            1.0625,
+            1.2024518954204977
+          ],
+          "angle": 5.977304955338014,
+          "branchVertexRange": {
+            "start": 14640,
+            "count": 2928
+          },
+          "canopyWidthMultiplier": 1.2,
+          "originalLeafInstances": 448,
+          "additionalLeafInstances": 157,
+          "leafInstanceRange": {
+            "start": 2977,
+            "count": 605
+          },
+          "leafBounds": {
+            "min": [
+              28.1606180768781,
+              6.653513938904631,
+              -40.64038394658263
+            ],
+            "max": [
+              33.92406217409894,
+              8.798859100107926,
+              -35.37328398714378
+            ]
+          },
+          "branchBounds": {
+            "min": [
+              28.672027587890625,
+              2.0607922077178955,
+              -40.00702667236328
+            ],
+            "max": [
+              33.14569854736328,
+              8.280826568603516,
+              -35.846435546875
+            ]
+          }
+        },
+        {
+          "id": "space11-tree-07",
+          "group": "northeast",
+          "x": 38,
+          "blender_y": 38.5,
+          "height": 7.5,
+          "prototypeId": "space06-tree-10",
+          "baseWorld": [
+            38,
+            2.322114807446006,
+            -38.5
+          ],
+          "support": {
+            "blender": [
+              38,
+              38.5,
+              2.322114807446006
+            ],
+            "normalThree": [
+              -0.05885328084870255,
+              0.9912952569173284,
+              0.11777098516422295
+            ],
+            "bankDistance": 43.26805684499314,
+            "roadGap": 12.644069756213778,
+            "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+          },
+          "scale": [
+            1.2821826679643333,
+            1.2096774193548387,
+            1.295764988773848
+          ],
+          "angle": 0.9718251639388926,
+          "branchVertexRange": {
+            "start": 17568,
+            "count": 2928
+          },
+          "canopyWidthMultiplier": 1.2,
+          "originalLeafInstances": 430,
+          "additionalLeafInstances": 151,
+          "leafInstanceRange": {
+            "start": 3582,
+            "count": 581
+          },
+          "leafBounds": {
+            "min": [
+              35.22673919020535,
+              7.121738264379813,
+              -41.96956498258051
+            ],
+            "max": [
+              40.77003846032383,
+              9.665459537320409,
+              -35.519810645520785
+            ]
+          },
+          "branchBounds": {
+            "min": [
+              35.84358596801758,
+              2.2865943908691406,
+              -41.08293533325195
+            ],
+            "max": [
+              40.19667053222656,
+              9.14773178100586,
+              -36.23988723754883
+            ]
+          }
+        },
+        {
+          "id": "space11-tree-08",
+          "group": "northeast",
+          "x": 34,
+          "blender_y": 44,
+          "height": 6.4,
+          "prototypeId": "space06-tree-17",
+          "baseWorld": [
+            34,
+            2.8942628414108,
+            -44
+          ],
+          "support": {
+            "blender": [
+              34,
+              44,
+              2.8942628414108
+            ],
+            "normalThree": [
+              -0.010987739194507068,
+              0.9920578735533488,
+              0.12530141702391687
+            ],
+            "bankDistance": 47.77270957475994,
+            "roadGap": 17.65,
+            "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+          },
+          "scale": [
+            1.182575153469108,
+            1,
+            1.0807921945033596
+          ],
+          "angle": 1.5567763489779742,
+          "branchVertexRange": {
+            "start": 20496,
+            "count": 2928
+          },
+          "canopyWidthMultiplier": 1.2,
+          "originalLeafInstances": 448,
+          "additionalLeafInstances": 157,
+          "leafInstanceRange": {
+            "start": 4163,
+            "count": 605
+          },
+          "leafBounds": {
+            "min": [
+              31.46816054630907,
+              7.1982555822207175,
+              -46.67704215214351
+            ],
+            "max": [
+              36.65939198222048,
+              9.314115180142089,
+              -41.21512469837595
+            ]
+          },
+          "branchBounds": {
+            "min": [
+              32.07389831542969,
+              2.864899158477783,
+              -46.11305618286133
+            ],
+            "max": [
+              36.13337326049805,
+              8.72061824798584,
+              -41.81290817260742
+            ]
+          }
+        },
+        {
+          "id": "space11-tree-09",
+          "group": "northeast",
+          "x": 39,
+          "blender_y": 48.5,
+          "height": 7.6,
+          "prototypeId": "space06-tree-22",
+          "baseWorld": [
+            39,
+            3.0886587848564844,
+            -48.5
+          ],
+          "support": {
+            "blender": [
+              39,
+              48.5,
+              3.0886587848564844
+            ],
+            "normalThree": [
+              -0.024821400930072637,
+              0.9991502622092491,
+              0.03290367127020483
+            ],
+            "bankDistance": 53.44646814814815,
+            "roadGap": 22.602488801014808,
+            "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+          },
+          "scale": [
+            1.3654929682246872,
+            1.1874999999999998,
+            1.289636243909597
+          ],
+          "angle": 0.7784706816057397,
+          "branchVertexRange": {
+            "start": 23424,
+            "count": 2928
+          },
+          "canopyWidthMultiplier": 1.2,
+          "originalLeafInstances": 448,
+          "additionalLeafInstances": 157,
+          "leafInstanceRange": {
+            "start": 4768,
+            "count": 605
+          },
+          "leafBounds": {
+            "min": [
+              36.073506803918825,
+              8.186831538905786,
+              -51.49448108043665
+            ],
+            "max": [
+              42.286548762320315,
+              10.584570248485937,
+              -45.357990754533276
+            ]
+          },
+          "branchBounds": {
+            "min": [
+              36.84001159667969,
+              3.0537893772125244,
+              -50.55668640136719
+            ],
+            "max": [
+              41.56489944458008,
+              10.005593299865723,
+              -45.910247802734375
+            ]
+          }
+        },
+        {
+          "id": "space11-tree-10",
+          "group": "northeast",
+          "x": 30,
+          "blender_y": 49,
+          "height": 7,
+          "prototypeId": "space06-tree-10",
+          "baseWorld": [
+            30,
+            3.2279477489730617,
+            -49
+          ],
+          "support": {
+            "blender": [
+              30,
+              49,
+              3.2279477489730617
+            ],
+            "normalThree": [
+              0.027393570481581777,
+              0.9983963143959196,
+              0.04954181765856745
+            ],
+            "bankDistance": 51.66468148148148,
+            "roadGap": 22.65,
+            "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+          },
+          "scale": [
+            1.195742626141967,
+            1.129032258064516,
+            1.3236851149597653
+          ],
+          "angle": 1.0930068798037704,
+          "branchVertexRange": {
+            "start": 26352,
+            "count": 2928
+          },
+          "canopyWidthMultiplier": 1.2,
+          "originalLeafInstances": 430,
+          "additionalLeafInstances": 151,
+          "leafInstanceRange": {
+            "start": 5373,
+            "count": 581
+          },
+          "leafBounds": {
+            "min": [
+              27.15584649751676,
+              7.707596308777946,
+              -52.2663464281142
+            ],
+            "max": [
+              32.738175070238164,
+              10.081736163522505,
+              -46.15337966470982
+            ]
+          },
+          "branchBounds": {
+            "min": [
+              27.78883934020996,
+              3.1947953701019287,
+              -51.43156814575195
+            ],
+            "max": [
+              32.21464157104492,
+              9.59852409362793,
+              -46.817806243896484
+            ]
+          }
+        },
+        {
+          "id": "space11-tree-11",
+          "group": "west-bend",
+          "x": -59,
+          "blender_y": -17,
+          "height": 6.8,
+          "prototypeId": "space06-tree-17",
+          "baseWorld": [
+            -59,
+            0.9870056412121144,
+            17
+          ],
+          "support": {
+            "blender": [
+              -59,
+              -17,
+              0.9870056412121144
+            ],
+            "normalThree": [
+              0.02782752117775099,
+              0.9988487649847447,
+              -0.039073952366663556
+            ],
+            "bankDistance": 15.985600000000002,
+            "roadGap": 24.369763238944582,
+            "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+          },
+          "scale": [
+            1.1292000049350899,
+            1.0625,
+            1.191661910180468
+          ],
+          "angle": 3.990916985505897,
+          "branchVertexRange": {
+            "start": 29280,
+            "count": 2928
+          },
+          "canopyWidthMultiplier": 1.2,
+          "originalLeafInstances": 448,
+          "additionalLeafInstances": 157,
+          "leafInstanceRange": {
+            "start": 5954,
+            "count": 605
+          },
+          "leafBounds": {
+            "min": [
+              -61.78839563116707,
+              5.559997928322652,
+              14.227413443162988
+            ],
+            "max": [
+              -56.246818377503175,
+              7.808098751114109,
+              19.995887384753953
+            ]
+          },
+          "branchBounds": {
+            "min": [
+              -61.06956481933594,
+              0.9558067917823792,
+              14.945760726928711
+            ],
+            "max": [
+              -57.162757873535156,
+              7.1775078773498535,
+              19.46653175354004
+            ]
+          }
+        },
+        {
+          "id": "space11-tree-12",
+          "group": "west-bend",
+          "x": -64,
+          "blender_y": -10,
+          "height": 6.1,
+          "prototypeId": "space06-tree-22",
+          "baseWorld": [
+            -64,
+            0.8318414079869711,
+            10
+          ],
+          "support": {
+            "blender": [
+              -64,
+              -10,
+              0.8318414079869711
+            ],
+            "normalThree": [
+              0.01403157115173724,
+              0.9978313898555147,
+              -0.06430888297914962
+            ],
+            "bankDistance": 10.7391,
+            "roadGap": 29.000056497144815,
+            "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+          },
+          "scale": [
+            1.0128457538001527,
+            0.9531249999999999,
+            1.1451362460556118
+          ],
+          "angle": 5.802454067982435,
+          "branchVertexRange": {
+            "start": 32208,
+            "count": 2928
+          },
+          "canopyWidthMultiplier": 1.2,
+          "originalLeafInstances": 448,
+          "additionalLeafInstances": 157,
+          "leafInstanceRange": {
+            "start": 6559,
+            "count": 605
+          },
+          "leafBounds": {
+            "min": [
+              -66.49678157926502,
+              4.923795855316015,
+              7.625320208082689
+            ],
+            "max": [
+              -61.501854582539735,
+              6.848296661689559,
+              12.582276208131091
+            ]
+          },
+          "branchBounds": {
+            "min": [
+              -66.07112121582031,
+              0.8038541674613953,
+              8.132246017456055
+            ],
+            "max": [
+              -62.22348403930664,
+              6.383591175079346,
+              12.089201927185059
+            ]
+          }
+        },
+        {
+          "id": "space11-tree-13",
+          "group": "west-bend",
+          "x": -55,
+          "blender_y": -24,
+          "height": 6.5,
+          "prototypeId": "space06-tree-10",
+          "baseWorld": [
+            -55,
+            1.022603679193061,
+            24
+          ],
+          "support": {
+            "blender": [
+              -55,
+              -24,
+              1.022603679193061
+            ],
+            "normalThree": [
+              0.05182571078885789,
+              0.9979354107659876,
+              -0.0379343069074598
+            ],
+            "bankDistance": 20.6,
+            "roadGap": 20.5,
+            "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+          },
+          "scale": [
+            1.2046259443037541,
+            1.0483870967741935,
+            1.1802653681305837
+          ],
+          "angle": 5.830962520205329,
+          "branchVertexRange": {
+            "start": 35136,
+            "count": 2928
+          },
+          "canopyWidthMultiplier": 1.2,
+          "originalLeafInstances": 430,
+          "additionalLeafInstances": 151,
+          "leafInstanceRange": {
+            "start": 7164,
+            "count": 581
+          },
+          "leafBounds": {
+            "min": [
+              -57.789971906291946,
+              5.1822773418690256,
+              21.407257139884955
+            ],
+            "max": [
+              -51.84772953897245,
+              7.386835778417543,
+              26.491967634844936
+            ]
+          },
+          "branchBounds": {
+            "min": [
+              -57.15531539916992,
+              0.9918192028999329,
+              21.985692977905273
+            ],
+            "max": [
+              -52.652950286865234,
+              6.938138961791992,
+              26.024356842041016
+            ]
+          }
+        },
+        {
+          "id": "space11-tree-14",
+          "group": "east-bend",
+          "x": 58,
+          "blender_y": -40,
+          "height": 6.8,
+          "prototypeId": "space06-tree-17",
+          "baseWorld": [
+            58,
+            1.2475532576924877,
+            40
+          ],
+          "support": {
+            "blender": [
+              58,
+              -40,
+              1.2475532576924877
+            ],
+            "normalThree": [
+              0.007335573608960789,
+              0.996495242807095,
+              -0.08332718897608644
+            ],
+            "bankDistance": 15.507684720966548,
+            "roadGap": 23.723669614964713,
+            "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+          },
+          "scale": [
+            1.2384221513236406,
+            1.0625,
+            1.2864981883881264
+          ],
+          "angle": 1.2068429299664727,
+          "branchVertexRange": {
+            "start": 38064,
+            "count": 2928
+          },
+          "canopyWidthMultiplier": 1.2,
+          "originalLeafInstances": 448,
+          "additionalLeafInstances": 157,
+          "leafInstanceRange": {
+            "start": 7745,
+            "count": 605
+          },
+          "leafBounds": {
+            "min": [
+              54.88448897747869,
+              5.820545544803025,
+              36.8709158256159
+            ],
+            "max": [
+              60.98019303841672,
+              8.068646367594482,
+              43.03871537403066
+            ]
+          },
+          "branchBounds": {
+            "min": [
+              55.8444938659668,
+              1.2163543701171875,
+              37.52501678466797
+            ],
+            "max": [
+              60.2745246887207,
+              7.438055515289307,
+              42.23344421386719
+            ]
+          }
+        },
+        {
+          "id": "space11-tree-15",
+          "group": "east-bend",
+          "x": 63,
+          "blender_y": -43,
+          "height": 6.3,
+          "prototypeId": "space06-tree-22",
+          "baseWorld": [
+            63,
+            1.472271301663426,
+            43
+          ],
+          "support": {
+            "blender": [
+              63,
+              -43,
+              1.472271301663426
+            ],
+            "normalThree": [
+              -0.012942877533821437,
+              0.9938058095073926,
+              -0.11037433990969363
+            ],
+            "bankDistance": 16.016047505547792,
+            "roadGap": 29.177259981019468,
+            "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+          },
+          "scale": [
+            1.116726936532388,
+            0.9843749999999999,
+            1.0709056478532
+          ],
+          "angle": 5.155817600635175,
+          "branchVertexRange": {
+            "start": 40992,
+            "count": 2928
+          },
+          "canopyWidthMultiplier": 1.2,
+          "originalLeafInstances": 448,
+          "additionalLeafInstances": 157,
+          "leafInstanceRange": {
+            "start": 8350,
+            "count": 605
+          },
+          "leafBounds": {
+            "min": [
+              60.33303685667023,
+              5.698388189888504,
+              40.465914031653185
+            ],
+            "max": [
+              65.33858727716253,
+              7.685987383356262,
+              45.66937475930757
+            ]
+          },
+          "branchBounds": {
+            "min": [
+              60.895835876464844,
+              1.443366527557373,
+              41.061397552490234
+            ],
+            "max": [
+              64.82366943359375,
+              7.206045627593994,
+              44.95353317260742
+            ]
+          }
+        },
+        {
+          "id": "space11-tree-16",
+          "group": "east-bend",
+          "x": 56,
+          "blender_y": -44.5,
+          "height": 6.7,
+          "prototypeId": "space06-tree-10",
+          "baseWorld": [
+            56,
+            1.9021755768344235,
+            44.5
+          ],
+          "support": {
+            "blender": [
+              56,
+              -44.5,
+              1.9021755768344235
+            ],
+            "normalThree": [
+              -0.013890814369100966,
+              0.9864422740475707,
+              -0.16351967847332813
+            ],
+            "bankDistance": 21.477085559299745,
+            "roadGap": 22.85415717107065,
+            "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+          },
+          "scale": [
+            1.166836321692553,
+            1.0806451612903225,
+            1.1969835228092307
+          ],
+          "angle": 0.7619145729145009,
+          "branchVertexRange": {
+            "start": 43920,
+            "count": 2928
+          },
+          "canopyWidthMultiplier": 1.2,
+          "originalLeafInstances": 430,
+          "additionalLeafInstances": 151,
+          "leafInstanceRange": {
+            "start": 8955,
+            "count": 581
+          },
+          "leafBounds": {
+            "min": [
+              53.23055847568085,
+              6.189839198361956,
+              41.32828454875721
+            ],
+            "max": [
+              58.575506312891925,
+              8.462230202188891,
+              47.203788404341566
+            ]
+          },
+          "branchBounds": {
+            "min": [
+              53.824344635009766,
+              1.8704439401626587,
+              42.13837432861328
+            ],
+            "max": [
+              58.03730392456055,
+              7.999727249145508,
+              46.675750732421875
+            ]
+          }
+        },
+        {
+          "id": "space11-tree-17",
+          "group": "southwest",
+          "x": -36,
+          "blender_y": -62,
+          "height": 6.5,
+          "prototypeId": "space06-tree-17",
+          "baseWorld": [
+            -36,
+            3.3422937990801564,
+            62
+          ],
+          "support": {
+            "blender": [
+              -36,
+              -62,
+              3.3422937990801564
+            ],
+            "normalThree": [
+              0.059952139545479906,
+              0.9769460718723512,
+              -0.20489537236624553
+            ],
+            "bankDistance": 52.80836533279056,
+            "roadGap": 19.26973014860354,
+            "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+          },
+          "scale": [
+            1.1300209947083204,
+            1.015625,
+            1.1018252867805132
+          ],
+          "angle": 1.0141983213166936,
+          "branchVertexRange": {
+            "start": 46848,
+            "count": 2928
+          },
+          "canopyWidthMultiplier": 1.2,
+          "originalLeafInstances": 448,
+          "additionalLeafInstances": 157,
+          "leafInstanceRange": {
+            "start": 9536,
+            "count": 605
+          },
+          "leafBounds": {
+            "min": [
+              -38.688478148891114,
+              7.713536426465229,
+              59.114511317406944
+            ],
+            "max": [
+              -33.41931999540156,
+              9.862456330604122,
+              64.76416600162506
+            ]
+          },
+          "branchBounds": {
+            "min": [
+              -37.818973541259766,
+              3.312471389770508,
+              59.70856475830078
+            ],
+            "max": [
+              -34.09187316894531,
+              9.259685516357422,
+              64.0126953125
+            ]
+          }
+        },
+        {
+          "id": "space11-tree-18",
+          "group": "southwest",
+          "x": -29,
+          "blender_y": -68,
+          "height": 6.2,
+          "prototypeId": "space06-tree-22",
+          "baseWorld": [
+            -29,
+            4.099221004398316,
+            68
+          ],
+          "support": {
+            "blender": [
+              -29,
+              -68,
+              4.099221004398316
+            ],
+            "normalThree": [
+              0.023707125360673743,
+              0.9824390974354418,
+              -0.18507131608482164
+            ],
+            "bankDistance": 57.50373699165479,
+            "roadGap": 24.922529967882475,
+            "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+          },
+          "scale": [
+            1.1363151616824616,
+            0.96875,
+            1.0722541466949334
+          ],
+          "angle": 3.1000733971061063,
+          "branchVertexRange": {
+            "start": 49776,
+            "count": 2928
+          },
+          "canopyWidthMultiplier": 1.2,
+          "originalLeafInstances": 448,
+          "additionalLeafInstances": 157,
+          "leafInstanceRange": {
+            "start": 10141,
+            "count": 605
+          },
+          "leafBounds": {
+            "min": [
+              -31.590402951166897,
+              8.258256672175378,
+              65.57691224073265
+            ],
+            "max": [
+              -26.550365138483624,
+              10.21430667209603,
+              70.44992466232246
+            ]
+          },
+          "branchBounds": {
+            "min": [
+              -31.000213623046875,
+              4.070775032043457,
+              66.13688659667969
+            ],
+            "max": [
+              -27.04971694946289,
+              9.741983413696289,
+              69.80949401855469
+            ]
+          }
+        },
+        {
+          "id": "space11-tree-19",
+          "group": "southeast",
+          "x": 35,
+          "blender_y": -62,
+          "height": 6.7,
+          "prototypeId": "space06-tree-10",
+          "baseWorld": [
+            35,
+            3.494833956998942,
+            62
+          ],
+          "support": {
+            "blender": [
+              35,
+              -62,
+              3.494833956998942
+            ],
+            "normalThree": [
+              -0.10862610026647802,
+              0.9940531607272276,
+              -0.007660547572195826
+            ],
+            "bankDistance": 48.636580521262005,
+            "roadGap": 19.087233953614128,
+            "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+          },
+          "scale": [
+            1.2653045696324907,
+            1.0806451612903225,
+            1.2575535976702286
+          ],
+          "angle": 0.6447267872528474,
+          "branchVertexRange": {
+            "start": 52704,
+            "count": 2928
+          },
+          "canopyWidthMultiplier": 1.2,
+          "originalLeafInstances": 430,
+          "additionalLeafInstances": 151,
+          "leafInstanceRange": {
+            "start": 10746,
+            "count": 581
+          },
+          "leafBounds": {
+            "min": [
+              31.92205937307795,
+              7.782497578526475,
+              58.68384213935422
+            ],
+            "max": [
+              37.77421867968326,
+              10.05488858235341,
+              64.81658405171845
+            ]
+          },
+          "branchBounds": {
+            "min": [
+              32.58313751220703,
+              3.463102340698242,
+              59.530609130859375
+            ],
+            "max": [
+              37.23089599609375,
+              9.592385292053223,
+              64.43660736083984
+            ]
+          }
+        },
+        {
+          "id": "space11-tree-20",
+          "group": "southeast",
+          "x": 29,
+          "blender_y": -69,
+          "height": 6,
+          "prototypeId": "space06-tree-17",
+          "baseWorld": [
+            29,
+            3.102801241653598,
+            69
+          ],
+          "support": {
+            "blender": [
+              29,
+              -69,
+              3.102801241653598
+            ],
+            "normalThree": [
+              -0.0740037651790751,
+              0.9970510290598551,
+              -0.02031472840095001
+            ],
+            "bankDistance": 57.66831582990398,
+            "roadGap": 25.919731865897074,
+            "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+          },
+          "scale": [
+            1.0150729922534083,
+            0.9375,
+            1.0266837415943155
+          ],
+          "angle": 3.9319423089967582,
+          "branchVertexRange": {
+            "start": 55632,
+            "count": 2928
+          },
+          "canopyWidthMultiplier": 1.2,
+          "originalLeafInstances": 448,
+          "additionalLeafInstances": 157,
+          "leafInstanceRange": {
+            "start": 11327,
+            "count": 605
+          },
+          "leafBounds": {
+            "min": [
+              26.53215202105358,
+              7.1377944361628956,
+              66.5773614925159
+            ],
+            "max": [
+              31.355234803546544,
+              9.121412809214181,
+              71.65351689615628
+            ]
+          },
+          "branchBounds": {
+            "min": [
+              27.156755447387695,
+              3.075272798538208,
+              67.1989517211914
+            ],
+            "max": [
+              30.557235717773438,
+              8.565009117126465,
+              71.18386840820312
+            ]
+          }
+        }
+      ],
+      "lowGroups": [
+        {
+          "id": "space11-shrub-1",
+          "type": "shrub",
+          "approvedBoundsBlenderXY": [
+            -42.199999999999996,
+            32.400000000000006,
+            -35.800000000000004,
+            36.599999999999994
+          ],
+          "support": [
+            {
+              "blender": [
+                -37.753,
+                34.5,
+                1.038046358809929
+              ],
+              "normalThree": [
+                0.006780612760904127,
+                0.9981917277169957,
+                0.05972686169510304
+              ],
+              "bankDistance": 34.217972109071134,
+              "roadGap": 8.77522130775059,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            {
+              "blender": [
+                -39.919498797454835,
+                35.02282961886995,
+                1.0865629475180256
+              ],
+              "normalThree": [
+                0.02994669547175488,
+                0.9979123483559078,
+                0.057220105112797286
+              ],
+              "bankDistance": 34.14745516112125,
+              "roadGap": 10.226873462283685,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            {
+              "blender": [
+                -38.89098069202745,
+                33.728963583280375,
+                0.9996415334073419
+              ],
+              "normalThree": [
+                0.006780612760904127,
+                0.9981917277169957,
+                0.05972686169510304
+              ],
+              "bankDistance": 33.12390661066827,
+              "roadGap": 8.586606722165385,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          ],
+          "leafInstanceRange": {
+            "start": 11932,
+            "count": 240
+          },
+          "leafBounds": {
+            "min": [
+              -40.61075935988246,
+              1.0434813070563285,
+              -35.721800078610954
+            ],
+            "max": [
+              -36.985798314398444,
+              2.2959793259159698,
+              -33.06057452833211
+            ]
+          }
+        },
+        {
+          "id": "space11-shrub-2",
+          "type": "shrub",
+          "approvedBoundsBlenderXY": [
+            -33.4,
+            36.400000000000006,
+            -27.599999999999998,
+            40.599999999999994
+          ],
+          "support": [
+            {
+              "blender": [
+                -29.382,
+                38.5,
+                1.409869899099192
+              ],
+              "normalThree": [
+                -0.0404694922346941,
+                0.996789848533934,
+                0.06908124244657944
+              ],
+              "bankDistance": 40.21398951408015,
+              "roadGap": 12.149999999999999,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            {
+              "blender": [
+                -31.324378232200885,
+                39.02282961886995,
+                1.3991609630714592
+              ],
+              "normalThree": [
+                -0.036102127349513416,
+                0.9971733581245441,
+                0.06589332475645217
+              ],
+              "bankDistance": 40.463209977878606,
+              "roadGap": 12.672829618869947,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            {
+              "blender": [
+                -30.402258551472883,
+                37.728963583280375,
+                1.347047002839858
+              ],
+              "normalThree": [
+                -0.036102127349513416,
+                0.9971733581245441,
+                0.06589332475645217
+              ],
+              "bankDistance": 39.323024945032856,
+              "roadGap": 11.378963583280374,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          ],
+          "leafInstanceRange": {
+            "start": 12172,
+            "count": 240
+          },
+          "leafBounds": {
+            "min": [
+              -32.05521268248857,
+              1.383836893046319,
+              -39.71767025871793
+            ],
+            "max": [
+              -28.593786439848795,
+              2.673437794656328,
+              -37.04492468072855
+            ]
+          }
+        },
+        {
+          "id": "space11-shrub-3",
+          "type": "shrub",
+          "approvedBoundsBlenderXY": [
+            28,
+            34.5,
+            34,
+            38.3
+          ],
+          "support": [
+            {
+              "blender": [
+                32.161,
+                36.4,
+                1.909659824229081
+              ],
+              "normalThree": [
+                -0.032758844665799154,
+                0.9915852802849754,
+                0.12524172634680844
+              ],
+              "bankDistance": 39.65005083307936,
+              "roadGap": 10.049999999999997,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            {
+              "blender": [
+                30.143914912714465,
+                36.86473743899551,
+                1.9372744346898472
+              ],
+              "normalThree": [
+                -0.027622828648618203,
+                0.9912924443923659,
+                0.12874886029809204
+              ],
+              "bankDistance": 39.56612122891987,
+              "roadGap": 10.51473743899551,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            {
+              "blender": [
+                31.10150073500893,
+                35.714634296249216,
+                1.7953416854033577
+              ],
+              "normalThree": [
+                -0.0016957716757928815,
+                0.9916694234170553,
+                0.12879782225685568
+              ],
+              "bankDistance": 38.66982975562537,
+              "roadGap": 9.364634296249214,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          ],
+          "leafInstanceRange": {
+            "start": 12412,
+            "count": 240
+          },
+          "leafBounds": {
+            "min": [
+              29.38336446014081,
+              1.8232758568817555,
+              -37.571379226538845
+            ],
+            "max": [
+              32.863427649583954,
+              3.1487187712210387,
+              -34.958985201221175
+            ]
+          }
+        },
+        {
+          "id": "space11-shrub-4",
+          "type": "shrub",
+          "approvedBoundsBlenderXY": [
+            37.7,
+            39.900000000000006,
+            43.3,
+            44.099999999999994
+          ],
+          "support": [
+            {
+              "blender": [
+                41.575,
+                42,
+                2.881190119013901
+              ],
+              "normalThree": [
+                -0.033822022480448855,
+                0.9933364921198407,
+                0.11017569704059853
+              ],
+              "bankDistance": 47.194365830467895,
+              "roadGap": 17.174927219642008,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            {
+              "blender": [
+                39.707328622883765,
+                42.52282961886995,
+                2.8708436264717676
+              ],
+              "normalThree": [
+                -0.03683808221894264,
+                0.9923424961913587,
+                0.11789540258692781
+              ],
+              "bankDistance": 47.57039339314478,
+              "roadGap": 16.990488199804666,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            {
+              "blender": [
+                40.59398216204531,
+                41.228963583280375,
+                2.7622681998435894
+              ],
+              "normalThree": [
+                -0.033822022480448855,
+                0.9933364921198407,
+                0.11017569704059853
+              ],
+              "bankDistance": 46.36957563775422,
+              "roadGap": 16.07856261933603,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          ],
+          "leafInstanceRange": {
+            "start": 12652,
+            "count": 240
+          },
+          "leafBounds": {
+            "min": [
+              38.94550009702011,
+              2.8212718195950326,
+              -43.18459474108459
+            ],
+            "max": [
+              42.34179436054733,
+              4.133404434752269,
+              -40.532225338568836
+            ]
+          }
+        },
+        {
+          "id": "space11-shrub-5",
+          "type": "shrub",
+          "approvedBoundsBlenderXY": [
+            -58.4,
+            -20.900000000000002,
+            -52.6,
+            -16.7
+          ],
+          "support": [
+            {
+              "blender": [
+                -54.382,
+                -18.8,
+                0.8492697602337955
+              ],
+              "normalThree": [
+                0.040082312547816266,
+                0.9990140412519111,
+                -0.019088048678277614
+              ],
+              "bankDistance": 15.011155660967198,
+              "roadGap": 19.881999999999998,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            {
+              "blender": [
+                -56.324378232200885,
+                -18.277170381130052,
+                0.9078925664255308
+              ],
+              "normalThree": [
+                0.04757774232079399,
+                0.998557259178551,
+                -0.02489495084302101
+              ],
+              "bankDistance": 15.706650514651393,
+              "roadGap": 21.824378232200885,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            {
+              "blender": [
+                -55.40225855147288,
+                -19.57103641671963,
+                0.8962140761857782
+              ],
+              "normalThree": [
+                0.04757774232079399,
+                0.998557259178551,
+                -0.02489495084302101
+              ],
+              "bankDistance": 16.42432261464881,
+              "roadGap": 20.902258551472883,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          ],
+          "leafInstanceRange": {
+            "start": 12892,
+            "count": 240
+          },
+          "leafBounds": {
+            "min": [
+              -57.15691338063392,
+              0.8759360546497078,
+              17.561760442243305
+            ],
+            "max": [
+              -53.61416832259448,
+              2.1243107182523784,
+              20.249615146605095
+            ]
+          }
+        },
+        {
+          "id": "space11-shrub-6",
+          "type": "shrub",
+          "approvedBoundsBlenderXY": [
+            52.800000000000004,
+            -41.699999999999996,
+            58.6,
+            -37.50000000000001
+          ],
+          "support": [
+            {
+              "blender": [
+                56.818000000000005,
+                -39.6,
+                1.2228062980229453
+              ],
+              "normalThree": [
+                0.007335573608960789,
+                0.996495242807095,
+                -0.08332718897608644
+              ],
+              "bankDistance": 15.955684076473805,
+              "roadGap": 22.499236075920447,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            {
+              "blender": [
+                54.87562176779912,
+                -39.07717038113005,
+                1.2117859823627413
+              ],
+              "normalThree": [
+                0.003333180036026052,
+                0.9973800697761496,
+                -0.07226262051829195
+              ],
+              "bankDistance": 16.94055268650554,
+              "roadGap": 20.508088267979005,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            {
+              "blender": [
+                55.79774144852712,
+                -40.371036416719626,
+                1.3024480701273262
+              ],
+              "normalThree": [
+                0.003333180036026052,
+                0.9973800697761496,
+                -0.07226262051829195
+              ],
+              "bankDistance": 17.50519698050212,
+              "roadGap": 21.603372318680243,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          ],
+          "leafInstanceRange": {
+            "start": 13132,
+            "count": 240
+          },
+          "leafBounds": {
+            "min": [
+              54.08955407717137,
+              1.215209335092403,
+              38.384464717762555
+            ],
+            "max": [
+              57.52932179723523,
+              2.503217223458034,
+              41.10481584503994
+            ]
+          }
+        },
+        {
+          "id": "space11-shrub-7",
+          "type": "shrub",
+          "approvedBoundsBlenderXY": [
+            -34.8,
+            -62.9,
+            -29.2,
+            -59.1
+          ],
+          "support": [
+            {
+              "blender": [
+                -30.925,
+                -61,
+                2.8514594838226373
+              ],
+              "normalThree": [
+                0.02878614307039971,
+                0.9811283581123339,
+                -0.1912027794644384
+              ],
+              "bankDistance": 50.704573817858744,
+              "roadGap": 17.85,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            {
+              "blender": [
+                -32.792671377116235,
+                -60.53526256100449,
+                2.844647992455485
+              ],
+              "normalThree": [
+                0.03943323575365586,
+                0.9796761681738986,
+                -0.19667136403173646
+              ],
+              "bankDistance": 50.576262419158454,
+              "roadGap": 17.403323884452753,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            {
+              "blender": [
+                -31.906017837954696,
+                -61.68536570375078,
+                3.039843856182557
+              ],
+              "normalThree": [
+                0.03943323575365586,
+                0.9796761681738986,
+                -0.19667136403173646
+              ],
+              "bankDistance": 51.55227746787434,
+              "roadGap": 18.535365703750784,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          ],
+          "leafInstanceRange": {
+            "start": 13372,
+            "count": 240
+          },
+          "leafBounds": {
+            "min": [
+              -33.55907762498747,
+              2.846542471513583,
+              59.8413262053029
+            ],
+            "max": [
+              -30.193078845954755,
+              4.300407911913102,
+              62.36634463582755
+            ]
+          }
+        },
+        {
+          "id": "space11-shrub-8",
+          "type": "shrub",
+          "approvedBoundsBlenderXY": [
+            29.5,
+            -64.89999999999999,
+            35.5,
+            -61.1
+          ],
+          "support": [
+            {
+              "blender": [
+                33.661,
+                -63,
+                3.3699296949338944
+              ],
+              "normalThree": [
+                -0.10113534775700489,
+                0.9947979285886888,
+                -0.012195192074087872
+              ],
+              "bankDistance": 50.10224634515936,
+              "roadGap": 19.919373007200804,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            {
+              "blender": [
+                31.643914912714465,
+                -62.53526256100449,
+                3.1768673650653874
+              ],
+              "normalThree": [
+                -0.08942724538629851,
+                0.995855284677564,
+                -0.01658371979945248
+              ],
+              "bankDistance": 50.35194249930939,
+              "roadGap": 19.385262561004488,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            {
+              "blender": [
+                32.601500735008926,
+                -63.68536570375078,
+                3.270618410324481
+              ],
+              "normalThree": [
+                -0.10113534775700489,
+                0.9947979285886888,
+                -0.012195192074087872
+              ],
+              "bankDistance": 51.16450368976794,
+              "roadGap": 20.54417308438089,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          ],
+          "leafInstanceRange": {
+            "start": 13612,
+            "count": 240
+          },
+          "leafBounds": {
+            "min": [
+              30.873842004612676,
+              3.2201760090497453,
+              61.83435308263672
+            ],
+            "max": [
+              34.43708847058705,
+              4.615921167793256,
+              64.38055614723645
+            ]
+          }
+        },
+        {
+          "id": "space11-meadow-1",
+          "type": "meadow",
+          "approvedBoundsBlenderXY": [
+            -28.95,
+            27.5,
+            -21.05,
+            31.299999999999997
+          ],
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 85,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                -23.228831508509156,
+                30.525626111436516,
+                0.9834809443264945
+              ],
+              "normalThree": [
+                -0.0435824437929796,
+                0.9960308940444237,
+                0.07760817419639505
+              ],
+              "bankDistance": 32.30294611143651,
+              "roadGap": 4.1756261114365145,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                -25.62538367881251,
+                30.80047094963087,
+                0.9790505325190395
+              ],
+              "normalThree": [
+                -0.002709621768136114,
+                0.9973122841693418,
+                0.07321793356005019
+              ],
+              "bankDistance": 32.57779094963087,
+              "roadGap": 4.450470949630869,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 0,
+            "count": 765
+          },
+          "bladeBounds": {
+            "min": [
+              -28.474916458129883,
+              0.7072984576225281,
+              -31.146949768066406
+            ],
+            "max": [
+              -21.449237823486328,
+              1.4596619606018066,
+              -27.802104949951172
+            ]
+          }
+        },
+        {
+          "id": "space11-meadow-2",
+          "type": "meadow",
+          "approvedBoundsBlenderXY": [
+            -38.35,
+            27.3,
+            -32.449999999999996,
+            30.900000000000002
+          ],
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 85,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                -36.73140515255914,
+                28.532268840373032,
+                0.754531532600339
+              ],
+              "normalThree": [
+                0.015660158545716476,
+                0.9998517381362929,
+                0.00715969134511643
+              ],
+              "bankDistance": 28.55198741342191,
+              "roadGap": 3.1211322058718585,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                -36.79884713777971,
+                28.91465417265253,
+                0.7583260083115917
+              ],
+              "normalThree": [
+                0.015660158545716476,
+                0.9998517381362929,
+                0.00715969134511643
+              ],
+              "bankDistance": 28.914294771828693,
+              "roadGap": 3.444147091542692,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 765,
+            "count": 765
+          },
+          "bladeBounds": {
+            "min": [
+              -37.820552825927734,
+              0.6966530680656433,
+              -30.519113540649414
+            ],
+            "max": [
+              -32.63106918334961,
+              1.355210304260254,
+              -27.621671676635742
+            ]
+          }
+        },
+        {
+          "id": "space11-meadow-3",
+          "type": "meadow",
+          "approvedBoundsBlenderXY": [
+            16.349999999999998,
+            27.75,
+            24.05,
+            31.450000000000003
+          ],
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 85,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                19.37499696459977,
+                28.87760017500604,
+                0.9652446350760755
+              ],
+              "normalThree": [
+                0.00020354397596759132,
+                0.9912614173110729,
+                0.13191194457020583
+              ],
+              "bankDistance": 30.65492017500604,
+              "roadGap": 2.5276001750060395,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                19.212367980041435,
+                29.892796773242477,
+                1.1003751437444222
+              ],
+              "normalThree": [
+                0.00020354397596759132,
+                0.9912614173110729,
+                0.13191194457020583
+              ],
+              "bankDistance": 31.670116773242476,
+              "roadGap": 3.5427967732424754,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 1530,
+            "count": 765
+          },
+          "bladeBounds": {
+            "min": [
+              16.55949592590332,
+              0.8592873811721802,
+              -31.16069221496582
+            ],
+            "max": [
+              23.706266403198242,
+              1.7863166332244873,
+              -28.14102554321289
+            ]
+          }
+        },
+        {
+          "id": "space11-meadow-4",
+          "type": "meadow",
+          "approvedBoundsBlenderXY": [
+            32.75,
+            26.95,
+            38.849999999999994,
+            30.45
+          ],
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 85,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                35.60128112729237,
+                28.35291987992377,
+                1.0029461360156162
+              ],
+              "normalThree": [
+                -0.03273057020841676,
+                0.9920884566200091,
+                0.1211990264612732
+              ],
+              "bankDistance": 32.562865462543925,
+              "roadGap": 2.285718304324528,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                36.15801657905501,
+                27.570040952985348,
+                0.9256728903901887
+              ],
+              "normalThree": [
+                -0.03273057020841676,
+                0.9920884566200091,
+                0.1211990264612732
+              ],
+              "bankDistance": 31.922473305559585,
+              "roadGap": 2.058523476519679,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 2295,
+            "count": 765
+          },
+          "bladeBounds": {
+            "min": [
+              33.131675720214844,
+              0.8329851627349854,
+              -30.196104049682617
+            ],
+            "max": [
+              38.59225082397461,
+              1.7891937494277954,
+              -27.22600555419922
+            ]
+          }
+        },
+        {
+          "id": "space11-meadow-5",
+          "type": "meadow",
+          "approvedBoundsBlenderXY": [
+            -39.8,
+            6.75,
+            -36,
+            15.25
+          ],
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 85,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                -38.54332717472788,
+                7.487667921437326,
+                0.6942811457891693
+              ],
+              "normalThree": [
+                0.0035821831817242676,
+                0.9999935839612429,
+                -3.576255740980779e-08
+              ],
+              "bankDistance": 6.97914804846137,
+              "roadGap": 4.043327174727878,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                -38.94704174313494,
+                12.395417935668219,
+                0.6956606651428885
+              ],
+              "normalThree": [
+                0.004255779764792876,
+                0.9999909219762415,
+                0.00021048444164358676
+              ],
+              "bankDistance": 11.775007945882336,
+              "roadGap": 4.447041743134939,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 3060,
+            "count": 765
+          },
+          "bladeBounds": {
+            "min": [
+              -39.687747955322266,
+              0.6720166802406311,
+              -14.978107452392578
+            ],
+            "max": [
+              -36.30156707763672,
+              1.2639100551605225,
+              -7.387130260467529
+            ]
+          }
+        },
+        {
+          "id": "space11-meadow-6",
+          "type": "meadow",
+          "approvedBoundsBlenderXY": [
+            -40.45,
+            -32.95,
+            -36.55,
+            -25.45
+          ],
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 85,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                -38.42767016025384,
+                -27.195764089806513,
+                0.6950198897095063
+              ],
+              "normalThree": [
+                0.003517316754532273,
+                0.9999877401669317,
+                -0.003485397922969284
+              ],
+              "bankDistance": 18.62209745570942,
+              "roadGap": 3.9276701602538395,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                -39.074251504402675,
+                -28.619498969446372,
+                0.7022564924163461
+              ],
+              "normalThree": [
+                0.003517316754532273,
+                0.9999877401669317,
+                -0.003485397922969284
+              ],
+              "bankDistance": 20.20094744657878,
+              "roadGap": 4.574251504402675,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 3825,
+            "count": 765
+          },
+          "bladeBounds": {
+            "min": [
+              -40.124393463134766,
+              0.6722838878631592,
+              25.70973014831543
+            ],
+            "max": [
+              -37.0515251159668,
+              1.2669343948364258,
+              32.328792572021484
+            ]
+          }
+        },
+        {
+          "id": "space11-meadow-7",
+          "type": "meadow",
+          "approvedBoundsBlenderXY": [
+            36.05,
+            6.1499999999999995,
+            39.95,
+            14.25
+          ],
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 85,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                37.80352441652532,
+                8.900529411804168,
+                0.7055167223542256
+              ],
+              "normalThree": [
+                -0.010158739833125718,
+                0.9999483870415857,
+                0.00015250552224207995
+              ],
+              "bankDistance": 13.62917220289264,
+              "roadGap": 3.3035244165253204,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                37.655904608509694,
+                11.308881261166313,
+                0.7042764045630321
+              ],
+              "normalThree": [
+                -0.010732848393121887,
+                0.9999424013229722,
+                1.3484774130542425e-06
+              ],
+              "bankDistance": 16.007048636863193,
+              "roadGap": 3.155904608509694,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 4590,
+            "count": 765
+          },
+          "bladeBounds": {
+            "min": [
+              36.40012741088867,
+              0.6728943586349487,
+              -13.635629653930664
+            ],
+            "max": [
+              39.665924072265625,
+              1.3226410150527954,
+              -6.539127349853516
+            ]
+          }
+        },
+        {
+          "id": "space11-meadow-8",
+          "type": "meadow",
+          "approvedBoundsBlenderXY": [
+            36.65,
+            -35.45,
+            40.550000000000004,
+            -28.55
+          ],
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 85,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                37.0124876890341,
+                -30.985953078241657,
+                0.6997244697839591
+              ],
+              "normalThree": [
+                -0.01562885410549117,
+                0.99987700788993,
+                -0.0013069094959508344
+              ],
+              "bankDistance": 16.988630385860777,
+              "roadGap": 2.512487689034103,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                39.57072567372799,
+                -31.71065957379248,
+                0.8026749229965233
+              ],
+              "normalThree": [
+                -0.06768079551345248,
+                0.9976924140918217,
+                -0.005399702056536588
+              ],
+              "bankDistance": 17.123216373033543,
+              "roadGap": 5.070725673727992,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 5355,
+            "count": 765
+          },
+          "bladeBounds": {
+            "min": [
+              36.810707092285156,
+              0.6814203262329102,
+              28.972122192382812
+            ],
+            "max": [
+              40.197776794433594,
+              1.3912869691848755,
+              35.05818557739258
+            ]
+          }
+        },
+        {
+          "id": "space11-meadow-9",
+          "type": "meadow",
+          "approvedBoundsBlenderXY": [
+            -22.45,
+            -48.849999999999994,
+            -13.55,
+            -45.75
+          ],
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 85,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                -15.059007481585603,
+                -47.455717965685785,
+                1.2537662523956499
+              ],
+              "normalThree": [
+                -0.00033054416757455905,
+                0.9973036808793767,
+                -0.07338432288302435
+              ],
+              "bankDistance": 36.93027796568579,
+              "roadGap": 9.729728945174875,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                -17.841560056673302,
+                -48.24089414689427,
+                1.3279087774336489
+              ],
+              "normalThree": [
+                0.014680757027786474,
+                0.9970941788967094,
+                -0.07475074436678439
+              ],
+              "bankDistance": 37.715454146894274,
+              "roadGap": 10.09106336868425,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 6120,
+            "count": 765
+          },
+          "bladeBounds": {
+            "min": [
+              -21.68382453918457,
+              1.1464102268218994,
+              46.02515411376953
+            ],
+            "max": [
+              -13.914552688598633,
+              1.8931447267532349,
+              48.60316848754883
+            ]
+          }
+        },
+        {
+          "id": "space11-meadow-10",
+          "type": "meadow",
+          "approvedBoundsBlenderXY": [
+            -1.5499999999999998,
+            -49.35,
+            8.55,
+            -46.050000000000004
+          ],
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 85,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                0.06447582965304655,
+                -47.21051576456153,
+                1.2428591023872073
+              ],
+              "normalThree": [
+                -0.002189121470023159,
+                0.997427214321417,
+                -0.0716530521206713
+              ],
+              "bankDistance": 36.68507576456153,
+              "roadGap": 5.004337644330091,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                -0.0002970354636708805,
+                -47.38897182070733,
+                1.2555347960104228
+              ],
+              "normalThree": [
+                -0.009068899470109299,
+                0.9973885866805203,
+                -0.07165027719301069
+              ],
+              "bankDistance": 36.86353182070734,
+              "roadGap": 5.132961727535398,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 6885,
+            "count": 765
+          },
+          "bladeBounds": {
+            "min": [
+              -1.2157034873962402,
+              1.1758427619934082,
+              46.27843475341797
+            ],
+            "max": [
+              8.085994720458984,
+              1.9098926782608032,
+              48.98219299316406
+            ]
+          }
+        },
+        {
+          "id": "space11-meadow-11",
+          "type": "meadow",
+          "approvedBoundsBlenderXY": [
+            18.15,
+            -49.300000000000004,
+            25.85,
+            -46.1
+          ],
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 85,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                21.26352299190981,
+                -47.0813856583822,
+                1.4420293615208095
+              ],
+              "normalThree": [
+                -0.003344347805216771,
+                0.9956044317262368,
+                -0.09359824178281824
+              ],
+              "bankDistance": 36.5559456583822,
+              "roadGap": 9.931385658382204,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                21.398875820881948,
+                -47.84952348635463,
+                1.5146977976748701
+              ],
+              "normalThree": [
+                -0.003344347805216771,
+                0.9956044317262368,
+                -0.09359824178281824
+              ],
+              "bankDistance": 37.324083486354624,
+              "roadGap": 10.599852907744541,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 7650,
+            "count": 765
+          },
+          "bladeBounds": {
+            "min": [
+              18.519195556640625,
+              1.3663883209228516,
+              46.289451599121094
+            ],
+            "max": [
+              25.216094970703125,
+              2.1602869033813477,
+              48.99971389770508
+            ]
+          }
+        },
+        {
+          "id": "space11-reed--1-0",
+          "type": "reed",
+          "xRange": [
+            -62.8,
+            -61.2
+          ],
+          "bankSide": -1,
+          "rootBankDistanceTarget": [
+            0.28,
+            1.2
+          ],
+          "maximumWaterwardLean": 0.21,
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 40,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                -62.74805639870465,
+                0.20834298975061927,
+                0.2437777088975963
+              ],
+              "normalThree": [
+                0.22959200417818496,
+                0.5886708806248683,
+                -0.7750832896674955
+              ],
+              "bankDistance": 0.29615061609074456,
+              "roadGap": 27.748056398704648,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                -62.56683421619236,
+                -0.15145452021729167,
+                0.6468312488931147
+              ],
+              "normalThree": [
+                0.22959199494654575,
+                0.5886708576039481,
+                -0.7750833098862971
+              ],
+              "bankDistance": 0.6087265172414478,
+              "roadGap": 27.566834216192362,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 8415,
+            "count": 360
+          },
+          "bladeBounds": {
+            "min": [
+              -62.80636978149414,
+              0.19302144646644592,
+              -0.32974979281425476
+            ],
+            "max": [
+              -61.34233474731445,
+              1.5962316989898682,
+              1.072270393371582
+            ]
+          }
+        },
+        {
+          "id": "space11-reed--1-1",
+          "type": "reed",
+          "xRange": [
+            -58.599999999999994,
+            -57
+          ],
+          "bankSide": -1,
+          "rootBankDistanceTarget": [
+            0.28,
+            1.2
+          ],
+          "maximumWaterwardLean": 0.21,
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 40,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                -58.25817890651524,
+                -2.4831595987962625,
+                0.6899999976158142
+              ],
+              "normalThree": [
+                0,
+                1,
+                0
+              ],
+              "bankDistance": 1.0631776214763518,
+              "roadGap": 23.3617276062022,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                -57.062096021696924,
+                -2.5407516545652475,
+                0.4500487637877839
+              ],
+              "normalThree": [
+                0.44133124466220586,
+                0.5427387032838223,
+                -0.7146057881396591
+              ],
+              "bankDistance": 0.42145824112929375,
+              "roadGap": 22.17701296847917,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 8775,
+            "count": 360
+          },
+          "bladeBounds": {
+            "min": [
+              -58.55116653442383,
+              0.28575098514556885,
+              1.581816554069519
+            ],
+            "max": [
+              -56.99977111816406,
+              1.5753881931304932,
+              3.0091264247894287
+            ]
+          }
+        },
+        {
+          "id": "space11-reed--1-2",
+          "type": "reed",
+          "xRange": [
+            -51,
+            -49.400000000000006
+          ],
+          "bankSide": -1,
+          "rootBankDistanceTarget": [
+            0.28,
+            1.2
+          ],
+          "maximumWaterwardLean": 0.21,
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 40,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                -50.02078176774085,
+                -6.609331662429209,
+                0.37289392071520666
+              ],
+              "normalThree": [
+                0.3629002158931548,
+                0.5635955677068795,
+                -0.7420670248473933
+              ],
+              "bankDistance": 0.33166463311761607,
+              "roadGap": 15.411423753702302,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                -49.56539288125933,
+                -7.439607955608547,
+                0.6999753077867581
+              ],
+              "normalThree": [
+                -0.006787770205162284,
+                0.9988001070211581,
+                -0.048500230825896405
+              ],
+              "bankDistance": 0.9528783065546307,
+              "roadGap": 14.798739355472357,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 9135,
+            "count": 360
+          },
+          "bladeBounds": {
+            "min": [
+              -51.006221771240234,
+              0.33771011233329773,
+              5.982183456420898
+            ],
+            "max": [
+              -49.44594192504883,
+              1.5893672704696655,
+              7.727020740509033
+            ]
+          }
+        },
+        {
+          "id": "space11-reed--1-3",
+          "type": "reed",
+          "xRange": [
+            -44.3,
+            -42.7
+          ],
+          "bankSide": -1,
+          "rootBankDistanceTarget": [
+            0.28,
+            1.2
+          ],
+          "maximumWaterwardLean": 0.21,
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 40,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                -42.741793145239356,
+                -8.453902492018612,
+                0.6970495234535434
+              ],
+              "normalThree": [
+                0.009996524471458813,
+                0.9972129114377333,
+                -0.07393563931130333
+              ],
+              "bankDistance": 0.712755541019142,
+              "roadGap": 7.9060776641832575,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                -43.51367042176425,
+                -7.996642430395195,
+                0.32966963238678204
+              ],
+              "normalThree": [
+                0.03764514726514536,
+                0.6043988662423891,
+                -0.7957919661395811
+              ],
+              "bankDistance": 0.33346481735818134,
+              "roadGap": 8.759489797538858,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 9495,
+            "count": 360
+          },
+          "bladeBounds": {
+            "min": [
+              -44.30712890625,
+              0.25736185908317566,
+              7.752648830413818
+            ],
+            "max": [
+              -42.712432861328125,
+              1.6037862300872803,
+              8.834741592407227
+            ]
+          }
+        },
+        {
+          "id": "space11-reed--1-4",
+          "type": "reed",
+          "xRange": [
+            42,
+            43.599999999999994
+          ],
+          "bankSide": -1,
+          "rootBankDistanceTarget": [
+            0.28,
+            1.2
+          ],
+          "maximumWaterwardLean": 0.21,
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 40,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                42.14498237259686,
+                -15.570711004549118,
+                0.7208789367664892
+              ],
+              "normalThree": [
+                0.0040216114650722026,
+                0.9834195688838322,
+                -0.1813002431811994
+              ],
+              "bankDistance": 0.76923313391395,
+              "roadGap": 7.144982372596857,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                42.37965915687382,
+                -15.835634393232347,
+                0.7749791677374063
+              ],
+              "normalThree": [
+                0.034421424013763274,
+                0.9793534189474183,
+                -0.19920353000102067
+              ],
+              "bankDistance": 1.0255693195667126,
+              "roadGap": 7.379659156873821,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 9855,
+            "count": 360
+          },
+          "bladeBounds": {
+            "min": [
+              42.069759368896484,
+              0.18579481542110443,
+              14.917317390441895
+            ],
+            "max": [
+              43.59540557861328,
+              1.6338704824447632,
+              16.008451461791992
+            ]
+          }
+        },
+        {
+          "id": "space11-reed--1-5",
+          "type": "reed",
+          "xRange": [
+            47.800000000000004,
+            49.4
+          ],
+          "bankSide": -1,
+          "rootBankDistanceTarget": [
+            0.28,
+            1.2
+          ],
+          "maximumWaterwardLean": 0.21,
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 40,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                48.53300232365728,
+                -18.42945677384719,
+                0.7848539807336294
+              ],
+              "normalThree": [
+                0.11334392187049785,
+                0.9803125168922466,
+                -0.16168031605425343
+              ],
+              "bankDistance": 1.1866601522546265,
+              "roadGap": 13.715231897992128,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                48.16205103844404,
+                -17.385830026689185,
+                0.3936336909360776
+              ],
+              "normalThree": [
+                0.41553907657139727,
+                0.5501354176598043,
+                -0.724346807874835
+              ],
+              "bankDistance": 0.38374119117855887,
+              "roadGap": 13.215260060075252,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 10215,
+            "count": 360
+          },
+          "bladeBounds": {
+            "min": [
+              47.832759857177734,
+              0.25767382979393005,
+              17.0831298828125
+            ],
+            "max": [
+              49.38877487182617,
+              1.6688498258590698,
+              18.916017532348633
+            ]
+          }
+        },
+        {
+          "id": "space11-reed--1-6",
+          "type": "reed",
+          "xRange": [
+            54.400000000000006,
+            56
+          ],
+          "bankSide": -1,
+          "rootBankDistanceTarget": [
+            0.28,
+            1.2
+          ],
+          "maximumWaterwardLean": 0.21,
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 40,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                55.77811124287546,
+                -23.879159905542828,
+                0.6899999976158142
+              ],
+              "normalThree": [
+                0,
+                1,
+                0
+              ],
+              "bankDistance": 1.0286284600291422,
+              "roadGap": 21.27811124287546,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                54.71488940231502,
+                -23.043676279355306,
+                0.6899999976158142
+              ],
+              "normalThree": [
+                0,
+                1,
+                0
+              ],
+              "bankDistance": 1.0359085679985576,
+              "roadGap": 20.214889402315023,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 10575,
+            "count": 360
+          },
+          "bladeBounds": {
+            "min": [
+              54.41487503051758,
+              0.2886585295200348,
+              22.112281799316406
+            ],
+            "max": [
+              55.949790954589844,
+              1.5957832336425781,
+              24.0069637298584
+            ]
+          }
+        },
+        {
+          "id": "space11-reed--1-7",
+          "type": "reed",
+          "xRange": [
+            61.2,
+            62.8
+          ],
+          "bankSide": -1,
+          "rootBankDistanceTarget": [
+            0.28,
+            1.2
+          ],
+          "maximumWaterwardLean": 0.21,
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 40,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                62.17964169420302,
+                -27.21303855719199,
+                0.5374229223618556
+              ],
+              "normalThree": [
+                0.33211327953549225,
+                0.5704975622518389,
+                -0.7511546452102185
+              ],
+              "bankDistance": 0.47874751068651733,
+              "roadGap": 27.67964169420302,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                61.91572585813701,
+                -27.219083940816898,
+                0.6899999976158142
+              ],
+              "normalThree": [
+                0,
+                1,
+                0
+              ],
+              "bankDistance": 0.5806859214697031,
+              "roadGap": 27.41572585813701,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 10935,
+            "count": 360
+          },
+          "bladeBounds": {
+            "min": [
+              61.207427978515625,
+              0.2989766299724579,
+              26.664735794067383
+            ],
+            "max": [
+              62.82059097290039,
+              1.573364496231079,
+              28.049758911132812
+            ]
+          }
+        },
+        {
+          "id": "space11-reed-1-0",
+          "type": "reed",
+          "xRange": [
+            -62.8,
+            -61.2
+          ],
+          "bankSide": 1,
+          "rootBankDistanceTarget": [
+            0.28,
+            1.2
+          ],
+          "maximumWaterwardLean": 0.21,
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 40,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                -62.7389711022377,
+                11.307377643820146,
+                0.5428442013645878
+              ],
+              "normalThree": [
+                -0.26029892184857895,
+                0.5839783115905377,
+                0.7689042872011655
+              ],
+              "bankDistance": 0.4477182874735446,
+              "roadGap": 28.2389711022377,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                -61.896743996068835,
+                11.453749568635635,
+                0.6899999976158142
+              ],
+              "normalThree": [
+                0,
+                1,
+                0
+              ],
+              "bankDistance": 0.8753998859692365,
+              "roadGap": 27.396743996068835,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 11295,
+            "count": 360
+          },
+          "bladeBounds": {
+            "min": [
+              -62.81009292602539,
+              0.3074306845664978,
+              -11.976140975952148
+            ],
+            "max": [
+              -61.19795608520508,
+              1.593825101852417,
+              -10.502795219421387
+            ]
+          }
+        },
+        {
+          "id": "space11-reed-1-1",
+          "type": "reed",
+          "xRange": [
+            -58.599999999999994,
+            -57
+          ],
+          "bankSide": 1,
+          "rootBankDistanceTarget": [
+            0.28,
+            1.2
+          ],
+          "maximumWaterwardLean": 0.21,
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 40,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                -57.26365851163864,
+                8.83766573054084,
+                0.6899999976158142
+              ],
+              "normalThree": [
+                0,
+                1,
+                0
+              ],
+              "bankDistance": 0.83566998321563,
+              "roadGap": 22.76365851163864,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                -58.29139945916831,
+                9.59970732581464,
+                0.6899999976158142
+              ],
+              "normalThree": [
+                0,
+                1,
+                0
+              ],
+              "bankDistance": 0.9154759199917315,
+              "roadGap": 23.79139945916831,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 11655,
+            "count": 360
+          },
+          "bladeBounds": {
+            "min": [
+              -58.579708099365234,
+              0.26832589507102966,
+              -9.877765655517578
+            ],
+            "max": [
+              -57.00470733642578,
+              1.5949574708938599,
+              -8.065417289733887
+            ]
+          }
+        },
+        {
+          "id": "space11-reed-1-2",
+          "type": "reed",
+          "xRange": [
+            -51,
+            -49.400000000000006
+          ],
+          "bankSide": 1,
+          "rootBankDistanceTarget": [
+            0.28,
+            1.2
+          ],
+          "maximumWaterwardLean": 0.21,
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 40,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                -50.93256222121418,
+                4.558999272929661,
+                0.7021587888544758
+              ],
+              "normalThree": [
+                -0.03171972411392797,
+                0.9994858726250516,
+                0.0046743475561457455
+              ],
+              "bankDistance": 0.9260539272706954,
+              "roadGap": 16.153632317326625,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                -50.399504153802994,
+                4.229099436052207,
+                0.702669825328833
+              ],
+              "normalThree": [
+                -0.025735502950246875,
+                0.9986077324238781,
+                0.04604650509146581
+              ],
+              "bankDistance": 0.9077744940109556,
+              "roadGap": 15.575288102334351,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 12015,
+            "count": 360
+          },
+          "bladeBounds": {
+            "min": [
+              -50.95484924316406,
+              0.256899356842041,
+              -4.787501811981201
+            ],
+            "max": [
+              -49.51625061035156,
+              1.610609531402588,
+              -3.3094265460968018
+            ]
+          }
+        },
+        {
+          "id": "space11-reed-1-3",
+          "type": "reed",
+          "xRange": [
+            -44.3,
+            -42.7
+          ],
+          "bankSide": 1,
+          "rootBankDistanceTarget": [
+            0.28,
+            1.2
+          ],
+          "maximumWaterwardLean": 0.21,
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 40,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                -44.25252880342305,
+                2.6512743820592686,
+                0.7278786016960268
+              ],
+              "normalThree": [
+                -0.004191287778516091,
+                0.9970418352984658,
+                0.07674641210783037
+              ],
+              "bankDistance": 1.0702879640553142,
+              "roadGap": 9.283330233879015,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                -44.06250597089529,
+                2.0103297285178856,
+                0.5076788809158472
+              ],
+              "normalThree": [
+                -0.04344967520755019,
+                0.60425647325067,
+                0.7956043239318278
+              ],
+              "bankDistance": 0.4400098133180288,
+              "roadGap": 9.063231226349279,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 12375,
+            "count": 360
+          },
+          "bladeBounds": {
+            "min": [
+              -44.29579162597656,
+              0.2656528353691101,
+              -2.7401084899902344
+            ],
+            "max": [
+              -42.68643569946289,
+              1.6142146587371826,
+              -1.618761420249939
+            ]
+          }
+        },
+        {
+          "id": "space11-reed-1-4",
+          "type": "reed",
+          "xRange": [
+            42,
+            43.599999999999994
+          ],
+          "bankSide": 1,
+          "rootBankDistanceTarget": [
+            0.28,
+            1.2
+          ],
+          "maximumWaterwardLean": 0.21,
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 40,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                42.64034201167524,
+                -4.137169282027511,
+                0.8008081187617293
+              ],
+              "normalThree": [
+                -0.06906163659954269,
+                0.9805122772273666,
+                0.1839189075560114
+              ],
+              "bankDistance": 1.0891900882590564,
+              "roadGap": 7.674439292744345,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                42.63017455562949,
+                -4.0555798618952,
+                0.8153960603882666
+              ],
+              "normalThree": [
+                -0.06906163659954269,
+                0.9805122772273666,
+                0.1839189075560114
+              ],
+              "bankDistance": 1.169956743046642,
+              "roadGap": 7.657055259935848,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 12735,
+            "count": 360
+          },
+          "bladeBounds": {
+            "min": [
+              41.99566650390625,
+              0.2696055769920349,
+              4.019325256347656
+            ],
+            "max": [
+              43.619407653808594,
+              1.687502384185791,
+              5.129819869995117
+            ]
+          }
+        },
+        {
+          "id": "space11-reed-1-5",
+          "type": "reed",
+          "xRange": [
+            47.800000000000004,
+            49.4
+          ],
+          "bankSide": 1,
+          "rootBankDistanceTarget": [
+            0.28,
+            1.2
+          ],
+          "maximumWaterwardLean": 0.21,
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 40,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                49.34731671772897,
+                -7.5506489841364,
+                0.5002127016617592
+              ],
+              "normalThree": [
+                -0.45989672379283364,
+                0.5370704807594475,
+                0.7071423492773108
+              ],
+              "bankDistance": 0.43225836787372796,
+              "roadGap": 14.931607102212935,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                49.245232238620524,
+                -7.57030798100256,
+                0.38691281105074893
+              ],
+              "normalThree": [
+                -0.45989672379283364,
+                0.5370704807594475,
+                0.7071423492773108
+              ],
+              "bankDistance": 0.34597854529507455,
+              "roadGap": 14.839037878283404,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 13095,
+            "count": 360
+          },
+          "bladeBounds": {
+            "min": [
+              47.82168197631836,
+              0.30326414108276367,
+              5.9596734046936035
+            ],
+            "max": [
+              49.41709899902344,
+              1.6025898456573486,
+              7.717151641845703
+            ]
+          }
+        },
+        {
+          "id": "space11-reed-1-6",
+          "type": "reed",
+          "xRange": [
+            54.400000000000006,
+            56
+          ],
+          "bankSide": 1,
+          "rootBankDistanceTarget": [
+            0.28,
+            1.2
+          ],
+          "maximumWaterwardLean": 0.21,
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 40,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                54.657387116551405,
+                -11.246845354687906,
+                0.6787796130292207
+              ],
+              "normalThree": [
+                -0.5044591143347785,
+                0.522229921166678,
+                0.6876022915921792
+              ],
+              "bankDistance": 0.5970255686901522,
+              "roadGap": 19.80233559560051,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                55.885550037771466,
+                -11.810311425162649,
+                0.6899999976158142
+              ],
+              "normalThree": [
+                0,
+                1,
+                0
+              ],
+              "bankDistance": 0.935855344319716,
+              "roadGap": 20.965404347061916,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 13455,
+            "count": 360
+          },
+          "bladeBounds": {
+            "min": [
+              54.4852180480957,
+              0.2423635572195053,
+              10.66318130493164
+            ],
+            "max": [
+              55.99443435668945,
+              1.5982683897018433,
+              12.525854110717773
+            ]
+          }
+        },
+        {
+          "id": "space11-reed-1-7",
+          "type": "reed",
+          "xRange": [
+            61.2,
+            62.8
+          ],
+          "bankSide": 1,
+          "rootBankDistanceTarget": [
+            0.28,
+            1.2
+          ],
+          "maximumWaterwardLean": 0.21,
+          "support": {
+            "_public_excerpt": true,
+            "_reason": "large per-point/frame/geometry array",
+            "_original_item_count": 40,
+            "_original_data_retained_locally": true,
+            "_explicit_failure_item_count": 0,
+            "_first_item": {
+              "blender": [
+                61.67154683545232,
+                -14.994241008730379,
+                0.6899999976158142
+              ],
+              "normalThree": [
+                0,
+                1,
+                0
+              ],
+              "bankDistance": 1.100109503390268,
+              "roadGap": 26.671546835452318,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            },
+            "_last_item": {
+              "blender": [
+                61.241602041572335,
+                -15.50792602130787,
+                0.3923035657469782
+              ],
+              "normalThree": [
+                -0.3105002760636973,
+                0.5749332377686829,
+                0.7569949475876224
+              ],
+              "bankDistance": 0.41763124418444963,
+              "roadGap": 26.241602041572335,
+              "source": "ROAM01_Surface__EXT_B02_DampMineralGround"
+            }
+          },
+          "bladeVertexRange": {
+            "start": 13815,
+            "count": 360
+          },
+          "bladeBounds": {
+            "min": [
+              61.20551300048828,
+              0.22766312956809998,
+              14.902688980102539
+            ],
+            "max": [
+              62.77959442138672,
+              1.590644359588623,
+              16.090068817138672
+            ]
+          }
+        }
+      ],
+      "triangles": 51949,
+      "branchTriangles": 19520,
+      "foliageTriangles": 27704,
+      "bladeTriangles": 4725,
+      "leafInstances": 13852,
+      "addedMeshes": 3,
+      "drawCalls": 3,
+      "newLights": 0,
+      "newTextures": 0,
+      "shadowCastersAdded": 0,
+      "borrowedResources": {
+        "leafTexture": "SPACE09_local_leaf_sprig_alpha",
+        "leafGeometry": "f00f9b62-f55b-46bb-ab7f-f70c40d54517",
+        "policy": "Borrowed texture and unit-card geometry are not modified or disposed. Branch vertices/normals are copied from three existing tree prototypes."
+      },
+      "openAreas": [
+        {
+          "id": "north-central-skyline",
+          "bounds": [
+            -15,
+            28,
+            15,
+            48
+          ],
+          "policy": "No new tall trees"
+        },
+        {
+          "id": "south-central-meadow",
+          "bounds": [
+            -20,
+            -75,
+            18,
+            -49
+          ],
+          "policy": "Low meadow, no new tall trees"
+        },
+        {
+          "id": "western-canal-view",
+          "xRange": [
+            -38,
+            -25
+          ],
+          "policy": "No new woody planting"
+        },
+        {
+          "id": "eastern-canal-view",
+          "xRange": [
+            24,
+            58
+          ],
+          "policy": "River edge stays low; trees at least ten metres behind the bank"
+        }
+      ],
+      "groundMaterialCount": 2,
+      "groundMeshes": [
+        "ROAM01_Surface__soil",
+        "ROAM01_Surface__EXT_B02_DampMineralGround"
+      ],
+      "supportSampleCount": 1619,
+      "heightMethod": "Every root is raycast onto the actual unchanged terrain mesh; no new terrain, road or ground overlay plane.",
+      "groundMethod": "Outside-only dry meadow/wet soil colour separation, 5m feathered leaf-litter understory around six copses, damp banks and restrained root contact; fade only at the approved outer envelope.",
+      "additionalGroundReceiverBias": {
+        "method": "Directional receiver-plane depth gradient covering the PCFSoft two-texel footprint at actual shadowMapSize",
+        "additionalNormalizedRange": [
+          0,
+          0.0012
+        ],
+        "preservedVertexBias": -0.0002,
+        "degenerateJacobianGuard": 1e-12,
+        "mask": "Per-fragment outside the developed rectangle only, fading to the outer envelope",
+        "developedBoundsBlenderXY": [
+          -36,
+          -44,
+          36,
+          26.5
+        ],
+        "receiveShadowPreserved": true,
+        "shadowUVAndGlobalLightsUnchanged": true,
+        "inherited09ReceiverPreserved": true
+      },
+      "unchanged": "All original geometry, all 23 existing trees, public navigation, buildings, lights, fog, exposure and shadow frustum."
+    },
+    "source": {
+      "file": "space-10.glb",
+      "sha256": "ff3676a0e0c8a796f1f5c13be86ff9faadb21c257041cef1ebbe29fe17325df5",
+      "bytes": 16325100,
+      "triangles": 252502
+    },
+    "newGeometry": {
+      "triangles": 51949,
+      "drawCalls": 3,
+      "bounds": {
+        "min": [
+          -66.49677884951234,
+          0.18579481542110443,
+          -52.26634469628334
+        ],
+        "max": [
+          65.33858591504395,
+          10.58457039296627,
+          71.65351665019989
+        ]
+      },
+      "meshes": [
+        {
+          "name": "SPACE11_OuterTreeBranches",
+          "triangles": 19520,
+          "instances": 1
+        },
+        {
+          "name": "SPACE11_OuterLeaves",
+          "triangles": 27704,
+          "instances": 13852
+        },
+        {
+          "name": "SPACE11_MeadowReeds",
+          "triangles": 4725,
+          "instances": 1
+        }
+      ]
+    },
+    "geometryDiff": [],
+    "oldMaterialMutations": [],
+    "materialReplacements": [
+      {
+        "mesh": "ROAM01_Surface__soil",
+        "source": "Space 10 planted beds / Space 10 lamp field / Space 09 ground / Space 06 landscape / Space 02 / ROAM01_PBR / soil",
+        "replacement": "Space 11 outer meadow / Space 10 planted beds / Space 10 lamp field / Space 09 ground / Space 06 landscape / Space 02 / ROAM01_PBR / soil"
+      },
+      {
+        "mesh": "ROAM01_Surface__EXT_B02_DampMineralGround",
+        "source": "Space 10 planted beds / Space 10 lamp field / Space 09 ground / Space 06 landscape / Space 02 / ROAM01_PBR / EXT_B02_DampMineralGround",
+        "replacement": "Space 11 outer meadow / Space 10 planted beds / Space 10 lamp field / Space 09 ground / Space 06 landscape / Space 02 / ROAM01_PBR / EXT_B02_DampMineralGround"
+      }
+    ],
+    "inheritedHooks": [
+      {
+        "mesh": "ROAM01_Surface__soil",
+        "oldKey": "space-02-world-surface-earth-full/space06-landscape-earth-01/[[-25.46,-1.62,24.1,1.35],[-25.46,-16,24.1,-10.72],[-13.8,1,-11.8,9.1],[10.5,1,12.5,9.1],[-13.8,6.6,12.5,9.1],[-12.4,0.95,11,7.1],[-14.2,-21.85,-7.8,-15.95],[-6.3,-21.85,0.3,-15.95],[1.6,-21.85,8,-15.95],[-7.98,-23.5,-6.12,-15.1],[-12.25,-26,-5.95,-22.25],[-25.25,1.1500000000000001,-17.15,6.8500000000000005],[16.85,1.1500000000000001,22.85,6.8500000000000005],[21.95,1.1500000000000001,31.349999999999998,6.8500000000000005],[-31.349999999999998,9.100000000000001,-24.05,16.2],[-24.95,9.100000000000001,-16.45,16.2],[15.850000000000001,9.100000000000001,24.15,16.2],[24.75,10.9,31.35,19],[-31.349999999999998,-22.049999999999997,-23.650000000000002,-15.75],[-24.55,-22.049999999999997,-17.45,-15.75],[15.450000000000003,-22.049999999999997,23.75,-15.75],[22.85,-22.049999999999997,31.35,-15.75],[-31.35,-43.6,-24.25,-37.699999999999996],[-25.15,-43.6,-17.65,-37.699999999999996],[-11.149999999999999,-43.6,-4.45,-36.699999999999996],[-2.7500000000000004,-43.6,2.9500000000000006,-36.699999999999996],[16.650000000000002,-43.6,24.349999999999998,-36.699999999999996],[23.45,-43.6,31.349999999999998,-36.699999999999996],[-13.149999999999999,-32.45,-4.249999999999999,-26.150000000000002],[-3,-34.1,3.4000000000000004,-28.5],[-7.65,17.1,1.6500000000000006,23.5],[0.75,17.3,5.7,22.900000000000002],[-34.5,6.9,-13.4,9.1],[12.1,6.9,34.5,9.1],[-34.5,0.5,-31.5,26.35],[31.5,-2.3,34.5,26.35],[-34.5,24.05,34.5,26.35],[-34.5,-36.75,-31.5,-12],[31.5,-36.75,34.5,-14],[-34.5,-36.75,34.5,-34.25]]/space09-bank-slope-outer-ground-receiver-02/space10-bounded-lamp-field-33-01/space10-planted-earth-10-01",
+        "newKey": "space-02-world-surface-earth-full/space06-landscape-earth-01/[[-25.46,-1.62,24.1,1.35],[-25.46,-16,24.1,-10.72],[-13.8,1,-11.8,9.1],[10.5,1,12.5,9.1],[-13.8,6.6,12.5,9.1],[-12.4,0.95,11,7.1],[-14.2,-21.85,-7.8,-15.95],[-6.3,-21.85,0.3,-15.95],[1.6,-21.85,8,-15.95],[-7.98,-23.5,-6.12,-15.1],[-12.25,-26,-5.95,-22.25],[-25.25,1.1500000000000001,-17.15,6.8500000000000005],[16.85,1.1500000000000001,22.85,6.8500000000000005],[21.95,1.1500000000000001,31.349999999999998,6.8500000000000005],[-31.349999999999998,9.100000000000001,-24.05,16.2],[-24.95,9.100000000000001,-16.45,16.2],[15.850000000000001,9.100000000000001,24.15,16.2],[24.75,10.9,31.35,19],[-31.349999999999998,-22.049999999999997,-23.650000000000002,-15.75],[-24.55,-22.049999999999997,-17.45,-15.75],[15.450000000000003,-22.049999999999997,23.75,-15.75],[22.85,-22.049999999999997,31.35,-15.75],[-31.35,-43.6,-24.25,-37.699999999999996],[-25.15,-43.6,-17.65,-37.699999999999996],[-11.149999999999999,-43.6,-4.45,-36.699999999999996],[-2.7500000000000004,-43.6,2.9500000000000006,-36.699999999999996],[16.650000000000002,-43.6,24.349999999999998,-36.699999999999996],[23.45,-43.6,31.349999999999998,-36.699999999999996],[-13.149999999999999,-32.45,-4.249999999999999,-26.150000000000002],[-3,-34.1,3.4000000000000004,-28.5],[-7.65,17.1,1.6500000000000006,23.5],[0.75,17.3,5.7,22.900000000000002],[-34.5,6.9,-13.4,9.1],[12.1,6.9,34.5,9.1],[-34.5,0.5,-31.5,26.35],[31.5,-2.3,34.5,26.35],[-34.5,24.05,34.5,26.35],[-34.5,-36.75,-31.5,-12],[31.5,-36.75,34.5,-14],[-34.5,-36.75,34.5,-34.25]]/space09-bank-slope-outer-ground-receiver-02/space10-bounded-lamp-field-33-01/space10-planted-earth-10-01/space11-bounded-grove-meadow-receiver-plane-03",
+        "oldUniforms": [
+          "s07LampPositions",
+          "s07LampPlanes",
+          "s07LampGroundRects",
+          "s07LampColour",
+          "s10Beds"
+        ],
+        "newUniforms": [
+          "s07LampPositions",
+          "s07LampPlanes",
+          "s07LampGroundRects",
+          "s07LampColour",
+          "s10Beds",
+          "s11Roots",
+          "s11Groves",
+          "s11Developed"
+        ],
+        "uniformsRetained": true,
+        "vertexSourceRetained": true,
+        "fragmentSourceRetained": true
+      },
+      {
+        "mesh": "ROAM01_Surface__EXT_B02_DampMineralGround",
+        "oldKey": "space-02-world-surface-earth-full/space06-landscape-earth-01/[[-25.46,-1.62,24.1,1.35],[-25.46,-16,24.1,-10.72],[-13.8,1,-11.8,9.1],[10.5,1,12.5,9.1],[-13.8,6.6,12.5,9.1],[-12.4,0.95,11,7.1],[-14.2,-21.85,-7.8,-15.95],[-6.3,-21.85,0.3,-15.95],[1.6,-21.85,8,-15.95],[-7.98,-23.5,-6.12,-15.1],[-12.25,-26,-5.95,-22.25],[-25.25,1.1500000000000001,-17.15,6.8500000000000005],[16.85,1.1500000000000001,22.85,6.8500000000000005],[21.95,1.1500000000000001,31.349999999999998,6.8500000000000005],[-31.349999999999998,9.100000000000001,-24.05,16.2],[-24.95,9.100000000000001,-16.45,16.2],[15.850000000000001,9.100000000000001,24.15,16.2],[24.75,10.9,31.35,19],[-31.349999999999998,-22.049999999999997,-23.650000000000002,-15.75],[-24.55,-22.049999999999997,-17.45,-15.75],[15.450000000000003,-22.049999999999997,23.75,-15.75],[22.85,-22.049999999999997,31.35,-15.75],[-31.35,-43.6,-24.25,-37.699999999999996],[-25.15,-43.6,-17.65,-37.699999999999996],[-11.149999999999999,-43.6,-4.45,-36.699999999999996],[-2.7500000000000004,-43.6,2.9500000000000006,-36.699999999999996],[16.650000000000002,-43.6,24.349999999999998,-36.699999999999996],[23.45,-43.6,31.349999999999998,-36.699999999999996],[-13.149999999999999,-32.45,-4.249999999999999,-26.150000000000002],[-3,-34.1,3.4000000000000004,-28.5],[-7.65,17.1,1.6500000000000006,23.5],[0.75,17.3,5.7,22.900000000000002],[-34.5,6.9,-13.4,9.1],[12.1,6.9,34.5,9.1],[-34.5,0.5,-31.5,26.35],[31.5,-2.3,34.5,26.35],[-34.5,24.05,34.5,26.35],[-34.5,-36.75,-31.5,-12],[31.5,-36.75,34.5,-14],[-34.5,-36.75,34.5,-34.25]]/space09-bank-slope-outer-ground-receiver-02/space10-bounded-lamp-field-33-01/space10-planted-earth-10-01",
+        "newKey": "space-02-world-surface-earth-full/space06-landscape-earth-01/[[-25.46,-1.62,24.1,1.35],[-25.46,-16,24.1,-10.72],[-13.8,1,-11.8,9.1],[10.5,1,12.5,9.1],[-13.8,6.6,12.5,9.1],[-12.4,0.95,11,7.1],[-14.2,-21.85,-7.8,-15.95],[-6.3,-21.85,0.3,-15.95],[1.6,-21.85,8,-15.95],[-7.98,-23.5,-6.12,-15.1],[-12.25,-26,-5.95,-22.25],[-25.25,1.1500000000000001,-17.15,6.8500000000000005],[16.85,1.1500000000000001,22.85,6.8500000000000005],[21.95,1.1500000000000001,31.349999999999998,6.8500000000000005],[-31.349999999999998,9.100000000000001,-24.05,16.2],[-24.95,9.100000000000001,-16.45,16.2],[15.850000000000001,9.100000000000001,24.15,16.2],[24.75,10.9,31.35,19],[-31.349999999999998,-22.049999999999997,-23.650000000000002,-15.75],[-24.55,-22.049999999999997,-17.45,-15.75],[15.450000000000003,-22.049999999999997,23.75,-15.75],[22.85,-22.049999999999997,31.35,-15.75],[-31.35,-43.6,-24.25,-37.699999999999996],[-25.15,-43.6,-17.65,-37.699999999999996],[-11.149999999999999,-43.6,-4.45,-36.699999999999996],[-2.7500000000000004,-43.6,2.9500000000000006,-36.699999999999996],[16.650000000000002,-43.6,24.349999999999998,-36.699999999999996],[23.45,-43.6,31.349999999999998,-36.699999999999996],[-13.149999999999999,-32.45,-4.249999999999999,-26.150000000000002],[-3,-34.1,3.4000000000000004,-28.5],[-7.65,17.1,1.6500000000000006,23.5],[0.75,17.3,5.7,22.900000000000002],[-34.5,6.9,-13.4,9.1],[12.1,6.9,34.5,9.1],[-34.5,0.5,-31.5,26.35],[31.5,-2.3,34.5,26.35],[-34.5,24.05,34.5,26.35],[-34.5,-36.75,-31.5,-12],[31.5,-36.75,34.5,-14],[-34.5,-36.75,34.5,-34.25]]/space09-bank-slope-outer-ground-receiver-02/space10-bounded-lamp-field-33-01/space10-planted-earth-10-01/space11-bounded-grove-meadow-receiver-plane-03",
+        "oldUniforms": [
+          "s07LampPositions",
+          "s07LampPlanes",
+          "s07LampGroundRects",
+          "s07LampColour",
+          "s10Beds"
+        ],
+        "newUniforms": [
+          "s07LampPositions",
+          "s07LampPlanes",
+          "s07LampGroundRects",
+          "s07LampColour",
+          "s10Beds",
+          "s11Roots",
+          "s11Groves",
+          "s11Developed"
+        ],
+        "uniformsRetained": true,
+        "vertexSourceRetained": true,
+        "fragmentSourceRetained": true
+      }
+    ],
+    "sourceReceivers": [
+      {
+        "name": "ROAM01_Surface__soil",
+        "biases": [
+          -0.0002
+        ],
+        "receiveShadow": true
+      },
+      {
+        "name": "ROAM01_Surface__EXT_B02_DampMineralGround",
+        "biases": [
+          -0.0002
+        ],
+        "receiveShadow": true
+      }
+    ],
+    "navigationSamples": 2760,
+    "stubs": {
+      "imageDecodes": 28,
+      "hdrDecodes": 1,
+      "cubeCaptures": 1,
+      "pmremEquirectangular": 1,
+      "pmremCubemap": 1,
+      "gpuCompile": 2
+    },
+    "disposalBeforeInheritedOwner": {
+      "oldGeometry": 0,
+      "oldMaterials": 0,
+      "oldTextures": 0,
+      "newGeometry": 2,
+      "newMaterials": 5,
+      "newTextures": 0
+    },
+    "disposal": {
+      "oldGeometry": 53,
+      "oldMaterials": 75,
+      "oldTextures": 50,
+      "newGeometry": 2,
+      "newMaterials": 5,
+      "newTextures": 0,
+      "expectedNewGeometry": 2,
+      "expectedNewMaterials": 5,
+      "expectedNewTextures": 0
+    },
+    "preservation": {
+      "reusedReport": "artifacts/scene-space-11/runtime-validation-final-r2.json",
+      "previousCount": 1391,
+      "recheckedInputs": [
+        "web/models/space-10.glb",
+        "web/models/space-10-manifest.json",
+        "artifacts/rainy-canal-space-10.blend",
+        "web/scene-space-10-environment.js",
+        "web/scene-space-10-surfaces.js",
+        "web/scene-space-10-windows.js",
+        "web/scene-space-10-lamps.js",
+        "web/scene-space-10-plots.js",
+        "web/scene-space-10-navigation.js",
+        "web/scene-space-09-landscape.js",
+        "web/scene-space-09-weather.js",
+        "web/scene-space-09-lighting.js"
+      ],
+      "changes": []
+    },
+    "moduleHashes": {
+      "web/scene-space-11-environment.js": "a219f83db6739a6cae9d1f3668f249023d8a947ca88d8aaca8fdae2839b258b5",
+      "web/scene-space-11-landscape.js": "39b0d6de025450a7b4df48168fdb32bfccdecda54375763a251348cff190c3bc"
+    }
+  },
+  "seconds": 5.59,
+  "limitations": [
+    "Real SPACE10 GLB and complete production setup10 → landscape11 environment are exercised; no save, render, browser or old source edits.",
+    "Local image/HDR reads are real, decode and GPU PMREM/CubeCamera are explicit CPU stubs. Leaf atlas uses the actual production paths through Windows System.Drawing. Visual/GPU quality is reviewed separately.",
+    "Actual instanced geometry is conservatively solid in sampled body-volume tests; this does not prove every continuous trajectory."
+  ]
+}

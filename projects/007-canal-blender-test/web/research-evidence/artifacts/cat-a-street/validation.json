@@ -1,0 +1,31 @@
+{
+  "page": "http://127.0.0.1:8062/shop-study-10.html",
+  "sourceCat": "web/models/cat-a-study.glb",
+  "sourceStreet": "web/models/roam-02.glb",
+  "originalFilesChecked": 111,
+  "originalFilesChanged": 0,
+  "automatedTests": {
+    "passed": 10,
+    "failed": 0,
+    "scope": "New actor blend/stride state and actual shop-study-10 controller, navigation, braking, camera math, pause/reset/focus loss"
+  },
+  "browserObserved": [
+    "Street and cat load together without captured console errors",
+    "Guided walk reaches 0.48 m/s",
+    "Walk-to-run control reaches 1.65 m/s with original Run body and tail pose",
+    "Out-and-back tour completes and returns to stopped state",
+    "Camera follows route and reorients on the return",
+    "Manual W movement works"
+  ],
+  "screenshots": [
+    "run-follow.png",
+    "first-run.png"
+  ],
+  "limits": [
+    "No independent authored idle or turn clip; stopped pose is an original Walk contact frame",
+    "Original Run foot-contact speeds are not perfectly consistent; calibrated speed reduces but does not eliminate sliding",
+    "Original tail loop seam remains",
+    "Terrain adaptation is whole-body slope alignment, not individual paw IK",
+    "All camera occlusion and bridge cases have not been exhaustively visually checked"
+  ]
+}

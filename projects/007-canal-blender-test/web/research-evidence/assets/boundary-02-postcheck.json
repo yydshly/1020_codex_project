@@ -1,0 +1,282 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-23T12:09:23.621276+00:00",
+  "passed": true,
+  "method": "Read-only reopening of draft and final; independent freeze audit, exact vertex comparison, SHA256 verification, and repeated existing ray/route checks. No build, save or render operations.",
+  "checks": {
+    "draft_and_final_exist": true,
+    "draft_hash_matches_preview_stats_and_seam_report": true,
+    "final_hash_matches_seam_report": true,
+    "saved_draft_audit_passed": true,
+    "independent_final_freeze_audit_passed": true,
+    "baseline_old_files_unchanged": true,
+    "websites_unchanged": true,
+    "ledger_exactly_two_completed": true,
+    "stats_previews_match_ledger": true,
+    "preview_hashes_and_resolution_match_ledger": true,
+    "draft_to_final_objects_and_counts_unchanged": true,
+    "only_apron_coordinate_data_changed": true,
+    "exactly_four_max_y_vertices_adjusted_only_in_y": true,
+    "correction_is_about_one_millimetre": true,
+    "final_apron_edge_exactly_matches_old_lane": true,
+    "draft_to_final_render_settings_unchanged": true,
+    "seven_known_hole_rays_now_hit_geometry": true,
+    "nine_local_ground_samples_have_support": true,
+    "two_original_sampled_routes_pass": true,
+    "draft_to_final_materials_unchanged": true,
+    "draft_to_final_worlds_unchanged": true,
+    "draft_to_final_node_groups_unchanged": true,
+    "draft_to_final_locked_scene_unchanged": true,
+    "draft_to_final_view_layers_unchanged": true,
+    "draft_to_final_layer_collection_flags_unchanged": true,
+    "all_files_present_before_postcheck_remain_unchanged": true
+  },
+  "source": {
+    "file": "artifacts/rainy-canal-extension-01.blend",
+    "sha256": "9e573a5908ffe288264d99dd7c9bec3a5e9eb32654e2b027428471f719a3f62f",
+    "frozen_objects": 2246
+  },
+  "draft": {
+    "file": "rainy-canal-extension-02.blend",
+    "sha256": "e263cdccc0ee42041b10ed8eeba9d272ccac581b9e19830c1b7523daeb59d3c9",
+    "rendered_preview_count": 2
+  },
+  "final": {
+    "file": "rainy-canal-extension-02-final.blend",
+    "bytes": 19219893,
+    "sha256": "202c8ca179e36cbffbb46c473418fd2035702afc97e795e309801f79fe603093",
+    "rendered": false,
+    "visual_render_validation": "Not performed. Existing previews correspond to the unchanged draft, not this final file."
+  },
+  "preservation": {
+    "baseline_old_files_checked": 111,
+    "changed_old_files": [],
+    "website_files_checked": {
+      "project_web": 56,
+      "built_site_007": 56
+    },
+    "audit_check_count": 68,
+    "violations": []
+  },
+  "candidate_counts": {
+    "objects": 2260,
+    "mesh_objects": 2157,
+    "curve_objects": 76,
+    "vertices": 165605,
+    "faces": 132091,
+    "curve_points": 1685,
+    "modifiers": 743,
+    "lights": 20,
+    "cameras": 7
+  },
+  "added_counts": {
+    "objects": 14,
+    "mesh_objects": 14,
+    "curve_objects": 0,
+    "vertices": 1145,
+    "faces": 931,
+    "curve_points": 0,
+    "modifiers": 0,
+    "lights": 0,
+    "cameras": 0
+  },
+  "draft_to_final_difference": {
+    "changed_objects": [
+      "EXT_B02_ShopRearWallApron"
+    ],
+    "changed_vertices": [
+      2,
+      3,
+      6,
+      7
+    ],
+    "apron_world_y_before": 7.10099983215332,
+    "apron_world_y_after": 7.099999904632568,
+    "old_lane_boundary_world_y": 7.099999904632568,
+    "maximum_displacement_metres": 0.0009999275207519531,
+    "remaining_gap_or_overlap_metres": 0.0
+  },
+  "render_budget": {
+    "maximum_attempts": 2,
+    "attempts": 2,
+    "completed": 2,
+    "previews": [
+      {
+        "file": "boundary-02-preview-01.png",
+        "bytes": 954878,
+        "sha256": "7a409f1441591bea4faaa569a8164b3839f6a336cc21e83fdd0df41b1fa76e8a",
+        "resolution": [
+          1104,
+          622
+        ],
+        "status": "complete",
+        "matches_ledger": true,
+        "valid_png_header": true,
+        "corresponds_to": "rainy-canal-extension-02.blend"
+      },
+      {
+        "file": "boundary-02-preview-02.png",
+        "bytes": 925042,
+        "sha256": "21ae71aa68150b65b32546033d1a61b0f13032d79c3a31beecbfea5e96318f2f",
+        "resolution": [
+          1104,
+          622
+        ],
+        "status": "complete",
+        "matches_ledger": true,
+        "valid_png_header": true,
+        "corresponds_to": "rainy-canal-extension-02.blend"
+      }
+    ],
+    "new_renders_during_postcheck": 0
+  },
+  "final_geometry_retests": {
+    "known_hole_rays": {
+      "overview_blue_strip_01": {
+        "hit": true,
+        "object": "EXT_B02_WestNearBankExtension",
+        "position": [
+          -29.25544548034668,
+          -1.7673110961914062,
+          0.496612548828125
+        ]
+      },
+      "overview_blue_strip_02": {
+        "hit": true,
+        "object": "EXT_B02_WestNearBankExtension",
+        "position": [
+          -27.360580444335938,
+          -1.7790145874023438,
+          0.4709320068359375
+        ]
+      },
+      "overview_blue_strip_03": {
+        "hit": true,
+        "object": "EXT_B02_WestNearBankExtension",
+        "position": [
+          -26.042461395263672,
+          -1.7410659790039062,
+          0.55426025390625
+        ]
+      },
+      "reverse_missing_bank_01": {
+        "hit": true,
+        "object": "EXT_B02_WestNearBankExtension",
+        "position": [
+          -55.447242736816406,
+          0.5482082366943359,
+          0.8199996948242188
+        ]
+      },
+      "reverse_missing_bank_02": {
+        "hit": true,
+        "object": "EXT_B02_WestNearBankExtension",
+        "position": [
+          -87.47533416748047,
+          -0.5555305480957031,
+          0.8199977874755859
+        ]
+      },
+      "reverse_missing_canal": {
+        "hit": true,
+        "object": "EXT_B02_WestCanalContinuation",
+        "position": [
+          -125.09255981445312,
+          -7.64198112487793,
+          0.024954795837402344
+        ]
+      },
+      "reverse_missing_bank_03": {
+        "hit": true,
+        "object": "EXT_B02_WestNearBankExtension",
+        "position": [
+          -137.53765869140625,
+          -0.023367881774902344,
+          0.8199996948242188
+        ]
+      }
+    },
+    "local_ground_samples": {
+      "rear_cafe": {
+        "hit": true,
+        "height": 0.8500000238418579,
+        "object": "EXT_B02_ShopRearWallApron"
+      },
+      "rear_bookshop": {
+        "hit": true,
+        "height": 0.8500000238418579,
+        "object": "EXT_B02_ShopRearWallApron"
+      },
+      "rear_pottery": {
+        "hit": true,
+        "height": 0.8500000238418579,
+        "object": "EXT_B02_ShopRearWallApron"
+      },
+      "west_side": {
+        "hit": true,
+        "height": 0.8500000238418579,
+        "object": "EXT_B02_ShopWestSideInfill"
+      },
+      "east_side": {
+        "hit": true,
+        "height": 0.8500000238418579,
+        "object": "EXT_B02_ShopEastSideInfill"
+      },
+      "rear_boundary": {
+        "hit": true,
+        "height": 0.845206618309021,
+        "object": "EXT_B02_RearLaneBoundaryShoulder"
+      },
+      "far_house_01_front": {
+        "hit": true,
+        "height": 0.8500000238418579,
+        "object": "EXT_B02_OppositeBuildingsContinuousSupport"
+      },
+      "far_house_02_front": {
+        "hit": true,
+        "height": 0.8500000238418579,
+        "object": "EXT_B02_OppositeBuildingsContinuousSupport"
+      },
+      "far_house_03_front": {
+        "hit": true,
+        "height": 0.8500000238418579,
+        "object": "EXT_B02_OppositeBuildingsContinuousSupport"
+      }
+    },
+    "original_route_samples": {
+      "scope": "Sampled centerline floor support and 0.48m-wide body-ray checks only, not a navmesh, full-area collision certification or a playable controller.",
+      "floor_tolerance": 0.17,
+      "known_existing_paving_gaps": "Original stone joints can be about 0.12m lower than stone tops; a future walking controller needs step tolerance or a separate collision proxy.",
+      "routes": {
+        "both_banks_loop": {
+          "sample_count": 285,
+          "maximum_floor_deviation": 0.12,
+          "unsupported_samples": [],
+          "body_ray_obstructions": [],
+          "sampled_checks_passed": true
+        },
+        "rear_lane_loop": {
+          "sample_count": 237,
+          "maximum_floor_deviation": 0.12,
+          "unsupported_samples": [],
+          "body_ray_obstructions": [],
+          "sampled_checks_passed": true
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Final has only the independently verified four-vertex, approximately 1 mm apron-edge adjustment, but no final render was produced or visually validated.",
+    "The seven hole rays and nine floor samples only cover the named diagnostics, not every possible viewpoint or terrain boundary.",
+    "Route samples do not constitute a navmesh, continuous collision certification, an implemented walking controller or playable roaming."
+  ],
+  "evidence_sha256": {
+    "boundary-02-baseline.json": "6733fcb71be24e7ded9863eceb7bb7ca2e2917789150949c2f18c8f256b892a2",
+    "boundary-02-stats.json": "33c9afbf69ec3e3c667292f93e84255f45581e71949d7b136290e224b94dfb97",
+    "boundary-02-audit.json": "6290f92d4d9883b3b128491219c61f56e8ea250821dc88720dc264c484947bd3",
+    "boundary-02-diagnostics.json": "f0f4a8d1294cabd84a40dfc6a1a8bf3a958a7f9356ab9f473ee675c7b8d3472b",
+    "boundary-02-render-ledger.json": "aa3ca29109db3082ecbc8afe6c804da4e46edfffbba07ffc9096caf882568c2d",
+    "boundary-02-seam-check.json": "c2c09f9982c9db711c2c89fe202fca318f3db28f453418dbb89fc2104a70178e"
+  },
+  "postcheck_seconds": 12.596
+}

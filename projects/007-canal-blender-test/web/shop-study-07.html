@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#182e36">
+  <meta name="description" content="跟着小猫阿橘，走过雨后的临水老街、石桥和店后小巷。可操作的第三人称街区漫游。">
+  <title>书店与阿橘 · 步态试修</title>
+  <link rel="stylesheet" href="roam.css">
+  <style>.view-tools{flex-wrap:wrap;justify-content:center;max-width:680px}@media(max-width:700px){.view-tools{width:calc(100% - 24px);max-width:366px}.view-tools button{padding:8px 9px}.view-tools .tool-separator{display:none}.help-panel{top:170px}}</style>
+  <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.min.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
+  <script type="module" src="shop-study-07-controller.js"></script>
+</head>
+<body>
+  <main id="roam-app" aria-label="阿橘的雨后散步">
+    <div id="world" tabindex="0" aria-label="小猫漫游场景，使用 WASD 或方向键移动，Shift 小跑、C 慢走，鼠标拖动环视" aria-describedby="control-summary"></div>
+    <header class="topbar">
+      <div class="wordmark"><span class="mark" aria-hidden="true">雨</span><div><p>阿橘的雨后散步</p><span>书店与阿橘 · 步态试修</span></div></div>
+      <a class="back-link" href="cat-v10-gait-study.html">看步态对照 <span aria-hidden="true">↗</span></a>
+    </header>
+
+    <section class="loading-card" id="loading" aria-labelledby="loading-title">
+      <span class="loading-mark" aria-hidden="true">🐾</span>
+      <p class="eyebrow">AFTER THE RAIN</p>
+      <h1 id="loading-title">陪阿橘，走一段雨后的路。</h1>
+      <p>一间老书店，十米雨后石街。陪阿橘走一段，也可以沿街小跑。</p>
+      <button type="button" class="primary" id="start">进入老街 <span aria-hidden="true">→</span></button>
+      <p class="load-status" id="load-status" role="status" aria-live="polite">小猫跟随视角 · 键盘与触屏均可操作</p>
+      <noscript>请启用 JavaScript，才能载入三维场景和控制小猫。</noscript>
+    </section>
+
+    <div class="view-tools" id="view-tools" hidden role="group" aria-label="漫游视角">
+      <button type="button" id="follow" aria-pressed="true">跟随阿橘</button>
+      <button type="button" id="overview" aria-pressed="false">看书店正面</button>
+      <span class="tool-separator"></span>
+      <button type="button" id="tour" aria-pressed="false">走一段看看</button>
+      <button type="button" id="run-mode" aria-pressed="false">小跑模式</button>
+      <button type="button" id="pause" aria-pressed="false" aria-label="暂停漫游">暂停</button>
+      <button type="button" id="help" aria-expanded="false" aria-controls="help-panel" aria-label="操作说明">?</button>
+    </div>
+
+    <aside class="help-panel" id="help-panel" hidden aria-label="操作说明">
+      <h2>一起散步</h2>
+      <dl><div><dt>WASD / 方向键</dt><dd>朝镜头所看的方向移动</dd></div><div><dt>Shift + 方向键</dt><dd>小跑，松开 Shift 恢复行走</dd></div><div><dt>C + 方向键</dt><dd>慢走，看看近处</dd></div><div><dt>拖动画面 / 滚轮</dt><dd>环顾四周 / 拉近拉远</dd></div><div><dt>触屏方向盘</dt><dd>点“小跑模式”切换走跑，按住方向移动；拖动空白处环视</dd></div><div><dt>R / 回到起点</dt><dd>让阿橘回到店前</dd></div></dl>
+      <p>阿橘会轻轻转头、眨眼。小跑时对角腿交替，急转时先放慢。可以进步态页，观察慢走与小跑，也能与 V8 同速对照行走。嘴部动作留到下一轮，暂未加入独立的眼球注视。切换正面看店，再跟着阿橘慢慢走；店门暂不开放。</p>
+      <p><a href="shop-study-05.html">查看上一版 ↗</a> · <a href="https://polyhaven.com/license" target="_blank" rel="noopener">石材、木纹与墙面：Poly Haven / CC0</a></p>
+    </aside>
+
+    <aside class="mini-map" id="mini-map" hidden aria-label="街区位置图">
+      <div class="map-heading"><span>这一小片街区</span><span id="location">店前石街</span></div>
+      <canvas id="map" width="440" height="300" aria-label="小猫在街区中的当前位置"></canvas>
+      <span class="map-caption"><i></i> 阿橘的位置 <span>两岸 · 双桥 · 后巷</span></span>
+    </aside>
+
+    <div class="cat-card" id="cat-card" hidden>
+      <span class="cat-avatar" aria-hidden="true">🐈</span><div><strong>阿橘</strong><span id="cat-status" role="status" aria-live="polite">在店前等你</span></div>
+      <button type="button" id="reset" aria-label="回到起点">回到起点 ↺</button>
+    </div>
+    <p class="control-summary" id="control-summary">WASD 移动 <span>·</span> 拖动环视 <span>·</span> Shift 小跑 <span>·</span> C 慢走</p>
+    <div class="touch-pad" id="touch-pad" hidden role="group" aria-label="触屏移动方向">
+      <button type="button" data-move="forward" aria-label="向前走">↑</button>
+      <button type="button" data-move="left" aria-label="向左走">←</button>
+      <button type="button" data-move="backward" aria-label="向后走">↓</button>
+      <button type="button" data-move="right" aria-label="向右走">→</button>
+    </div>
+    <div class="pause-overlay" id="pause-overlay" hidden><p>阿橘歇一会儿。</p><button type="button" id="resume">继续散步 →</button></div>
+    <p class="corner-note">书店与阿橘 · 步态试修</p>
+  </main>
+</body>
+</html>

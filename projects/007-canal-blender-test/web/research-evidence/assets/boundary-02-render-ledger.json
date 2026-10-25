@@ -1,0 +1,31 @@
+{
+  "maximum_attempts": 2,
+  "attempts": [
+    {
+      "camera": "EXT_Review_Overview",
+      "image": "boundary-02-preview-01.png",
+      "status": "complete",
+      "started_utc": "2026-10-23T12:01:57.105897+00:00",
+      "resolution": [
+        1104,
+        622
+      ],
+      "samples": 32,
+      "seconds": 4.081,
+      "sha256": "7a409f1441591bea4faaa569a8164b3839f6a336cc21e83fdd0df41b1fa76e8a"
+    },
+    {
+      "camera": "EXT_Review_ReverseRear",
+      "image": "boundary-02-preview-02.png",
+      "status": "complete",
+      "started_utc": "2026-10-23T12:02:01.217021+00:00",
+      "resolution": [
+        1104,
+        622
+      ],
+      "samples": 32,
+      "seconds": 3.319,
+      "sha256": "21ae71aa68150b65b32546033d1a61b0f13032d79c3a31beecbfea5e96318f2f"
+    }
+  ]
+}

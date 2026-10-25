@@ -1,0 +1,131 @@
+{
+  "module": "web/scene-space-05-navigation.js",
+  "testCommand": "node --test tests/test_canal_navigation.mjs tests/test_space_05_navigation.mjs",
+  "testsPassed": 24,
+  "testsFailed": 0,
+  "originalRouteSamplesPreserved": 522,
+  "newRouteLengthMetres": 32.4,
+  "newRouteSamplesAt2cm": 1624,
+  "verifiedRadii": [
+    0.18,
+    0.24,
+    0.3
+  ],
+  "verification": "Full forward and reverse navigation.move execution, canSweep for complete segments and individual steps; wall/corner/house/water and entrance width checks.",
+  "physicalValidation": "Geometry module and independent Blender audit remain the authority for actual mesh clearance.",
+  "spawn": {
+    "x": -7.05,
+    "y": 0.85,
+    "z": 12.65
+  },
+  "spawns": {
+    "original": {
+      "x": -12.8,
+      "y": 0.85,
+      "z": 0.55
+    },
+    "courtyardEntrance": {
+      "x": -7.05,
+      "y": 0.85,
+      "z": 12.65
+    },
+    "courtyardCenter": {
+      "x": -9.35,
+      "y": 0.855,
+      "z": 24.15
+    }
+  },
+  "newZones": [
+    {
+      "id": "courtyard-street-connector",
+      "minX": -7.95,
+      "maxX": -6.15,
+      "minZ": 15.15,
+      "maxZ": 16.7,
+      "rise": 0
+    },
+    {
+      "id": "courtyard-alley",
+      "minX": -7.95,
+      "maxX": -6.25,
+      "minZ": 16.3,
+      "maxZ": 23.45,
+      "rise": 0
+    },
+    {
+      "id": "courtyard-interior",
+      "minX": -11.95,
+      "maxX": -6.35,
+      "minZ": 22.8,
+      "maxZ": 25.6,
+      "rise": 0
+    }
+  ],
+  "route": [
+    {
+      "x": -7.05,
+      "y": 0.85,
+      "z": 12.65
+    },
+    {
+      "x": -7.05,
+      "y": 0.85,
+      "z": 15.05
+    },
+    {
+      "x": -7.05,
+      "y": 0.855,
+      "z": 17.2
+    },
+    {
+      "x": -7.05,
+      "y": 0.855,
+      "z": 21.75
+    },
+    {
+      "x": -7.05,
+      "y": 0.855,
+      "z": 23.35
+    },
+    {
+      "x": -10.95,
+      "y": 0.855,
+      "z": 23.35
+    },
+    {
+      "x": -10.95,
+      "y": 0.855,
+      "z": 24.95
+    },
+    {
+      "x": -7.05,
+      "y": 0.855,
+      "z": 24.95
+    },
+    {
+      "x": -7.05,
+      "y": 0.855,
+      "z": 23.35
+    },
+    {
+      "x": -7.05,
+      "y": 0.85,
+      "z": 12.65
+    }
+  ],
+  "metadata": {
+    "coordinateSystem": "Three Y-up: Blender (x,y,z) maps to (x,z,-y).",
+    "source": "rainy-canal-space-05.blend",
+    "preservedNavigationSource": "roam-navigation.js",
+    "obstacleMethod": "Conservative low-height world bounds inspected read-only; circles and rectangles are navigation proxies, not full mesh collision.",
+    "scope": "Existing exterior banks, bridges and rear lane plus one opposite-bank alley and closed courtyard. House interiors, water and other gardens remain inaccessible.",
+    "courtyardRoute": "Street entrance, passage between houses 1/2, courtyard circuit and return through the same entrance; no shortcut across building corners.",
+    "courtyardSurface": {
+      "height": 0.855,
+      "rampStartZ": 15.6853,
+      "rampEndZ": 16.05,
+      "note": "Linear five-millimetre rise matching SPACE05 paving; original quays and bridges retain their previous heights."
+    },
+    "bridgeHeight": "0.85 + rise*sin(pi*t), t=clamp((10.55-worldZ)/8.795,0,1); flat landing connectors join both banks."
+  }
+}

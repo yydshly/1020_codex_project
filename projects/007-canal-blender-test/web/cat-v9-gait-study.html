@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>阿橘 · 走跑试样</title>
+  <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.min.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
+  <style>
+    :root{font-family:"Segoe UI","Microsoft YaHei",sans-serif;color:#27332e;background:#e6e8e5;color-scheme:light}*{box-sizing:border-box}body{margin:0;height:100dvh;min-height:100dvh;display:flex;flex-direction:column}button,a{font:inherit}button{cursor:pointer;border:1px solid #a9b7ad;background:#f8faf7;color:#27332e;padding:9px 14px;border-radius:6px}button[aria-pressed=true]{background:#304c41;color:#fff;border-color:#304c41}button:disabled{opacity:.4;cursor:default}header{padding:18px 26px 12px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}h1{font-size:18px;font-weight:600;margin:0}header p{font-size:12px;line-height:1.7;margin:4px 0 0;color:#5b685e}a{color:#304c41;text-decoration:none;font-size:12px}.back{margin-left:auto}.tools{display:flex;gap:6px;flex-wrap:wrap}.actions{padding:0 26px 10px;align-items:center;font-size:12px}.actions .label{min-width:64px;margin-right:4px;color:#5b685e}.actions .hint{margin-left:7px;color:#69746c;font-size:11px}.divider{width:1px;background:#b9c2bb;margin:0 5px}#viewport{flex:1;min-height:350px;width:100%;touch-action:none}canvas{display:block;width:100%;height:100%}footer{display:flex;gap:18px;justify-content:space-between;padding:14px 26px;font-size:12px;color:#5b685e}#status{max-width:80ch}button:focus-visible,a:focus-visible{outline:2px solid #6e916e;outline-offset:3px}@media(max-width:800px){header{padding:14px 15px 10px;gap:12px}.tools.views{order:3;width:100%}button{font-size:11px;padding:8px 10px}.actions{padding:0 15px 10px;gap:5px}.actions .label{width:100%}.actions .hint{margin-left:0}#viewport{min-height:340px}footer{padding:12px 15px;font-size:11px;flex-direction:column;gap:7px}}
+  </style>
+  <script type="module" src="cat-v9-gait-study.js"></script>
+</head>
+<body>
+  <header>
+    <div><h1>阿橘 · 走跑试样</h1><p>慢走与小跑、腿根衔接与承重 · 嘴部暂未制作</p></div>
+    <div class="tools views" role="group" aria-label="观察角度与步行">
+      <button data-view="front" aria-pressed="false">正面</button><button data-view="side" aria-pressed="true">侧面</button><button data-view="threequarter" aria-pressed="false">3/4</button><button data-view="face" aria-pressed="false">脸部</button><button data-view="eyeSide" aria-pressed="false">侧脸近景</button>
+      <span class="divider"></span><button id="walk" aria-pressed="false">开始移动</button><button id="previous" aria-pressed="false">V8 行走对照</button>
+    </div>
+    <a class="back" href="cat-v8-gait-study.html">原 V8 试样页 ↗</a>
+  </header>
+  <div class="tools actions" role="group" aria-label="步态速度与慢动作">
+    <span class="label">移动速度</span>
+    <button data-speed="0.24" aria-pressed="false">慢步 · 0.24</button><button data-speed="0.36" aria-pressed="true">常速 · 0.36</button><button data-speed="0.90" aria-pressed="false">小跑 · 0.90</button>
+    <button id="slow-motion" aria-pressed="false">慢动作 ×0.5</button><span class="hint">单位：米/秒 · 走跑连续切换 · V8 仅对照行走</span>
+  </div>
+  <div class="tools actions" role="group" aria-label="头部动作">
+    <span class="label">头部动作</span>
+    <button data-attention="left" aria-pressed="false">看左</button><button data-attention="right" aria-pressed="false">看右</button><button data-attention="down" aria-pressed="false">低头</button><button data-attention="natural" aria-pressed="true">自然</button><button data-attention="off" aria-pressed="false">停用</button>
+  </div>
+  <div class="tools actions" role="group" aria-label="眨眼动作与眼睑检查">
+    <span class="label">眨眼</span>
+    <button id="blink-once">眨一下</button><button data-blink="auto" aria-pressed="true">自动眨眼</button><button data-blink="open" aria-pressed="false">睁眼</button><button data-blink="half" aria-pressed="false">半闭</button><button data-blink="closed" aria-pressed="false">闭眼</button>
+    <span class="hint">睁眼、半闭与闭眼可停留查看</span>
+  </div>
+  <main id="viewport" aria-label="可拖动环视、比较转头与眼睑动作的小猫模型"></main>
+  <footer><a href="shop-study-06.html">到老街走跑 ↗</a><span id="status" role="status">正在载入阿橘…</span><span>拖动环视，滚轮缩放 · 行走和小跑时也能观察头部与眨眼</span><a href="https://grab3d.com/models/animals/cat/" target="_blank" rel="noopener">模型来源：Grab3D / CC0 ↗</a></footer>
+</body>
+</html>

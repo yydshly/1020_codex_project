@@ -1,0 +1,215 @@
+{
+  "version": 1,
+  "downloaded_at": "2026-10-24",
+  "provider": "Poly Haven",
+  "license": "CC0-1.0",
+  "license_url": "https://polyhaven.com/license",
+  "license_deed_url": "https://creativecommons.org/publicdomain/zero/1.0/",
+  "source_api": "https://api.polyhaven.com/assets?t=textures",
+  "original_images_modified": false,
+  "geometry_added": false,
+  "map_notes": {
+    "Diffuse": "sRGB color; not a wetness map",
+    "nor_gl": "Linear / NoColorSpace, OpenGL (+Y) tangent-space normal",
+    "Rough": "Linear / NoColorSpace, black smooth / white rough",
+    "AO": "Linear / NoColorSpace"
+  },
+  "assets": [
+    {
+      "id": "cobblestone_floor_05",
+      "name": "Cobblestone Floor 05",
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "source_page": "https://polyhaven.com/a/cobblestone_floor_05",
+      "files_api": "https://api.polyhaven.com/files/cobblestone_floor_05",
+      "license": "CC0-1.0",
+      "physical_dimensions_m": [
+        2.0,
+        2.0
+      ],
+      "physical_dimensions_source": "Publisher asset API dimensions in millimeters; divided by 1000. Asset page texel density corroborates scale.",
+      "files": [
+        {
+          "role": "Diffuse",
+          "filename": "cobblestone_floor_05/cobblestone_floor_05_diff_1k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cobblestone_floor_05/cobblestone_floor_05_diff_1k.jpg",
+          "bytes": 482704,
+          "sha256": "641f75f0809557c8fdf8b3490e4b93634b0c2694320f38ad65834fead8d5f938",
+          "resolution_px": [
+            1024,
+            1024
+          ],
+          "color_space": "sRGB"
+        },
+        {
+          "role": "nor_gl",
+          "filename": "cobblestone_floor_05/cobblestone_floor_05_nor_gl_1k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/cobblestone_floor_05/cobblestone_floor_05_nor_gl_1k.png",
+          "bytes": 1127696,
+          "sha256": "3ab14ff7703ea68281e7c0e52f34826a37e77435db8cc73cf3b5cfe207ebef4d",
+          "resolution_px": [
+            1024,
+            1024
+          ],
+          "color_space": "linear"
+        },
+        {
+          "role": "Rough",
+          "filename": "cobblestone_floor_05/cobblestone_floor_05_rough_1k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cobblestone_floor_05/cobblestone_floor_05_rough_1k.jpg",
+          "bytes": 327784,
+          "sha256": "b6b7a2e7685ffd72a76a583130da8c196211ed7aa44330195878526706f63405",
+          "resolution_px": [
+            1024,
+            1024
+          ],
+          "color_space": "linear"
+        },
+        {
+          "role": "AO",
+          "filename": "cobblestone_floor_05/cobblestone_floor_05_ao_1k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cobblestone_floor_05/cobblestone_floor_05_ao_1k.jpg",
+          "bytes": 186424,
+          "sha256": "2d9920ee1df8794ed57be16a5882e9917ae50c8f6794700a5eb8851f5d78aa0a",
+          "resolution_px": [
+            1024,
+            1024
+          ],
+          "color_space": "linear"
+        }
+      ]
+    },
+    {
+      "id": "worn_plaster_wall",
+      "name": "Worn Plaster Wall",
+      "authors": {
+        "Dimitrios Savva": "All"
+      },
+      "source_page": "https://polyhaven.com/a/worn_plaster_wall",
+      "files_api": "https://api.polyhaven.com/files/worn_plaster_wall",
+      "license": "CC0-1.0",
+      "physical_dimensions_m": [
+        1.8,
+        1.8
+      ],
+      "physical_dimensions_source": "Publisher asset API dimensions in millimeters; divided by 1000. Asset page texel density corroborates scale.",
+      "files": [
+        {
+          "role": "Diffuse",
+          "filename": "worn_plaster_wall/worn_plaster_wall_diff_1k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/worn_plaster_wall/worn_plaster_wall_diff_1k.jpg",
+          "bytes": 750361,
+          "sha256": "f769bee35504ff713e89e89d2b64c1eb3c373dd184973ac8706310f19fd63efe",
+          "resolution_px": [
+            1024,
+            1024
+          ],
+          "color_space": "sRGB"
+        },
+        {
+          "role": "nor_gl",
+          "filename": "worn_plaster_wall/worn_plaster_wall_nor_gl_1k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/worn_plaster_wall/worn_plaster_wall_nor_gl_1k.png",
+          "bytes": 5335659,
+          "sha256": "2f8dc1726f6c2a32cd8270e9135fb3bd6fa6606801cb76a39dfe419eef96ab76",
+          "resolution_px": [
+            1024,
+            1024
+          ],
+          "color_space": "linear"
+        },
+        {
+          "role": "Rough",
+          "filename": "worn_plaster_wall/worn_plaster_wall_rough_1k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/worn_plaster_wall/worn_plaster_wall_rough_1k.jpg",
+          "bytes": 242497,
+          "sha256": "383584ed24edd4dd6e6a675fd822ec04152684ba15f4b0eda1f0dbe31979a7c6",
+          "resolution_px": [
+            1024,
+            1024
+          ],
+          "color_space": "linear"
+        },
+        {
+          "role": "AO",
+          "filename": "worn_plaster_wall/worn_plaster_wall_ao_1k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/worn_plaster_wall/worn_plaster_wall_ao_1k.jpg",
+          "bytes": 424263,
+          "sha256": "e47fd759383bb6c26be16a58402c73c799e6775619a90ed2d61c8f25b4a93ec7",
+          "resolution_px": [
+            1024,
+            1024
+          ],
+          "color_space": "linear"
+        }
+      ]
+    },
+    {
+      "id": "wood_planks_grey",
+      "name": "Wood Planks Grey",
+      "authors": {
+        "Rob Tuytel": "All"
+      },
+      "source_page": "https://polyhaven.com/a/wood_planks_grey",
+      "files_api": "https://api.polyhaven.com/files/wood_planks_grey",
+      "license": "CC0-1.0",
+      "physical_dimensions_m": [
+        1.5,
+        1.5
+      ],
+      "physical_dimensions_source": "Publisher asset API dimensions in millimeters; divided by 1000. Asset page texel density corroborates scale.",
+      "files": [
+        {
+          "role": "Diffuse",
+          "filename": "wood_planks_grey/wood_planks_grey_diff_1k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_planks_grey/wood_planks_grey_diff_1k.jpg",
+          "bytes": 228279,
+          "sha256": "d758be23e8fe7bfbd73bc4ab257cfd59406e1835f6557c12a67cd4fdb15de0d8",
+          "resolution_px": [
+            1024,
+            1024
+          ],
+          "color_space": "sRGB"
+        },
+        {
+          "role": "nor_gl",
+          "filename": "wood_planks_grey/wood_planks_grey_nor_gl_1k.png",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/wood_planks_grey/wood_planks_grey_nor_gl_1k.png",
+          "bytes": 5350344,
+          "sha256": "a9f2ad602eca2d59e84f203b1087e819e62ae517532bb25f7eb02a13c826e08b",
+          "resolution_px": [
+            1024,
+            1024
+          ],
+          "color_space": "linear"
+        },
+        {
+          "role": "Rough",
+          "filename": "wood_planks_grey/wood_planks_grey_rough_1k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_planks_grey/wood_planks_grey_rough_1k.jpg",
+          "bytes": 186804,
+          "sha256": "ef640502cec94bd2b6500e252891a778a7a721be16b5536d4efc9fe4d99b12aa",
+          "resolution_px": [
+            1024,
+            1024
+          ],
+          "color_space": "linear"
+        },
+        {
+          "role": "AO",
+          "filename": "wood_planks_grey/wood_planks_grey_ao_1k.jpg",
+          "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_planks_grey/wood_planks_grey_ao_1k.jpg",
+          "bytes": 52532,
+          "sha256": "baee35ae240bd5a39e005b1f40fec7fe3f16d2158e954e913737d73699d4cee9",
+          "resolution_px": [
+            1024,
+            1024
+          ],
+          "color_space": "linear"
+        }
+      ]
+    }
+  ],
+  "total_image_bytes": 14695347
+}

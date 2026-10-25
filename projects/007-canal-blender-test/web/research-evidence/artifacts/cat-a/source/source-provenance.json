@@ -1,0 +1,32 @@
+{
+  "candidate": "A — Rigged and animated Cat / Skater Cat",
+  "author": "JonasDichelle",
+  "originalPage": "https://blendswap.com/blend/18519",
+  "originalDownloadPage": "https://blendswap.com/blend/18519/download",
+  "originalStatus": "Downloaded through the user-authenticated BlendSwap page; original ZIP and extracted cat.blend preserved",
+  "reviewedPublicCopy": {
+    "file": "cat-ylikuutio.fbx",
+    "repository": "https://github.com/nrz/ylikuutio",
+    "path": "res/objects/www.blendswap.com/86110_rigged_and_animated_cat/cat.fbx",
+    "gitBlob": "c85764aa0ab8a9de7ceffd59ae94acffca49da67",
+    "licenseAsStatedByRedistributor": "CC BY 3.0",
+    "credit": "Rigged and animated cat by JonasDichelle; FBX conversion distributed by Ylikuutio / Antti Nuortimo",
+    "inspection": "ylikuutio-inspection.json",
+    "status": "Rejected for animation preview: static mesh only, zero armatures, zero actions, zero images",
+    "useInPreview": false
+  },
+  "preview": {
+    "html": "../../../web/cat-a-study.html",
+    "javascript": "../../../web/cat-a-study.js",
+    "expectedAsset": "../../../web/models/cat-a-study.glb",
+    "status": "Real original model converted and visually inspected in local browser; independent study only, street integration deferred",
+    "adaptations": [
+      "Original Walk and Run evaluated and baked from legacy constraints; 85 bones retained",
+      "Original body color and UVs retained; eye color chain baked to UV",
+      "6608 original groom paths and 32 whiskers converted to skinned strand geometry",
+      "Cycles hair dynamics and shading approximated for web; original small tail loop seam remains"
+    ]
+  },
+  "license": "Creative Commons Attribution 3.0; verified in original 86110 - LICENSE.html",
+  "originalSHA256": "FDA4B80F1A06E67A1CC04396B858085FAA5CD9742F28D9BDE9837AAEAB2727FA"
+}

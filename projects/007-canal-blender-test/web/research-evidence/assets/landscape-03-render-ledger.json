@@ -1,0 +1,35 @@
+{
+  "maximum_attempts": 2,
+  "candidate": "rainy-canal-extension-03.blend",
+  "candidate_sha256": "be430f38e6bcf2b9be54cebbebb111a868f2046fc6fe60ec77723c4d1ed05a50",
+  "attempts": [
+    {
+      "camera": "EXT_Review_Overview",
+      "image": "landscape-03-preview-01.png",
+      "status": "complete",
+      "started_utc": "2026-10-23T22:45:40.584124+00:00",
+      "resolution": [
+        1104,
+        622
+      ],
+      "samples": 32,
+      "candidate_sha256": "be430f38e6bcf2b9be54cebbebb111a868f2046fc6fe60ec77723c4d1ed05a50",
+      "seconds": 7.823,
+      "sha256": "9efc1dd4f35f548d4343229431a475b1cd429c53c20a6f0e8faeef2d9144b840"
+    },
+    {
+      "camera": "EXT_Review_ReverseRear",
+      "image": "landscape-03-preview-02.png",
+      "status": "complete",
+      "started_utc": "2026-10-23T22:46:19.807408+00:00",
+      "resolution": [
+        1104,
+        622
+      ],
+      "samples": 32,
+      "candidate_sha256": "be430f38e6bcf2b9be54cebbebb111a868f2046fc6fe60ec77723c4d1ed05a50",
+      "seconds": 7.383,
+      "sha256": "2a1bc294e5428e16b1498ba186d11f70fb31efbc7dbd4f6323a4ad5f269cfea3"
+    }
+  ]
+}

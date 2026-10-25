@@ -1,0 +1,60 @@
+{
+  "quality": "final",
+  "blender": "4.5.9 LTS",
+  "devices": [
+    "NVIDIA GeForce RTX 4070 Laptop GPU"
+  ],
+  "resolution": [
+    1672,
+    942
+  ],
+  "samples_max": 112,
+  "complexity_before": {
+    "objects": 2109,
+    "mesh_vertices": 159646,
+    "mesh_faces": 127565,
+    "modifiers": 686,
+    "lights": 20
+  },
+  "complexity_after": {
+    "objects": 2109,
+    "mesh_vertices": 159646,
+    "mesh_faces": 127565,
+    "modifiers": 686,
+    "lights": 20
+  },
+  "complexity_unchanged": true,
+  "baseline_unchanged": true,
+  "baseline_blend_sha256": "2961816c336791807f1dcc36668928462b300bd551a656919cc07ce74b53c216",
+  "final_artifact_reopened": true,
+  "finite_geometry": true,
+  "external_images": [],
+  "material_changes": {
+    "materials_refined": [
+      "plaster",
+      "plaster_alt",
+      "stone",
+      "stone_light",
+      "paving",
+      "paving_alt",
+      "mortar",
+      "wood",
+      "wood_light",
+      "teal",
+      "olive",
+      "roof",
+      "roof_alt",
+      "fabric",
+      "Canal water"
+    ],
+    "water_existing_vertices_adjusted": 19656,
+    "objects_added": 0,
+    "vertices_added": 0,
+    "modifiers_added": 0,
+    "look": "Warm restrained plaster, varied wet stone, softened grain, irregular water reflections"
+  },
+  "postprocessing": "Subtle geometry-depth haze beyond 35 scene units; sky and foreground excluded.",
+  "setup_seconds": 1.31,
+  "render_seconds": 10.19,
+  "total_seconds": 11.51
+}

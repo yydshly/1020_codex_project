@@ -1,0 +1,215 @@
+{
+  "source": "rainy-canal-v4.blend",
+  "source_sha256": "017a6dd169e8fe5d8b958cc90d24687fe8f8aaeaa66194c455dd176afdd1b765",
+  "source_unchanged": true,
+  "changes": {
+    "windows": {
+      "opening_center_x": -7.32,
+      "opening_width": 1.1,
+      "group_width_approx": 2.35,
+      "window_z_scale": 1.04,
+      "window_lift": 0.45,
+      "original_window_centers": [
+        -8.28,
+        -5.72
+      ],
+      "new_wall_x_intervals": [
+        [
+          -9.9,
+          -7.87
+        ],
+        [
+          -6.7700000000000005,
+          -5.435
+        ],
+        [
+          -5.435,
+          -4.1
+        ]
+      ],
+      "reused_window_parts": 76,
+      "window_objects": [
+        "Carved stone window sill",
+        "Carved stone window sill.001",
+        "Folded linen curtain",
+        "Folded linen curtain.001",
+        "Folded linen curtain.002",
+        "Folded linen curtain.003",
+        "Shutter hinge stud",
+        "Shutter hinge stud.001",
+        "Shutter hinge stud.002",
+        "Shutter hinge stud.003",
+        "Shutter hinge stud.004",
+        "Shutter hinge stud.005",
+        "Shutter hinge stud.006",
+        "Shutter hinge stud.007",
+        "Shutter horizontal batten",
+        "Shutter horizontal batten.001",
+        "Shutter horizontal batten.002",
+        "Shutter horizontal batten.003",
+        "Shutter horizontal batten.004",
+        "Shutter horizontal batten.005",
+        "Shutter horizontal batten.006",
+        "Shutter horizontal batten.007",
+        "Shutter plank seam",
+        "Shutter plank seam.001",
+        "Shutter plank seam.002",
+        "Shutter plank seam.003",
+        "Shutter plank seam.004",
+        "Shutter plank seam.005",
+        "Shutter plank seam.006",
+        "Shutter plank seam.007",
+        "Shutter plank seam.008",
+        "Shutter plank seam.009",
+        "Shutter plank seam.010",
+        "Shutter plank seam.011",
+        "Shutter plank seam.012",
+        "Shutter plank seam.013",
+        "Shutter plank seam.014",
+        "Shutter plank seam.015",
+        "Stone window lintel",
+        "Stone window lintel.001",
+        "Upper inset glass",
+        "Upper inset glass.001",
+        "Upper wooden window rail",
+        "Upper wooden window rail.001",
+        "Upper wooden window rail.002",
+        "Upper wooden window rail.003",
+        "Upper wooden window stile",
+        "Upper wooden window stile.001",
+        "Upper wooden window stile.002",
+        "Upper wooden window stile.003",
+        "Window center mullion",
+        "Window center mullion.001",
+        "Window crossbar",
+        "Window crossbar.001",
+        "Window iron baluster",
+        "Window iron baluster.001",
+        "Window iron baluster.002",
+        "Window iron baluster.003",
+        "Window iron baluster.004",
+        "Window iron baluster.005",
+        "Window iron baluster.006",
+        "Window iron baluster.007",
+        "Window iron baluster.008",
+        "Window iron baluster.009",
+        "Window iron baluster.010",
+        "Window iron baluster.011",
+        "Window iron baluster.012",
+        "Window iron baluster.013",
+        "Window safety rail",
+        "Window safety rail.001",
+        "Window safety rail.002",
+        "Window safety rail.003",
+        "Wooden shutter",
+        "Wooden shutter.001",
+        "Wooden shutter.002",
+        "Wooden shutter.003"
+      ],
+      "projected_group_box": {
+        "coordinate_system": "Normalized image coordinates, origin top-left; only component bounding box, not image similarity.",
+        "min": [
+          0.1459234654903412,
+          0.06325745582580566
+        ],
+        "max": [
+          0.2633081376552582,
+          0.3161901831626892
+        ]
+      }
+    },
+    "roofs": {
+      "cafe_eave_rise": 0.45,
+      "bookshop_roof_unchanged": true,
+      "pottery_ridge_drop": 0.18,
+      "pottery_eave_unchanged": true,
+      "roof_x_boundaries_unchanged": true,
+      "new_dormer_created": false,
+      "chimneys_unchanged": true
+    },
+    "trims": {
+      "scope": "Existing exterior sill/lintel/eave/shop cornice cross-sections only; ground-floor openings and interiors remain unchanged.",
+      "section_factors_height_depth": {
+        "Carved stone window sill": [
+          0.72,
+          0.68
+        ],
+        "Stone window lintel": [
+          0.68,
+          0.72
+        ],
+        "Layered eaves cornice": [
+          0.6,
+          0.68
+        ],
+        "Eaves supporting beam": [
+          0.72,
+          0.75
+        ],
+        "Shop top cornice": [
+          0.65,
+          0.68
+        ],
+        "Shop cornice molding": [
+          0.65,
+          0.72
+        ]
+      },
+      "entablature_depth_factor": 0.72
+    }
+  },
+  "checks": {
+    "passed": true,
+    "changed_building_objects": 161,
+    "objects": 2109,
+    "vertices": 159646,
+    "faces": 127565,
+    "modifiers": 686,
+    "lights": 20,
+    "new_objects": 0,
+    "hidden_objects_added": 0
+  },
+  "complexity_after": {
+    "passed": true,
+    "changed_building_objects": 161,
+    "objects": 2109,
+    "vertices": 159646,
+    "faces": 127565,
+    "modifiers": 686,
+    "lights": 20,
+    "new_objects": 0,
+    "hidden_objects_added": 0
+  },
+  "resolution": [
+    1104,
+    622
+  ],
+  "samples_max": 40,
+  "blender": "4.5.9 LTS",
+  "limitations": [
+    "Only exterior building geometry is changed; the reference dormer is not recreated.",
+    "No material, light, camera, bridge, bank, street prop or interior edit.",
+    "Projected window box is a hand-selected composition check, not overall similarity."
+  ],
+  "reopened_before_render": true,
+  "reopened_checks": {
+    "passed": true,
+    "changed_building_objects": 161,
+    "objects": 2109,
+    "vertices": 159646,
+    "faces": 127565,
+    "modifiers": 686,
+    "lights": 20,
+    "new_objects": 0,
+    "hidden_objects_added": 0
+  },
+  "devices": [
+    "NVIDIA GeForce RTX 4070 Laptop GPU"
+  ],
+  "setup_seconds": 1.996,
+  "render_seconds": 5.701,
+  "total_seconds": 7.7,
+  "candidate": "rainy-canal-v5-preview-01.blend",
+  "candidate_sha256": "579a5d68111d8269374ad30cf9337a16f3daf7a5cf213a52fcccf215e07502d8",
+  "image": "v5-preview-01.png"
+}

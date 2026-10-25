@@ -1,0 +1,37 @@
+{
+  "date": "2026-10-24",
+  "reviewed_images": [
+    "cat-v4-attention-left.png",
+    "cat-v4-attention-right.png",
+    "cat-v4-attention-down.png",
+    "cat-v4-attention-threequarter.png",
+    "cat-v4-attention-v3-comparison.png",
+    "cat-v4-attention-mobile.png"
+  ],
+  "video": "cat-v4-attention-motion.webm",
+  "video_requested_sequence_seconds": 8,
+  "observations": {
+    "head_motion": "Small left/right attention and downward pitch are visibly distinct while retaining the source cat shape.",
+    "eye_nose_mouth_ear_contours": "No visible holes, tears, separated facial features or severe stretching at the inspected trial extrema.",
+    "eyes_and_mouth": "Static features of the original textured skin. No independent eye rotation, blinking, eyelid overlay or mouth motion added.",
+    "chest_surface": "Existing scan/mesh faceting remains visible in the white throat/chest region and is also present in the V3 comparison.",
+    "mobile": "At 390x844, action and view controls remain visible and operable; the face fits within the viewport with no horizontal overflow."
+  },
+  "limitations": [
+    "This is a restrained head-only attention experiment, not a facial rig.",
+    "The source cat's captured asymmetry and surface quality remain.",
+    "At slow acceleration the yaw envelope contracts from 8 degrees at rest to 4 degrees by 0.15 m/s; this avoids a sudden amplitude jump on starting."
+  ],
+  "verification": {
+    "browser_report": "cat-v4-attention-browser-check.json",
+    "browser_passed": true,
+    "console_or_shader_errors": 0,
+    "matrix_report": "cat-v4-attention-matrix-check.json",
+    "matrix_passed": true,
+    "tested_frames_30_and_60_fps": 1800,
+    "non_head_bone_matrix_difference": 0,
+    "foot_point_difference": 0,
+    "gait_parameter_difference": 0,
+    "old_source_files_unchanged": true
+  }
+}

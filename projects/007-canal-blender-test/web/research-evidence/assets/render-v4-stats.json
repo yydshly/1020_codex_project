@@ -1,0 +1,45 @@
+{
+  "quality": "final",
+  "blender": "4.5.9 LTS",
+  "devices": [
+    "NVIDIA GeForce RTX 4070 Laptop GPU"
+  ],
+  "resolution": [
+    1672,
+    942
+  ],
+  "samples_max": 112,
+  "complexity_before": {
+    "objects": 2109,
+    "mesh_vertices": 159646,
+    "mesh_faces": 127565,
+    "modifiers": 686,
+    "lights": 20
+  },
+  "complexity_after": {
+    "objects": 2109,
+    "mesh_vertices": 159646,
+    "mesh_faces": 127565,
+    "modifiers": 686,
+    "lights": 20
+  },
+  "complexity_unchanged": true,
+  "v3_source_sha256": "7dc217ed94c381216747e9d5454c6e5408b0a9e3f89c4850ecf97217a811b7b4",
+  "v3_unchanged": true,
+  "final_artifact_reopened": true,
+  "finite_geometry": true,
+  "material_changes": false,
+  "layout_checks": {
+    "max_world_vertex_z_drift": 8.106231689453125e-06,
+    "near_quay_width_before": 4.05,
+    "near_quay_width_after": 2.805338028178921,
+    "channel_width_before": 8.0,
+    "channel_width_after": 8.792082195189915,
+    "contact_scope": "Shared continuous horizontal mapping keeps bridge-bank boundaries and existing vertical contact coordinates; this is not a complete collision certification."
+  },
+  "setup_seconds": 3.43,
+  "render_seconds": 15.41,
+  "total_seconds": 19.01,
+  "independent_view_render_seconds": 6.54,
+  "independent_view_saved_into_blend": false
+}

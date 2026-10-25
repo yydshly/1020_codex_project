@@ -1,0 +1,20 @@
+{
+  "blender": "4.5.9 LTS",
+  "quality": "final",
+  "view": "hero",
+  "resolution": [
+    1672,
+    942
+  ],
+  "samples_max": 144,
+  "devices": [
+    "NVIDIA GeForce RTX 4070 Laptop GPU"
+  ],
+  "object_count": 2109,
+  "mesh_vertices": 159646,
+  "reference_sha256": "6ebfd8652e498e31ad522045a22e7abdb32b92f5b5e825f62ae7df13ec844f1e",
+  "external_image_dependencies": [],
+  "build_seconds": 49.24,
+  "render_seconds": 9.88,
+  "total_seconds": 59.22
+}

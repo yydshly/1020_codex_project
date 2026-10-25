@@ -1,0 +1,998 @@
+{
+  "checked_utc": "2026-10-24T01:00:53.356817+00:00",
+  "passed": true,
+  "checks": {
+    "finite_geometry": true,
+    "standing_geometry_above_ground": true,
+    "new_model_visible": true,
+    "previous_model_available": true,
+    "walk_advances_actual_root": true,
+    "walk_finite_geometry": true,
+    "walking_geometry_above_ground": true,
+    "stop_settles": true,
+    "street_loads_walkable_cat": true,
+    "street_demo_walks": true,
+    "whole_sample_return_completes": true,
+    "stance_foot_reach_error_under_25mm": true,
+    "mobile_loads_new_cat_asset": true,
+    "mobile_touch_controls_visible": true,
+    "mobile_touch_moves_new_cat": true,
+    "mobile_no_horizontal_overflow": true,
+    "no_browser_or_shader_errors": true
+  },
+  "errors": [],
+  "observations": {
+    "initial": {
+      "ready": true,
+      "frames": 21,
+      "mode": "current",
+      "view": "threequarter",
+      "walking": false,
+      "speed": 0,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "geometry": {
+        "meshes": 1,
+        "triangles": 49000,
+        "invalid": 0,
+        "bounds": {
+          "min": [
+            -0.08652707701884682,
+            -0.0002776888009241702,
+            -0.2605894533831602
+          ],
+          "max": [
+            0.10217311616493062,
+            0.4846507037638003,
+            0.23169430266672483
+          ]
+        }
+      },
+      "cat": {
+        "version": "asset-rig-03",
+        "root": [
+          0,
+          0,
+          0
+        ],
+        "gait": {
+          "speed": 0,
+          "phase": 0,
+          "stanceFeet": 4,
+          "maxReachError": 0,
+          "angularSpeed": 0
+        },
+        "bones": 21,
+        "feet": [
+          {
+            "name": "fore_left",
+            "stance": true,
+            "world": [
+              -0.0427,
+              0,
+              0.1127
+            ],
+            "renderedWorld": [
+              -0.042700000000000085,
+              2.4140038093478644e-09,
+              0.11270000346668708
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "fore_right",
+            "stance": true,
+            "world": [
+              0.0422,
+              0,
+              0.1027
+            ],
+            "renderedWorld": [
+              0.04220000000000006,
+              4.241161442875008e-09,
+              0.10270000309151912
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_left",
+            "stance": true,
+            "world": [
+              -0.0541,
+              0,
+              -0.1337
+            ],
+            "renderedWorld": [
+              -0.05409999999999999,
+              2.3075927210736147e-09,
+              -0.13369999911502958
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_right",
+            "stance": true,
+            "world": [
+              0.052,
+              0,
+              -0.1638
+            ],
+            "renderedWorld": [
+              0.05200000000000003,
+              5.56817469909987e-09,
+              -0.16379999599744058
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          }
+        ]
+      }
+    },
+    "walking": {
+      "ready": true,
+      "frames": 224,
+      "mode": "current",
+      "view": "threequarter",
+      "walking": true,
+      "speed": 0.6,
+      "position": [
+        0,
+        0,
+        0.8049360780000006
+      ],
+      "geometry": {
+        "meshes": 1,
+        "triangles": 49000,
+        "invalid": 0,
+        "bounds": {
+          "min": [
+            -0.08762091621694414,
+            -0.0001358819724719424,
+            0.545188436840856
+          ],
+          "max": [
+            0.10066746498748018,
+            0.4694512231634594,
+            1.036570143339511
+          ]
+        }
+      },
+      "cat": {
+        "version": "asset-rig-03",
+        "root": [
+          0,
+          0,
+          0.8049360780000006
+        ],
+        "gait": {
+          "speed": 0.5999999999999983,
+          "phase": 0.126692473136654,
+          "stanceFeet": 3,
+          "maxReachError": 0,
+          "angularSpeed": 0
+        },
+        "bones": 21,
+        "feet": [
+          {
+            "name": "fore_left",
+            "stance": false,
+            "world": [
+              -0.0427,
+              0.024670478185079815,
+              0.9489567823376266
+            ],
+            "renderedWorld": [
+              -0.04269999995614863,
+              0.02467049340271551,
+              0.9489567684219749
+            ],
+            "groundClearance": 0.024670478185079815,
+            "reachError": 0
+          },
+          {
+            "name": "fore_right",
+            "stance": true,
+            "world": [
+              0.0422,
+              0,
+              0.9326466163253524
+            ],
+            "renderedWorld": [
+              0.04220000002947487,
+              1.1653747473971965e-08,
+              0.9326466048415195
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_left",
+            "stance": true,
+            "world": [
+              -0.0541,
+              0,
+              0.7201468594646718
+            ],
+            "renderedWorld": [
+              -0.05410000000062903,
+              2.080733509102206e-09,
+              0.7201468598566734
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_right",
+            "stance": true,
+            "world": [
+              0.052,
+              0,
+              0.6051465439614446
+            ],
+            "renderedWorld": [
+              0.05200000001001044,
+              4.296012462434717e-09,
+              0.6051465490245185
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          }
+        ]
+      }
+    },
+    "settled": {
+      "ready": true,
+      "frames": 532,
+      "mode": "current",
+      "view": "threequarter",
+      "walking": false,
+      "speed": 0,
+      "position": [
+        0,
+        0,
+        3.324148642000008
+      ],
+      "geometry": {
+        "meshes": 1,
+        "triangles": 49000,
+        "invalid": 0,
+        "bounds": {
+          "min": [
+            -0.0865274300617411,
+            -0.00027768780129081494,
+            3.063308050566569
+          ],
+          "max": [
+            0.10203414300663166,
+            0.48379992520726317,
+            3.555855839831806
+          ]
+        }
+      },
+      "cat": {
+        "version": "asset-rig-03",
+        "root": [
+          0,
+          0,
+          3.324148642000008
+        ],
+        "gait": {
+          "speed": 0,
+          "phase": 0.07979057748451358,
+          "stanceFeet": 4,
+          "maxReachError": 0,
+          "angularSpeed": 0
+        },
+        "bones": 21,
+        "feet": [
+          {
+            "name": "fore_left",
+            "stance": true,
+            "world": [
+              -0.0427,
+              1.7145055188062945e-18,
+              3.4368486420000077
+            ],
+            "renderedWorld": [
+              -0.042699999999987366,
+              3.2449747403018314e-09,
+              3.4368486440692907
+            ],
+            "groundClearance": 1.7145055188062945e-18,
+            "reachError": 0
+          },
+          {
+            "name": "fore_right",
+            "stance": true,
+            "world": [
+              0.0422,
+              1.7145055188062945e-18,
+              3.426848642000008
+            ],
+            "renderedWorld": [
+              0.042200000000005365,
+              5.1749296167691305e-09,
+              3.426848643359387
+            ],
+            "groundClearance": 1.7145055188062945e-18,
+            "reachError": 0
+          },
+          {
+            "name": "hind_left",
+            "stance": true,
+            "world": [
+              -0.0541,
+              1.7145055188062945e-18,
+              3.1904486420000078
+            ],
+            "renderedWorld": [
+              -0.05409999999999954,
+              2.25851182894532e-09,
+              3.190448642894898
+            ],
+            "groundClearance": 1.7145055188062945e-18,
+            "reachError": 0
+          },
+          {
+            "name": "hind_right",
+            "stance": true,
+            "world": [
+              0.052,
+              1.7145055188062945e-18,
+              3.1603486420000078
+            ],
+            "renderedWorld": [
+              0.052000000000002794,
+              5.507626910095098e-09,
+              3.160348646023849
+            ],
+            "groundClearance": 1.7145055188062945e-18,
+            "reachError": 0
+          }
+        ]
+      }
+    },
+    "street": {
+      "initial": {
+        "version": "cat-v3",
+        "speed": 0,
+        "velocity": {
+          "x": 0,
+          "z": 0
+        },
+        "camera": {
+          "position": {
+            "x": -8.31598481937199,
+            "y": 2.111173461465378,
+            "z": 1.6459083626007425
+          },
+          "target": {
+            "x": -5.295758290175528,
+            "y": 1.27,
+            "z": 0.33036325882654977
+          },
+          "fov": 53
+        },
+        "refinedStreet": {
+          "minX": -7,
+          "maxX": 3
+        },
+        "cat": {
+          "version": "asset-rig-03",
+          "root": [
+            -5.8,
+            0.85,
+            0.55
+          ],
+          "gait": {
+            "speed": 0,
+            "phase": 0,
+            "stanceFeet": 4,
+            "maxReachError": 0,
+            "angularSpeed": 0
+          },
+          "bones": 21,
+          "feet": [
+            {
+              "name": "fore_left",
+              "stance": true,
+              "world": [
+                -5.9127,
+                0.85,
+                0.5073000000000001
+              ],
+              "renderedWorld": [
+                -5.912700003034702,
+                0.8500000026177931,
+                0.5073000023501159
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "fore_right",
+              "stance": true,
+              "world": [
+                -5.902699999999999,
+                0.85,
+                0.5922000000000001
+              ],
+              "renderedWorld": [
+                -5.9027000025733045,
+                0.8500000044790144,
+                0.5921999975780353
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "hind_left",
+              "stance": true,
+              "world": [
+                -5.6663,
+                0.85,
+                0.4959
+              ],
+              "renderedWorld": [
+                -5.6663000008873,
+                0.8500000022967161,
+                0.4959
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "hind_right",
+              "stance": true,
+              "world": [
+                -5.6362,
+                0.85,
+                0.602
+              ],
+              "renderedWorld": [
+                -5.636200004007353,
+                0.8500000055547664,
+                0.602
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            }
+          ]
+        },
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 0,
+        "distance": 0,
+        "place": "店前石街",
+        "frames": 5,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -5.8,
+          "y": 0.85,
+          "z": 0.55
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      },
+      "moving": {
+        "version": "cat-v3",
+        "speed": 0.6000000000000221,
+        "velocity": {
+          "x": 0.6000000000000221,
+          "z": 0
+        },
+        "camera": {
+          "position": {
+            "x": -7.762736468904309,
+            "y": 2.111173461465378,
+            "z": 1.6459083626007425
+          },
+          "target": {
+            "x": -4.680779212175519,
+            "y": 1.27,
+            "z": 0.33036325882654977
+          },
+          "fov": 53
+        },
+        "refinedStreet": {
+          "minX": -7,
+          "maxX": 3
+        },
+        "cat": {
+          "version": "asset-rig-03",
+          "root": [
+            -5.185020921999991,
+            0.85,
+            0.55
+          ],
+          "gait": {
+            "speed": 0.6000000000000221,
+            "phase": 0.9045591049449323,
+            "stanceFeet": 3,
+            "maxReachError": 0,
+            "angularSpeed": 0
+          },
+          "bones": 21,
+          "feet": [
+            {
+              "name": "fore_left",
+              "stance": true,
+              "world": [
+                -5.121219549622427,
+                0.85,
+                0.5927000000000001
+              ],
+              "renderedWorld": [
+                -5.121219548843948,
+                0.8500000085857808,
+                0.5926999982083753
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "fore_right",
+              "stance": true,
+              "world": [
+                -5.006219561754177,
+                0.85,
+                0.5078000000000001
+              ],
+              "renderedWorld": [
+                -5.006219575880319,
+                0.8500000062958699,
+                0.5077999986350125
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "hind_left",
+              "stance": false,
+              "world": [
+                -5.2878254202290575,
+                0.8714060008880475,
+                0.6041000000000001
+              ],
+              "renderedWorld": [
+                -5.287825419765006,
+                0.8714060018293053,
+                0.6041000000009297
+              ],
+              "groundClearance": 0.02140600088804756,
+              "reachError": 0
+            },
+            {
+              "name": "hind_right",
+              "stance": true,
+              "world": [
+                -5.333719458742324,
+                0.85,
+                0.49800000000000005
+              ],
+              "renderedWorld": [
+                -5.333719454907299,
+                0.8500000048091026,
+                0.49800000000727507
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            }
+          ]
+        },
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": true,
+        "tourIndex": 1,
+        "distance": 0.6149790780000091,
+        "place": "店前石街",
+        "frames": 176,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -5.185020921999991,
+          "y": 0.85,
+          "z": 0.55
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      },
+      "final": {
+        "version": "cat-v3",
+        "speed": 0,
+        "velocity": {
+          "x": 0,
+          "z": 0
+        },
+        "camera": {
+          "position": {
+            "x": -8.238207779469388,
+            "y": 2.111173461465378,
+            "z": 1.6459083626007425
+          },
+          "target": {
+            "x": -5.217982328489812,
+            "y": 1.27,
+            "z": 0.33036325882654977
+          },
+          "fov": 53
+        },
+        "refinedStreet": {
+          "minX": -7,
+          "maxX": 3
+        },
+        "cat": {
+          "version": "asset-rig-03",
+          "root": [
+            -5.722224038314284,
+            0.85,
+            0.55
+          ],
+          "gait": {
+            "speed": 0,
+            "phase": 0.3696374674951322,
+            "stanceFeet": 4,
+            "maxReachError": 0,
+            "angularSpeed": 0
+          },
+          "bones": 21,
+          "feet": [
+            {
+              "name": "fore_left",
+              "stance": true,
+              "world": [
+                -5.834924038314284,
+                0.85,
+                0.5073000000000001
+              ],
+              "renderedWorld": [
+                -5.834924041002861,
+                0.8500000028171981,
+                0.507299997655323
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "fore_right",
+              "stance": true,
+              "world": [
+                -5.8249240383142835,
+                0.85,
+                0.5922000000000001
+              ],
+              "renderedWorld": [
+                -5.824924040454766,
+                0.850000004705555,
+                0.592199997584545
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "hind_left",
+              "stance": true,
+              "world": [
+                -5.581557468669368,
+                0.85,
+                0.4959
+              ],
+              "renderedWorld": [
+                -5.581557469639393,
+                0.8500000022559815,
+                0.4959000000000001
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "hind_right",
+              "stance": true,
+              "world": [
+                -5.558424038314284,
+                0.85,
+                0.602
+              ],
+              "renderedWorld": [
+                -5.558424042326664,
+                0.8500000055405638,
+                0.6020000000000005
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            }
+          ]
+        },
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 3,
+        "distance": 15.771890458529192,
+        "place": "店前石街",
+        "frames": 1723,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -5.722224038314284,
+          "y": 0.85,
+          "z": 0.55
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      },
+      "full_tour_audit": {
+        "frames": 1637,
+        "allWalkable": true,
+        "maxReachError": 0
+      }
+    },
+    "mobile": {
+      "initial": {
+        "version": "cat-v3",
+        "speed": 0,
+        "velocity": {
+          "x": 0,
+          "z": 0
+        },
+        "camera": {
+          "position": {
+            "x": -8.52100126595356,
+            "y": 2.090719084726678,
+            "z": 1.7029758759068843
+          },
+          "target": {
+            "x": -5.293587171245125,
+            "y": 1.27,
+            "z": 0.3354165736304734
+          },
+          "fov": 62
+        },
+        "refinedStreet": {
+          "minX": -7,
+          "maxX": 3
+        },
+        "cat": {
+          "version": "asset-rig-03",
+          "root": [
+            -5.8,
+            0.85,
+            0.55
+          ],
+          "gait": {
+            "speed": 0,
+            "phase": 0,
+            "stanceFeet": 4,
+            "maxReachError": 0,
+            "angularSpeed": 0
+          },
+          "bones": 21,
+          "feet": [
+            {
+              "name": "fore_left",
+              "stance": true,
+              "world": [
+                -5.9127,
+                0.85,
+                0.5073000000000001
+              ],
+              "renderedWorld": [
+                -5.912700002988793,
+                0.8500000026440241,
+                0.5073000023494809
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "fore_right",
+              "stance": true,
+              "world": [
+                -5.902699999999999,
+                0.85,
+                0.5922000000000001
+              ],
+              "renderedWorld": [
+                -5.902700002515308,
+                0.8500000045090641,
+                0.5921999975787824
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "hind_left",
+              "stance": true,
+              "world": [
+                -5.6663,
+                0.85,
+                0.4959
+              ],
+              "renderedWorld": [
+                -5.666300000887614,
+                0.8500000022952223,
+                0.4959
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "hind_right",
+              "stance": true,
+              "world": [
+                -5.6362,
+                0.85,
+                0.602
+              ],
+              "renderedWorld": [
+                -5.636200004008008,
+                0.8500000055529242,
+                0.602
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            }
+          ]
+        },
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 0,
+        "distance": 0,
+        "place": "店前石街",
+        "frames": 5,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -5.8,
+          "y": 0.85,
+          "z": 0.55
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      },
+      "moved": {
+        "version": "cat-v3",
+        "speed": 0.5532399999999977,
+        "velocity": {
+          "x": 0.5093960606915362,
+          "z": -0.21584751782668773
+        },
+        "camera": {
+          "position": {
+            "x": -8.443060059974867,
+            "y": 2.090719084726678,
+            "z": 1.6699496765599946
+          },
+          "target": {
+            "x": -5.17002414441754,
+            "y": 1.27,
+            "z": 0.28305893937692406
+          },
+          "fov": 62
+        },
+        "refinedStreet": {
+          "minX": -7,
+          "maxX": 3
+        },
+        "cat": {
+          "version": "asset-rig-03",
+          "root": [
+            -5.6764369731724145,
+            0.85,
+            0.4976423657464507
+          ],
+          "gait": {
+            "speed": 0.5532399999999977,
+            "phase": 0.7990881421055955,
+            "stanceFeet": 3,
+            "maxReachError": 0,
+            "angularSpeed": 0
+          },
+          "bones": 21,
+          "feet": [
+            {
+              "name": "fore_left",
+              "stance": true,
+              "world": [
+                -5.564524849727559,
+                0.85,
+                0.4965968019869622
+              ],
+              "renderedWorld": [
+                -5.5645248559694585,
+                0.8500000118816753,
+                0.4965968038237594
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "fore_right",
+              "stance": true,
+              "world": [
+                -5.527732455790253,
+                0.85,
+                0.3887992999180943
+              ],
+              "renderedWorld": [
+                -5.527732468866202,
+                0.8500000061659747,
+                0.38879930452290334
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "hind_left",
+              "stance": false,
+              "world": [
+                -5.809411798652429,
+                0.8732361120046259,
+                0.6127444926331422
+              ],
+              "renderedWorld": [
+                -5.8094117979311655,
+                0.8732361126504751,
+                0.612744492333742
+              ],
+              "groundClearance": 0.02323611200462594,
+              "reachError": 0
+            },
+            {
+              "name": "hind_right",
+              "stance": true,
+              "world": [
+                -5.816517154182036,
+                0.85,
+                0.500523187725418
+              ],
+              "renderedWorld": [
+                -5.81651715113988,
+                0.850000005196484,
+                0.5005231864487966
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            }
+          ]
+        },
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 0,
+        "distance": 0.13419815000000193,
+        "place": "店前石街",
+        "frames": 109,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -5.6764369731724145,
+          "y": 0.85,
+          "z": 0.4976423657464507
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      }
+    }
+  },
+  "seconds": 61.22,
+  "scope": "Neutral orthographic angle review plus actual-root walk and optional street smoke test. These checks do not judge feline likeness automatically."
+}

@@ -1,0 +1,46 @@
+{
+  "author": "JonasDichelle",
+  "source": "https://blendswap.com/blend/18519",
+  "body": {
+    "sourceImage": "Untitled",
+    "savedImage": "artifacts/cat-a/materials/cat-original-calico.png",
+    "size": [
+      1500,
+      1500
+    ],
+    "colorSpace": "sRGB",
+    "UV": "UVMap",
+    "material": "cat_a_skin",
+    "change": "Diffuse BSDF replaced with glTF-compatible Principled; colour pixels and UVs preserved"
+  },
+  "eyes": [
+    {
+      "object": "Sphere",
+      "originalMaterial": "PBR Dielectric",
+      "originalImage": "11967-diffuse.jpg.001",
+      "coordinateConversion": "Original Generated -> Mapping -> Image -> RGB Curves baked to existing UVMap",
+      "image": "artifacts/cat-a/materials/Sphere-original-color.png",
+      "colorSpace": "sRGB",
+      "material": "cat_a_eye_Sphere"
+    },
+    {
+      "object": "Sphere.001",
+      "originalMaterial": "PBR Dielectric",
+      "originalImage": "11967-diffuse.jpg.001",
+      "coordinateConversion": "Original Generated -> Mapping -> Image -> RGB Curves baked to existing UVMap",
+      "image": "artifacts/cat-a/materials/Sphere-001-original-color.png",
+      "colorSpace": "sRGB",
+      "material": "cat_a_eye_Sphere.001"
+    }
+  ],
+  "materials": {
+    "skin": "cat_a_skin",
+    "fur": "cat_a_fur",
+    "whiskers": "cat_a_whisker"
+  },
+  "limitations": [
+    "Cycles Hair BSDF and particle strand dynamics are not represented by these materials.",
+    "Skin/fur roughness and eye reflections are web approximations; no anatomy or animation was modified.",
+    "The packed green_eye_diff image belongs to the unused empty eye mesh and is not used."
+  ]
+}

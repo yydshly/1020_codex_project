@@ -1,0 +1,24 @@
+{
+  "experiment": "V5 frozen geometry, wet surface parameters only",
+  "maximum_attempts": 2,
+  "attempts": [
+    {
+      "preview": 1,
+      "candidate": "rainy-canal-v5-wet-preview-01.blend",
+      "image": "v5-wet-preview-01.png",
+      "started_at": "2026-10-23T11:13:23.488908+00:00",
+      "status": "complete",
+      "finished_at": "2026-10-23T11:13:31.188049+00:00",
+      "render_seconds": 7.358
+    },
+    {
+      "preview": 2,
+      "candidate": "rainy-canal-v5-wet-preview-02.blend",
+      "image": "v5-wet-preview-02.png",
+      "started_at": "2026-10-23T11:16:15.087787+00:00",
+      "status": "complete",
+      "finished_at": "2026-10-23T11:16:21.966231+00:00",
+      "render_seconds": 6.584
+    }
+  ]
+}

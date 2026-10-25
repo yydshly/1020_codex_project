@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "trees": 23,
+  "drawCalls": 2,
+  "triangles": 42802,
+  "branchTriangles": 22448,
+  "leafTriangles": 20354,
+  "leafInstances": 10177,
+  "minimumLeafClearance": 2.963455883299565,
+  "minimumCardsPerTree": 425,
+  "resourcesDisposedOnce": 6,
+  "geometryPreserved": true,
+  "visibilityRestored": true,
+  "materialReferenceRestored": true,
+  "note": "CPU ownership/geometry validation. Canvas draw operations are stubbed; parent validates actual alpha texture and GPU image."
+}

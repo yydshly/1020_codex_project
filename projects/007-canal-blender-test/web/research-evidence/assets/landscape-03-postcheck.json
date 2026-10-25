@@ -1,0 +1,454 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-23T22:49:37.108584+00:00",
+  "passed": true,
+  "method": "Read-only source and candidate snapshots, independent freeze comparison, SHA256 and PNG header verification, repeated existing ray/route/channel checks and hill BVH clearance checks. No build, save or render operations.",
+  "checks": {
+    "source_and_candidate_exist": true,
+    "reopened_source_snapshot_matches_frozen_baseline": true,
+    "candidate_hash_matches_expected_stats_and_ledger": true,
+    "candidate_names_match_stats_and_ledger": true,
+    "saved_build_audit_passed": true,
+    "independent_full_preservation_audit_passed": true,
+    "saved_audit_matches_independent_counts": true,
+    "all_2260_source_objects_and_old_materials_world_camera_frozen": true,
+    "exactly_six_landscape_meshes_and_expected_complexity_added": true,
+    "no_new_material_or_node_group": true,
+    "baseline_old_files_unchanged": true,
+    "websites_unchanged": true,
+    "ledger_exactly_two_completed_attempts": true,
+    "both_previews_bound_to_same_audited_candidate": true,
+    "two_expected_distinct_review_images_and_cameras": true,
+    "stats_completed_previews_match_ledger": true,
+    "preview_png_hashes_and_low_resolution_verified": true,
+    "protected_108_scene_samples_unchanged_from_source": true,
+    "channel_155_sections_meet_width_and_overlap_requirements": true,
+    "seven_known_hole_rays_hit_geometry": true,
+    "nine_ground_connection_samples_supported": true,
+    "two_original_sampled_routes_pass": true,
+    "hill_210_protected_strip_and_quay_samples_pass": true,
+    "saved_diagnostics_match_independent_retests": true,
+    "saved_hill_protection_matches_independent_retest": true,
+    "all_files_present_before_postcheck_remain_unchanged": true,
+    "websites_still_unchanged_after_retests": true
+  },
+  "source": {
+    "file": "rainy-canal-extension-02-final.blend",
+    "sha256": "202c8ca179e36cbffbb46c473418fd2035702afc97e795e309801f79fe603093",
+    "frozen_objects": 2260
+  },
+  "candidate": {
+    "file": "rainy-canal-extension-03.blend",
+    "bytes": 19656704,
+    "sha256": "be430f38e6bcf2b9be54cebbebb111a868f2046fc6fe60ec77723c4d1ed05a50",
+    "active_camera": "Hero canal perspective"
+  },
+  "preservation": {
+    "baseline_old_files_checked": 125,
+    "all_preexisting_asset_artifact_files_checked": 136,
+    "changed_old_files": [],
+    "website_files_checked": {
+      "project_web": 56,
+      "built_site_007": 56
+    },
+    "independent_audit": {
+      "passed": true,
+      "checks": {
+        "source_extension_02_final_bytes_unchanged": true,
+        "all_old_artifacts_and_assets_bytes_unchanged": true,
+        "web_and_built_site_007_unchanged": true,
+        "all_original_objects_including_EXT_frozen": true,
+        "new_objects_use_landscape_prefix": true,
+        "all_original_materials_including_EXT_frozen": true,
+        "new_materials_use_landscape_prefix": true,
+        "all_original_node_groups_including_EXT_frozen": true,
+        "new_node_groups_use_landscape_prefix": true,
+        "all_worlds_frozen": true,
+        "locked_scene_camera": true,
+        "locked_scene_world": true,
+        "locked_scene_view_settings": true,
+        "locked_scene_display_settings": true,
+        "locked_scene_sequencer_colorspace": true,
+        "locked_scene_render": true,
+        "locked_scene_cycles": true,
+        "locked_scene_compositor": true,
+        "old_collection_members_children_visibility_frozen": true,
+        "only_landscape_collection_added": true,
+        "new_object_geometry_only:EXT_L03_EastFarMineralShoal": true,
+        "new_object_landscape_collection_only:EXT_L03_EastFarMineralShoal": true,
+        "new_object_independent_landscape_data:EXT_L03_EastFarMineralShoal": true,
+        "new_object_geometry_only:EXT_L03_EastNearMineralShoal": true,
+        "new_object_landscape_collection_only:EXT_L03_EastNearMineralShoal": true,
+        "new_object_independent_landscape_data:EXT_L03_EastNearMineralShoal": true,
+        "new_object_geometry_only:EXT_L03_NorthRollingTerrain": true,
+        "new_object_landscape_collection_only:EXT_L03_NorthRollingTerrain": true,
+        "new_object_independent_landscape_data:EXT_L03_NorthRollingTerrain": true,
+        "new_object_geometry_only:EXT_L03_SouthRollingTerrain": true,
+        "new_object_landscape_collection_only:EXT_L03_SouthRollingTerrain": true,
+        "new_object_independent_landscape_data:EXT_L03_SouthRollingTerrain": true,
+        "new_object_geometry_only:EXT_L03_WestFarSoftBank": true,
+        "new_object_landscape_collection_only:EXT_L03_WestFarSoftBank": true,
+        "new_object_independent_landscape_data:EXT_L03_WestFarSoftBank": true,
+        "new_object_geometry_only:EXT_L03_WestNearSoftBank": true,
+        "new_object_landscape_collection_only:EXT_L03_WestNearSoftBank": true,
+        "new_object_independent_landscape_data:EXT_L03_WestNearSoftBank": true,
+        "landscape_collection_has_no_old_objects_or_children": true,
+        "view_layer_names_frozen": true,
+        "old_layer_collection_visibility_frozen": true,
+        "only_landscape_layer_collection_added": true,
+        "no_original_complexity_removed": true,
+        "no_camera_or_light_added": true,
+        "no_new_node_groups": true
+      },
+      "violations": [],
+      "source_counts": {
+        "objects": 2260,
+        "mesh_objects": 2157,
+        "curve_objects": 76,
+        "vertices": 165605,
+        "faces": 132091,
+        "curve_points": 1685,
+        "modifiers": 743,
+        "lights": 20,
+        "cameras": 7
+      },
+      "candidate_counts": {
+        "objects": 2266,
+        "mesh_objects": 2163,
+        "curve_objects": 76,
+        "vertices": 170459,
+        "faces": 139315,
+        "curve_points": 1685,
+        "modifiers": 743,
+        "lights": 20,
+        "cameras": 7
+      },
+      "added_counts": {
+        "objects": 6,
+        "mesh_objects": 6,
+        "curve_objects": 0,
+        "vertices": 4854,
+        "faces": 7224,
+        "curve_points": 0,
+        "modifiers": 0,
+        "lights": 0,
+        "cameras": 0
+      },
+      "added_datablocks": {
+        "objects": [
+          "EXT_L03_EastFarMineralShoal",
+          "EXT_L03_EastNearMineralShoal",
+          "EXT_L03_NorthRollingTerrain",
+          "EXT_L03_SouthRollingTerrain",
+          "EXT_L03_WestFarSoftBank",
+          "EXT_L03_WestNearSoftBank"
+        ],
+        "materials": [],
+        "node_groups": [],
+        "collections": [
+          "EXT_Landscape03"
+        ]
+      },
+      "active_camera": "Hero canal perspective"
+    }
+  },
+  "candidate_counts": {
+    "objects": 2266,
+    "mesh_objects": 2163,
+    "curve_objects": 76,
+    "vertices": 170459,
+    "faces": 139315,
+    "curve_points": 1685,
+    "modifiers": 743,
+    "lights": 20,
+    "cameras": 7
+  },
+  "added_counts": {
+    "objects": 6,
+    "mesh_objects": 6,
+    "curve_objects": 0,
+    "vertices": 4854,
+    "faces": 7224,
+    "curve_points": 0,
+    "modifiers": 0,
+    "lights": 0,
+    "cameras": 0
+  },
+  "render_budget": {
+    "maximum_attempts": 2,
+    "attempts": 2,
+    "completed": 2,
+    "previews": [
+      {
+        "file": "landscape-03-preview-01.png",
+        "bytes": 951149,
+        "sha256": "9efc1dd4f35f548d4343229431a475b1cd429c53c20a6f0e8faeef2d9144b840",
+        "resolution": [
+          1104,
+          622
+        ],
+        "valid_png_header": true,
+        "matches_ledger_sha256": true,
+        "matches_ledger_resolution": true,
+        "candidate_sha256": "be430f38e6bcf2b9be54cebbebb111a868f2046fc6fe60ec77723c4d1ed05a50",
+        "camera": "EXT_Review_Overview",
+        "samples": 32
+      },
+      {
+        "file": "landscape-03-preview-02.png",
+        "bytes": 920544,
+        "sha256": "2a1bc294e5428e16b1498ba186d11f70fb31efbc7dbd4f6323a4ad5f269cfea3",
+        "resolution": [
+          1104,
+          622
+        ],
+        "valid_png_header": true,
+        "matches_ledger_sha256": true,
+        "matches_ledger_resolution": true,
+        "candidate_sha256": "be430f38e6bcf2b9be54cebbebb111a868f2046fc6fe60ec77723c4d1ed05a50",
+        "camera": "EXT_Review_ReverseRear",
+        "samples": 32
+      }
+    ],
+    "new_renders_during_postcheck": 0
+  },
+  "geometry_retests": {
+    "protected_scene_samples": {
+      "sample_count": 108,
+      "passed": true,
+      "differences": [],
+      "scope": "Vertical visibility samples over the existing block and background buildings/trees, not full geometric overlap certification."
+    },
+    "channel": {
+      "passed": true,
+      "section_count": 155,
+      "ray_grid_y_spacing": 0.1,
+      "maximum_section_x_spacing": 2.0,
+      "required_minimum_sampled_width": 5.0,
+      "minimum_sampled_water_width": 5.6,
+      "minimum_adjacent_water_overlap": 5.4,
+      "allowed_original_water_objects": [
+        "Continuous canal with real ripple geometry",
+        "EXT_B02_EastCanalContinuation",
+        "EXT_B02_WestCanalContinuation"
+      ],
+      "failed_sections": [],
+      "sections": {
+        "_public_excerpt": true,
+        "_reason": "long repeated evidence array",
+        "_original_item_count": 155,
+        "_original_data_retained_locally": true,
+        "_explicit_failure_item_count": 0,
+        "_first_item": {
+          "region": "West",
+          "x": -240.0,
+          "water_interval_y": [
+            -10.4,
+            -2.0
+          ],
+          "sampled_width_lower_bound": 8.4,
+          "left_center_right_water": [
+            true,
+            true,
+            true
+          ],
+          "passed": true
+        },
+        "_last_item": {
+          "region": "East",
+          "x": 120.0,
+          "water_interval_y": [
+            -10.2,
+            -2.1
+          ],
+          "sampled_width_lower_bound": 8.1,
+          "left_center_right_water": [
+            true,
+            true,
+            true
+          ],
+          "passed": true
+        }
+      },
+      "scope": "Top-down evaluated-scene rays at 2m longitudinal / 0.1m cross-channel spacing, plus left/center/right witnesses. Sampled surface continuity only, not hydraulic simulation or full collision certification."
+    },
+    "known_hole_rays": {
+      "overview_blue_strip_01": {
+        "hit": true,
+        "object": "EXT_B02_WestNearBankExtension",
+        "position": [
+          -29.25544548034668,
+          -1.7673110961914062,
+          0.496612548828125
+        ]
+      },
+      "overview_blue_strip_02": {
+        "hit": true,
+        "object": "EXT_B02_WestNearBankExtension",
+        "position": [
+          -27.360580444335938,
+          -1.7790145874023438,
+          0.4709320068359375
+        ]
+      },
+      "overview_blue_strip_03": {
+        "hit": true,
+        "object": "EXT_B02_WestNearBankExtension",
+        "position": [
+          -26.042461395263672,
+          -1.7410659790039062,
+          0.55426025390625
+        ]
+      },
+      "reverse_missing_bank_01": {
+        "hit": true,
+        "object": "EXT_L03_WestNearSoftBank",
+        "position": [
+          -54.42430877685547,
+          0.7408027648925781,
+          0.9657506942749023
+        ]
+      },
+      "reverse_missing_bank_02": {
+        "hit": true,
+        "object": "EXT_L03_WestNearSoftBank",
+        "position": [
+          -84.73973846435547,
+          -0.17072391510009766,
+          1.0891284942626953
+        ]
+      },
+      "reverse_missing_canal": {
+        "hit": true,
+        "object": "EXT_B02_WestCanalContinuation",
+        "position": [
+          -125.09255981445312,
+          -7.64198112487793,
+          0.024954795837402344
+        ]
+      },
+      "reverse_missing_bank_03": {
+        "hit": true,
+        "object": "EXT_L03_WestNearSoftBank",
+        "position": [
+          -134.0143280029297,
+          0.2984352111816406,
+          1.0536069869995117
+        ]
+      }
+    },
+    "local_ground_samples": {
+      "rear_cafe": {
+        "hit": true,
+        "height": 0.8500000238418579,
+        "object": "EXT_B02_ShopRearWallApron"
+      },
+      "rear_bookshop": {
+        "hit": true,
+        "height": 0.8500000238418579,
+        "object": "EXT_B02_ShopRearWallApron"
+      },
+      "rear_pottery": {
+        "hit": true,
+        "height": 0.8500000238418579,
+        "object": "EXT_B02_ShopRearWallApron"
+      },
+      "west_side": {
+        "hit": true,
+        "height": 0.8500000238418579,
+        "object": "EXT_B02_ShopWestSideInfill"
+      },
+      "east_side": {
+        "hit": true,
+        "height": 0.8500000238418579,
+        "object": "EXT_B02_ShopEastSideInfill"
+      },
+      "rear_boundary": {
+        "hit": true,
+        "height": 0.845206618309021,
+        "object": "EXT_B02_RearLaneBoundaryShoulder"
+      },
+      "far_house_01_front": {
+        "hit": true,
+        "height": 0.8500000238418579,
+        "object": "EXT_B02_OppositeBuildingsContinuousSupport"
+      },
+      "far_house_02_front": {
+        "hit": true,
+        "height": 0.8500000238418579,
+        "object": "EXT_B02_OppositeBuildingsContinuousSupport"
+      },
+      "far_house_03_front": {
+        "hit": true,
+        "height": 0.8500000238418579,
+        "object": "EXT_B02_OppositeBuildingsContinuousSupport"
+      }
+    },
+    "original_route_samples": {
+      "scope": "Sampled centerline floor support and 0.48m-wide body-ray checks only, not a navmesh, full-area collision certification or a playable controller.",
+      "floor_tolerance": 0.17,
+      "known_existing_paving_gaps": "Original stone joints can be about 0.12m lower than stone tops; a future walking controller needs step tolerance or a separate collision proxy.",
+      "routes": {
+        "both_banks_loop": {
+          "sample_count": 285,
+          "maximum_floor_deviation": 0.12,
+          "unsupported_samples": [],
+          "body_ray_obstructions": [],
+          "sampled_checks_passed": true
+        },
+        "rear_lane_loop": {
+          "sample_count": 237,
+          "maximum_floor_deviation": 0.12,
+          "unsupported_samples": [],
+          "body_ray_obstructions": [],
+          "sampled_checks_passed": true
+        }
+      }
+    },
+    "hill_protection": {
+      "scope": "Sampled cap-versus-source clearances and excluded quay strips, not a full navigation or visibility certificate.",
+      "sample_count": 210,
+      "passed": true,
+      "samples": {
+        "_public_excerpt": true,
+        "_reason": "large per-point/frame/geometry array",
+        "_original_item_count": 210,
+        "_original_data_retained_locally": true,
+        "_explicit_failure_item_count": 0,
+        "_first_item": {
+          "region": "north_protected_building_and_route_strip",
+          "xy": [
+            -26,
+            1.2
+          ],
+          "cap_z": 0.6599884033203125,
+          "old_terrain_z": 0.6899948120117188,
+          "passed": true
+        },
+        "_last_item": {
+          "region": "south_existing_quay_exclusion",
+          "xy": [
+            243.7286,
+            -10.81
+          ],
+          "cap_present": false,
+          "passed": true
+        }
+      }
+    }
+  },
+  "limitations": [
+    "Verification binds both preview files to the same saved candidate through the recorded SHA256 ledger; it does not independently recreate or visually judge a render.",
+    "New bank meshes partly occlude the frozen straight water corridor. The tests certify sampled visible surface continuity, not excavation, a rerouted river or hydrodynamic correctness.",
+    "Visibility, channel and hill checks are discrete samples, not exhaustive intersection or every-view certification.",
+    "Route samples are not a navmesh, continuous collision certification, an implemented walking controller or playable roaming."
+  ],
+  "evidence_sha256": {
+    "landscape-03-baseline.json": "f7f6909c8a5fea2f4d4f0d6dc5e24fe926a0533e8bb846a675be044ad6b2d4eb",
+    "landscape-03-stats.json": "2bddce91a59bddf6893bca3a03ecd19c42f8cd20aa85fd58573564b0c3198fba",
+    "landscape-03-audit.json": "44891b484c3a726b42f756b88b8e616147c2549d5bccf3c972d7482050f5b194",
+    "landscape-03-diagnostics.json": "e3558498f38e82e91506d45dd560f0d1f4d532e7070889d364a9f6e3c76e213b",
+    "landscape-03-render-ledger.json": "8b97bdb4ea4dfee1619175b3067e7b11f8289605d36dc06be00d306183d369aa"
+  },
+  "postcheck_seconds": 29.752
+}

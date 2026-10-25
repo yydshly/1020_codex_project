@@ -1,0 +1,633 @@
+{
+  "build": {
+    "scope": "Edit only the two original terrain meshes in the new in-memory scene; no overlay or extension.",
+    "protected_xy_rectangle": [
+      -40.0,
+      -38.0,
+      40.0,
+      28.0
+    ],
+    "protected_cell_halo": "All vertices of every terrain cell intersecting the rectangle are frozen, preserving interpolated support heights.",
+    "protected_boundary_fade_metres": 12.0,
+    "river_relative_profile": {
+      "shoreline_rows_preserved_metres": [
+        0,
+        0.6
+      ],
+      "flat_far_bank_to_metres": 5.0,
+      "full_original_inland_relief_from_metres": 50.0,
+      "low_bank_height_metres": 0.69
+    },
+    "objects": {
+      "ROAM01_North continuous terrain": {
+        "vertices": 1485,
+        "polygons": 1340,
+        "changed_z_vertices": 572,
+        "protected_core_vertex_count": 330,
+        "shoreline_vertex_count": 270,
+        "far_inland_vertex_count": 405,
+        "maximum_height_reduction_metres": 8.5808063,
+        "xy_sha256": "03a4384bef20c0da7db41e3d73d02338ffff4f56f3b23ec936f05667b9d05314",
+        "before": {
+          "cross_bank_segments": {
+            "0_to_0.6m": {
+              "maximum_gradient_m_per_m": 1.3166667,
+              "maximum_angle_degrees": 52.78356,
+              "at_x": 120.0,
+              "endpoint_heights": [
+                -0.1,
+                0.69
+              ],
+              "row_count": 135
+            },
+            "0.6_to_2m": {
+              "maximum_gradient_m_per_m": 6.0221942,
+              "maximum_angle_degrees": 80.57192,
+              "at_x": -125.0,
+              "endpoint_heights": [
+                0.69,
+                9.121072
+              ],
+              "row_count": 135
+            },
+            "2_to_5m": {
+              "maximum_gradient_m_per_m": 0.1185055,
+              "maximum_angle_degrees": 6.75834,
+              "at_x": 82.154472,
+              "endpoint_heights": [
+                5.481166,
+                5.125649
+              ],
+              "row_count": 135
+            },
+            "5_to_10m": {
+              "maximum_gradient_m_per_m": 0.1235841,
+              "maximum_angle_degrees": 7.04512,
+              "at_x": 84.146339,
+              "endpoint_heights": [
+                5.200621,
+                4.5827
+              ],
+              "row_count": 135
+            },
+            "10_to_18m": {
+              "maximum_gradient_m_per_m": 0.1202768,
+              "maximum_angle_degrees": 6.85841,
+              "at_x": 86.138214,
+              "endpoint_heights": [
+                4.627114,
+                3.6649
+              ],
+              "row_count": 135
+            },
+            "18_to_30m": {
+              "maximum_gradient_m_per_m": 0.0889069,
+              "maximum_angle_degrees": 5.08063,
+              "at_x": -125.0,
+              "endpoint_heights": [
+                9.20152,
+                8.134637
+              ],
+              "row_count": 135
+            },
+            "30_to_48m": {
+              "maximum_gradient_m_per_m": 0.1350111,
+              "maximum_angle_degrees": 7.68907,
+              "at_x": 14.430894,
+              "endpoint_heights": [
+                0.877558,
+                3.307758
+              ],
+              "row_count": 135
+            },
+            "48_to_75m": {
+              "maximum_gradient_m_per_m": 0.1626633,
+              "maximum_angle_degrees": 9.239,
+              "at_x": -23.414635,
+              "endpoint_heights": [
+                2.207149,
+                6.599058
+              ],
+              "row_count": 135
+            },
+            "75_to_110m": {
+              "maximum_gradient_m_per_m": 0.0814545,
+              "maximum_angle_degrees": 4.65672,
+              "at_x": -29.390244,
+              "endpoint_heights": [
+                6.29844,
+                9.149348
+              ],
+              "row_count": 135
+            },
+            "110_to_140m": {
+              "maximum_gradient_m_per_m": 0.1256716,
+              "maximum_angle_degrees": 7.1629,
+              "at_x": -77.195122,
+              "endpoint_heights": [
+                4.267622,
+                8.03777
+              ],
+              "row_count": 135
+            }
+          },
+          "maximum_near_bank_gradient_0_6_to_10m": 6.0221942,
+          "near_bank_note": "Near-bank metric excludes the preserved submerged 0→.6m shore lip.",
+          "x_row_count": 135
+        },
+        "after": {
+          "cross_bank_segments": {
+            "0_to_0.6m": {
+              "maximum_gradient_m_per_m": 1.3166667,
+              "maximum_angle_degrees": 52.78356,
+              "at_x": 120.0,
+              "endpoint_heights": [
+                -0.1,
+                0.69
+              ],
+              "row_count": 135
+            },
+            "0.6_to_2m": {
+              "maximum_gradient_m_per_m": 0.2450047,
+              "maximum_angle_degrees": 13.76655,
+              "at_x": 44.308945,
+              "endpoint_heights": [
+                0.69,
+                1.033007
+              ],
+              "row_count": 135
+            },
+            "2_to_5m": {
+              "maximum_gradient_m_per_m": 0.0013414,
+              "maximum_angle_degrees": 0.07686,
+              "at_x": 46.300812,
+              "endpoint_heights": [
+                0.99823,
+                0.994205
+              ],
+              "row_count": 135
+            },
+            "5_to_10m": {
+              "maximum_gradient_m_per_m": 0.0596641,
+              "maximum_angle_degrees": 3.41445,
+              "at_x": -125.0,
+              "endpoint_heights": [
+                0.69,
+                0.98832
+              ],
+              "row_count": 135
+            },
+            "10_to_18m": {
+              "maximum_gradient_m_per_m": 0.1777864,
+              "maximum_angle_degrees": 10.08107,
+              "at_x": -125.0,
+              "endpoint_heights": [
+                0.98832,
+                2.410611
+              ],
+              "row_count": 135
+            },
+            "18_to_30m": {
+              "maximum_gradient_m_per_m": 0.218295,
+              "maximum_angle_degrees": 12.31421,
+              "at_x": -125.0,
+              "endpoint_heights": [
+                2.410611,
+                5.030152
+              ],
+              "row_count": 135
+            },
+            "30_to_48m": {
+              "maximum_gradient_m_per_m": 0.1341748,
+              "maximum_angle_degrees": 7.64201,
+              "at_x": 14.430894,
+              "endpoint_heights": [
+                0.877558,
+                3.292705
+              ],
+              "row_count": 135
+            },
+            "48_to_75m": {
+              "maximum_gradient_m_per_m": 0.1629864,
+              "maximum_angle_degrees": 9.25704,
+              "at_x": -23.414635,
+              "endpoint_heights": [
+                2.198425,
+                6.599058
+              ],
+              "row_count": 135
+            },
+            "75_to_110m": {
+              "maximum_gradient_m_per_m": 0.0814545,
+              "maximum_angle_degrees": 4.65672,
+              "at_x": -29.390244,
+              "endpoint_heights": [
+                6.29844,
+                9.149348
+              ],
+              "row_count": 135
+            },
+            "110_to_140m": {
+              "maximum_gradient_m_per_m": 0.1256716,
+              "maximum_angle_degrees": 7.1629,
+              "at_x": -77.195122,
+              "endpoint_heights": [
+                4.267622,
+                8.03777
+              ],
+              "row_count": 135
+            }
+          },
+          "maximum_near_bank_gradient_0_6_to_10m": 0.2450047,
+          "near_bank_note": "Near-bank metric excludes the preserved submerged 0→.6m shore lip.",
+          "x_row_count": 135
+        },
+        "preservation_checks": {
+          "xy_bitwise_preserved": true,
+          "topology_preserved": true,
+          "smooth_flags_preserved": true,
+          "protected_core_vertices_preserved": true,
+          "waterline_and_shore_lip_preserved": true,
+          "far_inland_vertices_preserved": true
+        }
+      },
+      "ROAM01_South continuous terrain": {
+        "vertices": 1485,
+        "polygons": 1340,
+        "changed_z_vertices": 578,
+        "protected_core_vertex_count": 324,
+        "shoreline_vertex_count": 270,
+        "far_inland_vertex_count": 405,
+        "maximum_height_reduction_metres": 7.1733237,
+        "xy_sha256": "a08e5f8bfeb4260e9919bedbe96374d6285ba1111278bba12a2b6eeac6cc5666",
+        "before": {
+          "cross_bank_segments": {
+            "0_to_0.6m": {
+              "maximum_gradient_m_per_m": 1.3166667,
+              "maximum_angle_degrees": 52.78356,
+              "at_x": 120.0,
+              "endpoint_heights": [
+                -0.1,
+                0.69
+              ],
+              "row_count": 135
+            },
+            "0.6_to_2m": {
+              "maximum_gradient_m_per_m": 5.1238026,
+              "maximum_angle_degrees": 78.95654,
+              "at_x": -125.0,
+              "endpoint_heights": [
+                0.69,
+                7.863324
+              ],
+              "row_count": 135
+            },
+            "2_to_5m": {
+              "maximum_gradient_m_per_m": 0.1184274,
+              "maximum_angle_degrees": 6.75393,
+              "at_x": -85.162605,
+              "endpoint_heights": [
+                6.062982,
+                6.418264
+              ],
+              "row_count": 135
+            },
+            "5_to_10m": {
+              "maximum_gradient_m_per_m": 0.1186604,
+              "maximum_angle_degrees": 6.7671,
+              "at_x": -87.154472,
+              "endpoint_heights": [
+                6.655507,
+                7.248809
+              ],
+              "row_count": 135
+            },
+            "10_to_18m": {
+              "maximum_gradient_m_per_m": 0.1111676,
+              "maximum_angle_degrees": 6.34339,
+              "at_x": -91.138214,
+              "endpoint_heights": [
+                7.412343,
+                8.301683
+              ],
+              "row_count": 135
+            },
+            "18_to_30m": {
+              "maximum_gradient_m_per_m": 0.1061729,
+              "maximum_angle_degrees": 6.06055,
+              "at_x": 54.268291,
+              "endpoint_heights": [
+                3.485762,
+                4.759836
+              ],
+              "row_count": 135
+            },
+            "30_to_48m": {
+              "maximum_gradient_m_per_m": 0.128704,
+              "maximum_angle_degrees": 7.33388,
+              "at_x": 118.008133,
+              "endpoint_heights": [
+                3.688479,
+                6.00515
+              ],
+              "row_count": 135
+            },
+            "48_to_75m": {
+              "maximum_gradient_m_per_m": 0.2147112,
+              "maximum_angle_degrees": 12.11806,
+              "at_x": -43.333332,
+              "endpoint_heights": [
+                2.566892,
+                8.364094
+              ],
+              "row_count": 135
+            },
+            "75_to_110m": {
+              "maximum_gradient_m_per_m": 0.0910052,
+              "maximum_angle_degrees": 5.19989,
+              "at_x": -119.024391,
+              "endpoint_heights": [
+                5.901363,
+                2.716182
+              ],
+              "row_count": 135
+            },
+            "110_to_140m": {
+              "maximum_gradient_m_per_m": 0.1257502,
+              "maximum_angle_degrees": 7.16734,
+              "at_x": -73.21138,
+              "endpoint_heights": [
+                7.621606,
+                3.849099
+              ],
+              "row_count": 135
+            }
+          },
+          "maximum_near_bank_gradient_0_6_to_10m": 5.1238026,
+          "near_bank_note": "Near-bank metric excludes the preserved submerged 0→.6m shore lip.",
+          "x_row_count": 135
+        },
+        "after": {
+          "cross_bank_segments": {
+            "0_to_0.6m": {
+              "maximum_gradient_m_per_m": 1.3166667,
+              "maximum_angle_degrees": 52.78356,
+              "at_x": 120.0,
+              "endpoint_heights": [
+                -0.1,
+                0.69
+              ],
+              "row_count": 135
+            },
+            "0.6_to_2m": {
+              "maximum_gradient_m_per_m": 0.2718487,
+              "maximum_angle_degrees": 15.20825,
+              "at_x": 44.308945,
+              "endpoint_heights": [
+                0.69,
+                1.070588
+              ],
+              "row_count": 135
+            },
+            "2_to_5m": {
+              "maximum_gradient_m_per_m": 0.0042559,
+              "maximum_angle_degrees": 0.24384,
+              "at_x": 46.300812,
+              "endpoint_heights": [
+                1.040887,
+                1.053654
+              ],
+              "row_count": 135
+            },
+            "5_to_10m": {
+              "maximum_gradient_m_per_m": 0.0461066,
+              "maximum_angle_degrees": 2.63984,
+              "at_x": -91.138214,
+              "endpoint_heights": [
+                0.69,
+                0.920533
+              ],
+              "row_count": 135
+            },
+            "10_to_18m": {
+              "maximum_gradient_m_per_m": 0.1635219,
+              "maximum_angle_degrees": 9.28692,
+              "at_x": -91.138214,
+              "endpoint_heights": [
+                0.920533,
+                2.228709
+              ],
+              "row_count": 135
+            },
+            "18_to_30m": {
+              "maximum_gradient_m_per_m": 0.2870128,
+              "maximum_angle_degrees": 16.01416,
+              "at_x": -93.130081,
+              "endpoint_heights": [
+                2.219805,
+                5.663959
+              ],
+              "row_count": 135
+            },
+            "30_to_48m": {
+              "maximum_gradient_m_per_m": 0.2099848,
+              "maximum_angle_degrees": 11.85894,
+              "at_x": -103.089432,
+              "endpoint_heights": [
+                5.25156,
+                9.031286
+              ],
+              "row_count": 135
+            },
+            "48_to_75m": {
+              "maximum_gradient_m_per_m": 0.2151109,
+              "maximum_angle_degrees": 12.13995,
+              "at_x": -43.333332,
+              "endpoint_heights": [
+                2.556099,
+                8.364094
+              ],
+              "row_count": 135
+            },
+            "75_to_110m": {
+              "maximum_gradient_m_per_m": 0.0910052,
+              "maximum_angle_degrees": 5.19989,
+              "at_x": -119.024391,
+              "endpoint_heights": [
+                5.901363,
+                2.716182
+              ],
+              "row_count": 135
+            },
+            "110_to_140m": {
+              "maximum_gradient_m_per_m": 0.1257502,
+              "maximum_angle_degrees": 7.16734,
+              "at_x": -73.21138,
+              "endpoint_heights": [
+                7.621606,
+                3.849099
+              ],
+              "row_count": 135
+            }
+          },
+          "maximum_near_bank_gradient_0_6_to_10m": 0.2718487,
+          "near_bank_note": "Near-bank metric excludes the preserved submerged 0→.6m shore lip.",
+          "x_row_count": 135
+        },
+        "preservation_checks": {
+          "xy_bitwise_preserved": true,
+          "topology_preserved": true,
+          "smooth_flags_preserved": true,
+          "protected_core_vertices_preserved": true,
+          "waterline_and_shore_lip_preserved": true,
+          "far_inland_vertices_preserved": true
+        }
+      }
+    },
+    "objects_and_materials_added_or_removed": false,
+    "saved_or_exported_files": false
+  },
+  "all_non_target_objects_signature_unchanged": true,
+  "route_checks": {
+    "scope": "Sampled centerline floor support and 0.48m-wide body-ray checks only, not a navmesh, full-area collision certification or a playable controller.",
+    "floor_tolerance": 0.17,
+    "known_existing_paving_gaps": "Original stone joints can be about 0.12m lower than stone tops; a future walking controller needs step tolerance or a separate collision proxy.",
+    "routes": {
+      "both_banks_loop": {
+        "sample_count": 285,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      },
+      "rear_lane_loop": {
+        "sample_count": 237,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      }
+    }
+  },
+  "route_checks_identical_to_source": true,
+  "support_probes": {
+    "before": {
+      "rear_lane_west": {
+        "hit": true,
+        "z": 0.8500000238418579,
+        "object": "EXT_Rear lane slab 1"
+      },
+      "rear_lane_mid": {
+        "hit": true,
+        "z": 0.8499999642372131,
+        "object": "EXT_Rear lane slab 3"
+      },
+      "rear_lane_east": {
+        "hit": true,
+        "z": 0.8500000238418579,
+        "object": "EXT_Rear lane slab 2"
+      },
+      "near_west_bridge": {
+        "hit": true,
+        "z": 0.8505801558494568,
+        "object": "Individually worn wet quay paving"
+      },
+      "far_west_bridge": {
+        "hit": true,
+        "z": 0.8500000238418579,
+        "object": "EXT_Return bridge landing"
+      },
+      "near_east_bridge": {
+        "hit": true,
+        "z": 0.8424251079559326,
+        "object": "Individually worn wet quay paving"
+      },
+      "far_east_bridge": {
+        "hit": true,
+        "z": 0.8416606187820435,
+        "object": "Individually worn wet quay paving"
+      },
+      "west_quay_terminal_north": {
+        "hit": true,
+        "z": 0.6899999976158142,
+        "object": "ROAM01_North continuous terrain"
+      },
+      "east_quay_terminal_south": {
+        "hit": true,
+        "z": 0.690538763999939,
+        "object": "ROAM01_South continuous terrain"
+      },
+      "north_new_house_land": {
+        "hit": true,
+        "z": 1.0,
+        "object": "SPACE01_North backland range envelope details"
+      },
+      "south_new_house_land": {
+        "hit": true,
+        "z": 0.7126031517982483,
+        "object": "ROAM01_South continuous terrain"
+      }
+    },
+    "after": {
+      "rear_lane_west": {
+        "hit": true,
+        "z": 0.8500000238418579,
+        "object": "EXT_Rear lane slab 1"
+      },
+      "rear_lane_mid": {
+        "hit": true,
+        "z": 0.8499999642372131,
+        "object": "EXT_Rear lane slab 3"
+      },
+      "rear_lane_east": {
+        "hit": true,
+        "z": 0.8500000238418579,
+        "object": "EXT_Rear lane slab 2"
+      },
+      "near_west_bridge": {
+        "hit": true,
+        "z": 0.8505801558494568,
+        "object": "Individually worn wet quay paving"
+      },
+      "far_west_bridge": {
+        "hit": true,
+        "z": 0.8500000238418579,
+        "object": "EXT_Return bridge landing"
+      },
+      "near_east_bridge": {
+        "hit": true,
+        "z": 0.8424251079559326,
+        "object": "Individually worn wet quay paving"
+      },
+      "far_east_bridge": {
+        "hit": true,
+        "z": 0.8416606187820435,
+        "object": "Individually worn wet quay paving"
+      },
+      "west_quay_terminal_north": {
+        "hit": true,
+        "z": 0.6899999976158142,
+        "object": "ROAM01_North continuous terrain"
+      },
+      "east_quay_terminal_south": {
+        "hit": true,
+        "z": 0.690538763999939,
+        "object": "ROAM01_South continuous terrain"
+      },
+      "north_new_house_land": {
+        "hit": true,
+        "z": 1.0,
+        "object": "SPACE01_North backland range envelope details"
+      },
+      "south_new_house_land": {
+        "hit": true,
+        "z": 0.7126031517982483,
+        "object": "ROAM01_South continuous terrain"
+      }
+    },
+    "identical": true
+  },
+  "source_disk_sha256_before": "bbe35bad393288cddfca5b6203e179a88e7e72b3ec15828cad2ae5354841c387",
+  "source_disk_sha256_after": "bbe35bad393288cddfca5b6203e179a88e7e72b3ec15828cad2ae5354841c387",
+  "no_blend_saved_no_glb_exported": true
+}

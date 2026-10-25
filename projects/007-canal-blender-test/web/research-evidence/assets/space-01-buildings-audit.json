@@ -1,0 +1,95 @@
+{
+  "object_count": 21,
+  "triangles": 2948,
+  "collections": [
+    "SPACE01_CourtyardConnections",
+    "SPACE01_RearFacadeClosure",
+    "SPACE01_BacklandBuildings"
+  ],
+  "objects": [
+    "SPACE01_Backland building courtyard returns",
+    "SPACE01_Backland garden compartments",
+    "SPACE01_North backland low wing closed pitched roof",
+    "SPACE01_North backland low wing envelope details",
+    "SPACE01_North backland range closed pitched roof",
+    "SPACE01_North backland range envelope details",
+    "SPACE01_Opposite row courtyard boundaries",
+    "SPACE01_Rear and exposed gable closure",
+    "SPACE01_Rear drain 1 part 1",
+    "SPACE01_Rear drain 1 part 2",
+    "SPACE01_Rear drain 2 part 1",
+    "SPACE01_Rear drain 2 part 2",
+    "SPACE01_Rear drain 3 part 1",
+    "SPACE01_Rear drain 3 part 2",
+    "SPACE01_Rear gutter 1",
+    "SPACE01_Rear gutter 2",
+    "SPACE01_Rear gutter 3",
+    "SPACE01_South backland house closed pitched roof",
+    "SPACE01_South backland house envelope details",
+    "SPACE01_South backland offset wing closed pitched roof",
+    "SPACE01_South backland offset wing envelope details"
+  ],
+  "backland_buildings": [
+    {
+      "name": "South backland house",
+      "footprint": [
+        -12.7,
+        -32.0,
+        -4.699999999999999,
+        -26.6
+      ],
+      "ridge_z": 5.66,
+      "closed_exterior_only": true
+    },
+    {
+      "name": "South backland offset wing",
+      "footprint": [
+        -2.55,
+        -33.65,
+        2.95,
+        -28.95
+      ],
+      "ridge_z": 6.5600000000000005,
+      "closed_exterior_only": true
+    },
+    {
+      "name": "North backland range",
+      "footprint": [
+        -7.2,
+        17.55,
+        1.2000000000000002,
+        23.05
+      ],
+      "ridge_z": 5.26,
+      "closed_exterior_only": true
+    },
+    {
+      "name": "North backland low wing",
+      "footprint": [
+        1.1500000000000004,
+        17.75,
+        5.25,
+        22.450000000000003
+      ],
+      "ridge_z": 4.26,
+      "closed_exterior_only": true
+    }
+  ],
+  "policy": "Additive exterior connections only; old objects and materials unchanged; no open interiors.",
+  "route_clearance": "No additions inside original quay, rear-lane or side-alley navigation rectangles.",
+  "original_objects_unchanged": true,
+  "route_results": {
+    "both_banks_loop": {
+      "pass": true,
+      "samples": 285,
+      "obstructions": [],
+      "unsupported": []
+    },
+    "rear_lane_loop": {
+      "pass": true,
+      "samples": 237,
+      "obstructions": [],
+      "unsupported": []
+    }
+  }
+}

@@ -1,0 +1,8 @@
+{
+  "passed": false,
+  "frames": 20,
+  "duration": 7.877,
+  "maxFrameGap": 6.934,
+  "sha256": "f9bc6e3ab508d166ca9e5119432dfd0d4061f7e6f54fe800b853b40602a28604",
+  "note": "Functional checks passed but this capture is too sparse for judging motion. Do not present as smooth gait evidence."
+}

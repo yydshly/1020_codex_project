@@ -1,0 +1,1331 @@
+{
+  "created_utc": "2026-10-24T13:12:07.584560+00:00",
+  "asset": "space-03.glb",
+  "sha256": "511c2a6e130ce6c81411d960200573d04d359ab7dca95fd3d06b6f1f7f47e512",
+  "bytes": 10553228,
+  "source": {
+    "file": "rainy-canal-space-02.blend",
+    "sha256": "052b7622415b4dcfde8aacb2db1725ee1e44f4c7a7960f47da9ce9ea8fe0a103",
+    "unchanged": true,
+    "object_count": 1830
+  },
+  "integrated_blend": {
+    "file": "rainy-canal-space-03.blend",
+    "sha256": "4c7e9c0093960ea796f2d7a888129da7c7a9d9c10b5b6d5486c2cb405f8c0178",
+    "object_count": 1845
+  },
+  "added_objects": [
+    "SPACE03_Opposite_01_EaveAndVergeBoards",
+    "SPACE03_Opposite_01_RainGuttersAndDownpipes",
+    "SPACE03_Opposite_01_RecessedWalls",
+    "SPACE03_Opposite_01_StaggeredTilesAndRidge",
+    "SPACE03_Opposite_01_WindowDoorJoinery",
+    "SPACE03_Opposite_02_EaveAndVergeBoards",
+    "SPACE03_Opposite_02_RainGuttersAndDownpipes",
+    "SPACE03_Opposite_02_RecessedWalls",
+    "SPACE03_Opposite_02_StaggeredTilesAndRidge",
+    "SPACE03_Opposite_02_WindowDoorJoinery",
+    "SPACE03_Opposite_03_EaveAndVergeBoards",
+    "SPACE03_Opposite_03_RainGuttersAndDownpipes",
+    "SPACE03_Opposite_03_RecessedWalls",
+    "SPACE03_Opposite_03_StaggeredTilesAndRidge",
+    "SPACE03_Opposite_03_WindowDoorJoinery"
+  ],
+  "refinements": {
+    "roofs": {
+      "scope": "Only three ClosedRoof mesh pointers replaced; physical roof details appended.",
+      "modified_source_objects": [
+        "EXT_Opposite_01_ClosedRoof",
+        "EXT_Opposite_02_ClosedRoof",
+        "EXT_Opposite_03_ClosedRoof"
+      ],
+      "modified_fields": [
+        "data"
+      ],
+      "added_objects": {
+        "SPACE03_Opposite_01_StaggeredTilesAndRidge": {
+          "triangles": 1810,
+          "bounds": {
+            "min": [
+              -14.020000457763672,
+              -21.618000030517578,
+              5.108116149902344
+            ],
+            "max": [
+              -7.980000019073486,
+              -16.082000732421875,
+              6.367000102996826
+            ]
+          }
+        },
+        "SPACE03_Opposite_01_EaveAndVergeBoards": {
+          "triangles": 72,
+          "bounds": {
+            "min": [
+              -14.059000015258789,
+              -21.63249969482422,
+              4.979000091552734
+            ],
+            "max": [
+              -7.940999984741211,
+              -16.0674991607666,
+              6.245741844177246
+            ]
+          }
+        },
+        "SPACE03_Opposite_01_RainGuttersAndDownpipes": {
+          "triangles": 232,
+          "bounds": {
+            "min": [
+              -14.015000343322754,
+              -21.700000762939453,
+              0.9956548810005188
+            ],
+            "max": [
+              -7.985000133514404,
+              -16.0,
+              5.03000020980835
+            ]
+          }
+        },
+        "SPACE03_Opposite_02_StaggeredTilesAndRidge": {
+          "triangles": 1810,
+          "bounds": {
+            "min": [
+              -6.119999885559082,
+              -21.618000030517578,
+              6.007976531982422
+            ],
+            "max": [
+              0.11999999731779099,
+              -16.082000732421875,
+              7.267000198364258
+            ]
+          }
+        },
+        "SPACE03_Opposite_02_EaveAndVergeBoards": {
+          "triangles": 72,
+          "bounds": {
+            "min": [
+              -6.158999919891357,
+              -21.63249969482422,
+              5.879000186920166
+            ],
+            "max": [
+              0.1589999943971634,
+              -16.0674991607666,
+              7.1457414627075195
+            ]
+          }
+        },
+        "SPACE03_Opposite_02_RainGuttersAndDownpipes": {
+          "triangles": 232,
+          "bounds": {
+            "min": [
+              -6.114999771118164,
+              -21.700000762939453,
+              0.9956548810005188
+            ],
+            "max": [
+              0.11500000208616257,
+              -16.0,
+              5.929999828338623
+            ]
+          }
+        },
+        "SPACE03_Opposite_03_StaggeredTilesAndRidge": {
+          "triangles": 1810,
+          "bounds": {
+            "min": [
+              1.7799999713897705,
+              -21.618000030517578,
+              4.808138370513916
+            ],
+            "max": [
+              7.820000171661377,
+              -16.082000732421875,
+              6.066999912261963
+            ]
+          }
+        },
+        "SPACE03_Opposite_03_EaveAndVergeBoards": {
+          "triangles": 72,
+          "bounds": {
+            "min": [
+              1.7410000562667847,
+              -21.63249969482422,
+              4.678999900817871
+            ],
+            "max": [
+              7.858999729156494,
+              -16.0674991607666,
+              5.945741653442383
+            ]
+          }
+        },
+        "SPACE03_Opposite_03_RainGuttersAndDownpipes": {
+          "triangles": 232,
+          "bounds": {
+            "min": [
+              1.784999966621399,
+              -21.700000762939453,
+              0.9956548810005188
+            ],
+            "max": [
+              7.815000057220459,
+              -16.0,
+              4.730000019073486
+            ]
+          }
+        }
+      },
+      "added_collection": "SPACE03_Roofs",
+      "new_materials": 0,
+      "reused_materials": [
+        "roof",
+        "roof_alt",
+        "wood",
+        "iron",
+        "plaster_alt"
+      ],
+      "all_other_source_object_state_preserved": true,
+      "source_roof_triangles": 24,
+      "new_roof_triangles_including_replacements": 6450,
+      "triangle_delta": 6426,
+      "triangle_limit": 6500,
+      "houses": [
+        {
+          "source_roof": "EXT_Opposite_01_ClosedRoof",
+          "source_mesh": "EXT_Opposite_01_ClosedRoof",
+          "replacement_mesh": "SPACE03_Opposite_01_SolidRoofDeck",
+          "original_bounds": {
+            "min": [
+              -14.029999732971191,
+              -21.600000381469727,
+              5.099999904632568
+            ],
+            "max": [
+              -7.96999979019165,
+              -16.100000381469727,
+              6.25
+            ]
+          },
+          "original_ridge_z": 6.25,
+          "details": {
+            "tile_count": 222,
+            "ridge_cap_count": 16,
+            "tile_columns": 18,
+            "tile_rows_per_pitch": 6,
+            "tile_lip_thickness": 0.018,
+            "roof_deck_thickness": 0.115,
+            "stagger_fraction": 0.5,
+            "top_tile_polygons": 444
+          },
+          "new_objects": [
+            "SPACE03_Opposite_01_StaggeredTilesAndRidge",
+            "SPACE03_Opposite_01_EaveAndVergeBoards",
+            "SPACE03_Opposite_01_RainGuttersAndDownpipes"
+          ],
+          "new_bounds_including_drainage": {
+            "min": [
+              -14.059000015258789,
+              -21.700000762939453,
+              0.9956548810005188
+            ],
+            "max": [
+              -7.940999984741211,
+              -16.0,
+              6.367000102996826
+            ]
+          },
+          "maximum_xy_overhang_increase": 0.10000038146972656,
+          "maximum_ridge_height_increase": 0.11700010299682617,
+          "triangles_including_replacement": 2150
+        },
+        {
+          "source_roof": "EXT_Opposite_02_ClosedRoof",
+          "source_mesh": "EXT_Opposite_02_ClosedRoof",
+          "replacement_mesh": "SPACE03_Opposite_02_SolidRoofDeck",
+          "original_bounds": {
+            "min": [
+              -6.130000114440918,
+              -21.600000381469727,
+              6.0
+            ],
+            "max": [
+              0.12999999523162842,
+              -16.100000381469727,
+              7.150000095367432
+            ]
+          },
+          "original_ridge_z": 7.1499999999999995,
+          "details": {
+            "tile_count": 222,
+            "ridge_cap_count": 16,
+            "tile_columns": 18,
+            "tile_rows_per_pitch": 6,
+            "tile_lip_thickness": 0.018,
+            "roof_deck_thickness": 0.115,
+            "stagger_fraction": 0.5,
+            "top_tile_polygons": 444
+          },
+          "new_objects": [
+            "SPACE03_Opposite_02_StaggeredTilesAndRidge",
+            "SPACE03_Opposite_02_EaveAndVergeBoards",
+            "SPACE03_Opposite_02_RainGuttersAndDownpipes"
+          ],
+          "new_bounds_including_drainage": {
+            "min": [
+              -6.158999919891357,
+              -21.700000762939453,
+              0.9956548810005188
+            ],
+            "max": [
+              0.1589999943971634,
+              -16.0,
+              7.267000198364258
+            ]
+          },
+          "maximum_xy_overhang_increase": 0.10000038146972656,
+          "maximum_ridge_height_increase": 0.11700019836425835,
+          "triangles_including_replacement": 2150
+        },
+        {
+          "source_roof": "EXT_Opposite_03_ClosedRoof",
+          "source_mesh": "EXT_Opposite_03_ClosedRoof",
+          "replacement_mesh": "SPACE03_Opposite_03_SolidRoofDeck",
+          "original_bounds": {
+            "min": [
+              1.7699999809265137,
+              -21.600000381469727,
+              4.800000190734863
+            ],
+            "max": [
+              7.829999923706055,
+              -16.100000381469727,
+              5.949999809265137
+            ]
+          },
+          "original_ridge_z": 5.949999999999999,
+          "details": {
+            "tile_count": 222,
+            "ridge_cap_count": 16,
+            "tile_columns": 18,
+            "tile_rows_per_pitch": 6,
+            "tile_lip_thickness": 0.018,
+            "roof_deck_thickness": 0.115,
+            "stagger_fraction": 0.5,
+            "top_tile_polygons": 444
+          },
+          "new_objects": [
+            "SPACE03_Opposite_03_StaggeredTilesAndRidge",
+            "SPACE03_Opposite_03_EaveAndVergeBoards",
+            "SPACE03_Opposite_03_RainGuttersAndDownpipes"
+          ],
+          "new_bounds_including_drainage": {
+            "min": [
+              1.7410000562667847,
+              -21.700000762939453,
+              0.9956548810005188
+            ],
+            "max": [
+              7.858999729156494,
+              -16.0,
+              6.066999912261963
+            ]
+          },
+          "maximum_xy_overhang_increase": 0.10000038146972656,
+          "maximum_ridge_height_increase": 0.1169999122619636,
+          "triangles_including_replacement": 2150
+        }
+      ],
+      "saved_or_exported": false,
+      "notes": [
+        "All relief is base mesh; no bevel, subdivision or normal modifier dependency.",
+        "Existing EavesAndBand and all facade geometry remain untouched.",
+        "Opaque gable closures remain exterior-only; no interiors were added."
+      ]
+    },
+    "facades": {
+      "objects": [
+        "SPACE03_Opposite_01_RecessedWalls",
+        "SPACE03_Opposite_01_WindowDoorJoinery",
+        "SPACE03_Opposite_02_RecessedWalls",
+        "SPACE03_Opposite_02_WindowDoorJoinery",
+        "SPACE03_Opposite_03_RecessedWalls",
+        "SPACE03_Opposite_03_WindowDoorJoinery"
+      ],
+      "object_count": 6,
+      "materials": [
+        "SPACE03_FadedTeal",
+        "SPACE03_WeatheredWood",
+        "SPACE03_WindowCurtain",
+        "SPACE03_WindowPane",
+        "SPACE03_WindowRecess",
+        "SPACE03_WindowWarm"
+      ],
+      "triangles": 7652,
+      "allowed_original_changes": {
+        "EXT_Opposite_01_ClosedShell": [
+          "hide_render",
+          "hide_viewport"
+        ],
+        "EXT_Opposite_01_OpaqueWindowDoorDetails": [
+          "hide_render",
+          "hide_viewport"
+        ],
+        "EXT_Opposite_02_ClosedShell": [
+          "hide_render",
+          "hide_viewport"
+        ],
+        "EXT_Opposite_02_OpaqueWindowDoorDetails": [
+          "hide_render",
+          "hide_viewport"
+        ],
+        "EXT_Opposite_03_ClosedShell": [
+          "hide_render",
+          "hide_viewport"
+        ],
+        "EXT_Opposite_03_OpaqueWindowDoorDetails": [
+          "hide_render",
+          "hide_viewport"
+        ]
+      },
+      "houses": [
+        {
+          "id": 1,
+          "footprint": [
+            -13.8,
+            -21.35,
+            -8.2,
+            -16.35
+          ],
+          "eaves_z": 5.1,
+          "new_bounds": {
+            "min": [
+              -14.029999732971191,
+              -21.639999389648438,
+              0.8100000023841858
+            ],
+            "max": [
+              -7.96999979019165,
+              -15.994256973266602,
+              5.099999904632568
+            ]
+          },
+          "windows": 10,
+          "closed_doors": 2,
+          "warm_windows": 1,
+          "recess_depth_metres": 0.28,
+          "enterable": false
+        },
+        {
+          "id": 2,
+          "footprint": [
+            -5.9,
+            -21.35,
+            -0.10000000000000009,
+            -16.35
+          ],
+          "eaves_z": 6.0,
+          "new_bounds": {
+            "min": [
+              -6.130000114440918,
+              -21.639999389648438,
+              0.8100000023841858
+            ],
+            "max": [
+              0.12999999523162842,
+              -15.885581016540527,
+              6.0
+            ]
+          },
+          "windows": 10,
+          "closed_doors": 2,
+          "warm_windows": 0,
+          "recess_depth_metres": 0.28,
+          "enterable": false
+        },
+        {
+          "id": 3,
+          "footprint": [
+            2.0,
+            -21.35,
+            7.6,
+            -16.35
+          ],
+          "eaves_z": 4.799999999999999,
+          "new_bounds": {
+            "min": [
+              1.7699999809265137,
+              -21.639999389648438,
+              0.8100000023841858
+            ],
+            "max": [
+              7.829999923706055,
+              -16.048845291137695,
+              4.800000190734863
+            ]
+          },
+          "windows": 10,
+          "closed_doors": 2,
+          "warm_windows": 1,
+          "recess_depth_metres": 0.28,
+          "enterable": false
+        }
+      ],
+      "collections": [
+        "SPACE03_Facades"
+      ],
+      "web_material_aliases": {
+        "SPACE03_WeatheredWood": "wood",
+        "SPACE03_FadedTeal": "teal"
+      },
+      "web_window_materials": {
+        "pane": [
+          "SPACE03_WindowPane"
+        ],
+        "warm": [
+          "SPACE03_WindowWarm"
+        ],
+        "recess": [
+          "SPACE03_WindowRecess"
+        ],
+        "curtain": [
+          "SPACE03_WindowCurtain"
+        ]
+      },
+      "material_web_special": {
+        "SPACE03_WindowPane": {
+          "opaque": true,
+          "roughness": 0.19,
+          "metalness": 0.18
+        },
+        "SPACE03_WindowWarm": {
+          "opaque": true,
+          "roughness": 0.28,
+          "low_emission": 0.12
+        },
+        "SPACE03_WindowRecess": {
+          "opaque": true
+        },
+        "SPACE03_WindowCurtain": {
+          "opaque": true
+        }
+      },
+      "scope": "Three original opposite-house exterior facades only; source shells and old opaque panels preserved but hidden; no new accessible interiors, lights, roofs or props."
+    },
+    "plinths": {
+      "objects_changed": [
+        "EXT_Opposite_01_StonePlinth",
+        "EXT_Opposite_02_StonePlinth",
+        "EXT_Opposite_03_StonePlinth"
+      ],
+      "objects_added": 0,
+      "materials_added": 0,
+      "mesh_datablocks_added": 3,
+      "total_triangles": 216,
+      "net_triangle_increase": 180,
+      "allowed_fields": [
+        "data"
+      ],
+      "source_mesh_retention": "Original mesh geometry/materials unmodified; fake user enabled to keep it after save.",
+      "houses": [
+        {
+          "object": "EXT_Opposite_01_StonePlinth",
+          "original_mesh": "EXT_Opposite_01_StonePlinth",
+          "replacement_mesh": "SPACE03_Opposite_01_DoorThresholdPlinth",
+          "original_mesh_retained": true,
+          "original_mesh_fake_user": true,
+          "triangles": 72,
+          "previous_triangles": 12,
+          "unchanged_bounds": {
+            "min": [
+              -13.850000381469727,
+              -21.399999618530273,
+              0.8500000238418579
+            ],
+            "max": [
+              -8.149999618530273,
+              -16.30000114440918,
+              1.1699999570846558
+            ]
+          },
+          "material_slots": [
+            "stone"
+          ],
+          "notches": [
+            {
+              "side": "front",
+              "center_x": -11.0,
+              "width": 1.0,
+              "depth": 0.4,
+              "xy": [
+                -11.5,
+                -16.70000114440918,
+                -10.5,
+                -16.30000114440918
+              ],
+              "top_z": 0.925
+            },
+            {
+              "side": "rear",
+              "center_x": -10.55,
+              "width": 0.93,
+              "depth": 0.4,
+              "xy": [
+                -11.015,
+                -21.399999618530273,
+                -10.085,
+                -20.999999618530275
+              ],
+              "top_z": 0.925
+            }
+          ],
+          "solid_lower_course": [
+            0.8500000238418579,
+            0.925
+          ]
+        },
+        {
+          "object": "EXT_Opposite_02_StonePlinth",
+          "original_mesh": "EXT_Opposite_02_StonePlinth",
+          "replacement_mesh": "SPACE03_Opposite_02_DoorThresholdPlinth",
+          "original_mesh_retained": true,
+          "original_mesh_fake_user": true,
+          "triangles": 72,
+          "previous_triangles": 12,
+          "unchanged_bounds": {
+            "min": [
+              -5.949999809265137,
+              -21.399999618530273,
+              0.8500000238418579
+            ],
+            "max": [
+              -0.04999995231628418,
+              -16.30000114440918,
+              1.1699999570846558
+            ]
+          },
+          "material_slots": [
+            "stone"
+          ],
+          "notches": [
+            {
+              "side": "front",
+              "center_x": -3.0,
+              "width": 1.0,
+              "depth": 0.4,
+              "xy": [
+                -3.5,
+                -16.70000114440918,
+                -2.5,
+                -16.30000114440918
+              ],
+              "top_z": 0.925
+            },
+            {
+              "side": "rear",
+              "center_x": -2.55,
+              "width": 0.93,
+              "depth": 0.4,
+              "xy": [
+                -3.0149999999999997,
+                -21.399999618530273,
+                -2.085,
+                -20.999999618530275
+              ],
+              "top_z": 0.925
+            }
+          ],
+          "solid_lower_course": [
+            0.8500000238418579,
+            0.925
+          ]
+        },
+        {
+          "object": "EXT_Opposite_03_StonePlinth",
+          "original_mesh": "EXT_Opposite_03_StonePlinth",
+          "replacement_mesh": "SPACE03_Opposite_03_DoorThresholdPlinth",
+          "original_mesh_retained": true,
+          "original_mesh_fake_user": true,
+          "triangles": 72,
+          "previous_triangles": 12,
+          "unchanged_bounds": {
+            "min": [
+              1.950000286102295,
+              -21.399999618530273,
+              0.8500000238418579
+            ],
+            "max": [
+              7.650000095367432,
+              -16.30000114440918,
+              1.1699999570846558
+            ]
+          },
+          "material_slots": [
+            "stone"
+          ],
+          "notches": [
+            {
+              "side": "front",
+              "center_x": 4.8,
+              "width": 1.0,
+              "depth": 0.4,
+              "xy": [
+                4.3,
+                -16.70000114440918,
+                5.3,
+                -16.30000114440918
+              ],
+              "top_z": 0.925
+            },
+            {
+              "side": "rear",
+              "center_x": 5.25,
+              "width": 0.93,
+              "depth": 0.4,
+              "xy": [
+                4.785,
+                -21.399999618530273,
+                5.715,
+                -20.999999618530275
+              ],
+              "top_z": 0.925
+            }
+          ],
+          "solid_lower_course": [
+            0.8500000238418579,
+            0.925
+          ]
+        }
+      ],
+      "scope": "Six door-edge notches only; solid .85-.925m base, source bounds, materials and object transforms preserved."
+    }
+  },
+  "sampled_route_checks": {
+    "scope": "Sampled centerline floor support and 0.48m-wide body-ray checks only, not a navmesh, full-area collision certification or a playable controller.",
+    "floor_tolerance": 0.17,
+    "known_existing_paving_gaps": "Original stone joints can be about 0.12m lower than stone tops; a future walking controller needs step tolerance or a separate collision proxy.",
+    "routes": {
+      "both_banks_loop": {
+        "sample_count": 285,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      },
+      "rear_lane_loop": {
+        "sample_count": 237,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      }
+    }
+  },
+  "background_water_checks": {
+    "passed": true,
+    "ray_count": 294,
+    "failures": [],
+    "outer_endpoint_inset_m": 0.05,
+    "scope": "Sampled finite background water surface only; no navigation or hydrodynamic claim."
+  },
+  "walk_routes_blender_xy": {
+    "both_banks_loop": [
+      [
+        -18,
+        -0.55
+      ],
+      [
+        9.4,
+        -0.55
+      ],
+      [
+        9.4,
+        -12.65
+      ],
+      [
+        -18,
+        -12.65
+      ],
+      [
+        -18,
+        -0.55
+      ]
+    ],
+    "rear_lane_loop": [
+      [
+        -12.8,
+        -0.55
+      ],
+      [
+        -12.8,
+        8.0
+      ],
+      [
+        11.5,
+        8.0
+      ],
+      [
+        11.5,
+        -0.55
+      ],
+      [
+        -12.8,
+        -0.55
+      ]
+    ]
+  },
+  "geometry": {
+    "meshes": 34,
+    "primitives": 34,
+    "vertices": 264197,
+    "triangles": 174012,
+    "binary_bytes": 10519560,
+    "nodes": 34,
+    "materials": 34,
+    "meshes_with_vertex_color": 31
+  },
+  "bounds": {
+    "min": [
+      -125.0,
+      -0.77,
+      -186.25
+    ],
+    "max": [
+      120.0,
+      10.55,
+      181.5
+    ],
+    "size": [
+      245.0,
+      11.32,
+      367.75
+    ],
+    "center": [
+      -2.5,
+      4.89,
+      -2.375
+    ]
+  },
+  "materials": [
+    {
+      "name": "mortar",
+      "base_color_linear": [
+        0.2158605009317398,
+        0.18782077729701996,
+        0.13563333451747894,
+        1
+      ],
+      "roughness": 0.835,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "paving_alt",
+      "base_color_linear": [
+        0.3613067865371704,
+        0.31398871541023254,
+        0.21952620148658752,
+        1
+      ],
+      "roughness": 0.2725,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "paving",
+      "base_color_linear": [
+        0.2746773064136505,
+        0.2462013214826584,
+        0.18116424977779388,
+        1
+      ],
+      "roughness": 0.2725,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "stone",
+      "base_color_linear": [
+        0.3613067865371704,
+        0.3277781009674072,
+        0.24228112399578094,
+        1
+      ],
+      "roughness": 0.58,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "stone_light",
+      "base_color_linear": [
+        0.5457244515419006,
+        0.47353148460388184,
+        0.34191441535949707,
+        1
+      ],
+      "roughness": 0.585,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "iron",
+      "base_color_linear": [
+        0.01850022003054619,
+        0.02518685907125473,
+        0.026241222396492958,
+        1
+      ],
+      "roughness": 0.32,
+      "metallic": 0.7,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "brass",
+      "base_color_linear": [
+        0.4564110338687897,
+        0.2961382567882538,
+        0.07227185368537903,
+        1
+      ],
+      "roughness": 0.25,
+      "metallic": 0.78,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "plaster",
+      "base_color_linear": [
+        0.7835378050804138,
+        0.6795424818992615,
+        0.5088813304901123,
+        1
+      ],
+      "roughness": 0.8,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "plaster_alt",
+      "base_color_linear": [
+        0.7454041838645935,
+        0.6583748459815979,
+        0.5149176716804504,
+        1
+      ],
+      "roughness": 0.8,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "wood",
+      "base_color_linear": [
+        0.07036009430885315,
+        0.02955683507025242,
+        0.014443843625485897,
+        1
+      ],
+      "roughness": 0.46,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "wood_light",
+      "base_color_linear": [
+        0.2961382567882538,
+        0.16826939582824707,
+        0.08228270709514618,
+        1
+      ],
+      "roughness": 0.53,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "glass",
+      "base_color_linear": [
+        0.9800000190734863,
+        0.9900000095367432,
+        1.0,
+        1
+      ],
+      "roughness": 0.008,
+      "metallic": 0,
+      "alpha": 0.18,
+      "source_transmission": 1.0,
+      "procedural_nodes_baked": false
+    },
+    {
+      "name": "book_tan",
+      "base_color_linear": [
+        0.637596845626831,
+        0.46207699179649353,
+        0.2541520893573761,
+        1
+      ],
+      "roughness": 0.65,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "terracotta",
+      "base_color_linear": [
+        0.2746773064136505,
+        0.07818742096424103,
+        0.03560131415724754,
+        1
+      ],
+      "roughness": 0.75,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "warm_glow",
+      "base_color_linear": [
+        1.0,
+        0.6795424818992615,
+        0.2541520893573761,
+        1
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false
+    },
+    {
+      "name": "book_blue",
+      "base_color_linear": [
+        0.039546236395835876,
+        0.11697066575288773,
+        0.14995978772640228,
+        1
+      ],
+      "roughness": 0.65,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "roof",
+      "base_color_linear": [
+        0.045186202973127365,
+        0.05951123684644699,
+        0.05951123684644699,
+        1
+      ],
+      "roughness": 0.57,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "roof_alt",
+      "base_color_linear": [
+        0.08650045841932297,
+        0.1119324266910553,
+        0.10702310502529144,
+        1
+      ],
+      "roughness": 0.56,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "fabric",
+      "base_color_linear": [
+        0.14126329123973846,
+        0.026241222396492958,
+        0.03310476616024971,
+        1
+      ],
+      "roughness": 0.89,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "book_red",
+      "base_color_linear": [
+        0.3277781009674072,
+        0.061246052384376526,
+        0.04817182570695877,
+        1
+      ],
+      "roughness": 0.65,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "teal",
+      "base_color_linear": [
+        0.01850022003054619,
+        0.07818742096424103,
+        0.08437620848417282,
+        1
+      ],
+      "roughness": 0.47,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "olive",
+      "base_color_linear": [
+        0.09989872574806213,
+        0.12477181851863861,
+        0.05951123684644699,
+        1
+      ],
+      "roughness": 0.5,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "leaf",
+      "base_color_linear": [
+        0.03560131415724754,
+        0.109461709856987,
+        0.03189603239297867,
+        1
+      ],
+      "roughness": 0.65,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "rubber",
+      "base_color_linear": [
+        0.007499032188206911,
+        0.009721217676997185,
+        0.01032982300966978,
+        1
+      ],
+      "roughness": 0.6,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "soil",
+      "base_color_linear": [
+        0.02955683507025242,
+        0.024157632142305374,
+        0.015208514407277107,
+        1
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "leaf_light",
+      "base_color_linear": [
+        0.17144110798835754,
+        0.2158605009317398,
+        0.05780543014407158,
+        1
+      ],
+      "roughness": 0.65,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "EXT_B02_DampMineralGround",
+      "base_color_linear": [
+        0.2015562504529953,
+        0.2158605009317398,
+        0.16202937066555023,
+        1
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "Canal water",
+      "base_color_linear": [
+        0.019382361322641373,
+        0.04817182570695877,
+        0.045186202973127365,
+        1
+      ],
+      "roughness": 0.06,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.3199999928474426,
+      "procedural_nodes_baked": false
+    },
+    {
+      "name": "SPACE03_WindowRecess",
+      "base_color_linear": [
+        0.024157632142305374,
+        0.021219009533524513,
+        0.017641954123973846,
+        1
+      ],
+      "roughness": 0.88,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "SPACE03_WindowWarm",
+      "base_color_linear": [
+        0.2746773064136505,
+        0.18116424977779388,
+        0.08228270709514618,
+        1
+      ],
+      "roughness": 0.28,
+      "metallic": 0.05,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "SPACE03_WindowPane",
+      "base_color_linear": [
+        0.08437620848417282,
+        0.1441284716129303,
+        0.16202937066555023,
+        1
+      ],
+      "roughness": 0.19,
+      "metallic": 0.18,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "SPACE03_WeatheredWood",
+      "base_color_linear": [
+        0.30054378509521484,
+        0.16513219475746155,
+        0.08650045841932297,
+        1
+      ],
+      "roughness": 0.59,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "SPACE03_WindowCurtain",
+      "base_color_linear": [
+        0.4507857859134674,
+        0.366252601146698,
+        0.2541520893573761,
+        1
+      ],
+      "roughness": 0.89,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "SPACE03_FadedTeal",
+      "base_color_linear": [
+        0.09530746936798096,
+        0.19806931912899017,
+        0.18782077729701996,
+        1
+      ],
+      "roughness": 0.57,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    }
+  ],
+  "water_mesh_name": "ROAM01_Water",
+  "web_materials": "scene-space-03-environment.js, inheriting scene-space-02 unified surfaces.",
+  "scope": "Existing three opposite-bank houses only: roof construction, true shallow openings and facade details; same block extent.",
+  "limitations": [
+    "Closed doors and non-enterable shallow window reveals.",
+    "No full furnished interiors.",
+    "Runtime browser materials remain separate from Blender appearance."
+  ],
+  "elapsed_seconds": 9.92,
+  "published": false
+}

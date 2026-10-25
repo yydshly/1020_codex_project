@@ -1,0 +1,163 @@
+{
+  "scope": "First additive exterior blockout, not a finished city or playable navigation system.",
+  "source": "rainy-canal-v5-wet-preview-02.blend",
+  "active_area_xy": [
+    -21,
+    -22.5,
+    13,
+    10.5
+  ],
+  "existing_shops": [
+    [
+      -9.9,
+      1.11,
+      -4.1,
+      6.6
+    ],
+    [
+      -3.9,
+      1.11,
+      1.9,
+      6.6
+    ],
+    [
+      2.1,
+      1.11,
+      7.9,
+      6.6
+    ]
+  ],
+  "canal_y": [
+    -10.55,
+    -1.755
+  ],
+  "existing_bridge_x": [
+    7.759,
+    10.241
+  ],
+  "rear_path_rectangles": [
+    [
+      -13.7,
+      1.19,
+      -11.9,
+      8.9
+    ],
+    [
+      10.6,
+      1.19,
+      12.4,
+      8.9
+    ],
+    [
+      -11.9,
+      7.1,
+      10.6,
+      8.9
+    ]
+  ],
+  "return_bridge": {
+    "center_x": -18.0,
+    "width": 1.8,
+    "far_y": -10.55,
+    "near_y": -1.755,
+    "rise": 0.55
+  },
+  "opposite_house_front_y": -16.35,
+  "opposite_house_back_y": -21.35,
+  "routes": {
+    "both_banks_loop": [
+      [
+        -18,
+        -0.55
+      ],
+      [
+        9.4,
+        -0.55
+      ],
+      [
+        9.4,
+        -12.65
+      ],
+      [
+        -18,
+        -12.65
+      ],
+      [
+        -18,
+        -0.55
+      ]
+    ],
+    "rear_lane_loop": [
+      [
+        -12.8,
+        -0.55
+      ],
+      [
+        -12.8,
+        8.0
+      ],
+      [
+        11.5,
+        8.0
+      ],
+      [
+        11.5,
+        -0.55
+      ],
+      [
+        -12.8,
+        -0.55
+      ]
+    ]
+  },
+  "access_policy": {
+    "shop_interiors": "Closed: existing glass and doors are preserved; no entry or stair access added.",
+    "new_houses": "Closed exterior shells with opaque window/door panels; no claimed interiors.",
+    "outside_active_area": "Visual background only; original stretched terrain is retained but not declared explored or complete."
+  },
+  "inference": "All new off-camera architecture and routes are designed extensions, not recovered facts from the single reference image.",
+  "new_buildings": [
+    {
+      "id": 1,
+      "center_x": -11.0,
+      "front_y": -16.35,
+      "back_y": -21.35,
+      "width": 5.6,
+      "ground_z": 0.85,
+      "height_to_ridge": 5.4,
+      "eaves_z": 5.1,
+      "ridge_z": 6.25,
+      "closed_shell": true,
+      "enterable": false,
+      "windows": "Opaque dark wood panels with applied frames; no glass and no openings."
+    },
+    {
+      "id": 2,
+      "center_x": -3.0,
+      "front_y": -16.35,
+      "back_y": -21.35,
+      "width": 5.8,
+      "ground_z": 0.85,
+      "height_to_ridge": 6.3,
+      "eaves_z": 6.0,
+      "ridge_z": 7.1499999999999995,
+      "closed_shell": true,
+      "enterable": false,
+      "windows": "Opaque dark wood panels with applied frames; no glass and no openings."
+    },
+    {
+      "id": 3,
+      "center_x": 4.8,
+      "front_y": -16.35,
+      "back_y": -21.35,
+      "width": 5.6,
+      "ground_z": 0.85,
+      "height_to_ridge": 5.1,
+      "eaves_z": 4.799999999999999,
+      "ridge_z": 5.949999999999999,
+      "closed_shell": true,
+      "enterable": false,
+      "windows": "Opaque dark wood panels with applied frames; no glass and no openings."
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+  "preserved_files_checked": 141,
+  "changed_files": [],
+  "browser_errors": 0,
+  "browser_warnings": 0,
+  "keyboard_walk_in": {
+    "visible_location": "相连小院",
+    "duration_ms": 11000,
+    "key": "W"
+  },
+  "keyboard_return": {
+    "visible_location": "临河街",
+    "duration_ms": 11000,
+    "key": "S"
+  },
+  "demo_completed": true,
+  "demo_final_status": "已回到临河街，可继续行走",
+  "previous_version_walk_disabled": true,
+  "inspected_views": [
+    "entrance",
+    "courtyard",
+    "overview"
+  ],
+  "source_blend": "rainy-canal-space-03.blend",
+  "new_blend": "rainy-canal-space-05.blend",
+  "new_glb": "space-05.glb",
+  "courtyard_area_square_metres": 19.8,
+  "triangles": 177260,
+  "triangle_increase": 3248,
+  "node_navigation_tests_passed": 8,
+  "node_control_tests_passed": 4,
+  "physics_checks": "assets/space-05-postcheck-final.json",
+  "local_only": true,
+  "published": false
+}

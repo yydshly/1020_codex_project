@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="2520" viewBox="0 0 1600 2520" role="img" aria-labelledby="title description">
+  <title id="title">从 AI 操作 Blender 到可验证的场景制作：完整探索引导图</title>
+  <desc id="description">整理源帖线索、模型与工具分工、自制参考图、三版 Blender 实践、工程验收、能力边界和下一轮公平对照。区分纯渲染时间与总投入，说明继续或停止的判断。</desc>
+  <defs>
+    <style>
+      text{font-family:"Microsoft YaHei","PingFang SC","Noto Sans CJK SC",sans-serif;fill:#153e43}
+      .title{font-size:50px;font-weight:700}.heading{font-size:30px;font-weight:700}.body{font-size:23px}.small{font-size:20px}.label{font-size:18px;font-weight:700;letter-spacing:1.5px}.number{font-size:28px;font-weight:700;fill:#fff}.muted{fill:#5b6e6b}.accent{fill:#9b5a32}.white{fill:#fff}.bold{font-weight:700}.panel{fill:#fffdf7;stroke:#d6dcd1;stroke-width:2}.rule{stroke:#d6dcd1;stroke-width:2}.connector{stroke:#b97448;stroke-width:3;fill:none;marker-end:url(#arrow)}
+    </style>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 10 5 0 10Z" fill="#b97448"/></marker>
+  </defs>
+  <rect width="1600" height="2520" fill="#f6f3eb"/>
+  <text x="76" y="65" class="label accent">007 / BLENDER 场景探索 / 完整引导图</text>
+  <text x="76" y="135" class="title">让 AI 操作 Blender，</text>
+  <text x="76" y="198" class="title">先把“能运行”与“做得好”分开验证。</text>
+  <text x="78" y="247" class="body muted">这次已验证的是本地脚本建模与迭代；没有安装连接插件，也不是源帖的严格复现。</text>
+
+  <rect x="76" y="282" width="1448" height="131" rx="18" fill="#153e43"/>
+  <text x="104" y="320" class="label white">三版沿用的场景规模 · 基础网格口径</text>
+  <text x="104" y="365" class="heading white">2,109 对象</text>
+  <text x="416" y="365" class="heading white">159,646 顶点</text>
+  <text x="810" y="365" class="heading white">127,565 面</text>
+  <text x="1168" y="365" class="heading white">20 盏灯</text>
+  <text x="104" y="396" class="small white">固定数量有助于观察构图、光照和材质带来的改变；不代表结构与画面已经达到目标质量。</text>
+
+  <rect x="76" y="445" width="1448" height="172" rx="18" class="panel"/>
+  <circle cx="119" cy="489" r="25" fill="#b97448"/><text x="101" y="499" class="number">01</text>
+  <text x="163" y="500" class="heading">原帖提供方向，先保留证据边界</text>
+  <text x="108" y="543" class="body"><tspan class="bold">动作</tspan><tspan dx="22">观察其展示的场景效果，提出“AI 如何控制 Blender”的问题。</tspan></text>
+  <text x="108" y="577" class="body"><tspan class="bold">产物</tspan><tspan dx="22">研究线索与目标画面。</tspan><tspan dx="35" class="bold">判断</tspan><tspan dx="22">具体输入、人工介入、配置和费用口径尚未核实。</tspan></text>
+  <path d="M800 621V651" class="connector"/>
+
+  <rect x="76" y="660" width="1448" height="205" rx="18" class="panel"/>
+  <circle cx="119" cy="704" r="25" fill="#b97448"/><text x="101" y="714" class="number">02</text>
+  <text x="163" y="715" class="heading">理解分工：模型决策，工具传递，Blender 执行</text>
+  <rect x="108" y="740" width="362" height="52" rx="10" fill="#e8eee7"/><text x="133" y="775" class="body bold">模型：理解、规划、生成操作</text>
+  <path d="M478 766H520" class="connector"/>
+  <rect x="532" y="740" width="478" height="52" rx="10" fill="#efe4d5"/><text x="552" y="775" class="body bold">脚本 / 桥接工具：提交操作、返回信息</text>
+  <path d="M1018 766H1060" class="connector"/>
+  <rect x="1072" y="740" width="420" height="52" rx="10" fill="#e8eee7"/><text x="1091" y="775" class="body bold">Blender：几何、材质、灯光、渲染</text>
+  <text x="108" y="829" class="body"><tspan class="bold">产物与判断</tspan><tspan dx="22">建立执行与反馈循环；连接协议不是画质保证，实际工具与流程也会影响结果。</tspan></text>
+  <path d="M800 869V899" class="connector"/>
+
+  <rect x="76" y="908" width="1448" height="170" rx="18" class="panel"/>
+  <circle cx="119" cy="952" r="25" fill="#b97448"/><text x="101" y="962" class="number">03</text>
+  <text x="163" y="963" class="heading">选择自己的适中参考图，控制第一次投入</text>
+  <text x="108" y="1006" class="body"><tspan class="bold">动作</tspan><tspan dx="22">自生成雨后临水老街：三间店铺、一座桥、一段运河，保留黄昏与暖光。</tspan></text>
+  <text x="108" y="1040" class="body"><tspan class="bold">产物</tspan><tspan dx="22">参考概念图。</tspan><tspan dx="30" class="bold">判断</tspan><tspan dx="22">非原帖输入；没有对应真实三维，隐藏结构需自行补全。</tspan></text>
+  <path d="M800 1082V1112" class="connector"/>
+
+  <rect x="76" y="1121" width="1448" height="278" rx="18" class="panel"/>
+  <circle cx="119" cy="1165" r="25" fill="#b97448"/><text x="101" y="1175" class="number">04</text>
+  <text x="163" y="1176" class="heading">本地无插件：以 Python 脚本构建，并分阶段迭代</text>
+  <line x1="560" y1="1204" x2="560" y2="1337" class="rule"/><line x1="1032" y1="1204" x2="1032" y2="1337" class="rule"/>
+  <text x="108" y="1234" class="heading">V1 · 场景构建</text>
+  <text x="108" y="1275" class="body">搭建建筑、桥、水和道具。</text>
+  <text x="108" y="1310" class="body">产物：首版工程与实际渲染。</text>
+  <text x="592" y="1234" class="heading">V2 · 构图与光照</text>
+  <text x="592" y="1275" class="body">调整镜头、天空与光线。</text>
+  <text x="592" y="1310" class="body">产物：更贴近目标的画面方向。</text>
+  <text x="1064" y="1234" class="heading">V3 · 材质与反射</text>
+  <text x="1064" y="1275" class="body">处理墙面、石材与湿区反光。</text>
+  <text x="1064" y="1310" class="body">产物：第三版场景与渲染。</text>
+  <text x="108" y="1364" class="body accent bold">纯渲染：V1 9.88 秒 / V2 10.19 秒 / V3 10.92 秒。不是总项目耗时，也不含规划与返工。</text>
+  <path d="M800 1403V1433" class="connector"/>
+
+  <rect x="76" y="1442" width="1448" height="185" rx="18" class="panel"/>
+  <circle cx="119" cy="1486" r="25" fill="#b97448"/><text x="101" y="1496" class="number">05</text>
+  <text x="163" y="1497" class="heading">从好看的单帧，进入可交付工程的验收</text>
+  <text x="108" y="1540" class="body"><tspan class="bold">动作</tspan><tspan dx="22">保存工程、重新打开，并换机位检查空间连接、遮挡处与对象可编辑性。</tspan></text>
+  <text x="108" y="1574" class="body"><tspan class="bold">产物</tspan><tspan dx="22">工程、检查记录和其他视角。</tspan><tspan dx="25" class="bold">判断</tspan><tspan dx="22">“能编辑”与“每个视角都成熟”要分开验收。</tspan></text>
+  <path d="M800 1631V1661" class="connector"/>
+
+  <rect x="76" y="1670" width="1448" height="185" rx="18" fill="#f0e4d5" stroke="#cfac8a" stroke-width="2"/>
+  <circle cx="119" cy="1714" r="25" fill="#b97448"/><text x="101" y="1724" class="number">06</text>
+  <text x="163" y="1725" class="heading">接受当前差距：能做出来，不等于已经复现源帖</text>
+  <text x="108" y="1768" class="body"><tspan class="bold">动作</tspan><tspan dx="22">对照参考查看结构、材质、自然感与氛围，保留成功和不足。</tspan></text>
+  <text x="108" y="1802" class="body"><tspan class="bold">判断</tspan><tspan dx="22">当前差距仍明显；不能用这次结果给 DeepSeek、Codex 或某个插件排能力名次。</tspan></text>
+  <path d="M800 1859V1889" class="connector"/>
+
+  <rect x="76" y="1898" width="1448" height="232" rx="18" class="panel"/>
+  <circle cx="119" cy="1942" r="25" fill="#b97448"/><text x="101" y="1952" class="number">07</text>
+  <text x="163" y="1953" class="heading">下一轮：把“整套方案比较”和“原因定位”分开</text>
+  <text x="108" y="1996" class="body"><tspan class="bold">动作</tspan><tspan dx="22">统一参考图、初始场景、机器、预算和验收标准；做同图搭建、换机位、局部修改。</tspan></text>
+  <text x="108" y="2032" class="body"><tspan class="bold">产物</tspan><tspan dx="22">画面、工程、执行日志与完整耗时；同时看相同预算的质量和达到目标的成本。</tspan></text>
+  <text x="108" y="2068" class="body"><tspan class="bold">判断</tspan><tspan dx="22">两套组合直接比较，只能说明整套方案差异；定位模型或工具差异时需固定另一因素。</tspan></text>
+  <text x="108" y="2103" class="small muted">候选桥接路线仍需单独接入验证；本次本地脚本实验不替代插件功能、稳定性或恢复能力测试。</text>
+
+  <rect x="76" y="2161" width="708" height="242" rx="18" fill="#e6ece3"/>
+  <text x="108" y="2208" class="heading">对我们的意义</text>
+  <text x="108" y="2251" class="body">把图片灵感变成可改的场景草案，</text>
+  <text x="108" y="2285" class="body">验证镜头、照明、空间与材质方向。</text>
+  <text x="108" y="2332" class="body bold">可用于概念预演、展示场景与资产草模。</text>
+  <text x="108" y="2371" class="small muted">不把单图观感等同于生产资产或准确三维重建。</text>
+  <rect x="812" y="2161" width="712" height="242" rx="18" fill="#e6ece3"/>
+  <text x="844" y="2208" class="heading">何时继续，何时停下来</text>
+  <text x="844" y="2251" class="body"><tspan class="bold">继续：</tspan>差距可定位，修改仍有可见收益。</text>
+  <text x="844" y="2291" class="body"><tspan class="bold">暂停：</tspan>预算用尽、反复返工或目标不明确。</text>
+  <text x="844" y="2332" class="body">保留工程与结论，再决定改提示、改工具，</text>
+  <text x="844" y="2371" class="body">还是改用更合适的制作方式。</text>
+  <text x="78" y="2452" class="small muted">阅读路径：来源 → 原理 → 参考 → 实践 → 验收 → 边界 → 下一轮。具体证据、画面与工程记录见研究页。</text>
+  <text x="78" y="2488" class="label accent">不新增宏大场景来掩盖问题；优先把一个可验证的片段做好。</text>
+</svg>

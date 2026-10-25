@@ -1,0 +1,77 @@
+{
+  "stage": "landscape-03",
+  "local_date": "2026-10-24",
+  "summary": "在完全保留旧场景的前提下，新增局部曲岸与背景起伏。结构检查通过，但视觉改善有限，尚未达到自然河道环境的完成效果。",
+  "source": "../artifacts/rainy-canal-extension-02-final.blend",
+  "candidate": "../artifacts/rainy-canal-extension-03.blend",
+  "candidate_sha256": "be430f38e6bcf2b9be54cebbebb111a868f2046fc6fe60ec77723c4d1ed05a50",
+  "preservation": {
+    "original_objects": 2260,
+    "original_objects_materials_lights_world_cameras_unchanged": true,
+    "prior_versions_and_images_overwritten": false,
+    "new_collection": "EXT_Landscape03",
+    "rollback": "关闭EXT_Landscape03可对照上一轮场景，或直接打开extension-02-final旧工程。新增地形会改变遮挡、阴影和间接光，不保证新集合开启时旧区域像素完全一致。",
+    "website_updated": false,
+    "published_or_committed": false
+  },
+  "additions": [
+    "西段x=-240至-30：两片错峰缓岸，在原水域内形成小幅弯曲的可见岸线，岸肩与旧地形渐接。",
+    "东段x=24至120：两片低矮矿物浅滩，保留原城镇石墙及铺地，不在水面上搭高堤。",
+    "南北各一片连续低丘地形，基于旧地形实际高度叠加起伏，四周沉入旧表面；避开原建筑、树木及行走区域。"
+  ],
+  "cost": {
+    "added_mesh_objects": 6,
+    "added_vertices": 4854,
+    "added_faces": 7224,
+    "vertex_increase_percent_rounded": 2.93,
+    "added_materials_modifiers_lights_cameras_props_buildings": 0,
+    "preview_count": 2,
+    "preview_resolution": [
+      1104,
+      622
+    ],
+    "samples_per_preview": 32,
+    "both_previews_match_saved_candidate": true,
+    "post_preview_geometry_changes": false
+  },
+  "visual_review": [
+    {
+      "image": "landscape-03-preview-01.png",
+      "same_camera_as_previous_round": "EXT_Review_Overview",
+      "observation": "主场景基本保持原状；右上远段浅滩略微收窄并曲化可见水面，但直墙、直路仍主导整体，主视角改善较小。"
+    },
+    {
+      "image": "landscape-03-preview-02.png",
+      "same_camera_as_previous_round": "EXT_Review_ReverseRear",
+      "observation": "能够看见背景缓丘和较近的弧形岸缘；远处粉亮水带仍呈长直楔形，未自然转弯消失。建筑右侧岸端有平片、多边形感，远丘轮廓仍有折线，接合尚不够自然。"
+    }
+  ],
+  "diagnostics": {
+    "protected_existing_scene_visibility_samples": 108,
+    "hill_protection_samples": 210,
+    "channel_sections": 155,
+    "minimum_sampled_water_width_m": 5.6,
+    "minimum_adjacent_water_interval_overlap_m": 5.4,
+    "channel_longitudinal_spacing_m": 2.0,
+    "channel_cross_section_spacing_m": 0.1,
+    "sampled_water_remains_original_water_objects": true,
+    "previous_hole_rays": 7,
+    "previous_ground_support_samples": 9,
+    "existing_route_samples": 522,
+    "scope": "这些结果只证明指定采样与旧数据保留，不等于所有视角都自然、完整导航可用或水力结构正确。"
+  },
+  "constraints_and_limits": [
+    "原8.75米左右宽的直水域及旧岸全部冻结，只能靠新增岸带改变可见水线，不能挖走旧岸或真正改道拓宽。",
+    "未见明确露出底面的悬空岸、横贯河道的水坝或突然抬高的水面；这只是本轮两张图的观察结论。",
+    "远处长条反光、旧直线石渠、部分平片岸端和低面数丘地轮廓仍明显。",
+    "新丘地是低细节背景，不是已完善可探索区域；室内、漫游控制和完整碰撞仍未增加。",
+    "两张预算已用完，不再追加渲染或通过换相机、改雾掩盖问题。"
+  ],
+  "assessment": "保留为一次低成本、可关闭的增量候选，不宣称自然感已达标。若后续要求明显改变河道走向，需要另行确认是否允许在新的副本中局部重塑旧岸，而不是继续无限叠加岸带。",
+  "evidence": [
+    "landscape-03-audit.json",
+    "landscape-03-diagnostics.json",
+    "landscape-03-stats.json",
+    "landscape-03-render-ledger.json"
+  ]
+}

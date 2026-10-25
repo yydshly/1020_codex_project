@@ -1,0 +1,59 @@
+{
+  "version": 1,
+  "sourceAsset": "cat-v3-rig.glb",
+  "sourceAssetSHA256": "6c8d0f0133805e0727cc6cdfc558456d670e0d33a5158685084413e7786a77f1",
+  "vertices": 40078,
+  "bones": 21,
+  "boneOrder": [
+    "root",
+    "spine",
+    "chest",
+    "neck",
+    "head",
+    "fore_left_upper",
+    "fore_left_lower",
+    "fore_left_paw",
+    "fore_right_upper",
+    "fore_right_lower",
+    "fore_right_paw",
+    "hind_left_upper",
+    "hind_left_lower",
+    "hind_left_paw",
+    "hind_right_upper",
+    "hind_right_lower",
+    "hind_right_paw",
+    "tail_01",
+    "tail_02",
+    "tail_03",
+    "tail_04"
+  ],
+  "input": {
+    "skinWeightSHA256": "4361f0ed9205fb9a5e700c4a515c31696579faadebe61ee98db888b4d0335efb",
+    "skinIndexSHA256": "9e9b5867466f83473346711e607678d2cd13920ffc5993b053c942d98122131c",
+    "triangleIndexSHA256": "f64f8457db05d5d61f67b0b44d03501b760811c79b407b647c8baa2a696f954a"
+  },
+  "stats": {
+    "method": "Welded-surface constrained skin diffusion with edge-gradient bounds",
+    "iterations": 48,
+    "gradientPasses": 16,
+    "maxGradient": 32,
+    "weldTolerance": 0.000001,
+    "vertices": 40078,
+    "weldedVertices": 36602,
+    "triangles": 49000,
+    "changedVertices": 18215,
+    "protectedVertices": 21863,
+    "maxWeightChange": 0.4026597975383015,
+    "topology": {
+      "boundaryEdges": 28536,
+      "nonManifoldEdges": 0,
+      "degenerateTriangles": 0
+    }
+  },
+  "output": {
+    "skinWeightSHA256": "41694e77d0de683b7e7d07147a43d7286d1f304705540cbd77ee882acb06c1be",
+    "skinIndexSHA256": "0fb84b90a9ad26786f710f3a22c8f4707f3d9736600a4872dddb389f074dbaa9"
+  },
+  "binarySHA256": "2f724ef0dff999102a5993575bb720327cdfd033f5966508afb706732d66bc80",
+  "binaryByteLength": 961888
+}

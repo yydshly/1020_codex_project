@@ -1,0 +1,234 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-24T12:14:20.021108+00:00",
+  "passed": true,
+  "checks": {
+    "old_objects_preserved": true,
+    "old_materials_preserved": true,
+    "old_node_groups_preserved": true,
+    "worlds_preserved": true,
+    "view_layers_preserved": true,
+    "old_collections_preserved": true,
+    "old_layer_flags_preserved": true,
+    "source_hash_matches_previous_manifest": true,
+    "old_glb_hash_matches_previous_manifest": true,
+    "original_routes_still_522_samples": true,
+    "original_routes_pass": true,
+    "old_route_test_count_unchanged": true,
+    "only_independent_new_collections": true,
+    "new_objects_use_space01_prefix": true,
+    "glb_header_and_content_readable": true,
+    "read_only_source_hash_unchanged": true,
+    "read_only_candidate_hash_unchanged": true
+  },
+  "source": {
+    "file": "rainy-canal-roam-02.blend",
+    "sha256": "f4df82f098d8d26dd940633b38689cbf2745525a1c084af4976f1e4ba21b8761",
+    "counts": {
+      "objects": 1799,
+      "mesh_objects": 1696,
+      "curve_objects": 76,
+      "vertices": 103529,
+      "faces": 78359,
+      "curve_points": 1685,
+      "modifiers": 713,
+      "lights": 20,
+      "cameras": 7
+    }
+  },
+  "candidate": {
+    "file": "rainy-canal-space-01.blend",
+    "sha256": "bbe35bad393288cddfca5b6203e179a88e7e72b3ec15828cad2ae5354841c387",
+    "counts": {
+      "objects": 1830,
+      "mesh_objects": 1722,
+      "curve_objects": 76,
+      "vertices": 106431,
+      "faces": 80501,
+      "curve_points": 1685,
+      "modifiers": 713,
+      "lights": 20,
+      "cameras": 12
+    }
+  },
+  "old_data_changes": {
+    "objects": {
+      "missing": [],
+      "changed": {}
+    },
+    "materials": {
+      "missing": [],
+      "changed": {}
+    },
+    "node_groups": {
+      "missing": [],
+      "changed": {}
+    },
+    "collections": {
+      "missing": [],
+      "changed": []
+    }
+  },
+  "added_data": {
+    "objects": [
+      "SPACE01_Backland building courtyard returns",
+      "SPACE01_Backland garden compartments",
+      "SPACE01_BridgeheadSplayedFootings",
+      "SPACE01_Camera_MainBridge",
+      "SPACE01_Camera_OppositeRow",
+      "SPACE01_Camera_Overview",
+      "SPACE01_Camera_RearLane",
+      "SPACE01_Camera_Reverse",
+      "SPACE01_ExposedQuayBackShoulders",
+      "SPACE01_North backland low wing closed pitched roof",
+      "SPACE01_North backland low wing envelope details",
+      "SPACE01_North backland range closed pitched roof",
+      "SPACE01_North backland range envelope details",
+      "SPACE01_Opposite row courtyard boundaries",
+      "SPACE01_OuterLaneAndCourtShoulders",
+      "SPACE01_QuayEndsToNaturalBank",
+      "SPACE01_Rear and exposed gable closure",
+      "SPACE01_Rear drain 1 part 1",
+      "SPACE01_Rear drain 1 part 2",
+      "SPACE01_Rear drain 2 part 1",
+      "SPACE01_Rear drain 2 part 2",
+      "SPACE01_Rear drain 3 part 1",
+      "SPACE01_Rear drain 3 part 2",
+      "SPACE01_Rear gutter 1",
+      "SPACE01_Rear gutter 2",
+      "SPACE01_Rear gutter 3",
+      "SPACE01_ShortDescendingQuayReturns",
+      "SPACE01_South backland house closed pitched roof",
+      "SPACE01_South backland house envelope details",
+      "SPACE01_South backland offset wing closed pitched roof",
+      "SPACE01_South backland offset wing envelope details"
+    ],
+    "materials": [],
+    "node_groups": [],
+    "collections": [
+      "SPACE01_BacklandBuildings",
+      "SPACE01_CourtyardConnections",
+      "SPACE01_GroundEdges",
+      "SPACE01_RearFacadeClosure",
+      "SPACE01_ReviewCameras"
+    ]
+  },
+  "routes": {
+    "scope": "Sampled centerline floor support and 0.48m-wide body-ray checks only, not a navmesh, full-area collision certification or a playable controller.",
+    "floor_tolerance": 0.17,
+    "known_existing_paving_gaps": "Original stone joints can be about 0.12m lower than stone tops; a future walking controller needs step tolerance or a separate collision proxy.",
+    "routes": {
+      "both_banks_loop": {
+        "sample_count": 285,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      },
+      "rear_lane_loop": {
+        "sample_count": 237,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      }
+    }
+  },
+  "additional_width_diagnostics": {
+    "obstructions": {
+      "baseline_count": 0,
+      "candidate_count": 0,
+      "new": [],
+      "resolved_count": 0
+    },
+    "unsupported": {
+      "baseline_count": 0,
+      "candidate_count": 0,
+      "new": [],
+      "resolved_count": 0
+    }
+  },
+  "view_occlusion_diagnostics": {
+    "original_camera": {
+      "rays": 1344,
+      "original_core_surface_rays": 494,
+      "newly_masked_core_rays": 6,
+      "fraction_of_original_core_rays": 0.0121,
+      "occluding_objects": {
+        "SPACE01_Rear and exposed gable closure": 6
+      },
+      "occluded_original_objects": {
+        "Solid party wall": 6
+      }
+    },
+    "opposite_bank": {
+      "rays": 1344,
+      "original_core_surface_rays": 696,
+      "newly_masked_core_rays": 0,
+      "fraction_of_original_core_rays": 0.0,
+      "occluding_objects": {},
+      "occluded_original_objects": {}
+    },
+    "rear_lane": {
+      "rays": 1344,
+      "original_core_surface_rays": 530,
+      "newly_masked_core_rays": 114,
+      "fraction_of_original_core_rays": 0.2151,
+      "occluding_objects": {
+        "SPACE01_Rear and exposed gable closure": 77,
+        "SPACE01_Rear drain 3 part 2": 28,
+        "SPACE01_Rear drain 1 part 2": 8,
+        "SPACE01_Rear gutter 2": 1
+      },
+      "occluded_original_objects": {
+        "Solid party wall.005": 38,
+        "Rear masonry wall.002": 58,
+        "Rear masonry wall.001": 6,
+        "Rear masonry wall": 6,
+        "Solid party wall.003": 1,
+        "Gable edge flashing": 1,
+        "Solid pitched roof underlay": 2,
+        "Gable edge flashing.002": 1,
+        "Solid pitched roof underlay.001": 1
+      }
+    },
+    "stone_bridge": {
+      "rays": 1344,
+      "original_core_surface_rays": 604,
+      "newly_masked_core_rays": 0,
+      "fraction_of_original_core_rays": 0.0,
+      "occluding_objects": {},
+      "occluded_original_objects": {}
+    },
+    "return_bridge": {
+      "rays": 1344,
+      "original_core_surface_rays": 313,
+      "newly_masked_core_rays": 6,
+      "fraction_of_original_core_rays": 0.0192,
+      "occluding_objects": {
+        "SPACE01_Opposite row courtyard boundaries": 6
+      },
+      "occluded_original_objects": {
+        "EXT_Opposite_03_StonePlinth": 2,
+        "EXT_Opposite_03_ClosedShell": 4
+      }
+    }
+  },
+  "glb": {
+    "file": "space-01.glb",
+    "sha256": "03729fbf6362f011efed326eaefb9d48f2512d57e1feb1b588fd644839f1e63b",
+    "bytes": 9819884,
+    "meshes": 28,
+    "primitives": 28,
+    "vertices": 245721,
+    "triangles": 163678,
+    "binary_bytes": 9792420
+  },
+  "seconds": 63.605,
+  "limitations": [
+    "No scene mutation, save or render is performed. Existing bytes are independently checked against the prior roam-02 manifest.",
+    "522 original centerline samples and 0.48m-wide body rays are route regressions, not a full-area navigation or physics guarantee.",
+    "Additional 0.7m/1m-width tests and sparse visual rays are diagnostics, not automatic failures: newly placed wall bases and trims may intentionally cover old surfaces.",
+    "No original-camera pixel comparison, reference fidelity judgment, browser material/rendering review or arbitrary viewpoint certification is performed."
+  ]
+}

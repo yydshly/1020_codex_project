@@ -1,0 +1,97 @@
+{
+  "checkedAt": "2026-10-24T09:36:10.186467+00:00",
+  "passed": true,
+  "checks": {
+    "head_turn_works": true,
+    "head_down_works": true,
+    "blink_closes_and_reopens": true,
+    "current_runs": true,
+    "v9_same_speed_run": true,
+    "returns_to_v10_run": true,
+    "stops_with_four_feet": true,
+    "desktop_fits_height": true,
+    "mobile_no_horizontal_overflow": true,
+    "mobile_controls_visible": true,
+    "runtime_frozen": true,
+    "no_browser_errors": true
+  },
+  "errors": [],
+  "observations": {
+    "headRight": {
+      "version": "head-attention-07",
+      "enabled": true,
+      "mode": "manual",
+      "appliedDegrees": {
+        "yaw": 5.916527707686375,
+        "pitch": 0
+      },
+      "requestedDegrees": {
+        "yaw": 6,
+        "pitch": 0
+      },
+      "yawLimit": 6,
+      "elapsed": 1.3332000000000006,
+      "bindYawCorrection": -55.99514261333094,
+      "eyeControl": false,
+      "mouthControl": false
+    },
+    "blinkAmounts": [
+      0.0720919096275214,
+      0.84122360105842,
+      0.9878420451862429,
+      1,
+      0.9992846479999997,
+      0.9634500740740722,
+      0.8705940165925907,
+      0.7376748900740684,
+      0.579568592592588,
+      0.4145145220740703,
+      0.25700140859258686,
+      0.12457599999999674,
+      0.0341850405925912,
+      0.000480167999999781
+    ]
+  },
+  "sourcesBefore": {
+    "web\\cat-v10-body.js": "e3ac370d8fbb018fb3081452d4841212edc84c01b8c9cf0d6522bd309e41a030",
+    "web\\cat-v10-continuous-skin.js": "4927914174a03df16db3a9a933cff646938b24f00da0e834600c31642814218a",
+    "web\\cat-v10-face.js": "650c2deff8e431c67d5131ff9477406a93aaa520df72eb4245d0510ade976e06",
+    "web\\cat-v10-form-study.js": "23e2787a84aaee6a82db1832fb2ca68208d9ecb988391f863b50afafa66b3244",
+    "web\\cat-v10-gait-study.js": "56ca2979441d643309fb0b3051138372fc34b8136e87cc51609b01b7fdd3a996",
+    "web\\cat-v10-hind-restore.js": "d8442691f2cb1f697c660e1d11a1c353592fb7125e576b647b308cbce4d0c885",
+    "web\\cat-v10-motion.js": "750f28f9cc51f32d87c5b013076a723a7cdfaa848507307983d13bab688f4fb1",
+    "web\\cat-v10-paw-candidate-body.js": "e3ac370d8fbb018fb3081452d4841212edc84c01b8c9cf0d6522bd309e41a030",
+    "web\\cat-v10-paw-study.js": "36e761e073060cd7c964c9a877de4db2c02df69b380be8d7b23c4e6db29cb84f",
+    "web\\cat-v10-restore-study.js": "783b03a51cb00caa53bab2771a329fe458ea5525711149540c7286ad1cc9b499",
+    "web\\cat-v10-thigh-skin.js": "9a38b0f3400194889e9af10d465f61a13ff4b760eeb7b48a77943d4116ec0424",
+    "web\\cat-v10-thigh-study.js": "46e419c14c9f2335f6f23e5ef6d5019ef9e4d8ac5160bf921aabf4995aaf0902",
+    "web\\cat-v10-volume.js": "801792c00b064be363d2cebe3f380566a30c186e6adfcff4822570dcf8fd2132",
+    "web\\cat-v10.js": "77f80ac714caccf312108789047f7f2f79b5c7d14eeb7e56e79ef1d702ce6d86",
+    "web\\cat-v10-form-study.html": "a2a2249cbd746323175d46b62326c451e420aa2633cefe1cd8062e5d1090326a",
+    "web\\cat-v10-gait-study.html": "dc83edaed4b9d4ede3aca821536354ca6d5886704748647f4c579fa8827a8296",
+    "web\\cat-v10-paw-study.html": "12971cccf3a96edceaee59718547e770f287629ce31c9b7a7c717cffbd9439fc",
+    "web\\cat-v10-restore-study.html": "c2773b08f9e9a4934ca177f66f2fd956cf96abdbdb8a8345db7d836d2628837d",
+    "web\\cat-v10-thigh-study.html": "42d64fdea2fcb35c47d8ab6ea4b4e8c16ff94e8f1b61b683762dbfa11411b4da"
+  },
+  "sourcesAfter": {
+    "web\\cat-v10-body.js": "e3ac370d8fbb018fb3081452d4841212edc84c01b8c9cf0d6522bd309e41a030",
+    "web\\cat-v10-continuous-skin.js": "4927914174a03df16db3a9a933cff646938b24f00da0e834600c31642814218a",
+    "web\\cat-v10-face.js": "650c2deff8e431c67d5131ff9477406a93aaa520df72eb4245d0510ade976e06",
+    "web\\cat-v10-form-study.js": "23e2787a84aaee6a82db1832fb2ca68208d9ecb988391f863b50afafa66b3244",
+    "web\\cat-v10-gait-study.js": "56ca2979441d643309fb0b3051138372fc34b8136e87cc51609b01b7fdd3a996",
+    "web\\cat-v10-hind-restore.js": "d8442691f2cb1f697c660e1d11a1c353592fb7125e576b647b308cbce4d0c885",
+    "web\\cat-v10-motion.js": "750f28f9cc51f32d87c5b013076a723a7cdfaa848507307983d13bab688f4fb1",
+    "web\\cat-v10-paw-candidate-body.js": "e3ac370d8fbb018fb3081452d4841212edc84c01b8c9cf0d6522bd309e41a030",
+    "web\\cat-v10-paw-study.js": "36e761e073060cd7c964c9a877de4db2c02df69b380be8d7b23c4e6db29cb84f",
+    "web\\cat-v10-restore-study.js": "783b03a51cb00caa53bab2771a329fe458ea5525711149540c7286ad1cc9b499",
+    "web\\cat-v10-thigh-skin.js": "9a38b0f3400194889e9af10d465f61a13ff4b760eeb7b48a77943d4116ec0424",
+    "web\\cat-v10-thigh-study.js": "46e419c14c9f2335f6f23e5ef6d5019ef9e4d8ac5160bf921aabf4995aaf0902",
+    "web\\cat-v10-volume.js": "801792c00b064be363d2cebe3f380566a30c186e6adfcff4822570dcf8fd2132",
+    "web\\cat-v10.js": "77f80ac714caccf312108789047f7f2f79b5c7d14eeb7e56e79ef1d702ce6d86",
+    "web\\cat-v10-form-study.html": "a2a2249cbd746323175d46b62326c451e420aa2633cefe1cd8062e5d1090326a",
+    "web\\cat-v10-gait-study.html": "dc83edaed4b9d4ede3aca821536354ca6d5886704748647f4c579fa8827a8296",
+    "web\\cat-v10-paw-study.html": "12971cccf3a96edceaee59718547e770f287629ce31c9b7a7c717cffbd9439fc",
+    "web\\cat-v10-restore-study.html": "c2773b08f9e9a4934ca177f66f2fd956cf96abdbdb8a8345db7d836d2628837d",
+    "web\\cat-v10-thigh-study.html": "42d64fdea2fcb35c47d8ab6ea4b4e8c16ff94e8f1b61b683762dbfa11411b4da"
+  }
+}

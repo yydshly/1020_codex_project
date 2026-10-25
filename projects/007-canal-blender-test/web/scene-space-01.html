@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#142624">
+  <title>雨后老街 · 街区空间 01</title>
+  <link rel="stylesheet" href="scene-space-01.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.min.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
+  <script type="module" src="scene-space-01.js"></script>
+</head>
+<body>
+  <main>
+    <div id="world" aria-label="雨后老街三维空间，可拖动旋转、滚轮缩放" tabindex="0"></div>
+    <header><div><span class="eyebrow">AFTER THE RAIN / 01</span><h1>让老街连成一片。</h1></div><a href="shop-study-11.html">原版角色漫游 ↗</a></header>
+    <div class="viewbar" role="group" aria-label="场景视角">
+      <button data-view="overview" aria-pressed="true">街区总览</button>
+      <button data-view="front" aria-pressed="false">两岸正面</button>
+      <button data-view="opposite" aria-pressed="false">对岸院落</button>
+      <button data-view="rear" aria-pressed="false">店后小巷</button>
+      <button data-view="bridge" aria-pressed="false">石桥桥头</button>
+      <button data-view="west" aria-pressed="false">河道衔接</button>
+      <button data-view="reverse" aria-pressed="false">背面总览</button>
+    </div>
+    <aside id="view-note"><span class="eyebrow" id="view-number">01 / 街区总览</span><h2 id="view-title">两岸、双桥与后巷</h2><p id="view-description">沿街房屋通过院落与边界衔接；后方低屋形成第二层街区。</p><p class="scope">本轮补齐外部空间。近景材质与建筑细节仍待统一精修。</p></aside>
+    <div class="bottom-tools" role="group" aria-label="巡看与版本比较">
+      <button id="tour-banks" aria-pressed="false">沿两岸巡看</button><button id="tour-rear" aria-pressed="false">后巷巡看</button>
+      <button id="stop" hidden>停止巡看</button><span class="divider"></span>
+      <button id="compare" aria-pressed="false">对比补齐前</button><span id="version" role="status">当前：街区空间 01</span>
+    </div>
+    <p class="hint">拖动旋转 · 滚轮缩放 · 右键平移 · Esc 停止巡看</p>
+    <div id="loading" role="status"><div><span class="eyebrow">雨后的临水老街</span><p id="load-text">正在载入街区…</p><button id="retry" hidden>重新载入</button></div></div>
+    <details class="credits"><summary>版本说明</summary><p>保留原场景，新增庭院边界、檐口基脚、桥头与岸端收口、有限远景建筑。巡看沿既有路线；房屋内部未开放。</p><p>对比模式保持同一镜头与光照。角色版本独立保留，本页专注街区空间。</p><a href="https://polyhaven.com/license" target="_blank" rel="noopener">材质与环境贴图：Poly Haven / CC0</a></details>
+  </main>
+</body>
+</html>

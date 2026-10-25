@@ -1,0 +1,444 @@
+{
+  "scope": "Only three ClosedRoof mesh pointers replaced; physical roof details appended.",
+  "modified_source_objects": [
+    "EXT_Opposite_01_ClosedRoof",
+    "EXT_Opposite_02_ClosedRoof",
+    "EXT_Opposite_03_ClosedRoof"
+  ],
+  "modified_fields": [
+    "data"
+  ],
+  "added_objects": {
+    "SPACE03_Opposite_01_StaggeredTilesAndRidge": {
+      "triangles": 1810,
+      "bounds": {
+        "min": [
+          -14.020000457763672,
+          -21.618000030517578,
+          5.108116149902344
+        ],
+        "max": [
+          -7.980000019073486,
+          -16.082000732421875,
+          6.367000102996826
+        ]
+      }
+    },
+    "SPACE03_Opposite_01_EaveAndVergeBoards": {
+      "triangles": 72,
+      "bounds": {
+        "min": [
+          -14.059000015258789,
+          -21.63249969482422,
+          4.979000091552734
+        ],
+        "max": [
+          -7.940999984741211,
+          -16.0674991607666,
+          6.245741844177246
+        ]
+      }
+    },
+    "SPACE03_Opposite_01_RainGuttersAndDownpipes": {
+      "triangles": 232,
+      "bounds": {
+        "min": [
+          -14.015000343322754,
+          -21.700000762939453,
+          0.9956548810005188
+        ],
+        "max": [
+          -7.985000133514404,
+          -16.0,
+          5.03000020980835
+        ]
+      }
+    },
+    "SPACE03_Opposite_02_StaggeredTilesAndRidge": {
+      "triangles": 1810,
+      "bounds": {
+        "min": [
+          -6.119999885559082,
+          -21.618000030517578,
+          6.007976531982422
+        ],
+        "max": [
+          0.11999999731779099,
+          -16.082000732421875,
+          7.267000198364258
+        ]
+      }
+    },
+    "SPACE03_Opposite_02_EaveAndVergeBoards": {
+      "triangles": 72,
+      "bounds": {
+        "min": [
+          -6.158999919891357,
+          -21.63249969482422,
+          5.879000186920166
+        ],
+        "max": [
+          0.1589999943971634,
+          -16.0674991607666,
+          7.1457414627075195
+        ]
+      }
+    },
+    "SPACE03_Opposite_02_RainGuttersAndDownpipes": {
+      "triangles": 232,
+      "bounds": {
+        "min": [
+          -6.114999771118164,
+          -21.700000762939453,
+          0.9956548810005188
+        ],
+        "max": [
+          0.11500000208616257,
+          -16.0,
+          5.929999828338623
+        ]
+      }
+    },
+    "SPACE03_Opposite_03_StaggeredTilesAndRidge": {
+      "triangles": 1810,
+      "bounds": {
+        "min": [
+          1.7799999713897705,
+          -21.618000030517578,
+          4.808138370513916
+        ],
+        "max": [
+          7.820000171661377,
+          -16.082000732421875,
+          6.066999912261963
+        ]
+      }
+    },
+    "SPACE03_Opposite_03_EaveAndVergeBoards": {
+      "triangles": 72,
+      "bounds": {
+        "min": [
+          1.7410000562667847,
+          -21.63249969482422,
+          4.678999900817871
+        ],
+        "max": [
+          7.858999729156494,
+          -16.0674991607666,
+          5.945741653442383
+        ]
+      }
+    },
+    "SPACE03_Opposite_03_RainGuttersAndDownpipes": {
+      "triangles": 232,
+      "bounds": {
+        "min": [
+          1.784999966621399,
+          -21.700000762939453,
+          0.9956548810005188
+        ],
+        "max": [
+          7.815000057220459,
+          -16.0,
+          4.730000019073486
+        ]
+      }
+    }
+  },
+  "added_collection": "SPACE03_Roofs",
+  "new_materials": 0,
+  "reused_materials": [
+    "roof",
+    "roof_alt",
+    "wood",
+    "iron",
+    "plaster_alt"
+  ],
+  "all_other_source_object_state_preserved": true,
+  "source_roof_triangles": 24,
+  "new_roof_triangles_including_replacements": 6450,
+  "triangle_delta": 6426,
+  "triangle_limit": 6500,
+  "houses": [
+    {
+      "source_roof": "EXT_Opposite_01_ClosedRoof",
+      "source_mesh": "EXT_Opposite_01_ClosedRoof",
+      "replacement_mesh": "SPACE03_Opposite_01_SolidRoofDeck",
+      "original_bounds": {
+        "min": [
+          -14.029999732971191,
+          -21.600000381469727,
+          5.099999904632568
+        ],
+        "max": [
+          -7.96999979019165,
+          -16.100000381469727,
+          6.25
+        ]
+      },
+      "original_ridge_z": 6.25,
+      "details": {
+        "tile_count": 222,
+        "ridge_cap_count": 16,
+        "tile_columns": 18,
+        "tile_rows_per_pitch": 6,
+        "tile_lip_thickness": 0.018,
+        "roof_deck_thickness": 0.115,
+        "stagger_fraction": 0.5,
+        "top_tile_polygons": 444
+      },
+      "new_objects": [
+        "SPACE03_Opposite_01_StaggeredTilesAndRidge",
+        "SPACE03_Opposite_01_EaveAndVergeBoards",
+        "SPACE03_Opposite_01_RainGuttersAndDownpipes"
+      ],
+      "new_bounds_including_drainage": {
+        "min": [
+          -14.059000015258789,
+          -21.700000762939453,
+          0.9956548810005188
+        ],
+        "max": [
+          -7.940999984741211,
+          -16.0,
+          6.367000102996826
+        ]
+      },
+      "maximum_xy_overhang_increase": 0.10000038146972656,
+      "maximum_ridge_height_increase": 0.11700010299682617,
+      "triangles_including_replacement": 2150
+    },
+    {
+      "source_roof": "EXT_Opposite_02_ClosedRoof",
+      "source_mesh": "EXT_Opposite_02_ClosedRoof",
+      "replacement_mesh": "SPACE03_Opposite_02_SolidRoofDeck",
+      "original_bounds": {
+        "min": [
+          -6.130000114440918,
+          -21.600000381469727,
+          6.0
+        ],
+        "max": [
+          0.12999999523162842,
+          -16.100000381469727,
+          7.150000095367432
+        ]
+      },
+      "original_ridge_z": 7.1499999999999995,
+      "details": {
+        "tile_count": 222,
+        "ridge_cap_count": 16,
+        "tile_columns": 18,
+        "tile_rows_per_pitch": 6,
+        "tile_lip_thickness": 0.018,
+        "roof_deck_thickness": 0.115,
+        "stagger_fraction": 0.5,
+        "top_tile_polygons": 444
+      },
+      "new_objects": [
+        "SPACE03_Opposite_02_StaggeredTilesAndRidge",
+        "SPACE03_Opposite_02_EaveAndVergeBoards",
+        "SPACE03_Opposite_02_RainGuttersAndDownpipes"
+      ],
+      "new_bounds_including_drainage": {
+        "min": [
+          -6.158999919891357,
+          -21.700000762939453,
+          0.9956548810005188
+        ],
+        "max": [
+          0.1589999943971634,
+          -16.0,
+          7.267000198364258
+        ]
+      },
+      "maximum_xy_overhang_increase": 0.10000038146972656,
+      "maximum_ridge_height_increase": 0.11700019836425835,
+      "triangles_including_replacement": 2150
+    },
+    {
+      "source_roof": "EXT_Opposite_03_ClosedRoof",
+      "source_mesh": "EXT_Opposite_03_ClosedRoof",
+      "replacement_mesh": "SPACE03_Opposite_03_SolidRoofDeck",
+      "original_bounds": {
+        "min": [
+          1.7699999809265137,
+          -21.600000381469727,
+          4.800000190734863
+        ],
+        "max": [
+          7.829999923706055,
+          -16.100000381469727,
+          5.949999809265137
+        ]
+      },
+      "original_ridge_z": 5.949999999999999,
+      "details": {
+        "tile_count": 222,
+        "ridge_cap_count": 16,
+        "tile_columns": 18,
+        "tile_rows_per_pitch": 6,
+        "tile_lip_thickness": 0.018,
+        "roof_deck_thickness": 0.115,
+        "stagger_fraction": 0.5,
+        "top_tile_polygons": 444
+      },
+      "new_objects": [
+        "SPACE03_Opposite_03_StaggeredTilesAndRidge",
+        "SPACE03_Opposite_03_EaveAndVergeBoards",
+        "SPACE03_Opposite_03_RainGuttersAndDownpipes"
+      ],
+      "new_bounds_including_drainage": {
+        "min": [
+          1.7410000562667847,
+          -21.700000762939453,
+          0.9956548810005188
+        ],
+        "max": [
+          7.858999729156494,
+          -16.0,
+          6.066999912261963
+        ]
+      },
+      "maximum_xy_overhang_increase": 0.10000038146972656,
+      "maximum_ridge_height_increase": 0.1169999122619636,
+      "triangles_including_replacement": 2150
+    }
+  ],
+  "saved_or_exported": false,
+  "notes": [
+    "All relief is base mesh; no bevel, subdivision or normal modifier dependency.",
+    "Existing EavesAndBand and all facade geometry remain untouched.",
+    "Opaque gable closures remain exterior-only; no interiors were added."
+  ],
+  "normal_and_closed_side_checks": {
+    "EXT_Opposite_01_ClosedRoof": {
+      "upward_tile_surface_failures": [],
+      "zero_area_faces": [],
+      "front_pitch_normal": [
+        0.0,
+        0.3858061134815216,
+        0.9225799441337585
+      ],
+      "back_pitch_normal": [
+        0.0,
+        -0.38580626249313354,
+        0.922579824924469
+      ],
+      "side_gable_rays": [
+        {
+          "hit": true,
+          "normal": [
+            -1.0,
+            -0.0,
+            0.0
+          ],
+          "outward_normal": true
+        },
+        {
+          "hit": true,
+          "normal": [
+            1.0,
+            -0.0,
+            0.0
+          ],
+          "outward_normal": true
+        }
+      ]
+    },
+    "EXT_Opposite_02_ClosedRoof": {
+      "upward_tile_surface_failures": [],
+      "zero_area_faces": [],
+      "front_pitch_normal": [
+        0.0,
+        0.3858060836791992,
+        0.9225798845291138
+      ],
+      "back_pitch_normal": [
+        0.0,
+        -0.38580623269081116,
+        0.922579824924469
+      ],
+      "side_gable_rays": [
+        {
+          "hit": true,
+          "normal": [
+            -1.0,
+            -0.0,
+            0.0
+          ],
+          "outward_normal": true
+        },
+        {
+          "hit": true,
+          "normal": [
+            1.0,
+            -0.0,
+            0.0
+          ],
+          "outward_normal": true
+        }
+      ]
+    },
+    "EXT_Opposite_03_ClosedRoof": {
+      "upward_tile_surface_failures": [],
+      "zero_area_faces": [],
+      "front_pitch_normal": [
+        0.0,
+        0.38580596446990967,
+        0.9225799441337585
+      ],
+      "back_pitch_normal": [
+        0.0,
+        -0.3858061134815216,
+        0.9225798845291138
+      ],
+      "side_gable_rays": [
+        {
+          "hit": true,
+          "normal": [
+            -1.0,
+            -0.0,
+            0.0
+          ],
+          "outward_normal": true
+        },
+        {
+          "hit": true,
+          "normal": [
+            1.0,
+            -0.0,
+            0.0
+          ],
+          "outward_normal": true
+        }
+      ]
+    }
+  },
+  "route_checks": {
+    "scope": "Sampled centerline floor support and 0.48m-wide body-ray checks only, not a navmesh, full-area collision certification or a playable controller.",
+    "floor_tolerance": 0.17,
+    "known_existing_paving_gaps": "Original stone joints can be about 0.12m lower than stone tops; a future walking controller needs step tolerance or a separate collision proxy.",
+    "routes": {
+      "both_banks_loop": {
+        "sample_count": 285,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      },
+      "rear_lane_loop": {
+        "sample_count": 237,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      }
+    }
+  },
+  "route_reports_identical_to_source": true,
+  "replacement_roof_transforms_preserved": true,
+  "replacement_roof_material_slots_preserved": true,
+  "source_disk_sha256_before": "052b7622415b4dcfde8aacb2db1725ee1e44f4c7a7960f47da9ce9ea8fe0a103",
+  "source_disk_sha256_after": "052b7622415b4dcfde8aacb2db1725ee1e44f4c7a7960f47da9ce9ea8fe0a103"
+}

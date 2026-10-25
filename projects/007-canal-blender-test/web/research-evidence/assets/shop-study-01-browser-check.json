@@ -1,0 +1,1578 @@
+{
+  "checked_utc": "2026-10-24T01:56:49.744467+00:00",
+  "passed": true,
+  "checks": {
+    "previous_entry_loads": true,
+    "independent_entry_version": true,
+    "same_scene_asset": true,
+    "cat_version_preserved": true,
+    "starts_walkable": true,
+    "hardware_renderer": true,
+    "second_fixed_view_available": true,
+    "geometry_triangle_count_preserved": true,
+    "shop_material_selection_exists": true,
+    "static_reflection_diagnostic_exists": true,
+    "twenty_second_actual_tour": true,
+    "tour_remains_walkable": true,
+    "stance_reach_error_below_35mm": true,
+    "walking_speed_not_increased": true,
+    "desktop_no_overflow": true,
+    "mobile_loads": true,
+    "mobile_controls_visible": true,
+    "actual_touch_moves_cat": true,
+    "mobile_no_overflow": true,
+    "all_existing_files_unchanged": true,
+    "preservation_baseline_has_331_files": true,
+    "no_browser_shader_or_request_errors": true
+  },
+  "errors": [],
+  "observations": {
+    "previous": {
+      "initial": {
+        "version": "cat-v3",
+        "speed": 0,
+        "velocity": {
+          "x": 0,
+          "z": 0
+        },
+        "camera": {
+          "position": {
+            "x": -8.31598481937199,
+            "y": 2.111173461465378,
+            "z": 1.6459083626007425
+          },
+          "target": {
+            "x": -5.295758290175528,
+            "y": 1.27,
+            "z": 0.33036325882654977
+          },
+          "fov": 53
+        },
+        "refinedStreet": {
+          "minX": -7,
+          "maxX": 3
+        },
+        "cat": {
+          "version": "asset-rig-03",
+          "root": [
+            -5.8,
+            0.85,
+            0.55
+          ],
+          "gait": {
+            "speed": 0,
+            "phase": 0,
+            "stanceFeet": 4,
+            "maxReachError": 0,
+            "angularSpeed": 0
+          },
+          "bones": 21,
+          "feet": [
+            {
+              "name": "fore_left",
+              "stance": true,
+              "world": [
+                -5.9127,
+                0.85,
+                0.5073000000000001
+              ],
+              "renderedWorld": [
+                -5.912700003699376,
+                0.8500000022453734,
+                0.5073000023564046
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "fore_right",
+              "stance": true,
+              "world": [
+                -5.902699999999999,
+                0.85,
+                0.5922000000000001
+              ],
+              "renderedWorld": [
+                -5.90270000343803,
+                0.8500000040420074,
+                0.5921999975714071
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "hind_left",
+              "stance": true,
+              "world": [
+                -5.6663,
+                0.85,
+                0.4959
+              ],
+              "renderedWorld": [
+                -5.666300000882849,
+                0.850000002317202,
+                0.4959
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "hind_right",
+              "stance": true,
+              "world": [
+                -5.6362,
+                0.85,
+                0.602
+              ],
+              "renderedWorld": [
+                -5.636200003998286,
+                0.850000005580016,
+                0.602
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            }
+          ]
+        },
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 0,
+        "distance": 0,
+        "place": "店前石街",
+        "frames": 55,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -5.8,
+          "y": 0.85,
+          "z": 0.55
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      },
+      "renderer": {
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "vendor": "Google Inc. (NVIDIA)",
+        "size": [
+          1152,
+          720
+        ],
+        "pixelRatio": 1
+      },
+      "fixedFollowPerformance": {
+        "durationMs": 5018.699999928474,
+        "frames": 301,
+        "sampleCount": 300,
+        "medianFps": 59.880239520962,
+        "averageFps": 59.97569091682902,
+        "medianFrameMs": 16.69999999999891,
+        "p95FrameMs": 16.700000000000728,
+        "p99FrameMs": 16.80000000000109,
+        "allWalkable": true,
+        "maxReachError": 0,
+        "maxSpeed": 0,
+        "invalidPositions": 0,
+        "tourFrames": 0
+      }
+    },
+    "desktop": {
+      "initial": {
+        "version": "shop-study-01",
+        "environment": {
+          "geometryBefore": 159330,
+          "geometryAfter": 159330,
+          "selectedTriangles": {
+            "stone": 24,
+            "stone_light": 74,
+            "plaster_alt": 282,
+            "wood": 554,
+            "wood_light": 156,
+            "glass": 96,
+            "teal": 840
+          },
+          "staticReflectionProbes": 1,
+          "newProps": 0,
+          "ground": {
+            "minX": -7,
+            "maxX": 3,
+            "minZ": -1.06,
+            "maxZ": 1.55,
+            "height": 0.853,
+            "textureCoverageMetres": 2,
+            "source": "https://polyhaven.com/a/cobblestone_floor_05",
+            "license": "CC0-1.0",
+            "textureResolution": 1024,
+            "mapCount": 4,
+            "copingMaterialCount": 2,
+            "copingBounds": {
+              "minX": -7,
+              "maxX": 3,
+              "minZ": 1.48,
+              "maxZ": 2.18,
+              "minY": 0.12,
+              "maxY": 1.02
+            },
+            "addedMeshes": 0,
+            "addedTriangles": 0,
+            "additionalReflectionPasses": 0,
+            "geometryAndNavigationUnchanged": true,
+            "normalMapConvention": "OpenGL",
+            "wetness": "World-space local rain film, no displacement or continuous reflection pass"
+          },
+          "sourceGeometryUnchanged": true
+        },
+        "rendererInfo": {
+          "render": {
+            "frame": 163,
+            "calls": 60,
+            "triangles": 290228,
+            "points": 0,
+            "lines": 0
+          },
+          "memory": {
+            "geometries": 51,
+            "textures": 29
+          }
+        },
+        "speed": 0,
+        "velocity": {
+          "x": 0,
+          "z": 0
+        },
+        "camera": {
+          "position": {
+            "x": -8.31598481937199,
+            "y": 2.111173461465378,
+            "z": 1.6459083626007425
+          },
+          "target": {
+            "x": -5.295758290175528,
+            "y": 1.27,
+            "z": 0.33036325882654977
+          },
+          "fov": 53
+        },
+        "refinedStreet": {
+          "minX": -7,
+          "maxX": 3
+        },
+        "cat": {
+          "version": "asset-rig-03",
+          "root": [
+            -5.8,
+            0.85,
+            0.55
+          ],
+          "gait": {
+            "speed": 0,
+            "phase": 0,
+            "stanceFeet": 4,
+            "maxReachError": 0,
+            "angularSpeed": 0
+          },
+          "bones": 21,
+          "feet": [
+            {
+              "name": "fore_left",
+              "stance": true,
+              "world": [
+                -5.9127,
+                0.85,
+                0.5073000000000001
+              ],
+              "renderedWorld": [
+                -5.9127000031259245,
+                0.8500000025658683,
+                0.5073000023512999
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "fore_right",
+              "stance": true,
+              "world": [
+                -5.902699999999999,
+                0.85,
+                0.5922000000000001
+              ],
+              "renderedWorld": [
+                -5.902700002689123,
+                0.8500000044192854,
+                0.5921999975766583
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "hind_left",
+              "stance": true,
+              "world": [
+                -5.6663,
+                0.85,
+                0.4959
+              ],
+              "renderedWorld": [
+                -5.666300000886678,
+                0.8500000022996537,
+                0.4959
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "hind_right",
+              "stance": true,
+              "world": [
+                -5.6362,
+                0.85,
+                0.602
+              ],
+              "renderedWorld": [
+                -5.636200004006063,
+                0.850000005558388,
+                0.602
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            }
+          ]
+        },
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 0,
+        "distance": 0,
+        "place": "店前石街",
+        "frames": 47,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -5.8,
+          "y": 0.85,
+          "z": 0.55
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      },
+      "renderer": {
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "vendor": "Google Inc. (NVIDIA)",
+        "size": [
+          1152,
+          720
+        ],
+        "pixelRatio": 1
+      },
+      "fixedFollowPerformance": {
+        "durationMs": 5019.399999976158,
+        "frames": 301,
+        "sampleCount": 300,
+        "medianFps": 59.88023952095548,
+        "averageFps": 59.967326772409,
+        "medianFrameMs": 16.700000000000728,
+        "p95FrameMs": 16.799999999999272,
+        "p99FrameMs": 16.799999999999272,
+        "allWalkable": true,
+        "maxReachError": 0,
+        "maxSpeed": 0,
+        "invalidPositions": 0,
+        "tourFrames": 0
+      },
+      "front": {
+        "version": "shop-study-01",
+        "environment": {
+          "geometryBefore": 159330,
+          "geometryAfter": 159330,
+          "selectedTriangles": {
+            "stone": 24,
+            "stone_light": 74,
+            "plaster_alt": 282,
+            "wood": 554,
+            "wood_light": 156,
+            "glass": 96,
+            "teal": 840
+          },
+          "staticReflectionProbes": 1,
+          "newProps": 0,
+          "ground": {
+            "minX": -7,
+            "maxX": 3,
+            "minZ": -1.06,
+            "maxZ": 1.55,
+            "height": 0.853,
+            "textureCoverageMetres": 2,
+            "source": "https://polyhaven.com/a/cobblestone_floor_05",
+            "license": "CC0-1.0",
+            "textureResolution": 1024,
+            "mapCount": 4,
+            "copingMaterialCount": 2,
+            "copingBounds": {
+              "minX": -7,
+              "maxX": 3,
+              "minZ": 1.48,
+              "maxZ": 2.18,
+              "minY": 0.12,
+              "maxY": 1.02
+            },
+            "addedMeshes": 0,
+            "addedTriangles": 0,
+            "additionalReflectionPasses": 0,
+            "geometryAndNavigationUnchanged": true,
+            "normalMapConvention": "OpenGL",
+            "wetness": "World-space local rain film, no displacement or continuous reflection pass"
+          },
+          "sourceGeometryUnchanged": true
+        },
+        "rendererInfo": {
+          "render": {
+            "frame": 919,
+            "calls": 62,
+            "triangles": 291556,
+            "points": 0,
+            "lines": 0
+          },
+          "memory": {
+            "geometries": 51,
+            "textures": 29
+          }
+        },
+        "speed": 0,
+        "velocity": {
+          "x": 0,
+          "z": 0
+        },
+        "camera": {
+          "position": {
+            "x": -1,
+            "y": 4.1361538287079735,
+            "z": 9.59658826932425
+          },
+          "target": {
+            "x": -5.295758290175528,
+            "y": 1.27,
+            "z": 0.33036325882654977
+          },
+          "fov": 50
+        },
+        "refinedStreet": {
+          "minX": -7,
+          "maxX": 3
+        },
+        "cat": {
+          "version": "asset-rig-03",
+          "root": [
+            -5.8,
+            0.85,
+            0.55
+          ],
+          "gait": {
+            "speed": 0,
+            "phase": 0,
+            "stanceFeet": 4,
+            "maxReachError": 0,
+            "angularSpeed": 0
+          },
+          "bones": 21,
+          "feet": [
+            {
+              "name": "fore_left",
+              "stance": true,
+              "world": [
+                -5.9127,
+                0.85,
+                0.5073000000000001
+              ],
+              "renderedWorld": [
+                -5.912700003310481,
+                0.8500000024616112,
+                0.5073000023533812
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "fore_right",
+              "stance": true,
+              "world": [
+                -5.902699999999999,
+                0.85,
+                0.5922000000000001
+              ],
+              "renderedWorld": [
+                -5.902700002925978,
+                0.8500000042982963,
+                0.5921999975743167
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "hind_left",
+              "stance": true,
+              "world": [
+                -5.6663,
+                0.85,
+                0.4959
+              ],
+              "renderedWorld": [
+                -5.66630000088543,
+                0.8500000023054739,
+                0.4959
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "hind_right",
+              "stance": true,
+              "world": [
+                -5.6362,
+                0.85,
+                0.602
+              ],
+              "renderedWorld": [
+                -5.636200004003497,
+                0.8500000055655629,
+                0.6020000000000001
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            }
+          ]
+        },
+        "loaded": true,
+        "paused": false,
+        "mode": "overview",
+        "tour": false,
+        "tourIndex": 0,
+        "distance": 0,
+        "place": "店前石街",
+        "frames": 425,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -5.8,
+          "y": 0.85,
+          "z": 0.55
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      },
+      "environment": {
+        "geometryBefore": 159330,
+        "geometryAfter": 159330,
+        "selectedTriangles": {
+          "stone": 24,
+          "stone_light": 74,
+          "plaster_alt": 282,
+          "wood": 554,
+          "wood_light": 156,
+          "glass": 96,
+          "teal": 840
+        },
+        "staticReflectionProbes": 1,
+        "newProps": 0,
+        "ground": {
+          "minX": -7,
+          "maxX": 3,
+          "minZ": -1.06,
+          "maxZ": 1.55,
+          "height": 0.853,
+          "textureCoverageMetres": 2,
+          "source": "https://polyhaven.com/a/cobblestone_floor_05",
+          "license": "CC0-1.0",
+          "textureResolution": 1024,
+          "mapCount": 4,
+          "copingMaterialCount": 2,
+          "copingBounds": {
+            "minX": -7,
+            "maxX": 3,
+            "minZ": 1.48,
+            "maxZ": 2.18,
+            "minY": 0.12,
+            "maxY": 1.02
+          },
+          "addedMeshes": 0,
+          "addedTriangles": 0,
+          "additionalReflectionPasses": 0,
+          "geometryAndNavigationUnchanged": true,
+          "normalMapConvention": "OpenGL",
+          "wetness": "World-space local rain film, no displacement or continuous reflection pass"
+        },
+        "sourceGeometryUnchanged": true
+      },
+      "rendererInfo": {
+        "render": {
+          "frame": 163,
+          "calls": 60,
+          "triangles": 290228,
+          "points": 0,
+          "lines": 0
+        },
+        "memory": {
+          "geometries": 51,
+          "textures": 29
+        }
+      },
+      "tour": {
+        "start": {
+          "version": "shop-study-01",
+          "environment": {
+            "geometryBefore": 159330,
+            "geometryAfter": 159330,
+            "selectedTriangles": {
+              "stone": 24,
+              "stone_light": 74,
+              "plaster_alt": 282,
+              "wood": 554,
+              "wood_light": 156,
+              "glass": 96,
+              "teal": 840
+            },
+            "staticReflectionProbes": 1,
+            "newProps": 0,
+            "ground": {
+              "minX": -7,
+              "maxX": 3,
+              "minZ": -1.06,
+              "maxZ": 1.55,
+              "height": 0.853,
+              "textureCoverageMetres": 2,
+              "source": "https://polyhaven.com/a/cobblestone_floor_05",
+              "license": "CC0-1.0",
+              "textureResolution": 1024,
+              "mapCount": 4,
+              "copingMaterialCount": 2,
+              "copingBounds": {
+                "minX": -7,
+                "maxX": 3,
+                "minZ": 1.48,
+                "maxZ": 2.18,
+                "minY": 0.12,
+                "maxY": 1.02
+              },
+              "addedMeshes": 0,
+              "addedTriangles": 0,
+              "additionalReflectionPasses": 0,
+              "geometryAndNavigationUnchanged": true,
+              "normalMapConvention": "OpenGL",
+              "wetness": "World-space local rain film, no displacement or continuous reflection pass"
+            },
+            "sourceGeometryUnchanged": true
+          },
+          "rendererInfo": {
+            "render": {
+              "frame": 1017,
+              "calls": 60,
+              "triangles": 290228,
+              "points": 0,
+              "lines": 0
+            },
+            "memory": {
+              "geometries": 51,
+              "textures": 29
+            }
+          },
+          "speed": 0,
+          "velocity": {
+            "x": 0,
+            "z": 0
+          },
+          "camera": {
+            "position": {
+              "x": -8.31598481937199,
+              "y": 2.111173461465378,
+              "z": 1.6459083626007425
+            },
+            "target": {
+              "x": -5.295758290175528,
+              "y": 1.27,
+              "z": 0.33036325882654977
+            },
+            "fov": 53
+          },
+          "refinedStreet": {
+            "minX": -7,
+            "maxX": 3
+          },
+          "cat": {
+            "version": "asset-rig-03",
+            "root": [
+              -5.8,
+              0.85,
+              0.55
+            ],
+            "gait": {
+              "speed": 0,
+              "phase": 0.36756365387457,
+              "stanceFeet": 3,
+              "maxReachError": 0,
+              "angularSpeed": 2.1999999999999984
+            },
+            "bones": 21,
+            "feet": [
+              {
+                "name": "fore_left",
+                "stance": true,
+                "world": [
+                  -5.923620852619401,
+                  0.85,
+                  0.5163964913482971
+                ],
+                "renderedWorld": [
+                  -5.923620848470711,
+                  0.8500000070515413,
+                  0.5163964925447735
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "fore_right",
+                "stance": true,
+                "world": [
+                  -5.902699999999999,
+                  0.85,
+                  0.5922000000000001
+                ],
+                "renderedWorld": [
+                  -5.90269999517489,
+                  0.8500000089727827,
+                  0.5922000011606867
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "hind_left",
+                "stance": true,
+                "world": [
+                  -5.6663,
+                  0.85,
+                  0.4959
+                ],
+                "renderedWorld": [
+                  -5.666300001249137,
+                  0.8500000018893327,
+                  0.49589999997688616
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "hind_right",
+                "stance": false,
+                "world": [
+                  -5.639640408008472,
+                  0.875323223287029,
+                  0.5915656329188372
+                ],
+                "renderedWorld": [
+                  -5.639640412196419,
+                  0.8753232271981012,
+                  0.5915656333205302
+                ],
+                "groundClearance": 0.025323223287029073,
+                "reachError": 0
+              }
+            ]
+          },
+          "loaded": true,
+          "paused": false,
+          "mode": "follow",
+          "tour": true,
+          "tourIndex": 1,
+          "distance": 0,
+          "place": "店前石街",
+          "frames": 474,
+          "asset": "roam-02.glb",
+          "position": {
+            "x": -5.8,
+            "y": 0.85,
+            "z": 0.55
+          },
+          "walkable": true,
+          "visited": [
+            "店前石街"
+          ]
+        },
+        "end": {
+          "version": "shop-study-01",
+          "environment": {
+            "geometryBefore": 159330,
+            "geometryAfter": 159330,
+            "selectedTriangles": {
+              "stone": 24,
+              "stone_light": 74,
+              "plaster_alt": 282,
+              "wood": 554,
+              "wood_light": 156,
+              "glass": 96,
+              "teal": 840
+            },
+            "staticReflectionProbes": 1,
+            "newProps": 0,
+            "ground": {
+              "minX": -7,
+              "maxX": 3,
+              "minZ": -1.06,
+              "maxZ": 1.55,
+              "height": 0.853,
+              "textureCoverageMetres": 2,
+              "source": "https://polyhaven.com/a/cobblestone_floor_05",
+              "license": "CC0-1.0",
+              "textureResolution": 1024,
+              "mapCount": 4,
+              "copingMaterialCount": 2,
+              "copingBounds": {
+                "minX": -7,
+                "maxX": 3,
+                "minZ": 1.48,
+                "maxZ": 2.18,
+                "minY": 0.12,
+                "maxY": 1.02
+              },
+              "addedMeshes": 0,
+              "addedTriangles": 0,
+              "additionalReflectionPasses": 0,
+              "geometryAndNavigationUnchanged": true,
+              "normalMapConvention": "OpenGL",
+              "wetness": "World-space local rain film, no displacement or continuous reflection pass"
+            },
+            "sourceGeometryUnchanged": true
+          },
+          "rendererInfo": {
+            "render": {
+              "frame": 3191,
+              "calls": 60,
+              "triangles": 290228,
+              "points": 0,
+              "lines": 0
+            },
+            "memory": {
+              "geometries": 51,
+              "textures": 29
+            }
+          },
+          "speed": 0.5999999999999913,
+          "velocity": {
+            "x": -0.5999999999999913,
+            "z": 0
+          },
+          "camera": {
+            "position": {
+              "x": -2.4619278522941603,
+              "y": 2.111173461465378,
+              "z": 1.6459083626007425
+            },
+            "target": {
+              "x": 0.49800809930099466,
+              "y": 1.27,
+              "z": 0.33036325882654977
+            },
+            "fov": 53
+          },
+          "refinedStreet": {
+            "minX": -7,
+            "maxX": 3
+          },
+          "cat": {
+            "version": "asset-rig-03",
+            "root": [
+              -0.0062336105234771354,
+              0.85,
+              0.55
+            ],
+            "gait": {
+              "speed": 0.5999999999999913,
+              "phase": 0.5352207100662443,
+              "stanceFeet": 3,
+              "maxReachError": 0,
+              "angularSpeed": 0
+            },
+            "bones": 21,
+            "feet": [
+              {
+                "name": "fore_left",
+                "stance": true,
+                "world": [
+                  -0.15498281374598505,
+                  0.85,
+                  0.5073000000000001
+                ],
+                "renderedWorld": [
+                  -0.15498280325181968,
+                  0.8500000088038611,
+                  0.5073000013659463
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "fore_right",
+                "stance": false,
+                "world": [
+                  -0.08063367782993097,
+                  0.8713730179068532,
+                  0.5922000000000001
+                ],
+                "renderedWorld": [
+                  -0.08063366978130782,
+                  0.8713730383770316,
+                  0.5922000000282885
+                ],
+                "groundClearance": 0.021373017906853198,
+                "reachError": 0
+              },
+              {
+                "name": "hind_left",
+                "stance": true,
+                "world": [
+                  0.1725171049127942,
+                  0.85,
+                  0.4959
+                ],
+                "renderedWorld": [
+                  0.1725171035777122,
+                  0.8500000015240021,
+                  0.49589999999875667
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "hind_right",
+                "stance": true,
+                "world": [
+                  0.057517095384762074,
+                  0.85,
+                  0.602
+                ],
+                "renderedWorld": [
+                  0.05751709458933327,
+                  0.850000006649756,
+                  0.6019999999985818
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              }
+            ]
+          },
+          "loaded": true,
+          "paused": false,
+          "mode": "follow",
+          "tour": true,
+          "tourIndex": 2,
+          "distance": 10.056642501476496,
+          "place": "店前石街",
+          "frames": 1561,
+          "asset": "roam-02.glb",
+          "position": {
+            "x": -0.0062336105234771354,
+            "y": 0.85,
+            "z": 0.55
+          },
+          "walkable": true,
+          "visited": [
+            "店前石街"
+          ]
+        },
+        "metrics": {
+          "durationMs": 20108.600000023842,
+          "frames": 1087,
+          "sampleCount": 1086,
+          "medianFps": 59.880239520968516,
+          "averageFps": 54.05647334964698,
+          "medianFrameMs": 16.69999999999709,
+          "p95FrameMs": 33.30000000000291,
+          "p99FrameMs": 33.400000000001455,
+          "allWalkable": true,
+          "maxReachError": 0,
+          "maxSpeed": 0.6000000000000111,
+          "invalidPositions": 0,
+          "tourFrames": 1087
+        }
+      },
+      "final": {
+        "version": "shop-study-01",
+        "environment": {
+          "geometryBefore": 159330,
+          "geometryAfter": 159330,
+          "selectedTriangles": {
+            "stone": 24,
+            "stone_light": 74,
+            "plaster_alt": 282,
+            "wood": 554,
+            "wood_light": 156,
+            "glass": 96,
+            "teal": 840
+          },
+          "staticReflectionProbes": 1,
+          "newProps": 0,
+          "ground": {
+            "minX": -7,
+            "maxX": 3,
+            "minZ": -1.06,
+            "maxZ": 1.55,
+            "height": 0.853,
+            "textureCoverageMetres": 2,
+            "source": "https://polyhaven.com/a/cobblestone_floor_05",
+            "license": "CC0-1.0",
+            "textureResolution": 1024,
+            "mapCount": 4,
+            "copingMaterialCount": 2,
+            "copingBounds": {
+              "minX": -7,
+              "maxX": 3,
+              "minZ": 1.48,
+              "maxZ": 2.18,
+              "minY": 0.12,
+              "maxY": 1.02
+            },
+            "addedMeshes": 0,
+            "addedTriangles": 0,
+            "additionalReflectionPasses": 0,
+            "geometryAndNavigationUnchanged": true,
+            "normalMapConvention": "OpenGL",
+            "wetness": "World-space local rain film, no displacement or continuous reflection pass"
+          },
+          "sourceGeometryUnchanged": true
+        },
+        "rendererInfo": {
+          "render": {
+            "frame": 3265,
+            "calls": 60,
+            "triangles": 290228,
+            "points": 0,
+            "lines": 0
+          },
+          "memory": {
+            "geometries": 51,
+            "textures": 29
+          }
+        },
+        "speed": 0.41352000000000133,
+        "velocity": {
+          "x": -0.41352000000000133,
+          "z": 0
+        },
+        "camera": {
+          "position": {
+            "x": -2.925119704646965,
+            "y": 2.111173461465378,
+            "z": 1.6459083626007425
+          },
+          "target": {
+            "x": 0.03981034330100003,
+            "y": 1.27,
+            "z": 0.33036325882654977
+          },
+          "fov": 53
+        },
+        "refinedStreet": {
+          "minX": -7,
+          "maxX": 3
+        },
+        "cat": {
+          "version": "asset-rig-03",
+          "root": [
+            -0.4644313665234718,
+            0.85,
+            0.55
+          ],
+          "gait": {
+            "speed": 0.41352000000000133,
+            "phase": 0.5273848665879601,
+            "stanceFeet": 3,
+            "maxReachError": 0,
+            "angularSpeed": 0
+          },
+          "bones": 21,
+          "feet": [
+            {
+              "name": "fore_left",
+              "stance": true,
+              "world": [
+                -0.614982813745985,
+                0.85,
+                0.5073000000000001
+              ],
+              "renderedWorld": [
+                -0.6149828031497344,
+                0.8500000086533761,
+                0.5073000013754415
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "fore_right",
+              "stance": false,
+              "world": [
+                -0.534595119032296,
+                0.8701312224306094,
+                0.5922000000000001
+              ],
+              "renderedWorld": [
+                -0.5345951117528627,
+                0.870131242562518,
+                0.5922000001322092
+              ],
+              "groundClearance": 0.020131222430609386,
+              "reachError": 0
+            },
+            {
+              "name": "hind_left",
+              "stance": true,
+              "world": [
+                -0.2874828950872058,
+                0.85,
+                0.4959
+              ],
+              "renderedWorld": [
+                -0.28748289640013824,
+                0.8500000015121291,
+                0.49589999999904344
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "hind_right",
+              "stance": true,
+              "world": [
+                -0.40248290461523795,
+                0.85,
+                0.602
+              ],
+              "renderedWorld": [
+                -0.4024829053290846,
+                0.8500000066813785,
+                0.6019999999989277
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            }
+          ]
+        },
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 2,
+        "distance": 10.514840257476493,
+        "place": "店前石街",
+        "frames": 1598,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -0.4644313665234718,
+          "y": 0.85,
+          "z": 0.55
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      }
+    },
+    "recording": {
+      "mimeType": "video/webm;codecs=vp9",
+      "path": "assets/shop-study-01-walk-20s.webm",
+      "bytes": 4210665
+    },
+    "mobile": {
+      "initial": {
+        "version": "shop-study-01",
+        "environment": {
+          "geometryBefore": 159330,
+          "geometryAfter": 159330,
+          "selectedTriangles": {
+            "stone": 24,
+            "stone_light": 74,
+            "plaster_alt": 282,
+            "wood": 554,
+            "wood_light": 156,
+            "glass": 96,
+            "teal": 840
+          },
+          "staticReflectionProbes": 1,
+          "newProps": 0,
+          "ground": {
+            "minX": -7,
+            "maxX": 3,
+            "minZ": -1.06,
+            "maxZ": 1.55,
+            "height": 0.853,
+            "textureCoverageMetres": 2,
+            "source": "https://polyhaven.com/a/cobblestone_floor_05",
+            "license": "CC0-1.0",
+            "textureResolution": 1024,
+            "mapCount": 4,
+            "copingMaterialCount": 2,
+            "copingBounds": {
+              "minX": -7,
+              "maxX": 3,
+              "minZ": 1.48,
+              "maxZ": 2.18,
+              "minY": 0.12,
+              "maxY": 1.02
+            },
+            "addedMeshes": 0,
+            "addedTriangles": 0,
+            "additionalReflectionPasses": 0,
+            "geometryAndNavigationUnchanged": true,
+            "normalMapConvention": "OpenGL",
+            "wetness": "World-space local rain film, no displacement or continuous reflection pass"
+          },
+          "sourceGeometryUnchanged": true
+        },
+        "rendererInfo": {
+          "render": {
+            "frame": 179,
+            "calls": 61,
+            "triangles": 290276,
+            "points": 0,
+            "lines": 0
+          },
+          "memory": {
+            "geometries": 51,
+            "textures": 29
+          }
+        },
+        "speed": 0,
+        "velocity": {
+          "x": 0,
+          "z": 0
+        },
+        "camera": {
+          "position": {
+            "x": -8.52100126595356,
+            "y": 2.090719084726678,
+            "z": 1.7029758759068843
+          },
+          "target": {
+            "x": -5.293587171245125,
+            "y": 1.27,
+            "z": 0.3354165736304734
+          },
+          "fov": 62
+        },
+        "refinedStreet": {
+          "minX": -7,
+          "maxX": 3
+        },
+        "cat": {
+          "version": "asset-rig-03",
+          "root": [
+            -5.8,
+            0.85,
+            0.55
+          ],
+          "gait": {
+            "speed": 0,
+            "phase": 0,
+            "stanceFeet": 4,
+            "maxReachError": 0,
+            "angularSpeed": 0
+          },
+          "bones": 21,
+          "feet": [
+            {
+              "name": "fore_left",
+              "stance": true,
+              "world": [
+                -5.9127,
+                0.85,
+                0.5073000000000001
+              ],
+              "renderedWorld": [
+                -5.912700003695225,
+                0.8500000022476576,
+                0.507300002356382
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "fore_right",
+              "stance": true,
+              "world": [
+                -5.902699999999999,
+                0.85,
+                0.5922000000000001
+              ],
+              "renderedWorld": [
+                -5.902700003432456,
+                0.8500000040447582,
+                0.592199997571423
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "hind_left",
+              "stance": true,
+              "world": [
+                -5.6663,
+                0.85,
+                0.4959
+              ],
+              "renderedWorld": [
+                -5.666300000882876,
+                0.8500000023170806,
+                0.49590000000000006
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "hind_right",
+              "stance": true,
+              "world": [
+                -5.6362,
+                0.85,
+                0.602
+              ],
+              "renderedWorld": [
+                -5.636200003998341,
+                0.8500000055798667,
+                0.602
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            }
+          ]
+        },
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 0,
+        "distance": 0,
+        "place": "店前石街",
+        "frames": 56,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -5.8,
+          "y": 0.85,
+          "z": 0.55
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      },
+      "moved": {
+        "version": "shop-study-01",
+        "environment": {
+          "geometryBefore": 159330,
+          "geometryAfter": 159330,
+          "selectedTriangles": {
+            "stone": 24,
+            "stone_light": 74,
+            "plaster_alt": 282,
+            "wood": 554,
+            "wood_light": 156,
+            "glass": 96,
+            "teal": 840
+          },
+          "staticReflectionProbes": 1,
+          "newProps": 0,
+          "ground": {
+            "minX": -7,
+            "maxX": 3,
+            "minZ": -1.06,
+            "maxZ": 1.55,
+            "height": 0.853,
+            "textureCoverageMetres": 2,
+            "source": "https://polyhaven.com/a/cobblestone_floor_05",
+            "license": "CC0-1.0",
+            "textureResolution": 1024,
+            "mapCount": 4,
+            "copingMaterialCount": 2,
+            "copingBounds": {
+              "minX": -7,
+              "maxX": 3,
+              "minZ": 1.48,
+              "maxZ": 2.18,
+              "minY": 0.12,
+              "maxY": 1.02
+            },
+            "addedMeshes": 0,
+            "addedTriangles": 0,
+            "additionalReflectionPasses": 0,
+            "geometryAndNavigationUnchanged": true,
+            "normalMapConvention": "OpenGL",
+            "wetness": "World-space local rain film, no displacement or continuous reflection pass"
+          },
+          "sourceGeometryUnchanged": true
+        },
+        "rendererInfo": {
+          "render": {
+            "frame": 391,
+            "calls": 60,
+            "triangles": 290228,
+            "points": 0,
+            "lines": 0
+          },
+          "memory": {
+            "geometries": 51,
+            "textures": 29
+          }
+        },
+        "speed": 0.5532399999999956,
+        "velocity": {
+          "x": 0.509396060691534,
+          "z": -0.21584751782668748
+        },
+        "camera": {
+          "position": {
+            "x": -8.427372945867901,
+            "y": 2.090719084726678,
+            "z": 1.663302541053574
+          },
+          "target": {
+            "x": -5.151572285865402,
+            "y": 1.27,
+            "z": 0.2752402926006575
+          },
+          "fov": 62
+        },
+        "refinedStreet": {
+          "minX": -7,
+          "maxX": 3
+        },
+        "cat": {
+          "version": "asset-rig-03",
+          "root": [
+            -5.657985114620277,
+            0.85,
+            0.48982371897018423
+          ],
+          "gait": {
+            "speed": 0.5532399999999956,
+            "phase": 0.9291262413859717,
+            "stanceFeet": 3,
+            "maxReachError": 0,
+            "angularSpeed": 0
+          },
+          "bones": 21,
+          "feet": [
+            {
+              "name": "fore_left",
+              "stance": true,
+              "world": [
+                -5.564536313870891,
+                0.85,
+                0.4966016597137334
+              ],
+              "renderedWorld": [
+                -5.564536317334452,
+                0.8500000113053785,
+                0.4966016602133599
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "fore_right",
+              "stance": true,
+              "world": [
+                -5.527675750042678,
+                0.85,
+                0.3887752718664349
+              ],
+              "renderedWorld": [
+                -5.527675763612365,
+                0.850000008879295,
+                0.38877527669395084
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "hind_left",
+              "stance": false,
+              "world": [
+                -5.728793309442439,
+                0.8671097036235571,
+                0.5785838421497216
+              ],
+              "renderedWorld": [
+                -5.728793308980624,
+                0.8671097047474216,
+                0.5785838419545852
+              ],
+              "groundClearance": 0.017109703623557126,
+              "reachError": 0
+            },
+            {
+              "name": "hind_right",
+              "stance": true,
+              "world": [
+                -5.816530845677987,
+                0.85,
+                0.5005289892532344
+              ],
+              "renderedWorld": [
+                -5.816530842099319,
+                0.8500000047937377,
+                0.5005289877428468
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            }
+          ]
+        },
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 0,
+        "distance": 0.15423816799999676,
+        "place": "店前石街",
+        "frames": 162,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -5.657985114620277,
+          "y": 0.85,
+          "z": 0.48982371897018423
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      },
+      "renderer": {
+        "renderer": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4070 Laptop GPU (0x00002860) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "vendor": "Google Inc. (NVIDIA)",
+        "size": [
+          390,
+          844
+        ],
+        "pixelRatio": 1
+      }
+    },
+    "performanceComparison": {
+      "sameViewport": {
+        "width": 1152,
+        "height": 720
+      },
+      "sameDevicePixelRatio": 1,
+      "previousMedianFps": 59.880239520962,
+      "newMedianFps": 59.88023952095548,
+      "previousP95FrameMs": 16.700000000000728,
+      "newP95FrameMs": 16.799999999999272,
+      "note": "Sequential real Chromium GPU contexts, 5 seconds each at the initial fixed follow view. Tour metrics include 24fps MediaRecorder overhead when recording is enabled."
+    }
+  },
+  "seconds": 91.63,
+  "scope": "Two fixed views and 20-second real walk; previous-entry performance comparison; mobile touch; original-file preservation. Human review is still needed for material/lighting quality."
+}

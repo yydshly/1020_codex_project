@@ -1,0 +1,40 @@
+{
+  "asset": "web/models/cat-a-study.glb",
+  "bytes": 12980096,
+  "groom_strands": [
+    6608,
+    32
+  ],
+  "meshes": [
+    {
+      "name": "Cat",
+      "vertices": 22650,
+      "faces": 22648
+    },
+    {
+      "name": "Sphere",
+      "vertices": 1986,
+      "faces": 1984
+    },
+    {
+      "name": "Sphere.001",
+      "vertices": 1986,
+      "faces": 1984
+    },
+    {
+      "name": "Cat_A_original_groom",
+      "vertices": 99120,
+      "faces": 158592
+    },
+    {
+      "name": "Cat_A_original_whiskers",
+      "vertices": 480,
+      "faces": 768
+    }
+  ],
+  "limits": [
+    "Groom geometry follows skinning; original strand dynamics are not simulated.",
+    "Original Cycles shading is approximated in web PBR.",
+    "Legacy original Run tail has a small loop endpoint seam, retained without invented motion."
+  ]
+}

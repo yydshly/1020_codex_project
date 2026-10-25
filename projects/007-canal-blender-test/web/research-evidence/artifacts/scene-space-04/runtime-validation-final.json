@@ -1,0 +1,1108 @@
+{
+  "checkedUTC": "2026-10-24T13:29:32.435Z",
+  "passed": true,
+  "checks": {
+    "previous130HashesIncluded": true,
+    "sourceGLBMatchesSpace03Manifest": true,
+    "fullPreviousEnvironmentChainExecuted": true,
+    "materialLayerKeepsAllGeometryAttributesIndicesUVAndTransforms": true,
+    "materialLayerOnlyChangesFourIntendedMaterials": true,
+    "bookshopStreetRoofMaterialReferencesPropertiesAndShadersPreserved": true,
+    "materialLayerDoesNotChangeLightingWorldExposure": true,
+    "actualShaderHooksInjectNewCode": true,
+    "panesReuseExistingEnvironmentWithoutTransmission": true,
+    "actualRecessVerticesMapToClosedDoorOrWindowSurfaces": true,
+    "sixSpace03DoorNotchesStillAt0925": true,
+    "lightingAddsNoLightsOrMeshes": true,
+    "lightingDoesNotChangeGeometryUVOrMaterialState": true,
+    "directionalAndWarmLightsUnchanged": true,
+    "skyFillWithinDeclaredConservativeBounds": true,
+    "lightingKeepsEnvironmentTextureBackgroundFogExposure": true,
+    "repeatedLightingCallIsIdempotent": true,
+    "geometryAndProtectedMaterialsStayFrozenDuringUpdates": true,
+    "original522NavigationSamplesUnchangedAndWalkable": true,
+    "closedInteriorsStayOutsideNavigation": true,
+    "lightingDisposeRestoresOriginalState": true,
+    "controllerStaticallyReferencesOriginalGLBAndManifest": true,
+    "noDuplicatedSpace04ModelFiles": true,
+    "all136ProtectedFilesUnchanged": true,
+    "environmentDisposeIsRepeatable": true
+  },
+  "evidence": {
+    "sourceGLB": {
+      "file": "web/models/space-03.glb",
+      "sha256": "511c2a6e130ce6c81411d960200573d04d359ab7dca95fd3d06b6f1f7f47e512",
+      "bytes": 10553228,
+      "triangles": 174012
+    },
+    "inheritedMeshCount": 45,
+    "changedMaterials": [
+      {
+        "mesh": "ROAM01_Surface__plaster",
+        "previous": "Space 02 / ROAM01_PBR / plaster / ten metre refinement",
+        "current": "Space 02 / ROAM01_PBR / plaster / ten metre refinement / space04 opposite microtexture",
+        "referenceChanged": true,
+        "stateChanged": true
+      },
+      {
+        "mesh": "ROAM01_Surface__plaster_alt",
+        "previous": "Space 02 / ROAM01_PBR / plaster_alt / ten metre refinement",
+        "current": "Space 02 / ROAM01_PBR / plaster_alt / ten metre refinement / space04 opposite microtexture",
+        "referenceChanged": true,
+        "stateChanged": true
+      },
+      {
+        "mesh": "ROAM01_Surface__SPACE03_WindowRecess",
+        "previous": "ROAM01_PBR / SPACE03_WindowRecess",
+        "current": "Space 04 / closed window backdrops and inset wooden door panels",
+        "referenceChanged": true,
+        "stateChanged": true
+      },
+      {
+        "mesh": "ROAM01_Surface__SPACE03_WindowPane",
+        "previous": "Space 03 / SPACE03_WindowPane",
+        "current": "Space 04 / thin neutral window panes",
+        "referenceChanged": true,
+        "stateChanged": true
+      }
+    ],
+    "protectedMeshes": [
+      "ROAM01_Surface__paving_alt",
+      "ROAM01_Surface__paving",
+      "ROAM01_Surface__roof",
+      "ROAM01_Surface__roof_alt",
+      "Bookshop material study / stone",
+      "Bookshop material study / stone_light",
+      "Bookshop material study / plaster_alt",
+      "Bookshop material study / wood",
+      "Bookshop material study / wood_light",
+      "Bookshop material study / glass",
+      "Bookshop material study / teal",
+      "Refine ten metre street surface"
+    ],
+    "recessClassification": {
+      "vertices": 408,
+      "doors": 288,
+      "windowBackdrops": 120,
+      "outside": 0
+    },
+    "doorThresholds": [
+      {
+        "houseX": -11,
+        "side": "front",
+        "height": 0.925000011920929,
+        "mesh": "ROAM01_Surface__stone"
+      },
+      {
+        "houseX": -11,
+        "side": "rear",
+        "height": 0.925000011920929,
+        "mesh": "ROAM01_Surface__stone"
+      },
+      {
+        "houseX": -3,
+        "side": "front",
+        "height": 0.925000011920929,
+        "mesh": "ROAM01_Surface__stone"
+      },
+      {
+        "houseX": -3,
+        "side": "rear",
+        "height": 0.925000011920929,
+        "mesh": "ROAM01_Surface__stone"
+      },
+      {
+        "houseX": 4.8,
+        "side": "front",
+        "height": 0.925000011920929,
+        "mesh": "ROAM01_Surface__stone"
+      },
+      {
+        "houseX": 4.8,
+        "side": "rear",
+        "height": 0.925000011920929,
+        "mesh": "ROAM01_Surface__stone"
+      }
+    ],
+    "lights": {
+      "before": [
+        {
+          "type": "HemisphereLight",
+          "name": "",
+          "intensity": 0.2,
+          "color": [
+            0.4396571738310091,
+            0.5647115056965487,
+            0.76052450467022
+          ],
+          "ground": [
+            0.054480276435339814,
+            0.04817182422013895,
+            0.031896033067374104
+          ],
+          "position": [
+            0,
+            1,
+            0
+          ],
+          "castShadow": false
+        },
+        {
+          "type": "DirectionalLight",
+          "name": "",
+          "intensity": 0.78,
+          "color": [
+            0.407240211891531,
+            0.5647115056965487,
+            0.8468732315065057
+          ],
+          "position": [
+            -8,
+            18,
+            12
+          ],
+          "target": [
+            -2,
+            1,
+            -0.5
+          ],
+          "castShadow": true,
+          "mapSize": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "",
+          "intensity": 8,
+          "color": [
+            1,
+            0.46778379610254284,
+            0.13013647668074665
+          ],
+          "position": [
+            -7.7,
+            2.4,
+            0.1
+          ],
+          "castShadow": false,
+          "mapSize": [
+            512,
+            512
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "",
+          "intensity": 0,
+          "color": [
+            1,
+            0.46778379610254284,
+            0.13013647668074665
+          ],
+          "position": [
+            -1,
+            2.6,
+            -0.1
+          ],
+          "castShadow": false,
+          "mapSize": [
+            512,
+            512
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "",
+          "intensity": 12,
+          "color": [
+            1,
+            0.46778379610254284,
+            0.13013647668074665
+          ],
+          "position": [
+            5,
+            2.3,
+            0.1
+          ],
+          "castShadow": false,
+          "mapSize": [
+            512,
+            512
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "",
+          "intensity": 21,
+          "color": [
+            1,
+            0.46778379610254284,
+            0.13013647668074665
+          ],
+          "position": [
+            -9.2,
+            3.3,
+            1.2
+          ],
+          "castShadow": false,
+          "mapSize": [
+            512,
+            512
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "",
+          "intensity": 21,
+          "color": [
+            1,
+            0.46778379610254284,
+            0.13013647668074665
+          ],
+          "position": [
+            7.8,
+            3.3,
+            1.2
+          ],
+          "castShadow": false,
+          "mapSize": [
+            512,
+            512
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "",
+          "intensity": 21,
+          "color": [
+            1,
+            0.46778379610254284,
+            0.13013647668074665
+          ],
+          "position": [
+            8.5,
+            3.3,
+            11.75
+          ],
+          "castShadow": false,
+          "mapSize": [
+            512,
+            512
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "Bookshop indoor light",
+          "intensity": 48,
+          "color": [
+            1,
+            0.3712376804636741,
+            0.10946171076915331
+          ],
+          "position": [
+            -1,
+            3.55,
+            -2.8
+          ],
+          "castShadow": true,
+          "mapSize": [
+            512,
+            512
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "",
+          "intensity": 9,
+          "color": [
+            1,
+            0.41254261347374327,
+            0.11697066774917994
+          ],
+          "position": [
+            -2.4,
+            3.1,
+            -2.55
+          ],
+          "castShadow": false,
+          "mapSize": [
+            512,
+            512
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "",
+          "intensity": 9,
+          "color": [
+            1,
+            0.41254261347374327,
+            0.11697066774917994
+          ],
+          "position": [
+            0.4,
+            3.1,
+            -2.55
+          ],
+          "castShadow": false,
+          "mapSize": [
+            512,
+            512
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "",
+          "intensity": 4,
+          "color": [
+            1,
+            0.4019777798219466,
+            0.09758734713304495
+          ],
+          "position": [
+            -2.28,
+            6.5,
+            -2.25
+          ],
+          "castShadow": false,
+          "mapSize": [
+            512,
+            512
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "",
+          "intensity": 4,
+          "color": [
+            1,
+            0.4019777798219466,
+            0.09758734713304495
+          ],
+          "position": [
+            0.28,
+            6.5,
+            -2.25
+          ],
+          "castShadow": false,
+          "mapSize": [
+            512,
+            512
+          ]
+        }
+      ],
+      "after": [
+        {
+          "type": "HemisphereLight",
+          "name": "",
+          "intensity": 0.27,
+          "color": [
+            0.4396571738310091,
+            0.5647115056965487,
+            0.76052450467022
+          ],
+          "ground": [
+            0.054480276435339814,
+            0.04817182422013895,
+            0.031896033067374104
+          ],
+          "position": [
+            0,
+            1,
+            -0.28
+          ],
+          "castShadow": false
+        },
+        {
+          "type": "DirectionalLight",
+          "name": "",
+          "intensity": 0.78,
+          "color": [
+            0.407240211891531,
+            0.5647115056965487,
+            0.8468732315065057
+          ],
+          "position": [
+            -8,
+            18,
+            12
+          ],
+          "target": [
+            -2,
+            1,
+            -0.5
+          ],
+          "castShadow": true,
+          "mapSize": [
+            1024,
+            1024
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "",
+          "intensity": 8,
+          "color": [
+            1,
+            0.46778379610254284,
+            0.13013647668074665
+          ],
+          "position": [
+            -7.7,
+            2.4,
+            0.1
+          ],
+          "castShadow": false,
+          "mapSize": [
+            512,
+            512
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "",
+          "intensity": 0,
+          "color": [
+            1,
+            0.46778379610254284,
+            0.13013647668074665
+          ],
+          "position": [
+            -1,
+            2.6,
+            -0.1
+          ],
+          "castShadow": false,
+          "mapSize": [
+            512,
+            512
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "",
+          "intensity": 12,
+          "color": [
+            1,
+            0.46778379610254284,
+            0.13013647668074665
+          ],
+          "position": [
+            5,
+            2.3,
+            0.1
+          ],
+          "castShadow": false,
+          "mapSize": [
+            512,
+            512
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "",
+          "intensity": 21,
+          "color": [
+            1,
+            0.46778379610254284,
+            0.13013647668074665
+          ],
+          "position": [
+            -9.2,
+            3.3,
+            1.2
+          ],
+          "castShadow": false,
+          "mapSize": [
+            512,
+            512
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "",
+          "intensity": 21,
+          "color": [
+            1,
+            0.46778379610254284,
+            0.13013647668074665
+          ],
+          "position": [
+            7.8,
+            3.3,
+            1.2
+          ],
+          "castShadow": false,
+          "mapSize": [
+            512,
+            512
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "",
+          "intensity": 21,
+          "color": [
+            1,
+            0.46778379610254284,
+            0.13013647668074665
+          ],
+          "position": [
+            8.5,
+            3.3,
+            11.75
+          ],
+          "castShadow": false,
+          "mapSize": [
+            512,
+            512
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "Bookshop indoor light",
+          "intensity": 48,
+          "color": [
+            1,
+            0.3712376804636741,
+            0.10946171076915331
+          ],
+          "position": [
+            -1,
+            3.55,
+            -2.8
+          ],
+          "castShadow": true,
+          "mapSize": [
+            512,
+            512
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "",
+          "intensity": 9,
+          "color": [
+            1,
+            0.41254261347374327,
+            0.11697066774917994
+          ],
+          "position": [
+            -2.4,
+            3.1,
+            -2.55
+          ],
+          "castShadow": false,
+          "mapSize": [
+            512,
+            512
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "",
+          "intensity": 9,
+          "color": [
+            1,
+            0.41254261347374327,
+            0.11697066774917994
+          ],
+          "position": [
+            0.4,
+            3.1,
+            -2.55
+          ],
+          "castShadow": false,
+          "mapSize": [
+            512,
+            512
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "",
+          "intensity": 4,
+          "color": [
+            1,
+            0.4019777798219466,
+            0.09758734713304495
+          ],
+          "position": [
+            -2.28,
+            6.5,
+            -2.25
+          ],
+          "castShadow": false,
+          "mapSize": [
+            512,
+            512
+          ]
+        },
+        {
+          "type": "PointLight",
+          "name": "",
+          "intensity": 4,
+          "color": [
+            1,
+            0.4019777798219466,
+            0.09758734713304495
+          ],
+          "position": [
+            0.28,
+            6.5,
+            -2.25
+          ],
+          "castShadow": false,
+          "mapSize": [
+            512,
+            512
+          ]
+        }
+      ],
+      "countIncrease": 0
+    },
+    "materialMetadata": {
+      "version": "space-04-opposite-material-readability",
+      "trianglesBefore": 174012,
+      "trianglesAfter": 174012,
+      "addedMeshes": 0,
+      "addedTriangles": 0,
+      "positionAndIndexBuffersUnchanged": true,
+      "sourceMaterialNames": [
+        "ROAM01_PBR / mortar",
+        "ROAM01_PBR / paving_alt",
+        "ROAM01_PBR / paving",
+        "ROAM01_PBR / stone / ten metre refinement / shop study coping",
+        "ROAM01_PBR / stone_light / ten metre refinement / shop study coping",
+        "ROAM01_PBR / plaster / ten metre refinement",
+        "ROAM01_PBR / plaster_alt / ten metre refinement",
+        "ROAM01_PBR / wood / ten metre refinement",
+        "ROAM01_PBR / wood_light / ten metre refinement",
+        "ROAM01_PBR / roof",
+        "ROAM01_PBR / roof_alt",
+        "ROAM01_PBR / teal / ten metre refinement",
+        "ROAM01_PBR / olive / ten metre refinement",
+        "ROAM01_PBR / soil",
+        "ROAM01_PBR / EXT_B02_DampMineralGround"
+      ],
+      "classTriangles": {
+        "mineral": 1128,
+        "paving": 12200,
+        "stone": 12538,
+        "plaster": 3044,
+        "wood": 21690,
+        "roof": 30498,
+        "earth": 6760
+      },
+      "textureCoverageMetres": {
+        "plaster": 1.8,
+        "wood": 1.45,
+        "roof": 0.85,
+        "paving": 2,
+        "stone": 1.7,
+        "mineral": 2.4,
+        "earth": 3.4
+      },
+      "textureAssets": [
+        "worn_plaster_wall",
+        "wood_planks_grey",
+        "cobblestone_floor_05"
+      ],
+      "textureLicense": "CC0-1.0; existing local Poly Haven downloads",
+      "originalBookshopTreatmentPreserved": true,
+      "wholeStreetShadows": true,
+      "streetPatch": "Existing plane material, UVs and local reflection retained unchanged; all other paving matches its scan, wetness shader and world UV phase. Underlying original mask retained.",
+      "lighting": "Same existing lights, exposure, environment and fog as SPACE02.",
+      "limitations": "Original geometric paving joints remain; no displacement, new props, trees, lights or buildings.",
+      "materialAliases": {
+        "SPACE03_WeatheredWood": "wood",
+        "SPACE03_FadedTeal": "teal"
+      },
+      "paneMaterials": [
+        "SPACE03_WindowPane"
+      ],
+      "warmMaterials": [
+        "SPACE03_WindowWarm"
+      ],
+      "windowResponse": "Closed shallow reveals, coated sky-reflecting panes and two low-emission warm window accents.",
+      "facadeFinishing": "Local plaster mottling and sill runoff; dark brown door panels; restrained lighter slate contrast.",
+      "targetCounts": {
+        "panes": 1,
+        "recesses": 1,
+        "plaster": 2
+      },
+      "geometryAndUVReferencesUnchanged": true,
+      "addedLights": 0,
+      "newTextures": 0,
+      "newReflectionPasses": 0,
+      "transmissionPass": false,
+      "paneResponse": "Neutral thin alpha glazing; explicit reuse of the existing scene environment, Fresnel opacity and slight surface waviness.",
+      "recessResponse": "Closed original backboards with subtle linen margins; six inset door cores use non-emissive old-wood albedo.",
+      "preserved": "Existing bookshop, scanned paving, roof treatment, geometry, navigation and all light/exposure settings.",
+      "diagnosis": "GLB base colour factors are white and colour is in COLOR_0 once. Previous opaque blue pane albedo and scene-level reflection intensity caused painted-block appearance."
+    },
+    "lightingMetadata": {
+      "version": "space-04-conservative-sky-fill",
+      "strength": 1,
+      "hemisphere": {
+        "before": {
+          "name": "HemisphereLight",
+          "type": "HemisphereLight",
+          "intensity": 0.2,
+          "color": [
+            0.4396571738310091,
+            0.5647115056965487,
+            0.76052450467022
+          ],
+          "groundColor": [
+            0.054480276435339814,
+            0.04817182422013895,
+            0.031896033067374104
+          ],
+          "position": [
+            0,
+            1,
+            0
+          ],
+          "direction": [
+            0,
+            1,
+            0
+          ],
+          "castShadow": false
+        },
+        "after": {
+          "name": "HemisphereLight",
+          "type": "HemisphereLight",
+          "intensity": 0.27,
+          "color": [
+            0.4396571738310091,
+            0.5647115056965487,
+            0.76052450467022
+          ],
+          "groundColor": [
+            0.054480276435339814,
+            0.04817182422013895,
+            0.031896033067374104
+          ],
+          "position": [
+            0,
+            1,
+            -0.28
+          ],
+          "direction": [
+            0,
+            0.9629640197141817,
+            -0.2696299255199709
+          ],
+          "castShadow": false
+        }
+      },
+      "environmentIntensity": {
+        "before": 0.31,
+        "after": 0.36
+      },
+      "exposure": {
+        "before": 0.96,
+        "after": 0.96,
+        "changed": false
+      },
+      "originalDirectionalAndWarmLights": [
+        {
+          "name": "DirectionalLight",
+          "type": "DirectionalLight",
+          "intensity": 0.78,
+          "color": [
+            0.407240211891531,
+            0.5647115056965487,
+            0.8468732315065057
+          ],
+          "position": [
+            -8,
+            18,
+            12
+          ],
+          "target": [
+            -2,
+            1,
+            -0.5
+          ],
+          "castShadow": true
+        },
+        {
+          "name": "PointLight",
+          "type": "PointLight",
+          "intensity": 8,
+          "color": [
+            1,
+            0.46778379610254284,
+            0.13013647668074665
+          ],
+          "position": [
+            -7.7,
+            2.4,
+            0.1
+          ],
+          "castShadow": false
+        },
+        {
+          "name": "PointLight",
+          "type": "PointLight",
+          "intensity": 0,
+          "color": [
+            1,
+            0.46778379610254284,
+            0.13013647668074665
+          ],
+          "position": [
+            -1,
+            2.6,
+            -0.1
+          ],
+          "castShadow": false
+        },
+        {
+          "name": "PointLight",
+          "type": "PointLight",
+          "intensity": 12,
+          "color": [
+            1,
+            0.46778379610254284,
+            0.13013647668074665
+          ],
+          "position": [
+            5,
+            2.3,
+            0.1
+          ],
+          "castShadow": false
+        },
+        {
+          "name": "PointLight",
+          "type": "PointLight",
+          "intensity": 21,
+          "color": [
+            1,
+            0.46778379610254284,
+            0.13013647668074665
+          ],
+          "position": [
+            -9.2,
+            3.3,
+            1.2
+          ],
+          "castShadow": false
+        },
+        {
+          "name": "PointLight",
+          "type": "PointLight",
+          "intensity": 21,
+          "color": [
+            1,
+            0.46778379610254284,
+            0.13013647668074665
+          ],
+          "position": [
+            7.8,
+            3.3,
+            1.2
+          ],
+          "castShadow": false
+        },
+        {
+          "name": "PointLight",
+          "type": "PointLight",
+          "intensity": 21,
+          "color": [
+            1,
+            0.46778379610254284,
+            0.13013647668074665
+          ],
+          "position": [
+            8.5,
+            3.3,
+            11.75
+          ],
+          "castShadow": false
+        },
+        {
+          "name": "Bookshop indoor light",
+          "type": "PointLight",
+          "intensity": 48,
+          "color": [
+            1,
+            0.3712376804636741,
+            0.10946171076915331
+          ],
+          "position": [
+            -1,
+            3.55,
+            -2.8
+          ],
+          "castShadow": true
+        },
+        {
+          "name": "PointLight",
+          "type": "PointLight",
+          "intensity": 9,
+          "color": [
+            1,
+            0.41254261347374327,
+            0.11697066774917994
+          ],
+          "position": [
+            -2.4,
+            3.1,
+            -2.55
+          ],
+          "castShadow": false
+        },
+        {
+          "name": "PointLight",
+          "type": "PointLight",
+          "intensity": 9,
+          "color": [
+            1,
+            0.41254261347374327,
+            0.11697066774917994
+          ],
+          "position": [
+            0.4,
+            3.1,
+            -2.55
+          ],
+          "castShadow": false
+        },
+        {
+          "name": "PointLight",
+          "type": "PointLight",
+          "intensity": 4,
+          "color": [
+            1,
+            0.4019777798219466,
+            0.09758734713304495
+          ],
+          "position": [
+            -2.28,
+            6.5,
+            -2.25
+          ],
+          "castShadow": false
+        },
+        {
+          "name": "PointLight",
+          "type": "PointLight",
+          "intensity": 4,
+          "color": [
+            1,
+            0.4019777798219466,
+            0.09758734713304495
+          ],
+          "position": [
+            0.28,
+            6.5,
+            -2.25
+          ],
+          "castShadow": false
+        }
+      ],
+      "originalDirectionalAndWarmLightsChanged": false,
+      "backgroundChanged": false,
+      "fogChanged": false,
+      "environmentTextureChanged": false,
+      "geometryOrMaterialsChanged": false,
+      "addedLights": 0,
+      "addedShadowMaps": 0,
+      "diagnosis": {
+        "oppositeFacadeNormal": [
+          0,
+          0,
+          -1
+        ],
+        "existingKeyDirection": [
+          -0.2735053835031311,
+          0.7749319199255381,
+          0.5698028822981898
+        ],
+        "keyDotOppositeFacade": -0.5698028822981898,
+        "directKeyContributionToFront": 0,
+        "sourceEnvironment": "Existing lookdev-v4-world.hdr, including its source-world strength; unchanged.",
+        "explanation": "The opposite front has no direct key light. A 15.6-degree sky-fill bias toward the river opens its shadows; material albedo and glass response are handled separately."
+      }
+    },
+    "navigationSamples": 522,
+    "protectedFileCount": 136,
+    "changedFiles": [],
+    "geometryChanges": [],
+    "loadedLocalTextures": {
+      "web/textures/lookdev-v4-world.hdr": {
+        "bytes": 1553568,
+        "sha256": "b93ee6314eabe4354738f3b775a040027accc201b3534838b5302545840968f9"
+      },
+      "web/textures/shop-study-01/cobblestone_floor_05/cobblestone_floor_05_ao_1k.jpg": {
+        "bytes": 186424,
+        "sha256": "2d9920ee1df8794ed57be16a5882e9917ae50c8f6794700a5eb8851f5d78aa0a"
+      },
+      "web/textures/shop-study-01/cobblestone_floor_05/cobblestone_floor_05_rough_1k.jpg": {
+        "bytes": 327784,
+        "sha256": "b6b7a2e7685ffd72a76a583130da8c196211ed7aa44330195878526706f63405"
+      },
+      "web/textures/shop-study-01/cobblestone_floor_05/cobblestone_floor_05_diff_1k.jpg": {
+        "bytes": 482704,
+        "sha256": "641f75f0809557c8fdf8b3490e4b93634b0c2694320f38ad65834fead8d5f938"
+      },
+      "web/textures/shop-study-01/wood_planks_grey/wood_planks_grey_diff_1k.jpg": {
+        "bytes": 228279,
+        "sha256": "d758be23e8fe7bfbd73bc4ab257cfd59406e1835f6557c12a67cd4fdb15de0d8"
+      },
+      "web/textures/shop-study-01/wood_planks_grey/wood_planks_grey_rough_1k.jpg": {
+        "bytes": 186804,
+        "sha256": "ef640502cec94bd2b6500e252891a778a7a721be16b5536d4efc9fe4d99b12aa"
+      },
+      "web/textures/shop-study-01/wood_planks_grey/wood_planks_grey_ao_1k.jpg": {
+        "bytes": 52532,
+        "sha256": "baee35ae240bd5a39e005b1f40fec7fe3f16d2158e954e913737d73699d4cee9"
+      },
+      "web/textures/shop-study-01/worn_plaster_wall/worn_plaster_wall_rough_1k.jpg": {
+        "bytes": 242497,
+        "sha256": "383584ed24edd4dd6e6a675fd822ec04152684ba15f4b0eda1f0dbe31979a7c6"
+      },
+      "web/textures/shop-study-01/worn_plaster_wall/worn_plaster_wall_ao_1k.jpg": {
+        "bytes": 424263,
+        "sha256": "e47fd759383bb6c26be16a58402c73c799e6775619a90ed2d61c8f25b4a93ec7"
+      },
+      "web/textures/shop-study-01/worn_plaster_wall/worn_plaster_wall_diff_1k.jpg": {
+        "bytes": 750361,
+        "sha256": "f769bee35504ff713e89e89d2b64c1eb3c373dd184973ac8706310f19fd63efe"
+      },
+      "web/textures/shop-study-01/cobblestone_floor_05/cobblestone_floor_05_nor_gl_1k.png": {
+        "bytes": 1127696,
+        "sha256": "3ab14ff7703ea68281e7c0e52f34826a37e77435db8cc73cf3b5cfe207ebef4d"
+      },
+      "web/textures/shop-study-01/worn_plaster_wall/worn_plaster_wall_nor_gl_1k.png": {
+        "bytes": 5335659,
+        "sha256": "2f8dc1726f6c2a32cd8270e9135fb3bd6fa6606801cb76a39dfe419eef96ab76"
+      },
+      "web/textures/shop-study-01/wood_planks_grey/wood_planks_grey_nor_gl_1k.png": {
+        "bytes": 5350344,
+        "sha256": "a9f2ad602eca2d59e84f203b1087e819e62ae517532bb25f7eb02a13c826e08b"
+      }
+    },
+    "stubs": {
+      "imageDecodes": 28,
+      "hdrDecodes": 1,
+      "cubeCaptures": 1,
+      "pmremEquirectangular": 1,
+      "pmremCubemap": 1,
+      "gpuCompile": 2
+    }
+  },
+  "seconds": 1.55,
+  "limitations": [
+    "CPU-only integration using the actual GLB, production environment chain, real material objects, geometry buffers, shader callbacks and navigation. No browser or WebGL context was started.",
+    "Texture files are read and hashed but image/HDR decoding is stubbed; CubeCamera and PMREM GPU captures are stubbed. This does not verify final texture pixels, shader compilation, transparency sorting, brightness, reflections or visual realism.",
+    "Controller GLB/manifest reuse is a static source check. Live stage switching, GPU errors and visual comparisons require the separate browser verification."
+  ]
+}

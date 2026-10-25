@@ -1,0 +1,17 @@
+import {readFile,writeFile} from 'node:fs/promises';
+import {register} from 'node:module';
+const root=new URL('../',import.meta.url),web=new URL('web/',root);
+const threeURL=new URL('vendor/three/build/three.module.min.js',web).href,addonsURL=new URL('vendor/three/examples/jsm/',web).href;
+register('data:text/javascript,'+encodeURIComponent(`export async function resolve(s,c,n){if(s==='three')return{url:${JSON.stringify(threeURL)},shortCircuit:true};if(s.startsWith('three/addons/'))return{url:${JSON.stringify(addonsURL)}+s.slice(13),shortCircuit:true};return n(s,c);}`),import.meta.url);
+const THREE=await import(threeURL),{GLTFLoader}=await import(new URL('vendor/three/examples/jsm/loaders/GLTFLoader.js',web));
+globalThis.ProgressEvent??=class ProgressEvent{constructor(type,values){this.type=type;Object.assign(this,values);}};
+const bytes=await readFile(new URL('models/cat-a-study.glb',web)),size=bytes.readUInt32LE(12),json=JSON.parse(bytes.subarray(20,20+size).toString()),offset=20+size,binSize=bytes.readUInt32LE(offset);
+json.buffers[0].uri='data:application/octet-stream;base64,'+bytes.subarray(offset+8,offset+8+binSize).toString('base64');
+delete json.images;delete json.textures;delete json.materials;delete json.samplers;
+for(const mesh of json.meshes)for(const primitive of mesh.primitives)delete primitive.material;
+const gltf=await new GLTFLoader().parseAsync(JSON.stringify(json),'');
+const wrapper=new THREE.Group();wrapper.scale.setScalar(.07);wrapper.add(gltf.scene);wrapper.updateMatrixWorld(true);
+const {buildIdleClip}=await import(new URL('cat-a-idle-pose-v2.js',web));
+const result=buildIdleClip(THREE,gltf.scene,gltf.animations.find(a=>a.name==='Walk'));
+console.log(JSON.stringify({audit:result.audit,footPositions:result.footPositions},null,2));
+await writeFile(new URL('artifacts/cat-a-street-v2/stand-pose-review.json',root),JSON.stringify({audit:result.audit,footPositions:result.footPositions},null,2));

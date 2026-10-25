@@ -1,0 +1,593 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-24T12:32:09.957570+00:00",
+  "passed": true,
+  "checks": {
+    "ROAM01_North_1_vertex_count_unchanged": true,
+    "ROAM01_North_1_xy_coordinates_and_bounds_frozen": true,
+    "ROAM01_North_1_core_rectangle_frozen": true,
+    "ROAM01_North_1_all_vertices_of_core_intersecting_faces_frozen": true,
+    "ROAM01_North_1_zero_and_point6_bank_rows_frozen": true,
+    "ROAM01_North_1_beyond50m_from_water_frozen": true,
+    "ROAM01_North_1_only_lowered_background_relief": true,
+    "ROAM01_North_1_has_actual_height_changes": true,
+    "ROAM01_North_1_finite_coordinates_and_upward_normals": true,
+    "ROAM01_North_1_nearbank_max_slope_not_worse": true,
+    "ROAM01_South_-1_vertex_count_unchanged": true,
+    "ROAM01_South_-1_xy_coordinates_and_bounds_frozen": true,
+    "ROAM01_South_-1_core_rectangle_frozen": true,
+    "ROAM01_South_-1_all_vertices_of_core_intersecting_faces_frozen": true,
+    "ROAM01_South_-1_zero_and_point6_bank_rows_frozen": true,
+    "ROAM01_South_-1_beyond50m_from_water_frozen": true,
+    "ROAM01_South_-1_only_lowered_background_relief": true,
+    "ROAM01_South_-1_has_actual_height_changes": true,
+    "ROAM01_South_-1_finite_coordinates_and_upward_normals": true,
+    "ROAM01_South_-1_nearbank_max_slope_not_worse": true,
+    "same_object_names_and_counts": true,
+    "objects_frozen_except_allowed_terrain_coordinates": true,
+    "materials_fully_frozen": true,
+    "node_groups_fully_frozen": true,
+    "worlds_fully_frozen": true,
+    "view_layers_fully_frozen": true,
+    "layer_collection_flags_fully_frozen": true,
+    "locked_scene_fully_frozen": true,
+    "water_objects_present_and_fully_frozen": true,
+    "background_water_rays_pass": true,
+    "route_samples_exactly522_and_pass": true,
+    "bridgehead_rear_alley_support_all_hit": true,
+    "bridgehead_rear_alley_support_identical_to_space01": true,
+    "all118_old_hashes_included_and_identical": true,
+    "124_preserved_files_unchanged_before_and_after": true,
+    "space01_blend_hash_matches_previous_manifest": true,
+    "new_manifest_matches_blend_and_glb": true,
+    "read_only_blend_hashes_unchanged_during_audit": true,
+    "glb_triangles_unchanged": true,
+    "glb_has_no_new_cameras_lights": true
+  },
+  "source": {
+    "file": "rainy-canal-space-01.blend",
+    "sha256": "bbe35bad393288cddfca5b6203e179a88e7e72b3ec15828cad2ae5354841c387",
+    "counts": {
+      "objects": 1830,
+      "mesh_objects": 1722,
+      "curve_objects": 76,
+      "vertices": 106431,
+      "faces": 80501,
+      "curve_points": 1685,
+      "modifiers": 713,
+      "lights": 20,
+      "cameras": 12
+    }
+  },
+  "candidate": {
+    "file": "rainy-canal-space-02.blend",
+    "sha256": "052b7622415b4dcfde8aacb2db1725ee1e44f4c7a7960f47da9ce9ea8fe0a103",
+    "counts": {
+      "objects": 1830,
+      "mesh_objects": 1722,
+      "curve_objects": 76,
+      "vertices": 106431,
+      "faces": 80501,
+      "curve_points": 1685,
+      "modifiers": 713,
+      "lights": 20,
+      "cameras": 12
+    }
+  },
+  "allowed_changes": {
+    "objects": [
+      "ROAM01_North continuous terrain",
+      "ROAM01_South continuous terrain"
+    ],
+    "fields": [
+      "mesh vertex Z",
+      "derived normals"
+    ],
+    "frozen_core_xy": [
+      -40,
+      40,
+      -38,
+      28
+    ],
+    "frozen_river_edge_distances_m": [
+      0,
+      0.6
+    ],
+    "frozen_beyond_bank_distance_m": 50
+  },
+  "unexpected_object_changes": {},
+  "terrain": {
+    "ROAM01_North continuous terrain": {
+      "vertices": 1485,
+      "changed_vertices": 572,
+      "protected_core_and_neighbor_cell_vertices": 330,
+      "max_vertical_displacement_m": 8.580806314945221,
+      "changed_z_range_before": [
+        0.8169165253639221,
+        9.389025688171387
+      ],
+      "changed_z_range_after": [
+        0.6899999976158142,
+        5.873091220855713
+      ],
+      "changed_face_normals": 699,
+      "xy_changed_indices": [],
+      "frozen_core_changed_indices": [],
+      "shoreline_changed_indices": [],
+      "beyond50m_changed_indices": [],
+      "raised_indices": [],
+      "cross_bank_edge_slopes_before": {
+        "0.0..0.6": {
+          "count": 57,
+          "max": 1.316670013641551,
+          "mean": 1.316667184244659
+        },
+        "18.0..30.0": {
+          "count": 135,
+          "max": 0.08890692392985027,
+          "mean": 0.02915974881684239
+        },
+        "75.0..110.0": {
+          "count": 135,
+          "max": 0.08145452226911272,
+          "mean": 0.03492075813978299
+        },
+        "2.0..5.0": {
+          "count": 135,
+          "max": 0.11850547790527344,
+          "mean": 0.032653439806038576
+        },
+        "48.0..75.0": {
+          "count": 135,
+          "max": 0.16266329200179488,
+          "mean": 0.09106192600657521
+        },
+        "10.0..18.0": {
+          "count": 135,
+          "max": 0.12027678252091356,
+          "mean": 0.024540252033824154
+        },
+        "0.6..2.0": {
+          "count": 135,
+          "max": 6.022187591961352,
+          "mean": 1.7861209668843603
+        },
+        "110.0..140.0": {
+          "count": 135,
+          "max": 0.12567160924275717,
+          "mean": 0.06835426123600515
+        },
+        "30.0..48.0": {
+          "count": 135,
+          "max": 0.1350110736158159,
+          "mean": 0.069781692073788
+        },
+        "5.0..10.0": {
+          "count": 135,
+          "max": 0.12358407974243164,
+          "mean": 0.029725617058923702
+        },
+        "-0.0..0.6": {
+          "count": 78,
+          "max": 1.316670013641551,
+          "mean": 1.3166662028542198
+        }
+      },
+      "cross_bank_edge_slopes_after": {
+        "0.0..0.6": {
+          "count": 57,
+          "max": 1.316670013641551,
+          "mean": 1.316667184244659
+        },
+        "18.0..30.0": {
+          "count": 135,
+          "max": 0.21829503774642944,
+          "mean": 0.06475414462949304
+        },
+        "75.0..110.0": {
+          "count": 135,
+          "max": 0.08145452226911272,
+          "mean": 0.03492075813978299
+        },
+        "2.0..5.0": {
+          "count": 135,
+          "max": 0.0013414024773676205,
+          "mean": 7.114601533945165e-05
+        },
+        "48.0..75.0": {
+          "count": 135,
+          "max": 0.1629864109887017,
+          "mean": 0.09120665507964075
+        },
+        "10.0..18.0": {
+          "count": 135,
+          "max": 0.17778636515140533,
+          "mean": 0.044996863964718754
+        },
+        "0.6..2.0": {
+          "count": 135,
+          "max": 0.24500466278589367,
+          "mean": 0.013048089396902586
+        },
+        "110.0..140.0": {
+          "count": 135,
+          "max": 0.12567160924275717,
+          "mean": 0.06835426123600515
+        },
+        "30.0..48.0": {
+          "count": 135,
+          "max": 0.13417479395866394,
+          "mean": 0.08190876194192749
+        },
+        "5.0..10.0": {
+          "count": 135,
+          "max": 0.0596640944480896,
+          "mean": 0.015983650744890845
+        },
+        "-0.0..0.6": {
+          "count": 78,
+          "max": 1.316670013641551,
+          "mean": 1.3166662028542198
+        }
+      }
+    },
+    "ROAM01_South continuous terrain": {
+      "vertices": 1485,
+      "changed_vertices": 578,
+      "protected_core_and_neighbor_cell_vertices": 324,
+      "max_vertical_displacement_m": 7.173323690891266,
+      "changed_z_range_before": [
+        0.8027598261833191,
+        9.221802711486816
+      ],
+      "changed_z_range_after": [
+        0.6899999976158142,
+        9.160440444946289
+      ],
+      "changed_face_normals": 711,
+      "xy_changed_indices": [],
+      "frozen_core_changed_indices": [],
+      "shoreline_changed_indices": [],
+      "beyond50m_changed_indices": [],
+      "raised_indices": [],
+      "cross_bank_edge_slopes_before": {
+        "0.0..0.6": {
+          "count": 85,
+          "max": 1.316670013641551,
+          "mean": 1.316667711475741
+        },
+        "18.0..30.0": {
+          "count": 135,
+          "max": 0.10617285966873169,
+          "mean": 0.031048766881135757
+        },
+        "75.0..110.0": {
+          "count": 135,
+          "max": 0.09100516864231654,
+          "mean": 0.028066777899739465
+        },
+        "2.0..5.0": {
+          "count": 135,
+          "max": 0.11842743555704753,
+          "mean": 0.030374913883873214
+        },
+        "48.0..75.0": {
+          "count": 135,
+          "max": 0.21471117160938405,
+          "mean": 0.08662410023032116
+        },
+        "10.0..18.0": {
+          "count": 135,
+          "max": 0.11116761300467291,
+          "mean": 0.02685341853180738
+        },
+        "0.6..2.0": {
+          "count": 135,
+          "max": 5.123797051855303,
+          "mean": 1.9522061633145507
+        },
+        "110.0..140.0": {
+          "count": 135,
+          "max": 0.12575023174285888,
+          "mean": 0.07107057488346624
+        },
+        "30.0..48.0": {
+          "count": 135,
+          "max": 0.12870397832658556,
+          "mean": 0.06345150828416593
+        },
+        "5.0..10.0": {
+          "count": 135,
+          "max": 0.11866035461425781,
+          "mean": 0.029014059452940395
+        },
+        "-0.0..0.6": {
+          "count": 50,
+          "max": 1.316670013641551,
+          "mean": 1.3166657884184887
+        }
+      },
+      "cross_bank_edge_slopes_after": {
+        "0.0..0.6": {
+          "count": 85,
+          "max": 1.316670013641551,
+          "mean": 1.316667711475741
+        },
+        "18.0..30.0": {
+          "count": 135,
+          "max": 0.2870128410461116,
+          "mean": 0.11114243205769998
+        },
+        "75.0..110.0": {
+          "count": 135,
+          "max": 0.09100516864231654,
+          "mean": 0.028066777899739465
+        },
+        "2.0..5.0": {
+          "count": 135,
+          "max": 0.004255851109822591,
+          "mean": 0.00019189045712361512
+        },
+        "48.0..75.0": {
+          "count": 135,
+          "max": 0.21511090243304218,
+          "mean": 0.08667842147592808
+        },
+        "10.0..18.0": {
+          "count": 135,
+          "max": 0.16352194289928504,
+          "mean": 0.06320886638673585
+        },
+        "0.6..2.0": {
+          "count": 135,
+          "max": 0.27184872711691915,
+          "mean": 0.014013304574130409
+        },
+        "110.0..140.0": {
+          "count": 135,
+          "max": 0.12575023174285888,
+          "mean": 0.07107057488346624
+        },
+        "30.0..48.0": {
+          "count": 135,
+          "max": 0.20998477031852797,
+          "mean": 0.12955456833815557
+        },
+        "5.0..10.0": {
+          "count": 135,
+          "max": 0.046106600761413576,
+          "mean": 0.01955908192738201
+        },
+        "-0.0..0.6": {
+          "count": 50,
+          "max": 1.316670013641551,
+          "mean": 1.3166657884184887
+        }
+      }
+    }
+  },
+  "water_objects": [
+    "ROAM01_Curving canal water"
+  ],
+  "background_water_checks": {
+    "passed": true,
+    "ray_count": 294,
+    "failures": [],
+    "outer_endpoint_inset_m": 0.05,
+    "scope": "Sampled finite background water surface only; no navigation or hydrodynamic claim."
+  },
+  "route_checks": {
+    "scope": "Sampled centerline floor support and 0.48m-wide body-ray checks only, not a navmesh, full-area collision certification or a playable controller.",
+    "floor_tolerance": 0.17,
+    "known_existing_paving_gaps": "Original stone joints can be about 0.12m lower than stone tops; a future walking controller needs step tolerance or a separate collision proxy.",
+    "routes": {
+      "both_banks_loop": {
+        "sample_count": 285,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      },
+      "rear_lane_loop": {
+        "sample_count": 237,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      }
+    }
+  },
+  "support_sample_count": 33,
+  "support_samples": {
+    "rear_cafe": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_ShopRearWallApron"
+    },
+    "rear_bookshop": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_ShopRearWallApron"
+    },
+    "rear_pottery": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_ShopRearWallApron"
+    },
+    "west_side": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_ShopWestSideInfill"
+    },
+    "east_side": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_ShopEastSideInfill"
+    },
+    "rear_boundary": {
+      "hit": true,
+      "height": 0.845206618309021,
+      "object": "EXT_B02_RearLaneBoundaryShoulder"
+    },
+    "far_house_01_front": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_OppositeBuildingsContinuousSupport"
+    },
+    "far_house_02_front": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_OppositeBuildingsContinuousSupport"
+    },
+    "far_house_03_front": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_OppositeBuildingsContinuousSupport"
+    },
+    "bridge_-18_-0.55_-1.6": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_Return bridge landing.001"
+    },
+    "bridge_-18_-0.55_-1.95": {
+      "hit": true,
+      "height": 0.8882484436035156,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_-0.55_-10.4": {
+      "hit": true,
+      "height": 0.8794219493865967,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_-0.55_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_Return bridge landing"
+    },
+    "bridge_-18_0_-1.6": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_Return bridge landing.001"
+    },
+    "bridge_-18_0_-1.95": {
+      "hit": true,
+      "height": 0.8882484436035156,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_0_-10.4": {
+      "hit": true,
+      "height": 0.8794219493865967,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_0_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_-18_0.55_-1.6": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_Return bridge landing.001"
+    },
+    "bridge_-18_0.55_-1.95": {
+      "hit": true,
+      "height": 0.8882484436035156,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_0.55_-10.4": {
+      "hit": true,
+      "height": 0.8794219493865967,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_0.55_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_Return bridge landing"
+    },
+    "bridge_9.4_-0.55_-1.6": {
+      "hit": true,
+      "height": 0.8472225069999695,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_9.4_-0.55_-1.95": {
+      "hit": true,
+      "height": 0.9506124258041382,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_-0.55_-10.4": {
+      "hit": true,
+      "height": 0.9261985421180725,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_-0.55_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_9.4_0_-1.6": {
+      "hit": true,
+      "height": 0.8472225069999695,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_9.4_0_-1.95": {
+      "hit": true,
+      "height": 0.9506124258041382,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_0_-10.4": {
+      "hit": true,
+      "height": 0.9261985421180725,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_0_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_9.4_0.55_-1.6": {
+      "hit": true,
+      "height": 0.8472224473953247,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_9.4_0.55_-1.95": {
+      "hit": true,
+      "height": 0.9506124258041382,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_0.55_-10.4": {
+      "hit": true,
+      "height": 0.9261985421180725,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_0.55_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "Rounded quay coping stones"
+    }
+  },
+  "preservation": {
+    "baseline": "artifacts/scene-space-02/preserved-files.json",
+    "baseline_sha256": "00ff0a45f045afd8571dddd71dbcfbe6a2a386001d98c9b31d53c89766ce6edc",
+    "old_file_count": 118,
+    "checked_file_count": 124,
+    "file_changes_before": [],
+    "file_changes_after": []
+  },
+  "glb": {
+    "file": "space-02.glb",
+    "sha256": "0032d4b51455ea7a06910c8d8f9c06e975c8f77c11922205c8b7c253bcb0c12f",
+    "bytes": 9819884,
+    "meshes": 28,
+    "primitives": 28,
+    "vertices": 245721,
+    "triangles": 163678,
+    "binary_bytes": 9792420
+  },
+  "seconds": 9.083,
+  "limitations": [
+    "No save, render or browser action. Terrain normals are derived from the permitted vertical changes.",
+    "The preserved core rectangle and unchanged water rows protect the current exterior layout, not unmodeled interiors or full terrain walkability.",
+    "522 route checks and 33 local support rays are sampled geometry regressions, not exhaustive physics certification.",
+    "Edge-slope measurements describe the terrain mesh; they do not certify visual naturalness from every viewpoint."
+  ]
+}

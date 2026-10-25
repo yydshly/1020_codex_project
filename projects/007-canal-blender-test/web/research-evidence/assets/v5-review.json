@@ -1,0 +1,172 @@
+{
+  "schema_version": 1,
+  "stage": "V5 bounded geometry experiment completed; stopped at two low-resolution renders",
+  "reference_origin": "本项目生成的测试入口概念图，不是源 X 演示图。",
+  "annotation": {
+    "svg": "assets/v5-gap-annotations.svg",
+    "image": "assets/v5-gap-annotations.png",
+    "plan": "assets/v5-gap-plan.json",
+    "completed_before_first_v5_render": true,
+    "original_images_repainted": false
+  },
+  "result": {
+    "preferred_review_candidate": "v5-preview-02.png",
+    "accepted_as_final": false,
+    "reason": "第二张仅提高并缩短咖啡店窗组，选定窗组的投影位置和外框高度比第一张更接近人工标注参考；这不是整体相似度结论。",
+    "improvements": [
+      "咖啡店从重复双窗改为单一主窗组，复用原有玻璃、框架、百叶、窗台和墙段。",
+      "第二张相对第一张上移窗组并减小竖向比例；保持第一张屋顶与其他部件不动。",
+      "既有窗台、楣线、檐口和门店线脚截面减薄；三店屋顶不再完全同高。"
+    ],
+    "remaining_gaps": [
+      "整体与参考图仍有明显差距，不能认定已实现高保真还原。",
+      "上层墙面留白较大，窗棂和立面仍较规整；原参考的小山墙未复现。",
+      "咖啡店与书店之间新增的屋顶高差接缝略生硬，不能把高低变化直接算作全面改善。",
+      "水面反光、湿地材质、植物密度和远景仍与参考不同，本轮按约束未改。"
+    ],
+    "stop_reason": "用户授权最多两张低清小样；已完成两张，不继续第三次渲染，不生成高分辨率正式图。"
+  },
+  "constraints": {
+    "low_resolution_render_attempts": 2,
+    "render_attempt_limit": 2,
+    "geometry_counts_unchanged": true,
+    "camera_unchanged": true,
+    "lights_unchanged": true,
+    "materials_and_world_unchanged": true,
+    "bridge_banks_props_unchanged": true,
+    "website_source_and_built_site_unchanged": true,
+    "old_assets_hashes_unchanged": true,
+    "published": false,
+    "formal_render_generated": false
+  },
+  "previews": [
+    {
+      "image": "v5-preview-01.png",
+      "blend": "rainy-canal-v5-preview-01.blend",
+      "blend_sha256": "579a5d68111d8269374ad30cf9337a16f3daf7a5cf213a52fcccf215e07502d8",
+      "image_sha256": "5155988F15BF3AF0479DB07ED1F09DA6C1997BC588C1072F721425A8371D60A8",
+      "resolution": [
+        1104,
+        622
+      ],
+      "samples": 40,
+      "render_seconds": 5.701,
+      "run_seconds": 7.7,
+      "geometry_checks": {
+        "passed": true,
+        "changed_building_objects": 161,
+        "objects": 2109,
+        "vertices": 159646,
+        "faces": 127565,
+        "modifiers": 686,
+        "lights": 20,
+        "new_objects": 0,
+        "hidden_objects_added": 0
+      },
+      "audit_passed": true,
+      "violations": [],
+      "websites_unchanged": true,
+      "window_lift": 0.45,
+      "window_height_scale": 1.04,
+      "projected_window_box": {
+        "coordinate_system": "Normalized image coordinates, origin top-left; only component bounding box, not image similarity.",
+        "min": [
+          0.1459234654903412,
+          0.06325745582580566
+        ],
+        "max": [
+          0.2633081376552582,
+          0.3161901831626892
+        ]
+      }
+    },
+    {
+      "image": "v5-preview-02.png",
+      "blend": "rainy-canal-v5-preview-02.blend",
+      "blend_sha256": "5cfbbdc89ddd980c12a1066e1b2d0cc4d361391a276797a19d802b8f2c4b1431",
+      "image_sha256": "2C223C76F121F652AA7A71AD8EAE0B9037833F2476DCB43324F4610F28FF20F1",
+      "resolution": [
+        1104,
+        622
+      ],
+      "samples": 40,
+      "render_seconds": 5.443,
+      "run_seconds": 7.588,
+      "geometry_checks": {
+        "passed": true,
+        "changed_building_objects": 161,
+        "objects": 2109,
+        "vertices": 159646,
+        "faces": 127565,
+        "modifiers": 686,
+        "lights": 20,
+        "new_objects": 0,
+        "hidden_objects_added": 0
+      },
+      "audit_passed": true,
+      "violations": [],
+      "websites_unchanged": true,
+      "window_lift": 0.95,
+      "window_height_scale": 0.9,
+      "projected_window_box": {
+        "coordinate_system": "Normalized image coordinates, origin top-left; only component bounding box, not image similarity.",
+        "min": [
+          0.14547882974147797,
+          0.025712966918945312
+        ],
+        "max": [
+          0.2628701627254486,
+          0.25564074516296387
+        ]
+      }
+    }
+  ],
+  "timing_scope": "render_seconds 只计 bpy.ops.render.render 调用，不含诊断、标注、编码、图像检查和独立审计时间。",
+  "verification": {
+    "audit_reports": [
+      "assets/rainy-canal-v5-preview-01-constraint-audit.json",
+      "assets/rainy-canal-v5-preview-02-constraint-audit.json"
+    ],
+    "both_passed": true,
+    "python_compile_passed": true,
+    "curve_audit_normalization": "仅坐标发生合法变化且自动纹理空间开启的建筑曲线，允许 Blender 自动更新 texspace_location/size；其他曲线参数仍锁定。"
+  },
+  "protected_old_assets": [
+    {
+      "Path": "artifacts/rainy-canal-v2.blend",
+      "Hash": "9E14F704A6E95DE897891748337540FD3C1EC74B18FB9C406D3C0007D6501879"
+    },
+    {
+      "Path": "artifacts/rainy-canal-v3.blend",
+      "Hash": "7DC217ED94C381216747E9D5454C6E5408B0A9E3F89C4850ECF97217A811B7B4"
+    },
+    {
+      "Path": "artifacts/rainy-canal-v4.blend",
+      "Hash": "017A6DD169E8FE5D8B958CC90D24687FE8F8AAEAA66194C455DD176AFDD1B765"
+    },
+    {
+      "Path": "artifacts/rainy-canal.blend",
+      "Hash": "2961816C336791807F1DCC36668928462B300BD551A656919CC07CE74B53C216"
+    },
+    {
+      "Path": "artifacts/rainy-canal.blend1",
+      "Hash": "CC075FE8C708728FB64996BEBEBD16DD420074A71B47ED7560DDBA98B8251C3F"
+    },
+    {
+      "Path": "assets/reference.png",
+      "Hash": "6EBFD8652E498E31AD522045A22E7ABDB32B92F5B5E825F62AE7DF13EC844F1E"
+    },
+    {
+      "Path": "assets/render-v2.png",
+      "Hash": "34C226A44012B20F340A75ADA1195B3FC1F6213BBBD0C3BA1E1C25263DF72FDA"
+    },
+    {
+      "Path": "assets/render-v3.png",
+      "Hash": "79648985F5B538A1F78905C244B3C97B33BEE1E37A228061DCA4498F28BF30F7"
+    },
+    {
+      "Path": "assets/render-v4.png",
+      "Hash": "898F110A30C604E19ADB0D460EC06DAE08DE31B97B79E6EAF8AC77BC9A1A9922"
+    }
+  ]
+}

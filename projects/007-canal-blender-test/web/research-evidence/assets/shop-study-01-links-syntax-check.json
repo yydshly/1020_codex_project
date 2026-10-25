@@ -1,0 +1,28 @@
+{
+  "passed": true,
+  "links": [
+    {
+      "tag": "link",
+      "target": "roam.css",
+      "status": 200,
+      "bytes": 8557
+    },
+    {
+      "tag": "script",
+      "target": "shop-study-01-controller.js",
+      "status": 200,
+      "bytes": 21384
+    },
+    {
+      "tag": "a",
+      "target": "roam-cat-v3.html",
+      "status": 200,
+      "bytes": 4758
+    }
+  ],
+  "node_syntax_checks": [
+    "shop-study-01-controller.js",
+    "shop-study-01-environment.js",
+    "shop-study-01-ground.js"
+  ]
+}

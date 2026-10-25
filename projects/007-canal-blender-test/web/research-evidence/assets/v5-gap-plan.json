@@ -1,0 +1,165 @@
+{
+  "schema_version": 1,
+  "stage": "pre_v5_visual_diagnosis",
+  "execution_status": "proposed_awaiting_root_review_before_v5_execution",
+  "reference_origin": "本项目生成的测试入口概念图，非源 X 演示图。",
+  "sources": [
+    {
+      "path": "assets/reference.png",
+      "sha256": "6ebfd8652e498e31ad522045a22e7abdb32b92f5b5e825f62ae7df13ec844f1e",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "path": "assets/render-v4.png",
+      "sha256": "898f110a30c604e19adb0d460ec06dae08de31b97b79e6eaf8ac77bc9a1a9922",
+      "width": 1672,
+      "height": 942
+    }
+  ],
+  "source_images_modified": false,
+  "annotation_method": "Deterministic SVG overlays on byte-identical embedded original PNG files; manually selected boxes in original image pixels.",
+  "assessment_scope": "Visual observations only; no author intent inferred, no automatic alignment and no fabricated error or similarity score.",
+  "priority_gaps": [
+    {
+      "id": 1,
+      "title": "咖啡店上层：一个主窗的节奏",
+      "reference_observation": "参考图可见咖啡店上层以一个较突出的大窗为主，两侧有较宽墙面。",
+      "v4_observation": "V4 咖啡店上层呈现两个近似等宽窗，与另外两店形成重复的双窗节奏。",
+      "direction": "仅重排、缩放既有窗组及墙段，尝试形成一个主窗的视觉重心。",
+      "acceptance": "主机位能清楚读出一个咖啡店主窗；不保留第二个明显开口或产生穿墙。",
+      "reference_box_pixels": [
+        252,
+        15,
+        185,
+        214
+      ],
+      "v4_box_pixels": [
+        148,
+        83,
+        397,
+        263
+      ]
+    },
+    {
+      "id": 2,
+      "title": "门窗比例：减轻横向装饰",
+      "reference_observation": "参考图的门窗与墙面比例更有变化，店招和层间线脚较克制。",
+      "v4_observation": "V4 上层窗、门脸呈较统一的模块比例；层间、檐下和店招横条更厚、更突出。",
+      "direction": "只调整既有窗框、门脸与横向线脚的尺度和位置，让开口与墙面占比更自然。",
+      "acceptance": "横条不再压过门窗；保留窗洞、玻璃与框架对齐，室内可读。",
+      "reference_box_pixels": [
+        576,
+        310,
+        425,
+        295
+      ],
+      "v4_box_pixels": [
+        573,
+        334,
+        408,
+        304
+      ]
+    },
+    {
+      "id": 3,
+      "title": "屋顶轮廓：打破一条连续斜线",
+      "reference_observation": "参考图屋顶有分段与局部高低变化，第三店屋顶附近可见小山墙轮廓。",
+      "v4_observation": "V4 三店屋顶和屋檐接近一条连续、统一的斜线，分段变化较弱。",
+      "direction": "重排既有屋顶、檐线或顶端构件，尝试分段及第三店局部山墙感。",
+      "acceptance": "主视角能读出分段轮廓；不用新增网格补细节，不引入明显断缝。",
+      "reference_box_pixels": [
+        787,
+        78,
+        237,
+        177
+      ],
+      "v4_box_pixels": [
+        555,
+        117,
+        435,
+        162
+      ]
+    }
+  ],
+  "out_of_scope": [
+    {
+      "name": "水面反光",
+      "note": "两图反光表现不同，本轮不改水面、灯光或材质。",
+      "reference_box_pixels": [
+        770,
+        666,
+        665,
+        223
+      ],
+      "v4_box_pixels": [
+        790,
+        666,
+        675,
+        224
+      ]
+    },
+    {
+      "name": "植物",
+      "note": "两图枝叶密度与形态不同，本轮不增减或重排植物。",
+      "reference_box_pixels": [
+        8,
+        250,
+        155,
+        400
+      ],
+      "v4_box_pixels": [
+        5,
+        248,
+        134,
+        424
+      ]
+    },
+    {
+      "name": "远景",
+      "note": "V4 背景建筑与岸线收尾较简化，本轮保持不变。",
+      "reference_box_pixels": [
+        1030,
+        342,
+        461,
+        165
+      ],
+      "v4_box_pixels": [
+        1011,
+        332,
+        494,
+        157
+      ]
+    }
+  ],
+  "locked_v4_conditions": [
+    "camera",
+    "lighting",
+    "materials",
+    "bridge_and_banks",
+    "water",
+    "props",
+    "vegetation",
+    "distant_background"
+  ],
+  "allowed_changes": [
+    "Reposition or scale existing architectural components",
+    "Rearrange existing architectural vertices without adding topology"
+  ],
+  "complexity_budget": {
+    "objects_must_not_increase": true,
+    "base_vertices_must_not_increase": true,
+    "base_faces_must_not_increase": true,
+    "lights_must_not_increase": true
+  },
+  "preview_budget": {
+    "maximum_low_resolution_previews": 2,
+    "formal_render_authorized_by_this_plan": false
+  },
+  "website_updates": false,
+  "acceptance": [
+    "Compare each of the three annotated architectural gaps at the unchanged V4 camera",
+    "Check window/frame/glass alignment and roof/facade continuity",
+    "Keep both improvements and regressions visible; stop after at most two low-resolution previews"
+  ]
+}

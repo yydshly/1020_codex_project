@@ -1,0 +1,46 @@
+{
+  "version": "cat-v3",
+  "local_date": "2026-10-24",
+  "street_url": "http://127.0.0.1:8062/roam-cat-v3.html?v=1",
+  "study_url": "http://127.0.0.1:8062/cat-v3-study.html?v=1",
+  "request": "持续改善猫的形象，纠正像狗的轮廓；保留既有版本。",
+  "decision": "保存本轮程序重塑初稿，采用许可明确的自然猫外形，经Blender减面、坐标归一和骨骼绑定后接入原街区。",
+  "provenance": {
+    "source": "Grab3D Tabby Cat",
+    "source_page": "https://grab3d.com/models/animals/cat/",
+    "license": "CC0-1.0",
+    "original_author_disclosure": "Meshy生成基础模型和纹理，再经Blender清理。",
+    "original_triangles": 382505,
+    "viewer_triangles": 49000,
+    "viewer_bones": 21,
+    "viewer_bytes": 2690948,
+    "original_textures_preserved": true,
+    "not_created_from_street_reference_image": true
+  },
+  "changes": [
+    "短口鼻、面颊、眼窝、耳壳与猫科身体比例来自新外形；保留原有毛色纹理。",
+    "0.60m/s步行与0.40m/s慢走，支撑足锁定、短步启停和小幅头尾动作。",
+    "转向先换脚，接近对齐后再移动；控制身体转速以避免突然拉伸腿部。",
+    "新增正面、侧面、三分之四、背面、脸部和旧版对照的独立检视页。"
+  ],
+  "verification": {
+    "controller_tests_passed": 8,
+    "real_browser_checks_passed": 17,
+    "browser_or_shader_errors": 0,
+    "real_street_round_trip_metres": 15.772,
+    "old_files_hash_preserved": 276,
+    "reports": [
+      "cat-v3-asset-browser-check.json",
+      "cat-v3-gait-check.json",
+      "cat-v3-preservation-check.json",
+      "cat-v3-rig-preparation-check.json"
+    ]
+  },
+  "visual_assessment": "中性光和实际街区中猫脸及身体辨识度明显提升；多视角检查未见旧程序猫的长尖犬形口鼻、肢体开口或足掌分离。完整往返与手机加载/触屏操作通过。",
+  "limitations": [
+    "采用空间分区权重与有限运动学步态，非完整动物动作捕捉或物理模拟。",
+    "毛色为贴图，无逐根毛发模拟；快跑、跳跃和复杂地形动作尚未实现。",
+    "街区与环境沿用上一版，本轮仅改善角色及与其相关的转向控制。"
+  ],
+  "published_or_committed": false
+}

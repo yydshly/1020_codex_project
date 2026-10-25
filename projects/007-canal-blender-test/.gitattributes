@@ -1,0 +1,7 @@
+web/** -text
+assets/** -text
+docs/** -text
+scripts/** -text
+tests/** -text
+project.json -text
+README.md -text

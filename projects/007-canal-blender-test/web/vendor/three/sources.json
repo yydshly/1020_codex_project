@@ -1,0 +1,88 @@
+{
+  "package": "three",
+  "version": "0.180.0",
+  "license": "MIT",
+  "license_file": "LICENSE",
+  "upstream": "https://github.com/mrdoob/three.js/tree/r180",
+  "npm_metadata": "https://registry.npmjs.org/three/0.180.0",
+  "npm_tarball_integrity": "sha512-o+qycAMZrh+TsE01GqWUxUIKR1AL0S8pq7zDkYOQw8GqfX8b8VoCKYUoHbhiX5j+7hr8XsuHDVU6+gkQJQKg9w==",
+  "upstream_files_modified": false,
+  "runtime_cdn_required": false,
+  "import_map_relative_to_web_root": {
+    "three": "./vendor/three/build/three.module.min.js",
+    "three/addons/": "./vendor/three/examples/jsm/"
+  },
+  "official_documentation": [
+    "https://github.com/mrdoob/three.js/blob/r180/manual/en/installation.html",
+    "https://threejs.org/docs/pages/OrbitControls.html",
+    "https://threejs.org/docs/pages/GLTFLoader.html",
+    "https://threejs.org/docs/pages/Reflector.html",
+    "https://github.com/mrdoob/three.js/blob/r180/examples/jsm/loaders/HDRLoader.js"
+  ],
+  "scope": "Unmodified local ES modules for uncompressed glTF/GLB, orbit controls, planar reflections and RGBE HDR loading. RGBELoader is retained as requested but deprecated in r180; import HDRLoader directly to avoid the upstream deprecation warning. Optional Draco, KTX2 and Meshopt decoder integrations are not included.",
+  "files": [
+    {
+      "path": "build/three.module.min.js",
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.min.js",
+      "bytes": 338908,
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6",
+      "imports": ["./three.core.min.js"]
+    },
+    {
+      "path": "build/three.core.min.js",
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.core.min.js",
+      "bytes": 381124,
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de",
+      "imports": []
+    },
+    {
+      "path": "examples/jsm/controls/OrbitControls.js",
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/controls/OrbitControls.js",
+      "bytes": 38703,
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c",
+      "imports": ["three"]
+    },
+    {
+      "path": "examples/jsm/loaders/GLTFLoader.js",
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/loaders/GLTFLoader.js",
+      "bytes": 114739,
+      "sha256": "67ac5551fdafa6e349bd80c8f8e5e39c136d6b2fb1ad647db9abb21dc86f9e4a",
+      "imports": ["three", "../utils/BufferGeometryUtils.js"]
+    },
+    {
+      "path": "examples/jsm/utils/BufferGeometryUtils.js",
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/utils/BufferGeometryUtils.js",
+      "bytes": 35539,
+      "sha256": "fda7e946b8e0b5ab39b779206589e7a1079a22eb24efb89d7223e03fdfb1f751",
+      "imports": ["three"]
+    },
+    {
+      "path": "examples/jsm/objects/Reflector.js",
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/objects/Reflector.js",
+      "bytes": 9476,
+      "sha256": "0908d87a7251268dd6d12310b9633f08fd3be9c6faf2e2a4076fce0e87bdd26d",
+      "imports": ["three"]
+    },
+    {
+      "path": "examples/jsm/loaders/RGBELoader.js",
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/loaders/RGBELoader.js",
+      "bytes": 268,
+      "sha256": "6c08f9c441040a61a188ad7711078da4df48f8c5ac3b3725dd6f10ac9ff81162",
+      "imports": ["./HDRLoader.js"]
+    },
+    {
+      "path": "examples/jsm/loaders/HDRLoader.js",
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/loaders/HDRLoader.js",
+      "bytes": 12456,
+      "sha256": "d7053cfc4019f520335ae07e0fe82b4ef5a66b6766e8b253d066616184995e89",
+      "imports": ["three"]
+    },
+    {
+      "path": "LICENSE",
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/LICENSE",
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "imports": []
+    }
+  ]
+}

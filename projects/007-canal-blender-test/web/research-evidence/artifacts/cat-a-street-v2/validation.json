@@ -1,0 +1,46 @@
+{
+  "page": "http://127.0.0.1:8062/shop-study-11.html",
+  "previousPagePreserved": "http://127.0.0.1:8062/shop-study-10.html",
+  "scope": "New actor motion/stance adaptation, steering and demo controls; existing street and source GLB unchanged",
+  "preservation": {
+    "checked": 114,
+    "changed": 0
+  },
+  "tests": {
+    "passed": 13,
+    "failed": 0,
+    "files": [
+      "tests/test_cat_a_motion_v2.mjs",
+      "tests/test_cat_a_street_controls_v2.mjs"
+    ]
+  },
+  "actualRigChecks": {
+    "idleDurationSeconds": 15,
+    "headRotationDegrees": 8.02,
+    "chestActualSkinMovementM": 0.000881,
+    "idleSoleSkinDriftM": 0,
+    "idleSoleGroundErrorMaxM": 9.5e-05,
+    "walkStopFootTargetErrorMaxM": 0.0099,
+    "runStopFootTargetErrorMaxM": 0.00767,
+    "reports": [
+      "idle-liveness-review.json",
+      "stop-actual-rig-review.json"
+    ]
+  },
+  "browserObserved": [
+    "Model, new stance and full street load without captured console warnings or errors",
+    "One-click demo completes walk/run/decelerate/hold/resume/turn/return",
+    "Camera follows the return direction, keeping the cat visible",
+    "Standing pose inspected from side and three-quarter view",
+    "Final preview remains interactive and is marked as a deliverable"
+  ],
+  "screenshots": [
+    "idle-final.png",
+    "demo-return.png"
+  ],
+  "limitations": [
+    "New idle, stopping foot placements and shortened turn steps are adaptations rather than original authored clips",
+    "Stop-only limited IK is not a general solution for all turn contacts or slopes",
+    "Original Run stylization and small tail loop seam remain"
+  ]
+}

@@ -1,0 +1,494 @@
+{
+  "method": "Manually selected approximate image anchors and constrained camera/layout least-squares fit.",
+  "scope": "Composition indicator only for these selected anchors; not whole-image similarity, geometric ground truth or a model capability benchmark.",
+  "reference_coordinate_system": "Normalized top-left origin; reference image 1672x941, evaluation resolution 1672x942.",
+  "baseline_v3": {
+    "mean_anchor_error_pixels_at_1672x942": 171.42788987223037,
+    "rms_anchor_error_pixels_at_1672x942": 204.51459692955905,
+    "mean_anchor_error_normalized_diagonal": 0.08932719276261859,
+    "shoreline_point_to_projected_line_rms_pixels": 67.61458295709012,
+    "parameters": {
+      "camera_x": -15.0,
+      "camera_y": -10.0,
+      "camera_z": 3.5999999046325684,
+      "yaw_radians": 0.42285397505425515,
+      "pitch_radians": 0.009118832363940371,
+      "lens_mm": 28.0,
+      "bridge_offset_x": 0.0,
+      "channel_width_scale": 1.0,
+      "near_quay_shift_y": 0.0
+    },
+    "anchors": [
+      {
+        "name": "cafe_bookshop_base",
+        "world_before": [
+          -4.0,
+          1.05,
+          0.85
+        ],
+        "target_normalized_top_left": [
+          0.33,
+          0.681
+        ],
+        "projected_normalized_top_left": [
+          0.20243707146615225,
+          0.7737015453850895
+        ],
+        "error_pixels": 230.46955116317847
+      },
+      {
+        "name": "bookshop_pottery_base",
+        "world_before": [
+          2.0,
+          1.05,
+          0.85
+        ],
+        "target_normalized_top_left": [
+          0.491,
+          0.638
+        ],
+        "projected_normalized_top_left": [
+          0.3794917524869602,
+          0.7023105663504821
+        ],
+        "error_pixels": 196.03709970830064
+      },
+      {
+        "name": "pottery_right_base",
+        "world_before": [
+          7.9,
+          1.05,
+          0.85
+        ],
+        "target_normalized_top_left": [
+          0.601,
+          0.615
+        ],
+        "projected_normalized_top_left": [
+          0.479189532517188,
+          0.6621109958963215
+        ],
+        "error_pixels": 208.44602349040196
+      },
+      {
+        "name": "cafe_bookshop_eave",
+        "world_before": [
+          -4.0,
+          0.77,
+          7.75
+        ],
+        "target_normalized_top_left": [
+          0.331,
+          0.117
+        ],
+        "projected_normalized_top_left": [
+          0.21507714246805792,
+          0.11713277991023158
+        ],
+        "error_pixels": 193.82305815154834
+      },
+      {
+        "name": "bookshop_pottery_eave",
+        "world_before": [
+          2.0,
+          0.77,
+          7.75
+        ],
+        "target_normalized_top_left": [
+          0.491,
+          0.201
+        ],
+        "projected_normalized_top_left": [
+          0.3891279797226834,
+          0.22553635624166773
+        ],
+        "error_pixels": 171.8910620501948
+      },
+      {
+        "name": "pottery_right_eave",
+        "world_before": [
+          8.13,
+          0.77,
+          7.75
+        ],
+        "target_normalized_top_left": [
+          0.605,
+          0.272
+        ],
+        "projected_normalized_top_left": [
+          0.48996440508918143,
+          0.288340013532985
+        ],
+        "error_pixels": 192.95442878454205
+      },
+      {
+        "name": "cafe_left_base",
+        "world_before": [
+          -9.9,
+          1.05,
+          0.85
+        ],
+        "target_normalized_top_left": [
+          0.087,
+          0.755
+        ],
+        "projected_normalized_top_left": [
+          -0.17792201369644067,
+          0.9270677671528941
+        ],
+        "error_pixels": 471.67448632053555
+      },
+      {
+        "name": "canopy_front_right",
+        "world_before": [
+          -4.0,
+          -0.8,
+          3.71
+        ],
+        "target_normalized_top_left": [
+          0.36,
+          0.414
+        ],
+        "projected_normalized_top_left": [
+          0.28167422607077225,
+          0.5015899769395374
+        ],
+        "error_pixels": 154.78554062453756
+      },
+      {
+        "name": "bridge_shop_bank_end",
+        "world_before": [
+          9.67,
+          -3.0,
+          0.925
+        ],
+        "target_normalized_top_left": [
+          0.619,
+          0.638
+        ],
+        "projected_normalized_top_left": [
+          0.6147828781963001,
+          0.6583039366854905
+        ],
+        "error_pixels": 20.384618279421193
+      },
+      {
+        "name": "bridge_deck_crown",
+        "world_before": [
+          9.67,
+          -7.0,
+          2.375
+        ],
+        "target_normalized_top_left": [
+          0.777,
+          0.552
+        ],
+        "projected_normalized_top_left": [
+          0.7422904595797849,
+          0.5838994207686398
+        ],
+        "error_pixels": 65.3524571186783
+      },
+      {
+        "name": "bridge_far_bank_end",
+        "world_before": [
+          9.67,
+          -11.0,
+          0.925
+        ],
+        "target_normalized_top_left": [
+          0.93,
+          0.643
+        ],
+        "projected_normalized_top_left": [
+          0.8890618302493811,
+          0.6799865851867537
+        ],
+        "error_pixels": 76.80582105877549
+      },
+      {
+        "name": "bridge_inner_crown",
+        "world_before": [
+          9.74,
+          -7.0,
+          1.62
+        ],
+        "target_normalized_top_left": [
+          0.783,
+          0.594
+        ],
+        "projected_normalized_top_left": [
+          0.7426498721073216,
+          0.6275738089041913
+        ],
+        "error_pixels": 74.51053171665
+      }
+    ]
+  },
+  "aligned_v4": {
+    "mean_anchor_error_pixels_at_1672x942": 32.37962639742093,
+    "rms_anchor_error_pixels_at_1672x942": 36.92184205419366,
+    "mean_anchor_error_normalized_diagonal": 0.016872290331169326,
+    "shoreline_point_to_projected_line_rms_pixels": 12.742839581268324,
+    "parameters": {
+      "camera_x": -16.265784843046617,
+      "camera_y": -10.941021946030933,
+      "camera_z": 4.069108043753731,
+      "yaw_radians": 0.5615082963341813,
+      "pitch_radians": -0.04533793964939899,
+      "lens_mm": 27.000942103466645,
+      "bridge_offset_x": -1.9998808052762629,
+      "channel_width_scale": 1.0990102743987393,
+      "near_quay_shift_y": 1.244661971821079
+    },
+    "anchors": [
+      {
+        "name": "cafe_bookshop_base",
+        "world_before": [
+          -4.0,
+          1.05,
+          0.85
+        ],
+        "target_normalized_top_left": [
+          0.33,
+          0.681
+        ],
+        "projected_normalized_top_left": [
+          0.3393594805698699,
+          0.693502679021643
+        ],
+        "error_pixels": 19.585782504249124
+      },
+      {
+        "name": "bookshop_pottery_base",
+        "world_before": [
+          2.0,
+          1.05,
+          0.85
+        ],
+        "target_normalized_top_left": [
+          0.491,
+          0.638
+        ],
+        "projected_normalized_top_left": [
+          0.4855257375942431,
+          0.6348681071644136
+        ],
+        "error_pixels": 9.61669039995796
+      },
+      {
+        "name": "pottery_right_base",
+        "world_before": [
+          7.9,
+          1.05,
+          0.85
+        ],
+        "target_normalized_top_left": [
+          0.601,
+          0.615
+        ],
+        "projected_normalized_top_left": [
+          0.5756072541639116,
+          0.5987319204422505
+        ],
+        "error_pixels": 45.13768009389785
+      },
+      {
+        "name": "cafe_bookshop_eave",
+        "world_before": [
+          -4.0,
+          0.77,
+          7.75
+        ],
+        "target_normalized_top_left": [
+          0.331,
+          0.117
+        ],
+        "projected_normalized_top_left": [
+          0.3427771032906656,
+          0.141952823241899
+        ],
+        "error_pixels": 30.663647541967176
+      },
+      {
+        "name": "bookshop_pottery_eave",
+        "world_before": [
+          2.0,
+          0.77,
+          7.75
+        ],
+        "target_normalized_top_left": [
+          0.491,
+          0.201
+        ],
+        "projected_normalized_top_left": [
+          0.49095926296589437,
+          0.21201688986966266
+        ],
+        "error_pixels": 10.378133772274929
+      },
+      {
+        "name": "pottery_right_eave",
+        "world_before": [
+          8.13,
+          0.77,
+          7.75
+        ],
+        "target_normalized_top_left": [
+          0.605,
+          0.272
+        ],
+        "projected_normalized_top_left": [
+          0.5842740806773734,
+          0.2561383658950092
+        ],
+        "error_pixels": 37.73770897858218
+      },
+      {
+        "name": "cafe_left_base",
+        "world_before": [
+          -9.9,
+          1.05,
+          0.85
+        ],
+        "target_normalized_top_left": [
+          0.087,
+          0.755
+        ],
+        "projected_normalized_top_left": [
+          0.07416415309440788,
+          0.7998857444542384
+        ],
+        "error_pixels": 47.41725898145276
+      },
+      {
+        "name": "canopy_front_right",
+        "world_before": [
+          -4.0,
+          -0.8,
+          3.71
+        ],
+        "target_normalized_top_left": [
+          0.36,
+          0.414
+        ],
+        "projected_normalized_top_left": [
+          0.38183641901782267,
+          0.4693546335507166
+        ],
+        "error_pixels": 63.65547552330872
+      },
+      {
+        "name": "bridge_shop_bank_end",
+        "world_before": [
+          9.67,
+          -3.0,
+          0.925
+        ],
+        "target_normalized_top_left": [
+          0.619,
+          0.638
+        ],
+        "projected_normalized_top_left": [
+          0.6475143911937259,
+          0.6054193619170091
+        ],
+        "error_pixels": 56.700458434854575
+      },
+      {
+        "name": "bridge_deck_crown",
+        "world_before": [
+          9.67,
+          -7.0,
+          2.375
+        ],
+        "target_normalized_top_left": [
+          0.777,
+          0.552
+        ],
+        "projected_normalized_top_left": [
+          0.7850875669481941,
+          0.5383419456699591
+        ],
+        "error_pixels": 18.665119273778025
+      },
+      {
+        "name": "bridge_far_bank_end",
+        "world_before": [
+          9.67,
+          -11.0,
+          0.925
+        ],
+        "target_normalized_top_left": [
+          0.93,
+          0.643
+        ],
+        "projected_normalized_top_left": [
+          0.9520858330082672,
+          0.643078751643249
+        ],
+        "error_pixels": 36.927587304283605
+      },
+      {
+        "name": "bridge_inner_crown",
+        "world_before": [
+          9.74,
+          -7.0,
+          1.62
+        ],
+        "target_normalized_top_left": [
+          0.783,
+          0.594
+        ],
+        "projected_normalized_top_left": [
+          0.7851453034750415,
+          0.5817657402869877
+        ],
+        "error_pixels": 12.069973960444303
+      }
+    ]
+  },
+  "layout_enabled": true,
+  "shoreline_constraints": [
+    {
+      "name": "near_bank_top",
+      "world_y_before": -3.0,
+      "world_z": 0.85,
+      "target_points_normalized_top_left": [
+        [
+          0.2,
+          0.86
+        ],
+        [
+          0.5,
+          0.7
+        ]
+      ]
+    },
+    {
+      "name": "far_bank_inner_edge",
+      "world_y_before": -10.75,
+      "world_z": 0.85,
+      "target_points_normalized_top_left": [
+        [
+          0.945,
+          0.68
+        ],
+        [
+          0.895,
+          0.96
+        ]
+      ]
+    }
+  ],
+  "materials_modified": false,
+  "projection_formula_max_difference_from_blender_pixels": 0.00034311256230121705,
+  "layout_checks": {
+    "max_world_vertex_z_drift": 8.106231689453125e-06,
+    "near_quay_width_before": 4.05,
+    "near_quay_width_after": 2.805338028178921,
+    "channel_width_before": 8.0,
+    "channel_width_after": 8.792082195189915,
+    "contact_scope": "Shared continuous horizontal mapping keeps bridge-bank boundaries and existing vertical contact coordinates; this is not a complete collision certification."
+  }
+}

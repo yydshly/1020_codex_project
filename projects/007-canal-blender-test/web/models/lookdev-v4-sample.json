@@ -1,0 +1,32 @@
+{
+  "mode": "single bounded sample",
+  "source_sha256": "017a6dd169e8fe5d8b958cc90d24687fe8f8aaeaa66194c455dd176afdd1b765",
+  "structural_sha256": "ebb02b5b23a9cb451cbe5944016f5ad01705a75d7eca38a67c94adde58ed119f",
+  "devices": [
+    "NVIDIA GeForce RTX 4070 Laptop GPU"
+  ],
+  "baked_materials": [
+    {
+      "source_material": "plaster",
+      "material": "Baked V4 / plaster",
+      "texture": "../textures/lookdev-v4-plaster-sample.png",
+      "texture_sha256": "898658b100afbf0efd66398857c13f5b1e5b3c8f0592ec102fd419c8d7c1b0f4",
+      "texture_bytes": 853974,
+      "resolution": [
+        512,
+        512
+      ],
+      "samples": 8,
+      "seconds": 2.29,
+      "color_space": "sRGB-encoded linear diffuse radiance; no AgX display transform; 16-bit PNG",
+      "passes": [
+        "COLOR",
+        "DIRECT",
+        "INDIRECT"
+      ]
+    }
+  ],
+  "seconds": 5.1,
+  "source_unchanged": true,
+  "structural_unchanged": true
+}

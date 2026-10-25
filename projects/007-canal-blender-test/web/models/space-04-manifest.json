@@ -1,0 +1,44 @@
+{
+  "created_utc": "2026-10-24T13:31:42.217608+00:00",
+  "version": "space-04-surface-and-skylight",
+  "asset": "space-03.glb",
+  "sha256": "511c2a6e130ce6c81411d960200573d04d359ab7dca95fd3d06b6f1f7f47e512",
+  "bytes": 10553228,
+  "geometry": {
+    "meshes": 34,
+    "primitives": 34,
+    "vertices": 264197,
+    "triangles": 174012,
+    "binary_bytes": 10519560,
+    "nodes": 34,
+    "materials": 34,
+    "meshes_with_vertex_color": 31
+  },
+  "integrated_blend": {
+    "file": "rainy-canal-space-03.blend",
+    "sha256": "4c7e9c0093960ea796f2d7a888129da7c7a9d9c10b5b6d5486c2cb405f8c0178",
+    "object_count": 1845
+  },
+  "source_geometry_reused_unchanged": true,
+  "new_geometry": 0,
+  "new_lights": 0,
+  "scope": "Appearance refinement of existing opposite-bank windows, wood and plaster plus restrained existing skylight adjustment.",
+  "stages": [
+    "SPACE03 previous appearance",
+    "New materials with original lighting",
+    "New materials and restrained skylight"
+  ],
+  "previous_files_checked": 136,
+  "previous_files_changed": [],
+  "runtime_files": {
+    "web/scene-space-04.html": "418ebb2c4e9a59a3661c444962223d787849398237bd79d2bc564c4b937f88fc",
+    "web/scene-space-04.js": "53123c43c9c3332ade0b5863ee291e627cfb7d28cde2d181ec38d2225d08a7c6",
+    "web/scene-space-04-environment.js": "b82d25dc515cda56d1dadd7e4610225c306c4fdc1c593437d9ee10ae10775471",
+    "web/scene-space-04-lighting.js": "a8ad8e391bc1f46bcc61e7fa4b4e7f541184bae8e6ad3627b3b9097389a15562"
+  },
+  "limitations": [
+    "Thin transparent panes and shallow sealed recesses, not full furnished interiors or refractive volumes.",
+    "Appearance lives in browser runtime; the unchanged SPACE03 Blender file remains the geometry source."
+  ],
+  "published": false
+}

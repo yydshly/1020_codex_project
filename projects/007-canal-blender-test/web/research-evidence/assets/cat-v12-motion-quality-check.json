@@ -1,0 +1,14 @@
+{
+  "passed": true,
+  "checks": {
+    "decoded": true,
+    "enough_frames": true,
+    "normal_duration": true,
+    "no_large_frame_gap": true
+  },
+  "frames": 219,
+  "firstTimestamp": 0.0,
+  "lastTimestamp": 7.264,
+  "maxGap": 0.04800000000000004,
+  "source": "Actual browser canvas, timeScale=1; first 0.6s encoder startup omitted; no retiming; full raw capture retained"
+}

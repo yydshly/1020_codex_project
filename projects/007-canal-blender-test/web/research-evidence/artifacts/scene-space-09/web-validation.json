@@ -1,0 +1,72 @@
+{
+  "version": "SPACE09 local visual-coherence study",
+  "url": "http://127.0.0.1:8062/scene-space-09.html",
+  "scope": "Reuse the SPACE08 district and routes. New reversible appearance layer; no scene expansion or publication.",
+  "syntax": {
+    "files": 7,
+    "passed": true
+  },
+  "integrationAudit": {
+    "report": "runtime-validation-accepted.json",
+    "passedChecks": 36,
+    "protectedPreviousFilesUnchanged": 173,
+    "actualWalkableGridAndRouteSamples": 21303
+  },
+  "browserReview": {
+    "surface": "ChatGPT in-app browser, tab 27; real WebGL output",
+    "finalConsoleErrors": 0,
+    "finalConsoleWarnings": 0,
+    "screenshots": [
+      "overview-final.png",
+      "canal-final.png",
+      "street-final.png",
+      "trees-final.png"
+    ],
+    "sameCameraBaseline": [
+      "baseline-canal.png",
+      "baseline-street.png"
+    ],
+    "observations": [
+      "Large bright roof patches are subdued; surrounding slate roofs are more coherent with the retained bookshop.",
+      "Plaster scan and local eave, sill and wall-foot ageing remain restrained and readable at street distance.",
+      "Replacement crowns have individual leaf edges and fuller centres; distant trees remain a realtime approximation.",
+      "Wet stones retain relief and varied roughness; canal window reflections are more continuous.",
+      "Earth self-shadow striping is removed in the reviewed garden view while house and trunk shadows remain."
+    ],
+    "controls": [
+      "Ten view presets",
+      "Same-camera 08/09 appearance switching",
+      "Description hide/show",
+      "Shared courtyard route entering and returning to south street"
+    ],
+    "routeReviewNote": "The actual route was exercised before the final appearance-only refinements; final geometry and route clearance were independently checked again."
+  },
+  "diagnostics": {
+    "shadowComparison": [
+      "trees-fixed-review.png",
+      "ground-shadow-disabled-diagnostic.png",
+      "trees-final.png"
+    ],
+    "cause": "Broad directional-light shadow coverage retained the previous local-scene receiver bias. Disabling earth receiveShadow removed the striping and served only as a diagnostic.",
+    "acceptedFix": "Restore all source receiveShadow flags. Offset only the two earth materials' directional shadow comparison depth by -0.00020*w, equivalent to 2.09 cm light-space depth. No shadow UV, caster, global light or terrain movement.",
+    "retiredGrassOverlays": "Original terrain supports all 905 tested points. These floating duplicate overlays were not the cause of the shadow stripes.",
+    "realBrowserCanvasLeafAlpha": {
+      "oldCoverage": 0.10546875,
+      "newCoverage": 0.26416015625,
+      "explicitMipCoverage128to4": [
+        0.26422119140625,
+        0.26416015625,
+        0.2646484375,
+        0.265625,
+        0.28125,
+        0.25
+      ]
+    }
+  },
+  "remainingLimits": [
+    "Building proportions and facade arrangements still repeat.",
+    "Peripheral landscape remains broad and sparsely detailed.",
+    "No photographic-fidelity or complete-interior claim."
+  ],
+  "publication": "Local only. Existing pages and versions preserved."
+}

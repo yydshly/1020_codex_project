@@ -1,0 +1,46 @@
+[
+  {
+    "role": "Diffuse",
+    "filename": "wood_planks_grey/wood_planks_grey_diff_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_planks_grey/wood_planks_grey_diff_1k.jpg",
+    "bytes": 228279,
+    "sha256": "d758be23e8fe7bfbd73bc4ab257cfd59406e1835f6557c12a67cd4fdb15de0d8",
+    "resolution_px": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "role": "nor_gl",
+    "filename": "wood_planks_grey/wood_planks_grey_nor_gl_1k.png",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/wood_planks_grey/wood_planks_grey_nor_gl_1k.png",
+    "bytes": 5350344,
+    "sha256": "a9f2ad602eca2d59e84f203b1087e819e62ae517532bb25f7eb02a13c826e08b",
+    "resolution_px": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "role": "Rough",
+    "filename": "wood_planks_grey/wood_planks_grey_rough_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_planks_grey/wood_planks_grey_rough_1k.jpg",
+    "bytes": 186804,
+    "sha256": "ef640502cec94bd2b6500e252891a778a7a721be16b5536d4efc9fe4d99b12aa",
+    "resolution_px": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "role": "AO",
+    "filename": "wood_planks_grey/wood_planks_grey_ao_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/wood_planks_grey/wood_planks_grey_ao_1k.jpg",
+    "bytes": 52532,
+    "sha256": "baee35ae240bd5a39e005b1f40fec7fe3f16d2158e954e913737d73699d4cee9",
+    "resolution_px": [
+      1024,
+      1024
+    ]
+  }
+]

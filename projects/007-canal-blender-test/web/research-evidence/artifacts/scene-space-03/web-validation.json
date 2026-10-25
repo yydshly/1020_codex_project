@@ -1,0 +1,19 @@
+{
+  "preserved_files_checked": 130,
+  "changed_files": [],
+  "browser_shader_errors": 0,
+  "browser_warnings": 0,
+  "inspected_views": [
+    "facades",
+    "opposite",
+    "windows",
+    "roofs",
+    "side",
+    "reverse"
+  ],
+  "version_switch_verified": true,
+  "navigation_tested": "both banks loop",
+  "door_base_occlusion_corrected": true,
+  "local_only": true,
+  "published": false
+}

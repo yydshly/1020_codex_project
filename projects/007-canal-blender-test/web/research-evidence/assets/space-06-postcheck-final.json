@@ -1,0 +1,3287 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-24T15:01:57.482350+00:00",
+  "passed": true,
+  "checks": {
+    "only_authorized_old_terrain_curb_gate_changes": true,
+    "all36_gate_rails_hidden_and_no_other_visibility_changes": true,
+    "ROAM01_South continuous terrain_xy_topology_core_waterline_and_transition_scope": true,
+    "ROAM01_South continuous terrain_finite_only_lowered_heights": true,
+    "ROAM01_North continuous terrain_xy_topology_core_waterline_and_transition_scope": true,
+    "ROAM01_North continuous terrain_finite_only_lowered_heights": true,
+    "EXT_Outer alley curb.001_only_upper_segment_lowered_with_same_bounds_and_slots": true,
+    "EXT_Outer alley curb.001_two_closed_exact_remainder_and_lowered_slabs": true,
+    "EXT_Outer alley curb_only_upper_segment_lowered_with_same_bounds_and_slots": true,
+    "EXT_Outer alley curb_two_closed_exact_remainder_and_lowered_slabs": true,
+    "new_objects_only_SPACE06_geometry": true,
+    "new_objects_inside_finite_landscape_envelope": true,
+    "old_materials_frozen_new_prefix": true,
+    "old_node_groups_frozen_new_prefix": true,
+    "worlds_frozen": true,
+    "view_layers_frozen": true,
+    "old_collections_and_layer_flags_frozen": true,
+    "new_collections_independent": true,
+    "camera_lights_scene_settings_frozen": true,
+    "original522_route_results_identical_and_pass": true,
+    "original33_support_samples_identical": true,
+    "original05_runtime_routes_heights_identical": true,
+    "water_background_checks_pass": true,
+    "runtime_routes_and_new_walkable_grid_physically_supported_clear": true,
+    "all148_preserved_files_unchanged": true,
+    "source_and_candidate_manifest_hashes_match": true,
+    "net_geometry_increase_within105000_budget": true,
+    "glb_no_cameras_lights": true,
+    "audit_saved_blends_and_navigation_unchanged": true
+  },
+  "source": {
+    "file": "rainy-canal-space-05.blend",
+    "sha256": "044cd7c478b9a098cf74aac92dda459da0ce72d49579d4180f4748fb1ffd3436",
+    "counts": {
+      "objects": 1850,
+      "mesh_objects": 1742,
+      "curve_objects": 76,
+      "vertices": 133079,
+      "faces": 88870,
+      "curve_points": 1685,
+      "modifiers": 713,
+      "lights": 20,
+      "cameras": 12
+    }
+  },
+  "candidate": {
+    "file": "rainy-canal-space-06.blend",
+    "sha256": "3b5f05adcd2c0ad72347f1166dde94cb65b75e77413dc7ac7f485cb56ea78482",
+    "counts": {
+      "objects": 1908,
+      "mesh_objects": 1800,
+      "curve_objects": 76,
+      "vertices": 258001,
+      "faces": 125814,
+      "curve_points": 1685,
+      "modifiers": 713,
+      "lights": 20,
+      "cameras": 12
+    }
+  },
+  "changed_old_objects": {
+    "EXT_Access boundary gate bar": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.001": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.002": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.003": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.004": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.005": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.006": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.007": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.008": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.009": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.010": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.011": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.012": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.013": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.014": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.015": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.016": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.017": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.018": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.019": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.020": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.021": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.022": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.023": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.024": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.025": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.026": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate bar.027": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate rail": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate rail.001": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate rail.002": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate rail.003": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate rail.004": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate rail.005": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate rail.006": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Access boundary gate rail.007": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Outer alley curb": [
+      "data"
+    ],
+    "EXT_Outer alley curb.001": [
+      "data"
+    ],
+    "ROAM01_North continuous terrain": [
+      "data"
+    ],
+    "ROAM01_South continuous terrain": [
+      "data"
+    ]
+  },
+  "unexpected_old_changes": {},
+  "hidden_transform_cache": [
+    {
+      "object": "EXT_Access boundary gate bar",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.001",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.002",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.003",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.004",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.005",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.006",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.007",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.008",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.009",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.010",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.011",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.012",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.013",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.014",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.015",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.016",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.017",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.018",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.019",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.020",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.021",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.022",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.023",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.024",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.025",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.026",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate bar.027",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate rail",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate rail.001",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate rail.002",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate rail.003",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate rail.004",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate rail.005",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate rail.006",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    },
+    {
+      "object": "EXT_Access boundary gate rail.007",
+      "fields": [
+        "matrix_world",
+        "matrix_local"
+      ],
+      "persistent_transform_and_basis_identical": true,
+      "reason": "Hidden-on-reopen derived matrix cache is identity; source location/rotation/scale/basis and data are unchanged."
+    }
+  ],
+  "terrain": {
+    "ROAM01_South continuous terrain": {
+      "changed_vertex_count": 59,
+      "core_violation_indices": [],
+      "shore_violation_indices": [],
+      "outside_scope_indices": [],
+      "max_drop": 0.7392401695251465
+    },
+    "ROAM01_North continuous terrain": {
+      "changed_vertex_count": 59,
+      "core_violation_indices": [],
+      "shore_violation_indices": [],
+      "outside_scope_indices": [],
+      "max_drop": 0.26284080743789673
+    }
+  },
+  "curbs": {
+    "EXT_Outer alley curb.001": {
+      "before": {
+        "bounds": {
+          "min": [
+            12.399999618530273,
+            1.200000286102295,
+            0.7900000214576721
+          ],
+          "max": [
+            12.520000457763672,
+            8.899999618530273,
+            0.9399999976158142
+          ]
+        },
+        "probes": [
+          {
+            "y": 1.21,
+            "height": 0.9379288554191589
+          },
+          {
+            "y": 2,
+            "height": 0.9399999976158142
+          },
+          {
+            "y": 4,
+            "height": 0.9399999976158142
+          },
+          {
+            "y": 6.7,
+            "height": 0.9399999976158142
+          },
+          {
+            "y": 6.84,
+            "height": 0.9399999976158142
+          },
+          {
+            "y": 6.86,
+            "height": 0.9399999976158142
+          },
+          {
+            "y": 7,
+            "height": 0.9399999380111694
+          },
+          {
+            "y": 8,
+            "height": 0.9399999976158142
+          },
+          {
+            "y": 8.89,
+            "height": 0.9379288554191589
+          }
+        ],
+        "components": [
+          {
+            "first_vertex": 0,
+            "vertex_count": 8,
+            "face_count": 6,
+            "bounds": {
+              "min": [
+                12.399999618530273,
+                1.200000286102295,
+                0.7900000214576721
+              ],
+              "max": [
+                12.520000457763672,
+                8.899999618530273,
+                0.9399999976158142
+              ]
+            },
+            "volume": 0.13860000173250833,
+            "closed": true,
+            "sha256": "d4311f63a2eeff7fb695dd9da6cf9b7ae4ec2630457a65c585c0ec819b6b2e3c"
+          }
+        ]
+      },
+      "after": {
+        "bounds": {
+          "min": [
+            12.399999618530273,
+            1.200000286102295,
+            0.7900000214576721
+          ],
+          "max": [
+            12.520000457763672,
+            8.899999618530273,
+            0.9399999976158142
+          ]
+        },
+        "probes": [
+          {
+            "y": 1.21,
+            "height": 0.9379288554191589
+          },
+          {
+            "y": 2,
+            "height": 0.9399999976158142
+          },
+          {
+            "y": 4,
+            "height": 0.9399999976158142
+          },
+          {
+            "y": 6.7,
+            "height": 0.9399999976158142
+          },
+          {
+            "y": 6.84,
+            "height": 0.9379289150238037
+          },
+          {
+            "y": 6.86,
+            "height": 0.8529290556907654
+          },
+          {
+            "y": 7,
+            "height": 0.8550000190734863
+          },
+          {
+            "y": 8,
+            "height": 0.8550000786781311
+          },
+          {
+            "y": 8.89,
+            "height": 0.8529288172721863
+          }
+        ],
+        "components": [
+          {
+            "first_vertex": 0,
+            "vertex_count": 8,
+            "face_count": 6,
+            "bounds": {
+              "min": [
+                12.399999618530273,
+                1.200000286102295,
+                0.7900000214576721
+              ],
+              "max": [
+                12.520000457763672,
+                6.849999904632568,
+                0.9399999976158142
+              ]
+            },
+            "volume": 0.10169999549786252,
+            "closed": true,
+            "sha256": "0fd0e54875b704ccc261c38508d81ee4f092d69ecde115ce2772e4f8a66b1380"
+          },
+          {
+            "first_vertex": 8,
+            "vertex_count": 8,
+            "face_count": 6,
+            "bounds": {
+              "min": [
+                12.399999618530273,
+                6.849999904632568,
+                0.7900000214576721
+              ],
+              "max": [
+                12.520000457763672,
+                8.899999618530273,
+                0.8550000190734863
+              ]
+            },
+            "volume": 0.015990000839034717,
+            "closed": true,
+            "sha256": "6ad29d1d6a2e9fe47f25a76d0c0a0f6b61049de1718dc84dc185d7f36b0b0499"
+          }
+        ]
+      }
+    },
+    "EXT_Outer alley curb": {
+      "before": {
+        "bounds": {
+          "min": [
+            -13.820000648498535,
+            1.200000286102295,
+            0.7900000214576721
+          ],
+          "max": [
+            -13.699999809265137,
+            8.899999618530273,
+            0.9399999976158142
+          ]
+        },
+        "probes": [
+          {
+            "y": 1.21,
+            "height": 0.9379288554191589
+          },
+          {
+            "y": 2,
+            "height": 0.9399999976158142
+          },
+          {
+            "y": 4,
+            "height": 0.9399999976158142
+          },
+          {
+            "y": 6.7,
+            "height": 0.9399999976158142
+          },
+          {
+            "y": 6.84,
+            "height": 0.9399999976158142
+          },
+          {
+            "y": 6.86,
+            "height": 0.9399999976158142
+          },
+          {
+            "y": 7,
+            "height": 0.9399999380111694
+          },
+          {
+            "y": 8,
+            "height": 0.9399999976158142
+          },
+          {
+            "y": 8.89,
+            "height": 0.9379288554191589
+          }
+        ],
+        "components": [
+          {
+            "first_vertex": 0,
+            "vertex_count": 8,
+            "face_count": 6,
+            "bounds": {
+              "min": [
+                -13.820000648498535,
+                1.200000286102295,
+                0.7900000214576721
+              ],
+              "max": [
+                -13.699999809265137,
+                8.899999618530273,
+                0.9399999976158142
+              ]
+            },
+            "volume": 0.13860000173250833,
+            "closed": true,
+            "sha256": "d4311f63a2eeff7fb695dd9da6cf9b7ae4ec2630457a65c585c0ec819b6b2e3c"
+          }
+        ]
+      },
+      "after": {
+        "bounds": {
+          "min": [
+            -13.820000648498535,
+            1.200000286102295,
+            0.7900000214576721
+          ],
+          "max": [
+            -13.699999809265137,
+            8.899999618530273,
+            0.9399999976158142
+          ]
+        },
+        "probes": [
+          {
+            "y": 1.21,
+            "height": 0.9379288554191589
+          },
+          {
+            "y": 2,
+            "height": 0.9399999976158142
+          },
+          {
+            "y": 4,
+            "height": 0.9399999976158142
+          },
+          {
+            "y": 6.7,
+            "height": 0.9399999976158142
+          },
+          {
+            "y": 6.84,
+            "height": 0.9379289150238037
+          },
+          {
+            "y": 6.86,
+            "height": 0.8529290556907654
+          },
+          {
+            "y": 7,
+            "height": 0.8550000190734863
+          },
+          {
+            "y": 8,
+            "height": 0.8550000786781311
+          },
+          {
+            "y": 8.89,
+            "height": 0.8529288172721863
+          }
+        ],
+        "components": [
+          {
+            "first_vertex": 0,
+            "vertex_count": 8,
+            "face_count": 6,
+            "bounds": {
+              "min": [
+                -13.820000648498535,
+                1.200000286102295,
+                0.7900000214576721
+              ],
+              "max": [
+                -13.699999809265137,
+                6.849999904632568,
+                0.9399999976158142
+              ]
+            },
+            "volume": 0.10169999549786252,
+            "closed": true,
+            "sha256": "0fd0e54875b704ccc261c38508d81ee4f092d69ecde115ce2772e4f8a66b1380"
+          },
+          {
+            "first_vertex": 8,
+            "vertex_count": 8,
+            "face_count": 6,
+            "bounds": {
+              "min": [
+                -13.820000648498535,
+                6.849999904632568,
+                0.7900000214576721
+              ],
+              "max": [
+                -13.699999809265137,
+                8.899999618530273,
+                0.8550000190734863
+              ]
+            },
+            "volume": 0.015990000839034717,
+            "closed": true,
+            "sha256": "6ad29d1d6a2e9fe47f25a76d0c0a0f6b61049de1718dc84dc185d7f36b0b0499"
+          }
+        ]
+      }
+    }
+  },
+  "new_objects": [
+    "SPACE06_ContinuousStoneRoads",
+    "SPACE06_FivePlantedGreenSpaces",
+    "SPACE06_HouseGroundingAndDoorPaths",
+    "SPACE06_IrregularLeafClusters",
+    "SPACE06_RiverEdgeReedPatches",
+    "SPACE06_RoadFoundations",
+    "SPACE06_TreeTrunksAndBranches",
+    "SPACE06_far_east_01_RoofAndEaves",
+    "SPACE06_far_east_01_WallsAndPlinth",
+    "SPACE06_far_east_01_WindowsAndDoors",
+    "SPACE06_far_east_02_RoofAndEaves",
+    "SPACE06_far_east_02_WallsAndPlinth",
+    "SPACE06_far_east_02_WindowsAndDoors",
+    "SPACE06_far_west_01_RoofAndEaves",
+    "SPACE06_far_west_01_WallsAndPlinth",
+    "SPACE06_far_west_01_WindowsAndDoors",
+    "SPACE06_far_west_02_RoofAndEaves",
+    "SPACE06_far_west_02_WallsAndPlinth",
+    "SPACE06_far_west_02_WindowsAndDoors",
+    "SPACE06_near_east_corner_RoofAndEaves",
+    "SPACE06_near_east_corner_WallsAndPlinth",
+    "SPACE06_near_east_corner_WindowsAndDoors",
+    "SPACE06_near_east_end_RoofAndEaves",
+    "SPACE06_near_east_end_WallsAndPlinth",
+    "SPACE06_near_east_end_WindowsAndDoors",
+    "SPACE06_near_west_corner_RoofAndEaves",
+    "SPACE06_near_west_corner_WallsAndPlinth",
+    "SPACE06_near_west_corner_WindowsAndDoors",
+    "SPACE06_north_east_01_RoofAndEaves",
+    "SPACE06_north_east_01_WallsAndPlinth",
+    "SPACE06_north_east_01_WindowsAndDoors",
+    "SPACE06_north_east_02_RoofAndEaves",
+    "SPACE06_north_east_02_WallsAndPlinth",
+    "SPACE06_north_east_02_WindowsAndDoors",
+    "SPACE06_north_west_01_RoofAndEaves",
+    "SPACE06_north_west_01_WallsAndPlinth",
+    "SPACE06_north_west_01_WindowsAndDoors",
+    "SPACE06_north_west_02_RoofAndEaves",
+    "SPACE06_north_west_02_WallsAndPlinth",
+    "SPACE06_north_west_02_WindowsAndDoors",
+    "SPACE06_south_01_RoofAndEaves",
+    "SPACE06_south_01_WallsAndPlinth",
+    "SPACE06_south_01_WindowsAndDoors",
+    "SPACE06_south_02_RoofAndEaves",
+    "SPACE06_south_02_WallsAndPlinth",
+    "SPACE06_south_02_WindowsAndDoors",
+    "SPACE06_south_03_RoofAndEaves",
+    "SPACE06_south_03_WallsAndPlinth",
+    "SPACE06_south_03_WindowsAndDoors",
+    "SPACE06_south_04_RoofAndEaves",
+    "SPACE06_south_04_WallsAndPlinth",
+    "SPACE06_south_04_WindowsAndDoors",
+    "SPACE06_south_05_RoofAndEaves",
+    "SPACE06_south_05_WallsAndPlinth",
+    "SPACE06_south_05_WindowsAndDoors",
+    "SPACE06_south_06_RoofAndEaves",
+    "SPACE06_south_06_WallsAndPlinth",
+    "SPACE06_south_06_WindowsAndDoors"
+  ],
+  "new_object_scope": [
+    {
+      "object": "SPACE06_ContinuousStoneRoads",
+      "bounds": {
+        "min": [
+          -35.0,
+          -36.75,
+          0.8199999928474426
+        ],
+        "max": [
+          35.0,
+          26.350000381469727,
+          0.8550000190734863
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_FivePlantedGreenSpaces",
+      "bounds": {
+        "min": [
+          -30.808866500854492,
+          -32.09269714355469,
+          0.6939986348152161
+        ],
+        "max": [
+          30.18735122680664,
+          23.254302978515625,
+          0.8024905323982239
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_HouseGroundingAndDoorPaths",
+      "bounds": {
+        "min": [
+          -31.139999389648438,
+          -43.84000015258789,
+          0.6200000047683716
+        ],
+        "max": [
+          30.84000015258789,
+          17.940000534057617,
+          0.8550000190734863
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_IrregularLeafClusters",
+      "bounds": {
+        "min": [
+          -45.28928756713867,
+          -51.58037185668945,
+          3.6101136207580566
+        ],
+        "max": [
+          45.386497497558594,
+          35.39086151123047,
+          8.069069862365723
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_RiverEdgeReedPatches",
+      "bounds": {
+        "min": [
+          -49.22380828857422,
+          -18.297630310058594,
+          0.6995092630386353
+        ],
+        "max": [
+          48.55147933959961,
+          4.124516487121582,
+          1.5877065658569336
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_RoadFoundations",
+      "bounds": {
+        "min": [
+          -35.0,
+          -36.75,
+          -0.1599999964237213
+        ],
+        "max": [
+          35.0,
+          26.350000381469727,
+          0.824999988079071
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_TreeTrunksAndBranches",
+      "bounds": {
+        "min": [
+          -44.550418853759766,
+          -50.860565185546875,
+          0.6458947658538818
+        ],
+        "max": [
+          44.61499786376953,
+          34.731021881103516,
+          6.992320537567139
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_far_east_01_RoofAndEaves",
+      "bounds": {
+        "min": [
+          14.079999923706055,
+          -22.0,
+          5.585000038146973
+        ],
+        "max": [
+          20.719999313354492,
+          -16.0,
+          7.039999961853027
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_far_east_01_WallsAndPlinth",
+      "bounds": {
+        "min": [
+          14.220000267028809,
+          -21.780000686645508,
+          0.8050000071525574
+        ],
+        "max": [
+          20.579999923706055,
+          -16.219999313354492,
+          5.795000076293945
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_far_east_01_WindowsAndDoors",
+      "bounds": {
+        "min": [
+          14.104999542236328,
+          -21.90999984741211,
+          0.8349999785423279
+        ],
+        "max": [
+          20.69499969482422,
+          -16.09000015258789,
+          5.507500171661377
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_far_east_02_RoofAndEaves",
+      "bounds": {
+        "min": [
+          23.780000686645508,
+          -22.0,
+          6.605000019073486
+        ],
+        "max": [
+          30.219999313354492,
+          -16.0,
+          7.940000057220459
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_far_east_02_WallsAndPlinth",
+      "bounds": {
+        "min": [
+          23.920000076293945,
+          -21.780000686645508,
+          0.8050000071525574
+        ],
+        "max": [
+          30.079999923706055,
+          -16.219999313354492,
+          6.815000057220459
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_far_east_02_WindowsAndDoors",
+      "bounds": {
+        "min": [
+          23.80500030517578,
+          -21.90999984741211,
+          0.8349999785423279
+        ],
+        "max": [
+          30.19499969482422,
+          -16.014780044555664,
+          6.577499866485596
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_far_west_01_RoofAndEaves",
+      "bounds": {
+        "min": [
+          -31.219999313354492,
+          -21.799999237060547,
+          5.90500020980835
+        ],
+        "max": [
+          -24.780000686645508,
+          -16.0,
+          7.239999771118164
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_far_west_01_WallsAndPlinth",
+      "bounds": {
+        "min": [
+          -31.079999923706055,
+          -21.579999923706055,
+          0.8050000071525574
+        ],
+        "max": [
+          -24.920000076293945,
+          -16.219999313354492,
+          6.114999771118164
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_far_west_01_WindowsAndDoors",
+      "bounds": {
+        "min": [
+          -31.19499969482422,
+          -21.709999084472656,
+          0.8349999785423279
+        ],
+        "max": [
+          -24.80500030517578,
+          -16.014780044555664,
+          5.877500057220459
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_far_west_02_RoofAndEaves",
+      "bounds": {
+        "min": [
+          -23.6200008392334,
+          -21.799999237060547,
+          5.105000019073486
+        ],
+        "max": [
+          -17.3799991607666,
+          -16.0,
+          6.440000057220459
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_far_west_02_WallsAndPlinth",
+      "bounds": {
+        "min": [
+          -23.479999542236328,
+          -21.579999923706055,
+          0.8050000071525574
+        ],
+        "max": [
+          -17.520000457763672,
+          -16.219999313354492,
+          5.315000057220459
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_far_west_02_WindowsAndDoors",
+      "bounds": {
+        "min": [
+          -23.594999313354492,
+          -21.709999084472656,
+          0.8349999785423279
+        ],
+        "max": [
+          -17.405000686645508,
+          -15.99421501159668,
+          5.052499771118164
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_near_east_corner_RoofAndEaves",
+      "bounds": {
+        "min": [
+          14.180000305175781,
+          1.2999999523162842,
+          6.505000114440918
+        ],
+        "max": [
+          20.81999969482422,
+          6.699999809265137,
+          7.840000152587891
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_near_east_corner_WallsAndPlinth",
+      "bounds": {
+        "min": [
+          14.319999694824219,
+          1.5199999809265137,
+          0.8050000071525574
+        ],
+        "max": [
+          20.68000030517578,
+          6.480000019073486,
+          6.715000152587891
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_near_east_corner_WindowsAndDoors",
+      "bounds": {
+        "min": [
+          14.204999923706055,
+          1.3147802352905273,
+          0.8349999785423279
+        ],
+        "max": [
+          20.795000076293945,
+          6.610000133514404,
+          6.477499961853027
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_near_east_end_RoofAndEaves",
+      "bounds": {
+        "min": [
+          24.68000030517578,
+          1.2999999523162842,
+          5.105000019073486
+        ],
+        "max": [
+          30.920000076293945,
+          6.699999809265137,
+          6.440000057220459
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_near_east_end_WallsAndPlinth",
+      "bounds": {
+        "min": [
+          24.81999969482422,
+          1.5199999809265137,
+          0.8050000071525574
+        ],
+        "max": [
+          30.780000686645508,
+          6.480000019073486,
+          5.315000057220459
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_near_east_end_WindowsAndDoors",
+      "bounds": {
+        "min": [
+          24.704999923706055,
+          1.294215440750122,
+          0.8349999785423279
+        ],
+        "max": [
+          30.895000457763672,
+          6.610000133514404,
+          5.052499771118164
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_near_west_corner_RoofAndEaves",
+      "bounds": {
+        "min": [
+          -24.219999313354492,
+          1.2999999523162842,
+          5.684999942779541
+        ],
+        "max": [
+          -17.780000686645508,
+          6.699999809265137,
+          7.139999866485596
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_near_west_corner_WallsAndPlinth",
+      "bounds": {
+        "min": [
+          -24.079999923706055,
+          1.5199999809265137,
+          0.8050000071525574
+        ],
+        "max": [
+          -17.920000076293945,
+          6.480000019073486,
+          5.894999980926514
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_near_west_corner_WindowsAndDoors",
+      "bounds": {
+        "min": [
+          -24.19499969482422,
+          1.3899999856948853,
+          0.8349999785423279
+        ],
+        "max": [
+          -17.80500030517578,
+          6.610000133514404,
+          5.607500076293945
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_north_east_01_RoofAndEaves",
+      "bounds": {
+        "min": [
+          14.579999923706055,
+          11.399999618530273,
+          5.204999923706055
+        ],
+        "max": [
+          21.420000076293945,
+          17.799999237060547,
+          6.539999961853027
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_north_east_01_WallsAndPlinth",
+      "bounds": {
+        "min": [
+          14.720000267028809,
+          11.619999885559082,
+          0.8050000071525574
+        ],
+        "max": [
+          21.280000686645508,
+          17.579999923706055,
+          5.414999961853027
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_north_east_01_WindowsAndDoors",
+      "bounds": {
+        "min": [
+          14.604999542236328,
+          11.39421558380127,
+          0.8349999785423279
+        ],
+        "max": [
+          21.395000457763672,
+          17.709999084472656,
+          5.152500152587891
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_north_east_02_RoofAndEaves",
+      "bounds": {
+        "min": [
+          24.18000030517578,
+          11.399999618530273,
+          6.085000038146973
+        ],
+        "max": [
+          30.6200008392334,
+          17.799999237060547,
+          7.539999961853027
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_north_east_02_WallsAndPlinth",
+      "bounds": {
+        "min": [
+          24.31999969482422,
+          11.619999885559082,
+          0.8050000071525574
+        ],
+        "max": [
+          30.479999542236328,
+          17.579999923706055,
+          6.295000076293945
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_north_east_02_WindowsAndDoors",
+      "bounds": {
+        "min": [
+          24.204999923706055,
+          11.489999771118164,
+          0.8349999785423279
+        ],
+        "max": [
+          30.594999313354492,
+          17.709999084472656,
+          6.007500171661377
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_north_west_01_RoofAndEaves",
+      "bounds": {
+        "min": [
+          -31.219999313354492,
+          11.5,
+          5.485000133514404
+        ],
+        "max": [
+          -24.780000686645508,
+          18.100000381469727,
+          6.940000057220459
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_north_west_01_WallsAndPlinth",
+      "bounds": {
+        "min": [
+          -31.079999923706055,
+          11.720000267028809,
+          0.8050000071525574
+        ],
+        "max": [
+          -24.920000076293945,
+          17.8799991607666,
+          5.695000171661377
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_north_west_01_WindowsAndDoors",
+      "bounds": {
+        "min": [
+          -31.19499969482422,
+          11.59000015258789,
+          0.8349999785423279
+        ],
+        "max": [
+          -24.80500030517578,
+          18.010000228881836,
+          5.40749979019165
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_north_west_02_RoofAndEaves",
+      "bounds": {
+        "min": [
+          -22.920000076293945,
+          11.600000381469727,
+          6.605000019073486
+        ],
+        "max": [
+          -16.079999923706055,
+          18.0,
+          7.940000057220459
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_north_west_02_WallsAndPlinth",
+      "bounds": {
+        "min": [
+          -22.780000686645508,
+          11.819999694824219,
+          0.8050000071525574
+        ],
+        "max": [
+          -16.219999313354492,
+          17.780000686645508,
+          6.815000057220459
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_north_west_02_WindowsAndDoors",
+      "bounds": {
+        "min": [
+          -22.895000457763672,
+          11.61478042602539,
+          0.8349999785423279
+        ],
+        "max": [
+          -16.104999542236328,
+          17.90999984741211,
+          6.577499866485596
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_south_01_RoofAndEaves",
+      "bounds": {
+        "min": [
+          -30.6200008392334,
+          -44.0,
+          5.005000114440918
+        ],
+        "max": [
+          -24.3799991607666,
+          -37.599998474121094,
+          6.340000152587891
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_south_01_WallsAndPlinth",
+      "bounds": {
+        "min": [
+          -30.479999542236328,
+          -43.779998779296875,
+          0.8050000071525574
+        ],
+        "max": [
+          -24.520000457763672,
+          -37.81999969482422,
+          5.215000152587891
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_south_01_WindowsAndDoors",
+      "bounds": {
+        "min": [
+          -30.594999313354492,
+          -43.90999984741211,
+          0.8349999785423279
+        ],
+        "max": [
+          -24.405000686645508,
+          -37.594215393066406,
+          4.952499866485596
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_south_02_RoofAndEaves",
+      "bounds": {
+        "min": [
+          -21.31999969482422,
+          -43.79999923706055,
+          5.885000228881836
+        ],
+        "max": [
+          -14.680000305175781,
+          -37.599998474121094,
+          7.340000152587891
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_south_02_WallsAndPlinth",
+      "bounds": {
+        "min": [
+          -21.18000030517578,
+          -43.58000183105469,
+          0.8050000071525574
+        ],
+        "max": [
+          -14.819999694824219,
+          -37.81999969482422,
+          6.09499979019165
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_south_02_WindowsAndDoors",
+      "bounds": {
+        "min": [
+          -21.295000076293945,
+          -43.709999084472656,
+          0.8349999785423279
+        ],
+        "max": [
+          -14.704999923706055,
+          -37.689998626708984,
+          5.807499885559082
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_south_03_RoofAndEaves",
+      "bounds": {
+        "min": [
+          -11.020000457763672,
+          -43.79999923706055,
+          5.304999828338623
+        ],
+        "max": [
+          -4.579999923706055,
+          -37.599998474121094,
+          6.639999866485596
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_south_03_WallsAndPlinth",
+      "bounds": {
+        "min": [
+          -10.880000114440918,
+          -43.58000183105469,
+          0.8050000071525574
+        ],
+        "max": [
+          -4.71999979019165,
+          -37.81999969482422,
+          5.514999866485596
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_south_03_WindowsAndDoors",
+      "bounds": {
+        "min": [
+          -10.994999885559082,
+          -43.709999084472656,
+          0.8349999785423279
+        ],
+        "max": [
+          -4.605000019073486,
+          -37.61478042602539,
+          5.277500152587891
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_south_04_RoofAndEaves",
+      "bounds": {
+        "min": [
+          -0.41999998688697815,
+          -43.79999923706055,
+          6.40500020980835
+        ],
+        "max": [
+          6.420000076293945,
+          -37.599998474121094,
+          7.739999771118164
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_south_04_WallsAndPlinth",
+      "bounds": {
+        "min": [
+          -0.2800000011920929,
+          -43.58000183105469,
+          0.8050000071525574
+        ],
+        "max": [
+          6.28000020980835,
+          -37.81999969482422,
+          6.614999771118164
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_south_04_WindowsAndDoors",
+      "bounds": {
+        "min": [
+          -0.39500001072883606,
+          -43.709999084472656,
+          0.8349999785423279
+        ],
+        "max": [
+          6.394999980926514,
+          -37.594215393066406,
+          6.352499961853027
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_south_05_RoofAndEaves",
+      "bounds": {
+        "min": [
+          11.079999923706055,
+          -43.79999923706055,
+          5.284999847412109
+        ],
+        "max": [
+          17.719999313354492,
+          -37.599998474121094,
+          6.739999771118164
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_south_05_WallsAndPlinth",
+      "bounds": {
+        "min": [
+          11.220000267028809,
+          -43.58000183105469,
+          0.8050000071525574
+        ],
+        "max": [
+          17.579999923706055,
+          -37.81999969482422,
+          5.494999885559082
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_south_05_WindowsAndDoors",
+      "bounds": {
+        "min": [
+          11.104999542236328,
+          -43.709999084472656,
+          0.8349999785423279
+        ],
+        "max": [
+          17.69499969482422,
+          -37.689998626708984,
+          5.207499980926514
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_south_06_RoofAndEaves",
+      "bounds": {
+        "min": [
+          22.579999923706055,
+          -43.79999923706055,
+          6.304999828338623
+        ],
+        "max": [
+          29.420000076293945,
+          -37.599998474121094,
+          7.639999866485596
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_south_06_WallsAndPlinth",
+      "bounds": {
+        "min": [
+          22.719999313354492,
+          -43.58000183105469,
+          0.8050000071525574
+        ],
+        "max": [
+          29.280000686645508,
+          -37.81999969482422,
+          6.514999866485596
+        ]
+      }
+    },
+    {
+      "object": "SPACE06_south_06_WindowsAndDoors",
+      "bounds": {
+        "min": [
+          22.604999542236328,
+          -43.709999084472656,
+          0.8349999785423279
+        ],
+        "max": [
+          29.395000457763672,
+          -37.61478042602539,
+          6.277500152587891
+        ]
+      }
+    }
+  ],
+  "materials_nodes": {
+    "materials": {
+      "missing": [],
+      "altered": [],
+      "added": [
+        "SPACE06_Bark",
+        "SPACE06_BluePaint",
+        "SPACE06_DoorInset",
+        "SPACE06_Grass",
+        "SPACE06_GrassDry",
+        "SPACE06_GrassShade",
+        "SPACE06_Leaf",
+        "SPACE06_LeafLight",
+        "SPACE06_LeafShade",
+        "SPACE06_Linen",
+        "SPACE06_Reed",
+        "SPACE06_SagePaint",
+        "SPACE06_SoftOchrePlaster",
+        "SPACE06_WarmGreyPlaster",
+        "SPACE06_WindowBack",
+        "SPACE06_WindowPane",
+        "SPACE06_WindowWarm"
+      ]
+    },
+    "node_groups": {
+      "missing": [],
+      "altered": [],
+      "added": []
+    }
+  },
+  "old522_routes": {
+    "scope": "Sampled centerline floor support and 0.48m-wide body-ray checks only, not a navmesh, full-area collision certification or a playable controller.",
+    "floor_tolerance": 0.17,
+    "known_existing_paving_gaps": "Original stone joints can be about 0.12m lower than stone tops; a future walking controller needs step tolerance or a separate collision proxy.",
+    "routes": {
+      "both_banks_loop": {
+        "sample_count": 285,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      },
+      "rear_lane_loop": {
+        "sample_count": 237,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      }
+    }
+  },
+  "old33_support": {
+    "rear_cafe": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_ShopRearWallApron"
+    },
+    "rear_bookshop": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_ShopRearWallApron"
+    },
+    "rear_pottery": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_ShopRearWallApron"
+    },
+    "west_side": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_ShopWestSideInfill"
+    },
+    "east_side": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_ShopEastSideInfill"
+    },
+    "rear_boundary": {
+      "hit": true,
+      "height": 0.845206618309021,
+      "object": "EXT_B02_RearLaneBoundaryShoulder"
+    },
+    "far_house_01_front": {
+      "hit": true,
+      "height": 0.925000011920929,
+      "object": "SPACE03_Opposite_01_WindowDoorJoinery"
+    },
+    "far_house_02_front": {
+      "hit": true,
+      "height": 0.925000011920929,
+      "object": "SPACE03_Opposite_02_WindowDoorJoinery"
+    },
+    "far_house_03_front": {
+      "hit": true,
+      "height": 0.925000011920929,
+      "object": "SPACE03_Opposite_03_WindowDoorJoinery"
+    },
+    "bridge_-18_-0.55_-1.6": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_Return bridge landing.001"
+    },
+    "bridge_-18_-0.55_-1.95": {
+      "hit": true,
+      "height": 0.8882484436035156,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_-0.55_-10.4": {
+      "hit": true,
+      "height": 0.8794219493865967,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_-0.55_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_Return bridge landing"
+    },
+    "bridge_-18_0_-1.6": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_Return bridge landing.001"
+    },
+    "bridge_-18_0_-1.95": {
+      "hit": true,
+      "height": 0.8882484436035156,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_0_-10.4": {
+      "hit": true,
+      "height": 0.8794219493865967,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_0_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_-18_0.55_-1.6": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_Return bridge landing.001"
+    },
+    "bridge_-18_0.55_-1.95": {
+      "hit": true,
+      "height": 0.8882484436035156,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_0.55_-10.4": {
+      "hit": true,
+      "height": 0.8794219493865967,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_0.55_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_Return bridge landing"
+    },
+    "bridge_9.4_-0.55_-1.6": {
+      "hit": true,
+      "height": 0.8472225069999695,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_9.4_-0.55_-1.95": {
+      "hit": true,
+      "height": 0.9506124258041382,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_-0.55_-10.4": {
+      "hit": true,
+      "height": 0.9261985421180725,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_-0.55_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_9.4_0_-1.6": {
+      "hit": true,
+      "height": 0.8472225069999695,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_9.4_0_-1.95": {
+      "hit": true,
+      "height": 0.9506124258041382,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_0_-10.4": {
+      "hit": true,
+      "height": 0.9261985421180725,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_0_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_9.4_0.55_-1.6": {
+      "hit": true,
+      "height": 0.8472224473953247,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_9.4_0.55_-1.95": {
+      "hit": true,
+      "height": 0.9506124258041382,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_0.55_-10.4": {
+      "hit": true,
+      "height": 0.9261985421180725,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_0.55_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "Rounded quay coping stones"
+    }
+  },
+  "water": {
+    "passed": true,
+    "ray_count": 294,
+    "failures": [],
+    "outer_endpoint_inset_m": 0.05,
+    "scope": "Sampled finite background water surface only; no navigation or hydrodynamic claim."
+  },
+  "physical_navigation": {
+    "passed": true,
+    "counts": {
+      "route_points": 2836,
+      "floor_rays": 10630,
+      "ceiling_rays": 8508,
+      "body_rays": 42540,
+      "grid_points": 2122,
+      "grid_body_rays": 33952
+    },
+    "failures": {
+      "floor": [],
+      "body": [],
+      "headroom": [],
+      "grid": []
+    },
+    "floor_range": [
+      0.6899999976158142,
+      0.8550000786781311
+    ],
+    "legacy_visual_joint_samples": {
+      "_public_excerpt": true,
+      "_reason": "long repeated evidence array",
+      "_original_item_count": 304,
+      "_original_data_retained_locally": true,
+      "_explicit_failure_item_count": 0,
+      "_first_item": {
+        "xy": [
+          -1.0,
+          -0.79
+        ],
+        "height": 0.7300000190734863,
+        "object": "Quayside foundation 00"
+      },
+      "_last_item": {
+        "xy": [
+          20.700000000000042,
+          -0.400000000000016
+        ],
+        "height": 0.8245054483413696,
+        "object": "Individually worn wet quay paving"
+      }
+    },
+    "scope": "20cm new-circuit and SPACE05 courtyard sampling with 48cm body width and 2m height; 60cm grid of all newly authorized walkable areas plus four radius rays. Runtime height defines body base. Old decorative paving joints retain existing .17m support tolerance; new road/ramp tolerance .015m."
+  },
+  "runtime_navigation": {
+    "zones": [
+      {
+        "id": "near-bank",
+        "minX": -20.5,
+        "maxX": 12.5,
+        "minZ": -1.1,
+        "maxZ": 1.52,
+        "rise": 0
+      },
+      {
+        "id": "far-bank",
+        "minX": -20.5,
+        "maxX": 12.5,
+        "minZ": 10.85,
+        "maxZ": 15.35,
+        "rise": 0
+      },
+      {
+        "id": "original-bridge-and-landings",
+        "minX": 7.9,
+        "maxX": 10.1,
+        "minZ": 1.52,
+        "maxZ": 10.85,
+        "rise": 1.45
+      },
+      {
+        "id": "return-bridge-and-landings",
+        "minX": -18.8,
+        "maxX": -17.2,
+        "minZ": 1.5,
+        "maxZ": 10.85,
+        "rise": 0.55
+      },
+      {
+        "id": "west-rear-alley",
+        "minX": -13.6,
+        "maxX": -12,
+        "minZ": -8.8,
+        "maxZ": -1,
+        "rise": 0
+      },
+      {
+        "id": "east-rear-alley",
+        "minX": 10.7,
+        "maxX": 12.3,
+        "minZ": -8.8,
+        "maxZ": -1,
+        "rise": 0
+      },
+      {
+        "id": "rear-lane",
+        "minX": -13.6,
+        "maxX": 12.3,
+        "minZ": -8.8,
+        "maxZ": -7.2,
+        "rise": 0
+      },
+      {
+        "id": "courtyard-street-connector",
+        "minX": -7.95,
+        "maxX": -6.15,
+        "minZ": 15.15,
+        "maxZ": 16.7,
+        "rise": 0
+      },
+      {
+        "id": "courtyard-alley",
+        "minX": -7.95,
+        "maxX": -6.25,
+        "minZ": 16.3,
+        "maxZ": 23.45,
+        "rise": 0
+      },
+      {
+        "id": "courtyard-interior",
+        "minX": -11.95,
+        "maxX": -6.35,
+        "minZ": 22.8,
+        "maxZ": 25.6,
+        "rise": 0
+      },
+      {
+        "id": "near-existing-quay-extension",
+        "minX": -25.457500457763672,
+        "maxX": 24,
+        "minZ": -1.1,
+        "maxZ": 1.52,
+        "rise": 0
+      },
+      {
+        "id": "far-existing-quay-extension",
+        "minX": -25.457500457763672,
+        "maxX": 24,
+        "minZ": 10.85,
+        "maxZ": 15.35,
+        "rise": 0
+      },
+      {
+        "id": "north-backstreet-west",
+        "minX": -34.5,
+        "maxX": -13.4,
+        "minZ": -9.1,
+        "maxZ": -6.9,
+        "rise": 0
+      },
+      {
+        "id": "north-backstreet-east",
+        "minX": 12.1,
+        "maxX": 34.5,
+        "minZ": -9.1,
+        "maxZ": -6.9,
+        "rise": 0
+      },
+      {
+        "id": "north-west-cross",
+        "minX": -34.5,
+        "maxX": -31.5,
+        "minZ": -26.35,
+        "maxZ": -0.5,
+        "rise": 0
+      },
+      {
+        "id": "north-east-cross",
+        "minX": 31.5,
+        "maxX": 34.5,
+        "minZ": -26.35,
+        "maxZ": 2.3,
+        "rise": 0
+      },
+      {
+        "id": "north-top-street",
+        "minX": -34.5,
+        "maxX": 34.5,
+        "minZ": -26.35,
+        "maxZ": -24.05,
+        "rise": 0
+      },
+      {
+        "id": "far-west-cross",
+        "minX": -34.5,
+        "maxX": -31.5,
+        "minZ": 12,
+        "maxZ": 36.75,
+        "rise": 0
+      },
+      {
+        "id": "far-east-cross",
+        "minX": 31.5,
+        "maxX": 34.5,
+        "minZ": 14,
+        "maxZ": 36.75,
+        "rise": 0
+      },
+      {
+        "id": "south-street",
+        "minX": -34.5,
+        "maxX": 34.5,
+        "minZ": 34.25,
+        "maxZ": 36.75,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-west-00",
+        "minX": -35,
+        "maxX": -33.6,
+        "minZ": -1.8956746380948517,
+        "maxZ": 0.2860181152045592,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-west-01",
+        "minX": -34.4,
+        "maxX": -32.6,
+        "minZ": -1.6456993389293717,
+        "maxZ": 0.45672503988601687,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-west-02",
+        "minX": -33.4,
+        "maxX": -31.6,
+        "minZ": -1.4278955390514967,
+        "maxZ": 0.7264981847669453,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-west-03",
+        "minX": -32.4,
+        "maxX": -30.6,
+        "minZ": -1.2505123408426626,
+        "maxZ": 0.9706991122654182,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-west-04",
+        "minX": -31.4,
+        "maxX": -29.6,
+        "minZ": -1.121798846684308,
+        "maxZ": 1.1810787200000006,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-west-05",
+        "minX": -30.4,
+        "maxX": -28.6,
+        "minZ": -1.0500041589578673,
+        "maxZ": 1.3493879055892528,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-west-06",
+        "minX": -29.4,
+        "maxX": -27.6,
+        "minZ": -1.0376800000000004,
+        "maxZ": 1.4673775666517408,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-west-07",
+        "minX": -28.4,
+        "maxX": -26.6,
+        "minZ": -1.0376800000000004,
+        "maxZ": 1.5267986008060241,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-west-08",
+        "minX": -27.4,
+        "maxX": -25.6,
+        "minZ": -1.0376800000000004,
+        "maxZ": 1.5323199999999997,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-west-09",
+        "minX": -26.4,
+        "maxX": -25.457500457763672,
+        "minZ": -1.0376800000000004,
+        "maxZ": 1.5323199999999997,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-00",
+        "minX": 24,
+        "maxX": 25.4,
+        "minZ": -0.9787854898216736,
+        "maxZ": 1.5323199999999997,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-01",
+        "minX": 24.6,
+        "maxX": 26.4,
+        "minZ": -0.871363105185185,
+        "maxZ": 1.543475401481482,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-02",
+        "minX": 25.6,
+        "maxX": 27.4,
+        "minZ": -0.7174598810425244,
+        "maxZ": 1.6086424774759938,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-03",
+        "minX": 26.6,
+        "maxX": 28.4,
+        "minZ": -0.5241183688340193,
+        "maxZ": 1.7259244341289437,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-04",
+        "minX": 27.6,
+        "maxX": 29.4,
+        "minZ": -0.2983811200000005,
+        "maxZ": 1.88827872,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-05",
+        "minX": 28.6,
+        "maxX": 30.4,
+        "minZ": -0.04729068598079635,
+        "maxZ": 2.088662783648834,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-06",
+        "minX": 29.6,
+        "maxX": 31.4,
+        "minZ": 0.222110381783264,
+        "maxZ": 2.3200340736351164,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-07",
+        "minX": 30.6,
+        "maxX": 32.4,
+        "minZ": 0.5027795318518514,
+        "maxZ": 2.5753500385185193,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-08",
+        "minX": 31.6,
+        "maxX": 33.4,
+        "minZ": 0.7876742127846358,
+        "maxZ": 2.847568126858711,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-09",
+        "minX": 32.6,
+        "maxX": 34.4,
+        "minZ": 1.0697518731412887,
+        "maxZ": 3.129645787215363,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-10",
+        "minX": 33.6,
+        "maxX": 35,
+        "minZ": 1.2347165980795611,
+        "maxZ": 3.4145404681481475,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-west-00",
+        "minX": -35,
+        "maxX": -33.6,
+        "minZ": 10.057243668569102,
+        "maxZ": 12.770891308772644,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-west-01",
+        "minX": -34.4,
+        "maxX": -32.6,
+        "minZ": 10.273772673576227,
+        "maxZ": 12.918757920683898,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-west-02",
+        "minX": -33.4,
+        "maxX": -31.6,
+        "minZ": 10.462434674308977,
+        "maxZ": 13.15243585139833,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-west-03",
+        "minX": -32.4,
+        "maxX": -30.6,
+        "minZ": 10.616084285055974,
+        "maxZ": 13.363963086407491,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-west-04",
+        "minX": -31.4,
+        "maxX": -29.6,
+        "minZ": 10.727576120105843,
+        "maxZ": 13.546194239999998,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-west-05",
+        "minX": -30.4,
+        "maxX": -28.6,
+        "minZ": 10.789764793747201,
+        "maxZ": 13.69198392646448,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-west-06",
+        "minX": -29.4,
+        "maxX": -27.6,
+        "minZ": 10.80044,
+        "maxZ": 13.794186760089557,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-west-07",
+        "minX": -28.4,
+        "maxX": -26.6,
+        "minZ": 10.80044,
+        "maxZ": 13.84565735516385,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-west-08",
+        "minX": -27.4,
+        "maxX": -25.6,
+        "minZ": 10.80044,
+        "maxZ": 13.850439999999999,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-west-09",
+        "minX": -26.4,
+        "maxX": -25.457500457763672,
+        "minZ": 10.80044,
+        "maxZ": 13.850439999999999,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-00",
+        "minX": 24,
+        "maxX": 25.4,
+        "minZ": 10.873992922688615,
+        "maxZ": 13.850439999999999,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-01",
+        "minX": 24.6,
+        "maxX": 26.4,
+        "minZ": 11.008151952592593,
+        "maxZ": 13.864371899259258,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-02",
+        "minX": 25.6,
+        "maxX": 27.4,
+        "minZ": 11.200360562743484,
+        "maxZ": 13.945758583484224,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-03",
+        "minX": 26.6,
+        "maxX": 28.4,
+        "minZ": 11.441823362194787,
+        "maxZ": 14.092231160713304,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-04",
+        "minX": 27.6,
+        "maxX": 29.4,
+        "minZ": 11.72374496,
+        "maxZ": 14.29499424,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-05",
+        "minX": 28.6,
+        "maxX": 30.4,
+        "minZ": 12.037329965212619,
+        "maxZ": 14.545252430397806,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-06",
+        "minX": 29.6,
+        "maxX": 31.4,
+        "minZ": 12.373782986886146,
+        "maxZ": 14.834210340960219,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-07",
+        "minX": 30.6,
+        "maxX": 32.4,
+        "minZ": 12.724308634074074,
+        "maxZ": 15.15307258074074,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-08",
+        "minX": 31.6,
+        "maxX": 33.4,
+        "minZ": 13.080111515829904,
+        "maxZ": 15.493043758792865,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-09",
+        "minX": 32.6,
+        "maxX": 34.4,
+        "minZ": 13.432396241207133,
+        "maxZ": 15.845328484170096,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-10",
+        "minX": 33.6,
+        "maxX": 35,
+        "minZ": 13.638419478737998,
+        "maxZ": 16.201131365925928,
+        "rise": 0
+      }
+    ],
+    "obstacles": [
+      {
+        "id": "near-lamp-west",
+        "type": "circle",
+        "x": -9.2,
+        "z": 1.2,
+        "radius": 0.24
+      },
+      {
+        "id": "near-lamp-east",
+        "type": "circle",
+        "x": 7.8,
+        "z": 1.2,
+        "radius": 0.24
+      },
+      {
+        "id": "far-lamp",
+        "type": "circle",
+        "x": 8.5,
+        "z": 11.756,
+        "radius": 0.28
+      },
+      {
+        "id": "tree-trunk-and-roots",
+        "type": "circle",
+        "x": 7.997,
+        "z": 11.715,
+        "radius": 0.64
+      },
+      {
+        "id": "planter-west",
+        "type": "circle",
+        "x": -11.4,
+        "z": -0.752,
+        "radius": 0.31
+      },
+      {
+        "id": "planter-cafe-gap",
+        "type": "circle",
+        "x": -4,
+        "z": -0.655,
+        "radius": 0.36
+      },
+      {
+        "id": "planter-bookshop-gap",
+        "type": "circle",
+        "x": 2,
+        "z": -0.683,
+        "radius": 0.31
+      },
+      {
+        "id": "planter-east",
+        "type": "circle",
+        "x": 8.05,
+        "z": -0.634,
+        "radius": 0.36
+      },
+      {
+        "id": "planter-far-bank",
+        "type": "circle",
+        "x": 7.2,
+        "z": 11.756,
+        "radius": 0.34
+      },
+      {
+        "id": "cafe-table-and-chairs",
+        "minX": -9.165,
+        "maxX": -6.835,
+        "minZ": -0.454,
+        "maxZ": 0.225,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "bicycle",
+        "minX": -11.12,
+        "maxX": -8.88,
+        "minZ": -0.604,
+        "maxZ": -0.284,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "old-gate-post-01",
+        "type": "circle",
+        "x": -21,
+        "z": 1.45,
+        "radius": 0.12
+      },
+      {
+        "id": "old-gate-post-02",
+        "type": "circle",
+        "x": -21,
+        "z": -0.45,
+        "radius": 0.12
+      },
+      {
+        "id": "old-gate-post-03",
+        "type": "circle",
+        "x": -21,
+        "z": 14.55,
+        "radius": 0.12
+      },
+      {
+        "id": "old-gate-post-04",
+        "type": "circle",
+        "x": -21,
+        "z": 10.75,
+        "radius": 0.12
+      },
+      {
+        "id": "old-gate-post-05",
+        "type": "circle",
+        "x": 13,
+        "z": 1.45,
+        "radius": 0.12
+      },
+      {
+        "id": "old-gate-post-06",
+        "type": "circle",
+        "x": 13,
+        "z": -0.45,
+        "radius": 0.12
+      },
+      {
+        "id": "old-gate-post-07",
+        "type": "circle",
+        "x": 13,
+        "z": 14.55,
+        "radius": 0.12
+      },
+      {
+        "id": "old-gate-post-08",
+        "type": "circle",
+        "x": 13,
+        "z": 10.75,
+        "radius": 0.12
+      },
+      {
+        "id": "space06-tree-01",
+        "type": "circle",
+        "x": -28,
+        "z": -4.3,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-02",
+        "type": "circle",
+        "x": -28,
+        "z": -21.1,
+        "radius": 0.24
+      },
+      {
+        "id": "space06-tree-03",
+        "type": "circle",
+        "x": -22.4,
+        "z": -21.2,
+        "radius": 0.24
+      },
+      {
+        "id": "space06-tree-04",
+        "type": "circle",
+        "x": 17.8,
+        "z": -21.2,
+        "radius": 0.24
+      },
+      {
+        "id": "space06-tree-05",
+        "type": "circle",
+        "x": 26.8,
+        "z": -21.1,
+        "radius": 0.24
+      },
+      {
+        "id": "space06-tree-06",
+        "type": "circle",
+        "x": -27.1,
+        "z": 26,
+        "radius": 0.24
+      },
+      {
+        "id": "space06-tree-07",
+        "type": "circle",
+        "x": -26.1,
+        "z": 30,
+        "radius": 0.24
+      },
+      {
+        "id": "space06-tree-08",
+        "type": "circle",
+        "x": 26.2,
+        "z": 26,
+        "radius": 0.24
+      },
+      {
+        "id": "space06-tree-09",
+        "type": "circle",
+        "x": 26.9,
+        "z": 30.1,
+        "radius": 0.24
+      },
+      {
+        "id": "space06-tree-10",
+        "type": "circle",
+        "x": -41,
+        "z": -5,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-11",
+        "type": "circle",
+        "x": -43,
+        "z": 19,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-12",
+        "type": "circle",
+        "x": -41,
+        "z": 37,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-13",
+        "type": "circle",
+        "x": 41,
+        "z": -4,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-14",
+        "type": "circle",
+        "x": 43,
+        "z": 23,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-15",
+        "type": "circle",
+        "x": 41,
+        "z": 40,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-16",
+        "type": "circle",
+        "x": -29,
+        "z": -33,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-17",
+        "type": "circle",
+        "x": -12,
+        "z": -33,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-18",
+        "type": "circle",
+        "x": 13,
+        "z": -33,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-19",
+        "type": "circle",
+        "x": 30,
+        "z": -33,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-20",
+        "type": "circle",
+        "x": -28,
+        "z": 49,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-21",
+        "type": "circle",
+        "x": -12,
+        "z": 49,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-22",
+        "type": "circle",
+        "x": 12,
+        "z": 49,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-23",
+        "type": "circle",
+        "x": 29,
+        "z": 49,
+        "radius": 0.28
+      }
+    ],
+    "spawns": {
+      "neighbourhoodStart": {
+        "x": -1,
+        "y": 0.85,
+        "z": 0.55
+      },
+      "northBackstreet": {
+        "x": -12.8,
+        "y": 0.85,
+        "z": -8
+      },
+      "southStreet": {
+        "x": 0,
+        "y": 0.855,
+        "z": 35.5
+      },
+      "original": {
+        "x": -12.8,
+        "y": 0.85,
+        "z": 0.55
+      },
+      "courtyardEntrance": {
+        "x": -7.05,
+        "y": 0.85,
+        "z": 12.65
+      },
+      "courtyardCenter": {
+        "x": -9.35,
+        "y": 0.855,
+        "z": 24.15
+      }
+    },
+    "oldHeightDifferences": []
+  },
+  "runtime_routes": {
+    "both_banks_loop": [
+      [
+        -18,
+        -0.55
+      ],
+      [
+        9.4,
+        -0.55
+      ],
+      [
+        9.4,
+        -12.65
+      ],
+      [
+        -18,
+        -12.65
+      ],
+      [
+        -18,
+        -0.55
+      ]
+    ],
+    "rear_lane_loop": [
+      [
+        -12.8,
+        -0.55
+      ],
+      [
+        -12.8,
+        8
+      ],
+      [
+        11.5,
+        8
+      ],
+      [
+        11.5,
+        -0.55
+      ],
+      [
+        -12.8,
+        -0.55
+      ]
+    ],
+    "north_ring": [
+      [
+        -1,
+        -0.55
+      ],
+      [
+        23,
+        -0.55
+      ],
+      [
+        24,
+        -0.24731999999999965
+      ],
+      [
+        25,
+        -0.2778377229080936
+      ],
+      [
+        26,
+        -0.36469585733882004
+      ],
+      [
+        27,
+        -0.5008518518518515
+      ],
+      [
+        28,
+        -0.679263155006859
+      ],
+      [
+        29,
+        -0.8928872153635112
+      ],
+      [
+        30,
+        -1.1346814814814812
+      ],
+      [
+        31,
+        -1.3976034019204386
+      ],
+      [
+        32,
+        -1.6746104252400544
+      ],
+      [
+        33,
+        -1.9586599999999994
+      ],
+      [
+        33,
+        25.2
+      ],
+      [
+        -33,
+        25.2
+      ],
+      [
+        -33,
+        0.45729082841441093
+      ],
+      [
+        -32,
+        0.22562853653572168
+      ],
+      [
+        -31,
+        0.031087205373499516
+      ],
+      [
+        -30,
+        -0.11808406269081961
+      ],
+      [
+        -29,
+        -0.21363616527579887
+      ],
+      [
+        -28,
+        -0.24731999999999965
+      ],
+      [
+        -27,
+        -0.24731999999999965
+      ],
+      [
+        -26,
+        -0.24731999999999965
+      ],
+      [
+        -25.457500457763672,
+        -0.24731999999999965
+      ],
+      [
+        -24,
+        -0.55
+      ],
+      [
+        -1,
+        -0.55
+      ]
+    ],
+    "south_ring": [
+      [
+        -1,
+        -12.8
+      ],
+      [
+        -24,
+        -12.8
+      ],
+      [
+        -25.457500457763672,
+        -12.32544
+      ],
+      [
+        -26,
+        -12.32544
+      ],
+      [
+        -27,
+        -12.32544
+      ],
+      [
+        -28,
+        -12.32544
+      ],
+      [
+        -29,
+        -12.296263008345207
+      ],
+      [
+        -30,
+        -12.213495623855078
+      ],
+      [
+        -31,
+        -12.084283232240992
+      ],
+      [
+        -32,
+        -11.915771219214328
+      ],
+      [
+        -33,
+        -11.715104970486465
+      ],
+      [
+        -33,
+        -35.5
+      ],
+      [
+        33,
+        -35.5
+      ],
+      [
+        33,
+        -14.462720000000001
+      ],
+      [
+        32,
+        -14.107972565157752
+      ],
+      [
+        31,
+        -13.762020521262002
+      ],
+      [
+        30,
+        -13.433659259259258
+      ],
+      [
+        29,
+        -13.131684170096023
+      ],
+      [
+        28,
+        -12.864890644718791
+      ],
+      [
+        27,
+        -12.642074074074074
+      ],
+      [
+        26,
+        -12.472029849108367
+      ],
+      [
+        25,
+        -12.363553360768176
+      ],
+      [
+        24,
+        -12.32544
+      ],
+      [
+        23,
+        -12.8
+      ],
+      [
+        -1,
+        -12.8
+      ]
+    ],
+    "north_backstreet": [
+      [
+        -12.8,
+        8
+      ],
+      [
+        -33,
+        8
+      ],
+      [
+        -33,
+        25.2
+      ],
+      [
+        33,
+        25.2
+      ],
+      [
+        33,
+        8
+      ],
+      [
+        11.5,
+        8
+      ],
+      [
+        -12.8,
+        8
+      ]
+    ],
+    "courtyard_return": [
+      [
+        -7.05,
+        -12.65
+      ],
+      [
+        -7.05,
+        -15.05
+      ],
+      [
+        -7.05,
+        -17.2
+      ],
+      [
+        -7.05,
+        -21.75
+      ],
+      [
+        -7.05,
+        -23.35
+      ],
+      [
+        -10.95,
+        -23.35
+      ],
+      [
+        -10.95,
+        -24.95
+      ],
+      [
+        -7.05,
+        -24.95
+      ],
+      [
+        -7.05,
+        -23.35
+      ],
+      [
+        -7.05,
+        -12.65
+      ]
+    ]
+  },
+  "preservation": {
+    "count": 148,
+    "before": [],
+    "after": []
+  },
+  "glb": {
+    "bytes": 15387220,
+    "sha256": "1bea9b23f78b0e51874033ae6c80ade97ff0d0b46a003915d2663acc4aa07477",
+    "meshes": 51,
+    "primitives": 51,
+    "vertices": 387251,
+    "triangles": 240850,
+    "binary_bytes": 15336612,
+    "net_triangle_increase": 63590
+  },
+  "seconds": 85.554,
+  "limitations": [
+    "Read-only: no saving or rendering. Runtime navigation proxies are sampled against independent real Blender meshes, not a continuous physical proof.",
+    "Old source and versions are hash protected. Only explicit peripheral terrain, two curb crossings and gate-bar visibility changes are allowed in the new copy.",
+    "House interiors and landscape gardens remain non-walkable; developed streets are finite."
+  ]
+}

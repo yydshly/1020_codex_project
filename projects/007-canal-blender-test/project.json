@@ -1,0 +1,13 @@
+{
+  "id": 7,
+  "slug": "canal-blender-test",
+  "name": "图生 3D 探索 · 从参考图到可漫游街区",
+  "summary": "验证图生 3D：设计三档图片入口，选最简单的预算版，用 Codex 理解图片，通过 Python/bpy 在 Blender 重建可编辑的几何、材质与灯光，再导出 GLB 接入网页漫游。探索 V1–V5 的构图对齐与湿面反光、镜头外补景、猫的走跑和 SPACE01–11 街区扩展，并保留源帖与我们的真实效果。结论是图生 3D 原型路线成立，但高保真还原与真实体感仍需资产、空间设计和反复验收；可用于快速搭景与自动化编辑，持续精修的投入回报会下降。未实跑 DSH/MCP，也未做模型公平比较。",
+  "repo": "https://github.com/yydshly/1020_codex_project",
+  "repo_role": "本实验所在仓库；源帖与 DSH、MCP 插件资料在研究页分别列出，不代表均已实测",
+  "status": "已归档",
+  "cover": "assets/control-guide-original.png",
+  "cover_alt": "专门生成的《AI 控制 Blender：效果、原理与验证》完整概述图：源帖场景示意、DeepSeek/DSH 与 Codex 脚本/MCP 两条控制路线、验证场景、公平比较方法和研究意义。作为引导图保留原件；本次实际图生 3D 过程、三档入口与后续结论见研究网页，不把图中的设想当作全部已实测。",
+  "web": true,
+  "research_date": "2026-10-25"
+}

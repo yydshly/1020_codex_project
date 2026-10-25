@@ -1,0 +1,35 @@
+{
+  "version": "roam-refine-01",
+  "local_date": "2026-10-24",
+  "url": "http://127.0.0.1:8062/roam-refine.html?v=1",
+  "previous_url": "http://127.0.0.1:8062/roam.html?v=2",
+  "scope": "新增独立预览，精修现有店前约10米街道；不扩场景、不覆盖旧文件、不发布。",
+  "scene_asset": "roam-02.glb",
+  "changes": [
+    "局部石板颜色、法线和粗糙度表面，细接缝、湿区、墙木细节及近处接触效果。",
+    "连续猫身形和关节弯折腿部，缩小头身比例，圆弧尾，四拍支撑足锁定及错开收脚。",
+    "0.72米每秒普通步行，Shift为0.48米每秒慢走；加减速与碰撞后速度处理。",
+    "默认镜头离地约1.26米，沿街观察，增加猫身体位置的遮挡检查。"
+  ],
+  "verification": {
+    "controller_tests_passed": 7,
+    "real_chromium_checks_passed": 19,
+    "browser_shader_errors": 0,
+    "old_files_hash_verified_unchanged": 257,
+    "actual_gpu": "NVIDIA RTX 4070 Laptop / ANGLE Direct3D11",
+    "cycles_renders": 0,
+    "desktop_views": [
+      "roam-refine-01-desktop-a.png",
+      "roam-refine-01-desktop-b.png"
+    ],
+    "mobile_qa": "roam-refine-01-mobile-qa.png",
+    "live_canvas_recording": "roam-refine-01-walk.webm"
+  },
+  "visual_assessment": "相较旧版，沿街镜头、连贯猫形和近处材质改善可辨；仍有程序化模型和规则石板观感，未达到参考图写实程度。",
+  "limitations": [
+    "猫为轻量程序角色，没有真实毛发或完整动物动力学；急转向仍可能触及腿部伸长限位。",
+    "本轮未交付快跑。较高速度的急启停仍有可见限位滑动，因此只开放已验证的步行与慢走。",
+    "地面法线细节和柔软接触投影为近似，未增加真实凹凸碰撞或完整间接光烘焙。",
+    "建筑、窗内物件、植物和样板段外场景沿用简化模型。"
+  ]
+}

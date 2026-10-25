@@ -1,0 +1,63 @@
+{
+  "localPreview": "http://127.0.0.1:8062/scene-space-07.html",
+  "published": false,
+  "sourceModel": "web/models/space-06.glb",
+  "scope": "Distributed residential and street lighting throughout the existing finite neighbourhood. No spatial expansion or new disk model.",
+  "finalLighting": {
+    "litWindows": 46,
+    "newWindowSheets": 39,
+    "reusedWarmWindows": 7,
+    "everyNewHouseHasFrontAndRearWarmWindows": true,
+    "fixedFixtures": 29,
+    "newRealPointLights": 6,
+    "newShadowMaps": 0,
+    "newMeshBatches": 5,
+    "newTriangles": 3686,
+    "sourceGeometryTriangles": 240850,
+    "newTextures": 0
+  },
+  "independentAudit": {
+    "report": "artifacts/scene-space-07/runtime-validation-final.json",
+    "checksPassed": 35,
+    "oldFilesProtected": 157,
+    "changedOldFiles": 0,
+    "originalModelBuffersTransformsAndNavigation": "unchanged",
+    "shaderInheritanceAndResourceRestoration": "passed"
+  },
+  "nodeValidation": {
+    "windowTestsPassed": 2,
+    "sourceWindowPaneLightBackDepthRays": 39,
+    "lampModuleUpdateFrames": 600,
+    "navigationRegressionSubtestsPassed": 8,
+    "pageAndEnvironmentSyntaxChecks": "passed"
+  },
+  "browserValidation": {
+    "finalWebGLSceneVisible": true,
+    "overviewAndNorthBackstreet": "checked on final 29-fixture and 46-window revision",
+    "southResidentialStreetAndCourtyard": "checked visually",
+    "sameCameraOriginalLightingComparison": "checked; both stages reuse the same SPACE06 geometry, sky, exposure and navigation",
+    "nightRoaming": "Started south_ring tour, then held W for five seconds to take over walking; HUD changed to west-side street and walking mode, with local lights visible during travel.",
+    "consoleErrorsAndWarnings": [],
+    "fullBrowserCircuitCompletion": "not claimed; complete route coverage is checked through unchanged navigation regression tests",
+    "startup": "Initial material shader compilation caused a temporary browser inspection timeout; final scene loaded and subsequent controls and captures succeeded."
+  },
+  "visualCorrections": [
+    "Added rear window light to every new house so the back of a residential row also reads as occupied.",
+    "Removed the overly tight default light-field ground rectangle, retaining feathered courtyard wall bounds.",
+    "Added lamps to the north perimeter centre and original bookshop rear-lane gaps.",
+    "Extended roadside post feet into existing soil while preserving pedestrian clearance."
+  ],
+  "screenshots": [
+    "overview-final.png",
+    "north-final.png",
+    "south-final.png",
+    "night-walk.png",
+    "courtyard-first.png",
+    "courtyard-original-lighting.png"
+  ],
+  "limitations": [
+    "Lighting is distributed across all developed zones, with natural dark intervals; this is not uniform illumination of every metre of road or all distant landscape.",
+    "The broad light field approximates local diffuse illumination. Six short-range unshadowed point lights add nearby response; no shadowed global-illumination solver or new interior rooms were added.",
+    "The original dusk sky, source bookshop lighting, scene geometry and all prior versions remain intact."
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "checked_utc": "2026-10-24T06:48:41.573844+00:00",
+  "reviewed_images": [
+    "cat-v7-head-final-left.png",
+    "cat-v7-head-final-right.png",
+    "cat-v7-head-final-side-closed.png",
+    "cat-v7-head-final-v6-side.png",
+    "cat-v7-head-final-side-walking.png",
+    "cat-v7-head-final-motion-walk.png",
+    "cat-v7-head-final-motion-glance.png"
+  ],
+  "observations": [
+    "Same-camera V6 side view still shows much of the front face; V7 side view shows a profile with the face pointing along body forward.",
+    "Left/right head controls retain coherent eyes, muzzle and ears in the inspected views.",
+    "Closed eyelids follow the corrected skull; no obvious green leak or detached patch in the inspected side-close view.",
+    "Walking side view and sampled real motion frames keep the head facing the route, without the persistent original side-look."
+  ],
+  "limitations": [
+    "White neck fur and lower cheek still have stretched, strip-like surface detail.",
+    "Closed eyelids remain smooth and patch-like rather than photoreal.",
+    "These are sampled frames and a bounded motion check, not a claim of fully natural anatomy or general performance."
+  ],
+  "roam_distance_m": 4.4407590420033625,
+  "roam_blink_count": 2,
+  "gpu_closed": true
+}

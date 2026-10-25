@@ -1,0 +1,710 @@
+{
+  "checkedAt": "2026-10-24T09:39:20.805842+00:00",
+  "passed": true,
+  "checks": {
+    "touch_pad_visible": true,
+    "touch_run_toggle_and_direction": true,
+    "touch_release_stops": true,
+    "stops_walkable": true,
+    "mobile_no_overflow": true,
+    "runtime_frozen": true,
+    "no_browser_errors": true
+  },
+  "errors": [],
+  "running": {
+    "version": "shop-study-07",
+    "environment": {
+      "geometryBefore": 159330,
+      "geometryAfter": 159330,
+      "selectedTriangles": {
+        "stone": 24,
+        "stone_light": 74,
+        "plaster_alt": 282,
+        "wood": 554,
+        "wood_light": 156,
+        "glass": 96,
+        "teal": 840
+      },
+      "staticReflectionProbes": 1,
+      "newProps": 0,
+      "ground": {
+        "minX": -7,
+        "maxX": 3,
+        "minZ": -1.06,
+        "maxZ": 1.55,
+        "height": 0.853,
+        "textureCoverageMetres": 2,
+        "source": "https://polyhaven.com/a/cobblestone_floor_05",
+        "license": "CC0-1.0",
+        "textureResolution": 1024,
+        "mapCount": 4,
+        "copingMaterialCount": 2,
+        "copingBounds": {
+          "minX": -7,
+          "maxX": 3,
+          "minZ": 1.48,
+          "maxZ": 2.18,
+          "minY": 0.12,
+          "maxY": 1.02
+        },
+        "addedMeshes": 0,
+        "addedTriangles": 0,
+        "additionalReflectionPasses": 0,
+        "geometryAndNavigationUnchanged": true,
+        "normalMapConvention": "OpenGL",
+        "wetness": "World-space local rain film, no displacement or continuous reflection pass"
+      },
+      "sourceGeometryUnchanged": true
+    },
+    "rendererInfo": {
+      "render": {
+        "frame": 969,
+        "calls": 60,
+        "triangles": 290228,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 52,
+        "textures": 29
+      }
+    },
+    "speed": 0.8999999999992768,
+    "runMode": true,
+    "runRequested": true,
+    "velocity": {
+      "x": 0.8999999999992753,
+      "z": -5.593181274087324e-08
+    },
+    "camera": {
+      "position": {
+        "x": -4.43504913718372,
+        "y": 2.090719084726678,
+        "z": 0.5499999151731343
+      },
+      "target": {
+        "x": -0.8371647100027583,
+        "y": 1.27,
+        "z": 0.5499996915773584
+      },
+      "fov": 62
+    },
+    "refinedStreet": {
+      "minX": -7,
+      "maxX": 3
+    },
+    "cat": {
+      "version": "cat-form-10",
+      "root": [
+        -1.3871647100027573,
+        0.85,
+        0.5499997257579107
+      ],
+      "gait": {
+        "speed": 0.8999999999992901,
+        "phase": 0.6061431342142211,
+        "stanceFeet": 2,
+        "maxReachError": 0,
+        "stride": 0.33999999999999997,
+        "duty": 0.4,
+        "mode": "trot",
+        "runBlend": 1,
+        "bodyBob": -0.002288654375527495,
+        "cycleSeconds": 0.37777777777807575,
+        "angularSpeed": 0
+      },
+      "limbSkin": {
+        "changedVertices": 4054,
+        "lowPawVerticesPreserved": 2896,
+        "protectedVerticesPreserved": 16753,
+        "maxWeightSumError": 6.705522537231445e-08,
+        "addedTriangles": 0,
+        "addedVertices": 0,
+        "positionNormalUvIndexUnchanged": true,
+        "kneeRedistributedVertices": 7798
+      },
+      "hockRig": {
+        "joints": {
+          "hind_left": {
+            "previous": [
+              -0.05409999564290047,
+              0.04300000829116578,
+              -0.1437000304289761
+            ],
+            "current": [
+              -0.05409999564290047,
+              0.085,
+              -0.1587
+            ]
+          },
+          "hind_right": {
+            "previous": [
+              0.05199999362230301,
+              0.043000010152137794,
+              -0.17380003995700824
+            ],
+            "current": [
+              0.05199999362230301,
+              0.085,
+              -0.1888
+            ]
+          }
+        },
+        "changedVertices": 2458,
+        "maxWeightSumError": 4.470348358154297e-08,
+        "addedBones": 0,
+        "addedVertices": 0,
+        "addedTriangles": 0,
+        "positionsUnchanged": true
+      },
+      "bones": 21,
+      "feet": [
+        {
+          "name": "fore_left",
+          "stance": false,
+          "phase": 0.6061431342142211,
+          "world": [
+            -1.3179101725037825,
+            0.8783564658780542,
+            0.5926997214539865
+          ],
+          "renderedWorld": [
+            -1.3179101797392272,
+            0.8783564914670017,
+            0.5926997211490375
+          ],
+          "groundClearance": 0.028356465878054182,
+          "reachError": 0
+        },
+        {
+          "name": "fore_right",
+          "stance": true,
+          "phase": 0.10614313421422095,
+          "world": [
+            -1.2202534238695564,
+            0.85,
+            0.5077997153849652
+          ],
+          "renderedWorld": [
+            -1.220253446629063,
+            0.8500000151361163,
+            0.5077997213144622
+          ],
+          "groundClearance": 0,
+          "reachError": 0
+        },
+        {
+          "name": "hind_left",
+          "stance": true,
+          "phase": 0.10614313421422095,
+          "world": [
+            -1.4752533548234812,
+            0.85,
+            0.6040997312323081
+          ],
+          "renderedWorld": [
+            -1.4752533529713094,
+            0.8500000024582689,
+            0.6040997312336263
+          ],
+          "groundClearance": 0,
+          "reachError": 0
+        },
+        {
+          "name": "hind_right",
+          "stance": false,
+          "phase": 0.606143134214221,
+          "world": [
+            -1.572910127476807,
+            0.8783564658780542,
+            0.49799973730133046
+          ],
+          "renderedWorld": [
+            -1.5729101222347177,
+            0.8783564663169792,
+            0.4979997373039802
+          ],
+          "groundClearance": 0.028356465878054182,
+          "reachError": 0
+        }
+      ],
+      "blink": {
+        "mode": "auto",
+        "amount": 0,
+        "left": 0,
+        "right": 0,
+        "count": 1,
+        "active": false,
+        "duration": 0.28,
+        "kind": "separate-skinned-eyelids",
+        "baseGeometryUnchanged": false,
+        "baseMorphCount": 0,
+        "addedTriangles": 2976,
+        "addedVertices": 1672,
+        "independentGaze": false,
+        "mouthControl": false,
+        "basePositionUnchanged": true,
+        "headSkinReweighted": true
+      },
+      "attention": {
+        "version": "head-attention-07",
+        "enabled": true,
+        "mode": "natural",
+        "appliedDegrees": {
+          "yaw": -0.5492559404292994,
+          "pitch": 0.12014973696890933
+        },
+        "requestedDegrees": {
+          "yaw": 0,
+          "pitch": 0
+        },
+        "yawLimit": 2,
+        "elapsed": 7.679600000000046,
+        "bindYawCorrection": -55.99514261333094,
+        "eyeControl": false,
+        "mouthControl": false
+      },
+      "headCorrection": {
+        "sourceFaceYawDegrees": 55.99514261333094,
+        "correctionDegrees": -55.99514261333094,
+        "skin": {
+          "changedVertices": 4349,
+          "rigidFaceVertices": 7011,
+          "protectedVertices": 26407,
+          "maxWeightSumError": 6.705522537231445e-08,
+          "positionNormalUvIndexUnchanged": true,
+          "addedVertices": 0,
+          "addedTriangles": 0
+        }
+      },
+      "variant": "current",
+      "continuousSkin": {
+        "method": "Continuous rest-position compact Gaussian field",
+        "sigma": 0.008,
+        "radius": 0.024,
+        "changedVertices": 17183,
+        "protectedVertices": 22895,
+        "maxWeightSumError": 4.470348358154297e-08,
+        "maxDroppedWeight": 3.715389395590551e-05,
+        "preparationMs": 287,
+        "vertices": 40078,
+        "triangles": 49000
+      },
+      "thighSkin": {
+        "enabled": false
+      },
+      "hindRestore": {
+        "enabled": false
+      },
+      "volumeStats": null
+    },
+    "loaded": true,
+    "paused": false,
+    "mode": "follow",
+    "tour": false,
+    "tourIndex": 0,
+    "distance": 4.412835289997251,
+    "place": "店前石街",
+    "frames": 451,
+    "asset": "roam-02.glb",
+    "position": {
+      "x": -1.3871647100027573,
+      "y": 0.85,
+      "z": 0.5499997257579107
+    },
+    "walkable": true,
+    "visited": [
+      "店前石街"
+    ]
+  },
+  "stopped": {
+    "version": "shop-study-07",
+    "environment": {
+      "geometryBefore": 159330,
+      "geometryAfter": 159330,
+      "selectedTriangles": {
+        "stone": 24,
+        "stone_light": 74,
+        "plaster_alt": 282,
+        "wood": 554,
+        "wood_light": 156,
+        "glass": 96,
+        "teal": 840
+      },
+      "staticReflectionProbes": 1,
+      "newProps": 0,
+      "ground": {
+        "minX": -7,
+        "maxX": 3,
+        "minZ": -1.06,
+        "maxZ": 1.55,
+        "height": 0.853,
+        "textureCoverageMetres": 2,
+        "source": "https://polyhaven.com/a/cobblestone_floor_05",
+        "license": "CC0-1.0",
+        "textureResolution": 1024,
+        "mapCount": 4,
+        "copingMaterialCount": 2,
+        "copingBounds": {
+          "minX": -7,
+          "maxX": 3,
+          "minZ": 1.48,
+          "maxZ": 2.18,
+          "minY": 0.12,
+          "maxY": 1.02
+        },
+        "addedMeshes": 0,
+        "addedTriangles": 0,
+        "additionalReflectionPasses": 0,
+        "geometryAndNavigationUnchanged": true,
+        "normalMapConvention": "OpenGL",
+        "wetness": "World-space local rain film, no displacement or continuous reflection pass"
+      },
+      "sourceGeometryUnchanged": true
+    },
+    "rendererInfo": {
+      "render": {
+        "frame": 1151,
+        "calls": 60,
+        "triangles": 290228,
+        "points": 0,
+        "lines": 0
+      },
+      "memory": {
+        "geometries": 52,
+        "textures": 29
+      }
+    },
+    "speed": 0,
+    "runMode": true,
+    "runRequested": true,
+    "velocity": {
+      "x": 0,
+      "z": 0
+    },
+    "camera": {
+      "position": {
+        "x": -3.6606024998736193,
+        "y": 2.090719084726678,
+        "z": 0.5499998670440187
+      },
+      "target": {
+        "x": -0.15522378400348547,
+        "y": 1.27,
+        "z": 0.5499996491971451
+      },
+      "fov": 62
+    },
+    "refinedStreet": {
+      "minX": -7,
+      "maxX": 3
+    },
+    "cat": {
+      "version": "cat-form-10",
+      "root": [
+        -0.7052237840034845,
+        0.85,
+        0.5499996833776973
+      ],
+      "gait": {
+        "speed": 0,
+        "phase": 0.6655820176533191,
+        "stanceFeet": 4,
+        "maxReachError": 0,
+        "stride": 0.25020061871616633,
+        "duty": 0.6394650167568897,
+        "mode": "stand",
+        "runBlend": 0.0022290968462927606,
+        "bodyBob": -0.0006680139297686805,
+        "cycleSeconds": null,
+        "angularSpeed": 0
+      },
+      "limbSkin": {
+        "changedVertices": 4054,
+        "lowPawVerticesPreserved": 2896,
+        "protectedVerticesPreserved": 16753,
+        "maxWeightSumError": 6.705522537231445e-08,
+        "addedTriangles": 0,
+        "addedVertices": 0,
+        "positionNormalUvIndexUnchanged": true,
+        "kneeRedistributedVertices": 7798
+      },
+      "hockRig": {
+        "joints": {
+          "hind_left": {
+            "previous": [
+              -0.05409999564290047,
+              0.04300000829116578,
+              -0.1437000304289761
+            ],
+            "current": [
+              -0.05409999564290047,
+              0.085,
+              -0.1587
+            ]
+          },
+          "hind_right": {
+            "previous": [
+              0.05199999362230301,
+              0.043000010152137794,
+              -0.17380003995700824
+            ],
+            "current": [
+              0.05199999362230301,
+              0.085,
+              -0.1888
+            ]
+          }
+        },
+        "changedVertices": 2458,
+        "maxWeightSumError": 4.470348358154297e-08,
+        "addedBones": 0,
+        "addedVertices": 0,
+        "addedTriangles": 0,
+        "positionsUnchanged": true
+      },
+      "bones": 21,
+      "feet": [
+        {
+          "name": "fore_left",
+          "stance": true,
+          "phase": 0.9649132885994314,
+          "world": [
+            -0.592523781349831,
+            0.85,
+            0.5926996763737914
+          ],
+          "renderedWorld": [
+            -0.5925237869213298,
+            0.8500000138042978,
+            0.5926996820158471
+          ],
+          "groundClearance": 0,
+          "reachError": 0
+        },
+        {
+          "name": "fore_right",
+          "stance": true,
+          "phase": 0.4649132885994314,
+          "world": [
+            -0.5611252057188922,
+            0.85,
+            0.507799674422482
+          ],
+          "renderedWorld": [
+            -0.5611252188533697,
+            0.8500000134352501,
+            0.5077996787529221
+          ],
+          "groundClearance": 0,
+          "reachError": 0
+        },
+        {
+          "name": "hind_left",
+          "stance": true,
+          "phase": 0.16558201765331915,
+          "world": [
+            -0.816125136672817,
+            0.85,
+            0.6040996902698248
+          ],
+          "renderedWorld": [
+            -0.8161251337194737,
+            0.8500000037799108,
+            0.6040996902700339
+          ],
+          "groundClearance": 0,
+          "reachError": 0
+        },
+        {
+          "name": "hind_right",
+          "stance": true,
+          "phase": 0.6655820176533191,
+          "world": [
+            -0.8690237872351001,
+            0.85,
+            0.49799969355728735
+          ],
+          "renderedWorld": [
+            -0.869023779847971,
+            0.8500000044075584,
+            0.4979996935575888
+          ],
+          "groundClearance": 0,
+          "reachError": 0
+        }
+      ],
+      "blink": {
+        "mode": "auto",
+        "amount": 0,
+        "left": 0,
+        "right": 0,
+        "count": 2,
+        "active": false,
+        "duration": 0.28,
+        "kind": "separate-skinned-eyelids",
+        "baseGeometryUnchanged": false,
+        "baseMorphCount": 0,
+        "addedTriangles": 2976,
+        "addedVertices": 1672,
+        "independentGaze": false,
+        "mouthControl": false,
+        "basePositionUnchanged": true,
+        "headSkinReweighted": true
+      },
+      "attention": {
+        "version": "head-attention-07",
+        "enabled": true,
+        "mode": "natural",
+        "appliedDegrees": {
+          "yaw": -0.0005538643525188565,
+          "pitch": 0.00012115782711349998
+        },
+        "requestedDegrees": {
+          "yaw": 0,
+          "pitch": 0
+        },
+        "yawLimit": 6,
+        "elapsed": 9.212800000000028,
+        "bindYawCorrection": -55.99514261333094,
+        "eyeControl": false,
+        "mouthControl": false
+      },
+      "headCorrection": {
+        "sourceFaceYawDegrees": 55.99514261333094,
+        "correctionDegrees": -55.99514261333094,
+        "skin": {
+          "changedVertices": 4349,
+          "rigidFaceVertices": 7011,
+          "protectedVertices": 26407,
+          "maxWeightSumError": 6.705522537231445e-08,
+          "positionNormalUvIndexUnchanged": true,
+          "addedVertices": 0,
+          "addedTriangles": 0
+        }
+      },
+      "variant": "current",
+      "continuousSkin": {
+        "method": "Continuous rest-position compact Gaussian field",
+        "sigma": 0.008,
+        "radius": 0.024,
+        "changedVertices": 17183,
+        "protectedVertices": 22895,
+        "maxWeightSumError": 4.470348358154297e-08,
+        "maxDroppedWeight": 3.715389395590551e-05,
+        "preparationMs": 287,
+        "vertices": 40078,
+        "triangles": 49000
+      },
+      "thighSkin": {
+        "enabled": false
+      },
+      "hindRestore": {
+        "enabled": false
+      },
+      "volumeStats": null
+    },
+    "loaded": true,
+    "paused": false,
+    "mode": "follow",
+    "tour": false,
+    "tourIndex": 0,
+    "distance": 5.0947762159965295,
+    "place": "店前石街",
+    "frames": 542,
+    "asset": "roam-02.glb",
+    "position": {
+      "x": -0.7052237840034845,
+      "y": 0.85,
+      "z": 0.5499996833776973
+    },
+    "walkable": true,
+    "visited": [
+      "店前石街"
+    ]
+  },
+  "history": {
+    "samples": {
+      "_public_excerpt": true,
+      "_reason": "large per-point/frame/geometry array",
+      "_original_item_count": 66,
+      "_original_data_retained_locally": true,
+      "_explicit_failure_item_count": 0,
+      "_first_item": {
+        "speed": 0,
+        "position": {
+          "x": -5.8,
+          "y": 0.85,
+          "z": 0.55
+        },
+        "runMode": true,
+        "gait": "walk"
+      },
+      "_last_item": {
+        "speed": 0.8999999999992749,
+        "position": {
+          "x": -1.4772547100026867,
+          "y": 0.85,
+          "z": 0.5499997313566851
+        },
+        "runMode": true,
+        "gait": "trot"
+      }
+    },
+    "start": {
+      "x": -5.8,
+      "y": 0.85,
+      "z": 0.55
+    },
+    "timer": 9
+  },
+  "maximumSpeed": 0.8999999999999649,
+  "maximumDisplacement": 4.322745289997321,
+  "sourcesBefore": {
+    "web\\cat-v10-body.js": "e3ac370d8fbb018fb3081452d4841212edc84c01b8c9cf0d6522bd309e41a030",
+    "web\\cat-v10-continuous-skin.js": "4927914174a03df16db3a9a933cff646938b24f00da0e834600c31642814218a",
+    "web\\cat-v10-face.js": "650c2deff8e431c67d5131ff9477406a93aaa520df72eb4245d0510ade976e06",
+    "web\\cat-v10-form-study.html": "a2a2249cbd746323175d46b62326c451e420aa2633cefe1cd8062e5d1090326a",
+    "web\\cat-v10-form-study.js": "23e2787a84aaee6a82db1832fb2ca68208d9ecb988391f863b50afafa66b3244",
+    "web\\cat-v10-gait-study.html": "dc83edaed4b9d4ede3aca821536354ca6d5886704748647f4c579fa8827a8296",
+    "web\\cat-v10-gait-study.js": "56ca2979441d643309fb0b3051138372fc34b8136e87cc51609b01b7fdd3a996",
+    "web\\cat-v10-hind-restore.js": "d8442691f2cb1f697c660e1d11a1c353592fb7125e576b647b308cbce4d0c885",
+    "web\\cat-v10-motion.js": "750f28f9cc51f32d87c5b013076a723a7cdfaa848507307983d13bab688f4fb1",
+    "web\\cat-v10-paw-candidate-body.js": "e3ac370d8fbb018fb3081452d4841212edc84c01b8c9cf0d6522bd309e41a030",
+    "web\\cat-v10-paw-study.html": "12971cccf3a96edceaee59718547e770f287629ce31c9b7a7c717cffbd9439fc",
+    "web\\cat-v10-paw-study.js": "36e761e073060cd7c964c9a877de4db2c02df69b380be8d7b23c4e6db29cb84f",
+    "web\\cat-v10-restore-study.html": "c2773b08f9e9a4934ca177f66f2fd956cf96abdbdb8a8345db7d836d2628837d",
+    "web\\cat-v10-restore-study.js": "783b03a51cb00caa53bab2771a329fe458ea5525711149540c7286ad1cc9b499",
+    "web\\cat-v10-thigh-skin.js": "9a38b0f3400194889e9af10d465f61a13ff4b760eeb7b48a77943d4116ec0424",
+    "web\\cat-v10-thigh-study.html": "42d64fdea2fcb35c47d8ab6ea4b4e8c16ff94e8f1b61b683762dbfa11411b4da",
+    "web\\cat-v10-thigh-study.js": "46e419c14c9f2335f6f23e5ef6d5019ef9e4d8ac5160bf921aabf4995aaf0902",
+    "web\\cat-v10-volume.js": "801792c00b064be363d2cebe3f380566a30c186e6adfcff4822570dcf8fd2132",
+    "web\\cat-v10.js": "77f80ac714caccf312108789047f7f2f79b5c7d14eeb7e56e79ef1d702ce6d86",
+    "web\\shop-study-07-controller.js": "702986ef52d56834020e12329acd889a5fc420bd98d67bc679d4ec42c96cd317",
+    "web\\shop-study-07.html": "9510ed55a119fdffa5b212154b345d337c0d9cdd36b2d86a284c15183e2a2ee0"
+  },
+  "sourcesAfter": {
+    "web\\cat-v10-body.js": "e3ac370d8fbb018fb3081452d4841212edc84c01b8c9cf0d6522bd309e41a030",
+    "web\\cat-v10-continuous-skin.js": "4927914174a03df16db3a9a933cff646938b24f00da0e834600c31642814218a",
+    "web\\cat-v10-face.js": "650c2deff8e431c67d5131ff9477406a93aaa520df72eb4245d0510ade976e06",
+    "web\\cat-v10-form-study.html": "a2a2249cbd746323175d46b62326c451e420aa2633cefe1cd8062e5d1090326a",
+    "web\\cat-v10-form-study.js": "23e2787a84aaee6a82db1832fb2ca68208d9ecb988391f863b50afafa66b3244",
+    "web\\cat-v10-gait-study.html": "dc83edaed4b9d4ede3aca821536354ca6d5886704748647f4c579fa8827a8296",
+    "web\\cat-v10-gait-study.js": "56ca2979441d643309fb0b3051138372fc34b8136e87cc51609b01b7fdd3a996",
+    "web\\cat-v10-hind-restore.js": "d8442691f2cb1f697c660e1d11a1c353592fb7125e576b647b308cbce4d0c885",
+    "web\\cat-v10-motion.js": "750f28f9cc51f32d87c5b013076a723a7cdfaa848507307983d13bab688f4fb1",
+    "web\\cat-v10-paw-candidate-body.js": "e3ac370d8fbb018fb3081452d4841212edc84c01b8c9cf0d6522bd309e41a030",
+    "web\\cat-v10-paw-study.html": "12971cccf3a96edceaee59718547e770f287629ce31c9b7a7c717cffbd9439fc",
+    "web\\cat-v10-paw-study.js": "36e761e073060cd7c964c9a877de4db2c02df69b380be8d7b23c4e6db29cb84f",
+    "web\\cat-v10-restore-study.html": "c2773b08f9e9a4934ca177f66f2fd956cf96abdbdb8a8345db7d836d2628837d",
+    "web\\cat-v10-restore-study.js": "783b03a51cb00caa53bab2771a329fe458ea5525711149540c7286ad1cc9b499",
+    "web\\cat-v10-thigh-skin.js": "9a38b0f3400194889e9af10d465f61a13ff4b760eeb7b48a77943d4116ec0424",
+    "web\\cat-v10-thigh-study.html": "42d64fdea2fcb35c47d8ab6ea4b4e8c16ff94e8f1b61b683762dbfa11411b4da",
+    "web\\cat-v10-thigh-study.js": "46e419c14c9f2335f6f23e5ef6d5019ef9e4d8ac5160bf921aabf4995aaf0902",
+    "web\\cat-v10-volume.js": "801792c00b064be363d2cebe3f380566a30c186e6adfcff4822570dcf8fd2132",
+    "web\\cat-v10.js": "77f80ac714caccf312108789047f7f2f79b5c7d14eeb7e56e79ef1d702ce6d86",
+    "web\\shop-study-07-controller.js": "702986ef52d56834020e12329acd889a5fc420bd98d67bc679d4ec42c96cd317",
+    "web\\shop-study-07.html": "9510ed55a119fdffa5b212154b345d337c0d9cdd36b2d86a284c15183e2a2ee0"
+  },
+  "scope": "Real touchStart/touchEnd events on touch controls. Uses the historical speed and displacement while held, so eventual obstacle braking cannot invalidate successful control."
+}

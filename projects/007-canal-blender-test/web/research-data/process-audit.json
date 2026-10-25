@@ -1,0 +1,1064 @@
+{
+  "checked_utc": "2026-10-25T03:58:11.701107+00:00",
+  "scope": "Read-only evidence inventory for local research-page closure. No new modelling, rendering, code execution of scene, source-pipeline reproduction, or cost estimate.",
+  "chronology_policy": "Sequence follows reports and iteration lineage, not filesystem modification dates; wall-clock research dates are not reconstructed.",
+  "source_provenance_update": "The old README/index said the X post could not be reverified. The new source-evidence.json supersedes that limitation for published text and four photos, but not for independent reproduction or per-image input/output identity.",
+  "current_index_gap_at_audit_start": {
+    "tracked_through": "V4",
+    "missing_groups": [
+      "V5 and wet studies",
+      "additive extension and boundary rounds",
+      "interactive roam and 10m shop study",
+      "cat V3-V12 and original A adaptation",
+      "SPACE01-SPACE11"
+    ],
+    "evidence": [
+      "README.md",
+      "project.json",
+      "web/index.html"
+    ],
+    "docs_space06_to11": "No dedicated docs/scene-space-06.md through 11.md found; accepted reports and webpages exist."
+  },
+  "evidence_classes": [
+    {
+      "class": "published_source",
+      "proves": "Published claims, media, repo mechanism at review time",
+      "does_not_prove": "Independent image-to-3D reconstruction, source asset provenance, comparable time/cost or model ranking"
+    },
+    {
+      "class": "local_blender",
+      "proves": "Saved editable scene, controlled operations, recorded renders",
+      "does_not_prove": "Source plugin exercised; neural single-image reconstruction; hidden real-world geometry recovered"
+    },
+    {
+      "class": "runtime_and_physics_audit",
+      "proves": "Selected buffers, ownership, paths, support, bounds and budgets under explicit checks",
+      "does_not_prove": "Visual beauty, natural animal motion, exhaustive arbitrary-motion collision correctness or universal FPS"
+    },
+    {
+      "class": "browser_visual_review",
+      "proves": "Observed rendered views and interactions on the actual tested device",
+      "does_not_prove": "Pixel match to reference, all-device performance, all-view completeness"
+    }
+  ],
+  "timeline": [
+    {
+      "order": 1,
+      "id": "source",
+      "title": "源帖与工具机制",
+      "goal": "理解 AI 如何控制 Blender",
+      "result": "本轮源证据审查已找回 X 官方响应与四张照片；dshTUI 加 dsh-blender-plugin 是源作者展示的控制链。我们实际使用本地 Python/bpy 驱动 Blender。",
+      "limits": "源帖发布与作者自报已核，不等于独立复现；每张图的输入/输出角色并非全部明确；没有同图、同预算的 DeepSeek/Codex 实测比较。",
+      "evidence": [
+        "artifacts/research-closure/source-evidence.json",
+        "README.md",
+        "web/index.html"
+      ],
+      "metrics": {}
+    },
+    {
+      "order": 2,
+      "id": "reference",
+      "title": "我们自选的雨后临水老街入口图",
+      "goal": "选取中等复杂度、可控范围测试题",
+      "result": "生成自有参考图，并制作解释性引导海报。",
+      "limits": "reference.png 是我们的生成参考图；control-guide-original.png 是机制说明海报，二者均不是源帖效果截图。",
+      "evidence": [
+        "assets/reference.png",
+        "assets/control-guide-original.png",
+        "assets/exploration-guide.svg",
+        "web/guide.html"
+      ],
+      "metrics": {}
+    },
+    {
+      "order": 3,
+      "id": "v1",
+      "title": "V1 控制链跑通",
+      "goal": "验证本机 Blender 可编程建模、保存与渲染",
+      "result": "产出可编辑场景与 Cycles 图，证明执行链可用。",
+      "limits": "目标实际上偏向类似氛围，未先建立构图对齐约束；玩具感、规整体块、墙面和参考差距大。",
+      "evidence": [
+        "assets/render.png",
+        "assets/overview.png",
+        "artifacts/rainy-canal.blend",
+        "assets/render-stats.json",
+        "assets/scene-checks.json"
+      ],
+      "metrics": {
+        "resolution": [
+          1672,
+          942
+        ],
+        "objects": 2109,
+        "mesh_vertices": 159646,
+        "single_job_seconds": {
+          "build": 49.24,
+          "render": 9.88,
+          "total": 59.22
+        }
+      }
+    },
+    {
+      "order": 4,
+      "id": "v2",
+      "title": "V2 构图与材质",
+      "goal": "保持场景数量，改善沿河视角和暖冷氛围",
+      "result": "调整相机、布局及已有水面顶点，改善湿石和墙面读感。",
+      "limits": "对象/顶点数量不变不等于顶点位置完全冻结；仍未按参考严格对齐。",
+      "evidence": [
+        "assets/render-v2.png",
+        "artifacts/rainy-canal-v2.blend",
+        "assets/render-v2-stats.json"
+      ],
+      "metrics": {
+        "objects": 2109,
+        "mesh_vertices": 159646,
+        "single_job_seconds": {
+          "setup": 1.31,
+          "render": 10.19,
+          "total": 11.51
+        }
+      }
+    },
+    {
+      "order": 5,
+      "id": "v3",
+      "title": "V3 表面精修",
+      "goal": "控制复杂度下进一步改善写实感",
+      "result": "老化墙面、玻璃、湿地面、水面响应。",
+      "limits": "纹理与材质局部改好，无法弥补建筑比例和整体构图差异。",
+      "evidence": [
+        "assets/render-v3.png",
+        "artifacts/rainy-canal-v3.blend",
+        "assets/render-v3-stats.json"
+      ],
+      "metrics": {
+        "objects": 2109,
+        "mesh_vertices": 159646,
+        "single_job_seconds": {
+          "setup": 1.29,
+          "render": 10.92,
+          "total": 12.21
+        }
+      }
+    },
+    {
+      "order": 6,
+      "id": "v4",
+      "title": "V4 从类似氛围转向对齐",
+      "goal": "明确参考图结构对应",
+      "result": "固定材质，调整相机、岸线、桥和水平布局。",
+      "limits": "12个人工点的像素误差不是整图相似度；不能证明几何真值、写实程度或模型优劣。",
+      "evidence": [
+        "assets/render-v4.png",
+        "assets/overview-v4.png",
+        "artifacts/rainy-canal-v4.blend",
+        "assets/alignment-v4.json",
+        "assets/render-v4-stats.json"
+      ],
+      "metrics": {
+        "manual_landmarks": 12,
+        "landmark_rms_px_before": 204.51,
+        "landmark_rms_px_after": 36.92,
+        "bank_point_to_line_rms_px_before": 67.61,
+        "bank_point_to_line_rms_px_after": 12.74,
+        "single_job_seconds": {
+          "render": 15.41,
+          "total": 19.01,
+          "independent_view_render": 6.54
+        }
+      }
+    },
+    {
+      "order": 7,
+      "id": "web_render_gap",
+      "title": "网页 3D 与离线渲染差距",
+      "goal": "让网页呈现真正可旋转的场景",
+      "result": "GLB 导出后增加烘焙贴图、环境和有限实时反射，保留几何数量。",
+      "limits": "Cycles 的程序材质、全局光和灯光不会自动完整转入 GLB；9组烘焙只有7组使用，屋顶因小UV岛问题回退。网页不等于路径追踪原图。",
+      "evidence": [
+        "web/models/canal-v3.glb",
+        "web/models/canal-v4.glb",
+        "web/models/lookdev-v4.glb",
+        "web/models/lookdev-v4-manifest.json",
+        "assets/viewer-source-audit.json"
+      ],
+      "metrics": {
+        "base_triangles": 226532,
+        "base_v4_bytes": 10138828,
+        "enhanced_bytes": 27093484,
+        "enhanced_vertices": 367348,
+        "bake_groups_generated": 9,
+        "bake_groups_used": 7
+      }
+    },
+    {
+      "order": 8,
+      "id": "v5",
+      "title": "V5 两张低清结构小样",
+      "goal": "先标注差距，再有限修建筑比例",
+      "result": "固定 V4 相机/照明/材质，修改既有建筑结构；候选02较好。",
+      "limits": "accepted_as_final=false；未做正式大图。大块墙面、屋顶接缝及缺少参考阁楼仍明显。",
+      "evidence": [
+        "assets/v5-gap-annotations.png",
+        "assets/v5-gap-plan.json",
+        "assets/v5-preview-01.png",
+        "assets/v5-preview-02.png",
+        "assets/v5-review.json",
+        "assets/v5-render-ledger.json",
+        "artifacts/rainy-canal-v5-preview-02.blend"
+      ],
+      "metrics": {
+        "preview_count": 2,
+        "resolution": [
+          1104,
+          622
+        ],
+        "samples": 40,
+        "render_seconds": [
+          5.701,
+          5.443
+        ]
+      }
+    },
+    {
+      "order": 9,
+      "id": "v5_wet",
+      "title": "V5 湿地面与水面专轮",
+      "goal": "冻结几何，只改善反光",
+      "result": "两张材质参数小样，水面暖反光局部改善。",
+      "limits": "两版水面参数相同，第二版主要改地面；地面仍过净过亮，缺少实际反光源不能靠粗糙度凭空制造。仍非最终接受稿。",
+      "evidence": [
+        "assets/v5-wet-preview-01.png",
+        "assets/v5-wet-preview-02.png",
+        "assets/v5-wet-review.json",
+        "assets/v5-wet-postcheck.json",
+        "artifacts/rainy-canal-v5-wet-preview-02.blend"
+      ],
+      "metrics": {
+        "preview_count": 2,
+        "resolution": [
+          1104,
+          622
+        ],
+        "samples": 40,
+        "render_seconds": [
+          7.358,
+          6.584
+        ]
+      }
+    },
+    {
+      "order": 10,
+      "id": "extension_01",
+      "title": "外扩01 从单面到两岸与后巷",
+      "goal": "保留旧景，以新增方式补空间",
+      "result": "新增三栋对岸闭合屋、背墙、后巷、连接桥和围墙。",
+      "limits": "路线检测通过不代表当时已有可玩角色；远景空洞、长黑地面与背面粗壳依然暴露。",
+      "evidence": [
+        "assets/extension-01-review-01.png",
+        "assets/extension-01-review-02.png",
+        "assets/extension-01-review.json",
+        "assets/extension-01-postcheck.json",
+        "artifacts/rainy-canal-extension-01.blend"
+      ],
+      "metrics": {
+        "new_objects_including_cameras": 137,
+        "new_mesh_vertices": 4814,
+        "new_mesh_faces": 3595,
+        "new_lights": 0,
+        "new_materials": 0,
+        "route_samples": 522,
+        "preview_count": 2,
+        "combined_render_seconds": 54.237
+      }
+    },
+    {
+      "order": 11,
+      "id": "boundary_02",
+      "title": "外扩02 地面衔接与远景边界",
+      "goal": "修补地形漏洞和悬空",
+      "result": "补7处已知空洞、后巷18cm落差与对岸基础缺口。",
+      "limits": "两张图来自预览场景；最终文件另做1mm接缝修正但未重渲染。河道和边界仍过直。",
+      "evidence": [
+        "assets/boundary-02-preview-01.png",
+        "assets/boundary-02-preview-02.png",
+        "assets/boundary-02-review.json",
+        "assets/boundary-02-postcheck.json",
+        "artifacts/rainy-canal-extension-02-final.blend"
+      ],
+      "metrics": {
+        "new_meshes": 14,
+        "new_vertices": 1145,
+        "new_faces": 931,
+        "preview_count": 2
+      }
+    },
+    {
+      "order": 12,
+      "id": "landscape_03",
+      "title": "外扩03 弯岸与远丘",
+      "goal": "改善过直河道和人工边界",
+      "result": "新增曲岸、浅滩、低丘，不改已有核心。",
+      "limits": "旧直岸被冻结，新增叠层只能部分遮掩，不能真正消除直线楔形水面；仍不是完整自然地形。",
+      "evidence": [
+        "assets/landscape-03-preview-01.png",
+        "assets/landscape-03-preview-02.png",
+        "assets/landscape-03-review.json",
+        "assets/landscape-03-postcheck.json",
+        "artifacts/rainy-canal-extension-03.blend"
+      ],
+      "metrics": {
+        "new_meshes": 6,
+        "new_vertices": 4854,
+        "new_faces": 7224,
+        "channel_sections": 155,
+        "minimum_water_width_m": 5.6,
+        "preview_count": 2
+      }
+    },
+    {
+      "order": 13,
+      "id": "roam",
+      "title": "初版真实漫游",
+      "goal": "让场景从静态视图变为可走空间",
+      "result": "有限河岸、两岸环路与程序小猫，清理背景后使用 roam-02 模型。",
+      "limits": "猫和环境体感仍偏玩具；导航是区域代理和桥高函数，不是任意网格物理；无室内、跳跃和通用重力。",
+      "evidence": [
+        "docs/roam-01.md",
+        "assets/roam-01-review.json",
+        "web/roam.html",
+        "web/models/roam-02.glb",
+        "artifacts/rainy-canal-roam-02.blend"
+      ],
+      "metrics": {
+        "base_triangles": 159330,
+        "base_bytes": 9534316,
+        "material_mesh_batches": 28
+      }
+    },
+    {
+      "order": 14,
+      "id": "ten_meter",
+      "title": "约10米街道样板",
+      "goal": "先精修小范围与跟随体感",
+      "result": "石路世界UV、木材抹灰扫描贴图、局部反射、跟随镜头；店面和猫支线逐步分开。",
+      "limits": "使用已有 Poly Haven CC0 资产，并非全部自行制作。局部60FPS不能代表全地图/所有设备。",
+      "evidence": [
+        "docs/roam-refine-01.md",
+        "docs/shop-study-01.md",
+        "web/roam-refine.html",
+        "web/shop-study-01.html",
+        "web/textures/shop-study-01/provenance.json"
+      ],
+      "metrics": {
+        "study_span_x_m": [
+          -7,
+          3
+        ],
+        "source_geometry_triangles": 159330,
+        "texture_assets": 3,
+        "texture_resolution": 1024,
+        "texture_transfer_approx_mib": 14,
+        "performance_scope": "RTX 4070 Laptop / Chromium D3D11 / 1152x720 DPR1; stationary ~59.9 FPS; recorded 20 s walk ~54 FPS, p95 33.3 ms"
+      }
+    },
+    {
+      "order": 15,
+      "id": "cat_v3",
+      "title": "V3 外部静态猫换形象",
+      "goal": "改善猫的真实形象与运动",
+      "result": "Grab3D Tabby Cat CC0（发布者说明 Meshy 基底+Blender整理）减面、自建21骨架。",
+      "limits": "原资产无动作；不是从街景参考重建的猫。",
+      "evidence": [
+        "docs/cat-v3.md",
+        "web/cat-v3-study.html"
+      ],
+      "metrics": {
+        "source_triangles": 382505,
+        "adapted_triangles": 49000,
+        "bones": 21,
+        "glb_bytes": 2690948
+      }
+    },
+    {
+      "order": 16,
+      "id": "cat_v4",
+      "title": "V4 注意力转头",
+      "goal": "改善猫的真实形象与运动",
+      "result": "加入小幅转头、低头。",
+      "limits": "眼球和嘴未独立驱动，原模型头部固有偏角尚未修。",
+      "evidence": [
+        "docs/cat-v4-attention.md",
+        "web/cat-v4-attention-study.html"
+      ],
+      "metrics": {}
+    },
+    {
+      "order": 17,
+      "id": "cat_v5",
+      "title": "V5 眨眼",
+      "goal": "改善猫的真实形象与运动",
+      "result": "头部动作加眼部形变闭合。",
+      "limits": "毛皮纹理与眼周拓扑不适合大形变；嘴部明确延期。",
+      "evidence": [
+        "docs/cat-v5-face.md",
+        "web/cat-v5-face-study.html"
+      ],
+      "metrics": {
+        "body_triangles": 49000
+      }
+    },
+    {
+      "order": 18,
+      "id": "cat_v6",
+      "title": "V6 独立眼睑",
+      "goal": "改善猫的真实形象与运动",
+      "result": "额外眼睑覆盖改善眨眼。",
+      "limits": "狭小贴图区域导致补丁感，不能靠多加面解决。",
+      "evidence": [
+        "docs/cat-v6-face.md",
+        "web/cat-v6-face-study.html"
+      ],
+      "metrics": {
+        "total_triangles": 51976,
+        "new_triangles": 2976
+      }
+    },
+    {
+      "order": 19,
+      "id": "cat_v7",
+      "title": "V7 纠正长期歪头",
+      "goal": "改善猫的真实形象与运动",
+      "result": "识别原头部约56度偏向并校正头颈权重。",
+      "limits": "恢复朝前后仍有颈部形变问题。",
+      "evidence": [
+        "docs/cat-v7-head.md",
+        "web/cat-v7-head-study.html"
+      ],
+      "metrics": {
+        "original_head_bias_degrees": 55.995,
+        "changed_weights_vertices": 4349
+      }
+    },
+    {
+      "order": 20,
+      "id": "cat_v8",
+      "title": "V8 步态与皮肤",
+      "goal": "改善猫的真实形象与运动",
+      "result": "改善支撑足、步幅和起伏。",
+      "limits": "低速部分通过，0.60m/s压力档失败；足点合格掩盖腹股沟皮肤拉扯。",
+      "evidence": [
+        "docs/cat-v8-gait.md",
+        "web/cat-v8-gait-study.html"
+      ],
+      "metrics": {
+        "working_speed_mps": [
+          0.24,
+          0.36
+        ],
+        "rejected_pressure_speed_mps": 0.6
+      }
+    },
+    {
+      "order": 21,
+      "id": "cat_v9",
+      "title": "V9 支持小跑",
+      "goal": "改善猫的真实形象与运动",
+      "result": "加对角小跑与速度切换。",
+      "limits": "这是 trot 非疾驰；权重平滑候选虽改善边长指标，却打开UV缝，全部拒绝。",
+      "evidence": [
+        "docs/cat-v9-run.md",
+        "web/cat-v9-gait-study.html"
+      ],
+      "metrics": {
+        "trot_speed_mps": 0.9,
+        "rejected_candidate_seam_gap_mm": 57.65
+      }
+    },
+    {
+      "order": 22,
+      "id": "cat_v10",
+      "title": "V10 形体与权重连续",
+      "goal": "改善猫的真实形象与运动",
+      "result": "连续空间权重场、摆动爪姿态。",
+      "limits": "若干DQ/大腿恢复候选未改善扇形腿轮廓而拒绝；单一数值更好不等于形象更好。",
+      "evidence": [
+        "docs/cat-v10-form.md",
+        "web/cat-v10-gait-study.html"
+      ],
+      "metrics": {
+        "seam_gap_mm_before": 0.823,
+        "seam_gap_mm_after": 0.369,
+        "bones": 21,
+        "triangles": 51976
+      }
+    },
+    {
+      "order": 23,
+      "id": "cat_v11",
+      "title": "V11 头尾随运动",
+      "goal": "改善猫的真实形象与运动",
+      "result": "按速度与转弯联动尾巴、头部。",
+      "limits": "原始C形尾与上身僵硬仍明显。",
+      "evidence": [
+        "docs/cat-v11-head-tail.md",
+        "web/cat-v11-gait-study.html"
+      ],
+      "metrics": {}
+    },
+    {
+      "order": 24,
+      "id": "cat_v12",
+      "title": "V12 上半身联动",
+      "goal": "改善猫的真实形象与运动",
+      "result": "补胸肩、脊柱、头部与尾段相位。",
+      "limits": "自动检查通过，但用户仍拒绝自然度；静态生成网格+临时绑定到达能力瓶颈。",
+      "evidence": [
+        "docs/cat-v12-whole-body.md",
+        "web/cat-v12-gait-study.html"
+      ],
+      "metrics": {
+        "triangles": 51976,
+        "cpu_checks": 86
+      }
+    },
+    {
+      "order": 25,
+      "id": "cat_candidates",
+      "title": "免费成熟猫候选",
+      "goal": "停止在不适合动画的静态网格上无限补丁",
+      "result": "比较 A BlendSwap、B Sphynx Sketchfab、C Fab 资源。",
+      "limits": "只有A后续接入。候选网页的许可/价格是历史检查记录，不能当成今天仍有效的价格承诺。",
+      "evidence": [
+        "web/cat-free-candidates.html"
+      ],
+      "metrics": {}
+    },
+    {
+      "order": 26,
+      "id": "cat_a",
+      "title": "A 原生动作猫独立小样",
+      "goal": "先看成熟形象与走跑、头尾联动",
+      "result": "用户登录后取得 SkaterCat/Jonas Dichelle 原 BlendSwap 资产，保留85骨骼与原 Walk/Run，经约束烘焙、毛束网格化和眼贴图适配。",
+      "limits": "CC BY 3.0须署名；不是我们原创猫。浏览器不模拟原毛发动力学；尾巴循环接缝、离线毛发和PBR差别仍在；旁路公开静态FBX已拒绝。",
+      "evidence": [
+        "web/cat-a-study.html",
+        "web/models/cat-a-study.glb",
+        "artifacts/cat-a/preview-walk.png",
+        "artifacts/cat-a/source/source-provenance.json",
+        "artifacts/cat-a/export-report.json",
+        "artifacts/cat-a/cat-a-web-adapted.blend"
+      ],
+      "metrics": {
+        "glb_bytes": 12980096,
+        "bones": 85,
+        "converted_fur_strands": 6608,
+        "whiskers": 32
+      }
+    },
+    {
+      "order": 27,
+      "id": "cat_a_street",
+      "title": "A 接入街区与起停修复",
+      "goal": "看走跑、转身、停下的实际漫游",
+      "result": "shop-study-10 接A；11补自适配 idle、停车、短步转向。",
+      "limits": "新idle/停止/转身属于我们的适配，不能算源资产自带全部动作；仍非通用四足IK，用户最终认为形象未达目标并回到场景主线。",
+      "evidence": [
+        "web/shop-study-10.html",
+        "web/shop-study-11.html",
+        "artifacts/cat-a-street/run-follow.png",
+        "artifacts/cat-a-street/validation.json",
+        "artifacts/cat-a-street-v2/idle-final.png",
+        "artifacts/cat-a-street-v2/validation.json"
+      ],
+      "metrics": {
+        "walk_speed_mps": 0.48,
+        "run_speed_mps": 1.65
+      }
+    },
+    {
+      "order": 28,
+      "id": "space_01",
+      "title": "SPACE01 回归空间：两岸后巷桥头",
+      "goal": "保留旧版，逐步补齐空间并控制范围",
+      "result": "在已有两条闭环上补岸端、地基、院墙、4个后排体块。",
+      "limits": "外部完整性优先；后排仍粗壳，非最终美术。",
+      "evidence": [
+        "web/scene-space-01.html",
+        "assets/space-01-postcheck.json",
+        "artifacts/scene-space-01/web-validation.json",
+        "docs/scene-space-01.md",
+        "artifacts/rainy-canal-space-01.blend",
+        "web/models/space-01.glb",
+        "web/models/space-01-manifest.json"
+      ],
+      "metrics": {
+        "runtime_only": false,
+        "source_stage": "roam-02",
+        "base_glb_triangles": 163678,
+        "base_glb_bytes": 9819884,
+        "added_meshes": 26,
+        "added_cameras": 5,
+        "added_triangles": 4348
+      }
+    },
+    {
+      "order": 29,
+      "id": "space_02",
+      "title": "SPACE02 坡形与全街材质",
+      "goal": "保留旧版，逐步补齐空间并控制范围",
+      "result": "只动两张地形Z/法线；近岸骤升改缓坡；网页复用CC0材质并冻结既有10米样板。",
+      "limits": "网页材质运行层与Blender文件尚未完全同步；未开放室内。",
+      "evidence": [
+        "web/scene-space-02.html",
+        "assets/space-02-postcheck.json",
+        "artifacts/scene-space-02/web-validation.json",
+        "docs/scene-space-02.md",
+        "artifacts/rainy-canal-space-02.blend",
+        "web/models/space-02.glb",
+        "web/models/space-02-manifest.json",
+        "artifacts/scene-space-02/bank-before.png",
+        "artifacts/scene-space-02/bank-after.png",
+        "artifacts/scene-space-02/opposite-final.png"
+      ],
+      "metrics": {
+        "runtime_only": false,
+        "source_stage": "01",
+        "base_glb_triangles": 163678,
+        "base_glb_bytes": 9819884,
+        "north_slope_before_after": [
+          6.022,
+          0.245
+        ],
+        "south_slope_before_after": [
+          5.124,
+          0.272
+        ]
+      }
+    },
+    {
+      "order": 30,
+      "id": "space_03",
+      "title": "SPACE03 三栋对岸屋细化",
+      "goal": "保留旧版，逐步补齐空间并控制范围",
+      "result": "闭合屋面、错列瓦、浅窗洞、门与排水；复核发现石基挡门后切6处门槛。",
+      "limits": "浅层窗后板非真正室内，原屋脚不扩。",
+      "evidence": [
+        "web/scene-space-03.html",
+        "assets/space-03-postcheck-final-r2.json",
+        "artifacts/scene-space-03/web-validation.json",
+        "docs/scene-space-03.md",
+        "artifacts/rainy-canal-space-03.blend",
+        "web/models/space-03.glb",
+        "web/models/space-03-manifest.json"
+      ],
+      "metrics": {
+        "runtime_only": false,
+        "source_stage": "02",
+        "base_glb_triangles": 174012,
+        "base_glb_bytes": 10553228
+      }
+    },
+    {
+      "order": 31,
+      "id": "space_04",
+      "title": "SPACE04 窗墙质感与天空填充",
+      "goal": "保留旧版，逐步补齐空间并控制范围",
+      "result": "复用03模型；仅4材质与既有hemi/env调整。",
+      "limits": "没有04新GLB/blend；玻璃是薄透明近似，非厚玻璃路径追踪。",
+      "evidence": [
+        "web/scene-space-04.html",
+        "artifacts/scene-space-04/runtime-validation-final.json",
+        "artifacts/scene-space-04/web-validation.json",
+        "docs/scene-space-04.md",
+        "artifacts/scene-space-04/windows-final.png"
+      ],
+      "metrics": {
+        "runtime_only": true,
+        "source_stage": "03",
+        "base_glb_triangles": 174012,
+        "base_glb_bytes": 10553228
+      }
+    },
+    {
+      "order": 32,
+      "id": "space_05",
+      "title": "SPACE05 小院与手动步行",
+      "goal": "保留旧版，逐步补齐空间并控制范围",
+      "result": "局部打开两段旧墙，补约20平方米院与32.4米往返路线。",
+      "limits": "只开放指定户外区域；没有新增屋内可走。",
+      "evidence": [
+        "web/scene-space-05.html",
+        "assets/space-05-postcheck-final.json",
+        "artifacts/scene-space-05/web-validation.json",
+        "docs/scene-space-05.md",
+        "artifacts/rainy-canal-space-05.blend",
+        "web/models/space-05.glb",
+        "web/models/space-05-manifest.json"
+      ],
+      "metrics": {
+        "runtime_only": false,
+        "source_stage": "03",
+        "base_glb_triangles": 177260,
+        "base_glb_bytes": 10824056,
+        "net_added_triangles": 3248,
+        "gate_width_m": 1.84,
+        "gate_headroom_m": 2.15,
+        "route_length_m": 32.4
+      }
+    },
+    {
+      "order": 33,
+      "id": "space_06",
+      "title": "SPACE06 完整有限街区",
+      "goal": "保留旧版，逐步补齐空间并控制范围",
+      "result": "新增17屋、23树、南北环路、曲岸道路、外围绿地，处理旧端头栏杆与路缘通行。",
+      "limits": "初次整街布局过于排队、重复房型和边界生硬，后来用户要求重排。",
+      "evidence": [
+        "web/scene-space-06.html",
+        "assets/space-06-postcheck-final.json",
+        "artifacts/scene-space-06/web-validation.json",
+        "artifacts/rainy-canal-space-06.blend",
+        "web/models/space-06.glb",
+        "web/models/space-06-manifest.json",
+        "artifacts/scene-space-06/overview-final.png"
+      ],
+      "metrics": {
+        "runtime_only": false,
+        "source_stage": "05",
+        "base_glb_triangles": 240850,
+        "base_glb_bytes": 15387220,
+        "new_house_cohort_count": 17,
+        "tree_count": 23,
+        "net_added_base_triangles": 63590,
+        "developed_bounds_blender_xy": [
+          -36,
+          -44,
+          36,
+          26.5
+        ]
+      }
+    },
+    {
+      "order": 34,
+      "id": "space_07",
+      "title": "SPACE07 夜间灯窗分布",
+      "goal": "保留旧版，逐步补齐空间并控制范围",
+      "result": "复用06模型；46亮窗、29固定灯具、6真实无阴影灯池。",
+      "limits": "分布式材质照明近似不等于全局光；灯光不能修正建筑布局。",
+      "evidence": [
+        "web/scene-space-07.html",
+        "artifacts/scene-space-07/runtime-validation-final.json",
+        "artifacts/scene-space-07/web-validation.json",
+        "artifacts/scene-space-07/overview-final.png"
+      ],
+      "metrics": {
+        "runtime_only": true,
+        "source_stage": "06",
+        "base_glb_triangles": 240850,
+        "base_glb_bytes": 15387220,
+        "lit_windows": 46,
+        "new_window_sheets": 39,
+        "window_sheet_triangles": 78,
+        "fixtures": 29,
+        "fixture_triangles": 3608,
+        "realtime_point_lights": 6
+      }
+    },
+    {
+      "order": 35,
+      "id": "space_08",
+      "title": "SPACE08 红框粗壳与布局重排",
+      "goal": "保留旧版，逐步补齐空间并控制范围",
+      "result": "替换17新屋+4旧后排粗壳，21屋重新贴街、双拼、侧门、庭院与地坪。",
+      "limits": "首审发现埋门、穿地斜坡和近水浮肩，最终只改本轮副本；21是替换房屋群数量，非全场房屋总数。",
+      "evidence": [
+        "web/scene-space-08.html",
+        "assets/space-08-postcheck-final.json",
+        "artifacts/scene-space-08/web-validation.json",
+        "artifacts/rainy-canal-space-08.blend",
+        "web/models/space-08.glb",
+        "web/models/space-08-manifest.json",
+        "artifacts/scene-space-08/overview-final.png",
+        "artifacts/scene-space-08/redbox-final.png"
+      ],
+      "metrics": {
+        "runtime_only": false,
+        "source_stage": "06",
+        "base_glb_triangles": 254010,
+        "base_glb_bytes": 16448624,
+        "replacement_house_cohort_count": 21,
+        "old_objects_hidden": 60,
+        "lit_windows_runtime": 62,
+        "fixtures_runtime": 33,
+        "point_lights_runtime": 6
+      }
+    },
+    {
+      "order": 36,
+      "id": "space_09",
+      "title": "SPACE09 视觉统一",
+      "goal": "保留旧版，逐步补齐空间并控制范围",
+      "result": "复用08；墙屋顶尺度、湿石水面、23树替换、叶片mip覆盖及土面阴影修复。",
+      "limits": "仍是实时近似；隐藏旧批次后新增运行层，不能把GLB面数与所有新增数直接相加称可见面数。",
+      "evidence": [
+        "web/scene-space-09.html",
+        "artifacts/scene-space-09/runtime-validation-accepted.json",
+        "artifacts/scene-space-09/web-validation.json",
+        "artifacts/scene-space-09/overview-final.png",
+        "artifacts/scene-space-09/trees-final.png"
+      ],
+      "metrics": {
+        "runtime_only": true,
+        "source_stage": "08",
+        "base_glb_triangles": 254010,
+        "base_glb_bytes": 16448624,
+        "replacement_tree_count": 23,
+        "tree_triangles": 42802,
+        "tree_drawcalls": 2,
+        "leaf_card_instances": 10177
+      }
+    },
+    {
+      "order": 37,
+      "id": "space_10",
+      "title": "SPACE10 房型变化与有用途边角地",
+      "goal": "保留旧版，逐步补齐空间并控制范围",
+      "result": "同21屋群13变8保留；窄高/长低/降层/90度转角/2小院/半歇山，新增4花园地块。",
+      "limits": "仍为有限户外街区，门后不开放；首审发现旧院墙遗漏隐藏与院尾埋地，已在新稿修正。",
+      "evidence": [
+        "web/scene-space-10.html",
+        "artifacts/scene-space-10/scene-validation-final.json",
+        "artifacts/scene-space-10/web-validation.json",
+        "artifacts/rainy-canal-space-10.blend",
+        "web/models/space-10.glb",
+        "web/models/space-10-manifest.json",
+        "artifacts/scene-space-10/overview-final.png",
+        "artifacts/scene-space-10/court-final.png",
+        "artifacts/scene-space-10/garden-final.png"
+      ],
+      "metrics": {
+        "runtime_only": false,
+        "source_stage": "08",
+        "base_glb_triangles": 252502,
+        "base_glb_bytes": 16325100,
+        "replacement_house_cohort_count": 21,
+        "modified_houses": 13,
+        "unchanged_houses": 8,
+        "old_objects_hidden": 67,
+        "garden_plots": 4,
+        "plot_triangles": 13010,
+        "plot_drawcalls": 4,
+        "plot_leaf_cards": 3696
+      }
+    },
+    {
+      "order": 38,
+      "id": "space_11",
+      "title": "SPACE11 远景与街区边界",
+      "goal": "保留旧版，逐步补齐空间并控制范围",
+      "result": "复用10；外区20树、35低植被组，收束林缘/河弯/草土层次；保留核心与导航。",
+      "limits": "不新增可走区域，不代表无限世界；先稀疏首稿与阴影诊断图不是交付图，最终GPU确认后才接受。",
+      "evidence": [
+        "web/scene-space-11.html",
+        "artifacts/scene-space-11/shadow-validation-final.json",
+        "artifacts/scene-space-11/web-validation.json",
+        "artifacts/scene-space-11/overview-final.png",
+        "artifacts/scene-space-11/north-edge-final.png",
+        "artifacts/scene-space-11/east-river-final.png",
+        "artifacts/scene-space-11/reverse-final.png"
+      ],
+      "metrics": {
+        "runtime_only": true,
+        "source_stage": "10",
+        "base_glb_triangles": 252502,
+        "base_glb_bytes": 16325100,
+        "new_tree_count": 20,
+        "low_plant_groups": 35,
+        "added_runtime_triangles": 51949,
+        "added_runtime_drawcalls": 3,
+        "new_leaf_cards": 13852,
+        "runtime_envelope_blender_xy": [
+          -68,
+          -75,
+          68,
+          62
+        ],
+        "minimum_new_tree_root_bank_distance_m": 10.696,
+        "protected_files_at_stage_start": 1391
+      }
+    }
+  ],
+  "key_turning_points": [
+    {
+      "finding": "最初目标偏向相似氛围，后改为参考对齐",
+      "evidence": [
+        "assets/alignment-v4.json",
+        "assets/v5-gap-plan.json"
+      ],
+      "implication": "明确承认目标偏移，不能把前后风格差异全部说成自然的阶段性优化。"
+    },
+    {
+      "finding": "局部材质优化无法补偿镜头/比例/构图差异",
+      "evidence": [
+        "assets/render-v3.png",
+        "assets/render-v4.png"
+      ],
+      "implication": "先定义可比较视角与主要形体，再做表面细节。"
+    },
+    {
+      "finding": "单张主视角质量与全方向空间完整度是两条不同目标",
+      "evidence": [
+        "assets/extension-01-review.json",
+        "docs/scene-space-01.md"
+      ],
+      "implication": "外扩新增背面是设计补全，不是从原图恢复真实不可见部分。"
+    },
+    {
+      "finding": "永久冻结旧几何会限制真实修正",
+      "evidence": [
+        "assets/landscape-03-review.json"
+      ],
+      "implication": "在新副本里允许限定旧对象修改，比不断叠层更能消除直岸/墙/路缘根因。旧文件仍保留。"
+    },
+    {
+      "finding": "静态AI猫表面不是动画生产网格",
+      "evidence": [
+        "docs/cat-v8-gait.md",
+        "docs/cat-v9-run.md",
+        "docs/cat-v12-whole-body.md"
+      ],
+      "implication": "足点、骨骼与边长测试通过，不保证形体自然。成熟原生动画资产显著减少重造工作，但不能保证审美目标。"
+    },
+    {
+      "finding": "素材来源和适配贡献应拆开",
+      "evidence": [
+        "web/textures/shop-study-01/provenance.json",
+        "artifacts/cat-a/source/source-provenance.json"
+      ],
+      "implication": "CC0贴图、静态猫、A原模型与动作分别署源；把我们的绑定/烘焙/导航/起停修复单独说明。"
+    },
+    {
+      "finding": "视觉复核发现测试未覆盖的真实问题",
+      "evidence": [
+        "artifacts/scene-space-09/web-validation.json",
+        "artifacts/scene-space-11/web-validation.json",
+        "artifacts/scene-space-11/shadow-validation-final.json"
+      ],
+      "implication": "叶片远距消失、地形阴影细纹等必须GPU看；CPU PASS不是效果评分。"
+    },
+    {
+      "finding": "整街目标从复制一张图转向有限可漫游街区",
+      "evidence": [
+        "web/scene-space-11.html",
+        "artifacts/scene-space-10/scene-validation-final.json"
+      ],
+      "implication": "最终成果可用作AI驱动环境制作研究样本，但不应称原参考图的高保真完整复原。"
+    }
+  ],
+  "investment_and_return": {
+    "known_inputs": [
+      "本机 Blender 4.5.9 LTS / RTX 4070 Laptop GPU 的部分离线任务记录",
+      "逐版保存的脚本、Blender、GLB、运行层模块、截图/录像和审核记录",
+      "外部免费素材的查找、授权确认、下载、绑定/材质/动画适配",
+      "多轮人工目标澄清、视觉检查、返修与放弃候选"
+    ],
+    "known_outputs": [
+      "可编辑的有限街区来源场景",
+      "主视角V1-V5与外扩对照证据",
+      "独立可走网页、对比阶段、固定视角与导航路线",
+      "自制/静态资产绑定与成熟动作资产两条猫路线的边界经验",
+      "SPACE01-11空间、材质、布局和边界演进记录"
+    ],
+    "unknown_totals": [
+      "整个研究总人时",
+      "模型/API累计token或费用",
+      "所有下载/探索/视觉返修耗时",
+      "跨设备实时性能",
+      "源作者同预算复现成本"
+    ],
+    "do_not_sum": [
+      "不同报告的build/render/total可能重叠；局部几秒运行不能替代全项目耗时",
+      "GLB包含运行时隐藏批次；静态triangles与runtime additions不能未经visible统计直接加为最终可见复杂度",
+      "报告PASS数量不是视觉质量百分比"
+    ],
+    "source_cost_handling": "源作者1.58eToken、1h20min、12rmb只作为带日期的作者自报原文，不解释歧义token单位，不当成我们的成本，也不与单次渲染秒数比较。",
+    "stopping_rule": "当前用户授权研究收束与网页呈现，禁止继续场景/猫优化；把遗留问题列明，不以追加轮次代替总结。"
+  },
+  "accepted_report_map": {
+    "space04": [
+      "artifacts/scene-space-04/runtime-validation-final.json",
+      "artifacts/scene-space-04/web-validation.json"
+    ],
+    "space08": [
+      "assets/space-08-postcheck-final.json",
+      "artifacts/scene-space-08/runtime-validation-final-r2.json",
+      "artifacts/scene-space-08/web-validation.json"
+    ],
+    "space09": [
+      "artifacts/scene-space-09/runtime-validation-accepted.json",
+      "artifacts/scene-space-09/web-validation.json"
+    ],
+    "space10": [
+      "artifacts/scene-space-10/scene-validation-final.json",
+      "artifacts/scene-space-10/runtime-validation-final.json",
+      "artifacts/scene-space-10/web-validation.json"
+    ],
+    "space11": [
+      "artifacts/scene-space-11/runtime-validation-final-r2.json",
+      "artifacts/scene-space-11/shadow-validation-final.json",
+      "artifacts/scene-space-11/web-validation.json"
+    ]
+  },
+  "remaining_boundaries": [
+    "没有源库与Codex的同题同预算对照实验",
+    "尚未达成对自有参考图的高保真复刻",
+    "有限户外场景，不开放完整室内，不是无限世界或任意位置物理模拟",
+    "猫分支形象未被用户认可，嘴部/独立眼球/通用IK/毛发动力学未完成",
+    "网页与Blender材质不是完全同步的单一成果，实时效果不等于Cycles离线图",
+    "现有报告不提供总投入费用或总体工时"
+  ],
+  "presentation_recommendations": [
+    "先分开源帖展示、我们的参考图、我们的真实产出三栏，逐图标明身份",
+    "最上方展示SPACE11当前户外街区与原参考差距，避免继续用V4充当最新结果",
+    "分阶段列目的/改动/看到的效果/未解决问题/可打开的版本",
+    "猫分支应有独立折叠章节与原生资产署名，不能从主线消失，也不能继续喧宾夺主",
+    "历史失败图和暂时关闭阴影诊断图明确标记，不与最终交付混排",
+    "对照采用同镜头/光照；不同阶段截图差异不可都归因于几何变化",
+    "静态网站根是web时，assets与artifacts相对路径不一定可访问；由页面负责人复制精选媒体到新增web/research-media并校验，保留原文件",
+    "仅本地接入与预览，不提交、发布或继续优化场景"
+  ],
+  "unavailable_suggested_media_names": [
+    "artifacts/scene-space-01/overview-final.png",
+    "artifacts/scene-space-03/opposite-final.png"
+  ],
+  "reference_existence_check": {
+    "referenced_files": 178,
+    "missing": [
+      "artifacts/scene-space-01/overview-final.png",
+      "artifacts/scene-space-03/opposite-final.png"
+    ],
+    "existing": 176,
+    "note": "Existence checked only; report metrics reviewed in source records, no new scene test or render performed."
+  },
+  "inventory": {
+    "docs_markdown_count": 20,
+    "web_html_pages": 45,
+    "static_glb_files": 16,
+    "blend_artifacts_recursive": 25,
+    "timeline_entries": 38
+  },
+  "publishing_update": {
+    "date": "2026-10-25",
+    "scope": "Prepared for public research publication; deployment status is recorded separately after verification.",
+    "reference_options_manifest": "research-data/reference-options.json",
+    "reference_options_recovered": 3,
+    "selected_reference": "assets/reference.png",
+    "selection_note_zh": "本次生成过三个复杂度入口方案；实际建模选择了按范围与预算收敛后的最简单一档 reference.png。三图不是三次建模对照，也不是源帖输入或输出。",
+    "historical_timeline_unchanged": true,
+    "experiment_version_count_unchanged": 47,
+    "note_zh": "追加恢复与公开整理说明，不改写原始审计时间线；旧文档中的本地预览范围及当时缺口属于历史记录。图生3D在本实验指看图后用Python/bpy组织可编辑场景并迭代，不代表单图自动扫描重建或高保真还原已完成。"
+  }
+}

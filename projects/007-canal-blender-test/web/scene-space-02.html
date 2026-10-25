@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#142624">
+  <title>雨后老街 · 自然衔接 02</title>
+  <link rel="stylesheet" href="scene-space-01.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.min.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
+  <script type="module" src="scene-space-02.js"></script>
+</head>
+<body>
+  <main>
+    <div id="world" aria-label="雨后老街三维空间，可拖动旋转、滚轮缩放" tabindex="0"></div>
+    <header><div><span class="eyebrow">AFTER THE RAIN / 02</span><h1>河岸缓下来，老街更自然。</h1></div><a href="scene-space-01.html">上一版完整保留 ↗</a></header>
+    <div class="viewbar" role="group" aria-label="场景视角">
+      <button data-view="overview" aria-pressed="true">街区总览</button>
+      <button data-view="front" aria-pressed="false">两岸正面</button>
+      <button data-view="opposite" aria-pressed="false">对岸院落</button>
+      <button data-view="rear" aria-pressed="false">店后小巷</button>
+      <button data-view="bridge" aria-pressed="false">石桥桥头</button>
+      <button data-view="west" aria-pressed="false">河道衔接</button>
+      <button data-view="reverse" aria-pressed="false">背面总览</button>
+      <button data-view="distant" aria-pressed="false">远岸坡形</button>
+    </div>
+    <aside id="view-note"><span class="eyebrow" id="view-number">01 / 街区总览</span><h2 id="view-title">两岸、双桥与后巷</h2><p id="view-description">同一片街区，平缓的河岸与统一的旧墙、石路质感。</p><p class="scope">同机位查看三个阶段，观察坡形和材质各自带来的变化。</p></aside>
+    <div class="bottom-tools" role="group" aria-label="巡看与版本比较">
+      <button id="tour-banks" aria-pressed="false">沿两岸巡看</button><button id="tour-rear" aria-pressed="false">后巷巡看</button>
+      <button id="stop" hidden>停止巡看</button><span class="divider"></span>
+      <button data-stage="previous" aria-pressed="false">上一版</button><button data-stage="terrain" aria-pressed="false">只修地形</button><button data-stage="complete" aria-pressed="true">地形＋材质</button><span id="version" role="status">当前：自然衔接 02</span>
+    </div>
+    <p class="hint">拖动旋转 · 滚轮缩放 · 右键平移 · Esc 停止巡看</p>
+    <div id="loading" role="status"><div><span class="eyebrow">雨后的临水老街</span><p id="load-text">正在载入街区…</p><button id="retry" hidden>重新载入</button></div></div>
+    <details class="credits"><summary>版本说明</summary><p>同一街区范围内，调整远景河岸的高度过渡，统一对岸和后巷的抹灰、石面、木构与屋顶质感。房屋内部未开放。</p><p>三个阶段保持同一镜头和基础光照；“只修地形”沿用上一版材质，方便单独判断坡形变化。</p><a href="https://polyhaven.com/license" target="_blank" rel="noopener">材质与环境贴图：Poly Haven / CC0</a></details>
+  </main>
+</body>
+</html>

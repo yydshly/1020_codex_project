@@ -1,0 +1,37 @@
+[
+  {
+    "requestedSpeed": 0.48,
+    "maxCorrectionM": 0.009895224370841841,
+    "maxIdleCorrectionM": 2.220446049250313e-16,
+    "maxFootFrameStepM": 0.025982502490346587,
+    "peakFoot": {
+      "label": "frontL",
+      "frame": 180,
+      "mode": "walk"
+    },
+    "modeFrames": {
+      "idle": 205,
+      "walk": 183,
+      "settling": 32
+    },
+    "finiteBones": true
+  },
+  {
+    "requestedSpeed": 1.65,
+    "maxCorrectionM": 0.0076694012613518206,
+    "maxIdleCorrectionM": 8.881784197001252e-16,
+    "maxFootFrameStepM": 0.05310115198655826,
+    "peakFoot": {
+      "label": "frontR",
+      "frame": 187,
+      "mode": "run"
+    },
+    "modeFrames": {
+      "idle": 166,
+      "walk": 59,
+      "run": 163,
+      "settling": 32
+    },
+    "finiteBones": true
+  }
+]

@@ -1,0 +1,46 @@
+[
+  {
+    "role": "Diffuse",
+    "filename": "worn_plaster_wall/worn_plaster_wall_diff_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/worn_plaster_wall/worn_plaster_wall_diff_1k.jpg",
+    "bytes": 750361,
+    "sha256": "f769bee35504ff713e89e89d2b64c1eb3c373dd184973ac8706310f19fd63efe",
+    "resolution_px": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "role": "nor_gl",
+    "filename": "worn_plaster_wall/worn_plaster_wall_nor_gl_1k.png",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/worn_plaster_wall/worn_plaster_wall_nor_gl_1k.png",
+    "bytes": 5335659,
+    "sha256": "2f8dc1726f6c2a32cd8270e9135fb3bd6fa6606801cb76a39dfe419eef96ab76",
+    "resolution_px": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "role": "Rough",
+    "filename": "worn_plaster_wall/worn_plaster_wall_rough_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/worn_plaster_wall/worn_plaster_wall_rough_1k.jpg",
+    "bytes": 242497,
+    "sha256": "383584ed24edd4dd6e6a675fd822ec04152684ba15f4b0eda1f0dbe31979a7c6",
+    "resolution_px": [
+      1024,
+      1024
+    ]
+  },
+  {
+    "role": "AO",
+    "filename": "worn_plaster_wall/worn_plaster_wall_ao_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/worn_plaster_wall/worn_plaster_wall_ao_1k.jpg",
+    "bytes": 424263,
+    "sha256": "e47fd759383bb6c26be16a58402c73c799e6775619a90ed2d61c8f25b4a93ec7",
+    "resolution_px": [
+      1024,
+      1024
+    ]
+  }
+]

@@ -1,0 +1,30 @@
+[
+  {
+    "role": "Diffuse",
+    "filename": "cobblestone_floor_05/cobblestone_floor_05_diff_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cobblestone_floor_05/cobblestone_floor_05_diff_1k.jpg",
+    "bytes": 482704,
+    "sha256": "641f75f0809557c8fdf8b3490e4b93634b0c2694320f38ad65834fead8d5f938"
+  },
+  {
+    "role": "nor_gl",
+    "filename": "cobblestone_floor_05/cobblestone_floor_05_nor_gl_1k.png",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/png/1k/cobblestone_floor_05/cobblestone_floor_05_nor_gl_1k.png",
+    "bytes": 1127696,
+    "sha256": "3ab14ff7703ea68281e7c0e52f34826a37e77435db8cc73cf3b5cfe207ebef4d"
+  },
+  {
+    "role": "Rough",
+    "filename": "cobblestone_floor_05/cobblestone_floor_05_rough_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cobblestone_floor_05/cobblestone_floor_05_rough_1k.jpg",
+    "bytes": 327784,
+    "sha256": "b6b7a2e7685ffd72a76a583130da8c196211ed7aa44330195878526706f63405"
+  },
+  {
+    "role": "AO",
+    "filename": "cobblestone_floor_05/cobblestone_floor_05_ao_1k.jpg",
+    "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/cobblestone_floor_05/cobblestone_floor_05_ao_1k.jpg",
+    "bytes": 186424,
+    "sha256": "2d9920ee1df8794ed57be16a5882e9917ae50c8f6794700a5eb8851f5d78aa0a"
+  }
+]

@@ -1,0 +1,80 @@
+{
+  "localPreview": "http://127.0.0.1:8062/scene-space-08.html",
+  "published": false,
+  "source": "rainy-canal-space-06.blend; SPACE07 remains the appearance and layout comparison",
+  "userTarget": "The two coarse backland buildings in the user-marked red box, together with whole-neighbourhood building layout and ground connections.",
+  "scope": {
+    "recomposedPeripheralHouses": 17,
+    "upgradedBackgroundProxyBuildings": 4,
+    "sameDevelopedExtent": true,
+    "preserved": [
+      "All prior version files",
+      "Original detailed shops",
+      "Refined opposite-bank core",
+      "River and two bridges",
+      "Original accessible small courtyard",
+      "Original terrain and road geometry"
+    ],
+    "retiredObjectsInNewCopyOnly": 60,
+    "newSourceBuildings": 21,
+    "sourceModelTriangles": 254010,
+    "triangleIncreaseFrom06": 13160,
+    "triangleIncreasePercent": 5.46,
+    "glbBytes": 16448624,
+    "newLighting": {
+      "litWindows": 62,
+      "fixedFixtures": 33,
+      "realPointLightPool": 6,
+      "newShadowMaps": 0
+    }
+  },
+  "changes": [
+    "Grouped the detached additions as short attached rows, with actual corner side entrances and shared-wall roof treatment.",
+    "Replaced four simplified background masses with four-sided buildings. The red-box pair now addresses the south street and a shared forecourt.",
+    "Added continuous frontage paving, defined private garden boundaries, corner approaches and terrain shoulders.",
+    "Raised only six rear service entrances to their actual local sloping ground; principal and secondary public entrances remain on the shared street level.",
+    "Added a gentle south-west approach ramp without changing old terrain, and removed mistakenly river-facing shoulder strips.",
+    "Derived windows and lamps from explicit new facade/entrance coordinates, including low-roof lamp clearance."
+  ],
+  "independentChecks": {
+    "physicalReport": "assets/space-08-postcheck-final.json",
+    "physicalPassed": true,
+    "navigationReport": "artifacts/scene-space-08/navigation-validation-final.json",
+    "connectedNavigationGridPoints": 18889,
+    "runtimeReport": "artifacts/scene-space-08/runtime-validation-final-r2.json",
+    "runtimePassed": true,
+    "runtimeChecks": 36,
+    "protectedOldFiles": 163,
+    "changedOldFiles": 0,
+    "originalRoutePointsUnchanged": 522,
+    "originalSupportSamplesUnchanged": 33,
+    "physicalRouteSamples": 2963,
+    "physicalWalkableGridSamples": 4644,
+    "shoulderSegments": 565,
+    "shoulderTerrainMaximumErrorMetres": 3.8e-06,
+    "knownOriginalStepEdgeSamples": "Seven 8cm ankle rays hit original bookshop step edges, reproduced identically against the original source and explicitly retained in the physical report."
+  },
+  "browserChecks": {
+    "renderedWholeDistrict": true,
+    "renderedUserRedBoxRegion": true,
+    "courtRoaming": "Observed entry into the new shared forecourt, followed by return to south residential street and automatic handoff to walking mode.",
+    "finalConsoleErrorsAndWarnings": 0,
+    "previewResources": "Closed the six agent-created SPACE02–07 preview tabs after identifying competing render load. All version files and the built-in SPACE07 comparison remain available; SPACE08 stays open.",
+    "comparison": "07 original layout and 08 recomposition use the same camera and shared sky/exposure treatment; baseline walking is disabled because geometry differs.",
+    "startupObservation": "An initial WebGL program validation failure produced a white scene. A reload restored rendering; shader compilation can temporarily block browser inspection. No success claim relies on the rejected white capture.",
+    "acceptedScreenshots": [
+      "overview-final.png",
+      "redbox-final.png",
+      "plan-final.png",
+      "south-final.png",
+      "court-entry-final.png",
+      "court-return-final.png",
+      "redbox-previous.png"
+    ]
+  },
+  "limits": [
+    "This revision validates street grouping, entrance access, building massing and frontage connections. It is not a claim of reference-photo-level environment art.",
+    "Vegetation, distant landscape and material detail still need a coherent later visual pass.",
+    "House interiors and closed private gardens are not walkable. Navigation is bounded swept proxies, not a full rigid-body physics system."
+  ]
+}

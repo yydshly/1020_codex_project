@@ -1,0 +1,1947 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-24T13:13:47.603441+00:00",
+  "passed": true,
+  "checks": {
+    "no_old_objects_removed": true,
+    "only_whitelisted_old_object_fields_changed": true,
+    "all_whitelisted_old_objects_belong_to_opposite_group": true,
+    "six_replaced_shell_window_objects_hidden_only": true,
+    "three_roof_data_replaced_with_new_space03_meshes": true,
+    "old_roof_material_slots_unchanged": true,
+    "three_plinth_data_replaced_material_slots_preserved": true,
+    "plinth_1_bounds_unchanged": true,
+    "plinth_1_door_notch_top0925_and_solid_bottom": true,
+    "plinth_1_outside_notches_still117": true,
+    "plinth_1_only_expected_notch_volume_removed": true,
+    "plinth_1_original_mesh_retained_unchanged": true,
+    "plinth_2_bounds_unchanged": true,
+    "plinth_2_door_notch_top0925_and_solid_bottom": true,
+    "plinth_2_outside_notches_still117": true,
+    "plinth_2_only_expected_notch_volume_removed": true,
+    "plinth_2_original_mesh_retained_unchanged": true,
+    "plinth_3_bounds_unchanged": true,
+    "plinth_3_door_notch_top0925_and_solid_bottom": true,
+    "plinth_3_outside_notches_still117": true,
+    "plinth_3_only_expected_notch_volume_removed": true,
+    "plinth_3_original_mesh_retained_unchanged": true,
+    "new_objects_space03_geometry_only": true,
+    "new_objects_independent_facade_roof_collections": true,
+    "no_new_lights_or_cameras": true,
+    "old_materials_fully_frozen": true,
+    "new_materials_space03_prefix": true,
+    "old_node_groups_fully_frozen": true,
+    "new_node_groups_space03_prefix": true,
+    "worlds_fully_frozen": true,
+    "view_layers_fully_frozen": true,
+    "r2_adds_no_objects_or_materials_beyond_prior_space03": true,
+    "old_collection_members_and_visibility_frozen": true,
+    "only_facade_and_roof_collections_added": true,
+    "old_layer_collection_flags_frozen": true,
+    "scene_settings_camera_world_compositor_frozen": true,
+    "replaced_roofs_stay_within_original_horizontal_envelope_plus015m": true,
+    "new_detail_geometry_stays_at_three_existing_houses": true,
+    "ground_water_main_shops_bridges_courts_fully_frozen": true,
+    "background_water_rays_pass": true,
+    "original522_route_samples_pass": true,
+    "all33_bridgehead_rear_alley_supports_hit": true,
+    "other30_bridgehead_rear_alley_supports_unchanged": true,
+    "three_front_samples_only_gain_expected075m_door_threshold": true,
+    "three_fronts_remain_blocked_at_cat_and_human_heights": true,
+    "previous124_hashes_included_unchanged": true,
+    "all130_old_files_preserved": true,
+    "source_hash_matches_previous_manifest": true,
+    "saved_blend_and_glb_match_new_manifest": true,
+    "export_triangle_increase_within15000": true,
+    "glb_has_no_cameras_or_lights": true,
+    "audit_did_not_change_saved_blends": true
+  },
+  "source": {
+    "file": "rainy-canal-space-02.blend",
+    "sha256": "052b7622415b4dcfde8aacb2db1725ee1e44f4c7a7960f47da9ce9ea8fe0a103",
+    "counts": {
+      "objects": 1830,
+      "mesh_objects": 1722,
+      "curve_objects": 76,
+      "vertices": 106431,
+      "faces": 80501,
+      "curve_points": 1685,
+      "modifiers": 713,
+      "lights": 20,
+      "cameras": 12
+    }
+  },
+  "candidate": {
+    "file": "rainy-canal-space-03.blend",
+    "sha256": "4c7e9c0093960ea796f2d7a888129da7c7a9d9c10b5b6d5486c2cb405f8c0178",
+    "counts": {
+      "objects": 1845,
+      "mesh_objects": 1737,
+      "curve_objects": 76,
+      "vertices": 131095,
+      "faces": 87246,
+      "curve_points": 1685,
+      "modifiers": 713,
+      "lights": 20,
+      "cameras": 12
+    }
+  },
+  "allowed_changes": {
+    "hide_render_and_hide_viewport_only": [
+      "EXT_Opposite_01_ClosedShell",
+      "EXT_Opposite_01_OpaqueWindowDoorDetails",
+      "EXT_Opposite_02_ClosedShell",
+      "EXT_Opposite_02_OpaqueWindowDoorDetails",
+      "EXT_Opposite_03_ClosedShell",
+      "EXT_Opposite_03_OpaqueWindowDoorDetails"
+    ],
+    "data_replacement_only": [
+      "EXT_Opposite_01_ClosedRoof",
+      "EXT_Opposite_01_StonePlinth",
+      "EXT_Opposite_02_ClosedRoof",
+      "EXT_Opposite_02_StonePlinth",
+      "EXT_Opposite_03_ClosedRoof",
+      "EXT_Opposite_03_StonePlinth"
+    ],
+    "new_collections": [
+      "SPACE03_Facades",
+      "SPACE03_Roofs"
+    ]
+  },
+  "changed_old_objects": {
+    "EXT_Opposite_01_ClosedRoof": [
+      "data"
+    ],
+    "EXT_Opposite_01_ClosedShell": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Opposite_01_OpaqueWindowDoorDetails": [
+      "visibility"
+    ],
+    "EXT_Opposite_01_StonePlinth": [
+      "data"
+    ],
+    "EXT_Opposite_02_ClosedRoof": [
+      "data"
+    ],
+    "EXT_Opposite_02_ClosedShell": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Opposite_02_OpaqueWindowDoorDetails": [
+      "visibility"
+    ],
+    "EXT_Opposite_02_StonePlinth": [
+      "data"
+    ],
+    "EXT_Opposite_03_ClosedRoof": [
+      "data"
+    ],
+    "EXT_Opposite_03_ClosedShell": [
+      "transform",
+      "visibility"
+    ],
+    "EXT_Opposite_03_OpaqueWindowDoorDetails": [
+      "visibility"
+    ],
+    "EXT_Opposite_03_StonePlinth": [
+      "data"
+    ]
+  },
+  "unexpected_old_object_changes": {},
+  "transform_differences": {
+    "EXT_Opposite_01_ClosedShell": {
+      "matrix_world": {
+        "before": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -11.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -18.850000381469727
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            2.9749999046325684
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "after": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "matrix_local": {
+        "before": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -11.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -18.850000381469727
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            2.9749999046325684
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "after": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    },
+    "EXT_Opposite_02_ClosedShell": {
+      "matrix_world": {
+        "before": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -3.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -18.850000381469727
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            3.424999952316284
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "after": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "matrix_local": {
+        "before": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            -3.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -18.850000381469727
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            3.424999952316284
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "after": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    },
+    "EXT_Opposite_03_ClosedShell": {
+      "matrix_world": {
+        "before": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            4.800000190734863
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -18.850000381469727
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            2.825000047683716
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "after": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      },
+      "matrix_local": {
+        "before": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            4.800000190734863
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            -18.850000381469727
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            2.825000047683716
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "after": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            1.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            1.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ]
+      }
+    }
+  },
+  "hidden_transform_cache_differences": {
+    "EXT_Opposite_01_ClosedShell": {
+      "world_and_local_cache_in_hidden_candidate": "identity",
+      "all_persistent_transform_fields_and_matrix_basis_identical": true,
+      "unparented_source_world_equals_basis": true,
+      "interpretation": "Hidden-object derived matrix cache is not evaluated on load; no stored location, rotation, scale, basis, or parenting change."
+    },
+    "EXT_Opposite_02_ClosedShell": {
+      "world_and_local_cache_in_hidden_candidate": "identity",
+      "all_persistent_transform_fields_and_matrix_basis_identical": true,
+      "unparented_source_world_equals_basis": true,
+      "interpretation": "Hidden-object derived matrix cache is not evaluated on load; no stored location, rotation, scale, basis, or parenting change."
+    },
+    "EXT_Opposite_03_ClosedShell": {
+      "world_and_local_cache_in_hidden_candidate": "identity",
+      "all_persistent_transform_fields_and_matrix_basis_identical": true,
+      "unparented_source_world_equals_basis": true,
+      "interpretation": "Hidden-object derived matrix cache is not evaluated on load; no stored location, rotation, scale, basis, or parenting change."
+    }
+  },
+  "added_objects": [
+    "SPACE03_Opposite_01_EaveAndVergeBoards",
+    "SPACE03_Opposite_01_RainGuttersAndDownpipes",
+    "SPACE03_Opposite_01_RecessedWalls",
+    "SPACE03_Opposite_01_StaggeredTilesAndRidge",
+    "SPACE03_Opposite_01_WindowDoorJoinery",
+    "SPACE03_Opposite_02_EaveAndVergeBoards",
+    "SPACE03_Opposite_02_RainGuttersAndDownpipes",
+    "SPACE03_Opposite_02_RecessedWalls",
+    "SPACE03_Opposite_02_StaggeredTilesAndRidge",
+    "SPACE03_Opposite_02_WindowDoorJoinery",
+    "SPACE03_Opposite_03_EaveAndVergeBoards",
+    "SPACE03_Opposite_03_RainGuttersAndDownpipes",
+    "SPACE03_Opposite_03_RecessedWalls",
+    "SPACE03_Opposite_03_StaggeredTilesAndRidge",
+    "SPACE03_Opposite_03_WindowDoorJoinery"
+  ],
+  "new_collections": [
+    "SPACE03_Facades",
+    "SPACE03_Roofs"
+  ],
+  "material_node_group_differences": {
+    "materials": {
+      "missing": [],
+      "changed": [],
+      "new": [
+        "SPACE03_FadedTeal",
+        "SPACE03_WeatheredWood",
+        "SPACE03_WindowCurtain",
+        "SPACE03_WindowPane",
+        "SPACE03_WindowRecess",
+        "SPACE03_WindowWarm"
+      ]
+    },
+    "node_groups": {
+      "missing": [],
+      "changed": [],
+      "new": []
+    }
+  },
+  "roof_bounds_before": {
+    "EXT_Opposite_02_ClosedRoof": {
+      "min": [
+        -6.130000114440918,
+        -21.600000381469727,
+        6.0
+      ],
+      "max": [
+        0.12999999523162842,
+        -16.100000381469727,
+        7.150000095367432
+      ]
+    },
+    "EXT_Opposite_01_ClosedRoof": {
+      "min": [
+        -14.029999732971191,
+        -21.600000381469727,
+        5.099999904632568
+      ],
+      "max": [
+        -7.96999979019165,
+        -16.100000381469727,
+        6.25
+      ]
+    },
+    "EXT_Opposite_03_ClosedRoof": {
+      "min": [
+        1.7699999809265137,
+        -21.600000381469727,
+        4.800000190734863
+      ],
+      "max": [
+        7.829999923706055,
+        -16.100000381469727,
+        5.949999809265137
+      ]
+    }
+  },
+  "roof_bounds_after": {
+    "EXT_Opposite_02_ClosedRoof": {
+      "min": [
+        -6.130000114440918,
+        -21.600000381469727,
+        5.885000228881836
+      ],
+      "max": [
+        0.12999999523162842,
+        -16.100000381469727,
+        7.150000095367432
+      ]
+    },
+    "EXT_Opposite_01_ClosedRoof": {
+      "min": [
+        -14.029999732971191,
+        -21.600000381469727,
+        4.985000133514404
+      ],
+      "max": [
+        -7.96999979019165,
+        -16.100000381469727,
+        6.25
+      ]
+    },
+    "EXT_Opposite_03_ClosedRoof": {
+      "min": [
+        1.7699999809265137,
+        -21.600000381469727,
+        4.684999942779541
+      ],
+      "max": [
+        7.829999923706055,
+        -16.100000381469727,
+        5.949999809265137
+      ]
+    }
+  },
+  "plinth_notch_audit": {
+    "EXT_Opposite_01_StonePlinth": {
+      "before": {
+        "bounds": {
+          "min": [
+            -13.850000381469727,
+            -21.399999618530273,
+            0.8500000238418579
+          ],
+          "max": [
+            -8.149999618530273,
+            -16.30000114440918,
+            1.1699999570846558
+          ]
+        },
+        "volume": 9.302399317423504,
+        "triangles": 12
+      },
+      "after": {
+        "bounds": {
+          "min": [
+            -13.850000381469727,
+            -21.399999618530273,
+            0.8500000238418579
+          ],
+          "max": [
+            -8.149999618530273,
+            -16.30000114440918,
+            1.1699999570846558
+          ]
+        },
+        "volume": 9.113256743798658,
+        "triangles": 72
+      },
+      "expected_removed_volume": 0.18913996686935425,
+      "measured_removed_volume": 0.18914257362484577,
+      "probes": [
+        {
+          "side": "front",
+          "kind": "notch",
+          "xy": [
+            -11.3,
+            -16.380001144409178
+          ],
+          "top": 0.9250000715255737,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "front",
+          "kind": "notch",
+          "xy": [
+            -11.0,
+            -16.380001144409178
+          ],
+          "top": 0.925000011920929,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "front",
+          "kind": "notch",
+          "xy": [
+            -10.7,
+            -16.380001144409178
+          ],
+          "top": 0.925000011920929,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "front",
+          "kind": "notch",
+          "xy": [
+            -11.3,
+            -16.62000114440918
+          ],
+          "top": 0.925000011920929,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "front",
+          "kind": "notch",
+          "xy": [
+            -11.0,
+            -16.62000114440918
+          ],
+          "top": 0.925000011920929,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "front",
+          "kind": "notch",
+          "xy": [
+            -10.7,
+            -16.62000114440918
+          ],
+          "top": 0.9249999523162842,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "front",
+          "kind": "outside_notch",
+          "xy": [
+            -11.62,
+            -16.50000114440918
+          ],
+          "top": 1.1699999570846558
+        },
+        {
+          "side": "front",
+          "kind": "outside_notch",
+          "xy": [
+            -10.38,
+            -16.50000114440918
+          ],
+          "top": 1.1699999570846558
+        },
+        {
+          "side": "front",
+          "kind": "outside_notch",
+          "xy": [
+            -11.0,
+            -16.78000114440918
+          ],
+          "top": 1.1699999570846558
+        },
+        {
+          "side": "rear",
+          "kind": "notch",
+          "xy": [
+            -10.829,
+            -21.319999618530275
+          ],
+          "top": 0.9250000715255737,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "rear",
+          "kind": "notch",
+          "xy": [
+            -10.55,
+            -21.319999618530275
+          ],
+          "top": 0.9250000715255737,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "rear",
+          "kind": "notch",
+          "xy": [
+            -10.271,
+            -21.319999618530275
+          ],
+          "top": 0.9250000715255737,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "rear",
+          "kind": "notch",
+          "xy": [
+            -10.829,
+            -21.079999618530273
+          ],
+          "top": 0.9250000715255737,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "rear",
+          "kind": "notch",
+          "xy": [
+            -10.55,
+            -21.079999618530273
+          ],
+          "top": 0.925000011920929,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "rear",
+          "kind": "notch",
+          "xy": [
+            -10.271,
+            -21.079999618530273
+          ],
+          "top": 0.9250000715255737,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "rear",
+          "kind": "outside_notch",
+          "xy": [
+            -11.135000000000002,
+            -21.199999618530274
+          ],
+          "top": 1.1699999570846558
+        },
+        {
+          "side": "rear",
+          "kind": "outside_notch",
+          "xy": [
+            -9.965,
+            -21.199999618530274
+          ],
+          "top": 1.1699999570846558
+        },
+        {
+          "side": "rear",
+          "kind": "outside_notch",
+          "xy": [
+            -10.55,
+            -20.919999618530273
+          ],
+          "top": 1.1699999570846558
+        }
+      ],
+      "original_mesh_fake_user": true
+    },
+    "EXT_Opposite_02_StonePlinth": {
+      "before": {
+        "bounds": {
+          "min": [
+            -5.949999809265137,
+            -21.399999618530273,
+            0.8500000238418579
+          ],
+          "max": [
+            -0.04999995231628418,
+            -16.30000114440918,
+            1.1699999570846558
+          ]
+        },
+        "volume": 9.628799756368002,
+        "triangles": 12
+      },
+      "after": {
+        "bounds": {
+          "min": [
+            -5.949999809265137,
+            -21.399999618530273,
+            0.8500000238418579
+          ],
+          "max": [
+            -0.04999995231628418,
+            -16.30000114440918,
+            1.1699999570846558
+          ]
+        },
+        "volume": 9.439654485632985,
+        "triangles": 72
+      },
+      "expected_removed_volume": 0.18913996686935425,
+      "measured_removed_volume": 0.18914527073501652,
+      "probes": [
+        {
+          "side": "front",
+          "kind": "notch",
+          "xy": [
+            -3.3,
+            -16.380001144409178
+          ],
+          "top": 0.9249999523162842,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "front",
+          "kind": "notch",
+          "xy": [
+            -3.0,
+            -16.380001144409178
+          ],
+          "top": 0.9249999523162842,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "front",
+          "kind": "notch",
+          "xy": [
+            -2.7,
+            -16.380001144409178
+          ],
+          "top": 0.9250000715255737,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "front",
+          "kind": "notch",
+          "xy": [
+            -3.3,
+            -16.62000114440918
+          ],
+          "top": 0.925000011920929,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "front",
+          "kind": "notch",
+          "xy": [
+            -3.0,
+            -16.62000114440918
+          ],
+          "top": 0.925000011920929,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "front",
+          "kind": "notch",
+          "xy": [
+            -2.7,
+            -16.62000114440918
+          ],
+          "top": 0.9249999523162842,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "front",
+          "kind": "outside_notch",
+          "xy": [
+            -3.62,
+            -16.50000114440918
+          ],
+          "top": 1.1699999570846558
+        },
+        {
+          "side": "front",
+          "kind": "outside_notch",
+          "xy": [
+            -2.38,
+            -16.50000114440918
+          ],
+          "top": 1.1699999570846558
+        },
+        {
+          "side": "front",
+          "kind": "outside_notch",
+          "xy": [
+            -3.0,
+            -16.78000114440918
+          ],
+          "top": 1.1699999570846558
+        },
+        {
+          "side": "rear",
+          "kind": "notch",
+          "xy": [
+            -2.8289999999999997,
+            -21.319999618530275
+          ],
+          "top": 0.9249999523162842,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "rear",
+          "kind": "notch",
+          "xy": [
+            -2.55,
+            -21.319999618530275
+          ],
+          "top": 0.9249999523162842,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "rear",
+          "kind": "notch",
+          "xy": [
+            -2.271,
+            -21.319999618530275
+          ],
+          "top": 0.9249999523162842,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "rear",
+          "kind": "notch",
+          "xy": [
+            -2.8289999999999997,
+            -21.079999618530273
+          ],
+          "top": 0.9249999523162842,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "rear",
+          "kind": "notch",
+          "xy": [
+            -2.55,
+            -21.079999618530273
+          ],
+          "top": 0.925000011920929,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "rear",
+          "kind": "notch",
+          "xy": [
+            -2.271,
+            -21.079999618530273
+          ],
+          "top": 0.925000011920929,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "rear",
+          "kind": "outside_notch",
+          "xy": [
+            -3.135,
+            -21.199999618530274
+          ],
+          "top": 1.1699998378753662
+        },
+        {
+          "side": "rear",
+          "kind": "outside_notch",
+          "xy": [
+            -1.9649999999999999,
+            -21.199999618530274
+          ],
+          "top": 1.1699999570846558
+        },
+        {
+          "side": "rear",
+          "kind": "outside_notch",
+          "xy": [
+            -2.55,
+            -20.919999618530273
+          ],
+          "top": 1.1699999570846558
+        }
+      ],
+      "original_mesh_fake_user": true
+    },
+    "EXT_Opposite_03_StonePlinth": {
+      "before": {
+        "bounds": {
+          "min": [
+            1.950000286102295,
+            -21.399999618530273,
+            0.8500000238418579
+          ],
+          "max": [
+            7.650000095367432,
+            -16.30000114440918,
+            1.1699999570846558
+          ]
+        },
+        "volume": 9.302399317423504,
+        "triangles": 12
+      },
+      "after": {
+        "bounds": {
+          "min": [
+            1.950000286102295,
+            -21.399999618530273,
+            0.8500000238418579
+          ],
+          "max": [
+            7.650000095367432,
+            -16.30000114440918,
+            1.1699999570846558
+          ]
+        },
+        "volume": 9.11325545360645,
+        "triangles": 72
+      },
+      "expected_removed_volume": 0.18913996686935425,
+      "measured_removed_volume": 0.18914386381705306,
+      "probes": [
+        {
+          "side": "front",
+          "kind": "notch",
+          "xy": [
+            4.5,
+            -16.380001144409178
+          ],
+          "top": 0.925000011920929,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "front",
+          "kind": "notch",
+          "xy": [
+            4.8,
+            -16.380001144409178
+          ],
+          "top": 0.925000011920929,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "front",
+          "kind": "notch",
+          "xy": [
+            5.1,
+            -16.380001144409178
+          ],
+          "top": 0.925000011920929,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "front",
+          "kind": "notch",
+          "xy": [
+            4.5,
+            -16.62000114440918
+          ],
+          "top": 0.9249999523162842,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "front",
+          "kind": "notch",
+          "xy": [
+            4.8,
+            -16.62000114440918
+          ],
+          "top": 0.925000011920929,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "front",
+          "kind": "notch",
+          "xy": [
+            5.1,
+            -16.62000114440918
+          ],
+          "top": 0.925000011920929,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "front",
+          "kind": "outside_notch",
+          "xy": [
+            4.18,
+            -16.50000114440918
+          ],
+          "top": 1.1699999570846558
+        },
+        {
+          "side": "front",
+          "kind": "outside_notch",
+          "xy": [
+            5.42,
+            -16.50000114440918
+          ],
+          "top": 1.1699999570846558
+        },
+        {
+          "side": "front",
+          "kind": "outside_notch",
+          "xy": [
+            4.8,
+            -16.78000114440918
+          ],
+          "top": 1.1699999570846558
+        },
+        {
+          "side": "rear",
+          "kind": "notch",
+          "xy": [
+            4.971,
+            -21.319999618530275
+          ],
+          "top": 0.9250000715255737,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "rear",
+          "kind": "notch",
+          "xy": [
+            5.25,
+            -21.319999618530275
+          ],
+          "top": 0.925000011920929,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "rear",
+          "kind": "notch",
+          "xy": [
+            5.529,
+            -21.319999618530275
+          ],
+          "top": 0.925000011920929,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "rear",
+          "kind": "notch",
+          "xy": [
+            4.971,
+            -21.079999618530273
+          ],
+          "top": 0.9250000715255737,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "rear",
+          "kind": "notch",
+          "xy": [
+            5.25,
+            -21.079999618530273
+          ],
+          "top": 0.9250000715255737,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "rear",
+          "kind": "notch",
+          "xy": [
+            5.529,
+            -21.079999618530273
+          ],
+          "top": 0.9250000715255737,
+          "bottom": 0.8500000238418579
+        },
+        {
+          "side": "rear",
+          "kind": "outside_notch",
+          "xy": [
+            4.665,
+            -21.199999618530274
+          ],
+          "top": 1.1699999570846558
+        },
+        {
+          "side": "rear",
+          "kind": "outside_notch",
+          "xy": [
+            5.835,
+            -21.199999618530274
+          ],
+          "top": 1.1699999570846558
+        },
+        {
+          "side": "rear",
+          "kind": "outside_notch",
+          "xy": [
+            5.25,
+            -20.919999618530273
+          ],
+          "top": 1.1699999570846558
+        }
+      ],
+      "original_mesh_fake_user": true
+    }
+  },
+  "new_geometry_scope": {
+    "SPACE03_Opposite_01_EaveAndVergeBoards": {
+      "vertices": 48,
+      "outside_envelope_count": 0,
+      "first_outside_points": [],
+      "bounds": {
+        "min": [
+          -14.059000015258789,
+          -21.63249969482422,
+          4.979000091552734
+        ],
+        "max": [
+          -7.940999984741211,
+          -16.0674991607666,
+          6.245741844177246
+        ]
+      }
+    },
+    "SPACE03_Opposite_01_RainGuttersAndDownpipes": {
+      "vertices": 156,
+      "outside_envelope_count": 0,
+      "first_outside_points": [],
+      "bounds": {
+        "min": [
+          -14.015000343322754,
+          -21.700000762939453,
+          0.9956548810005188
+        ],
+        "max": [
+          -7.985000133514404,
+          -16.0,
+          5.03000020980835
+        ]
+      }
+    },
+    "SPACE03_Opposite_01_RecessedWalls": {
+      "vertices": 1248,
+      "outside_envelope_count": 0,
+      "first_outside_points": [],
+      "bounds": {
+        "min": [
+          -13.800000190734863,
+          -21.350000381469727,
+          0.8500000238418579
+        ],
+        "max": [
+          -8.199999809265137,
+          -16.350000381469727,
+          5.099999904632568
+        ]
+      }
+    },
+    "SPACE03_Opposite_01_StaggeredTilesAndRidge": {
+      "vertices": 2858,
+      "outside_envelope_count": 0,
+      "first_outside_points": [],
+      "bounds": {
+        "min": [
+          -14.020000457763672,
+          -21.618000030517578,
+          5.108116149902344
+        ],
+        "max": [
+          -7.980000019073486,
+          -16.082000732421875,
+          6.367000102996826
+        ]
+      }
+    },
+    "SPACE03_Opposite_01_WindowDoorJoinery": {
+      "vertices": 3920,
+      "outside_envelope_count": 0,
+      "first_outside_points": [],
+      "bounds": {
+        "min": [
+          -14.029999732971191,
+          -21.639999389648438,
+          0.8100000023841858
+        ],
+        "max": [
+          -7.96999979019165,
+          -15.994256973266602,
+          4.847499847412109
+        ]
+      }
+    },
+    "SPACE03_Opposite_02_EaveAndVergeBoards": {
+      "vertices": 48,
+      "outside_envelope_count": 0,
+      "first_outside_points": [],
+      "bounds": {
+        "min": [
+          -6.158999919891357,
+          -21.63249969482422,
+          5.879000186920166
+        ],
+        "max": [
+          0.1589999943971634,
+          -16.0674991607666,
+          7.1457414627075195
+        ]
+      }
+    },
+    "SPACE03_Opposite_02_RainGuttersAndDownpipes": {
+      "vertices": 156,
+      "outside_envelope_count": 0,
+      "first_outside_points": [],
+      "bounds": {
+        "min": [
+          -6.114999771118164,
+          -21.700000762939453,
+          0.9956548810005188
+        ],
+        "max": [
+          0.11500000208616257,
+          -16.0,
+          5.929999828338623
+        ]
+      }
+    },
+    "SPACE03_Opposite_02_RecessedWalls": {
+      "vertices": 1248,
+      "outside_envelope_count": 0,
+      "first_outside_points": [],
+      "bounds": {
+        "min": [
+          -5.900000095367432,
+          -21.350000381469727,
+          0.8500000238418579
+        ],
+        "max": [
+          -0.10000000149011612,
+          -16.350000381469727,
+          6.0
+        ]
+      }
+    },
+    "SPACE03_Opposite_02_StaggeredTilesAndRidge": {
+      "vertices": 2858,
+      "outside_envelope_count": 0,
+      "first_outside_points": [],
+      "bounds": {
+        "min": [
+          -6.119999885559082,
+          -21.618000030517578,
+          6.007976531982422
+        ],
+        "max": [
+          0.11999999731779099,
+          -16.082000732421875,
+          7.267000198364258
+        ]
+      }
+    },
+    "SPACE03_Opposite_02_WindowDoorJoinery": {
+      "vertices": 3720,
+      "outside_envelope_count": 0,
+      "first_outside_points": [],
+      "bounds": {
+        "min": [
+          -6.130000114440918,
+          -21.639999389648438,
+          0.8100000023841858
+        ],
+        "max": [
+          0.12999999523162842,
+          -15.885581016540527,
+          5.760000228881836
+        ]
+      }
+    },
+    "SPACE03_Opposite_03_EaveAndVergeBoards": {
+      "vertices": 48,
+      "outside_envelope_count": 0,
+      "first_outside_points": [],
+      "bounds": {
+        "min": [
+          1.7410000562667847,
+          -21.63249969482422,
+          4.678999900817871
+        ],
+        "max": [
+          7.858999729156494,
+          -16.0674991607666,
+          5.945741653442383
+        ]
+      }
+    },
+    "SPACE03_Opposite_03_RainGuttersAndDownpipes": {
+      "vertices": 156,
+      "outside_envelope_count": 0,
+      "first_outside_points": [],
+      "bounds": {
+        "min": [
+          1.784999966621399,
+          -21.700000762939453,
+          0.9956548810005188
+        ],
+        "max": [
+          7.815000057220459,
+          -16.0,
+          4.730000019073486
+        ]
+      }
+    },
+    "SPACE03_Opposite_03_RecessedWalls": {
+      "vertices": 1248,
+      "outside_envelope_count": 0,
+      "first_outside_points": [],
+      "bounds": {
+        "min": [
+          2.0,
+          -21.350000381469727,
+          0.8500000238418579
+        ],
+        "max": [
+          7.599999904632568,
+          -16.350000381469727,
+          4.800000190734863
+        ]
+      }
+    },
+    "SPACE03_Opposite_03_StaggeredTilesAndRidge": {
+      "vertices": 2858,
+      "outside_envelope_count": 0,
+      "first_outside_points": [],
+      "bounds": {
+        "min": [
+          1.7799999713897705,
+          -21.618000030517578,
+          4.808138370513916
+        ],
+        "max": [
+          7.820000171661377,
+          -16.082000732421875,
+          6.066999912261963
+        ]
+      }
+    },
+    "SPACE03_Opposite_03_WindowDoorJoinery": {
+      "vertices": 3920,
+      "outside_envelope_count": 0,
+      "first_outside_points": [],
+      "bounds": {
+        "min": [
+          1.7699999809265137,
+          -21.639999389648438,
+          0.8100000023841858
+        ],
+        "max": [
+          7.829999923706055,
+          -16.048845291137695,
+          4.502500057220459
+        ]
+      }
+    }
+  },
+  "fixed_environment_object_count": 1262,
+  "background_water_checks": {
+    "passed": true,
+    "ray_count": 294,
+    "failures": [],
+    "outer_endpoint_inset_m": 0.05,
+    "scope": "Sampled finite background water surface only; no navigation or hydrodynamic claim."
+  },
+  "route_checks": {
+    "scope": "Sampled centerline floor support and 0.48m-wide body-ray checks only, not a navmesh, full-area collision certification or a playable controller.",
+    "floor_tolerance": 0.17,
+    "known_existing_paving_gaps": "Original stone joints can be about 0.12m lower than stone tops; a future walking controller needs step tolerance or a separate collision proxy.",
+    "routes": {
+      "both_banks_loop": {
+        "sample_count": 285,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      },
+      "rear_lane_loop": {
+        "sample_count": 237,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      }
+    }
+  },
+  "support_samples": {
+    "rear_cafe": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_ShopRearWallApron"
+    },
+    "rear_bookshop": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_ShopRearWallApron"
+    },
+    "rear_pottery": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_ShopRearWallApron"
+    },
+    "west_side": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_ShopWestSideInfill"
+    },
+    "east_side": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_B02_ShopEastSideInfill"
+    },
+    "rear_boundary": {
+      "hit": true,
+      "height": 0.845206618309021,
+      "object": "EXT_B02_RearLaneBoundaryShoulder"
+    },
+    "far_house_01_front": {
+      "hit": true,
+      "height": 0.925000011920929,
+      "object": "SPACE03_Opposite_01_WindowDoorJoinery"
+    },
+    "far_house_02_front": {
+      "hit": true,
+      "height": 0.925000011920929,
+      "object": "SPACE03_Opposite_02_WindowDoorJoinery"
+    },
+    "far_house_03_front": {
+      "hit": true,
+      "height": 0.925000011920929,
+      "object": "SPACE03_Opposite_03_WindowDoorJoinery"
+    },
+    "bridge_-18_-0.55_-1.6": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_Return bridge landing.001"
+    },
+    "bridge_-18_-0.55_-1.95": {
+      "hit": true,
+      "height": 0.8882484436035156,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_-0.55_-10.4": {
+      "hit": true,
+      "height": 0.8794219493865967,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_-0.55_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_Return bridge landing"
+    },
+    "bridge_-18_0_-1.6": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_Return bridge landing.001"
+    },
+    "bridge_-18_0_-1.95": {
+      "hit": true,
+      "height": 0.8882484436035156,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_0_-10.4": {
+      "hit": true,
+      "height": 0.8794219493865967,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_0_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_-18_0.55_-1.6": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_Return bridge landing.001"
+    },
+    "bridge_-18_0.55_-1.95": {
+      "hit": true,
+      "height": 0.8882484436035156,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_0.55_-10.4": {
+      "hit": true,
+      "height": 0.8794219493865967,
+      "object": "EXT_Return bridge continuous timber deck"
+    },
+    "bridge_-18_0.55_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "EXT_Return bridge landing"
+    },
+    "bridge_9.4_-0.55_-1.6": {
+      "hit": true,
+      "height": 0.8472225069999695,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_9.4_-0.55_-1.95": {
+      "hit": true,
+      "height": 0.9506124258041382,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_-0.55_-10.4": {
+      "hit": true,
+      "height": 0.9261985421180725,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_-0.55_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_9.4_0_-1.6": {
+      "hit": true,
+      "height": 0.8472225069999695,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_9.4_0_-1.95": {
+      "hit": true,
+      "height": 0.9506124258041382,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_0_-10.4": {
+      "hit": true,
+      "height": 0.9261985421180725,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_0_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_9.4_0.55_-1.6": {
+      "hit": true,
+      "height": 0.8472224473953247,
+      "object": "Rounded quay coping stones"
+    },
+    "bridge_9.4_0.55_-1.95": {
+      "hit": true,
+      "height": 0.9506124258041382,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_0.55_-10.4": {
+      "hit": true,
+      "height": 0.9261985421180725,
+      "object": "Curved individually paved bridge deck"
+    },
+    "bridge_9.4_0.55_-10.7": {
+      "hit": true,
+      "height": 0.8500000238418579,
+      "object": "Rounded quay coping stones"
+    }
+  },
+  "doorstep_support_changes": {
+    "far_house_01_front": {
+      "before": {
+        "hit": true,
+        "height": 0.8500000238418579,
+        "object": "EXT_B02_OppositeBuildingsContinuousSupport"
+      },
+      "after": {
+        "hit": true,
+        "height": 0.925000011920929,
+        "object": "SPACE03_Opposite_01_WindowDoorJoinery"
+      }
+    },
+    "far_house_02_front": {
+      "before": {
+        "hit": true,
+        "height": 0.8500000238418579,
+        "object": "EXT_B02_OppositeBuildingsContinuousSupport"
+      },
+      "after": {
+        "hit": true,
+        "height": 0.925000011920929,
+        "object": "SPACE03_Opposite_02_WindowDoorJoinery"
+      }
+    },
+    "far_house_03_front": {
+      "before": {
+        "hit": true,
+        "height": 0.8500000238418579,
+        "object": "EXT_B02_OppositeBuildingsContinuousSupport"
+      },
+      "after": {
+        "hit": true,
+        "height": 0.925000011920929,
+        "object": "SPACE03_Opposite_03_WindowDoorJoinery"
+      }
+    }
+  },
+  "front_barrier_probes": {
+    "before": {
+      "house_1_height_0.4": {
+        "hit": true,
+        "object": "EXT_Opposite_01_OpaqueWindowDoorDetails",
+        "position": [
+          -11.0,
+          -16.221500396728516,
+          1.25
+        ]
+      },
+      "house_1_height_1.0": {
+        "hit": true,
+        "object": "EXT_Opposite_01_OpaqueWindowDoorDetails",
+        "position": [
+          -11.0,
+          -16.221500396728516,
+          1.850000023841858
+        ]
+      },
+      "house_1_height_1.65": {
+        "hit": true,
+        "object": "EXT_Opposite_01_OpaqueWindowDoorDetails",
+        "position": [
+          -11.0,
+          -16.221500396728516,
+          2.5
+        ]
+      },
+      "house_2_height_0.4": {
+        "hit": true,
+        "object": "EXT_Opposite_02_OpaqueWindowDoorDetails",
+        "position": [
+          -3.0,
+          -16.221500396728516,
+          1.25
+        ]
+      },
+      "house_2_height_1.0": {
+        "hit": true,
+        "object": "EXT_Opposite_02_OpaqueWindowDoorDetails",
+        "position": [
+          -3.0,
+          -16.221500396728516,
+          1.850000023841858
+        ]
+      },
+      "house_2_height_1.65": {
+        "hit": true,
+        "object": "EXT_Opposite_02_OpaqueWindowDoorDetails",
+        "position": [
+          -3.0,
+          -16.221500396728516,
+          2.5
+        ]
+      },
+      "house_3_height_0.4": {
+        "hit": true,
+        "object": "EXT_Opposite_03_OpaqueWindowDoorDetails",
+        "position": [
+          4.800000190734863,
+          -16.221500396728516,
+          1.25
+        ]
+      },
+      "house_3_height_1.0": {
+        "hit": true,
+        "object": "EXT_Opposite_03_OpaqueWindowDoorDetails",
+        "position": [
+          4.800000190734863,
+          -16.221500396728516,
+          1.850000023841858
+        ]
+      },
+      "house_3_height_1.65": {
+        "hit": true,
+        "object": "EXT_Opposite_03_OpaqueWindowDoorDetails",
+        "position": [
+          4.800000190734863,
+          -16.221500396728516,
+          2.5
+        ]
+      }
+    },
+    "after": {
+      "house_1_height_0.4": {
+        "hit": true,
+        "object": "SPACE03_Opposite_01_WindowDoorJoinery",
+        "position": [
+          -11.0,
+          -16.372499465942383,
+          1.25
+        ]
+      },
+      "house_1_height_1.0": {
+        "hit": true,
+        "object": "SPACE03_Opposite_01_WindowDoorJoinery",
+        "position": [
+          -11.0,
+          -16.372499465942383,
+          1.850000023841858
+        ]
+      },
+      "house_1_height_1.65": {
+        "hit": true,
+        "object": "SPACE03_Opposite_01_WindowDoorJoinery",
+        "position": [
+          -11.0,
+          -16.372499465942383,
+          2.5
+        ]
+      },
+      "house_2_height_0.4": {
+        "hit": true,
+        "object": "SPACE03_Opposite_02_WindowDoorJoinery",
+        "position": [
+          -3.0,
+          -16.372499465942383,
+          1.25
+        ]
+      },
+      "house_2_height_1.0": {
+        "hit": true,
+        "object": "SPACE03_Opposite_02_WindowDoorJoinery",
+        "position": [
+          -3.0,
+          -16.372499465942383,
+          1.850000023841858
+        ]
+      },
+      "house_2_height_1.65": {
+        "hit": true,
+        "object": "SPACE03_Opposite_02_WindowDoorJoinery",
+        "position": [
+          -3.0,
+          -16.372499465942383,
+          2.5
+        ]
+      },
+      "house_3_height_0.4": {
+        "hit": true,
+        "object": "SPACE03_Opposite_03_WindowDoorJoinery",
+        "position": [
+          4.800000190734863,
+          -16.372499465942383,
+          1.25
+        ]
+      },
+      "house_3_height_1.0": {
+        "hit": true,
+        "object": "SPACE03_Opposite_03_WindowDoorJoinery",
+        "position": [
+          4.800000190734863,
+          -16.372499465942383,
+          1.850000023841858
+        ]
+      },
+      "house_3_height_1.65": {
+        "hit": true,
+        "object": "SPACE03_Opposite_03_WindowDoorJoinery",
+        "position": [
+          4.800000190734863,
+          -16.372499465942383,
+          2.5
+        ]
+      }
+    }
+  },
+  "preservation": {
+    "baseline": "artifacts/scene-space-03/preserved-files.json",
+    "baseline_sha256": "1ab8309a8eaddc2440c2a588dabf5a736d9516f7f26ef0fce5b1966bfc4a4d66",
+    "old_file_count": 124,
+    "checked_file_count": 130,
+    "changes_before": [],
+    "changes_after": []
+  },
+  "glb": {
+    "file": "space-03.glb",
+    "sha256": "511c2a6e130ce6c81411d960200573d04d359ab7dca95fd3d06b6f1f7f47e512",
+    "bytes": 10553228,
+    "meshes": 34,
+    "primitives": 34,
+    "vertices": 264197,
+    "triangles": 174012,
+    "binary_bytes": 10519560,
+    "triangle_increase": 10334
+  },
+  "seconds": 10.147,
+  "limitations": [
+    "No scene save, render or browser action. The six old shell/window batches are retained but intentionally hidden in the new copy.",
+    "The three closed-roof objects retain their transforms and material slots, while their mesh data is intentionally replaced.",
+    "522 route samples, 33 support samples and nine facade barrier rays do not certify arbitrary movement or real building interiors.",
+    "Geometric scope and preservation checks do not certify visual realism or reference-image fidelity."
+  ]
+}

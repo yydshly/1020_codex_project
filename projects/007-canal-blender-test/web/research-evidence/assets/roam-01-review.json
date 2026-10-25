@@ -1,0 +1,64 @@
+{
+  "stage": "roaming-prototype-01",
+  "local_date": "2026-10-24",
+  "summary": "在独立整合街区中加入可控制的橘白小猫阿橘，提供第三人称跟随、全景、自动导览和手机方向盘。旧研究页与历史工程保留。",
+  "preview_url": "http://127.0.0.1:8062/roam.html",
+  "entry": "../web/roam.html",
+  "integrated_scene": "../artifacts/rainy-canal-roam-02.blend",
+  "manifest": "../web/models/roam-02-manifest.json",
+  "scene_asset": "../web/models/roam-02.glb",
+  "original_source": "../artifacts/rainy-canal-extension-03.blend",
+  "previous_scene_preserved": "../artifacts/rainy-canal-roam-01.blend",
+  "features": [
+    "独立3D小猫：四足交错步态、摆尾、呼吸与眨眼，角色外观和行走控制分离。",
+    "键盘或手机方向盘移动；支持轻跑、鼠标环视和距离调整。",
+    "跟随镜头具有建筑遮挡检测；可切换按屏幕比例适配的街区全景。",
+    "两岸、石拱桥、回程木桥与后巷可行走，包含边界和常见道具的代理碰撞。",
+    "自动导览连接两条闭环；支持暂停、失焦自动暂停和回到起点。",
+    "独立场景副本整理长岸地形，重建有限弯河和连续两岸，使用顶点色、实时街灯、湿区和水面反射。"
+  ],
+  "scope": {
+    "core_blender_xy": [
+      -28,
+      -26,
+      22,
+      14
+    ],
+    "walkable_area": "明确的两岸、两桥、后巷路线；外围地形仅作背景。",
+    "interiors": "店门未开放，不能进入室内。",
+    "physics": "有限场地的运动学代理与预设桥高，未实现跳跃、重力或所有网格的物理碰撞。",
+    "appearance": "实时材质和静态顶点色，不等同Cycles全局光照或参考图还原。",
+    "background_tree_cleanup": "全景中一棵背景树容易产生悬空观感；实际树根已低于地面约3厘米。场景02仅移除这棵主活动区之外的背景树，保留桥边树与场景01原稿。"
+  },
+  "validation": {
+    "node_navigation_and_controller_tests": 23,
+    "real_chromium_checks": 18,
+    "desktop_viewport": [
+      1440,
+      900
+    ],
+    "mobile_viewport": [
+      390,
+      844
+    ],
+    "real_browser_shader_or_script_errors": 0,
+    "original_route_geometry_samples": 522,
+    "background_water_samples": 294,
+    "cycles_preview_renders_this_round": 0,
+    "limits": "完整导览用实际控制函数与导航逻辑验证；浏览器实测验证加载、实际键盘/方向盘、暂停重置、视角切换和导览起步；不能据此断言所有相机位置和全部几何碰撞均无问题。"
+  },
+  "visual_review": {
+    "desktop": "小猫位于店前主街，橘白身体、立体耳、弯尾和白脚清楚可辨。环境仍是简化材质风格。",
+    "mobile": "调整了沿街机位、视野和镜头距离，猫、方向盘、地图与底部卡片互不遮挡；窄屏能看到的河面仍较少。",
+    "overview": "可以查看整体两岸、双桥、后巷与有限弯河；背景树已从修正版清理，场景仍需进一步艺术与环境细节完善。"
+  },
+  "evidence": [
+    "roam-01-browser-check.json",
+    "roam-01-preservation-check.json",
+    "roam-01-desktop.png",
+    "roam-01-mobile.png",
+    "roam-01-overview.png"
+  ],
+  "published_or_committed": false,
+  "original_research_page_modified": false
+}

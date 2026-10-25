@@ -1,0 +1,9 @@
+{
+  "format": "CHR0-v1; Float32 signed (1 + upper/(upper+lower)): positive left, negative right, zero no source hind influence",
+  "vertices": 40078,
+  "sourceAssetSHA256": "6c8d0f0133805e0727cc6cdfc558456d670e0d33a5158685084413e7786a77f1",
+  "positionSHA256": "0a9f2ec6f40ea6ebc9f4d381fab4bbdedc6b0a9eb900ed19ffccb8e0bf511a2c",
+  "binarySHA256": "b5ac57f680eae2d4077196a3ec4d83b3881890948e851964ad6249b96fdbb998",
+  "encodedVertices": 9831,
+  "ambiguousVertices": 0
+}

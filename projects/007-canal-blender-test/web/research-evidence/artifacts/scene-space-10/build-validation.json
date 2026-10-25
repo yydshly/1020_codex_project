@@ -1,0 +1,50 @@
+{
+  "passed": true,
+  "geometry": {
+    "meshes": 61,
+    "primitives": 61,
+    "vertices": 411128,
+    "triangles": 252502,
+    "binary_bytes": 16264420,
+    "nodes": 61,
+    "materials": 61,
+    "meshes_with_vertex_color": 58
+  },
+  "house_count": 21,
+  "developed_bounds_xy": [
+    -36,
+    -44,
+    36,
+    26.5
+  ],
+  "original_route_checks": {
+    "scope": "Sampled centerline floor support and 0.48m-wide body-ray checks only, not a navmesh, full-area collision certification or a playable controller.",
+    "floor_tolerance": 0.17,
+    "known_existing_paving_gaps": "Original stone joints can be about 0.12m lower than stone tops; a future walking controller needs step tolerance or a separate collision proxy.",
+    "routes": {
+      "both_banks_loop": {
+        "sample_count": 285,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      },
+      "rear_lane_loop": {
+        "sample_count": 237,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      }
+    }
+  },
+  "background_water_checks": {
+    "passed": true,
+    "ray_count": 294,
+    "failures": [],
+    "outer_endpoint_inset_m": 0.05,
+    "scope": "Sampled finite background water surface only; no navigation or hydrodynamic claim."
+  },
+  "source_unchanged": true,
+  "elapsed_seconds": 11.83
+}

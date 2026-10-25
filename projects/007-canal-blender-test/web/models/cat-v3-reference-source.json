@@ -1,0 +1,18 @@
+{
+  "source": "Grab3D Tabby Cat",
+  "page": "https://grab3d.com/models/animals/cat/",
+  "model_url": "https://grab3d.com/dl/cat/cat-light.glb",
+  "preview_image": "https://grab3d.com/m/cat/cat-3d-model.webp",
+  "preview_turntable": "https://grab3d.com/m/cat/turntable.webm",
+  "metadata_url": "https://grab3d.com/api/v1/models/cat.json",
+  "license_url": "https://grab3d.com/dl/cat/LICENSE.txt",
+  "license": "CC0-1.0",
+  "author_disclosure": "Base mesh and textures generated with Meshy, then cleaned, scaled, textured and checked in Blender.",
+  "variant": "light",
+  "bytes": 11706732,
+  "sha256": "8ea4b332421972870000da7374e54c0d3f3b47c588e0b7a656ea37a3a3114a09",
+  "rigged": false,
+  "triangles_publisher": 382505,
+  "texture_px_publisher": 1024,
+  "scope": "Reference candidate only; not yet accepted or integrated into roaming."
+}

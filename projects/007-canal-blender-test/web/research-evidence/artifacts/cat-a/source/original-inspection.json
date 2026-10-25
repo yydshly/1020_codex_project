@@ -1,0 +1,308 @@
+{
+  "source": "artifacts/cat-a/source/original/cat.blend",
+  "fps": 24,
+  "range": [
+    1,
+    45
+  ],
+  "objects": [
+    {
+      "name": "Armature",
+      "type": "ARMATURE",
+      "vertices": null,
+      "dimensions": [
+        2.2790751457214355,
+        9.736797332763672,
+        9.512985229492188
+      ],
+      "bones": 85,
+      "modifiers": [],
+      "materials": [],
+      "nla": [
+        {
+          "name": "[Action Stash]",
+          "strips": [
+            {
+              "name": "Walk",
+              "action": "Walk",
+              "range": [
+                1.0,
+                28.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "[Action Stash].001",
+          "strips": [
+            {
+              "name": "ArmatureAction",
+              "action": "run",
+              "range": [
+                1.0,
+                15.0
+              ]
+            }
+          ]
+        }
+      ],
+      "action": "Walk"
+    },
+    {
+      "name": "Camera",
+      "type": "CAMERA",
+      "vertices": null,
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bones": null,
+      "modifiers": [],
+      "materials": [],
+      "nla": [],
+      "action": "CameraAction"
+    },
+    {
+      "name": "Cat",
+      "type": "MESH",
+      "vertices": 1417,
+      "dimensions": [
+        2.847249746322632,
+        9.997917175292969,
+        9.299443244934082
+      ],
+      "bones": null,
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subsurf"
+        },
+        {
+          "type": "PARTICLE_SYSTEM",
+          "name": "ParticleSystem 1"
+        },
+        {
+          "type": "PARTICLE_SYSTEM",
+          "name": "ParticleSystem 2"
+        }
+      ],
+      "materials": [
+        "skin",
+        "hair",
+        "Material.002"
+      ],
+      "nla": [],
+      "action": null
+    },
+    {
+      "name": "Empty",
+      "type": "EMPTY",
+      "vertices": null,
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bones": null,
+      "modifiers": [],
+      "materials": [],
+      "nla": [],
+      "action": null
+    },
+    {
+      "name": "eye",
+      "type": "MESH",
+      "vertices": 0,
+      "dimensions": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bones": null,
+      "modifiers": [],
+      "materials": [
+        "Sclera_and_Iris",
+        "Pupil",
+        "Cornea"
+      ],
+      "nla": [],
+      "action": null
+    },
+    {
+      "name": "Plane",
+      "type": "MESH",
+      "vertices": 34,
+      "dimensions": [
+        153.6918182373047,
+        166.04061889648438,
+        44.72501754760742
+      ],
+      "bones": null,
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "name": "Subsurf"
+        }
+      ],
+      "materials": [
+        "Material"
+      ],
+      "nla": [],
+      "action": null
+    },
+    {
+      "name": "Sphere",
+      "type": "MESH",
+      "vertices": 482,
+      "dimensions": [
+        0.3359285295009613,
+        0.3357769846916199,
+        0.3348834812641144
+      ],
+      "bones": null,
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "name": "Subsurf"
+        },
+        {
+          "type": "ARMATURE",
+          "name": "Armature"
+        }
+      ],
+      "materials": [
+        "PBR Dielectric"
+      ],
+      "nla": [],
+      "action": null
+    },
+    {
+      "name": "Sphere.001",
+      "type": "MESH",
+      "vertices": 482,
+      "dimensions": [
+        0.33487099409103394,
+        0.3342418670654297,
+        0.3352242112159729
+      ],
+      "bones": null,
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "name": "Subsurf"
+        },
+        {
+          "type": "ARMATURE",
+          "name": "Armature"
+        }
+      ],
+      "materials": [
+        "PBR Dielectric"
+      ],
+      "nla": [],
+      "action": null
+    }
+  ],
+  "actions": [
+    {
+      "name": "CameraAction",
+      "range": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "run",
+      "range": [
+        1.0,
+        15.0
+      ]
+    },
+    {
+      "name": "Walk",
+      "range": [
+        1.0,
+        28.0
+      ]
+    }
+  ],
+  "images": [
+    {
+      "name": "11967-diffuse.jpg.001",
+      "path": "//Jonas Dichelle\\web\\Projects\\Projects\\Animations\\Cats\\11967-diffuse.jpg",
+      "size": [
+        512,
+        512
+      ],
+      "packed": true
+    },
+    {
+      "name": "black-cat-fur-texture.jpg",
+      "path": "//Jonas Dichelle\\web\\Projects\\Projects\\Animations\\Cats\\black-cat-fur-texture.jpg",
+      "size": [
+        3888,
+        2592
+      ],
+      "packed": true
+    },
+    {
+      "name": "EXR",
+      "path": "//..\\AppData\\Roaming\\Blender Foundation\\Blender\\2.77\\scripts\\addons\\pro_lighting_skies_demo\\hdris\\cloudy08_EXR.exr",
+      "size": [
+        3000,
+        1500
+      ],
+      "packed": true
+    },
+    {
+      "name": "green_eye_diff.jpg.001",
+      "path": "//Jonas Dichelle\\web\\Projects\\Projects\\Animations\\Cats\\green_eye_diff.jpg",
+      "size": [
+        1024,
+        1024
+      ],
+      "packed": true
+    },
+    {
+      "name": "JPG",
+      "path": "//..\\AppData\\Roaming\\Blender Foundation\\Blender\\2.77\\scripts\\addons\\pro_lighting_skies_demo\\hdris\\cloudy08_medium.jpg",
+      "size": [
+        7500,
+        3750
+      ],
+      "packed": true
+    },
+    {
+      "name": "Render Result",
+      "path": "",
+      "size": [
+        0,
+        0
+      ],
+      "packed": false
+    },
+    {
+      "name": "Untitled",
+      "path": "//Jonas Dichelle\\web\\Projects\\Projects\\Animations\\Cats\\cat_texture_new.png",
+      "size": [
+        1500,
+        1500
+      ],
+      "packed": true
+    },
+    {
+      "name": "Viewer Node",
+      "path": "",
+      "size": [
+        256,
+        256
+      ],
+      "packed": false
+    }
+  ]
+}

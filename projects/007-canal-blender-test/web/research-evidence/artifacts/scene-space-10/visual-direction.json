@@ -1,0 +1,33 @@
+{
+  "intent": "A canal neighbourhood that feels grown around streets and shared outdoor spaces rather than repeated shells on a grass plane.",
+  "baseline": "SPACE09 appearance on the SPACE08 layout; all delivered files preserved.",
+  "scope": "Same 21 surrounding houses, same developed 72 by 70.5 metre district. No new district roads or distant settlement.",
+  "preserve": [
+    "Detailed canal shops",
+    "Original opposite houses",
+    "River and bridges",
+    "Original small courtyard",
+    "23 original tree positions",
+    "Existing road surfaces and terrain",
+    "Rain-after-dusk materials and lighting"
+  ],
+  "layout": [
+    "Near east: a narrow two-storey dwelling and a long low workshop share the existing frontage.",
+    "North west: a tall residence and low workshop vary the roofline and opening pattern.",
+    "North east: the corner house turns toward the side street and leaves a connected corner court.",
+    "South west: houses retreat one metre to create a continuous front garden apron.",
+    "South middle: two differently oriented houses address a shared 2.6 metre wide court.",
+    "South east: low and tall houses mark the end of the street.",
+    "Two limited hipped roof treatments change silhouettes without multiplying roof details."
+  ],
+  "landscape": "Four bounded planted parcels in the existing north and south backlands. Low hedges, small planting beds and existing trees make the ground legible; no extra houses or trees.",
+  "review": [
+    "Same-camera SPACE09/SPACE10 overview",
+    "Canal roofs",
+    "North and south streets",
+    "North garden at eye height",
+    "Actual walking into and out of both changed courts"
+  ],
+  "artDirectionSkill": "[local path omitted]",
+  "notClaimed": "A completed photoreal town, fully open private gardens or furnished interiors."
+}

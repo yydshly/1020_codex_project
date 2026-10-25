@@ -1,0 +1,446 @@
+{
+  "schema_version": 1,
+  "coordinate_system": "Y-up,+Z-forward,metres",
+  "source_file": "cat-v3-reference-source.glb",
+  "source_sha256": "8ea4b332421972870000da7374e54c0d3f3b47c588e0b7a656ea37a3a3114a09",
+  "license": "CC0-1.0",
+  "license_file": "cat-v3-reference-source.LICENSE.txt",
+  "source_page": "https://grab3d.com/models/animals/cat/",
+  "asset": "cat-v3-rig.glb",
+  "source_triangles": 382505,
+  "triangles": 49000,
+  "source_transform": {
+    "yaw_y": 0.7,
+    "scale": 0.9685895306353042,
+    "translation_x": 0.036
+  },
+  "ear_height": 0.42,
+  "tail_height": 0.48431,
+  "bones": {
+    "root": {
+      "head": [
+        0,
+        0,
+        0
+      ],
+      "tail": [
+        0,
+        0.06,
+        0
+      ],
+      "parent": null
+    },
+    "spine": {
+      "head": [
+        0,
+        0.235,
+        -0.1
+      ],
+      "tail": [
+        0,
+        0.24,
+        0.02
+      ],
+      "parent": "root"
+    },
+    "chest": {
+      "head": [
+        0,
+        0.24,
+        0.02
+      ],
+      "tail": [
+        0,
+        0.275,
+        0.12
+      ],
+      "parent": "spine"
+    },
+    "neck": {
+      "head": [
+        0,
+        0.275,
+        0.12
+      ],
+      "tail": [
+        0.005,
+        0.325,
+        0.15
+      ],
+      "parent": "chest"
+    },
+    "head": {
+      "head": [
+        0.005,
+        0.325,
+        0.15
+      ],
+      "tail": [
+        0.025,
+        0.38,
+        0.18
+      ],
+      "parent": "neck"
+    },
+    "fore_left_upper": {
+      "head": [
+        -0.0427,
+        0.235,
+        0.125
+      ],
+      "tail": [
+        -0.0427,
+        0.135,
+        0.09
+      ],
+      "parent": "chest"
+    },
+    "fore_left_lower": {
+      "head": [
+        -0.0427,
+        0.135,
+        0.09
+      ],
+      "tail": [
+        -0.0427,
+        0.043,
+        0.1027
+      ],
+      "parent": "fore_left_upper"
+    },
+    "fore_left_paw": {
+      "head": [
+        -0.0427,
+        0.043,
+        0.1027
+      ],
+      "tail": [
+        -0.0427,
+        0.0182,
+        0.1377
+      ],
+      "parent": "fore_left_lower"
+    },
+    "fore_right_upper": {
+      "head": [
+        0.0422,
+        0.235,
+        0.125
+      ],
+      "tail": [
+        0.0422,
+        0.135,
+        0.09
+      ],
+      "parent": "chest"
+    },
+    "fore_right_lower": {
+      "head": [
+        0.0422,
+        0.135,
+        0.09
+      ],
+      "tail": [
+        0.0422,
+        0.043,
+        0.0927
+      ],
+      "parent": "fore_right_upper"
+    },
+    "fore_right_paw": {
+      "head": [
+        0.0422,
+        0.043,
+        0.0927
+      ],
+      "tail": [
+        0.0422,
+        0.0167,
+        0.1277
+      ],
+      "parent": "fore_right_lower"
+    },
+    "hind_left_upper": {
+      "head": [
+        -0.0541,
+        0.235,
+        -0.145
+      ],
+      "tail": [
+        -0.0541,
+        0.145,
+        -0.1
+      ],
+      "parent": "spine"
+    },
+    "hind_left_lower": {
+      "head": [
+        -0.0541,
+        0.145,
+        -0.1
+      ],
+      "tail": [
+        -0.0541,
+        0.043,
+        -0.14370000000000002
+      ],
+      "parent": "hind_left_upper"
+    },
+    "hind_left_paw": {
+      "head": [
+        -0.0541,
+        0.043,
+        -0.14370000000000002
+      ],
+      "tail": [
+        -0.0541,
+        0.018099999999999998,
+        -0.10870000000000002
+      ],
+      "parent": "hind_left_lower"
+    },
+    "hind_right_upper": {
+      "head": [
+        0.052,
+        0.235,
+        -0.145
+      ],
+      "tail": [
+        0.052,
+        0.145,
+        -0.1
+      ],
+      "parent": "spine"
+    },
+    "hind_right_lower": {
+      "head": [
+        0.052,
+        0.145,
+        -0.1
+      ],
+      "tail": [
+        0.052,
+        0.043,
+        -0.1738
+      ],
+      "parent": "hind_right_upper"
+    },
+    "hind_right_paw": {
+      "head": [
+        0.052,
+        0.043,
+        -0.1738
+      ],
+      "tail": [
+        0.052,
+        0.015,
+        -0.1388
+      ],
+      "parent": "hind_right_lower"
+    },
+    "tail_01": {
+      "head": [
+        0.019,
+        0.265,
+        -0.18
+      ],
+      "tail": [
+        0.024,
+        0.33,
+        -0.205
+      ],
+      "parent": "spine"
+    },
+    "tail_02": {
+      "head": [
+        0.024,
+        0.33,
+        -0.205
+      ],
+      "tail": [
+        0.04,
+        0.405,
+        -0.235
+      ],
+      "parent": "tail_01"
+    },
+    "tail_03": {
+      "head": [
+        0.04,
+        0.405,
+        -0.235
+      ],
+      "tail": [
+        0.025,
+        0.47,
+        -0.205
+      ],
+      "parent": "tail_02"
+    },
+    "tail_04": {
+      "head": [
+        0.025,
+        0.47,
+        -0.205
+      ],
+      "tail": [
+        0.015,
+        0.475,
+        -0.18
+      ],
+      "parent": "tail_03"
+    }
+  },
+  "legs": {
+    "fore_left": {
+      "upper": "fore_left_upper",
+      "lower": "fore_left_lower",
+      "paw": "fore_left_paw",
+      "sole": [
+        -0.0427,
+        0.0032,
+        0.1127
+      ],
+      "pawOffset": [
+        0.0,
+        0.039799999999999995,
+        -0.009999999999999995
+      ],
+      "hip": [
+        -0.0427,
+        0.235,
+        0.125
+      ],
+      "knee": [
+        -0.0427,
+        0.135,
+        0.09
+      ],
+      "ankle": [
+        -0.0427,
+        0.043,
+        0.1027
+      ]
+    },
+    "fore_right": {
+      "upper": "fore_right_upper",
+      "lower": "fore_right_lower",
+      "paw": "fore_right_paw",
+      "sole": [
+        0.0422,
+        0.0017,
+        0.1027
+      ],
+      "pawOffset": [
+        0.0,
+        0.041299999999999996,
+        -0.009999999999999995
+      ],
+      "hip": [
+        0.0422,
+        0.235,
+        0.125
+      ],
+      "knee": [
+        0.0422,
+        0.135,
+        0.09
+      ],
+      "ankle": [
+        0.0422,
+        0.043,
+        0.0927
+      ]
+    },
+    "hind_left": {
+      "upper": "hind_left_upper",
+      "lower": "hind_left_lower",
+      "paw": "hind_left_paw",
+      "sole": [
+        -0.0541,
+        0.0031,
+        -0.1337
+      ],
+      "pawOffset": [
+        0.0,
+        0.0399,
+        -0.010000000000000009
+      ],
+      "hip": [
+        -0.0541,
+        0.235,
+        -0.145
+      ],
+      "knee": [
+        -0.0541,
+        0.145,
+        -0.1
+      ],
+      "ankle": [
+        -0.0541,
+        0.043,
+        -0.14370000000000002
+      ]
+    },
+    "hind_right": {
+      "upper": "hind_right_upper",
+      "lower": "hind_right_lower",
+      "paw": "hind_right_paw",
+      "sole": [
+        0.052,
+        0,
+        -0.1638
+      ],
+      "pawOffset": [
+        0.0,
+        0.043,
+        -0.010000000000000009
+      ],
+      "hip": [
+        0.052,
+        0.235,
+        -0.145
+      ],
+      "knee": [
+        0.052,
+        0.145,
+        -0.1
+      ],
+      "ankle": [
+        0.052,
+        0.043,
+        -0.1738
+      ]
+    }
+  },
+  "weight_assignment": "Measured fore/hind and side regions; smooth body/limb, ankle, neck/head and tail blends, four normalized influences.",
+  "limitations": [
+    "Weights are hand-authored spatial regions, not a production animal rig.",
+    "The source head looks slightly sideways; do not force face straight with large rotations.",
+    "Use small walking/turn amplitudes and inspect shoulder and groin deformation."
+  ],
+  "vertex_group_counts": {
+    "spine": 14383,
+    "chest": 12451,
+    "neck": 5355,
+    "head": 8578,
+    "fore_left_upper": 3470,
+    "fore_left_lower": 2421,
+    "fore_left_paw": 712,
+    "fore_right_upper": 3829,
+    "fore_right_lower": 2192,
+    "fore_right_paw": 726,
+    "hind_left_upper": 3519,
+    "hind_left_lower": 3018,
+    "hind_left_paw": 601,
+    "hind_right_upper": 3923,
+    "hind_right_lower": 3295,
+    "hind_right_paw": 943,
+    "tail_01": 1605,
+    "tail_02": 3125,
+    "tail_03": 3763,
+    "tail_04": 2203
+  },
+  "bytes": 2690948,
+  "sha256": "6c8d0f0133805e0727cc6cdfc558456d670e0d33a5158685084413e7786a77f1"
+}

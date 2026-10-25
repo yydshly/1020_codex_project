@@ -1,0 +1,237 @@
+{
+  "actor": "cat-a-actor-v2.js",
+  "seconds": 15,
+  "sampleCount": 300,
+  "finite": true,
+  "debug": {
+    "source": "A / Skater Cat",
+    "elapsed": 15.000000000000325,
+    "gait": {
+      "phase": 0.426,
+      "idlePhase": 0.426,
+      "movingBlend": 0,
+      "runBlend": 0,
+      "speed": 0,
+      "cycleRate": 0,
+      "idleWeight": 1,
+      "walkWeight": 0,
+      "runWeight": 0,
+      "walkTime": 0.47925,
+      "runTime": 0.24849999153614044,
+      "idleTime": 15.000000000000325,
+      "settleTime": 0,
+      "settleDuration": 0,
+      "settleRemaining": 0,
+      "turnStepSpeed": 0,
+      "mode": "idle"
+    },
+    "animation": {
+      "idleWeight": 1,
+      "walkWeight": 0,
+      "runWeight": 0,
+      "walkTime": 0.47925,
+      "runTime": 0.24849999153614044,
+      "phase": 0.426,
+      "cyclesPerSecond": 0
+    },
+    "groundOffset": 0.2246773014754938,
+    "walkGroundOffset": 0.19559809349439655,
+    "slope": 0,
+    "turnLook": 0,
+    "footCorrectionMax": 0,
+    "footGoals": {
+      "frontL": [
+        0.041375366880906976,
+        0.014975882437244428,
+        0.15735179270542043
+      ],
+      "rearR": [
+        -0.05944986394430527,
+        0.01240228010428928,
+        -0.3089563561272543
+      ],
+      "frontR": [
+        -0.05652394419501093,
+        0.010609281940778734,
+        0.1575449594240243
+      ],
+      "rearL": [
+        0.05565364775222739,
+        0.018077387995856047,
+        -0.27831291443413503
+      ]
+    },
+    "idleAudit": {
+      "method": "Average opposing original Walk contacts, then rotation-only CCD to a shared sole plane",
+      "floorWorldY": -0.22464953400134496,
+      "paws": {
+        "frontL": {
+          "beforeY": -0.2177127244717435,
+          "afterY": -0.22462462748092593,
+          "correctionM": -0.00691190300918243,
+          "errorM": 2.4906520419032407e-05
+        },
+        "frontR": {
+          "beforeY": -0.23731271166092643,
+          "afterY": -0.22467730108977665,
+          "correctionM": 0.01263541057114978,
+          "errorM": -2.7767088431690512e-05
+        },
+        "rearL": {
+          "beforeY": -0.22213085403212587,
+          "afterY": -0.22458240535717947,
+          "correctionM": -0.0024515513250535914,
+          "errorM": 6.712864416549835e-05
+        },
+        "rearR": {
+          "beforeY": -0.22464953400134496,
+          "afterY": -0.22464952141607517,
+          "correctionM": 1.2585269798526255e-08,
+          "errorM": 1.2585269798526255e-08
+        }
+      }
+    },
+    "scale": 0.07,
+    "nativeSpeeds": {
+      "walk": 0.48,
+      "run": 2.6
+    }
+  },
+  "chest": {
+    "vertices": 535,
+    "maxActualSkinDisplacementM": 0.0008806734837697836
+  },
+  "upperBody": {
+    "Head": {
+      "positionRangeM": [
+        0.021940924268327618,
+        0.004266863631136764,
+        0.0014816357639674538
+      ],
+      "maxRotationFromStartDegrees": 8.024676302420882
+    },
+    "Neck": {
+      "positionRangeM": [
+        0,
+        0,
+        0
+      ],
+      "maxRotationFromStartDegrees": 3.0567354429100813
+    },
+    "Spine.002": {
+      "positionRangeM": [
+        0,
+        0,
+        0
+      ],
+      "maxRotationFromStartDegrees": 0.000345844724973881
+    },
+    "Spine.003": {
+      "positionRangeM": [
+        0,
+        0,
+        0
+      ],
+      "maxRotationFromStartDegrees": 0.00020278876505501557
+    },
+    "Tail.004": {
+      "positionRangeM": [
+        0,
+        0,
+        0
+      ],
+      "maxRotationFromStartDegrees": 1.1172677616245479
+    },
+    "Tail.007": {
+      "positionRangeM": [
+        0.0022420318416763473,
+        2.1860576855603497e-05,
+        1.9485524305196122e-12
+      ],
+      "maxRotationFromStartDegrees": 4.841493420809201
+    },
+    "Ear": {
+      "positionRangeM": [
+        0.02763686863438282,
+        0.0051067818175281054,
+        0.007745558801197983
+      ],
+      "maxRotationFromStartDegrees": 7.6351931750575135
+    },
+    "Ear.006": {
+      "positionRangeM": [
+        0.027636870404486286,
+        0.005106782102915874,
+        0.007778046206376343
+      ],
+      "maxRotationFromStartDegrees": 6.862143644545167
+    }
+  },
+  "paws": {
+    "frontL": {
+      "bone": {
+        "positionRangeM": [
+          0,
+          0,
+          0
+        ],
+        "maxRotationFromStartDegrees": 0.006077081889933685
+      },
+      "soleVertices": 554,
+      "maxVertexDisplacementM": 0,
+      "soleRangeY": [
+        5.266014637853034e-05,
+        0.018041068819247802
+      ]
+    },
+    "frontR": {
+      "bone": {
+        "positionRangeM": [
+          0,
+          0,
+          0
+        ],
+        "maxRotationFromStartDegrees": 0.009169115104164932
+      },
+      "soleVertices": 595,
+      "maxVertexDisplacementM": 0,
+      "soleRangeY": [
+        6.172787614389108e-09,
+        0.017986520296478098
+      ]
+    },
+    "rearL": {
+      "bone": {
+        "positionRangeM": [
+          0,
+          0,
+          0
+        ],
+        "maxRotationFromStartDegrees": 0
+      },
+      "soleVertices": 1068,
+      "maxVertexDisplacementM": 0,
+      "soleRangeY": [
+        9.489777468268956e-05,
+        0.018086807772659447
+      ]
+    },
+    "rearR": {
+      "bone": {
+        "positionRangeM": [
+          0,
+          0,
+          0
+        ],
+        "maxRotationFromStartDegrees": 0
+      },
+      "soleVertices": 1195,
+      "maxVertexDisplacementM": 0,
+      "soleRangeY": [
+        2.7781888903760654e-05,
+        0.017986519099376486
+      ]
+    }
+  },
+  "interpretation": "Bone and actual skinned lower-foot vertices sampled from shipped GLB. Measures liveness and planted idle stability, not subjective realism or full turn-foot locking."
+}

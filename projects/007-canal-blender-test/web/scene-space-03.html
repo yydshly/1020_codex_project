@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#142624">
+  <title>雨后老街 · 对岸建筑 03</title>
+  <link rel="stylesheet" href="scene-space-01.css">
+  <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.min.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
+  <script type="module" src="scene-space-03.js"></script>
+</head>
+<body>
+  <main>
+    <div id="world" aria-label="雨后老街三维空间，可拖动旋转、滚轮缩放" tabindex="0"></div>
+    <header><div><span class="eyebrow">AFTER THE RAIN / 03</span><h1>让对岸，也有老街的细节。</h1></div><a href="scene-space-02.html">上一版完整保留 ↗</a></header>
+    <div class="viewbar" role="group" aria-label="场景视角">
+      <button data-view="facades" aria-pressed="true">对岸全貌</button>
+      <button data-view="opposite" aria-pressed="false">沿街近看</button>
+      <button data-view="windows" aria-pressed="false">门窗细节</button>
+      <button data-view="roofs" aria-pressed="false">瓦顶与檐口</button>
+      <button data-view="side" aria-pressed="false">侧墙转角</button>
+      <button data-view="overview" aria-pressed="false">街区总览</button>
+      <button data-view="bridge" aria-pressed="false">回看书店</button>
+      <button data-view="reverse" aria-pressed="false">背面检查</button>
+    </div>
+    <aside id="view-note"><span class="eyebrow" id="view-number">01 / 对岸全貌</span><h2 id="view-title">同一排房屋，更完整的构造</h2><p id="view-description">从整排屋顶到门窗近看，检查对岸与书店一侧是否更协调。</p><p class="scope">上一版与本版保持同一镜头、光照和已统一的街区材质。</p></aside>
+    <div class="bottom-tools" role="group" aria-label="巡看与版本比较">
+      <button id="tour-banks" aria-pressed="false">沿两岸巡看</button><button id="tour-rear" aria-pressed="false">后巷巡看</button>
+      <button id="stop" hidden>停止巡看</button><span class="divider"></span>
+      <button data-stage="previous" aria-pressed="false">上一版</button><button data-stage="complete" aria-pressed="true">对岸精修</button><span id="version" role="status">当前：对岸建筑 03</span>
+    </div>
+    <p class="hint">拖动旋转 · 滚轮缩放 · 右键平移 · Esc 停止巡看</p>
+    <div id="loading" role="status"><div><span class="eyebrow">雨后的临水老街</span><p id="load-text">正在载入街区…</p><button id="retry" hidden>重新载入</button></div></div>
+    <details class="credits"><summary>版本说明</summary><p>细化对岸既有三栋建筑：屋顶厚度与瓦缝、屋脊檐口、窗洞与百叶、门扇五金，以及墙面基脚。房屋内部未开放。</p><p>同机位切换上一版与本版，观察结构细节带来的变化；地形和街区范围沿用上一版。</p><a href="https://polyhaven.com/license" target="_blank" rel="noopener">材质与环境贴图：Poly Haven / CC0</a></details>
+  </main>
+</body>
+</html>

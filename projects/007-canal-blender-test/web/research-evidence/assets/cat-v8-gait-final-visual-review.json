@@ -1,0 +1,46 @@
+{
+  "checked_utc": "2026-10-24T07:26:33.428614+00:00",
+  "method": "Human-agent inspection of matched-speed V7/V8 phase images and four decoded frames from the default-speed real recording; no generated or retimed imagery.",
+  "evidence": [
+    "cat-v8-gait-final-side-phase-25.png",
+    "cat-v8-gait-final-side-phase-75.png",
+    "cat-v8-gait-final-threequarter-phase-50.png",
+    "cat-v8-gait-final-v7-side-phase-25.png",
+    "cat-v8-gait-final-side-motion.png",
+    "cat-v8-gait-final-threequarter-motion.png",
+    "cat-v8-gait-final-stop-motion.png",
+    "cat-v8-gait-final-restart-motion.png"
+  ],
+  "findings": {
+    "improvements": [
+      "The head remains forward along the body during gait.",
+      "The broad grey/white underside flap conspicuous in the V7 comparison is reduced in the inspected V8 frames.",
+      "Start, walking, stop, and manual reverse-turn controls are functional in the local scene."
+    ],
+    "limitations": [
+      "The far hind thigh still forms a broad fan-shaped stretched surface during swing.",
+      "Front upper-limb shape is still elongated and does not read as articulated feline shoulder/elbow anatomy in some phases.",
+      "Surface motion and torso/limb coordination remain mechanical; this is not a completed natural cat walk.",
+      "The closed-eye surface patch limitation from V6 is not addressed by this gait iteration."
+    ]
+  },
+  "video": {
+    "path": "assets/cat-v8-gait-final-motion.webm",
+    "duration": 7.971,
+    "frames": 239,
+    "maxFrameGap": 0.052000000000000046,
+    "requestedMetresPerSecond": 0.36,
+    "timeScale": 1,
+    "retiming": "none; only a 3-second warmup removed"
+  },
+  "functional_checks": {
+    "study_passed": true,
+    "study_count": 18,
+    "roam_passed": true,
+    "roam_count": 9,
+    "roam_walk_metres": 2.599682689996892,
+    "roam_max_reach_metres": 0.0016124162165627454,
+    "roam_samples": 735
+  },
+  "scope": "A comparable structural correction study; do not claim anatomically natural or production-ready animation."
+}

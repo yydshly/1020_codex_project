@@ -1,0 +1,25 @@
+{
+  "accepted": false,
+  "reviewedEvidence": "cat-v9-surface-final-browser-check.json",
+  "poseAndCameraChecksPassed": true,
+  "observations": [
+    "Same-pose after image introduces more visible bright open seams across lower chest, near hind thigh root, and stretched far hind thigh.",
+    "Three-quarter after image has more visible chest and groin seams.",
+    "Broad stretched upper-leg silhouette remains. The surface weight candidate should not be enabled by default in this state."
+  ],
+  "sideBefore": "cat-v9-surface-final-side-before.png",
+  "sideAfter": "cat-v9-surface-final-side-after.png",
+  "threequarterBefore": "cat-v9-surface-final-threequarter-before.png",
+  "threequarterAfter": "cat-v9-surface-final-threequarter-after.png",
+  "sourceHashes": {
+    "web\\cat-v9-body.js": "7cb9057e3333133c9bf11426e2d078c041fbee0988025bc7cfa22dd9cb9e9157",
+    "web\\cat-v9-face.js": "476dbc4888d65e9a99ea314998822b7dbfd326a0fc831fb9a2fb6504e163e799",
+    "web\\cat-v9-gait-study.js": "80316c1a48851767cfe1aa3f0f9b2c04f18cf643e22575564383aa7c019a5c4d",
+    "web\\cat-v9-navigation-brake.js": "50df09732d46200e4b4ef6f57d671002ee88753528178f905e7a5026ab1f6d87",
+    "web\\cat-v9-skin.js": "487cfae721d12006384998c76ac47630fdad8cc858c139d6195de3b91ce08608",
+    "web\\cat-v9-surface-audit.js": "329118f1eea8aa465b6493c2c71ae3652fccf398c61dfdd1069dbe49ed5cb7a0",
+    "web\\cat-v9.js": "57303d77194dc3d7912d90d4a8b28148309471b210ed8726f11d80be754d4f6f",
+    "web\\models\\cat-v9-surface-skin.bin": "2f724ef0dff999102a5993575bb720327cdfd033f5966508afb706732d66bc80",
+    "web\\models\\cat-v9-surface-skin.json": "0ceda41112d3d4a9d1b55118b9e5bddcf805e6f032187b50c342e82033967e93"
+  }
+}

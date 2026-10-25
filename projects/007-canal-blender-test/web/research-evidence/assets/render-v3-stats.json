@@ -1,0 +1,50 @@
+{
+  "quality": "final",
+  "blender": "4.5.9 LTS",
+  "devices": [
+    "NVIDIA GeForce RTX 4070 Laptop GPU"
+  ],
+  "resolution": [
+    1672,
+    942
+  ],
+  "samples_max": 112,
+  "complexity_before": {
+    "objects": 2109,
+    "mesh_vertices": 159646,
+    "mesh_faces": 127565,
+    "modifiers": 686,
+    "lights": 20
+  },
+  "complexity_after": {
+    "objects": 2109,
+    "mesh_vertices": 159646,
+    "mesh_faces": 127565,
+    "modifiers": 686,
+    "lights": 20
+  },
+  "complexity_unchanged": true,
+  "v2_source_sha256": "9e14f704a6e95de897891748337540fd3c1ec74b18fb9c406d3c0007d6501879",
+  "v2_unchanged": true,
+  "final_artifact_reopened": true,
+  "finite_geometry": true,
+  "external_images": [],
+  "weathering": {
+    "materials_updated": [
+      "plaster",
+      "plaster_alt",
+      "stone",
+      "stone_light",
+      "paving",
+      "paving_alt",
+      "mortar"
+    ],
+    "wall_finish": "Soft visible aged lime patches with shallow relief",
+    "stone_finish": "Restrained mottling, darker joints and low waterline moss",
+    "paving_finish": "Local darker wet patches with smooth IOR 1.333 water coat",
+    "geometry_and_lights_changed": false
+  },
+  "setup_seconds": 1.29,
+  "render_seconds": 10.92,
+  "total_seconds": 12.21
+}

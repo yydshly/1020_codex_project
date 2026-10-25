@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Skater Cat · 原生走跑小样</title>
+  <script type="importmap">{"imports":{"three":"./vendor/three/build/three.module.min.js","three/addons/":"./vendor/three/examples/jsm/"}}</script>
+  <style>
+    :root{font-family:"Segoe UI","Microsoft YaHei",sans-serif;color:#26362e;background:#e8ece6;color-scheme:light}*{box-sizing:border-box}body{margin:0;min-height:100dvh;height:100dvh;display:flex;flex-direction:column}button,a,input{font:inherit}button{cursor:pointer;border:1px solid #bac5b8;border-radius:6px;padding:8px 13px;background:#f8faf5;color:#304334;font-size:12px}button[aria-pressed=true]{background:#365544;border-color:#365544;color:white}button:disabled{opacity:.38;cursor:default}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid #8daa78;outline-offset:3px}header{padding:18px 25px 12px;display:flex;align-items:flex-start;gap:25px;justify-content:space-between}h1{font-size:21px;font-weight:650;letter-spacing:-.3px;margin:2px 0 5px}.eyebrow{font-size:10px;font-weight:650;letter-spacing:1.7px;color:#788476}header p{font-size:11px;color:#667463;line-height:1.7;margin:0}a{color:#47694d;font-size:11px;text-underline-offset:3px}.backlinks{display:flex;gap:15px;padding-top:12px;white-space:nowrap}.toolbar{display:flex;align-items:center;flex-wrap:wrap;gap:6px;padding:0 25px 10px}.label{font-size:11px;color:#6d7869;margin:0 5px 0 12px}.label:first-child{margin-left:0}.divider{height:20px;border-left:1px solid #bcc7b9;margin:0 5px}.hint{font-size:10px;color:#7c8575;margin-left:7px}.viewport-wrap{position:relative;flex:1;min-height:300px}#viewport{width:100%;height:100%;touch-action:none}canvas{display:block;width:100%;height:100%}.loading{position:absolute;inset:0;display:grid;place-items:center;pointer-events:none;color:#64715f;text-align:center;font-size:13px;line-height:1.8}.loading.error{background:#e8ece6e6}.stamp{position:absolute;top:13px;left:25px;background:#f6f8f1ce;border:1px solid #d0dacb;border-radius:5px;padding:7px 10px;pointer-events:none;font-size:10px;color:#62765f}.timeline{display:flex;align-items:center;gap:12px;padding:10px 25px 7px;font-size:11px;color:#60735c}.timeline input{flex:1;min-width:50px;accent-color:#476b4b}.timeline output{font-variant-numeric:tabular-nums;min-width:100px;text-align:right}.status{font-size:11px;line-height:1.7;color:#586d55;padding:0 25px 7px;min-height:24px}footer{display:flex;justify-content:space-between;gap:15px;padding:8px 25px 13px;border-top:1px solid #d3dccf;font-size:10px;color:#71806b;line-height:1.7}footer a{font-size:10px}.review{display:flex;gap:16px;flex-wrap:wrap}.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}[hidden]{display:none!important}@media(max-width:760px){header{padding:14px 15px 10px;gap:10px}h1{font-size:18px}.backlinks{display:block;padding-top:5px}.backlinks a{display:block;margin-bottom:7px;font-size:10px}.toolbar{padding:0 15px 8px}button{padding:7px 9px;font-size:11px}.label{margin-left:5px}.toolbar .hint{width:100%;margin-left:0}.stamp{left:15px}.timeline{padding:8px 15px}.status{padding:0 15px 7px}footer{padding:8px 15px 12px;display:block}.review{gap:8px;margin-bottom:3px}.viewport-wrap{min-height:280px}}
+  </style>
+  <script type="module" src="cat-a-study.js"></script>
+</head>
+<body>
+  <header>
+    <div><div class="eyebrow">CAT A / ORIGINAL ANIMATION</div><h1>Skater Cat · 原生走跑小样</h1><p>独立试样，保留现有版本。先看形体、落脚、肩背与头尾配合。</p></div>
+    <nav class="backlinks" aria-label="其它研究页"><a href="cat-free-candidates.html">候选对照 ↗</a><a href="cat-v12-gait-study.html">已有 V12 ↗</a></nav>
+  </header>
+  <div class="toolbar" role="group" aria-label="动画和播放">
+    <span class="label">动作</span><button data-motion="still" aria-pressed="false" disabled>站姿（冻结）</button><button data-motion="walk" aria-pressed="true" disabled>走路</button><button data-motion="run" aria-pressed="false" disabled>跑步</button>
+    <span class="divider"></span><button id="pause" aria-pressed="false" disabled>暂停</button><button id="slow" aria-pressed="false" disabled>半速观察</button>
+    <span class="label">位置</span><button data-route="inplace" aria-pressed="true" disabled>原地循环</button><button data-route="travel" aria-pressed="false" disabled hidden>直线移动</button>
+    <span class="hint" id="route-hint">播放作者原作动画，头尾随原生动作。</span>
+  </div>
+  <div class="toolbar" role="group" aria-label="观察角度">
+    <span class="label">视角</span><button data-view="threequarter" aria-pressed="true" disabled>斜前方</button><button data-view="side" aria-pressed="false" disabled>侧面</button><button data-view="front" aria-pressed="false" disabled>正面</button><button data-view="rear" aria-pressed="false" disabled>后侧</button><button id="reset-view" disabled>恢复视角</button>
+    <span class="hint">拖动旋转 · 滚轮缩放 · 正常速度判断自然感，半速检查变形。</span>
+  </div>
+  <main class="viewport-wrap"><div id="viewport" aria-label="Skater Cat 三维试样"></div><div class="stamp" id="stamp">作者原作动画 · 兼容烘焙后的网页试样</div><div class="loading" id="loading" role="status">正在检查原始模型文件…</div></main>
+  <div class="timeline"><label for="timeline">动作进度</label><input id="timeline" type="range" min="0" max="1" value="0" step="0.001" disabled><output id="time">0.00 / 0.00 s</output></div>
+  <div class="status" id="status" role="status">等待模型载入。</div>
+  <footer><div class="review"><span>① 头颈与肩背是否协调</span><span>② 脚掌着地是否稳定</span><span>③ 尾根到尾尖是否连贯</span></div><div>模型／动画：<a href="https://blendswap.com/blend/18519" target="_blank" rel="noopener">JonasDichelle</a> · <a href="https://creativecommons.org/licenses/by/3.0/" target="_blank" rel="license noopener">CC BY 3.0</a> · 作者原作动画经兼容烘焙，未接入街区。</div></footer>
+</body>
+</html>

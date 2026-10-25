@@ -1,0 +1,408 @@
+{
+  "Walk": {
+    "ik_solver": "LEGACY",
+    "records": [
+      {
+        "cycle": 0,
+        "max_cycle_position_delta": null,
+        "tail_cycle_position_delta": {},
+        "tail_seam_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.004607520509865663,
+          "Tail.002": 0.004477937614099355,
+          "Tail.003": 0.0026795147821665572,
+          "Tail.004": 0.0009798614930475737,
+          "Tail.005": 0.0019169167497069815,
+          "Tail.006": 0.0023168902694197767,
+          "Tail.007": 0.001328756173872686
+        }
+      },
+      {
+        "cycle": 1,
+        "max_cycle_position_delta": 0.044039321719868976,
+        "tail_cycle_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.044039321719868976,
+          "Tail.002": 0.037639228793273014,
+          "Tail.003": 0.026081297224833783,
+          "Tail.004": 0.015688041988161868,
+          "Tail.005": 0.005215017298760412,
+          "Tail.006": 0.0022121158276024334,
+          "Tail.007": 0.0012672226266674154
+        },
+        "tail_seam_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.0397036238683436,
+          "Tail.002": 0.03346561360222305,
+          "Tail.003": 0.023829073110267825,
+          "Tail.004": 0.015567383554325727,
+          "Tail.005": 0.007118711005862075,
+          "Tail.006": 0.0023087328568603734,
+          "Tail.007": 0.00033442742164156985
+        }
+      },
+      {
+        "cycle": 2,
+        "max_cycle_position_delta": 0.0,
+        "tail_cycle_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.0,
+          "Tail.002": 0.0,
+          "Tail.003": 0.0,
+          "Tail.004": 0.0,
+          "Tail.005": 0.0,
+          "Tail.006": 0.0,
+          "Tail.007": 0.0
+        },
+        "tail_seam_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.0397036238683436,
+          "Tail.002": 0.03346561360222305,
+          "Tail.003": 0.023829073110267825,
+          "Tail.004": 0.015567383554325727,
+          "Tail.005": 0.007118711005862075,
+          "Tail.006": 0.0023087328568603734,
+          "Tail.007": 0.00033442742164156985
+        }
+      },
+      {
+        "cycle": 3,
+        "max_cycle_position_delta": 0.0,
+        "tail_cycle_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.0,
+          "Tail.002": 0.0,
+          "Tail.003": 0.0,
+          "Tail.004": 0.0,
+          "Tail.005": 0.0,
+          "Tail.006": 0.0,
+          "Tail.007": 0.0
+        },
+        "tail_seam_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.0397036238683436,
+          "Tail.002": 0.03346561360222305,
+          "Tail.003": 0.023829073110267825,
+          "Tail.004": 0.015567383554325727,
+          "Tail.005": 0.007118711005862075,
+          "Tail.006": 0.0023087328568603734,
+          "Tail.007": 0.00033442742164156985
+        }
+      },
+      {
+        "cycle": 4,
+        "max_cycle_position_delta": 0.0,
+        "tail_cycle_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.0,
+          "Tail.002": 0.0,
+          "Tail.003": 0.0,
+          "Tail.004": 0.0,
+          "Tail.005": 0.0,
+          "Tail.006": 0.0,
+          "Tail.007": 0.0
+        },
+        "tail_seam_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.0397036238683436,
+          "Tail.002": 0.03346561360222305,
+          "Tail.003": 0.023829073110267825,
+          "Tail.004": 0.015567383554325727,
+          "Tail.005": 0.007118711005862075,
+          "Tail.006": 0.0023087328568603734,
+          "Tail.007": 0.00033442742164156985
+        }
+      },
+      {
+        "cycle": 5,
+        "max_cycle_position_delta": 0.0,
+        "tail_cycle_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.0,
+          "Tail.002": 0.0,
+          "Tail.003": 0.0,
+          "Tail.004": 0.0,
+          "Tail.005": 0.0,
+          "Tail.006": 0.0,
+          "Tail.007": 0.0
+        },
+        "tail_seam_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.0397036238683436,
+          "Tail.002": 0.03346561360222305,
+          "Tail.003": 0.023829073110267825,
+          "Tail.004": 0.015567383554325727,
+          "Tail.005": 0.007118711005862075,
+          "Tail.006": 0.0023087328568603734,
+          "Tail.007": 0.00033442742164156985
+        }
+      },
+      {
+        "cycle": 6,
+        "max_cycle_position_delta": 0.0,
+        "tail_cycle_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.0,
+          "Tail.002": 0.0,
+          "Tail.003": 0.0,
+          "Tail.004": 0.0,
+          "Tail.005": 0.0,
+          "Tail.006": 0.0,
+          "Tail.007": 0.0
+        },
+        "tail_seam_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.0397036238683436,
+          "Tail.002": 0.03346561360222305,
+          "Tail.003": 0.023829073110267825,
+          "Tail.004": 0.015567383554325727,
+          "Tail.005": 0.007118711005862075,
+          "Tail.006": 0.0023087328568603734,
+          "Tail.007": 0.00033442742164156985
+        }
+      },
+      {
+        "cycle": 7,
+        "max_cycle_position_delta": 0.0,
+        "tail_cycle_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.0,
+          "Tail.002": 0.0,
+          "Tail.003": 0.0,
+          "Tail.004": 0.0,
+          "Tail.005": 0.0,
+          "Tail.006": 0.0,
+          "Tail.007": 0.0
+        },
+        "tail_seam_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.0397036238683436,
+          "Tail.002": 0.03346561360222305,
+          "Tail.003": 0.023829073110267825,
+          "Tail.004": 0.015567383554325727,
+          "Tail.005": 0.007118711005862075,
+          "Tail.006": 0.0023087328568603734,
+          "Tail.007": 0.00033442742164156985
+        }
+      }
+    ]
+  },
+  "run": {
+    "ik_solver": "LEGACY",
+    "records": [
+      {
+        "cycle": 0,
+        "max_cycle_position_delta": null,
+        "tail_cycle_position_delta": {},
+        "tail_seam_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.47859197124309116,
+          "Tail.002": 0.4024446578474197,
+          "Tail.003": 0.37512759432091414,
+          "Tail.004": 0.3672670978142574,
+          "Tail.005": 0.3462964182468935,
+          "Tail.006": 0.2759949870347579,
+          "Tail.007": 0.13853741224886643
+        }
+      },
+      {
+        "cycle": 1,
+        "max_cycle_position_delta": 0.43088854133295973,
+        "tail_cycle_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.43088854133295973,
+          "Tail.002": 0.3212361020266423,
+          "Tail.003": 0.23470580775813502,
+          "Tail.004": 0.18791442138483155,
+          "Tail.005": 0.1422418112701401,
+          "Tail.006": 0.09737162358195815,
+          "Tail.007": 0.04516062188805572
+        },
+        "tail_seam_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.15248948070934126,
+          "Tail.002": 0.15883847097859607,
+          "Tail.003": 0.16642916727533816,
+          "Tail.004": 0.18291447405752612,
+          "Tail.005": 0.2041327781169212,
+          "Tail.006": 0.1790287443868973,
+          "Tail.007": 0.09362995886562273
+        }
+      },
+      {
+        "cycle": 2,
+        "max_cycle_position_delta": 0.0,
+        "tail_cycle_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.0,
+          "Tail.002": 0.0,
+          "Tail.003": 0.0,
+          "Tail.004": 0.0,
+          "Tail.005": 0.0,
+          "Tail.006": 0.0,
+          "Tail.007": 0.0
+        },
+        "tail_seam_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.15248948070934126,
+          "Tail.002": 0.15883847097859607,
+          "Tail.003": 0.16642916727533816,
+          "Tail.004": 0.18291447405752612,
+          "Tail.005": 0.2041327781169212,
+          "Tail.006": 0.1790287443868973,
+          "Tail.007": 0.09362995886562273
+        }
+      },
+      {
+        "cycle": 3,
+        "max_cycle_position_delta": 0.0,
+        "tail_cycle_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.0,
+          "Tail.002": 0.0,
+          "Tail.003": 0.0,
+          "Tail.004": 0.0,
+          "Tail.005": 0.0,
+          "Tail.006": 0.0,
+          "Tail.007": 0.0
+        },
+        "tail_seam_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.15248948070934126,
+          "Tail.002": 0.15883847097859607,
+          "Tail.003": 0.16642916727533816,
+          "Tail.004": 0.18291447405752612,
+          "Tail.005": 0.2041327781169212,
+          "Tail.006": 0.1790287443868973,
+          "Tail.007": 0.09362995886562273
+        }
+      },
+      {
+        "cycle": 4,
+        "max_cycle_position_delta": 0.0,
+        "tail_cycle_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.0,
+          "Tail.002": 0.0,
+          "Tail.003": 0.0,
+          "Tail.004": 0.0,
+          "Tail.005": 0.0,
+          "Tail.006": 0.0,
+          "Tail.007": 0.0
+        },
+        "tail_seam_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.15248948070934126,
+          "Tail.002": 0.15883847097859607,
+          "Tail.003": 0.16642916727533816,
+          "Tail.004": 0.18291447405752612,
+          "Tail.005": 0.2041327781169212,
+          "Tail.006": 0.1790287443868973,
+          "Tail.007": 0.09362995886562273
+        }
+      },
+      {
+        "cycle": 5,
+        "max_cycle_position_delta": 0.0,
+        "tail_cycle_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.0,
+          "Tail.002": 0.0,
+          "Tail.003": 0.0,
+          "Tail.004": 0.0,
+          "Tail.005": 0.0,
+          "Tail.006": 0.0,
+          "Tail.007": 0.0
+        },
+        "tail_seam_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.15248948070934126,
+          "Tail.002": 0.15883847097859607,
+          "Tail.003": 0.16642916727533816,
+          "Tail.004": 0.18291447405752612,
+          "Tail.005": 0.2041327781169212,
+          "Tail.006": 0.1790287443868973,
+          "Tail.007": 0.09362995886562273
+        }
+      },
+      {
+        "cycle": 6,
+        "max_cycle_position_delta": 0.0,
+        "tail_cycle_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.0,
+          "Tail.002": 0.0,
+          "Tail.003": 0.0,
+          "Tail.004": 0.0,
+          "Tail.005": 0.0,
+          "Tail.006": 0.0,
+          "Tail.007": 0.0
+        },
+        "tail_seam_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.15248948070934126,
+          "Tail.002": 0.15883847097859607,
+          "Tail.003": 0.16642916727533816,
+          "Tail.004": 0.18291447405752612,
+          "Tail.005": 0.2041327781169212,
+          "Tail.006": 0.1790287443868973,
+          "Tail.007": 0.09362995886562273
+        }
+      },
+      {
+        "cycle": 7,
+        "max_cycle_position_delta": 0.0,
+        "tail_cycle_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.0,
+          "Tail.002": 0.0,
+          "Tail.003": 0.0,
+          "Tail.004": 0.0,
+          "Tail.005": 0.0,
+          "Tail.006": 0.0,
+          "Tail.007": 0.0
+        },
+        "tail_seam_position_delta": {
+          "Tail_controller": 0.0,
+          "Tail": 0.0,
+          "Tail.001": 0.15248948070934126,
+          "Tail.002": 0.15883847097859607,
+          "Tail.003": 0.16642916727533816,
+          "Tail.004": 0.18291447405752612,
+          "Tail.005": 0.2041327781169212,
+          "Tail.006": 0.1790287443868973,
+          "Tail.007": 0.09362995886562273
+        }
+      }
+    ]
+  }
+}

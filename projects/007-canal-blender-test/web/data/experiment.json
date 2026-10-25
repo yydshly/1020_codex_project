@@ -1,0 +1,142 @@
+{
+  "date": "2026-10-23",
+  "blender": "4.5.9 LTS",
+  "hardware": [
+    "NVIDIA GeForce RTX 4070 Laptop GPU"
+  ],
+  "render_engine": "Cycles",
+  "method": "Codex-authored Python scripts, local Blender bpy execution, Cycles rendering and visual iteration",
+  "reference_is_source_post": false,
+  "reference_origin": "Separately generated concept image selected in this conversation for this local experiment",
+  "reference_used_as_texture": false,
+  "mcp_used": false,
+  "dsh_used": false,
+  "online_image_to_3d_used": false,
+  "source_post_reproduced": false,
+  "model_equivalence_tested": false,
+  "control_guide_original": {
+    "file": "control-guide-original.png",
+    "origin": "Earlier AI-generated explanatory summary from this conversation",
+    "is_measured_render": false,
+    "source_post_timing_costs_reverified": false,
+    "is_capability_ranking": false,
+    "note": "Earlier explanatory summary, not a render measured in this experiment. Source-post timing and costs shown inside the image were not reverified in this round. This image is not a capability ranking."
+  },
+  "versions": {
+    "v1": {
+      "render_seconds": 9.88,
+      "total_seconds": 59.22,
+      "samples": 144,
+      "resolution": [
+        1672,
+        942
+      ],
+      "complexity": {
+        "objects": 2109,
+        "vertices": 159646,
+        "faces": 127565,
+        "lights": 20,
+        "modifiers": 686
+      },
+      "statistics_file": "render-stats.json",
+      "execution_scope": "Build scene and render once"
+    },
+    "v2": {
+      "render_seconds": 10.19,
+      "total_seconds": 11.51,
+      "samples": 112,
+      "resolution": [
+        1672,
+        942
+      ],
+      "complexity": {
+        "objects": 2109,
+        "vertices": 159646,
+        "faces": 127565,
+        "lights": 20,
+        "modifiers": 686
+      },
+      "statistics_file": "render-v2-stats.json",
+      "execution_scope": "Load saved scene, adjust, save, reopen and render once"
+    },
+    "v3": {
+      "render_seconds": 10.92,
+      "total_seconds": 12.21,
+      "samples": 112,
+      "resolution": [
+        1672,
+        942
+      ],
+      "complexity": {
+        "objects": 2109,
+        "vertices": 159646,
+        "faces": 127565,
+        "lights": 20,
+        "modifiers": 686
+      },
+      "statistics_file": "render-v3-stats.json",
+      "execution_scope": "Load saved scene, adjust, save, reopen and render once"
+    },
+    "v4": {
+      "render_seconds": 15.41,
+      "total_seconds": 19.01,
+      "samples": 112,
+      "resolution": [
+        1672,
+        942
+      ],
+      "complexity": {
+        "objects": 2109,
+        "vertices": 159646,
+        "faces": 127565,
+        "lights": 20,
+        "modifiers": 686
+      },
+      "statistics_file": "render-v4-stats.json",
+      "execution_scope": "Load saved scene, adjust, save, reopen and render once"
+    }
+  },
+  "complexity": {
+    "objects": 2109,
+    "vertices": 159646,
+    "faces": 127565,
+    "lights": 20,
+    "modifiers": 686
+  },
+  "latest_version": "v4",
+  "alignment_report": "alignment-v4.json",
+  "alignment_scope": "Manually selected anchor projection errors only; not whole-image similarity or a model capability benchmark.",
+  "complexity_unchanged_across_versions": true,
+  "baseline_complexity_source": "render-v2-stats.json:complexity_before; objects and vertices cross-checked against render-stats.json",
+  "timing_scope": "One recorded script execution per final render; excludes analysis, coding, preview iterations and total project time. Later versions load an existing scene.",
+  "geometry_scope": "Counts describe base meshes and objects. Existing positions, vertex coordinates, materials and compositor nodes may change.",
+  "validation_scope": "Basic artifact and geometry checks, not a similarity score or production topology certification.",
+  "original_image_sha256": {
+    "reference.png": "6ebfd8652e498e31ad522045a22e7abdb32b92f5b5e825f62ae7df13ec844f1e",
+    "render.png": "b0712a1dc46138376970b5e3223e2f5f3d1f9405cb51bf938018f72533faafe2",
+    "render-v2.png": "34c226a44012b20f340a75ada1195b3fc1f6213bbbd0c3ba1e1c25263df72fda",
+    "render-v3.png": "79648985f5b538a1f78905c244b3c97b33bee1e37a228061dca4498f28bf30f7",
+    "render-v4.png": "898f110a30c604e19adb0d460ec06dae08de31b97b79e6eaf8ac77bc9a1a9922",
+    "overview.png": "7a8fbe3831555763e4998c8d89a5b995ee571fe2b88010e87cb1416c33ec9bee",
+    "overview-v4.png": "1810934817bbf541f9213cc57166cf23f5fe8da1d3e276839a0ecc5037a1a2ba",
+    "exploration-guide.svg": "83a7110c58dd4d3f037ace5806da8161bdb712f8c13af19f05ad8e43da37d297",
+    "control-guide-original.png": "859a81d93dd20b277f4df5fe887775466816b77fda3e053428e510edbb474206"
+  },
+  "original_statistics_sha256": {
+    "render-stats.json": "e81ad393f92f5eccf1083cf7e86e5ba89c3991375ed052c2c3df224b8e3e90a7",
+    "render-v2-stats.json": "ae7f8e8582856d0f4c1d45bdbee05f9b89812e9e86a09f1912b5b024271f3932",
+    "render-v3-stats.json": "7e5509c830dc10e4710534752b8ee4bbdb69c6b031499351a4e80501c05730a0",
+    "render-v4-stats.json": "b651eea633c660f6fd0c4349ef4ed25d0954b35f12be7780fe0f33121b06e42e",
+    "alignment-v4.json": "3d2dd879de86317d07f03e07d26214d253a33b51e87585ba5863173a1fe0bce9",
+    "viewer-source-audit.json": "6c31ba4d03db5d3ad29186e8f193505a27450d2461d395bf39e2250c03e185e1",
+    "scene-checks.json": "7b91a1481971b525683ab4202d25e49d7a02ad006652254b565fb09f7f3bab9f"
+  },
+  "source_links": {
+    "research_starting_post": "https://x.com/cccch1mneyyyy/status/2112080631689826482",
+    "blender_python": "https://docs.blender.org/api/4.5/info_overview.html",
+    "blender_command_line": "https://docs.blender.org/manual/en/4.5/advanced/command_line/arguments.html",
+    "dsh_plugin": "https://github.com/sixtysevenlf/dsh-blender-plugin",
+    "mcp_for_blender": "https://github.com/ahujasid/mcp-for-blender"
+  },
+  "source_post_verification": "Public page returned HTTP 403 during this audit; original inputs, costs and timing were not independently verified."
+}

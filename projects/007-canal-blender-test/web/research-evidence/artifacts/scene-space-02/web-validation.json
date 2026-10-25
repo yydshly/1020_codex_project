@@ -1,0 +1,22 @@
+{
+  "preserved_files_checked": 124,
+  "changed_files": [],
+  "shader_errors": 0,
+  "browser_warnings": 0,
+  "inspected_views": [
+    "overview",
+    "distant",
+    "rear",
+    "opposite",
+    "bridge"
+  ],
+  "stages_switched": [
+    "previous",
+    "terrain",
+    "complete"
+  ],
+  "navigation_routes_verified": 2,
+  "paving_regression_detected_and_corrected": true,
+  "original_ten_metre_material_and_uv_preserved": true,
+  "published": false
+}

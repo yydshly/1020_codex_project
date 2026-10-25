@@ -1,0 +1,72 @@
+{
+  "version": "SPACE10 bounded street-layout and planted-parcel study",
+  "url": "http://127.0.0.1:8062/scene-space-10.html",
+  "scope": "Local preview only. Same 21 surrounding houses and original developed extent, canal core, streets, bridges and 23 tree positions.",
+  "changes": {
+    "modifiedHouses": 13,
+    "twoToOneStoreyConversions": 5,
+    "unchangedHouseMeshes": 8,
+    "plantedParcels": 4,
+    "newCourtyardRoutes": 2
+  },
+  "geometry": {
+    "glbTriangles": 252502,
+    "glbBytes": 16325100,
+    "runtimePlotTriangles": 13010,
+    "runtimePlotDrawCalls": 4,
+    "addedTrees": 0
+  },
+  "checks": {
+    "geometryReport": "scene-validation-final.json",
+    "geometryChecksPassed": 37,
+    "runtimeReport": "runtime-validation-final.json",
+    "runtimeChecksPassed": 40,
+    "protectedOldFilesUnchanged": 1344,
+    "browserConsoleErrors": 0,
+    "browserConsoleWarnings": 0,
+    "javascriptFilesSyntaxChecked": 7
+  },
+  "browser": {
+    "surface": "ChatGPT in-app browser tab 28; actual WebGL output",
+    "sameCameraComparison": [
+      "baseline-09-overview.png",
+      "overview-final.png"
+    ],
+    "reviewedFinalViews": [
+      "overview-final.png",
+      "garden-final.png",
+      "court-final.png",
+      "corner-final.png",
+      "canal-final.png"
+    ],
+    "walks": [
+      {
+        "route": "south_middle_court_return",
+        "result": "Tour started from south street, completed and returned to manual walking at the street entrance.",
+        "screenshot": "south-court-return.png"
+      },
+      {
+        "route": "north_east_corner_return",
+        "result": "Tour entered the corner forecourt and side-street approach, completed and returned to manual walking on the east side.",
+        "screenshot": "northeast-court-return.png"
+      }
+    ],
+    "controls": [
+      "09/10 comparison uses the same camera and each model's own generated navigation",
+      "Route menu changes with the version",
+      "Minimap uses actual transformed house footprints",
+      "Description panel hide/show"
+    ]
+  },
+  "resolvedFindings": [
+    "New south-middle court rear ground intersected rising old terrain; a 5.35 percent ramp now rises from .855 to .970 metres with matching navigation heights.",
+    "An old courtyard-wall object was missed by live collection iteration; an explicit stable four-object ground replacement list now hides it together with the other source ground batches.",
+    "Near-view hedge interiors looked like solid green slabs; existing leaf alpha and restrained relief now vary the surface, with a third of existing hedge cards redistributed over the top."
+  ],
+  "remainingLimits": [
+    "Far background outside the developed streets remains open low-detail terrain.",
+    "Some house details still share a limited asset vocabulary.",
+    "House interiors and closed private planting parcels are not open for walking."
+  ],
+  "publication": "Local only; previous pages, models and source files retained."
+}

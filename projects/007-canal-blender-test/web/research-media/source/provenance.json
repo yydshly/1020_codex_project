@@ -1,0 +1,148 @@
+{
+  "source_post": "https://x.com/cccch1mneyyyy/status/2112080631689826482",
+  "posted_by": {
+    "name": "Chimney",
+    "account": "cccch1mneyyyy"
+  },
+  "post_created_at": "2026-10-19T07:17:17.000Z",
+  "retrieved_at": "2026-10-25T03:52:45.549245+00:00",
+  "source_method": "Official X oEmbed and cdn.syndication.twimg.com tweet response, HTTP 200; ordinary web fetch returned 403.",
+  "source_type": "Four still-image attachments from the exact original post; no video attachment returned.",
+  "media": [
+    {
+      "order": 1,
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HU-eHp6acAAQ9K1.jpg",
+      "local_path": "web/research-media/source/source-x-01.jpg",
+      "bytes": 108489,
+      "sha256": "a4c48d035d69d87ff17b0473adea2a352507752aae4824c5e683a58a11a140ff",
+      "downloaded_dimensions": [
+        1200,
+        682
+      ],
+      "platform_original_dimensions": [
+        2488,
+        1414
+      ],
+      "post": "https://x.com/cccch1mneyyyy/status/2112080631689826482",
+      "author_attribution": "Posted by Chimney; the post also says some images are works by group members; exact per-image creator not yet identified.",
+      "media_license": "No separate open-media licence found. The plugin BSD licence does not establish a licence for these X photos.",
+      "transformation": "None; exact bytes from the platform media URL.",
+      "suggested_caption_zh": "DSH界面与Blender视口：落日轻轨站",
+      "visual_observation": "Screenshot shows an image-reference prompt in dshTUI and a Blender viewport frame of a sunset light-rail platform. It is a published workflow screenshot, not an independent reproduction.",
+      "visually_reviewed": true,
+      "full_resolution": {
+        "url": "https://pbs.twimg.com/media/HU-eHp6acAAQ9K1?format=jpg&name=orig",
+        "local_path": "web/research-media/source/source-x-01-original.jpg",
+        "bytes": 323350,
+        "sha256": "18ed6ceea59f2a1b14b1c669aa4d4b11e7d8235faeb2d78cd3f0edce2b0be77d",
+        "dimensions": [
+          2488,
+          1414
+        ]
+      }
+    },
+    {
+      "order": 2,
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HU-eICGbAAAiP1c.jpg",
+      "local_path": "web/research-media/source/source-x-02.jpg",
+      "bytes": 131666,
+      "sha256": "b5578bd7bc455057f51713c6fd9f9752b6e2b8583ddaeea9754caa477e56753a",
+      "downloaded_dimensions": [
+        800,
+        1200
+      ],
+      "platform_original_dimensions": [
+        1600,
+        2400
+      ],
+      "post": "https://x.com/cccch1mneyyyy/status/2112080631689826482",
+      "author_attribution": "Posted by Chimney; the post also says some images are works by group members; exact per-image creator not yet identified.",
+      "media_license": "No separate open-media licence found. The plugin BSD licence does not establish a licence for these X photos.",
+      "transformation": "None; exact bytes from the platform media URL.",
+      "suggested_caption_zh": "源帖附带的落日站台竖幅场景图",
+      "visual_observation": "A portrait platform scene with wet reflections. The post does not provide a per-image input/output label or project/render metadata; display as a source-post station image, without asserting it is an independently verified Blender result.",
+      "visually_reviewed": true,
+      "full_resolution": {
+        "url": "https://pbs.twimg.com/media/HU-eICGbAAAiP1c?format=jpg&name=orig",
+        "local_path": "web/research-media/source/source-x-02-original.jpg",
+        "bytes": 429613,
+        "sha256": "d9554ed806339f06e61a7453588c98b20f2c8357e094ad37434f7826efc86768",
+        "dimensions": [
+          1600,
+          2400
+        ]
+      }
+    },
+    {
+      "order": 3,
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HU-eIaSbsAAB0FS.jpg",
+      "local_path": "web/research-media/source/source-x-03.jpg",
+      "bytes": 280161,
+      "sha256": "7ba8644488a01be218f0c2e947a4e496c3bc5286cdca7a0732cf5138225f2d52",
+      "downloaded_dimensions": [
+        1200,
+        900
+      ],
+      "platform_original_dimensions": [
+        2880,
+        2160
+      ],
+      "post": "https://x.com/cccch1mneyyyy/status/2112080631689826482",
+      "author_attribution": "Posted by Chimney; the post also says some images are works by group members; exact per-image creator not yet identified.",
+      "media_license": "No separate open-media licence found. The plugin BSD licence does not establish a licence for these X photos.",
+      "transformation": "None; exact bytes from the platform media URL.",
+      "suggested_caption_zh": "源帖其他作品：多视角霓虹城市拼图",
+      "visual_observation": "A multi-view neon-city scene contact sheet. The post mentions works by group members but does not assign a creator to each image.",
+      "visually_reviewed": true,
+      "full_resolution": {
+        "url": "https://pbs.twimg.com/media/HU-eIaSbsAAB0FS?format=jpg&name=orig",
+        "local_path": "web/research-media/source/source-x-03-original.jpg",
+        "bytes": 1258096,
+        "sha256": "3682edbf86424ce786219236d156f8da1ed6ef0f16375b7014d8a538f5b43570",
+        "dimensions": [
+          2880,
+          2160
+        ]
+      }
+    },
+    {
+      "order": 4,
+      "type": "photo",
+      "url": "https://pbs.twimg.com/media/HU-eI5kbYAATDJX.jpg",
+      "local_path": "web/research-media/source/source-x-04.jpg",
+      "bytes": 127640,
+      "sha256": "d215bcb89775743b6e680341c3f9e3ea155658e1ec31b05970d9ee61c535fdf1",
+      "downloaded_dimensions": [
+        1200,
+        852
+      ],
+      "platform_original_dimensions": [
+        2282,
+        1620
+      ],
+      "post": "https://x.com/cccch1mneyyyy/status/2112080631689826482",
+      "author_attribution": "Posted by Chimney; the post also says some images are works by group members; exact per-image creator not yet identified.",
+      "media_license": "No separate open-media licence found. The plugin BSD licence does not establish a licence for these X photos.",
+      "transformation": "None; exact bytes from the platform media URL.",
+      "suggested_caption_zh": "源帖其他作品：环形天文仪式装置",
+      "visual_observation": "A multi-view gold/brass ring instrument scene contact sheet. The post mentions group members but per-image creator is not identified.",
+      "visually_reviewed": true,
+      "full_resolution": {
+        "url": "https://pbs.twimg.com/media/HU-eI5kbYAATDJX?format=jpg&name=orig",
+        "local_path": "web/research-media/source/source-x-04-original.jpg",
+        "bytes": 330218,
+        "sha256": "74939d32f2bd66553121ddb64d20806c06fbca1a4678461f30423fcfe5492b82",
+        "dimensions": [
+          2282,
+          1620
+        ]
+      }
+    }
+  ],
+  "rights_note": "Original-post photos are attributed to their rights holders and shown with original-post links for research comparison and commentary. No open-media reuse licence was found; plugin code licences do not cover these images or grant downstream reuse rights.",
+  "comparison_boundary": "Source photos document the published showcase; they are not our Blender outputs or a same-input/same-budget benchmark.",
+  "publication_context": "This research edition is prepared for publication on the user-authorized GitHub Pages site. Source photos remain distinct from generated explanatory diagrams and local experimental renders."
+}

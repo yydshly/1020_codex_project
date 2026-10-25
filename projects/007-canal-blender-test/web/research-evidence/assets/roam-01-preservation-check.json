@@ -1,0 +1,318 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-23T23:58:58.591661+00:00",
+  "passed": true,
+  "scope": "Byte-level preservation of every file recorded by landscape-03 baseline, plus eight independently known prior-round digests. New roam files are allowed additions, not old-web modifications.",
+  "checks": {
+    "baseline_digest_matches_previous_independent_postcheck": true,
+    "all_125_baseline_old_assets_and_artifacts_unchanged": true,
+    "all_eight_previous_round_known_digests_unchanged": true,
+    "all_56_original_project_web_files_unchanged": true,
+    "all_56_original_built_site_files_unchanged": true,
+    "only_new_roam_files_added_to_project_web": true,
+    "built_site_has_no_new_files": true,
+    "six_closing_reports_logs_unchanged_since_first_roam_check": true,
+    "exactly_ten_allowed_new_roam_web_files": true,
+    "roam01_blend_glb_manifest_bytes_preserved": true,
+    "roam01_preserved_digests_match_its_manifest": true,
+    "roam02_source_is_preserved_roam01_blend": true,
+    "roam02_new_asset_matches_manifest": true
+  },
+  "old_asset_artifact_baseline": {
+    "checked_files": 125,
+    "unchanged": true,
+    "changes": []
+  },
+  "additional_prior_round_evidence": [
+    {
+      "file": "assets/landscape-03-baseline.json",
+      "expected_sha256": "f7f6909c8a5fea2f4d4f0d6dc5e24fe926a0533e8bb846a675be044ad6b2d4eb",
+      "actual_sha256": "f7f6909c8a5fea2f4d4f0d6dc5e24fe926a0533e8bb846a675be044ad6b2d4eb",
+      "unchanged": true
+    },
+    {
+      "file": "assets/landscape-03-stats.json",
+      "expected_sha256": "2bddce91a59bddf6893bca3a03ecd19c42f8cd20aa85fd58573564b0c3198fba",
+      "actual_sha256": "2bddce91a59bddf6893bca3a03ecd19c42f8cd20aa85fd58573564b0c3198fba",
+      "unchanged": true
+    },
+    {
+      "file": "assets/landscape-03-audit.json",
+      "expected_sha256": "44891b484c3a726b42f756b88b8e616147c2549d5bccf3c972d7482050f5b194",
+      "actual_sha256": "44891b484c3a726b42f756b88b8e616147c2549d5bccf3c972d7482050f5b194",
+      "unchanged": true
+    },
+    {
+      "file": "assets/landscape-03-diagnostics.json",
+      "expected_sha256": "e3558498f38e82e91506d45dd560f0d1f4d532e7070889d364a9f6e3c76e213b",
+      "actual_sha256": "e3558498f38e82e91506d45dd560f0d1f4d532e7070889d364a9f6e3c76e213b",
+      "unchanged": true
+    },
+    {
+      "file": "assets/landscape-03-render-ledger.json",
+      "expected_sha256": "8b97bdb4ea4dfee1619175b3067e7b11f8289605d36dc06be00d306183d369aa",
+      "actual_sha256": "8b97bdb4ea4dfee1619175b3067e7b11f8289605d36dc06be00d306183d369aa",
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/rainy-canal-extension-03.blend",
+      "expected_sha256": "be430f38e6bcf2b9be54cebbebb111a868f2046fc6fe60ec77723c4d1ed05a50",
+      "actual_sha256": "be430f38e6bcf2b9be54cebbebb111a868f2046fc6fe60ec77723c4d1ed05a50",
+      "unchanged": true
+    },
+    {
+      "file": "assets/landscape-03-preview-01.png",
+      "expected_sha256": "9efc1dd4f35f548d4343229431a475b1cd429c53c20a6f0e8faeef2d9144b840",
+      "actual_sha256": "9efc1dd4f35f548d4343229431a475b1cd429c53c20a6f0e8faeef2d9144b840",
+      "unchanged": true
+    },
+    {
+      "file": "assets/landscape-03-preview-02.png",
+      "expected_sha256": "2a1bc294e5428e16b1498ba186d11f70fb31efbc7dbd4f6323a4ad5f269cfea3",
+      "actual_sha256": "2a1bc294e5428e16b1498ba186d11f70fb31efbc7dbd4f6323a4ad5f269cfea3",
+      "unchanged": true
+    }
+  ],
+  "websites": {
+    "project_web": {
+      "checked_files": 56,
+      "unchanged": true,
+      "changes": [],
+      "added_files": [
+        "models/roam-01-manifest.json",
+        "models/roam-01.glb",
+        "models/roam-02-manifest.json",
+        "models/roam-02.glb",
+        "roam-cat.js",
+        "roam-environment.js",
+        "roam-navigation.js",
+        "roam.css",
+        "roam.html",
+        "roam.js"
+      ],
+      "allowed_new_roam_files": [
+        "models/roam-01-manifest.json",
+        "models/roam-01.glb",
+        "models/roam-02-manifest.json",
+        "models/roam-02.glb",
+        "roam-cat.js",
+        "roam-environment.js",
+        "roam-navigation.js",
+        "roam.css",
+        "roam.html",
+        "roam.js"
+      ],
+      "unexpected_new_files": [],
+      "baseline_directory_exists": true,
+      "directory_exists": true
+    },
+    "built_site_007": {
+      "checked_files": 56,
+      "unchanged": true,
+      "changes": [],
+      "added_files": [],
+      "allowed_new_roam_files": [],
+      "unexpected_new_files": [],
+      "baseline_directory_exists": true,
+      "directory_exists": true
+    }
+  },
+  "allowed_new_asset_artifact_files_observed": [
+    "assets/roam-01-browser-check.json",
+    "assets/roam-01-browser-failure.png",
+    "assets/roam-01-desktop.png",
+    "assets/roam-01-mobile.png",
+    "assets/roam-01-overview.png",
+    "assets/roam-01-review.json",
+    "artifacts/rainy-canal-roam-01.blend",
+    "artifacts/rainy-canal-roam-02.blend"
+  ],
+  "previous_round_files_without_pre_roam_digest": [
+    {
+      "file": "assets/landscape-03-postcheck.json",
+      "bytes": 120392,
+      "sha256_recorded_now": "200ca44e32dbef0cc523e7a534841fa6a5bcfaa593ad69959fc0b8946b1e11e4",
+      "status": "recorded_only_no_independent_pre_roam_digest",
+      "sha256_rechecked_now": "200ca44e32dbef0cc523e7a534841fa6a5bcfaa593ad69959fc0b8946b1e11e4",
+      "unchanged_since_first_roam_preservation_check": true
+    },
+    {
+      "file": "assets/landscape-03-review.json",
+      "bytes": 4131,
+      "sha256_recorded_now": "5cf58517581037a05ec2a1888103186dd64dc4427698075a2feb8aa06eec5518",
+      "status": "recorded_only_no_independent_pre_roam_digest",
+      "sha256_rechecked_now": "5cf58517581037a05ec2a1888103186dd64dc4427698075a2feb8aa06eec5518",
+      "unchanged_since_first_roam_preservation_check": true
+    },
+    {
+      "file": "assets/landscape-03-selfcheck.json",
+      "bytes": 2506,
+      "sha256_recorded_now": "69236dc390e2bc12b3fecd42cdb9a19a030c82e6051525c5ef3c0390a5b0fef7",
+      "status": "recorded_only_no_independent_pre_roam_digest",
+      "sha256_rechecked_now": "69236dc390e2bc12b3fecd42cdb9a19a030c82e6051525c5ef3c0390a5b0fef7",
+      "unchanged_since_first_roam_preservation_check": true
+    },
+    {
+      "file": "artifacts/landscape-03-build.log",
+      "bytes": 886,
+      "sha256_recorded_now": "58ff798b7fc002a1bf9144dcc7796b188cf9dc4306c68270fcc13298fec15b5f",
+      "status": "recorded_only_no_independent_pre_roam_digest",
+      "sha256_rechecked_now": "58ff798b7fc002a1bf9144dcc7796b188cf9dc4306c68270fcc13298fec15b5f",
+      "unchanged_since_first_roam_preservation_check": true
+    },
+    {
+      "file": "artifacts/landscape-03-render-01.log",
+      "bytes": 822430,
+      "sha256_recorded_now": "e0d7455054310927103f7360122e1e700d028807d529b7092861ecc85a9ca99e",
+      "status": "recorded_only_no_independent_pre_roam_digest",
+      "sha256_rechecked_now": "e0d7455054310927103f7360122e1e700d028807d529b7092861ecc85a9ca99e",
+      "unchanged_since_first_roam_preservation_check": true
+    },
+    {
+      "file": "artifacts/landscape-03-render-02.log",
+      "bytes": 820245,
+      "sha256_recorded_now": "57504df8f5a3582f56a472888b6ebd3b1f232951ae73c401f7a424ab0ef3e611",
+      "status": "recorded_only_no_independent_pre_roam_digest",
+      "sha256_rechecked_now": "57504df8f5a3582f56a472888b6ebd3b1f232951ae73c401f7a424ab0ef3e611",
+      "unchanged_since_first_roam_preservation_check": true
+    }
+  ],
+  "limitations": [
+    "Six previous-round closing reports/logs were created after the preserved baseline and have no independent pre-roam digest available here. Their current hashes are recorded, but unchanged historical bytes are not asserted.",
+    "This check reads bytes only; it does not certify the new roaming scene geometry, navigation, browser behavior or visual quality.",
+    "No Blender execution, save, render or site build was used for this preservation check."
+  ],
+  "previous_checked_utc": "2026-10-23T23:53:09.790762+00:00",
+  "allowed_new_web_current_files": {
+    "models/roam-01-manifest.json": {
+      "bytes": 33703,
+      "sha256": "766971bd426faab17c9d8abd575d18fa0d548ad6028bc86f3db2415483213cbc"
+    },
+    "models/roam-01.glb": {
+      "bytes": 10486864,
+      "sha256": "19ce41bd3abf5184b98e27b55d7702276ffe6d0367e31c4a6c18eba39af4993e"
+    },
+    "models/roam-02-manifest.json": {
+      "bytes": 41999,
+      "sha256": "00ac8b19ac0059d45dfec1d88ed87f74754ee4307c0fad70df7f4747a516358e"
+    },
+    "models/roam-02.glb": {
+      "bytes": 9534316,
+      "sha256": "ae15472f3a6e1a960e92f5cb4a1d7ba99e0c5b64d737a5f2c8f7b50b5e68db49"
+    },
+    "roam-cat.js": {
+      "bytes": 8631,
+      "sha256": "b097b9774720f80659c0beae0e60a8a457bb53af9fe68623ddf9e40fd6c56286"
+    },
+    "roam-environment.js": {
+      "bytes": 9314,
+      "sha256": "016d96b2657eb274f54288f3328d018e75368d556f760b3ec46a93b9238edf7e"
+    },
+    "roam-navigation.js": {
+      "bytes": 9537,
+      "sha256": "d7e64533a868e88b47333bbd86786930a304a477d01944d019c3bd952d893b33"
+    },
+    "roam.css": {
+      "bytes": 8557,
+      "sha256": "814cc373e90485948e58c09ecbea7d5f526c4e9fc1290f14876abb7d8666be4f"
+    },
+    "roam.html": {
+      "bytes": 4642,
+      "sha256": "2deedf5ee982f5101b7245d807b31aad02268c645648f1cbeda74306a9d3bc75"
+    },
+    "roam.js": {
+      "bytes": 17938,
+      "sha256": "64928c9b8b36aecfaf8ea7abb2ba28c7f79e2b120c04decbb00af04ec1046316"
+    }
+  },
+  "allowed_new_assets_artifacts_current_files": {
+    "assets/roam-01-browser-check.json": {
+      "bytes": 4606,
+      "sha256": "3b120bedef9bb3e1aadf08365e19491ffb100e2d382c80f056012df533b66765"
+    },
+    "assets/roam-01-browser-failure.png": {
+      "bytes": 744489,
+      "sha256": "ad2817720ea439da2b916254e5060e7520d73644a97a0a4ae19a372eecfe43f4"
+    },
+    "assets/roam-01-desktop.png": {
+      "bytes": 712306,
+      "sha256": "fc497e5ddddedf6d64737eb5421c0965ceb6e1a261a3dd1081fae32c20c0bff0"
+    },
+    "assets/roam-01-mobile.png": {
+      "bytes": 238239,
+      "sha256": "9b97c75d877bafe9c86f74c950a51d43922422238d1a22c26f150e237d36286b"
+    },
+    "assets/roam-01-overview.png": {
+      "bytes": 642643,
+      "sha256": "dc76baa30dbd8281d128c33b55c5b1155fd1be5f97c9a3236dd1fb16c5b7bc26"
+    },
+    "assets/roam-01-review.json": {
+      "bytes": 3273,
+      "sha256": "8d4dd36592b88792e5d11e4212d54fb2871f04870189a12af413505241eb4f12"
+    },
+    "artifacts/rainy-canal-roam-01.blend": {
+      "bytes": 17203508,
+      "sha256": "6a1824d3ae7b922294856e58aa48d57009c3ff51d7418ad1be61e56b1fdb0cb4"
+    },
+    "artifacts/rainy-canal-roam-02.blend": {
+      "bytes": 16987973,
+      "sha256": "f4df82f098d8d26dd940633b38689cbf2745525a1c084af4976f1e4ba21b8761"
+    }
+  },
+  "refresh_scope": "Final read-only rehash allowing ten new roaming web/model files, preserving roam01 blend/GLB/manifest against their previous recorded fingerprints, and checking roam02 assets against its manifest. UI/browser artifacts are point-in-time fingerprints; no render or test rerun.",
+  "preserved_roam01_files": [
+    {
+      "file": "web/models/roam-01.glb",
+      "expected": {
+        "bytes": 10486864,
+        "sha256": "19ce41bd3abf5184b98e27b55d7702276ffe6d0367e31c4a6c18eba39af4993e"
+      },
+      "actual": {
+        "bytes": 10486864,
+        "sha256": "19ce41bd3abf5184b98e27b55d7702276ffe6d0367e31c4a6c18eba39af4993e"
+      },
+      "unchanged": true
+    },
+    {
+      "file": "web/models/roam-01-manifest.json",
+      "expected": {
+        "bytes": 33703,
+        "sha256": "766971bd426faab17c9d8abd575d18fa0d548ad6028bc86f3db2415483213cbc"
+      },
+      "actual": {
+        "bytes": 33703,
+        "sha256": "766971bd426faab17c9d8abd575d18fa0d548ad6028bc86f3db2415483213cbc"
+      },
+      "unchanged": true
+    },
+    {
+      "file": "artifacts/rainy-canal-roam-01.blend",
+      "expected": {
+        "bytes": 17203508,
+        "sha256": "6a1824d3ae7b922294856e58aa48d57009c3ff51d7418ad1be61e56b1fdb0cb4"
+      },
+      "actual": {
+        "bytes": 17203508,
+        "sha256": "6a1824d3ae7b922294856e58aa48d57009c3ff51d7418ad1be61e56b1fdb0cb4"
+      },
+      "unchanged": true
+    }
+  ],
+  "roam02_revision": {
+    "asset": "roam-02.glb",
+    "bytes": 9534316,
+    "sha256": "ae15472f3a6e1a960e92f5cb4a1d7ba99e0c5b64d737a5f2c8f7b50b5e68db49",
+    "integrated_blend": {
+      "file": "rainy-canal-roam-02.blend",
+      "sha256": "f4df82f098d8d26dd940633b38689cbf2745525a1c084af4976f1e4ba21b8761",
+      "object_count": 1799
+    },
+    "source": {
+      "file": "rainy-canal-roam-01.blend",
+      "sha256": "6a1824d3ae7b922294856e58aa48d57009c3ff51d7418ad1be61e56b1fdb0cb4",
+      "object_count": 1901,
+      "bytes_unchanged": true
+    },
+    "scope": "Separate revision removing the 102-part distant tree; this byte check does not independently certify the geometry edit."
+  }
+}

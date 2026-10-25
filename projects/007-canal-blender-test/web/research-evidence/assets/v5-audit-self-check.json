@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "created_utc": "2026-10-23T09:28:40.371250+00:00",
+  "baseline": "v5-baseline-audit.json",
+  "source_old_sha256": "017a6dd169e8fe5d8b958cc90d24687fe8f8aaeaa66194c455dd176afdd1b765",
+  "source_current_sha256": "017a6dd169e8fe5d8b958cc90d24687fe8f8aaeaa66194c455dd176afdd1b765",
+  "candidate_file": "rainy-canal-v4.blend",
+  "candidate_sha256": "017a6dd169e8fe5d8b958cc90d24687fe8f8aaeaa66194c455dd176afdd1b765",
+  "passed": true,
+  "checks": {
+    "v4_source_hash_unchanged": true,
+    "project_web_and_built_site_unchanged": true,
+    "complexity_counts_unchanged": true,
+    "all_original_objects_preserved_no_additions": true,
+    "materials_unchanged": true,
+    "worlds_unchanged": true,
+    "node_groups_unchanged": true,
+    "locked_scene_unchanged": true
+  },
+  "violations": [],
+  "allowed_building_changes": [],
+  "baseline_counts": {
+    "objects": 2109,
+    "mesh_objects": 2015,
+    "curve_objects": 72,
+    "vertices": 159646,
+    "faces": 127565,
+    "curve_points": 1553,
+    "modifiers": 686,
+    "lights": 20,
+    "cameras": 2
+  },
+  "candidate_counts": {
+    "objects": 2109,
+    "mesh_objects": 2015,
+    "curve_objects": 72,
+    "vertices": 159646,
+    "faces": 127565,
+    "curve_points": 1553,
+    "modifiers": 686,
+    "lights": 20,
+    "cameras": 2
+  },
+  "audit_seconds": 2.441
+}

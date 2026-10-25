@@ -1,0 +1,3508 @@
+{
+  "checkedUTC": "2026-10-25T02:58:55.574Z",
+  "passed": true,
+  "checks": {
+    "originalPublicStreetZonesAndObstaclesRetained": true,
+    "oldRoutesAndHeightsPreserved": true,
+    "allRoutesDriveBothDirections": true,
+    "newCourtRouteWorksAcrossSupportedBodyRadii": true,
+    "allDeclaredWalkableRegionsConnectToOriginalStreet": true,
+    "everyPrimaryAndCornerDoorHasReachableExteriorApproach": true,
+    "closedHouseCentersAndEarthGardensRemainInaccessible": true,
+    "navigationRefusesMissingCurrentGroundMetadata": true
+  },
+  "evidence": {
+    "oldFailures": [],
+    "driveFailures": [],
+    "radiusFailures": [],
+    "connectivity": {
+      "spacing": 0.25,
+      "gridPoints": 19474,
+      "connectedPoints": 19474,
+      "disconnectedPoints": 0,
+      "disconnectedExamples": []
+    },
+    "doors": [
+      {
+        "houseId": "near_west_corner",
+        "id": "near_west_corner/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -21.2,
+          1.6
+        ],
+        "outward": [
+          0,
+          -1
+        ],
+        "reachable": true,
+        "approach": {
+          "x": -21.2,
+          "z": -1,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "near_west_corner",
+        "id": "near_west_corner/left-door",
+        "side": "left",
+        "secondary": true,
+        "position": [
+          -24.8,
+          4
+        ],
+        "outward": [
+          -1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "x": -25.400000000000002,
+          "z": -4,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "near_east_corner",
+        "id": "near_east_corner/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          19.85,
+          1.6
+        ],
+        "outward": [
+          0,
+          -1
+        ],
+        "reachable": true,
+        "approach": {
+          "x": 19.85,
+          "z": -1,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "near_east_end",
+        "id": "near_east_end/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          24.099999999999998,
+          1.6
+        ],
+        "outward": [
+          0,
+          -1
+        ],
+        "reachable": true,
+        "approach": {
+          "x": 24.099999999999998,
+          "z": -1,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "near_east_end",
+        "id": "near_east_end/right-door",
+        "side": "right",
+        "secondary": true,
+        "position": [
+          30.9,
+          2.56
+        ],
+        "outward": [
+          1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "x": 31.5,
+          "z": -2.56,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "north_west_01",
+        "id": "north_west_01/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -27.7,
+          9.55
+        ],
+        "outward": [
+          0,
+          -1
+        ],
+        "reachable": true,
+        "approach": {
+          "x": -27.7,
+          "z": -8.950000000000001,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "north_west_01",
+        "id": "north_west_01/left-door",
+        "side": "left",
+        "secondary": true,
+        "position": [
+          -30.9,
+          12.65
+        ],
+        "outward": [
+          -1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "x": -31.5,
+          "z": -12.65,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "north_west_02",
+        "id": "north_west_02/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -22.98,
+          9.55
+        ],
+        "outward": [
+          0,
+          -1
+        ],
+        "reachable": true,
+        "approach": {
+          "x": -22.98,
+          "z": -8.950000000000001,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "north_east_01",
+        "id": "north_east_01/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          20,
+          9.55
+        ],
+        "outward": [
+          0,
+          -1
+        ],
+        "reachable": true,
+        "approach": {
+          "x": 20,
+          "z": -8.950000000000001,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "north_east_02",
+        "id": "north_east_02/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          30.900000000000002,
+          13.258
+        ],
+        "outward": [
+          1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "x": 31.500000000000004,
+          "z": -13.258,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "north_east_02",
+        "id": "north_east_02/left-door",
+        "side": "left",
+        "secondary": true,
+        "position": [
+          29.3895,
+          11.35
+        ],
+        "outward": [
+          0,
+          -1
+        ],
+        "reachable": true,
+        "approach": {
+          "x": 29.3895,
+          "z": -10.75,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "far_west_01",
+        "id": "far_west_01/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -27.5,
+          -16.2
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "x": -27.5,
+          "z": 15.6,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "far_west_01",
+        "id": "far_west_01/right-door",
+        "side": "right",
+        "secondary": true,
+        "position": [
+          -30.9,
+          -18.9
+        ],
+        "outward": [
+          -1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "x": -31.5,
+          "z": 18.9,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "far_west_02",
+        "id": "far_west_02/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -21,
+          -16.2
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "x": -21,
+          "z": 15.6,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "far_east_01",
+        "id": "far_east_01/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          19.6,
+          -16.2
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "x": 19.6,
+          "z": 15.6,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "far_east_02",
+        "id": "far_east_02/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          27.1,
+          -16.2
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "x": 27.1,
+          "z": 15.6,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "far_east_02",
+        "id": "far_east_02/left-door",
+        "side": "left",
+        "secondary": true,
+        "position": [
+          30.900000000000002,
+          -18.9
+        ],
+        "outward": [
+          1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "x": 31.500000000000004,
+          "z": 18.9,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "south_01",
+        "id": "south_01/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -26.343,
+          -38.15
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "x": -26.343,
+          "z": 37.55,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "south_01",
+        "id": "south_01/right-door",
+        "side": "right",
+        "secondary": true,
+        "position": [
+          -30.900000000000002,
+          -39.475
+        ],
+        "outward": [
+          -1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "x": -31.500000000000004,
+          "z": 39.475,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "south_02",
+        "id": "south_02/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -21.4,
+          -38.15
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "x": -21.4,
+          "z": 37.55,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "south_03",
+        "id": "south_03/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -6.436999999999999,
+          -37.15
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "x": -6.436999999999999,
+          "z": 36.55,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "south_03",
+        "id": "south_03/left-door",
+        "side": "left",
+        "secondary": true,
+        "position": [
+          -4.9,
+          -38.74
+        ],
+        "outward": [
+          1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "x": -4.300000000000001,
+          "z": 38.74,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "south_04",
+        "id": "south_04/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -2.3,
+          -38.74
+        ],
+        "outward": [
+          -1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "x": -2.9,
+          "z": 38.74,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "south_04",
+        "id": "south_04/left-door",
+        "side": "left",
+        "secondary": true,
+        "position": [
+          -1.0279999999999994,
+          -37.15
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "x": -1.0279999999999994,
+          "z": 36.55,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "south_05",
+        "id": "south_05/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          22.54,
+          -37.15
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "x": 22.54,
+          "z": 36.55,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "south_06",
+        "id": "south_06/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          27.4,
+          -37.15
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "x": 27.4,
+          "z": 36.55,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "south_06",
+        "id": "south_06/left-door",
+        "side": "left",
+        "secondary": true,
+        "position": [
+          30.9,
+          -40.15
+        ],
+        "outward": [
+          1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "x": 31.5,
+          "z": 40.15,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "proxy_south_house",
+        "id": "proxy_south_house/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -8.7,
+          -32
+        ],
+        "outward": [
+          0,
+          -1
+        ],
+        "reachable": true,
+        "approach": {
+          "x": -8.7,
+          "z": 32.6,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "proxy_south_house",
+        "id": "proxy_south_house/right-door",
+        "side": "right",
+        "secondary": true,
+        "position": [
+          -4.699999999999999,
+          -29.3
+        ],
+        "outward": [
+          1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "x": -4.1,
+          "z": 29.3,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "proxy_south_wing",
+        "id": "proxy_south_wing/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          0.2,
+          -33.65
+        ],
+        "outward": [
+          0,
+          -1
+        ],
+        "reachable": true,
+        "approach": {
+          "x": 0.2,
+          "z": 34.25,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "proxy_south_wing",
+        "id": "proxy_south_wing/left-door",
+        "side": "left",
+        "secondary": true,
+        "position": [
+          -2.55,
+          -31.3
+        ],
+        "outward": [
+          -1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "x": -3.15,
+          "z": 31.3,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "proxy_north_range",
+        "id": "proxy_north_range/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -2.9999999999999996,
+          23.05
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "x": -2.9999999999999996,
+          "z": -23.650000000000002,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "proxy_north_wing",
+        "id": "proxy_north_wing/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          3.2250000000000005,
+          22.450000000000003
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "x": 3.2250000000000005,
+          "z": -23.050000000000004,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      }
+    ],
+    "physicalSampleCount": 721,
+    "routeCounts": {
+      "both_banks_loop": 397,
+      "rear_lane_loop": 331,
+      "north_ring": 937,
+      "south_ring": 902,
+      "north_backstreet": 834,
+      "courtyard_return": 167,
+      "red_box_court_return": 123,
+      "south_middle_court_return": 82,
+      "north_east_corner_return": 87
+    }
+  },
+  "data": {
+    "routes": {
+      "courtyard_return": {
+        "route": [
+          [
+            -7.05,
+            -12.65
+          ],
+          [
+            -7.05,
+            -15.05
+          ],
+          [
+            -7.05,
+            -17.2
+          ],
+          [
+            -7.05,
+            -21.75
+          ],
+          [
+            -7.05,
+            -23.35
+          ],
+          [
+            -10.95,
+            -23.35
+          ],
+          [
+            -10.95,
+            -24.95
+          ],
+          [
+            -7.05,
+            -24.95
+          ],
+          [
+            -7.05,
+            -23.35
+          ],
+          [
+            -7.05,
+            -12.65
+          ]
+        ],
+        "points": {
+          "_public_excerpt": true,
+          "_reason": "large per-point/frame/geometry array",
+          "_original_item_count": 167,
+          "_original_data_retained_locally": true,
+          "_explicit_failure_item_count": 0,
+          "_first_item": {
+            "xy": [
+              -7.05,
+              -12.65
+            ],
+            "height": 0.85,
+            "direction": [
+              0,
+              -1
+            ],
+            "step": 0.18461538461538465
+          },
+          "_last_item": {
+            "xy": [
+              -7.05,
+              -12.65
+            ],
+            "height": 0.85,
+            "direction": [
+              1,
+              0
+            ],
+            "step": 0
+          }
+        }
+      },
+      "south_middle_court_return": {
+        "route": [
+          [
+            -3.6,
+            -35.5
+          ],
+          [
+            -3.6,
+            -38.74
+          ],
+          [
+            -4.3500000000000005,
+            -38.74
+          ],
+          [
+            -3.6,
+            -38.74
+          ],
+          [
+            -3.6,
+            -38.74
+          ],
+          [
+            -2.8499999999999996,
+            -38.74
+          ],
+          [
+            -3.6,
+            -38.74
+          ],
+          [
+            -3.6,
+            -41.8
+          ],
+          [
+            -3.6,
+            -35.5
+          ]
+        ],
+        "points": {
+          "_public_excerpt": true,
+          "_reason": "large per-point/frame/geometry array",
+          "_original_item_count": 82,
+          "_original_data_retained_locally": true,
+          "_explicit_failure_item_count": 0,
+          "_first_item": {
+            "xy": [
+              -3.6,
+              -35.5
+            ],
+            "height": 0.855,
+            "direction": [
+              0,
+              -1
+            ],
+            "step": 0.19058823529411775
+          },
+          "_last_item": {
+            "xy": [
+              -3.6,
+              -35.5
+            ],
+            "height": 0.855,
+            "direction": [
+              1,
+              0
+            ],
+            "step": 0
+          }
+        }
+      },
+      "north_east_corner_return": {
+        "route": [
+          [
+            29.3895,
+            8
+          ],
+          [
+            29.3895,
+            10.799999999999999
+          ],
+          [
+            31.9,
+            10.799999999999999
+          ],
+          [
+            31.9,
+            13.258
+          ],
+          [
+            31.450000000000003,
+            13.258
+          ],
+          [
+            31.9,
+            13.258
+          ],
+          [
+            31.9,
+            8
+          ],
+          [
+            29.3895,
+            8
+          ]
+        ],
+        "points": {
+          "_public_excerpt": true,
+          "_reason": "large per-point/frame/geometry array",
+          "_original_item_count": 87,
+          "_original_data_retained_locally": true,
+          "_explicit_failure_item_count": 0,
+          "_first_item": {
+            "xy": [
+              29.3895,
+              8
+            ],
+            "height": 0.855,
+            "direction": [
+              0,
+              1
+            ],
+            "step": 0.19999999999999993
+          },
+          "_last_item": {
+            "xy": [
+              29.3895,
+              8
+            ],
+            "height": 0.855,
+            "direction": [
+              1,
+              0
+            ],
+            "step": 0
+          }
+        }
+      }
+    },
+    "grid": {
+      "_public_excerpt": true,
+      "_reason": "large per-point/frame/geometry array",
+      "_original_item_count": 721,
+      "_original_data_retained_locally": true,
+      "_explicit_failure_item_count": 0,
+      "_first_item": {
+        "xy": [
+          -32,
+          16.5
+        ],
+        "height": 0.855,
+        "previousWalkable": true
+      },
+      "_last_item": {
+        "xy": [
+          32,
+          -36.5
+        ],
+        "height": 0.855,
+        "previousWalkable": true
+      }
+    },
+    "doors": [
+      {
+        "houseId": "near_west_corner",
+        "id": "near_west_corner/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -21.2,
+          1.6
+        ],
+        "outward": [
+          0,
+          -1
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            -21.2,
+            1
+          ],
+          "height": 0.85,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "near_west_corner",
+        "id": "near_west_corner/left-door",
+        "side": "left",
+        "secondary": true,
+        "position": [
+          -24.8,
+          4
+        ],
+        "outward": [
+          -1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            -25.400000000000002,
+            4
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "near_east_corner",
+        "id": "near_east_corner/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          19.85,
+          1.6
+        ],
+        "outward": [
+          0,
+          -1
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            19.85,
+            1
+          ],
+          "height": 0.85,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "near_east_end",
+        "id": "near_east_end/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          24.099999999999998,
+          1.6
+        ],
+        "outward": [
+          0,
+          -1
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            24.099999999999998,
+            1
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "near_east_end",
+        "id": "near_east_end/right-door",
+        "side": "right",
+        "secondary": true,
+        "position": [
+          30.9,
+          2.56
+        ],
+        "outward": [
+          1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            31.5,
+            2.56
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "north_west_01",
+        "id": "north_west_01/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -27.7,
+          9.55
+        ],
+        "outward": [
+          0,
+          -1
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            -27.7,
+            8.950000000000001
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "north_west_01",
+        "id": "north_west_01/left-door",
+        "side": "left",
+        "secondary": true,
+        "position": [
+          -30.9,
+          12.65
+        ],
+        "outward": [
+          -1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            -31.5,
+            12.65
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "north_west_02",
+        "id": "north_west_02/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -22.98,
+          9.55
+        ],
+        "outward": [
+          0,
+          -1
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            -22.98,
+            8.950000000000001
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "north_east_01",
+        "id": "north_east_01/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          20,
+          9.55
+        ],
+        "outward": [
+          0,
+          -1
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            20,
+            8.950000000000001
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "north_east_02",
+        "id": "north_east_02/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          30.900000000000002,
+          13.258
+        ],
+        "outward": [
+          1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            31.500000000000004,
+            13.258
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "north_east_02",
+        "id": "north_east_02/left-door",
+        "side": "left",
+        "secondary": true,
+        "position": [
+          29.3895,
+          11.35
+        ],
+        "outward": [
+          0,
+          -1
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            29.3895,
+            10.75
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "far_west_01",
+        "id": "far_west_01/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -27.5,
+          -16.2
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            -27.5,
+            -15.6
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "far_west_01",
+        "id": "far_west_01/right-door",
+        "side": "right",
+        "secondary": true,
+        "position": [
+          -30.9,
+          -18.9
+        ],
+        "outward": [
+          -1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            -31.5,
+            -18.9
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "far_west_02",
+        "id": "far_west_02/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -21,
+          -16.2
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            -21,
+            -15.6
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "far_east_01",
+        "id": "far_east_01/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          19.6,
+          -16.2
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            19.6,
+            -15.6
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "far_east_02",
+        "id": "far_east_02/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          27.1,
+          -16.2
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            27.1,
+            -15.6
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "far_east_02",
+        "id": "far_east_02/left-door",
+        "side": "left",
+        "secondary": true,
+        "position": [
+          30.900000000000002,
+          -18.9
+        ],
+        "outward": [
+          1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            31.500000000000004,
+            -18.9
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "south_01",
+        "id": "south_01/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -26.343,
+          -38.15
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            -26.343,
+            -37.55
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "south_01",
+        "id": "south_01/right-door",
+        "side": "right",
+        "secondary": true,
+        "position": [
+          -30.900000000000002,
+          -39.475
+        ],
+        "outward": [
+          -1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            -31.500000000000004,
+            -39.475
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "south_02",
+        "id": "south_02/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -21.4,
+          -38.15
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            -21.4,
+            -37.55
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "south_03",
+        "id": "south_03/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -6.436999999999999,
+          -37.15
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            -6.436999999999999,
+            -36.55
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "south_03",
+        "id": "south_03/left-door",
+        "side": "left",
+        "secondary": true,
+        "position": [
+          -4.9,
+          -38.74
+        ],
+        "outward": [
+          1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            -4.300000000000001,
+            -38.74
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "south_04",
+        "id": "south_04/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -2.3,
+          -38.74
+        ],
+        "outward": [
+          -1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            -2.9,
+            -38.74
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "south_04",
+        "id": "south_04/left-door",
+        "side": "left",
+        "secondary": true,
+        "position": [
+          -1.0279999999999994,
+          -37.15
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            -1.0279999999999994,
+            -36.55
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "south_05",
+        "id": "south_05/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          22.54,
+          -37.15
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            22.54,
+            -36.55
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "south_06",
+        "id": "south_06/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          27.4,
+          -37.15
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            27.4,
+            -36.55
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "south_06",
+        "id": "south_06/left-door",
+        "side": "left",
+        "secondary": true,
+        "position": [
+          30.9,
+          -40.15
+        ],
+        "outward": [
+          1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            31.5,
+            -40.15
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "proxy_south_house",
+        "id": "proxy_south_house/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -8.7,
+          -32
+        ],
+        "outward": [
+          0,
+          -1
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            -8.7,
+            -32.6
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "proxy_south_house",
+        "id": "proxy_south_house/right-door",
+        "side": "right",
+        "secondary": true,
+        "position": [
+          -4.699999999999999,
+          -29.3
+        ],
+        "outward": [
+          1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            -4.1,
+            -29.3
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "proxy_south_wing",
+        "id": "proxy_south_wing/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          0.2,
+          -33.65
+        ],
+        "outward": [
+          0,
+          -1
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            0.2,
+            -34.25
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "proxy_south_wing",
+        "id": "proxy_south_wing/left-door",
+        "side": "left",
+        "secondary": true,
+        "position": [
+          -2.55,
+          -31.3
+        ],
+        "outward": [
+          -1,
+          0
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            -3.15,
+            -31.3
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "proxy_north_range",
+        "id": "proxy_north_range/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          -2.9999999999999996,
+          23.05
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            -2.9999999999999996,
+            23.650000000000002
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      },
+      {
+        "houseId": "proxy_north_wing",
+        "id": "proxy_north_wing/front-door",
+        "side": "front",
+        "secondary": false,
+        "position": [
+          3.2250000000000005,
+          22.450000000000003
+        ],
+        "outward": [
+          0,
+          1
+        ],
+        "reachable": true,
+        "approach": {
+          "xy": [
+            3.2250000000000005,
+            23.050000000000004
+          ],
+          "height": 0.855,
+          "distance": 0.6,
+          "tangent": 0
+        }
+      }
+    ],
+    "zones": [
+      {
+        "id": "near-bank",
+        "minX": -20.5,
+        "maxX": 12.5,
+        "minZ": -1.1,
+        "maxZ": 1.52,
+        "rise": 0
+      },
+      {
+        "id": "far-bank",
+        "minX": -20.5,
+        "maxX": 12.5,
+        "minZ": 10.85,
+        "maxZ": 15.35,
+        "rise": 0
+      },
+      {
+        "id": "original-bridge-and-landings",
+        "minX": 7.9,
+        "maxX": 10.1,
+        "minZ": 1.52,
+        "maxZ": 10.85,
+        "rise": 1.45
+      },
+      {
+        "id": "return-bridge-and-landings",
+        "minX": -18.8,
+        "maxX": -17.2,
+        "minZ": 1.5,
+        "maxZ": 10.85,
+        "rise": 0.55
+      },
+      {
+        "id": "west-rear-alley",
+        "minX": -13.6,
+        "maxX": -12,
+        "minZ": -8.8,
+        "maxZ": -1,
+        "rise": 0
+      },
+      {
+        "id": "east-rear-alley",
+        "minX": 10.7,
+        "maxX": 12.3,
+        "minZ": -8.8,
+        "maxZ": -1,
+        "rise": 0
+      },
+      {
+        "id": "rear-lane",
+        "minX": -13.6,
+        "maxX": 12.3,
+        "minZ": -8.8,
+        "maxZ": -7.2,
+        "rise": 0
+      },
+      {
+        "id": "courtyard-street-connector",
+        "minX": -7.95,
+        "maxX": -6.15,
+        "minZ": 15.15,
+        "maxZ": 16.7,
+        "rise": 0
+      },
+      {
+        "id": "courtyard-alley",
+        "minX": -7.95,
+        "maxX": -6.25,
+        "minZ": 16.3,
+        "maxZ": 23.45,
+        "rise": 0
+      },
+      {
+        "id": "courtyard-interior",
+        "minX": -11.95,
+        "maxX": -6.35,
+        "minZ": 22.8,
+        "maxZ": 25.6,
+        "rise": 0
+      },
+      {
+        "id": "near-existing-quay-extension",
+        "minX": -25.457500457763672,
+        "maxX": 24,
+        "minZ": -1.1,
+        "maxZ": 1.52,
+        "rise": 0
+      },
+      {
+        "id": "far-existing-quay-extension",
+        "minX": -25.457500457763672,
+        "maxX": 24,
+        "minZ": 10.85,
+        "maxZ": 15.35,
+        "rise": 0
+      },
+      {
+        "id": "north-backstreet-west",
+        "minX": -34.5,
+        "maxX": -13.4,
+        "minZ": -9.1,
+        "maxZ": -6.9,
+        "rise": 0
+      },
+      {
+        "id": "north-backstreet-east",
+        "minX": 12.1,
+        "maxX": 34.5,
+        "minZ": -9.1,
+        "maxZ": -6.9,
+        "rise": 0
+      },
+      {
+        "id": "north-west-cross",
+        "minX": -34.5,
+        "maxX": -31.5,
+        "minZ": -26.35,
+        "maxZ": -0.5,
+        "rise": 0
+      },
+      {
+        "id": "north-east-cross",
+        "minX": 31.5,
+        "maxX": 34.5,
+        "minZ": -26.35,
+        "maxZ": 2.3,
+        "rise": 0
+      },
+      {
+        "id": "north-top-street",
+        "minX": -34.5,
+        "maxX": 34.5,
+        "minZ": -26.35,
+        "maxZ": -24.05,
+        "rise": 0
+      },
+      {
+        "id": "far-west-cross",
+        "minX": -34.5,
+        "maxX": -31.5,
+        "minZ": 12,
+        "maxZ": 36.75,
+        "rise": 0
+      },
+      {
+        "id": "far-east-cross",
+        "minX": 31.5,
+        "maxX": 34.5,
+        "minZ": 14,
+        "maxZ": 36.75,
+        "rise": 0
+      },
+      {
+        "id": "south-street",
+        "minX": -34.5,
+        "maxX": 34.5,
+        "minZ": 34.25,
+        "maxZ": 36.75,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-west-00",
+        "minX": -35,
+        "maxX": -33.6,
+        "minZ": -1.8956746380948517,
+        "maxZ": 0.2860181152045592,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-west-01",
+        "minX": -34.4,
+        "maxX": -32.6,
+        "minZ": -1.6456993389293717,
+        "maxZ": 0.45672503988601687,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-west-02",
+        "minX": -33.4,
+        "maxX": -31.6,
+        "minZ": -1.4278955390514967,
+        "maxZ": 0.7264981847669453,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-west-03",
+        "minX": -32.4,
+        "maxX": -30.6,
+        "minZ": -1.2505123408426626,
+        "maxZ": 0.9706991122654182,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-west-04",
+        "minX": -31.4,
+        "maxX": -29.6,
+        "minZ": -1.121798846684308,
+        "maxZ": 1.1810787200000006,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-west-05",
+        "minX": -30.4,
+        "maxX": -28.6,
+        "minZ": -1.0500041589578673,
+        "maxZ": 1.3493879055892528,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-west-06",
+        "minX": -29.4,
+        "maxX": -27.6,
+        "minZ": -1.0376800000000004,
+        "maxZ": 1.4673775666517408,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-west-07",
+        "minX": -28.4,
+        "maxX": -26.6,
+        "minZ": -1.0376800000000004,
+        "maxZ": 1.5267986008060241,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-west-08",
+        "minX": -27.4,
+        "maxX": -25.6,
+        "minZ": -1.0376800000000004,
+        "maxZ": 1.5323199999999997,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-west-09",
+        "minX": -26.4,
+        "maxX": -25.457500457763672,
+        "minZ": -1.0376800000000004,
+        "maxZ": 1.5323199999999997,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-00",
+        "minX": 24,
+        "maxX": 25.4,
+        "minZ": -0.9787854898216736,
+        "maxZ": 1.5323199999999997,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-01",
+        "minX": 24.6,
+        "maxX": 26.4,
+        "minZ": -0.871363105185185,
+        "maxZ": 1.543475401481482,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-02",
+        "minX": 25.6,
+        "maxX": 27.4,
+        "minZ": -0.7174598810425244,
+        "maxZ": 1.6086424774759938,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-03",
+        "minX": 26.6,
+        "maxX": 28.4,
+        "minZ": -0.5241183688340193,
+        "maxZ": 1.7259244341289437,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-04",
+        "minX": 27.6,
+        "maxX": 29.4,
+        "minZ": -0.2983811200000005,
+        "maxZ": 1.88827872,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-05",
+        "minX": 28.6,
+        "maxX": 30.4,
+        "minZ": -0.04729068598079635,
+        "maxZ": 2.088662783648834,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-06",
+        "minX": 29.6,
+        "maxX": 31.4,
+        "minZ": 0.222110381783264,
+        "maxZ": 2.3200340736351164,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-07",
+        "minX": 30.6,
+        "maxX": 32.4,
+        "minZ": 0.5027795318518514,
+        "maxZ": 2.5753500385185193,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-08",
+        "minX": 31.6,
+        "maxX": 33.4,
+        "minZ": 0.7876742127846358,
+        "maxZ": 2.847568126858711,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-09",
+        "minX": 32.6,
+        "maxX": 34.4,
+        "minZ": 1.0697518731412887,
+        "maxZ": 3.129645787215363,
+        "rise": 0
+      },
+      {
+        "id": "near-quay-east-10",
+        "minX": 33.6,
+        "maxX": 35,
+        "minZ": 1.2347165980795611,
+        "maxZ": 3.4145404681481475,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-west-00",
+        "minX": -35,
+        "maxX": -33.6,
+        "minZ": 10.057243668569102,
+        "maxZ": 12.770891308772644,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-west-01",
+        "minX": -34.4,
+        "maxX": -32.6,
+        "minZ": 10.273772673576227,
+        "maxZ": 12.918757920683898,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-west-02",
+        "minX": -33.4,
+        "maxX": -31.6,
+        "minZ": 10.462434674308977,
+        "maxZ": 13.15243585139833,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-west-03",
+        "minX": -32.4,
+        "maxX": -30.6,
+        "minZ": 10.616084285055974,
+        "maxZ": 13.363963086407491,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-west-04",
+        "minX": -31.4,
+        "maxX": -29.6,
+        "minZ": 10.727576120105843,
+        "maxZ": 13.546194239999998,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-west-05",
+        "minX": -30.4,
+        "maxX": -28.6,
+        "minZ": 10.789764793747201,
+        "maxZ": 13.69198392646448,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-west-06",
+        "minX": -29.4,
+        "maxX": -27.6,
+        "minZ": 10.80044,
+        "maxZ": 13.794186760089557,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-west-07",
+        "minX": -28.4,
+        "maxX": -26.6,
+        "minZ": 10.80044,
+        "maxZ": 13.84565735516385,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-west-08",
+        "minX": -27.4,
+        "maxX": -25.6,
+        "minZ": 10.80044,
+        "maxZ": 13.850439999999999,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-west-09",
+        "minX": -26.4,
+        "maxX": -25.457500457763672,
+        "minZ": 10.80044,
+        "maxZ": 13.850439999999999,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-00",
+        "minX": 24,
+        "maxX": 25.4,
+        "minZ": 10.873992922688615,
+        "maxZ": 13.850439999999999,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-01",
+        "minX": 24.6,
+        "maxX": 26.4,
+        "minZ": 11.008151952592593,
+        "maxZ": 13.864371899259258,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-02",
+        "minX": 25.6,
+        "maxX": 27.4,
+        "minZ": 11.200360562743484,
+        "maxZ": 13.945758583484224,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-03",
+        "minX": 26.6,
+        "maxX": 28.4,
+        "minZ": 11.441823362194787,
+        "maxZ": 14.092231160713304,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-04",
+        "minX": 27.6,
+        "maxX": 29.4,
+        "minZ": 11.72374496,
+        "maxZ": 14.29499424,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-05",
+        "minX": 28.6,
+        "maxX": 30.4,
+        "minZ": 12.037329965212619,
+        "maxZ": 14.545252430397806,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-06",
+        "minX": 29.6,
+        "maxX": 31.4,
+        "minZ": 12.373782986886146,
+        "maxZ": 14.834210340960219,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-07",
+        "minX": 30.6,
+        "maxX": 32.4,
+        "minZ": 12.724308634074074,
+        "maxZ": 15.15307258074074,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-08",
+        "minX": 31.6,
+        "maxX": 33.4,
+        "minZ": 13.080111515829904,
+        "maxZ": 15.493043758792865,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-09",
+        "minX": 32.6,
+        "maxX": 34.4,
+        "minZ": 13.432396241207133,
+        "maxZ": 15.845328484170096,
+        "rise": 0
+      },
+      {
+        "id": "far-quay-east-10",
+        "minX": 33.6,
+        "maxX": 35,
+        "minZ": 13.638419478737998,
+        "maxZ": 16.201131365925928,
+        "rise": 0
+      },
+      {
+        "id": "near-west-frontage",
+        "minX": -25,
+        "maxX": -17.4,
+        "minZ": -1.6,
+        "maxZ": -0.3,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "near-east-shared-frontage",
+        "minX": 17.1,
+        "maxX": 31.05,
+        "minZ": -1.6,
+        "maxZ": 0.13,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "north-west-street-edge",
+        "minX": -31.1,
+        "maxX": -16.7,
+        "minZ": -9.55,
+        "maxZ": -9.1,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "north-east-street-edge",
+        "minX": 16.1,
+        "maxX": 31.1,
+        "minZ": -9.55,
+        "maxZ": -9.1,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "far-west-shared-frontage",
+        "minX": -31.05,
+        "maxX": -17.7,
+        "minZ": 13.4,
+        "maxZ": 16.2,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "far-east-shared-frontage",
+        "minX": 15.7,
+        "maxX": 31.05,
+        "minZ": 13.4,
+        "maxZ": 16.2,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "south-west-street-edge",
+        "minX": -31.1,
+        "maxX": -17.9,
+        "minZ": 36.75,
+        "maxZ": 38.15,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "south-middle-street-edge",
+        "minX": -10.9,
+        "maxX": 3.1,
+        "minZ": 36.75,
+        "maxZ": 37.15,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "south-east-street-edge",
+        "minX": 16.9,
+        "maxX": 31.1,
+        "minZ": 36.75,
+        "maxZ": 37.15,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "north-range-frontage",
+        "minX": -7.4,
+        "maxX": 1.2,
+        "minZ": -24.05,
+        "maxZ": -23.05,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "north-wing-frontage",
+        "minX": 1.2,
+        "maxX": 5.45,
+        "minZ": -24.05,
+        "maxZ": -22.45,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "red-box-shared-court",
+        "minX": -13.1,
+        "maxX": 3.15,
+        "minZ": 28.9,
+        "maxZ": 34.25,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "south-west-shared-garden-connector-0",
+        "minX": -15.4,
+        "maxX": -13.6,
+        "minZ": 36.75,
+        "maxZ": 37.48,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "south-east-shared-garden-connector-0",
+        "minX": 9.1,
+        "maxX": 10.9,
+        "minZ": 36.75,
+        "maxZ": 37.48,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "south-middle-entry-court",
+        "minX": -4.9,
+        "maxX": -2.3,
+        "minZ": 37.15,
+        "maxZ": 42.8,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "north-west-corner-return",
+        "minX": -31.5,
+        "maxX": -30.9,
+        "minZ": -15.75,
+        "maxZ": -9.1,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "north-east-corner-return",
+        "minX": 30.9,
+        "maxX": 31.5,
+        "minZ": -18.55,
+        "maxZ": -9.1,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "near-east-corner-return",
+        "minX": 30.9,
+        "maxX": 31.5,
+        "minZ": -6.4,
+        "maxZ": 1.5,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "far-west-corner-return",
+        "minX": -31.5,
+        "maxX": -30.9,
+        "minZ": 16.2,
+        "maxZ": 21.6,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "far-east-corner-return",
+        "minX": 30.9,
+        "maxX": 31.5,
+        "minZ": 14.4,
+        "maxZ": 21.6,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "south-west-corner-return",
+        "minX": -32,
+        "maxX": -30.9,
+        "minZ": 36.75,
+        "maxZ": 43.15,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "south-east-corner-return",
+        "minX": 30.9,
+        "maxX": 32,
+        "minZ": 36.75,
+        "maxZ": 43.15,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "near-west-corner-return",
+        "minX": -26,
+        "maxX": -24.8,
+        "minZ": -7.2,
+        "maxZ": -1,
+        "rise": 0,
+        "height": 0.855
+      },
+      {
+        "id": "north-east-entry-court",
+        "minX": 24.35,
+        "maxX": 31.5,
+        "minZ": -11.35,
+        "maxZ": -9.1,
+        "rise": 0,
+        "height": 0.855
+      }
+    ],
+    "obstacles": [
+      {
+        "id": "near-lamp-west",
+        "type": "circle",
+        "x": -9.2,
+        "z": 1.2,
+        "radius": 0.24
+      },
+      {
+        "id": "near-lamp-east",
+        "type": "circle",
+        "x": 7.8,
+        "z": 1.2,
+        "radius": 0.24
+      },
+      {
+        "id": "far-lamp",
+        "type": "circle",
+        "x": 8.5,
+        "z": 11.756,
+        "radius": 0.28
+      },
+      {
+        "id": "tree-trunk-and-roots",
+        "type": "circle",
+        "x": 7.997,
+        "z": 11.715,
+        "radius": 0.64
+      },
+      {
+        "id": "planter-west",
+        "type": "circle",
+        "x": -11.4,
+        "z": -0.752,
+        "radius": 0.31
+      },
+      {
+        "id": "planter-cafe-gap",
+        "type": "circle",
+        "x": -4,
+        "z": -0.655,
+        "radius": 0.36
+      },
+      {
+        "id": "planter-bookshop-gap",
+        "type": "circle",
+        "x": 2,
+        "z": -0.683,
+        "radius": 0.31
+      },
+      {
+        "id": "planter-east",
+        "type": "circle",
+        "x": 8.05,
+        "z": -0.634,
+        "radius": 0.36
+      },
+      {
+        "id": "planter-far-bank",
+        "type": "circle",
+        "x": 7.2,
+        "z": 11.756,
+        "radius": 0.34
+      },
+      {
+        "id": "cafe-table-and-chairs",
+        "minX": -9.165,
+        "maxX": -6.835,
+        "minZ": -0.454,
+        "maxZ": 0.225,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "bicycle",
+        "minX": -11.12,
+        "maxX": -8.88,
+        "minZ": -0.604,
+        "maxZ": -0.284,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "old-gate-post-01",
+        "type": "circle",
+        "x": -21,
+        "z": 1.45,
+        "radius": 0.12
+      },
+      {
+        "id": "old-gate-post-02",
+        "type": "circle",
+        "x": -21,
+        "z": -0.45,
+        "radius": 0.12
+      },
+      {
+        "id": "old-gate-post-03",
+        "type": "circle",
+        "x": -21,
+        "z": 14.55,
+        "radius": 0.12
+      },
+      {
+        "id": "old-gate-post-04",
+        "type": "circle",
+        "x": -21,
+        "z": 10.75,
+        "radius": 0.12
+      },
+      {
+        "id": "old-gate-post-05",
+        "type": "circle",
+        "x": 13,
+        "z": 1.45,
+        "radius": 0.12
+      },
+      {
+        "id": "old-gate-post-06",
+        "type": "circle",
+        "x": 13,
+        "z": -0.45,
+        "radius": 0.12
+      },
+      {
+        "id": "old-gate-post-07",
+        "type": "circle",
+        "x": 13,
+        "z": 14.55,
+        "radius": 0.12
+      },
+      {
+        "id": "old-gate-post-08",
+        "type": "circle",
+        "x": 13,
+        "z": 10.75,
+        "radius": 0.12
+      },
+      {
+        "id": "space06-tree-01",
+        "type": "circle",
+        "x": -28,
+        "z": -4.3,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-02",
+        "type": "circle",
+        "x": -28,
+        "z": -21.1,
+        "radius": 0.24
+      },
+      {
+        "id": "space06-tree-03",
+        "type": "circle",
+        "x": -22.4,
+        "z": -21.2,
+        "radius": 0.24
+      },
+      {
+        "id": "space06-tree-04",
+        "type": "circle",
+        "x": 17.8,
+        "z": -21.2,
+        "radius": 0.24
+      },
+      {
+        "id": "space06-tree-05",
+        "type": "circle",
+        "x": 26.8,
+        "z": -21.1,
+        "radius": 0.24
+      },
+      {
+        "id": "space06-tree-06",
+        "type": "circle",
+        "x": -27.1,
+        "z": 26,
+        "radius": 0.24
+      },
+      {
+        "id": "space06-tree-07",
+        "type": "circle",
+        "x": -26.1,
+        "z": 30,
+        "radius": 0.24
+      },
+      {
+        "id": "space06-tree-08",
+        "type": "circle",
+        "x": 26.2,
+        "z": 26,
+        "radius": 0.24
+      },
+      {
+        "id": "space06-tree-09",
+        "type": "circle",
+        "x": 26.9,
+        "z": 30.1,
+        "radius": 0.24
+      },
+      {
+        "id": "space06-tree-10",
+        "type": "circle",
+        "x": -41,
+        "z": -5,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-11",
+        "type": "circle",
+        "x": -43,
+        "z": 19,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-12",
+        "type": "circle",
+        "x": -41,
+        "z": 37,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-13",
+        "type": "circle",
+        "x": 41,
+        "z": -4,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-14",
+        "type": "circle",
+        "x": 43,
+        "z": 23,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-15",
+        "type": "circle",
+        "x": 41,
+        "z": 40,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-16",
+        "type": "circle",
+        "x": -29,
+        "z": -33,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-17",
+        "type": "circle",
+        "x": -12,
+        "z": -33,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-18",
+        "type": "circle",
+        "x": 13,
+        "z": -33,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-19",
+        "type": "circle",
+        "x": 30,
+        "z": -33,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-20",
+        "type": "circle",
+        "x": -28,
+        "z": 49,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-21",
+        "type": "circle",
+        "x": -12,
+        "z": 49,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-22",
+        "type": "circle",
+        "x": 12,
+        "z": 49,
+        "radius": 0.28
+      },
+      {
+        "id": "space06-tree-23",
+        "type": "circle",
+        "x": 29,
+        "z": 49,
+        "radius": 0.28
+      },
+      {
+        "id": "house-near_west_corner",
+        "minX": -24.9950008392334,
+        "maxX": -17.520000457763672,
+        "minZ": -6.559999942779541,
+        "maxZ": -1.4049999713897705,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "house-near_east_corner",
+        "minX": 17.219999313354492,
+        "maxX": 22.399999618530273,
+        "minZ": -6.559999942779541,
+        "maxZ": -1.4049999713897705,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "house-near_east_end",
+        "minX": 22.399999618530273,
+        "maxX": 31.094999313354492,
+        "minZ": -6.59499979019165,
+        "maxZ": -1.4049999713897705,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "house-north_west_01",
+        "minX": -31.094999313354492,
+        "maxX": -24.5,
+        "minZ": -15.90999984741211,
+        "maxZ": -9.354999542236328,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "house-north_west_02",
+        "minX": -24.5,
+        "maxX": -16.704999923706055,
+        "minZ": -15.944999694824219,
+        "maxZ": -9.354999542236328,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "house-north_east_01",
+        "minX": 16.219999313354492,
+        "maxX": 23.780000686645508,
+        "minZ": -15.90999984741211,
+        "maxZ": -9.354999542236328,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "house-north_east_02",
+        "minX": 25.040000915527344,
+        "maxX": 31.094999313354492,
+        "minZ": -18.6299991607666,
+        "maxZ": -11.154999732971191,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "house-far_west_01",
+        "minX": -31.094999313354492,
+        "maxX": -24.100000381469727,
+        "minZ": 16.0049991607666,
+        "maxZ": 21.760000228881836,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "house-far_west_02",
+        "minX": -24.100000381469727,
+        "maxX": -17.81999969482422,
+        "minZ": 16.0049991607666,
+        "maxZ": 21.760000228881836,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "house-far_east_01",
+        "minX": 15.819999694824219,
+        "maxX": 23.299999237060547,
+        "minZ": 16.0049991607666,
+        "maxZ": 21.760000228881836,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "house-far_east_02",
+        "minX": 23.299999237060547,
+        "maxX": 31.094999313354492,
+        "minZ": 16.0049991607666,
+        "maxZ": 21.760000228881836,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "house-south_01",
+        "minX": -31.094999313354492,
+        "maxX": -24.700000762939453,
+        "minZ": 37.95500183105469,
+        "maxZ": 43.345001220703125,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "house-south_02",
+        "minX": -24.700000762939453,
+        "maxX": -18.020000457763672,
+        "minZ": 37.95500183105469,
+        "maxZ": 43.310001373291016,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "house-south_03",
+        "minX": -10.779999732971191,
+        "maxX": -4.704999923706055,
+        "minZ": 36.95500183105469,
+        "maxZ": 43.310001373291016,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "house-south_04",
+        "minX": -2.494999885559082,
+        "maxX": 2.694999933242798,
+        "minZ": 36.95500183105469,
+        "maxZ": 43.345001220703125,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "house-south_05",
+        "minX": 16.905000686645508,
+        "maxX": 23.899999618530273,
+        "minZ": 36.95500183105469,
+        "maxZ": 43.345001220703125,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "house-south_06",
+        "minX": 23.899999618530273,
+        "maxX": 31.094999313354492,
+        "minZ": 36.95500183105469,
+        "maxZ": 43.310001373291016,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "house-proxy_south_house",
+        "minX": -12.895000457763672,
+        "maxX": -4.505000114440918,
+        "minZ": 26.405000686645508,
+        "maxZ": 32.19499969482422,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "house-proxy_south_wing",
+        "minX": -2.744999885559082,
+        "maxX": 3.0299999713897705,
+        "minZ": 28.790000915527344,
+        "maxZ": 33.845001220703125,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "house-proxy_north_range",
+        "minX": -7.394999980926514,
+        "maxX": 1.2000000476837158,
+        "minZ": -23.2450008392334,
+        "maxZ": -17.354999542236328,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "house-proxy_north_wing",
+        "minX": 1.2000000476837158,
+        "maxX": 5.445000171661377,
+        "minZ": -22.645000457763672,
+        "maxZ": -17.55500030517578,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "red-box-shared-court-west",
+        "minX": -13.18,
+        "maxX": -13.02,
+        "minZ": 26.25,
+        "maxZ": 34.25,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "red-box-shared-court-east",
+        "minX": 3.07,
+        "maxX": 3.23,
+        "minZ": 26.25,
+        "maxZ": 34.25,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "south-west-shared-garden-west",
+        "minX": -17.43,
+        "maxX": -17.270000000000003,
+        "minZ": 37.3,
+        "maxZ": 43.15,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "south-west-shared-garden-east",
+        "minX": -11.68,
+        "maxX": -11.52,
+        "minZ": 37.3,
+        "maxZ": 43.15,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "south-west-shared-garden-south",
+        "minX": -17.35,
+        "maxX": -11.6,
+        "minZ": 43.07,
+        "maxZ": 43.23,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "south-west-shared-garden-north",
+        "minX": -17.35,
+        "maxX": -15.4,
+        "minZ": 37.22,
+        "maxZ": 37.379999999999995,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "south-west-shared-garden-north",
+        "minX": -13.6,
+        "maxX": -11.6,
+        "minZ": 37.22,
+        "maxZ": 37.379999999999995,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "south-west-shared-garden-closed-garden-gate",
+        "minX": -15.4,
+        "maxX": -13.6,
+        "minZ": 37.254999999999995,
+        "maxZ": 37.345,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "south-east-shared-garden-west",
+        "minX": 3.92,
+        "maxX": 4.08,
+        "minZ": 37.3,
+        "maxZ": 43.15,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "south-east-shared-garden-east",
+        "minX": 16.12,
+        "maxX": 16.279999999999998,
+        "minZ": 37.3,
+        "maxZ": 43.15,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "south-east-shared-garden-south",
+        "minX": 4,
+        "maxX": 16.2,
+        "minZ": 43.07,
+        "maxZ": 43.23,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "south-east-shared-garden-north",
+        "minX": 4,
+        "maxX": 9.1,
+        "minZ": 37.22,
+        "maxZ": 37.379999999999995,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "south-east-shared-garden-north",
+        "minX": 10.9,
+        "maxX": 16.2,
+        "minZ": 37.22,
+        "maxZ": 37.379999999999995,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "south-east-shared-garden-closed-garden-gate",
+        "minX": 9.1,
+        "maxX": 10.9,
+        "minZ": 37.254999999999995,
+        "maxZ": 37.345,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "south-middle-entry-court-south",
+        "minX": -4.9,
+        "maxX": -2.3,
+        "minZ": 43.07,
+        "maxZ": 43.23,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland building courtyard returns-0",
+        "minX": -4.699999809265137,
+        "maxX": -2.549999952316284,
+        "minZ": 27.299999237060547,
+        "maxZ": 27.5,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland building courtyard returns-1",
+        "minX": -4.730000019073486,
+        "maxX": -2.5199999809265137,
+        "minZ": 27.270000457763672,
+        "maxZ": 27.530000686645508,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland building courtyard returns-2",
+        "minX": -4.739999771118164,
+        "maxX": -2.509999990463257,
+        "minZ": 27.260000228881836,
+        "maxZ": 27.540000915527344,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland building courtyard returns-3",
+        "minX": -2.6500000953674316,
+        "maxX": -2.450000047683716,
+        "minZ": 27.399999618530273,
+        "maxZ": 28.950000762939453,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland building courtyard returns-4",
+        "minX": -2.680000066757202,
+        "maxX": -2.4200000762939453,
+        "minZ": 27.3700008392334,
+        "maxZ": 28.979999542236328,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland building courtyard returns-5",
+        "minX": -2.690000057220459,
+        "maxX": -2.4100000858306885,
+        "minZ": 27.360000610351562,
+        "maxZ": 28.989999771118164,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland building courtyard returns-6",
+        "minX": -7.300000190734863,
+        "maxX": -7.099999904632568,
+        "minZ": -17.549999237060547,
+        "maxZ": -15.25,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland building courtyard returns-7",
+        "minX": -7.329999923706055,
+        "maxX": -7.070000171661377,
+        "minZ": -17.579999923706055,
+        "maxZ": -15.220000267028809,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland building courtyard returns-8",
+        "minX": -7.340000152587891,
+        "maxX": -7.059999942779541,
+        "minZ": -17.59000015258789,
+        "maxZ": -15.210000038146973,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland building courtyard returns-9",
+        "minX": 5.150000095367432,
+        "maxX": 5.349999904632568,
+        "minZ": -17.75,
+        "maxZ": -15.25,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland building courtyard returns-10",
+        "minX": 5.119999885559082,
+        "maxX": 5.380000114440918,
+        "minZ": -17.780000686645508,
+        "maxZ": -15.220000267028809,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland building courtyard returns-11",
+        "minX": 5.110000133514404,
+        "maxX": 5.389999866485596,
+        "minZ": -17.790000915527344,
+        "maxZ": -15.210000038146973,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-0",
+        "minX": -9.899999618530273,
+        "maxX": -9.699999809265137,
+        "minZ": -15.199999809265137,
+        "maxZ": -10.399999618530273,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-1",
+        "minX": -9.930000305175781,
+        "maxX": -9.670000076293945,
+        "minZ": -15.229999542236328,
+        "maxZ": -10.369999885559082,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-2",
+        "minX": -9.9399995803833,
+        "maxX": -9.65999984741211,
+        "minZ": -15.239999771118164,
+        "maxZ": -10.359999656677246,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-3",
+        "minX": -4,
+        "maxX": -3.799999952316284,
+        "minZ": -15.199999809265137,
+        "maxZ": -10.399999618530273,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-4",
+        "minX": -4.03000020980835,
+        "maxX": -3.7699999809265137,
+        "minZ": -15.229999542236328,
+        "maxZ": -10.369999885559082,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-5",
+        "minX": -4.039999961853027,
+        "maxX": -3.759999990463257,
+        "minZ": -15.239999771118164,
+        "maxZ": -10.359999656677246,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-6",
+        "minX": 1.899999976158142,
+        "maxX": 2.0999999046325684,
+        "minZ": -15.199999809265137,
+        "maxZ": -10.399999618530273,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-7",
+        "minX": 1.8700000047683716,
+        "maxX": 2.130000114440918,
+        "minZ": -15.229999542236328,
+        "maxZ": -10.369999885559082,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-8",
+        "minX": 1.8600000143051147,
+        "maxX": 2.140000104904175,
+        "minZ": -15.239999771118164,
+        "maxZ": -10.359999656677246,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-9",
+        "minX": 7.800000190734863,
+        "maxX": 8,
+        "minZ": -15.199999809265137,
+        "maxZ": -10.399999618530273,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-10",
+        "minX": 7.769999980926514,
+        "maxX": 8.029999732971191,
+        "minZ": -15.229999542236328,
+        "maxZ": -10.369999885559082,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-11",
+        "minX": 7.760000228881836,
+        "maxX": 8.039999961853027,
+        "minZ": -15.239999771118164,
+        "maxZ": -10.359999656677246,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-12",
+        "minX": -9.800000190734863,
+        "maxX": 7.900000095367432,
+        "minZ": -15.300000190734863,
+        "maxZ": -15.100000381469727,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-13",
+        "minX": -9.829999923706055,
+        "maxX": 7.929999828338623,
+        "minZ": -15.329999923706055,
+        "maxZ": -15.069999694824219,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-14",
+        "minX": -9.84000015258789,
+        "maxX": 7.940000057220459,
+        "minZ": -15.34000015258789,
+        "maxZ": -15.0600004196167,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-15",
+        "minX": -14,
+        "maxX": -13.800000190734863,
+        "minZ": 22.440000534057617,
+        "maxZ": 26,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-16",
+        "minX": -14.029999732971191,
+        "maxX": -13.770000457763672,
+        "minZ": 22.40999984741211,
+        "maxZ": 26.030000686645508,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-17",
+        "minX": -14.039999961853027,
+        "maxX": -13.760000228881836,
+        "minZ": 22.399999618530273,
+        "maxZ": 26.040000915527344,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-18",
+        "minX": 7.900000095367432,
+        "maxX": 8.100000381469727,
+        "minZ": 22.440000534057617,
+        "maxZ": 26,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-19",
+        "minX": 7.869999885559082,
+        "maxX": 8.130000114440918,
+        "minZ": 22.40999984741211,
+        "maxZ": 26.030000686645508,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-20",
+        "minX": 7.860000133514404,
+        "maxX": 8.140000343322754,
+        "minZ": 22.399999618530273,
+        "maxZ": 26.040000915527344,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-21",
+        "minX": -13.899999618530273,
+        "maxX": -6.099999904632568,
+        "minZ": 25.899999618530273,
+        "maxZ": 26.100000381469727,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-22",
+        "minX": -13.930000305175781,
+        "maxX": -6.070000171661377,
+        "minZ": 25.8700008392334,
+        "maxZ": 26.1299991607666,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-23",
+        "minX": -13.9399995803833,
+        "maxX": -6.059999942779541,
+        "minZ": 25.860000610351562,
+        "maxZ": 26.139999389648438,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-24",
+        "minX": -4.699999809265137,
+        "maxX": 8,
+        "minZ": 25.899999618530273,
+        "maxZ": 26.100000381469727,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-25",
+        "minX": -4.730000019073486,
+        "maxX": 8.029999732971191,
+        "minZ": 25.8700008392334,
+        "maxZ": 26.1299991607666,
+        "rise": 0,
+        "type": "rectangle"
+      },
+      {
+        "id": "SPACE01_Backland garden compartments-26",
+        "minX": -4.739999771118164,
+        "maxX": 8.039999961853027,
+        "minZ": 25.860000610351562,
+        "maxZ": 26.139999389648438,
+        "rise": 0,
+        "type": "rectangle"
+      }
+    ],
+    "spawns": {
+      "neighbourhoodStart": {
+        "x": -1,
+        "y": 0.85,
+        "z": 0.55
+      },
+      "northBackstreet": {
+        "x": -12.8,
+        "y": 0.85,
+        "z": -8
+      },
+      "southStreet": {
+        "x": 0,
+        "y": 0.855,
+        "z": 35.5
+      },
+      "original": {
+        "x": -12.8,
+        "y": 0.85,
+        "z": 0.55
+      },
+      "courtyardEntrance": {
+        "x": -7.05,
+        "y": 0.85,
+        "z": 12.65
+      },
+      "courtyardCenter": {
+        "x": -9.35,
+        "y": 0.855,
+        "z": 24.15
+      },
+      "redBoxEntrance": {
+        "x": -3.6,
+        "y": 0.855,
+        "z": 35.5
+      },
+      "southMiddleCourt": {
+        "x": -3.6,
+        "y": 0.855,
+        "z": 35.5
+      },
+      "northEastCorner": {
+        "x": 29.3895,
+        "y": 0.855,
+        "z": -8
+      }
+    },
+    "physicalScope": "New court routes, preserved small courtyard and half-metre grid of newly walkable/changed-house perimeter regions; all routes are tested in runtime in both directions."
+  },
+  "limitations": [
+    "Uses the real navigation and mesh-derived building/ground metadata; independent Blender rays still verify physical geometry.",
+    "Quarter-metre connectivity sampling demonstrates access paths, not a continuous mathematical proof. Interior rooms and planted garden parcels remain closed."
+  ]
+}

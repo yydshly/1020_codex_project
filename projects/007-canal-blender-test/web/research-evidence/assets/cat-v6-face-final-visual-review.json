@@ -1,0 +1,22 @@
+{
+  "reviewed_utc": "2026-10-24T05:01:43.520713+00:00",
+  "reviewed": [
+    "cat-v6-face-final-open.png",
+    "cat-v6-face-final-half.png",
+    "cat-v6-face-final-closed.png",
+    "cat-v6-face-final-side-half.png",
+    "cat-v6-face-final-side-closed.png",
+    "cat-v6-face-final-v5-comparison.png",
+    "cat-v6-face-final-transition-pre.png",
+    "cat-v6-face-final-transition-half.png",
+    "cat-v6-face-final-transition-closed.png",
+    "cat-v6-face-final-transition-reopen.png"
+  ],
+  "observations": [
+    "V6 does not drag the forehead markings downward as V5 does; the face silhouette and brow remain stable in the observed blink sequence.",
+    "The reviewed fully closed front and near-side views hide the green irises; no obvious tearing, flipping, or disconnected facial pieces are visible.",
+    "The half state and recorded transition show the local lids moving over the eye and reopening to the original open-eye appearance.",
+    "Held close-up closure still reads as a beige/brown inserted surface with a distinct rim, and its fur detail differs from the surrounding scan. This remains a material and transition-quality limitation, not a photoreal result."
+  ],
+  "scope": "Human/agent inspection of the saved views and timestamp-indexed frames; no claim for every possible camera angle or production animation quality."
+}

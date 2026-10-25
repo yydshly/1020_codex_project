@@ -1,0 +1,1197 @@
+{
+  "version": "space-08-compact-street-groups",
+  "road_top": 0.855,
+  "scope": "Recompose the same finite neighbourhood; retain detailed canal core, river, bridges and original small courtyard.",
+  "coordinate_system": "Blender X,Y,Z metres; Three X,Y,Z = Blender X,Z,-Y",
+  "developed_bounds_xy": [
+    -36,
+    -44,
+    36,
+    26.5
+  ],
+  "buildings": [
+    {
+      "id": "near_west_corner",
+      "group": "near-front",
+      "center": [
+        -21.2,
+        4
+      ],
+      "width": 7.2,
+      "depth": 4.8,
+      "yaw_deg": 0,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.15,
+      "roof_rise": 1.18,
+      "variant": "corner",
+      "party_walls": [],
+      "secondary_front": "left"
+    },
+    {
+      "id": "near_east_corner",
+      "group": "near-front",
+      "center": [
+        20.6,
+        4
+      ],
+      "width": 6.6,
+      "depth": 4.8,
+      "yaw_deg": 0,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.6,
+      "roof_rise": 1.12,
+      "variant": "terrace",
+      "party_walls": [
+        "right"
+      ]
+    },
+    {
+      "id": "near_east_end",
+      "group": "near-front",
+      "center": [
+        27.4,
+        4
+      ],
+      "width": 7,
+      "depth": 4.8,
+      "yaw_deg": 0,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.0,
+      "roof_rise": 1.2,
+      "variant": "corner",
+      "party_walls": [
+        "left"
+      ],
+      "secondary_front": "right"
+    },
+    {
+      "id": "north_west_01",
+      "group": "north-backstreet",
+      "center": [
+        -27.7,
+        12.65
+      ],
+      "width": 6.4,
+      "depth": 6.2,
+      "yaw_deg": 0,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.05,
+      "roof_rise": 1.12,
+      "variant": "corner",
+      "party_walls": [
+        "right"
+      ],
+      "secondary_front": "left"
+    },
+    {
+      "id": "north_west_02",
+      "group": "north-backstreet",
+      "center": [
+        -20.7,
+        12.65
+      ],
+      "width": 7.6,
+      "depth": 6.2,
+      "yaw_deg": 0,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.55,
+      "roof_rise": 1.12,
+      "variant": "terrace",
+      "party_walls": [
+        "left"
+      ]
+    },
+    {
+      "id": "north_east_01",
+      "group": "north-backstreet",
+      "center": [
+        20,
+        12.65
+      ],
+      "width": 7.4,
+      "depth": 6.2,
+      "yaw_deg": 0,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.25,
+      "roof_rise": 1.18,
+      "variant": "terrace",
+      "party_walls": [
+        "right"
+      ]
+    },
+    {
+      "id": "north_east_02",
+      "group": "north-backstreet",
+      "center": [
+        27.3,
+        12.65
+      ],
+      "width": 7.2,
+      "depth": 6.2,
+      "yaw_deg": 0,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.65,
+      "roof_rise": 1.08,
+      "variant": "corner",
+      "party_walls": [
+        "left"
+      ],
+      "secondary_front": "right"
+    },
+    {
+      "id": "far_west_01",
+      "group": "far-front",
+      "center": [
+        -27.5,
+        -18.9
+      ],
+      "width": 6.8,
+      "depth": 5.4,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.35,
+      "roof_rise": 1.18,
+      "variant": "corner",
+      "party_walls": [
+        "left"
+      ],
+      "secondary_front": "right"
+    },
+    {
+      "id": "far_west_02",
+      "group": "far-front",
+      "center": [
+        -21,
+        -18.9
+      ],
+      "width": 6.2,
+      "depth": 5.4,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 4.95,
+      "roof_rise": 1.08,
+      "variant": "terrace",
+      "party_walls": [
+        "right"
+      ]
+    },
+    {
+      "id": "far_east_01",
+      "group": "far-front",
+      "center": [
+        19.6,
+        -18.9
+      ],
+      "width": 7.4,
+      "depth": 5.4,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.55,
+      "roof_rise": 1.16,
+      "variant": "terrace",
+      "party_walls": [
+        "left"
+      ]
+    },
+    {
+      "id": "far_east_02",
+      "group": "far-front",
+      "center": [
+        27.1,
+        -18.9
+      ],
+      "width": 7.6,
+      "depth": 5.4,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.1,
+      "roof_rise": 1.2,
+      "variant": "corner",
+      "party_walls": [
+        "right"
+      ],
+      "secondary_front": "left"
+    },
+    {
+      "id": "south_01",
+      "group": "south-street",
+      "center": [
+        -27.8,
+        -40.15
+      ],
+      "width": 6.2,
+      "depth": 6,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.0,
+      "roof_rise": 1.2,
+      "variant": "corner",
+      "party_walls": [
+        "left"
+      ],
+      "secondary_front": "right"
+    },
+    {
+      "id": "south_02",
+      "group": "south-street",
+      "center": [
+        -21.4,
+        -40.15
+      ],
+      "width": 6.6,
+      "depth": 6,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.5,
+      "roof_rise": 1.12,
+      "variant": "terrace",
+      "party_walls": [
+        "right"
+      ]
+    },
+    {
+      "id": "south_03",
+      "group": "south-street",
+      "center": [
+        -7.5,
+        -40.15
+      ],
+      "width": 6.4,
+      "depth": 6,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.65,
+      "roof_rise": 1.16,
+      "variant": "terrace",
+      "party_walls": [
+        "left"
+      ]
+    },
+    {
+      "id": "south_04",
+      "group": "south-street",
+      "center": [
+        -0.7,
+        -40.15
+      ],
+      "width": 7.2,
+      "depth": 6,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.05,
+      "roof_rise": 1.15,
+      "variant": "terrace",
+      "party_walls": [
+        "right"
+      ]
+    },
+    {
+      "id": "south_05",
+      "group": "south-street",
+      "center": [
+        20.5,
+        -40.15
+      ],
+      "width": 6.8,
+      "depth": 6,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.2,
+      "roof_rise": 1.15,
+      "variant": "terrace",
+      "party_walls": [
+        "left"
+      ]
+    },
+    {
+      "id": "south_06",
+      "group": "south-street",
+      "center": [
+        27.4,
+        -40.15
+      ],
+      "width": 7,
+      "depth": 6,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.75,
+      "roof_rise": 1.05,
+      "variant": "corner",
+      "party_walls": [
+        "right"
+      ],
+      "secondary_front": "left"
+    },
+    {
+      "id": "proxy_south_house",
+      "group": "south-courtyard",
+      "center": [
+        -8.7,
+        -29.3
+      ],
+      "width": 8,
+      "depth": 5.4,
+      "yaw_deg": 0,
+      "base_z": 0.855,
+      "floors": 1,
+      "eaves_height": 3.3,
+      "roof_rise": 1.2,
+      "variant": "outbuilding",
+      "party_walls": [],
+      "secondary_front": "right",
+      "source_proxy": "South backland house"
+    },
+    {
+      "id": "proxy_south_wing",
+      "group": "south-courtyard",
+      "center": [
+        0.2,
+        -31.3
+      ],
+      "width": 5.5,
+      "depth": 4.7,
+      "yaw_deg": 0,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.1,
+      "roof_rise": 1.1,
+      "variant": "corner",
+      "party_walls": [],
+      "secondary_front": "left",
+      "source_proxy": "South backland offset wing"
+    },
+    {
+      "id": "proxy_north_range",
+      "group": "north-court",
+      "center": [
+        -3,
+        20.3
+      ],
+      "width": 8.4,
+      "depth": 5.5,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 1,
+      "eaves_height": 3.6,
+      "roof_rise": 1.2,
+      "variant": "outbuilding",
+      "party_walls": [
+        "left"
+      ],
+      "source_proxy": "North backland range"
+    },
+    {
+      "id": "proxy_north_wing",
+      "group": "north-court",
+      "center": [
+        3.225,
+        20.1
+      ],
+      "width": 4.05,
+      "depth": 4.7,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 1,
+      "eaves_height": 2.9,
+      "roof_rise": 1.0,
+      "variant": "outbuilding",
+      "party_walls": [
+        "right"
+      ],
+      "source_proxy": "North backland low wing"
+    }
+  ],
+  "building_footprints": [
+    {
+      "id": "near_west_corner",
+      "group": "near-front",
+      "center": [
+        -21.2,
+        4
+      ],
+      "width": 7.2,
+      "depth": 4.8,
+      "yaw_deg": 0,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.15,
+      "roof_rise": 1.18,
+      "variant": "corner",
+      "party_walls": [],
+      "secondary_front": "left"
+    },
+    {
+      "id": "near_east_corner",
+      "group": "near-front",
+      "center": [
+        20.6,
+        4
+      ],
+      "width": 6.6,
+      "depth": 4.8,
+      "yaw_deg": 0,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.6,
+      "roof_rise": 1.12,
+      "variant": "terrace",
+      "party_walls": [
+        "right"
+      ]
+    },
+    {
+      "id": "near_east_end",
+      "group": "near-front",
+      "center": [
+        27.4,
+        4
+      ],
+      "width": 7,
+      "depth": 4.8,
+      "yaw_deg": 0,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.0,
+      "roof_rise": 1.2,
+      "variant": "corner",
+      "party_walls": [
+        "left"
+      ],
+      "secondary_front": "right"
+    },
+    {
+      "id": "north_west_01",
+      "group": "north-backstreet",
+      "center": [
+        -27.7,
+        12.65
+      ],
+      "width": 6.4,
+      "depth": 6.2,
+      "yaw_deg": 0,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.05,
+      "roof_rise": 1.12,
+      "variant": "corner",
+      "party_walls": [
+        "right"
+      ],
+      "secondary_front": "left"
+    },
+    {
+      "id": "north_west_02",
+      "group": "north-backstreet",
+      "center": [
+        -20.7,
+        12.65
+      ],
+      "width": 7.6,
+      "depth": 6.2,
+      "yaw_deg": 0,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.55,
+      "roof_rise": 1.12,
+      "variant": "terrace",
+      "party_walls": [
+        "left"
+      ]
+    },
+    {
+      "id": "north_east_01",
+      "group": "north-backstreet",
+      "center": [
+        20,
+        12.65
+      ],
+      "width": 7.4,
+      "depth": 6.2,
+      "yaw_deg": 0,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.25,
+      "roof_rise": 1.18,
+      "variant": "terrace",
+      "party_walls": [
+        "right"
+      ]
+    },
+    {
+      "id": "north_east_02",
+      "group": "north-backstreet",
+      "center": [
+        27.3,
+        12.65
+      ],
+      "width": 7.2,
+      "depth": 6.2,
+      "yaw_deg": 0,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.65,
+      "roof_rise": 1.08,
+      "variant": "corner",
+      "party_walls": [
+        "left"
+      ],
+      "secondary_front": "right"
+    },
+    {
+      "id": "far_west_01",
+      "group": "far-front",
+      "center": [
+        -27.5,
+        -18.9
+      ],
+      "width": 6.8,
+      "depth": 5.4,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.35,
+      "roof_rise": 1.18,
+      "variant": "corner",
+      "party_walls": [
+        "left"
+      ],
+      "secondary_front": "right"
+    },
+    {
+      "id": "far_west_02",
+      "group": "far-front",
+      "center": [
+        -21,
+        -18.9
+      ],
+      "width": 6.2,
+      "depth": 5.4,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 4.95,
+      "roof_rise": 1.08,
+      "variant": "terrace",
+      "party_walls": [
+        "right"
+      ]
+    },
+    {
+      "id": "far_east_01",
+      "group": "far-front",
+      "center": [
+        19.6,
+        -18.9
+      ],
+      "width": 7.4,
+      "depth": 5.4,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.55,
+      "roof_rise": 1.16,
+      "variant": "terrace",
+      "party_walls": [
+        "left"
+      ]
+    },
+    {
+      "id": "far_east_02",
+      "group": "far-front",
+      "center": [
+        27.1,
+        -18.9
+      ],
+      "width": 7.6,
+      "depth": 5.4,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.1,
+      "roof_rise": 1.2,
+      "variant": "corner",
+      "party_walls": [
+        "right"
+      ],
+      "secondary_front": "left"
+    },
+    {
+      "id": "south_01",
+      "group": "south-street",
+      "center": [
+        -27.8,
+        -40.15
+      ],
+      "width": 6.2,
+      "depth": 6,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.0,
+      "roof_rise": 1.2,
+      "variant": "corner",
+      "party_walls": [
+        "left"
+      ],
+      "secondary_front": "right"
+    },
+    {
+      "id": "south_02",
+      "group": "south-street",
+      "center": [
+        -21.4,
+        -40.15
+      ],
+      "width": 6.6,
+      "depth": 6,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.5,
+      "roof_rise": 1.12,
+      "variant": "terrace",
+      "party_walls": [
+        "right"
+      ]
+    },
+    {
+      "id": "south_03",
+      "group": "south-street",
+      "center": [
+        -7.5,
+        -40.15
+      ],
+      "width": 6.4,
+      "depth": 6,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.65,
+      "roof_rise": 1.16,
+      "variant": "terrace",
+      "party_walls": [
+        "left"
+      ]
+    },
+    {
+      "id": "south_04",
+      "group": "south-street",
+      "center": [
+        -0.7,
+        -40.15
+      ],
+      "width": 7.2,
+      "depth": 6,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.05,
+      "roof_rise": 1.15,
+      "variant": "terrace",
+      "party_walls": [
+        "right"
+      ]
+    },
+    {
+      "id": "south_05",
+      "group": "south-street",
+      "center": [
+        20.5,
+        -40.15
+      ],
+      "width": 6.8,
+      "depth": 6,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.2,
+      "roof_rise": 1.15,
+      "variant": "terrace",
+      "party_walls": [
+        "left"
+      ]
+    },
+    {
+      "id": "south_06",
+      "group": "south-street",
+      "center": [
+        27.4,
+        -40.15
+      ],
+      "width": 7,
+      "depth": 6,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.75,
+      "roof_rise": 1.05,
+      "variant": "corner",
+      "party_walls": [
+        "right"
+      ],
+      "secondary_front": "left"
+    },
+    {
+      "id": "proxy_south_house",
+      "group": "south-courtyard",
+      "center": [
+        -8.7,
+        -29.3
+      ],
+      "width": 8,
+      "depth": 5.4,
+      "yaw_deg": 0,
+      "base_z": 0.855,
+      "floors": 1,
+      "eaves_height": 3.3,
+      "roof_rise": 1.2,
+      "variant": "outbuilding",
+      "party_walls": [],
+      "secondary_front": "right",
+      "source_proxy": "South backland house"
+    },
+    {
+      "id": "proxy_south_wing",
+      "group": "south-courtyard",
+      "center": [
+        0.2,
+        -31.3
+      ],
+      "width": 5.5,
+      "depth": 4.7,
+      "yaw_deg": 0,
+      "base_z": 0.855,
+      "floors": 2,
+      "eaves_height": 5.1,
+      "roof_rise": 1.1,
+      "variant": "corner",
+      "party_walls": [],
+      "secondary_front": "left",
+      "source_proxy": "South backland offset wing"
+    },
+    {
+      "id": "proxy_north_range",
+      "group": "north-court",
+      "center": [
+        -3,
+        20.3
+      ],
+      "width": 8.4,
+      "depth": 5.5,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 1,
+      "eaves_height": 3.6,
+      "roof_rise": 1.2,
+      "variant": "outbuilding",
+      "party_walls": [
+        "left"
+      ],
+      "source_proxy": "North backland range"
+    },
+    {
+      "id": "proxy_north_wing",
+      "group": "north-court",
+      "center": [
+        3.225,
+        20.1
+      ],
+      "width": 4.05,
+      "depth": 4.7,
+      "yaw_deg": 180,
+      "base_z": 0.855,
+      "floors": 1,
+      "eaves_height": 2.9,
+      "roof_rise": 1.0,
+      "variant": "outbuilding",
+      "party_walls": [
+        "right"
+      ],
+      "source_proxy": "North backland low wing"
+    }
+  ],
+  "frontage_groups": [
+    {
+      "id": "near-west-frontage",
+      "bounds_xy": [
+        -25.0,
+        0.3,
+        -17.4,
+        1.6
+      ],
+      "house_ids": [
+        "near_west_corner"
+      ]
+    },
+    {
+      "id": "near-east-shared-frontage",
+      "bounds_xy": [
+        17.1,
+        -0.1,
+        31.05,
+        1.6
+      ],
+      "house_ids": [
+        "near_east_corner",
+        "near_east_end"
+      ]
+    },
+    {
+      "id": "north-west-street-edge",
+      "bounds_xy": [
+        -31.1,
+        9.1,
+        -16.7,
+        9.55
+      ],
+      "house_ids": [
+        "north_west_01",
+        "north_west_02"
+      ]
+    },
+    {
+      "id": "north-east-street-edge",
+      "bounds_xy": [
+        16.1,
+        9.1,
+        31.1,
+        9.55
+      ],
+      "house_ids": [
+        "north_east_01",
+        "north_east_02"
+      ]
+    },
+    {
+      "id": "far-west-shared-frontage",
+      "bounds_xy": [
+        -31.05,
+        -16.2,
+        -17.7,
+        -14.8
+      ],
+      "house_ids": [
+        "far_west_01",
+        "far_west_02"
+      ]
+    },
+    {
+      "id": "far-east-shared-frontage",
+      "bounds_xy": [
+        15.7,
+        -16.2,
+        31.05,
+        -14.4
+      ],
+      "house_ids": [
+        "far_east_01",
+        "far_east_02"
+      ]
+    },
+    {
+      "id": "south-west-street-edge",
+      "bounds_xy": [
+        -31.1,
+        -37.15,
+        -17.9,
+        -36.75
+      ],
+      "house_ids": [
+        "south_01",
+        "south_02"
+      ]
+    },
+    {
+      "id": "south-middle-street-edge",
+      "bounds_xy": [
+        -10.9,
+        -37.15,
+        3.1,
+        -36.75
+      ],
+      "house_ids": [
+        "south_03",
+        "south_04"
+      ]
+    },
+    {
+      "id": "south-east-street-edge",
+      "bounds_xy": [
+        16.9,
+        -37.15,
+        31.1,
+        -36.75
+      ],
+      "house_ids": [
+        "south_05",
+        "south_06"
+      ]
+    },
+    {
+      "id": "north-range-frontage",
+      "bounds_xy": [
+        -7.4,
+        23.05,
+        1.2,
+        24.05
+      ],
+      "house_ids": [
+        "proxy_north_range"
+      ]
+    },
+    {
+      "id": "north-wing-frontage",
+      "bounds_xy": [
+        1.2,
+        22.45,
+        5.45,
+        24.05
+      ],
+      "house_ids": [
+        "proxy_north_wing"
+      ]
+    }
+  ],
+  "ground_rectangles": [
+    {
+      "id": "north-west-corner-return",
+      "bounds_xy": [
+        -31.5,
+        9.1,
+        -30.9,
+        15.75
+      ],
+      "kind": "corner-apron",
+      "walkable": true
+    },
+    {
+      "id": "north-east-corner-return",
+      "bounds_xy": [
+        30.9,
+        9.1,
+        31.5,
+        15.75
+      ],
+      "kind": "corner-apron",
+      "walkable": true
+    },
+    {
+      "id": "near-east-corner-return",
+      "bounds_xy": [
+        30.9,
+        -1.5,
+        31.5,
+        6.4
+      ],
+      "kind": "corner-apron",
+      "walkable": true
+    },
+    {
+      "id": "far-west-corner-return",
+      "bounds_xy": [
+        -31.5,
+        -21.6,
+        -30.9,
+        -16.2
+      ],
+      "kind": "corner-apron",
+      "walkable": true
+    },
+    {
+      "id": "far-east-corner-return",
+      "bounds_xy": [
+        30.9,
+        -21.6,
+        31.5,
+        -14.4
+      ],
+      "kind": "corner-apron",
+      "walkable": true
+    },
+    {
+      "id": "south-west-corner-return",
+      "bounds_xy": [
+        -31.5,
+        -43.15,
+        -30.9,
+        -36.75
+      ],
+      "kind": "corner-apron",
+      "walkable": true
+    },
+    {
+      "id": "south-east-corner-return",
+      "bounds_xy": [
+        30.9,
+        -43.15,
+        31.5,
+        -36.75
+      ],
+      "kind": "corner-apron",
+      "walkable": true
+    }
+  ],
+  "courtyards": [
+    {
+      "id": "red-box-shared-court",
+      "bounds_xy": [
+        -13.1,
+        -34.25,
+        3.15,
+        -26.25
+      ],
+      "navigation_bounds_xy": [
+        -13.1,
+        -34.25,
+        3.15,
+        -29.15
+      ],
+      "house_ids": [
+        "proxy_south_house",
+        "proxy_south_wing"
+      ],
+      "wall_sides": [
+        "west",
+        "east"
+      ],
+      "wall_height": 0.85,
+      "wall_thickness": 0.16,
+      "opening": {
+        "side": "south",
+        "center": -3.6,
+        "width": 2.1
+      },
+      "note": "South entrance is open from the existing street. Retain and collide with the original return wall between the two houses; back service pockets stay private."
+    },
+    {
+      "id": "south-west-shared-garden",
+      "bounds_xy": [
+        -17.35,
+        -43.15,
+        -11.6,
+        -37.3
+      ],
+      "walkable": false,
+      "wall_sides": [
+        "west",
+        "east",
+        "south",
+        "north"
+      ],
+      "wall_height": 0.75,
+      "opening": {
+        "side": "north",
+        "center": -14.5,
+        "width": 1.8
+      },
+      "connector_bounds_xy": [
+        -15.4,
+        -37.3,
+        -13.6,
+        -36.75
+      ],
+      "surface": "earth",
+      "note": "Defined planted parcel, not another vacant inter-house gap."
+    },
+    {
+      "id": "south-east-shared-garden",
+      "bounds_xy": [
+        4.0,
+        -43.15,
+        16.2,
+        -37.3
+      ],
+      "walkable": false,
+      "wall_sides": [
+        "west",
+        "east",
+        "south",
+        "north"
+      ],
+      "wall_height": 0.75,
+      "opening": {
+        "side": "north",
+        "center": 10,
+        "width": 1.8
+      },
+      "connector_bounds_xy": [
+        9.1,
+        -37.3,
+        10.9,
+        -36.75
+      ],
+      "surface": "earth"
+    }
+  ],
+  "navigation_routes": {
+    "red_box_court_return": [
+      [
+        -3.6,
+        -35.5
+      ],
+      [
+        -3.6,
+        -33.9
+      ],
+      [
+        -3.6,
+        -30.2
+      ],
+      [
+        -3.6,
+        -33.9
+      ],
+      [
+        -8.7,
+        -33.9
+      ],
+      [
+        -8.7,
+        -32.5
+      ],
+      [
+        -8.7,
+        -33.9
+      ],
+      [
+        -3.6,
+        -33.9
+      ],
+      [
+        -3.6,
+        -35.5
+      ]
+    ]
+  },
+  "navigation_spawns": {
+    "redBoxEntrance": {
+      "x": -3.6,
+      "y": 0.855,
+      "z": 35.5
+    }
+  },
+  "composition_notes": [
+    "Attached street groups replace repeated independent spacing; corner variants have a secondary street-addressing facade.",
+    "The red-box south proxies become a low workshop and a two-storey courtyard house, both addressing the south street.",
+    "North coarse proxies become a north-facing low range with an attached wing; its former 5cm overlap is corrected at X=1.20.",
+    "Existing road footprint stays fixed; frontages are continuous within each group and exposed sides receive terrain shoulders.",
+    "Preserve every older file. In the new copy retire only 51 SPACE06 building objects, eight old proxy objects and the old house-support batch."
+  ]
+}

@@ -1,0 +1,1040 @@
+{
+  "created_utc": "2026-10-24T12:31:46.340306+00:00",
+  "asset": "space-02.glb",
+  "sha256": "0032d4b51455ea7a06910c8d8f9c06e975c8f77c11922205c8b7c253bcb0c12f",
+  "bytes": 9819884,
+  "source": {
+    "file": "rainy-canal-space-01.blend",
+    "sha256": "bbe35bad393288cddfca5b6203e179a88e7e72b3ec15828cad2ae5354841c387",
+    "unchanged": true,
+    "object_count": 1830
+  },
+  "integrated_blend": {
+    "file": "rainy-canal-space-02.blend",
+    "sha256": "052b7622415b4dcfde8aacb2db1725ee1e44f4c7a7960f47da9ce9ea8fe0a103",
+    "object_count": 1830
+  },
+  "terrain_changes": {
+    "scope": "Edit only the two original terrain meshes in the new in-memory scene; no overlay or extension.",
+    "protected_xy_rectangle": [
+      -40.0,
+      -38.0,
+      40.0,
+      28.0
+    ],
+    "protected_cell_halo": "All vertices of every terrain cell intersecting the rectangle are frozen, preserving interpolated support heights.",
+    "protected_boundary_fade_metres": 12.0,
+    "river_relative_profile": {
+      "shoreline_rows_preserved_metres": [
+        0,
+        0.6
+      ],
+      "flat_far_bank_to_metres": 5.0,
+      "full_original_inland_relief_from_metres": 50.0,
+      "low_bank_height_metres": 0.69
+    },
+    "objects": {
+      "ROAM01_North continuous terrain": {
+        "vertices": 1485,
+        "polygons": 1340,
+        "changed_z_vertices": 572,
+        "protected_core_vertex_count": 330,
+        "shoreline_vertex_count": 270,
+        "far_inland_vertex_count": 405,
+        "maximum_height_reduction_metres": 8.5808063,
+        "xy_sha256": "03a4384bef20c0da7db41e3d73d02338ffff4f56f3b23ec936f05667b9d05314",
+        "before": {
+          "cross_bank_segments": {
+            "0_to_0.6m": {
+              "maximum_gradient_m_per_m": 1.3166667,
+              "maximum_angle_degrees": 52.78356,
+              "at_x": 120.0,
+              "endpoint_heights": [
+                -0.1,
+                0.69
+              ],
+              "row_count": 135
+            },
+            "0.6_to_2m": {
+              "maximum_gradient_m_per_m": 6.0221942,
+              "maximum_angle_degrees": 80.57192,
+              "at_x": -125.0,
+              "endpoint_heights": [
+                0.69,
+                9.121072
+              ],
+              "row_count": 135
+            },
+            "2_to_5m": {
+              "maximum_gradient_m_per_m": 0.1185055,
+              "maximum_angle_degrees": 6.75834,
+              "at_x": 82.154472,
+              "endpoint_heights": [
+                5.481166,
+                5.125649
+              ],
+              "row_count": 135
+            },
+            "5_to_10m": {
+              "maximum_gradient_m_per_m": 0.1235841,
+              "maximum_angle_degrees": 7.04512,
+              "at_x": 84.146339,
+              "endpoint_heights": [
+                5.200621,
+                4.5827
+              ],
+              "row_count": 135
+            },
+            "10_to_18m": {
+              "maximum_gradient_m_per_m": 0.1202768,
+              "maximum_angle_degrees": 6.85841,
+              "at_x": 86.138214,
+              "endpoint_heights": [
+                4.627114,
+                3.6649
+              ],
+              "row_count": 135
+            },
+            "18_to_30m": {
+              "maximum_gradient_m_per_m": 0.0889069,
+              "maximum_angle_degrees": 5.08063,
+              "at_x": -125.0,
+              "endpoint_heights": [
+                9.20152,
+                8.134637
+              ],
+              "row_count": 135
+            },
+            "30_to_48m": {
+              "maximum_gradient_m_per_m": 0.1350111,
+              "maximum_angle_degrees": 7.68907,
+              "at_x": 14.430894,
+              "endpoint_heights": [
+                0.877558,
+                3.307758
+              ],
+              "row_count": 135
+            },
+            "48_to_75m": {
+              "maximum_gradient_m_per_m": 0.1626633,
+              "maximum_angle_degrees": 9.239,
+              "at_x": -23.414635,
+              "endpoint_heights": [
+                2.207149,
+                6.599058
+              ],
+              "row_count": 135
+            },
+            "75_to_110m": {
+              "maximum_gradient_m_per_m": 0.0814545,
+              "maximum_angle_degrees": 4.65672,
+              "at_x": -29.390244,
+              "endpoint_heights": [
+                6.29844,
+                9.149348
+              ],
+              "row_count": 135
+            },
+            "110_to_140m": {
+              "maximum_gradient_m_per_m": 0.1256716,
+              "maximum_angle_degrees": 7.1629,
+              "at_x": -77.195122,
+              "endpoint_heights": [
+                4.267622,
+                8.03777
+              ],
+              "row_count": 135
+            }
+          },
+          "maximum_near_bank_gradient_0_6_to_10m": 6.0221942,
+          "near_bank_note": "Near-bank metric excludes the preserved submerged 0→.6m shore lip.",
+          "x_row_count": 135
+        },
+        "after": {
+          "cross_bank_segments": {
+            "0_to_0.6m": {
+              "maximum_gradient_m_per_m": 1.3166667,
+              "maximum_angle_degrees": 52.78356,
+              "at_x": 120.0,
+              "endpoint_heights": [
+                -0.1,
+                0.69
+              ],
+              "row_count": 135
+            },
+            "0.6_to_2m": {
+              "maximum_gradient_m_per_m": 0.2450047,
+              "maximum_angle_degrees": 13.76655,
+              "at_x": 44.308945,
+              "endpoint_heights": [
+                0.69,
+                1.033007
+              ],
+              "row_count": 135
+            },
+            "2_to_5m": {
+              "maximum_gradient_m_per_m": 0.0013414,
+              "maximum_angle_degrees": 0.07686,
+              "at_x": 46.300812,
+              "endpoint_heights": [
+                0.99823,
+                0.994205
+              ],
+              "row_count": 135
+            },
+            "5_to_10m": {
+              "maximum_gradient_m_per_m": 0.0596641,
+              "maximum_angle_degrees": 3.41445,
+              "at_x": -125.0,
+              "endpoint_heights": [
+                0.69,
+                0.98832
+              ],
+              "row_count": 135
+            },
+            "10_to_18m": {
+              "maximum_gradient_m_per_m": 0.1777864,
+              "maximum_angle_degrees": 10.08107,
+              "at_x": -125.0,
+              "endpoint_heights": [
+                0.98832,
+                2.410611
+              ],
+              "row_count": 135
+            },
+            "18_to_30m": {
+              "maximum_gradient_m_per_m": 0.218295,
+              "maximum_angle_degrees": 12.31421,
+              "at_x": -125.0,
+              "endpoint_heights": [
+                2.410611,
+                5.030152
+              ],
+              "row_count": 135
+            },
+            "30_to_48m": {
+              "maximum_gradient_m_per_m": 0.1341748,
+              "maximum_angle_degrees": 7.64201,
+              "at_x": 14.430894,
+              "endpoint_heights": [
+                0.877558,
+                3.292705
+              ],
+              "row_count": 135
+            },
+            "48_to_75m": {
+              "maximum_gradient_m_per_m": 0.1629864,
+              "maximum_angle_degrees": 9.25704,
+              "at_x": -23.414635,
+              "endpoint_heights": [
+                2.198425,
+                6.599058
+              ],
+              "row_count": 135
+            },
+            "75_to_110m": {
+              "maximum_gradient_m_per_m": 0.0814545,
+              "maximum_angle_degrees": 4.65672,
+              "at_x": -29.390244,
+              "endpoint_heights": [
+                6.29844,
+                9.149348
+              ],
+              "row_count": 135
+            },
+            "110_to_140m": {
+              "maximum_gradient_m_per_m": 0.1256716,
+              "maximum_angle_degrees": 7.1629,
+              "at_x": -77.195122,
+              "endpoint_heights": [
+                4.267622,
+                8.03777
+              ],
+              "row_count": 135
+            }
+          },
+          "maximum_near_bank_gradient_0_6_to_10m": 0.2450047,
+          "near_bank_note": "Near-bank metric excludes the preserved submerged 0→.6m shore lip.",
+          "x_row_count": 135
+        },
+        "preservation_checks": {
+          "xy_bitwise_preserved": true,
+          "topology_preserved": true,
+          "smooth_flags_preserved": true,
+          "protected_core_vertices_preserved": true,
+          "waterline_and_shore_lip_preserved": true,
+          "far_inland_vertices_preserved": true
+        }
+      },
+      "ROAM01_South continuous terrain": {
+        "vertices": 1485,
+        "polygons": 1340,
+        "changed_z_vertices": 578,
+        "protected_core_vertex_count": 324,
+        "shoreline_vertex_count": 270,
+        "far_inland_vertex_count": 405,
+        "maximum_height_reduction_metres": 7.1733237,
+        "xy_sha256": "a08e5f8bfeb4260e9919bedbe96374d6285ba1111278bba12a2b6eeac6cc5666",
+        "before": {
+          "cross_bank_segments": {
+            "0_to_0.6m": {
+              "maximum_gradient_m_per_m": 1.3166667,
+              "maximum_angle_degrees": 52.78356,
+              "at_x": 120.0,
+              "endpoint_heights": [
+                -0.1,
+                0.69
+              ],
+              "row_count": 135
+            },
+            "0.6_to_2m": {
+              "maximum_gradient_m_per_m": 5.1238026,
+              "maximum_angle_degrees": 78.95654,
+              "at_x": -125.0,
+              "endpoint_heights": [
+                0.69,
+                7.863324
+              ],
+              "row_count": 135
+            },
+            "2_to_5m": {
+              "maximum_gradient_m_per_m": 0.1184274,
+              "maximum_angle_degrees": 6.75393,
+              "at_x": -85.162605,
+              "endpoint_heights": [
+                6.062982,
+                6.418264
+              ],
+              "row_count": 135
+            },
+            "5_to_10m": {
+              "maximum_gradient_m_per_m": 0.1186604,
+              "maximum_angle_degrees": 6.7671,
+              "at_x": -87.154472,
+              "endpoint_heights": [
+                6.655507,
+                7.248809
+              ],
+              "row_count": 135
+            },
+            "10_to_18m": {
+              "maximum_gradient_m_per_m": 0.1111676,
+              "maximum_angle_degrees": 6.34339,
+              "at_x": -91.138214,
+              "endpoint_heights": [
+                7.412343,
+                8.301683
+              ],
+              "row_count": 135
+            },
+            "18_to_30m": {
+              "maximum_gradient_m_per_m": 0.1061729,
+              "maximum_angle_degrees": 6.06055,
+              "at_x": 54.268291,
+              "endpoint_heights": [
+                3.485762,
+                4.759836
+              ],
+              "row_count": 135
+            },
+            "30_to_48m": {
+              "maximum_gradient_m_per_m": 0.128704,
+              "maximum_angle_degrees": 7.33388,
+              "at_x": 118.008133,
+              "endpoint_heights": [
+                3.688479,
+                6.00515
+              ],
+              "row_count": 135
+            },
+            "48_to_75m": {
+              "maximum_gradient_m_per_m": 0.2147112,
+              "maximum_angle_degrees": 12.11806,
+              "at_x": -43.333332,
+              "endpoint_heights": [
+                2.566892,
+                8.364094
+              ],
+              "row_count": 135
+            },
+            "75_to_110m": {
+              "maximum_gradient_m_per_m": 0.0910052,
+              "maximum_angle_degrees": 5.19989,
+              "at_x": -119.024391,
+              "endpoint_heights": [
+                5.901363,
+                2.716182
+              ],
+              "row_count": 135
+            },
+            "110_to_140m": {
+              "maximum_gradient_m_per_m": 0.1257502,
+              "maximum_angle_degrees": 7.16734,
+              "at_x": -73.21138,
+              "endpoint_heights": [
+                7.621606,
+                3.849099
+              ],
+              "row_count": 135
+            }
+          },
+          "maximum_near_bank_gradient_0_6_to_10m": 5.1238026,
+          "near_bank_note": "Near-bank metric excludes the preserved submerged 0→.6m shore lip.",
+          "x_row_count": 135
+        },
+        "after": {
+          "cross_bank_segments": {
+            "0_to_0.6m": {
+              "maximum_gradient_m_per_m": 1.3166667,
+              "maximum_angle_degrees": 52.78356,
+              "at_x": 120.0,
+              "endpoint_heights": [
+                -0.1,
+                0.69
+              ],
+              "row_count": 135
+            },
+            "0.6_to_2m": {
+              "maximum_gradient_m_per_m": 0.2718487,
+              "maximum_angle_degrees": 15.20825,
+              "at_x": 44.308945,
+              "endpoint_heights": [
+                0.69,
+                1.070588
+              ],
+              "row_count": 135
+            },
+            "2_to_5m": {
+              "maximum_gradient_m_per_m": 0.0042559,
+              "maximum_angle_degrees": 0.24384,
+              "at_x": 46.300812,
+              "endpoint_heights": [
+                1.040887,
+                1.053654
+              ],
+              "row_count": 135
+            },
+            "5_to_10m": {
+              "maximum_gradient_m_per_m": 0.0461066,
+              "maximum_angle_degrees": 2.63984,
+              "at_x": -91.138214,
+              "endpoint_heights": [
+                0.69,
+                0.920533
+              ],
+              "row_count": 135
+            },
+            "10_to_18m": {
+              "maximum_gradient_m_per_m": 0.1635219,
+              "maximum_angle_degrees": 9.28692,
+              "at_x": -91.138214,
+              "endpoint_heights": [
+                0.920533,
+                2.228709
+              ],
+              "row_count": 135
+            },
+            "18_to_30m": {
+              "maximum_gradient_m_per_m": 0.2870128,
+              "maximum_angle_degrees": 16.01416,
+              "at_x": -93.130081,
+              "endpoint_heights": [
+                2.219805,
+                5.663959
+              ],
+              "row_count": 135
+            },
+            "30_to_48m": {
+              "maximum_gradient_m_per_m": 0.2099848,
+              "maximum_angle_degrees": 11.85894,
+              "at_x": -103.089432,
+              "endpoint_heights": [
+                5.25156,
+                9.031286
+              ],
+              "row_count": 135
+            },
+            "48_to_75m": {
+              "maximum_gradient_m_per_m": 0.2151109,
+              "maximum_angle_degrees": 12.13995,
+              "at_x": -43.333332,
+              "endpoint_heights": [
+                2.556099,
+                8.364094
+              ],
+              "row_count": 135
+            },
+            "75_to_110m": {
+              "maximum_gradient_m_per_m": 0.0910052,
+              "maximum_angle_degrees": 5.19989,
+              "at_x": -119.024391,
+              "endpoint_heights": [
+                5.901363,
+                2.716182
+              ],
+              "row_count": 135
+            },
+            "110_to_140m": {
+              "maximum_gradient_m_per_m": 0.1257502,
+              "maximum_angle_degrees": 7.16734,
+              "at_x": -73.21138,
+              "endpoint_heights": [
+                7.621606,
+                3.849099
+              ],
+              "row_count": 135
+            }
+          },
+          "maximum_near_bank_gradient_0_6_to_10m": 0.2718487,
+          "near_bank_note": "Near-bank metric excludes the preserved submerged 0→.6m shore lip.",
+          "x_row_count": 135
+        },
+        "preservation_checks": {
+          "xy_bitwise_preserved": true,
+          "topology_preserved": true,
+          "smooth_flags_preserved": true,
+          "protected_core_vertices_preserved": true,
+          "waterline_and_shore_lip_preserved": true,
+          "far_inland_vertices_preserved": true
+        }
+      }
+    },
+    "objects_and_materials_added_or_removed": false,
+    "saved_or_exported_files": false
+  },
+  "sampled_route_checks": {
+    "scope": "Sampled centerline floor support and 0.48m-wide body-ray checks only, not a navmesh, full-area collision certification or a playable controller.",
+    "floor_tolerance": 0.17,
+    "known_existing_paving_gaps": "Original stone joints can be about 0.12m lower than stone tops; a future walking controller needs step tolerance or a separate collision proxy.",
+    "routes": {
+      "both_banks_loop": {
+        "sample_count": 285,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      },
+      "rear_lane_loop": {
+        "sample_count": 237,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      }
+    }
+  },
+  "background_water_checks": {
+    "passed": true,
+    "ray_count": 294,
+    "failures": [],
+    "outer_endpoint_inset_m": 0.05,
+    "scope": "Sampled finite background water surface only; no navigation or hydrodynamic claim."
+  },
+  "walk_routes_blender_xy": {
+    "both_banks_loop": [
+      [
+        -18,
+        -0.55
+      ],
+      [
+        9.4,
+        -0.55
+      ],
+      [
+        9.4,
+        -12.65
+      ],
+      [
+        -18,
+        -12.65
+      ],
+      [
+        -18,
+        -0.55
+      ]
+    ],
+    "rear_lane_loop": [
+      [
+        -12.8,
+        -0.55
+      ],
+      [
+        -12.8,
+        8.0
+      ],
+      [
+        11.5,
+        8.0
+      ],
+      [
+        11.5,
+        -0.55
+      ],
+      [
+        -12.8,
+        -0.55
+      ]
+    ]
+  },
+  "geometry": {
+    "meshes": 28,
+    "primitives": 28,
+    "vertices": 245721,
+    "triangles": 163678,
+    "binary_bytes": 9792420,
+    "nodes": 28,
+    "materials": 28,
+    "meshes_with_vertex_color": 25
+  },
+  "bounds": {
+    "min": [
+      -125.0,
+      -0.77,
+      -186.25
+    ],
+    "max": [
+      120.0,
+      10.55,
+      181.5
+    ],
+    "size": [
+      245.0,
+      11.32,
+      367.75
+    ],
+    "center": [
+      -2.5,
+      4.89,
+      -2.375
+    ]
+  },
+  "materials": [
+    {
+      "name": "mortar",
+      "base_color_linear": [
+        0.2158605009317398,
+        0.18782077729701996,
+        0.13563333451747894,
+        1
+      ],
+      "roughness": 0.835,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "paving_alt",
+      "base_color_linear": [
+        0.3613067865371704,
+        0.31398871541023254,
+        0.21952620148658752,
+        1
+      ],
+      "roughness": 0.2725,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "paving",
+      "base_color_linear": [
+        0.2746773064136505,
+        0.2462013214826584,
+        0.18116424977779388,
+        1
+      ],
+      "roughness": 0.2725,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "stone",
+      "base_color_linear": [
+        0.3613067865371704,
+        0.3277781009674072,
+        0.24228112399578094,
+        1
+      ],
+      "roughness": 0.58,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "stone_light",
+      "base_color_linear": [
+        0.5457244515419006,
+        0.47353148460388184,
+        0.34191441535949707,
+        1
+      ],
+      "roughness": 0.585,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "iron",
+      "base_color_linear": [
+        0.01850022003054619,
+        0.02518685907125473,
+        0.026241222396492958,
+        1
+      ],
+      "roughness": 0.32,
+      "metallic": 0.7,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "brass",
+      "base_color_linear": [
+        0.4564110338687897,
+        0.2961382567882538,
+        0.07227185368537903,
+        1
+      ],
+      "roughness": 0.25,
+      "metallic": 0.78,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "plaster",
+      "base_color_linear": [
+        0.7835378050804138,
+        0.6795424818992615,
+        0.5088813304901123,
+        1
+      ],
+      "roughness": 0.8,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "plaster_alt",
+      "base_color_linear": [
+        0.7454041838645935,
+        0.6583748459815979,
+        0.5149176716804504,
+        1
+      ],
+      "roughness": 0.8,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "wood",
+      "base_color_linear": [
+        0.07036009430885315,
+        0.02955683507025242,
+        0.014443843625485897,
+        1
+      ],
+      "roughness": 0.46,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "wood_light",
+      "base_color_linear": [
+        0.2961382567882538,
+        0.16826939582824707,
+        0.08228270709514618,
+        1
+      ],
+      "roughness": 0.53,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "glass",
+      "base_color_linear": [
+        0.9800000190734863,
+        0.9900000095367432,
+        1.0,
+        1
+      ],
+      "roughness": 0.008,
+      "metallic": 0,
+      "alpha": 0.18,
+      "source_transmission": 1.0,
+      "procedural_nodes_baked": false
+    },
+    {
+      "name": "book_tan",
+      "base_color_linear": [
+        0.637596845626831,
+        0.46207699179649353,
+        0.2541520893573761,
+        1
+      ],
+      "roughness": 0.65,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "terracotta",
+      "base_color_linear": [
+        0.2746773064136505,
+        0.07818742096424103,
+        0.03560131415724754,
+        1
+      ],
+      "roughness": 0.75,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "warm_glow",
+      "base_color_linear": [
+        1.0,
+        0.6795424818992615,
+        0.2541520893573761,
+        1
+      ],
+      "roughness": 0.4,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false
+    },
+    {
+      "name": "book_blue",
+      "base_color_linear": [
+        0.039546236395835876,
+        0.11697066575288773,
+        0.14995978772640228,
+        1
+      ],
+      "roughness": 0.65,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "roof",
+      "base_color_linear": [
+        0.045186202973127365,
+        0.05951123684644699,
+        0.05951123684644699,
+        1
+      ],
+      "roughness": 0.57,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "roof_alt",
+      "base_color_linear": [
+        0.08650045841932297,
+        0.1119324266910553,
+        0.10702310502529144,
+        1
+      ],
+      "roughness": 0.56,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "fabric",
+      "base_color_linear": [
+        0.14126329123973846,
+        0.026241222396492958,
+        0.03310476616024971,
+        1
+      ],
+      "roughness": 0.89,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "book_red",
+      "base_color_linear": [
+        0.3277781009674072,
+        0.061246052384376526,
+        0.04817182570695877,
+        1
+      ],
+      "roughness": 0.65,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "teal",
+      "base_color_linear": [
+        0.01850022003054619,
+        0.07818742096424103,
+        0.08437620848417282,
+        1
+      ],
+      "roughness": 0.47,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "olive",
+      "base_color_linear": [
+        0.09989872574806213,
+        0.12477181851863861,
+        0.05951123684644699,
+        1
+      ],
+      "roughness": 0.5,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "leaf",
+      "base_color_linear": [
+        0.03560131415724754,
+        0.109461709856987,
+        0.03189603239297867,
+        1
+      ],
+      "roughness": 0.65,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "rubber",
+      "base_color_linear": [
+        0.007499032188206911,
+        0.009721217676997185,
+        0.01032982300966978,
+        1
+      ],
+      "roughness": 0.6,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "soil",
+      "base_color_linear": [
+        0.02955683507025242,
+        0.024157632142305374,
+        0.015208514407277107,
+        1
+      ],
+      "roughness": 0.95,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "leaf_light",
+      "base_color_linear": [
+        0.17144110798835754,
+        0.2158605009317398,
+        0.05780543014407158,
+        1
+      ],
+      "roughness": 0.65,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "EXT_B02_DampMineralGround",
+      "base_color_linear": [
+        0.2015562504529953,
+        0.2158605009317398,
+        0.16202937066555023,
+        1
+      ],
+      "roughness": 0.9,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.0,
+      "procedural_nodes_baked": false,
+      "static_vertex_color_variation": true
+    },
+    {
+      "name": "Canal water",
+      "base_color_linear": [
+        0.019382361322641373,
+        0.04817182570695877,
+        0.045186202973127365,
+        1
+      ],
+      "roughness": 0.06,
+      "metallic": 0,
+      "alpha": 1,
+      "source_transmission": 0.3199999928474426,
+      "procedural_nodes_baked": false
+    }
+  ],
+  "water_mesh_name": "ROAM01_Water",
+  "web_materials": "scene-space-02-environment.js; world-space UV and existing local CC0 textures, applied at runtime.",
+  "scope": "Same exterior block and horizontal bounds; smoother distant bank elevations and coherent browser materials.",
+  "limitations": [
+    "Closed building interiors.",
+    "Far buildings remain simplified exterior masses.",
+    "Browser look development is separate from Blender source materials."
+  ],
+  "elapsed_seconds": 7.6,
+  "published": false
+}

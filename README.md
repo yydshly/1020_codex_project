@@ -17,6 +17,7 @@
 | 004 | 数字人技术图谱 · 从素材口型到实时生成 | 研究低成本、动作自然且可实时交互的数字人：比较素材口型、单图驱动、离线与流式生成、3D、NeRF/3DGS、Live2D 和视频编辑八条路线。以优质动作素材 + MuseTalk 为当前主线，明确模型、成本与控制边界，并探索陪伴、客服导览、教学训练、虚拟直播及可插拔服务。 | 研究中 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/004-digital-human-atlas/) · [研究说明](projects/004-digital-human-atlas/README.md) · [TMElyralab/MuseTalk](https://github.com/TMElyralab/MuseTalk) |
 | 005 | 角色与故事工坊 · 从定制角色到短片 | 以「定制角色＋故事」为核心，通过分镜、场景视觉、图生视频与配音剪辑，把情绪转成可观看的短片，积累可延续的角色、经历与素材。阿灯样例已验证制作路线；原帖底层技术仍未确认。 | 已完成 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/005-stickman-story-lab/) · [研究说明](projects/005-stickman-story-lab/README.md) · [原帖来源](https://x.com/Jason23818126/status/2112030757724340314) |
 | 006 | 独立站实践手册 · 从需求到第一位用户 | 从“找新词建站”转向“为具体用户解决重复任务”：先发现需求、找到用户与渠道，再比较竞品、验证样例，完成最小产品和低预算部署，最终用真实交付、复用与付费检验价值。完整引导图帮助个人安排投入、判断下一步；部署有成熟路线，产品与获客仍待验证。 | 研究中 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/006-independent-site-playbook/) · [研究说明](projects/006-independent-site-playbook/README.md) · [yydshly/1020_codex_project](https://github.com/yydshly/1020_codex_project) |
+| 007 | 图生 3D 探索 · 从参考图到可漫游街区 | 验证图生 3D：设计三档图片入口，选最简单的预算版，用 Codex 理解图片，通过 Python/bpy 在 Blender 重建可编辑的几何、材质与灯光，再导出 GLB 接入网页漫游。探索 V1–V5 的构图对齐与湿面反光、镜头外补景、猫的走跑和 SPACE01–11 街区扩展，并保留源帖与我们的真实效果。结论是图生 3D 原型路线成立，但高保真还原与真实体感仍需资产、空间设计和反复验收；可用于快速搭景与自动化编辑，持续精修的投入回报会下降。未实跑 DSH/MCP，也未做模型公平比较。 | 已归档 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/007-canal-blender-test/) · [研究说明](projects/007-canal-blender-test/README.md) · [yydshly/1020_codex_project](https://github.com/yydshly/1020_codex_project) |
 | 008 | 产品发现平台图谱 · 从发布到选择 | 研究六个产品发现与创业交流平台：Product Hunt 用新品发布、榜单、评论和长期产品主页连接创作者与用户，帮助找灵感、看竞品和组织发布；Uneed 提供工具目录、排期与滚动榜单，增加产品被发现的机会；BetaList 筛选早期项目，帮助招募注册者和测试用户；AlternativeTo 按软件替代关系与属性辅助选型，帮助比较竞品和寻找差异；Indie Hackers 分享创业过程、获客与定价经验，帮助减少经营试错；新趣集支持中文产品发布、发现与交流，降低表达和反馈的语言成本。结合六个平台的参与方式、费用、语言和使用阶段，以生成的总览图串起找方向、看竞品、找人试用、发布交流与学习经营，并用真实任务、主动复用、付费和成本判断价值；平台热度不等于市场成立。 | 已完成 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/008-product-platform-atlas/) · [研究说明](projects/008-product-platform-atlas/README.md) · [Product Hunt · 研究起点](https://www.producthunt.com/) |
 | 010 | AI 信息工作台 · 从来源到证据与判断 | 以少数派、小众软件、V2EX、Buzzing、NewsNow、今日热榜、SoPilot 为入口，按需补充产品官网/更新日志、Issues 和 Show HN；读原文、追溯出处、合并同源转载、保留独立实测与反例，互补核验并沉淀证据。支持工具选型、工作流优化、更新跟踪、简报问答、趋势与选题、需求/竞品研究；可继续探索团队采用、垂直站、研究订阅和自动助手。目标是减少重复调研与遗漏，让判断可追溯、可更新、可复用。沿用已生成全景图；自动化与业务方向尚待实跑验证。 | 研究中 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/010-ai-evidence-workbench/) · [研究说明](projects/010-ai-evidence-workbench/README.md) · [原帖来源](https://x.com/shenxiankk/status/2107493081146691700) |
 | 011 | Jev Ultrafast · 从网页选项到自动执行 | 把网页 DOM/ARIA 控件转成候选操作，由 Jev 结合目标、当前状态与历史选择，程序检查后驱动浏览器并循环观察。价值是复用动态网页 Agent 的观察、执行、重试与调试骨架，可用于查询筛选、导航和普通表单原型；可继续开发其他模型适配、复杂控件支持、任务恢复、业务验收与对比评测。扩展属于待实现方向，DONE 仍需独立核验。 | 研究中 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/011-jev-browser-agent-study/) · [研究说明](projects/011-jev-browser-agent-study/README.md) · [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast) |
@@ -69,6 +70,14 @@
 独立站完整引导图：九阶段串联目标约束、需求与渠道、竞争与价值、样例、市场形态、开发、采购部署、首批使用、复用收费；每阶段列动作、产物、通过条件、失败回路与个人参考价值，并补充案例、预算与证据边界。
 
 从“找新词建站”转向“为具体用户解决重复任务”：先发现需求、找到用户与渠道，再比较竞品、验证样例，完成最小产品和低预算部署，最终用真实交付、复用与付费检验价值。完整引导图帮助个人安排投入、判断下一步；部署有成熟路线，产品与获客仍待验证。
+
+### 007 · 图生 3D 探索 · 从参考图到可漫游街区
+
+<a href="https://yydshly.github.io/1020_codex_project/projects/007-canal-blender-test/"><img src="projects/007-canal-blender-test/assets/control-guide-original.png" alt="专门生成的《AI 控制 Blender：效果、原理与验证》完整概述图：源帖场景示意、DeepSeek/DSH 与 Codex 脚本/MCP 两条控制路线、验证场景、公平比较方法和研究意义。作为引导图保留原件；本次实际图生 3D 过程、三档入口与后续结论见研究网页，不把图中的设想当作全部已实测。" width="720"></a>
+
+专门生成的《AI 控制 Blender：效果、原理与验证》完整概述图：源帖场景示意、DeepSeek/DSH 与 Codex 脚本/MCP 两条控制路线、验证场景、公平比较方法和研究意义。作为引导图保留原件；本次实际图生 3D 过程、三档入口与后续结论见研究网页，不把图中的设想当作全部已实测。
+
+验证图生 3D：设计三档图片入口，选最简单的预算版，用 Codex 理解图片，通过 Python/bpy 在 Blender 重建可编辑的几何、材质与灯光，再导出 GLB 接入网页漫游。探索 V1–V5 的构图对齐与湿面反光、镜头外补景、猫的走跑和 SPACE01–11 街区扩展，并保留源帖与我们的真实效果。结论是图生 3D 原型路线成立，但高保真还原与真实体感仍需资产、空间设计和反复验收；可用于快速搭景与自动化编辑，持续精修的投入回报会下降。未实跑 DSH/MCP，也未做模型公平比较。
 
 ### 008 · 产品发现平台图谱 · 从发布到选择
 

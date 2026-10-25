@@ -1,0 +1,174 @@
+{
+  "checked_utc": "2026-10-23T23:57:45.042616+00:00",
+  "url": "http://127.0.0.1:8062/roam.html",
+  "passed": true,
+  "checks": {
+    "entry_is_explicitly_started": true,
+    "desktop_uses_integrated_scene": true,
+    "desktop_loaded_with_walkable_cat": true,
+    "keyboard_moves_the_cat": true,
+    "pause_stops_animation_and_movement": true,
+    "resume_returns_to_walk": true,
+    "overview_mode_works": true,
+    "follow_mode_works": true,
+    "reset_returns_to_safe_spawn": true,
+    "help_opens": true,
+    "guided_walk_moves_with_collision": true,
+    "desktop_has_no_horizontal_overflow": true,
+    "mobile_direction_pad_visible": true,
+    "mobile_uses_integrated_scene": true,
+    "mobile_direction_pad_moves_cat": true,
+    "mobile_has_no_horizontal_overflow": true,
+    "mobile_direction_pad_inside_viewport": true,
+    "no_browser_or_shader_errors": true
+  },
+  "observations": {
+    "desktop": {
+      "initial": {
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 0,
+        "distance": 0,
+        "place": "店前石街",
+        "frames": 5,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -3,
+          "y": 0.85,
+          "z": 0.55
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      },
+      "moved": {
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 0,
+        "distance": 0.27060000000000134,
+        "place": "店前石街",
+        "frames": 11,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -2.7845797241126244,
+          "y": 0.85,
+          "z": 0.7137634413921732
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      },
+      "guided_walk": {
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": true,
+        "tourIndex": 1,
+        "distance": 0.5248650000000024,
+        "place": "店前石街",
+        "frames": 72,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -3.254265000000001,
+          "y": 0.85,
+          "z": 0.55
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      },
+      "final": {
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 1,
+        "distance": 0.6279900000000023,
+        "place": "店前石街",
+        "frames": 100,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -3,
+          "y": 0.85,
+          "z": 0.55
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      }
+    },
+    "mobile": {
+      "initial": {
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 0,
+        "distance": 0,
+        "place": "店前石街",
+        "frames": 5,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -3,
+          "y": 0.85,
+          "z": 0.55
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      },
+      "moved": {
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 0,
+        "distance": 0.10329000000000038,
+        "place": "店前石街",
+        "frames": 10,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -2.9531480566179518,
+          "y": 0.85,
+          "z": 0.642052808220746
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      },
+      "final": {
+        "loaded": true,
+        "paused": false,
+        "mode": "follow",
+        "tour": false,
+        "tourIndex": 0,
+        "distance": 0.10329000000000038,
+        "place": "店前石街",
+        "frames": 63,
+        "asset": "roam-02.glb",
+        "position": {
+          "x": -3,
+          "y": 0.85,
+          "z": 0.55
+        },
+        "walkable": true,
+        "visited": [
+          "店前石街"
+        ]
+      }
+    }
+  },
+  "errors": [],
+  "seconds": 15.395,
+  "scope": "Real Chromium WebGL load, keyboard and pointer movement, pause/reset, view switching and beginning of guided walk. Navigation loops and route geometry are checked separately; this does not certify all controller or camera positions."
+}

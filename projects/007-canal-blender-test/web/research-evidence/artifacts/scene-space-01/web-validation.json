@@ -1,0 +1,18 @@
+{
+  "preserved_files_checked": 118,
+  "changed_files": [],
+  "browser_errors": 0,
+  "browser_warnings": 0,
+  "inspected_views": [
+    "overview",
+    "rear",
+    "opposite",
+    "bridge",
+    "west",
+    "reverse"
+  ],
+  "compared_same_camera": true,
+  "banks_tour_started_and_stopped": true,
+  "rear_tour_started_and_stopped": true,
+  "published": false
+}

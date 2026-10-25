@@ -1,0 +1,9 @@
+/artifacts/
+*.blend
+*.blend1
+*.zip
+*.log
+__pycache__/
+.cache/
+!web/vendor/three/build/
+!web/vendor/three/build/**

@@ -1,0 +1,81 @@
+{
+  "version": "SPACE11 local boundary-landscape study",
+  "url": "http://127.0.0.1:8062/scene-space-11.html",
+  "baseline": "Unchanged SPACE10 GLB, buildings, streets, courts, gardens and navigation; same original 23 trees.",
+  "scope": {
+    "envelopeBlenderXY": [
+      -68,
+      -75,
+      68,
+      62
+    ],
+    "addedTrees": 20,
+    "addedTriangles": 51949,
+    "addedDrawCalls": 3,
+    "newTextures": 0,
+    "newLights": 0,
+    "newShadowCasters": 0
+  },
+  "verification": {
+    "geometryOwnershipAndNavigation": "runtime-validation-final-r2.json",
+    "receiverPlaneShadowFix": "shadow-validation-final.json",
+    "protectedPreviousFilesUnchanged": 1391,
+    "navigationBodySamples": 21997,
+    "javascriptFilesSyntaxChecked": 3,
+    "finalBrowserConsoleErrors": 0,
+    "finalBrowserConsoleWarnings": 0
+  },
+  "browserReview": {
+    "surface": "Actual WebGL in in-app browser tab 28; default 680 by 871 viewport, no viewport override",
+    "finalScreenshots": [
+      "overview-final.png",
+      "reverse-final.png",
+      "north-edge-final.png",
+      "east-river-final.png",
+      "walk-check.png"
+    ],
+    "sameCameraComparisons": [
+      [
+        "baseline-10-overview.png",
+        "overview-final.png"
+      ],
+      [
+        "baseline-10-north-edge.png",
+        "north-edge-final.png"
+      ]
+    ],
+    "walking": "Started the existing north-ring tour and observed progress from the canal street to the east side, then returned to inspection. No new walking area or full-loop completion is claimed.",
+    "retainedOpenings": [
+      "Northern central meadow",
+      "Southern central meadow",
+      "View along the canal beyond the bridges"
+    ]
+  },
+  "resolvedFindings": [
+    "First groups were too dispersed. The northern groves were tightened, crowns widened 20 percent, and tree foliage increased 35 percent within the same envelope and draw-call budget.",
+    "Meadow tint initially resembled the previous grass. Dry-grass, wet-earth and feathered woodland-floor variation now distinguish the outer zones while the developed rectangle stays unchanged.",
+    "Narrow-screen 1024 shadow maps required more receiver-plane compensation than the fixed bias. Real ray checks excluded duplicate surfaces, and a same-camera receiveShadow-off diagnostic removed the stripes. The final version restores all receivers and computes only outer-terrain directional comparison compensation from actual receiver gradients and map resolution."
+  ],
+  "shadowProof": {
+    "diagnosticScreenshot": "north-edge-shadow-disabled-diagnostic.png",
+    "acceptedScreenshot": "north-edge-final.png",
+    "globalLightsFogExposureAndShadowUVUnchanged": true,
+    "developedBoundsWithZeroNewColorRoughnessAndBiasChange": [
+      -36,
+      -44,
+      36,
+      26.5
+    ],
+    "additionalNormalizedBiasRange": [
+      0,
+      0.0012
+    ],
+    "geometryAndNormalMapsWereNotChangedForTheShadowFix": true
+  },
+  "remainingLimits": [
+    "The far terrain beyond the bounded transition remains simple and open.",
+    "Trees and ground cover use a small procedural asset vocabulary; this is not a photoreal landscape.",
+    "The new outer scenery is viewed from existing roads or inspection cameras; walking bounds are unchanged."
+  ],
+  "publication": "Local only. All earlier delivered files preserved."
+}

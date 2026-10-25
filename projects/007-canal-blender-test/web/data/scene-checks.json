@@ -1,0 +1,39 @@
+{
+  "reopened_saved_blend": true,
+  "finite_geometry": true,
+  "invalid_objects": [],
+  "object_count": 2109,
+  "collections": {
+    "01 Cafe": 378,
+    "02 Bookshop": 392,
+    "03 Pottery shop": 351,
+    "Background": 47,
+    "Background planting": 408,
+    "Bicycle": 69,
+    "Bridge": 7,
+    "Bridge railings": 100,
+    "Cafe furniture": 48,
+    "Cameras": 2,
+    "Canal banks": 7,
+    "Lighting": 5,
+    "Planting": 141,
+    "Street lamps": 51,
+    "Tree": 102,
+    "Water": 1
+  },
+  "cameras": [
+    "Hero canal perspective",
+    "Independent side overview"
+  ],
+  "saved_active_camera": "Hero canal perspective",
+  "saved_render_resolution": [
+    1672,
+    942
+  ],
+  "external_image_dependencies": [],
+  "reference_used_as_texture": false,
+  "reference_sha256": "6ebfd8652e498e31ad522045a22e7abdb32b92f5b5e825f62ae7df13ec844f1e",
+  "reference_hash_matches": true,
+  "scope": "Basic artifact and geometry checks, not a similarity score or production topology certification.",
+  "reopen_check_and_render_seconds": 4.68
+}

@@ -1,0 +1,127 @@
+{
+  "experiment": "Frozen V5 geometry: wet pavement and water reflection only",
+  "source": "rainy-canal-v5-preview-02.blend",
+  "source_sha256": "5cfbbdc89ddd980c12a1066e1b2d0cc4d361391a276797a19d802b8f2c4b1431",
+  "source_unchanged": true,
+  "candidate": "rainy-canal-v5-wet-preview-02.blend",
+  "candidate_sha256": "6eb7edb0e46958e59b5bf073e07d35294682a65bfb68a1df76390e279d65744f",
+  "image": "v5-wet-preview-02.png",
+  "image_sha256": "3530e4b155025e13a1250a61f6e922dc8d9e13d9b7fbf062b7ca23610d054001",
+  "audit": "v5-wet-preview-02-audit.json",
+  "constraint_audit_passed": true,
+  "complexity": {
+    "objects": 2109,
+    "mesh_objects": 2015,
+    "curve_objects": 72,
+    "vertices": 159646,
+    "faces": 127565,
+    "curve_points": 1553,
+    "modifiers": 686,
+    "lights": 20,
+    "cameras": 2
+  },
+  "material_parameter_changes": [
+    {
+      "material": "paving",
+      "node": "Weathering Partial wet ground coverage",
+      "input": "From Min",
+      "before": 0.4300000071525574,
+      "after": 0.3400000035762787
+    },
+    {
+      "material": "paving",
+      "node": "Weathering Partial wet ground coverage",
+      "input": "From Max",
+      "before": 0.6499999761581421,
+      "after": 0.5600000023841858
+    },
+    {
+      "material": "paving",
+      "node": "Weathering Partial thin water film",
+      "input": "To Max",
+      "before": 0.8199999928474426,
+      "after": 0.949999988079071
+    },
+    {
+      "material": "paving",
+      "node": "Weathering Smooth rainwater coat",
+      "input": "To Min",
+      "before": 0.30000001192092896,
+      "after": 0.2199999988079071
+    },
+    {
+      "material": "paving",
+      "node": "Weathering Wet stone darkening amount",
+      "input": 1,
+      "before": 0.6000000238418579,
+      "after": 0.800000011920929
+    },
+    {
+      "material": "paving_alt",
+      "node": "Weathering Partial wet ground coverage",
+      "input": "From Min",
+      "before": 0.4300000071525574,
+      "after": 0.3400000035762787
+    },
+    {
+      "material": "paving_alt",
+      "node": "Weathering Partial wet ground coverage",
+      "input": "From Max",
+      "before": 0.6499999761581421,
+      "after": 0.5600000023841858
+    },
+    {
+      "material": "paving_alt",
+      "node": "Weathering Partial thin water film",
+      "input": "To Max",
+      "before": 0.8199999928474426,
+      "after": 0.949999988079071
+    },
+    {
+      "material": "paving_alt",
+      "node": "Weathering Smooth rainwater coat",
+      "input": "To Min",
+      "before": 0.30000001192092896,
+      "after": 0.2199999988079071
+    },
+    {
+      "material": "paving_alt",
+      "node": "Weathering Wet stone darkening amount",
+      "input": 1,
+      "before": 0.6000000238418579,
+      "after": 0.800000011920929
+    },
+    {
+      "material": "Canal water",
+      "node": "Small reflection breakup",
+      "input": "Strength",
+      "before": 0.20000000298023224,
+      "after": 0.3400000035762787
+    },
+    {
+      "material": "Canal water",
+      "node": "Small reflection breakup",
+      "input": "Distance",
+      "before": 0.02800000086426735,
+      "after": 0.03500000014901161
+    }
+  ],
+  "resolution": [
+    1104,
+    622
+  ],
+  "samples_max": 40,
+  "devices": [
+    "NVIDIA GeForce RTX 4070 Laptop GPU"
+  ],
+  "blender": "4.5.9 LTS",
+  "reopened_and_audited_before_render": true,
+  "setup_seconds": 4.16,
+  "render_seconds": 6.584,
+  "total_run_seconds": 11.036,
+  "limits": [
+    "No geometry, light, camera, world, compositor, color management or non-wet material changes.",
+    "No new shader nodes, links, objects, lights, modifiers or textures.",
+    "Material parameters cannot reproduce absent reflected sources or missing background detail."
+  ]
+}

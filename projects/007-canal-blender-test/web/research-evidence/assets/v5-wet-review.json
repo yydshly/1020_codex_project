@@ -1,0 +1,309 @@
+{
+  "schema_version": 1,
+  "stage": "Frozen V5 wet-surface experiment completed; stopped after two low-resolution previews",
+  "reference": "assets/reference.png",
+  "reference_origin": "本项目生成入口概念图，不是源 X 演示图。",
+  "frozen_source": "artifacts/rainy-canal-v5-preview-02.blend",
+  "source_sha256": "5cfbbdc89ddd980c12a1066e1b2d0cc4d361391a276797a19d802b8f2c4b1431",
+  "intent": "在完全冻结 V5 几何、相机、灯光和世界环境的前提下，只检验既有湿地面与水面材质能否更接近参考，不用新物体或调色掩盖差异。",
+  "acceptance_focus": [
+    "湿地面呈现局部暗化与不连续反光，而非整体镜面或塑料感。",
+    "水面暖倒影由短亮斑变得更长、更破碎；不凭材质伪造额外光源。",
+    "与参考图比较而不是只比较画面是否更亮或更炫；没有计算整体相似度分数。"
+  ],
+  "observations": {
+    "water": "相对原 V5，有可见但局部的改善：暖倒影更长、更破碎。仍缺参考中的丰富暖光分布和不同尺度波纹，细纹略密、略均匀。",
+    "pavement": "第二样相对首样加强湿区暗化与中等湿度区域的反射；改善轻度，整体仍偏浅、偏规整，没有形成参考中鲜明的雨后金色碎光。",
+    "regressions": "未发现整片路面变成镜面或严重新瑕疵；局部地面反光仍偏平滑，不能视作完整写实质感。",
+    "overall": "窄目标有部分改善，不是整体显著提升，更不能认定已高保真还原。固定灯位和反射源布局后，只调材质存在明显上限。"
+  },
+  "decision": {
+    "preferred_review_candidate": "assets/v5-wet-preview-02.png",
+    "accepted_as_final": false,
+    "promoted_to_website": false,
+    "next_automatic_iteration": false,
+    "stop_reason": "本轮最多两张低清小样的预算已用尽，保留两个真实渲染候选与记录，不再自动继续参数试探。"
+  },
+  "preserved": {
+    "schema_version": 1,
+    "checked_utc": "2026-10-23T19:18:08.307937+08:00",
+    "passed": true,
+    "scope": "Read-only post-render file-hash verification and review of saved-candidate constraint audits; no new render or Blender save.",
+    "baseline": "assets/v5-wet-baseline.json",
+    "baseline_sha256": "0d1bae1511842e0d5277711dad5fd1488d5bbeaa9dad0ae04d8457abf94319dc",
+    "frozen_source": "artifacts/rainy-canal-v5-preview-02.blend",
+    "source_sha256": "5cfbbdc89ddd980c12a1066e1b2d0cc4d361391a276797a19d802b8f2c4b1431",
+    "source_unchanged": true,
+    "previews": [
+      {
+        "preview": 1,
+        "candidate": "artifacts/rainy-canal-v5-wet-preview-01.blend",
+        "candidate_sha256": "600bc4d5b771baf7654a06a8e637041bf21b12b70af5c8a44e23dadfe55ea638",
+        "image": "assets/v5-wet-preview-01.png",
+        "image_sha256": "ffee6cfa114fb6f8f7649d0e6250b63d8907f8ca945131e0e9cad98573a32ad2",
+        "audit": "assets/v5-wet-preview-01-audit.json",
+        "audit_sha256": "98f20d4595df95058db0a35777374756c85ed6f296c9a83fc0e3e167c210ae8e",
+        "parameter_changes": 8,
+        "render_seconds": 7.358,
+        "all_constraint_checks_passed": true
+      },
+      {
+        "preview": 2,
+        "candidate": "artifacts/rainy-canal-v5-wet-preview-02.blend",
+        "candidate_sha256": "6eb7edb0e46958e59b5bf073e07d35294682a65bfb68a1df76390e279d65744f",
+        "image": "assets/v5-wet-preview-02.png",
+        "image_sha256": "3530e4b155025e13a1250a61f6e922dc8d9e13d9b7fbf062b7ca23610d054001",
+        "audit": "assets/v5-wet-preview-02-audit.json",
+        "audit_sha256": "cb296c9eb8ee3ea3fd4fa5637ada5b026c1049897278ef274790237e21fe4d35",
+        "parameter_changes": 12,
+        "render_seconds": 6.584,
+        "all_constraint_checks_passed": true
+      }
+    ],
+    "ledger": {
+      "asset": "assets/v5-wet-render-ledger.json",
+      "sha256": "99f6fd39281f510aacce3c5e6b51f03dc525914c8454f7ee5a01bcb0f66d91d3",
+      "attempts": 2,
+      "complete": 2,
+      "failed": 0,
+      "render_budget_exhausted": true
+    },
+    "frozen_counts": {
+      "objects": 2109,
+      "mesh_objects": 2015,
+      "curve_objects": 72,
+      "vertices": 159646,
+      "faces": 127565,
+      "curve_points": 1553,
+      "modifiers": 686,
+      "lights": 20,
+      "cameras": 2
+    },
+    "all_geometry_transforms_visibility_modifiers_lights_cameras_frozen": true,
+    "world_color_compositor_collections_and_nonwet_materials_frozen": true,
+    "all_material_node_link_counts_unchanged": true,
+    "water_parameters_identical_between_previews": true,
+    "website_hash_checks": {
+      "project_web": {
+        "unchanged": true,
+        "files": 56
+      },
+      "built_site_007": {
+        "unchanged": true,
+        "files": 56
+      }
+    },
+    "limitations": [
+      "Constraint evidence verifies unchanged scene structure and permitted parameter edits, not reference-image fidelity.",
+      "No website packaging, build, publication or additional rendering was performed by this check."
+    ]
+  },
+  "previews": [
+    {
+      "image": "v5-wet-preview-01.png",
+      "image_sha256": "ffee6cfa114fb6f8f7649d0e6250b63d8907f8ca945131e0e9cad98573a32ad2",
+      "blend": "rainy-canal-v5-wet-preview-01.blend",
+      "blend_sha256": "600bc4d5b771baf7654a06a8e637041bf21b12b70af5c8a44e23dadfe55ea638",
+      "resolution": [
+        1104,
+        622
+      ],
+      "samples": 40,
+      "render_seconds": 7.358,
+      "run_seconds": 12.903,
+      "changes": [
+        {
+          "material": "paving",
+          "node": "Weathering Partial wet ground coverage",
+          "input": "From Min",
+          "before": 0.4300000071525574,
+          "after": 0.3799999952316284
+        },
+        {
+          "material": "paving",
+          "node": "Weathering Partial wet ground coverage",
+          "input": "From Max",
+          "before": 0.6499999761581421,
+          "after": 0.5799999833106995
+        },
+        {
+          "material": "paving",
+          "node": "Weathering Partial thin water film",
+          "input": "To Max",
+          "before": 0.8199999928474426,
+          "after": 0.949999988079071
+        },
+        {
+          "material": "paving_alt",
+          "node": "Weathering Partial wet ground coverage",
+          "input": "From Min",
+          "before": 0.4300000071525574,
+          "after": 0.3799999952316284
+        },
+        {
+          "material": "paving_alt",
+          "node": "Weathering Partial wet ground coverage",
+          "input": "From Max",
+          "before": 0.6499999761581421,
+          "after": 0.5799999833106995
+        },
+        {
+          "material": "paving_alt",
+          "node": "Weathering Partial thin water film",
+          "input": "To Max",
+          "before": 0.8199999928474426,
+          "after": 0.949999988079071
+        },
+        {
+          "material": "Canal water",
+          "node": "Small reflection breakup",
+          "input": "Strength",
+          "before": 0.20000000298023224,
+          "after": 0.3400000035762787
+        },
+        {
+          "material": "Canal water",
+          "node": "Small reflection breakup",
+          "input": "Distance",
+          "before": 0.02800000086426735,
+          "after": 0.03500000014901161
+        }
+      ],
+      "audit_passed": true,
+      "counts": {
+        "objects": 2109,
+        "mesh_objects": 2015,
+        "curve_objects": 72,
+        "vertices": 159646,
+        "faces": 127565,
+        "curve_points": 1553,
+        "modifiers": 686,
+        "lights": 20,
+        "cameras": 2
+      },
+      "geometry_frozen": true,
+      "graphs_unchanged": true,
+      "website_unchanged": true
+    },
+    {
+      "image": "v5-wet-preview-02.png",
+      "image_sha256": "3530e4b155025e13a1250a61f6e922dc8d9e13d9b7fbf062b7ca23610d054001",
+      "blend": "rainy-canal-v5-wet-preview-02.blend",
+      "blend_sha256": "6eb7edb0e46958e59b5bf073e07d35294682a65bfb68a1df76390e279d65744f",
+      "resolution": [
+        1104,
+        622
+      ],
+      "samples": 40,
+      "render_seconds": 6.584,
+      "run_seconds": 11.036,
+      "changes": [
+        {
+          "material": "paving",
+          "node": "Weathering Partial wet ground coverage",
+          "input": "From Min",
+          "before": 0.4300000071525574,
+          "after": 0.3400000035762787
+        },
+        {
+          "material": "paving",
+          "node": "Weathering Partial wet ground coverage",
+          "input": "From Max",
+          "before": 0.6499999761581421,
+          "after": 0.5600000023841858
+        },
+        {
+          "material": "paving",
+          "node": "Weathering Partial thin water film",
+          "input": "To Max",
+          "before": 0.8199999928474426,
+          "after": 0.949999988079071
+        },
+        {
+          "material": "paving",
+          "node": "Weathering Smooth rainwater coat",
+          "input": "To Min",
+          "before": 0.30000001192092896,
+          "after": 0.2199999988079071
+        },
+        {
+          "material": "paving",
+          "node": "Weathering Wet stone darkening amount",
+          "input": 1,
+          "before": 0.6000000238418579,
+          "after": 0.800000011920929
+        },
+        {
+          "material": "paving_alt",
+          "node": "Weathering Partial wet ground coverage",
+          "input": "From Min",
+          "before": 0.4300000071525574,
+          "after": 0.3400000035762787
+        },
+        {
+          "material": "paving_alt",
+          "node": "Weathering Partial wet ground coverage",
+          "input": "From Max",
+          "before": 0.6499999761581421,
+          "after": 0.5600000023841858
+        },
+        {
+          "material": "paving_alt",
+          "node": "Weathering Partial thin water film",
+          "input": "To Max",
+          "before": 0.8199999928474426,
+          "after": 0.949999988079071
+        },
+        {
+          "material": "paving_alt",
+          "node": "Weathering Smooth rainwater coat",
+          "input": "To Min",
+          "before": 0.30000001192092896,
+          "after": 0.2199999988079071
+        },
+        {
+          "material": "paving_alt",
+          "node": "Weathering Wet stone darkening amount",
+          "input": 1,
+          "before": 0.6000000238418579,
+          "after": 0.800000011920929
+        },
+        {
+          "material": "Canal water",
+          "node": "Small reflection breakup",
+          "input": "Strength",
+          "before": 0.20000000298023224,
+          "after": 0.3400000035762787
+        },
+        {
+          "material": "Canal water",
+          "node": "Small reflection breakup",
+          "input": "Distance",
+          "before": 0.02800000086426735,
+          "after": 0.03500000014901161
+        }
+      ],
+      "audit_passed": true,
+      "counts": {
+        "objects": 2109,
+        "mesh_objects": 2015,
+        "curve_objects": 72,
+        "vertices": 159646,
+        "faces": 127565,
+        "curve_points": 1553,
+        "modifiers": 686,
+        "lights": 20,
+        "cameras": 2
+      },
+      "geometry_frozen": true,
+      "graphs_unchanged": true,
+      "website_unchanged": true
+    }
+  ],
+  "timing_scope": "render_seconds 只计 Cycles 渲染调用，run_seconds 计单次脚本执行；均不代表完整诊断、编码和审阅耗时。",
+  "validation": {
+    "python_syntax_compile_passed": true,
+    "saved_scene_audits_passed": true,
+    "post_render_hash_check_passed": true
+  }
+}

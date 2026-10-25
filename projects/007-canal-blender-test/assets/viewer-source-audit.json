@@ -1,0 +1,2867 @@
+{
+  "schema_version": 1,
+  "source": "artifacts/rainy-canal-v4.blend",
+  "source_sha256": "017a6dd169e8fe5d8b958cc90d24687fe8f8aaeaa66194c455dd176afdd1b765",
+  "source_sha256_after": "017a6dd169e8fe5d8b958cc90d24687fe8f8aaeaa66194c455dd176afdd1b765",
+  "coordinate_convention": {
+    "blender": "X right, Y horizontal, Z up",
+    "gltf": "Blender [x,y,z] maps to [x,z,-y]",
+    "color": "Blender linear RGB floats; do not interpret as sRGB hex"
+  },
+  "blender": "4.5.9 LTS",
+  "complexity": {
+    "objects": 2109,
+    "base_vertices": 159646,
+    "base_faces": 127565,
+    "lights": 20
+  },
+  "color_management": {
+    "view_transform": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "exposure": 1.0,
+    "gamma": 1.0,
+    "display_device": "sRGB",
+    "sequencer_colorspace": "sRGB",
+    "use_curve_mapping": false
+  },
+  "render": {
+    "engine": "CYCLES",
+    "resolution": [
+      1672,
+      942
+    ],
+    "resolution_percentage": 100,
+    "film_transparent": false,
+    "cycles_samples": 112,
+    "cycles_device": "GPU"
+  },
+  "lights": [
+    {
+      "name": "Evening horizon glow",
+      "type": "AREA",
+      "position_blender": [
+        -5.0,
+        -1.478268,
+        4.5
+      ],
+      "position_gltf": [
+        -5.0,
+        4.5,
+        1.478268
+      ],
+      "direction_blender": [
+        0.241614,
+        0.918132,
+        -0.314098
+      ],
+      "direction_gltf": [
+        0.241614,
+        -0.314098,
+        -0.918132
+      ],
+      "color_linear": [
+        1.0,
+        0.49,
+        0.22
+      ],
+      "energy": 135.0,
+      "energy_unit": "W",
+      "use_shadow": true,
+      "shape": "DISK",
+      "size": 5.0,
+      "size_y": 0.25,
+      "shadow_soft_size": 0.0,
+      "normalize": true,
+      "diffuse_factor": 1.0,
+      "specular_factor": 1.0,
+      "volume_factor": 1.0
+    },
+    {
+      "name": "Interior warm fill",
+      "type": "AREA",
+      "position_blender": [
+        -7.0,
+        3.95,
+        3.72
+      ],
+      "position_gltf": [
+        -7.0,
+        3.72,
+        -3.95
+      ],
+      "direction_blender": [
+        -0.0,
+        -0.788966,
+        -0.614437
+      ],
+      "direction_gltf": [
+        -0.0,
+        -0.614437,
+        0.788966
+      ],
+      "color_linear": [
+        1.0,
+        0.58,
+        0.28
+      ],
+      "energy": 96.135002,
+      "energy_unit": "W",
+      "use_shadow": true,
+      "shape": "DISK",
+      "size": 2.2,
+      "size_y": 0.25,
+      "shadow_soft_size": 0.0,
+      "normalize": true,
+      "diffuse_factor": 1.0,
+      "specular_factor": 1.0,
+      "volume_factor": 1.0
+    },
+    {
+      "name": "Interior warm fill.001",
+      "type": "AREA",
+      "position_blender": [
+        -1.0,
+        3.95,
+        3.72
+      ],
+      "position_gltf": [
+        -1.0,
+        3.72,
+        -3.95
+      ],
+      "direction_blender": [
+        -0.0,
+        -0.788966,
+        -0.614437
+      ],
+      "direction_gltf": [
+        -0.0,
+        -0.614437,
+        0.788966
+      ],
+      "color_linear": [
+        1.0,
+        0.58,
+        0.28
+      ],
+      "energy": 96.135002,
+      "energy_unit": "W",
+      "use_shadow": true,
+      "shape": "DISK",
+      "size": 2.2,
+      "size_y": 0.25,
+      "shadow_soft_size": 0.0,
+      "normalize": true,
+      "diffuse_factor": 1.0,
+      "specular_factor": 1.0,
+      "volume_factor": 1.0
+    },
+    {
+      "name": "Interior warm fill.002",
+      "type": "AREA",
+      "position_blender": [
+        5.0,
+        3.95,
+        3.72
+      ],
+      "position_gltf": [
+        5.0,
+        3.72,
+        -3.95
+      ],
+      "direction_blender": [
+        -0.0,
+        -0.788966,
+        -0.614437
+      ],
+      "direction_gltf": [
+        -0.0,
+        -0.614437,
+        0.788966
+      ],
+      "color_linear": [
+        1.0,
+        0.58,
+        0.28
+      ],
+      "energy": 96.135002,
+      "energy_unit": "W",
+      "use_shadow": true,
+      "shape": "DISK",
+      "size": 2.2,
+      "size_y": 0.25,
+      "shadow_soft_size": 0.0,
+      "normalize": true,
+      "diffuse_factor": 1.0,
+      "specular_factor": 1.0,
+      "volume_factor": 1.0
+    },
+    {
+      "name": "Lamp 1 warm light",
+      "type": "POINT",
+      "position_blender": [
+        -9.2,
+        -1.201197,
+        4.0
+      ],
+      "position_gltf": [
+        -9.2,
+        4.0,
+        1.201197
+      ],
+      "direction_blender": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "direction_gltf": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "color_linear": [
+        1.0,
+        0.44,
+        0.14
+      ],
+      "energy": 250.0,
+      "energy_unit": "W",
+      "use_shadow": true,
+      "shadow_soft_size": 0.13,
+      "normalize": true,
+      "diffuse_factor": 1.0,
+      "specular_factor": 1.0,
+      "volume_factor": 1.0
+    },
+    {
+      "name": "Lamp 2 warm light",
+      "type": "POINT",
+      "position_blender": [
+        7.8,
+        -1.201197,
+        4.0
+      ],
+      "position_gltf": [
+        7.8,
+        4.0,
+        1.201197
+      ],
+      "direction_blender": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "direction_gltf": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "color_linear": [
+        1.0,
+        0.44,
+        0.14
+      ],
+      "energy": 250.0,
+      "energy_unit": "W",
+      "use_shadow": true,
+      "shadow_soft_size": 0.13,
+      "normalize": true,
+      "diffuse_factor": 1.0,
+      "specular_factor": 1.0,
+      "volume_factor": 1.0
+    },
+    {
+      "name": "Lamp 3 warm light",
+      "type": "POINT",
+      "position_blender": [
+        8.5,
+        -11.756332,
+        4.0
+      ],
+      "position_gltf": [
+        8.5,
+        4.0,
+        11.756332
+      ],
+      "direction_blender": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "direction_gltf": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "color_linear": [
+        1.0,
+        0.44,
+        0.14
+      ],
+      "energy": 250.0,
+      "energy_unit": "W",
+      "use_shadow": true,
+      "shadow_soft_size": 0.13,
+      "normalize": true,
+      "diffuse_factor": 1.0,
+      "specular_factor": 1.0,
+      "volume_factor": 1.0
+    },
+    {
+      "name": "Shop pendant illumination",
+      "type": "POINT",
+      "position_blender": [
+        -8.4,
+        2.55,
+        3.13
+      ],
+      "position_gltf": [
+        -8.4,
+        3.13,
+        -2.55
+      ],
+      "direction_blender": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "direction_gltf": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "color_linear": [
+        1.0,
+        0.53,
+        0.2
+      ],
+      "energy": 48.0,
+      "energy_unit": "W",
+      "use_shadow": true,
+      "shadow_soft_size": 0.045,
+      "normalize": true,
+      "diffuse_factor": 1.0,
+      "specular_factor": 1.0,
+      "volume_factor": 1.0
+    },
+    {
+      "name": "Shop pendant illumination.001",
+      "type": "POINT",
+      "position_blender": [
+        -5.6,
+        2.55,
+        3.13
+      ],
+      "position_gltf": [
+        -5.6,
+        3.13,
+        -2.55
+      ],
+      "direction_blender": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "direction_gltf": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "color_linear": [
+        1.0,
+        0.53,
+        0.2
+      ],
+      "energy": 48.0,
+      "energy_unit": "W",
+      "use_shadow": true,
+      "shadow_soft_size": 0.045,
+      "normalize": true,
+      "diffuse_factor": 1.0,
+      "specular_factor": 1.0,
+      "volume_factor": 1.0
+    },
+    {
+      "name": "Shop pendant illumination.002",
+      "type": "POINT",
+      "position_blender": [
+        -2.4,
+        2.55,
+        3.13
+      ],
+      "position_gltf": [
+        -2.4,
+        3.13,
+        -2.55
+      ],
+      "direction_blender": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "direction_gltf": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "color_linear": [
+        1.0,
+        0.53,
+        0.2
+      ],
+      "energy": 48.0,
+      "energy_unit": "W",
+      "use_shadow": true,
+      "shadow_soft_size": 0.045,
+      "normalize": true,
+      "diffuse_factor": 1.0,
+      "specular_factor": 1.0,
+      "volume_factor": 1.0
+    },
+    {
+      "name": "Shop pendant illumination.003",
+      "type": "POINT",
+      "position_blender": [
+        0.4,
+        2.55,
+        3.13
+      ],
+      "position_gltf": [
+        0.4,
+        3.13,
+        -2.55
+      ],
+      "direction_blender": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "direction_gltf": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "color_linear": [
+        1.0,
+        0.53,
+        0.2
+      ],
+      "energy": 48.0,
+      "energy_unit": "W",
+      "use_shadow": true,
+      "shadow_soft_size": 0.045,
+      "normalize": true,
+      "diffuse_factor": 1.0,
+      "specular_factor": 1.0,
+      "volume_factor": 1.0
+    },
+    {
+      "name": "Shop pendant illumination.004",
+      "type": "POINT",
+      "position_blender": [
+        3.6,
+        2.55,
+        3.13
+      ],
+      "position_gltf": [
+        3.6,
+        3.13,
+        -2.55
+      ],
+      "direction_blender": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "direction_gltf": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "color_linear": [
+        1.0,
+        0.53,
+        0.2
+      ],
+      "energy": 48.0,
+      "energy_unit": "W",
+      "use_shadow": true,
+      "shadow_soft_size": 0.045,
+      "normalize": true,
+      "diffuse_factor": 1.0,
+      "specular_factor": 1.0,
+      "volume_factor": 1.0
+    },
+    {
+      "name": "Shop pendant illumination.005",
+      "type": "POINT",
+      "position_blender": [
+        6.4,
+        2.55,
+        3.13
+      ],
+      "position_gltf": [
+        6.4,
+        3.13,
+        -2.55
+      ],
+      "direction_blender": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "direction_gltf": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "color_linear": [
+        1.0,
+        0.53,
+        0.2
+      ],
+      "energy": 48.0,
+      "energy_unit": "W",
+      "use_shadow": true,
+      "shadow_soft_size": 0.045,
+      "normalize": true,
+      "diffuse_factor": 1.0,
+      "specular_factor": 1.0,
+      "volume_factor": 1.0
+    },
+    {
+      "name": "Soft cool dusk fill",
+      "type": "AREA",
+      "position_blender": [
+        -5.0,
+        -6.151379,
+        18.0
+      ],
+      "position_gltf": [
+        -5.0,
+        18.0,
+        6.151379
+      ],
+      "direction_blender": [
+        0.269191,
+        0.430705,
+        -0.861411
+      ],
+      "direction_gltf": [
+        0.269191,
+        -0.861411,
+        -0.430705
+      ],
+      "color_linear": [
+        0.65,
+        0.77,
+        1.0
+      ],
+      "energy": 1700.0,
+      "energy_unit": "W",
+      "use_shadow": true,
+      "shape": "DISK",
+      "size": 15.0,
+      "size_y": 0.25,
+      "shadow_soft_size": 0.0,
+      "normalize": true,
+      "diffuse_factor": 1.0,
+      "specular_factor": 1.0,
+      "volume_factor": 1.0
+    },
+    {
+      "name": "Warm upstairs room",
+      "type": "POINT",
+      "position_blender": [
+        -7.94,
+        2.25,
+        6.85
+      ],
+      "position_gltf": [
+        -7.94,
+        6.85,
+        -2.25
+      ],
+      "direction_blender": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "direction_gltf": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "color_linear": [
+        1.0,
+        0.49,
+        0.17
+      ],
+      "energy": 23.831322,
+      "energy_unit": "W",
+      "use_shadow": true,
+      "shadow_soft_size": 0.045,
+      "normalize": true,
+      "diffuse_factor": 1.0,
+      "specular_factor": 1.0,
+      "volume_factor": 1.0
+    },
+    {
+      "name": "Warm upstairs room.001",
+      "type": "POINT",
+      "position_blender": [
+        -5.38,
+        2.25,
+        6.85
+      ],
+      "position_gltf": [
+        -5.38,
+        6.85,
+        -2.25
+      ],
+      "direction_blender": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "direction_gltf": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "color_linear": [
+        1.0,
+        0.49,
+        0.17
+      ],
+      "energy": 24.588844,
+      "energy_unit": "W",
+      "use_shadow": true,
+      "shadow_soft_size": 0.045,
+      "normalize": true,
+      "diffuse_factor": 1.0,
+      "specular_factor": 1.0,
+      "volume_factor": 1.0
+    },
+    {
+      "name": "Warm upstairs room.002",
+      "type": "POINT",
+      "position_blender": [
+        -1.94,
+        2.25,
+        6.85
+      ],
+      "position_gltf": [
+        -1.94,
+        6.85,
+        -2.25
+      ],
+      "direction_blender": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "direction_gltf": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "color_linear": [
+        1.0,
+        0.49,
+        0.17
+      ],
+      "energy": 27.414234,
+      "energy_unit": "W",
+      "use_shadow": true,
+      "shadow_soft_size": 0.045,
+      "normalize": true,
+      "diffuse_factor": 1.0,
+      "specular_factor": 1.0,
+      "volume_factor": 1.0
+    },
+    {
+      "name": "Warm upstairs room.003",
+      "type": "POINT",
+      "position_blender": [
+        0.62,
+        2.25,
+        6.85
+      ],
+      "position_gltf": [
+        0.62,
+        6.85,
+        -2.25
+      ],
+      "direction_blender": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "direction_gltf": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "color_linear": [
+        1.0,
+        0.49,
+        0.17
+      ],
+      "energy": 25.720049,
+      "energy_unit": "W",
+      "use_shadow": true,
+      "shadow_soft_size": 0.045,
+      "normalize": true,
+      "diffuse_factor": 1.0,
+      "specular_factor": 1.0,
+      "volume_factor": 1.0
+    },
+    {
+      "name": "Warm upstairs room.004",
+      "type": "POINT",
+      "position_blender": [
+        4.06,
+        2.25,
+        6.85
+      ],
+      "position_gltf": [
+        4.06,
+        6.85,
+        -2.25
+      ],
+      "direction_blender": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "direction_gltf": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "color_linear": [
+        1.0,
+        0.49,
+        0.17
+      ],
+      "energy": 23.389771,
+      "energy_unit": "W",
+      "use_shadow": true,
+      "shadow_soft_size": 0.045,
+      "normalize": true,
+      "diffuse_factor": 1.0,
+      "specular_factor": 1.0,
+      "volume_factor": 1.0
+    },
+    {
+      "name": "Warm upstairs room.005",
+      "type": "POINT",
+      "position_blender": [
+        6.62,
+        2.25,
+        6.85
+      ],
+      "position_gltf": [
+        6.62,
+        6.85,
+        -2.25
+      ],
+      "direction_blender": [
+        0.0,
+        0.0,
+        -1.0
+      ],
+      "direction_gltf": [
+        0.0,
+        -1.0,
+        -0.0
+      ],
+      "color_linear": [
+        1.0,
+        0.49,
+        0.17
+      ],
+      "energy": 22.233898,
+      "energy_unit": "W",
+      "use_shadow": true,
+      "shadow_soft_size": 0.045,
+      "normalize": true,
+      "diffuse_factor": 1.0,
+      "specular_factor": 1.0,
+      "volume_factor": 1.0
+    }
+  ],
+  "world": {
+    "name": "Blue hour cloud sky",
+    "use_nodes": true,
+    "nodes": [
+      {
+        "name": "World Output",
+        "type": "ShaderNodeOutputWorld",
+        "inputs": [
+          {
+            "index": 0,
+            "name": "Surface",
+            "from": [
+              "Background",
+              "Background"
+            ]
+          },
+          {
+            "index": 1,
+            "name": "Volume"
+          }
+        ]
+      },
+      {
+        "name": "Background",
+        "type": "ShaderNodeBackground",
+        "inputs": [
+          {
+            "index": 0,
+            "name": "Color",
+            "from": [
+              "Mix (Legacy)",
+              "Color"
+            ]
+          },
+          {
+            "index": 1,
+            "name": "Strength",
+            "value": 0.65
+          }
+        ]
+      },
+      {
+        "name": "Texture Coordinate",
+        "type": "ShaderNodeTexCoord",
+        "inputs": []
+      },
+      {
+        "name": "Separate XYZ",
+        "type": "ShaderNodeSeparateXYZ",
+        "inputs": [
+          {
+            "index": 0,
+            "name": "Vector",
+            "from": [
+              "Texture Coordinate",
+              "Normal"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Math",
+        "type": "ShaderNodeMath",
+        "inputs": [
+          {
+            "index": 0,
+            "name": "Value",
+            "from": [
+              "Separate XYZ",
+              "Z"
+            ]
+          }
+        ],
+        "operation": "ABSOLUTE",
+        "use_clamp": false
+      },
+      {
+        "name": "Color Ramp",
+        "type": "ShaderNodeValToRGB",
+        "inputs": [
+          {
+            "index": 0,
+            "name": "Fac",
+            "from": [
+              "Math",
+              "Value"
+            ]
+          }
+        ],
+        "ramp": [
+          {
+            "position": 0.0,
+            "color_linear": [
+              1.0,
+              0.341914,
+              0.114435,
+              1.0
+            ]
+          },
+          {
+            "position": 0.065,
+            "color_linear": [
+              0.603827,
+              0.258183,
+              0.242281,
+              1.0
+            ]
+          },
+          {
+            "position": 0.14,
+            "color_linear": [
+              0.262251,
+              0.274677,
+              0.412543,
+              1.0
+            ]
+          },
+          {
+            "position": 0.28,
+            "color_linear": [
+              0.084376,
+              0.184475,
+              0.381326,
+              1.0
+            ]
+          },
+          {
+            "position": 0.6,
+            "color_linear": [
+              0.022174,
+              0.061246,
+              0.14996,
+              1.0
+            ]
+          },
+          {
+            "position": 1.0,
+            "color_linear": [
+              0.019382,
+              0.043735,
+              0.104616,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Vector Math",
+        "type": "ShaderNodeVectorMath",
+        "inputs": [
+          {
+            "index": 0,
+            "name": "Vector",
+            "from": [
+              "Texture Coordinate",
+              "Normal"
+            ]
+          },
+          {
+            "index": 1,
+            "name": "Vector",
+            "value": [
+              3.0,
+              3.0,
+              7.0
+            ]
+          }
+        ],
+        "operation": "MULTIPLY"
+      },
+      {
+        "name": "Noise Texture",
+        "type": "ShaderNodeTexNoise",
+        "inputs": [
+          {
+            "index": 0,
+            "name": "Vector",
+            "from": [
+              "Vector Math",
+              "Vector"
+            ]
+          },
+          {
+            "index": 2,
+            "name": "Scale",
+            "value": 4.0
+          },
+          {
+            "index": 3,
+            "name": "Detail",
+            "value": 4.0
+          },
+          {
+            "index": 4,
+            "name": "Roughness",
+            "value": 0.72
+          },
+          {
+            "index": 5,
+            "name": "Lacunarity",
+            "value": 2.0
+          },
+          {
+            "index": 8,
+            "name": "Distortion",
+            "value": 0.0
+          }
+        ],
+        "noise_dimensions": "3D"
+      },
+      {
+        "name": "Color Ramp.001",
+        "type": "ShaderNodeValToRGB",
+        "inputs": [
+          {
+            "index": 0,
+            "name": "Fac",
+            "from": [
+              "Noise Texture",
+              "Fac"
+            ]
+          }
+        ],
+        "ramp": [
+          {
+            "position": 0.37,
+            "color_linear": [
+              0.24,
+              0.3,
+              0.42,
+              1.0
+            ]
+          },
+          {
+            "position": 0.62,
+            "color_linear": [
+              0.95,
+              0.95,
+              0.95,
+              1.0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mix (Legacy)",
+        "type": "ShaderNodeMixRGB",
+        "inputs": [
+          {
+            "index": 0,
+            "name": "Fac",
+            "value": 0.58
+          },
+          {
+            "index": 1,
+            "name": "Color1",
+            "from": [
+              "Color Ramp",
+              "Color"
+            ]
+          },
+          {
+            "index": 2,
+            "name": "Color2",
+            "from": [
+              "Color Ramp.001",
+              "Color"
+            ]
+          }
+        ],
+        "blend_type": "MULTIPLY",
+        "use_clamp": false
+      }
+    ]
+  },
+  "compositor": {
+    "enabled": true,
+    "nodes": [
+      {
+        "name": "Render Layers",
+        "type": "CompositorNodeRLayers",
+        "inputs": []
+      },
+      {
+        "name": "Map Range",
+        "type": "CompositorNodeMapRange",
+        "inputs": [
+          {
+            "index": 0,
+            "name": "Value",
+            "from": [
+              "Render Layers",
+              "Depth"
+            ]
+          },
+          {
+            "index": 1,
+            "name": "From Min",
+            "value": 35.0
+          },
+          {
+            "index": 2,
+            "name": "From Max",
+            "value": 220.0
+          },
+          {
+            "index": 3,
+            "name": "To Min",
+            "value": 0.0
+          },
+          {
+            "index": 4,
+            "name": "To Max",
+            "value": 0.78
+          }
+        ],
+        "use_clamp": true
+      },
+      {
+        "name": "Math",
+        "type": "CompositorNodeMath",
+        "inputs": [
+          {
+            "index": 0,
+            "name": "Value",
+            "from": [
+              "Render Layers",
+              "Depth"
+            ]
+          },
+          {
+            "index": 1,
+            "name": "Value",
+            "value": 1500.0
+          }
+        ],
+        "operation": "LESS_THAN",
+        "use_clamp": false
+      },
+      {
+        "name": "Math.001",
+        "type": "CompositorNodeMath",
+        "inputs": [
+          {
+            "index": 0,
+            "name": "Value",
+            "from": [
+              "Map Range",
+              "Value"
+            ]
+          },
+          {
+            "index": 1,
+            "name": "Value",
+            "from": [
+              "Math",
+              "Value"
+            ]
+          }
+        ],
+        "operation": "MULTIPLY",
+        "use_clamp": false
+      },
+      {
+        "name": "Mix",
+        "type": "CompositorNodeMixRGB",
+        "inputs": [
+          {
+            "index": 0,
+            "name": "Fac",
+            "from": [
+              "Math.001",
+              "Value"
+            ]
+          },
+          {
+            "index": 1,
+            "name": "Image",
+            "from": [
+              "Render Layers",
+              "Image"
+            ]
+          },
+          {
+            "index": 2,
+            "name": "Image",
+            "value": [
+              0.181164,
+              0.226966,
+              0.262251,
+              1.0
+            ]
+          }
+        ],
+        "blend_type": "MIX",
+        "use_clamp": false
+      },
+      {
+        "name": "Composite",
+        "type": "CompositorNodeComposite",
+        "inputs": [
+          {
+            "index": 0,
+            "name": "Image",
+            "from": [
+              "Mix",
+              "Image"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "water": [
+    {
+      "name": "Continuous canal with real ripple geometry",
+      "materials": [
+        "Canal water"
+      ],
+      "base_vertices": 19656,
+      "base_faces": 19250,
+      "position_blender": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "bounds_blender": {
+        "min": [
+          -40.0,
+          -10.525439,
+          -0.032216
+        ],
+        "max": [
+          759.600037,
+          -1.777318,
+          0.034285
+        ]
+      },
+      "bounds_gltf": {
+        "min": [
+          -40.0,
+          -0.032216,
+          1.777318
+        ],
+        "max": [
+          759.600037,
+          0.034285,
+          10.525439
+        ]
+      },
+      "surface_height_gltf": 0
+    }
+  ],
+  "material_summary": [
+    {
+      "name": "Canal water",
+      "diffuse_color_linear": [
+        0.019382,
+        0.048172,
+        0.045186,
+        1.0
+      ],
+      "base_color_linked": false,
+      "base_color_socket_default_linear": [
+        0.019382,
+        0.048172,
+        0.045186,
+        1.0
+      ],
+      "linked_inputs": [
+        "Roughness",
+        "Normal"
+      ],
+      "node_count": 9
+    },
+    {
+      "name": "Distant blue grey plaster",
+      "diffuse_color_linear": [
+        0.138432,
+        0.181164,
+        0.194618,
+        1.0
+      ],
+      "base_color_linked": true,
+      "base_color_socket_default_linear": [
+        0.138432,
+        0.181164,
+        0.194618,
+        1.0
+      ],
+      "linked_inputs": [
+        "Base Color",
+        "Normal"
+      ],
+      "node_count": 7
+    },
+    {
+      "name": "Distant dim amber window",
+      "diffuse_color_linear": [
+        0.715693,
+        0.381326,
+        0.14996,
+        1.0
+      ],
+      "base_color_linked": false,
+      "base_color_socket_default_linear": [
+        0.715693,
+        0.381326,
+        0.14996,
+        1.0
+      ],
+      "linked_inputs": [],
+      "node_count": 2
+    },
+    {
+      "name": "book_blue",
+      "diffuse_color_linear": [
+        0.039546,
+        0.116971,
+        0.14996,
+        1.0
+      ],
+      "base_color_linked": false,
+      "base_color_socket_default_linear": [
+        0.039546,
+        0.116971,
+        0.14996,
+        1.0
+      ],
+      "linked_inputs": [],
+      "node_count": 2
+    },
+    {
+      "name": "book_red",
+      "diffuse_color_linear": [
+        0.327778,
+        0.061246,
+        0.048172,
+        1.0
+      ],
+      "base_color_linked": false,
+      "base_color_socket_default_linear": [
+        0.327778,
+        0.061246,
+        0.048172,
+        1.0
+      ],
+      "linked_inputs": [],
+      "node_count": 2
+    },
+    {
+      "name": "book_tan",
+      "diffuse_color_linear": [
+        0.637597,
+        0.462077,
+        0.254152,
+        1.0
+      ],
+      "base_color_linked": false,
+      "base_color_socket_default_linear": [
+        0.637597,
+        0.462077,
+        0.254152,
+        1.0
+      ],
+      "linked_inputs": [],
+      "node_count": 2
+    },
+    {
+      "name": "brass",
+      "diffuse_color_linear": [
+        0.456411,
+        0.296138,
+        0.072272,
+        1.0
+      ],
+      "base_color_linked": false,
+      "base_color_socket_default_linear": [
+        0.456411,
+        0.296138,
+        0.072272,
+        1.0
+      ],
+      "linked_inputs": [],
+      "node_count": 2
+    },
+    {
+      "name": "fabric",
+      "diffuse_color_linear": [
+        0.141263,
+        0.026241,
+        0.033105,
+        1.0
+      ],
+      "base_color_linked": true,
+      "base_color_socket_default_linear": [
+        0.141263,
+        0.026241,
+        0.033105,
+        1.0
+      ],
+      "linked_inputs": [
+        "Base Color",
+        "Normal"
+      ],
+      "node_count": 7
+    },
+    {
+      "name": "glass",
+      "diffuse_color_linear": [
+        0.693872,
+        0.760525,
+        0.701102,
+        1.0
+      ],
+      "base_color_linked": false,
+      "base_color_socket_default_linear": [
+        0.98,
+        0.99,
+        1.0,
+        1.0
+      ],
+      "linked_inputs": [],
+      "node_count": 5
+    },
+    {
+      "name": "iron",
+      "diffuse_color_linear": [
+        0.0185,
+        0.025187,
+        0.026241,
+        1.0
+      ],
+      "base_color_linked": false,
+      "base_color_socket_default_linear": [
+        0.0185,
+        0.025187,
+        0.026241,
+        1.0
+      ],
+      "linked_inputs": [],
+      "node_count": 2
+    },
+    {
+      "name": "leaf",
+      "diffuse_color_linear": [
+        0.035601,
+        0.109462,
+        0.031896,
+        1.0
+      ],
+      "base_color_linked": false,
+      "base_color_socket_default_linear": [
+        0.035601,
+        0.109462,
+        0.031896,
+        1.0
+      ],
+      "linked_inputs": [],
+      "node_count": 2
+    },
+    {
+      "name": "leaf_light",
+      "diffuse_color_linear": [
+        0.171441,
+        0.215861,
+        0.057805,
+        1.0
+      ],
+      "base_color_linked": false,
+      "base_color_socket_default_linear": [
+        0.171441,
+        0.215861,
+        0.057805,
+        1.0
+      ],
+      "linked_inputs": [],
+      "node_count": 2
+    },
+    {
+      "name": "mortar",
+      "diffuse_color_linear": [
+        0.215861,
+        0.187821,
+        0.135633,
+        1.0
+      ],
+      "base_color_linked": true,
+      "base_color_socket_default_linear": [
+        0.8,
+        0.8,
+        0.8,
+        1.0
+      ],
+      "linked_inputs": [
+        "Base Color",
+        "Roughness",
+        "Normal"
+      ],
+      "node_count": 9
+    },
+    {
+      "name": "olive",
+      "diffuse_color_linear": [
+        0.099899,
+        0.124772,
+        0.059511,
+        1.0
+      ],
+      "base_color_linked": true,
+      "base_color_socket_default_linear": [
+        0.099899,
+        0.124772,
+        0.059511,
+        1.0
+      ],
+      "linked_inputs": [
+        "Base Color",
+        "Normal"
+      ],
+      "node_count": 7
+    },
+    {
+      "name": "paving",
+      "diffuse_color_linear": [
+        0.274677,
+        0.246201,
+        0.181164,
+        1.0
+      ],
+      "base_color_linked": true,
+      "base_color_socket_default_linear": [
+        0.8,
+        0.8,
+        0.8,
+        1.0
+      ],
+      "linked_inputs": [
+        "Base Color",
+        "Roughness",
+        "Coat Weight",
+        "Coat Roughness",
+        "Normal",
+        "Coat Normal"
+      ],
+      "node_count": 20
+    },
+    {
+      "name": "paving_alt",
+      "diffuse_color_linear": [
+        0.361307,
+        0.313989,
+        0.219526,
+        1.0
+      ],
+      "base_color_linked": true,
+      "base_color_socket_default_linear": [
+        0.8,
+        0.8,
+        0.8,
+        1.0
+      ],
+      "linked_inputs": [
+        "Base Color",
+        "Roughness",
+        "Coat Weight",
+        "Coat Roughness",
+        "Normal",
+        "Coat Normal"
+      ],
+      "node_count": 20
+    },
+    {
+      "name": "plaster",
+      "diffuse_color_linear": [
+        0.783538,
+        0.679542,
+        0.508881,
+        1.0
+      ],
+      "base_color_linked": true,
+      "base_color_socket_default_linear": [
+        0.8,
+        0.8,
+        0.8,
+        1.0
+      ],
+      "linked_inputs": [
+        "Base Color",
+        "Roughness",
+        "Normal"
+      ],
+      "node_count": 17
+    },
+    {
+      "name": "plaster_alt",
+      "diffuse_color_linear": [
+        0.745404,
+        0.658375,
+        0.514918,
+        1.0
+      ],
+      "base_color_linked": true,
+      "base_color_socket_default_linear": [
+        0.8,
+        0.8,
+        0.8,
+        1.0
+      ],
+      "linked_inputs": [
+        "Base Color",
+        "Roughness",
+        "Normal"
+      ],
+      "node_count": 17
+    },
+    {
+      "name": "roof",
+      "diffuse_color_linear": [
+        0.045186,
+        0.059511,
+        0.059511,
+        1.0
+      ],
+      "base_color_linked": true,
+      "base_color_socket_default_linear": [
+        0.045186,
+        0.059511,
+        0.059511,
+        1.0
+      ],
+      "linked_inputs": [
+        "Base Color",
+        "Normal"
+      ],
+      "node_count": 7
+    },
+    {
+      "name": "roof_alt",
+      "diffuse_color_linear": [
+        0.0865,
+        0.111932,
+        0.107023,
+        1.0
+      ],
+      "base_color_linked": true,
+      "base_color_socket_default_linear": [
+        0.0865,
+        0.111932,
+        0.107023,
+        1.0
+      ],
+      "linked_inputs": [
+        "Base Color",
+        "Normal"
+      ],
+      "node_count": 7
+    },
+    {
+      "name": "rubber",
+      "diffuse_color_linear": [
+        0.007499,
+        0.009721,
+        0.01033,
+        1.0
+      ],
+      "base_color_linked": false,
+      "base_color_socket_default_linear": [
+        0.007499,
+        0.009721,
+        0.01033,
+        1.0
+      ],
+      "linked_inputs": [],
+      "node_count": 2
+    },
+    {
+      "name": "soil",
+      "diffuse_color_linear": [
+        0.029557,
+        0.024158,
+        0.015209,
+        1.0
+      ],
+      "base_color_linked": true,
+      "base_color_socket_default_linear": [
+        0.029557,
+        0.024158,
+        0.015209,
+        1.0
+      ],
+      "linked_inputs": [
+        "Base Color",
+        "Normal"
+      ],
+      "node_count": 7
+    },
+    {
+      "name": "stone",
+      "diffuse_color_linear": [
+        0.361307,
+        0.327778,
+        0.242281,
+        1.0
+      ],
+      "base_color_linked": true,
+      "base_color_socket_default_linear": [
+        0.8,
+        0.8,
+        0.8,
+        1.0
+      ],
+      "linked_inputs": [
+        "Base Color",
+        "Roughness",
+        "Normal"
+      ],
+      "node_count": 18
+    },
+    {
+      "name": "stone_light",
+      "diffuse_color_linear": [
+        0.545724,
+        0.473531,
+        0.341914,
+        1.0
+      ],
+      "base_color_linked": true,
+      "base_color_socket_default_linear": [
+        0.8,
+        0.8,
+        0.8,
+        1.0
+      ],
+      "linked_inputs": [
+        "Base Color",
+        "Roughness",
+        "Normal"
+      ],
+      "node_count": 18
+    },
+    {
+      "name": "teal",
+      "diffuse_color_linear": [
+        0.0185,
+        0.078187,
+        0.084376,
+        1.0
+      ],
+      "base_color_linked": true,
+      "base_color_socket_default_linear": [
+        0.0185,
+        0.078187,
+        0.084376,
+        1.0
+      ],
+      "linked_inputs": [
+        "Base Color",
+        "Normal"
+      ],
+      "node_count": 7
+    },
+    {
+      "name": "terracotta",
+      "diffuse_color_linear": [
+        0.274677,
+        0.078187,
+        0.035601,
+        1.0
+      ],
+      "base_color_linked": true,
+      "base_color_socket_default_linear": [
+        0.274677,
+        0.078187,
+        0.035601,
+        1.0
+      ],
+      "linked_inputs": [
+        "Base Color",
+        "Normal"
+      ],
+      "node_count": 7
+    },
+    {
+      "name": "warm_glow",
+      "diffuse_color_linear": [
+        1.0,
+        0.679542,
+        0.254152,
+        1.0
+      ],
+      "base_color_linked": false,
+      "base_color_socket_default_linear": [
+        1.0,
+        0.679542,
+        0.254152,
+        1.0
+      ],
+      "linked_inputs": [],
+      "node_count": 2
+    },
+    {
+      "name": "wood",
+      "diffuse_color_linear": [
+        0.07036,
+        0.029557,
+        0.014444,
+        1.0
+      ],
+      "base_color_linked": true,
+      "base_color_socket_default_linear": [
+        0.07036,
+        0.029557,
+        0.014444,
+        1.0
+      ],
+      "linked_inputs": [
+        "Base Color",
+        "Normal"
+      ],
+      "node_count": 8
+    },
+    {
+      "name": "wood_light",
+      "diffuse_color_linear": [
+        0.296138,
+        0.168269,
+        0.082283,
+        1.0
+      ],
+      "base_color_linked": true,
+      "base_color_socket_default_linear": [
+        0.296138,
+        0.168269,
+        0.082283,
+        1.0
+      ],
+      "linked_inputs": [
+        "Base Color",
+        "Normal"
+      ],
+      "node_count": 8
+    }
+  ],
+  "material_examples": [
+    {
+      "name": "plaster",
+      "diffuse_color_linear": [
+        0.783538,
+        0.679542,
+        0.508881,
+        1.0
+      ],
+      "selected_nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Base Color",
+              "from": [
+                "Weathering Warm mineral weathering",
+                "Color"
+              ]
+            },
+            {
+              "index": 2,
+              "name": "Roughness",
+              "from": [
+                "Natural roughness range",
+                "Result"
+              ]
+            },
+            {
+              "index": 3,
+              "name": "IOR",
+              "value": 1.5
+            },
+            {
+              "index": 5,
+              "name": "Normal",
+              "from": [
+                "Weathering Shallow old lime plaster relief",
+                "Normal"
+              ]
+            },
+            {
+              "index": 18,
+              "name": "Transmission Weight",
+              "value": 0.0
+            },
+            {
+              "index": 19,
+              "name": "Coat Weight",
+              "value": 0.0
+            },
+            {
+              "index": 20,
+              "name": "Coat Roughness",
+              "value": 0.03
+            },
+            {
+              "index": 21,
+              "name": "Coat IOR",
+              "value": 1.5
+            },
+            {
+              "index": 23,
+              "name": "Coat Normal",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Restrained mineral colors",
+          "type": "ShaderNodeValToRGB",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Fac",
+              "from": [
+                "Subtle mineral variation",
+                "Fac"
+              ]
+            }
+          ],
+          "ramp": [
+            {
+              "position": 0.22,
+              "color_linear": [
+                0.552011,
+                0.456411,
+                0.327778,
+                1.0
+              ]
+            },
+            {
+              "position": 0.8,
+              "color_linear": [
+                0.783538,
+                0.679542,
+                0.508881,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fine mineral relief",
+          "type": "ShaderNodeBump",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Strength",
+              "value": 0.19
+            },
+            {
+              "index": 1,
+              "name": "Distance",
+              "value": 0.009
+            },
+            {
+              "index": 2,
+              "name": "Filter Width",
+              "value": 0.1
+            },
+            {
+              "index": 3,
+              "name": "Height",
+              "from": [
+                "Fine restrained surface grain",
+                "Fac"
+              ]
+            },
+            {
+              "index": 4,
+              "name": "Normal",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Natural roughness range",
+          "type": "ShaderNodeMapRange",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Value",
+              "from": [
+                "Subtle mineral variation",
+                "Fac"
+              ]
+            },
+            {
+              "index": 1,
+              "name": "From Min",
+              "value": 0.24
+            },
+            {
+              "index": 2,
+              "name": "From Max",
+              "value": 0.76
+            },
+            {
+              "index": 3,
+              "name": "To Min",
+              "value": 0.73
+            },
+            {
+              "index": 4,
+              "name": "To Max",
+              "value": 0.87
+            }
+          ]
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Fac",
+              "from": [
+                "Noise Texture",
+                "Fac"
+              ]
+            }
+          ],
+          "ramp": [
+            {
+              "position": 0.3,
+              "color_linear": [
+                0.3,
+                0.27,
+                0.23,
+                1.0
+              ]
+            },
+            {
+              "position": 0.65,
+              "color_linear": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Weathering Restrained plaster discoloration",
+          "type": "ShaderNodeMapRange",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Value",
+              "from": [
+                "Weathering Lime plaster softened age patches",
+                "Fac"
+              ]
+            },
+            {
+              "index": 1,
+              "name": "From Min",
+              "value": 0.39
+            },
+            {
+              "index": 2,
+              "name": "From Max",
+              "value": 0.7
+            },
+            {
+              "index": 3,
+              "name": "To Min",
+              "value": 0.02
+            },
+            {
+              "index": 4,
+              "name": "To Max",
+              "value": 0.63
+            }
+          ]
+        },
+        {
+          "name": "Weathering Shallow old lime plaster relief",
+          "type": "ShaderNodeBump",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Strength",
+              "value": 0.16
+            },
+            {
+              "index": 1,
+              "name": "Distance",
+              "value": 0.023
+            },
+            {
+              "index": 2,
+              "name": "Filter Width",
+              "value": 0.1
+            },
+            {
+              "index": 3,
+              "name": "Height",
+              "from": [
+                "Weathering Old plaster shallow unevenness",
+                "Fac"
+              ]
+            },
+            {
+              "index": 4,
+              "name": "Normal",
+              "from": [
+                "Fine mineral relief",
+                "Normal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "paving",
+      "diffuse_color_linear": [
+        0.274677,
+        0.246201,
+        0.181164,
+        1.0
+      ],
+      "selected_nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Base Color",
+              "from": [
+                "Weathering Darker saturated wet stone",
+                "Color"
+              ]
+            },
+            {
+              "index": 2,
+              "name": "Roughness",
+              "from": [
+                "Weathering Dry to wet stone roughness",
+                "Result"
+              ]
+            },
+            {
+              "index": 3,
+              "name": "IOR",
+              "value": 1.5
+            },
+            {
+              "index": 5,
+              "name": "Normal",
+              "from": [
+                "Fine mineral relief",
+                "Normal"
+              ]
+            },
+            {
+              "index": 18,
+              "name": "Transmission Weight",
+              "value": 0.0
+            },
+            {
+              "index": 19,
+              "name": "Coat Weight",
+              "from": [
+                "Weathering Partial thin water film",
+                "Result"
+              ]
+            },
+            {
+              "index": 20,
+              "name": "Coat Roughness",
+              "from": [
+                "Weathering Smooth rainwater coat",
+                "Result"
+              ]
+            },
+            {
+              "index": 21,
+              "name": "Coat IOR",
+              "value": 1.333
+            },
+            {
+              "index": 23,
+              "name": "Coat Normal",
+              "from": [
+                "Continuous world coordinates",
+                "Normal"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Restrained mineral colors",
+          "type": "ShaderNodeValToRGB",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Fac",
+              "from": [
+                "Stone variation combined",
+                "Value"
+              ]
+            }
+          ],
+          "ramp": [
+            {
+              "position": 0.22,
+              "color_linear": [
+                0.119538,
+                0.111932,
+                0.084376,
+                1.0
+              ]
+            },
+            {
+              "position": 0.8,
+              "color_linear": [
+                0.274677,
+                0.246201,
+                0.181164,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fine mineral relief",
+          "type": "ShaderNodeBump",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Strength",
+              "value": 0.19
+            },
+            {
+              "index": 1,
+              "name": "Distance",
+              "value": 0.022
+            },
+            {
+              "index": 2,
+              "name": "Filter Width",
+              "value": 0.1
+            },
+            {
+              "index": 3,
+              "name": "Height",
+              "from": [
+                "Fine restrained surface grain",
+                "Fac"
+              ]
+            },
+            {
+              "index": 4,
+              "name": "Normal",
+              "from": [
+                "Shallow worn stone undulation",
+                "Normal"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Natural roughness range",
+          "type": "ShaderNodeMapRange",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Value",
+              "from": [
+                "Patchy retained rainwater",
+                "Fac"
+              ]
+            },
+            {
+              "index": 1,
+              "name": "From Min",
+              "value": 0.24
+            },
+            {
+              "index": 2,
+              "name": "From Max",
+              "value": 0.76
+            },
+            {
+              "index": 3,
+              "name": "To Min",
+              "value": 0.07
+            },
+            {
+              "index": 4,
+              "name": "To Max",
+              "value": 0.34
+            }
+          ]
+        },
+        {
+          "name": "Shallow worn stone undulation",
+          "type": "ShaderNodeBump",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Strength",
+              "value": 0.3
+            },
+            {
+              "index": 1,
+              "name": "Distance",
+              "value": 0.045
+            },
+            {
+              "index": 2,
+              "name": "Filter Width",
+              "value": 0.1
+            },
+            {
+              "index": 3,
+              "name": "Height",
+              "from": [
+                "Subtle mineral variation",
+                "Fac"
+              ]
+            },
+            {
+              "index": 4,
+              "name": "Normal",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Weathering Partial wet ground coverage",
+          "type": "ShaderNodeMapRange",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Value",
+              "from": [
+                "Weathering Connected rainwater patches",
+                "Fac"
+              ]
+            },
+            {
+              "index": 1,
+              "name": "From Min",
+              "value": 0.43
+            },
+            {
+              "index": 2,
+              "name": "From Max",
+              "value": 0.65
+            },
+            {
+              "index": 3,
+              "name": "To Min",
+              "value": 0.0
+            },
+            {
+              "index": 4,
+              "name": "To Max",
+              "value": 1.0
+            }
+          ]
+        },
+        {
+          "name": "Weathering Dry to wet stone roughness",
+          "type": "ShaderNodeMapRange",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Value",
+              "from": [
+                "Weathering Partial wet ground coverage",
+                "Result"
+              ]
+            },
+            {
+              "index": 1,
+              "name": "From Min",
+              "value": 0.0
+            },
+            {
+              "index": 2,
+              "name": "From Max",
+              "value": 1.0
+            },
+            {
+              "index": 3,
+              "name": "To Min",
+              "value": 0.48
+            },
+            {
+              "index": 4,
+              "name": "To Max",
+              "value": 0.065
+            }
+          ]
+        },
+        {
+          "name": "Weathering Partial thin water film",
+          "type": "ShaderNodeMapRange",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Value",
+              "from": [
+                "Weathering Partial wet ground coverage",
+                "Result"
+              ]
+            },
+            {
+              "index": 1,
+              "name": "From Min",
+              "value": 0.0
+            },
+            {
+              "index": 2,
+              "name": "From Max",
+              "value": 1.0
+            },
+            {
+              "index": 3,
+              "name": "To Min",
+              "value": 0.025
+            },
+            {
+              "index": 4,
+              "name": "To Max",
+              "value": 0.82
+            }
+          ]
+        },
+        {
+          "name": "Weathering Smooth rainwater coat",
+          "type": "ShaderNodeMapRange",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Value",
+              "from": [
+                "Weathering Partial wet ground coverage",
+                "Result"
+              ]
+            },
+            {
+              "index": 1,
+              "name": "From Min",
+              "value": 0.0
+            },
+            {
+              "index": 2,
+              "name": "From Max",
+              "value": 1.0
+            },
+            {
+              "index": 3,
+              "name": "To Min",
+              "value": 0.3
+            },
+            {
+              "index": 4,
+              "name": "To Max",
+              "value": 0.055
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "wood",
+      "diffuse_color_linear": [
+        0.07036,
+        0.029557,
+        0.014444,
+        1.0
+      ],
+      "selected_nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Base Color",
+              "from": [
+                "Color Ramp",
+                "Color"
+              ]
+            },
+            {
+              "index": 2,
+              "name": "Roughness",
+              "value": 0.46
+            },
+            {
+              "index": 3,
+              "name": "IOR",
+              "value": 1.5
+            },
+            {
+              "index": 5,
+              "name": "Normal",
+              "from": [
+                "Bump",
+                "Normal"
+              ]
+            },
+            {
+              "index": 18,
+              "name": "Transmission Weight",
+              "value": 0.0
+            },
+            {
+              "index": 19,
+              "name": "Coat Weight",
+              "value": 0.0
+            },
+            {
+              "index": 20,
+              "name": "Coat Roughness",
+              "value": 0.03
+            },
+            {
+              "index": 21,
+              "name": "Coat IOR",
+              "value": 1.5
+            },
+            {
+              "index": 23,
+              "name": "Coat Normal",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Color Ramp",
+          "type": "ShaderNodeValToRGB",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Fac",
+              "from": [
+                "Noise Texture",
+                "Fac"
+              ]
+            }
+          ],
+          "ramp": [
+            {
+              "position": 0.2,
+              "color_linear": [
+                0.053474,
+                0.022463,
+                0.010977,
+                1.0
+              ]
+            },
+            {
+              "position": 0.8,
+              "color_linear": [
+                0.078803,
+                0.033104,
+                0.016177,
+                1.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bump",
+          "type": "ShaderNodeBump",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Strength",
+              "value": 0.1
+            },
+            {
+              "index": 1,
+              "name": "Distance",
+              "value": 0.018
+            },
+            {
+              "index": 2,
+              "name": "Filter Width",
+              "value": 0.1
+            },
+            {
+              "index": 3,
+              "name": "Height",
+              "from": [
+                "Noise Texture.001",
+                "Fac"
+              ]
+            },
+            {
+              "index": 4,
+              "name": "Normal",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Canal water",
+      "diffuse_color_linear": [
+        0.019382,
+        0.048172,
+        0.045186,
+        1.0
+      ],
+      "selected_nodes": [
+        {
+          "name": "Principled BSDF",
+          "type": "ShaderNodeBsdfPrincipled",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Base Color",
+              "value": [
+                0.019382,
+                0.048172,
+                0.045186,
+                1.0
+              ]
+            },
+            {
+              "index": 2,
+              "name": "Roughness",
+              "from": [
+                "Water reflection variation",
+                "Result"
+              ]
+            },
+            {
+              "index": 3,
+              "name": "IOR",
+              "value": 1.333
+            },
+            {
+              "index": 5,
+              "name": "Normal",
+              "from": [
+                "Small reflection breakup",
+                "Normal"
+              ]
+            },
+            {
+              "index": 18,
+              "name": "Transmission Weight",
+              "value": 0.32
+            },
+            {
+              "index": 19,
+              "name": "Coat Weight",
+              "value": 0.0
+            },
+            {
+              "index": 20,
+              "name": "Coat Roughness",
+              "value": 0.03
+            },
+            {
+              "index": 21,
+              "name": "Coat IOR",
+              "value": 1.5
+            },
+            {
+              "index": 23,
+              "name": "Coat Normal",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gentle broad water normal",
+          "type": "ShaderNodeBump",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Strength",
+              "value": 0.2
+            },
+            {
+              "index": 1,
+              "name": "Distance",
+              "value": 0.035
+            },
+            {
+              "index": 2,
+              "name": "Filter Width",
+              "value": 0.1
+            },
+            {
+              "index": 3,
+              "name": "Height",
+              "from": [
+                "Broad irregular water ripple",
+                "Fac"
+              ]
+            },
+            {
+              "index": 4,
+              "name": "Normal",
+              "value": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Small reflection breakup",
+          "type": "ShaderNodeBump",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Strength",
+              "value": 0.2
+            },
+            {
+              "index": 1,
+              "name": "Distance",
+              "value": 0.028
+            },
+            {
+              "index": 2,
+              "name": "Filter Width",
+              "value": 0.1
+            },
+            {
+              "index": 3,
+              "name": "Height",
+              "from": [
+                "Fine broken water reflection",
+                "Fac"
+              ]
+            },
+            {
+              "index": 4,
+              "name": "Normal",
+              "from": [
+                "Gentle broad water normal",
+                "Normal"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Water reflection variation",
+          "type": "ShaderNodeMapRange",
+          "inputs": [
+            {
+              "index": 0,
+              "name": "Value",
+              "from": [
+                "Broad irregular water ripple",
+                "Fac"
+              ]
+            },
+            {
+              "index": 1,
+              "name": "From Min",
+              "value": 0.24
+            },
+            {
+              "index": 2,
+              "name": "From Max",
+              "value": 0.76
+            },
+            {
+              "index": 3,
+              "name": "To Min",
+              "value": 0.035
+            },
+            {
+              "index": 4,
+              "name": "To Max",
+              "value": 0.085
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "read_only_verified": true,
+  "findings": {
+    "default_white_diffuse_color_case_found": false,
+    "base_color_default_warning": "V4 contains linked Base Color sockets whose unused socket defaults remain [0.8,0.8,0.8,1], for example plaster and paving. Their material.diffuse_color values are explicitly colored, not default white. Reading the unused socket default would be wrong; the existing exporter instead uses diffuse_color and loses spatial variation.",
+    "material_examples": [
+      {
+        "name": "plaster",
+        "export_fallback_linear": [0.783538, 0.679542, 0.508881, 1.0],
+        "actual_base_source": "Weathering Warm mineral weathering",
+        "missing": "Mineral ramp plus weathering mask and shallow plaster normal; the fallback is not an evaluation of that graph."
+      },
+      {
+        "name": "paving",
+        "export_fallback_linear": [0.274677, 0.246201, 0.181164, 1.0],
+        "actual_base_source": "Weathering Darker saturated wet stone",
+        "actual_roughness_dry_to_wet": [0.48, 0.065],
+        "actual_coat_weight_dry_to_wet": [0.025, 0.82],
+        "actual_coat_roughness_dry_to_wet": [0.3, 0.055],
+        "actual_coat_ior": 1.333,
+        "missing": "Wet-area color darkening, varying roughness, thin-water coat and separate smooth coat normal."
+      }
+    ]
+  },
+  "structural_export_losses": [
+    "scripts/export_viewer.py reconstructs simplified Principled materials. Linked Base Color uses material.diffuse_color, not shader evaluation or texture baking.",
+    "Linked scalar Map Range inputs are reduced to the average of To Min and To Max. This loses spatial roughness variation and ignores the distribution of the driving mask.",
+    "Procedural Normal, Coat Normal, Coat Weight and Coat Roughness are not transferred. Texture coordinates and tangents are disabled for the structural GLB.",
+    "Source transmission is recorded only in metadata, not assigned to the export shader. Glass is approximated with alpha 0.18; canal water loses its source transmission 0.32.",
+    "All 20 source lights are excluded. The procedural world, Cycles indirect light, source color-management configuration and depth-haze compositor are not embedded in the structural GLB.",
+    "The actual rippled water geometry is retained, but source scene reflections and refraction are not captured by the structural export.",
+    "BEVEL, SUBSURF and WEIGHTED_NORMAL modifiers are disabled during structural export; this also changes edge highlights and shading without changing source geometry."
+  ],
+  "viewer_recommendations": {
+    "scope": "Implementation suggestions, not a claim of identical Cycles output or measured visual fidelity.",
+    "color_management": "Use the audited linear RGB values. Exposure 1.0 in Blender is one stop; do not assume a viewer exposure parameter has the same numeric convention. AgX plus the Blender Medium High Contrast look is not reproduced merely by copying the exposure number.",
+    "light_units": "Energy is the source Blender light power with normalize=true. Do not copy W values directly to an API using luminous intensity without a deliberate conversion or visual calibration. Area disk emitters also cannot be replaced exactly by point lights.",
+    "shadow_priority": [
+      "Use already baked static illumination for baked unlit material groups; do not add the same diffuse lighting again.",
+      "For non-baked surfaces, start with localized shadows from Lamp 1 warm light and Lamp 2 warm light, then assess whether the bridge-side Lamp 3 warm light is necessary.",
+      "The broad Soft cool dusk fill is a 15-unit disk, so any single shadow-casting directional or point-light proxy is an approximation, not the source emitter.",
+      "Avoid enabling shadow maps for all 15 point lights initially. Bound shadow coverage around the visible shops and bridge rather than the 799.6-unit extended canal."
+    ],
+    "water": "The water already has 19656 vertices and 19250 faces. Improve its normals, roughness and reflection sampling without adding a second water mesh. Use the glTF Y-up surface near y=0; world-only HDR provides sky reflections but cannot itself contain reflections of the shops and bridge.",
+    "environment": "A world-only linear HDR can preserve the source sky lighting and color distribution. It does not contain the source area lights, local emitters, geometry occlusion or compositor depth haze."
+  },
+  "notes": [
+    "Read-only background Blender inspection; no render and no source save. Source SHA256 was checked unchanged.",
+    "Only relative project source names are published. No absolute local paths are included.",
+    "World and compositor inputs are indexed because multiple sockets can share a name; linked sockets report their actual source rather than unused defaults.",
+    "material_examples includes selected relevant nodes, not a complete serialized shader network. material_summary covers every source Principled material."
+  ]
+}

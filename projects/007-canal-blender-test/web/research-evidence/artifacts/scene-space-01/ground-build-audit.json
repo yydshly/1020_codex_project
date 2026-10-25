@@ -1,0 +1,189 @@
+{
+  "build": {
+    "scope": "Ground-edge and bridgehead visual closure; already connected routes preserved.",
+    "source_objects_preserved": true,
+    "objects": {
+      "SPACE01_OuterLaneAndCourtShoulders": {
+        "min": [
+          -22.23284,
+          -24.0,
+          0.646
+        ],
+        "max": [
+          14.23128,
+          9.02,
+          0.844
+        ]
+      },
+      "SPACE01_ExposedQuayBackShoulders": {
+        "min": [
+          -25.45,
+          -17.51301,
+          0.68
+        ],
+        "max": [
+          24.0,
+          3.05498,
+          0.725
+        ]
+      },
+      "SPACE01_QuayEndsToNaturalBank": {
+        "min": [
+          -36.4575,
+          -19.66342,
+          0.364
+        ],
+        "max": [
+          35.0,
+          4.19868,
+          0.824
+        ]
+      },
+      "SPACE01_ShortDescendingQuayReturns": {
+        "min": [
+          -31.9515,
+          -12.15312,
+          -0.13
+        ],
+        "max": [
+          30.494,
+          -0.95473,
+          0.824
+        ]
+      },
+      "SPACE01_BridgeheadSplayedFootings": {
+        "min": [
+          -19.46,
+          -10.7169,
+          -0.25
+        ],
+        "max": [
+          10.80512,
+          -1.6111,
+          0.79
+        ]
+      }
+    },
+    "added_object_count": 5,
+    "added_triangles": 1400,
+    "terminal_transitions": [
+      {
+        "start_x": -25.457500457763672,
+        "end_x": -36.45750045776367,
+        "bank": "south",
+        "minimum_added_earth_distance_from_water_edge": 0.36,
+        "navigation_outside_extent": true
+      },
+      {
+        "start_x": -25.457500457763672,
+        "end_x": -36.45750045776367,
+        "bank": "north",
+        "minimum_added_earth_distance_from_water_edge": 0.36,
+        "navigation_outside_extent": true
+      },
+      {
+        "start_x": 24.0,
+        "end_x": 35.0,
+        "bank": "south",
+        "minimum_added_earth_distance_from_water_edge": 0.36,
+        "navigation_outside_extent": true
+      },
+      {
+        "start_x": 24.0,
+        "end_x": 35.0,
+        "bank": "north",
+        "minimum_added_earth_distance_from_water_edge": 0.36,
+        "navigation_outside_extent": true
+      }
+    ],
+    "bridgehead_footings": [
+      {
+        "bridge_center_x": 9.000119,
+        "bank_y": -1.7311,
+        "top_max": 0.79,
+        "side": -1
+      },
+      {
+        "bridge_center_x": 9.000119,
+        "bank_y": -1.7311,
+        "top_max": 0.79,
+        "side": 1
+      },
+      {
+        "bridge_center_x": 9.000119,
+        "bank_y": -10.5969,
+        "top_max": 0.79,
+        "side": -1
+      },
+      {
+        "bridge_center_x": 9.000119,
+        "bank_y": -10.5969,
+        "top_max": 0.79,
+        "side": 1
+      },
+      {
+        "bridge_center_x": -18.0,
+        "bank_y": -1.7311,
+        "top_max": 0.79,
+        "side": -1
+      },
+      {
+        "bridge_center_x": -18.0,
+        "bank_y": -1.7311,
+        "top_max": 0.79,
+        "side": 1
+      },
+      {
+        "bridge_center_x": -18.0,
+        "bank_y": -10.5969,
+        "top_max": 0.79,
+        "side": -1
+      },
+      {
+        "bridge_center_x": -18.0,
+        "bank_y": -10.5969,
+        "top_max": 0.79,
+        "side": 1
+      }
+    ],
+    "existing_ground_overlays": false,
+    "limitations": [
+      "No new navigation areas, interiors or props.",
+      "Outer shoulders and river-end transitions are background landforms.",
+      "Bridge footings are below the .85m route and not raised parapets."
+    ]
+  },
+  "route_checks": {
+    "scope": "Sampled centerline floor support and 0.48m-wide body-ray checks only, not a navmesh, full-area collision certification or a playable controller.",
+    "floor_tolerance": 0.17,
+    "known_existing_paving_gaps": "Original stone joints can be about 0.12m lower than stone tops; a future walking controller needs step tolerance or a separate collision proxy.",
+    "routes": {
+      "both_banks_loop": {
+        "sample_count": 285,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      },
+      "rear_lane_loop": {
+        "sample_count": 237,
+        "maximum_floor_deviation": 0.12,
+        "unsupported_samples": [],
+        "body_ray_obstructions": [],
+        "sampled_checks_passed": true
+      }
+    }
+  },
+  "additional_full_corridor_floor_samples": 1050,
+  "source_corridor_floor_samples_unchanged": true,
+  "changed_floor_samples": [],
+  "boundary_seams_metres": {
+    "west_alley_outer_curb_to_earth": 0.0,
+    "east_alley_outer_curb_to_earth": 1.7763568394002505e-15,
+    "opposite_support_west_to_earth": 7.629394538355427e-07,
+    "opposite_support_east_to_earth": 1.9073486257070726e-07,
+    "east_paving_to_terminal_ground": 0,
+    "west_paving_to_terminal_ground": 0
+  },
+  "scope": "Samples verify preservation, not a new navmesh or a claim of universal collision coverage."
+}

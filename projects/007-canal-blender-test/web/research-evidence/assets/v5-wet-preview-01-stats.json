@@ -1,0 +1,99 @@
+{
+  "experiment": "Frozen V5 geometry: wet pavement and water reflection only",
+  "source": "rainy-canal-v5-preview-02.blend",
+  "source_sha256": "5cfbbdc89ddd980c12a1066e1b2d0cc4d361391a276797a19d802b8f2c4b1431",
+  "source_unchanged": true,
+  "candidate": "rainy-canal-v5-wet-preview-01.blend",
+  "candidate_sha256": "600bc4d5b771baf7654a06a8e637041bf21b12b70af5c8a44e23dadfe55ea638",
+  "image": "v5-wet-preview-01.png",
+  "image_sha256": "ffee6cfa114fb6f8f7649d0e6250b63d8907f8ca945131e0e9cad98573a32ad2",
+  "audit": "v5-wet-preview-01-audit.json",
+  "constraint_audit_passed": true,
+  "complexity": {
+    "objects": 2109,
+    "mesh_objects": 2015,
+    "curve_objects": 72,
+    "vertices": 159646,
+    "faces": 127565,
+    "curve_points": 1553,
+    "modifiers": 686,
+    "lights": 20,
+    "cameras": 2
+  },
+  "material_parameter_changes": [
+    {
+      "material": "paving",
+      "node": "Weathering Partial wet ground coverage",
+      "input": "From Min",
+      "before": 0.4300000071525574,
+      "after": 0.3799999952316284
+    },
+    {
+      "material": "paving",
+      "node": "Weathering Partial wet ground coverage",
+      "input": "From Max",
+      "before": 0.6499999761581421,
+      "after": 0.5799999833106995
+    },
+    {
+      "material": "paving",
+      "node": "Weathering Partial thin water film",
+      "input": "To Max",
+      "before": 0.8199999928474426,
+      "after": 0.949999988079071
+    },
+    {
+      "material": "paving_alt",
+      "node": "Weathering Partial wet ground coverage",
+      "input": "From Min",
+      "before": 0.4300000071525574,
+      "after": 0.3799999952316284
+    },
+    {
+      "material": "paving_alt",
+      "node": "Weathering Partial wet ground coverage",
+      "input": "From Max",
+      "before": 0.6499999761581421,
+      "after": 0.5799999833106995
+    },
+    {
+      "material": "paving_alt",
+      "node": "Weathering Partial thin water film",
+      "input": "To Max",
+      "before": 0.8199999928474426,
+      "after": 0.949999988079071
+    },
+    {
+      "material": "Canal water",
+      "node": "Small reflection breakup",
+      "input": "Strength",
+      "before": 0.20000000298023224,
+      "after": 0.3400000035762787
+    },
+    {
+      "material": "Canal water",
+      "node": "Small reflection breakup",
+      "input": "Distance",
+      "before": 0.02800000086426735,
+      "after": 0.03500000014901161
+    }
+  ],
+  "resolution": [
+    1104,
+    622
+  ],
+  "samples_max": 40,
+  "devices": [
+    "NVIDIA GeForce RTX 4070 Laptop GPU"
+  ],
+  "blender": "4.5.9 LTS",
+  "reopened_and_audited_before_render": true,
+  "setup_seconds": 5.207,
+  "render_seconds": 7.358,
+  "total_run_seconds": 12.903,
+  "limits": [
+    "No geometry, light, camera, world, compositor, color management or non-wet material changes.",
+    "No new shader nodes, links, objects, lights, modifiers or textures.",
+    "Material parameters cannot reproduce absent reflected sources or missing background detail."
+  ]
+}

@@ -1,0 +1,48 @@
+{
+  "intent": "Connect the finite canal district to the landscape through readable middle-distance layers, retaining a quiet open dusk setting.",
+  "baseline": "SPACE10 houses, courts, gardens, roads, canal and navigation, reused without geometry changes.",
+  "geometryEnvelopeBlenderXY": [
+    -68,
+    -75,
+    68,
+    62
+  ],
+  "changes": [
+    "Broken woodland groups on the north-west and north-east slopes, with a low open area behind the central shops.",
+    "Grasses and reeds follow the actual western and eastern river bends; trees stand back from the water.",
+    "South-side meadow and a few trees at the two wings preserve the central reverse-view opening.",
+    "Outside-only meadow, wet-bank and root-contact material variation on the existing terrain, without overlay planes."
+  ],
+  "fixed": [
+    "All SPACE10 buildings, routes and physical terrain",
+    "The original 23 tree positions",
+    "All lights, dusk HDR, fog, exposure and shadow frustum",
+    "The continuous river and bridge views"
+  ],
+  "budget": {
+    "addedTrees": 20,
+    "addedTriangles": 51949,
+    "addedDrawCalls": 3,
+    "newTextures": 0,
+    "newLights": 0,
+    "newShadowCasters": 0
+  },
+  "assets": "Copy actual branch and foliage transforms from three established SPACE09 tree prototypes. Borrow the existing coverage-preserving leaf alpha texture and unit-card geometry.",
+  "review": [
+    "Same-camera 10/11 overview",
+    "Canal view",
+    "Reverse overview",
+    "North edge at street height",
+    "Eastern river bend",
+    "Existing public walking route"
+  ],
+  "responsiveReview": "The same modest overview camera retreat applies to both comparison stages in a narrow panel; original wide-screen camera positions remain.",
+  "remainingIntentionalOpenings": [
+    "North central meadow",
+    "South central meadow",
+    "Western bridge approach",
+    "View along the eastern water surface"
+  ],
+  "artDirectionSkill": "[local path omitted]",
+  "notClaimed": "A dense forest covering the full background terrain, new walkable outskirts or a fully photoreal environment."
+}

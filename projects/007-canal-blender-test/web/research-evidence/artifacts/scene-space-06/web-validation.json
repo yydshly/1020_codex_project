@@ -1,0 +1,65 @@
+{
+  "local_preview": "http://127.0.0.1:8062/scene-space-06.html",
+  "published": false,
+  "scope": "Finite neighbourhood, about 72 by 70 metres: two banks, backstreets, bridgeheads and peripheral greens.",
+  "additions": {
+    "houses": 17,
+    "green_spaces": 5,
+    "trees": 23,
+    "new_lights": 0,
+    "net_triangles": 63590,
+    "glb_bytes": 15387220
+  },
+  "independent_audit": "assets/space-06-postcheck-final.json",
+  "preservation": {
+    "old_files": 148,
+    "changed_old_files": 0,
+    "original_route_points_preserved": 522,
+    "original_support_points_preserved": 33
+  },
+  "physical_navigation": {
+    "passed": true,
+    "route_points": 2836,
+    "new_walkable_grid_points": 2122,
+    "floor_rays": 10630,
+    "headroom_rays": 8508,
+    "body_rays": 76492,
+    "failures": 0
+  },
+  "node_tests": {
+    "navigation_subtests_passed": 8,
+    "landscape_subtests_passed": 4,
+    "landscape_actual_glbs_checked": [
+      "space-05.glb",
+      "space-06.glb"
+    ],
+    "script_syntax_checks": "passed"
+  },
+  "browser_checks": {
+    "new_scene_visible": true,
+    "overview_and_reverse_views_checked": true,
+    "north_backstreet_view_checked": true,
+    "previous_same_camera_comparison_visible": true,
+    "manual_walk": "Held W for 23 seconds from the original canal street; HUD changed to east-side street and the map moved into the extension.",
+    "route_keyboard": "During the north-ring tour, ArrowDown on the route select changed to south_ring while tour remained active.",
+    "south_tour": "Observed progression through west-side street and south residential street. W then handed control to manual walking without resetting location.",
+    "full_browser_tour_completion": "Not required or claimed; complete paths are covered by the independent mesh audit and navigation sweep tests.",
+    "console_errors_and_warnings": [],
+    "overview_fog": "Aerial views use density .0045 for layout inspection; street and walking views retain .008. Both comparison stages use the same values."
+  },
+  "screenshots": [
+    "overview-final.png",
+    "previous-same-view.png",
+    "reverse-preview.png",
+    "north-preview.png",
+    "east-walk.png",
+    "south-tour.png",
+    "south-walk.png"
+  ],
+  "limitations": [
+    "Street structure is completed within the finite district. Newly added architecture and vegetation have simpler detail than the original bookshop core.",
+    "Only verified roads, passages and the original courtyard are walkable. House interiors, private gardens, water and distant landscape remain inaccessible.",
+    "Navigation uses conservative planar zones and swept obstacle proxies; it is not a full rigid-body physics simulation.",
+    "No online publication, asset downloads, installations or changes to existing versions."
+  ]
+}

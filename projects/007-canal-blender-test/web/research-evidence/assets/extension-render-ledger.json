@@ -1,0 +1,21 @@
+{
+  "maximum_attempts": 2,
+  "attempts": [
+    {
+      "camera": "EXT_Review_Overview",
+      "image": "extension-01-review-01.png",
+      "status": "complete",
+      "started_at": "2026-10-23T11:39:45.493956+00:00",
+      "render_seconds": 27.861,
+      "image_sha256": "ce74f64c754f5208c2b5b62f98c1cf4b73d782c20143f28ad5e8bef21bbd544f"
+    },
+    {
+      "camera": "EXT_Review_ReverseRear",
+      "image": "extension-01-review-02.png",
+      "status": "complete",
+      "started_at": "2026-10-23T11:40:13.410041+00:00",
+      "render_seconds": 26.376,
+      "image_sha256": "63752986f8d3798baa2c46088801b6d82f69fa1b9482eb594c3fe681ef0048e3"
+    }
+  ]
+}

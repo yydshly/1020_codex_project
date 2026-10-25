@@ -1,0 +1,23 @@
+{
+  "maximum_attempts": 2,
+  "attempts": [
+    {
+      "preview": 1,
+      "candidate": "rainy-canal-v5-preview-01.blend",
+      "image": "v5-preview-01.png",
+      "started_utc": "2026-10-23T09:36:08.980615+00:00",
+      "status": "complete",
+      "finished_utc": "2026-10-23T09:36:14.951223+00:00",
+      "render_seconds": 5.701
+    },
+    {
+      "preview": 2,
+      "candidate": "rainy-canal-v5-preview-02.blend",
+      "image": "v5-preview-02.png",
+      "started_utc": "2026-10-23T09:39:37.252684+00:00",
+      "status": "complete",
+      "finished_utc": "2026-10-23T09:39:43.044096+00:00",
+      "render_seconds": 5.443
+    }
+  ]
+}

@@ -1,0 +1,2630 @@
+{
+  "file": "web/models/cat-a-study.glb",
+  "bytes": 12980096,
+  "animations": [
+    {
+      "name": "Run",
+      "channels": 255,
+      "target_nodes": [
+        "Calf_Front_L",
+        "Calf_Front_R",
+        "Calf_back_L",
+        "Calf_back_R",
+        "Ear",
+        "Ear.001",
+        "Ear.002",
+        "Ear.003",
+        "Ear.004",
+        "Ear.006",
+        "Ear_connector",
+        "Ear_connector.001",
+        "Foot_Back_IK_L",
+        "Foot_Back_IK_R",
+        "Foot_Back_L",
+        "Foot_Back_L2",
+        "Foot_Back_L2.002",
+        "Foot_Back_R",
+        "Foot_front_IK_L",
+        "Foot_front_IK_R",
+        "Foot_front_L",
+        "Foot_front_L2",
+        "Foot_front_L2.002",
+        "Foot_front_R",
+        "Head",
+        "Head_controller",
+        "Hip",
+        "Knee_back_IK_L",
+        "Knee_back_IK_R",
+        "Knee_front_IK_L",
+        "Knee_front_IK_R",
+        "Mouth",
+        "Neck",
+        "Neck.001",
+        "Neck.002",
+        "Nose",
+        "Shoulder_front_L",
+        "Spine",
+        "Spine.001",
+        "Spine.002",
+        "Spine.003",
+        "Spine.004",
+        "Spine_controller_1",
+        "Spine_controller_2",
+        "Tail",
+        "Tail.001",
+        "Tail.002",
+        "Tail.003",
+        "Tail.004",
+        "Tail.005",
+        "Tail.006",
+        "Tail.007",
+        "Tail_controller",
+        "Thigh_Back_L",
+        "Thigh_Back_R",
+        "Thigh_front_L",
+        "Thigh_front_R",
+        "Toe_Pointer_L_front",
+        "Toe_Pointer_L_front.002",
+        "Toe_back_L_Pointer",
+        "Toe_back_L_Pointer.002",
+        "Toe_back_L_Ring",
+        "Toe_back_L_Ring.002",
+        "Toe_back_L_Thumb",
+        "Toe_back_L_Thumb.002",
+        "Toe_back_L_pinky",
+        "Toe_back_L_pinky.002",
+        "Toe_pinky_L_front",
+        "Toe_pinky_L_front.002",
+        "Toe_ring_L_front",
+        "Toe_ring_L_front.002",
+        "Toe_thumb_L_front",
+        "Toe_thumb_L_front.002",
+        "toe_connector_L",
+        "toe_connector_L.001",
+        "toe_connector_L.002",
+        "toe_connector_L_back",
+        "toe_connector_L_back.001",
+        "toe_connector_L_back.002",
+        "toe_connector_L_back.003",
+        "toe_connector_L_back.004",
+        "toe_connector_L_back.006",
+        "toe_connector_R",
+        "toe_connector_R.001",
+        "toe_connector_R.002"
+      ],
+      "head_tail_spine_channels": [
+        {
+          "node": "Tail_controller",
+          "path": "translation",
+          "keys": 15,
+          "component_ranges": [
+            5.264606528498916e-09,
+            0.8328952789306641,
+            1.3155555725097656
+          ],
+          "varies": true
+        },
+        {
+          "node": "Tail_controller",
+          "path": "rotation",
+          "keys": 15,
+          "component_ranges": [
+            0.1403241753578186,
+            1.186284404042226e-11,
+            4.417293614222828e-10,
+            0.009894371032714844
+          ],
+          "varies": true,
+          "rotation_span_degrees": 16.133210362525443
+        },
+        {
+          "node": "Tail_controller",
+          "path": "scale",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            1.1920928955078125e-07,
+            1.1920928955078125e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Spine",
+          "path": "translation",
+          "keys": 15,
+          "component_ranges": [
+            1.2472201049718024e-08,
+            1.2817983627319336,
+            1.6146183907985687
+          ],
+          "varies": true
+        },
+        {
+          "node": "Spine",
+          "path": "rotation",
+          "keys": 15,
+          "component_ranges": [
+            0.3267402648925781,
+            4.6499269501509843e-07,
+            5.632547868117399e-07,
+            0.17051690816879272
+          ],
+          "varies": true,
+          "rotation_span_degrees": 29.1727549479278
+        },
+        {
+          "node": "Spine",
+          "path": "scale",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            7.152557373046875e-07,
+            4.76837158203125e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Spine.001",
+          "path": "translation",
+          "keys": 15,
+          "component_ranges": [
+            3.789577809540368e-12,
+            9.453037534967734e-07,
+            1.0263743490668276e-06
+          ],
+          "varies": true
+        },
+        {
+          "node": "Spine.001",
+          "path": "rotation",
+          "keys": 15,
+          "component_ranges": [
+            1.9979462623596191,
+            5.214361404881629e-07,
+            3.1181710937744356e-06,
+            0.24739224463701248
+          ],
+          "varies": true,
+          "rotation_span_degrees": 50.421296630314906
+        },
+        {
+          "node": "Spine.001",
+          "path": "scale",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            0.00015604496002197266,
+            0.0001176595687866211
+          ],
+          "varies": true
+        },
+        {
+          "node": "Spine.002",
+          "path": "translation",
+          "keys": 15,
+          "component_ranges": [
+            6.732265569672768e-13,
+            1.0132789611816406e-06,
+            1.1742956758098444e-06
+          ],
+          "varies": true
+        },
+        {
+          "node": "Spine.002",
+          "path": "rotation",
+          "keys": 15,
+          "component_ranges": [
+            0.1839175820350647,
+            6.785974733247713e-07,
+            8.624644298738104e-08,
+            0.01575690507888794
+          ],
+          "varies": true,
+          "rotation_span_degrees": 19.546543578842062
+        },
+        {
+          "node": "Spine.002",
+          "path": "scale",
+          "keys": 15,
+          "component_ranges": [
+            1.1920928955078125e-07,
+            0.0003402233123779297,
+            0.0003338456153869629
+          ],
+          "varies": true
+        },
+        {
+          "node": "Spine.003",
+          "path": "translation",
+          "keys": 15,
+          "component_ranges": [
+            1.324466740709046e-12,
+            5.364418029785156e-07,
+            6.213525338694126e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Spine.003",
+          "path": "rotation",
+          "keys": 15,
+          "component_ranges": [
+            0.38555060839280486,
+            4.303688285745011e-07,
+            2.3328168197167543e-07,
+            0.07481807470321655
+          ],
+          "varies": true,
+          "rotation_span_degrees": 43.90660746625266
+        },
+        {
+          "node": "Spine.003",
+          "path": "scale",
+          "keys": 15,
+          "component_ranges": [
+            1.1920928955078125e-07,
+            0.00026911497116088867,
+            0.0004177093505859375
+          ],
+          "varies": true
+        },
+        {
+          "node": "Spine.004",
+          "path": "translation",
+          "keys": 15,
+          "component_ranges": [
+            2.654682246597262e-12,
+            1.0728836059570312e-06,
+            6.718642566738708e-07
+          ],
+          "varies": true
+        },
+        {
+          "node": "Spine.004",
+          "path": "rotation",
+          "keys": 15,
+          "component_ranges": [
+            0.18782446952536702,
+            1.0749624834716087e-07,
+            3.055696340403813e-07,
+            0.01684802770614624
+          ],
+          "varies": true,
+          "rotation_span_degrees": 21.225948298459954
+        },
+        {
+          "node": "Spine.004",
+          "path": "scale",
+          "keys": 15,
+          "component_ranges": [
+            1.1920928955078125e-07,
+            8.90493392944336e-05,
+            0.00017851591110229492
+          ],
+          "varies": true
+        },
+        {
+          "node": "Neck",
+          "path": "translation",
+          "keys": 15,
+          "component_ranges": [
+            1.7657628692546723e-08,
+            0.27229905128479004,
+            0.2927969694137573
+          ],
+          "varies": true
+        },
+        {
+          "node": "Neck",
+          "path": "rotation",
+          "keys": 15,
+          "component_ranges": [
+            0.21512994170188904,
+            9.220154595368513e-08,
+            1.6883357289998457e-07,
+            0.08957070112228394
+          ],
+          "varies": true,
+          "rotation_span_degrees": 18.034535900970262
+        },
+        {
+          "node": "Neck",
+          "path": "scale",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            2.384185791015625e-07,
+            2.980232238769531e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Neck.001",
+          "path": "translation",
+          "keys": 15,
+          "component_ranges": [
+            3.643374935514282e-13,
+            5.960464477539062e-07,
+            5.013304757994774e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Neck.001",
+          "path": "rotation",
+          "keys": 15,
+          "component_ranges": [
+            0.32122216699644923,
+            2.902303997132094e-08,
+            2.6551408094377393e-07,
+            0.05470168590545654
+          ],
+          "varies": true,
+          "rotation_span_degrees": 31.543886082113946
+        },
+        {
+          "node": "Neck.001",
+          "path": "scale",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            3.5762786865234375e-07,
+            2.980232238769531e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Neck.002",
+          "path": "translation",
+          "keys": 15,
+          "component_ranges": [
+            3.782594490452443e-13,
+            1.0728836059570312e-06,
+            9.378525192005327e-07
+          ],
+          "varies": true
+        },
+        {
+          "node": "Neck.002",
+          "path": "rotation",
+          "keys": 15,
+          "component_ranges": [
+            0.2680394873023033,
+            2.2441426494879124e-08,
+            2.4377570539968474e-07,
+            0.020370185375213623
+          ],
+          "varies": true,
+          "rotation_span_degrees": 16.46959011152193
+        },
+        {
+          "node": "Neck.002",
+          "path": "scale",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            1.7881393432617188e-07,
+            2.384185791015625e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Head",
+          "path": "translation",
+          "keys": 15,
+          "component_ranges": [
+            6.054152676144425e-13,
+            1.2516975402832031e-06,
+            5.931285613769433e-07
+          ],
+          "varies": true
+        },
+        {
+          "node": "Head",
+          "path": "rotation",
+          "keys": 15,
+          "component_ranges": [
+            8.50916990202677e-08,
+            0.07832682132720947,
+            0.0843920111656189,
+            3.3091993145717424e-08
+          ],
+          "varies": true,
+          "rotation_span_degrees": 13.2013125667551
+        },
+        {
+          "node": "Head",
+          "path": "scale",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            2.384185791015625e-07,
+            4.76837158203125e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Head_controller",
+          "path": "translation",
+          "keys": 15,
+          "component_ranges": [
+            1.9968803144365666e-07,
+            0.15764236450195312,
+            0.3979361057281494
+          ],
+          "varies": true
+        },
+        {
+          "node": "Head_controller",
+          "path": "rotation",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "varies": false,
+          "rotation_span_degrees": 0.0
+        },
+        {
+          "node": "Head_controller",
+          "path": "scale",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "varies": false
+        },
+        {
+          "node": "Tail",
+          "path": "translation",
+          "keys": 15,
+          "component_ranges": [
+            1.5368050121367105e-07,
+            0.8439886569976807,
+            1.0922951698303223
+          ],
+          "varies": true
+        },
+        {
+          "node": "Tail",
+          "path": "rotation",
+          "keys": 15,
+          "component_ranges": [
+            0.08456534147262573,
+            1.1625568070404977e-14,
+            1.2603702447894693e-14,
+            0.06431007385253906
+          ],
+          "varies": true,
+          "rotation_span_degrees": 11.767664350920668
+        },
+        {
+          "node": "Tail",
+          "path": "scale",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            1.1920928955078125e-07,
+            1.1920928955078125e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Tail.001",
+          "path": "translation",
+          "keys": 15,
+          "component_ranges": [
+            1.7950011965695012e-07,
+            0.6070832908153534,
+            0.759059876203537
+          ],
+          "varies": true
+        },
+        {
+          "node": "Tail.001",
+          "path": "rotation",
+          "keys": 15,
+          "component_ranges": [
+            0.16628612577915192,
+            1.1048122416923434e-08,
+            2.0519873800139976e-08,
+            0.02502262592315674
+          ],
+          "varies": true,
+          "rotation_span_degrees": 13.260285169864623
+        },
+        {
+          "node": "Tail.001",
+          "path": "scale",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            5.364418029785156e-07,
+            7.152557373046875e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Tail.002",
+          "path": "translation",
+          "keys": 15,
+          "component_ranges": [
+            1.4162421371278003e-13,
+            8.642673492431641e-07,
+            8.275740128738107e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Tail.002",
+          "path": "rotation",
+          "keys": 15,
+          "component_ranges": [
+            0.2439032457768917,
+            1.559075357704387e-08,
+            1.6534271951584856e-08,
+            0.03488445281982422
+          ],
+          "varies": true,
+          "rotation_span_degrees": 19.346369855969353
+        },
+        {
+          "node": "Tail.002",
+          "path": "scale",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            5.364418029785156e-07,
+            5.960464477539062e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Tail.003",
+          "path": "translation",
+          "keys": 15,
+          "component_ranges": [
+            4.5408636703200833e-13,
+            1.817941665649414e-06,
+            1.333745103693218e-06
+          ],
+          "varies": true
+        },
+        {
+          "node": "Tail.003",
+          "path": "rotation",
+          "keys": 15,
+          "component_ranges": [
+            0.060157043946674094,
+            1.2405234173229474e-08,
+            1.3598498327382913e-08,
+            0.0017831921577453613
+          ],
+          "varies": true,
+          "rotation_span_degrees": 5.713128090014512
+        },
+        {
+          "node": "Tail.003",
+          "path": "scale",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            4.172325134277344e-07,
+            4.76837158203125e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Tail.004",
+          "path": "translation",
+          "keys": 15,
+          "component_ranges": [
+            4.964704320396807e-13,
+            1.9073486328125e-06,
+            1.6068764239207667e-06
+          ],
+          "varies": true
+        },
+        {
+          "node": "Tail.004",
+          "path": "rotation",
+          "keys": 15,
+          "component_ranges": [
+            0.1932148125488311,
+            1.0620023971341652e-08,
+            4.3291531443001574e-08,
+            0.019437551498413086
+          ],
+          "varies": true,
+          "rotation_span_degrees": 15.817716192914576
+        },
+        {
+          "node": "Tail.004",
+          "path": "scale",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            6.556510925292969e-07,
+            5.364418029785156e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Tail.005",
+          "path": "translation",
+          "keys": 15,
+          "component_ranges": [
+            2.6415527480238427e-13,
+            2.205371856689453e-06,
+            1.971426968339074e-06
+          ],
+          "varies": true
+        },
+        {
+          "node": "Tail.005",
+          "path": "rotation",
+          "keys": 15,
+          "component_ranges": [
+            9.049122440263346e-08,
+            0.07037508487701416,
+            0.36327359173446894,
+            1.3033940149398404e-08
+          ],
+          "varies": true,
+          "rotation_span_degrees": 30.533876782062507
+        },
+        {
+          "node": "Tail.005",
+          "path": "scale",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            4.172325134277344e-07,
+            8.344650268554688e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Tail.006",
+          "path": "translation",
+          "keys": 15,
+          "component_ranges": [
+            6.056287741272592e-13,
+            3.993511199951172e-06,
+            1.459377131141082e-06
+          ],
+          "varies": true
+        },
+        {
+          "node": "Tail.006",
+          "path": "rotation",
+          "keys": 15,
+          "component_ranges": [
+            0.25035551469773054,
+            2.661415976490389e-09,
+            6.657693241152174e-08,
+            0.03047400712966919
+          ],
+          "varies": true,
+          "rotation_span_degrees": 17.07633021453951
+        },
+        {
+          "node": "Tail.006",
+          "path": "scale",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            6.556510925292969e-07,
+            1.0132789611816406e-06
+          ],
+          "varies": true
+        },
+        {
+          "node": "Tail.007",
+          "path": "translation",
+          "keys": 15,
+          "component_ranges": [
+            3.637668101854133e-13,
+            2.1457672119140625e-06,
+            1.4284926237451145e-06
+          ],
+          "varies": true
+        },
+        {
+          "node": "Tail.007",
+          "path": "rotation",
+          "keys": 15,
+          "component_ranges": [
+            1.3094206770952743e-08,
+            0.004649162292480469,
+            0.10164825711399317,
+            4.283151611161884e-10
+          ],
+          "varies": true,
+          "rotation_span_degrees": 6.2665450979647295
+        },
+        {
+          "node": "Tail.007",
+          "path": "scale",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            7.152557373046875e-07,
+            4.76837158203125e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Spine_controller_1",
+          "path": "translation",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "varies": false
+        },
+        {
+          "node": "Spine_controller_1",
+          "path": "rotation",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "varies": false,
+          "rotation_span_degrees": 0.0
+        },
+        {
+          "node": "Spine_controller_1",
+          "path": "scale",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "varies": false
+        },
+        {
+          "node": "Spine_controller_2",
+          "path": "translation",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            0.7935638427734375,
+            0.233076810836792
+          ],
+          "varies": true
+        },
+        {
+          "node": "Spine_controller_2",
+          "path": "rotation",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "varies": false,
+          "rotation_span_degrees": 0.0
+        },
+        {
+          "node": "Spine_controller_2",
+          "path": "scale",
+          "keys": 15,
+          "component_ranges": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "varies": false
+        }
+      ],
+      "world_motion": {
+        "Tail_controller": {
+          "position_ranges": [
+            5.264606528498916e-09,
+            0.8328952789306641,
+            1.3155555725097656
+          ],
+          "matrix_max_delta_from_first": 1.3155555725097656
+        },
+        "Spine.004": {
+          "position_ranges": [
+            2.686076947999006e-07,
+            0.8210651413807675,
+            1.1415285298090805
+          ],
+          "matrix_max_delta_from_first": 1.141503666569681
+        },
+        "Spine.003": {
+          "position_ranges": [
+            2.4648513255829477e-07,
+            1.082001713052222,
+            1.4021859419064295
+          ],
+          "matrix_max_delta_from_first": 1.4021470623183991
+        },
+        "Spine.002": {
+          "position_ranges": [
+            9.879844840126167e-08,
+            0.9463814687693026,
+            1.3922223125403725
+          ],
+          "matrix_max_delta_from_first": 1.3921594780838373
+        },
+        "Spine.001": {
+          "position_ranges": [
+            1.2469386396056077e-08,
+            1.2817993161205936,
+            1.6146189502845525
+          ],
+          "matrix_max_delta_from_first": 1.6146188379529876
+        },
+        "Spine": {
+          "position_ranges": [
+            1.2472201049718024e-08,
+            1.2817983627319336,
+            1.6146183907985687
+          ],
+          "matrix_max_delta_from_first": 1.6146183907985687
+        },
+        "Head": {
+          "position_ranges": [
+            1.9968747970160731e-07,
+            0.15761325594883058,
+            0.3980104574521812
+          ],
+          "matrix_max_delta_from_first": 0.3980104574521812
+        },
+        "Neck.002": {
+          "position_ranges": [
+            3.228566303105199e-07,
+            0.32307304457282315,
+            0.27357927729316733
+          ],
+          "matrix_max_delta_from_first": 0.4516972938346342
+        },
+        "Neck.001": {
+          "position_ranges": [
+            2.685137718529958e-07,
+            0.4701050823620627,
+            0.24321370007410903
+          ],
+          "matrix_max_delta_from_first": 0.42366267268842783
+        },
+        "Neck": {
+          "position_ranges": [
+            1.7657628692546723e-08,
+            0.27229905128479004,
+            0.2927969694137573
+          ],
+          "matrix_max_delta_from_first": 0.27229905128479004
+        },
+        "Head_controller": {
+          "position_ranges": [
+            1.9968803144365666e-07,
+            0.15764236450195312,
+            0.3979361057281494
+          ],
+          "matrix_max_delta_from_first": 0.3979361057281494
+        },
+        "Tail.007": {
+          "position_ranges": [
+            8.010784784187414e-08,
+            0.6595597406998333,
+            1.1847495810394522
+          ],
+          "matrix_max_delta_from_first": 1.1847495810394522
+        },
+        "Tail.006": {
+          "position_ranges": [
+            1.709916102993734e-07,
+            0.6797652211117513,
+            1.1084527763154464
+          ],
+          "matrix_max_delta_from_first": 1.1084527763154464
+        },
+        "Tail.005": {
+          "position_ranges": [
+            2.157407364878007e-07,
+            0.8197772324014307,
+            1.1114767334422222
+          ],
+          "matrix_max_delta_from_first": 1.104789944637111
+        },
+        "Tail.004": {
+          "position_ranges": [
+            2.0244360787946964e-07,
+            0.7777580427684807,
+            1.083623850051345
+          ],
+          "matrix_max_delta_from_first": 1.083376921757134
+        },
+        "Tail.003": {
+          "position_ranges": [
+            1.7316908195194347e-07,
+            0.6921433410531406,
+            1.0570394741253986
+          ],
+          "matrix_max_delta_from_first": 1.0570394741253986
+        },
+        "Tail.002": {
+          "position_ranges": [
+            1.5433276874270084e-07,
+            0.8805311141701067,
+            1.09967908205196
+          ],
+          "matrix_max_delta_from_first": 1.0964280257578523
+        },
+        "Tail.001": {
+          "position_ranges": [
+            1.5368049513012764e-07,
+            0.9775887213843646,
+            1.1001111764333755
+          ],
+          "matrix_max_delta_from_first": 1.0961699300679877
+        },
+        "Tail": {
+          "position_ranges": [
+            1.5368050121367105e-07,
+            0.8439886569976807,
+            1.0922951698303223
+          ],
+          "matrix_max_delta_from_first": 1.0922951698303223
+        },
+        "Spine_controller_1": {
+          "position_ranges": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "matrix_max_delta_from_first": 3.883149024552779e-09
+        },
+        "Spine_controller_2": {
+          "position_ranges": [
+            0.0,
+            0.7935638427734375,
+            0.233076810836792
+          ],
+          "matrix_max_delta_from_first": 0.7935638427734375
+        }
+      },
+      "start": 0.0,
+      "end": 0.5833333134651184,
+      "duration": 0.5833333134651184
+    },
+    {
+      "name": "Walk",
+      "channels": 255,
+      "target_nodes": [
+        "Calf_Front_L",
+        "Calf_Front_R",
+        "Calf_back_L",
+        "Calf_back_R",
+        "Ear",
+        "Ear.001",
+        "Ear.002",
+        "Ear.003",
+        "Ear.004",
+        "Ear.006",
+        "Ear_connector",
+        "Ear_connector.001",
+        "Foot_Back_IK_L",
+        "Foot_Back_IK_R",
+        "Foot_Back_L",
+        "Foot_Back_L2",
+        "Foot_Back_L2.002",
+        "Foot_Back_R",
+        "Foot_front_IK_L",
+        "Foot_front_IK_R",
+        "Foot_front_L",
+        "Foot_front_L2",
+        "Foot_front_L2.002",
+        "Foot_front_R",
+        "Head",
+        "Head_controller",
+        "Hip",
+        "Knee_back_IK_L",
+        "Knee_back_IK_R",
+        "Knee_front_IK_L",
+        "Knee_front_IK_R",
+        "Mouth",
+        "Neck",
+        "Neck.001",
+        "Neck.002",
+        "Nose",
+        "Shoulder_front_L",
+        "Spine",
+        "Spine.001",
+        "Spine.002",
+        "Spine.003",
+        "Spine.004",
+        "Spine_controller_1",
+        "Spine_controller_2",
+        "Tail",
+        "Tail.001",
+        "Tail.002",
+        "Tail.003",
+        "Tail.004",
+        "Tail.005",
+        "Tail.006",
+        "Tail.007",
+        "Tail_controller",
+        "Thigh_Back_L",
+        "Thigh_Back_R",
+        "Thigh_front_L",
+        "Thigh_front_R",
+        "Toe_Pointer_L_front",
+        "Toe_Pointer_L_front.002",
+        "Toe_back_L_Pointer",
+        "Toe_back_L_Pointer.002",
+        "Toe_back_L_Ring",
+        "Toe_back_L_Ring.002",
+        "Toe_back_L_Thumb",
+        "Toe_back_L_Thumb.002",
+        "Toe_back_L_pinky",
+        "Toe_back_L_pinky.002",
+        "Toe_pinky_L_front",
+        "Toe_pinky_L_front.002",
+        "Toe_ring_L_front",
+        "Toe_ring_L_front.002",
+        "Toe_thumb_L_front",
+        "Toe_thumb_L_front.002",
+        "toe_connector_L",
+        "toe_connector_L.001",
+        "toe_connector_L.002",
+        "toe_connector_L_back",
+        "toe_connector_L_back.001",
+        "toe_connector_L_back.002",
+        "toe_connector_L_back.003",
+        "toe_connector_L_back.004",
+        "toe_connector_L_back.006",
+        "toe_connector_R",
+        "toe_connector_R.001",
+        "toe_connector_R.002"
+      ],
+      "head_tail_spine_channels": [
+        {
+          "node": "Tail_controller",
+          "path": "translation",
+          "keys": 28,
+          "component_ranges": [
+            1.3478249627496552e-09,
+            0.23128128051757812,
+            0.5616827011108398
+          ],
+          "varies": true
+        },
+        {
+          "node": "Tail_controller",
+          "path": "rotation",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "varies": false,
+          "rotation_span_degrees": 1.7075472925031877e-06
+        },
+        {
+          "node": "Tail_controller",
+          "path": "scale",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "varies": false
+        },
+        {
+          "node": "Spine",
+          "path": "translation",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "varies": false
+        },
+        {
+          "node": "Spine",
+          "path": "rotation",
+          "keys": 28,
+          "component_ranges": [
+            0.06367999315261841,
+            6.746734015905531e-08,
+            1.0495705282664858e-07,
+            0.03767049312591553
+          ],
+          "varies": true,
+          "rotation_span_degrees": 6.02158758319337
+        },
+        {
+          "node": "Spine",
+          "path": "scale",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            7.152557373046875e-07,
+            7.152557373046875e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Spine.001",
+          "path": "translation",
+          "keys": 28,
+          "component_ranges": [
+            3.659620132975827e-12,
+            1.0875845077862323e-06,
+            1.012585812532052e-06
+          ],
+          "varies": true
+        },
+        {
+          "node": "Spine.001",
+          "path": "rotation",
+          "keys": 28,
+          "component_ranges": [
+            1.999989628791809,
+            2.2881529204710205e-07,
+            3.0651876841147896e-06,
+            0.12656515929847956
+          ],
+          "varies": true,
+          "rotation_span_degrees": 15.248677928834265
+        },
+        {
+          "node": "Spine.001",
+          "path": "scale",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            2.5451183319091797e-05,
+            2.0265579223632812e-05
+          ],
+          "varies": true
+        },
+        {
+          "node": "Spine.002",
+          "path": "translation",
+          "keys": 28,
+          "component_ranges": [
+            3.7167572622051614e-13,
+            1.430511474609375e-06,
+            9.353640564313537e-07
+          ],
+          "varies": true
+        },
+        {
+          "node": "Spine.002",
+          "path": "rotation",
+          "keys": 28,
+          "component_ranges": [
+            0.0003147711977362633,
+            9.388372745888773e-09,
+            1.5809054065840655e-10,
+            1.1324882507324219e-06
+          ],
+          "varies": true,
+          "rotation_span_degrees": 0.0360703554189684
+        },
+        {
+          "node": "Spine.002",
+          "path": "scale",
+          "keys": 28,
+          "component_ranges": [
+            1.1920928955078125e-07,
+            1.3113021850585938e-06,
+            4.231929779052734e-06
+          ],
+          "varies": true
+        },
+        {
+          "node": "Spine.003",
+          "path": "translation",
+          "keys": 28,
+          "component_ranges": [
+            9.318020530516002e-13,
+            7.152557373046875e-07,
+            6.429064995927547e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Spine.003",
+          "path": "rotation",
+          "keys": 28,
+          "component_ranges": [
+            0.0004525766707956791,
+            4.129958597332006e-09,
+            2.7349944531351866e-10,
+            2.5033950805664062e-06
+          ],
+          "varies": true,
+          "rotation_span_degrees": 0.05003005106406374
+        },
+        {
+          "node": "Spine.003",
+          "path": "scale",
+          "keys": 28,
+          "component_ranges": [
+            5.960464477539063e-08,
+            4.172325134277344e-06,
+            4.076957702636719e-05
+          ],
+          "varies": true
+        },
+        {
+          "node": "Spine.004",
+          "path": "translation",
+          "keys": 28,
+          "component_ranges": [
+            1.124369044050444e-12,
+            4.76837158203125e-07,
+            5.52864719338686e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Spine.004",
+          "path": "rotation",
+          "keys": 28,
+          "component_ranges": [
+            0.0003892006352543831,
+            8.020606401260011e-10,
+            4.060857206056312e-11,
+            1.7881393432617188e-06
+          ],
+          "varies": true,
+          "rotation_span_degrees": 0.03843596707129541
+        },
+        {
+          "node": "Spine.004",
+          "path": "scale",
+          "keys": 28,
+          "component_ranges": [
+            2.980232238769531e-07,
+            2.562999725341797e-05,
+            1.5079975128173828e-05
+          ],
+          "varies": true
+        },
+        {
+          "node": "Neck",
+          "path": "translation",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "varies": false
+        },
+        {
+          "node": "Neck",
+          "path": "rotation",
+          "keys": 28,
+          "component_ranges": [
+            0.03675282001495361,
+            6.322878220998973e-09,
+            9.848349691310432e-09,
+            0.028091490268707275
+          ],
+          "varies": true,
+          "rotation_span_degrees": 5.301371773365425
+        },
+        {
+          "node": "Neck",
+          "path": "scale",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            1.1920928955078125e-07,
+            2.980232238769531e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Neck.001",
+          "path": "translation",
+          "keys": 28,
+          "component_ranges": [
+            1.7535082950546552e-13,
+            6.556510925292969e-07,
+            2.7554706605315005e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Neck.001",
+          "path": "rotation",
+          "keys": 28,
+          "component_ranges": [
+            0.0005207834765315056,
+            2.8682922703637814e-10,
+            1.800206650415248e-10,
+            2.6226043701171875e-06
+          ],
+          "varies": true,
+          "rotation_span_degrees": 0.03397071376539689
+        },
+        {
+          "node": "Neck.001",
+          "path": "scale",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            4.172325134277344e-07,
+            3.5762786865234375e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Neck.002",
+          "path": "translation",
+          "keys": 28,
+          "component_ranges": [
+            3.1917096766367285e-13,
+            7.152557373046875e-07,
+            5.407470098361955e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Neck.002",
+          "path": "rotation",
+          "keys": 28,
+          "component_ranges": [
+            0.0003586774691939354,
+            1.5204904002530384e-09,
+            1.0563971919452797e-10,
+            1.5497207641601562e-06
+          ],
+          "varies": true,
+          "rotation_span_degrees": 0.022492602822866935
+        },
+        {
+          "node": "Neck.002",
+          "path": "scale",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            5.960464477539062e-07,
+            3.5762786865234375e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Head",
+          "path": "translation",
+          "keys": 28,
+          "component_ranges": [
+            2.9736154809117607e-13,
+            1.3709068298339844e-06,
+            6.987525011936668e-07
+          ],
+          "varies": true
+        },
+        {
+          "node": "Head",
+          "path": "rotation",
+          "keys": 28,
+          "component_ranges": [
+            5.684341886080802e-14,
+            0.0,
+            0.0,
+            5.684341886080802e-14
+          ],
+          "varies": false,
+          "rotation_span_degrees": 0.0
+        },
+        {
+          "node": "Head",
+          "path": "scale",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            2.384185791015625e-07,
+            2.980232238769531e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Head_controller",
+          "path": "translation",
+          "keys": 28,
+          "component_ranges": [
+            7.581319572125267e-08,
+            0.3955726623535156,
+            0.620640754699707
+          ],
+          "varies": true
+        },
+        {
+          "node": "Head_controller",
+          "path": "rotation",
+          "keys": 28,
+          "component_ranges": [
+            0.03665456175804138,
+            1.4578418472410704e-09,
+            4.810118525711005e-09,
+            0.02071678638458252
+          ],
+          "varies": true,
+          "rotation_span_degrees": 4.825112999508697
+        },
+        {
+          "node": "Head_controller",
+          "path": "scale",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            1.7881393432617188e-07,
+            1.1920928955078125e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Tail",
+          "path": "translation",
+          "keys": 28,
+          "component_ranges": [
+            1.571843633030312e-08,
+            0.27527308464050293,
+            0.37584567070007324
+          ],
+          "varies": true
+        },
+        {
+          "node": "Tail",
+          "path": "rotation",
+          "keys": 28,
+          "component_ranges": [
+            0.023645401000976562,
+            1.0977803859156987e-14,
+            1.0083612352564304e-14,
+            0.012179255485534668
+          ],
+          "varies": true,
+          "rotation_span_degrees": 2.930138674480821
+        },
+        {
+          "node": "Tail",
+          "path": "scale",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            1.7881393432617188e-07,
+            1.7881393432617188e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Tail.001",
+          "path": "translation",
+          "keys": 28,
+          "component_ranges": [
+            4.554648436183584e-09,
+            0.079426109790802,
+            0.1685975156724453
+          ],
+          "varies": true
+        },
+        {
+          "node": "Tail.001",
+          "path": "rotation",
+          "keys": 28,
+          "component_ranges": [
+            0.05974506959319115,
+            7.384040046076734e-10,
+            5.3481080536377235e-09,
+            0.005494534969329834
+          ],
+          "varies": true,
+          "rotation_span_degrees": 6.610373986171674
+        },
+        {
+          "node": "Tail.001",
+          "path": "scale",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            6.556510925292969e-07,
+            7.152557373046875e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Tail.002",
+          "path": "translation",
+          "keys": 28,
+          "component_ranges": [
+            2.0046127708088154e-13,
+            1.996755599975586e-06,
+            1.6805130371722043e-06
+          ],
+          "varies": true
+        },
+        {
+          "node": "Tail.002",
+          "path": "rotation",
+          "keys": 28,
+          "component_ranges": [
+            0.04378632642328739,
+            1.4030270278908574e-09,
+            3.5470015813388045e-09,
+            0.00211489200592041
+          ],
+          "varies": true,
+          "rotation_span_degrees": 5.023795214164249
+        },
+        {
+          "node": "Tail.002",
+          "path": "scale",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            6.556510925292969e-07,
+            7.152557373046875e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Tail.003",
+          "path": "translation",
+          "keys": 28,
+          "component_ranges": [
+            3.7686920370452043e-13,
+            3.129243850708008e-06,
+            1.7059368246918893e-06
+          ],
+          "varies": true
+        },
+        {
+          "node": "Tail.003",
+          "path": "rotation",
+          "keys": 28,
+          "component_ranges": [
+            0.030587932094931602,
+            1.3113634622641257e-09,
+            6.0580759297934605e-09,
+            0.00024068355560302734
+          ],
+          "varies": true,
+          "rotation_span_degrees": 3.4715667421868814
+        },
+        {
+          "node": "Tail.003",
+          "path": "scale",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            5.960464477539062e-07,
+            6.556510925292969e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Tail.004",
+          "path": "translation",
+          "keys": 28,
+          "component_ranges": [
+            5.373820962870091e-13,
+            1.9073486328125e-06,
+            2.0421657609404065e-06
+          ],
+          "varies": true
+        },
+        {
+          "node": "Tail.004",
+          "path": "rotation",
+          "keys": 28,
+          "component_ranges": [
+            0.07379311323165894,
+            1.10932418806442e-09,
+            1.6312954542740954e-08,
+            0.007475376129150391
+          ],
+          "varies": true,
+          "rotation_span_degrees": 6.068540571971426
+        },
+        {
+          "node": "Tail.004",
+          "path": "scale",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            6.556510925292969e-07,
+            7.748603820800781e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Tail.005",
+          "path": "translation",
+          "keys": 28,
+          "component_ranges": [
+            5.176567995871656e-13,
+            2.3245811462402344e-06,
+            2.0974690642105998e-06
+          ],
+          "varies": true
+        },
+        {
+          "node": "Tail.005",
+          "path": "rotation",
+          "keys": 28,
+          "component_ranges": [
+            2.4894378114481697e-08,
+            0.01747828722000122,
+            0.10365476459264755,
+            1.1944933930863044e-09
+          ],
+          "varies": true,
+          "rotation_span_degrees": 7.674875896352846
+        },
+        {
+          "node": "Tail.005",
+          "path": "scale",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            8.344650268554688e-07,
+            8.344650268554688e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Tail.006",
+          "path": "translation",
+          "keys": 28,
+          "component_ranges": [
+            9.933149951440318e-13,
+            3.337860107421875e-06,
+            1.6950800727499882e-06
+          ],
+          "varies": true
+        },
+        {
+          "node": "Tail.006",
+          "path": "rotation",
+          "keys": 28,
+          "component_ranges": [
+            0.0807957211509347,
+            6.049631906535069e-10,
+            1.928162585151938e-08,
+            0.0039037466049194336
+          ],
+          "varies": true,
+          "rotation_span_degrees": 5.623305970786299
+        },
+        {
+          "node": "Tail.006",
+          "path": "scale",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            7.748603820800781e-07,
+            7.748603820800781e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Tail.007",
+          "path": "translation",
+          "keys": 28,
+          "component_ranges": [
+            3.312417207928034e-13,
+            2.682209014892578e-06,
+            2.1870565660719876e-06
+          ],
+          "varies": true
+        },
+        {
+          "node": "Tail.007",
+          "path": "rotation",
+          "keys": 28,
+          "component_ranges": [
+            3.1980492559702256e-09,
+            0.00025790929794311523,
+            0.0357234813272953,
+            6.675549002466141e-11
+          ],
+          "varies": true,
+          "rotation_span_degrees": 2.392356145304222
+        },
+        {
+          "node": "Tail.007",
+          "path": "scale",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            8.344650268554688e-07,
+            7.748603820800781e-07
+          ],
+          "varies": false
+        },
+        {
+          "node": "Spine_controller_1",
+          "path": "translation",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "varies": false
+        },
+        {
+          "node": "Spine_controller_1",
+          "path": "rotation",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "varies": false,
+          "rotation_span_degrees": 0.0
+        },
+        {
+          "node": "Spine_controller_1",
+          "path": "scale",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "varies": false
+        },
+        {
+          "node": "Spine_controller_2",
+          "path": "translation",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            0.7237555980682373,
+            0.13361644744873047
+          ],
+          "varies": true
+        },
+        {
+          "node": "Spine_controller_2",
+          "path": "rotation",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "varies": false,
+          "rotation_span_degrees": 1.7075472925031877e-06
+        },
+        {
+          "node": "Spine_controller_2",
+          "path": "scale",
+          "keys": 28,
+          "component_ranges": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "varies": false
+        }
+      ],
+      "world_motion": {
+        "Tail_controller": {
+          "position_ranges": [
+            1.3478249627496552e-09,
+            0.23128128051757812,
+            0.5616827011108398
+          ],
+          "matrix_max_delta_from_first": 0.5616827011108398
+        },
+        "Spine.004": {
+          "position_ranges": [
+            4.3291333563919097e-10,
+            0.3344145655477535,
+            0.14052847387665057
+          ],
+          "matrix_max_delta_from_first": 0.3344145655477535
+        },
+        "Spine.003": {
+          "position_ranges": [
+            9.387818368001596e-11,
+            0.22443889649645987,
+            0.09493058714277991
+          ],
+          "matrix_max_delta_from_first": 0.22443889649645987
+        },
+        "Spine.002": {
+          "position_ranges": [
+            2.021613073875344e-10,
+            0.12208168339199776,
+            0.051154468327898606
+          ],
+          "matrix_max_delta_from_first": 0.14847706979914077
+        },
+        "Spine.001": {
+          "position_ranges": [
+            3.996500947179815e-12,
+            1.131741533821895e-06,
+            8.329412897190025e-07
+          ],
+          "matrix_max_delta_from_first": 0.1483691918824162
+        },
+        "Spine": {
+          "position_ranges": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "matrix_max_delta_from_first": 0.09095992427418115
+        },
+        "Head": {
+          "position_ranges": [
+            6.354209770636991e-08,
+            0.22047024105576107,
+            0.05908467061672962
+          ],
+          "matrix_max_delta_from_first": 0.22047024105576107
+        },
+        "Neck.002": {
+          "position_ranges": [
+            4.0736393814757813e-08,
+            0.1413662919905474,
+            0.03772126134344811
+          ],
+          "matrix_max_delta_from_first": 0.1413662919905474
+        },
+        "Neck.001": {
+          "position_ranges": [
+            2.176101948315285e-08,
+            0.07565330377177582,
+            0.02057749440078971
+          ],
+          "matrix_max_delta_from_first": 0.08952679220159035
+        },
+        "Neck": {
+          "position_ranges": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "matrix_max_delta_from_first": 0.08925092936075282
+        },
+        "Head_controller": {
+          "position_ranges": [
+            7.581319572125267e-08,
+            0.3955726623535156,
+            0.620640754699707
+          ],
+          "matrix_max_delta_from_first": 0.620640754699707
+        },
+        "Tail.007": {
+          "position_ranges": [
+            9.023901640473306e-09,
+            0.1983865168687684,
+            0.42139095972281737
+          ],
+          "matrix_max_delta_from_first": 0.4327579075643281
+        },
+        "Tail.006": {
+          "position_ranges": [
+            1.7839704870023623e-08,
+            0.18856085010525625,
+            0.3625319713830839
+          ],
+          "matrix_max_delta_from_first": 0.39765417372107104
+        },
+        "Tail.005": {
+          "position_ranges": [
+            2.1677862869409172e-08,
+            0.16780588230234272,
+            0.3854269985652925
+          ],
+          "matrix_max_delta_from_first": 0.3082503643056241
+        },
+        "Tail.004": {
+          "position_ranges": [
+            2.020130348545451e-08,
+            0.10691706898036824,
+            0.382257922973408
+          ],
+          "matrix_max_delta_from_first": 0.25288668224830124
+        },
+        "Tail.003": {
+          "position_ranges": [
+            1.582691738257633e-08,
+            0.14433313074621212,
+            0.35472550215976373
+          ],
+          "matrix_max_delta_from_first": 0.23302225132814147
+        },
+        "Tail.002": {
+          "position_ranges": [
+            1.505979587247449e-08,
+            0.20826539730315963,
+            0.35829639685625736
+          ],
+          "matrix_max_delta_from_first": 0.3103426827095799
+        },
+        "Tail.001": {
+          "position_ranges": [
+            1.5718396641428427e-08,
+            0.25258240948679767,
+            0.35948668006018947
+          ],
+          "matrix_max_delta_from_first": 0.3565082711381087
+        },
+        "Tail": {
+          "position_ranges": [
+            1.571843633030312e-08,
+            0.27527308464050293,
+            0.37584567070007324
+          ],
+          "matrix_max_delta_from_first": 0.37584567070007324
+        },
+        "Spine_controller_1": {
+          "position_ranges": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "matrix_max_delta_from_first": 8.044689969732843e-09
+        },
+        "Spine_controller_2": {
+          "position_ranges": [
+            0.0,
+            0.7237555980682373,
+            0.13361644744873047
+          ],
+          "matrix_max_delta_from_first": 0.7237555980682373
+        }
+      },
+      "start": 0.0,
+      "end": 1.125,
+      "duration": 1.125
+    }
+  ],
+  "meshes": [
+    {
+      "id": 0,
+      "name": "Cube.001",
+      "primitives": [
+        {
+          "vertices": 23567,
+          "triangles": 45296,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "COLOR_0",
+            "COLOR_1",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "material": 0,
+          "weight_sum_min_max": [
+            0.9999998658895493,
+            1.000000137835741
+          ],
+          "max_joint_index": 84
+        }
+      ],
+      "vertices": 23567,
+      "triangles": 45296
+    },
+    {
+      "id": 1,
+      "name": "Cat_A_original_groom",
+      "primitives": [
+        {
+          "vertices": 99120,
+          "triangles": 158592,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "material": 1,
+          "weight_sum_min_max": [
+            0.9999998547136784,
+            1.0000001192092896
+          ],
+          "max_joint_index": 84
+        }
+      ],
+      "vertices": 99120,
+      "triangles": 158592
+    },
+    {
+      "id": 2,
+      "name": "Cat_A_original_whiskers",
+      "primitives": [
+        {
+          "vertices": 480,
+          "triangles": 768,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "material": 2,
+          "weight_sum_min_max": [
+            0.9999998968851287,
+            1.0000000894069672
+          ],
+          "max_joint_index": 82
+        }
+      ],
+      "vertices": 480,
+      "triangles": 768
+    },
+    {
+      "id": 3,
+      "name": "Sphere.001",
+      "primitives": [
+        {
+          "vertices": 2047,
+          "triangles": 3968,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "material": 3,
+          "weight_sum_min_max": [
+            0.9999998901039362,
+            1.0000000945292413
+          ],
+          "max_joint_index": 21
+        }
+      ],
+      "vertices": 2047,
+      "triangles": 3968
+    },
+    {
+      "id": 4,
+      "name": "Sphere.002",
+      "primitives": [
+        {
+          "vertices": 2047,
+          "triangles": 3968,
+          "mode": 4,
+          "attributes": [
+            "POSITION",
+            "NORMAL",
+            "TEXCOORD_0",
+            "JOINTS_0",
+            "WEIGHTS_0"
+          ],
+          "material": 4,
+          "weight_sum_min_max": [
+            0.9999998901039362,
+            1.0000000945292413
+          ],
+          "max_joint_index": 21
+        }
+      ],
+      "vertices": 2047,
+      "triangles": 3968
+    }
+  ],
+  "skin_nodes": [
+    {
+      "node": "Cat",
+      "mesh": "Cube.001",
+      "skin": 0,
+      "joint_count": 85,
+      "joint_names": [
+        "Foot_front_IK_L",
+        "Knee_back_IK_L",
+        "Foot_Back_IK_L",
+        "Knee_front_IK_L",
+        "Tail_controller",
+        "Foot_front_IK_R",
+        "Knee_back_IK_R",
+        "Foot_Back_IK_R",
+        "Knee_front_IK_R",
+        "Spine",
+        "Spine.001",
+        "Spine.002",
+        "Spine.003",
+        "Spine.004",
+        "Neck",
+        "Neck.001",
+        "Neck.002",
+        "Head",
+        "Mouth",
+        "Nose",
+        "Ear_connector",
+        "Ear",
+        "Ear.001",
+        "Ear.002",
+        "Ear_connector.001",
+        "Ear.006",
+        "Ear.003",
+        "Ear.004",
+        "Head_controller",
+        "Shoulder_front_L",
+        "Thigh_front_L",
+        "Calf_Front_L",
+        "Foot_front_L2",
+        "Foot_front_L",
+        "toe_connector_L.001",
+        "toe_connector_L",
+        "Toe_pinky_L_front",
+        "Toe_ring_L_front",
+        "toe_connector_L.002",
+        "Toe_thumb_L_front",
+        "Toe_Pointer_L_front",
+        "Thigh_front_R",
+        "Calf_Front_R",
+        "Foot_front_L2.002",
+        "Foot_front_R",
+        "toe_connector_R",
+        "toe_connector_R.001",
+        "Toe_pinky_L_front.002",
+        "Toe_ring_L_front.002",
+        "toe_connector_R.002",
+        "Toe_thumb_L_front.002",
+        "Toe_Pointer_L_front.002",
+        "Hip",
+        "Thigh_Back_L",
+        "Calf_back_L",
+        "Foot_Back_L",
+        "Foot_Back_L2",
+        "toe_connector_L_back.002",
+        "Toe_back_L_Thumb",
+        "toe_connector_L_back.001",
+        "toe_connector_L_back",
+        "Toe_back_L_pinky",
+        "Toe_back_L_Ring",
+        "Toe_back_L_Pointer",
+        "Thigh_Back_R",
+        "Calf_back_R",
+        "Foot_Back_R",
+        "Foot_Back_L2.002",
+        "toe_connector_L_back.006",
+        "Toe_back_L_Thumb.002",
+        "toe_connector_L_back.003",
+        "toe_connector_L_back.004",
+        "Toe_back_L_pinky.002",
+        "Toe_back_L_Ring.002",
+        "Toe_back_L_Pointer.002",
+        "Tail",
+        "Tail.001",
+        "Tail.002",
+        "Tail.003",
+        "Tail.004",
+        "Tail.005",
+        "Tail.006",
+        "Tail.007",
+        "Spine_controller_1",
+        "Spine_controller_2"
+      ]
+    },
+    {
+      "node": "Cat_A_original_groom",
+      "mesh": "Cat_A_original_groom",
+      "skin": 0,
+      "joint_count": 85,
+      "joint_names": [
+        "Foot_front_IK_L",
+        "Knee_back_IK_L",
+        "Foot_Back_IK_L",
+        "Knee_front_IK_L",
+        "Tail_controller",
+        "Foot_front_IK_R",
+        "Knee_back_IK_R",
+        "Foot_Back_IK_R",
+        "Knee_front_IK_R",
+        "Spine",
+        "Spine.001",
+        "Spine.002",
+        "Spine.003",
+        "Spine.004",
+        "Neck",
+        "Neck.001",
+        "Neck.002",
+        "Head",
+        "Mouth",
+        "Nose",
+        "Ear_connector",
+        "Ear",
+        "Ear.001",
+        "Ear.002",
+        "Ear_connector.001",
+        "Ear.006",
+        "Ear.003",
+        "Ear.004",
+        "Head_controller",
+        "Shoulder_front_L",
+        "Thigh_front_L",
+        "Calf_Front_L",
+        "Foot_front_L2",
+        "Foot_front_L",
+        "toe_connector_L.001",
+        "toe_connector_L",
+        "Toe_pinky_L_front",
+        "Toe_ring_L_front",
+        "toe_connector_L.002",
+        "Toe_thumb_L_front",
+        "Toe_Pointer_L_front",
+        "Thigh_front_R",
+        "Calf_Front_R",
+        "Foot_front_L2.002",
+        "Foot_front_R",
+        "toe_connector_R",
+        "toe_connector_R.001",
+        "Toe_pinky_L_front.002",
+        "Toe_ring_L_front.002",
+        "toe_connector_R.002",
+        "Toe_thumb_L_front.002",
+        "Toe_Pointer_L_front.002",
+        "Hip",
+        "Thigh_Back_L",
+        "Calf_back_L",
+        "Foot_Back_L",
+        "Foot_Back_L2",
+        "toe_connector_L_back.002",
+        "Toe_back_L_Thumb",
+        "toe_connector_L_back.001",
+        "toe_connector_L_back",
+        "Toe_back_L_pinky",
+        "Toe_back_L_Ring",
+        "Toe_back_L_Pointer",
+        "Thigh_Back_R",
+        "Calf_back_R",
+        "Foot_Back_R",
+        "Foot_Back_L2.002",
+        "toe_connector_L_back.006",
+        "Toe_back_L_Thumb.002",
+        "toe_connector_L_back.003",
+        "toe_connector_L_back.004",
+        "Toe_back_L_pinky.002",
+        "Toe_back_L_Ring.002",
+        "Toe_back_L_Pointer.002",
+        "Tail",
+        "Tail.001",
+        "Tail.002",
+        "Tail.003",
+        "Tail.004",
+        "Tail.005",
+        "Tail.006",
+        "Tail.007",
+        "Spine_controller_1",
+        "Spine_controller_2"
+      ]
+    },
+    {
+      "node": "Cat_A_original_whiskers",
+      "mesh": "Cat_A_original_whiskers",
+      "skin": 0,
+      "joint_count": 85,
+      "joint_names": [
+        "Foot_front_IK_L",
+        "Knee_back_IK_L",
+        "Foot_Back_IK_L",
+        "Knee_front_IK_L",
+        "Tail_controller",
+        "Foot_front_IK_R",
+        "Knee_back_IK_R",
+        "Foot_Back_IK_R",
+        "Knee_front_IK_R",
+        "Spine",
+        "Spine.001",
+        "Spine.002",
+        "Spine.003",
+        "Spine.004",
+        "Neck",
+        "Neck.001",
+        "Neck.002",
+        "Head",
+        "Mouth",
+        "Nose",
+        "Ear_connector",
+        "Ear",
+        "Ear.001",
+        "Ear.002",
+        "Ear_connector.001",
+        "Ear.006",
+        "Ear.003",
+        "Ear.004",
+        "Head_controller",
+        "Shoulder_front_L",
+        "Thigh_front_L",
+        "Calf_Front_L",
+        "Foot_front_L2",
+        "Foot_front_L",
+        "toe_connector_L.001",
+        "toe_connector_L",
+        "Toe_pinky_L_front",
+        "Toe_ring_L_front",
+        "toe_connector_L.002",
+        "Toe_thumb_L_front",
+        "Toe_Pointer_L_front",
+        "Thigh_front_R",
+        "Calf_Front_R",
+        "Foot_front_L2.002",
+        "Foot_front_R",
+        "toe_connector_R",
+        "toe_connector_R.001",
+        "Toe_pinky_L_front.002",
+        "Toe_ring_L_front.002",
+        "toe_connector_R.002",
+        "Toe_thumb_L_front.002",
+        "Toe_Pointer_L_front.002",
+        "Hip",
+        "Thigh_Back_L",
+        "Calf_back_L",
+        "Foot_Back_L",
+        "Foot_Back_L2",
+        "toe_connector_L_back.002",
+        "Toe_back_L_Thumb",
+        "toe_connector_L_back.001",
+        "toe_connector_L_back",
+        "Toe_back_L_pinky",
+        "Toe_back_L_Ring",
+        "Toe_back_L_Pointer",
+        "Thigh_Back_R",
+        "Calf_back_R",
+        "Foot_Back_R",
+        "Foot_Back_L2.002",
+        "toe_connector_L_back.006",
+        "Toe_back_L_Thumb.002",
+        "toe_connector_L_back.003",
+        "toe_connector_L_back.004",
+        "Toe_back_L_pinky.002",
+        "Toe_back_L_Ring.002",
+        "Toe_back_L_Pointer.002",
+        "Tail",
+        "Tail.001",
+        "Tail.002",
+        "Tail.003",
+        "Tail.004",
+        "Tail.005",
+        "Tail.006",
+        "Tail.007",
+        "Spine_controller_1",
+        "Spine_controller_2"
+      ]
+    },
+    {
+      "node": "Sphere",
+      "mesh": "Sphere.001",
+      "skin": 0,
+      "joint_count": 85,
+      "joint_names": [
+        "Foot_front_IK_L",
+        "Knee_back_IK_L",
+        "Foot_Back_IK_L",
+        "Knee_front_IK_L",
+        "Tail_controller",
+        "Foot_front_IK_R",
+        "Knee_back_IK_R",
+        "Foot_Back_IK_R",
+        "Knee_front_IK_R",
+        "Spine",
+        "Spine.001",
+        "Spine.002",
+        "Spine.003",
+        "Spine.004",
+        "Neck",
+        "Neck.001",
+        "Neck.002",
+        "Head",
+        "Mouth",
+        "Nose",
+        "Ear_connector",
+        "Ear",
+        "Ear.001",
+        "Ear.002",
+        "Ear_connector.001",
+        "Ear.006",
+        "Ear.003",
+        "Ear.004",
+        "Head_controller",
+        "Shoulder_front_L",
+        "Thigh_front_L",
+        "Calf_Front_L",
+        "Foot_front_L2",
+        "Foot_front_L",
+        "toe_connector_L.001",
+        "toe_connector_L",
+        "Toe_pinky_L_front",
+        "Toe_ring_L_front",
+        "toe_connector_L.002",
+        "Toe_thumb_L_front",
+        "Toe_Pointer_L_front",
+        "Thigh_front_R",
+        "Calf_Front_R",
+        "Foot_front_L2.002",
+        "Foot_front_R",
+        "toe_connector_R",
+        "toe_connector_R.001",
+        "Toe_pinky_L_front.002",
+        "Toe_ring_L_front.002",
+        "toe_connector_R.002",
+        "Toe_thumb_L_front.002",
+        "Toe_Pointer_L_front.002",
+        "Hip",
+        "Thigh_Back_L",
+        "Calf_back_L",
+        "Foot_Back_L",
+        "Foot_Back_L2",
+        "toe_connector_L_back.002",
+        "Toe_back_L_Thumb",
+        "toe_connector_L_back.001",
+        "toe_connector_L_back",
+        "Toe_back_L_pinky",
+        "Toe_back_L_Ring",
+        "Toe_back_L_Pointer",
+        "Thigh_Back_R",
+        "Calf_back_R",
+        "Foot_Back_R",
+        "Foot_Back_L2.002",
+        "toe_connector_L_back.006",
+        "Toe_back_L_Thumb.002",
+        "toe_connector_L_back.003",
+        "toe_connector_L_back.004",
+        "Toe_back_L_pinky.002",
+        "Toe_back_L_Ring.002",
+        "Toe_back_L_Pointer.002",
+        "Tail",
+        "Tail.001",
+        "Tail.002",
+        "Tail.003",
+        "Tail.004",
+        "Tail.005",
+        "Tail.006",
+        "Tail.007",
+        "Spine_controller_1",
+        "Spine_controller_2"
+      ]
+    },
+    {
+      "node": "Sphere.001",
+      "mesh": "Sphere.002",
+      "skin": 0,
+      "joint_count": 85,
+      "joint_names": [
+        "Foot_front_IK_L",
+        "Knee_back_IK_L",
+        "Foot_Back_IK_L",
+        "Knee_front_IK_L",
+        "Tail_controller",
+        "Foot_front_IK_R",
+        "Knee_back_IK_R",
+        "Foot_Back_IK_R",
+        "Knee_front_IK_R",
+        "Spine",
+        "Spine.001",
+        "Spine.002",
+        "Spine.003",
+        "Spine.004",
+        "Neck",
+        "Neck.001",
+        "Neck.002",
+        "Head",
+        "Mouth",
+        "Nose",
+        "Ear_connector",
+        "Ear",
+        "Ear.001",
+        "Ear.002",
+        "Ear_connector.001",
+        "Ear.006",
+        "Ear.003",
+        "Ear.004",
+        "Head_controller",
+        "Shoulder_front_L",
+        "Thigh_front_L",
+        "Calf_Front_L",
+        "Foot_front_L2",
+        "Foot_front_L",
+        "toe_connector_L.001",
+        "toe_connector_L",
+        "Toe_pinky_L_front",
+        "Toe_ring_L_front",
+        "toe_connector_L.002",
+        "Toe_thumb_L_front",
+        "Toe_Pointer_L_front",
+        "Thigh_front_R",
+        "Calf_Front_R",
+        "Foot_front_L2.002",
+        "Foot_front_R",
+        "toe_connector_R",
+        "toe_connector_R.001",
+        "Toe_pinky_L_front.002",
+        "Toe_ring_L_front.002",
+        "toe_connector_R.002",
+        "Toe_thumb_L_front.002",
+        "Toe_Pointer_L_front.002",
+        "Hip",
+        "Thigh_Back_L",
+        "Calf_back_L",
+        "Foot_Back_L",
+        "Foot_Back_L2",
+        "toe_connector_L_back.002",
+        "Toe_back_L_Thumb",
+        "toe_connector_L_back.001",
+        "toe_connector_L_back",
+        "Toe_back_L_pinky",
+        "Toe_back_L_Ring",
+        "Toe_back_L_Pointer",
+        "Thigh_Back_R",
+        "Calf_back_R",
+        "Foot_Back_R",
+        "Foot_Back_L2.002",
+        "toe_connector_L_back.006",
+        "Toe_back_L_Thumb.002",
+        "toe_connector_L_back.003",
+        "toe_connector_L_back.004",
+        "Toe_back_L_pinky.002",
+        "Toe_back_L_Ring.002",
+        "Toe_back_L_Pointer.002",
+        "Tail",
+        "Tail.001",
+        "Tail.002",
+        "Tail.003",
+        "Tail.004",
+        "Tail.005",
+        "Tail.006",
+        "Tail.007",
+        "Spine_controller_1",
+        "Spine_controller_2"
+      ]
+    }
+  ],
+  "materials": [
+    "cat_a_skin",
+    "cat_a_fur",
+    "cat_a_whisker",
+    "cat_a_eye_Sphere",
+    "cat_a_eye_Sphere.001"
+  ],
+  "images": 3,
+  "extensions_used": [
+    "KHR_materials_specular"
+  ],
+  "errors": [],
+  "warnings": [],
+  "totals": {
+    "vertices": 127261,
+    "triangles": 212592,
+    "nodes": 91,
+    "meshes": 5,
+    "skins": 1
+  },
+  "checks_passed": true
+}

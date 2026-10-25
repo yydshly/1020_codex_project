@@ -1,0 +1,63 @@
+{
+  "checkedAt": "2026-10-24T01:56:19.326Z",
+  "method": "CPU; original GLB geometry, joints and skin; texture image decode omitted in memory",
+  "checks": {
+    "30fps_non_head_joints_unchanged": true,
+    "30fps_foot_points_unchanged": true,
+    "30fps_gait_unchanged": true,
+    "30fps_head_actually_turns": true,
+    "30fps_walking_yaw_at_most_4_degrees": true,
+    "30fps_yaw_within_envelope": true,
+    "30fps_pitch_at_most_4_degrees": true,
+    "30fps_reset_clears_attention": true,
+    "30fps_disabled_returns_to_original_head": true,
+    "30fps_all_matrices_finite": true,
+    "60fps_non_head_joints_unchanged": true,
+    "60fps_foot_points_unchanged": true,
+    "60fps_gait_unchanged": true,
+    "60fps_head_actually_turns": true,
+    "60fps_walking_yaw_at_most_4_degrees": true,
+    "60fps_yaw_within_envelope": true,
+    "60fps_pitch_at_most_4_degrees": true,
+    "60fps_reset_clears_attention": true,
+    "60fps_disabled_returns_to_original_head": true,
+    "60fps_all_matrices_finite": true,
+    "existing_source_files_unchanged": true
+  },
+  "runs": [
+    {
+      "fps": 30,
+      "frames": 600,
+      "maxNonHeadBoneMatrixDelta": 0,
+      "maxFootDelta": 0,
+      "maxGaitDelta": 0,
+      "maxHeadAngle": 0.15608102401101212,
+      "maxWalkingYaw": 4,
+      "maxPitch": 3.9999999986596997,
+      "maxYawEnvelopeOvershoot": 0,
+      "resetZero": true
+    },
+    {
+      "fps": 60,
+      "frames": 1200,
+      "maxNonHeadBoneMatrixDelta": 0,
+      "maxFootDelta": 0,
+      "maxGaitDelta": 0,
+      "maxHeadAngle": 0.1560810251312503,
+      "maxWalkingYaw": 4,
+      "maxPitch": 3.999999998777098,
+      "maxYawEnvelopeOvershoot": 0,
+      "resetZero": true
+    }
+  ],
+  "sourceHashes": {
+    "roam-cat-v3.js": "40a2196fee7d02c2239bcd49d9c0c3cc16dd3e4ee4ca099e59a65ad412794b8d",
+    "cat-v3-study.js": "d5b9a4ef8a279abd078d64f39a7ea870ceef5271038b40068775fd3cef6b44fb",
+    "cat-v3-study.html": "6749e14f1a12dca38af94ef93558a960f341d5c6f590a1ec68d6135dea0b6f16",
+    "models/cat-v3-rig.glb": "6c8d0f0133805e0727cc6cdfc558456d670e0d33a5158685084413e7786a77f1",
+    "models/cat-v3-rig.json": "8d067bc3456a0b32f9d0d66f46c27d9fe464c6dd618458893f49fd2404c4b5ea"
+  },
+  "passed": true,
+  "failures": [],
+  "visualVerification": "Pending browser GPU availability; this test does not certify facial appearance."
+}

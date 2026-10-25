@@ -1,0 +1,1849 @@
+{
+  "checkedAt": "2026-10-24T07:23:23.546Z",
+  "passed": false,
+  "supportedWalking": {
+    "speeds": [
+      0.24,
+      0.36
+    ],
+    "passed": true,
+    "failed": []
+  },
+  "checks": {
+    "source_asset_unchanged": true,
+    "30fps_0.24mps_finite": true,
+    "30fps_0.24mps_reachable": true,
+    "30fps_0.24mps_actual_paw_target_error": true,
+    "30fps_0.24mps_stance_slip_under_2mm": true,
+    "30fps_0.24mps_stance_clearance_under_15mm": true,
+    "30fps_0.24mps_contact_jump_under_15mm": true,
+    "30fps_0.24mps_reset_correct": true,
+    "30fps_0.24mps_contact_order": true,
+    "30fps_0.24mps_at_least_two_steady_supports": true,
+    "30fps_0.24mps_geometry_count_unchanged": true,
+    "30fps_0.24mps_blink_occurs": true,
+    "30fps_0.36mps_finite": true,
+    "30fps_0.36mps_reachable": true,
+    "30fps_0.36mps_actual_paw_target_error": true,
+    "30fps_0.36mps_stance_slip_under_2mm": true,
+    "30fps_0.36mps_stance_clearance_under_15mm": true,
+    "30fps_0.36mps_contact_jump_under_15mm": true,
+    "30fps_0.36mps_reset_correct": true,
+    "30fps_0.36mps_contact_order": true,
+    "30fps_0.36mps_at_least_two_steady_supports": true,
+    "30fps_0.36mps_geometry_count_unchanged": true,
+    "30fps_0.36mps_blink_occurs": true,
+    "30fps_0.6mps_finite": true,
+    "30fps_0.6mps_reachable": true,
+    "30fps_0.6mps_actual_paw_target_error": true,
+    "30fps_0.6mps_stance_slip_under_2mm": false,
+    "30fps_0.6mps_stance_clearance_under_15mm": true,
+    "30fps_0.6mps_contact_jump_under_15mm": true,
+    "30fps_0.6mps_reset_correct": true,
+    "30fps_0.6mps_contact_order": false,
+    "30fps_0.6mps_at_least_two_steady_supports": false,
+    "30fps_0.6mps_geometry_count_unchanged": true,
+    "30fps_0.6mps_blink_occurs": true,
+    "60fps_0.24mps_finite": true,
+    "60fps_0.24mps_reachable": true,
+    "60fps_0.24mps_actual_paw_target_error": true,
+    "60fps_0.24mps_stance_slip_under_2mm": true,
+    "60fps_0.24mps_stance_clearance_under_15mm": true,
+    "60fps_0.24mps_contact_jump_under_15mm": true,
+    "60fps_0.24mps_reset_correct": true,
+    "60fps_0.24mps_contact_order": true,
+    "60fps_0.24mps_at_least_two_steady_supports": true,
+    "60fps_0.24mps_geometry_count_unchanged": true,
+    "60fps_0.24mps_blink_occurs": true,
+    "60fps_0.36mps_finite": true,
+    "60fps_0.36mps_reachable": true,
+    "60fps_0.36mps_actual_paw_target_error": true,
+    "60fps_0.36mps_stance_slip_under_2mm": true,
+    "60fps_0.36mps_stance_clearance_under_15mm": true,
+    "60fps_0.36mps_contact_jump_under_15mm": true,
+    "60fps_0.36mps_reset_correct": true,
+    "60fps_0.36mps_contact_order": true,
+    "60fps_0.36mps_at_least_two_steady_supports": true,
+    "60fps_0.36mps_geometry_count_unchanged": true,
+    "60fps_0.36mps_blink_occurs": true,
+    "60fps_0.6mps_finite": true,
+    "60fps_0.6mps_reachable": true,
+    "60fps_0.6mps_actual_paw_target_error": true,
+    "60fps_0.6mps_stance_slip_under_2mm": true,
+    "60fps_0.6mps_stance_clearance_under_15mm": true,
+    "60fps_0.6mps_contact_jump_under_15mm": true,
+    "60fps_0.6mps_reset_correct": true,
+    "60fps_0.6mps_contact_order": true,
+    "60fps_0.6mps_at_least_two_steady_supports": true,
+    "60fps_0.6mps_geometry_count_unchanged": true,
+    "60fps_0.6mps_blink_occurs": true,
+    "runtime_frozen_during_check": true,
+    "source_asset_still_unchanged": true
+  },
+  "failed": [
+    "30fps_0.6mps_stance_slip_under_2mm",
+    "30fps_0.6mps_contact_order",
+    "30fps_0.6mps_at_least_two_steady_supports"
+  ],
+  "sourcesBefore": {
+    "cat-v8.js": "6eb26b04b6cb918438d23eaef49212d2836ea9c9e12471321ac85dda7d7de382",
+    "cat-v8-face.js": "52190cb9ec316fdc5a1b90455fd220f4d93eb0de6d9ef95794637fd92eede5c8",
+    "cat-v8-body.js": "84214e3fb69ea79a96057d0e4bd6d63c4c7010a299bad3662984480d4de12c31",
+    "cat-v8-limb-skin.js": "29deaa96f3dba3a75f00063e112485ed9267a16dce3eca1d86babe8b73153276",
+    "cat-v8-hock-rig.js": "607bdcd5cf70c4942729434447e0ceb2244ac05035331fc7011b7c7b253aa602"
+  },
+  "sourcesAfter": {
+    "cat-v8.js": "6eb26b04b6cb918438d23eaef49212d2836ea9c9e12471321ac85dda7d7de382",
+    "cat-v8-face.js": "52190cb9ec316fdc5a1b90455fd220f4d93eb0de6d9ef95794637fd92eede5c8",
+    "cat-v8-body.js": "84214e3fb69ea79a96057d0e4bd6d63c4c7010a299bad3662984480d4de12c31",
+    "cat-v8-limb-skin.js": "29deaa96f3dba3a75f00063e112485ed9267a16dce3eca1d86babe8b73153276",
+    "cat-v8-hock-rig.js": "607bdcd5cf70c4942729434447e0ceb2244ac05035331fc7011b7c7b253aa602"
+  },
+  "runs": [
+    {
+      "fps": 30,
+      "requestedSpeed": 0.24,
+      "frames": 387,
+      "maxReachError": 0.005010892325009231,
+      "maxActualTargetError": 0.0050109022523011,
+      "maxStanceSlip": 0.0006254053325057046,
+      "maxPlannedStanceSlip": 0,
+      "maxStanceGroundError": 0.004592287262365366,
+      "maxFootFrameJump": 0.05751557218531576,
+      "maxContactFrameJump": 0.00523963501246252,
+      "minActualClearance": 5.699759247912439e-09,
+      "maxActualClearance": 0.01719922523321321,
+      "allFinite": true,
+      "contacts": [
+        {
+          "foot": "hind_right",
+          "time": 2.3000000000000016,
+          "actualY": 1.5124498722873803e-08,
+          "phase": 0.986759028191758
+        },
+        {
+          "foot": "fore_right",
+          "time": 2.4000000000000012,
+          "actualY": 1.22089745674403e-08,
+          "phase": 0.08724473236097827
+        },
+        {
+          "foot": "hind_left",
+          "time": 2.833333333333333,
+          "actualY": 9.506466905340183e-09,
+          "phase": 0.5080310056811252
+        },
+        {
+          "foot": "fore_left",
+          "time": 3.0333333333333323,
+          "actualY": 7.767745405229398e-09,
+          "phase": 0.7000310056811254
+        },
+        {
+          "foot": "hind_right",
+          "time": 3.3666666666666645,
+          "actualY": 1.5393128591223437e-08,
+          "phase": 0.02003100568112548
+        },
+        {
+          "foot": "fore_right",
+          "time": 3.466666666666664,
+          "actualY": 1.1887258247189614e-08,
+          "phase": 0.11603100568112557
+        },
+        {
+          "foot": "hind_left",
+          "time": 3.8666666666666627,
+          "actualY": 9.683877533195329e-09,
+          "phase": 0.5000310056811259
+        },
+        {
+          "foot": "fore_left",
+          "time": 4.066666666666662,
+          "actualY": 7.725910980416195e-09,
+          "phase": 0.6920310056811261
+        },
+        {
+          "foot": "hind_right",
+          "time": 4.399999999999994,
+          "actualY": 1.5377299850127812e-08,
+          "phase": 0.012031005681126361
+        },
+        {
+          "foot": "fore_right",
+          "time": 4.56666666666666,
+          "actualY": 1.2064341588235994e-08,
+          "phase": 0.1720310056811265
+        },
+        {
+          "foot": "hind_left",
+          "time": 4.899999999999992,
+          "actualY": 9.660813829470705e-09,
+          "phase": 0.4920310056811268
+        },
+        {
+          "foot": "fore_left",
+          "time": 5.133333333333325,
+          "actualY": 8.156092884403776e-09,
+          "phase": 0.716031005681127
+        },
+        {
+          "foot": "hind_right",
+          "time": 5.433333333333324,
+          "actualY": 1.558362611175923e-08,
+          "phase": 0.004031005681126798
+        },
+        {
+          "foot": "fore_right",
+          "time": 5.633333333333323,
+          "actualY": 1.1616777470524475e-08,
+          "phase": 0.19603100568112697
+        },
+        {
+          "foot": "hind_left",
+          "time": 5.966666666666655,
+          "actualY": 9.488357669007463e-09,
+          "phase": 0.5160310056811273
+        }
+      ],
+      "cycles": {
+        "hind_right": {
+          "count": 4,
+          "meanSeconds": 1.0444444444444407
+        },
+        "fore_right": {
+          "count": 4,
+          "meanSeconds": 1.077777777777774
+        },
+        "hind_left": {
+          "count": 4,
+          "meanSeconds": 1.0444444444444407
+        },
+        "fore_left": {
+          "count": 3,
+          "meanSeconds": 1.0499999999999963
+        }
+      },
+      "worstGroin": {
+        "a": 13370,
+        "b": 13389,
+        "length": 0.0037063668934022007,
+        "ratio": 7.556301113198829,
+        "time": 10.699999999999973,
+        "segment": "restart_walk"
+      },
+      "maxResetTargetError": 2.1582114987615258e-08,
+      "blinkCount": 2,
+      "supportCounts": {
+        "2": 51,
+        "3": 65,
+        "4": 3
+      },
+      "minSteadySupport": 2,
+      "bodyTriangles": 49000,
+      "totalTriangles": 51976,
+      "failSamples": [],
+      "segments": {
+        "stand": {
+          "maxReachError": 0,
+          "maxTargetError": 2.0922418121890047e-08,
+          "maxStanceSlip": 3.9502789928036464e-11,
+          "maxGroundError": 2.0087786059552748e-08,
+          "maxFrameJump": 4.737158582230357e-11
+        },
+        "accelerate_and_walk": {
+          "maxReachError": 0,
+          "maxTargetError": 3.618287163699692e-08,
+          "maxStanceSlip": 3.142066702588135e-09,
+          "maxGroundError": 2.6964522295558346e-08,
+          "maxFrameJump": 0.051811732410410226
+        },
+        "decelerate_stop": {
+          "maxReachError": 0,
+          "maxTargetError": 2.7161753464569943e-08,
+          "maxStanceSlip": 9.285231509289302e-10,
+          "maxGroundError": 2.360208815888054e-08,
+          "maxFrameJump": 0.03279307950738801
+        },
+        "turn": {
+          "maxReachError": 0,
+          "maxTargetError": 3.449497386731503e-08,
+          "maxStanceSlip": 1.0265908668776956e-08,
+          "maxGroundError": 2.7011446135372097e-08,
+          "maxFrameJump": 0.05751557218531576
+        },
+        "turn_stop": {
+          "maxReachError": 0.005010892325009231,
+          "maxTargetError": 0.0050109022523011,
+          "maxStanceSlip": 0.0006254053325057046,
+          "maxGroundError": 0.004592287262365366,
+          "maxFrameJump": 0.04119735248460644
+        },
+        "restart_walk": {
+          "maxReachError": 0,
+          "maxTargetError": 3.595355885492827e-08,
+          "maxStanceSlip": 2.6440964110666204e-09,
+          "maxGroundError": 2.648895040813226e-08,
+          "maxFrameJump": 0.05181173241821551
+        },
+        "final_stop": {
+          "maxReachError": 0.004944476945456383,
+          "maxTargetError": 0.0049444947757771255,
+          "maxStanceSlip": 0.0005504711871563469,
+          "maxGroundError": 0.0045446211743548695,
+          "maxFrameJump": 0.028115841662538735
+        },
+        "reset": {
+          "maxReachError": 0,
+          "maxTargetError": 2.1582114987615258e-08,
+          "maxStanceSlip": 3.05305197804795e-11,
+          "maxGroundError": 2.056203866895867e-08,
+          "maxFrameJump": 3.669348999600395e-11
+        }
+      },
+      "maxJumpSample": {
+        "segment": "turn",
+        "time": 7.8666666666666485,
+        "foot": "hind_right",
+        "phase": 0.8304919961630477,
+        "previousStance": false,
+        "stance": false,
+        "previous": [
+          -0.08077499690499523,
+          0.016934514232463907,
+          1.07156228744019
+        ],
+        "actual": [
+          -0.1219418358131913,
+          0.011936047108410161,
+          1.1114163680909923
+        ],
+        "planned": [
+          -0.12194183900848533,
+          0.01193603740560211,
+          1.111416367088957
+        ]
+      },
+      "contactOrderCorrect": true,
+      "simultaneousContactGroups": 0
+    },
+    {
+      "fps": 30,
+      "requestedSpeed": 0.36,
+      "frames": 387,
+      "maxReachError": 0.00501089232460511,
+      "maxActualTargetError": 0.005010902251896816,
+      "maxStanceSlip": 0.0006254053326407348,
+      "maxPlannedStanceSlip": 0,
+      "maxStanceGroundError": 0.004592287261994871,
+      "maxFootFrameJump": 0.07342777855488297,
+      "maxContactFrameJump": 0.005445925068016539,
+      "minActualClearance": 5.702227287573969e-09,
+      "maxActualClearance": 0.01755316523903569,
+      "allFinite": true,
+      "contacts": [
+        {
+          "foot": "fore_right",
+          "time": 2.066666666666669,
+          "actualY": 1.2897678855483541e-08,
+          "phase": 0.20902042448737684
+        },
+        {
+          "foot": "hind_left",
+          "time": 2.2666666666666684,
+          "actualY": 9.60159503293756e-09,
+          "phase": 0.4985011058359334
+        },
+        {
+          "foot": "fore_left",
+          "time": 2.4000000000000012,
+          "actualY": 7.57638936310645e-09,
+          "phase": 0.6905011058359336
+        },
+        {
+          "foot": "hind_right",
+          "time": 2.6000000000000005,
+          "actualY": 1.563716844898977e-08,
+          "phase": 0.9785011058359336
+        },
+        {
+          "foot": "fore_right",
+          "time": 2.7666666666666666,
+          "actualY": 1.2071270483193786e-08,
+          "phase": 0.21850110583593385
+        },
+        {
+          "foot": "hind_left",
+          "time": 2.966666666666666,
+          "actualY": 9.463059127967632e-09,
+          "phase": 0.5065011058359341
+        },
+        {
+          "foot": "fore_left",
+          "time": 3.0999999999999988,
+          "actualY": 7.545460700697504e-09,
+          "phase": 0.6985011058359343
+        },
+        {
+          "foot": "hind_right",
+          "time": 3.299999999999998,
+          "actualY": 1.5655868934594253e-08,
+          "phase": 0.9865011058359345
+        },
+        {
+          "foot": "fore_right",
+          "time": 3.433333333333331,
+          "actualY": 1.1413043884966889e-08,
+          "phase": 0.1785011058359347
+        },
+        {
+          "foot": "hind_left",
+          "time": 3.6666666666666634,
+          "actualY": 9.484418139749096e-09,
+          "phase": 0.514501105835935
+        },
+        {
+          "foot": "fore_left",
+          "time": 3.7999999999999963,
+          "actualY": 8.157397535235589e-09,
+          "phase": 0.7065011058359352
+        },
+        {
+          "foot": "hind_right",
+          "time": 3.9999999999999956,
+          "actualY": 1.5674114631214486e-08,
+          "phase": 0.9945011058359354
+        },
+        {
+          "foot": "fore_right",
+          "time": 4.133333333333328,
+          "actualY": 1.1416880975334553e-08,
+          "phase": 0.1865011058359356
+        },
+        {
+          "foot": "hind_left",
+          "time": 4.366666666666661,
+          "actualY": 9.504453474251662e-09,
+          "phase": 0.5225011058359359
+        },
+        {
+          "foot": "fore_left",
+          "time": 4.499999999999994,
+          "actualY": 8.156455837127208e-09,
+          "phase": 0.7145011058359361
+        },
+        {
+          "foot": "hind_right",
+          "time": 4.699999999999993,
+          "actualY": 1.535720182965772e-08,
+          "phase": 0.0025011058359363236
+        },
+        {
+          "foot": "fore_right",
+          "time": 4.833333333333326,
+          "actualY": 1.1416986467338575e-08,
+          "phase": 0.1945011058359365
+        },
+        {
+          "foot": "hind_left",
+          "time": 5.033333333333325,
+          "actualY": 9.752869317702917e-09,
+          "phase": 0.48250110583593675
+        },
+        {
+          "foot": "fore_left",
+          "time": 5.199999999999991,
+          "actualY": 8.153896113860526e-09,
+          "phase": 0.722501105835937
+        },
+        {
+          "foot": "hind_right",
+          "time": 5.399999999999991,
+          "actualY": 1.5374158723879816e-08,
+          "phase": 0.010501105835937219
+        },
+        {
+          "foot": "fore_right",
+          "time": 5.5333333333333234,
+          "actualY": 1.2072506307136965e-08,
+          "phase": 0.2025011058359374
+        },
+        {
+          "foot": "hind_left",
+          "time": 5.733333333333323,
+          "actualY": 9.776675802264378e-09,
+          "phase": 0.49050110583593765
+        },
+        {
+          "foot": "fore_left",
+          "time": 5.866666666666656,
+          "actualY": 7.538823648678417e-09,
+          "phase": 0.6825011058359378
+        }
+      ],
+      "cycles": {
+        "hind_right": {
+          "count": 5,
+          "meanSeconds": 0.6999999999999975
+        },
+        "fore_right": {
+          "count": 6,
+          "meanSeconds": 0.6933333333333309
+        },
+        "hind_left": {
+          "count": 6,
+          "meanSeconds": 0.6933333333333309
+        },
+        "fore_left": {
+          "count": 6,
+          "meanSeconds": 0.6933333333333309
+        }
+      },
+      "worstGroin": {
+        "a": 12039,
+        "b": 12038,
+        "length": 0.0014158448658528815,
+        "ratio": 7.120468761115058,
+        "time": 6.099999999999988,
+        "segment": "decelerate_stop"
+      },
+      "maxResetTargetError": 2.158222164646974e-08,
+      "blinkCount": 2,
+      "supportCounts": {
+        "2": 40,
+        "3": 79
+      },
+      "minSteadySupport": 2,
+      "bodyTriangles": 49000,
+      "totalTriangles": 51976,
+      "failSamples": [],
+      "segments": {
+        "stand": {
+          "maxReachError": 0,
+          "maxTargetError": 2.0922418121890047e-08,
+          "maxStanceSlip": 3.9502789928036464e-11,
+          "maxGroundError": 2.0087786059552748e-08,
+          "maxFrameJump": 4.737158582230357e-11
+        },
+        "accelerate_and_walk": {
+          "maxReachError": 0,
+          "maxTargetError": 3.603452601848721e-08,
+          "maxStanceSlip": 3.6556208034791557e-09,
+          "maxGroundError": 2.7408934719086453e-08,
+          "maxFrameJump": 0.07342777854729204
+        },
+        "decelerate_stop": {
+          "maxReachError": 0,
+          "maxTargetError": 3.592900786348022e-08,
+          "maxStanceSlip": 1.2416760837223811e-09,
+          "maxGroundError": 2.1339961339683633e-08,
+          "maxFrameJump": 0.05263997768160677
+        },
+        "turn": {
+          "maxReachError": 0,
+          "maxTargetError": 3.621801636177849e-08,
+          "maxStanceSlip": 1.0265908758507497e-08,
+          "maxGroundError": 2.7011446260272187e-08,
+          "maxFrameJump": 0.05751557218531587
+        },
+        "turn_stop": {
+          "maxReachError": 0.00501089232460511,
+          "maxTargetError": 0.005010902251896816,
+          "maxStanceSlip": 0.0006254053326407348,
+          "maxGroundError": 0.004592287261994871,
+          "maxFrameJump": 0.041197352484606445
+        },
+        "restart_walk": {
+          "maxReachError": 0,
+          "maxTargetError": 3.611375180272731e-08,
+          "maxStanceSlip": 3.5815877491754146e-09,
+          "maxGroundError": 2.733881133282212e-08,
+          "maxFrameJump": 0.07342777855488297
+        },
+        "final_stop": {
+          "maxReachError": 0.0003872903145555884,
+          "maxTargetError": 0.00038729555098416764,
+          "maxStanceSlip": 1.1190754207655297e-09,
+          "maxGroundError": 2.469898936763304e-08,
+          "maxFrameJump": 0.0497610803198475
+        },
+        "reset": {
+          "maxReachError": 0,
+          "maxTargetError": 2.158222164646974e-08,
+          "maxStanceSlip": 3.0531011694328174e-11,
+          "maxGroundError": 2.0562117730715812e-08,
+          "maxFrameJump": 3.6694195669525135e-11
+        }
+      },
+      "maxJumpSample": {
+        "segment": "restart_walk",
+        "time": 9.63333333333331,
+        "foot": "hind_left",
+        "phase": 0.6789085992279322,
+        "previousStance": false,
+        "stance": false,
+        "previous": [
+          0.009933462114025127,
+          0.016586917229563042,
+          1.881734389455422
+        ],
+        "actual": [
+          0.045223684643931894,
+          0.014410378028432203,
+          1.8173798905108995
+        ],
+        "planned": [
+          0.04522368426721422,
+          0.014410372969983444,
+          1.8173798912834116
+        ]
+      },
+      "contactOrderCorrect": true,
+      "simultaneousContactGroups": 0
+    },
+    {
+      "fps": 30,
+      "requestedSpeed": 0.6,
+      "frames": 387,
+      "maxReachError": 0.005010892322329402,
+      "maxActualTargetError": 0.0050109022496214,
+      "maxStanceSlip": 0.002273039595742997,
+      "maxPlannedStanceSlip": 0,
+      "maxStanceGroundError": 0.004592287259909553,
+      "maxFootFrameJump": 0.09300812032427602,
+      "maxContactFrameJump": 0.01006331173686532,
+      "minActualClearance": 5.859828774990028e-09,
+      "maxActualClearance": 0.017000026245116845,
+      "allFinite": true,
+      "contacts": [
+        {
+          "foot": "hind_right",
+          "time": 2.1000000000000023,
+          "actualY": 1.5686367857425942e-08,
+          "phase": 0.07169586745487333
+        },
+        {
+          "foot": "fore_right",
+          "time": 2.200000000000002,
+          "actualY": 1.2670640446577064e-08,
+          "phase": 0.31169586745487354
+        },
+        {
+          "foot": "fore_left",
+          "time": 2.233333333333335,
+          "actualY": 7.058073424326405e-09,
+          "phase": 0.3916958674548736
+        },
+        {
+          "foot": "hind_left",
+          "time": 2.3000000000000016,
+          "actualY": 9.801543493503928e-09,
+          "phase": 0.5516958674548738
+        },
+        {
+          "foot": "hind_right",
+          "time": 2.533333333333334,
+          "actualY": 1.513731928692863e-08,
+          "phase": 0.11169586745487425
+        },
+        {
+          "foot": "fore_right",
+          "time": 2.6000000000000005,
+          "actualY": 1.1561859240838412e-08,
+          "phase": 0.2716958674548744
+        },
+        {
+          "foot": "fore_left",
+          "time": 2.666666666666667,
+          "actualY": 6.99169820650436e-09,
+          "phase": 0.43169586745487454
+        },
+        {
+          "foot": "hind_left",
+          "time": 2.7333333333333334,
+          "actualY": 9.249801966038085e-09,
+          "phase": 0.5916958674548747
+        },
+        {
+          "foot": "hind_right",
+          "time": 2.9333333333333327,
+          "actualY": 1.568633090087701e-08,
+          "phase": 0.07169586745487466
+        },
+        {
+          "foot": "fore_right",
+          "time": 3.0333333333333323,
+          "actualY": 1.2670698164296557e-08,
+          "phase": 0.3116958674548749
+        },
+        {
+          "foot": "fore_left",
+          "time": 3.0999999999999988,
+          "actualY": 7.003280802497791e-09,
+          "phase": 0.471695867454875
+        },
+        {
+          "foot": "hind_left",
+          "time": 3.133333333333332,
+          "actualY": 9.801535597042665e-09,
+          "phase": 0.5516958674548751
+        },
+        {
+          "foot": "hind_right",
+          "time": 3.3666666666666645,
+          "actualY": 1.5137318565283664e-08,
+          "phase": 0.11169586745487559
+        },
+        {
+          "foot": "fore_right",
+          "time": 3.433333333333331,
+          "actualY": 1.1561860385755907e-08,
+          "phase": 0.27169586745487573
+        },
+        {
+          "foot": "fore_left",
+          "time": 3.5666666666666638,
+          "actualY": 8.539940733742757e-09,
+          "phase": 0.591695867454876
+        },
+        {
+          "foot": "hind_left",
+          "time": 3.5666666666666638,
+          "actualY": 9.24980186889357e-09,
+          "phase": 0.591695867454876
+        },
+        {
+          "foot": "hind_right",
+          "time": 3.766666666666663,
+          "actualY": 1.568633090087701e-08,
+          "phase": 0.07169586745487644
+        },
+        {
+          "foot": "fore_right",
+          "time": 3.8666666666666627,
+          "actualY": 1.267069824062439e-08,
+          "phase": 0.31169586745487665
+        },
+        {
+          "foot": "hind_left",
+          "time": 3.9666666666666623,
+          "actualY": 9.801535583164878e-09,
+          "phase": 0.5516958674548769
+        },
+        {
+          "foot": "fore_left",
+          "time": 3.9999999999999956,
+          "actualY": 7.606709415131085e-09,
+          "phase": 0.6316958674548769
+        },
+        {
+          "foot": "hind_right",
+          "time": 4.199999999999995,
+          "actualY": 1.513731859303924e-08,
+          "phase": 0.11169586745487736
+        },
+        {
+          "foot": "fore_right",
+          "time": 4.266666666666661,
+          "actualY": 1.1561860385755907e-08,
+          "phase": 0.2716958674548775
+        },
+        {
+          "foot": "hind_left",
+          "time": 4.399999999999994,
+          "actualY": 9.249801910526934e-09,
+          "phase": 0.5916958674548778
+        },
+        {
+          "foot": "fore_left",
+          "time": 4.466666666666661,
+          "actualY": 7.704065385638614e-09,
+          "phase": 0.7516958674548779
+        },
+        {
+          "foot": "hind_right",
+          "time": 4.599999999999993,
+          "actualY": 1.5686330886999222e-08,
+          "phase": 0.07169586745487733
+        },
+        {
+          "foot": "fore_right",
+          "time": 4.699999999999993,
+          "actualY": 1.2670698289196647e-08,
+          "phase": 0.31169586745487754
+        },
+        {
+          "foot": "hind_left",
+          "time": 4.799999999999993,
+          "actualY": 9.801535610920453e-09,
+          "phase": 0.5516958674548778
+        },
+        {
+          "foot": "fore_left",
+          "time": 4.899999999999992,
+          "actualY": 8.820067447234958e-09,
+          "phase": 0.791695867454878
+        },
+        {
+          "foot": "hind_right",
+          "time": 5.033333333333325,
+          "actualY": 1.5137318565283664e-08,
+          "phase": 0.11169586745487825
+        },
+        {
+          "foot": "fore_right",
+          "time": 5.099999999999992,
+          "actualY": 1.1561860566167148e-08,
+          "phase": 0.2716958674548784
+        },
+        {
+          "foot": "hind_left",
+          "time": 5.2333333333333245,
+          "actualY": 9.249801966038085e-09,
+          "phase": 0.5916958674548787
+        },
+        {
+          "foot": "fore_left",
+          "time": 5.299999999999991,
+          "actualY": 7.704065399516402e-09,
+          "phase": 0.7516958674548788
+        },
+        {
+          "foot": "hind_right",
+          "time": 5.433333333333324,
+          "actualY": 1.568633084536586e-08,
+          "phase": 0.0716958674548791
+        },
+        {
+          "foot": "fore_right",
+          "time": 5.5333333333333234,
+          "actualY": 1.2670698393280055e-08,
+          "phase": 0.3116958674548793
+        },
+        {
+          "foot": "hind_left",
+          "time": 5.633333333333323,
+          "actualY": 9.801535527653726e-09,
+          "phase": 0.5516958674548795
+        },
+        {
+          "foot": "fore_left",
+          "time": 5.733333333333323,
+          "actualY": 8.820067488868322e-09,
+          "phase": 0.7916958674548797
+        },
+        {
+          "foot": "hind_right",
+          "time": 5.866666666666656,
+          "actualY": 1.5137318620794815e-08,
+          "phase": 0.11169586745488003
+        },
+        {
+          "foot": "fore_right",
+          "time": 5.933333333333322,
+          "actualY": 1.1561860406572588e-08,
+          "phase": 0.27169586745488017
+        }
+      ],
+      "cycles": {
+        "hind_right": {
+          "count": 10,
+          "meanSeconds": 0.418518518518517
+        },
+        "fore_right": {
+          "count": 10,
+          "meanSeconds": 0.41481481481481336
+        },
+        "hind_left": {
+          "count": 9,
+          "meanSeconds": 0.4166666666666652
+        },
+        "fore_left": {
+          "count": 9,
+          "meanSeconds": 0.43749999999999845
+        }
+      },
+      "worstGroin": {
+        "a": 12039,
+        "b": 12038,
+        "length": 0.0014158448658528815,
+        "ratio": 6.841729324064541,
+        "time": 11.099999999999971,
+        "segment": "restart_walk"
+      },
+      "maxResetTargetError": 2.158282134168188e-08,
+      "blinkCount": 2,
+      "supportCounts": {
+        "1": 9,
+        "2": 61,
+        "3": 42,
+        "4": 7
+      },
+      "minSteadySupport": 1,
+      "bodyTriangles": 49000,
+      "totalTriangles": 51976,
+      "failSamples": [],
+      "segments": {
+        "stand": {
+          "maxReachError": 0,
+          "maxTargetError": 2.0922418121890047e-08,
+          "maxStanceSlip": 3.9502789928036464e-11,
+          "maxGroundError": 2.0087786059552748e-08,
+          "maxFrameJump": 4.737158582230357e-11
+        },
+        "accelerate_and_walk": {
+          "maxReachError": 0,
+          "maxTargetError": 3.5858399629407956e-08,
+          "maxStanceSlip": 9.497986682076456e-09,
+          "maxGroundError": 2.7779959881069072e-08,
+          "maxFrameJump": 0.09300812032427602
+        },
+        "decelerate_stop": {
+          "maxReachError": 0,
+          "maxTargetError": 3.119774021699088e-08,
+          "maxStanceSlip": 5.016962417685907e-09,
+          "maxGroundError": 2.357676921055374e-08,
+          "maxFrameJump": 0.07910714617564163
+        },
+        "turn": {
+          "maxReachError": 0,
+          "maxTargetError": 3.449501059270127e-08,
+          "maxStanceSlip": 1.0265909042455156e-08,
+          "maxGroundError": 2.701144640598896e-08,
+          "maxFrameJump": 0.057515572185315826
+        },
+        "turn_stop": {
+          "maxReachError": 0.005010892322329402,
+          "maxTargetError": 0.0050109022496214,
+          "maxStanceSlip": 0.000625405333400494,
+          "maxGroundError": 0.004592287259909553,
+          "maxFrameJump": 0.04119735248460624
+        },
+        "restart_walk": {
+          "maxReachError": 0,
+          "maxTargetError": 3.593598419928681e-08,
+          "maxStanceSlip": 9.533681099003152e-09,
+          "maxGroundError": 2.7797648516347806e-08,
+          "maxFrameJump": 0.0921852834811046
+        },
+        "final_stop": {
+          "maxReachError": 0.0046527682841751294,
+          "maxTargetError": 0.004652773451654981,
+          "maxStanceSlip": 0.002273039595742997,
+          "maxGroundError": 0.004000899127341265,
+          "maxFrameJump": 0.08640750958808932
+        },
+        "reset": {
+          "maxReachError": 0,
+          "maxTargetError": 2.158282134168188e-08,
+          "maxStanceSlip": 3.053332166263157e-11,
+          "maxGroundError": 2.0562561910131283e-08,
+          "maxFrameJump": 3.669703374467502e-11
+        }
+      },
+      "maxJumpSample": {
+        "segment": "accelerate_and_walk",
+        "time": 4.399999999999994,
+        "foot": "fore_left",
+        "phase": 0.8916958674548778,
+        "previousStance": false,
+        "stance": false,
+        "previous": [
+          -0.04270000000061994,
+          0.016329810725734556,
+          2.0436265176772013
+        ],
+        "actual": [
+          -0.04270000002018411,
+          0.009001273503893445,
+          2.1363454638987966
+        ],
+        "planned": [
+          -0.0427,
+          0.009001259452922706,
+          2.1363454847712946
+        ]
+      },
+      "contactOrderCorrect": false,
+      "simultaneousContactGroups": 1
+    },
+    {
+      "fps": 60,
+      "requestedSpeed": 0.24,
+      "frames": 774,
+      "maxReachError": 0.00572290113945384,
+      "maxActualTargetError": 0.00572291911376561,
+      "maxStanceSlip": 0.00041020020543693694,
+      "maxPlannedStanceSlip": 0,
+      "maxStanceGroundError": 0.005239513880585356,
+      "maxFootFrameJump": 0.028780844166441263,
+      "maxContactFrameJump": 0.000789401370799972,
+      "minActualClearance": 5.697639249291342e-09,
+      "maxActualClearance": 0.018673701694512698,
+      "allFinite": true,
+      "contacts": [
+        {
+          "foot": "hind_right",
+          "time": 2.2999999999999967,
+          "actualY": 1.5085914836787673e-08,
+          "phase": 0.9782964781190996
+        },
+        {
+          "foot": "fore_right",
+          "time": 2.3999999999999964,
+          "actualY": 1.2194213139249399e-08,
+          "phase": 0.07894204547254198
+        },
+        {
+          "foot": "hind_left",
+          "time": 2.8166666666666615,
+          "actualY": 9.665738931463608e-09,
+          "phase": 0.48403131635818436
+        },
+        {
+          "foot": "fore_left",
+          "time": 3.049999999999994,
+          "actualY": 7.762505728481361e-09,
+          "phase": 0.7080313163581846
+        },
+        {
+          "foot": "hind_right",
+          "time": 3.349999999999993,
+          "actualY": 1.5566095079577735e-08,
+          "phase": 0.9960313163581846
+        },
+        {
+          "foot": "fore_right",
+          "time": 3.4499999999999926,
+          "actualY": 1.1349730551224457e-08,
+          "phase": 0.09203131635818473
+        },
+        {
+          "foot": "hind_left",
+          "time": 3.866666666666658,
+          "actualY": 9.660814773160276e-09,
+          "phase": 0.4920313163581851
+        },
+        {
+          "foot": "fore_left",
+          "time": 4.083333333333324,
+          "actualY": 7.726352370396317e-09,
+          "phase": 0.7000313163581853
+        },
+        {
+          "foot": "hind_right",
+          "time": 4.39999999999999,
+          "actualY": 1.558362680564862e-08,
+          "phase": 0.004031316358185544
+        },
+        {
+          "foot": "fore_right",
+          "time": 4.549999999999989,
+          "actualY": 1.1561780074997863e-08,
+          "phase": 0.14803131635818567
+        },
+        {
+          "foot": "hind_left",
+          "time": 4.9166666666666545,
+          "actualY": 9.68387835198481e-09,
+          "phase": 0.500031316358186
+        },
+        {
+          "foot": "fore_left",
+          "time": 5.116666666666654,
+          "actualY": 7.72591111225518e-09,
+          "phase": 0.6920313163581862
+        },
+        {
+          "foot": "hind_right",
+          "time": 5.433333333333319,
+          "actualY": 1.5566094940799857e-08,
+          "phase": 0.996031316358186
+        },
+        {
+          "foot": "fore_right",
+          "time": 5.649999999999985,
+          "actualY": 1.1615235828710269e-08,
+          "phase": 0.20403131635818617
+        },
+        {
+          "foot": "hind_left",
+          "time": 5.949999999999984,
+          "actualY": 9.660814703771337e-09,
+          "phase": 0.4920313163581864
+        }
+      ],
+      "cycles": {
+        "hind_right": {
+          "count": 4,
+          "meanSeconds": 1.044444444444441
+        },
+        "fore_right": {
+          "count": 4,
+          "meanSeconds": 1.0833333333333297
+        },
+        "hind_left": {
+          "count": 4,
+          "meanSeconds": 1.044444444444441
+        },
+        "fore_left": {
+          "count": 3,
+          "meanSeconds": 1.0333333333333299
+        }
+      },
+      "worstGroin": {
+        "a": 13370,
+        "b": 13389,
+        "length": 0.0037063668934022007,
+        "ratio": 7.593572635040079,
+        "time": 10.700000000000111,
+        "segment": "restart_walk"
+      },
+      "maxResetTargetError": 2.158303801148675e-08,
+      "blinkCount": 2,
+      "supportCounts": {
+        "2": 102,
+        "3": 130,
+        "4": 7
+      },
+      "minSteadySupport": 2,
+      "bodyTriangles": 49000,
+      "totalTriangles": 51976,
+      "failSamples": [],
+      "segments": {
+        "stand": {
+          "maxReachError": 0,
+          "maxTargetError": 2.0940739628049733e-08,
+          "maxStanceSlip": 1.9760373892729888e-11,
+          "maxGroundError": 2.0101642045355916e-08,
+          "maxFrameJump": 2.370418824728775e-11
+        },
+        "accelerate_and_walk": {
+          "maxReachError": 0,
+          "maxTargetError": 3.618013502310182e-08,
+          "maxStanceSlip": 1.913569637887981e-09,
+          "maxGroundError": 2.6893092676394392e-08,
+          "maxFrameJump": 0.026130265139808054
+        },
+        "decelerate_stop": {
+          "maxReachError": 0,
+          "maxTargetError": 2.7043388554045737e-08,
+          "maxStanceSlip": 4.786072822547643e-10,
+          "maxGroundError": 2.3332116079466392e-08,
+          "maxFrameJump": 0.019442190811189582
+        },
+        "turn": {
+          "maxReachError": 0,
+          "maxTargetError": 3.441866498823754e-08,
+          "maxStanceSlip": 9.256009122408442e-09,
+          "maxGroundError": 2.711938403704428e-08,
+          "maxFrameJump": 0.028780844166441263
+        },
+        "turn_stop": {
+          "maxReachError": 0.005010892324822436,
+          "maxTargetError": 0.005010902252114378,
+          "maxStanceSlip": 0.00033450336275090434,
+          "maxGroundError": 0.0045922872621943014,
+          "maxFrameJump": 0.02095010417618846
+        },
+        "restart_walk": {
+          "maxReachError": 0,
+          "maxTargetError": 3.592862124187194e-08,
+          "maxStanceSlip": 1.9211411599207417e-09,
+          "maxGroundError": 2.6389797319614772e-08,
+          "maxFrameJump": 0.026130265144095614
+        },
+        "final_stop": {
+          "maxReachError": 0.00572290113945384,
+          "maxTargetError": 0.00572291911376561,
+          "maxStanceSlip": 0.00041020020543693694,
+          "maxGroundError": 0.005239513880585356,
+          "maxFrameJump": 0.014652849823108728
+        },
+        "reset": {
+          "maxReachError": 0,
+          "maxTargetError": 2.158303801148675e-08,
+          "maxStanceSlip": 1.546319956891715e-11,
+          "maxGroundError": 2.056272825623484e-08,
+          "maxFrameJump": 1.8582522504256417e-11
+        }
+      },
+      "maxJumpSample": {
+        "segment": "turn",
+        "time": 7.866666666666644,
+        "foot": "hind_right",
+        "phase": 0.830491996163047,
+        "previousStance": false,
+        "stance": false,
+        "previous": [
+          -0.1014030264561413,
+          0.015271717801560628,
+          1.0911991819580988
+        ],
+        "actual": [
+          -0.12194183581319136,
+          0.01193604710841012,
+          1.1110830347576592
+        ],
+        "planned": [
+          -0.1219418390084853,
+          0.011936037405602106,
+          1.1110830337556237
+        ]
+      },
+      "contactOrderCorrect": true,
+      "simultaneousContactGroups": 0
+    },
+    {
+      "fps": 60,
+      "requestedSpeed": 0.36,
+      "frames": 774,
+      "maxReachError": 0.005010892324353006,
+      "maxActualTargetError": 0.005010902251644919,
+      "maxStanceSlip": 0.0003345033628348666,
+      "maxPlannedStanceSlip": 0,
+      "maxStanceGroundError": 0.004592287261764062,
+      "maxFootFrameJump": 0.038771663700345106,
+      "maxContactFrameJump": 0.0007894013708001125,
+      "minActualClearance": 5.69710559283898e-09,
+      "maxActualClearance": 0.01755316491505156,
+      "allFinite": true,
+      "contacts": [
+        {
+          "foot": "fore_right",
+          "time": 2.0499999999999976,
+          "actualY": 1.2143515124019011e-08,
+          "phase": 0.17230974124369905
+        },
+        {
+          "foot": "hind_left",
+          "time": 2.2666666666666635,
+          "actualY": 9.549845372824883e-09,
+          "phase": 0.4865020802021274
+        },
+        {
+          "foot": "fore_left",
+          "time": 2.3999999999999964,
+          "actualY": 7.575679417115566e-09,
+          "phase": 0.6785020802021275
+        },
+        {
+          "foot": "hind_right",
+          "time": 2.6166666666666623,
+          "actualY": 1.566506170613824e-08,
+          "phase": 0.9905020802021276
+        },
+        {
+          "foot": "fore_right",
+          "time": 2.749999999999995,
+          "actualY": 1.1415425625604936e-08,
+          "phase": 0.18250208020212777
+        },
+        {
+          "foot": "hind_left",
+          "time": 2.966666666666661,
+          "actualY": 9.788327703930122e-09,
+          "phase": 0.49450208020212805
+        },
+        {
+          "foot": "fore_left",
+          "time": 3.099999999999994,
+          "actualY": 7.541714433512148e-09,
+          "phase": 0.6865020802021282
+        },
+        {
+          "foot": "hind_right",
+          "time": 3.3166666666666598,
+          "actualY": 1.568301787047144e-08,
+          "phase": 0.9985020802021285
+        },
+        {
+          "foot": "fore_right",
+          "time": 3.4499999999999926,
+          "actualY": 1.1417403023017414e-08,
+          "phase": 0.19050208020212867
+        },
+        {
+          "foot": "hind_left",
+          "time": 3.649999999999992,
+          "actualY": 9.74076866389062e-09,
+          "phase": 0.4785020802021289
+        },
+        {
+          "foot": "fore_left",
+          "time": 3.7999999999999914,
+          "actualY": 7.545033368916432e-09,
+          "phase": 0.6945020802021291
+        },
+        {
+          "foot": "hind_right",
+          "time": 3.9999999999999907,
+          "actualY": 1.564656718078261e-08,
+          "phase": 0.9825020802021294
+        },
+        {
+          "foot": "fore_right",
+          "time": 4.149999999999991,
+          "actualY": 1.1415629178057607e-08,
+          "phase": 0.19850208020212956
+        },
+        {
+          "foot": "hind_left",
+          "time": 4.34999999999999,
+          "actualY": 9.764851288673881e-09,
+          "phase": 0.4865020802021298
+        },
+        {
+          "foot": "fore_left",
+          "time": 4.483333333333323,
+          "actualY": 7.535120541413143e-09,
+          "phase": 0.67850208020213
+        },
+        {
+          "foot": "hind_right",
+          "time": 4.699999999999989,
+          "actualY": 1.5665061373071332e-08,
+          "phase": 0.9905020802021303
+        },
+        {
+          "foot": "fore_right",
+          "time": 4.8333333333333215,
+          "actualY": 1.1415425785199496e-08,
+          "phase": 0.18250208020213043
+        },
+        {
+          "foot": "hind_left",
+          "time": 5.049999999999987,
+          "actualY": 9.788327634541183e-09,
+          "phase": 0.4945020802021307
+        },
+        {
+          "foot": "fore_left",
+          "time": 5.18333333333332,
+          "actualY": 7.54171438493989e-09,
+          "phase": 0.6865020802021309
+        },
+        {
+          "foot": "hind_right",
+          "time": 5.399999999999986,
+          "actualY": 1.568301792598259e-08,
+          "phase": 0.9985020802021312
+        },
+        {
+          "foot": "fore_right",
+          "time": 5.533333333333319,
+          "actualY": 1.1417402953628475e-08,
+          "phase": 0.19050208020213133
+        },
+        {
+          "foot": "hind_left",
+          "time": 5.733333333333318,
+          "actualY": 9.740768816546286e-09,
+          "phase": 0.4785020802021316
+        },
+        {
+          "foot": "fore_left",
+          "time": 5.883333333333318,
+          "actualY": 7.545033320344174e-09,
+          "phase": 0.6945020802021318
+        }
+      ],
+      "cycles": {
+        "hind_right": {
+          "count": 5,
+          "meanSeconds": 0.695833333333331
+        },
+        "fore_right": {
+          "count": 6,
+          "meanSeconds": 0.6966666666666643
+        },
+        "hind_left": {
+          "count": 6,
+          "meanSeconds": 0.6933333333333309
+        },
+        "fore_left": {
+          "count": 6,
+          "meanSeconds": 0.6966666666666643
+        }
+      },
+      "worstGroin": {
+        "a": 12039,
+        "b": 12038,
+        "length": 0.0014158448658528815,
+        "ratio": 7.074232626394137,
+        "time": 6.099999999999984,
+        "segment": "decelerate_stop"
+      },
+      "maxResetTargetError": 2.1583181677781127e-08,
+      "blinkCount": 2,
+      "supportCounts": {
+        "2": 81,
+        "3": 158
+      },
+      "minSteadySupport": 2,
+      "bodyTriangles": 49000,
+      "totalTriangles": 51976,
+      "failSamples": [],
+      "segments": {
+        "stand": {
+          "maxReachError": 0,
+          "maxTargetError": 2.0940739628049733e-08,
+          "maxStanceSlip": 1.9760373892729888e-11,
+          "maxGroundError": 2.0101642045355916e-08,
+          "maxFrameJump": 2.370418824728775e-11
+        },
+        "accelerate_and_walk": {
+          "maxReachError": 0,
+          "maxTargetError": 3.603498850527567e-08,
+          "maxStanceSlip": 2.3361152786528347e-09,
+          "maxGroundError": 2.7630975132919566e-08,
+          "maxFrameJump": 0.03877166369438277
+        },
+        "decelerate_stop": {
+          "maxReachError": 0,
+          "maxTargetError": 3.604406690274362e-08,
+          "maxStanceSlip": 6.60608362702967e-10,
+          "maxGroundError": 2.1330449018197584e-08,
+          "maxFrameJump": 0.02663763192414078
+        },
+        "turn": {
+          "maxReachError": 0,
+          "maxTargetError": 3.6218016777995036e-08,
+          "maxStanceSlip": 9.256009330830161e-09,
+          "maxGroundError": 2.7119384307661143e-08,
+          "maxFrameJump": 0.028780844166441236
+        },
+        "turn_stop": {
+          "maxReachError": 0.005010892324353006,
+          "maxTargetError": 0.005010902251644919,
+          "maxStanceSlip": 0.0003345033628348666,
+          "maxGroundError": 0.004592287261764062,
+          "maxFrameJump": 0.020950104176188686
+        },
+        "restart_walk": {
+          "maxReachError": 0,
+          "maxTargetError": 3.6116625237968356e-08,
+          "maxStanceSlip": 2.3466873458679316e-09,
+          "maxGroundError": 2.7644698093187703e-08,
+          "maxFrameJump": 0.038771663700345106
+        },
+        "final_stop": {
+          "maxReachError": 0,
+          "maxTargetError": 2.785863718446555e-08,
+          "maxStanceSlip": 7.807985061434521e-10,
+          "maxGroundError": 2.4966905126655448e-08,
+          "maxFrameJump": 0.027348986034092762
+        },
+        "reset": {
+          "maxReachError": 0,
+          "maxTargetError": 2.1583181677781127e-08,
+          "maxStanceSlip": 1.5463291215771698e-11,
+          "maxGroundError": 2.0562834629478388e-08,
+          "maxFrameJump": 1.8582795021972634e-11
+        }
+      },
+      "maxJumpSample": {
+        "segment": "restart_walk",
+        "time": 9.650000000000059,
+        "foot": "hind_left",
+        "phase": 0.6942099200881426,
+        "previousStance": false,
+        "stance": false,
+        "previous": [
+          0.02719713724131466,
+          0.016737865453942305,
+          1.8501416076862427
+        ],
+        "actual": [
+          0.04580737966657105,
+          0.014465338098040667,
+          1.8162043655710896
+        ],
+        "planned": [
+          0.045807379286640096,
+          0.014465333085975028,
+          1.816204366353956
+        ]
+      },
+      "contactOrderCorrect": true,
+      "simultaneousContactGroups": 0
+    },
+    {
+      "fps": 60,
+      "requestedSpeed": 0.6,
+      "frames": 774,
+      "maxReachError": 0.0050108923223295965,
+      "maxActualTargetError": 0.00501090224962164,
+      "maxStanceSlip": 0.0003345033631962287,
+      "maxPlannedStanceSlip": 0,
+      "maxStanceGroundError": 0.0045922872599098025,
+      "maxFootFrameJump": 0.04835192605022144,
+      "maxContactFrameJump": 0.0014570472663863962,
+      "minActualClearance": 5.9032675275849655e-09,
+      "maxActualClearance": 0.017000025887110026,
+      "allFinite": true,
+      "contacts": [
+        {
+          "foot": "hind_right",
+          "time": 2.0999999999999974,
+          "actualY": 1.5666555636117963e-08,
+          "phase": 0.05169944295662998
+        },
+        {
+          "foot": "fore_right",
+          "time": 2.1833333333333305,
+          "actualY": 1.159035546705045e-08,
+          "phase": 0.25169944295663016
+        },
+        {
+          "foot": "hind_left",
+          "time": 2.3166666666666633,
+          "actualY": 9.826756269815107e-09,
+          "phase": 0.5716994429566304
+        },
+        {
+          "foot": "fore_left",
+          "time": 2.3999999999999964,
+          "actualY": 7.681043939777865e-09,
+          "phase": 0.7716994429566306
+        },
+        {
+          "foot": "hind_right",
+          "time": 2.5166666666666626,
+          "actualY": 1.566651861018009e-08,
+          "phase": 0.05169944295663087
+        },
+        {
+          "foot": "fore_right",
+          "time": 2.5999999999999956,
+          "actualY": 1.1590403511951841e-08,
+          "phase": 0.25169944295663105
+        },
+        {
+          "foot": "hind_left",
+          "time": 2.7333333333333285,
+          "actualY": 9.826749691743686e-09,
+          "phase": 0.5716994429566313
+        },
+        {
+          "foot": "fore_left",
+          "time": 2.8166666666666615,
+          "actualY": 7.681047617391634e-09,
+          "phase": 0.7716994429566315
+        },
+        {
+          "foot": "hind_right",
+          "time": 2.933333333333328,
+          "actualY": 1.5666517763635035e-08,
+          "phase": 0.05169944295663176
+        },
+        {
+          "foot": "fore_right",
+          "time": 3.016666666666661,
+          "actualY": 1.1590404608297078e-08,
+          "phase": 0.25169944295663194
+        },
+        {
+          "foot": "hind_left",
+          "time": 3.1499999999999937,
+          "actualY": 9.82674941418793e-09,
+          "phase": 0.5716994429566322
+        },
+        {
+          "foot": "fore_left",
+          "time": 3.2333333333333267,
+          "actualY": 7.681047506369332e-09,
+          "phase": 0.7716994429566324
+        },
+        {
+          "foot": "hind_right",
+          "time": 3.349999999999993,
+          "actualY": 1.566651773587946e-08,
+          "phase": 0.051699442956632646
+        },
+        {
+          "foot": "fore_right",
+          "time": 3.433333333333326,
+          "actualY": 1.1590404580541502e-08,
+          "phase": 0.2516994429566328
+        },
+        {
+          "foot": "hind_left",
+          "time": 3.566666666666659,
+          "actualY": 9.826749386432354e-09,
+          "phase": 0.5716994429566331
+        },
+        {
+          "foot": "fore_left",
+          "time": 3.649999999999992,
+          "actualY": 7.681047554941589e-09,
+          "phase": 0.7716994429566333
+        },
+        {
+          "foot": "hind_right",
+          "time": 3.766666666666658,
+          "actualY": 1.566651779139061e-08,
+          "phase": 0.051699442956633535
+        },
+        {
+          "foot": "fore_right",
+          "time": 3.849999999999991,
+          "actualY": 1.159040459441929e-08,
+          "phase": 0.2516994429566337
+        },
+        {
+          "foot": "hind_left",
+          "time": 3.983333333333324,
+          "actualY": 9.826749566843596e-09,
+          "phase": 0.571699442956634
+        },
+        {
+          "foot": "fore_left",
+          "time": 4.0666666666666575,
+          "actualY": 7.681047568819377e-09,
+          "phase": 0.7716994429566342
+        },
+        {
+          "foot": "hind_right",
+          "time": 4.183333333333324,
+          "actualY": 1.5666517680368308e-08,
+          "phase": 0.05169944295663442
+        },
+        {
+          "foot": "fore_right",
+          "time": 4.266666666666657,
+          "actualY": 1.1590404538908139e-08,
+          "phase": 0.2516994429566346
+        },
+        {
+          "foot": "hind_left",
+          "time": 4.39999999999999,
+          "actualY": 9.826749455821293e-09,
+          "phase": 0.5716994429566349
+        },
+        {
+          "foot": "fore_left",
+          "time": 4.483333333333323,
+          "actualY": 7.681047589636059e-09,
+          "phase": 0.7716994429566351
+        },
+        {
+          "foot": "hind_right",
+          "time": 4.599999999999989,
+          "actualY": 1.566651766649052e-08,
+          "phase": 0.05169944295662998
+        },
+        {
+          "foot": "fore_right",
+          "time": 4.683333333333322,
+          "actualY": 1.159040471931938e-08,
+          "phase": 0.2516994429566257
+        },
+        {
+          "foot": "hind_left",
+          "time": 4.816666666666655,
+          "actualY": 9.826749330921203e-09,
+          "phase": 0.5716994429566189
+        },
+        {
+          "foot": "fore_left",
+          "time": 4.899999999999988,
+          "actualY": 7.68104752024712e-09,
+          "phase": 0.7716994429566146
+        },
+        {
+          "foot": "hind_right",
+          "time": 5.016666666666654,
+          "actualY": 1.5666517624857157e-08,
+          "phase": 0.051699442956608666
+        },
+        {
+          "foot": "fore_right",
+          "time": 5.099999999999987,
+          "actualY": 1.1590404573602608e-08,
+          "phase": 0.2516994429566044
+        },
+        {
+          "foot": "hind_left",
+          "time": 5.23333333333332,
+          "actualY": 9.826749608476959e-09,
+          "phase": 0.5716994429565976
+        },
+        {
+          "foot": "fore_left",
+          "time": 5.316666666666653,
+          "actualY": 7.681047492491544e-09,
+          "phase": 0.7716994429565933
+        },
+        {
+          "foot": "hind_right",
+          "time": 5.433333333333319,
+          "actualY": 1.5666517777512823e-08,
+          "phase": 0.05169944295658735
+        },
+        {
+          "foot": "fore_right",
+          "time": 5.516666666666652,
+          "actualY": 1.1590404601358184e-08,
+          "phase": 0.2516994429565831
+        },
+        {
+          "foot": "hind_left",
+          "time": 5.649999999999985,
+          "actualY": 9.826749566843596e-09,
+          "phase": 0.5716994429565763
+        },
+        {
+          "foot": "fore_left",
+          "time": 5.733333333333318,
+          "actualY": 7.681047506369332e-09,
+          "phase": 0.771699442956572
+        },
+        {
+          "foot": "hind_right",
+          "time": 5.8499999999999845,
+          "actualY": 1.566651759710158e-08,
+          "phase": 0.05169944295656603
+        },
+        {
+          "foot": "fore_right",
+          "time": 5.933333333333318,
+          "actualY": 1.1590404774830532e-08,
+          "phase": 0.25169944295656177
+        }
+      ],
+      "cycles": {
+        "hind_right": {
+          "count": 10,
+          "meanSeconds": 0.41666666666666524
+        },
+        "fore_right": {
+          "count": 10,
+          "meanSeconds": 0.41666666666666524
+        },
+        "hind_left": {
+          "count": 9,
+          "meanSeconds": 0.41666666666666524
+        },
+        "fore_left": {
+          "count": 9,
+          "meanSeconds": 0.41666666666666524
+        }
+      },
+      "worstGroin": {
+        "a": 12039,
+        "b": 12038,
+        "length": 0.0014158448658528815,
+        "ratio": 6.860774043767577,
+        "time": 11.100000000000131,
+        "segment": "restart_walk"
+      },
+      "maxResetTargetError": 2.1583801353739305e-08,
+      "blinkCount": 2,
+      "supportCounts": {
+        "2": 143,
+        "3": 96
+      },
+      "minSteadySupport": 2,
+      "bodyTriangles": 49000,
+      "totalTriangles": 51976,
+      "failSamples": [],
+      "segments": {
+        "stand": {
+          "maxReachError": 0,
+          "maxTargetError": 2.0940739628049733e-08,
+          "maxStanceSlip": 1.9760373892729888e-11,
+          "maxGroundError": 2.0101642045355916e-08,
+          "maxFrameJump": 2.370418824728775e-11
+        },
+        "accelerate_and_walk": {
+          "maxReachError": 0,
+          "maxTargetError": 3.573452805624906e-08,
+          "maxStanceSlip": 3.5809877333393443e-09,
+          "maxGroundError": 2.774278877459846e-08,
+          "maxFrameJump": 0.048351926041659284
+        },
+        "decelerate_stop": {
+          "maxReachError": 0.001143464148034068,
+          "maxTargetError": 0.0011434695208891804,
+          "maxStanceSlip": 0.0001936930619554493,
+          "maxGroundError": 0.00036424965510538365,
+          "maxFrameJump": 0.04100859314026763
+        },
+        "turn": {
+          "maxReachError": 0,
+          "maxTargetError": 3.464129352130827e-08,
+          "maxStanceSlip": 9.25600955361026e-09,
+          "maxGroundError": 2.7119384349294506e-08,
+          "maxFrameJump": 0.028780844166441107
+        },
+        "turn_stop": {
+          "maxReachError": 0.0050108923223295965,
+          "maxTargetError": 0.00501090224962164,
+          "maxStanceSlip": 0.0003345033631962287,
+          "maxGroundError": 0.0045922872599098025,
+          "maxFrameJump": 0.020950104176188058
+        },
+        "restart_walk": {
+          "maxReachError": 0,
+          "maxTargetError": 3.581045277738832e-08,
+          "maxStanceSlip": 3.6373563680978296e-09,
+          "maxGroundError": 2.775991302106373e-08,
+          "maxFrameJump": 0.04835192605022144
+        },
+        "final_stop": {
+          "maxReachError": 0,
+          "maxTargetError": 3.2088770780440994e-08,
+          "maxStanceSlip": 2.2654234928626126e-09,
+          "maxGroundError": 2.4219178801354602e-08,
+          "maxFrameJump": 0.04100859614136207
+        },
+        "reset": {
+          "maxReachError": 0,
+          "maxTargetError": 2.1583801353739305e-08,
+          "maxStanceSlip": 1.5464275048387103e-11,
+          "maxGroundError": 2.0563293678943495e-08,
+          "maxFrameJump": 1.8583859982539006e-11
+        }
+      },
+      "maxJumpSample": {
+        "segment": "restart_walk",
+        "time": 9.616666666666724,
+        "foot": "hind_left",
+        "phase": 0.8237720998985654,
+        "previousStance": false,
+        "stance": false,
+        "previous": [
+          0.04109912045864821,
+          0.016329787141784596,
+          3.0019013579820486
+        ],
+        "actual": [
+          0.06430299072186448,
+          0.013328546395399168,
+          2.9595872739017315
+        ],
+        "planned": [
+          0.06430299048760296,
+          0.01332854133070902,
+          2.9595872744037934
+        ]
+      },
+      "contactOrderCorrect": true,
+      "simultaneousContactGroups": 0
+    }
+  ],
+  "scope": "Actual bone-transformed sole anchor checks, not only debug feet. Flat-ground tests; mesh skin silhouette still needs visual review. All speeds include acceleration, braking, stationary 2.2rad/s turning and reset.",
+  "sourceAssetSha256": "6c8d0f0133805e0727cc6cdfc558456d670e0d33a5158685084413e7786a77f1",
+  "pressureTesting": {
+    "speeds": [
+      0.6
+    ],
+    "passed": false,
+    "failed": [
+      "30fps_0.6mps_stance_slip_under_2mm",
+      "30fps_0.6mps_contact_order",
+      "30fps_0.6mps_at_least_two_steady_supports"
+    ]
+  }
+}

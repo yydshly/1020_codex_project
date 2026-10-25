@@ -1,0 +1,4232 @@
+{
+  "checked_utc": "2026-10-24T07:24:36.714205+00:00",
+  "passed": true,
+  "checks": {
+    "v8_study_loads": true,
+    "default_side_and_speed": true,
+    "same_triangle_budget": true,
+    "finite_initial_geometry": true,
+    "normal_speed_works": true,
+    "normal_contacts_valid": true,
+    "slow_speed_works": true,
+    "slow_motion_scales_whole_simulation": true,
+    "v7_matched_speed_comparison": true,
+    "bounded_motion_clip_saved": true,
+    "stop_settles": true,
+    "head_and_blink_retained": true,
+    "desktop_no_horizontal_overflow": true,
+    "mobile_controls_work": true,
+    "mobile_no_horizontal_overflow": true,
+    "old_pages_unchanged": true,
+    "runtime_frozen": true,
+    "no_browser_or_shader_errors": true
+  },
+  "errors": [],
+  "observations": {
+    "sourcesBefore": {
+      "web\\cat-v8-body.js": "84214e3fb69ea79a96057d0e4bd6d63c4c7010a299bad3662984480d4de12c31",
+      "web\\cat-v8-face.js": "52190cb9ec316fdc5a1b90455fd220f4d93eb0de6d9ef95794637fd92eede5c8",
+      "web\\cat-v8-gait-study.html": "f6bec9ad57097b95d9b62e90d9088e22f4df10ee8f95b3af90764c59afc704bb",
+      "web\\cat-v8-gait-study.js": "a8638e690efeaba784ee1f2a3e73d1dfc5a36a4db113b25f8dc0af39aa6c0a31",
+      "web\\cat-v8-hock-rig.js": "607bdcd5cf70c4942729434447e0ceb2244ac05035331fc7011b7c7b253aa602",
+      "web\\cat-v8-limb-skin.js": "29deaa96f3dba3a75f00063e112485ed9267a16dce3eca1d86babe8b73153276",
+      "web\\cat-v8.js": "6eb26b04b6cb918438d23eaef49212d2836ea9c9e12471321ac85dda7d7de382",
+      "web\\cat-v7-head.js": "9bfb33cbdd2595c69c30fb31e5a7547d2e475dcc68129f8215f07aab9d946b3d",
+      "web\\cat-v7-head-skin.js": "c8a067f16d83635869039336d6f5e04d8dd05d3d055339e7fab3bc1135d4371e",
+      "web\\cat-v6-lid-material.js": "39001e6cd0dafba1de90c812ea71388e338cd4c48ab8ecc46da8513fc5a5c3de",
+      "web\\models\\cat-v6-lid-surface.json": "119db47c3eed6506fc5c0fd70e999d6119bea2490c5cb4b41dbe9595b89e0d77",
+      "web\\models\\cat-v3-rig.glb": "6c8d0f0133805e0727cc6cdfc558456d670e0d33a5158685084413e7786a77f1"
+    },
+    "initial": {
+      "ready": true,
+      "version": "cat-v8-gait-study",
+      "frames": 20,
+      "mode": "current",
+      "view": "side",
+      "attention": "natural",
+      "blinkMode": "auto",
+      "walking": false,
+      "speed": 0,
+      "requestedSpeed": 0.36,
+      "timeScale": 1,
+      "elapsed": 0.3665999999999999,
+      "position": [
+        0,
+        0,
+        0
+      ],
+      "geometry": {
+        "meshes": 2,
+        "triangles": 51976,
+        "invalid": 0,
+        "morphTargets": 0
+      },
+      "cat": {
+        "version": "cat-gait-08",
+        "root": [
+          0,
+          0,
+          0
+        ],
+        "gait": {
+          "speed": 0,
+          "phase": 0,
+          "stanceFeet": 4,
+          "maxReachError": 0,
+          "stride": 0.18,
+          "duty": 0.64,
+          "cycleSeconds": null,
+          "angularSpeed": 0
+        },
+        "limbSkin": {
+          "changedVertices": 4054,
+          "lowPawVerticesPreserved": 2896,
+          "protectedVerticesPreserved": 16753,
+          "maxWeightSumError": 6.705522537231445e-08,
+          "addedTriangles": 0,
+          "addedVertices": 0,
+          "positionNormalUvIndexUnchanged": true,
+          "kneeRedistributedVertices": 7798
+        },
+        "hockRig": {
+          "joints": {
+            "hind_left": {
+              "previous": [
+                -0.05409999564290047,
+                0.04300000829116578,
+                -0.1437000304289761
+              ],
+              "current": [
+                -0.05409999564290047,
+                0.085,
+                -0.1587
+              ]
+            },
+            "hind_right": {
+              "previous": [
+                0.05199999362230301,
+                0.043000010152137794,
+                -0.17380003995700824
+              ],
+              "current": [
+                0.05199999362230301,
+                0.085,
+                -0.1888
+              ]
+            }
+          },
+          "changedVertices": 2458,
+          "maxWeightSumError": 4.470348358154297e-08,
+          "addedBones": 0,
+          "addedVertices": 0,
+          "addedTriangles": 0,
+          "positionsUnchanged": true
+        },
+        "bones": 21,
+        "feet": [
+          {
+            "name": "fore_left",
+            "stance": true,
+            "phase": 0.30000000000000004,
+            "world": [
+              -0.0427,
+              0,
+              0.1127
+            ],
+            "renderedWorld": [
+              -0.04269999999999996,
+              1.3286676134316444e-08,
+              0.11269999621611297
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "fore_right",
+            "stance": true,
+            "phase": 0.8,
+            "world": [
+              0.0422,
+              0,
+              0.1027
+            ],
+            "renderedWorld": [
+              0.04219999999999994,
+              1.542678962351829e-08,
+              0.10269999540039673
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_left",
+            "stance": true,
+            "phase": 0.5,
+            "world": [
+              -0.0541,
+              0,
+              -0.1337
+            ],
+            "renderedWorld": [
+              -0.05410000000000001,
+              3.4472659449225063e-09,
+              -0.13369999643813762
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_right",
+            "stance": true,
+            "phase": 0,
+            "world": [
+              0.052,
+              0,
+              -0.1638
+            ],
+            "renderedWorld": [
+              0.05200000000000001,
+              4.531549857578199e-09,
+              -0.16379999257619327
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          }
+        ],
+        "blink": {
+          "mode": "auto",
+          "amount": 0,
+          "left": 0,
+          "right": 0,
+          "count": 0,
+          "active": false,
+          "duration": 0.28,
+          "kind": "separate-skinned-eyelids",
+          "baseGeometryUnchanged": false,
+          "baseMorphCount": 0,
+          "addedTriangles": 2976,
+          "addedVertices": 1672,
+          "independentGaze": false,
+          "mouthControl": false,
+          "basePositionUnchanged": true,
+          "headSkinReweighted": true
+        },
+        "attention": {
+          "version": "head-attention-07",
+          "enabled": true,
+          "mode": "natural",
+          "appliedDegrees": {
+            "yaw": 0,
+            "pitch": 0
+          },
+          "requestedDegrees": {
+            "yaw": 0,
+            "pitch": 0
+          },
+          "yawLimit": 6,
+          "elapsed": 0.3665999999999999,
+          "bindYawCorrection": -55.99514261333094,
+          "eyeControl": false,
+          "mouthControl": false
+        },
+        "headCorrection": {
+          "sourceFaceYawDegrees": 55.99514261333094,
+          "correctionDegrees": -55.99514261333094,
+          "skin": {
+            "changedVertices": 4349,
+            "rigidFaceVertices": 7011,
+            "protectedVertices": 26407,
+            "maxWeightSumError": 6.705522537231445e-08,
+            "positionNormalUvIndexUnchanged": true,
+            "addedVertices": 0,
+            "addedTriangles": 0
+          }
+        }
+      }
+    },
+    "normalWalk": {
+      "ready": true,
+      "version": "cat-v8-gait-study",
+      "frames": 176,
+      "mode": "current",
+      "view": "side",
+      "attention": "off",
+      "blinkMode": "open",
+      "walking": true,
+      "speed": 0.36,
+      "requestedSpeed": 0.36,
+      "timeScale": 1,
+      "elapsed": 2.9664999999999973,
+      "position": [
+        0,
+        0,
+        0.7361067100000003
+      ],
+      "geometry": {
+        "meshes": 2,
+        "triangles": 51976,
+        "invalid": 0,
+        "morphTargets": 0
+      },
+      "cat": {
+        "version": "cat-gait-08",
+        "root": [
+          0,
+          0,
+          0.7361067100000003
+        ],
+        "gait": {
+          "speed": 0.3600000000000008,
+          "phase": 0.7404760492057507,
+          "stanceFeet": 2,
+          "maxReachError": 0,
+          "stride": 0.25,
+          "duty": 0.64,
+          "cycleSeconds": 0.6944444444444429,
+          "angularSpeed": 0
+        },
+        "limbSkin": {
+          "changedVertices": 4054,
+          "lowPawVerticesPreserved": 2896,
+          "protectedVerticesPreserved": 16753,
+          "maxWeightSumError": 6.705522537231445e-08,
+          "addedTriangles": 0,
+          "addedVertices": 0,
+          "positionNormalUvIndexUnchanged": true,
+          "kneeRedistributedVertices": 7798
+        },
+        "hockRig": {
+          "joints": {
+            "hind_left": {
+              "previous": [
+                -0.05409999564290047,
+                0.04300000829116578,
+                -0.1437000304289761
+              ],
+              "current": [
+                -0.05409999564290047,
+                0.085,
+                -0.1587
+              ]
+            },
+            "hind_right": {
+              "previous": [
+                0.05199999362230301,
+                0.043000010152137794,
+                -0.17380003995700824
+              ],
+              "current": [
+                0.05199999362230301,
+                0.085,
+                -0.1888
+              ]
+            }
+          },
+          "changedVertices": 2458,
+          "maxWeightSumError": 4.470348358154297e-08,
+          "addedBones": 0,
+          "addedVertices": 0,
+          "addedTriangles": 0,
+          "positionsUnchanged": true
+        },
+        "bones": 21,
+        "feet": [
+          {
+            "name": "fore_left",
+            "stance": true,
+            "phase": 0.040476049205750764,
+            "world": [
+              -0.0427,
+              0,
+              0.9391186765377445
+            ],
+            "renderedWorld": [
+              -0.04269999997737407,
+              8.992444941458011e-09,
+              0.93911866221485
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "fore_right",
+            "stance": false,
+            "phase": 0.5404760492057508,
+            "world": [
+              0.0422,
+              0.008110045490930367,
+              0.9293987641929755
+            ],
+            "renderedWorld": [
+              0.04219999992537459,
+              0.008110055065643565,
+              0.9293987432746115
+            ],
+            "groundClearance": 0.008110045490930367,
+            "reachError": 0
+          },
+          {
+            "name": "hind_left",
+            "stance": true,
+            "phase": 0.24047604920575072,
+            "world": [
+              -0.0541,
+              0,
+              0.6331247274499892
+            ],
+            "renderedWorld": [
+              -0.05410000001085139,
+              2.782580915683397e-09,
+              0.6331247298328433
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_right",
+            "stance": false,
+            "phase": 0.7404760492057507,
+            "world": [
+              0.052,
+              0.015177658045163139,
+              0.5506708102613604
+            ],
+            "renderedWorld": [
+              0.05199999998836037,
+              0.015177659647502506,
+              0.5506708179466282
+            ],
+            "groundClearance": 0.015177658045163139,
+            "reachError": 0
+          }
+        ],
+        "blink": {
+          "mode": "open",
+          "amount": 0,
+          "left": 0,
+          "right": 0,
+          "count": 0,
+          "active": false,
+          "duration": 0.28,
+          "kind": "separate-skinned-eyelids",
+          "baseGeometryUnchanged": false,
+          "baseMorphCount": 0,
+          "addedTriangles": 2976,
+          "addedVertices": 1672,
+          "independentGaze": false,
+          "mouthControl": false,
+          "basePositionUnchanged": true,
+          "headSkinReweighted": true
+        },
+        "attention": {
+          "version": "head-attention-07",
+          "enabled": false,
+          "mode": "natural",
+          "appliedDegrees": {
+            "yaw": 0,
+            "pitch": 0
+          },
+          "requestedDegrees": {
+            "yaw": 0,
+            "pitch": 0
+          },
+          "yawLimit": 2,
+          "elapsed": 2.9664999999999973,
+          "bindYawCorrection": -55.99514261333094,
+          "eyeControl": false,
+          "mouthControl": false
+        },
+        "headCorrection": {
+          "sourceFaceYawDegrees": 55.99514261333094,
+          "correctionDegrees": -55.99514261333094,
+          "skin": {
+            "changedVertices": 4349,
+            "rigidFaceVertices": 7011,
+            "protectedVertices": 26407,
+            "maxWeightSumError": 6.705522537231445e-08,
+            "positionNormalUvIndexUnchanged": true,
+            "addedVertices": 0,
+            "addedTriangles": 0
+          }
+        }
+      }
+    },
+    "sidePhases": [
+      {
+        "target": 0,
+        "phase": 0.9805240492057514,
+        "state": {
+          "ready": true,
+          "version": "cat-v8-gait-study",
+          "frames": 186,
+          "mode": "current",
+          "view": "side",
+          "attention": "off",
+          "blinkMode": "open",
+          "walking": true,
+          "speed": 0.36,
+          "requestedSpeed": 0.36,
+          "timeScale": 1,
+          "elapsed": 3.1331999999999973,
+          "position": [
+            0,
+            0,
+            0.7961187100000005
+          ],
+          "geometry": {
+            "meshes": 2,
+            "triangles": 51976,
+            "invalid": 0,
+            "morphTargets": 0
+          },
+          "cat": {
+            "version": "cat-gait-08",
+            "root": [
+              0,
+              0,
+              0.7961187100000005
+            ],
+            "gait": {
+              "speed": 0.36000000000000176,
+              "phase": 0.9805240492057514,
+              "stanceFeet": 3,
+              "maxReachError": 0,
+              "stride": 0.25,
+              "duty": 0.64,
+              "cycleSeconds": 0.6944444444444411,
+              "angularSpeed": 0
+            },
+            "limbSkin": {
+              "changedVertices": 4054,
+              "lowPawVerticesPreserved": 2896,
+              "protectedVerticesPreserved": 16753,
+              "maxWeightSumError": 6.705522537231445e-08,
+              "addedTriangles": 0,
+              "addedVertices": 0,
+              "positionNormalUvIndexUnchanged": true,
+              "kneeRedistributedVertices": 7798
+            },
+            "hockRig": {
+              "joints": {
+                "hind_left": {
+                  "previous": [
+                    -0.05409999564290047,
+                    0.04300000829116578,
+                    -0.1437000304289761
+                  ],
+                  "current": [
+                    -0.05409999564290047,
+                    0.085,
+                    -0.1587
+                  ]
+                },
+                "hind_right": {
+                  "previous": [
+                    0.05199999362230301,
+                    0.043000010152137794,
+                    -0.17380003995700824
+                  ],
+                  "current": [
+                    0.05199999362230301,
+                    0.085,
+                    -0.1888
+                  ]
+                }
+              },
+              "changedVertices": 2458,
+              "maxWeightSumError": 4.470348358154297e-08,
+              "addedBones": 0,
+              "addedVertices": 0,
+              "addedTriangles": 0,
+              "positionsUnchanged": true
+            },
+            "bones": 21,
+            "feet": [
+              {
+                "name": "fore_left",
+                "stance": true,
+                "phase": 0.28052404920575147,
+                "world": [
+                  -0.0427,
+                  0,
+                  0.9391186765377445
+                ],
+                "renderedWorld": [
+                  -0.04270000001367919,
+                  1.5027965698244383e-08,
+                  0.9391186634416411
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "fore_right",
+                "stance": true,
+                "phase": 0.7805240492057515,
+                "world": [
+                  0.0422,
+                  0,
+                  0.9811306643886177
+                ],
+                "renderedWorld": [
+                  0.04219999999259578,
+                  1.0309534601016246e-08,
+                  0.9811306451768241
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "hind_left",
+                "stance": true,
+                "phase": 0.4805240492057514,
+                "world": [
+                  -0.0541,
+                  0,
+                  0.6331247274499892
+                ],
+                "renderedWorld": [
+                  -0.05410000000180009,
+                  1.9657947353257654e-09,
+                  0.6331247312166457
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "hind_right",
+                "stance": false,
+                "phase": 0.9805240492057514,
+                "world": [
+                  0.052,
+                  1.7124116335055397e-05,
+                  0.7590365389241593
+                ],
+                "renderedWorld": [
+                  0.05199999999642908,
+                  1.7133066122013152e-05,
+                  0.7590365402428227
+                ],
+                "groundClearance": 1.7124116335055397e-05,
+                "reachError": 0
+              }
+            ],
+            "blink": {
+              "mode": "open",
+              "amount": 0,
+              "left": 0,
+              "right": 0,
+              "count": 0,
+              "active": false,
+              "duration": 0.28,
+              "kind": "separate-skinned-eyelids",
+              "baseGeometryUnchanged": false,
+              "baseMorphCount": 0,
+              "addedTriangles": 2976,
+              "addedVertices": 1672,
+              "independentGaze": false,
+              "mouthControl": false,
+              "basePositionUnchanged": true,
+              "headSkinReweighted": true
+            },
+            "attention": {
+              "version": "head-attention-07",
+              "enabled": false,
+              "mode": "natural",
+              "appliedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "requestedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "yawLimit": 2,
+              "elapsed": 3.1331999999999973,
+              "bindYawCorrection": -55.99514261333094,
+              "eyeControl": false,
+              "mouthControl": false
+            },
+            "headCorrection": {
+              "sourceFaceYawDegrees": 55.99514261333094,
+              "correctionDegrees": -55.99514261333094,
+              "skin": {
+                "changedVertices": 4349,
+                "rigidFaceVertices": 7011,
+                "protectedVertices": 26407,
+                "maxWeightSumError": 6.705522537231445e-08,
+                "positionNormalUvIndexUnchanged": true,
+                "addedVertices": 0,
+                "addedTriangles": 0
+              }
+            }
+          }
+        },
+        "path": "cat-v8-gait-final-side-phase-00.png"
+      },
+      {
+        "target": 0.25,
+        "phase": 0.24447604920575117,
+        "state": {
+          "ready": true,
+          "version": "cat-v8-gait-study",
+          "frames": 195,
+          "mode": "current",
+          "view": "side",
+          "attention": "off",
+          "blinkMode": "open",
+          "walking": true,
+          "speed": 0.36,
+          "requestedSpeed": 0.36,
+          "timeScale": 1,
+          "elapsed": 3.3164999999999973,
+          "position": [
+            0,
+            0,
+            0.8621067100000004
+          ],
+          "geometry": {
+            "meshes": 2,
+            "triangles": 51976,
+            "invalid": 0,
+            "morphTargets": 0
+          },
+          "cat": {
+            "version": "cat-gait-08",
+            "root": [
+              0,
+              0,
+              0.8621067100000004
+            ],
+            "gait": {
+              "speed": 0.3600000000000008,
+              "phase": 0.24447604920575117,
+              "stanceFeet": 3,
+              "maxReachError": 0,
+              "stride": 0.25,
+              "duty": 0.64,
+              "cycleSeconds": 0.6944444444444429,
+              "angularSpeed": 0
+            },
+            "limbSkin": {
+              "changedVertices": 4054,
+              "lowPawVerticesPreserved": 2896,
+              "protectedVerticesPreserved": 16753,
+              "maxWeightSumError": 6.705522537231445e-08,
+              "addedTriangles": 0,
+              "addedVertices": 0,
+              "positionNormalUvIndexUnchanged": true,
+              "kneeRedistributedVertices": 7798
+            },
+            "hockRig": {
+              "joints": {
+                "hind_left": {
+                  "previous": [
+                    -0.05409999564290047,
+                    0.04300000829116578,
+                    -0.1437000304289761
+                  ],
+                  "current": [
+                    -0.05409999564290047,
+                    0.085,
+                    -0.1587
+                  ]
+                },
+                "hind_right": {
+                  "previous": [
+                    0.05199999362230301,
+                    0.043000010152137794,
+                    -0.17380003995700824
+                  ],
+                  "current": [
+                    0.05199999362230301,
+                    0.085,
+                    -0.1888
+                  ]
+                }
+              },
+              "changedVertices": 2458,
+              "maxWeightSumError": 4.470348358154297e-08,
+              "addedBones": 0,
+              "addedVertices": 0,
+              "addedTriangles": 0,
+              "positionsUnchanged": true
+            },
+            "bones": 21,
+            "feet": [
+              {
+                "name": "fore_left",
+                "stance": true,
+                "phase": 0.5444760492057512,
+                "world": [
+                  -0.0427,
+                  0,
+                  0.9391186765377445
+                ],
+                "renderedWorld": [
+                  -0.04269999995219229,
+                  1.842022222253714e-08,
+                  0.9391186718090786
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "fore_right",
+                "stance": true,
+                "phase": 0.04447604920575121,
+                "world": [
+                  0.0422,
+                  0,
+                  0.9811306643886177
+                ],
+                "renderedWorld": [
+                  0.042200000111213304,
+                  1.949451226834764e-08,
+                  0.9811306515429143
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "hind_left",
+                "stance": false,
+                "phase": 0.7444760492057512,
+                "world": [
+                  -0.0541,
+                  0.016190935642562312,
+                  0.685333553288756
+                ],
+                "renderedWorld": [
+                  -0.05409999998884882,
+                  0.016190936613281942,
+                  0.6853335570995656
+                ],
+                "groundClearance": 0.016190935642562312,
+                "reachError": 0
+              },
+              {
+                "name": "hind_right",
+                "stance": true,
+                "phase": 0.24447604920575117,
+                "world": [
+                  0.052,
+                  0,
+                  0.7591247274499898
+                ],
+                "renderedWorld": [
+                  0.052000000025349664,
+                  5.474392522630822e-09,
+                  0.75912473217386
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              }
+            ],
+            "blink": {
+              "mode": "open",
+              "amount": 0,
+              "left": 0,
+              "right": 0,
+              "count": 0,
+              "active": false,
+              "duration": 0.28,
+              "kind": "separate-skinned-eyelids",
+              "baseGeometryUnchanged": false,
+              "baseMorphCount": 0,
+              "addedTriangles": 2976,
+              "addedVertices": 1672,
+              "independentGaze": false,
+              "mouthControl": false,
+              "basePositionUnchanged": true,
+              "headSkinReweighted": true
+            },
+            "attention": {
+              "version": "head-attention-07",
+              "enabled": false,
+              "mode": "natural",
+              "appliedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "requestedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "yawLimit": 2,
+              "elapsed": 3.3164999999999973,
+              "bindYawCorrection": -55.99514261333094,
+              "eyeControl": false,
+              "mouthControl": false
+            },
+            "headCorrection": {
+              "sourceFaceYawDegrees": 55.99514261333094,
+              "correctionDegrees": -55.99514261333094,
+              "skin": {
+                "changedVertices": 4349,
+                "rigidFaceVertices": 7011,
+                "protectedVertices": 26407,
+                "maxWeightSumError": 6.705522537231445e-08,
+                "positionNormalUvIndexUnchanged": true,
+                "addedVertices": 0,
+                "addedTriangles": 0
+              }
+            }
+          }
+        },
+        "path": "cat-v8-gait-final-side-phase-25.png"
+      },
+      {
+        "target": 0.5,
+        "phase": 0.4845240492057501,
+        "state": {
+          "ready": true,
+          "version": "cat-v8-gait-study",
+          "frames": 205,
+          "mode": "current",
+          "view": "side",
+          "attention": "off",
+          "blinkMode": "open",
+          "walking": true,
+          "speed": 0.36,
+          "requestedSpeed": 0.36,
+          "timeScale": 1,
+          "elapsed": 3.4831999999999965,
+          "position": [
+            0,
+            0,
+            0.9221187100000001
+          ],
+          "geometry": {
+            "meshes": 2,
+            "triangles": 51976,
+            "invalid": 0,
+            "morphTargets": 0
+          },
+          "cat": {
+            "version": "cat-gait-08",
+            "root": [
+              0,
+              0,
+              0.9221187100000001
+            ],
+            "gait": {
+              "speed": 0.35999999999999827,
+              "phase": 0.4845240492057501,
+              "stanceFeet": 3,
+              "maxReachError": 0,
+              "stride": 0.25,
+              "duty": 0.64,
+              "cycleSeconds": 0.6944444444444478,
+              "angularSpeed": 0
+            },
+            "limbSkin": {
+              "changedVertices": 4054,
+              "lowPawVerticesPreserved": 2896,
+              "protectedVerticesPreserved": 16753,
+              "maxWeightSumError": 6.705522537231445e-08,
+              "addedTriangles": 0,
+              "addedVertices": 0,
+              "positionNormalUvIndexUnchanged": true,
+              "kneeRedistributedVertices": 7798
+            },
+            "hockRig": {
+              "joints": {
+                "hind_left": {
+                  "previous": [
+                    -0.05409999564290047,
+                    0.04300000829116578,
+                    -0.1437000304289761
+                  ],
+                  "current": [
+                    -0.05409999564290047,
+                    0.085,
+                    -0.1587
+                  ]
+                },
+                "hind_right": {
+                  "previous": [
+                    0.05199999362230301,
+                    0.043000010152137794,
+                    -0.17380003995700824
+                  ],
+                  "current": [
+                    0.05199999362230301,
+                    0.085,
+                    -0.1888
+                  ]
+                }
+              },
+              "changedVertices": 2458,
+              "maxWeightSumError": 4.470348358154297e-08,
+              "addedBones": 0,
+              "addedVertices": 0,
+              "addedTriangles": 0,
+              "positionsUnchanged": true
+            },
+            "bones": 21,
+            "feet": [
+              {
+                "name": "fore_left",
+                "stance": false,
+                "phase": 0.7845240492057501,
+                "world": [
+                  -0.0427,
+                  0.016806710221097528,
+                  1.0328883677111604
+                ],
+                "renderedWorld": [
+                  -0.0426999999836163,
+                  0.016806731862336215,
+                  1.032888356173015
+                ],
+                "groundClearance": 0.016806710221097528,
+                "reachError": 0
+              },
+              {
+                "name": "fore_right",
+                "stance": true,
+                "phase": 0.28452404920575014,
+                "world": [
+                  0.0422,
+                  0,
+                  0.9811306643886177
+                ],
+                "renderedWorld": [
+                  0.0422000000162831,
+                  1.6435825381244662e-08,
+                  0.9811306669791279
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "hind_left",
+                "stance": true,
+                "phase": 0.9845240492057501,
+                "world": [
+                  -0.0541,
+                  0,
+                  0.8821187274499893
+                ],
+                "renderedWorld": [
+                  -0.054099999997532164,
+                  5.83923541463971e-09,
+                  0.8821187279179922
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "hind_right",
+                "stance": true,
+                "phase": 0.4845240492057501,
+                "world": [
+                  0.052,
+                  0,
+                  0.7591247274499898
+                ],
+                "renderedWorld": [
+                  0.052000000002763516,
+                  3.329880010616293e-09,
+                  0.7591247343983839
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              }
+            ],
+            "blink": {
+              "mode": "open",
+              "amount": 0,
+              "left": 0,
+              "right": 0,
+              "count": 0,
+              "active": false,
+              "duration": 0.28,
+              "kind": "separate-skinned-eyelids",
+              "baseGeometryUnchanged": false,
+              "baseMorphCount": 0,
+              "addedTriangles": 2976,
+              "addedVertices": 1672,
+              "independentGaze": false,
+              "mouthControl": false,
+              "basePositionUnchanged": true,
+              "headSkinReweighted": true
+            },
+            "attention": {
+              "version": "head-attention-07",
+              "enabled": false,
+              "mode": "natural",
+              "appliedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "requestedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "yawLimit": 2,
+              "elapsed": 3.4831999999999965,
+              "bindYawCorrection": -55.99514261333094,
+              "eyeControl": false,
+              "mouthControl": false
+            },
+            "headCorrection": {
+              "sourceFaceYawDegrees": 55.99514261333094,
+              "correctionDegrees": -55.99514261333094,
+              "skin": {
+                "changedVertices": 4349,
+                "rigidFaceVertices": 7011,
+                "protectedVertices": 26407,
+                "maxWeightSumError": 6.705522537231445e-08,
+                "positionNormalUvIndexUnchanged": true,
+                "addedVertices": 0,
+                "addedTriangles": 0
+              }
+            }
+          }
+        },
+        "path": "cat-v8-gait-final-side-phase-50.png"
+      },
+      {
+        "target": 0.75,
+        "phase": 0.748476049205749,
+        "state": {
+          "ready": true,
+          "version": "cat-v8-gait-study",
+          "frames": 216,
+          "mode": "current",
+          "view": "side",
+          "attention": "off",
+          "blinkMode": "open",
+          "walking": true,
+          "speed": 0.36,
+          "requestedSpeed": 0.36,
+          "timeScale": 1,
+          "elapsed": 3.666499999999996,
+          "position": [
+            0,
+            0,
+            0.9881067099999998
+          ],
+          "geometry": {
+            "meshes": 2,
+            "triangles": 51976,
+            "invalid": 0,
+            "morphTargets": 0
+          },
+          "cat": {
+            "version": "cat-gait-08",
+            "root": [
+              0,
+              0,
+              0.9881067099999998
+            ],
+            "gait": {
+              "speed": 0.35999999999999827,
+              "phase": 0.748476049205749,
+              "stanceFeet": 2,
+              "maxReachError": 0,
+              "stride": 0.25,
+              "duty": 0.64,
+              "cycleSeconds": 0.6944444444444478,
+              "angularSpeed": 0
+            },
+            "limbSkin": {
+              "changedVertices": 4054,
+              "lowPawVerticesPreserved": 2896,
+              "protectedVerticesPreserved": 16753,
+              "maxWeightSumError": 6.705522537231445e-08,
+              "addedTriangles": 0,
+              "addedVertices": 0,
+              "positionNormalUvIndexUnchanged": true,
+              "kneeRedistributedVertices": 7798
+            },
+            "hockRig": {
+              "joints": {
+                "hind_left": {
+                  "previous": [
+                    -0.05409999564290047,
+                    0.04300000829116578,
+                    -0.1437000304289761
+                  ],
+                  "current": [
+                    -0.05409999564290047,
+                    0.085,
+                    -0.1587
+                  ]
+                },
+                "hind_right": {
+                  "previous": [
+                    0.05199999362230301,
+                    0.043000010152137794,
+                    -0.17380003995700824
+                  ],
+                  "current": [
+                    0.05199999362230301,
+                    0.085,
+                    -0.1888
+                  ]
+                }
+              },
+              "changedVertices": 2458,
+              "maxWeightSumError": 4.470348358154297e-08,
+              "addedBones": 0,
+              "addedVertices": 0,
+              "addedTriangles": 0,
+              "positionsUnchanged": true
+            },
+            "bones": 21,
+            "feet": [
+              {
+                "name": "fore_left",
+                "stance": true,
+                "phase": 0.048476049205748994,
+                "world": [
+                  -0.0427,
+                  0,
+                  1.1881126765377443
+                ],
+                "renderedWorld": [
+                  -0.042699999984861424,
+                  9.341962606268517e-09,
+                  1.1881126618658768
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "fore_right",
+                "stance": false,
+                "phase": 0.548476049205749,
+                "world": [
+                  0.0422,
+                  0.005022010031515077,
+                  1.1971028006466864
+                ],
+                "renderedWorld": [
+                  0.04220000005429965,
+                  0.005022017630793345,
+                  1.197102783644563
+                ],
+                "groundClearance": 0.005022010031515077,
+                "reachError": 0
+              },
+              {
+                "name": "hind_left",
+                "stance": true,
+                "phase": 0.24847604920574895,
+                "world": [
+                  -0.0541,
+                  0,
+                  0.8821187274499893
+                ],
+                "renderedWorld": [
+                  -0.05410000001075284,
+                  2.677318783339544e-09,
+                  0.8821187298723753
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "hind_right",
+                "stance": false,
+                "phase": 0.748476049205749,
+                "world": [
+                  0.052,
+                  0.016190935642562285,
+                  0.811333553288756
+                ],
+                "renderedWorld": [
+                  0.051999999988646184,
+                  0.016190937291584356,
+                  0.8113335605869828
+                ],
+                "groundClearance": 0.016190935642562285,
+                "reachError": 0
+              }
+            ],
+            "blink": {
+              "mode": "open",
+              "amount": 0,
+              "left": 0,
+              "right": 0,
+              "count": 0,
+              "active": false,
+              "duration": 0.28,
+              "kind": "separate-skinned-eyelids",
+              "baseGeometryUnchanged": false,
+              "baseMorphCount": 0,
+              "addedTriangles": 2976,
+              "addedVertices": 1672,
+              "independentGaze": false,
+              "mouthControl": false,
+              "basePositionUnchanged": true,
+              "headSkinReweighted": true
+            },
+            "attention": {
+              "version": "head-attention-07",
+              "enabled": false,
+              "mode": "natural",
+              "appliedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "requestedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "yawLimit": 2,
+              "elapsed": 3.666499999999996,
+              "bindYawCorrection": -55.99514261333094,
+              "eyeControl": false,
+              "mouthControl": false
+            },
+            "headCorrection": {
+              "sourceFaceYawDegrees": 55.99514261333094,
+              "correctionDegrees": -55.99514261333094,
+              "skin": {
+                "changedVertices": 4349,
+                "rigidFaceVertices": 7011,
+                "protectedVertices": 26407,
+                "maxWeightSumError": 6.705522537231445e-08,
+                "positionNormalUvIndexUnchanged": true,
+                "addedVertices": 0,
+                "addedTriangles": 0
+              }
+            }
+          }
+        },
+        "path": "cat-v8-gait-final-side-phase-75.png"
+      }
+    ],
+    "threequarterPhases": [
+      {
+        "target": 0,
+        "phase": 0.9963800492057509,
+        "state": {
+          "ready": true,
+          "version": "cat-v8-gait-study",
+          "frames": 268,
+          "mode": "current",
+          "view": "threequarter",
+          "attention": "off",
+          "blinkMode": "open",
+          "walking": true,
+          "speed": 0.36,
+          "requestedSpeed": 0.36,
+          "timeScale": 1,
+          "elapsed": 4.533100000000003,
+          "position": [
+            0,
+            0,
+            1.3000827100000003
+          ],
+          "geometry": {
+            "meshes": 2,
+            "triangles": 51976,
+            "invalid": 0,
+            "morphTargets": 0
+          },
+          "cat": {
+            "version": "cat-gait-08",
+            "root": [
+              0,
+              0,
+              1.3000827100000003
+            ],
+            "gait": {
+              "speed": 0.3600000000000116,
+              "phase": 0.9963800492057509,
+              "stanceFeet": 2,
+              "maxReachError": 0,
+              "stride": 0.25,
+              "duty": 0.64,
+              "cycleSeconds": 0.6944444444444221,
+              "angularSpeed": 0
+            },
+            "limbSkin": {
+              "changedVertices": 4054,
+              "lowPawVerticesPreserved": 2896,
+              "protectedVerticesPreserved": 16753,
+              "maxWeightSumError": 6.705522537231445e-08,
+              "addedTriangles": 0,
+              "addedVertices": 0,
+              "positionNormalUvIndexUnchanged": true,
+              "kneeRedistributedVertices": 7798
+            },
+            "hockRig": {
+              "joints": {
+                "hind_left": {
+                  "previous": [
+                    -0.05409999564290047,
+                    0.04300000829116578,
+                    -0.1437000304289761
+                  ],
+                  "current": [
+                    -0.05409999564290047,
+                    0.085,
+                    -0.1587
+                  ]
+                },
+                "hind_right": {
+                  "previous": [
+                    0.05199999362230301,
+                    0.043000010152137794,
+                    -0.17380003995700824
+                  ],
+                  "current": [
+                    0.05199999362230301,
+                    0.085,
+                    -0.1888
+                  ]
+                }
+              },
+              "changedVertices": 2458,
+              "maxWeightSumError": 4.470348358154297e-08,
+              "addedBones": 0,
+              "addedVertices": 0,
+              "addedTriangles": 0,
+              "positionsUnchanged": true
+            },
+            "bones": 21,
+            "feet": [
+              {
+                "name": "fore_left",
+                "stance": true,
+                "phase": 0.2963800492057509,
+                "world": [
+                  -0.0427,
+                  0,
+                  1.4401126765377494
+                ],
+                "renderedWorld": [
+                  -0.04270000000848306,
+                  1.5221606003423815e-08,
+                  1.4401126637155846
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "fore_right",
+                "stance": false,
+                "phase": 0.7963800492057509,
+                "world": [
+                  0.0422,
+                  0.01625697484745768,
+                  1.5124537111383696
+                ],
+                "renderedWorld": [
+                  0.04219999998687958,
+                  0.016256982976773006,
+                  1.5124536873500642
+                ],
+                "groundClearance": 0.01625697484745768,
+                "reachError": 0
+              },
+              {
+                "name": "hind_left",
+                "stance": true,
+                "phase": 0.49638004920575085,
+                "world": [
+                  -0.0541,
+                  0,
+                  1.1341187274499924
+                ],
+                "renderedWorld": [
+                  -0.05410000000034511,
+                  1.9985528093569016e-09,
+                  1.1341187313430128
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "hind_right",
+                "stance": false,
+                "phase": 0.9963800492057509,
+                "world": [
+                  0.052,
+                  3.1456301320596714e-11,
+                  1.2601187272888013
+                ],
+                "renderedWorld": [
+                  0.05199999999933408,
+                  8.899520176353093e-09,
+                  1.260118728724367
+                ],
+                "groundClearance": 3.1456301320596714e-11,
+                "reachError": 0
+              }
+            ],
+            "blink": {
+              "mode": "open",
+              "amount": 0,
+              "left": 0,
+              "right": 0,
+              "count": 0,
+              "active": false,
+              "duration": 0.28,
+              "kind": "separate-skinned-eyelids",
+              "baseGeometryUnchanged": false,
+              "baseMorphCount": 0,
+              "addedTriangles": 2976,
+              "addedVertices": 1672,
+              "independentGaze": false,
+              "mouthControl": false,
+              "basePositionUnchanged": true,
+              "headSkinReweighted": true
+            },
+            "attention": {
+              "version": "head-attention-07",
+              "enabled": false,
+              "mode": "natural",
+              "appliedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "requestedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "yawLimit": 2,
+              "elapsed": 4.533100000000003,
+              "bindYawCorrection": -55.99514261333094,
+              "eyeControl": false,
+              "mouthControl": false
+            },
+            "headCorrection": {
+              "sourceFaceYawDegrees": 55.99514261333094,
+              "correctionDegrees": -55.99514261333094,
+              "skin": {
+                "changedVertices": 4349,
+                "rigidFaceVertices": 7011,
+                "protectedVertices": 26407,
+                "maxWeightSumError": 6.705522537231445e-08,
+                "positionNormalUvIndexUnchanged": true,
+                "addedVertices": 0,
+                "addedTriangles": 0
+              }
+            }
+          }
+        },
+        "path": "cat-v8-gait-final-threequarter-phase-00.png"
+      },
+      {
+        "target": 0.25,
+        "phase": 0.23642804920575156,
+        "state": {
+          "ready": true,
+          "version": "cat-v8-gait-study",
+          "frames": 278,
+          "mode": "current",
+          "view": "threequarter",
+          "attention": "off",
+          "blinkMode": "open",
+          "walking": true,
+          "speed": 0.36,
+          "requestedSpeed": 0.36,
+          "timeScale": 1,
+          "elapsed": 4.699800000000004,
+          "position": [
+            0,
+            0,
+            1.3600947100000005
+          ],
+          "geometry": {
+            "meshes": 2,
+            "triangles": 51976,
+            "invalid": 0,
+            "morphTargets": 0
+          },
+          "cat": {
+            "version": "cat-gait-08",
+            "root": [
+              0,
+              0,
+              1.3600947100000005
+            ],
+            "gait": {
+              "speed": 0.36000000000000437,
+              "phase": 0.23642804920575156,
+              "stanceFeet": 3,
+              "maxReachError": 0,
+              "stride": 0.25,
+              "duty": 0.64,
+              "cycleSeconds": 0.694444444444436,
+              "angularSpeed": 0
+            },
+            "limbSkin": {
+              "changedVertices": 4054,
+              "lowPawVerticesPreserved": 2896,
+              "protectedVerticesPreserved": 16753,
+              "maxWeightSumError": 6.705522537231445e-08,
+              "addedTriangles": 0,
+              "addedVertices": 0,
+              "positionNormalUvIndexUnchanged": true,
+              "kneeRedistributedVertices": 7798
+            },
+            "hockRig": {
+              "joints": {
+                "hind_left": {
+                  "previous": [
+                    -0.05409999564290047,
+                    0.04300000829116578,
+                    -0.1437000304289761
+                  ],
+                  "current": [
+                    -0.05409999564290047,
+                    0.085,
+                    -0.1587
+                  ]
+                },
+                "hind_right": {
+                  "previous": [
+                    0.05199999362230301,
+                    0.043000010152137794,
+                    -0.17380003995700824
+                  ],
+                  "current": [
+                    0.05199999362230301,
+                    0.085,
+                    -0.1888
+                  ]
+                }
+              },
+              "changedVertices": 2458,
+              "maxWeightSumError": 4.470348358154297e-08,
+              "addedBones": 0,
+              "addedVertices": 0,
+              "addedTriangles": 0,
+              "positionsUnchanged": true
+            },
+            "bones": 21,
+            "feet": [
+              {
+                "name": "fore_left",
+                "stance": true,
+                "phase": 0.5364280492057516,
+                "world": [
+                  -0.0427,
+                  0,
+                  1.4401126765377494
+                ],
+                "renderedWorld": [
+                  -0.042699999949913255,
+                  1.844314544835468e-08,
+                  1.4401126712201906
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "fore_right",
+                "stance": true,
+                "phase": 0.0364280492057516,
+                "world": [
+                  0.0422,
+                  0,
+                  1.5631066643886178
+                ],
+                "renderedWorld": [
+                  0.04219999998359153,
+                  9.285206305220672e-09,
+                  1.563106646611369
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "hind_left",
+                "stance": false,
+                "phase": 0.7364280492057516,
+                "world": [
+                  -0.0541,
+                  0.016190935642562427,
+                  1.18569725805887
+                ],
+                "renderedWorld": [
+                  -0.05409999999024882,
+                  0.01619093661537023,
+                  1.1856972617742487
+                ],
+                "groundClearance": 0.016190935642562427,
+                "reachError": 0
+              },
+              {
+                "name": "hind_right",
+                "stance": true,
+                "phase": 0.23642804920575156,
+                "world": [
+                  0.052,
+                  0,
+                  1.2601187274499848
+                ],
+                "renderedWorld": [
+                  0.05200000002517855,
+                  5.631100655212329e-09,
+                  1.2601187320592278
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              }
+            ],
+            "blink": {
+              "mode": "open",
+              "amount": 0,
+              "left": 0,
+              "right": 0,
+              "count": 0,
+              "active": false,
+              "duration": 0.28,
+              "kind": "separate-skinned-eyelids",
+              "baseGeometryUnchanged": false,
+              "baseMorphCount": 0,
+              "addedTriangles": 2976,
+              "addedVertices": 1672,
+              "independentGaze": false,
+              "mouthControl": false,
+              "basePositionUnchanged": true,
+              "headSkinReweighted": true
+            },
+            "attention": {
+              "version": "head-attention-07",
+              "enabled": false,
+              "mode": "natural",
+              "appliedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "requestedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "yawLimit": 2,
+              "elapsed": 4.699800000000004,
+              "bindYawCorrection": -55.99514261333094,
+              "eyeControl": false,
+              "mouthControl": false
+            },
+            "headCorrection": {
+              "sourceFaceYawDegrees": 55.99514261333094,
+              "correctionDegrees": -55.99514261333094,
+              "skin": {
+                "changedVertices": 4349,
+                "rigidFaceVertices": 7011,
+                "protectedVertices": 26407,
+                "maxWeightSumError": 6.705522537231445e-08,
+                "positionNormalUvIndexUnchanged": true,
+                "addedVertices": 0,
+                "addedTriangles": 0
+              }
+            }
+          }
+        },
+        "path": "cat-v8-gait-final-threequarter-phase-25.png"
+      },
+      {
+        "target": 0.5,
+        "phase": 0.47633204920575256,
+        "state": {
+          "ready": true,
+          "version": "cat-v8-gait-study",
+          "frames": 288,
+          "mode": "current",
+          "view": "threequarter",
+          "attention": "off",
+          "blinkMode": "open",
+          "walking": true,
+          "speed": 0.36,
+          "requestedSpeed": 0.36,
+          "timeScale": 1,
+          "elapsed": 4.866400000000007,
+          "position": [
+            0,
+            0,
+            1.4200707100000007
+          ],
+          "geometry": {
+            "meshes": 2,
+            "triangles": 51976,
+            "invalid": 0,
+            "morphTargets": 0
+          },
+          "cat": {
+            "version": "cat-gait-08",
+            "root": [
+              0,
+              0,
+              1.4200707100000007
+            ],
+            "gait": {
+              "speed": 0.3600000000000186,
+              "phase": 0.47633204920575256,
+              "stanceFeet": 2,
+              "maxReachError": 0,
+              "stride": 0.25,
+              "duty": 0.64,
+              "cycleSeconds": 0.6944444444444086,
+              "angularSpeed": 0
+            },
+            "limbSkin": {
+              "changedVertices": 4054,
+              "lowPawVerticesPreserved": 2896,
+              "protectedVerticesPreserved": 16753,
+              "maxWeightSumError": 6.705522537231445e-08,
+              "addedTriangles": 0,
+              "addedVertices": 0,
+              "positionNormalUvIndexUnchanged": true,
+              "kneeRedistributedVertices": 7798
+            },
+            "hockRig": {
+              "joints": {
+                "hind_left": {
+                  "previous": [
+                    -0.05409999564290047,
+                    0.04300000829116578,
+                    -0.1437000304289761
+                  ],
+                  "current": [
+                    -0.05409999564290047,
+                    0.085,
+                    -0.1587
+                  ]
+                },
+                "hind_right": {
+                  "previous": [
+                    0.05199999362230301,
+                    0.043000010152137794,
+                    -0.17380003995700824
+                  ],
+                  "current": [
+                    0.05199999362230301,
+                    0.085,
+                    -0.1888
+                  ]
+                }
+              },
+              "changedVertices": 2458,
+              "maxWeightSumError": 4.470348358154297e-08,
+              "addedBones": 0,
+              "addedVertices": 0,
+              "addedTriangles": 0,
+              "positionsUnchanged": true
+            },
+            "bones": 21,
+            "feet": [
+              {
+                "name": "fore_left",
+                "stance": false,
+                "phase": 0.7763320492057526,
+                "world": [
+                  -0.0427,
+                  0.01699997166038297,
+                  1.5189812846832667
+                ],
+                "renderedWorld": [
+                  -0.04269999998024943,
+                  0.01699999414965895,
+                  1.5189812749575669
+                ],
+                "groundClearance": 0.01699997166038297,
+                "reachError": 0
+              },
+              {
+                "name": "fore_right",
+                "stance": true,
+                "phase": 0.2763320492057526,
+                "world": [
+                  0.0422,
+                  0,
+                  1.5631066643886178
+                ],
+                "renderedWorld": [
+                  0.04220000001850883,
+                  1.5972490816085205e-08,
+                  1.5631066481254308
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "hind_left",
+                "stance": false,
+                "phase": 0.9763320492057526,
+                "world": [
+                  -0.0541,
+                  3.145630132991881e-11,
+                  1.3801067272926513
+                ],
+                "renderedWorld": [
+                  -0.05409999999628485,
+                  5.847632864042218e-09,
+                  1.3801067277687582
+                ],
+                "groundClearance": 3.145630132991881e-11,
+                "reachError": 0
+              },
+              {
+                "name": "hind_right",
+                "stance": true,
+                "phase": 0.47633204920575256,
+                "world": [
+                  0.052,
+                  0,
+                  1.2601187274499848
+                ],
+                "renderedWorld": [
+                  0.05200000000420471,
+                  3.3915367736447877e-09,
+                  1.2601187342762232
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              }
+            ],
+            "blink": {
+              "mode": "open",
+              "amount": 0,
+              "left": 0,
+              "right": 0,
+              "count": 0,
+              "active": false,
+              "duration": 0.28,
+              "kind": "separate-skinned-eyelids",
+              "baseGeometryUnchanged": false,
+              "baseMorphCount": 0,
+              "addedTriangles": 2976,
+              "addedVertices": 1672,
+              "independentGaze": false,
+              "mouthControl": false,
+              "basePositionUnchanged": true,
+              "headSkinReweighted": true
+            },
+            "attention": {
+              "version": "head-attention-07",
+              "enabled": false,
+              "mode": "natural",
+              "appliedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "requestedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "yawLimit": 2,
+              "elapsed": 4.866400000000007,
+              "bindYawCorrection": -55.99514261333094,
+              "eyeControl": false,
+              "mouthControl": false
+            },
+            "headCorrection": {
+              "sourceFaceYawDegrees": 55.99514261333094,
+              "correctionDegrees": -55.99514261333094,
+              "skin": {
+                "changedVertices": 4349,
+                "rigidFaceVertices": 7011,
+                "protectedVertices": 26407,
+                "maxWeightSumError": 6.705522537231445e-08,
+                "positionNormalUvIndexUnchanged": true,
+                "addedVertices": 0,
+                "addedTriangles": 0
+              }
+            }
+          }
+        },
+        "path": "cat-v8-gait-final-threequarter-phase-50.png"
+      },
+      {
+        "target": 0.75,
+        "phase": 0.7404280492057529,
+        "state": {
+          "ready": true,
+          "version": "cat-v8-gait-study",
+          "frames": 299,
+          "mode": "current",
+          "view": "threequarter",
+          "attention": "off",
+          "blinkMode": "open",
+          "walking": true,
+          "speed": 0.36,
+          "requestedSpeed": 0.36,
+          "timeScale": 1,
+          "elapsed": 5.049800000000008,
+          "position": [
+            0,
+            0,
+            1.4860947100000008
+          ],
+          "geometry": {
+            "meshes": 2,
+            "triangles": 51976,
+            "invalid": 0,
+            "morphTargets": 0
+          },
+          "cat": {
+            "version": "cat-gait-08",
+            "root": [
+              0,
+              0,
+              1.4860947100000008
+            ],
+            "gait": {
+              "speed": 0.359999999999985,
+              "phase": 0.7404280492057529,
+              "stanceFeet": 3,
+              "maxReachError": 0,
+              "stride": 0.25,
+              "duty": 0.64,
+              "cycleSeconds": 0.6944444444444734,
+              "angularSpeed": 0
+            },
+            "limbSkin": {
+              "changedVertices": 4054,
+              "lowPawVerticesPreserved": 2896,
+              "protectedVerticesPreserved": 16753,
+              "maxWeightSumError": 6.705522537231445e-08,
+              "addedTriangles": 0,
+              "addedVertices": 0,
+              "positionNormalUvIndexUnchanged": true,
+              "kneeRedistributedVertices": 7798
+            },
+            "hockRig": {
+              "joints": {
+                "hind_left": {
+                  "previous": [
+                    -0.05409999564290047,
+                    0.04300000829116578,
+                    -0.1437000304289761
+                  ],
+                  "current": [
+                    -0.05409999564290047,
+                    0.085,
+                    -0.1587
+                  ]
+                },
+                "hind_right": {
+                  "previous": [
+                    0.05199999362230301,
+                    0.043000010152137794,
+                    -0.17380003995700824
+                  ],
+                  "current": [
+                    0.05199999362230301,
+                    0.085,
+                    -0.1888
+                  ]
+                }
+              },
+              "changedVertices": 2458,
+              "maxWeightSumError": 4.470348358154297e-08,
+              "addedBones": 0,
+              "addedVertices": 0,
+              "addedTriangles": 0,
+              "positionsUnchanged": true
+            },
+            "bones": 21,
+            "feet": [
+              {
+                "name": "fore_left",
+                "stance": true,
+                "phase": 0.040428049205752936,
+                "world": [
+                  -0.0427,
+                  0,
+                  1.6891066765377463
+                ],
+                "renderedWorld": [
+                  -0.04269999997737358,
+                  8.992492542270192e-09,
+                  1.6891066622147601
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "fore_right",
+                "stance": true,
+                "phase": 0.5404280492057529,
+                "world": [
+                  0.0422,
+                  0,
+                  1.5631066643886178
+                ],
+                "renderedWorld": [
+                  0.0421999998934854,
+                  2.0478084242214756e-08,
+                  1.5631066570716436
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "hind_left",
+                "stance": true,
+                "phase": 0.2404280492057529,
+                "world": [
+                  -0.0541,
+                  0,
+                  1.3801067274499887
+                ],
+                "renderedWorld": [
+                  -0.05410000001092963,
+                  2.6961152338467187e-09,
+                  1.380106729880667
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "hind_right",
+                "stance": false,
+                "phase": 0.7404280492057529,
+                "world": [
+                  0.052,
+                  0.015192119848357168,
+                  1.3007846974665669
+                ],
+                "renderedWorld": [
+                  0.05199999998836433,
+                  0.015192121451398644,
+                  1.3007847051461627
+                ],
+                "groundClearance": 0.015192119848357168,
+                "reachError": 0
+              }
+            ],
+            "blink": {
+              "mode": "open",
+              "amount": 0,
+              "left": 0,
+              "right": 0,
+              "count": 0,
+              "active": false,
+              "duration": 0.28,
+              "kind": "separate-skinned-eyelids",
+              "baseGeometryUnchanged": false,
+              "baseMorphCount": 0,
+              "addedTriangles": 2976,
+              "addedVertices": 1672,
+              "independentGaze": false,
+              "mouthControl": false,
+              "basePositionUnchanged": true,
+              "headSkinReweighted": true
+            },
+            "attention": {
+              "version": "head-attention-07",
+              "enabled": false,
+              "mode": "natural",
+              "appliedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "requestedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "yawLimit": 2,
+              "elapsed": 5.049800000000008,
+              "bindYawCorrection": -55.99514261333094,
+              "eyeControl": false,
+              "mouthControl": false
+            },
+            "headCorrection": {
+              "sourceFaceYawDegrees": 55.99514261333094,
+              "correctionDegrees": -55.99514261333094,
+              "skin": {
+                "changedVertices": 4349,
+                "rigidFaceVertices": 7011,
+                "protectedVertices": 26407,
+                "maxWeightSumError": 6.705522537231445e-08,
+                "positionNormalUvIndexUnchanged": true,
+                "addedVertices": 0,
+                "addedTriangles": 0
+              }
+            }
+          }
+        },
+        "path": "cat-v8-gait-final-threequarter-phase-75.png"
+      }
+    ],
+    "slowWalk": {
+      "ready": true,
+      "version": "cat-v8-gait-study",
+      "frames": 369,
+      "mode": "current",
+      "view": "threequarter",
+      "attention": "off",
+      "blinkMode": "open",
+      "walking": true,
+      "speed": 0.24,
+      "requestedSpeed": 0.24,
+      "timeScale": 1,
+      "elapsed": 6.216400000000025,
+      "position": [
+        0,
+        0,
+        1.7803058100000009
+      ],
+      "geometry": {
+        "meshes": 2,
+        "triangles": 51976,
+        "invalid": 0,
+        "morphTargets": 0
+      },
+      "cat": {
+        "version": "cat-gait-08",
+        "root": [
+          0,
+          0,
+          1.7803058100000009
+        ],
+        "gait": {
+          "speed": 0.24000000000000352,
+          "phase": 0.9172724492057531,
+          "stanceFeet": 2,
+          "maxReachError": 0,
+          "stride": 0.25,
+          "duty": 0.64,
+          "cycleSeconds": 1.0416666666666514,
+          "angularSpeed": 0
+        },
+        "limbSkin": {
+          "changedVertices": 4054,
+          "lowPawVerticesPreserved": 2896,
+          "protectedVerticesPreserved": 16753,
+          "maxWeightSumError": 6.705522537231445e-08,
+          "addedTriangles": 0,
+          "addedVertices": 0,
+          "positionNormalUvIndexUnchanged": true,
+          "kneeRedistributedVertices": 7798
+        },
+        "hockRig": {
+          "joints": {
+            "hind_left": {
+              "previous": [
+                -0.05409999564290047,
+                0.04300000829116578,
+                -0.1437000304289761
+              ],
+              "current": [
+                -0.05409999564290047,
+                0.085,
+                -0.1587
+              ]
+            },
+            "hind_right": {
+              "previous": [
+                0.05199999362230301,
+                0.043000010152137794,
+                -0.17380003995700824
+              ],
+              "current": [
+                0.05199999362230301,
+                0.085,
+                -0.1888
+              ]
+            }
+          },
+          "changedVertices": 2458,
+          "maxWeightSumError": 4.470348358154297e-08,
+          "addedBones": 0,
+          "addedVertices": 0,
+          "addedTriangles": 0,
+          "positionsUnchanged": true
+        },
+        "bones": 21,
+        "feet": [
+          {
+            "name": "fore_left",
+            "stance": true,
+            "phase": 0.21727244920575317,
+            "world": [
+              -0.0427,
+              0,
+              1.9393257765377523
+            ],
+            "renderedWorld": [
+              -0.04270000002845623,
+              1.3720572261677333e-08,
+              1.9393257621188615
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "fore_right",
+            "stance": false,
+            "phase": 0.7172724492057532,
+            "world": [
+              0.0422,
+              0.0126751596577324,
+              1.823408852339789
+            ],
+            "renderedWorld": [
+              0.04219999992326794,
+              0.012675182152861023,
+              1.8234088518346803
+            ],
+            "groundClearance": 0.0126751596577324,
+            "reachError": 0
+          },
+          {
+            "name": "hind_left",
+            "stance": true,
+            "phase": 0.4172724492057531,
+            "world": [
+              -0.0541,
+              0,
+              1.634321827449981
+            ],
+            "renderedWorld": [
+              -0.05410000000618066,
+              1.919928618865363e-09,
+              1.6343218306184306
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_right",
+            "stance": false,
+            "phase": 0.9172724492057531,
+            "world": [
+              0.052,
+              0.0032670789010334025,
+              1.7411028174775087
+            ],
+            "renderedWorld": [
+              0.05199999998835061,
+              0.0032670871598817486,
+              1.7411028194225897
+            ],
+            "groundClearance": 0.0032670789010334025,
+            "reachError": 0
+          }
+        ],
+        "blink": {
+          "mode": "open",
+          "amount": 0,
+          "left": 0,
+          "right": 0,
+          "count": 0,
+          "active": false,
+          "duration": 0.28,
+          "kind": "separate-skinned-eyelids",
+          "baseGeometryUnchanged": false,
+          "baseMorphCount": 0,
+          "addedTriangles": 2976,
+          "addedVertices": 1672,
+          "independentGaze": false,
+          "mouthControl": false,
+          "basePositionUnchanged": true,
+          "headSkinReweighted": true
+        },
+        "attention": {
+          "version": "head-attention-07",
+          "enabled": false,
+          "mode": "natural",
+          "appliedDegrees": {
+            "yaw": 0,
+            "pitch": 0
+          },
+          "requestedDegrees": {
+            "yaw": 0,
+            "pitch": 0
+          },
+          "yawLimit": 2,
+          "elapsed": 6.216400000000025,
+          "bindYawCorrection": -55.99514261333094,
+          "eyeControl": false,
+          "mouthControl": false
+        },
+        "headCorrection": {
+          "sourceFaceYawDegrees": 55.99514261333094,
+          "correctionDegrees": -55.99514261333094,
+          "skin": {
+            "changedVertices": 4349,
+            "rigidFaceVertices": 7011,
+            "protectedVertices": 26407,
+            "maxWeightSumError": 6.705522537231445e-08,
+            "positionNormalUvIndexUnchanged": true,
+            "addedVertices": 0,
+            "addedTriangles": 0
+          }
+        }
+      }
+    },
+    "pressureDiagnostic": {
+      "requested": 0.6,
+      "supportedNormalSpeed": false,
+      "note": "0.60 is an explicit stress diagnostic; gait quality at this speed is not an acceptance gate or a supported-speed claim.",
+      "controlReachedSpeed": true,
+      "finiteGeometry": true,
+      "state": {
+        "ready": true,
+        "version": "cat-v8-gait-study",
+        "frames": 439,
+        "mode": "current",
+        "view": "threequarter",
+        "attention": "off",
+        "blinkMode": "open",
+        "walking": true,
+        "speed": 0.6,
+        "requestedSpeed": 0.6,
+        "timeScale": 1,
+        "elapsed": 7.38300000000004,
+        "position": [
+          0,
+          0,
+          2.400432499999999
+        ],
+        "geometry": {
+          "meshes": 2,
+          "triangles": 51976,
+          "invalid": 0,
+          "morphTargets": 0
+        },
+        "cat": {
+          "version": "cat-gait-08",
+          "root": [
+            0,
+            0,
+            2.400432499999999
+          ],
+          "gait": {
+            "speed": 0.5999999999999911,
+            "phase": 0.39777920920574594,
+            "stanceFeet": 2,
+            "maxReachError": 0,
+            "stride": 0.25,
+            "duty": 0.64,
+            "cycleSeconds": 0.41666666666667285,
+            "angularSpeed": 0
+          },
+          "limbSkin": {
+            "changedVertices": 4054,
+            "lowPawVerticesPreserved": 2896,
+            "protectedVerticesPreserved": 16753,
+            "maxWeightSumError": 6.705522537231445e-08,
+            "addedTriangles": 0,
+            "addedVertices": 0,
+            "positionNormalUvIndexUnchanged": true,
+            "kneeRedistributedVertices": 7798
+          },
+          "hockRig": {
+            "joints": {
+              "hind_left": {
+                "previous": [
+                  -0.05409999564290047,
+                  0.04300000829116578,
+                  -0.1437000304289761
+                ],
+                "current": [
+                  -0.05409999564290047,
+                  0.085,
+                  -0.1587
+                ]
+              },
+              "hind_right": {
+                "previous": [
+                  0.05199999362230301,
+                  0.043000010152137794,
+                  -0.17380003995700824
+                ],
+                "current": [
+                  0.05199999362230301,
+                  0.085,
+                  -0.1888
+                ]
+              }
+            },
+            "changedVertices": 2458,
+            "maxWeightSumError": 4.470348358154297e-08,
+            "addedBones": 0,
+            "addedVertices": 0,
+            "addedTriangles": 0,
+            "positionsUnchanged": true
+          },
+          "bones": 21,
+          "feet": [
+            {
+              "name": "fore_left",
+              "stance": false,
+              "phase": 0.697779209205746,
+              "world": [
+                -0.0427,
+                0.006040446938719542,
+                2.4637932187942764
+              ],
+              "renderedWorld": [
+                -0.0426999999574495,
+                0.006040467185327851,
+                2.4637932157845888
+              ],
+              "groundClearance": 0.006040446938719542,
+              "reachError": 0
+            },
+            {
+              "name": "fore_right",
+              "stance": true,
+              "phase": 0.197779209205746,
+              "world": [
+                0.0422,
+                0,
+                2.583452454388614
+              ],
+              "renderedWorld": [
+                0.04220000001632269,
+                1.1305428787578009e-08,
+                2.5834524361097304
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "hind_left",
+              "stance": false,
+              "phase": 0.8977792092057459,
+              "world": [
+                -0.0541,
+                0.009019397689218637,
+                2.338810279199361
+              ],
+              "renderedWorld": [
+                -0.054100000009671446,
+                0.009019401039494016,
+                2.3388102808991884
+              ],
+              "groundClearance": 0.009019397689218637,
+              "reachError": 0
+            },
+            {
+              "name": "hind_right",
+              "stance": true,
+              "phase": 0.39777920920574594,
+              "world": [
+                0.052,
+                0,
+                2.2784125174499894
+              ],
+              "renderedWorld": [
+                0.0520000000157338,
+                4.550337551201267e-09,
+                2.2784125228634196
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            }
+          ],
+          "blink": {
+            "mode": "open",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 0,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": false,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false,
+            "basePositionUnchanged": true,
+            "headSkinReweighted": true
+          },
+          "attention": {
+            "version": "head-attention-07",
+            "enabled": false,
+            "mode": "natural",
+            "appliedDegrees": {
+              "yaw": 0,
+              "pitch": 0
+            },
+            "requestedDegrees": {
+              "yaw": 0,
+              "pitch": 0
+            },
+            "yawLimit": 2,
+            "elapsed": 7.38300000000004,
+            "bindYawCorrection": -55.99514261333094,
+            "eyeControl": false,
+            "mouthControl": false
+          },
+          "headCorrection": {
+            "sourceFaceYawDegrees": 55.99514261333094,
+            "correctionDegrees": -55.99514261333094,
+            "skin": {
+              "changedVertices": 4349,
+              "rigidFaceVertices": 7011,
+              "protectedVertices": 26407,
+              "maxWeightSumError": 6.705522537231445e-08,
+              "positionNormalUvIndexUnchanged": true,
+              "addedVertices": 0,
+              "addedTriangles": 0
+            }
+          }
+        }
+      }
+    },
+    "slowMotion": {
+      "normalMetresPerSimSecond": 0.3600000000000017,
+      "halfMetresPerSimSecond": 0.3599999999999958,
+      "elapsedRatio": 0.4944942634841208,
+      "state": {
+        "ready": true,
+        "version": "cat-v8-gait-study",
+        "frames": 674,
+        "mode": "current",
+        "view": "threequarter",
+        "attention": "off",
+        "blinkMode": "open",
+        "walking": true,
+        "speed": 0.36,
+        "requestedSpeed": 0.36,
+        "timeScale": 0.5,
+        "elapsed": 10.549550000000021,
+        "position": [
+          0,
+          0,
+          3.57922413999999
+        ],
+        "geometry": {
+          "meshes": 2,
+          "triangles": 51976,
+          "invalid": 0,
+          "morphTargets": 0
+        },
+        "cat": {
+          "version": "cat-gait-08",
+          "root": [
+            0,
+            0,
+            3.57922413999999
+          ],
+          "gait": {
+            "speed": 0.359999999999992,
+            "phase": 0.11294576920570876,
+            "stanceFeet": 3,
+            "maxReachError": 0,
+            "stride": 0.25,
+            "duty": 0.64,
+            "cycleSeconds": 0.6944444444444599,
+            "angularSpeed": 0
+          },
+          "limbSkin": {
+            "changedVertices": 4054,
+            "lowPawVerticesPreserved": 2896,
+            "protectedVerticesPreserved": 16753,
+            "maxWeightSumError": 6.705522537231445e-08,
+            "addedTriangles": 0,
+            "addedVertices": 0,
+            "positionNormalUvIndexUnchanged": true,
+            "kneeRedistributedVertices": 7798
+          },
+          "hockRig": {
+            "joints": {
+              "hind_left": {
+                "previous": [
+                  -0.05409999564290047,
+                  0.04300000829116578,
+                  -0.1437000304289761
+                ],
+                "current": [
+                  -0.05409999564290047,
+                  0.085,
+                  -0.1587
+                ]
+              },
+              "hind_right": {
+                "previous": [
+                  0.05199999362230301,
+                  0.043000010152137794,
+                  -0.17380003995700824
+                ],
+                "current": [
+                  0.05199999362230301,
+                  0.085,
+                  -0.1888
+                ]
+              }
+            },
+            "changedVertices": 2458,
+            "maxWeightSumError": 4.470348358154297e-08,
+            "addedBones": 0,
+            "addedVertices": 0,
+            "addedTriangles": 0,
+            "positionsUnchanged": true
+          },
+          "bones": 21,
+          "feet": [
+            {
+              "name": "fore_left",
+              "stance": true,
+              "phase": 0.4129457692057088,
+              "world": [
+                -0.0427,
+                0,
+                3.689230106537727
+              ],
+              "renderedWorld": [
+                -0.042699999967661356,
+                1.7212083050499594e-08,
+                3.6892300969270844
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "fore_right",
+              "stance": false,
+              "phase": 0.9129457692057088,
+              "world": [
+                0.0422,
+                0.0036754910751993493,
+                3.7933610891885814
+              ],
+              "renderedWorld": [
+                0.042199999972954566,
+                0.003675499418131181,
+                3.7933610708214367
+              ],
+              "groundClearance": 0.0036754910751993493,
+              "reachError": 0
+            },
+            {
+              "name": "hind_left",
+              "stance": true,
+              "phase": 0.6129457692057088,
+              "world": [
+                -0.0541,
+                0,
+                3.3832361574499843
+              ],
+              "renderedWorld": [
+                -0.05409999998603583,
+                2.408252777752473e-09,
+                3.3832361626754346
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            },
+            {
+              "name": "hind_right",
+              "stance": true,
+              "phase": 0.11294576920570876,
+              "world": [
+                0.052,
+                0,
+                3.5092361574499717
+              ],
+              "renderedWorld": [
+                0.05200000001728877,
+                7.341080215939044e-09,
+                3.509236160728533
+              ],
+              "groundClearance": 0,
+              "reachError": 0
+            }
+          ],
+          "blink": {
+            "mode": "open",
+            "amount": 0,
+            "left": 0,
+            "right": 0,
+            "count": 0,
+            "active": false,
+            "duration": 0.28,
+            "kind": "separate-skinned-eyelids",
+            "baseGeometryUnchanged": false,
+            "baseMorphCount": 0,
+            "addedTriangles": 2976,
+            "addedVertices": 1672,
+            "independentGaze": false,
+            "mouthControl": false,
+            "basePositionUnchanged": true,
+            "headSkinReweighted": true
+          },
+          "attention": {
+            "version": "head-attention-07",
+            "enabled": false,
+            "mode": "natural",
+            "appliedDegrees": {
+              "yaw": 0,
+              "pitch": 0
+            },
+            "requestedDegrees": {
+              "yaw": 0,
+              "pitch": 0
+            },
+            "yawLimit": 2,
+            "elapsed": 10.549550000000021,
+            "bindYawCorrection": -55.99514261333094,
+            "eyeControl": false,
+            "mouthControl": false
+          },
+          "headCorrection": {
+            "sourceFaceYawDegrees": 55.99514261333094,
+            "correctionDegrees": -55.99514261333094,
+            "skin": {
+              "changedVertices": 4349,
+              "rigidFaceVertices": 7011,
+              "protectedVertices": 26407,
+              "maxWeightSumError": 6.705522537231445e-08,
+              "positionNormalUvIndexUnchanged": true,
+              "addedVertices": 0,
+              "addedTriangles": 0
+            }
+          }
+        }
+      }
+    },
+    "previous": {
+      "ready": true,
+      "version": "cat-v8-gait-study",
+      "frames": 766,
+      "mode": "previous",
+      "view": "side",
+      "attention": "off",
+      "blinkMode": "open",
+      "walking": true,
+      "speed": 0.36,
+      "requestedSpeed": 0.36,
+      "timeScale": 1,
+      "elapsed": 12.05785,
+      "position": [
+        0,
+        0,
+        4.060378179999985
+      ],
+      "geometry": {
+        "meshes": 2,
+        "triangles": 51976,
+        "invalid": 0,
+        "morphTargets": 0
+      },
+      "cat": {
+        "version": "cat-head-alignment-07",
+        "root": [
+          0,
+          0,
+          4.060378179999985
+        ],
+        "gait": {
+          "speed": 0.359999999999992,
+          "phase": 0.5815217130049479,
+          "stanceFeet": 3,
+          "maxReachError": 0,
+          "angularSpeed": 0
+        },
+        "bones": 21,
+        "feet": [
+          {
+            "name": "fore_left",
+            "stance": true,
+            "world": [
+              -0.0427,
+              0,
+              4.196820415741161
+            ],
+            "renderedWorld": [
+              -0.04270000003421362,
+              9.75220081772532e-09,
+              4.196820406529323
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "fore_right",
+            "stance": false,
+            "world": [
+              0.0422,
+              0.025757833659604736,
+              4.165858572824232
+            ],
+            "renderedWorld": [
+              0.04219999999341203,
+              0.025757853183481443,
+              4.165858560969347
+            ],
+            "groundClearance": 0.025757833659604736,
+            "reachError": 0
+          },
+          {
+            "name": "hind_left",
+            "stance": true,
+            "world": [
+              -0.0541,
+              0,
+              3.86833613372121
+            ],
+            "renderedWorld": [
+              -0.05410000000304624,
+              1.6043913350638483e-09,
+              3.868336135215475
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_right",
+            "stance": true,
+            "world": [
+              0.052,
+              0,
+              3.985794086742965
+            ],
+            "renderedWorld": [
+              0.05199999999625494,
+              6.451275041952087e-09,
+              3.9857940880270384
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          }
+        ],
+        "attention": {
+          "version": "head-attention-07",
+          "enabled": false,
+          "mode": "natural",
+          "appliedDegrees": {
+            "yaw": 0,
+            "pitch": 0
+          },
+          "requestedDegrees": {
+            "yaw": 0,
+            "pitch": 0
+          },
+          "yawLimit": 2,
+          "elapsed": 1.4166000000000019,
+          "bindYawCorrection": -55.99514261333094,
+          "eyeControl": false,
+          "mouthControl": false
+        },
+        "blink": {
+          "mode": "open",
+          "amount": 0,
+          "left": 0,
+          "right": 0,
+          "count": 0,
+          "active": false,
+          "duration": 0.28,
+          "kind": "separate-skinned-eyelids",
+          "baseGeometryUnchanged": false,
+          "baseMorphCount": 0,
+          "addedTriangles": 2976,
+          "addedVertices": 1672,
+          "independentGaze": false,
+          "mouthControl": false,
+          "basePositionUnchanged": true,
+          "headSkinReweighted": true
+        },
+        "headCorrection": {
+          "sourceFaceYawDegrees": 55.99514261333094,
+          "correctionDegrees": -55.99514261333094,
+          "skin": {
+            "changedVertices": 4349,
+            "rigidFaceVertices": 7011,
+            "protectedVertices": 26705,
+            "maxWeightSumError": 4.470348358154297e-08,
+            "positionNormalUvIndexUnchanged": true,
+            "addedVertices": 0,
+            "addedTriangles": 0
+          }
+        }
+      }
+    },
+    "v7SidePhases": [
+      {
+        "target": 0,
+        "phase": 0.9989651912658175,
+        "state": {
+          "ready": true,
+          "version": "cat-v8-gait-study",
+          "frames": 782,
+          "mode": "previous",
+          "view": "side",
+          "attention": "off",
+          "blinkMode": "open",
+          "walking": true,
+          "speed": 0.36,
+          "requestedSpeed": 0.36,
+          "timeScale": 1,
+          "elapsed": 12.324549999999997,
+          "position": [
+            0,
+            0,
+            4.156390179999985
+          ],
+          "geometry": {
+            "meshes": 2,
+            "triangles": 51976,
+            "invalid": 0,
+            "morphTargets": 0
+          },
+          "cat": {
+            "version": "cat-head-alignment-07",
+            "root": [
+              0,
+              0,
+              4.156390179999985
+            ],
+            "gait": {
+              "speed": 0.359999999999992,
+              "phase": 0.9989651912658175,
+              "stanceFeet": 2,
+              "maxReachError": 0,
+              "angularSpeed": 0
+            },
+            "bones": 21,
+            "feet": [
+              {
+                "name": "fore_left",
+                "stance": false,
+                "world": [
+                  -0.0427,
+                  0.014628371515399757,
+                  4.2133038782169745
+                ],
+                "renderedWorld": [
+                  -0.042700000000086356,
+                  0.014628386309496734,
+                  4.213303876840268
+                ],
+                "groundClearance": 0.014628371515399757,
+                "reachError": 0
+              },
+              {
+                "name": "fore_right",
+                "stance": true,
+                "world": [
+                  0.0422,
+                  0,
+                  4.313478107553225
+                ],
+                "renderedWorld": [
+                  0.04219999999956465,
+                  8.958025064786934e-09,
+                  4.31347809371143
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "hind_left",
+                "stance": false,
+                "world": [
+                  -0.0541,
+                  0.00027265511670934023,
+                  4.100732476569457
+                ],
+                "renderedWorld": [
+                  -0.054099999999976875,
+                  0.000272657591386595,
+                  4.100732476454762
+                ],
+                "groundClearance": 0.00027265511670934023,
+                "reachError": 0
+              },
+              {
+                "name": "hind_right",
+                "stance": true,
+                "world": [
+                  0.052,
+                  0,
+                  3.985794086742965
+                ],
+                "renderedWorld": [
+                  0.05199999999991304,
+                  4.509829704124613e-09,
+                  3.98579409114774
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              }
+            ],
+            "attention": {
+              "version": "head-attention-07",
+              "enabled": false,
+              "mode": "natural",
+              "appliedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "requestedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "yawLimit": 2,
+              "elapsed": 1.6833000000000033,
+              "bindYawCorrection": -55.99514261333094,
+              "eyeControl": false,
+              "mouthControl": false
+            },
+            "blink": {
+              "mode": "open",
+              "amount": 0,
+              "left": 0,
+              "right": 0,
+              "count": 0,
+              "active": false,
+              "duration": 0.28,
+              "kind": "separate-skinned-eyelids",
+              "baseGeometryUnchanged": false,
+              "baseMorphCount": 0,
+              "addedTriangles": 2976,
+              "addedVertices": 1672,
+              "independentGaze": false,
+              "mouthControl": false,
+              "basePositionUnchanged": true,
+              "headSkinReweighted": true
+            },
+            "headCorrection": {
+              "sourceFaceYawDegrees": 55.99514261333094,
+              "correctionDegrees": -55.99514261333094,
+              "skin": {
+                "changedVertices": 4349,
+                "rigidFaceVertices": 7011,
+                "protectedVertices": 26705,
+                "maxWeightSumError": 4.470348358154297e-08,
+                "positionNormalUvIndexUnchanged": true,
+                "addedVertices": 0,
+                "addedTriangles": 0
+              }
+            }
+          }
+        },
+        "path": "cat-v8-gait-final-v7-side-phase-00.png"
+      },
+      {
+        "target": 0.25,
+        "phase": 0.2335912782223416,
+        "state": {
+          "ready": true,
+          "version": "cat-v8-gait-study",
+          "frames": 791,
+          "mode": "previous",
+          "view": "side",
+          "attention": "off",
+          "blinkMode": "open",
+          "walking": true,
+          "speed": 0.36,
+          "requestedSpeed": 0.36,
+          "timeScale": 1,
+          "elapsed": 12.474449999999996,
+          "position": [
+            0,
+            0,
+            4.210354179999985
+          ],
+          "geometry": {
+            "meshes": 2,
+            "triangles": 51976,
+            "invalid": 0,
+            "morphTargets": 0
+          },
+          "cat": {
+            "version": "cat-head-alignment-07",
+            "root": [
+              0,
+              0,
+              4.210354179999985
+            ],
+            "gait": {
+              "speed": 0.36000000000001775,
+              "phase": 0.2335912782223416,
+              "stanceFeet": 2,
+              "maxReachError": 0,
+              "angularSpeed": 0
+            },
+            "bones": 21,
+            "feet": [
+              {
+                "name": "fore_left",
+                "stance": false,
+                "world": [
+                  -0.0427,
+                  0.004303610066317054,
+                  4.422856329707564
+                ],
+                "renderedWorld": [
+                  -0.04269999987969446,
+                  0.0043036121439705075,
+                  4.422856323060436
+                ],
+                "groundClearance": 0.004303610066317054,
+                "reachError": 0
+              },
+              {
+                "name": "fore_right",
+                "stance": true,
+                "world": [
+                  0.0422,
+                  0,
+                  4.313478107553225
+                ],
+                "renderedWorld": [
+                  0.04220000002076495,
+                  1.3261357602323276e-08,
+                  4.313478098861321
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "hind_left",
+                "stance": true,
+                "world": [
+                  -0.0541,
+                  0,
+                  4.100978234182669
+                ],
+                "renderedWorld": [
+                  -0.05409999999874788,
+                  1.7426853640700735e-09,
+                  4.100978234857455
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "hind_right",
+                "stance": false,
+                "world": [
+                  0.052,
+                  0.011115843671231716,
+                  3.9948744534186944
+                ],
+                "renderedWorld": [
+                  0.05200000001471764,
+                  0.011115847146908261,
+                  3.9948744588639755
+                ],
+                "groundClearance": 0.011115843671231716,
+                "reachError": 0
+              }
+            ],
+            "attention": {
+              "version": "head-attention-07",
+              "enabled": false,
+              "mode": "natural",
+              "appliedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "requestedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "yawLimit": 2,
+              "elapsed": 1.8332000000000035,
+              "bindYawCorrection": -55.99514261333094,
+              "eyeControl": false,
+              "mouthControl": false
+            },
+            "blink": {
+              "mode": "open",
+              "amount": 0,
+              "left": 0,
+              "right": 0,
+              "count": 0,
+              "active": false,
+              "duration": 0.28,
+              "kind": "separate-skinned-eyelids",
+              "baseGeometryUnchanged": false,
+              "baseMorphCount": 0,
+              "addedTriangles": 2976,
+              "addedVertices": 1672,
+              "independentGaze": false,
+              "mouthControl": false,
+              "basePositionUnchanged": true,
+              "headSkinReweighted": true
+            },
+            "headCorrection": {
+              "sourceFaceYawDegrees": 55.99514261333094,
+              "correctionDegrees": -55.99514261333094,
+              "skin": {
+                "changedVertices": 4349,
+                "rigidFaceVertices": 7011,
+                "protectedVertices": 26705,
+                "maxWeightSumError": 4.470348358154297e-08,
+                "positionNormalUvIndexUnchanged": true,
+                "addedVertices": 0,
+                "addedTriangles": 0
+              }
+            }
+          }
+        },
+        "path": "cat-v8-gait-final-v7-side-phase-25.png"
+      },
+      {
+        "target": 0.5,
+        "phase": 0.4945130173527702,
+        "state": {
+          "ready": true,
+          "version": "cat-v8-gait-study",
+          "frames": 801,
+          "mode": "previous",
+          "view": "side",
+          "attention": "off",
+          "blinkMode": "open",
+          "walking": true,
+          "speed": 0.36,
+          "requestedSpeed": 0.36,
+          "timeScale": 1,
+          "elapsed": 12.64114999999999,
+          "position": [
+            0,
+            0,
+            4.270366179999984
+          ],
+          "geometry": {
+            "meshes": 2,
+            "triangles": 51976,
+            "invalid": 0,
+            "morphTargets": 0
+          },
+          "cat": {
+            "version": "cat-head-alignment-07",
+            "root": [
+              0,
+              0,
+              4.270366179999984
+            ],
+            "gait": {
+              "speed": 0.359999999999978,
+              "phase": 0.4945130173527702,
+              "stanceFeet": 2,
+              "maxReachError": 0,
+              "angularSpeed": 0
+            },
+            "bones": 21,
+            "feet": [
+              {
+                "name": "fore_left",
+                "stance": true,
+                "world": [
+                  -0.0427,
+                  0,
+                  4.428478151235321
+                ],
+                "renderedWorld": [
+                  -0.042699999997023,
+                  8.027143859334895e-09,
+                  4.428478140590117
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "fore_right",
+                "stance": false,
+                "world": [
+                  0.0422,
+                  0.013644004044771334,
+                  4.3275012375421085
+                ],
+                "renderedWorld": [
+                  0.04219999999938151,
+                  0.013644020945891074,
+                  4.32750123408518
+                ],
+                "groundClearance": 0.013644004044771334,
+                "reachError": 0
+              },
+              {
+                "name": "hind_left",
+                "stance": true,
+                "world": [
+                  -0.0541,
+                  0,
+                  4.100978234182669
+                ],
+                "renderedWorld": [
+                  -0.05409999999981935,
+                  1.470063480668582e-09,
+                  4.1009782354061795
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "hind_right",
+                "stance": false,
+                "world": [
+                  0.052,
+                  0.001445011428717225,
+                  4.2145036200967425
+                ],
+                "renderedWorld": [
+                  0.051999999998939894,
+                  0.001445018156991204,
+                  4.214503620569675
+                ],
+                "groundClearance": 0.001445011428717225,
+                "reachError": 0
+              }
+            ],
+            "attention": {
+              "version": "head-attention-07",
+              "enabled": false,
+              "mode": "natural",
+              "appliedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "requestedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "yawLimit": 2,
+              "elapsed": 1.9999000000000025,
+              "bindYawCorrection": -55.99514261333094,
+              "eyeControl": false,
+              "mouthControl": false
+            },
+            "blink": {
+              "mode": "open",
+              "amount": 0,
+              "left": 0,
+              "right": 0,
+              "count": 0,
+              "active": false,
+              "duration": 0.28,
+              "kind": "separate-skinned-eyelids",
+              "baseGeometryUnchanged": false,
+              "baseMorphCount": 0,
+              "addedTriangles": 2976,
+              "addedVertices": 1672,
+              "independentGaze": false,
+              "mouthControl": false,
+              "basePositionUnchanged": true,
+              "headSkinReweighted": true
+            },
+            "headCorrection": {
+              "sourceFaceYawDegrees": 55.99514261333094,
+              "correctionDegrees": -55.99514261333094,
+              "skin": {
+                "changedVertices": 4349,
+                "rigidFaceVertices": 7011,
+                "protectedVertices": 26705,
+                "maxWeightSumError": 4.470348358154297e-08,
+                "positionNormalUvIndexUnchanged": true,
+                "addedVertices": 0,
+                "addedTriangles": 0
+              }
+            }
+          }
+        },
+        "path": "cat-v8-gait-final-v7-side-phase-50.png"
+      },
+      {
+        "target": 0.75,
+        "phase": 0.7292956260484198,
+        "state": {
+          "ready": true,
+          "version": "cat-v8-gait-study",
+          "frames": 810,
+          "mode": "previous",
+          "view": "side",
+          "attention": "off",
+          "blinkMode": "open",
+          "walking": true,
+          "speed": 0.36,
+          "requestedSpeed": 0.36,
+          "timeScale": 1,
+          "elapsed": 12.791149999999988,
+          "position": [
+            0,
+            0,
+            4.324366179999983
+          ],
+          "geometry": {
+            "meshes": 2,
+            "triangles": 51976,
+            "invalid": 0,
+            "morphTargets": 0
+          },
+          "cat": {
+            "version": "cat-head-alignment-07",
+            "root": [
+              0,
+              0,
+              4.324366179999983
+            ],
+            "gait": {
+              "speed": 0.359999999999978,
+              "phase": 0.7292956260484198,
+              "stanceFeet": 2,
+              "maxReachError": 0,
+              "angularSpeed": 0
+            },
+            "bones": 21,
+            "feet": [
+              {
+                "name": "fore_left",
+                "stance": true,
+                "world": [
+                  -0.0427,
+                  0,
+                  4.428478151235321
+                ],
+                "renderedWorld": [
+                  -0.042700000046415845,
+                  1.1392747183147645e-08,
+                  4.428478145244965
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              },
+              {
+                "name": "fore_right",
+                "stance": false,
+                "world": [
+                  0.0422,
+                  0.005415421886075215,
+                  4.535836198027196
+                ],
+                "renderedWorld": [
+                  0.042199999892040055,
+                  0.005415424588232416,
+                  4.5358361866170265
+                ],
+                "groundClearance": 0.005415421886075215,
+                "reachError": 0
+              },
+              {
+                "name": "hind_left",
+                "stance": false,
+                "world": [
+                  -0.0541,
+                  0.01008243905516183,
+                  4.1083806400809495
+                ],
+                "renderedWorld": [
+                  -0.054100000007855,
+                  0.010082440386682538,
+                  4.108380641762949
+                ],
+                "groundClearance": 0.01008243905516183,
+                "reachError": 0
+              },
+              {
+                "name": "hind_right",
+                "stance": true,
+                "world": [
+                  0.052,
+                  0,
+                  4.21597824303809
+                ],
+                "renderedWorld": [
+                  0.05199999998939093,
+                  5.694049745597063e-09,
+                  4.215978245643309
+                ],
+                "groundClearance": 0,
+                "reachError": 0
+              }
+            ],
+            "attention": {
+              "version": "head-attention-07",
+              "enabled": false,
+              "mode": "natural",
+              "appliedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "requestedDegrees": {
+                "yaw": 0,
+                "pitch": 0
+              },
+              "yawLimit": 2,
+              "elapsed": 2.149900000000002,
+              "bindYawCorrection": -55.99514261333094,
+              "eyeControl": false,
+              "mouthControl": false
+            },
+            "blink": {
+              "mode": "open",
+              "amount": 0,
+              "left": 0,
+              "right": 0,
+              "count": 0,
+              "active": false,
+              "duration": 0.28,
+              "kind": "separate-skinned-eyelids",
+              "baseGeometryUnchanged": false,
+              "baseMorphCount": 0,
+              "addedTriangles": 2976,
+              "addedVertices": 1672,
+              "independentGaze": false,
+              "mouthControl": false,
+              "basePositionUnchanged": true,
+              "headSkinReweighted": true
+            },
+            "headCorrection": {
+              "sourceFaceYawDegrees": 55.99514261333094,
+              "correctionDegrees": -55.99514261333094,
+              "skin": {
+                "changedVertices": 4349,
+                "rigidFaceVertices": 7011,
+                "protectedVertices": 26705,
+                "maxWeightSumError": 4.470348358154297e-08,
+                "positionNormalUvIndexUnchanged": true,
+                "addedVertices": 0,
+                "addedTriangles": 0
+              }
+            }
+          }
+        },
+        "path": "cat-v8-gait-final-v7-side-phase-75.png"
+      }
+    ],
+    "video": {
+      "path": "assets/cat-v8-gait-final-motion.webm",
+      "duration": 7.971,
+      "frames": 239,
+      "maxFrameGap": 0.052000000000000046
+    },
+    "stopped": {
+      "ready": true,
+      "version": "cat-v8-gait-study",
+      "frames": 2602,
+      "mode": "current",
+      "view": "threequarter",
+      "attention": "natural",
+      "blinkMode": "auto",
+      "walking": false,
+      "speed": 0,
+      "requestedSpeed": 0.36,
+      "timeScale": 1,
+      "elapsed": 42.72335000000025,
+      "position": [
+        0,
+        0,
+        13.803463103999604
+      ],
+      "geometry": {
+        "meshes": 2,
+        "triangles": 51976,
+        "invalid": 0,
+        "morphTargets": 0
+      },
+      "cat": {
+        "version": "cat-gait-08",
+        "root": [
+          0,
+          0,
+          13.803463103999604
+        ],
+        "gait": {
+          "speed": 0,
+          "phase": 0.48989499606632725,
+          "stanceFeet": 4,
+          "maxReachError": 0,
+          "stride": 0.25,
+          "duty": 0.64,
+          "cycleSeconds": null,
+          "angularSpeed": 0
+        },
+        "limbSkin": {
+          "changedVertices": 4054,
+          "lowPawVerticesPreserved": 2896,
+          "protectedVerticesPreserved": 16753,
+          "maxWeightSumError": 6.705522537231445e-08,
+          "addedTriangles": 0,
+          "addedVertices": 0,
+          "positionNormalUvIndexUnchanged": true,
+          "kneeRedistributedVertices": 7798
+        },
+        "hockRig": {
+          "joints": {
+            "hind_left": {
+              "previous": [
+                -0.05409999564290047,
+                0.04300000829116578,
+                -0.1437000304289761
+              ],
+              "current": [
+                -0.05409999564290047,
+                0.085,
+                -0.1587
+              ]
+            },
+            "hind_right": {
+              "previous": [
+                0.05199999362230301,
+                0.043000010152137794,
+                -0.17380003995700824
+              ],
+              "current": [
+                0.05199999362230301,
+                0.085,
+                -0.1888
+              ]
+            }
+          },
+          "changedVertices": 2458,
+          "maxWeightSumError": 4.470348358154297e-08,
+          "addedBones": 0,
+          "addedVertices": 0,
+          "addedTriangles": 0,
+          "positionsUnchanged": true
+        },
+        "bones": 21,
+        "feet": [
+          {
+            "name": "fore_left",
+            "stance": true,
+            "phase": 0.7898949960663273,
+            "world": [
+              -0.0427,
+              0,
+              13.916163103999605
+            ],
+            "renderedWorld": [
+              -0.04269999999999978,
+              1.364758667188326e-08,
+              13.916163099612701
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "fore_right",
+            "stance": true,
+            "phase": 0.2898949960663273,
+            "world": [
+              0.0422,
+              0,
+              13.94490797038823
+            ],
+            "renderedWorld": [
+              0.0422000000000002,
+              1.3721183342307874e-08,
+              13.944907959263684
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_left",
+            "stance": true,
+            "phase": 0.9898949960663272,
+            "world": [
+              -0.0541,
+              0,
+              13.669763103999605
+            ],
+            "renderedWorld": [
+              -0.054099999999999974,
+              3.3610767363745353e-09,
+              13.669763107533127
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_right",
+            "stance": true,
+            "phase": 0.48989499606632725,
+            "world": [
+              0.052,
+              0,
+              13.638914033449604
+            ],
+            "renderedWorld": [
+              0.05200000000000006,
+              4.43620422341251e-09,
+              13.638914040880096
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          }
+        ],
+        "blink": {
+          "mode": "auto",
+          "amount": 0,
+          "left": 0,
+          "right": 0,
+          "count": 5,
+          "active": false,
+          "duration": 0.28,
+          "kind": "separate-skinned-eyelids",
+          "baseGeometryUnchanged": false,
+          "baseMorphCount": 0,
+          "addedTriangles": 2976,
+          "addedVertices": 1672,
+          "independentGaze": false,
+          "mouthControl": false,
+          "basePositionUnchanged": true,
+          "headSkinReweighted": true
+        },
+        "attention": {
+          "version": "head-attention-07",
+          "enabled": true,
+          "mode": "natural",
+          "appliedDegrees": {
+            "yaw": 1.945550211072587e-24,
+            "pitch": 3.6803840275150677e-10
+          },
+          "requestedDegrees": {
+            "yaw": 0,
+            "pitch": 0
+          },
+          "yawLimit": 6,
+          "elapsed": 29.882199999999333,
+          "bindYawCorrection": -55.99514261333094,
+          "eyeControl": false,
+          "mouthControl": false
+        },
+        "headCorrection": {
+          "sourceFaceYawDegrees": 55.99514261333094,
+          "correctionDegrees": -55.99514261333094,
+          "skin": {
+            "changedVertices": 4349,
+            "rigidFaceVertices": 7011,
+            "protectedVertices": 26407,
+            "maxWeightSumError": 6.705522537231445e-08,
+            "positionNormalUvIndexUnchanged": true,
+            "addedVertices": 0,
+            "addedTriangles": 0
+          }
+        }
+      }
+    },
+    "expression": {
+      "ready": true,
+      "version": "cat-v8-gait-study",
+      "frames": 2661,
+      "mode": "current",
+      "view": "threequarter",
+      "attention": "left",
+      "blinkMode": "closed",
+      "walking": false,
+      "speed": 0,
+      "requestedSpeed": 0.36,
+      "timeScale": 1,
+      "elapsed": 43.70665000000033,
+      "position": [
+        0,
+        0,
+        13.803463103999604
+      ],
+      "geometry": {
+        "meshes": 2,
+        "triangles": 51976,
+        "invalid": 0,
+        "morphTargets": 0
+      },
+      "cat": {
+        "version": "cat-gait-08",
+        "root": [
+          0,
+          0,
+          13.803463103999604
+        ],
+        "gait": {
+          "speed": 0,
+          "phase": 0.48989499606632725,
+          "stanceFeet": 4,
+          "maxReachError": 0,
+          "stride": 0.25,
+          "duty": 0.64,
+          "cycleSeconds": null,
+          "angularSpeed": 0
+        },
+        "limbSkin": {
+          "changedVertices": 4054,
+          "lowPawVerticesPreserved": 2896,
+          "protectedVerticesPreserved": 16753,
+          "maxWeightSumError": 6.705522537231445e-08,
+          "addedTriangles": 0,
+          "addedVertices": 0,
+          "positionNormalUvIndexUnchanged": true,
+          "kneeRedistributedVertices": 7798
+        },
+        "hockRig": {
+          "joints": {
+            "hind_left": {
+              "previous": [
+                -0.05409999564290047,
+                0.04300000829116578,
+                -0.1437000304289761
+              ],
+              "current": [
+                -0.05409999564290047,
+                0.085,
+                -0.1587
+              ]
+            },
+            "hind_right": {
+              "previous": [
+                0.05199999362230301,
+                0.043000010152137794,
+                -0.17380003995700824
+              ],
+              "current": [
+                0.05199999362230301,
+                0.085,
+                -0.1888
+              ]
+            }
+          },
+          "changedVertices": 2458,
+          "maxWeightSumError": 4.470348358154297e-08,
+          "addedBones": 0,
+          "addedVertices": 0,
+          "addedTriangles": 0,
+          "positionsUnchanged": true
+        },
+        "bones": 21,
+        "feet": [
+          {
+            "name": "fore_left",
+            "stance": true,
+            "phase": 0.7898949960663273,
+            "world": [
+              -0.0427,
+              0,
+              13.916163103999605
+            ],
+            "renderedWorld": [
+              -0.04269999999999996,
+              1.3175757429539914e-08,
+              13.91616310040479
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "fore_right",
+            "stance": true,
+            "phase": 0.2898949960663273,
+            "world": [
+              0.0422,
+              0,
+              13.94490797038823
+            ],
+            "renderedWorld": [
+              0.04220000000000002,
+              1.3446306450226597e-08,
+              13.944907960023782
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_left",
+            "stance": true,
+            "phase": 0.9898949960663272,
+            "world": [
+              -0.0541,
+              0,
+              13.669763103999605
+            ],
+            "renderedWorld": [
+              -0.05410000000000001,
+              3.4732381137825286e-09,
+              13.669763107569707
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_right",
+            "stance": true,
+            "phase": 0.48989499606632725,
+            "world": [
+              0.052,
+              0,
+              13.638914033449604
+            ],
+            "renderedWorld": [
+              0.052000000000000005,
+              4.540380002526767e-09,
+              13.63891404091052
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          }
+        ],
+        "blink": {
+          "mode": "closed",
+          "amount": 1,
+          "left": 1,
+          "right": 1,
+          "count": 5,
+          "active": false,
+          "duration": 0.28,
+          "kind": "separate-skinned-eyelids",
+          "baseGeometryUnchanged": false,
+          "baseMorphCount": 0,
+          "addedTriangles": 2976,
+          "addedVertices": 1672,
+          "independentGaze": false,
+          "mouthControl": false,
+          "basePositionUnchanged": true,
+          "headSkinReweighted": true
+        },
+        "attention": {
+          "version": "head-attention-07",
+          "enabled": true,
+          "mode": "manual",
+          "appliedDegrees": {
+            "yaw": -5.895418701165832,
+            "pitch": 4.407630696377836e-12
+          },
+          "requestedDegrees": {
+            "yaw": -6,
+            "pitch": 0
+          },
+          "yawLimit": 6,
+          "elapsed": 30.86549999999928,
+          "bindYawCorrection": -55.99514261333094,
+          "eyeControl": false,
+          "mouthControl": false
+        },
+        "headCorrection": {
+          "sourceFaceYawDegrees": 55.99514261333094,
+          "correctionDegrees": -55.99514261333094,
+          "skin": {
+            "changedVertices": 4349,
+            "rigidFaceVertices": 7011,
+            "protectedVertices": 26407,
+            "maxWeightSumError": 6.705522537231445e-08,
+            "positionNormalUvIndexUnchanged": true,
+            "addedVertices": 0,
+            "addedTriangles": 0
+          }
+        }
+      }
+    },
+    "mobile": {
+      "ready": true,
+      "version": "cat-v8-gait-study",
+      "frames": 141,
+      "mode": "current",
+      "view": "side",
+      "attention": "natural",
+      "blinkMode": "auto",
+      "walking": true,
+      "speed": 0.24,
+      "requestedSpeed": 0.24,
+      "timeScale": 0.5,
+      "elapsed": 1.4416499999999974,
+      "position": [
+        0,
+        0,
+        0.19018640000000012
+      ],
+      "geometry": {
+        "meshes": 2,
+        "triangles": 51976,
+        "invalid": 0,
+        "morphTargets": 0
+      },
+      "cat": {
+        "version": "cat-gait-08",
+        "root": [
+          0,
+          0,
+          0.19018640000000012
+        ],
+        "gait": {
+          "speed": 0.24000000000000007,
+          "phase": 0.49668563150553474,
+          "stanceFeet": 3,
+          "maxReachError": 0,
+          "stride": 0.21006129840933702,
+          "duty": 0.64,
+          "cycleSeconds": 0.8752554100389038,
+          "angularSpeed": 0
+        },
+        "limbSkin": {
+          "changedVertices": 4054,
+          "lowPawVerticesPreserved": 2896,
+          "protectedVerticesPreserved": 16753,
+          "maxWeightSumError": 6.705522537231445e-08,
+          "addedTriangles": 0,
+          "addedVertices": 0,
+          "positionNormalUvIndexUnchanged": true,
+          "kneeRedistributedVertices": 7798
+        },
+        "hockRig": {
+          "joints": {
+            "hind_left": {
+              "previous": [
+                -0.05409999564290047,
+                0.04300000829116578,
+                -0.1437000304289761
+              ],
+              "current": [
+                -0.05409999564290047,
+                0.085,
+                -0.1587
+              ]
+            },
+            "hind_right": {
+              "previous": [
+                0.05199999362230301,
+                0.043000010152137794,
+                -0.17380003995700824
+              ],
+              "current": [
+                0.05199999362230301,
+                0.085,
+                -0.1888
+              ]
+            }
+          },
+          "changedVertices": 2458,
+          "maxWeightSumError": 4.470348358154297e-08,
+          "addedBones": 0,
+          "addedVertices": 0,
+          "addedTriangles": 0,
+          "positionsUnchanged": true
+        },
+        "bones": 21,
+        "feet": [
+          {
+            "name": "fore_left",
+            "stance": false,
+            "phase": 0.7966856315055348,
+            "world": [
+              -0.0427,
+              0.016248737904819382,
+              0.342409695982533
+            ],
+            "renderedWorld": [
+              -0.04269999998911121,
+              0.01624875519450745,
+              0.34240967863596916
+            ],
+            "groundClearance": 0.016248737904819382,
+            "reachError": 0
+          },
+          {
+            "name": "fore_right",
+            "stance": true,
+            "phase": 0.2966856315055346,
+            "world": [
+              0.0422,
+              0,
+              0.27357759864014786
+            ],
+            "renderedWorld": [
+              0.042200000011410235,
+              1.961840836312012e-08,
+              0.2735775925625963
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_left",
+            "stance": true,
+            "phase": 0.9966856315055348,
+            "world": [
+              -0.0541,
+              0,
+              0.1066627905104981
+            ],
+            "renderedWorld": [
+              -0.05409999999972858,
+              3.5806798359683256e-09,
+              0.10666279259751463
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          },
+          {
+            "name": "hind_right",
+            "stance": true,
+            "phase": 0.4966856315055348,
+            "world": [
+              0.052,
+              0,
+              0.03211038689679882
+            ],
+            "renderedWorld": [
+              0.05200000000059162,
+              3.4802640352937786e-09,
+              0.03211039367424143
+            ],
+            "groundClearance": 0,
+            "reachError": 0
+          }
+        ],
+        "blink": {
+          "mode": "auto",
+          "amount": 0,
+          "left": 0,
+          "right": 0,
+          "count": 0,
+          "active": false,
+          "duration": 0.28,
+          "kind": "separate-skinned-eyelids",
+          "baseGeometryUnchanged": false,
+          "baseMorphCount": 0,
+          "addedTriangles": 2976,
+          "addedVertices": 1672,
+          "independentGaze": false,
+          "mouthControl": false,
+          "basePositionUnchanged": true,
+          "headSkinReweighted": true
+        },
+        "attention": {
+          "version": "head-attention-07",
+          "enabled": true,
+          "mode": "natural",
+          "appliedDegrees": {
+            "yaw": 0,
+            "pitch": 0
+          },
+          "requestedDegrees": {
+            "yaw": 0,
+            "pitch": 0
+          },
+          "yawLimit": 2,
+          "elapsed": 1.4416499999999974,
+          "bindYawCorrection": -55.99514261333094,
+          "eyeControl": false,
+          "mouthControl": false
+        },
+        "headCorrection": {
+          "sourceFaceYawDegrees": 55.99514261333094,
+          "correctionDegrees": -55.99514261333094,
+          "skin": {
+            "changedVertices": 4349,
+            "rigidFaceVertices": 7011,
+            "protectedVertices": 26407,
+            "maxWeightSumError": 6.705522537231445e-08,
+            "positionNormalUvIndexUnchanged": true,
+            "addedVertices": 0,
+            "addedTriangles": 0
+          }
+        }
+      }
+    },
+    "sourcesAfter": {
+      "web\\cat-v8-body.js": "84214e3fb69ea79a96057d0e4bd6d63c4c7010a299bad3662984480d4de12c31",
+      "web\\cat-v8-face.js": "52190cb9ec316fdc5a1b90455fd220f4d93eb0de6d9ef95794637fd92eede5c8",
+      "web\\cat-v8-gait-study.html": "f6bec9ad57097b95d9b62e90d9088e22f4df10ee8f95b3af90764c59afc704bb",
+      "web\\cat-v8-gait-study.js": "a8638e690efeaba784ee1f2a3e73d1dfc5a36a4db113b25f8dc0af39aa6c0a31",
+      "web\\cat-v8-hock-rig.js": "607bdcd5cf70c4942729434447e0ceb2244ac05035331fc7011b7c7b253aa602",
+      "web\\cat-v8-limb-skin.js": "29deaa96f3dba3a75f00063e112485ed9267a16dce3eca1d86babe8b73153276",
+      "web\\cat-v8.js": "6eb26b04b6cb918438d23eaef49212d2836ea9c9e12471321ac85dda7d7de382",
+      "web\\cat-v7-head.js": "9bfb33cbdd2595c69c30fb31e5a7547d2e475dcc68129f8215f07aab9d946b3d",
+      "web\\cat-v7-head-skin.js": "c8a067f16d83635869039336d6f5e04d8dd05d3d055339e7fab3bc1135d4371e",
+      "web\\cat-v6-lid-material.js": "39001e6cd0dafba1de90c812ea71388e338cd4c48ab8ecc46da8513fc5a5c3de",
+      "web\\models\\cat-v6-lid-surface.json": "119db47c3eed6506fc5c0fd70e999d6119bea2490c5cb4b41dbe9595b89e0d77",
+      "web\\models\\cat-v3-rig.glb": "6c8d0f0133805e0727cc6cdfc558456d670e0d33a5158685084413e7786a77f1"
+    }
+  },
+  "scope": "Actual gait controls, matched-speed V7 comparison, phase pixels, stop/start, head/blink, and mobile. Visual plausibility is reviewed separately."
+}

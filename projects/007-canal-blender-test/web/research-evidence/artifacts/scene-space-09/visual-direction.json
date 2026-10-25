@@ -1,0 +1,44 @@
+{
+  "target": "Whole-neighbourhood visual coherence in a local, walkable realtime scene.",
+  "reference": "assets/reference.png: original moderate-complexity rain-after-dusk canal street image.",
+  "baseline": "SPACE08 model/layout and its live viewer; original scene/versions retained.",
+  "artDirectionSkill": "[local path omitted]",
+  "intent": "A quiet inhabited canal street after rain, with a warm bookshop centre and a coherent surrounding district.",
+  "fixed": [
+    "SPACE08 building layout and count",
+    "Actual road/court navigation",
+    "River and bridge geometry",
+    "Existing dusk sky and identity of the bookshop",
+    "23 replacement tree positions and lower trunk collision coordinates"
+  ],
+  "changes": [
+    "Reduce large regular roof colour patches; use small staggered slate/tile courses with restrained relief.",
+    "Use material ageing tied to eaves, sill runoff and wall feet rather than arbitrary large dirty circles.",
+    "Replace solid polygon canopy clusters with visible branch hierarchy and fine cutout leaf sprigs.",
+    "Keep soil/grass subdued but differentiated at damp banks, slopes and district edges.",
+    "Lower overly bright local wall lamps while softly supporting the unlit sides with the existing sky light.",
+    "Keep separate responses for rough wet stones and dark reflective canal water; do not polish all surfaces alike."
+  ],
+  "constraints": [
+    "No district expansion",
+    "No extra houses",
+    "No downloaded assets or new Blender model export",
+    "No extra reflection or shadow passes",
+    "Existing geometry/UVs unchanged except runtime tree replacements"
+  ],
+  "reviewViews": [
+    "Whole district overview",
+    "Canal and bridge",
+    "North/south street at eye level",
+    "Peripheral tree/green view",
+    "Same-camera SPACE08 comparison"
+  ],
+  "notClaimed": "Photographic fidelity, production-quality game assets or complete interiors.",
+  "implementationRecords": [
+    "web/scene-space-09-surfaces.js",
+    "web/scene-space-09-landscape.js",
+    "web/scene-space-09-lighting.js",
+    "web/scene-space-09-lamps.js",
+    "web/scene-space-09-weather.js"
+  ]
+}

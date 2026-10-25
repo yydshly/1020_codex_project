@@ -1,0 +1,23 @@
+{
+  "ok": true,
+  "fixtureCount": 29,
+  "pointLightCount": 6,
+  "geometryUnchanged": true,
+  "sourceMaterialUnchanged": true,
+  "inheritedShaderPreserved": true,
+  "idempotentSetup": true,
+  "idempotentDispose": true,
+  "reentryAfterDispose": true,
+  "animatedFrames": 600,
+  "zones": {
+    "near-canal": 3,
+    "north-backstreet": 6,
+    "far-canal": 6,
+    "south-street": 6,
+    "north-ring": 5,
+    "side-streets": 2,
+    "original-courtyard": 1
+  },
+  "triangles": 3608,
+  "note": "CPU module/ownership/shader-hook validation; parent separately validates actual WebGL output and complete GLB."
+}

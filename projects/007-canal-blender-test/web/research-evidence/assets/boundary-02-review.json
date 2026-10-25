@@ -1,0 +1,80 @@
+{
+  "stage": "boundary-02",
+  "summary": "保留上一轮全部内容，以新增地形和承托面修复已知漏空、远景断边及近处地面落差；未增加道具、建筑或灯光，未更新网页。",
+  "source": "../artifacts/rainy-canal-extension-01.blend",
+  "preview_candidate": "../artifacts/rainy-canal-extension-02.blend",
+  "final_candidate": "../artifacts/rainy-canal-extension-02-final.blend",
+  "final_candidate_sha256": "202c8ca179e36cbffbb46c473418fd2035702afc97e795e309801f79fe603093",
+  "preview_final_difference": "两张小样对应保留的 preview_candidate。出图后仅将新增后墙承托面的4个顶点内收约1毫米，与旧后巷边界准确接合，消除共面条；另存final，无第三次渲染。final仍需在未来获准的视觉检查中确认，但本轮已有几何及保留性审计。",
+  "preservation": {
+    "original_object_count": 2246,
+    "old_objects_materials_lights_world_cameras_unchanged": true,
+    "prior_versions_and_images_overwritten": false,
+    "preview_candidate_preserved_after_seam_fix": true,
+    "new_collection": "EXT_Boundary02",
+    "rollback": "关闭EXT_Boundary02新增集合可对照上一轮内容，或直接打开原extension-01工程。新增地面会改变遮挡、间接光与反射，保留原数据不等于新增开启时的像素完全相同。",
+    "website_updated": false
+  },
+  "changes": [
+    "连续延长两岸、岸坡及运河水面；新水面接缝顶点对齐原水面边界。",
+    "新增低面数地形与独立灰褐矿物地面材质，覆盖旧黑土表面的视觉空板感；不修改原土壤材质。",
+    "补齐店后约0.5米宽、18厘米深的低洼带及两侧连接。",
+    "补齐对岸铺砖与房基之间约0.82米的裸带，并为对岸房基和后边界提供连续承托。",
+    "补后巷外围至后边界的缓坡；两桥桥头原本连续，未加多余几何。"
+  ],
+  "cost": {
+    "added_mesh_objects": 14,
+    "added_vertices": 1145,
+    "added_faces": 931,
+    "vertex_increase_percent_rounded": 0.7,
+    "added_materials": 1,
+    "added_props_buildings_lights_cameras": 0,
+    "preview_count": 2,
+    "preview_resolution": [
+      1104,
+      622
+    ],
+    "samples_per_preview": 32
+  },
+  "visual_review": [
+    {
+      "image": "boundary-02-preview-01.png",
+      "camera_unchanged_from_previous_round": "EXT_Review_Overview",
+      "observation": "原左下亮蓝漏空消失，岸面和水面向外连续；对岸建筑下方已形成连续承托。新增平面湿铺地仍较光滑，局部天空反光明显，未增加铺砖几何细节。"
+    },
+    {
+      "image": "boundary-02-preview-02.png",
+      "camera_unchanged_from_previous_round": "EXT_Review_ReverseRear",
+      "observation": "原背后大块黑地和近处三角漏空被连续地面、岸面和水面接替；后墙至后巷衔接完整。远河仍笔直、地平线仍偏机械，背景尚缺自然的地形组织，并非完成版环境。"
+    }
+  ],
+  "diagnostics": {
+    "known_hole_rays": 7,
+    "known_hole_rays_before_all_missed": true,
+    "known_hole_rays_after_all_hit": true,
+    "local_support_points": 9,
+    "local_support_before_m": 0.67,
+    "local_support_after_m_range": [
+      0.8452,
+      0.85
+    ],
+    "existing_route_samples": 522,
+    "sampled_route_obstructions": 0,
+    "original_paving_joint_maximum_drop_m": 0.12,
+    "navigation_limit": "仅为已知孔洞、指定支撑点和两条路线采样，不是所有角度或完整漫游碰撞认证。"
+  },
+  "remaining_limits": [
+    "低细节远景仍偏平直，远处运河直线和地平线过渡仍不够自然。",
+    "后部没有新增照明，建筑背面仍偏暗；本轮没有改变原氛围灯光。",
+    "房屋仍为封闭外壳，未添加室内、漫游控制或完整碰撞。",
+    "远处地形是背景补全，不应把其延伸长度当作已完成的可玩地图范围。",
+    "两张小样额度已用完；final仅有无渲染的毫米级接缝修正，不追加第三张。"
+  ],
+  "evidence": [
+    "boundary-02-audit.json",
+    "boundary-02-diagnostics.json",
+    "boundary-02-stats.json",
+    "boundary-02-render-ledger.json",
+    "boundary-02-seam-check.json"
+  ]
+}

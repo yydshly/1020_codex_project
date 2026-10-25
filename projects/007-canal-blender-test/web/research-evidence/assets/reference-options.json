@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "title": "三种入口方案与实际选择",
+  "recovered_at": "2026-10-25T12:29:42.789401+08:00",
+  "origin": "本次对话生成的历史原图，依据原图及生成完成事件恢复；没有重新生成或编辑。",
+  "selection": {
+    "selected_id": "selected-compact",
+    "selection_basis": "scope_and_budget",
+    "labels_are_editorial_not_algorithmic": true,
+    "explanation_zh": "先生成结构清楚的初始老街，再展示高复杂山城电车方案，最后在精致感与耗时之间收敛为较简的三店一桥预算方案，仅最后一张用于实际建模。所谓三个级别是讨论中的范围划分，不是统一算法评分。",
+    "modeled_options": [
+      "selected-compact"
+    ],
+    "unmodeled_options": [
+      "initial",
+      "complex"
+    ],
+    "not_a_three_level_reconstruction_benchmark": true
+  },
+  "options": [
+    {
+      "id": "initial",
+      "title": "初始方案：结构清晰的临水老街",
+      "file": "assets/reference-initial.png",
+      "web_url": "research-media/reference-levels/reference-initial.png",
+      "sequence": 1,
+      "generated_at": "2026-10-23T13:32:11.146+08:00",
+      "event_id": "exec-cf664ad1-f318-4c14-9eb4-3f9ed3227feb",
+      "sha256": "401bda34aa8ea28f089c5f33c9c74449c0c267cbf31342b9dfd57deed116028b",
+      "selected_for_modeling": false,
+      "scope_label": "初始可读方案",
+      "prompt_scope_zh": [
+        "要求三家相连双层店面、一座石拱桥、两岸通路。",
+        "要求五盏独立街灯、一棵树、一辆自行车，布局可数且连接清楚。",
+        "用于提出测试题，没有以这张图执行后续Blender建模。"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 3122090,
+      "origin": "本对话为本次探索生成的概念参考图；不是源X帖媒体，也不是Blender渲染。"
+    },
+    {
+      "id": "complex",
+      "title": "高复杂方案：运河山城与电车枢纽",
+      "file": "assets/reference-complex.png",
+      "web_url": "research-media/reference-levels/reference-complex.png",
+      "sequence": 2,
+      "generated_at": "2026-10-23T13:36:40.976+08:00",
+      "event_id": "exec-f354926a-2cf8-4da2-aae1-2305635becbc",
+      "sha256": "d30475d3b1dc4eb4ebbd3ac3d143e4e65647b365b40b20069c04a389114f610c",
+      "selected_for_modeling": false,
+      "scope_label": "高复杂世界方案",
+      "prompt_scope_zh": [
+        "要求约10–12栋不同建筑、两处独立过河桥、电车线路与站台雨棚。",
+        "包含上下层街道、两组台阶、河弯、侧巷与丰富材料。",
+        "作为更复杂的验证方向展示，因范围与投入过大未启动该图的建模。"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 3289018,
+      "origin": "本对话为本次探索生成的概念参考图；不是源X帖媒体，也不是Blender渲染。"
+    },
+    {
+      "id": "selected-compact",
+      "title": "预算收敛方案：三家店与一座桥",
+      "file": "assets/reference.png",
+      "web_url": "media/reference.png",
+      "sequence": 3,
+      "generated_at": "2026-10-23T13:41:30.246+08:00",
+      "event_id": "exec-629d22ff-849e-4515-913b-e2b0a83ba885",
+      "sha256": "6ebfd8652e498e31ad522045a22e7abdb32b92f5b5e825f62ae7df13ec844f1e",
+      "selected_for_modeling": true,
+      "scope_label": "实际采用的较简预算方案",
+      "prompt_scope_zh": [
+        "要求三家双层店面、一座5–6米石拱桥、三盏街灯与短段河岸。",
+        "排除电车、复杂线网、多层道路、台阶网络与详细山城天际线。",
+        "保留精致材质与雨后暮色，按范围和预算收敛；原生成提示称中等复杂度，不表示低精度或算法测得最简单。"
+      ],
+      "width": 1672,
+      "height": 941,
+      "bytes": 2994583,
+      "origin": "本对话为本次探索生成的概念参考图；不是源X帖媒体，也不是Blender渲染。"
+    }
+  ],
+  "guide": {
+    "title": "AI 控制 Blender：效果、原理与验证",
+    "file": "assets/control-guide-original.png",
+    "web_url": "media/control-guide-original.png",
+    "width": 1024,
+    "height": 1536,
+    "sha256": "859a81d93dd20b277f4df5fe887775466816b77fda3e053428e510edbb474206",
+    "generated_at": "2026-10-23T13:11:42.056+08:00",
+    "origin": "针对本次源帖与控制机制专门生成的完整概述海报。",
+    "scope_zh": "海报按原件保留，涵盖源帖效果、DeepSeek与Codex控制路线、验证方式、比较边界与研究意义；它不是老街所有后续迭代的最终成图，也不是实测能力排名。",
+    "supersedes_earlier_moon_gate_poster": true
+  },
+  "notes_zh": [
+    "三张图都仅作为入口概念图生成，不能当成三次完成的图生3D结果。",
+    "原提示中的建筑和街灯数量是设计约束，不声称已逐像素或逐对象核算生成图完全遵从。",
+    "此前研究收束时称另外两张未归档，实际原件保存在本对话生成图目录；本轮已找回并新增接入。"
+  ]
+}

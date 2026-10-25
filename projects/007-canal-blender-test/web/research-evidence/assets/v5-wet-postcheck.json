@@ -1,0 +1,74 @@
+{
+  "schema_version": 1,
+  "checked_utc": "2026-10-23T11:18:08.307937+00:00",
+  "passed": true,
+  "scope": "Read-only post-render file-hash verification and review of saved-candidate constraint audits; no new render or Blender save.",
+  "baseline": "assets/v5-wet-baseline.json",
+  "baseline_sha256": "0d1bae1511842e0d5277711dad5fd1488d5bbeaa9dad0ae04d8457abf94319dc",
+  "frozen_source": "artifacts/rainy-canal-v5-preview-02.blend",
+  "source_sha256": "5cfbbdc89ddd980c12a1066e1b2d0cc4d361391a276797a19d802b8f2c4b1431",
+  "source_unchanged": true,
+  "previews": [
+    {
+      "preview": 1,
+      "candidate": "artifacts/rainy-canal-v5-wet-preview-01.blend",
+      "candidate_sha256": "600bc4d5b771baf7654a06a8e637041bf21b12b70af5c8a44e23dadfe55ea638",
+      "image": "assets/v5-wet-preview-01.png",
+      "image_sha256": "ffee6cfa114fb6f8f7649d0e6250b63d8907f8ca945131e0e9cad98573a32ad2",
+      "audit": "assets/v5-wet-preview-01-audit.json",
+      "audit_sha256": "98f20d4595df95058db0a35777374756c85ed6f296c9a83fc0e3e167c210ae8e",
+      "parameter_changes": 8,
+      "render_seconds": 7.358,
+      "all_constraint_checks_passed": true
+    },
+    {
+      "preview": 2,
+      "candidate": "artifacts/rainy-canal-v5-wet-preview-02.blend",
+      "candidate_sha256": "6eb7edb0e46958e59b5bf073e07d35294682a65bfb68a1df76390e279d65744f",
+      "image": "assets/v5-wet-preview-02.png",
+      "image_sha256": "3530e4b155025e13a1250a61f6e922dc8d9e13d9b7fbf062b7ca23610d054001",
+      "audit": "assets/v5-wet-preview-02-audit.json",
+      "audit_sha256": "cb296c9eb8ee3ea3fd4fa5637ada5b026c1049897278ef274790237e21fe4d35",
+      "parameter_changes": 12,
+      "render_seconds": 6.584,
+      "all_constraint_checks_passed": true
+    }
+  ],
+  "ledger": {
+    "asset": "assets/v5-wet-render-ledger.json",
+    "sha256": "99f6fd39281f510aacce3c5e6b51f03dc525914c8454f7ee5a01bcb0f66d91d3",
+    "attempts": 2,
+    "complete": 2,
+    "failed": 0,
+    "render_budget_exhausted": true
+  },
+  "frozen_counts": {
+    "objects": 2109,
+    "mesh_objects": 2015,
+    "curve_objects": 72,
+    "vertices": 159646,
+    "faces": 127565,
+    "curve_points": 1553,
+    "modifiers": 686,
+    "lights": 20,
+    "cameras": 2
+  },
+  "all_geometry_transforms_visibility_modifiers_lights_cameras_frozen": true,
+  "world_color_compositor_collections_and_nonwet_materials_frozen": true,
+  "all_material_node_link_counts_unchanged": true,
+  "water_parameters_identical_between_previews": true,
+  "website_hash_checks": {
+    "project_web": {
+      "unchanged": true,
+      "files": 56
+    },
+    "built_site_007": {
+      "unchanged": true,
+      "files": 56
+    }
+  },
+  "limitations": [
+    "Constraint evidence verifies unchanged scene structure and permitted parameter edits, not reference-image fidelity.",
+    "No website packaging, build, publication or additional rendering was performed by this check."
+  ]
+}

@@ -1,0 +1,453 @@
+{
+  "fps": 24.0,
+  "warmup_cycles": 3,
+  "bone_count": 85,
+  "ik_solver": "LEGACY",
+  "source_constraints": 22,
+  "source_nla": [
+    {
+      "name": "[Action Stash]",
+      "mute": true,
+      "strips": [
+        {
+          "name": "Walk",
+          "action": "Walk"
+        }
+      ]
+    },
+    {
+      "name": "[Action Stash].001",
+      "mute": true,
+      "strips": [
+        {
+          "name": "ArmatureAction",
+          "action": "run"
+        }
+      ]
+    }
+  ],
+  "actions": {
+    "Walk": {
+      "source_action": "Walk",
+      "frame_start": 1,
+      "frame_end": 28,
+      "sample_count": 28,
+      "duration_seconds": 1.125,
+      "cycle_max_position_deltas": [
+        null,
+        0.05581383987450545,
+        0.0
+      ],
+      "cycle_max_matrix_deltas": [
+        null,
+        0.043702125549316406,
+        0.0
+      ],
+      "tail_endpoint_seam": {
+        "Tail_controller": {
+          "position": 0.0,
+          "rotation_degrees": 0.0
+        },
+        "Tail": {
+          "position": 0.0,
+          "rotation_degrees": 0.27976461788404605
+        },
+        "Tail.001": {
+          "position": 0.0397036238683436,
+          "rotation_degrees": 0.9270326590275052
+        },
+        "Tail.002": {
+          "position": 0.03346561360222305,
+          "rotation_degrees": 1.1656533414499328
+        },
+        "Tail.003": {
+          "position": 0.023829073110267825,
+          "rotation_degrees": 1.1315821662419376
+        },
+        "Tail.004": {
+          "position": 0.015567383554325727,
+          "rotation_degrees": 0.8793711594318316
+        },
+        "Tail.005": {
+          "position": 0.007118711005862075,
+          "rotation_degrees": 0.48778652606632655
+        },
+        "Tail.006": {
+          "position": 0.0023087328568603734,
+          "rotation_degrees": 0.17245846624702127
+        },
+        "Tail.007": {
+          "position": 0.00033442742164156985,
+          "rotation_degrees": 0.0
+        }
+      },
+      "original_object_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bake_verification": {
+        "max_head_position_error": 0.00021458764429271027,
+        "max_matrix_element_error": 0.00020372867584228516,
+        "max_rotation_error_degrees": 0.05595291023658669,
+        "worst_bone": "Spine.004",
+        "bone_matrix_errors": {
+          "Foot_front_IK_L": 2.384185791015625e-07,
+          "Knee_back_IK_L": 0.0,
+          "Foot_Back_IK_L": 4.76837158203125e-07,
+          "Knee_front_IK_L": 2.384185791015625e-07,
+          "Tail_controller": 5.960464477539063e-08,
+          "Foot_front_IK_R": 2.384185791015625e-07,
+          "Knee_back_IK_R": 2.384185791015625e-07,
+          "Foot_Back_IK_R": 9.5367431640625e-07,
+          "Knee_front_IK_R": 2.384185791015625e-07,
+          "Spine": 2.384185791015625e-07,
+          "Spine.001": 9.015202522277832e-05,
+          "Spine.002": 0.0001372694969177246,
+          "Spine.003": 0.0001684427261352539,
+          "Spine.004": 0.00020372867584228516,
+          "Neck": 2.384185791015625e-07,
+          "Neck.001": 3.5762786865234375e-07,
+          "Neck.002": 4.76837158203125e-07,
+          "Head": 7.152557373046875e-07,
+          "Mouth": 9.5367431640625e-07,
+          "Nose": 7.152557373046875e-07,
+          "Ear_connector": 7.152557373046875e-07,
+          "Ear": 9.5367431640625e-07,
+          "Ear.001": 1.430511474609375e-06,
+          "Ear.002": 1.9073486328125e-06,
+          "Ear_connector.001": 9.5367431640625e-07,
+          "Ear.006": 1.1920928955078125e-06,
+          "Ear.003": 2.1457672119140625e-06,
+          "Ear.004": 2.6226043701171875e-06,
+          "Head_controller": 2.384185791015625e-07,
+          "Shoulder_front_L": 5.960464477539063e-08,
+          "Thigh_front_L": 8.493661880493164e-07,
+          "Calf_Front_L": 1.5012919902801514e-06,
+          "Foot_front_L2": 2.5033950805664062e-06,
+          "Foot_front_L": 3.3974647521972656e-06,
+          "toe_connector_L.001": 4.0531158447265625e-06,
+          "toe_connector_L": 3.814697265625e-06,
+          "Toe_pinky_L_front": 3.516674041748047e-06,
+          "Toe_ring_L_front": 3.6954879760742188e-06,
+          "toe_connector_L.002": 3.814697265625e-06,
+          "Toe_thumb_L_front": 3.814697265625e-06,
+          "Toe_Pointer_L_front": 3.7550926208496094e-06,
+          "Thigh_front_R": 5.960464477539062e-07,
+          "Calf_Front_R": 1.8775463104248047e-06,
+          "Foot_front_L2.002": 4.172325134277344e-06,
+          "Foot_front_R": 4.172325134277344e-06,
+          "toe_connector_R": 3.933906555175781e-06,
+          "toe_connector_R.001": 4.0531158447265625e-06,
+          "Toe_pinky_L_front.002": 4.291534423828125e-06,
+          "Toe_ring_L_front.002": 3.993511199951172e-06,
+          "toe_connector_R.002": 3.635883331298828e-06,
+          "Toe_thumb_L_front.002": 3.606081008911133e-06,
+          "Toe_Pointer_L_front.002": 3.814697265625e-06,
+          "Hip": 2.384185791015625e-07,
+          "Thigh_Back_L": 9.5367431640625e-07,
+          "Calf_back_L": 1.8533319234848022e-06,
+          "Foot_Back_L": 4.0531158447265625e-06,
+          "Foot_Back_L2": 5.7220458984375e-06,
+          "toe_connector_L_back.002": 5.841255187988281e-06,
+          "Toe_back_L_Thumb": 5.781650543212891e-06,
+          "toe_connector_L_back.001": 5.900859832763672e-06,
+          "toe_connector_L_back": 5.841255187988281e-06,
+          "Toe_back_L_pinky": 5.900859832763672e-06,
+          "Toe_back_L_Ring": 5.900859832763672e-06,
+          "Toe_back_L_Pointer": 5.841255187988281e-06,
+          "Thigh_Back_R": 1.0281801223754883e-06,
+          "Calf_back_R": 2.115964889526367e-06,
+          "Foot_Back_R": 2.9206275939941406e-06,
+          "Foot_Back_L2.002": 5.245208740234375e-06,
+          "toe_connector_L_back.006": 5.364418029785156e-06,
+          "Toe_back_L_Thumb.002": 5.185604095458984e-06,
+          "toe_connector_L_back.003": 5.424022674560547e-06,
+          "toe_connector_L_back.004": 5.424022674560547e-06,
+          "Toe_back_L_pinky.002": 5.602836608886719e-06,
+          "Toe_back_L_Ring.002": 5.364418029785156e-06,
+          "Toe_back_L_Pointer.002": 5.364418029785156e-06,
+          "Tail": 4.76837158203125e-07,
+          "Tail.001": 7.152557373046875e-07,
+          "Tail.002": 9.5367431640625e-07,
+          "Tail.003": 1.430511474609375e-06,
+          "Tail.004": 1.9073486328125e-06,
+          "Tail.005": 2.384185791015625e-06,
+          "Tail.006": 3.337860107421875e-06,
+          "Tail.007": 3.814697265625e-06,
+          "Spine_controller_1": 1.1920928955078125e-07,
+          "Spine_controller_2": 5.960464477539063e-08
+        },
+        "pose_matches_source_at_integer_frames": true,
+        "matrix_element_tolerance": 0.001
+      }
+    },
+    "Run": {
+      "source_action": "run",
+      "frame_start": 1,
+      "frame_end": 15,
+      "sample_count": 15,
+      "duration_seconds": 0.5833333333333334,
+      "cycle_max_position_deltas": [
+        null,
+        0.45845880879870266,
+        0.0
+      ],
+      "cycle_max_matrix_deltas": [
+        null,
+        0.4559633731842041,
+        0.0
+      ],
+      "tail_endpoint_seam": {
+        "Tail_controller": {
+          "position": 0.0,
+          "rotation_degrees": 0.0
+        },
+        "Tail": {
+          "position": 0.0,
+          "rotation_degrees": 1.426534102996171
+        },
+        "Tail.001": {
+          "position": 0.15248948070934126,
+          "rotation_degrees": 4.6459262452809185
+        },
+        "Tail.002": {
+          "position": 0.15883847097859607,
+          "rotation_degrees": 6.927360594839374
+        },
+        "Tail.003": {
+          "position": 0.16642916727533816,
+          "rotation_degrees": 6.385590114030479
+        },
+        "Tail.004": {
+          "position": 0.18291447405752612,
+          "rotation_degrees": 3.023098637809124
+        },
+        "Tail.005": {
+          "position": 0.2041327781169212,
+          "rotation_degrees": 2.625376050270529
+        },
+        "Tail.006": {
+          "position": 0.1790287443868973,
+          "rotation_degrees": 7.596676480650473
+        },
+        "Tail.007": {
+          "position": 0.09362995886562273,
+          "rotation_degrees": 10.059744069267712
+        }
+      },
+      "original_object_matrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "bake_verification": {
+        "max_head_position_error": 0.0003188942078978105,
+        "max_matrix_element_error": 0.0002906322479248047,
+        "max_rotation_error_degrees": 0.03956468205889273,
+        "worst_bone": "Spine.004",
+        "bone_matrix_errors": {
+          "Foot_front_IK_L": 4.172325134277344e-07,
+          "Knee_back_IK_L": 0.0,
+          "Foot_Back_IK_L": 4.76837158203125e-07,
+          "Knee_front_IK_L": 1.1920928955078125e-07,
+          "Tail_controller": 7.450580596923828e-08,
+          "Foot_front_IK_R": 2.384185791015625e-07,
+          "Knee_back_IK_R": 0.0,
+          "Foot_Back_IK_R": 9.5367431640625e-07,
+          "Knee_front_IK_R": 1.1920928955078125e-07,
+          "Spine": 2.384185791015625e-07,
+          "Spine.001": 0.00010883808135986328,
+          "Spine.002": 0.00018527358770370483,
+          "Spine.003": 0.0001913309097290039,
+          "Spine.004": 0.0002906322479248047,
+          "Neck": 2.384185791015625e-07,
+          "Neck.001": 4.76837158203125e-07,
+          "Neck.002": 4.76837158203125e-07,
+          "Head": 7.152557373046875e-07,
+          "Mouth": 9.5367431640625e-07,
+          "Nose": 9.5367431640625e-07,
+          "Ear_connector": 9.5367431640625e-07,
+          "Ear": 9.5367431640625e-07,
+          "Ear.001": 1.1920928955078125e-06,
+          "Ear.002": 2.384185791015625e-06,
+          "Ear_connector.001": 1.1920928955078125e-06,
+          "Ear.006": 1.6689300537109375e-06,
+          "Ear.003": 2.384185791015625e-06,
+          "Ear.004": 2.384185791015625e-06,
+          "Head_controller": 4.76837158203125e-07,
+          "Shoulder_front_L": 1.1920928955078125e-07,
+          "Thigh_front_L": 6.258487701416016e-07,
+          "Calf_Front_L": 1.2665987014770508e-06,
+          "Foot_front_L2": 2.682209014892578e-06,
+          "Foot_front_L": 3.0994415283203125e-06,
+          "toe_connector_L.001": 3.516674041748047e-06,
+          "toe_connector_L": 3.5762786865234375e-06,
+          "Toe_pinky_L_front": 4.0531158447265625e-06,
+          "Toe_ring_L_front": 3.5762786865234375e-06,
+          "toe_connector_L.002": 3.4570693969726562e-06,
+          "Toe_thumb_L_front": 3.5762786865234375e-06,
+          "Toe_Pointer_L_front": 3.3974647521972656e-06,
+          "Thigh_front_R": 6.854534149169922e-07,
+          "Calf_Front_R": 1.1920928955078125e-06,
+          "Foot_front_L2.002": 3.0994415283203125e-06,
+          "Foot_front_R": 4.0531158447265625e-06,
+          "toe_connector_R": 4.0531158447265625e-06,
+          "toe_connector_R.001": 4.0531158447265625e-06,
+          "Toe_pinky_L_front.002": 3.814697265625e-06,
+          "Toe_ring_L_front.002": 4.291534423828125e-06,
+          "toe_connector_R.002": 4.291534423828125e-06,
+          "Toe_thumb_L_front.002": 4.5299530029296875e-06,
+          "Toe_Pointer_L_front.002": 4.291534423828125e-06,
+          "Hip": 2.384185791015625e-07,
+          "Thigh_Back_L": 6.407499313354492e-07,
+          "Calf_back_L": 1.7583370208740234e-06,
+          "Foot_Back_L": 2.9802322387695312e-06,
+          "Foot_Back_L2": 5.364418029785156e-06,
+          "toe_connector_L_back.002": 5.9604644775390625e-06,
+          "Toe_back_L_Thumb": 5.7220458984375e-06,
+          "toe_connector_L_back.001": 6.079673767089844e-06,
+          "toe_connector_L_back": 6.079673767089844e-06,
+          "Toe_back_L_pinky": 6.198883056640625e-06,
+          "Toe_back_L_Ring": 6.198883056640625e-06,
+          "Toe_back_L_Pointer": 5.9604644775390625e-06,
+          "Thigh_Back_R": 8.791685104370117e-07,
+          "Calf_back_R": 1.7881393432617188e-06,
+          "Foot_Back_R": 3.337860107421875e-06,
+          "Foot_Back_L2.002": 5.364418029785156e-06,
+          "toe_connector_L_back.006": 5.4836273193359375e-06,
+          "Toe_back_L_Thumb.002": 5.4836273193359375e-06,
+          "toe_connector_L_back.003": 5.4836273193359375e-06,
+          "toe_connector_L_back.004": 5.364418029785156e-06,
+          "Toe_back_L_pinky.002": 5.4836273193359375e-06,
+          "Toe_back_L_Ring.002": 5.4836273193359375e-06,
+          "Toe_back_L_Pointer.002": 5.4836273193359375e-06,
+          "Tail": 2.384185791015625e-07,
+          "Tail.001": 4.76837158203125e-07,
+          "Tail.002": 9.5367431640625e-07,
+          "Tail.003": 1.430511474609375e-06,
+          "Tail.004": 2.384185791015625e-06,
+          "Tail.005": 2.86102294921875e-06,
+          "Tail.006": 3.814697265625e-06,
+          "Tail.007": 4.76837158203125e-06,
+          "Spine_controller_1": 5.960464477539063e-08,
+          "Spine_controller_2": 0.0
+        },
+        "pose_matches_source_at_integer_frames": true,
+        "matrix_element_tolerance": 0.001
+      }
+    }
+  },
+  "limitations": [
+    "Original legacy tail IK has a nonzero endpoint seam; no new endpoint motion or loop correction was authored."
+  ],
+  "disconnected_for_bake": [
+    "Spine.002",
+    "Spine.003",
+    "Spine.004",
+    "Neck.001",
+    "Neck.002",
+    "Head",
+    "Mouth",
+    "Nose",
+    "Ear_connector",
+    "Ear",
+    "Ear.001",
+    "Ear.002",
+    "Ear_connector.001",
+    "Ear.006",
+    "Ear.003",
+    "Ear.004",
+    "Calf_Front_L",
+    "Foot_front_L2",
+    "Foot_front_L",
+    "toe_connector_L.001",
+    "toe_connector_L",
+    "Toe_pinky_L_front",
+    "Toe_ring_L_front",
+    "toe_connector_L.002",
+    "Toe_thumb_L_front",
+    "Toe_Pointer_L_front",
+    "Calf_Front_R",
+    "Foot_front_L2.002",
+    "Foot_front_R",
+    "toe_connector_R",
+    "toe_connector_R.001",
+    "Toe_pinky_L_front.002",
+    "Toe_ring_L_front.002",
+    "toe_connector_R.002",
+    "Toe_thumb_L_front.002",
+    "Toe_Pointer_L_front.002",
+    "Thigh_Back_L",
+    "Calf_back_L",
+    "Foot_Back_L",
+    "Foot_Back_L2",
+    "toe_connector_L_back.002",
+    "Toe_back_L_Thumb",
+    "toe_connector_L_back.001",
+    "toe_connector_L_back",
+    "Toe_back_L_pinky",
+    "Toe_back_L_Ring",
+    "Toe_back_L_Pointer",
+    "Thigh_Back_R",
+    "Calf_back_R",
+    "Foot_Back_R",
+    "Foot_Back_L2.002",
+    "toe_connector_L_back.006",
+    "Toe_back_L_Thumb.002",
+    "toe_connector_L_back.003",
+    "toe_connector_L_back.004",
+    "Toe_back_L_pinky.002",
+    "Toe_back_L_Ring.002",
+    "Toe_back_L_Pointer.002",
+    "Tail.001",
+    "Tail.002",
+    "Tail.003",
+    "Tail.004",
+    "Tail.005",
+    "Tail.006",
+    "Tail.007"
+  ]
+}
