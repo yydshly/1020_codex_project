@@ -1,0 +1,35 @@
+{
+  "checkedAt": "2026-10-25T05:17:09.827Z",
+  "purpose": "Bounded serial recheck of four transient network failures; prior bulk audio and other resources are unchanged.",
+  "ok": true,
+  "results": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 39565,
+      "sha256": "022d03c7bc1b4296273f3e6060aa515daaa4b0fc2fb2dcfc52066a074762378c",
+      "matches": true
+    },
+    {
+      "path": "courses.html",
+      "status": 200,
+      "bytes": 23080,
+      "sha256": "a1c7228ce2d4cfc24b0655a78894fdecfb8ca9c9d985cd409b4fcaa1fb031893",
+      "matches": true
+    },
+    {
+      "path": "assets/10-final-parking-auto-left-BD3PKojP.png",
+      "status": 200,
+      "bytes": 81507,
+      "sha256": "6489f63acc10cfc84a92e8379fb2b827f786a0b701dde8d9503583e67af4930d",
+      "matches": true
+    },
+    {
+      "path": "images/project-summary-20261025.png",
+      "status": 200,
+      "bytes": 1998290,
+      "sha256": "88f6b3ca6b32dff2f21d475e6f0a6b88022162e3910a6acebe40b65a605e6334",
+      "matches": true
+    }
+  ]
+}

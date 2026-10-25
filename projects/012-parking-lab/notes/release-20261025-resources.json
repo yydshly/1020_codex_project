@@ -1,0 +1,96 @@
+{
+  "startedAt": "2026-10-25T05:15:25.694Z",
+  "finishedAt": "2026-10-25T05:15:57.285Z",
+  "target": "https://yydshly.github.io/1020_codex_project/projects/012-parking-lab/",
+  "releaseCommit": "8435379b662389967eb43156780bfc1de5c9febe",
+  "releaseQuery": "8435379",
+  "concurrency": 6,
+  "timeoutMs": 20000,
+  "comparison": {
+    "projectResources": "Exact bytes and SHA256; audio also matches manifest SHA256 and byte count",
+    "rootCatalogue": "SHA256 after CRLF/LF normalization plus complete project summary and guide link"
+  },
+  "ok": false,
+  "counts": {
+    "planned": 211,
+    "requested": 211,
+    "verified": 207,
+    "failed": 4,
+    "byCategory": {
+      "html": {
+        "planned": 3,
+        "verified": 1,
+        "failed": 2
+      },
+      "asset": {
+        "planned": 13,
+        "verified": 12,
+        "failed": 1
+      },
+      "guide": {
+        "planned": 1,
+        "verified": 0,
+        "failed": 1
+      },
+      "manifest": {
+        "planned": 1,
+        "verified": 1,
+        "failed": 0
+      },
+      "audio": {
+        "planned": 191,
+        "verified": 191,
+        "failed": 0
+      },
+      "cover": {
+        "planned": 1,
+        "verified": 1,
+        "failed": 0
+      },
+      "siteIndex": {
+        "planned": 1,
+        "verified": 1,
+        "failed": 0
+      }
+    }
+  },
+  "bytes": {
+    "localExpected": 37858955,
+    "downloaded": 35716478,
+    "verified": 35716478,
+    "audioExpected": 27569676,
+    "audioVerified": 27569676
+  },
+  "checks": {
+    "expectedAudioClips": 191,
+    "actualAudioClips": 191,
+    "uniqueAudioFiles": 191,
+    "assetFiles": 13,
+    "localManifestValidated": true,
+    "guideMatchesPublicSource": true,
+    "coverMatchesGuide": true,
+    "rootProjectAndFullSummary": true
+  },
+  "failures": [
+    {
+      "resource": "/1020_codex_project/projects/012-parking-lab/index.html",
+      "phase": "public",
+      "reason": "Public fetch or resource validation failed"
+    },
+    {
+      "resource": "/1020_codex_project/projects/012-parking-lab/courses.html",
+      "phase": "public",
+      "reason": "Public fetch or resource validation failed"
+    },
+    {
+      "resource": "/1020_codex_project/projects/012-parking-lab/assets/10-final-parking-auto-left-BD3PKojP.png",
+      "phase": "public",
+      "reason": "Public fetch or resource validation failed"
+    },
+    {
+      "resource": "/1020_codex_project/projects/012-parking-lab/images/project-summary-20261025.png",
+      "phase": "public",
+      "reason": "Public fetch or resource validation failed"
+    }
+  ]
+}
