@@ -36,6 +36,8 @@ python scripts/projects.py new example-project --name "项目名称" --repo "htt
 
 `web` 为 `true` 时，必须提供 `web/index.html`。该目录只能放公开发布的静态产物；应用源码和构建配置放在 `src/` 或其他独立目录。
 
+需要让研究目录直接进入总结页时，可增加可选字段 `"web_entry": "research.html"`，或像 `"web_entry": "guides/research.html"` 这样的子目录入口。目标必须是 `web/` 内已经存在的相对 `.html` 文件，路径使用英文字母、数字、下划线、连字符及文件名中的点；不接受绝对路径、越界、反斜杠、URL、查询参数或片段。README 的在线入口与封面跳转、在线总目录的入口会统一使用该页面，原 `index.html` 仍会发布。省略此字段时保持原来的项目目录入口；`web: false` 时不能设置此字段。
+
 一个研究子项目涉及多个上游工具时，可增加 `repositories`（实际 GitHub 仓库 URL 数组）与 `tool_summaries`（每项包含 `name`、`repo`、`summary`）。每条摘要用一句话解释该工具的本质能力和原理；来源必须属于 `repositories`，摘要应覆盖全部来源。保留 `repo` 作为兼容字段，其值必须出现在数组中。README 索引与在线索引均展示所有来源和逐工具摘要；未提供这些可选字段的单仓库项目保持原有展示。
 
 研究来源是帖子或普通网页、而 `repo` 只是本研究所在仓库时，可填写 `source_url`（原网页的 HTTPS 地址）和 `source_label`（例如“原帖来源”，默认“原始来源”）。README 与在线索引的来源入口会优先展示这个链接，避免把研究仓库误标为原始来源；未配置时继续展示 `repo` / `repositories`。

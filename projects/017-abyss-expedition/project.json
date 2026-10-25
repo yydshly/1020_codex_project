@@ -1,0 +1,12 @@
+{
+  "id": 17,
+  "slug": "abyss-expedition",
+  "name": "深蓝航迹 · 深海科考交互档案",
+  "summary": "独立实现热液与峡谷两条各11章深海教学航次：程序化Three.js场景、设备与原理动画、MiniMax预生成本地讲解、同类采水对照、导演播放、自由驾驶与镜头，并汇总源库效果、探索修正、九个自研纯核心及验收。时间和实体状态组织视图，音频时间驱动对应提示；海域与读数为教学设计。可扩展设备教学、实验操作、巡检培训等流程作品；地图叙事迁移仍待第二实例验证。中国铁路网络演进保留为后续地图目标，暂不启动。",
+  "repo": "https://github.com/DeanChensj/jiangshan-map",
+  "status": "已归档",
+  "cover": "web/assets/exploration-overview.png",
+  "cover_alt": "源库研究与完整探索总览：源库SVG地图能力与原理、015—017实际效果、研究与修正、复用边界及铁路网络后续目标；当前阶段归档，铁路暂不启动。",
+  "web": true,
+  "web_entry": "research.html"
+}

@@ -1,0 +1,447 @@
+{
+  "id": "vents",
+  "title": "热液之境",
+  "subtitle": "玄武岩脊 · 热液生态观测",
+  "description": "跟随黄色无人潜器，弄懂热液循环、矿物烟囱和喷口旁生命的食物来源。再用喷口外缘与远处背景站的同类水样，学习怎样采样、比较并区分已有知识与待检验的问题。",
+  "unit": "分钟",
+  "min": 0,
+  "max": 180,
+  "baseDepth": 2600,
+  "seed": 47,
+  "terrain": "vents",
+  "accent": "#66e0ca",
+  "dataNotice": "教学模拟航次。地形、站位、时间、深度和传感器读数均为程序化或编写的样例；不对应真实海域或实际航次。温度表示ROV周围海水，电量表示模拟备用电量。 导演采样、原理动画与对照表为教学演示，不自动加入个人报告。示例数值不是化验结果，模拟记录不能支持新的实测结论。",
+  "phases": [
+    {
+      "id": "approach",
+      "to": 18,
+      "label": "抵近定位",
+      "from": 0
+    },
+    {
+      "id": "mapping",
+      "to": 38,
+      "label": "地形测绘",
+      "from": 18
+    },
+    {
+      "id": "vents",
+      "to": 108,
+      "label": "热液观察",
+      "from": 38
+    },
+    {
+      "id": "survey",
+      "to": 152,
+      "label": "区域巡测",
+      "from": 108
+    },
+    {
+      "id": "return",
+      "to": 181,
+      "label": "返航归档",
+      "from": 152
+    }
+  ],
+  "entities": [
+    {
+      "id": "landing",
+      "label": "着陆平台",
+      "position": [
+        0.15,
+        0.74
+      ],
+      "kind": "lander",
+      "depth": 2560,
+      "aliases": [
+        "起点",
+        "着陆点",
+        "landing"
+      ],
+      "description": "潜器由水面母船通过脐带连接，在近底平台旁开始调查。我们将先回答热水、黑烟囱与生命食物三个基础问题，再学习成对采样的方法。",
+      "observation": "先辨认母船、脐带、潜器与海床。此处为虚构教学航次：原理解释来自已有科学知识，模型、站位与读数不是一次真实调查。",
+      "sourceIds": [
+        "noaa-rov"
+      ],
+      "sample": null
+    },
+    {
+      "id": "basalt",
+      "label": "玄武岩台地",
+      "position": [
+        0.27,
+        0.62
+      ],
+      "kind": "ridge",
+      "depth": 2585,
+      "aliases": [
+        "玄武岩",
+        "台地",
+        "basalt"
+      ],
+      "description": "海底岩脊上有裂缝与高低变化。热液系统把这些裂缝中的海水循环、地下热源和水岩反应联系起来。",
+      "observation": "原理动画说明：冷海水沿裂缝下渗，在地下受热并与岩石反应，再沿通道上涌。地表岩面只是观察线索，仅靠模型外形不能证明地下正在发生什么。",
+      "sourceIds": [
+        "noaa-seafloor",
+        "whoi-vents"
+      ],
+      "sample": {
+        "id": "v-rock",
+        "name": "玄武岩观察记录",
+        "category": "地质记录",
+        "description": "保存一份台地纹理与站位的虚拟观察记录，不代表取得真实岩样。"
+      }
+    },
+    {
+      "id": "chimney",
+      "label": "黑烟囱群",
+      "position": [
+        0.42,
+        0.53
+      ],
+      "kind": "vent",
+      "depth": 2610,
+      "aliases": [
+        "热液口",
+        "黑烟囱",
+        "喷口",
+        "chimney",
+        "vent"
+      ],
+      "description": "热液喷口是热水回到海洋的出口。热液与冷海水混合，一些矿物析出成为悬浮颗粒，形成黑色羽流；另一些矿物逐层沉积，垒成中空烟囱。岩柱、热水和黑色颗粒应分开理解。",
+      "observation": "先分清岩柱与羽流。黑色外观以金属硫化物等矿物颗粒为例，不是燃烧的烟或岩浆。喷口形成机制属于已有科学知识，本片没有测量其化学组成。",
+      "sourceIds": [
+        "whoi-vents"
+      ],
+      "sample": {
+        "id": "v-water",
+        "name": "喷口近旁水体记录",
+        "category": "模拟水样",
+        "description": "保留喷口近旁的既有教学水体观察条目。导演中的A/B成对采样在羽流观察窗与沉积边缘演示，此条不替代那一对样本。"
+      }
+    },
+    {
+      "id": "garden",
+      "label": "热液生命花园",
+      "position": [
+        0.59,
+        0.39
+      ],
+      "kind": "coral",
+      "appearance": "tube-worms",
+      "depth": 2600,
+      "aliases": [
+        "管虫",
+        "生命花园",
+        "生物群落",
+        "garden"
+      ],
+      "description": "喷口外缘的管状群落用来说明一种热液生态关系：微生物利用化学反应释放的能量制造有机食物，部分管虫由体内共生细菌供养。",
+      "observation": "管虫与细菌共生只是热液生命的一种代表，并不意味着所有深海生命都依赖热液。群落外形和相对位置是本片模拟观察；供养机制的解释来自公开科学知识。",
+      "sourceIds": [
+        "noaa-chemosynthesis"
+      ],
+      "sample": {
+        "id": "v-life",
+        "name": "群落影像样本",
+        "category": "影像记录",
+        "description": "保存群落观察影像的模拟条目，记录位置与时间，不移除生物。"
+      }
+    },
+    {
+      "id": "plume",
+      "label": "羽流观察窗",
+      "position": [
+        0.7,
+        0.28
+      ],
+      "kind": "sampling",
+      "depth": 2575,
+      "aliases": [
+        "羽流",
+        "观察窗",
+        "水体",
+        "plume"
+      ],
+      "description": "这里是A水样站，位于喷口外缘。采水瓶用于取得这一位置的水，并把样本编号、站位、深度和时刻一起记录。",
+      "observation": "点击演示采水可看到采水瓶闭合并生成演示卡。一个水样不足以判断影响；接下来到背景站取得同类B水样。水体成分仍待化验，演示记录不会自动写入个人报告。",
+      "sourceIds": [
+        "whoi-vents",
+        "noaa-rov"
+      ],
+      "sample": {
+        "id": "v-water-near",
+        "name": "喷口外缘A水样",
+        "category": "模拟水样",
+        "description": "A水样：在喷口外缘演示以采水瓶取水，记录编号、站位、深度和时刻。与背景站B水样采用同类介质和方法，成分结果待化验。",
+        "medium": "water",
+        "pairId": "vents-water",
+        "positionRole": "near",
+        "positionLabel": "喷口外缘A站",
+        "method": "采水瓶取水；记录编号、站位、深度与时刻",
+        "analysisStatus": "pending"
+      },
+      "appearance": "water-sampler"
+    },
+    {
+      "id": "crest",
+      "label": "北侧山脊",
+      "position": [
+        0.81,
+        0.42
+      ],
+      "kind": "ridge",
+      "depth": 2505,
+      "aliases": [
+        "山脊",
+        "北脊",
+        "crest"
+      ],
+      "description": "沿山脊向上，潜器越过热液区北侧的高地。回望时，台地、烟囱与生命花园串成了一段完整的地形关系。",
+      "observation": "从高处比较各站的距离与相对高低。哪一站靠近喷口，哪一站适合作为远离目标的参照？把这些问题带到下一处沉积边缘。",
+      "sourceIds": [
+        "noaa-seafloor"
+      ],
+      "sample": null
+    },
+    {
+      "id": "flank",
+      "label": "沉积边缘",
+      "position": [
+        0.73,
+        0.65
+      ],
+      "kind": "sampling",
+      "depth": 2620,
+      "aliases": [
+        "沉积",
+        "边缘",
+        "flank"
+      ],
+      "description": "这里是远离喷口的B水样站，采水架放在较平缓海床旁。这里同样取水，使A、B样本属于同一种介质。",
+      "observation": "用相同采水方法取得B水样，并保留站位、深度、时刻和编号。A、B所在条件并不完全相同；比较前要核对条件，之后还需化验和重复采样，不能把差异直接归因于热液。",
+      "sourceIds": [
+        "noaa-seafloor"
+      ],
+      "sample": {
+        "id": "v-background",
+        "name": "背景站B水样",
+        "category": "模拟水样",
+        "description": "B水样：在远离喷口的背景站演示以同样的采水瓶取水，与A水样比较同一检测项目。水深、时刻等条件差异保留，成分结果待化验。",
+        "medium": "water",
+        "pairId": "vents-water",
+        "positionRole": "far",
+        "positionLabel": "远离喷口B站",
+        "method": "采水瓶取水；记录编号、站位、深度与时刻",
+        "analysisStatus": "pending"
+      },
+      "appearance": "water-sampler"
+    },
+    {
+      "id": "beacon",
+      "label": "回收信标",
+      "position": [
+        0.48,
+        0.79
+      ],
+      "kind": "lander",
+      "depth": 2550,
+      "aliases": [
+        "信标",
+        "回收点",
+        "beacon"
+      ],
+      "description": "回收信标把航线重新引向母船。返航前将原理知识、模拟观察和待化验的问题分开整理。",
+      "observation": "已有知识包括热液循环、矿物沉积与部分生命的化能供养。本站能回看的只是模拟物体、站位和演示样本；热液影响范围与样本成分需要真实调查，不由模拟读数证明。",
+      "sourceIds": [
+        "noaa-rov"
+      ],
+      "sample": null,
+      "appearance": "recovery-beacon"
+    }
+  ],
+  "events": [
+    {
+      "id": "v-arrive",
+      "time": 0,
+      "entityId": "landing",
+      "title": "灯光照亮海床",
+      "detail": "潜器稳定在近底平台旁。辨认远处岩脊，留下本次航次的第一幅海床印象。"
+    },
+    {
+      "id": "v-map",
+      "time": 18,
+      "entityId": "basalt",
+      "title": "读取岩脊的纹理",
+      "detail": "沿裂缝观察岩脊，再用剖面动画理解冷海水下渗、受热反应和热液上涌的循环。"
+    },
+    {
+      "id": "v-vent",
+      "time": 38,
+      "entityId": "chimney",
+      "title": "发现黑色羽流",
+      "detail": "分清热液喷口、矿物烟囱与黑色悬浮颗粒。看混合析出与逐层沉积的原理，不把岩柱、热水和黑烟混成一个物体。"
+    },
+    {
+      "id": "v-life",
+      "time": 62,
+      "entityId": "garden",
+      "title": "在黑暗中寻找生命",
+      "detail": "看化学能、微生物制造有机食物与共生管虫之间的联系。管虫是代表性示例，不代表全部深海食物网。"
+    },
+    {
+      "id": "v-plume",
+      "time": 84,
+      "entityId": "plume",
+      "title": "演示取得外缘A水样",
+      "detail": "在喷口外缘关闭采水瓶，取得A水样的演示记录，保留编号、站位、深度和时刻；接下来需要同类B水样。"
+    },
+    {
+      "id": "v-crest",
+      "time": 108,
+      "entityId": "crest",
+      "title": "从山脊回望",
+      "detail": "越过北侧高地，将台地、喷口和生命花园收入同一视野，梳理各站的空间关系。"
+    },
+    {
+      "id": "v-background",
+      "time": 132,
+      "entityId": "flank",
+      "title": "演示取得背景B水样",
+      "detail": "用相同采水方法取得B水样，与A水样比较同一检测项目；保留环境条件差异，化验结果仍待取得。"
+    },
+    {
+      "id": "v-beacon",
+      "time": 152,
+      "entityId": "beacon",
+      "title": "核对回收信标",
+      "detail": "核对演示样本与站位。结尾将已有科学解释、模拟观察记录和待检验问题分别整理，不宣称新的实测结论。"
+    },
+    {
+      "id": "v-return",
+      "time": 170,
+      "entityId": "landing",
+      "title": "回到着陆平台",
+      "detail": "重新见到出发平台。回顾沿途的岩石、烟囱与群落：哪些观察回答了问题，哪些值得下一次重访？"
+    },
+    {
+      "id": "v-archive",
+      "time": 180,
+      "entityId": "landing",
+      "title": "归档这次深海探索",
+      "detail": "整理可回看的模拟记录。个人报告只保存用户主动记录的条目；导演取样演示与示例表格不等于真实采集或化验。"
+    }
+  ],
+  "frames": [
+    {
+      "time": 0,
+      "position": [
+        0.15,
+        0.74
+      ],
+      "depth": 2560,
+      "temperature": 2.3,
+      "oxygen": 205,
+      "battery": 100
+    },
+    {
+      "time": 18,
+      "position": [
+        0.27,
+        0.62
+      ],
+      "depth": 2585,
+      "temperature": 2.4,
+      "oxygen": 202,
+      "battery": 97
+    },
+    {
+      "time": 38,
+      "position": [
+        0.42,
+        0.53
+      ],
+      "depth": 2610,
+      "temperature": 4.6,
+      "oxygen": 177,
+      "battery": 93
+    },
+    {
+      "time": 62,
+      "position": [
+        0.59,
+        0.39
+      ],
+      "depth": 2600,
+      "temperature": 3.5,
+      "oxygen": 184,
+      "battery": 89
+    },
+    {
+      "time": 84,
+      "position": [
+        0.7,
+        0.28
+      ],
+      "depth": 2575,
+      "temperature": 2.9,
+      "oxygen": 192,
+      "battery": 85
+    },
+    {
+      "time": 108,
+      "position": [
+        0.81,
+        0.42
+      ],
+      "depth": 2505,
+      "temperature": 2.1,
+      "oxygen": 210,
+      "battery": 81
+    },
+    {
+      "time": 132,
+      "position": [
+        0.73,
+        0.65
+      ],
+      "depth": 2620,
+      "temperature": 2.2,
+      "oxygen": 208,
+      "battery": 77
+    },
+    {
+      "time": 152,
+      "position": [
+        0.48,
+        0.79
+      ],
+      "depth": 2550,
+      "temperature": 2.3,
+      "oxygen": 205,
+      "battery": 74
+    },
+    {
+      "time": 170,
+      "position": [
+        0.15,
+        0.74
+      ],
+      "depth": 2560,
+      "temperature": 2.3,
+      "oxygen": 205,
+      "battery": 71
+    },
+    {
+      "time": 180,
+      "position": [
+        0.15,
+        0.74
+      ],
+      "depth": 2560,
+      "temperature": 2.3,
+      "oxygen": 205,
+      "battery": 70
+    }
+  ]
+}

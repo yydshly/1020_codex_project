@@ -1,0 +1,77 @@
+<!doctype html>
+<!-- SPDX-License-Identifier: GPL-3.0-only -->
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="沿黄州、惠州、儋州三站，在地图上读苏轼的南方岁月。点站点、看年份、读诗文，走一条自己的东坡南行线。">
+  <title>东坡南行 · 黄州惠州儋州</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css"><script src="story.js" defer></script><script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#journey">跳到南行地图</a>
+  <header class="masthead wrap">
+    <a class="brand" href="./" aria-label="东坡南行首页"><span class="brand-seal" aria-hidden="true">東坡</span><span>南行记<small>THE SOUTHERN JOURNEY</small></span></a>
+    <nav aria-label="作品导航"><button type="button" data-overview>路线总览</button><button type="button" id="about-button">关于这条路</button><a href="process.html">制作与来源 ↗</a></nav>
+  </header>
+  <main>
+    <section class="opening wrap">
+      <div><p class="eyebrow"><span></span> SU SHI / THREE PLACES, ONE LIFE</p><h1>一蓑烟雨，<br>三处人间<span>。</span></h1></div>
+      <div class="opening-note"><p class="opening-quote">问汝平生功业，<br>黄州惠州儋州。</p><p class="opening-credit">苏轼 ·《自题金山画像》</p><p class="opening-description">从长江边到岭南，再越海抵海南。<br>点开三个地方，让地图、年份与文字一起前行。</p></div>
+      <span class="vertical-mark" aria-hidden="true">一程山河 · 一程人生</span>
+    </section>
+
+    <section class="journey wrap" id="journey" aria-labelledby="journey-heading">
+      <div class="journey-heading"><div><p class="eyebrow">一条读懂东坡的南行主线</p><h2 id="journey-heading">山河有坐标，人生有来处。</h2></div><div class="view-status"><span class="status-dot"></span><span id="view-label">路线总览</span></div></div>
+      <div class="explorer">
+        <div class="map-stage" id="map-stage">
+          <div class="map-topline"><span id="map-caption">北宋 · 南方山河</span><button type="button" id="map-overview">全线视图 ↗</button></div>
+          <div class="map-canvas" id="map-canvas">
+            <svg id="journey-map" viewBox="470 310 320 300" preserveAspectRatio="xMidYMid meet" role="group" aria-label="黄州、惠州、儋州三站交互地图">
+              <defs><pattern id="map-grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#506956" stroke-opacity=".08" stroke-width=".2"/></pattern><marker id="route-arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M1 1L9 5L1 9" fill="none" stroke="currentColor" stroke-width="1.6"/></marker></defs>
+              <rect x="-80" y="-40" width="1160" height="780" fill="#dce4db"/>
+              <image id="terrain" href="assets/terrain.webp" x="-80" y="-40" width="1160" height="780" preserveAspectRatio="none" opacity=".76"/>
+              <g id="realm-layer"></g><rect x="-80" y="-40" width="1160" height="780" fill="url(#map-grid)" pointer-events="none"/>
+              <g id="river-layer"></g><g id="context-labels"></g><g id="route-layer"></g><g id="place-layer"></g>
+            </svg>
+            <div class="compass" aria-hidden="true"><span>北</span><svg viewBox="0 0 24 44"><path d="M12 3L20 33L12 27L4 33Z" fill="none" stroke="currentColor" stroke-width="1"/><path d="M12 3V27L4 33Z" fill="currentColor" opacity=".7"/></svg><small>N</small></div>
+            <div class="map-wordmark" aria-hidden="true">山河<br><span>故人</span></div>
+            <div class="map-controls" aria-label="地图视图控制"><button type="button" id="zoom-in" aria-label="放大地图">＋</button><button type="button" id="zoom-out" aria-label="缩小地图">−</button><button type="button" id="reset-map" aria-label="复位当前地图视图">⌖</button></div>
+            <div class="map-scale" aria-label="近似地图比例尺"><span id="scale-label">约 200 公里</span><i id="scale-bar"></i></div>
+            <p class="loading-note" id="map-loading" role="status">正在铺开山河…</p>
+          </div>
+          <div class="map-bottomline"><span><i></i> 北宋疆域示意 <b></b> 三站关系连线</span><button type="button" id="map-fullscreen">全屏看图 ⤢</button></div>
+        </div>
+
+        <article class="story-panel" aria-labelledby="chapter-name">
+          <div class="chapter-topline"><span id="chapter-index">序 / 三段人生</span><button type="button" id="share">分享此页 ↗</button></div>
+          <div class="chapter-place"><div><p id="chapter-modern">黄州 · 惠州 · 儋州</p><h2 id="chapter-name">向南而行</h2></div><span class="chapter-seal" id="chapter-seal" aria-hidden="true">南行</span></div>
+          <div class="year-strip"><strong id="chapter-year">1080—1100</strong><span id="chapter-era">三个地方，二十年间的片段</span></div>
+          <p class="chapter-eyebrow" id="chapter-eyebrow">从三个地点，走进一个人的岁月</p>
+          <h3 id="chapter-headline">山川渐远，文字与人间仍在。</h3>
+          <div class="chapter-body" id="chapter-body"><p>这不是苏轼的完整年谱，而是一条从黄州、惠州到儋州的阅读主线。沿着地图，看看他在不同处境里如何生活、如何写作。</p><p>点击地图上的地名，或从下方选择一站。年份、地点、事件与诗文会一起切换。</p></div>
+          <div class="poem-box"><span class="poem-mark" aria-hidden="true">文</span><blockquote id="chapter-quote">问汝平生功业，<br>黄州惠州儋州。</blockquote><p id="chapter-poem">苏轼 ·《自题金山画像》</p><p id="chapter-poem-date">晚年回望</p></div>
+          <p class="poem-note" id="chapter-poem-note">每站区分抵达年份与诗作年份，帮助你把文字放回当时的经历。</p>
+          <details class="chapter-details" id="chapter-details"><summary id="detail-summary">读这条路之前</summary><div id="chapter-context"><p>三站之间的连线表示地点关系，省略了中间的任职与途经地点；它不作为逐日行程或导航路线。</p><p>各地点采用城市或古治所附近的约点，疆域轮廓沿用上游的示意表达。</p></div></details>
+          <div class="chapter-navigation"><button type="button" id="previous-stop" disabled>← 上一站</button><button type="button" class="overview-link" data-overview>总览</button><button type="button" id="next-stop">开始南行 →</button></div>
+        </article>
+      </div>
+
+      <div class="timeline" aria-label="选择南行站点">
+        <button type="button" class="stop-tab" data-stop="huangzhou" aria-pressed="false"><span class="stop-order">01</span><span class="stop-time">1080<small>元丰三年</small></span><span class="stop-place">黄州<small>从风雨里，重新安顿</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+        <button type="button" class="stop-tab" data-stop="huizhou" aria-pressed="false"><span class="stop-order">02</span><span class="stop-time">1094<small>绍圣元年</small></span><span class="stop-place">惠州<small>在岭南，发现日常滋味</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+        <button type="button" class="stop-tab" data-stop="danzhou" aria-pressed="false"><span class="stop-order">03</span><span class="stop-time">1097<small>绍圣四年</small></span><span class="stop-place">儋州<small>越过海，与人间相逢</small></span><span class="tab-arrow" aria-hidden="true">↗</span></button>
+      </div>
+      <div class="journey-footnote"><span>点地名或站点开始 · ← → 切换站点 · Home 返回总览</span><span>连线为三站关系示意，省略中间任职及途经地点</span></div>
+      <p id="interaction-status" class="sr-only" role="status" aria-live="polite"></p>
+    </section>
+
+    <section class="reading-note wrap" aria-labelledby="reading-heading"><div><p class="eyebrow">把文字，放回山河之间</p><h2 id="reading-heading">先知道他在哪里，<br>再读他为何这样写。</h2></div><div><p>同一句诗，放回时间和地点，便多了一层来处。地图帮助我们看见距离；人物的经历与文字，让距离有了人的温度。</p><p>这件作品选择三个节点，提供一个可以亲手探索的入口。地点、年份与诗文都有出处；你可以在每一站展开更多资料，继续沿来源读下去。</p><button type="button" id="sources-button">查看资料与地图来源 ↗</button></div></section>
+  </main>
+  <footer class="wrap"><span>016 / 东坡南行 · 一件独立的三站交互作品</span><a href="process.html">从提示词到作品的制作记录 ↗</a><span>2026.10</span></footer>
+
+  <dialog id="about-dialog" aria-labelledby="about-title"><div class="dialog-heading"><p class="eyebrow">关于作品与资料</p><button type="button" id="close-about" aria-label="关闭资料说明">×</button></div><h2 id="about-title">读一条主线，留住资料的来处。</h2><p>本页是按 015 手册的首版提示词制作的独立作品。界面、投影渲染、视图控制与叙事交互单独实现；地图只提取了上游固定版本中所需的北宋疆域与自然水系，运行时无需访问 015 或调用大模型。</p><p>三个地点不是苏轼完整的旅行线路。黄州与惠州之间相隔多年，包含其他任职经历；曲线表达站点关系，不是导航或逐日行程。古儋州约定位于今中和一带，坐标为阅读参照。</p><h3>每一站的资料</h3><div id="all-sources"></div><h3>地图来源与许可</h3><p><a href="https://github.com/DeanChensj/jiangshan-map/tree/53059f1c7fed305807b19365857a5f135daf3ac6" target="_blank" rel="noopener noreferrer">DeanChensj / jiangshan-map · 53059f1c7fed</a>。本项目保留上游地形图片与提取数据的来源和校验记录，代码采用 GPL-3.0。上游对部分 CHGIS / Hartwell 数据另有学术、非商业条款；本次未提取州府政区边界图层，详见 <a href="assets/map-source.json">提取清单</a>和 <a href="process.html#sources">完整来源说明</a>。</p><p class="dialog-note">资料整理：2026-10-24。主文是新写的阅读导引；引文为苏轼作品节选。历史轮廓与城市坐标为示意表达。</p></dialog>
+  <dialog id="share-dialog" aria-labelledby="share-title"><div class="dialog-heading"><p class="eyebrow">把这一程，留给下次阅读</p><button type="button" id="close-share" aria-label="关闭分享">×</button></div><h2 id="share-title">分享这段南行</h2><label for="share-url">当前页面链接</label><input id="share-url" readonly aria-describedby="share-feedback"><button type="button" id="copy-share">复制链接</button><p id="share-feedback" role="status" aria-live="polite">链接已选中，也可以手动复制。</p></dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>

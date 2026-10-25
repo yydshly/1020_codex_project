@@ -1,0 +1,5 @@
+# Runtime dependencies are committed assets, not generated application builds.
+!web/vendor/three/build/
+!web/vendor/three/build/*.js
+!web/integrations/atlas/vendor/three/build/
+!web/integrations/atlas/vendor/three/build/*.js

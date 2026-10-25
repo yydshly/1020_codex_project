@@ -1,0 +1,7 @@
+[
+  {"id":"whoi-vents","title":"WHOI · Hydrothermal vents","url":"https://www.whoi.edu/ocean-learning-hub/ocean-topics/how-the-ocean-works/seafloor-below/hydrothermal-vents/","summary":"热液把富矿物质流体带出海底；流体与冷海水混合时，矿物沉淀可形成烟囱。黑色羽流是悬浮矿物颗粒的视觉表现。"},
+  {"id":"noaa-chemosynthesis","title":"NOAA · Photosynthesis and chemosynthesis","url":"https://oceanexplorer.noaa.gov/ocean-fact/photochemo/","summary":"化能合成微生物利用化学反应释放的能量制造有机物，为热液口附近的部分食物网提供基础。"},
+  {"id":"noaa-corals","title":"NOAA · Do all corals live in warm water?","url":"https://oceanexplorer.noaa.gov/ocean-fact/coral-water/","summary":"冷水珊瑚可生活在深、冷、暗的环境中，捕食随水流经过的食物颗粒，并为其他生物提供栖息空间。"},
+  {"id":"noaa-rov","title":"NOAA · Remotely Operated Vehicles","url":"https://oceanexplorer.noaa.gov/technology/subs-rovs/","summary":"ROV 是有缆遥操作水下机器人，常配备相机、灯光和传感器；部分设备用机械臂采集生物或地质样本。"},
+  {"id":"noaa-seafloor","title":"NOAA · Ocean floor features","url":"https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-floor-features","summary":"海底具有大陆坡、峡谷、洋中脊等多样地貌。测深与水下观测帮助研究地形和栖息地的关系。"}
+]

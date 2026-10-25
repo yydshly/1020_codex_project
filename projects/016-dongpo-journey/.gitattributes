@@ -1,0 +1,5 @@
+# Keep the vendored, unmodified Three.js bytes identical to the SHA-256 manifest.
+web/vendor/three/** -text
+# Historical inputs, manifests and display assets carry exact byte hashes.
+web/** -text
+assets/** -text

@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1900" viewBox="0 0 1600 1900" role="img" aria-labelledby="title desc">
+<title id="title">江山时序：原作能力、理解与实践完整引导图</title>
+<desc id="desc">从历史地理问题出发，展示原库六类能力、数据驱动原理、个人参考价值、六步专题实践，以及当前验收范围和待探索方向。</desc>
+<rect width="1600" height="1900" fill="#f4f2e8"/>
+<g font-family="Microsoft YaHei, Noto Sans CJK SC, sans-serif">
+<text x="48" y="53" font-size="16" fill="#74806b" font-weight="400">015 / RESEARCH → EXPLORE → BUILD</text>
+<text x="48" y="120" font-size="49" fill="#263e35" font-weight="600">江山时序 · 让历史拥有时间与坐标</text>
+<text x="48" y="163" font-size="19" fill="#65705f" font-weight="400">来源：DeanChensj/jiangshan-map · 版本 53059f1c7fed · 2026-10-24 · 本阶段：原作能力展示</text>
+<text x="48" y="221" font-size="17" fill="#a64735" font-weight="600">01</text>
+<text x="101" y="223" font-size="29" fill="#263e35" font-weight="600">先理解它解决什么，再决定怎样使用</text>
+<rect x="48" y="247" width="485" height="238" fill="#fffdf6" stroke="#cdd3c2"/>
+<text x="73" y="285" font-size="14" fill="#a64735" font-weight="600">问题 / 阅读、学习与历史探索</text>
+<text x="73" y="323" font-size="27" fill="#263e35" font-weight="600">从阅读中的问题出发</text>
+<text x="73" y="364" font-size="19" fill="#65705f" font-weight="400">古书里的长安、黄州，在今天哪里？</text>
+<text x="73" y="395" font-size="19" fill="#65705f" font-weight="400">为什么在这里迁都、出关或交战？</text>
+<text x="73" y="426" font-size="19" fill="#65705f" font-weight="400">一个人的一生，跨过了哪些山河？</text>
+<text x="73" y="457" font-size="19" fill="#65705f" font-weight="400">用途：为文字补上时间和空间。</text>
+<rect x="557" y="247" width="485" height="238" fill="#fffdf6" stroke="#cdd3c2"/>
+<text x="582" y="285" font-size="14" fill="#a64735" font-weight="600">机制 / 原生 JavaScript + SVG</text>
+<text x="582" y="323" font-size="27" fill="#263e35" font-weight="600">用年份连接多层历史数据</text>
+<text x="582" y="364" font-size="19" fill="#65705f" font-weight="400">年份 → 历史阶段 → 疆域与政区快照</text>
+<text x="582" y="395" font-size="19" fill="#65705f" font-weight="400">地名 → 位置 → 历代沿革与当地史事</text>
+<text x="582" y="426" font-size="19" fill="#65705f" font-weight="400">人物 → 生平事件 → 跨年地图路线</text>
+<text x="582" y="457" font-size="19" fill="#65705f" font-weight="400">原理：整理的数据＋浏览器交互渲染。</text>
+<rect x="1066" y="247" width="485" height="238" fill="#fffdf6" stroke="#cdd3c2"/>
+<text x="1091" y="285" font-size="14" fill="#a64735" font-weight="600">理解 / 属于我们的研究判断</text>
+<text x="1091" y="323" font-size="27" fill="#263e35" font-weight="600">给个人创作的启发</text>
+<text x="1091" y="364" font-size="19" fill="#65705f" font-weight="400">一首诗、一座城、一个人都能做专题。</text>
+<text x="1091" y="395" font-size="19" fill="#65705f" font-weight="400">复用定位与展示能力，集中打磨叙事。</text>
+<text x="1091" y="426" font-size="19" fill="#65705f" font-weight="400">先让一个具体例子有用，再扩展内容。</text>
+<text x="1091" y="457" font-size="19" fill="#65705f" font-weight="400">判断：有人能借地图回答原来的问题。</text>
+<text x="48" y="540" font-size="17" fill="#a64735" font-weight="600">02</text>
+<text x="101" y="542" font-size="29" fill="#263e35" font-weight="600">原库的六类能力：直接在展示页体验</text>
+<rect x="48" y="566" width="485" height="205" fill="#fffdf6" stroke="#cdd3c2"/>
+<text x="73" y="604" font-size="14" fill="#a64735" font-weight="600">01 / 天下分合</text>
+<text x="73" y="642" font-size="27" fill="#263e35" font-weight="600">疆域演变</text>
+<text x="73" y="683" font-size="19" fill="#65705f" font-weight="400">动作：推进前 230 → 前 221 年。</text>
+<text x="73" y="714" font-size="19" fill="#65705f" font-weight="400">产物：秦灭六国的阶段版图。</text>
+<text x="73" y="745" font-size="19" fill="#65705f" font-weight="400">观察：同年多政权、边界变化。</text>
+<rect x="557" y="566" width="485" height="205" fill="#fffdf6" stroke="#cdd3c2"/>
+<text x="582" y="604" font-size="14" fill="#a64735" font-weight="600">02 / 一城千年</text>
+<text x="582" y="642" font-size="27" fill="#263e35" font-weight="600">古城沿革</text>
+<text x="582" y="683" font-size="19" fill="#65705f" font-weight="400">动作：打开 741 年的长安。</text>
+<text x="582" y="714" font-size="19" fill="#65705f" font-weight="400">产物：古今归属、名称与当地史事。</text>
+<text x="582" y="745" font-size="19" fill="#65705f" font-weight="400">观察：地点固定，名称与政区变化。</text>
+<rect x="1066" y="566" width="485" height="205" fill="#fffdf6" stroke="#cdd3c2"/>
+<text x="1091" y="604" font-size="14" fill="#a64735" font-weight="600">03 / 随人而行</text>
+<text x="1091" y="642" font-size="27" fill="#263e35" font-weight="600">人物行迹</text>
+<text x="1091" y="683" font-size="19" fill="#65705f" font-weight="400">动作：逐站跟随苏轼的生平。</text>
+<text x="1091" y="714" font-size="19" fill="#65705f" font-weight="400">产物：生平事件与跨年行迹地图。</text>
+<text x="1091" y="745" font-size="19" fill="#65705f" font-weight="400">观察：年份、年号与地图同步推进。</text>
+<rect x="48" y="793" width="485" height="205" fill="#fffdf6" stroke="#cdd3c2"/>
+<text x="73" y="831" font-size="14" fill="#a64735" font-weight="600">04 / 诗中有路</text>
+<text x="73" y="869" font-size="27" fill="#263e35" font-weight="600">诗词路线</text>
+<text x="73" y="910" font-size="19" fill="#65705f" font-weight="400">动作：展开杜甫诗中的归乡路。</text>
+<text x="73" y="941" font-size="19" fill="#65705f" font-weight="400">产物：同年多站、编号与空间连线。</text>
+<text x="73" y="972" font-size="19" fill="#65705f" font-weight="400">边界：诗意路线不等于实走证据。</text>
+<rect x="557" y="793" width="485" height="205" fill="#fffdf6" stroke="#cdd3c2"/>
+<text x="582" y="831" font-size="14" fill="#a64735" font-weight="600">05 / 古今对照</text>
+<text x="582" y="869" font-size="27" fill="#263e35" font-weight="600">政区与地理图层</text>
+<text x="582" y="910" font-size="19" fill="#65705f" font-weight="400">动作：叠加现代省界、切换图层。</text>
+<text x="582" y="941" font-size="19" fill="#65705f" font-weight="400">产物：山川、州府、关隘与交通网。</text>
+<text x="582" y="972" font-size="19" fill="#65705f" font-weight="400">观察：历史政区与今天怎样对应。</text>
+<rect x="1066" y="793" width="485" height="205" fill="#fffdf6" stroke="#cdd3c2"/>
+<text x="1091" y="831" font-size="14" fill="#a64735" font-weight="600">06 / 主动回忆</text>
+<text x="1091" y="869" font-size="27" fill="#263e35" font-weight="600">古地名寻址</text>
+<text x="1091" y="910" font-size="19" fill="#65705f" font-weight="400">动作：读线索，在地图上落针。</text>
+<text x="1091" y="941" font-size="19" fill="#65705f" font-weight="400">产物：位置误差、十题挑战成绩。</text>
+<text x="1091" y="972" font-size="19" fill="#65705f" font-weight="400">用途：检验对历史地理的空间印象。</text>
+<text x="48" y="1050" font-size="17" fill="#a64735" font-weight="600">03</text>
+<text x="101" y="1052" font-size="29" fill="#263e35" font-weight="600">从读懂原作，到自己的专题作品：按证据推进</text>
+<rect x="48" y="1077" width="485" height="237" fill="#fffdf6" stroke="#cdd3c2"/>
+<text x="73" y="1115" font-size="14" fill="#a64735" font-weight="600">01 / 选问题</text>
+<text x="73" y="1153" font-size="27" fill="#263e35" font-weight="600">给具体的人解决具体问题</text>
+<text x="73" y="1194" font-size="19" fill="#65705f" font-weight="400">动作：选一个读者与阅读困惑。</text>
+<text x="73" y="1225" font-size="19" fill="#65705f" font-weight="400">产物：一句问题＋一段来源文本。</text>
+<text x="73" y="1256" font-size="19" fill="#65705f" font-weight="400">通过：知道谁会用、要弄懂什么。</text>
+<text x="73" y="1287" font-size="19" fill="#65705f" font-weight="400">用途：控制范围，避免堆积功能。</text>
+<rect x="557" y="1077" width="485" height="237" fill="#fffdf6" stroke="#cdd3c2"/>
+<text x="582" y="1115" font-size="14" fill="#a64735" font-weight="600">02 / 核事实</text>
+<text x="582" y="1153" font-size="27" fill="#263e35" font-weight="600">把文本变成时间与地点</text>
+<text x="582" y="1194" font-size="19" fill="#65705f" font-weight="400">动作：核对年份、古名今名与出处。</text>
+<text x="582" y="1225" font-size="19" fill="#65705f" font-weight="400">产物：可追溯的年份／地名清单。</text>
+<text x="582" y="1256" font-size="19" fill="#65705f" font-weight="400">通过：同名地与跨年关系已澄清。</text>
+<text x="582" y="1287" font-size="19" fill="#65705f" font-weight="400">用途：避免漂亮地图放错地点。</text>
+<rect x="1066" y="1077" width="485" height="237" fill="#fffdf6" stroke="#cdd3c2"/>
+<text x="1091" y="1115" font-size="14" fill="#a64735" font-weight="600">03 / 跑样例</text>
+<text x="1091" y="1153" font-size="27" fill="#263e35" font-weight="600">先用原库回答这个问题</text>
+<text x="1091" y="1194" font-size="19" fill="#65705f" font-weight="400">动作：用 year＋place 展开地图。</text>
+<text x="1091" y="1225" font-size="19" fill="#65705f" font-weight="400">产物：单点、多站或跨年路线。</text>
+<text x="1091" y="1256" font-size="19" fill="#65705f" font-weight="400">通过：位置能解析，路线对应文本。</text>
+<text x="1091" y="1287" font-size="19" fill="#65705f" font-weight="400">失败：回到第二步查年份和别名。</text>
+<rect x="48" y="1336" width="485" height="237" fill="#fffdf6" stroke="#cdd3c2"/>
+<text x="73" y="1374" font-size="14" fill="#a64735" font-weight="600">04 / 做专题</text>
+<text x="73" y="1412" font-size="27" fill="#263e35" font-weight="600">围绕一个主题组织体验</text>
+<text x="73" y="1453" font-size="19" fill="#65705f" font-weight="400">动作：整理叙事、证据和体验入口。</text>
+<text x="73" y="1484" font-size="19" fill="#65705f" font-weight="400">产物：一页可操作的诗／城／人专题。</text>
+<text x="73" y="1515" font-size="19" fill="#65705f" font-weight="400">通过：读者能跟随内容完成探索。</text>
+<text x="73" y="1546" font-size="19" fill="#65705f" font-weight="400">用途：复用地图，专注内容价值。</text>
+<rect x="557" y="1336" width="485" height="237" fill="#fffdf6" stroke="#cdd3c2"/>
+<text x="582" y="1374" font-size="14" fill="#a64735" font-weight="600">05 / 上线前</text>
+<text x="582" y="1412" font-size="27" fill="#263e35" font-weight="600">把运行与来源都交代清楚</text>
+<text x="582" y="1453" font-size="19" fill="#65705f" font-weight="400">动作：校验许可、资源、手机与路径。</text>
+<text x="582" y="1484" font-size="19" fill="#65705f" font-weight="400">产物：静态站点与固定版本记录。</text>
+<text x="582" y="1515" font-size="19" fill="#65705f" font-weight="400">通过：真实地图可用，来源能追溯。</text>
+<text x="582" y="1546" font-size="19" fill="#65705f" font-weight="400">用途：降低维护成本，方便复用。</text>
+<rect x="1066" y="1336" width="485" height="237" fill="#fffdf6" stroke="#cdd3c2"/>
+<text x="1091" y="1374" font-size="14" fill="#a64735" font-weight="600">06 / 看效果</text>
+<text x="1091" y="1412" font-size="27" fill="#263e35" font-weight="600">用真实阅读任务验收</text>
+<text x="1091" y="1453" font-size="19" fill="#65705f" font-weight="400">动作：让读者回答最初的问题。</text>
+<text x="1091" y="1484" font-size="19" fill="#65705f" font-weight="400">产物：错误、反馈与复用记录。</text>
+<text x="1091" y="1515" font-size="19" fill="#65705f" font-weight="400">通过：理解更清楚，愿意再次使用。</text>
+<text x="1091" y="1546" font-size="19" fill="#65705f" font-weight="400">失败：回到选题或内容组织调整。</text>
+<text x="48" y="1648" font-size="17" fill="#a64735" font-weight="600">04</text>
+<text x="101" y="1650" font-size="29" fill="#263e35" font-weight="600">把当前交付与后续设想分开</text>
+<rect x="48" y="1674" width="1503" height="156" fill="#e6ebdc"/>
+<text x="73" y="1710" font-size="22" fill="#263e35" font-weight="600">本阶段交付</text>
+<text x="73" y="1743" font-size="18" fill="#65705f" font-weight="400">原作本地运行、六场景导航、单点与跨年路线输入、版本校验与引导图。</text>
+<text x="73" y="1772" font-size="18" fill="#65705f" font-weight="400">实际检查结果与截图单独记录在 notes/verification.md，界面可亲手复核。</text>
+<text x="73" y="1801" font-size="18" fill="#65705f" font-weight="400">实现原理、五阶段规划与六组可复制指令，已整理到网页手册。</text>
+<text x="883" y="1710" font-size="22" fill="#263e35" font-weight="600">候选方向 / 尚未实施</text>
+<text x="883" y="1743" font-size="18" fill="#65705f" font-weight="400">专题教学、城市史册、阅读助手与独立内容站。</text>
+<text x="883" y="1772" font-size="18" fill="#65705f" font-weight="400">商业需求、收费与学习效果还需要真实验证。</text>
+<text x="48" y="1870" font-size="18" fill="#65705f" font-weight="400">边界：历史地图按预设阶段切换；古代疆界为近似表达。GPL-3.0 原作代码、历史资料与新增导航均保留来源。</text>
+</g>
+</svg>

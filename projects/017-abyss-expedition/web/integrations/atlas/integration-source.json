@@ -1,0 +1,992 @@
+{
+  "schemaVersion": 1,
+  "name": "山河行记历史地图能力同源集成",
+  "generatedAt": "2026-10-25T07:40:56.703Z",
+  "entry": "index.html?embedded=1&view=3d",
+  "standaloneEntry": "index.html?view=3d",
+  "provenancePage": "integration-source.html",
+  "rebuild": "node projects/017-abyss-expedition/src/build-atlas-integration.mjs",
+  "upstream": {
+    "repository": "https://github.com/DeanChensj/jiangshan-map",
+    "commit": "53059f1c7fed305807b19365857a5f135daf3ac6",
+    "codeLicense": "GPL-3.0",
+    "fileCount": 54,
+    "originalInputsVerified": true,
+    "engineAndDataUnmodified": true,
+    "topicChanges": "Removed only original-site analytics scripts; retained history, attribution and links.",
+    "originalManifest": "atlas-source.json"
+  },
+  "integratedFrom": {
+    "project": "projects/016-dongpo-journey",
+    "role": "Existing historical map integration and linked modern-DEM Three.js view",
+    "sourceNotice": "NOTICE-016.md",
+    "sourceFilesModified": false
+  },
+  "integration": {
+    "project": "projects/017-abyss-expedition",
+    "codeLicense": "GPL-3.0-only",
+    "mode": "Same-origin self-contained runtime and embedded bridge, not an ocean renderer migration",
+    "modifiedFiles": [
+      "topics/battle-changping.html",
+      "topics/battle-chibi.html",
+      "topics/battle-feishui.html",
+      "topics/beisong.html",
+      "topics/donghan.html",
+      "topics/dongjin.html",
+      "topics/dufu-763.html",
+      "topics/hanyu-languan.html",
+      "topics/index.html",
+      "topics/journey-libai.html",
+      "topics/journey-qinshihuang.html",
+      "topics/journey-sushi.html",
+      "topics/journey-wangyangming.html",
+      "topics/journey-xuanzang.html",
+      "topics/journey-zhangqian.html",
+      "topics/journey-zhugeliang.html",
+      "topics/ming.html",
+      "topics/nanbei.html",
+      "topics/nansong.html",
+      "topics/prc.html",
+      "topics/qin.html",
+      "topics/qing.html",
+      "topics/roc.html",
+      "topics/sanguo.html",
+      "topics/shuihu-jiangzhou.html",
+      "topics/sui.html",
+      "topics/sushi-exile.html",
+      "topics/tang.html",
+      "topics/wentianxiang-lingdingyang.html",
+      "topics/wudai.html",
+      "topics/xihan.html",
+      "topics/xijin.html",
+      "topics/xinqiji-jingkou.html",
+      "topics/yuan.html",
+      "topics/zhanguo.html",
+      "index.html",
+      "atlas-workbench.js",
+      "atlas-terrain.js"
+    ]
+  },
+  "licenses": {
+    "code": "UPSTREAM-LICENSE",
+    "integration": "INTEGRATION-NOTICE.md",
+    "upstreamReadme": "UPSTREAM-README_ZH.md",
+    "dataExceptions": "CHGIS V6 and Hartwell historical GIS data retain original academic/noncommercial terms. Code GPL does not replace those terms.",
+    "three": {
+      "version": "0.180.0",
+      "license": "MIT",
+      "notice": "vendor/three/LICENSE",
+      "manifest": "vendor/three/source.json"
+    },
+    "elevation": {
+      "source": "Mapzen Terrain Tiles / AWS Open Data",
+      "manifest": "assets/atlas-elevation-source.json",
+      "attribution": "Global SRTM / GMTED2010 terrain data courtesy of the U.S. Geological Survey; global ETOPO1 terrain data from U.S. NOAA."
+    }
+  },
+  "optionalExternalMedia": {
+    "feature": "Original guqin music player",
+    "cached": false,
+    "requestedOnlyOnPlay": true,
+    "note": "Five original tracks use Wikimedia MP3/OGG streams. Music requires network; map/3D/timeline do not.",
+    "urls": [
+      "https://upload.wikimedia.org/wikipedia/commons/transcoded/e/e0/Liu_Shui.ogg/Liu_Shui.ogg.mp3",
+      "https://upload.wikimedia.org/wikipedia/commons/e/e0/Liu_Shui.ogg",
+      "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/5a/Pingsha_Luoyan.ogg/Pingsha_Luoyan.ogg.mp3",
+      "https://upload.wikimedia.org/wikipedia/commons/5/5a/Pingsha_Luoyan.ogg",
+      "https://upload.wikimedia.org/wikipedia/commons/transcoded/6/60/Guqin-Yangguan_Sandie.ogg/Guqin-Yangguan_Sandie.ogg.mp3",
+      "https://upload.wikimedia.org/wikipedia/commons/6/60/Guqin-Yangguan_Sandie.ogg",
+      "https://upload.wikimedia.org/wikipedia/commons/transcoded/5/52/Guqin-Zuiyu_Changwan.ogg/Guqin-Zuiyu_Changwan.ogg.mp3",
+      "https://upload.wikimedia.org/wikipedia/commons/5/52/Guqin-Zuiyu_Changwan.ogg",
+      "https://upload.wikimedia.org/wikipedia/commons/transcoded/8/8f/Jiu_Kuang.ogg/Jiu_Kuang.ogg.mp3",
+      "https://upload.wikimedia.org/wikipedia/commons/8/8f/Jiu_Kuang.ogg"
+    ]
+  },
+  "boundaries": {
+    "historicalBorders": "Approximate historical illustration",
+    "terrain": "Modern DEM with displayed vertical exaggeration, not reconstructed ancient terrain",
+    "routes": "Connections between historical events, not precise travel tracks",
+    "network": "Core map assets are local and do not require port 8016. Topic documents retain optional external original-site links; original-site analytics scripts are removed from the published local copies.",
+    "excluded": [
+      "Old miniature scenes",
+      "Old three-stop demo",
+      "Raw elevation tiles",
+      "Private configurations and credentials"
+    ]
+  },
+  "buildInputs": [
+    {
+      "path": "projects/017-abyss-expedition/src/build-atlas-integration.mjs",
+      "sha256": "37d33911c4c7282140d7d0e5fb070f49c98de2146e3a6a47a30a264ab2512194"
+    },
+    {
+      "path": "projects/017-abyss-expedition/web/integration-assets/atlas-api-suffix.mjs",
+      "sha256": "fcecdb466a3650eb9842baa08a8ca23a08d0f842b0bd47a090386994ac9048d2"
+    },
+    {
+      "path": "projects/017-abyss-expedition/web/integration-assets/atlas-bridge.mjs",
+      "sha256": "b0911ce4eb10e21f19cff64ff42a528dc39b342defe7a0474af062d4a274b054"
+    }
+  ],
+  "totalFiles": 76,
+  "totalPayloadBytes": 9762465,
+  "manifestExcludedFromPayloadHashes": true,
+  "files": [
+    {
+      "path": "js/app.js",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/js/app.js",
+      "sourceSha256": "d323e5c5e64924fa98402fd21f326b98bb799d78c959341ace220cd0402941e7",
+      "reviewedSha256": "d323e5c5e64924fa98402fd21f326b98bb799d78c959341ace220cd0402941e7",
+      "modified": false,
+      "bytes": 414258,
+      "sha256": "d323e5c5e64924fa98402fd21f326b98bb799d78c959341ace220cd0402941e7"
+    },
+    {
+      "path": "js/atlas_boot.js",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/js/atlas_boot.js",
+      "sourceSha256": "9b00e00052962ac448647fe9f1ee13db38b209d24933e29b2285d4adc009985e",
+      "reviewedSha256": "9b00e00052962ac448647fe9f1ee13db38b209d24933e29b2285d4adc009985e",
+      "modified": false,
+      "bytes": 46537,
+      "sha256": "9b00e00052962ac448647fe9f1ee13db38b209d24933e29b2285d4adc009985e"
+    },
+    {
+      "path": "js/atlas_snapshots.js",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/js/atlas_snapshots.js",
+      "sourceSha256": "aeb99c6117ef7dc1dce941fe1c92d549ddb748acc9425369d24e171ffb22e996",
+      "reviewedSha256": "aeb99c6117ef7dc1dce941fe1c92d549ddb748acc9425369d24e171ffb22e996",
+      "modified": false,
+      "bytes": 1615519,
+      "sha256": "aeb99c6117ef7dc1dce941fe1c92d549ddb748acc9425369d24e171ffb22e996"
+    },
+    {
+      "path": "js/china_geo_data.js",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/js/china_geo_data.js",
+      "sourceSha256": "5c8bd5202dab8eafb6047106884ec92d839a82a8020f9953f7fb6399604ca8ef",
+      "reviewedSha256": "5c8bd5202dab8eafb6047106884ec92d839a82a8020f9953f7fb6399604ca8ef",
+      "modified": false,
+      "bytes": 83118,
+      "sha256": "5c8bd5202dab8eafb6047106884ec92d839a82a8020f9953f7fb6399604ca8ef"
+    },
+    {
+      "path": "js/i18n_dict.js",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/js/i18n_dict.js",
+      "sourceSha256": "083f864c388169d7e00c255375984d9b7f926783ec1ec5b6d8161e52b1108c39",
+      "reviewedSha256": "083f864c388169d7e00c255375984d9b7f926783ec1ec5b6d8161e52b1108c39",
+      "modified": false,
+      "bytes": 359544,
+      "sha256": "083f864c388169d7e00c255375984d9b7f926783ec1ec5b6d8161e52b1108c39"
+    },
+    {
+      "path": "js/lore_data.js",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/js/lore_data.js",
+      "sourceSha256": "5c50817d72f9f99f820850b26e436fa9d21640f4b5636dc2d799dc63aeaacc1e",
+      "reviewedSha256": "5c50817d72f9f99f820850b26e436fa9d21640f4b5636dc2d799dc63aeaacc1e",
+      "modified": false,
+      "bytes": 566356,
+      "sha256": "5c50817d72f9f99f820850b26e436fa9d21640f4b5636dc2d799dc63aeaacc1e"
+    },
+    {
+      "path": "js/map_data.js",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/js/map_data.js",
+      "sourceSha256": "ce44c1a5c9a012639202633d31e3985e3053f4a17308a9ce784a06b2070de8a8",
+      "reviewedSha256": "ce44c1a5c9a012639202633d31e3985e3053f4a17308a9ce784a06b2070de8a8",
+      "modified": false,
+      "bytes": 446594,
+      "sha256": "ce44c1a5c9a012639202633d31e3985e3053f4a17308a9ce784a06b2070de8a8"
+    },
+    {
+      "path": "js/zh_hant.js",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/js/zh_hant.js",
+      "sourceSha256": "8dead99e639c48890b2827faf49fd46a637507f03679b806042293b0d4ac71ef",
+      "reviewedSha256": "8dead99e639c48890b2827faf49fd46a637507f03679b806042293b0d4ac71ef",
+      "modified": false,
+      "bytes": 31444,
+      "sha256": "8dead99e639c48890b2827faf49fd46a637507f03679b806042293b0d4ac71ef"
+    },
+    {
+      "path": "css/style.css",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/css/style.css",
+      "sourceSha256": "dd2ab2907876371ac0d61f6bccd0888e5bc5f6704019f22eec938f680a0d4c69",
+      "reviewedSha256": "dd2ab2907876371ac0d61f6bccd0888e5bc5f6704019f22eec938f680a0d4c69",
+      "modified": false,
+      "bytes": 87710,
+      "sha256": "dd2ab2907876371ac0d61f6bccd0888e5bc5f6704019f22eec938f680a0d4c69"
+    },
+    {
+      "path": "assets/favicon.svg",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/assets/favicon.svg",
+      "sourceSha256": "227e6e6568260e91127a50327964ecf381b53ef9056a941ceeff69f254b72943",
+      "reviewedSha256": "227e6e6568260e91127a50327964ecf381b53ef9056a941ceeff69f254b72943",
+      "modified": false,
+      "bytes": 794,
+      "sha256": "227e6e6568260e91127a50327964ecf381b53ef9056a941ceeff69f254b72943"
+    },
+    {
+      "path": "assets/preview_1415_ming_yingtian.webp",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/assets/preview_1415_ming_yingtian.webp",
+      "sourceSha256": "f67579be0101c2dcbb3becb4e96cb8abd934a4cc8dc37860ffe0820f4b107b25",
+      "reviewedSha256": "f67579be0101c2dcbb3becb4e96cb8abd934a4cc8dc37860ffe0820f4b107b25",
+      "modified": false,
+      "bytes": 599928,
+      "sha256": "f67579be0101c2dcbb3becb4e96cb8abd934a4cc8dc37860ffe0820f4b107b25"
+    },
+    {
+      "path": "assets/preview_741_tang_trace.webp",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/assets/preview_741_tang_trace.webp",
+      "sourceSha256": "45fd2bf018e77b04588643adfdb003d359bd778e5e1510fde7417acc5ca0176f",
+      "reviewedSha256": "45fd2bf018e77b04588643adfdb003d359bd778e5e1510fde7417acc5ca0176f",
+      "modified": false,
+      "bytes": 707128,
+      "sha256": "45fd2bf018e77b04588643adfdb003d359bd778e5e1510fde7417acc5ca0176f"
+    },
+    {
+      "path": "assets/preview_journey_sushi.webp",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/assets/preview_journey_sushi.webp",
+      "sourceSha256": "9f597678ea8e682baa757f4106d43b5fe1653d492800751ffa4c47e5f184ce6e",
+      "reviewedSha256": "9f597678ea8e682baa757f4106d43b5fe1653d492800751ffa4c47e5f184ce6e",
+      "modified": false,
+      "bytes": 320512,
+      "sha256": "9f597678ea8e682baa757f4106d43b5fe1653d492800751ffa4c47e5f184ce6e"
+    },
+    {
+      "path": "assets/preview_quiz_challenge.webp",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/assets/preview_quiz_challenge.webp",
+      "sourceSha256": "2845dc1acbb1c0c175a64ca4527acda0bc8fa0b55e9faa002d471dfc1e3d6d70",
+      "reviewedSha256": "2845dc1acbb1c0c175a64ca4527acda0bc8fa0b55e9faa002d471dfc1e3d6d70",
+      "modified": false,
+      "bytes": 584790,
+      "sha256": "2845dc1acbb1c0c175a64ca4527acda0bc8fa0b55e9faa002d471dfc1e3d6d70"
+    },
+    {
+      "path": "assets/terrain_relief.webp",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/assets/terrain_relief.webp",
+      "sourceSha256": "24e95b021ab44848a19920cd5a197a62dd77c10990eb229aed033b718f010367",
+      "reviewedSha256": "24e95b021ab44848a19920cd5a197a62dd77c10990eb229aed033b718f010367",
+      "modified": false,
+      "bytes": 831674,
+      "sha256": "24e95b021ab44848a19920cd5a197a62dd77c10990eb229aed033b718f010367"
+    },
+    {
+      "path": "assets/icons/apple-touch-icon.png",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/assets/icons/apple-touch-icon.png",
+      "sourceSha256": "09f11c0466d591ea289061d74e5d592c800f4c168b377a4c054ac4323c41c877",
+      "reviewedSha256": "09f11c0466d591ea289061d74e5d592c800f4c168b377a4c054ac4323c41c877",
+      "modified": false,
+      "bytes": 7787,
+      "sha256": "09f11c0466d591ea289061d74e5d592c800f4c168b377a4c054ac4323c41c877"
+    },
+    {
+      "path": "assets/icons/icon-192.png",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/assets/icons/icon-192.png",
+      "sourceSha256": "9b1c0c0d6c2c5c0a73ef553b3fd887d636562607f14cf34b5a52d20cac9e2494",
+      "reviewedSha256": "9b1c0c0d6c2c5c0a73ef553b3fd887d636562607f14cf34b5a52d20cac9e2494",
+      "modified": false,
+      "bytes": 10459,
+      "sha256": "9b1c0c0d6c2c5c0a73ef553b3fd887d636562607f14cf34b5a52d20cac9e2494"
+    },
+    {
+      "path": "assets/icons/icon-512-maskable.png",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/assets/icons/icon-512-maskable.png",
+      "sourceSha256": "242f47e35532466cd2e5bb6081badd9ff620d58773d919e21fa987243b6b3f38",
+      "reviewedSha256": "242f47e35532466cd2e5bb6081badd9ff620d58773d919e21fa987243b6b3f38",
+      "modified": false,
+      "bytes": 18048,
+      "sha256": "242f47e35532466cd2e5bb6081badd9ff620d58773d919e21fa987243b6b3f38"
+    },
+    {
+      "path": "assets/icons/icon-512.png",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/assets/icons/icon-512.png",
+      "sourceSha256": "98f09f5433cd80c5c29a6f67bc8bd808a3a982fad5f1d63469ff5a3bd9d5d984",
+      "reviewedSha256": "98f09f5433cd80c5c29a6f67bc8bd808a3a982fad5f1d63469ff5a3bd9d5d984",
+      "modified": false,
+      "bytes": 33194,
+      "sha256": "98f09f5433cd80c5c29a6f67bc8bd808a3a982fad5f1d63469ff5a3bd9d5d984"
+    },
+    {
+      "path": "topics/battle-changping.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/battle-changping.html",
+      "sourceSha256": "ad7b22d8e9c7323722534831384d711988486811fc459b465f6f87c06cb28e01",
+      "reviewedSha256": "ad7b22d8e9c7323722534831384d711988486811fc459b465f6f87c06cb28e01",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 28039,
+      "sha256": "81ad9ac66ed3b1bbd05c3205cffa307e96062922a22134c79bb58a1005d638cc"
+    },
+    {
+      "path": "topics/battle-chibi.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/battle-chibi.html",
+      "sourceSha256": "3354a748ce428f58991594b302a208e995482cada68eda472bc76f46953e0d3d",
+      "reviewedSha256": "3354a748ce428f58991594b302a208e995482cada68eda472bc76f46953e0d3d",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 28231,
+      "sha256": "504e1bc470d5c4d0e78f8290e3253eb73812fe7a40ff4e5dae3411cc994bd179"
+    },
+    {
+      "path": "topics/battle-feishui.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/battle-feishui.html",
+      "sourceSha256": "7c9429d941bdba9b4a98207982885768da71dc028987de5ae32203efc6ef3682",
+      "reviewedSha256": "7c9429d941bdba9b4a98207982885768da71dc028987de5ae32203efc6ef3682",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 28131,
+      "sha256": "77f2cec05af7d4e936d6d5ef2e08956377b81ff63c71d238d7d517918f225f28"
+    },
+    {
+      "path": "topics/beisong.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/beisong.html",
+      "sourceSha256": "dc17ff141a39a5a19d10db008371c7193f24d96d2ce3ae0eb823ba6ff74850b0",
+      "reviewedSha256": "dc17ff141a39a5a19d10db008371c7193f24d96d2ce3ae0eb823ba6ff74850b0",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 71596,
+      "sha256": "aac6c22668377031b1026d1e58e3ed88ceef93ea6729a23af7503792fb036641"
+    },
+    {
+      "path": "topics/donghan.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/donghan.html",
+      "sourceSha256": "a29b24ce765a8d567208032ece22adf513086bc4d39dd411f9f2b495c441ea9c",
+      "reviewedSha256": "a29b24ce765a8d567208032ece22adf513086bc4d39dd411f9f2b495c441ea9c",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 56260,
+      "sha256": "2a8ab5b895b6dc4984d7e92420c0ad77f16f76b282799198c041372271c69f15"
+    },
+    {
+      "path": "topics/dongjin.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/dongjin.html",
+      "sourceSha256": "200f5389d91054be3f5566e05cb727a642b3b294f67118e3603baeb8d4299999",
+      "reviewedSha256": "200f5389d91054be3f5566e05cb727a642b3b294f67118e3603baeb8d4299999",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 55248,
+      "sha256": "043e1252fb7903084b7480cf62aee983cd5b277c920d35a2f632f978d75617dd"
+    },
+    {
+      "path": "topics/dufu-763.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/dufu-763.html",
+      "sourceSha256": "7e680cf9aee4daa202bde37df32e5d3e3e420536a6900c41aff31620c4656ab4",
+      "reviewedSha256": "7e680cf9aee4daa202bde37df32e5d3e3e420536a6900c41aff31620c4656ab4",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 22372,
+      "sha256": "946cc1ba1c798669db74cfcfcd7c25d23fdf181195e1fe2a77f935aabf4b1f8c"
+    },
+    {
+      "path": "topics/hanyu-languan.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/hanyu-languan.html",
+      "sourceSha256": "2d7cf9871f1f400ece2fd4e3dbd15c65877486cbeda6104ca6d48184043a4269",
+      "reviewedSha256": "2d7cf9871f1f400ece2fd4e3dbd15c65877486cbeda6104ca6d48184043a4269",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 28289,
+      "sha256": "1fc38317448a2a2cb517951c5b0a1ace0828cc9d27b03510c76cfd68c99a72f5"
+    },
+    {
+      "path": "topics/index.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/index.html",
+      "sourceSha256": "0847a05e28c1bd750060f94f06d9d579d15e8ce0d394f09a9eee5f768b1f9521",
+      "reviewedSha256": "0847a05e28c1bd750060f94f06d9d579d15e8ce0d394f09a9eee5f768b1f9521",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 36545,
+      "sha256": "b4c2deff7c9b8701858bb3486bd66effcbdbf01b1842d427cf57197dfb1218f8"
+    },
+    {
+      "path": "topics/journey-libai.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/journey-libai.html",
+      "sourceSha256": "4e1d3fbc6290b2c105d3c38f8f42ea76531fdde1f052ad9bf046ebdc60525c44",
+      "reviewedSha256": "4e1d3fbc6290b2c105d3c38f8f42ea76531fdde1f052ad9bf046ebdc60525c44",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 37091,
+      "sha256": "ea427a0eb7db66725bf66b1580b61d98e5212d47f4c59fc7dc68f0fe990660c7"
+    },
+    {
+      "path": "topics/journey-qinshihuang.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/journey-qinshihuang.html",
+      "sourceSha256": "ca8822bb01f0f7b1679b45acd43623d10bdb80d92888dea2885f294a5d00228f",
+      "reviewedSha256": "ca8822bb01f0f7b1679b45acd43623d10bdb80d92888dea2885f294a5d00228f",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 33861,
+      "sha256": "90663f81d7478a28ad6039b02e36bb7e54950dcc7f5c410dccf19ea2d96a991d"
+    },
+    {
+      "path": "topics/journey-sushi.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/journey-sushi.html",
+      "sourceSha256": "4fff1b48582c1d71f3a507d945ec963763e56e99e663227ab193c09a2784a9a3",
+      "reviewedSha256": "4fff1b48582c1d71f3a507d945ec963763e56e99e663227ab193c09a2784a9a3",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 33685,
+      "sha256": "51c9ca4215cc0031a6993a5615e620caaa79c0e200cc880a8abb2881c19d65d2"
+    },
+    {
+      "path": "topics/journey-wangyangming.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/journey-wangyangming.html",
+      "sourceSha256": "6f15f99b82f9a25febcefeab4ed8ed65c059ceac1bced5b053e8814d03178d24",
+      "reviewedSha256": "6f15f99b82f9a25febcefeab4ed8ed65c059ceac1bced5b053e8814d03178d24",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 35889,
+      "sha256": "90460d44afee486c38adb826f0c0b0c1ffa156688757d2a7d4e6f113489605ab"
+    },
+    {
+      "path": "topics/journey-xuanzang.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/journey-xuanzang.html",
+      "sourceSha256": "b6de8af514a730a90f80a09caabecbcfd895d9e8140867b3b161085dad8c8d3a",
+      "reviewedSha256": "b6de8af514a730a90f80a09caabecbcfd895d9e8140867b3b161085dad8c8d3a",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 34317,
+      "sha256": "c28bbaa36e65eeefd55ab9943fd26f506d6b1ae3e7fbfe4fa0ecead9ae18fb11"
+    },
+    {
+      "path": "topics/journey-zhangqian.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/journey-zhangqian.html",
+      "sourceSha256": "089cef9a43337805c837930a3ae4536a6797d9f790de08e3e9daea557dfa3915",
+      "reviewedSha256": "089cef9a43337805c837930a3ae4536a6797d9f790de08e3e9daea557dfa3915",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 32025,
+      "sha256": "e7bd1545211c6ec7300fb438b24d5c9f735e15b118e1cdad0a91ecf57e3acaa2"
+    },
+    {
+      "path": "topics/journey-zhugeliang.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/journey-zhugeliang.html",
+      "sourceSha256": "5ce55df942b10788d7f28ecfcf1e65b72ce8b5e4d9fd9aa74e8589c563d8f163",
+      "reviewedSha256": "5ce55df942b10788d7f28ecfcf1e65b72ce8b5e4d9fd9aa74e8589c563d8f163",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 37566,
+      "sha256": "30f08052e37ed6311a3f6e87e765f956a0551081595e7cda5c751b4c258bef60"
+    },
+    {
+      "path": "topics/ming.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/ming.html",
+      "sourceSha256": "09fbc3405bdd1ee006ea4f9bee90aa0cab5f62ee366c3ff1fa64751a5c922cec",
+      "reviewedSha256": "09fbc3405bdd1ee006ea4f9bee90aa0cab5f62ee366c3ff1fa64751a5c922cec",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 81516,
+      "sha256": "521f341ef78e5f4e7b694f57bab9c0a56a8ab870c26a36ed4cdcfe06a9ebb5f2"
+    },
+    {
+      "path": "topics/nanbei.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/nanbei.html",
+      "sourceSha256": "d67c31bc89c638da814658866db942831df673d550177afd1a7dbd6a6d963fa5",
+      "reviewedSha256": "d67c31bc89c638da814658866db942831df673d550177afd1a7dbd6a6d963fa5",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 57186,
+      "sha256": "5ec85e3a4161b6fc158dafb829b242ca55e9f6eb4b9593ad0d859c7c5935d289"
+    },
+    {
+      "path": "topics/nansong.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/nansong.html",
+      "sourceSha256": "e960668bc9b2feedece257c1101bb69a85455716ba52a27d03546cc593b235a2",
+      "reviewedSha256": "e960668bc9b2feedece257c1101bb69a85455716ba52a27d03546cc593b235a2",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 60578,
+      "sha256": "7c46e8ec510555a489ac9ff44c739799b25f0e67dc19de971d63e2b7d8fb7b45"
+    },
+    {
+      "path": "topics/prc.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/prc.html",
+      "sourceSha256": "503e8fd861eae4e0ab0bbc6d926cc33f7b759ef2aa5a8752a2f564231089cc93",
+      "reviewedSha256": "503e8fd861eae4e0ab0bbc6d926cc33f7b759ef2aa5a8752a2f564231089cc93",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 87140,
+      "sha256": "9e681b63948b2b3ec9b492890221e9418c5906d4632502b8336380201694470c"
+    },
+    {
+      "path": "topics/qin.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/qin.html",
+      "sourceSha256": "d66c74b9e9980e7672796c317c92e042c8e37d30ef10e94e4f6bc0a6d9f35012",
+      "reviewedSha256": "d66c74b9e9980e7672796c317c92e042c8e37d30ef10e94e4f6bc0a6d9f35012",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 39881,
+      "sha256": "8b3ecf6952a8760d05cc5b265434a0c3529d2adedbb8d1fd840e1e302d6b879d"
+    },
+    {
+      "path": "topics/qing.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/qing.html",
+      "sourceSha256": "80b1fe2336d2edd92d6888432aeca266288246b45e5d5709ee0be725767a0eae",
+      "reviewedSha256": "80b1fe2336d2edd92d6888432aeca266288246b45e5d5709ee0be725767a0eae",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 93749,
+      "sha256": "55562f1d3c2f6a34f8ffe9437422aee3b048437f477dad9fc0828c710601093d"
+    },
+    {
+      "path": "topics/roc.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/roc.html",
+      "sourceSha256": "33d0af88b9954f75f198442f658f99a147696fd8e018e10c73fe5e771a457442",
+      "reviewedSha256": "33d0af88b9954f75f198442f658f99a147696fd8e018e10c73fe5e771a457442",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 91685,
+      "sha256": "692951111ccd8b4617dff45da70957ff0bc24de281c1297053c0f2b0d3214cb6"
+    },
+    {
+      "path": "topics/sanguo.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/sanguo.html",
+      "sourceSha256": "a6850d90d39e3b3c13102b123dd3ce3799f7ab98e72749ad5b65b9c1c9f8e2dc",
+      "reviewedSha256": "a6850d90d39e3b3c13102b123dd3ce3799f7ab98e72749ad5b65b9c1c9f8e2dc",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 43815,
+      "sha256": "8acec629e9d6c8adb54e452a6514e242d5eeb0eeb07d1d468323e30150372ba2"
+    },
+    {
+      "path": "topics/shuihu-jiangzhou.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/shuihu-jiangzhou.html",
+      "sourceSha256": "fc3a1ad5ac6b7e9f5fe7fe08f21ea195b70031828e7947b195cece876e9c6b2b",
+      "reviewedSha256": "fc3a1ad5ac6b7e9f5fe7fe08f21ea195b70031828e7947b195cece876e9c6b2b",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 28506,
+      "sha256": "511c220e4ad2386531ec4861ab6548bef53e24ff893759113a163e7bfbfbc341"
+    },
+    {
+      "path": "topics/sui.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/sui.html",
+      "sourceSha256": "5b0f1fcf09b6881bd4ace342329731987d0555bce1bf9c434c30c24de8c53e39",
+      "reviewedSha256": "5b0f1fcf09b6881bd4ace342329731987d0555bce1bf9c434c30c24de8c53e39",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 42575,
+      "sha256": "4d3f7ddf15c37245b7bed8efaf47ace6d068b9cd76893eb88f88ff5ecb73fe43"
+    },
+    {
+      "path": "topics/sushi-exile.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/sushi-exile.html",
+      "sourceSha256": "7f3bcd12513bb0ca1f2c6901db25ba3d29b339b9f9276f5370453346812089ea",
+      "reviewedSha256": "7f3bcd12513bb0ca1f2c6901db25ba3d29b339b9f9276f5370453346812089ea",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 22001,
+      "sha256": "2d832b61cb8d2d71f7e78dca4a696da4fbdf3b52b4f499567eda67355b7695ef"
+    },
+    {
+      "path": "topics/tang.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/tang.html",
+      "sourceSha256": "e4a813fb6eb4540477aa84921c4d3cc68926d24a1f7ac6e264faabc3931fb9c4",
+      "reviewedSha256": "e4a813fb6eb4540477aa84921c4d3cc68926d24a1f7ac6e264faabc3931fb9c4",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 85674,
+      "sha256": "07d699dd3f30c553d0786b4c0fb0253cc6a2926ce033fc7fa7b95d77c2bd1841"
+    },
+    {
+      "path": "topics/wentianxiang-lingdingyang.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/wentianxiang-lingdingyang.html",
+      "sourceSha256": "0d541de1c123a351614c9b2848f91c859afe8277923c96bfb77aa859327fc99f",
+      "reviewedSha256": "0d541de1c123a351614c9b2848f91c859afe8277923c96bfb77aa859327fc99f",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 22249,
+      "sha256": "3451f243a238d265a99a2f80ea63357c8cb235b68221915b01fb551fdfe9dd92"
+    },
+    {
+      "path": "topics/wudai.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/wudai.html",
+      "sourceSha256": "d78aa8fceb96040899c729f34d292f077326f41da0b10e0eac6549b5bc9c8538",
+      "reviewedSha256": "d78aa8fceb96040899c729f34d292f077326f41da0b10e0eac6549b5bc9c8538",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 52147,
+      "sha256": "128f5928a0620757a208272d7fb6a56fb57f6e62187095e21507bb45a099ec8b"
+    },
+    {
+      "path": "topics/xihan.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/xihan.html",
+      "sourceSha256": "6aa16db8f299f699f652ec94bfdf5771b059204862f350775e179262d541d058",
+      "reviewedSha256": "6aa16db8f299f699f652ec94bfdf5771b059204862f350775e179262d541d058",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 57488,
+      "sha256": "e2a44c1b6141253bf1b381a5cd670e28809b947e242b2de384d702e17956a07a"
+    },
+    {
+      "path": "topics/xijin.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/xijin.html",
+      "sourceSha256": "8bc8c3a7c2ef631e862c549ab4bd1862b9504c18373155f057bff3110c52b99f",
+      "reviewedSha256": "8bc8c3a7c2ef631e862c549ab4bd1862b9504c18373155f057bff3110c52b99f",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 39206,
+      "sha256": "13c3f326a1483cdfcd9509f3b4eb323e11243d027844995c3d48765c8f9474f5"
+    },
+    {
+      "path": "topics/xinqiji-jingkou.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/xinqiji-jingkou.html",
+      "sourceSha256": "785e60b3ce2b64605d64b0207deb418710c4897a58e88b96a7a022b2aec755e8",
+      "reviewedSha256": "785e60b3ce2b64605d64b0207deb418710c4897a58e88b96a7a022b2aec755e8",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 28395,
+      "sha256": "03ad77821c0a92d0be2269d77facec0d0c40fe74004fa564d3942bfbe785684b"
+    },
+    {
+      "path": "topics/yuan.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/yuan.html",
+      "sourceSha256": "a7ceb23927b05374885f41507b3cdf4413b9bef1b0c40a0e6610331aa97ef84f",
+      "reviewedSha256": "a7ceb23927b05374885f41507b3cdf4413b9bef1b0c40a0e6610331aa97ef84f",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 51905,
+      "sha256": "d52db355a507f28fa2d736b53fa0bbad939445ad9fde542e7fc025c5a5350987"
+    },
+    {
+      "path": "topics/zhanguo.html",
+      "origin": "jiangshan-map",
+      "source": "projects/016-dongpo-journey/web/topics/zhanguo.html",
+      "sourceSha256": "caa94d26e795f9b16aebe17718ca783b378825026598e1203bc02f57a4488cc7",
+      "reviewedSha256": "caa94d26e795f9b16aebe17718ca783b378825026598e1203bc02f57a4488cc7",
+      "modified": true,
+      "modifications": [
+        "Removed the two original-site analytics scripts from this published local topic copy. Historical text, author attribution, data and original-site links are unchanged."
+      ],
+      "bytes": 57267,
+      "sha256": "8f4cbc4499844f52e83066147e714006b52f5a716f33851e03ea8822c80192a8"
+    },
+    {
+      "path": "index.html",
+      "origin": "016-dongpo-journey",
+      "source": "projects/016-dongpo-journey/web/index.html",
+      "sourceSha256": "fe40b4d341b6a5faafa2ba67a27b5b516f8b9aa39d0428c728f6cf5272872c9f",
+      "modified": true,
+      "modifications": [
+        "Added integration title, embedded-mode accessibility description, local source/research links and the same-origin integration bridge."
+      ],
+      "bytes": 25985,
+      "sha256": "878cc2cebd24fdc4590331060732bb7a2511fe2ffd2c4a99456c0764c6ef9522"
+    },
+    {
+      "path": "atlas-workbench.js",
+      "origin": "016-dongpo-journey",
+      "source": "projects/016-dongpo-journey/web/atlas-workbench.js",
+      "sourceSha256": "a46effe90b31fb59ccdc5d425cd2a265dbfecd1552efeef1f71e097370b4ca31",
+      "modified": true,
+      "modifications": [
+        "Appended web/integration-assets/atlas-api-suffix.mjs to expose the existing adapter closure as a lifecycle API."
+      ],
+      "bytes": 12926,
+      "sha256": "2d506e34cc2ea5d21e51ceac7dcfaca0d4f3d8d3e3ce696b07fc8730e945eb29"
+    },
+    {
+      "path": "atlas-workbench.css",
+      "origin": "016-dongpo-journey",
+      "source": "projects/016-dongpo-journey/web/atlas-workbench.css",
+      "sourceSha256": "00ede23c070981892364748cb696f27187907d7ed9453013983957515ef735df",
+      "modified": false,
+      "bytes": 4181,
+      "sha256": "00ede23c070981892364748cb696f27187907d7ed9453013983957515ef735df"
+    },
+    {
+      "path": "atlas-terrain.js",
+      "origin": "016-dongpo-journey",
+      "source": "projects/016-dongpo-journey/web/atlas-terrain.js",
+      "sourceSha256": "2e1ae2b845aa0d7228404353434bb88a3146dc97a3d81d068f49231c230d4ebb",
+      "modified": true,
+      "modifications": [
+        "Added an optional retainCamera flag to setEnabled and removed resize-triggered refocusing. Resume and layout changes preserve the user camera; composition/projection still update."
+      ],
+      "bytes": 25852,
+      "sha256": "fc3fd64b0b72a3a2b71c0fa0273bfbaae15a7d794f7370520d39b12c931ad7e6"
+    },
+    {
+      "path": "project-links.mjs",
+      "origin": "016-dongpo-journey",
+      "source": "projects/016-dongpo-journey/web/project-links.mjs",
+      "sourceSha256": "759de2b4128d445de61f9ce8f1265a0730400ec2ced1358a1f35179f80d81b43",
+      "modified": false,
+      "bytes": 2317,
+      "sha256": "759de2b4128d445de61f9ce8f1265a0730400ec2ced1358a1f35179f80d81b43"
+    },
+    {
+      "path": "atlas-source.json",
+      "origin": "016-dongpo-journey",
+      "source": "projects/016-dongpo-journey/web/atlas-source.json",
+      "sourceSha256": "700a4de01a7aeac2b2e25aa2fdff96a4ffa940c36e74b48ddb048ce342567c04",
+      "modified": false,
+      "bytes": 7879,
+      "sha256": "700a4de01a7aeac2b2e25aa2fdff96a4ffa940c36e74b48ddb048ce342567c04"
+    },
+    {
+      "path": "assets/atlas-elevation.json",
+      "origin": "016-dongpo-journey",
+      "source": "projects/016-dongpo-journey/web/assets/atlas-elevation.json",
+      "sourceSha256": "219a5324a9655ec1b00bfd8efbd5c7044fe797515188d81f8163f19afe5e05c8",
+      "modified": false,
+      "bytes": 417573,
+      "sha256": "219a5324a9655ec1b00bfd8efbd5c7044fe797515188d81f8163f19afe5e05c8"
+    },
+    {
+      "path": "assets/atlas-elevation-source.json",
+      "origin": "016-dongpo-journey",
+      "source": "projects/016-dongpo-journey/web/assets/atlas-elevation-source.json",
+      "sourceSha256": "e861c48236244ed0c81056e53eb1499abd37ef0c26c50ccb706705769cf13c56",
+      "modified": false,
+      "bytes": 6545,
+      "sha256": "e861c48236244ed0c81056e53eb1499abd37ef0c26c50ccb706705769cf13c56"
+    },
+    {
+      "path": "UPSTREAM-LICENSE",
+      "origin": "016-dongpo-journey",
+      "source": "projects/016-dongpo-journey/web/UPSTREAM-LICENSE",
+      "sourceSha256": "e57f1c320b8cf8798a7d2ff83a6f9e06a33a03585f6e065fea97f1d86db84052",
+      "modified": false,
+      "bytes": 35150,
+      "sha256": "e57f1c320b8cf8798a7d2ff83a6f9e06a33a03585f6e065fea97f1d86db84052"
+    },
+    {
+      "path": "UPSTREAM-README_ZH.md",
+      "origin": "016-dongpo-journey",
+      "source": "projects/016-dongpo-journey/web/UPSTREAM-README_ZH.md",
+      "sourceSha256": "925f1c7799b27efd8add5847b65d2c7c09399f880d80af16222c01fdb7da1469",
+      "modified": false,
+      "bytes": 21390,
+      "sha256": "925f1c7799b27efd8add5847b65d2c7c09399f880d80af16222c01fdb7da1469"
+    },
+    {
+      "path": "UPSTREAM-CONTRIBUTING_ZH.md",
+      "origin": "016-dongpo-journey",
+      "source": "projects/016-dongpo-journey/web/UPSTREAM-CONTRIBUTING_ZH.md",
+      "sourceSha256": "e823033ad61addce9079ffab045c0ff8b71a669d5598517cdee31599bb6d7700",
+      "modified": false,
+      "bytes": 5467,
+      "sha256": "e823033ad61addce9079ffab045c0ff8b71a669d5598517cdee31599bb6d7700"
+    },
+    {
+      "path": "UPSTREAM-llms.txt",
+      "origin": "016-dongpo-journey",
+      "source": "projects/016-dongpo-journey/web/UPSTREAM-llms.txt",
+      "sourceSha256": "d67460a8ee2dcf028ea8dc4d49d3ea8330a91db9908cc40ddbf990dc24131881",
+      "modified": false,
+      "bytes": 11518,
+      "sha256": "d67460a8ee2dcf028ea8dc4d49d3ea8330a91db9908cc40ddbf990dc24131881"
+    },
+    {
+      "path": "vendor/three/source.json",
+      "origin": "three",
+      "source": "projects/016-dongpo-journey/web/vendor/three/source.json",
+      "sourceSha256": "b16aa9a7486daef57d9f793e19060bc1e582df749b4f57765dafe704ec9b4b7c",
+      "modified": false,
+      "bytes": 1017,
+      "sha256": "b16aa9a7486daef57d9f793e19060bc1e582df749b4f57765dafe704ec9b4b7c"
+    },
+    {
+      "path": "vendor/three/build/three.module.min.js",
+      "origin": "three",
+      "source": "projects/016-dongpo-journey/web/vendor/three/build/three.module.min.js",
+      "sourceSha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6",
+      "reviewedSha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6",
+      "modified": false,
+      "bytes": 338908,
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    },
+    {
+      "path": "vendor/three/build/three.core.min.js",
+      "origin": "three",
+      "source": "projects/016-dongpo-journey/web/vendor/three/build/three.core.min.js",
+      "sourceSha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de",
+      "reviewedSha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de",
+      "modified": false,
+      "bytes": 381124,
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    {
+      "path": "vendor/three/examples/jsm/controls/OrbitControls.js",
+      "origin": "three",
+      "source": "projects/016-dongpo-journey/web/vendor/three/examples/jsm/controls/OrbitControls.js",
+      "sourceSha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c",
+      "reviewedSha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c",
+      "modified": false,
+      "bytes": 38703,
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c"
+    },
+    {
+      "path": "vendor/three/LICENSE",
+      "origin": "three",
+      "source": "projects/016-dongpo-journey/web/vendor/three/LICENSE",
+      "sourceSha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "reviewedSha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601",
+      "modified": false,
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    {
+      "path": "integration-bridge.mjs",
+      "origin": "017-abyss-expedition",
+      "source": "projects/017-abyss-expedition/web/integration-assets/atlas-bridge.mjs",
+      "sourceSha256": "b0911ce4eb10e21f19cff64ff42a528dc39b342defe7a0474af062d4a274b054",
+      "modified": false,
+      "bytes": 2972,
+      "sha256": "b0911ce4eb10e21f19cff64ff42a528dc39b342defe7a0474af062d4a274b054"
+    },
+    {
+      "path": "integration-api-suffix.mjs",
+      "origin": "017-abyss-expedition",
+      "source": "projects/017-abyss-expedition/web/integration-assets/atlas-api-suffix.mjs",
+      "sourceSha256": "fcecdb466a3650eb9842baa08a8ca23a08d0f842b0bd47a090386994ac9048d2",
+      "modified": false,
+      "purpose": "Published source of the API appended to atlas-workbench.js; not loaded a second time.",
+      "bytes": 3070,
+      "sha256": "fcecdb466a3650eb9842baa08a8ca23a08d0f842b0bd47a090386994ac9048d2"
+    },
+    {
+      "path": "NOTICE-016.md",
+      "origin": "016-dongpo-journey",
+      "source": "projects/016-dongpo-journey/NOTICE.md",
+      "sourceSha256": "ddfcfdb2d8118fd9ecf6321d8c2f7902ac86427f30b2981103b95502e1c34e51",
+      "modified": false,
+      "purpose": "Unaltered historical provenance notice. Its old draft paths are context only; those draft assets are not bundled.",
+      "bytes": 3727,
+      "sha256": "ddfcfdb2d8118fd9ecf6321d8c2f7902ac86427f30b2981103b95502e1c34e51"
+    },
+    {
+      "path": "INTEGRATION-NOTICE.md",
+      "origin": "017-abyss-expedition",
+      "generated": true,
+      "modified": false,
+      "bytes": 2495,
+      "sha256": "ca79de588a55eef3270b318ee37c1a8de82f16ed24b95bf02f0200364b3ffa0a"
+    },
+    {
+      "path": "integration-source.html",
+      "origin": "017-abyss-expedition",
+      "generated": true,
+      "modified": false,
+      "bytes": 5083,
+      "sha256": "b9f4848280b7ba7f2839839e1196c5dc6643728014ab59e01cf9b433bbb4e915"
+    }
+  ]
+}

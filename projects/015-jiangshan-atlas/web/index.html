@@ -1,0 +1,68 @@
+<!doctype html>
+<!-- SPDX-License-Identifier: GPL-3.0-only -->
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="亲手体验江山时序：从疆域演变、古城沿革到人物行迹与古诗词路线，在一张地图上连接时间、地点和历史。">
+  <title>江山时序 · 在地图上读中国历史</title>
+  <link rel="icon" href="upstream/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="showcase.js" defer></script>
+  <script type="module" src="project-links.mjs?v=1"></script>
+</head>
+<body>
+  <a class="skip" href="#experience">跳到地图体验</a>
+  <header class="topbar wrap">
+    <a class="brand" href="#"><span class="seal" aria-hidden="true">江山</span><span>江山时序<small>开源项目研究 · 015</small></span></a>
+    <nav aria-label="主导航"><a href="#experience">原作体验</a><a href="#possibilities">能力与价值</a><a href="engineering.html">源码与迁移 ↗</a><a href="playbook.html">实现与指令 ↗</a><a href="https://github.com/DeanChensj/jiangshan-map" target="_blank" rel="noopener noreferrer">源仓库 ↗</a></nav>
+  </header>
+  <main>
+    <section class="hero wrap">
+      <div><p class="eyebrow"><span></span> CHRONICLES OF THE REALM</p><h1>把两千四百年，<br>摊开在眼前<span class="red-dot">。</span></h1></div>
+      <div class="hero-aside"><p>古书里的地名，落在今天哪里？<br>一个人的一生，如何穿过万里山河？</p><p class="intro">拖动时间、点开城池、追随古人。<br>用「江山时序」的真实地图，读懂历史的空间。</p><div class="metrics"><span><strong>18</strong>历史时期</span><span><strong id="snapshot-count">168</strong>地图快照</span><span><strong>6</strong>体验入口</span></div></div>
+    </section>
+
+    <section id="experience" class="experience wrap" aria-labelledby="experience-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / 亲手探索</p><h2 id="experience-title">从一个问题，走进历史</h2></div><p>下方运行完整原作 · 可缩放、可点击、可播放</p></div>
+      <div class="experience-layout">
+        <aside class="scene-sidebar" aria-label="选择体验场景">
+          <p class="sidebar-kicker">六种方式，打开山河</p>
+          <div id="scene-list" class="scene-list">
+            <button type="button" class="scene-button active" data-scene="territory" aria-pressed="true"><span class="scene-num">01</span><span><strong>天下如何一统</strong><small>疆域演变 · 战国到秦</small></span><span class="scene-arrow" aria-hidden="true">↗</span></button>
+            <button type="button" class="scene-button" data-scene="city" aria-pressed="false"><span class="scene-num">02</span><span><strong>长安的千年身世</strong><small>点地溯源 · 古今地名</small></span><span class="scene-arrow" aria-hidden="true">↗</span></button>
+            <button type="button" class="scene-button" data-scene="person" aria-pressed="false"><span class="scene-num">03</span><span><strong>跟着苏轼走一生</strong><small>点人溯事 · 生平行迹</small></span><span class="scene-arrow" aria-hidden="true">↗</span></button>
+            <button type="button" class="scene-button" data-scene="poetry" aria-pressed="false"><span class="scene-num">04</span><span><strong>把杜甫的诗铺成路</strong><small>诗词地图 · 多站路线</small></span><span class="scene-arrow" aria-hidden="true">↗</span></button>
+            <button type="button" class="scene-button" data-scene="layers" aria-pressed="false"><span class="scene-num">05</span><span><strong>古今山河，叠起来看</strong><small>政区透视 · 关河丝路</small></span><span class="scene-arrow" aria-hidden="true">↗</span></button>
+            <button type="button" class="scene-button" data-scene="quiz" aria-pressed="false"><span class="scene-num">06</span><span><strong>你能找到这座古城吗</strong><small>舆图寻址 · 十题挑战</small></span><span class="scene-arrow" aria-hidden="true">↗</span></button>
+          </div>
+          <div class="sidebar-note"><span aria-hidden="true">⌘</span><p>在地图里按 <kbd>/</kbd> 搜索<br>按 <kbd>空格</kbd> 播放时间轴<br>按 <kbd>Esc</kbd> 收起卡片</p></div>
+        </aside>
+        <div id="map-stage" class="map-stage">
+          <div class="stage-toolbar"><span id="scene-title">秦王扫六合 · 前 230 年</span><div><button id="reset-scene" type="button" title="重新载入当前体验">重置</button><a id="open-atlas" href="upstream/?year=-230" target="_blank" rel="noopener noreferrer">独立打开 ↗</a><button id="fullscreen" type="button">全屏 ⤢</button></div></div>
+          <div class="map-container"><iframe id="atlas-frame" title="江山时序完整交互地图：疆域演变体验" src="upstream/?year=-230" allow="fullscreen" allowfullscreen></iframe></div>
+          <div class="stage-caption"><span id="runtime-status" role="status"><i></i>正在展开舆图…</span><button id="copy-scene" type="button">复制体验链接 ↗</button></div>
+        </div>
+      </div>
+      <div class="try-strip"><span class="try-label">试着这样玩</span><p id="scene-instruction">将地图底部的年份从前 230 年逐步推进到前 221 年，观察六国怎样依次并入秦的版图。点击关键事件，查看阶段边界的变化。</p></div>
+      <p class="scene-insight" id="scene-insight">看见的不只是朝代名称，还包括同一时期多个政权的空间关系。</p>
+    </section>
+
+    <section id="route-lab" class="route-lab wrap" aria-labelledby="route-title">
+      <div class="route-intro"><p class="eyebrow">02 / 给文字一个坐标</p><h2 id="route-title">一行诗，也是一条路</h2><p>填入年份和地名，把你的阅读现场放进历史地图。多个地点按先后用逗号分隔；跨年路线的年份与地点一一对应。</p><div class="presets" aria-label="路线示例"><button type="button" data-preset="hanyu">韩愈 · 蓝关</button><button type="button" data-preset="dufu">杜甫 · 归乡</button><button type="button" data-preset="sushi">苏轼 · 贬谪</button></div></div>
+      <form id="route-form" novalidate><div class="form-grid"><label for="route-year">哪一年<span>公元前用负数，例：-121</span></label><input id="route-year" name="year" value="819" required autocomplete="off"><label for="route-place">经过哪里<span>例：蓝关 / 湖州,黄州,惠州,儋州</span></label><input id="route-place" name="place" value="蓝关" required autocomplete="off"></div><div class="form-bottom"><p id="route-feedback" role="status">“雪拥蓝关马不前” · 唐宪宗元和十四年</p><button class="primary" type="submit">在地图中展开 <span aria-hidden="true">↗</span></button></div></form>
+    </section>
+
+    <section id="possibilities" class="possibilities wrap" aria-labelledby="value-title">
+      <div class="section-heading"><div><p class="eyebrow">03 / 它带来的理解</p><h2 id="value-title">时间、地点、人物，从此连在一起</h2></div></div>
+      <div class="value-grid"><article><span class="value-mark">史</span><h3>读史，多一层空间感</h3><p>把战争、迁都和政权分合放回山川之间，比较同一时刻的疆域与政区。</p><a href="#experience" data-launch="territory">从秦统一开始 →</a></article><article><span class="value-mark">城</span><h3>认地名，也认它的来路</h3><p>古名、今名、行政归属与当地史事同处一张沿革卡片，帮助理解书中的陌生地点。</p><a href="#experience" data-launch="city">看看长安的沿革 →</a></article><article><span class="value-mark">人</span><h3>读一生，看一条万里路</h3><p>人物生平与地图同步推进，游历、出使、征战和贬谪，成为可以跟随的行程。</p><a href="#experience" data-launch="person">追随苏轼的足迹 →</a></article></div>
+      <div class="research-note"><div><p class="eyebrow">对我们有什么参考价值</p><h3>把分散的知识，变成可探索的体验。</h3></div><p>这个库值得借鉴的，是用“年份＋地点”连接史料、地图和人物。后续可以围绕一首诗、一座城或一位人物制作专题；本阶段先让原作能力完整可见、可操作。</p><a href="guide.html">查看理解与实践全图 ↗</a></div>
+      <div class="manual-entry"><div><p class="eyebrow">把这次研究，用在下一个作品</p><h3>从源码证据，走到可迁移的方法。</h3><p>拆解八个工程方法；用同一个小核心运行物流与项目迭代，留下数据契约、行为测试和四组迁移指令。</p></div><a href="engineering.html">打开源码与迁移实验 ↗</a></div>
+      <div class="source-links"><span>继续复用原库：</span><a href="upstream/llms.txt">AI 与 Agent 调图协议 ↗</a><a href="https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/README_ZH.md" target="_blank" rel="noopener noreferrer">地名解析与只读查询 API ↗</a><a href="https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/scripts/export_geojson.js" target="_blank" rel="noopener noreferrer">GeoJSON 导出源码 ↗</a></div>
+    </section>
+
+    <section class="sources wrap" aria-labelledby="sources-title"><div><p class="eyebrow">04 / 来源与边界</p><h2 id="sources-title">沿着来源，继续探索</h2></div><div><p>地图、历史数据与人物资料来自 <a href="https://github.com/DeanChensj/jiangshan-map" target="_blank" rel="noopener noreferrer">DeanChensj / jiangshan-map</a>。代码采用 GPL-3.0，数据另有上游说明中的使用条款。本页新增场景导航、路线输入与研究引导；原作运行版本固定为 <a href="https://github.com/DeanChensj/jiangshan-map/tree/53059f1c7fed305807b19365857a5f135daf3ac6" target="_blank" rel="noopener noreferrer"><code>53059f1c7fed</code></a>（2026-10-24 取用）。</p><p>地图按预设阶段切换历史快照；古代边界与地名存在研究与表达尺度，具体史实可沿上游说明继续查证。</p><div class="source-links"><a href="upstream/README_ZH.md">原作与数据条款 ↗</a><a href="upstream/CONTRIBUTING_ZH.md">数据校勘约定 ↗</a><a href="upstream/SOURCE.json">版本与文件校验 ↗</a><a href="upstream/LICENSE">GPL-3.0 许可 ↗</a><a href="https://deanchen.me/jiangshan-map/" target="_blank" rel="noopener noreferrer">作者在线版 ↗</a></div></div></section>
+  </main>
+  <footer class="wrap"><span>015 / 江山时序 · 在地图上读中国历史</span><a href="https://yydshly.github.io/1020_codex_project/projects/017-abyss-expedition/research.html" data-project-id="017" data-project-path="research.html">015—017 研究与探索总档案 ↗</a><a href="../../">返回项目研究集 ↗</a><span>2026.10 · 能力展示第一阶段</span></footer>
+</body>
+</html>

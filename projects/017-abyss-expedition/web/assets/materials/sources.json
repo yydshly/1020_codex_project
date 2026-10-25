@@ -1,0 +1,55 @@
+{
+  "asset": "Rock Surface",
+  "author": "Amal Kumar",
+  "publisher": "Poly Haven",
+  "assetUrl": "https://polyhaven.com/a/rock_surface",
+  "license": "CC0-1.0",
+  "licenseUrl": "https://polyhaven.com/license",
+  "api": "https://api.polyhaven.com/files/rock_surface",
+  "retrieved": "2026-10-24",
+  "description": "Natural weathered rock surface texture used as art-directed PBR material; not a scientific seafloor texture survey.",
+  "files": [
+    {
+      "path": "rock_surface_diff_1k.jpg",
+      "usage": "diffuse",
+      "colorSpace": "sRGB",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rock_surface/rock_surface_diff_1k.jpg",
+      "bytes": 886291,
+      "resolution": [
+        1024,
+        1024
+      ],
+      "sha256": "07edda2bbe4715b01aae2e4bac9f21f204cf4aae37b4733ef01de33281e5e60e",
+      "verifiedPublisherMD5": "a7285f02b40e8ed6f15f8e97e357031d",
+      "modified": false
+    },
+    {
+      "path": "rock_surface_nor_gl_1k.jpg",
+      "usage": "normal",
+      "colorSpace": "linear / no color space",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rock_surface/rock_surface_nor_gl_1k.jpg",
+      "bytes": 1152344,
+      "resolution": [
+        1024,
+        1024
+      ],
+      "sha256": "c645af7f6a20bf77421765e6f998873834821e1950a3a0a21c5ee9ced32cecc1",
+      "verifiedPublisherMD5": "2243da682fc9181016d0b5bb0b684786",
+      "modified": false
+    },
+    {
+      "path": "rock_surface_rough_1k.jpg",
+      "usage": "roughness",
+      "colorSpace": "linear / no color space",
+      "url": "https://dl.polyhaven.org/file/ph-assets/Textures/jpg/1k/rock_surface/rock_surface_rough_1k.jpg",
+      "bytes": 642680,
+      "resolution": [
+        1024,
+        1024
+      ],
+      "sha256": "ca710d895b01cf323bf00f53194c43504a39d2c964fbfc343c4f45c7d41b10dc",
+      "verifiedPublisherMD5": "ee0bbfad5c8acedbe1d68e4ae5686f6e",
+      "modified": false
+    }
+  ]
+}

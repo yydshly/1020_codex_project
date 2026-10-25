@@ -1,0 +1,1970 @@
+{
+  "schema": "abyss-research-content/v1",
+  "updatedOn": "2026-10-25",
+  "source": {
+    "schema": "abyss-source-research/v1",
+    "updatedOn": "2026-10-25",
+    "source": {
+      "name": "江山时序 · Chronicles of the Realm",
+      "summary": "把年份、地点和人物放进同一张可探索的中国历史地图：时间轴选择阶段疆域，城池打开沿革，人物事件串成路线，地图、内容卡和纪年共同响应操作。",
+      "repository": "https://github.com/DeanChensj/jiangshan-map",
+      "liveUrl": "https://deanchen.me/jiangshan-map/",
+      "commit": "53059f1c7fed305807b19365857a5f135daf3ac6",
+      "scope": "固定源码与本地收录版本于2026-10-24研究；作者在线版可能继续变化，不能把在线新效果归入这个固定版本。",
+      "not": [
+        "主体是SVG地图，山体立体观感来自晕渲／浮雕底图；所检查的源库不是Three.js三维引擎。",
+        "疆域来自整理好的阶段快照，不会在浏览器里实时推演历史战争或生成任意一天的精确边界。",
+        "人物行迹与诗词连线表达时空关系，不自动证明实际道路或完整旅行轨迹。",
+        "成品地图无需Claude在线生成才能运行；AI工具协议和开发时使用AI是另外两件事。",
+        "源库是较大的单体控制器；我们的纯状态核心和九模块分层属于后续提炼，不是它现成提供的框架。"
+      ],
+      "stats": [
+        {
+          "label": "历史时期",
+          "value": 18,
+          "note": "固定数据包的时期记录",
+          "evidence": "projects/015-jiangshan-atlas/web/capabilities.json"
+        },
+        {
+          "label": "编年事件",
+          "value": 468,
+          "note": "固定数据包的milestones记录",
+          "evidence": "projects/015-jiangshan-atlas/web/capabilities.json"
+        },
+        {
+          "label": "人物档案",
+          "value": 113,
+          "note": "不表示113位人物全部已人工实测或重新校勘",
+          "evidence": "projects/015-jiangshan-atlas/web/capabilities.json"
+        },
+        {
+          "label": "预设旅程",
+          "value": 7,
+          "note": "预设路线与人物档案是不同计数",
+          "evidence": "projects/015-jiangshan-atlas/web/capabilities.json"
+        },
+        {
+          "label": "快照对象键",
+          "value": 168,
+          "note": "包含neighbors；166个历史快照由时期／阶段显式引用，现代s_prc为隐式时期键，含现代共167个时期快照键。不能混用168与167。",
+          "evidence": "projects/016-dongpo-journey/README.md"
+        },
+        {
+          "label": "跨时期城池记录",
+          "value": 1405,
+          "note": "各时期点位记录之和，不是去重城市数量",
+          "evidence": "projects/015-jiangshan-atlas/web/capabilities.json"
+        }
+      ],
+      "capabilities": [
+        {
+          "id": "timeline",
+          "title": "在时间里看疆域变化",
+          "effect": "拖动年份或点编年事件，时期、阶段疆域、年号与当前事件同步变化；上一阶段以残影辅助比较。",
+          "mechanism": "_resolvePhase按year<until找阶段，_resolveSnapKey返回快照键，_renderDynasty加载后校验当前选择再绘制SVG。",
+          "example": "从前230年推进至前221年，观察秦灭六国阶段。",
+          "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L1537",
+          "evidence": [
+            "projects/015-jiangshan-atlas/web/upstream/js/app.js:1537",
+            "projects/015-jiangshan-atlas/notes/verification.md",
+            "projects/016-dongpo-journey/notes/verification-atlas.md"
+          ],
+          "boundary": "阶段快照是示意资料，不是连续疆域模拟。公元无0年是历史领域规则。",
+          "status": "源库能力；015与016均有真实浏览器操作记录"
+        },
+        {
+          "id": "place",
+          "title": "点一座城，读它的历代身世",
+          "effect": "搜索或点击城池，查看古今地名、各时期归属与当地史事；点史事回到对应年份。",
+          "mechanism": "地点坐标连接不同快照的政区查询与沿革资料；resolvePlace先将名称／别名解析成地点，沿革与事件由同一位置派生。",
+          "example": "741年长安卡片，点玄武门之变回到626年。",
+          "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L9143",
+          "evidence": [
+            "projects/015-jiangshan-atlas/web/upstream/README_ZH.md:43",
+            "projects/015-jiangshan-atlas/notes/verification.md",
+            "projects/016-dongpo-journey/notes/verification-atlas.md"
+          ],
+          "boundary": "同名与古今地名解析依赖领域词典；查询结果不等于所有史料都已重新校勘。",
+          "status": "源库能力；本地已验长安等代表流程"
+        },
+        {
+          "id": "person",
+          "title": "跟随人物事件走过一生",
+          "effect": "生平事件、编号路线、年份、疆域与年号一同更新；可上一站、下一站或自动巡礼。",
+          "mechanism": "_collectPersonEvents形成事件序列，selectPersonEvent将同一次选择传给年份、地图、卡片与相机。",
+          "example": "苏轼11条史事；秦始皇人物事件推动战国快照切换。",
+          "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L3388",
+          "evidence": [
+            "projects/015-jiangshan-atlas/web/upstream/js/app.js:3156",
+            "projects/015-jiangshan-atlas/notes/verification.md",
+            "projects/016-dongpo-journey/notes/verification-atlas.md"
+          ],
+          "boundary": "预设人物资料并非自动生成的全人物数据库；路线是关系表达，不是导航轨迹。",
+          "status": "源库能力；已操作苏轼、秦始皇及人物搜索"
+        },
+        {
+          "id": "route",
+          "title": "用诗词和地点生成同年／跨年路线",
+          "effect": "输入多个地点和一个年份，或逐站匹配多个年份，地图画出顺序路线，点站点可切换对应时空。",
+          "mechanism": "URL的year/place参数被解析为地点序列；地名查找、投影与路线渲染复用地图现有能力。",
+          "example": "杜甫诗中的剑外→巴峡→巫峡→襄阳→洛阳；苏轼湖州→黄州→惠州→儋州。",
+          "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L10228",
+          "evidence": [
+            "projects/015-jiangshan-atlas/web/upstream/README_ZH.md:126",
+            "projects/015-jiangshan-atlas/README.md",
+            "projects/016-dongpo-journey/README.md"
+          ],
+          "boundary": "015新增输入表单与严格校验；016另新增2–20站编辑器。这些外层编辑界面不能算源库原样功能。",
+          "status": "源库有路线协议；表单／编辑器为我们的新增界面"
+        },
+        {
+          "id": "layers",
+          "title": "把历史政区、山川与现代参照叠起来",
+          "effect": "切换疆域、州府、古地名、山川水系、关河丝路和现代省界；悬停或图例聚焦帮助辨认归属。",
+          "mechanism": "同一墨卡托投影和相机承载多个SVG组；各图层显示规则、时期有效期与标签密度分别处理。",
+          "example": "1415年应天府，与现代省界、河流、长城及运河同时比较。",
+          "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L36",
+          "evidence": [
+            "projects/015-jiangshan-atlas/web/upstream/README_ZH.md:29",
+            "projects/015-jiangshan-atlas/notes/verification.md",
+            "projects/016-dongpo-journey/notes/verification-atlas.md"
+          ],
+          "boundary": "二维透视镜和精细悬停不等于三维剖面。016这些交互仍主要在舆图视角使用。",
+          "status": "源库能力；代表图层开关已实测"
+        },
+        {
+          "id": "quiz",
+          "title": "把同一地理资料变成寻址挑战",
+          "effect": "根据古地名和历史线索在地图落针，以距离给出反馈与分数，再进入下一题。",
+          "mechanism": "_buildChallengeDeck从已有地点／事件资料生成候选题；用户落点与答案坐标计算距离，派生评分。",
+          "example": "长安寻址，落针后显示偏差公里数、得分与答案。",
+          "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L6633",
+          "evidence": [
+            "projects/015-jiangshan-atlas/notes/verification.md",
+            "projects/016-dongpo-journey/notes/verification-atlas.md"
+          ],
+          "boundary": "题库资格、去重、难度和评分仍是业务规则；没有宣称所有随机题目都逐一实测。",
+          "status": "源库能力；015和016有实际落针记录"
+        },
+        {
+          "id": "agent-api",
+          "title": "让外部Agent用语义参数调地图",
+          "effect": "外部工具可用year/place/person/stop启动一个确定的地图场景；浏览器API提供地名解析、只读查询与定位。",
+          "mechanism": "window.atlasAPI包含resolvePlace、inspect、locate；llms.txt和skill说明协议。模型只需提出语义参数，地点与地图绘制由既有代码完成。",
+          "example": "locate({year:819,place:'蓝关'})；inspect只读返回结构化归属信息。",
+          "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L10445",
+          "evidence": [
+            "projects/015-jiangshan-atlas/web/upstream/llms.txt",
+            "projects/015-jiangshan-atlas/web/upstream/README_ZH.md:114"
+          ],
+          "boundary": "提供Agent接口不等于网页自带聊天模型，也不等于地图每帧由AI生成。015未调用外部模型或验证Agent CLI截图流程。",
+          "status": "已核对源码与协议；本轮没有接在线LLM"
+        },
+        {
+          "id": "geojson",
+          "title": "把阶段地图导出为标准GIS数据",
+          "effect": "导出GeoJSON后可供Leaflet、MapLibre、QGIS等下游工具加载；按年份和坐标查询所在政区。",
+          "mechanism": "导出脚本解码VLQ／拓扑去重束，写出快照、索引、走廊与点位；定位器先包围盒筛选，再作点在多边形内判断。",
+          "example": "导出index.json与snapshots/<id>.geojson，再查询1415年的经纬度。",
+          "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/scripts/export_geojson.js",
+          "evidence": [
+            "projects/015-jiangshan-atlas/web/upstream/README_ZH.md:169",
+            "projects/015-jiangshan-atlas/web/upstream/geojson/jiangshan-locate.js"
+          ],
+          "boundary": "文档声明导出范围前403年至1948年，不导出现代省界与此后阶段；015阶段没有实际运行导出。",
+          "status": "源码／文档能力；本项目未做导出端到端验收"
+        }
+      ],
+      "patterns": [
+        {
+          "id": "phase-snapshot",
+          "title": "时间→阶段→快照",
+          "effect": "用户换时间，场景和说明稳定落在同一阶段。",
+          "mechanism": "_resolvePhase / _resolveSnapKey",
+          "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L1537",
+          "transfer": "把年份替换为项目天数、设备运行时长或课程进度；通用核心只理解有序区间，具体阶段由数据定义。",
+          "boundary": "不要把朝代与无0年的规则硬编码进新领域。",
+          "acceptance": "边界前、边界时、边界后均只命中一个正确阶段。"
+        },
+        {
+          "id": "shared-state",
+          "title": "动作→状态→派生视图",
+          "effect": "列表、时间轴、地图与卡片不会各说各话。",
+          "mechanism": "selectPersonEvent / jumpToYear",
+          "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L3388",
+          "transfer": "017把时序状态与Three.js、DOM、播放器分开，让各视图订阅相同结果。",
+          "boundary": "纯状态核心是我们的重新实现，不是从上游摘出的同名模块。",
+          "acceptance": "不同入口选同一事件，所有视图得到同一实体、时间和详情。"
+        },
+        {
+          "id": "coordinate-layers",
+          "title": "统一坐标，分层绘制",
+          "effect": "缩放后对象、标签和路线保持对齐；图层开关只改变呈现。",
+          "mechanism": "MercatorProjector与SVG分组",
+          "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L36",
+          "transfer": "先定义业务坐标及转换，再建立地形、实体、路线、标签等独立视觉层。",
+          "boundary": "墨卡托、地形晕渲与图层透明度都不是跨主题通用答案。",
+          "acceptance": "关闭路线不改变当前站点；切视角仍指向同一对象。"
+        },
+        {
+          "id": "entity-query",
+          "title": "先识别实体，再执行查询／定位",
+          "effect": "别名可以找到同一对象，未知输入明确失败。",
+          "mechanism": "resolvePlace / inspect / locate",
+          "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L9143",
+          "transfer": "用稳定ID连接设备、知识点或站点，搜索、卡片与外部工具共用解析入口。",
+          "boundary": "古地名后缀与繁简规则属于历史适配；模糊匹配不可随意猜测。",
+          "acceptance": "别名映射一致；歧义有明确处理；只读查询不改变选择。"
+        },
+        {
+          "id": "latest-result",
+          "title": "异步结果提交前，再核对当前选择",
+          "effect": "快速切换时，旧结果不覆盖新场景。",
+          "mechanism": "_renderDynasty在快照加载完成后核对朝代对象与快照键",
+          "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L1580",
+          "transfer": "017新增latest-task核心，把最近请求提交规则移到可测模块。",
+          "boundary": "原库没有通用取消框架；忽略过期结果与取消网络请求不是一回事。",
+          "acceptance": "故意让A慢、B快，连续选择A→B，最后仍显示B；旧错误也不污染B。"
+        },
+        {
+          "id": "progressive-loading",
+          "title": "按需加载、缓存与渐进细节",
+          "effect": "首屏先出现重要内容，重复资料不反复加载，远景不过度拥挤。",
+          "mechanism": "_ensureFullSnapshots / _fetchSnapshot及延迟解码",
+          "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L440",
+          "transfer": "先测量首屏、密集对象和重复请求，再引入缓存、按需解码或标签密度规则。",
+          "boundary": "小数据未必需要VLQ；源库_loadScriptOnce加载错误也resolve，迁移时要改善错误与空结果的区分。",
+          "acceptance": "缓存命中可观察；资源失败有反馈，不能悄悄当作空场景。"
+        },
+        {
+          "id": "deep-link",
+          "title": "URL是可重放的任务输入",
+          "effect": "分享与刷新能回到同一关键选择。",
+          "mechanism": "_restoreFromQuery / atlasAPI",
+          "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L10228",
+          "transfer": "017扩展为航次、事件、图层、版本化相机与驾驶位姿协议。",
+          "boundary": "不是所有临时状态都应序列化；不自动恢复播放。场景还要校验镜头安全。",
+          "acceptance": "有效链接可恢复；非法字段原子拒绝或明确回退，不混入半个旧状态。"
+        },
+        {
+          "id": "one-data-many-experiences",
+          "title": "一份实体事件资料，派生多种玩法",
+          "effect": "阅读、探索、路线与挑战使用一致地点和事件。",
+          "mechanism": "_collectPersonEvents / _buildChallengeDeck",
+          "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L3156",
+          "transfer": "017同一站点数据支撑探索、导演、环境讲解与采样学习，主题适配层分别定义规则。",
+          "boundary": "不同玩法仍需自己的资格、难度与证据规则；源库并非所有记录都有统一来源字段。",
+          "acceptance": "改一处实体后，列表、图示、搜索与练习同步更新，不再维护重复资料。"
+        }
+      ]
+    },
+    "aiRole": {
+      "summary": "可见证据支持部分开发使用了Claude；网页效果的运行依靠预写的代码、数据和浏览器。两者应分别说明。",
+      "confirmed": [
+        {
+          "claim": "公开GeoJSON功能提交中存在Claude联合署名。",
+          "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/commit/5e940f6bc1f8aa50ac7fe0e2406baee7ef5ef7e7",
+          "checkedOn": "2026-10-25",
+          "scope": "本次联网核对该提交页面。只能证明这项公开贡献存在AI参与，不能外推整站开发过程。"
+        },
+        {
+          "claim": "源库公开llms.txt、Agent skill及year/place语义协议，可供外部Agent驱动地图。",
+          "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/README_ZH.md#L114",
+          "scope": "这是给外部工具的调用接口，不是地图运行时的模型生成。"
+        },
+        {
+          "claim": "本地核心地图是静态HTML/CSS/JavaScript与数据文件，可通过静态服务器运行。",
+          "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/README_ZH.md#L157",
+          "scope": "015本地收录地图与016当前作品均未接在线模型，017前端也仅播放预生成音轨。"
+        }
+      ],
+      "cannotInfer": [
+        "不能由联合署名推断作者最初用了哪一句提示词、经历了几轮优化或AI代码占比。",
+        "不能把宣传式效果截图当成完整用户流程、所有历史内容准确性或所有设备兼容性的证明。",
+        "不能说必须使用Claude才能做出类似交互；组织数据、代码实现、设计和验收才是成品运行所需的具体工作。",
+        "我们整理的规划与模板属于自己的实践总结，不是上游作者公开的完整开发对话。"
+      ],
+      "runtime": [
+        {
+          "layer": "开发阶段",
+          "role": "AI可协助读代码、整理数据、实现页面和定位缺陷；人或任务负责人确定意图与验收。"
+        },
+        {
+          "layer": "地图／场景运行",
+          "role": "浏览器执行代码、读取结构化数据、更新状态并绘制SVG或WebGL。无需每次点击请求Claude。"
+        },
+        {
+          "layer": "017语音生成",
+          "role": "MiniMax在生成阶段产出MP3；网页运行时加载本地音轨，以媒体时间驱动提示。密钥不进入网页。"
+        },
+        {
+          "layer": "指令模板页面",
+          "role": "015填写器是在浏览器本地组合文本，复制／下载模板，不调用大模型。"
+        }
+      ]
+    },
+    "reuseBoundary": [
+      {
+        "project": "015",
+        "title": "江山时序能力展示与方法实验",
+        "kind": "完整原作本地集成＋外围展示；另做独立小核心",
+        "reused": [
+          "固定版本原作的地图控制器、数据、SVG界面、CSS与资源，放在web/upstream/，同源iframe运行。",
+          "运行代码和数据原样保留；入口HTML仅去远程字体与访问统计。"
+        ],
+        "added": [
+          "六场景入口、年份与地名表单、中文逗号和年份数量校验、分享／重置／全屏。",
+          "实现规划、指令模板、研究引导图、八项源码模式说明。",
+          "独立temporal-core与物流／项目迭代两份虚构数据，用来证明时序状态方法可迁移。"
+        ],
+        "boundary": [
+          "展示页成功主要证明原作能被集成和体验，不能说重新实现了整套历史地图。",
+          "015实验验证阶段与线性事件，不是完整物流或项目管理产品。"
+        ],
+        "evidence": [
+          "projects/015-jiangshan-atlas/README.md",
+          "projects/015-jiangshan-atlas/NOTICE.md",
+          "projects/015-jiangshan-atlas/web/upstream/SOURCE.json",
+          "projects/015-jiangshan-atlas/notes/verification-engineering.md"
+        ]
+      },
+      {
+        "project": "016",
+        "title": "山河行记完整历史地图",
+        "kind": "整库集成扩展，不是独立新引擎",
+        "reused": [
+          "54个上游文件：完整历史地图引擎、SVG界面与历史资料。",
+          "Three.js与OrbitControls作为第三方3D基础库；现代Mapzen公开高程数据。"
+        ],
+        "added": [
+          "同一历史状态驱动的Three.js地形、疆域、城池和人物／自定路线。",
+          "2–20站路线编辑器与输入校验；2D／3D切换保持年份、人物和路线。",
+          "现代DEM重采样格网361×253，共91,333点；保留来源与瓦片哈希。"
+        ],
+        "boundary": [
+          "现代DEM不是古地貌复原；垂直比例有显示夸张。",
+          "精细政区悬停、透视镜和寻址答题仍在源库2D舆图使用。",
+          "旧三站二维和三个微缩景观保留为历史草稿，不能冒充当前完整地图验收。"
+        ],
+        "evidence": [
+          "projects/016-dongpo-journey/README.md",
+          "projects/016-dongpo-journey/NOTICE.md",
+          "projects/016-dongpo-journey/notes/brief.md",
+          "projects/016-dongpo-journey/notes/verification-atlas.md",
+          "projects/016-dongpo-journey/web/atlas-source.json"
+        ]
+      },
+      {
+        "project": "017",
+        "title": "深蓝航迹与研究页历史地图展品",
+        "kind": "通用方法借鉴与独立流程演示；地图核心迁移尚未验证",
+        "reused": [
+          "深海主场景逐字节复用015自行编写的temporal-core.mjs，SHA-256为b5d3579e8b2f50875fd1a98d6bb7aa18100884261089cb325de46723165b61f8。",
+          "Three.js与OrbitControls为第三方基础库；岩面材质另有CC0来源。",
+          "研究页独立展品直接收录54份江山时序固定版本文件及016的联动三维扩展、路线编辑、现代DEM和Three.js；本地运行于web/integrations/atlas/，核心不依赖8016服务。"
+        ],
+        "added": [
+          "另外八个无DOM、无Three.js依赖的纯核心，以及海洋主题的程序地形、潜器、船、羽流与生态外观。",
+          "导演时钟与镜头、基础概念和原理舞台、临时同类采样、MiniMax音频适配、环境语句高亮。",
+          "自由驾驶、独立镜头、整机／相机安全约束、可见提示区域和同站几何观察窗。",
+          "研究页地图父控制器atlas-demo.js、同源消息桥atlas-bridge.mjs、构建期API附加代码，以及固定白名单打包和源/产物哈希校验。"
+        ],
+        "boundary": [
+          "深海web/scene.js未导入历史控制器、历史数据、晕渲底图或016地形渲染器；研究页独立iframe中的完整地图运行时则明确直接集成这些内容，不能把该接入称为深海渲染迁移。",
+          "地形、海域、航次、读数与样本都是教学设计，不是真实海底DEM、数字孪生或物理采样仿真。",
+          "九核心独立性有非海洋夹具，但任意新主题仍需新实体、坐标、视觉对象和业务适配。",
+          "地图展品保留作者归属和数据条款；35份专题副本仅删统计脚本。核心资源同源，原5首Wikimedia古琴流音频未缓存，点击播放仍需联网。静态/HTTP检查不代表浏览器操作已全部通过。",
+          "地图叙事与动作流程差别较大，深海实践不足以证明源库核心能力已迁移；下一项目中国铁路网络演进将用第二个地图实例验证。"
+        ],
+        "evidence": [
+          "projects/017-abyss-expedition/NOTICE.md",
+          "projects/017-abyss-expedition/web/core/README.md",
+          "projects/017-abyss-expedition/src/check-core.mjs",
+          "projects/017-abyss-expedition/notes/verification.md",
+          "projects/017-abyss-expedition/notes/verification-full-voyages.md",
+          "projects/017-abyss-expedition/notes/atlas-integration-plan.md",
+          "projects/017-abyss-expedition/src/build-atlas-integration.mjs",
+          "projects/017-abyss-expedition/src/check-atlas-integration.mjs",
+          "projects/017-abyss-expedition/web/integrations/atlas/integration-source.json"
+        ]
+      }
+    ],
+    "phases": [
+      {
+        "id": "015-experience",
+        "title": "先把源库真实运行起来",
+        "intent": "弄清用户真正能做什么，避免只读README或只看静态图。",
+        "result": "015六个入口直接打开本地原作：疆域、沿革、生平、诗词路线、图层与寻址挑战。",
+        "lesson": "入口要以具体阅读问题组织；原作效果与我们的外围UI必须标出归属。",
+        "evidence": [
+          "projects/015-jiangshan-atlas/README.md",
+          "projects/015-jiangshan-atlas/notes/verification.md"
+        ]
+      },
+      {
+        "id": "015-method",
+        "title": "把好看的效果拆成可验证方法",
+        "intent": "回答如何实现、AI扮演什么角色、怎样规划下一次作品。",
+        "result": "源码固定SHA证据、八项工程模式、五阶段手册与六组模板；新增纯时序核心运行物流和项目迭代。",
+        "lesson": "学习不能只罗列技术名词，应给输入契约、适用边界与一次不同领域验证。",
+        "evidence": [
+          "projects/015-jiangshan-atlas/web/engineering.js",
+          "projects/015-jiangshan-atlas/notes/verification-engineering.md",
+          "projects/015-jiangshan-atlas/web/playbook.html"
+        ]
+      },
+      {
+        "id": "016-wrong-turn",
+        "title": "三站专题与微缩3D曾偏离目标",
+        "intent": "把默认提示做成苏轼三站故事，随后加入真实可旋转景观。",
+        "result": "产生二维三站阅读与三个微缩场景，但没有保留源库的完整历史地图能力。",
+        "lesson": "“有3D”不是“有类似能力”；旋转一艘船或建筑，不能代替时间、空间、事件和内容联动。",
+        "evidence": [
+          "projects/016-dongpo-journey/notes/brief.md",
+          "projects/016-dongpo-journey/README.md",
+          "projects/016-dongpo-journey/NOTICE.md"
+        ]
+      },
+      {
+        "id": "016-integrate",
+        "title": "回到完整地图，证明集成扩展",
+        "intent": "保留源库的真实能力，再为同一状态加上3D视角。",
+        "result": "全地图引擎与数据直接复用，加入现代DEM、联动3D和路线编辑器；代表场景在浏览器实测。",
+        "lesson": "直接复用能提高完整度，但应如实标为集成扩展，不能据此证明方法已跨主题迁移。",
+        "evidence": [
+          "projects/016-dongpo-journey/README.md",
+          "projects/016-dongpo-journey/notes/verification-atlas.md"
+        ]
+      },
+      {
+        "id": "017-transfer",
+        "title": "换到深海，验证方法能够迁移",
+        "intent": "深海主场景不用历史控制器和原作素材，以新业务重新组织时间、实体、事件、航迹与观察任务；后续研究页地图展品另计直接集成。",
+        "result": "017独立Three.js海底与两条教学航次；沿用015时序核心，补充其他纯模块和主题适配。",
+        "lesson": "核心复用、主题替换和画面质感是不同层面的工作；代码可迁移并不自动带来易懂的故事或高质量画面。",
+        "evidence": [
+          "projects/017-abyss-expedition/NOTICE.md",
+          "projects/017-abyss-expedition/notes/scene-intent.md",
+          "projects/017-abyss-expedition/web/core/README.md"
+        ]
+      },
+      {
+        "id": "017-experience",
+        "title": "把技术演示逐步补成完整作品",
+        "intent": "回应看不懂场景、设备职责不明、讲解对象在画外、不能自由操控等反馈。",
+        "result": "导演叙事、海洋基础概念、原理动画、同类采样、语音对应高亮、自由驾驶与镜头，最后做两航次全程验收。",
+        "lesson": "用观察到的用户问题决定返修：讲到什么就指出来；镜头与潜器位置分开；自动放映和自由操作都有清晰边界。",
+        "evidence": [
+          "projects/017-abyss-expedition/notes/verification-full-voyages.md",
+          "projects/017-abyss-expedition/notes/full-story-review.md",
+          "projects/017-abyss-expedition/notes/verification-visible-cues.md"
+        ]
+      },
+      {
+        "id": "017-research-integration",
+        "title": "研究档案接入完整地图展品",
+        "intent": "把016已具备的历史地图和真实三维地形能力放到017演示网页，方便与独立深海作品对照。",
+        "result": "同源运行包收录54份核验过的上游输入、016三维适配器和DEM；新增父页入口、消息桥与生命周期API。构建、静态依赖闭包和HTTP字节核对已执行；真实浏览器交互另按当轮记录验收。",
+        "lesson": "明确区分完整能力接入与跨主题方法迁移。017现在既有独立深海主作品，也有直接复用历史地图的研究展品；两者不共用地图渲染状态。",
+        "evidence": [
+          "projects/017-abyss-expedition/README.md",
+          "projects/017-abyss-expedition/NOTICE.md",
+          "projects/017-abyss-expedition/notes/atlas-integration-plan.md",
+          "projects/017-abyss-expedition/web/integrations/atlas/integration-source.json"
+        ]
+      }
+    ],
+    "gallery": [
+      {
+        "id": "source-ming",
+        "title": "源库：1415年政区与现代参照",
+        "project": "source",
+        "path": "projects/015-jiangshan-atlas/web/upstream/assets/preview_1415_ming_yingtian.webp",
+        "kind": "上游随固定版本提供的预览图",
+        "date": "2026-10-24本地收录；原始拍摄日未标注",
+        "version": "53059f1c7fed305807b19365857a5f135daf3ac6",
+        "caption": "宣纸配色、晕渲地形、政区与水系叠加，右侧编年事件及底部时间轴共同构成阅读层次。不是本次新拍，也不是三维场景。",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/assets/preview_1415_ming_yingtian.webp",
+        "evidence": [
+          "projects/015-jiangshan-atlas/web/upstream/SOURCE.json"
+        ]
+      },
+      {
+        "id": "source-changan",
+        "title": "源库：长安点地溯源",
+        "project": "source",
+        "path": "projects/015-jiangshan-atlas/web/upstream/assets/preview_741_tang_trace.webp",
+        "kind": "上游随固定版本提供的预览图",
+        "date": "2026-10-24本地收录；原始拍摄日未标注",
+        "version": "53059f1c7fed305807b19365857a5f135daf3ac6",
+        "caption": "把一个地点的历代归属、史事和地图位置放在同一阅读流程里。",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/assets/preview_741_tang_trace.webp",
+        "evidence": [
+          "projects/015-jiangshan-atlas/web/upstream/SOURCE.json"
+        ]
+      },
+      {
+        "id": "source-sushi",
+        "title": "源库：苏轼生平与编号行迹",
+        "project": "source",
+        "path": "projects/015-jiangshan-atlas/web/upstream/assets/preview_journey_sushi.webp",
+        "kind": "上游随固定版本提供的预览图",
+        "date": "2026-10-24本地收录；原始拍摄日未标注",
+        "version": "53059f1c7fed305807b19365857a5f135daf3ac6",
+        "caption": "右侧人物纪事与地图编号、朱砂路线和年份联动，是从内容进入空间的一种叙事方式。",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/assets/preview_journey_sushi.webp",
+        "evidence": [
+          "projects/015-jiangshan-atlas/web/upstream/SOURCE.json"
+        ]
+      },
+      {
+        "id": "source-quiz",
+        "title": "源库：寻址挑战",
+        "project": "source",
+        "path": "projects/015-jiangshan-atlas/web/upstream/assets/preview_quiz_challenge.webp",
+        "kind": "上游随固定版本提供的预览图",
+        "date": "2026-10-24本地收录；原始拍摄日未标注",
+        "version": "53059f1c7fed305807b19365857a5f135daf3ac6",
+        "caption": "已有历史地点数据进一步派生成线索、落针与距离反馈；不是AI现场编造坐标。",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/assets/preview_quiz_challenge.webp",
+        "evidence": [
+          "projects/015-jiangshan-atlas/web/upstream/SOURCE.json"
+        ]
+      },
+      {
+        "id": "015-local",
+        "title": "015：本地原作与六个体验入口",
+        "project": "015",
+        "path": "projects/015-jiangshan-atlas/assets/acceptance-desktop.png",
+        "kind": "本项目真实浏览器验收截图",
+        "date": "2026-10-24",
+        "version": "015能力展示版",
+        "caption": "图中外围场景导航是新增界面，内层地图、长安沿革与编年面板为本地收录原作。",
+        "evidence": [
+          "projects/015-jiangshan-atlas/notes/verification.md"
+        ]
+      },
+      {
+        "id": "015-methods",
+        "title": "015：八项源码模式",
+        "project": "015",
+        "path": "projects/015-jiangshan-atlas/assets/acceptance-engineering-patterns.jpg",
+        "kind": "本项目真实浏览器验收截图",
+        "date": "2026-10-24",
+        "version": "015方法研究版",
+        "caption": "每种模式列出固定代码证据、迁移方式、适用边界与掌握标准。",
+        "evidence": [
+          "projects/015-jiangshan-atlas/notes/verification-engineering.md"
+        ]
+      },
+      {
+        "id": "015-transfer",
+        "title": "015：同一核心切换物流／项目迭代",
+        "project": "015",
+        "path": "projects/015-jiangshan-atlas/assets/acceptance-engineering-desktop.jpg",
+        "kind": "本项目真实浏览器验收截图",
+        "date": "2026-10-24",
+        "version": "015独立时序实验",
+        "caption": "只切换结构化数据，阶段、事件、节点与URL共用同一个纯核心；范围限线性过程。",
+        "evidence": [
+          "projects/015-jiangshan-atlas/notes/verification-engineering.md"
+        ]
+      },
+      {
+        "id": "016-miniature",
+        "title": "016早期草稿：惠州微缩景观",
+        "project": "016",
+        "path": "projects/016-dongpo-journey/assets/experience-3d-huizhou.jpg",
+        "kind": "历史草稿浏览器截图",
+        "date": "2026-10-24",
+        "version": "已被完整地图主入口替代的微缩景观版",
+        "caption": "是真实可旋转3D，但与完整历史地图能力脱节；保留用于说明探索中的误判，而非当前成果。",
+        "evidence": [
+          "projects/016-dongpo-journey/README.md",
+          "projects/016-dongpo-journey/notes/verification-3d.md",
+          "projects/016-dongpo-journey/notes/brief.md"
+        ]
+      },
+      {
+        "id": "016-atlas",
+        "title": "016当前作品：同一历史状态的3D山河",
+        "project": "016",
+        "path": "projects/016-dongpo-journey/assets/acceptance-atlas-3d.jpg",
+        "kind": "本项目真实浏览器验收截图",
+        "date": "2026-10-24",
+        "version": "完整上游集成＋Three.js联动扩展",
+        "caption": "历史引擎与人物资料直接复用，现代高程网格与Three.js视角新增；不代表古代真实地貌复原。",
+        "evidence": [
+          "projects/016-dongpo-journey/notes/verification-atlas.md"
+        ]
+      },
+      {
+        "id": "016-mobile",
+        "title": "016：窄屏人物路线与地图",
+        "project": "016",
+        "path": "projects/016-dongpo-journey/assets/acceptance-atlas-mobile.jpg",
+        "kind": "桌面浏览器390×844响应式截图",
+        "date": "2026-10-24",
+        "version": "完整地图版",
+        "caption": "人物卡片下置，地图和事件仍可操作；这不是物理手机设备测试。",
+        "evidence": [
+          "projects/016-dongpo-journey/notes/verification-atlas.md"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "source-lock",
+        "title": "015上游来源、版本与文件哈希",
+        "path": "projects/015-jiangshan-atlas/web/upstream/SOURCE.json",
+        "url": "https://github.com/DeanChensj/jiangshan-map/tree/53059f1c7fed305807b19365857a5f135daf3ac6",
+        "scope": "固定版本与集成修改范围"
+      },
+      {
+        "id": "capability-count",
+        "title": "固定包能力统计",
+        "path": "projects/015-jiangshan-atlas/web/capabilities.json",
+        "scope": "只统计当前包，不沿用宣传数量"
+      },
+      {
+        "id": "source-readme",
+        "title": "上游中文说明",
+        "path": "projects/015-jiangshan-atlas/web/upstream/README_ZH.md",
+        "url": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/README_ZH.md",
+        "scope": "功能、Agent接口、GeoJSON与数据许可说明"
+      },
+      {
+        "id": "source-controller",
+        "title": "固定版本app.js",
+        "path": "projects/015-jiangshan-atlas/web/upstream/js/app.js",
+        "url": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js",
+        "scope": "八种实现模式的可读代码依据"
+      },
+      {
+        "id": "source-claude",
+        "title": "带Claude联合署名的GeoJSON提交",
+        "url": "https://github.com/DeanChensj/jiangshan-map/commit/5e940f6bc1f8aa50ac7fe0e2406baee7ef5ef7e7",
+        "scope": "2026-10-25联网核对；只支持该项公开AI参与"
+      },
+      {
+        "id": "015-notice",
+        "title": "015来源与许可",
+        "path": "projects/015-jiangshan-atlas/NOTICE.md",
+        "scope": "代码GPL与数据原条款分开"
+      },
+      {
+        "id": "015-verification",
+        "title": "015代表场景实际验收",
+        "path": "projects/015-jiangshan-atlas/notes/verification.md",
+        "scope": "区分上游程序检查与真实浏览器操作"
+      },
+      {
+        "id": "015-method-verification",
+        "title": "015独立时序迁移实验验收",
+        "path": "projects/015-jiangshan-atlas/notes/verification-engineering.md",
+        "scope": "物流与项目迭代的核心和输入边界"
+      },
+      {
+        "id": "016-scope",
+        "title": "016当前交付与早期提示保留",
+        "path": "projects/016-dongpo-journey/notes/brief.md",
+        "scope": "记录三站／微缩景观偏离目标及后续回到完整能力"
+      },
+      {
+        "id": "016-notice",
+        "title": "016上游复用与DEM来源",
+        "path": "projects/016-dongpo-journey/NOTICE.md",
+        "scope": "完整引擎直接复用，现代DEM与数据例外"
+      },
+      {
+        "id": "016-verification",
+        "title": "016完整地图验收",
+        "path": "projects/016-dongpo-journey/notes/verification-atlas.md",
+        "scope": "54文件、人物路线、2D/3D联动和窄屏实际操作"
+      },
+      {
+        "id": "017-notice",
+        "title": "017深海迁移与研究页地图集成来源",
+        "path": "projects/017-abyss-expedition/NOTICE.md",
+        "scope": "深海主场景借鉴方法并复用015独立核心；研究页另直接集成54份上游文件和016三维扩展，分开保留来源与许可"
+      },
+      {
+        "id": "017-core",
+        "title": "017九个纯核心接入与边界",
+        "path": "projects/017-abyss-expedition/web/core/README.md",
+        "scope": "核心与主题适配器分层"
+      },
+      {
+        "id": "017-full",
+        "title": "017两航次全流程验收",
+        "path": "projects/017-abyss-expedition/notes/verification-full-voyages.md",
+        "scope": "浏览器实播、局部复验、自动几何与操作证据"
+      },
+      {
+        "id": "017-atlas-runtime",
+        "title": "017本地历史地图集成清单与来源",
+        "path": "projects/017-abyss-expedition/web/integrations/atlas/integration-source.json",
+        "url": "http://127.0.0.1:8017/integrations/atlas/integration-source.html",
+        "scope": "同源运行包、逐文件输入/输出哈希、派生修改、GPL与数据例外；不表示深海scene已采用地图运行时"
+      }
+    ],
+    "licensing": [
+      "代码采用GPL-3.0不意味着所有历史GIS数据都可按相同条款自由使用。上游明确CHGIS V6／Hartwell相关数据保留原学术、非商业条款，应按具体数据核对。",
+      "原库历史疆域为示意近似；016现代DEM和017教学程序地形的来源与表达边界不同，不能混称真实古地貌或实测海底。",
+      "源库预览图是作者固定版本素材，使用时保留来源与版本；本地验收截图应注明所属项目和实际验证范围。",
+      "017研究页的地图展品直接收录完整历史地图资料，CHGIS V6／Hartwell原学术、非商业条款与DEM来源继续适用；深海主场景的程序地形与这份现代地图DEM分开。"
+    ]
+  },
+  "exploration": {
+    "schema": "abyss-research-exploration/v1",
+    "date": "2026-10-25",
+    "title": "从方法迁移到能看懂、能操纵的完整作品",
+    "overview": {
+      "summary": "017是独立深海流程演示实验，形成了时间、实体选择、讲解、驾驶和采样等能力。地图叙事与动作流程的内容骨架不同，当前实验不足以证明源库核心地图能力已经迁移成功。研究页另接入完整历史地图展品，证明了本地集成；下一项目将用中国铁路网络演进，在地图叙事范围内验证真实复用。",
+      "question": "源库为什么显得完整，而我们直接下达“做一个类似效果”时却容易得到差距很大的演示？",
+      "answer": "因为完整性不是渲染库或一次提示自动附带的能力。它来自内容结构、数据契约、视觉层次、镜头、交互控制权、素材与反复看真实画面的共同约束。最初只证明状态模块可迁移，用户仍看不懂角色和目的，画面也缺少主体与尺度；后续迭代分别补齐了这些工作。",
+      "result": "已有两条各11章的WebGL教学航次和九个纯核心。通用核心的复用、完整地图包的接入与源库地图能力的迁移应分别评价。中国铁路网络演进已确定为下一项目目标，尚未开发；本轮目标与规划见研究档案最新章节。",
+      "runtime": "浏览器运行不调用Claude或其他大模型生成场景内容。Three.js负责渲染，JavaScript和本地数据组织状态与动画，MiniMax配音在生成阶段预先产出后由网页播放。",
+      "sources": [
+        "README.md",
+        "NOTICE.md",
+        "notes/scene-intent.md",
+        "web/core/README.md",
+        "notes/verification-full-voyages.md"
+      ]
+    },
+    "attribution": [
+      {
+        "label": "从源库学习",
+        "items": [
+          "时间选择阶段，事件与空间视图联动",
+          "稳定实体ID连接搜索、列表、地图与内容",
+          "业务坐标与绘图分离，图层各司其职",
+          "过期异步结果不能覆盖最后一次请求",
+          "用URL表达可复现的启动选择",
+          "主场景、当前内容和路线有清楚的阅读顺序"
+        ],
+        "evidence": [
+          "notes/verification.md",
+          "notes/quality-comparison.md",
+          "NOTICE.md"
+        ]
+      },
+      {
+        "label": "深海主作品直接复用",
+        "items": [
+          "015中自行提炼的temporal-core.mjs逐字节复制到017，SHA-256为b5d3579e8b2f50875fd1a98d6bb7aa18100884261089cb325de46723165b61f8。它不是从源库单体控制器摘取的代码。",
+          "Three.js 0.180.0及OrbitControls为MIT第三方基础库。Poly Haven Rock Surface的三张PBR贴图为CC0素材。"
+        ],
+        "evidence": [
+          "notes/verification.md",
+          "NOTICE.md",
+          "web/vendor/three/source.json",
+          "web/assets/materials/sources.json"
+        ]
+      },
+      {
+        "label": "本项目新实现",
+        "items": [
+          "其余8个纯核心",
+          "独立三维地形、潜器、母船、生态与喷流几何",
+          "导演、媒体同步、设备和原理教学",
+          "独立自由驾驶、整机和镜头碰撞约束",
+          "随语句提示、投影可见性、独立三维观察窗",
+          "科考业务、样本对照和报告界面"
+        ],
+        "evidence": [
+          "web/core/README.md",
+          "README.md",
+          "NOTICE.md"
+        ]
+      },
+      {
+        "label": "没有迁入深海主场景",
+        "items": [
+          "深海scene.js不导入原历史控制器、历史资料、浮雕底图、样式和主体布局；这些内容在研究页独立地图展品中另行直接集成。",
+          "016地形渲染器未用于深海渲染层；研究页地图iframe保留并运行这套三维扩展。",
+          "原库不存在的海洋自由驾驶或三维讲解模块"
+        ],
+        "evidence": [
+          "notes/verification.md",
+          "NOTICE.md"
+        ]
+      },
+      {
+        "label": "研究页另行直接集成",
+        "items": [
+          "web/integrations/atlas/收录54份上游输入、016入口与路线编辑、联动三维地图、现代DEM和本地Three.js；不依赖8016服务。",
+          "54份输入先核验原始哈希；35份专题HTML副本只去统计脚本，保留文字、数据、作者归属和资料外链。",
+          "017新增父控制器atlas-demo.js、iframe同源桥atlas-bridge.mjs、构建期API附加代码、固定白名单构建与文件/HTTP校验；不计入深海九个纯核心。"
+        ],
+        "evidence": [
+          "README.md",
+          "NOTICE.md",
+          "notes/atlas-integration-plan.md",
+          "src/build-atlas-integration.mjs",
+          "src/check-atlas-integration.mjs",
+          "web/integrations/atlas/integration-source.json"
+        ]
+      }
+    ],
+    "currentCapabilities": [
+      {
+        "id": "two-worlds",
+        "title": "两种不同的三维海底",
+        "effect": "热液低岩脊、裂缝、矿物烟囱和管虫，与峡谷高壁、弯曲深槽、珊瑚台和杯状海绵形成不同的空间语汇。",
+        "implementation": [
+          "web/terrain.js",
+          "web/rendering/hydrothermal-plume.mjs",
+          "web/rendering/benthic-life.mjs"
+        ],
+        "boundary": "程序化教学地形和形态，不对应实测坐标，不用于物种鉴定。"
+      },
+      {
+        "id": "linked-exploration",
+        "title": "时间、站点、事件与空间联动",
+        "effect": "搜索、站点目录、事件、剖面、路线与画面共同更新当前观察对象；未知搜索明确无结果。",
+        "implementation": [
+          "web/core/temporal-core.mjs",
+          "web/core/entity-index.mjs",
+          "web/core/track.mjs",
+          "web/app.js"
+        ],
+        "boundary": "数据必须满足ID引用、连续阶段和时间递增契约；不是任意知识图谱。"
+      },
+      {
+        "id": "director",
+        "title": "从出发到返航的导演放映",
+        "effect": "每条11章，支持暂停、选章、进度、速度、景别和字幕开关，片尾有总结、完成与重播。",
+        "implementation": [
+          "web/core/director-core.mjs",
+          "web/data/director-shots.mjs",
+          "web/director-ui.js",
+          "web/rendering/shot-camera.mjs"
+        ],
+        "boundary": "影片秒数与航次分钟独立；不提供视频导出。"
+      },
+      {
+        "id": "audio",
+        "title": "MiniMax语音带动画面",
+        "effect": "22条导演配音和12条环境配音按真实媒体位置驱动播放；缓冲时画面等待，暂停、定位和倍速同步。",
+        "implementation": [
+          "web/rendering/narration-player.mjs",
+          "src/generate-narration.mjs",
+          "src/generate-environment-narration.mjs"
+        ],
+        "boundary": "运行时只读本地音频；不是实时生成讲解。短语时刻为停顿辅助估计，不是逐词强制对齐。"
+      },
+      {
+        "id": "principles",
+        "title": "能分步查看的原理动画",
+        "effect": "热液下渗—地下加热—岩石反应—上涌，黑色颗粒与烟囱沉积，微生物和管虫，栖息地与双水样都有对应三维解释。",
+        "implementation": [
+          "web/rendering/learning-world.mjs",
+          "web/data/learning-content.mjs",
+          "web/rendering/director-lesson-timeline.mjs"
+        ],
+        "boundary": "箭头、颜色、颗粒和比例为解释符号，不是热力、化学、流体或生态数值模拟。"
+      },
+      {
+        "id": "equipment",
+        "title": "设备、船端与潜器共同工作",
+        "effect": "8组设备职责、部件高亮、剖视和独立4秒演示；说明人留在母船，ROV不载人，随身水瓶与预布海床采水架分开。",
+        "implementation": [
+          "web/rendering/rov-system.mjs",
+          "web/rendering/research-vessel.mjs",
+          "web/rendering/learning-world.mjs",
+          "web/learning-ui.js"
+        ],
+        "boundary": "工作方式示意，不输出真实声呐、压力、定位或遥控指令。"
+      },
+      {
+        "id": "samples",
+        "title": "采样、同类对照和结尾整理",
+        "effect": "实际完成关盖才产生本轮演示记录；A/B均为海水，带编号、站位、设计水深和时刻，齐全后解锁对照。结尾区分已知、本轮记录与待分析。",
+        "implementation": [
+          "web/core/learning-core.mjs",
+          "web/learning-ui.js",
+          "web/data/learning-content.mjs"
+        ],
+        "boundary": "不伪造化验结果；临时演示不自动写入个人报告。"
+      },
+      {
+        "id": "pilot",
+        "title": "能离开预设航线的自由驾驶",
+        "effect": "W/S前后、A/D转向、Q/E横移、R/F升降，空格急停；屏幕按钮支持长按。",
+        "implementation": [
+          "web/core/pilot-core.mjs",
+          "web/pilot-ui.js",
+          "web/scene.js"
+        ],
+        "boundary": "模型运动学和可注入碰撞约束，不是真实水动力学或设备操控。"
+      },
+      {
+        "id": "camera",
+        "title": "自由镜头与驾驶控制分开",
+        "effect": "跟随、前向、独立镜头；镜头可以观察远处，潜器保留位置，界面说明两者区别，并可返回潜器。",
+        "implementation": [
+          "web/core/camera-state.mjs",
+          "web/pilot-ui.js",
+          "web/scene.js"
+        ],
+        "boundary": "安全约束可能调整旧贴壁链接，不能保证所有旧坐标逐值恢复。"
+      },
+      {
+        "id": "environment",
+        "title": "边驾驶边理解海洋环境",
+        "effect": "两场景各6段独立环境讲解，覆盖黑暗寒冷高压、地貌、水流、海洋雪、食物、栖地和调查方法；不自动选站或推进航次。",
+        "implementation": [
+          "web/environment-guide.js",
+          "web/data/environment-guide.mjs"
+        ],
+        "boundary": "主题位置为粗分区；不能用最近站替代已抵达，也不能用模型Y伪造实测水深。"
+      },
+      {
+        "id": "visible-cues",
+        "title": "讲到哪里，就知道看哪里",
+        "effect": "环境55个递进提示，岩壁贴面金圈、水流箭头、下沉海洋雪、原位生物标记；远处或被挡的生物有同站几何的独立3D观察窗。",
+        "implementation": [
+          "web/core/narration-cues.mjs",
+          "web/rendering/environment-cues.mjs",
+          "web/rendering/cue-labels.mjs",
+          "web/rendering/cue-layout.mjs",
+          "web/rendering/cue-lens.mjs"
+        ],
+        "boundary": "旁白不抢主镜头；主动点击看清才对准。观察窗不把原生物搬到当前海床。"
+      },
+      {
+        "id": "safety",
+        "title": "整机与镜头防穿透",
+        "effect": "机身、机械臂、瓶盖、转向和小幅横滚纳入保守OBB；平移、升降和转向做扫掠；相机最后执行净空保护。",
+        "implementation": [
+          "web/rendering/collision-world.mjs",
+          "web/rendering/collision-assets.mjs",
+          "web/core/pilot-core.mjs"
+        ],
+        "boundary": "OBB对地形与逐mesh/instance AABB的保守保护，不是精确网格刚体或任意洞穴引擎。"
+      },
+      {
+        "id": "archive",
+        "title": "可分享、可记录、可追溯",
+        "effect": "URL恢复航次、事件、图层、章节、安全镜头或驾驶位姿；普通探索可由用户主动记录发现与导出JSON报告；网页资料有来源。",
+        "implementation": [
+          "web/app.js",
+          "web/core/camera-state.mjs",
+          "web/core/pilot-core.mjs",
+          "web/sources.json"
+        ],
+        "boundary": "导演链接只存章节起点，不存片内秒数；个人记录和教学样本有不同生命周期。"
+      },
+      {
+        "id": "atlas-exhibit",
+        "title": "研究页中的完整历史地图展品",
+        "effect": "独立同源iframe提供历史时间轴、城池沿革、人物行迹、自定路线、图层、寻址挑战和联动三维地形；研究页父控件下发命令并显示子页实际状态。",
+        "implementation": [
+          "web/atlas-demo.js",
+          "web/integration-assets/atlas-bridge.mjs",
+          "web/integration-assets/atlas-api-suffix.mjs",
+          "src/build-atlas-integration.mjs",
+          "src/check-atlas-integration.mjs"
+        ],
+        "boundary": "完整能力集成，不是深海渲染迁移；不把上游或016三维能力算作017原创。静态与HTTP检查不代替当轮浏览器操作验收。"
+      }
+    ],
+    "journey": [
+      {
+        "id": "migration",
+        "order": 1,
+        "date": "2026-10-24",
+        "title": "先证明方法真的能跨主题",
+        "status": "历史基线",
+        "problem": "复制源库换名字不能证明学到了方法；仅有图片也不能满足真实3D。",
+        "method": "重新定义科考实体、事件、阶段、站点和航迹；直接复用015的独立时序核心，另写Three.js海底和适配层。",
+        "files": [
+          "web/core/temporal-core.mjs",
+          "web/core/entity-index.mjs",
+          "web/core/track.mjs",
+          "web/core/latest-task.mjs",
+          "web/scene.js",
+          "web/data/vents.json",
+          "web/data/canyon.json"
+        ],
+        "verification": "首轮实际操作旋转、缩放、搜索、阶段/事件联动、图层、分享恢复、3项发现记录与JSON导出；同时用非海洋夹具测试核心。",
+        "limits": "证明功能和契约可迁移，不等于艺术质量、内容厚度或可理解性达标。",
+        "evidence": [
+          "notes/verification.md"
+        ],
+        "images": [
+          "assets/preview-first.jpg",
+          "assets/acceptance-desktop.jpg"
+        ]
+      },
+      {
+        "id": "visual-rework",
+        "order": 2,
+        "date": "2026-10-24",
+        "title": "用户指出效果差，开始按真实画面返工",
+        "status": "历史迭代",
+        "problem": "光滑丘陵像几何沙盘，物体比例重复，岩面单一，浮卡遮挡主体，近景仍看不清目标。",
+        "method": "以旧版/源库/新版实际截图对照，增加分尺度地形与CC0 PBR材质，区分沉积和裸岩，调整潜器与烟囱比例、视线和界面占位。",
+        "files": [
+          "web/terrain.js",
+          "web/assets/materials/sources.json",
+          "web/rendering/hydrothermal-plume.mjs",
+          "web/rendering/benthic-life.mjs",
+          "web/scene.js"
+        ],
+        "verification": "同尺寸同站点比较、烟囱和ROV分离、两航次近景、970宽与390窄视口检查。",
+        "limits": "贴图和网格复杂度不会自动生成构图；功能检查不能证明画面追平原作。",
+        "evidence": [
+          "notes/visual-rework.md"
+        ],
+        "images": [
+          "assets/rework/01-before-1280.jpg",
+          "assets/rework/02-reference.jpg",
+          "assets/rework/10-final-overview.jpg",
+          "assets/rework/09-final-closeup.jpg"
+        ]
+      },
+      {
+        "id": "source-comparison",
+        "order": 3,
+        "date": "2026-10-24",
+        "title": "再看源库实际效果，学习的是阅读秩序",
+        "status": "历史迭代",
+        "problem": "双侧栏挤压三维画布，岩面高频像砂纸，主体较小，事件换了但镜头未必跟到，旋转后容易丢失目标。",
+        "method": "目录改抽屉与沉浸布局；让事件、剖面与镜头使用同一动作；加有终点的820ms镜头过渡、小航线图和回到本站入口；修正岩面亮度曲线与羽流软云。",
+        "files": [
+          "web/app.js",
+          "web/style.css",
+          "web/scene.js",
+          "web/terrain.js",
+          "web/rendering/hydrothermal-plume.mjs"
+        ],
+        "verification": "源作者在线概览、阶段和人物路线实看；新版首屏、选事件、自由探索、切航次四步均实测。970窗口画布由540增到700，1280窗口为980；这是当轮样本。",
+        "limits": "在线页面可能与固定研究SHA不同。屏占比是截图估算，不是同尺寸性能基准。",
+        "evidence": [
+          "notes/quality-comparison.md"
+        ],
+        "images": [
+          "assets/quality/02-source-overview.jpg",
+          "assets/quality/04-source-story.jpg",
+          "assets/quality/17-final-entry.jpg",
+          "assets/quality/21-final-immersive.jpg"
+        ]
+      },
+      {
+        "id": "narrative",
+        "order": 4,
+        "date": "2026-10-24",
+        "title": "从一组模型，变成一次有目的的科考",
+        "status": "历史迭代",
+        "problem": "用户不知道这是什么场景、谁在观察、为何到下一站。",
+        "method": "明确母船—脐带—ROV—海床的关系，添加语义标签与调查任务；定义出发、靠近、环绕、特写、比较、返航六种镜头职责；导演时钟与航次时间分离。",
+        "files": [
+          "web/data/director-shots.mjs",
+          "web/core/director-core.mjs",
+          "web/director-ui.js",
+          "web/rendering/shot-camera.mjs",
+          "web/rendering/expedition-context.mjs"
+        ],
+        "verification": "字幕导演早期版每条7镜，热液127秒实播到完成；暂停锁帧、选章、景别、分享和退出测试分别记录。",
+        "limits": "7镜和127/126秒是历史版本，当前已扩为11章。早期只有字幕，不能把它写成MiniMax版。",
+        "evidence": [
+          "notes/scene-intent.md",
+          "notes/verification-director.md"
+        ],
+        "images": [
+          "assets/director/05-fixed-opening.jpg",
+          "assets/director/06-orbit.jpg"
+        ]
+      },
+      {
+        "id": "voice-and-water",
+        "order": 5,
+        "date": "2026-10-24",
+        "title": "让船像工作现场，让水下能被辨认",
+        "status": "历史迭代",
+        "problem": "船像积木、海面透明，用户看不出正在潜入水下；需要有声音的通俗讲解。",
+        "method": "重做船壳、甲板、吊架、绞车和海面接触；水面转水下时使用吸收、雾化、颗粒和灯光。用MiniMax预生成旁白，以实际音频位置驱动影片，解决静态服务缺少Range造成定位回开头。",
+        "files": [
+          "web/rendering/research-vessel.mjs",
+          "web/rendering/ocean-water.mjs",
+          "web/rendering/narration-player.mjs",
+          "src/minimax-tts.mjs",
+          "src/generate-narration.mjs"
+        ],
+        "verification": "历史14条MP3完整解码与文本/哈希检查；两片各约149秒完整播放；章内定位、缓冲、倍速、异步旧play拒绝和资源释放有检查。",
+        "limits": "14段和约149秒只属于当轮；不是当前总量。船和海面仍为程序化教学表达，不是真实船舶数字孪生。",
+        "evidence": [
+          "notes/verification-narrated.md"
+        ],
+        "images": [
+          "assets/narrated/02-vessel.jpg",
+          "assets/narrated/03-underwater.jpg",
+          "assets/narrated/05-descent-14.jpg"
+        ]
+      },
+      {
+        "id": "learning",
+        "order": 6,
+        "date": "2026-10-25",
+        "title": "补齐基础概念、原因、对照与结论边界",
+        "status": "历史迭代",
+        "problem": "第一次看的用户不懂什么是热液、黑烟和化能合成；取样后也不懂能证明什么。",
+        "method": "引入概念词典与独立3D原理舞台。改为A/B两站同类海水，完成关盖才生成临时记录；对照表保留编号、条件与待分析；结尾分已知、本轮记录、待检验。",
+        "files": [
+          "web/core/learning-core.mjs",
+          "web/learning-ui.js",
+          "web/data/learning-content.mjs",
+          "web/rendering/learning-world.mjs"
+        ],
+        "verification": "历史20章版两片260.6/247.4秒完整实播，自动和手动两次采水2/2、报告0、手机对照、总结和刷新后临时记录清零均实测。",
+        "limits": "20章是设备章加入前版本。粒子和剖面不构成化学计算；动画不能证明真实海域结论。",
+        "evidence": [
+          "notes/verification-learning.md"
+        ],
+        "images": [
+          "assets/learning/01-fluid.jpg",
+          "assets/learning/02-food.jpg",
+          "assets/learning/04-comparison.jpg",
+          "assets/learning/11-summary.jpg"
+        ]
+      },
+      {
+        "id": "equipment",
+        "order": 7,
+        "date": "2026-10-25",
+        "title": "解释潜器带什么、人在船上做什么",
+        "status": "已纳入当前作品",
+        "problem": "如果不知道设备分工，采样、导航和照明只剩动作，观众无法把过程串起来。",
+        "method": "普通潜器与设备教学共享ROV工厂；8组职责有部件分组、高亮、专用机位和独立4秒动作；船端控制台和绞车解释协作。新增两条真实MiniMax配音，扩为当前22章。",
+        "files": [
+          "web/rendering/rov-system.mjs",
+          "web/rendering/learning-world.mjs",
+          "web/data/learning-content.mjs",
+          "web/learning-ui.js"
+        ],
+        "verification": "声呐、双向缆线、机械臂、水瓶、压力剖视及设备清单实测；独立演示时影片/音轨暂停，换章取消，退出恢复正常材料。22条MP3全量解码。",
+        "limits": "设备波纹和粒子示意工作方式，不是声学测量、定位算法或真实耐压仿真。",
+        "evidence": [
+          "notes/verification-equipment.md"
+        ],
+        "images": [
+          "assets/equipment/02-sonar.jpg",
+          "assets/equipment/04-arm.jpg",
+          "assets/equipment/06-ship-support.jpg",
+          "assets/equipment/10-pressure.jpg"
+        ]
+      },
+      {
+        "id": "pilot",
+        "order": 8,
+        "date": "2026-10-25",
+        "title": "把演示改成可以自己探索",
+        "status": "已纳入当前作品",
+        "problem": "两种场景看起来相近，只能沿预定航线观看；用户明确要自由驾驶潜器和自由镜头。",
+        "method": "热液低脊和峡谷高壁使用不同高度场与空间布局。加入独立驾驶核心、按键/长按、3种相机、分享位姿和停止边界；进入驾驶暂停原回放。",
+        "files": [
+          "web/core/pilot-core.mjs",
+          "web/pilot-ui.js",
+          "web/pilot.css",
+          "web/terrain.js",
+          "web/scene.js"
+        ],
+        "verification": "离开航迹移动、模型地形/边界/顶部制动、分享刷新、切航次保留模式、导演接管及390窄视口实测。",
+        "limits": "不是真实水动力学。核心不会解释物体形态，碰撞必须用同源地形和模型包络接入。",
+        "evidence": [
+          "notes/verification-piloting.md"
+        ],
+        "images": [
+          "assets/piloting/01-canyon-after.jpg",
+          "assets/piloting/03-vents-drive.jpg",
+          "assets/piloting/02-mobile-drive.jpg"
+        ]
+      },
+      {
+        "id": "environment-guide",
+        "order": 9,
+        "date": "2026-10-25",
+        "title": "边驾驶边听懂环境，而不只听到一个裂缝",
+        "status": "已纳入当前作品",
+        "problem": "主故事外的自由探索缺少环境知识，只有零散名称，观众不知道黑暗、冷水、高压、泥沙和食物的联系。",
+        "method": "两场景各6段环境主题，12条独立MiniMax音轨；复用媒体和导演时钟，但不选站、不推进航次、不写报告。位置提示按粗分区与离底关系生成。",
+        "files": [
+          "web/environment-guide.js",
+          "web/data/environment-guide.mjs",
+          "web/core/environment-location.mjs",
+          "src/generate-environment-narration.mjs"
+        ],
+        "verification": "当前/下一段、速度、进度、资料、边听边驾驶、开关与模式互斥、378.432秒本地音轨均有独立验收。",
+        "limits": "位置是设计地形的粗分区，不应声称来到真实地名或实测水深。",
+        "evidence": [
+          "notes/verification-environment-guide.md"
+        ],
+        "images": [
+          "assets/environment/01-canyon-environment.jpg",
+          "assets/environment/02-mobile-listening.jpg"
+        ]
+      },
+      {
+        "id": "cue-visibility",
+        "order": 10,
+        "date": "2026-10-25",
+        "title": "从“有标记”改到“真的能看见”",
+        "status": "已纳入当前作品",
+        "problem": "讲到岩壁、水流、海洋雪和生物，标记却在画外；射线无遮挡也不意味着对象在屏幕内，更不意味着未被UI盖住。",
+        "method": "先做55条语句提示，再加入真实投影、viewOffset和UI扣除布局。岩壁选择实际可见表面，水流缩为短箭头，雪粒下沉；远处生物用同站原几何的独立3D观察窗。用户主动看清才调镜头。",
+        "files": [
+          "web/core/narration-cues.mjs",
+          "web/rendering/environment-cues.mjs",
+          "web/rendering/cue-labels.mjs",
+          "web/rendering/cue-layout.mjs",
+          "web/rendering/cue-lens.mjs",
+          "web/environment-guide.js"
+        ],
+        "verification": "55提示、暂停/seek、原实体和相机不变、多个真实用户视角、390→1280→681布局、主动对准/恢复以及远处高位潜器均实测。",
+        "limits": "投影、可见区域、遮挡和对象尺度需要分别检查；观察窗不是把生物搬到眼前海床。",
+        "evidence": [
+          "notes/verification-environment-cues.md",
+          "notes/verification-visible-cues.md"
+        ],
+        "images": [
+          "assets/visible-cues/00-before.jpg",
+          "assets/visible-cues/01-wall.jpg",
+          "assets/visible-cues/02-current.jpg",
+          "assets/visible-cues/04-biology.jpg",
+          "assets/visible-cues/06-mobile.jpg"
+        ]
+      },
+      {
+        "id": "collision",
+        "order": 11,
+        "date": "2026-10-25",
+        "title": "从中心点防撞，扩到整机与最后一帧相机",
+        "status": "已纳入当前作品",
+        "problem": "只保护潜器中心点时，机械臂、瓶盖和转向仍可能穿墙；安全镜头也可能在后续更新中被覆盖。",
+        "method": "标定实际ROV保守OBB，逐mesh/instance提取固体AABB，地形使用与渲染一致的三角网格高度；分开扫掠升降、转向、平移，旧位姿尝试附近推离或安全回退；渲染前最后保护相机。",
+        "files": [
+          "web/rendering/collision-world.mjs",
+          "web/rendering/collision-assets.mjs",
+          "web/core/pilot-core.mjs",
+          "web/scene.js"
+        ],
+        "verification": "实际模型404种机械臂/瓶盖/横滚状态和约247万顶点包络检查、两场景集成、浏览器墙面/海床/道具/镜头和旧链接恢复检查。",
+        "limits": "包围盒可能封住复杂模型内部的空隙，不是精确网格刚体或任意地形证明。",
+        "evidence": [
+          "notes/verification-collision.md",
+          "web/core/README.md"
+        ],
+        "images": [
+          "assets/collision/02-wall-stop.jpg",
+          "assets/collision/03-camera.jpg",
+          "assets/collision/07-mobile.jpg"
+        ]
+      },
+      {
+        "id": "whole-voyage",
+        "order": 12,
+        "date": "2026-10-25",
+        "title": "完整验收暴露了局部测试看不到的问题",
+        "status": "当前完整验收",
+        "problem": "返航曾只是镜头升高，潜器仍在海底；跨站越壁时旁白却已说到站；设备按整章平均分步与语音错位；水深混用了压缩模型Y。",
+        "method": "真实驱动潜器上浮回船；跨站用明确分镜切到安全站位，布放/返航保留连续动作；motionFraming与用户景别分离；同一43短语/122停顿锚点驱动文字与原理步骤；站点设计水深与模型单位分开；固定当前步骤说明；收紧4处采水机位。",
+        "files": [
+          "web/scene.js",
+          "web/rendering/shot-camera.mjs",
+          "web/rendering/director-lesson-timeline.mjs",
+          "web/data/director-lesson-cues.mjs",
+          "web/data/director-lesson-timing.mjs",
+          "web/director-ui.js",
+          "web/learning-ui.js",
+          "src/check-full-voyages.mjs"
+        ],
+        "verification": "两条11章完整2倍速实播到311.2/298.5秒，各演示水样2/2，报告0；最终采水机位局部再播；14,664连续几何采样、66手机切点、180景别变化、95地形视线抽查通过；采水架增加尺度和真实网格探针检查。",
+        "limits": "几何采样不是浏览器帧率指标或任意硬件数学保证；音轨估时不是逐词强制对齐；最终机位与文案补丁按局部复验记录，没有冒充额外一轮整片。",
+        "evidence": [
+          "notes/verification-full-voyages.md",
+          "notes/full-voyage-geometry.json",
+          "notes/full-voyage-browser.json",
+          "notes/full-story-review.md"
+        ],
+        "images": [
+          "assets/full-voyages/final-running.jpg",
+          "assets/full-voyages/equipment-seek-aligned.jpg",
+          "assets/full-voyages/closeup-canyon-B-end.jpg",
+          "assets/full-voyages/final-vents-11-complete.jpg",
+          "assets/full-voyages/final-canyon-11-complete.jpg"
+        ]
+      }
+    ],
+    "principles": [
+      {
+        "title": "先有领域模型，再有表现层",
+        "detail": "把角色、实体、时间、事件、状态与完成条件写清楚。源库能联动，不是因为每个视图各写一套猜测逻辑，而是它们共享明确的选择关系。迁移时保留方法，重新定义业务语义。"
+      },
+      {
+        "title": "先做可验收的垂直切片",
+        "detail": "一小段完整的出发—观察—操作—反馈，比一次铺开许多空模型更能发现问题。切片必须包括真实3D、对应内容、可操作控件和明确终点。"
+      },
+      {
+        "title": "画面必须回答“看什么、为什么看、下一步是什么”",
+        "detail": "目标太小、藏在前景、与文字无关或被UI盖住，都属于失败。把可见性、尺度、对比、语义标注和镜头控制权分别验收。"
+      },
+      {
+        "title": "时钟和控制权要分清",
+        "detail": "航次分钟、影片秒数、设备独立演示和驾驶积分是不同状态域。语音为电影主时钟；自由驾驶不推进原航次，独立镜头不搬动潜器。"
+      },
+      {
+        "title": "确定性让暂停、seek和分享可复现",
+        "detail": "动画从媒体时间或显式进度计算；用稳定ID连接内容；链接恢复后暂停。不要依赖多个独立计时器累计到“差不多”的阶段。"
+      },
+      {
+        "title": "可复用的不是一切",
+        "detail": "纯核心可以直接导入，几何适配器可以保留接口，主题故事、对象、坐标、机位与碰撞包络通常必须重做。讲清复用等级，比把所有文件叫通用框架更有价值。"
+      },
+      {
+        "title": "证明需要分层",
+        "detail": "数据契约、纯函数、真实几何、浏览器交互、完整放映和人的视觉判断各自提供不同证据。不能用其中一种通过替代另一种完成。"
+      }
+    ],
+    "reusableModules": [
+      {
+        "id": "temporal",
+        "name": "temporal-core.mjs",
+        "level": "直接复用的纯核心",
+        "purpose": "时间/阶段/事件的统一状态与URL协议",
+        "input": "连续阶段、稳定实体和事件ID、时间范围、预设route/labels图层",
+        "output": "冻结状态、派生视图、dispatch、subscribe、encode/restore",
+        "reuse": "在课程、历史、设备巡检等时序探索中保留接口，换领域数据。",
+        "adapt": "先选时间单位和边界规则；预设两图层不是任意插件系统。",
+        "source": "015独立提炼后逐字节复用；非原库代码摘取",
+        "file": "web/core/temporal-core.mjs",
+        "guide": "web/core/README.md",
+        "test": "src/check-core.mjs"
+      },
+      {
+        "id": "entity",
+        "name": "entity-index.mjs",
+        "level": "新写纯核心",
+        "purpose": "名称、别名和稳定ID的实体查询",
+        "input": "实体ID、规范名、显式别名",
+        "output": "search(query,limit)与resolve(idOrAlias)",
+        "reuse": "换实体列表即可用于资源、展品或设备索引。",
+        "adapt": "提供领域别名和歧义策略；未知输入不猜测后缀。",
+        "source": "017新增",
+        "file": "web/core/entity-index.mjs",
+        "guide": "web/core/README.md",
+        "test": "src/check-core.mjs"
+      },
+      {
+        "id": "track",
+        "name": "track.mjs",
+        "level": "新写纯核心",
+        "purpose": "时序关键帧数值插值",
+        "input": "严格递增时间、0–1平面坐标和相同数值通道",
+        "output": "指定时刻的位置与数值，端点钳制",
+        "reuse": "用于流程或路线回放，不绑定Three.js。",
+        "adapt": "坐标映射和通道含义由新领域决定；不是路径规划和动力学。",
+        "source": "017新增",
+        "file": "web/core/track.mjs",
+        "guide": "web/core/README.md",
+        "test": "src/check-core.mjs"
+      },
+      {
+        "id": "latest",
+        "name": "latest-task.mjs",
+        "level": "新写纯核心",
+        "purpose": "只有最新异步任务能提交",
+        "input": "loader、同步commit和error回调",
+        "output": "最新任务结果可见，旧成功/失败都不能污染当前状态",
+        "reuse": "用于切场景、搜索或其他快速变更请求。",
+        "adapt": "它抑制过期结果，不主动取消网络；提交回调保持同步。",
+        "source": "017新增",
+        "file": "web/core/latest-task.mjs",
+        "guide": "web/core/README.md",
+        "test": "src/check-core.mjs"
+      },
+      {
+        "id": "camera-state",
+        "name": "camera-state.mjs",
+        "level": "新写纯核心",
+        "purpose": "相机位姿协议",
+        "input": "position、target、mode及版本化字符串",
+        "output": "校验、编解码、容差比较与冻结快照",
+        "reuse": "用于保存和分享观察位置。",
+        "adapt": "新场景重新约定坐标、尺度和模式；协议合法不代表构图或碰撞安全。",
+        "source": "017新增；源库深链接思想的扩展",
+        "file": "web/core/camera-state.mjs",
+        "guide": "web/core/README.md",
+        "test": "src/check-camera-state.mjs"
+      },
+      {
+        "id": "director",
+        "name": "director-core.mjs",
+        "level": "新写纯核心",
+        "purpose": "影片秒数、章节和播放状态",
+        "input": "带唯一ID和duration的分镜清单",
+        "output": "当前镜头/章内进度、播放暂停选章完成与订阅",
+        "reuse": "用于其他主题的分镜、导览或操作流程影片。",
+        "adapt": "不调度RAF、不碰相机字幕和设备；音轨与UI另接适配器。",
+        "source": "017新增",
+        "file": "web/core/director-core.mjs",
+        "guide": "web/core/director-README.md",
+        "test": "src/check-director.mjs"
+      },
+      {
+        "id": "learning",
+        "name": "learning-core.mjs",
+        "level": "新写纯核心",
+        "purpose": "临时两站同类采样会话",
+        "input": "两个不同站点及kind",
+        "output": "collect/reset、冻结样本状态、同类对照解锁和生命周期",
+        "reuse": "可用于两位置扫描、样本比较或练习记录。",
+        "adapt": "只管流程门槛，不证明取样规范或因果；个人持久存储另做。",
+        "source": "017新增",
+        "file": "web/core/learning-core.mjs",
+        "guide": "web/core/README.md",
+        "test": "src/check-learning.mjs"
+      },
+      {
+        "id": "pilot",
+        "name": "pilot-core.mjs",
+        "level": "新写纯核心",
+        "purpose": "持续输入与独立位姿积分",
+        "input": "四轴输入、delta、边界、高度场和可选整机碰撞回调",
+        "output": "冻结位姿、速度、离底/整机余量、阻挡与恢复信息",
+        "reuse": "运动与停止逻辑可迁移到自由探索角色或设备。",
+        "adapt": "要用新场景的同源高度/固体查询、单位与包络；不包含水动力学或图形模型。",
+        "source": "017新增；源库没有驾驶模块",
+        "file": "web/core/pilot-core.mjs",
+        "guide": "web/core/README.md",
+        "test": "src/check-pilot.mjs"
+      },
+      {
+        "id": "narration-cues",
+        "name": "narration-cues.mjs",
+        "level": "新写纯核心",
+        "purpose": "按媒体时间查询精确文本短语提示",
+        "input": "全文、时长、有唯一精确引用的cue和可选时间锚点",
+        "output": "冻结提示计划、当前cue、区间和区间进度",
+        "reuse": "可用于仓库巡检、设备说明、展品导览等语句联动。",
+        "adapt": "换全文/音轨后重新生成匹配锚点；不播放声音、不解释目标或移动镜头。",
+        "source": "017新增；有非海洋夹具",
+        "file": "web/core/narration-cues.mjs",
+        "guide": "web/core/README.md",
+        "test": "src/check-narration-cues.mjs"
+      }
+    ],
+    "adapters": [
+      {
+        "name": "narration-player.mjs",
+        "scope": "可保留媒体同步与异步边界，换音轨清单和交互接入",
+        "needs": "播放源、分镜时长、播放器状态与资源生命周期",
+        "not": "不是MiniMax运行时SDK，不生成配音"
+      },
+      {
+        "name": "shot-camera.mjs",
+        "scope": "可保留分镜输入/输出契约和机位规划方法",
+        "needs": "主题尺度、主体包围范围、景别、UI留白和安全查询",
+        "not": "不是任意题材自动好看相机"
+      },
+      {
+        "name": "cue-layout.mjs",
+        "scope": "可复用扣除UI占用后的可见区域计算",
+        "needs": "实际视口、控件矩形、投影和目标适配",
+        "not": "纯函数但属于渲染适配，不追加为第10个通用核心"
+      },
+      {
+        "name": "cue-lens.mjs",
+        "scope": "可复用同站几何独立观察窗与资源归属",
+        "needs": "新实体根节点、真实几何、材质、局部部位和相机",
+        "not": "不是照片放大器，也不搬动原实体"
+      },
+      {
+        "name": "collision-world.mjs / collision-assets.mjs",
+        "scope": "可保留整机扫掠、地形净空、固体快照与恢复方法",
+        "needs": "新高度场网格约定、模型OBB、每实例固体、边距与顶限",
+        "not": "不是精确刚体或无需标定的万能防穿墙"
+      },
+      {
+        "name": "rov-system.mjs",
+        "scope": "同一潜器场景和教学共用模型定义、部件ID、锚点与动作",
+        "needs": "换题材应写对应设备工厂，并保持普通/教学材料隔离",
+        "not": "不能只把ROV改名当其他设备"
+      },
+      {
+        "name": "learning-world.mjs / learning-content.mjs",
+        "scope": "可保留分步教学接口、手动覆盖、自动回归与对照结构",
+        "needs": "新领域概念、原因链、原理几何和证据边界",
+        "not": "不是自动科学模型"
+      },
+      {
+        "name": "terrain.js / hydrothermal-plume.mjs / benthic-life.mjs",
+        "scope": "可参考程序几何、粒子生命周期、同源高度与材质组织方法",
+        "needs": "主题特有空间形态、外观、尺度和视觉语义",
+        "not": "不能替换任意JSON就生成新的生态与地形"
+      },
+      {
+        "name": "app.js / director-ui.js / pilot-ui.js / environment-guide.js",
+        "scope": "可参考互斥、焦点、控制权和状态反馈结构",
+        "needs": "新主题的业务任务、阅读顺序、控件和完成定义",
+        "not": "不是所有主题都适合保留相同页面布局"
+      }
+    ],
+    "pitfalls": [
+      {
+        "problem": "把模块通过当作作品完成",
+        "lesson": "纯函数证明数据和状态正确，不能证明观众看懂或画面有质感。要留下同尺寸截图和真实操作证据。",
+        "evidence": "notes/quality-comparison.md"
+      },
+      {
+        "problem": "只给“主体+效果好”而没有完成定义",
+        "lesson": "模型会铺开可运行功能，却可能遗漏角色、目标、操作反馈和结尾。先写观众、问题、过程和验收切片。",
+        "evidence": "notes/scene-intent.md"
+      },
+      {
+        "problem": "多个独立动画时钟各走各的",
+        "lesson": "旁白应由媒体时间驱动，模型按同一时刻查询提示。手动探索、暂停、seek要有明确覆盖和释放规则。",
+        "evidence": "notes/full-story-review.md"
+      },
+      {
+        "problem": "目标存在且射线无遮挡，就当用户能看见",
+        "lesson": "还要核对真实投影、viewOffset、UI占用、屏幕尺度和实体遮挡。远处对象不能只堆画外箭头。",
+        "evidence": "notes/verification-visible-cues.md"
+      },
+      {
+        "problem": "镜头景别与载具动作共用一个字段",
+        "lesson": "把motionFraming和相机framing分开，否则用户切返航景别会真的搬动潜器。",
+        "evidence": "notes/full-story-review.md"
+      },
+      {
+        "problem": "跨站碰撞修复导致旁白先于抵达",
+        "lesson": "导演用清楚的时间省略切到安全站位；需要连续展示的布放和返航另做完整轨迹。不要用越墙插值伪装到站。",
+        "evidence": "notes/verification-full-voyages.md"
+      },
+      {
+        "problem": "模型位置被当成真实水深",
+        "lesson": "压缩几何不能直接乘baseDepth伪造米数。站点设计深度、模型离底和出发/返航进度分开标。",
+        "evidence": "notes/full-story-review.md"
+      },
+      {
+        "problem": "“看清”夺走自由驾驶",
+        "lesson": "旁白不自动接管；主动对准只改镜头，潜器不搬家，随时可恢复并继续驾驶。",
+        "evidence": "notes/verification-visible-cues.md"
+      },
+      {
+        "problem": "中心点防撞漏掉机械臂和转向",
+        "lesson": "校验实际模型全动作包络，使用整机地形余量和扫掠，最后保护渲染相机。",
+        "evidence": "notes/verification-collision.md"
+      },
+      {
+        "problem": "旧验收、旧截图混为当前结果",
+        "lesson": "保存历史版本的镜头数、音轨数、片长和范围；当前22章结果单独陈列，最终小补丁按局部复验记载。",
+        "evidence": "notes/verification-full-voyages.md"
+      },
+      {
+        "problem": "新子模块被浏览器旧缓存遮住",
+        "lesson": "更新入口和子模块版本后，以实际加载版本、DOM、媒体与截图核对。不要只凭CPU结果否定浏览器看到的问题。",
+        "evidence": "notes/verification-full-voyages.md"
+      }
+    ],
+    "standards": [
+      {
+        "gate": "01 定义成功",
+        "requirements": [
+          "明确观众、核心问题、角色、空间、任务和结束状态",
+          "列出源参考的观察项与不复制范围",
+          "每个能力都有可见效果和可操作验收"
+        ],
+        "deliverable": "任务说明、能力矩阵、最短完整流程"
+      },
+      {
+        "gate": "02 固定研究证据",
+        "requirements": [
+          "区分固定源码SHA和可能更新的在线作品",
+          "记录观察到的实际效果、入口动作和来源",
+          "直接复用、方法借鉴、新增实现、第三方资产分别列出"
+        ],
+        "deliverable": "带路径/链接的来源表和效果对照"
+      },
+      {
+        "gate": "03 验收垂直切片",
+        "requirements": [
+          "做一个真实可交互场景和一个完整任务",
+          "讲解、对象、动作、反馈、结尾可以逐一对应",
+          "先把首屏主体和一个关键近景做清楚"
+        ],
+        "deliverable": "可运行切片、真实截图、阻塞问题清单"
+      },
+      {
+        "gate": "04 扩展内容",
+        "requirements": [
+          "纯状态核心与主题适配器分开",
+          "稳定ID贯穿实体、事件、旁白、目标和样本",
+          "时间/控制权/存储边界清楚，暂停和恢复可复现"
+        ],
+        "deliverable": "第二主题或第二数据集、复用合同与接入例"
+      },
+      {
+        "gate": "05 完整体验验收",
+        "requirements": [
+          "从出发到结束完整实播，每条独立记录",
+          "暂停、seek、跳章、重访、模式互斥和中断都要检查",
+          "真实用户视角、典型桌面、窄屏、画外/遮挡情况做实际画面检查",
+          "自由驾驶包含碰撞、整机转向、镜头、失焦与恢复"
+        ],
+        "deliverable": "逐章表、操作结果、局部修复前后截图和未覆盖范围"
+      },
+      {
+        "gate": "06 沉淀交接",
+        "requirements": [
+          "保留可复用模块合同与主题需改项",
+          "记录失败路径和修复原因，不只记最后功能",
+          "提供数据、脚本、素材、运行入口、验证命令和许可来源"
+        ],
+        "deliverable": "研究档案网页、模块指南、可复制模板"
+      }
+    ],
+    "promptTemplates": [
+      {
+        "id": "brief",
+        "title": "项目任务书：把“做个类似效果”变成可验收作品",
+        "use": "新项目启动时，先约束观众体验和完成定义。",
+        "prompt": "我要做一个关于【新主题】的完整可交互网页作品，目标观众是【第一次接触该主题的人】。请参考【源作品/本项目研究档案】的技术方法和视觉组织，不要复制页面换名字。\n先明确观众需要理解的3个问题、地点或对象、用户操作和结果，再确定表达类型。地图叙事围绕时间、地点、网络或路线与事件组织；动作流程围绕任务、步骤、条件和结果组织。不要强行把所有主题写成驾驶或采样过程。\n技术上要求真实【3D/地图/其他媒介】交互、自由观察、明确控制权和可复现链接。逐项列出直接复用、需拆分适配、方法借鉴和独立新增。\n先研究资料，确定可核验的首版范围，完成一个有输入、操作、反馈和结果的小切片。用真实浏览器检验可读性和行为，再扩展内容。用文件差异与第二实例的行为证明复用。"
+      },
+      {
+        "id": "research",
+        "title": "源码研究：追到实现证据，而不是只读README",
+        "use": "拿到参考库后，建立能力—机制—可迁移方法的对应关系。",
+        "prompt": "请研究【源库URL/本地路径】，固定研究版本，并查看实际效果。整理用户能力、触发操作、状态与数据流、关键文件、来源依据、可迁移方法与主题专用部分。\n重点追踪时间与事件、多视图状态、实体查询、坐标和图层、异步结果、URL恢复、镜头及内容结构。区分固定源码、在线版本与推断。\n验证复用时，先选择题材不同但表达类型一致的第二实例。例如地图叙事可用铁路网络演进继续验证；跨到动作流程时，需要单独说明新增能力，不能用通用时间轴或共用Three.js证明地图核心已经迁移。\n列出直接复用代码、候选提取模块、主题适配与新增实现，保留来源、许可、截图和未验证边界。"
+      },
+      {
+        "id": "vertical-slice",
+        "title": "垂直切片：先完成一小段真正完整的体验",
+        "use": "避免一次铺开许多页面和空模型。",
+        "prompt": "请先实现【新主题】的一个可验证小切片，先说明输入、用户操作、反馈与结果。必须是可交互的运行作品。\n地图切片应包含两个时期的变化、可选地点或网络对象、联动事件卡与来源；网络主题需明确节点和区段，不能把单条运动轨迹当作分支网络。动作流程切片另按步骤、动作与条件设计。\n只复用实际需要的模块，逐项写清输入输出、主题适配和新增规则。现有地形、标注与镜头若依赖旧控制器，应先拆分接口。保留自由观察，用真实浏览器验证同一状态驱动所有视图。\n先把有限范围的资料与一次完整操作做清楚，再扩展规模；用两个实例共同调用模块的证据检验复用。"
+      },
+      {
+        "id": "visual-iteration",
+        "title": "视觉与可理解性返工：拿实际画面对照",
+        "use": "效果差、看不懂、对象被挡或讲解脱节时。",
+        "prompt": "请打开当前作品的真实页面，并与【参考作品】的实际效果对照。先用同尺寸/明确不同尺寸的截图指出具体差距，不要用测试数量证明艺术质量。\n逐项检查：主场景占比、主体尺度、轮廓与材质层次、前后景关系、光照/水体或空气线索、标注与UI遮挡、镜头是否落在对应对象、第一次看的用户能否理解当前任务。\n讲到【对象A/B/C】时，要求高亮其真实位置或部件，并用必要动画解释原理。检查真实投影、UI留白、遮挡和屏幕大小；远处内容可用清楚标注的独立观察窗，但不要搬动原实体。旁白不自动夺取自由控制权。\n按影响优先级直接修改并复看：先主体和叙事，再材质细节。留下修改前/后同角度证据、实现原因和仍未达到的部分。"
+      },
+      {
+        "id": "acceptance",
+        "title": "完整验收：从开始到结束，而不是只验局部",
+        "use": "交付或大迭代前，检查状态域组合是否一致。",
+        "prompt": "请把【所有地图时段、故事章节或流程】的关键操作完整运行一遍，发现问题直接修好。地图、内容、选择与反馈必须对应，保留自由观察。\n地图项目检查年份边界、对象生效时间、分支与连接关系、图层、密集标注、对象选择、事件跳转、资料来源、分享刷新和镜头恢复。流程项目再按需要检查播放、seek、步骤、动作和结果；有驾驶时才加入整机碰撞与安全相机。\n区分纯数据与模块、几何检查、浏览器操作和人的可读性判断，明确桌面、窄屏和未覆盖情况。\n分别保存直接复用、修改适配和新增代码，检查旧实例与新实例是否都能通过共用模块回归。留下版本、截图、资料缺口与实际验收路径，完成后运行给我看。"
+      },
+      {
+        "id": "handoff",
+        "title": "复用与交接：让下一个主题真正用上沉淀",
+        "use": "项目阶段完成后，为后续主题保留可用资产。",
+        "prompt": "请把本次项目整理成一个可浏览的研究档案网页，包含源参考的能力/效果/证据、我们的探索阶段、失败与修复、当前作品入口、实现原则、可复用模块、主题适配器、素材/许可和验证记录。\n每个模块写清：输入、输出、生命周期、直接可用范围、换主题必须提供的内容、测试命令与真实接入例。不要把主题几何、机位尺度或业务语义一概叫通用核心。\n给出“下一项目如何下指令”的模板，并明确【新主题】应从哪些已有文件和合同开始。保留历史版本事实与当前状态的区别，把实际完成、局部复验、计划和推断分开。最终提供运行入口、可复制指令和研究文档索引，不能只给一份口头总结。"
+      }
+    ],
+    "evidence": {
+      "authoritativeCurrent": "notes/verification-full-voyages.md",
+      "browserStates": "notes/full-voyage-browser.json",
+      "geometryReport": "notes/full-voyage-geometry.json",
+      "fullPlayback": {
+        "missions": 2,
+        "chapters": 22,
+        "ventsSeconds": 311.2,
+        "canyonSeconds": 298.5,
+        "scope": "两片各两轮2倍速完整实播，修正后的完整轮为app66；app67四采水机位与app68重访文案按局部复验另记，不能说成第三轮完整播放。"
+      },
+      "geometry": {
+        "sampledFrames": 14664,
+        "mobileCuts": 66,
+        "framingOverrides": 180,
+        "terrainSightlineSamples": 95,
+        "unsafeFrames": 0,
+        "invisibleFrames": 0,
+        "scope": "CPU使用真实场景函数与几何，连续约24采样/秒。不是浏览器帧率或所有硬件/任意自由镜头的证明。"
+      },
+      "speech": {
+        "directorClips": 22,
+        "directorAudioSeconds": 586.584,
+        "environmentClips": 12,
+        "environmentAudioSeconds": 378.432,
+        "directorLessonCues": 43,
+        "directorAcousticAnchors": 122,
+        "environmentCues": 55,
+        "environmentAcousticAnchors": 122,
+        "scope": "导演与环境两套提示各有自己的计划与122停顿锚点，不能合并误称244条语音。时间由停顿检测、标点关联和区间插值估计，非逐词强制对齐。"
+      },
+      "privacy": "网页和公共资料不包含私钥。配音生成读取项目外私有配置，浏览器只加载本地MP3和公开清单。临时教学样本与用户个人报告分开，整理档案不得复制私人存储或配置。"
+    },
+    "limits": [
+      "深海主作品的海域、坐标、站名、航次、遥测和采样条件是教学设计，不是真实海洋调查或DEM；研究页历史地图展品另有现代公开DEM和历史资料来源。",
+      "程序几何、箭头、粒子、声呐波纹与食物链用于科普解释，不是科学数值模拟或真实设备输出。",
+      "两个数据集和非海洋夹具证明特定模块可迁移，不证明任意主题只换JSON就能完成。",
+      "当前没有真实海底数据库、实时遥控设备、多用户协作、完整物理水动力或视频导出。",
+      "自动检查证明契约或几何范围；画面质量、叙事理解和可操作性仍要由真实浏览器和用户体验检验。",
+      "390×844是CSS视口验证，不代表物理手机、所有浏览器/显卡或异常网络兼容性。",
+      "源库代码GPL-3.0；新增与复用工程代码GPL-3.0-only，Three.js MIT，岩面材质CC0。展示来源截图不等于将其当作场景素材。 研究页直接集成的历史GIS资料保留CHGIS V6／Hartwell原学术、非商业条款；完整来源及派生修改见地图集成清单。"
+    ],
+    "gallery": [
+      {
+        "id": "early",
+        "title": "早期可运行3D",
+        "path": "assets/rework/01-before-1280.jpg",
+        "stage": "历史基线",
+        "caption": "功能存在，但地貌像沙盘、比例重复、主体和阅读顺序不清。",
+        "evidence": "notes/visual-rework.md"
+      },
+      {
+        "id": "terrain",
+        "title": "地形与材质返工",
+        "path": "assets/rework/09-final-closeup.jpg",
+        "stage": "视觉迭代",
+        "caption": "调整岩面、烟囱、潜器比例与视线；近景能区分主体与底座。",
+        "evidence": "notes/visual-rework.md"
+      },
+      {
+        "id": "opening",
+        "title": "母船、潜器与任务开场",
+        "path": "assets/full-voyages/final-running.jpg",
+        "stage": "当前运行",
+        "caption": "先说明角色、调查问题和设备上下关系，再进入海底。",
+        "evidence": "notes/verification-full-voyages.md"
+      },
+      {
+        "id": "equipment",
+        "title": "声呐和部件对应讲解",
+        "path": "assets/full-voyages/equipment-seek-aligned.jpg",
+        "stage": "当前验收",
+        "caption": "seek到声呐短语后，文字和部件一起恢复对应状态。",
+        "evidence": "notes/verification-full-voyages.md"
+      },
+      {
+        "id": "arm",
+        "title": "机械臂独立演示",
+        "path": "assets/equipment/04-arm.jpg",
+        "stage": "设备迭代",
+        "caption": "设备动作可单独运行，影片和语音保持暂停。",
+        "evidence": "notes/verification-equipment.md"
+      },
+      {
+        "id": "fluid",
+        "title": "热液地下剖面",
+        "path": "assets/learning/01-fluid.jpg",
+        "stage": "原理迭代",
+        "caption": "把下渗、加热、反应和上涌放在可分步观察的模型中。",
+        "evidence": "notes/verification-learning.md"
+      },
+      {
+        "id": "food",
+        "title": "微生物与管虫食物关系",
+        "path": "assets/learning/02-food.jpg",
+        "stage": "原理迭代",
+        "caption": "解释化学物质、微生物有机物和共生动物的关系；不是直接吃黑烟。",
+        "evidence": "notes/verification-learning.md"
+      },
+      {
+        "id": "canyon",
+        "title": "峡谷岩壁与深槽",
+        "path": "assets/full-voyages/final-canyon-03.jpg",
+        "stage": "当前完整实播",
+        "caption": "用潜器作尺度参照，先认清陡壁、台面与谷底。",
+        "evidence": "notes/verification-full-voyages.md"
+      },
+      {
+        "id": "coral",
+        "title": "冷水珊瑚所在的岩面",
+        "path": "assets/full-voyages/final-canyon-05.jpg",
+        "stage": "当前完整实播",
+        "caption": "形态和它附着的表面一起观察，避免只记物体名称。",
+        "evidence": "notes/verification-full-voyages.md"
+      },
+      {
+        "id": "sample",
+        "title": "B站采水近景",
+        "path": "assets/full-voyages/closeup-canyon-B-end.jpg",
+        "stage": "最终机位局部复验",
+        "caption": "修正A站前景遮挡与采水架过小；B站设计水深与模型单位分开。",
+        "evidence": "notes/verification-full-voyages.md"
+      },
+      {
+        "id": "wall",
+        "title": "画面里的真实岩壁高亮",
+        "path": "assets/visible-cues/01-wall.jpg",
+        "stage": "可见性迭代",
+        "caption": "真实投影与UI留白一起决定金圈和引导标记的位置。",
+        "evidence": "notes/verification-visible-cues.md"
+      },
+      {
+        "id": "current",
+        "title": "缩短后的水流示意",
+        "path": "assets/visible-cues/02-current.jpg",
+        "stage": "可见性迭代",
+        "caption": "短流线和小箭头进入可见空区，避免巨大白管占满画面。",
+        "evidence": "notes/verification-visible-cues.md"
+      },
+      {
+        "id": "biology",
+        "title": "远处生物的独立3D观察窗",
+        "path": "assets/visible-cues/04-biology.jpg",
+        "stage": "可见性迭代",
+        "caption": "复制同站真实几何作近景，原生物和潜器仍在原位。",
+        "evidence": "notes/verification-visible-cues.md"
+      },
+      {
+        "id": "free-focus",
+        "title": "自由镜头主动看清岩壁",
+        "path": "assets/full-voyages/free-camera-focus.jpg",
+        "stage": "完整验收操作",
+        "caption": "镜头在观察岩壁，潜器位置未变，并可返回潜器继续驾驶。",
+        "evidence": "notes/verification-full-voyages.md"
+      },
+      {
+        "id": "mobile-principle",
+        "title": "窄屏热液原理",
+        "path": "assets/full-voyages/mobile-hydrothermal.jpg",
+        "stage": "390×844 CSS视口",
+        "caption": "当前步骤解释和控件可读，剖面仍在场景中；不是物理手机测试。",
+        "evidence": "notes/verification-full-voyages.md"
+      },
+      {
+        "id": "return",
+        "title": "实际到达母船回收位",
+        "path": "assets/full-voyages/final-canyon-11-complete.jpg",
+        "stage": "当前完整实播完成",
+        "caption": "潜器确实上浮回船，演示2/2，个人报告未自动写入。",
+        "evidence": "notes/verification-full-voyages.md"
+      }
+    ]
+  },
+  "direction": {
+    "schema": "research-direction/v1",
+    "updatedOn": "2026-10-25",
+    "conclusion": "地图讲故事，与动作讲流程，是两类不同的作品。深海主题跨得太远，当前不足以证明源库最核心的地图叙事能力已经迁移成功。",
+    "explanation": "现有地图集成证明了完整作品能够被接入；深海实验形成了通用交互基础与流程演示模块。两者各有成果，但不能据此宣称已经提炼出通用地图引擎，或换主题即可得到同等效果。",
+    "comparison": [
+      {
+        "dimension": "用户要理解什么",
+        "map": "何时、何地、谁经历了什么；空间关系如何变化",
+        "process": "做什么、怎么做、为什么这样做；动作产生什么结果"
+      },
+      {
+        "dimension": "内容如何组织",
+        "map": "地点、年代、事件、路线与图层",
+        "process": "任务、步骤、动作、条件与结果"
+      },
+      {
+        "dimension": "主要技术难点",
+        "map": "坐标投影、时间切片、网络或路线、标注与地图阅读",
+        "process": "模型、动作动画、碰撞、流程状态与操作反馈"
+      }
+    ],
+    "boundaries": [
+      {
+        "title": "地图集成",
+        "result": "源库历史引擎、资料与016三维扩展已作为独立展品接入。",
+        "limit": "主要操作已有验收，源库全部功能与所有异常路径尚未逐项覆盖。"
+      },
+      {
+        "title": "深海实验",
+        "result": "已形成独立的驾驶、采样、设备讲解与流程演示能力。",
+        "limit": "与地图叙事不同，不能承担源库核心能力迁移成功的证明。"
+      },
+      {
+        "title": "模块沉淀",
+        "result": "九个纯核心中，时间核心来自015自行提炼，其余八个在017新写。",
+        "limit": "它们主要是通用基础；不是从源库直接提取的九个地图模块。"
+      }
+    ],
+    "project": {
+      "id": "china-railway-evolution",
+      "title": "中国铁路网络演进",
+      "status": "后续扩展目标 · 暂不启动",
+      "goal": "在地图叙事范围内完成第二个独立实例，验证时间、地理、事件与内容联动能否真实复用，并记录保留、适配和新写的具体代码。",
+      "scope": "当前阶段已归档，铁路目标与规划保留供后续扩展。以后启动时，先选择一组能核验开通时间与空间走向的线路；年代范围、线路清单和许可待资料研究后确定，不预设已覆盖全国铁路。",
+      "questions": [
+        "某个年份，哪些线路已经开通，连接了哪些城市？",
+        "前后两个时期，网络新增了什么，连通关系怎样改变？",
+        "选择一条线路或一个车站，能否看到对应事件、地图位置和来源？"
+      ],
+      "networkRule": "铁路是带分支的节点—边网络。线路、区段和车站分别建模；首版按核实的运营生效时间显示，不把一条运动轨迹当作完整铁路网络，也不从几何相交自动推断可以换乘。规划、在建状态待数据足够后另行扩展。",
+      "reuse": [
+        {
+          "level": "已有基础 · 按需直接复用",
+          "items": "实体查询、异步乱序保护、相机状态协议；时间状态核心按年份与图层契约复核后接入。",
+          "proof": "在新主题中实际导入原文件，保留来源、版本与差异记录，并用铁路输入验证行为。"
+        },
+        {
+          "level": "候选能力 · 需要拆分适配",
+          "items": "地理坐标转换、地形展示、线路与站点标记、图层管理、地图与内容卡联动。",
+          "proof": "016三维仍依赖历史控制器和固定投影，须先定义铁路数据适配接口，不能直接称为通用引擎。"
+        },
+        {
+          "level": "主题能力 · 必须新增",
+          "items": "铁路节点—边模型、线路分段与生效时间、网络变化比较、车站与线路资料、铁路专题叙事。",
+          "proof": "用可追溯的资料说明变化；几何、年代与连通性分别核对，未知值明确标注。"
+        }
+      ],
+      "data": [
+        {
+          "entity": "车站 / 城市",
+          "fields": "稳定ID、名称、坐标、名称或位置变更、资料来源",
+          "rule": "明确车站与城市的区别；不把现代车站坐标直接当作全部历史时期位置。"
+        },
+        {
+          "entity": "线路 / 区段",
+          "fields": "线路ID、端点ID、空间走向、运营生效时间、停用或改线记录、来源与精度",
+          "rule": "端点与区段关系明确；未知走向不可用虚构精确线形替代。"
+        },
+        {
+          "entity": "事件 / 证据",
+          "fields": "事件ID、日期或年份、关联对象、叙事说明、来源链接、核对状态",
+          "rule": "区分事实、示意表达与待核实项，日期精度与原资料一致。"
+        }
+      ],
+      "phases": [
+        {
+          "title": "01 研究与定界",
+          "detail": "核对资料、年代与许可，选定首版线路，建立站点、区段、事件和来源清单。",
+          "exit": "先确认可用数据和缺口，再确定首版范围。"
+        },
+        {
+          "title": "02 完成地图切片",
+          "detail": "用一组真实资料做年份切换、线路显示、站点选择、事件卡和来源跳转。",
+          "exit": "用户能看懂两个时期网络变化，画面与数据一致。"
+        },
+        {
+          "title": "03 证明实际复用",
+          "detail": "列出未改动的核心、修改过的适配器和新写的铁路规则，检查历史与铁路两种输入。",
+          "exit": "复用有文件和行为证据，主题切换不依赖复制历史单体再改名字。"
+        },
+        {
+          "title": "04 扩展与验收",
+          "detail": "再扩展线路、网络比较与可选三维地形，检查阅读层次、自由镜头和完整故事。",
+          "exit": "桌面与窄屏通过关键流程；资料、边界和复用清单可在网页追查。"
+        }
+      ],
+      "acceptance": [
+        "交付独立的铁路地图作品，并实际使用可核验的铁路资料。",
+        "年份、已开通区段、站点、事件卡保持一致；时间边界有明确规则。",
+        "分支网络与线路几何可分辨；不把示意连线包装成精密测绘。",
+        "选择对象、自由镜头、暂停和链接恢复可以配合使用，来源随对象可查。",
+        "分别记录直接复用、修改适配与新增实现；不能仅凭界面相似或共用Three.js判定迁移成功。"
+      ],
+      "brief": {
+        "theme": "中国铁路网络演进",
+        "goal": "让第一次接触的用户看懂：不同时期哪些线路已开通、连接哪些城市，网络如何变化。",
+        "objects": "车站与城市、线路与区段、运营生效时间、开通事件及来源；先研究可核验的一组线路，再定首版年代范围。",
+        "interaction": "按年份浏览、选择车站和线路、前后事件切换、开关图层、比较时期、自由控制地图镜头、查看资料来源。",
+        "visual": "地图叙事优先；先把二维位置、网络分支与阅读层次做清楚，再按需要接入可旋转的三维地形。",
+        "acceptance": "交付可运行的独立铁路地图；时间、区段、标注和内容同步；资料可追溯；验证桌面与窄屏、暂停、跳转和恢复；留下直接复用、适配与新增代码清单。"
+      },
+      "instruction": "下一项目目标：中国铁路网络演进。请先阅读研究档案“研究修正与下一项目”和 next-project-railway.md，围绕地图叙事验证真实复用。先研究可核验的铁路资料，确定首版年代、线路和许可，不编造全国数据或精确线形。审查现有模块，分别列出直接复用、需要提取适配、必须新增的部分；不要复制整套历史地图换名字。先完成一组线路的年份切换、站点/线路选择、事件卡与来源联动，再检查分支网络、时间边界、自由镜头、暂停和链接恢复。用文件差异与真实操作证明复用，完成后再扩展。"
+    },
+    "archive": {
+      "date": "2026-10-25",
+      "status": "本阶段成果已归档",
+      "summary": "当前成果已够用，保留现有运行入口、研究结论、模块和验收记录。中国铁路网络演进作为后续扩展目标，暂不启动。"
+    }
+  }
+}

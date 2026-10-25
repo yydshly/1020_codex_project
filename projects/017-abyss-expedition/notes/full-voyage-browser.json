@@ -1,0 +1,1460 @@
+[
+  {
+    "label": "vents-01-launch",
+    "audio": {
+      "duration": 24.516,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 0
+    },
+    "chapter": "0",
+    "completed": false,
+    "depth": "0 m",
+    "depthHidden": true,
+    "environment": "水面 · 科考母船",
+    "film": "vents-establish",
+    "labels": [
+      "ROV · 相机、灯光与采样臂",
+      "水面科考母船 · 布放与回收",
+      "脐带缆 · 供电与通信"
+    ],
+    "max": 311.20000000000005,
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "0",
+    "step": null,
+    "stepIndex": null,
+    "time": 0,
+    "title": "出发前，先带上三个问题"
+  },
+  {
+    "label": "vents-02-equipment-live",
+    "audio": {
+      "duration": 49.536,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 10.3479
+    },
+    "chapter": "1",
+    "completed": false,
+    "depth": "2,484 m",
+    "depthHidden": true,
+    "environment": "独立原理模型",
+    "film": "vents-establish",
+    "labels": [
+      "导航与姿态传感头（示意）",
+      "前向声呐 · 声波范围示意"
+    ],
+    "max": 311.20000000000005,
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "0",
+    "step": "2 声呐与传感器：判断位置",
+    "stepIndex": "1",
+    "time": 35.9,
+    "title": "潜器带什么，船上做什么"
+  },
+  {
+    "label": "vents-03-seabed-live",
+    "audio": {
+      "duration": 24.336,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 10.778481
+    },
+    "chapter": "5",
+    "completed": false,
+    "depth": "2,486 m",
+    "depthHidden": true,
+    "environment": "独立原理模型",
+    "film": "vents-life",
+    "labels": [
+      "热液携带的化学物质 · 符号示意",
+      "化能合成微生物 · 放大示意"
+    ],
+    "max": 311.20000000000005,
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "0",
+    "step": "2 微生物制造有机物",
+    "stepIndex": "1",
+    "time": 160.9,
+    "title": "食物怎样从细菌到管虫"
+  },
+  {
+    "label": "vents-live-now",
+    "audio": {
+      "duration": 26.064,
+      "paused": true,
+      "rate": 2,
+      "ready": 4,
+      "time": 26.064
+    },
+    "chapter": "10",
+    "completed": true,
+    "depth": "0 m",
+    "depthHidden": false,
+    "environment": "水面 · 母船回收位",
+    "film": "vents-summary",
+    "labels": [
+      "ROV · 相机、灯光与采样臂",
+      "水面科考母船 · 布放与回收",
+      "脐带缆 · 供电与通信"
+    ],
+    "max": 311.20000000000005,
+    "playing": "false",
+    "records": "演示水样 2 / 2",
+    "report": "0",
+    "step": null,
+    "stepIndex": null,
+    "time": 311.2,
+    "title": "带着记录返航"
+  },
+  {
+    "label": "canyon-01-launch",
+    "audio": {
+      "duration": 25.38,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 0.553674
+    },
+    "chapter": "0",
+    "completed": false,
+    "depth": "0 m",
+    "depthHidden": true,
+    "environment": "水面 · 科考母船",
+    "film": "canyon-establish",
+    "labels": [
+      "ROV · 相机、灯光与采样臂",
+      "水面科考母船 · 布放与回收",
+      "脐带缆 · 供电与通信"
+    ],
+    "max": 298.5,
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "0",
+    "step": null,
+    "stepIndex": null,
+    "time": 0.5,
+    "title": "去峡谷，要弄懂哪三件事"
+  },
+  {
+    "label": "canyon-live-equipment",
+    "audio": {
+      "duration": 50.04,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 2.472837
+    },
+    "chapter": "1",
+    "completed": false,
+    "depth": "2,653 m",
+    "depthHidden": true,
+    "environment": "独立原理模型",
+    "film": "canyon-establish",
+    "labels": [
+      "绞车管理脐带缆 · 布放与回收",
+      "船上人员：看画面、下达操作"
+    ],
+    "max": 298.5,
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "0",
+    "step": "8 母船与绞车：控制和回收",
+    "stepIndex": "7",
+    "time": 28.9,
+    "title": "潜器带什么，船上做什么"
+  },
+  {
+    "label": "canyon-live-wall",
+    "audio": {
+      "duration": 50.04,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 32.801005
+    },
+    "chapter": "1",
+    "completed": false,
+    "depth": "2,653 m",
+    "depthHidden": true,
+    "environment": "独立原理模型",
+    "film": "canyon-establish",
+    "labels": [
+      "样本与站位记录对应",
+      "随身采水瓶 · 封盖示意"
+    ],
+    "max": 298.5,
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "0",
+    "step": "7 采水瓶：封存水样",
+    "stepIndex": "6",
+    "time": 59.2,
+    "title": "潜器带什么，船上做什么"
+  },
+  {
+    "label": "canyon-live-habitat",
+    "audio": {
+      "duration": 50.04,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 49.33497
+    },
+    "chapter": "1",
+    "completed": false,
+    "depth": "2,653 m",
+    "depthHidden": true,
+    "environment": "独立原理模型",
+    "film": "canyon-establish",
+    "labels": [
+      "绞车管理脐带缆 · 布放与回收",
+      "船上人员：看画面、下达操作"
+    ],
+    "max": 298.5,
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "0",
+    "step": "8 母船与绞车：控制和回收",
+    "stepIndex": "7",
+    "time": 75.7,
+    "title": "潜器带什么，船上做什么"
+  },
+  {
+    "label": "canyon-03-wall",
+    "audio": {
+      "duration": 20.080781,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 10.368904
+    },
+    "chapter": "2",
+    "completed": false,
+    "depth": "2,652 m",
+    "depthHidden": false,
+    "environment": "深海海床 · 灯光观察",
+    "film": "canyon-wall",
+    "labels": [
+      "ROV · 相机、灯光与采样臂",
+      "峡谷岩壁 · 层状台阶",
+      "绞车管理脐带缆 · 布放与回收",
+      "船上人员：看画面、下达操作"
+    ],
+    "max": 298.5,
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "0",
+    "step": "8 母船与绞车：控制和回收",
+    "stepIndex": null,
+    "time": 87.9,
+    "title": "先看岩壁和谷底在哪里"
+  },
+  {
+    "label": "canyon-04-habitat",
+    "audio": {
+      "duration": 25.344,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 17.780822
+    },
+    "chapter": "3",
+    "completed": false,
+    "depth": "2,652 m",
+    "depthHidden": true,
+    "environment": "独立原理模型",
+    "film": "canyon-wall",
+    "labels": [
+      "岩面与附着群落",
+      "沉积海床",
+      "水流输送食物颗粒 · 示意",
+      "记录位置 · 比较环境 · 继续检验"
+    ],
+    "max": 298.5,
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "0",
+    "step": "3 形成可检验的问题",
+    "stepIndex": "2",
+    "time": 116.5,
+    "title": "生物的住处包括什么"
+  },
+  {
+    "label": "canyon-05-coral",
+    "audio": {
+      "duration": null,
+      "paused": false,
+      "rate": 1,
+      "ready": 0,
+      "time": 0
+    },
+    "chapter": "4",
+    "completed": false,
+    "depth": "2,620 m",
+    "depthHidden": false,
+    "environment": "深海海床 · 灯光观察",
+    "film": "canyon-coral",
+    "labels": [
+      "ROV · 相机、灯光与采样臂",
+      "冷水珊瑚 · 枝状群落",
+      "岩面与附着群落",
+      "沉积海床",
+      "水流输送食物颗粒 · 示意",
+      "记录位置 · 比较环境 · 继续检验"
+    ],
+    "max": 298.5,
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "0",
+    "step": "3 形成可检验的问题",
+    "stepIndex": null,
+    "time": 125.1,
+    "title": "珊瑚怎样在黑暗里取食"
+  },
+  {
+    "label": "canyon-05-coral-mid",
+    "audio": {
+      "duration": 19.802156,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 16.775087
+    },
+    "chapter": "4",
+    "completed": false,
+    "depth": "2,620 m",
+    "depthHidden": false,
+    "environment": "深海海床 · 灯光观察",
+    "film": "canyon-coral",
+    "labels": [
+      "ROV · 相机、灯光与采样臂",
+      "冷水珊瑚 · 枝状群落",
+      "岩面与附着群落",
+      "沉积海床",
+      "水流输送食物颗粒 · 示意",
+      "记录位置 · 比较环境 · 继续检验"
+    ],
+    "max": 298.5,
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "0",
+    "step": "3 形成可检验的问题",
+    "stepIndex": null,
+    "time": 141.9,
+    "title": "珊瑚怎样在黑暗里取食"
+  },
+  {
+    "label": "canyon-live-sampling",
+    "audio": {
+      "duration": 24.192,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 12.568785
+    },
+    "chapter": "5",
+    "completed": false,
+    "depth": "2,667 m",
+    "depthHidden": false,
+    "environment": "深海海床 · 灯光观察",
+    "film": "canyon-sediment",
+    "labels": [],
+    "max": 298.5,
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "0",
+    "step": null,
+    "stepIndex": null,
+    "time": 158.6,
+    "title": "先取靠近台面的A瓶水"
+  },
+  {
+    "label": "canyon-live-B-or-compare",
+    "audio": {
+      "duration": 24.984,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 9.52743
+    },
+    "chapter": "6",
+    "completed": false,
+    "depth": "2,192 m",
+    "depthHidden": false,
+    "environment": "深海海床 · 灯光观察",
+    "film": "canyon-channel",
+    "labels": [
+      "水体采样架 · 记录环境"
+    ],
+    "max": 298.5,
+    "playing": "true",
+    "records": "演示水样 1 / 2",
+    "report": "0",
+    "step": null,
+    "stepIndex": null,
+    "time": 180.7,
+    "title": "再取深谷侧的B瓶水"
+  },
+  {
+    "label": "canyon-07-B-end",
+    "audio": {
+      "duration": 25.488,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 8.823815
+    },
+    "chapter": "7",
+    "completed": false,
+    "depth": "2,672 m",
+    "depthHidden": true,
+    "environment": "独立原理模型",
+    "film": "canyon-channel",
+    "labels": [
+      "水样 B · 教学示意",
+      "水样 A · 教学示意",
+      "同类材料 · 相同方法"
+    ],
+    "max": 298.5,
+    "playing": "true",
+    "records": "演示水样 2 / 2",
+    "report": "0",
+    "step": "2 用相同方法分析",
+    "stepIndex": "1",
+    "time": 206,
+    "title": "比较之前先核对条件"
+  },
+  {
+    "label": "canyon-09-sponge",
+    "audio": {
+      "duration": 19.662813,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 18.105951
+    },
+    "chapter": "8",
+    "completed": false,
+    "depth": "2,616 m",
+    "depthHidden": false,
+    "environment": "深海海床 · 灯光观察",
+    "film": "canyon-sponges",
+    "labels": [
+      "杯状海绵 · 峡谷生态",
+      "水样 B · 教学示意",
+      "水样 A · 教学示意",
+      "同类材料 · 相同方法",
+      "颗粒为概念符号，不表示实测成分或多少"
+    ],
+    "max": 298.5,
+    "playing": "true",
+    "records": "演示水样 2 / 2",
+    "report": "0",
+    "step": "3 分清观察与结论",
+    "stepIndex": null,
+    "time": 241.8,
+    "title": "再看另一种住在海床的生命"
+  },
+  {
+    "label": "canyon-10-summary",
+    "audio": {
+      "duration": 25.596,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 12.423359
+    },
+    "chapter": "10",
+    "completed": false,
+    "depth": "397 m",
+    "depthHidden": false,
+    "environment": "水下 · 上浮返航",
+    "film": "canyon-summary",
+    "labels": [
+      "ROV · 相机、灯光与采样臂"
+    ],
+    "max": 298.5,
+    "playing": "true",
+    "records": "演示水样 2 / 2",
+    "report": "0",
+    "step": null,
+    "stepIndex": null,
+    "time": 284.3,
+    "title": "沿标记回船，留下下一问"
+  },
+  {
+    "label": "canyon-11-recovered",
+    "audio": {
+      "duration": 25.596,
+      "paused": true,
+      "rate": 2,
+      "ready": 4,
+      "time": 25.573475
+    },
+    "chapter": "10",
+    "completed": true,
+    "depth": "0 m",
+    "depthHidden": false,
+    "environment": "水面 · 母船回收位",
+    "film": "canyon-summary",
+    "labels": [
+      "ROV · 相机、灯光与采样臂",
+      "水面科考母船 · 布放与回收",
+      "脐带缆 · 供电与通信"
+    ],
+    "max": 298.5,
+    "playing": "false",
+    "records": "演示水样 2 / 2",
+    "report": "0",
+    "step": null,
+    "stepIndex": null,
+    "time": 298.5,
+    "title": "沿标记回船，留下下一问"
+  },
+  {
+    "label": "final-vents-01",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 49.536,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 5.651934
+    },
+    "chapter": "1",
+    "completed": false,
+    "depth": "2,560 m",
+    "depthHidden": true,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "独立原理模型",
+    "film": "vents-equipment",
+    "labels": [
+      "相机视野与灯光 · 示意"
+    ],
+    "max": 311.20000000000005,
+    "phrase": "灯光和相机让操作员看清海床",
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "航次报告 0",
+    "step": "1 灯光与相机：看清现场",
+    "time": 31.3,
+    "title": "潜器带什么，船上做什么"
+  },
+  {
+    "label": "final-vents-02",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 49.536,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 6.436319
+    },
+    "chapter": "1",
+    "completed": false,
+    "depth": "2,560 m",
+    "depthHidden": true,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "独立原理模型",
+    "film": "vents-equipment",
+    "labels": [
+      "相机视野与灯光 · 示意"
+    ],
+    "max": 311.20000000000005,
+    "phrase": "灯光和相机让操作员看清海床",
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "航次报告 0",
+    "step": "1 灯光与相机：看清现场",
+    "time": 32,
+    "title": "潜器带什么，船上做什么"
+  },
+  {
+    "label": "final-vents-03",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 20.180094,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 0.05022
+    },
+    "chapter": "2",
+    "completed": false,
+    "depth": "2,585 m",
+    "depthHidden": false,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "玄武岩台地 · 教学站点",
+    "film": "vents-approach",
+    "labels": [
+      "ROV · 相机、灯光与采样臂",
+      "玄武岩裂隙 · 火山地形"
+    ],
+    "max": 311.20000000000005,
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "航次报告 0",
+    "step": null,
+    "time": 76.2,
+    "title": "下到海床，先找裂缝"
+  },
+  {
+    "label": "final-vents-04",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 24.012,
+      "paused": false,
+      "rate": 1,
+      "ready": 1,
+      "time": 0
+    },
+    "chapter": "3",
+    "completed": false,
+    "depth": "2,585 m",
+    "depthHidden": true,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "独立原理模型",
+    "film": "vents-fluid",
+    "labels": [
+      "冷海水沿裂缝下渗"
+    ],
+    "max": 311.20000000000005,
+    "phrase": "热液就是受地下热源加热、又与岩石发生反应的水。",
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "航次报告 0",
+    "step": "1 海水下渗",
+    "time": 97.5,
+    "title": "地下的水怎样变成热液"
+  },
+  {
+    "label": "final-vents-05",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 26.46,
+      "paused": false,
+      "rate": 1,
+      "ready": 4,
+      "time": 0
+    },
+    "chapter": "4",
+    "completed": false,
+    "depth": "2,610 m",
+    "depthHidden": true,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "独立原理模型",
+    "film": "vents-discover",
+    "labels": [
+      "喷口（出口）",
+      "热液（水）"
+    ],
+    "max": 311.20000000000005,
+    "phrase": "出口叫热液喷口。",
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "航次报告 0",
+    "step": "1 热液从喷口流出",
+    "time": 122.6,
+    "title": "黑烟和烟囱是怎样形成的"
+  },
+  {
+    "label": "final-vents-06",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 24.336,
+      "paused": false,
+      "rate": 1,
+      "ready": 4,
+      "time": 0.017511
+    },
+    "chapter": "5",
+    "completed": false,
+    "depth": "2,600 m",
+    "depthHidden": true,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "独立原理模型",
+    "film": "vents-life",
+    "labels": [
+      "热液携带的化学物质 · 符号示意"
+    ],
+    "max": 311.20000000000005,
+    "phrase": "热液中的某些物质与海水成分反应",
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "航次报告 0",
+    "step": "1 热液携带化学物质",
+    "time": 150.1,
+    "title": "食物怎样从细菌到管虫"
+  },
+  {
+    "label": "final-vents-07",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 25.956,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 0.04129
+    },
+    "chapter": "6",
+    "completed": false,
+    "depth": "2,575 m",
+    "depthHidden": false,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "羽流观察窗 · 教学站点",
+    "film": "vents-investigate",
+    "labels": [
+      "ROV · 相机、灯光与采样臂",
+      "水体采样架 · 记录环境"
+    ],
+    "max": 311.20000000000005,
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "航次报告 0",
+    "time": 175.5,
+    "title": "先取喷口外缘的A瓶水"
+  },
+  {
+    "label": "final-vents-08",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 25.452,
+      "paused": false,
+      "rate": 1,
+      "ready": 4,
+      "time": 0.022143
+    },
+    "chapter": "7",
+    "completed": false,
+    "depth": "2,620 m",
+    "depthHidden": false,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "沉积边缘 · 教学站点",
+    "film": "vents-background",
+    "labels": [
+      "ROV · 相机、灯光与采样臂",
+      "水体采样架 · 记录环境"
+    ],
+    "max": 311.20000000000005,
+    "playing": "true",
+    "records": "演示水样 1 / 2",
+    "report": "航次报告 0",
+    "time": 202.5,
+    "title": "再取远处的B瓶水"
+  },
+  {
+    "label": "final-vents-09",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 26.244,
+      "paused": false,
+      "rate": 1,
+      "ready": 4,
+      "time": 0
+    },
+    "chapter": "8",
+    "completed": false,
+    "depth": "2,620 m",
+    "depthHidden": true,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "独立原理模型",
+    "film": "vents-compare",
+    "labels": [
+      "水样 B · 教学示意",
+      "水样 A · 教学示意"
+    ],
+    "max": 311.20000000000005,
+    "phrase": "把A、B两瓶并排",
+    "playing": "true",
+    "records": "演示水样 2 / 2",
+    "report": "航次报告 0",
+    "step": "1 先检查两份材料",
+    "time": 229,
+    "title": "两瓶水要怎样比较"
+  },
+  {
+    "label": "final-vents-10",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 26.712,
+      "paused": false,
+      "rate": 1,
+      "ready": 4,
+      "time": 0
+    },
+    "chapter": "9",
+    "completed": false,
+    "depth": "2,550 m",
+    "depthHidden": false,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "回收信标 · 教学站点",
+    "film": "vents-summary",
+    "labels": [
+      "ROV · 相机、灯光与采样臂",
+      "回收信标 · 返航定位"
+    ],
+    "max": 311.20000000000005,
+    "phrase": "返航前把三类内容分开",
+    "playing": "true",
+    "records": "演示水样 2 / 2",
+    "report": "航次报告 0",
+    "time": 256.3,
+    "title": "哪些已知，哪些还没证明"
+  },
+  {
+    "label": "final-vents-11-start",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 26.064,
+      "paused": false,
+      "rate": 1,
+      "ready": 1,
+      "time": 0
+    },
+    "chapter": "10",
+    "completed": false,
+    "depth": "0%",
+    "depthHidden": false,
+    "depthLabel": "返航进度 · 距离与时间压缩",
+    "environment": "海床 · 沿标记返航",
+    "film": "vents-depart",
+    "labels": [
+      "ROV · 相机、灯光与采样臂",
+      "回收信标 · 返航定位"
+    ],
+    "max": 311.20000000000005,
+    "playing": "true",
+    "records": "演示水样 2 / 2",
+    "report": "航次报告 0",
+    "step": null,
+    "time": 284.1,
+    "title": "带着记录返航"
+  },
+  {
+    "label": "final-vents-11-complete",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 26.064,
+      "paused": true,
+      "rate": 2,
+      "ready": 4,
+      "time": 26.064
+    },
+    "chapter": "10",
+    "completed": true,
+    "depth": "100%",
+    "depthHidden": false,
+    "depthLabel": "返航进度 · 距离与时间压缩",
+    "environment": "水面 · 母船回收位",
+    "film": "vents-depart",
+    "labels": [
+      "ROV · 相机、灯光与采样臂",
+      "水面科考母船 · 布放与回收",
+      "脐带缆 · 供电与通信"
+    ],
+    "max": 311.20000000000005,
+    "playing": "false",
+    "records": "演示水样 2 / 2",
+    "report": "航次报告 0",
+    "step": null,
+    "time": 311.2,
+    "title": "带着记录返航"
+  },
+  {
+    "label": "final-canyon-01",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 25.38,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 0.447132
+    },
+    "chapter": "0",
+    "completed": false,
+    "depth": "0%",
+    "depthHidden": true,
+    "depthLabel": "下潜进度 · 距离与时间压缩",
+    "environment": "水面 · 科考母船",
+    "film": "canyon-establish",
+    "labels": [
+      "ROV · 相机、灯光与采样臂",
+      "水面科考母船 · 布放与回收",
+      "脐带缆 · 供电与通信"
+    ],
+    "max": 298.5,
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "航次报告 0",
+    "time": 0.4,
+    "title": "去峡谷，要弄懂哪三件事"
+  },
+  {
+    "label": "final-canyon-02",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 50.04,
+      "paused": false,
+      "rate": 1,
+      "ready": 4,
+      "time": 0.001741
+    },
+    "chapter": "1",
+    "completed": false,
+    "depth": "2,670 m",
+    "depthHidden": true,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "独立原理模型",
+    "film": "canyon-equipment",
+    "labels": [
+      "绞车管理脐带缆 · 布放与回收",
+      "船上人员：看画面、下达操作"
+    ],
+    "max": 298.5,
+    "phrase": "人留在母船上，黄色遥控无人潜器不载人。",
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "航次报告 0",
+    "step": "8 母船与绞车：控制和回收",
+    "time": 26.4,
+    "title": "潜器带什么，船上做什么"
+  },
+  {
+    "label": "final-canyon-03",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 20.080781,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 0.059724
+    },
+    "chapter": "2",
+    "completed": false,
+    "depth": "2,710 m",
+    "depthHidden": false,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "层叠岩壁 · 教学站点",
+    "film": "canyon-wall",
+    "labels": [
+      "ROV · 相机、灯光与采样臂",
+      "峡谷岩壁 · 层状台阶"
+    ],
+    "max": 298.5,
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "航次报告 0",
+    "step": null,
+    "time": 77.6,
+    "title": "先看岩壁和谷底在哪里"
+  },
+  {
+    "label": "final-canyon-04",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 25.344,
+      "paused": false,
+      "rate": 1,
+      "ready": 1,
+      "time": 0
+    },
+    "chapter": "3",
+    "completed": false,
+    "depth": "2,710 m",
+    "depthHidden": true,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "独立原理模型",
+    "film": "canyon-habitat",
+    "labels": [
+      "岩面与附着群落",
+      "沉积海床"
+    ],
+    "max": 298.5,
+    "phrase": "栖息地不只是一个地名",
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "航次报告 0",
+    "step": "1 记录所在表面",
+    "time": 98.7,
+    "title": "生物的住处包括什么"
+  },
+  {
+    "label": "final-canyon-05",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 19.802156,
+      "paused": false,
+      "rate": 1,
+      "ready": 1,
+      "time": 0
+    },
+    "chapter": "4",
+    "completed": false,
+    "depth": "2,685 m",
+    "depthHidden": false,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "冷水珊瑚台 · 教学站点",
+    "film": "canyon-coral",
+    "labels": [
+      "ROV · 相机、灯光与采样臂",
+      "冷水珊瑚 · 枝状群落"
+    ],
+    "max": 298.5,
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "航次报告 0",
+    "step": null,
+    "time": 125.1,
+    "title": "珊瑚怎样在黑暗里取食"
+  },
+  {
+    "label": "final-canyon-06",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 24.192,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 0.054524
+    },
+    "chapter": "5",
+    "completed": false,
+    "depth": "2,780 m",
+    "depthHidden": false,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "沉积扇面 · 教学站点",
+    "film": "canyon-sediment",
+    "labels": [
+      "ROV · 相机、灯光与采样臂",
+      "水体采样架 · 记录环境"
+    ],
+    "max": 298.5,
+    "playing": "true",
+    "records": "演示水样 0 / 2",
+    "report": "航次报告 0",
+    "time": 146.1,
+    "title": "先取靠近台面的A瓶水"
+  },
+  {
+    "label": "final-canyon-07",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 24.984,
+      "paused": true,
+      "rate": 2,
+      "ready": 4,
+      "time": 24.984
+    },
+    "chapter": "6",
+    "completed": false,
+    "depth": "2,850 m",
+    "depthHidden": false,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "深谷通道 · 教学站点",
+    "film": "canyon-channel",
+    "labels": [],
+    "max": 298.5,
+    "playing": "true",
+    "records": "演示水样 2 / 2",
+    "report": "航次报告 0",
+    "time": 196.3,
+    "title": "再取深谷侧的B瓶水"
+  },
+  {
+    "label": "final-canyon-08",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 25.488,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 0.067541
+    },
+    "chapter": "7",
+    "completed": false,
+    "depth": "2,850 m",
+    "depthHidden": true,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "独立原理模型",
+    "film": "canyon-compare",
+    "labels": [
+      "水样 B · 教学示意",
+      "水样 A · 教学示意"
+    ],
+    "max": 298.5,
+    "phrase": "两瓶水摆在一起",
+    "playing": "true",
+    "records": "演示水样 2 / 2",
+    "report": "航次报告 0",
+    "step": "1 先检查两份材料",
+    "time": 197.3,
+    "title": "比较之前先核对条件"
+  },
+  {
+    "label": "final-canyon-11-complete",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 25.596,
+      "paused": true,
+      "rate": 2,
+      "ready": 4,
+      "time": 25.596
+    },
+    "chapter": "10",
+    "completed": true,
+    "depth": "100%",
+    "depthHidden": false,
+    "depthLabel": "返航进度 · 距离与时间压缩",
+    "environment": "水面 · 母船回收位",
+    "film": "canyon-depart",
+    "labels": [
+      "ROV · 相机、灯光与采样臂",
+      "水面科考母船 · 布放与回收",
+      "脐带缆 · 供电与通信"
+    ],
+    "max": 298.5,
+    "playing": "false",
+    "records": "演示水样 2 / 2",
+    "report": "航次报告 0",
+    "step": null,
+    "time": 298.5,
+    "title": "沿标记回船，留下下一问"
+  },
+  {
+    "label": "review-canyon-09",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 19.662813,
+      "paused": true,
+      "rate": 1,
+      "ready": 4,
+      "time": 0
+    },
+    "chapter": "8",
+    "completed": false,
+    "depth": "2,765 m",
+    "depthHidden": false,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "海绵花园 · 教学站点",
+    "film": "canyon-sponges",
+    "labels": [
+      "杯状海绵 · 峡谷生态"
+    ],
+    "max": 298.5,
+    "playing": "false",
+    "records": "演示水样 2 / 2",
+    "report": "航次报告 0",
+    "step": null,
+    "time": 223.7,
+    "title": "再看另一种住在海床的生命"
+  },
+  {
+    "label": "review-canyon-10-pending",
+    "app": "app.js?v=66",
+    "audio": {
+      "duration": 26.316,
+      "paused": true,
+      "rate": 1,
+      "ready": 4,
+      "time": 0
+    },
+    "chapter": "9",
+    "completed": false,
+    "depth": "2,700 m",
+    "depthHidden": false,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "归航标记 · 教学站点",
+    "film": "canyon-summary",
+    "labels": [
+      "回收信标 · 返航定位"
+    ],
+    "max": 298.5,
+    "phrase": "现在整理收获",
+    "playing": "false",
+    "records": "演示水样 2 / 2",
+    "report": "航次报告 0",
+    "time": 244.5,
+    "title": "把照片、样本和答案分开"
+  },
+  {
+    "label": "closeup-canyon-A-start",
+    "app": "app.js?v=67",
+    "audio": {
+      "duration": 24.192,
+      "paused": true,
+      "rate": 1,
+      "ready": 1,
+      "time": 0
+    },
+    "chapter": "5",
+    "completed": false,
+    "depth": "2,780 m",
+    "depthHidden": false,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "沉积扇面 · 教学站点",
+    "film": "canyon-sediment",
+    "labels": [
+      "水体采样架 · 记录环境"
+    ],
+    "max": 298.5,
+    "playing": "false",
+    "records": "演示水样 0 / 2",
+    "report": "航次报告 0",
+    "time": 146,
+    "title": "先取靠近台面的A瓶水"
+  },
+  {
+    "label": "closeup-canyon-B-start",
+    "app": "app.js?v=67",
+    "audio": {
+      "duration": 24.984,
+      "paused": true,
+      "rate": 1,
+      "ready": 4,
+      "time": 0
+    },
+    "chapter": "6",
+    "completed": false,
+    "depth": "2,850 m",
+    "depthHidden": false,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "深谷通道 · 教学站点",
+    "film": "canyon-channel",
+    "labels": [
+      "水体采样架 · 记录环境"
+    ],
+    "max": 298.5,
+    "playing": "false",
+    "records": "演示水样 0 / 2",
+    "report": "航次报告 0",
+    "time": 171.2,
+    "title": "再取深谷侧的B瓶水"
+  },
+  {
+    "label": "closeup-canyon-B-end",
+    "app": "app.js?v=67",
+    "audio": {
+      "duration": 24.984,
+      "paused": true,
+      "rate": 1,
+      "ready": 4,
+      "time": 24.984
+    },
+    "chapter": "6",
+    "completed": false,
+    "depth": "2,850 m",
+    "depthHidden": false,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "深谷通道 · 教学站点",
+    "film": "canyon-channel",
+    "labels": [],
+    "max": 298.5,
+    "playing": "false",
+    "records": "演示水样 0 / 2",
+    "report": "航次报告 0",
+    "time": 196.6,
+    "title": "再取深谷侧的B瓶水"
+  },
+  {
+    "label": "closeup-canyon-B-live",
+    "app": "app.js?v=67",
+    "audio": {
+      "duration": 24.984,
+      "paused": false,
+      "rate": 1,
+      "ready": 1,
+      "time": 0
+    },
+    "chapter": "6",
+    "completed": false,
+    "depth": "2,850 m",
+    "depthHidden": false,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "深谷通道 · 教学站点",
+    "film": "canyon-channel",
+    "labels": [],
+    "max": 298.5,
+    "playing": "true",
+    "records": "演示水样 1 / 2",
+    "report": "航次报告 0",
+    "time": 171.2,
+    "title": "再取深谷侧的B瓶水"
+  },
+  {
+    "label": "closeup-canyon-comparison-unlocked",
+    "app": "app.js?v=67",
+    "audio": {
+      "duration": 25.488,
+      "paused": false,
+      "rate": 1,
+      "ready": 1,
+      "time": 0
+    },
+    "chapter": "7",
+    "completed": false,
+    "depth": "2,850 m",
+    "depthHidden": true,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "独立原理模型",
+    "film": "canyon-compare",
+    "labels": [
+      "水样 B · 教学示意",
+      "水样 A · 教学示意"
+    ],
+    "max": 298.5,
+    "phrase": "两瓶水摆在一起",
+    "playing": "true",
+    "records": "演示水样 2 / 2",
+    "report": "航次报告 0",
+    "step": "1 先检查两份材料",
+    "time": 197.2,
+    "title": "比较之前先核对条件"
+  },
+  {
+    "label": "review-vents-01-launch",
+    "app": "app.js?v=67",
+    "audio": {
+      "duration": 24.516,
+      "paused": true,
+      "rate": 1,
+      "ready": 1,
+      "time": 0
+    },
+    "chapter": "0",
+    "completed": false,
+    "depth": "0%",
+    "depthHidden": true,
+    "depthLabel": "下潜进度 · 距离与时间压缩",
+    "environment": "水面 · 科考母船",
+    "film": "vents-establish",
+    "labels": [
+      "ROV · 相机、灯光与采样臂",
+      "水面科考母船 · 布放与回收",
+      "脐带缆 · 供电与通信"
+    ],
+    "max": 311.20000000000005,
+    "playing": "false",
+    "records": "演示水样 0 / 2",
+    "report": "航次报告 0",
+    "time": 0,
+    "title": "出发前，先带上三个问题"
+  },
+  {
+    "label": "closeup-vents-A-start",
+    "app": "app.js?v=67",
+    "audio": {
+      "duration": 25.956,
+      "paused": true,
+      "rate": 1,
+      "ready": 4,
+      "time": 0
+    },
+    "chapter": "6",
+    "completed": false,
+    "depth": "2,575 m",
+    "depthHidden": false,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "羽流观察窗 · 教学站点",
+    "film": "vents-investigate",
+    "labels": [
+      "水体采样架 · 记录环境"
+    ],
+    "max": 311.20000000000005,
+    "playing": "false",
+    "records": "演示水样 0 / 2",
+    "report": "航次报告 0",
+    "time": 175.5,
+    "title": "先取喷口外缘的A瓶水"
+  },
+  {
+    "label": "closeup-vents-B-live",
+    "app": "app.js?v=67",
+    "audio": {
+      "duration": 25.452,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 0.037372
+    },
+    "chapter": "7",
+    "completed": false,
+    "depth": "2,620 m",
+    "depthHidden": false,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "沉积边缘 · 教学站点",
+    "film": "vents-background",
+    "labels": [
+      "水体采样架 · 记录环境"
+    ],
+    "max": 311.20000000000005,
+    "playing": "true",
+    "records": "演示水样 1 / 2",
+    "report": "航次报告 0",
+    "time": 202.5,
+    "title": "再取远处的B瓶水"
+  },
+  {
+    "label": "closeup-vents-comparison-unlocked",
+    "app": "app.js?v=67",
+    "audio": {
+      "duration": 26.244,
+      "paused": false,
+      "rate": 2,
+      "ready": 4,
+      "time": 0.032
+    },
+    "chapter": "8",
+    "completed": false,
+    "depth": "2,620 m",
+    "depthHidden": true,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "独立原理模型",
+    "film": "vents-compare",
+    "labels": [
+      "水样 B · 教学示意",
+      "水样 A · 教学示意"
+    ],
+    "max": 311.20000000000005,
+    "phrase": "把A、B两瓶并排",
+    "playing": "true",
+    "records": "演示水样 2 / 2",
+    "report": "航次报告 0",
+    "step": "1 先检查两份材料",
+    "time": 229,
+    "title": "两瓶水要怎样比较"
+  },
+  {
+    "label": "review-vents-B-revisit",
+    "app": "app.js?v=68",
+    "audio": {
+      "duration": 25.452,
+      "paused": true,
+      "rate": 1,
+      "ready": 4,
+      "time": 0
+    },
+    "chapter": "7",
+    "completed": false,
+    "depth": "2,620 m",
+    "depthHidden": false,
+    "depthLabel": "站点设计水深 · 非实测",
+    "environment": "沉积边缘 · 教学站点",
+    "film": "vents-background",
+    "labels": [
+      "水体采样架 · 记录环境"
+    ],
+    "max": 311.20000000000005,
+    "playing": "false",
+    "records": "演示水样 1 / 2",
+    "report": "航次报告 0",
+    "time": 202.5,
+    "title": "再取远处的B瓶水"
+  }
+]

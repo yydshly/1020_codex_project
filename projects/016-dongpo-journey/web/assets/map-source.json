@@ -1,0 +1,39 @@
+{
+  "repository": "https://github.com/DeanChensj/jiangshan-map",
+  "commit": "53059f1c7fed305807b19365857a5f135daf3ac6",
+  "extracted_on": "2026-10-24",
+  "inputs": [
+    {
+      "path": "js/map_data.js",
+      "sha256": "ce44c1a5c9a012639202633d31e3985e3053f4a17308a9ce784a06b2070de8a8"
+    },
+    {
+      "path": "js/lore_data.js",
+      "sha256": "5c50817d72f9f99f820850b26e436fa9d21640f4b5636dc2d799dc63aeaacc1e"
+    },
+    {
+      "path": "js/china_geo_data.js",
+      "sha256": "5c8bd5202dab8eafb6047106884ec92d839a82a8020f9953f7fb6399604ca8ef"
+    },
+    {
+      "path": "js/atlas_snapshots.js",
+      "sha256": "aeb99c6117ef7dc1dce941fe1c92d549ddb748acc9425369d24e171ffb22e996"
+    }
+  ],
+  "outputs": [
+    {
+      "path": "map-data.json",
+      "sha256": "db3b3addb91e9db8e2078fedfc2c3e5c3f8647419227519a8fbb3cc8842231f8"
+    },
+    {
+      "path": "terrain.webp",
+      "sha256": "24e95b021ab44848a19920cd5a197a62dd77c10990eb229aed033b718f010367"
+    }
+  ],
+  "layers": [
+    "polities",
+    "rivers"
+  ],
+  "license": "GPL-3.0 code and upstream source terms; see NOTICE.md",
+  "changes": "Data subset only. Independent renderer and story UI; no upstream application or iframe."
+}

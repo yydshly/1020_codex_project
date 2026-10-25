@@ -1,0 +1,5 @@
+# Preserve the exact pinned upstream blobs for SOURCE.json SHA-256 verification.
+web/upstream/** -text
+# Preserve recorded runtime and image bytes across Windows/Linux checkouts.
+web/** -text
+assets/** -text

@@ -1,0 +1,3 @@
+# These upstream runtime files live in a folder named build; keep them in Git.
+!web/vendor/three/build/
+!web/vendor/three/build/*.js

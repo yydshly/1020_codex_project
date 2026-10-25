@@ -1,0 +1,14 @@
+{
+  "id": 16,
+  "slug": "dongpo-journey",
+  "name": "山河行记 · 历史时空地图",
+  "summary": "直接复用江山时序54份历史引擎与资料输入，新增Three.js现代高程地形、疆域与行迹叠加、2D/3D同状态切换及2–20站路线编辑。用户可旋转山河、切年份、点城池和人物经历，地图、路线与说明同步变化；真三维为我们新增，现代DEM不代表古地貌复原。可继续拆分投影、图层、标注与镜头接口，用于地方史、行旅或铁路网络；现仍与历史控制器耦合，不能只换JSON视为通用地图引擎。",
+  "repo": "https://github.com/DeanChensj/jiangshan-map",
+  "status": "研究中",
+  "cover": "assets/acceptance-atlas-3d.jpg",
+  "cover_alt": "山河行记历史地图实际运行：真实高程三维地形、历史疆域、城池与时间轴联动",
+  "web": true,
+  "research_date": "2026-10-24",
+  "upstream_commit": "53059f1c7fed305807b19365857a5f135daf3ac6",
+  "license": "GPL-3.0-only for new code; upstream map asset terms retained"
+}

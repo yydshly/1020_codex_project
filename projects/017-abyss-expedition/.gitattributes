@@ -1,0 +1,3 @@
+# Keep provenance manifests, reused cores and runtime payloads byte-identical.
+web/** -text
+assets/** -text

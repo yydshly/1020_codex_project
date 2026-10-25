@@ -1,0 +1,126 @@
+{
+  "schema": "abyss-environment-narration/v1",
+  "provider": "minimax",
+  "model": "speech-2.8-hd",
+  "voiceId": "male-qn-qingse",
+  "format": "mp3",
+  "sampleRate": 32000,
+  "bitrate": 128000,
+  "channel": 1,
+  "speed": 0.95,
+  "volume": 1,
+  "pitch": 0,
+  "languageBoost": "Chinese",
+  "state": "ready",
+  "clips": {
+    "env-vents-overview": {
+      "file": "assets/environment-narration/env-vents-overview-63a65202371c.mp3",
+      "duration": 28.116,
+      "text": "你现在来到热液之境，是一片设定在约两千六百米深的虚构火山岩脊，不是峡谷回声里的深槽和谷壁。这里用玄武岩台地、裂隙和喷口，说明地下热液怎样进入海洋。地貌没有对应真实海域，纵向比例也经过压缩；驾驶台的模型坐标，不能直接换算成真实水深。",
+      "sha256": "acac9cb672ee90a3a5ac3d23bfd2c6f71199e39a147c561a687dbc2bbca18551",
+      "bytes": 451572,
+      "mission": "vents",
+      "requestHash": "63a65202371c2a6c0d108ec278dc604b55a5a2be8e4c52a3fc48579a7024b4fe"
+    },
+    "env-vents-water": {
+      "file": "assets/environment-narration/env-vents-water-3c949a5d2b18.mp3",
+      "duration": 30.636,
+      "text": "热液之境首先仍是深海：阳光照不到这里，周围海水通常寒冷，水压随水深增加。喷口附近有热流，不等于整片海都是热水，也不代表海水没有氧气。热液与冷海水混合，会让不同位置的条件很不一样。画面里的灯光帮助我们观察，温度和坐标读数只是教学设定，不能代替传感器测量。",
+      "sha256": "8d3bcbf1b56357e4285fcdc305605bcfd8af0297e89bcbbc17b37a4af94ce478",
+      "bytes": 491892,
+      "mission": "vents",
+      "requestHash": "3c949a5d2b18aa05ee6b5cfe9171a351e8e3590131e86f48cdc86c2202f3ceb1"
+    },
+    "env-vents-circulation": {
+      "file": "assets/environment-narration/env-vents-circulation-06c4776921c3.mp3",
+      "duration": 28.872,
+      "text": "在热液之境，玄武岩台地上的裂隙代表海水进入地下的通道。真实热液系统中，海水沿裂缝下渗，被地下热岩石加热，并与周围岩石反应，带上溶解的物质，再沿通道上涌。热液是这种水，喷口是它返回海洋的出口；看见一条裂缝，并不能证明那里正在喷热水。",
+      "sha256": "665cf2c0bdd1271f2fe91d268c2efa2acaff9036a33fd8db3cf3a42e09b8d587",
+      "bytes": 463668,
+      "mission": "vents",
+      "requestHash": "06c4776921c3d517a49231aa54686f36b089d6e8ca8e01f225406654cb974cfe"
+    },
+    "env-vents-minerals": {
+      "file": "assets/environment-narration/env-vents-minerals-bb5d4e4aa88c.mp3",
+      "duration": 29.484,
+      "text": "热液之境的黑烟囱，不是在海底燃烧。含有溶解物质的热液从出口流出，与冷海水混合后，一些矿物形成细小固体颗粒，悬浮起来像黑烟；另一些矿物沉在出口周围，逐渐垒成烟囱。黑色羽流、流动的水和固体岩柱要分开看，不能凭颜色判断水温或具体成分。",
+      "sha256": "a8f0f6dc2438a4cccc186b143de73d4880adb34997d0efdfe8c39071c5d03093",
+      "bytes": 473460,
+      "mission": "vents",
+      "requestHash": "bb5d4e4aa88c993817384310153b4ead139752d604819433c7791e2f552277cb"
+    },
+    "env-vents-life": {
+      "file": "assets/environment-narration/env-vents-life-562a4e48185f.mp3",
+      "duration": 31.464,
+      "text": "热液之境展示了一种没有阳光也能获得食物的方式：某些微生物利用化学反应释放的能量，制造有机物，这叫化能合成。这里的管虫以具有共生细菌的热液管虫为例，细菌在体内提供养分。管虫不是直接吃黑烟或热量；这种供食方式只解释本片的热液群落，不能代表所有深海生命。",
+      "sha256": "f3edefc8690a520c727743301102f59b94fec980fab5c2b770f993c66c5c1a59",
+      "bytes": 505140,
+      "mission": "vents",
+      "requestHash": "562a4e48185f3606aa643723e784f5e9469cf7a8eaeec19b33e7548708447686"
+    },
+    "env-vents-investigation": {
+      "file": "assets/environment-narration/env-vents-investigation-d9b88ec901b4.mp3",
+      "duration": 31.824,
+      "text": "在热液之境，我们想调查热液怎样影响周围水体。照片记录烟囱、羽流和管虫的位置，水样留给后续检测；两者回答的问题不同。喷口外缘和远处背景站都采水，保留编号、深度、时刻与方法，才能比较同一指标。还要重复采样、检查其他条件；本片的模型和示例读数不会产生新的实测结论。",
+      "sha256": "153396c423b0374e681f6c89881441ecae3ab426b7204d233514d79866d52a3d",
+      "bytes": 510900,
+      "mission": "vents",
+      "requestHash": "d9b88ec901b44217f27e26ab27c7cc218004a1297eebc4e06ffd5b98ac095470"
+    },
+    "env-canyon-overview": {
+      "file": "assets/environment-narration/env-canyon-overview-56ed0dc0dcb0.mp3",
+      "duration": 30.6,
+      "text": "你现在来到峡谷回声，不是热液之境的海洋裂缝区。这是一条设定在约两千五百到三千米水深的虚构深海峡谷，主要看高岩壁、台面和弯曲谷底，以及它们怎样影响水流、泥沙和生命分布。地形不是实测海域，纵向也经过压缩；模型坐标和机位高度，不能直接当成真实水深。",
+      "sha256": "f9b68d120fda44cd563896d74423ad54b3ef26d8154abd9f3cdbe32238172b6b",
+      "bytes": 491316,
+      "mission": "canyon",
+      "requestHash": "56ed0dc0dcb008f91b463c3814a1440a7b6e43b23fcac3810c4bf0601d438464"
+    },
+    "env-canyon-depth": {
+      "file": "assets/environment-narration/env-canyon-depth-09443d699bdb.mp3",
+      "duration": 33.12,
+      "text": "在这条模拟深海峡谷里，阳光已经无法照到海床，潜器靠灯光拍摄。深层海水通常寒冷，但并非整个海洋都固定在同一个温度；水压则随深度增加。黑暗和高压不等于没有生命，也不能据此断定没有氧气。你看到的珊瑚和海绵，是用来认识适应深海环境的不同生命形态。",
+      "sha256": "4e7701692fea136784a9063227e96cc5758ad3ce2fdb398ce7447ec9456a8f37",
+      "bytes": 531636,
+      "mission": "canyon",
+      "requestHash": "09443d699bdbc9f26ea2b2c522c07af9aeb93aff2796bab33392e5e6c6475598"
+    },
+    "env-canyon-landforms": {
+      "file": "assets/environment-narration/env-canyon-landforms-639ac6ec6f02.mp3",
+      "duration": 35.496,
+      "text": "峡谷回声里，陡壁、岩石台面和低处泥沙，代表不同的海床表面。真实海底的水流能够搬运、重新扬起和沉积泥沙；含沙较多、密度较大的水体还可能在重力作用下沿坡下行，称为浑浊流，这类过程能长期侵蚀和塑造峡谷。但本片只演示地貌关系，不能看着模型就认定某次地震或某一种水流造出了它。",
+      "sha256": "52deff3cf1ab1c1629ba67e0f93ccc13ac310612ac0cba75397be42a4a92eb10",
+      "bytes": 569652,
+      "mission": "canyon",
+      "requestHash": "639ac6ec6f027a81b39c0c666b2fda0dfa5615fac215c260a4e8e3cbdd56f01c"
+    },
+    "env-canyon-food": {
+      "file": "assets/environment-narration/env-canyon-food-24e441044207.mp3",
+      "duration": 31.212,
+      "text": "峡谷回声里的水不是静止背景。水流可以带来悬浮食物，也会把落下的颗粒再次带起；含有表层有机碎屑的颗粒不断下沉，常被称为海洋雪，并不是冰雪。冷水珊瑚和许多海绵能够从流经身边的水中取食。本场景没有设置热液喷口，不应把另一场景的化能合成供食过程套到这里。",
+      "sha256": "0f84697af206832de797473af728503547d4545caf13b1884dc6ee63a97f3867",
+      "bytes": 501108,
+      "mission": "canyon",
+      "requestHash": "24e4410442070401e0a697065066fa10873505bafd06b208bf1a1d12d7a8996f"
+    },
+    "env-canyon-habitat": {
+      "file": "assets/environment-narration/env-canyon-habitat-08cd9c2ca129.mp3",
+      "duration": 34.128,
+      "text": "在峡谷回声里找生命，先看它附着的表面，再看周围水体。暴露岩面能提供附着位置，泥沙覆盖的谷底则是另一种栖息环境。画面的亮区来自潜器灯光和教学照明，不是阳光照进深谷。珊瑚在某处出现，可能与表面、水流和食物有关；一张模型画面只能提出线索，不能证明分布原因。",
+      "sha256": "5b2657406f4b489c60229180ac01e7d7a01712cc30a551a0c4be086deb024f85",
+      "bytes": 547764,
+      "mission": "canyon",
+      "requestHash": "08cd9c2ca129f1b06bf75ca26ff171096f90318d5f165983b63f509f6ddea17d"
+    },
+    "env-canyon-investigation": {
+      "file": "assets/environment-narration/env-canyon-investigation-0855a60a1207.mp3",
+      "duration": 33.48,
+      "text": "在峡谷回声，我们要把群落、海床和水体放在一起调查。照片保留珊瑚、海绵及其附着表面的样子，两处水样则用同一检测方法比较水体指标。取样必须保留位置、深度、时刻和编号，还要考虑两站条件不同。回到船上继续分析和重复观测，才可能检验原因；画面里的模拟读数不是化验结果。",
+      "sha256": "bc0af50064e7f98a774ce7a731bb25bb1ab94f0e78b0f210cb3cbc9f86558374",
+      "bytes": 537396,
+      "mission": "canyon",
+      "requestHash": "0855a60a1207105900305a325452105a4a6060e8a4ec334af0c336d6e0537193"
+    }
+  },
+  "generatedAt": "2026-10-25T02:53:37.965Z"
+}

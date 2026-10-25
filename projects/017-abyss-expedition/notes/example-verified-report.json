@@ -1,0 +1,110 @@
+{
+  "format": "abyss-field-report/v1",
+  "mission": {
+    "id": "vents",
+    "title": "热液之境",
+    "subtitle": "玄武岩脊 · 热液生态观测"
+  },
+  "teachingSimulation": true,
+  "dataNotice": "教学模拟航次。地形、站位、时间、深度和传感器读数均为程序化或编写的样例；不对应真实海域或实际航次。温度表示ROV周围海水，电量表示模拟备用电量。",
+  "createdAt": "2026-10-24T12:08:12.424Z",
+  "currentTime": 62,
+  "goal": {
+    "required": 3,
+    "recorded": 3,
+    "complete": true
+  },
+  "samples": [
+    {
+      "sample": {
+        "id": "v-rock",
+        "name": "玄武岩观察记录",
+        "category": "地质记录",
+        "description": "保存一份台地纹理与站位的虚拟观察记录，不代表取得真实岩样。"
+      },
+      "station": {
+        "id": "basalt",
+        "name": "玄武岩台地",
+        "depth": 2585,
+        "position": [
+          0.27,
+          0.62
+        ]
+      },
+      "sourceIds": [
+        "noaa-seafloor",
+        "whoi-vents"
+      ],
+      "entityId": "basalt",
+      "eventId": "v-map",
+      "recordedAt": "2026-10-24T12:07:37.549Z"
+    },
+    {
+      "sample": {
+        "id": "v-water",
+        "name": "羽流外缘水样",
+        "category": "模拟水样",
+        "description": "标记喷口外缘的一次虚拟水样收集，用于将样本与时空事件关联。"
+      },
+      "station": {
+        "id": "chimney",
+        "name": "黑烟囱群",
+        "depth": 2610,
+        "position": [
+          0.42,
+          0.53
+        ]
+      },
+      "sourceIds": [
+        "whoi-vents"
+      ],
+      "entityId": "chimney",
+      "eventId": "v-vent",
+      "recordedAt": "2026-10-24T12:07:27.604Z"
+    },
+    {
+      "sample": {
+        "id": "v-life",
+        "name": "群落影像样本",
+        "category": "影像记录",
+        "description": "保存群落观察影像的模拟条目，记录位置与时间，不移除生物。"
+      },
+      "station": {
+        "id": "garden",
+        "name": "热液生命花园",
+        "depth": 2600,
+        "position": [
+          0.59,
+          0.39
+        ]
+      },
+      "sourceIds": [
+        "noaa-chemosynthesis"
+      ],
+      "entityId": "garden",
+      "eventId": "v-life",
+      "recordedAt": "2026-10-24T12:07:37.984Z"
+    }
+  ],
+  "shareUrl": "http://127.0.0.1:8017/?dataset=vents&time=62&event=v-life&layers=route%2Clabels&view=overview",
+  "sources": [
+    {
+      "id": "noaa-seafloor",
+      "title": "NOAA · Ocean floor features",
+      "url": "https://www.noaa.gov/education/resource-collections/ocean-coasts/ocean-floor-features",
+      "summary": "海底具有大陆坡、峡谷、洋中脊等多样地貌。测深与水下观测帮助研究地形和栖息地的关系。"
+    },
+    {
+      "id": "whoi-vents",
+      "title": "WHOI · Hydrothermal vents",
+      "url": "https://www.whoi.edu/ocean-learning-hub/ocean-topics/how-the-ocean-works/seafloor-below/hydrothermal-vents/",
+      "summary": "热液把富矿物质流体带出海底；流体与冷海水混合时，矿物沉淀可形成烟囱。黑色羽流是悬浮矿物颗粒的视觉表现。"
+    },
+    {
+      "id": "noaa-chemosynthesis",
+      "title": "NOAA · Photosynthesis and chemosynthesis",
+      "url": "https://oceanexplorer.noaa.gov/ocean-fact/photochemo/",
+      "summary": "化能合成微生物利用化学反应释放的能量制造有机物，为热液口附近的部分食物网提供基础。"
+    }
+  ]
+}

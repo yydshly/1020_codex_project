@@ -1,0 +1,714 @@
+{
+  "schema": "abyss-source-research/v1",
+  "updatedOn": "2026-10-25",
+  "source": {
+    "name": "江山时序 · Chronicles of the Realm",
+    "summary": "把年份、地点和人物放进同一张可探索的中国历史地图：时间轴选择阶段疆域，城池打开沿革，人物事件串成路线，地图、内容卡和纪年共同响应操作。",
+    "repository": "https://github.com/DeanChensj/jiangshan-map",
+    "liveUrl": "https://deanchen.me/jiangshan-map/",
+    "commit": "53059f1c7fed305807b19365857a5f135daf3ac6",
+    "scope": "固定源码与本地收录版本于2026-10-24研究；作者在线版可能继续变化，不能把在线新效果归入这个固定版本。",
+    "not": [
+      "主体是SVG地图，山体立体观感来自晕渲／浮雕底图；所检查的源库不是Three.js三维引擎。",
+      "疆域来自整理好的阶段快照，不会在浏览器里实时推演历史战争或生成任意一天的精确边界。",
+      "人物行迹与诗词连线表达时空关系，不自动证明实际道路或完整旅行轨迹。",
+      "成品地图无需Claude在线生成才能运行；AI工具协议和开发时使用AI是另外两件事。",
+      "源库是较大的单体控制器；我们的纯状态核心和九模块分层属于后续提炼，不是它现成提供的框架。"
+    ],
+    "stats": [
+      {
+        "label": "历史时期",
+        "value": 18,
+        "note": "固定数据包的时期记录",
+        "evidence": "projects/015-jiangshan-atlas/web/capabilities.json"
+      },
+      {
+        "label": "编年事件",
+        "value": 468,
+        "note": "固定数据包的milestones记录",
+        "evidence": "projects/015-jiangshan-atlas/web/capabilities.json"
+      },
+      {
+        "label": "人物档案",
+        "value": 113,
+        "note": "不表示113位人物全部已人工实测或重新校勘",
+        "evidence": "projects/015-jiangshan-atlas/web/capabilities.json"
+      },
+      {
+        "label": "预设旅程",
+        "value": 7,
+        "note": "预设路线与人物档案是不同计数",
+        "evidence": "projects/015-jiangshan-atlas/web/capabilities.json"
+      },
+      {
+        "label": "快照对象键",
+        "value": 168,
+        "note": "包含neighbors；166个历史快照由时期／阶段显式引用，现代s_prc为隐式时期键，含现代共167个时期快照键。不能混用168与167。",
+        "evidence": "projects/016-dongpo-journey/README.md"
+      },
+      {
+        "label": "跨时期城池记录",
+        "value": 1405,
+        "note": "各时期点位记录之和，不是去重城市数量",
+        "evidence": "projects/015-jiangshan-atlas/web/capabilities.json"
+      }
+    ],
+    "capabilities": [
+      {
+        "id": "timeline",
+        "title": "在时间里看疆域变化",
+        "effect": "拖动年份或点编年事件，时期、阶段疆域、年号与当前事件同步变化；上一阶段以残影辅助比较。",
+        "mechanism": "_resolvePhase按year<until找阶段，_resolveSnapKey返回快照键，_renderDynasty加载后校验当前选择再绘制SVG。",
+        "example": "从前230年推进至前221年，观察秦灭六国阶段。",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L1537",
+        "evidence": [
+          "projects/015-jiangshan-atlas/web/upstream/js/app.js:1537",
+          "projects/015-jiangshan-atlas/notes/verification.md",
+          "projects/016-dongpo-journey/notes/verification-atlas.md"
+        ],
+        "boundary": "阶段快照是示意资料，不是连续疆域模拟。公元无0年是历史领域规则。",
+        "status": "源库能力；015与016均有真实浏览器操作记录"
+      },
+      {
+        "id": "place",
+        "title": "点一座城，读它的历代身世",
+        "effect": "搜索或点击城池，查看古今地名、各时期归属与当地史事；点史事回到对应年份。",
+        "mechanism": "地点坐标连接不同快照的政区查询与沿革资料；resolvePlace先将名称／别名解析成地点，沿革与事件由同一位置派生。",
+        "example": "741年长安卡片，点玄武门之变回到626年。",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L9143",
+        "evidence": [
+          "projects/015-jiangshan-atlas/web/upstream/README_ZH.md:43",
+          "projects/015-jiangshan-atlas/notes/verification.md",
+          "projects/016-dongpo-journey/notes/verification-atlas.md"
+        ],
+        "boundary": "同名与古今地名解析依赖领域词典；查询结果不等于所有史料都已重新校勘。",
+        "status": "源库能力；本地已验长安等代表流程"
+      },
+      {
+        "id": "person",
+        "title": "跟随人物事件走过一生",
+        "effect": "生平事件、编号路线、年份、疆域与年号一同更新；可上一站、下一站或自动巡礼。",
+        "mechanism": "_collectPersonEvents形成事件序列，selectPersonEvent将同一次选择传给年份、地图、卡片与相机。",
+        "example": "苏轼11条史事；秦始皇人物事件推动战国快照切换。",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L3388",
+        "evidence": [
+          "projects/015-jiangshan-atlas/web/upstream/js/app.js:3156",
+          "projects/015-jiangshan-atlas/notes/verification.md",
+          "projects/016-dongpo-journey/notes/verification-atlas.md"
+        ],
+        "boundary": "预设人物资料并非自动生成的全人物数据库；路线是关系表达，不是导航轨迹。",
+        "status": "源库能力；已操作苏轼、秦始皇及人物搜索"
+      },
+      {
+        "id": "route",
+        "title": "用诗词和地点生成同年／跨年路线",
+        "effect": "输入多个地点和一个年份，或逐站匹配多个年份，地图画出顺序路线，点站点可切换对应时空。",
+        "mechanism": "URL的year/place参数被解析为地点序列；地名查找、投影与路线渲染复用地图现有能力。",
+        "example": "杜甫诗中的剑外→巴峡→巫峡→襄阳→洛阳；苏轼湖州→黄州→惠州→儋州。",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L10228",
+        "evidence": [
+          "projects/015-jiangshan-atlas/web/upstream/README_ZH.md:126",
+          "projects/015-jiangshan-atlas/README.md",
+          "projects/016-dongpo-journey/README.md"
+        ],
+        "boundary": "015新增输入表单与严格校验；016另新增2–20站编辑器。这些外层编辑界面不能算源库原样功能。",
+        "status": "源库有路线协议；表单／编辑器为我们的新增界面"
+      },
+      {
+        "id": "layers",
+        "title": "把历史政区、山川与现代参照叠起来",
+        "effect": "切换疆域、州府、古地名、山川水系、关河丝路和现代省界；悬停或图例聚焦帮助辨认归属。",
+        "mechanism": "同一墨卡托投影和相机承载多个SVG组；各图层显示规则、时期有效期与标签密度分别处理。",
+        "example": "1415年应天府，与现代省界、河流、长城及运河同时比较。",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L36",
+        "evidence": [
+          "projects/015-jiangshan-atlas/web/upstream/README_ZH.md:29",
+          "projects/015-jiangshan-atlas/notes/verification.md",
+          "projects/016-dongpo-journey/notes/verification-atlas.md"
+        ],
+        "boundary": "二维透视镜和精细悬停不等于三维剖面。016这些交互仍主要在舆图视角使用。",
+        "status": "源库能力；代表图层开关已实测"
+      },
+      {
+        "id": "quiz",
+        "title": "把同一地理资料变成寻址挑战",
+        "effect": "根据古地名和历史线索在地图落针，以距离给出反馈与分数，再进入下一题。",
+        "mechanism": "_buildChallengeDeck从已有地点／事件资料生成候选题；用户落点与答案坐标计算距离，派生评分。",
+        "example": "长安寻址，落针后显示偏差公里数、得分与答案。",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L6633",
+        "evidence": [
+          "projects/015-jiangshan-atlas/notes/verification.md",
+          "projects/016-dongpo-journey/notes/verification-atlas.md"
+        ],
+        "boundary": "题库资格、去重、难度和评分仍是业务规则；没有宣称所有随机题目都逐一实测。",
+        "status": "源库能力；015和016有实际落针记录"
+      },
+      {
+        "id": "agent-api",
+        "title": "让外部Agent用语义参数调地图",
+        "effect": "外部工具可用year/place/person/stop启动一个确定的地图场景；浏览器API提供地名解析、只读查询与定位。",
+        "mechanism": "window.atlasAPI包含resolvePlace、inspect、locate；llms.txt和skill说明协议。模型只需提出语义参数，地点与地图绘制由既有代码完成。",
+        "example": "locate({year:819,place:'蓝关'})；inspect只读返回结构化归属信息。",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L10445",
+        "evidence": [
+          "projects/015-jiangshan-atlas/web/upstream/llms.txt",
+          "projects/015-jiangshan-atlas/web/upstream/README_ZH.md:114"
+        ],
+        "boundary": "提供Agent接口不等于网页自带聊天模型，也不等于地图每帧由AI生成。015未调用外部模型或验证Agent CLI截图流程。",
+        "status": "已核对源码与协议；本轮没有接在线LLM"
+      },
+      {
+        "id": "geojson",
+        "title": "把阶段地图导出为标准GIS数据",
+        "effect": "导出GeoJSON后可供Leaflet、MapLibre、QGIS等下游工具加载；按年份和坐标查询所在政区。",
+        "mechanism": "导出脚本解码VLQ／拓扑去重束，写出快照、索引、走廊与点位；定位器先包围盒筛选，再作点在多边形内判断。",
+        "example": "导出index.json与snapshots/<id>.geojson，再查询1415年的经纬度。",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/scripts/export_geojson.js",
+        "evidence": [
+          "projects/015-jiangshan-atlas/web/upstream/README_ZH.md:169",
+          "projects/015-jiangshan-atlas/web/upstream/geojson/jiangshan-locate.js"
+        ],
+        "boundary": "文档声明导出范围前403年至1948年，不导出现代省界与此后阶段；015阶段没有实际运行导出。",
+        "status": "源码／文档能力；本项目未做导出端到端验收"
+      }
+    ],
+    "patterns": [
+      {
+        "id": "phase-snapshot",
+        "title": "时间→阶段→快照",
+        "effect": "用户换时间，场景和说明稳定落在同一阶段。",
+        "mechanism": "_resolvePhase / _resolveSnapKey",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L1537",
+        "transfer": "把年份替换为项目天数、设备运行时长或课程进度；通用核心只理解有序区间，具体阶段由数据定义。",
+        "boundary": "不要把朝代与无0年的规则硬编码进新领域。",
+        "acceptance": "边界前、边界时、边界后均只命中一个正确阶段。"
+      },
+      {
+        "id": "shared-state",
+        "title": "动作→状态→派生视图",
+        "effect": "列表、时间轴、地图与卡片不会各说各话。",
+        "mechanism": "selectPersonEvent / jumpToYear",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L3388",
+        "transfer": "017把时序状态与Three.js、DOM、播放器分开，让各视图订阅相同结果。",
+        "boundary": "纯状态核心是我们的重新实现，不是从上游摘出的同名模块。",
+        "acceptance": "不同入口选同一事件，所有视图得到同一实体、时间和详情。"
+      },
+      {
+        "id": "coordinate-layers",
+        "title": "统一坐标，分层绘制",
+        "effect": "缩放后对象、标签和路线保持对齐；图层开关只改变呈现。",
+        "mechanism": "MercatorProjector与SVG分组",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L36",
+        "transfer": "先定义业务坐标及转换，再建立地形、实体、路线、标签等独立视觉层。",
+        "boundary": "墨卡托、地形晕渲与图层透明度都不是跨主题通用答案。",
+        "acceptance": "关闭路线不改变当前站点；切视角仍指向同一对象。"
+      },
+      {
+        "id": "entity-query",
+        "title": "先识别实体，再执行查询／定位",
+        "effect": "别名可以找到同一对象，未知输入明确失败。",
+        "mechanism": "resolvePlace / inspect / locate",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L9143",
+        "transfer": "用稳定ID连接设备、知识点或站点，搜索、卡片与外部工具共用解析入口。",
+        "boundary": "古地名后缀与繁简规则属于历史适配；模糊匹配不可随意猜测。",
+        "acceptance": "别名映射一致；歧义有明确处理；只读查询不改变选择。"
+      },
+      {
+        "id": "latest-result",
+        "title": "异步结果提交前，再核对当前选择",
+        "effect": "快速切换时，旧结果不覆盖新场景。",
+        "mechanism": "_renderDynasty在快照加载完成后核对朝代对象与快照键",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L1580",
+        "transfer": "017新增latest-task核心，把最近请求提交规则移到可测模块。",
+        "boundary": "原库没有通用取消框架；忽略过期结果与取消网络请求不是一回事。",
+        "acceptance": "故意让A慢、B快，连续选择A→B，最后仍显示B；旧错误也不污染B。"
+      },
+      {
+        "id": "progressive-loading",
+        "title": "按需加载、缓存与渐进细节",
+        "effect": "首屏先出现重要内容，重复资料不反复加载，远景不过度拥挤。",
+        "mechanism": "_ensureFullSnapshots / _fetchSnapshot及延迟解码",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L440",
+        "transfer": "先测量首屏、密集对象和重复请求，再引入缓存、按需解码或标签密度规则。",
+        "boundary": "小数据未必需要VLQ；源库_loadScriptOnce加载错误也resolve，迁移时要改善错误与空结果的区分。",
+        "acceptance": "缓存命中可观察；资源失败有反馈，不能悄悄当作空场景。"
+      },
+      {
+        "id": "deep-link",
+        "title": "URL是可重放的任务输入",
+        "effect": "分享与刷新能回到同一关键选择。",
+        "mechanism": "_restoreFromQuery / atlasAPI",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L10228",
+        "transfer": "017扩展为航次、事件、图层、版本化相机与驾驶位姿协议。",
+        "boundary": "不是所有临时状态都应序列化；不自动恢复播放。场景还要校验镜头安全。",
+        "acceptance": "有效链接可恢复；非法字段原子拒绝或明确回退，不混入半个旧状态。"
+      },
+      {
+        "id": "one-data-many-experiences",
+        "title": "一份实体事件资料，派生多种玩法",
+        "effect": "阅读、探索、路线与挑战使用一致地点和事件。",
+        "mechanism": "_collectPersonEvents / _buildChallengeDeck",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js#L3156",
+        "transfer": "017同一站点数据支撑探索、导演、环境讲解与采样学习，主题适配层分别定义规则。",
+        "boundary": "不同玩法仍需自己的资格、难度与证据规则；源库并非所有记录都有统一来源字段。",
+        "acceptance": "改一处实体后，列表、图示、搜索与练习同步更新，不再维护重复资料。"
+      }
+    ]
+  },
+  "aiRole": {
+    "summary": "可见证据支持部分开发使用了Claude；网页效果的运行依靠预写的代码、数据和浏览器。两者应分别说明。",
+    "confirmed": [
+      {
+        "claim": "公开GeoJSON功能提交中存在Claude联合署名。",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/commit/5e940f6bc1f8aa50ac7fe0e2406baee7ef5ef7e7",
+        "checkedOn": "2026-10-25",
+        "scope": "本次联网核对该提交页面。只能证明这项公开贡献存在AI参与，不能外推整站开发过程。"
+      },
+      {
+        "claim": "源库公开llms.txt、Agent skill及year/place语义协议，可供外部Agent驱动地图。",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/README_ZH.md#L114",
+        "scope": "这是给外部工具的调用接口，不是地图运行时的模型生成。"
+      },
+      {
+        "claim": "本地核心地图是静态HTML/CSS/JavaScript与数据文件，可通过静态服务器运行。",
+        "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/README_ZH.md#L157",
+        "scope": "015本地收录地图与016当前作品均未接在线模型，017前端也仅播放预生成音轨。"
+      }
+    ],
+    "cannotInfer": [
+      "不能由联合署名推断作者最初用了哪一句提示词、经历了几轮优化或AI代码占比。",
+      "不能把宣传式效果截图当成完整用户流程、所有历史内容准确性或所有设备兼容性的证明。",
+      "不能说必须使用Claude才能做出类似交互；组织数据、代码实现、设计和验收才是成品运行所需的具体工作。",
+      "我们整理的规划与模板属于自己的实践总结，不是上游作者公开的完整开发对话。"
+    ],
+    "runtime": [
+      {
+        "layer": "开发阶段",
+        "role": "AI可协助读代码、整理数据、实现页面和定位缺陷；人或任务负责人确定意图与验收。"
+      },
+      {
+        "layer": "地图／场景运行",
+        "role": "浏览器执行代码、读取结构化数据、更新状态并绘制SVG或WebGL。无需每次点击请求Claude。"
+      },
+      {
+        "layer": "017语音生成",
+        "role": "MiniMax在生成阶段产出MP3；网页运行时加载本地音轨，以媒体时间驱动提示。密钥不进入网页。"
+      },
+      {
+        "layer": "指令模板页面",
+        "role": "015填写器是在浏览器本地组合文本，复制／下载模板，不调用大模型。"
+      }
+    ]
+  },
+  "reuseBoundary": [
+    {
+      "project": "015",
+      "title": "江山时序能力展示与方法实验",
+      "kind": "完整原作本地集成＋外围展示；另做独立小核心",
+      "reused": [
+        "固定版本原作的地图控制器、数据、SVG界面、CSS与资源，放在web/upstream/，同源iframe运行。",
+        "运行代码和数据原样保留；入口HTML仅去远程字体与访问统计。"
+      ],
+      "added": [
+        "六场景入口、年份与地名表单、中文逗号和年份数量校验、分享／重置／全屏。",
+        "实现规划、指令模板、研究引导图、八项源码模式说明。",
+        "独立temporal-core与物流／项目迭代两份虚构数据，用来证明时序状态方法可迁移。"
+      ],
+      "boundary": [
+        "展示页成功主要证明原作能被集成和体验，不能说重新实现了整套历史地图。",
+        "015实验验证阶段与线性事件，不是完整物流或项目管理产品。"
+      ],
+      "evidence": [
+        "projects/015-jiangshan-atlas/README.md",
+        "projects/015-jiangshan-atlas/NOTICE.md",
+        "projects/015-jiangshan-atlas/web/upstream/SOURCE.json",
+        "projects/015-jiangshan-atlas/notes/verification-engineering.md"
+      ]
+    },
+    {
+      "project": "016",
+      "title": "山河行记完整历史地图",
+      "kind": "整库集成扩展，不是独立新引擎",
+      "reused": [
+        "54个上游文件：完整历史地图引擎、SVG界面与历史资料。",
+        "Three.js与OrbitControls作为第三方3D基础库；现代Mapzen公开高程数据。"
+      ],
+      "added": [
+        "同一历史状态驱动的Three.js地形、疆域、城池和人物／自定路线。",
+        "2–20站路线编辑器与输入校验；2D／3D切换保持年份、人物和路线。",
+        "现代DEM重采样格网361×253，共91,333点；保留来源与瓦片哈希。"
+      ],
+      "boundary": [
+        "现代DEM不是古地貌复原；垂直比例有显示夸张。",
+        "精细政区悬停、透视镜和寻址答题仍在源库2D舆图使用。",
+        "旧三站二维和三个微缩景观保留为历史草稿，不能冒充当前完整地图验收。"
+      ],
+      "evidence": [
+        "projects/016-dongpo-journey/README.md",
+        "projects/016-dongpo-journey/NOTICE.md",
+        "projects/016-dongpo-journey/notes/brief.md",
+        "projects/016-dongpo-journey/notes/verification-atlas.md",
+        "projects/016-dongpo-journey/web/atlas-source.json"
+      ]
+    },
+    {
+      "project": "017",
+      "title": "深蓝航迹与研究页历史地图展品",
+      "kind": "通用方法借鉴与独立流程演示；地图核心迁移尚未验证",
+      "reused": [
+        "深海主场景逐字节复用015自行编写的temporal-core.mjs，SHA-256为b5d3579e8b2f50875fd1a98d6bb7aa18100884261089cb325de46723165b61f8。",
+        "Three.js与OrbitControls为第三方基础库；岩面材质另有CC0来源。",
+        "研究页独立展品直接收录54份江山时序固定版本文件及016的联动三维扩展、路线编辑、现代DEM和Three.js；本地运行于web/integrations/atlas/，核心不依赖8016服务。"
+      ],
+      "added": [
+        "另外八个无DOM、无Three.js依赖的纯核心，以及海洋主题的程序地形、潜器、船、羽流与生态外观。",
+        "导演时钟与镜头、基础概念和原理舞台、临时同类采样、MiniMax音频适配、环境语句高亮。",
+        "自由驾驶、独立镜头、整机／相机安全约束、可见提示区域和同站几何观察窗。",
+        "研究页地图父控制器atlas-demo.js、同源消息桥atlas-bridge.mjs、构建期API附加代码，以及固定白名单打包和源/产物哈希校验。"
+      ],
+      "boundary": [
+        "深海web/scene.js未导入历史控制器、历史数据、晕渲底图或016地形渲染器；研究页独立iframe中的完整地图运行时则明确直接集成这些内容，不能把该接入称为深海渲染迁移。",
+        "地形、海域、航次、读数与样本都是教学设计，不是真实海底DEM、数字孪生或物理采样仿真。",
+        "九核心独立性有非海洋夹具，但任意新主题仍需新实体、坐标、视觉对象和业务适配。",
+        "地图展品保留作者归属和数据条款；35份专题副本仅删统计脚本。核心资源同源，原5首Wikimedia古琴流音频未缓存，点击播放仍需联网。静态/HTTP检查不代表浏览器操作已全部通过。",
+        "地图叙事与动作流程差别较大，深海实践不足以证明源库核心能力已迁移；下一项目中国铁路网络演进将用第二个地图实例验证。"
+      ],
+      "evidence": [
+        "projects/017-abyss-expedition/NOTICE.md",
+        "projects/017-abyss-expedition/web/core/README.md",
+        "projects/017-abyss-expedition/src/check-core.mjs",
+        "projects/017-abyss-expedition/notes/verification.md",
+        "projects/017-abyss-expedition/notes/verification-full-voyages.md",
+        "projects/017-abyss-expedition/notes/atlas-integration-plan.md",
+        "projects/017-abyss-expedition/src/build-atlas-integration.mjs",
+        "projects/017-abyss-expedition/src/check-atlas-integration.mjs",
+        "projects/017-abyss-expedition/web/integrations/atlas/integration-source.json"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "id": "015-experience",
+      "title": "先把源库真实运行起来",
+      "intent": "弄清用户真正能做什么，避免只读README或只看静态图。",
+      "result": "015六个入口直接打开本地原作：疆域、沿革、生平、诗词路线、图层与寻址挑战。",
+      "lesson": "入口要以具体阅读问题组织；原作效果与我们的外围UI必须标出归属。",
+      "evidence": [
+        "projects/015-jiangshan-atlas/README.md",
+        "projects/015-jiangshan-atlas/notes/verification.md"
+      ]
+    },
+    {
+      "id": "015-method",
+      "title": "把好看的效果拆成可验证方法",
+      "intent": "回答如何实现、AI扮演什么角色、怎样规划下一次作品。",
+      "result": "源码固定SHA证据、八项工程模式、五阶段手册与六组模板；新增纯时序核心运行物流和项目迭代。",
+      "lesson": "学习不能只罗列技术名词，应给输入契约、适用边界与一次不同领域验证。",
+      "evidence": [
+        "projects/015-jiangshan-atlas/web/engineering.js",
+        "projects/015-jiangshan-atlas/notes/verification-engineering.md",
+        "projects/015-jiangshan-atlas/web/playbook.html"
+      ]
+    },
+    {
+      "id": "016-wrong-turn",
+      "title": "三站专题与微缩3D曾偏离目标",
+      "intent": "把默认提示做成苏轼三站故事，随后加入真实可旋转景观。",
+      "result": "产生二维三站阅读与三个微缩场景，但没有保留源库的完整历史地图能力。",
+      "lesson": "“有3D”不是“有类似能力”；旋转一艘船或建筑，不能代替时间、空间、事件和内容联动。",
+      "evidence": [
+        "projects/016-dongpo-journey/notes/brief.md",
+        "projects/016-dongpo-journey/README.md",
+        "projects/016-dongpo-journey/NOTICE.md"
+      ]
+    },
+    {
+      "id": "016-integrate",
+      "title": "回到完整地图，证明集成扩展",
+      "intent": "保留源库的真实能力，再为同一状态加上3D视角。",
+      "result": "全地图引擎与数据直接复用，加入现代DEM、联动3D和路线编辑器；代表场景在浏览器实测。",
+      "lesson": "直接复用能提高完整度，但应如实标为集成扩展，不能据此证明方法已跨主题迁移。",
+      "evidence": [
+        "projects/016-dongpo-journey/README.md",
+        "projects/016-dongpo-journey/notes/verification-atlas.md"
+      ]
+    },
+    {
+      "id": "017-transfer",
+      "title": "换到深海，验证方法能够迁移",
+      "intent": "深海主场景不用历史控制器和原作素材，以新业务重新组织时间、实体、事件、航迹与观察任务；后续研究页地图展品另计直接集成。",
+      "result": "017独立Three.js海底与两条教学航次；沿用015时序核心，补充其他纯模块和主题适配。",
+      "lesson": "核心复用、主题替换和画面质感是不同层面的工作；代码可迁移并不自动带来易懂的故事或高质量画面。",
+      "evidence": [
+        "projects/017-abyss-expedition/NOTICE.md",
+        "projects/017-abyss-expedition/notes/scene-intent.md",
+        "projects/017-abyss-expedition/web/core/README.md"
+      ]
+    },
+    {
+      "id": "017-experience",
+      "title": "把技术演示逐步补成完整作品",
+      "intent": "回应看不懂场景、设备职责不明、讲解对象在画外、不能自由操控等反馈。",
+      "result": "导演叙事、海洋基础概念、原理动画、同类采样、语音对应高亮、自由驾驶与镜头，最后做两航次全程验收。",
+      "lesson": "用观察到的用户问题决定返修：讲到什么就指出来；镜头与潜器位置分开；自动放映和自由操作都有清晰边界。",
+      "evidence": [
+        "projects/017-abyss-expedition/notes/verification-full-voyages.md",
+        "projects/017-abyss-expedition/notes/full-story-review.md",
+        "projects/017-abyss-expedition/notes/verification-visible-cues.md"
+      ]
+    },
+    {
+      "id": "017-research-integration",
+      "title": "研究档案接入完整地图展品",
+      "intent": "把016已具备的历史地图和真实三维地形能力放到017演示网页，方便与独立深海作品对照。",
+      "result": "同源运行包收录54份核验过的上游输入、016三维适配器和DEM；新增父页入口、消息桥与生命周期API。构建、静态依赖闭包和HTTP字节核对已执行；真实浏览器交互另按当轮记录验收。",
+      "lesson": "明确区分完整能力接入与跨主题方法迁移。017现在既有独立深海主作品，也有直接复用历史地图的研究展品；两者不共用地图渲染状态。",
+      "evidence": [
+        "projects/017-abyss-expedition/README.md",
+        "projects/017-abyss-expedition/NOTICE.md",
+        "projects/017-abyss-expedition/notes/atlas-integration-plan.md",
+        "projects/017-abyss-expedition/web/integrations/atlas/integration-source.json"
+      ]
+    }
+  ],
+  "gallery": [
+    {
+      "id": "source-ming",
+      "title": "源库：1415年政区与现代参照",
+      "project": "source",
+      "path": "projects/015-jiangshan-atlas/web/upstream/assets/preview_1415_ming_yingtian.webp",
+      "kind": "上游随固定版本提供的预览图",
+      "date": "2026-10-24本地收录；原始拍摄日未标注",
+      "version": "53059f1c7fed305807b19365857a5f135daf3ac6",
+      "caption": "宣纸配色、晕渲地形、政区与水系叠加，右侧编年事件及底部时间轴共同构成阅读层次。不是本次新拍，也不是三维场景。",
+      "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/assets/preview_1415_ming_yingtian.webp",
+      "evidence": [
+        "projects/015-jiangshan-atlas/web/upstream/SOURCE.json"
+      ]
+    },
+    {
+      "id": "source-changan",
+      "title": "源库：长安点地溯源",
+      "project": "source",
+      "path": "projects/015-jiangshan-atlas/web/upstream/assets/preview_741_tang_trace.webp",
+      "kind": "上游随固定版本提供的预览图",
+      "date": "2026-10-24本地收录；原始拍摄日未标注",
+      "version": "53059f1c7fed305807b19365857a5f135daf3ac6",
+      "caption": "把一个地点的历代归属、史事和地图位置放在同一阅读流程里。",
+      "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/assets/preview_741_tang_trace.webp",
+      "evidence": [
+        "projects/015-jiangshan-atlas/web/upstream/SOURCE.json"
+      ]
+    },
+    {
+      "id": "source-sushi",
+      "title": "源库：苏轼生平与编号行迹",
+      "project": "source",
+      "path": "projects/015-jiangshan-atlas/web/upstream/assets/preview_journey_sushi.webp",
+      "kind": "上游随固定版本提供的预览图",
+      "date": "2026-10-24本地收录；原始拍摄日未标注",
+      "version": "53059f1c7fed305807b19365857a5f135daf3ac6",
+      "caption": "右侧人物纪事与地图编号、朱砂路线和年份联动，是从内容进入空间的一种叙事方式。",
+      "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/assets/preview_journey_sushi.webp",
+      "evidence": [
+        "projects/015-jiangshan-atlas/web/upstream/SOURCE.json"
+      ]
+    },
+    {
+      "id": "source-quiz",
+      "title": "源库：寻址挑战",
+      "project": "source",
+      "path": "projects/015-jiangshan-atlas/web/upstream/assets/preview_quiz_challenge.webp",
+      "kind": "上游随固定版本提供的预览图",
+      "date": "2026-10-24本地收录；原始拍摄日未标注",
+      "version": "53059f1c7fed305807b19365857a5f135daf3ac6",
+      "caption": "已有历史地点数据进一步派生成线索、落针与距离反馈；不是AI现场编造坐标。",
+      "sourceUrl": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/assets/preview_quiz_challenge.webp",
+      "evidence": [
+        "projects/015-jiangshan-atlas/web/upstream/SOURCE.json"
+      ]
+    },
+    {
+      "id": "015-local",
+      "title": "015：本地原作与六个体验入口",
+      "project": "015",
+      "path": "projects/015-jiangshan-atlas/assets/acceptance-desktop.png",
+      "kind": "本项目真实浏览器验收截图",
+      "date": "2026-10-24",
+      "version": "015能力展示版",
+      "caption": "图中外围场景导航是新增界面，内层地图、长安沿革与编年面板为本地收录原作。",
+      "evidence": [
+        "projects/015-jiangshan-atlas/notes/verification.md"
+      ]
+    },
+    {
+      "id": "015-methods",
+      "title": "015：八项源码模式",
+      "project": "015",
+      "path": "projects/015-jiangshan-atlas/assets/acceptance-engineering-patterns.jpg",
+      "kind": "本项目真实浏览器验收截图",
+      "date": "2026-10-24",
+      "version": "015方法研究版",
+      "caption": "每种模式列出固定代码证据、迁移方式、适用边界与掌握标准。",
+      "evidence": [
+        "projects/015-jiangshan-atlas/notes/verification-engineering.md"
+      ]
+    },
+    {
+      "id": "015-transfer",
+      "title": "015：同一核心切换物流／项目迭代",
+      "project": "015",
+      "path": "projects/015-jiangshan-atlas/assets/acceptance-engineering-desktop.jpg",
+      "kind": "本项目真实浏览器验收截图",
+      "date": "2026-10-24",
+      "version": "015独立时序实验",
+      "caption": "只切换结构化数据，阶段、事件、节点与URL共用同一个纯核心；范围限线性过程。",
+      "evidence": [
+        "projects/015-jiangshan-atlas/notes/verification-engineering.md"
+      ]
+    },
+    {
+      "id": "016-miniature",
+      "title": "016早期草稿：惠州微缩景观",
+      "project": "016",
+      "path": "projects/016-dongpo-journey/assets/experience-3d-huizhou.jpg",
+      "kind": "历史草稿浏览器截图",
+      "date": "2026-10-24",
+      "version": "已被完整地图主入口替代的微缩景观版",
+      "caption": "是真实可旋转3D，但与完整历史地图能力脱节；保留用于说明探索中的误判，而非当前成果。",
+      "evidence": [
+        "projects/016-dongpo-journey/README.md",
+        "projects/016-dongpo-journey/notes/verification-3d.md",
+        "projects/016-dongpo-journey/notes/brief.md"
+      ]
+    },
+    {
+      "id": "016-atlas",
+      "title": "016当前作品：同一历史状态的3D山河",
+      "project": "016",
+      "path": "projects/016-dongpo-journey/assets/acceptance-atlas-3d.jpg",
+      "kind": "本项目真实浏览器验收截图",
+      "date": "2026-10-24",
+      "version": "完整上游集成＋Three.js联动扩展",
+      "caption": "历史引擎与人物资料直接复用，现代高程网格与Three.js视角新增；不代表古代真实地貌复原。",
+      "evidence": [
+        "projects/016-dongpo-journey/notes/verification-atlas.md"
+      ]
+    },
+    {
+      "id": "016-mobile",
+      "title": "016：窄屏人物路线与地图",
+      "project": "016",
+      "path": "projects/016-dongpo-journey/assets/acceptance-atlas-mobile.jpg",
+      "kind": "桌面浏览器390×844响应式截图",
+      "date": "2026-10-24",
+      "version": "完整地图版",
+      "caption": "人物卡片下置，地图和事件仍可操作；这不是物理手机设备测试。",
+      "evidence": [
+        "projects/016-dongpo-journey/notes/verification-atlas.md"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "id": "source-lock",
+      "title": "015上游来源、版本与文件哈希",
+      "path": "projects/015-jiangshan-atlas/web/upstream/SOURCE.json",
+      "url": "https://github.com/DeanChensj/jiangshan-map/tree/53059f1c7fed305807b19365857a5f135daf3ac6",
+      "scope": "固定版本与集成修改范围"
+    },
+    {
+      "id": "capability-count",
+      "title": "固定包能力统计",
+      "path": "projects/015-jiangshan-atlas/web/capabilities.json",
+      "scope": "只统计当前包，不沿用宣传数量"
+    },
+    {
+      "id": "source-readme",
+      "title": "上游中文说明",
+      "path": "projects/015-jiangshan-atlas/web/upstream/README_ZH.md",
+      "url": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/README_ZH.md",
+      "scope": "功能、Agent接口、GeoJSON与数据许可说明"
+    },
+    {
+      "id": "source-controller",
+      "title": "固定版本app.js",
+      "path": "projects/015-jiangshan-atlas/web/upstream/js/app.js",
+      "url": "https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js",
+      "scope": "八种实现模式的可读代码依据"
+    },
+    {
+      "id": "source-claude",
+      "title": "带Claude联合署名的GeoJSON提交",
+      "url": "https://github.com/DeanChensj/jiangshan-map/commit/5e940f6bc1f8aa50ac7fe0e2406baee7ef5ef7e7",
+      "scope": "2026-10-25联网核对；只支持该项公开AI参与"
+    },
+    {
+      "id": "015-notice",
+      "title": "015来源与许可",
+      "path": "projects/015-jiangshan-atlas/NOTICE.md",
+      "scope": "代码GPL与数据原条款分开"
+    },
+    {
+      "id": "015-verification",
+      "title": "015代表场景实际验收",
+      "path": "projects/015-jiangshan-atlas/notes/verification.md",
+      "scope": "区分上游程序检查与真实浏览器操作"
+    },
+    {
+      "id": "015-method-verification",
+      "title": "015独立时序迁移实验验收",
+      "path": "projects/015-jiangshan-atlas/notes/verification-engineering.md",
+      "scope": "物流与项目迭代的核心和输入边界"
+    },
+    {
+      "id": "016-scope",
+      "title": "016当前交付与早期提示保留",
+      "path": "projects/016-dongpo-journey/notes/brief.md",
+      "scope": "记录三站／微缩景观偏离目标及后续回到完整能力"
+    },
+    {
+      "id": "016-notice",
+      "title": "016上游复用与DEM来源",
+      "path": "projects/016-dongpo-journey/NOTICE.md",
+      "scope": "完整引擎直接复用，现代DEM与数据例外"
+    },
+    {
+      "id": "016-verification",
+      "title": "016完整地图验收",
+      "path": "projects/016-dongpo-journey/notes/verification-atlas.md",
+      "scope": "54文件、人物路线、2D/3D联动和窄屏实际操作"
+    },
+    {
+      "id": "017-notice",
+      "title": "017深海迁移与研究页地图集成来源",
+      "path": "projects/017-abyss-expedition/NOTICE.md",
+      "scope": "深海主场景借鉴方法并复用015独立核心；研究页另直接集成54份上游文件和016三维扩展，分开保留来源与许可"
+    },
+    {
+      "id": "017-core",
+      "title": "017九个纯核心接入与边界",
+      "path": "projects/017-abyss-expedition/web/core/README.md",
+      "scope": "核心与主题适配器分层"
+    },
+    {
+      "id": "017-full",
+      "title": "017两航次全流程验收",
+      "path": "projects/017-abyss-expedition/notes/verification-full-voyages.md",
+      "scope": "浏览器实播、局部复验、自动几何与操作证据"
+    },
+    {
+      "id": "017-atlas-runtime",
+      "title": "017本地历史地图集成清单与来源",
+      "path": "projects/017-abyss-expedition/web/integrations/atlas/integration-source.json",
+      "url": "http://127.0.0.1:8017/integrations/atlas/integration-source.html",
+      "scope": "同源运行包、逐文件输入/输出哈希、派生修改、GPL与数据例外；不表示深海scene已采用地图运行时"
+    }
+  ],
+  "licensing": [
+    "代码采用GPL-3.0不意味着所有历史GIS数据都可按相同条款自由使用。上游明确CHGIS V6／Hartwell相关数据保留原学术、非商业条款，应按具体数据核对。",
+    "原库历史疆域为示意近似；016现代DEM和017教学程序地形的来源与表达边界不同，不能混称真实古地貌或实测海底。",
+    "源库预览图是作者固定版本素材，使用时保留来源与版本；本地验收截图应注明所属项目和实际验证范围。",
+    "017研究页的地图展品直接收录完整历史地图资料，CHGIS V6／Hartwell原学术、非商业条款与DEM来源继续适用；深海主场景的程序地形与这份现代地图DEM分开。"
+  ]
+}

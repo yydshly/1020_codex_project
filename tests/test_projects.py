@@ -122,6 +122,51 @@ class CatalogTests(unittest.TestCase):
         self.assertEqual(len(card_links), 3)
         self.assertNotIn(data["repo"], [url for url, _ in card_links])
 
+    def test_custom_web_entry_is_used_in_both_indexes_and_cover_link(self):
+        directory = self.add(17, "research", web=True, cover="assets/cover.svg")
+        (directory / "web/guides").mkdir(parents=True)
+        (directory / "web/index.html").write_text("<h1>Experience</h1>", encoding="utf-8")
+        (directory / "web/guides/research.html").write_text("<h1>Research</h1>", encoding="utf-8")
+        (directory / "assets").mkdir()
+        (directory / "assets/cover.svg").write_text('<svg xmlns="http://www.w3.org/2000/svg"/>')
+        metadata = directory / "project.json"
+        data = json.loads(metadata.read_text(encoding="utf-8"))
+        data["web_entry"] = "guides/research.html"
+        metadata.write_text(json.dumps(data), encoding="utf-8")
+
+        entries = projects.load_projects()
+        catalog = projects.catalog(entries)
+        target = "projects/017-research/guides/research.html"
+        self.assertIn(f"[在线研究页]({projects.PAGES}/{target})", catalog)
+        self.assertIn(f'<a href="{projects.PAGES}/{target}"><img', catalog)
+        projects.build(entries)
+        output = projects.ROOT / "_site"
+        self.assertIn(f'class="live-link" href="{target}"',
+                      (output / "index.html").read_text(encoding="utf-8"))
+        self.assertEqual((output / target).read_text(encoding="utf-8"), "<h1>Research</h1>")
+        self.assertTrue((output / "projects/017-research/index.html").is_file())
+
+    def test_custom_web_entry_rejects_nonlocal_or_missing_html(self):
+        directory = self.add(17, "research", web=True)
+        (directory / "web").mkdir()
+        (directory / "web/index.html").write_text("<h1>Experience</h1>", encoding="utf-8")
+        (directory / "web/data.json").write_text("{}", encoding="utf-8")
+        metadata = directory / "project.json"
+        original = json.loads(metadata.read_text(encoding="utf-8"))
+        invalid = [None, 17, "", "/index.html", "C:/index.html", "../README.html",
+                   "guides/../../index.html", "guides\\index.html", "https://example.com/index.html",
+                   "//example.com/index.html", "index.html?mode=research", "index.html#section",
+                   "%2e%2e/index.html", "data.json", "missing.html"]
+        for entry in invalid:
+            with self.subTest(entry=entry):
+                metadata.write_text(json.dumps({**original, "web_entry": entry}), encoding="utf-8")
+                with self.assertRaises(ValueError):
+                    projects.load_projects()
+        metadata.write_text(json.dumps({**original, "web": False, "web_entry": "index.html"}),
+                            encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "启用 Web"):
+            projects.load_projects()
+
     def test_multiple_sources_and_tool_summaries_render_in_both_indexes(self):
         directory = self.add(2, "toolkit")
         metadata = directory / "project.json"

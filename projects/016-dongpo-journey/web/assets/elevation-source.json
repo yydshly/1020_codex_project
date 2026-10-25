@@ -1,0 +1,41 @@
+{
+  "source": "https://registry.opendata.aws/terrain-tiles/",
+  "attribution": "https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+  "format": "Terrarium: (R*256+G+B/256)-32768 meters",
+  "zoom": 5,
+  "accessed": "2026-10-24",
+  "tiles": [
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/5/25/12.png",
+      "sha256": "afd031b3bda92f9c8bfd02b5602088e12b32e49ff48d1d65c38c443a289457ae",
+      "bytes": 89316
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/5/25/13.png",
+      "sha256": "290a933304a283bbf649af4559afb7994e651a5f2d88e8a8b28482a20e7e836d",
+      "bytes": 97989
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/5/25/14.png",
+      "sha256": "3d246f3704137b6c10368523a9d70b7c957696ac811959f779736186e630026f",
+      "bytes": 82896
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/5/26/12.png",
+      "sha256": "dcc3f4e46759bdc92b109bac132ea10e2d8f20602769ff73026c427fadc75c92",
+      "bytes": 58153
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/5/26/13.png",
+      "sha256": "bd230044282ddce7a0a8ffd4405cfee1f7dfbf4656a579486e9f95384214f488",
+      "bytes": 82149
+    },
+    {
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/5/26/14.png",
+      "sha256": "4c1ee6bbefb9b3aa6f386f9edd5bb0f5d949b38c69352b4a2c65a363c7bc1c12",
+      "bytes": 96065
+    }
+  ],
+  "output_sha256": "4785c9feb230893f8e0bb0ebc86bace09412e7c2ce6d834de88a113168dc5d29",
+  "vertical_display": "Exaggerated for legibility; city scenes are authored illustrations, not surveyed reconstructions."
+}

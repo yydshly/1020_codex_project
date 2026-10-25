@@ -1,0 +1,82 @@
+{
+  "vents.landing": {
+    "focus": "任务起点 · 热水、烟囱与生命三问",
+    "method": "辨认角色与观察任务",
+    "compare": "分开科学原理、模拟观察与待检验问题"
+  },
+  "vents.basalt": {
+    "focus": "热液循环 · 海水、裂缝与地下热源",
+    "method": "岩面观察与地下剖面动画",
+    "compare": "沿下渗、受热反应、上涌的顺序理解"
+  },
+  "vents.chimney": {
+    "focus": "岩柱、热水与悬浮矿物颗粒",
+    "method": "喷口影像与既有水体记录",
+    "compare": "岩柱与黑羽流分开；成对采水在A/B站"
+  },
+  "vents.garden": {
+    "focus": "共生管虫示例 · 微生物供养",
+    "method": "群落影像与食物关系动画",
+    "compare": "不把所有深海食物网都解释为热液"
+  },
+  "vents.plume": {
+    "focus": "A水样 · 喷口外缘的水体",
+    "method": "演示关闭采水瓶并编号",
+    "compare": "与背景站B水样比较同一检测项目"
+  },
+  "vents.crest": {
+    "focus": "地形观察 · 山脊高地与各站相对位置",
+    "method": "地形巡视 · 无采样记录",
+    "compare": "比较台地、喷口与群落的距离和高低"
+  },
+  "vents.flank": {
+    "focus": "B水样 · 远离喷口的背景水",
+    "method": "同方法采水，保留条件差异",
+    "compare": "同类水样；成分待化验，差异不等于原因"
+  },
+  "vents.beacon": {
+    "focus": "返航整理 · 已知、记录与待检验",
+    "method": "核对演示样本与站位",
+    "compare": "已有机制与本次模拟观察分开解释"
+  },
+  "canyon.c-entry": {
+    "focus": "任务起点 · 栖息、食物与比较三问",
+    "method": "辨认母船、潜器和调查区域",
+    "compare": "本片记录与真实生态结论分开"
+  },
+  "canyon.c-wall": {
+    "focus": "栖息地 · 附着表面、水流与食物",
+    "method": "岩壁观察与栖息条件动画",
+    "compare": "记录条件差异，不从外形直接推断因果"
+  },
+  "canyon.c-coral": {
+    "focus": "生态观察 · 枝状珊瑚与所在台面",
+    "method": "珊瑚群落影像记录",
+    "compare": "与海绵花园的管状、杯状外观比较"
+  },
+  "canyon.c-fan": {
+    "focus": "A水样 · 台面侧水体",
+    "method": "采水瓶取水并记录站位时刻",
+    "compare": "与深谷侧B水样比较同一检测项目"
+  },
+  "canyon.c-sand": {
+    "focus": "地形观察 · 带状纹理、坡向与位置",
+    "method": "影像巡视 · 无采样记录",
+    "compare": "与扇面比较排列和坡度，不推断成因"
+  },
+  "canyon.c-channel": {
+    "focus": "B水样 · 深谷通道水体",
+    "method": "同方法采水，记录较大水深",
+    "compare": "与A水样配对；不能忽略深度与时刻"
+  },
+  "canyon.c-sponge": {
+    "focus": "生态观察 · 管状、杯状群落与海床",
+    "method": "海绵群落影像记录",
+    "compare": "与珊瑚台的枝状形态、所在位置比较"
+  },
+  "canyon.c-marker": {
+    "focus": "返航整理 · 已知、记录与待检验",
+    "method": "核对照片、样本与环境条件",
+    "compare": "模拟读数和模型不证明真实分布原因"
+  }
+}

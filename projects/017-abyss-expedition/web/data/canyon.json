@@ -1,0 +1,438 @@
+{
+  "id": "canyon",
+  "title": "峡谷回声",
+  "subtitle": "深海峡谷 · 冷水珊瑚巡测",
+  "description": "跟随潜器认识峡谷的岩壁、台面与海床，看看珊瑚和海绵怎样取食、住在什么表面。再取得台面侧与深谷侧的同类水样，学习比较前必须保留哪些环境条件。",
+  "unit": "分钟",
+  "min": 0,
+  "max": 150,
+  "baseDepth": 2750,
+  "seed": 93,
+  "terrain": "canyon",
+  "accent": "#e5b780",
+  "dataNotice": "教学模拟航次。地形、站位、时间、深度和传感器读数均为程序化或编写的样例；不对应真实海域或实际航次。温度表示ROV周围海水，电量表示模拟备用电量。 导演采样与对照表为教学演示，不自动加入个人报告。A/B均为水样；示例数字不是化验结果，不能据此证明群落分布的原因。",
+  "phases": [
+    {
+      "id": "approach",
+      "to": 16,
+      "label": "抵近定位",
+      "from": 0
+    },
+    {
+      "id": "wall",
+      "to": 50,
+      "label": "峡壁巡测",
+      "from": 16
+    },
+    {
+      "id": "floor",
+      "to": 90,
+      "label": "谷底观察",
+      "from": 50
+    },
+    {
+      "id": "ecology",
+      "to": 128,
+      "label": "生态记录",
+      "from": 90
+    },
+    {
+      "id": "return",
+      "to": 151,
+      "label": "返航归档",
+      "from": 128
+    }
+  ],
+  "entities": [
+    {
+      "id": "c-entry",
+      "label": "峡谷入口",
+      "position": [
+        0.15,
+        0.78
+      ],
+      "kind": "lander",
+      "depth": 2670,
+      "aliases": [
+        "入口",
+        "起点",
+        "entry"
+      ],
+      "description": "潜器从峡谷入口进入。这里能把岩壁、泥沙海床和群落放在同一次调查中，回答栖息表面、食物来源与同类样本比较三个基础问题。",
+      "observation": "先辨认空间关系与任务目的。峡谷地形和群落模型是教学设置，真实群落分布需要实地影像、环境资料和更多站点，不能由模型直接推断。",
+      "sourceIds": [
+        "noaa-seafloor",
+        "noaa-rov"
+      ],
+      "sample": null
+    },
+    {
+      "id": "c-wall",
+      "label": "层叠岩壁",
+      "position": [
+        0.28,
+        0.62
+      ],
+      "kind": "ridge",
+      "depth": 2710,
+      "aliases": [
+        "岩壁",
+        "峡壁",
+        "wall"
+      ],
+      "description": "岩壁、突出的台面与低处海床提供不同的附着表面。栖息地还包括水体条件和食物怎样到达，不能只理解成一个地点名。",
+      "observation": "原理演示把附着表面、水流和食物联系起来。这里只说明可能影响生活环境的因素；不凭几何外形判断峡谷历史或群落分布的原因。",
+      "sourceIds": [
+        "noaa-seafloor"
+      ],
+      "sample": null
+    },
+    {
+      "id": "c-coral",
+      "label": "冷水珊瑚台",
+      "position": [
+        0.37,
+        0.38
+      ],
+      "kind": "coral",
+      "depth": 2685,
+      "aliases": [
+        "珊瑚",
+        "冷水珊瑚",
+        "coral"
+      ],
+      "description": "一处突出的台面上分布着枝状群落。冷水珊瑚能够生活在深、冷、暗的水域，通过捕捉随水流经过的食物颗粒获得营养。",
+      "observation": "观察枝状结构之间的空间，并把台面的地形也收入影像。珊瑚提供的不只是自身的生活场所，也能为其他生物提供栖息空间。",
+      "sourceIds": [
+        "noaa-corals"
+      ],
+      "sample": {
+        "id": "c-coral-photo",
+        "name": "珊瑚群落影像",
+        "category": "影像记录",
+        "description": "留下一条虚拟影像记录，观察群落形态，不采走珊瑚。"
+      }
+    },
+    {
+      "id": "c-fan",
+      "label": "沉积扇面",
+      "position": [
+        0.55,
+        0.21
+      ],
+      "kind": "sampling",
+      "depth": 2780,
+      "aliases": [
+        "沉积扇",
+        "扇面",
+        "fan"
+      ],
+      "description": "这里是更靠近珊瑚台一侧的A水样站，采水架放在较平缓扇面上。照片用于记录外观，水样用于之后检测水体成分，两者分别回答不同问题。",
+      "observation": "以采水瓶取A水样，记录编号、站位、深度和时刻，再到深谷侧取得同类B水样。此处不再用沉积物替代配对水样；样本成分待化验，演示卡不会自动加入个人报告。",
+      "sourceIds": [
+        "noaa-seafloor"
+      ],
+      "sample": {
+        "id": "c-sediment",
+        "name": "台面侧A水样",
+        "category": "模拟水样",
+        "description": "A水样：在较靠近珊瑚台一侧的扇面站，以采水瓶取水，记录编号、站位、深度和时刻。与深谷B水样比较同一检测项目，成分待化验。",
+        "medium": "water",
+        "pairId": "canyon-water",
+        "positionRole": "near",
+        "positionLabel": "台面侧A站",
+        "method": "采水瓶取水；记录编号、站位、深度与时刻",
+        "analysisStatus": "pending"
+      },
+      "appearance": "water-sampler"
+    },
+    {
+      "id": "c-sand",
+      "label": "沙纹坡面",
+      "position": [
+        0.76,
+        0.34
+      ],
+      "kind": "ridge",
+      "depth": 2800,
+      "aliases": [
+        "沙纹",
+        "坡面",
+        "sand"
+      ],
+      "description": "潜器越过带状起伏的坡面，海床表面出现与扇面不同的纹理。坡底继续通向此次航次最深的通道。",
+      "observation": "顺着坡向观察纹理的排列，再回看扇面上的外观。先把纹理方向、位置和周围地形记清楚，形成机制需要更多观测来解释。",
+      "sourceIds": [
+        "noaa-seafloor"
+      ],
+      "sample": null
+    },
+    {
+      "id": "c-channel",
+      "label": "深谷通道",
+      "position": [
+        0.79,
+        0.61
+      ],
+      "kind": "sampling",
+      "depth": 2850,
+      "aliases": [
+        "深谷",
+        "谷底",
+        "通道",
+        "channel"
+      ],
+      "description": "这里是较远的深谷侧B水样站。它与A站都使用采水瓶，但水深和时刻等条件不同，必须如实保留。",
+      "observation": "把A、B作为同类水样，比较同一种检测结果；同时核对方法、深度和时刻。不同条件可能影响结果，不能将差异直接归因于周围珊瑚或海绵；还需检测和重复调查。",
+      "sourceIds": [
+        "noaa-rov"
+      ],
+      "sample": {
+        "id": "c-water",
+        "name": "深谷侧B水样",
+        "category": "模拟水样",
+        "description": "B水样：在更远的深谷侧以同样采水方法取水，与A水样比较同一检测项目。保留深度、时刻等条件差异，成分结果待化验。",
+        "medium": "water",
+        "pairId": "canyon-water",
+        "positionRole": "far",
+        "positionLabel": "深谷侧B站",
+        "method": "采水瓶取水；记录编号、站位、深度与时刻",
+        "analysisStatus": "pending"
+      },
+      "appearance": "water-sampler"
+    },
+    {
+      "id": "c-sponge",
+      "label": "海绵花园",
+      "position": [
+        0.59,
+        0.78
+      ],
+      "kind": "coral",
+      "appearance": "sponges",
+      "depth": 2765,
+      "aliases": [
+        "海绵",
+        "花园",
+        "sponge"
+      ],
+      "description": "沿谷底边缘抬升，一簇管状与杯状结构进入视野。与珊瑚台的枝状形态相比，这处海绵花园呈现另一种群落外观。",
+      "observation": "把群落的形态与所在海床一起记录下来，再与珊瑚台影像比较。相似的深海环境中可以出现不同形态，观察差异是提出生态问题的起点。",
+      "sourceIds": [
+        "noaa-corals"
+      ],
+      "sample": {
+        "id": "c-sponge-photo",
+        "name": "海绵群落影像",
+        "category": "影像记录",
+        "description": "保存一条虚拟群落影像观察，不将几何模型当成物种鉴定。"
+      }
+    },
+    {
+      "id": "c-marker",
+      "label": "归航标记",
+      "position": [
+        0.35,
+        0.84
+      ],
+      "kind": "lander",
+      "depth": 2700,
+      "aliases": [
+        "归航",
+        "标记",
+        "marker"
+      ],
+      "description": "返航标记重新汇合岩壁、群落与水样的调查路线。此处将已有知识、模拟记录和未回答的问题分开。",
+      "observation": "珊瑚与海绵从水中获取食物属于已有知识；本片的形态、站位与A/B样本属于模拟记录。哪些环境因素影响真实群落分布，需要检测、重复采样与更多资料，本片不提供新的实测结论。",
+      "sourceIds": [
+        "noaa-rov"
+      ],
+      "sample": null,
+      "appearance": "recovery-beacon"
+    }
+  ],
+  "events": [
+    {
+      "id": "c-arrive",
+      "time": 0,
+      "entityId": "c-entry",
+      "title": "进入峡谷边缘",
+      "detail": "先记住三个问题：生物附着在哪里、食物怎样到达、两个水样怎样比较。母船与潜器负责把这些任务连成路线。"
+    },
+    {
+      "id": "c-wall-view",
+      "time": 16,
+      "entityId": "c-wall",
+      "title": "沿岩壁向内巡测",
+      "detail": "记录岩壁、台面和谷底的关系，再通过原理图理解附着表面、水流、食物这些栖息条件。"
+    },
+    {
+      "id": "c-coral-view",
+      "time": 32,
+      "entityId": "c-coral",
+      "title": "发现冷水珊瑚",
+      "detail": "在枝状群落旁停留，将珊瑚形态和台面环境一起收入影像。思考没有阳光的珊瑚如何获得食物。"
+    },
+    {
+      "id": "c-fan-view",
+      "time": 50,
+      "entityId": "c-fan",
+      "title": "演示取得台面侧A水样",
+      "detail": "在扇面采水站关闭采水瓶，取得A水样演示卡并记录编号、站位、深度和时刻；照片与水样分开解释。"
+    },
+    {
+      "id": "c-sand-view",
+      "time": 70,
+      "entityId": "c-sand",
+      "title": "越过沙纹坡面",
+      "detail": "沿带状纹理向坡底前行，记下纹理排列与坡向，再回看扇面的地形差异。"
+    },
+    {
+      "id": "c-deep",
+      "time": 90,
+      "entityId": "c-channel",
+      "title": "演示取得深谷侧B水样",
+      "detail": "在更远的深谷侧以同样方法取B水样。比较同一检测项目之前，保留与A站不同的深度、时刻和位置。"
+    },
+    {
+      "id": "c-sponge-view",
+      "time": 110,
+      "entityId": "c-sponge",
+      "title": "遇见海绵群落",
+      "detail": "沿谷底边缘发现管状与杯状群落。保存影像，和珊瑚台的枝状外观并排比较。"
+    },
+    {
+      "id": "c-marker-view",
+      "time": 128,
+      "entityId": "c-marker",
+      "title": "沿归航标记返回",
+      "detail": "结尾分开已有科学知识、模拟观察和待检验问题。A/B水样尚无真实化验结果，不凭示例读数判断群落分布原因。"
+    },
+    {
+      "id": "c-return",
+      "time": 140,
+      "entityId": "c-entry",
+      "title": "回到峡谷入口",
+      "detail": "入口地形重新出现。回顾从岩壁到谷底的变化，挑出最值得重访的一处站点和一个问题。"
+    },
+    {
+      "id": "c-archive",
+      "time": 150,
+      "entityId": "c-entry",
+      "title": "完成峡谷档案",
+      "detail": "整理用户主动记录的条目。导演的取样演示不自动写入个人报告，模型与示例读数不充当真实调查证据。"
+    }
+  ],
+  "frames": [
+    {
+      "time": 0,
+      "position": [
+        0.15,
+        0.78
+      ],
+      "depth": 2670,
+      "temperature": 2.8,
+      "oxygen": 211,
+      "battery": 100
+    },
+    {
+      "time": 16,
+      "position": [
+        0.28,
+        0.62
+      ],
+      "depth": 2710,
+      "temperature": 2.7,
+      "oxygen": 209,
+      "battery": 97
+    },
+    {
+      "time": 32,
+      "position": [
+        0.37,
+        0.38
+      ],
+      "depth": 2685,
+      "temperature": 2.9,
+      "oxygen": 213,
+      "battery": 93
+    },
+    {
+      "time": 50,
+      "position": [
+        0.55,
+        0.21
+      ],
+      "depth": 2780,
+      "temperature": 2.5,
+      "oxygen": 205,
+      "battery": 89
+    },
+    {
+      "time": 70,
+      "position": [
+        0.76,
+        0.34
+      ],
+      "depth": 2800,
+      "temperature": 2.4,
+      "oxygen": 200,
+      "battery": 85
+    },
+    {
+      "time": 90,
+      "position": [
+        0.79,
+        0.61
+      ],
+      "depth": 2850,
+      "temperature": 2.2,
+      "oxygen": 196,
+      "battery": 81
+    },
+    {
+      "time": 110,
+      "position": [
+        0.59,
+        0.78
+      ],
+      "depth": 2765,
+      "temperature": 2.6,
+      "oxygen": 204,
+      "battery": 77
+    },
+    {
+      "time": 128,
+      "position": [
+        0.35,
+        0.84
+      ],
+      "depth": 2700,
+      "temperature": 2.7,
+      "oxygen": 208,
+      "battery": 74
+    },
+    {
+      "time": 140,
+      "position": [
+        0.15,
+        0.78
+      ],
+      "depth": 2670,
+      "temperature": 2.8,
+      "oxygen": 211,
+      "battery": 72
+    },
+    {
+      "time": 150,
+      "position": [
+        0.15,
+        0.78
+      ],
+      "depth": 2670,
+      "temperature": 2.8,
+      "oxygen": 211,
+      "battery": 70
+    }
+  ]
+}

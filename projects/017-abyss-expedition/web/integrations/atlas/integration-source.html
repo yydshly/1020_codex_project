@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>历史地图集成 · 来源与能力边界</title><link rel="icon" href="assets/favicon.svg"><style>body{margin:0;background:#f4f0e5;color:#263d35;font:16px/1.8 system-ui,sans-serif}main{max-width:920px;margin:auto;padding:48px 24px 80px}h1{font-size:clamp(28px,5vw,42px);line-height:1.3}h2{font-size:22px;margin-top:36px}a{color:#9e342b}table{width:100%;border-collapse:collapse;font-size:14px}td,th{text-align:left;padding:13px 12px;border-bottom:1px solid #d5d2c4;vertical-align:top}code{overflow-wrap:anywhere;font-size:13px}.eyebrow{letter-spacing:.18em;font-size:12px}nav{display:flex;gap:20px;flex-wrap:wrap}.note{padding:18px 22px;background:#e7e9dd;border-left:3px solid #9e342b}li{margin:9px 0}@media(max-width:600px){main{padding:30px 18px}td,th{padding:10px 5px}}</style></head><body><main>
+<p class="eyebrow">017 / 历史地图能力接入</p><h1>同一套历史状态，连接舆图与三维山河。</h1>
+<nav><a href="./?view=3d">打开三维地图</a><a href="./?view=2d">打开二维舆图</a><a href="../../research.html" target="_top">研究与探索总档案</a></nav>
+<p class="note">本页把016当前作品的完整地图运行时接入017演示网页。地图引擎与历史数据来自<a href="https://github.com/DeanChensj/jiangshan-map" target="_blank" rel="noopener">DeanChensj / 江山时序</a>；联动三维地形属于016的扩展；017提供同源集成、操作入口与生命周期控制。</p>
+<h2>可以体验什么</h2><table><thead><tr><th>能力</th><th>操作与边界</th></tr></thead><tbody>
+<tr><td>时间、疆域、历史事件</td><td>拖动年份，选朝代和阶段事件；边界为历史资料的示意表达。</td></tr>
+<tr><td>城市沿革与人物行迹</td><td>搜城市、搜人物，读史事与生平；人物站点、年份、路线和两种视角同步。</td></tr>
+<tr><td>图层、路线与寻址挑战</td><td>切换历史/现代图层，编排路线；细政区悬停、透视镜、寻址挑战在二维舆图中体验。</td></tr>
+<tr><td>真实地形三维视角</td><td>Three.js实时绘制现代DEM、历史疆域、城市和路线。拖动旋转、滚轮缩放、右键平移；不是古地貌复原。</td></tr>
+<tr><td>研究页集成</td><td>017页面内运行同源地图，可暂停后台绘制并恢复；不需要启动8016服务，也没有接入在线AI问答。</td></tr>
+</tbody></table>
+<h2>来源、许可与文件校验</h2><ul>
+<li>上游固定版本：<a href="https://github.com/DeanChensj/jiangshan-map/tree/53059f1c7fed305807b19365857a5f135daf3ac6" target="_blank" rel="noopener"><code>53059f1c7fed305807b19365857a5f135daf3ac6</code></a>；54文件原始清单见<a href="atlas-source.json">atlas-source.json</a>。</li>
+<li>本次包的每个文件、输入与输出SHA-256、派生修改及重建入口见<a href="integration-source.json">integration-source.json</a>。新增JS直接以可读源代码提供；<a href="integration-bridge.mjs">桥源代码</a>与<a href="integration-api-suffix.mjs">API附加源代码</a>均可查看。</li>
+<li>代码遵循<a href="UPSTREAM-LICENSE">GPL-3.0全文</a>，新增代码为GPL-3.0-only。<strong>CHGIS V6 / Hartwell等数据的原始学术、非商业条款继续适用。</strong>参见<a href="UPSTREAM-README_ZH.md">上游说明</a>、<a href="UPSTREAM-CONTRIBUTING_ZH.md">校勘约定</a>、<a href="NOTICE-016.md">016原始来源声明</a>和<a href="INTEGRATION-NOTICE.md">本次集成修改声明</a>。</li>
+<li><a href="vendor/three/LICENSE">Three.js 0.180.0 / MIT许可</a>，<a href="vendor/three/source.json">4份模块/许可文件的来源与SHA-256</a>；模块保持原样。</li>
+<li><a href="https://registry.opendata.aws/terrain-tiles/" target="_blank" rel="noopener">Mapzen Terrain Tiles / AWS Open Data</a>现代高程：361×253格网，91,333采样点；<a href="assets/atlas-elevation-source.json">15张源瓦片、解码、投影与哈希记录</a>。Global SRTM / GMTED2010 terrain data courtesy of the U.S. Geological Survey; global ETOPO1 terrain data from U.S. NOAA. <a href="https://github.com/tilezen/joerd/blob/master/docs/attribution.md" target="_blank" rel="noopener">原始归属与条款</a>。原始瓦片没有打包。</li>
+</ul>
+<h2>集成范围</h2><p>本地核心运行时包含引擎、完整历史数据、延迟加载的疆域快照与语言字典、当前适配器、解码DEM和Three.js。所有这些资源从017同源地址加载。旧微缩场景和旧三站草稿不属于本次接入。专题HTML保留历史文字、作者归属和原站链接，仅移除原站统计脚本；外站资料链接不是本地核心运行依赖。原库古琴播放器的5首Wikimedia音轨未缓存，点击播放音乐需要联网。</p>
+<p>本次是现有地图能力的完整接入；它与017深海作品并列展示，便于对照研究，不表示两者已共用同一套三维渲染器。</p>
+<p><a href="./?view=3d">返回地图 ↗</a></p></main></body></html>

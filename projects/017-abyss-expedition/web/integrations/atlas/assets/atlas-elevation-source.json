@@ -1,0 +1,210 @@
+{
+  "source": "https://registry.opendata.aws/terrain-tiles/",
+  "format_reference": "https://github.com/tilezen/joerd/blob/master/docs/formats.md",
+  "attribution_reference": "https://github.com/tilezen/joerd/blob/master/docs/attribution.md",
+  "attribution": "Global SRTM / GMTED2010 terrain data courtesy of the U.S. Geological Survey; global ETOPO1 terrain data from U.S. NOAA.",
+  "format": "Terrarium: (R*256+G+B/256)-32768 metres",
+  "zoom": 4,
+  "accessed": "2026-10-24",
+  "tiles": [
+    {
+      "tile": [
+        4,
+        10,
+        5
+      ],
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/4/10/5.png",
+      "local_file": "assets/atlas-terrain-source/4-10-5.png",
+      "sha256": "820e75125287ca758b332c3fd9981d484c3169efb6eb9a9cc13c502906f4dd11",
+      "bytes": 68356
+    },
+    {
+      "tile": [
+        4,
+        10,
+        6
+      ],
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/4/10/6.png",
+      "local_file": "assets/atlas-terrain-source/4-10-6.png",
+      "sha256": "32e420ee51a17f752167e8fe7bc1a862fc882358fcb97c5b196e533e34b30cb7",
+      "bytes": 91307
+    },
+    {
+      "tile": [
+        4,
+        10,
+        7
+      ],
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/4/10/7.png",
+      "local_file": "assets/atlas-terrain-source/4-10-7.png",
+      "sha256": "d22d80eb11d1f86fb40185e186d15423ed9c74b3b8cf141ed32c4b3e93c58b96",
+      "bytes": 93351
+    },
+    {
+      "tile": [
+        4,
+        11,
+        5
+      ],
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/4/11/5.png",
+      "local_file": "assets/atlas-terrain-source/4-11-5.png",
+      "sha256": "075b49c0542c87a0cec39d3f92af3b07981f88d89f44a7cb00df3818147de7b5",
+      "bytes": 86382
+    },
+    {
+      "tile": [
+        4,
+        11,
+        6
+      ],
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/4/11/6.png",
+      "local_file": "assets/atlas-terrain-source/4-11-6.png",
+      "sha256": "48693b9929a44948d352ba5581baabb549be34299e591a39aa2efcbc29513236",
+      "bytes": 93266
+    },
+    {
+      "tile": [
+        4,
+        11,
+        7
+      ],
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/4/11/7.png",
+      "local_file": "assets/atlas-terrain-source/4-11-7.png",
+      "sha256": "cbeea6e227be980cc999553781534aa5f05ce9e47b2f24aa0bbbe3504d428eb4",
+      "bytes": 89687
+    },
+    {
+      "tile": [
+        4,
+        12,
+        5
+      ],
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/4/12/5.png",
+      "local_file": "assets/atlas-terrain-source/4-12-5.png",
+      "sha256": "8c75af8b3da9f9d7c361dc70f81d0bb22445f64420f1a470073c5dee3f6390da",
+      "bytes": 98644
+    },
+    {
+      "tile": [
+        4,
+        12,
+        6
+      ],
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/4/12/6.png",
+      "local_file": "assets/atlas-terrain-source/4-12-6.png",
+      "sha256": "b197ed6a219fff8ec01e1a2a1c52f2a6548ce54936b1cbcc1005faffa2b9dbe3",
+      "bytes": 105566
+    },
+    {
+      "tile": [
+        4,
+        12,
+        7
+      ],
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/4/12/7.png",
+      "local_file": "assets/atlas-terrain-source/4-12-7.png",
+      "sha256": "d31db9a1e3ba45f2861f8c093dad4efcdd681e673806be346b8dc4fab544b736",
+      "bytes": 88553
+    },
+    {
+      "tile": [
+        4,
+        13,
+        5
+      ],
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/4/13/5.png",
+      "local_file": "assets/atlas-terrain-source/4-13-5.png",
+      "sha256": "cff2fcc64706c0a9d085234cb5da36b8ea11b6f3da87ef7d4b4d5e2d859d103b",
+      "bytes": 92455
+    },
+    {
+      "tile": [
+        4,
+        13,
+        6
+      ],
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/4/13/6.png",
+      "local_file": "assets/atlas-terrain-source/4-13-6.png",
+      "sha256": "9864e9c55db3a7b0ec8ec7040c807d0655363aad74c7a9a10fd0a3881db65e83",
+      "bytes": 88754
+    },
+    {
+      "tile": [
+        4,
+        13,
+        7
+      ],
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/4/13/7.png",
+      "local_file": "assets/atlas-terrain-source/4-13-7.png",
+      "sha256": "6dd0a34011b3dcf9f27e91a0c024f5c44ed43c316dcccdf12c9dcfad79788bf8",
+      "bytes": 106520
+    },
+    {
+      "tile": [
+        4,
+        14,
+        5
+      ],
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/4/14/5.png",
+      "local_file": "assets/atlas-terrain-source/4-14-5.png",
+      "sha256": "98baa1b96d377d442bf0f4e5ac0e317f44dd3b676bdc0c31d9e3406d662b0f87",
+      "bytes": 92609
+    },
+    {
+      "tile": [
+        4,
+        14,
+        6
+      ],
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/4/14/6.png",
+      "local_file": "assets/atlas-terrain-source/4-14-6.png",
+      "sha256": "4de703670abdf0ab655012ec56f1508ccfc013c10625f3529a97aab75f87fd1f",
+      "bytes": 98435
+    },
+    {
+      "tile": [
+        4,
+        14,
+        7
+      ],
+      "url": "https://s3.amazonaws.com/elevation-tiles-prod/terrarium/4/14/7.png",
+      "local_file": "assets/atlas-terrain-source/4-14-7.png",
+      "sha256": "05b94eea349202647ad1d10fec458430552a96beb08dca2c440334c6a715b6bf",
+      "bytes": 105238
+    }
+  ],
+  "grid": {
+    "width": 361,
+    "height": 253,
+    "samples": 91333
+  },
+  "projection": {
+    "type": "MercatorProjector",
+    "width": 1000,
+    "height": 700,
+    "bounds": {
+      "west": 66,
+      "east": 142,
+      "south": 14,
+      "north": 55
+    },
+    "scale": 13.157894736842104,
+    "padX": 5.684341886080802e-14,
+    "padY": 7.951706363938513
+  },
+  "sample_bounds": {
+    "west": 66.0,
+    "east": 142.0,
+    "south": 13.41288299695694,
+    "north": 55.34513403238254
+  },
+  "sampling": "Nearest source pixel at each inverse-projected screen grid vertex; rounded to integer metres.",
+  "value_range_meters": [
+    -9504,
+    6353
+  ],
+  "output": "web/assets/atlas-elevation.json",
+  "output_sha256": "219a5324a9655ec1b00bfd8efbd5c7044fe797515188d81f8163f19afe5e05c8",
+  "presentation": "No height clamping or exaggeration in this dataset; renderers may apply documented display transforms.",
+  "license": "Source dataset terms retained; see attribution_reference. No blanket relicensing is asserted."
+}

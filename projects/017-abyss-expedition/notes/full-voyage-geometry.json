@@ -1,0 +1,532 @@
+{
+  "schema": "abyss-full-voyage-geometry/v1",
+  "passed": true,
+  "frames": 14664,
+  "issues": [],
+  "missions": [
+    {
+      "mission": "vents",
+      "duration": 311.2,
+      "chapters": [
+        {
+          "id": "vents-establish",
+          "kind": "establishing",
+          "duration": 25.6,
+          "startY": 438,
+          "endY": -41.8,
+          "startSubjectDistance": 506.4,
+          "maxSubjectDistance": 506.4,
+          "endSubjectDistance": 41.1,
+          "endSurfaceDistance": 489,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 0,
+          "occludedSamples": 0,
+          "stage": false
+        },
+        {
+          "id": "vents-equipment",
+          "kind": "equipment",
+          "duration": 50.6,
+          "startY": -41.8,
+          "endY": -41.8,
+          "startSubjectDistance": 41.1,
+          "maxSubjectDistance": 41.1,
+          "endSubjectDistance": 41.1,
+          "endSurfaceDistance": 489,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 0,
+          "occludedSamples": 0,
+          "stage": true
+        },
+        {
+          "id": "vents-approach",
+          "kind": "approach",
+          "duration": 21.3,
+          "startY": -28,
+          "endY": -28,
+          "startSubjectDistance": 40.5,
+          "maxSubjectDistance": 40.5,
+          "endSubjectDistance": 40.5,
+          "endSurfaceDistance": 483.9,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 0,
+          "occludedSamples": 0,
+          "stage": false
+        },
+        {
+          "id": "vents-fluid",
+          "kind": "hydrothermal",
+          "duration": 25.1,
+          "startY": -28,
+          "endY": -28,
+          "startSubjectDistance": 40.5,
+          "maxSubjectDistance": 40.5,
+          "endSubjectDistance": 40.5,
+          "endSurfaceDistance": 483.9,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 0,
+          "occludedSamples": 0,
+          "stage": true
+        },
+        {
+          "id": "vents-discover",
+          "kind": "black-smoker",
+          "duration": 27.5,
+          "startY": -26.8,
+          "endY": -26.8,
+          "startSubjectDistance": 34.2,
+          "maxSubjectDistance": 34.2,
+          "endSubjectDistance": 34.2,
+          "endSurfaceDistance": 518.6,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 0,
+          "occludedSamples": 0,
+          "stage": true
+        },
+        {
+          "id": "vents-life",
+          "kind": "food-web",
+          "duration": 25.4,
+          "startY": -29.5,
+          "endY": -29.5,
+          "startSubjectDistance": 38.3,
+          "maxSubjectDistance": 38.3,
+          "endSubjectDistance": 38.3,
+          "endSurfaceDistance": 588.7,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 0,
+          "occludedSamples": 0,
+          "stage": true
+        },
+        {
+          "id": "vents-investigate",
+          "kind": "compare",
+          "duration": 27,
+          "startY": -37,
+          "endY": -37,
+          "startSubjectDistance": 37.2,
+          "maxSubjectDistance": 37.2,
+          "endSubjectDistance": 37.2,
+          "endSurfaceDistance": 653.4,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 18,
+          "occludedSamples": 0,
+          "stage": false,
+          "minSamplerHeight720": 131.9,
+          "samplerHeight720": [
+            131.9,
+            175.1,
+            242.5
+          ],
+          "samplerCameraPositions": [
+            [
+              31.6,
+              0.5,
+              -118.3
+            ],
+            [
+              44.8,
+              -8.5,
+              -122.3
+            ],
+            [
+              58,
+              -17.5,
+              -126.4
+            ]
+          ],
+          "samplerVisibleProbes": [
+            {
+              "visible": 15,
+              "total": 16
+            },
+            {
+              "visible": 15,
+              "total": 16
+            }
+          ]
+        },
+        {
+          "id": "vents-background",
+          "kind": "compare",
+          "duration": 26.5,
+          "startY": -47.9,
+          "endY": -47.9,
+          "startSubjectDistance": 35.8,
+          "maxSubjectDistance": 35.8,
+          "endSubjectDistance": 35.8,
+          "endSurfaceDistance": 639.7,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 18,
+          "occludedSamples": 0,
+          "stage": false,
+          "minSamplerHeight720": 132.1,
+          "samplerHeight720": [
+            132.1,
+            175.2,
+            242.5
+          ],
+          "samplerCameraPositions": [
+            [
+              50.2,
+              -7,
+              111.1
+            ],
+            [
+              63.4,
+              -15.8,
+              107.1
+            ],
+            [
+              76.6,
+              -24.5,
+              103
+            ]
+          ],
+          "samplerVisibleProbes": [
+            {
+              "visible": 16,
+              "total": 16
+            },
+            {
+              "visible": 16,
+              "total": 16
+            }
+          ]
+        },
+        {
+          "id": "vents-compare",
+          "kind": "comparison",
+          "duration": 27.3,
+          "startY": -47.9,
+          "endY": -47.9,
+          "startSubjectDistance": 35.8,
+          "maxSubjectDistance": 35.8,
+          "endSubjectDistance": 35.8,
+          "endSurfaceDistance": 639.7,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 0,
+          "occludedSamples": 0,
+          "stage": true
+        },
+        {
+          "id": "vents-summary",
+          "kind": "summary",
+          "duration": 27.8,
+          "startY": -44.9,
+          "endY": -44.9,
+          "startSubjectDistance": 36,
+          "maxSubjectDistance": 36,
+          "endSubjectDistance": 36,
+          "endSurfaceDistance": 559.1,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 0,
+          "occludedSamples": 0,
+          "stage": false
+        },
+        {
+          "id": "vents-depart",
+          "kind": "departure",
+          "duration": 27.1,
+          "startY": -44.9,
+          "endY": 438,
+          "startSubjectDistance": 36,
+          "maxSubjectDistance": 555.1,
+          "endSubjectDistance": 555.1,
+          "endSurfaceDistance": 0,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 0,
+          "occludedSamples": 0,
+          "stage": false
+        }
+      ],
+      "phoneCuts": 33,
+      "framingRegression": {
+        "chapters": 4,
+        "framings": [
+          "establishing",
+          "approach",
+          "orbit",
+          "detail",
+          "compare",
+          "departure"
+        ],
+        "samples": 72,
+        "maxPositionShift": 0
+      }
+    },
+    {
+      "mission": "canyon",
+      "duration": 298.5,
+      "chapters": [
+        {
+          "id": "canyon-establish",
+          "kind": "establishing",
+          "duration": 26.4,
+          "startY": 438,
+          "endY": -197.6,
+          "startSubjectDistance": 654.8,
+          "maxSubjectDistance": 654.8,
+          "endSubjectDistance": 37.8,
+          "endSurfaceDistance": 642.5,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 0,
+          "occludedSamples": 0,
+          "stage": false
+        },
+        {
+          "id": "canyon-equipment",
+          "kind": "equipment",
+          "duration": 51.1,
+          "startY": -197.6,
+          "endY": -197.6,
+          "startSubjectDistance": 37.8,
+          "maxSubjectDistance": 37.8,
+          "endSubjectDistance": 37.8,
+          "endSurfaceDistance": 642.5,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 0,
+          "occludedSamples": 0,
+          "stage": true
+        },
+        {
+          "id": "canyon-wall",
+          "kind": "orbit",
+          "duration": 21.2,
+          "startY": -167.5,
+          "endY": -167.5,
+          "startSubjectDistance": 37.2,
+          "maxSubjectDistance": 37.2,
+          "endSubjectDistance": 37.2,
+          "endSurfaceDistance": 621.2,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 0,
+          "occludedSamples": 0,
+          "stage": false
+        },
+        {
+          "id": "canyon-habitat",
+          "kind": "habitat",
+          "duration": 26.4,
+          "startY": -167.5,
+          "endY": -167.5,
+          "startSubjectDistance": 37.2,
+          "maxSubjectDistance": 37.2,
+          "endSubjectDistance": 37.2,
+          "endSurfaceDistance": 621.2,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 0,
+          "occludedSamples": 0,
+          "stage": true
+        },
+        {
+          "id": "canyon-coral",
+          "kind": "detail",
+          "duration": 20.9,
+          "startY": -24.8,
+          "endY": -24.8,
+          "startSubjectDistance": 37.2,
+          "maxSubjectDistance": 37.2,
+          "endSubjectDistance": 37.2,
+          "endSurfaceDistance": 529.8,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 13,
+          "occludedSamples": 0,
+          "stage": false
+        },
+        {
+          "id": "canyon-sediment",
+          "kind": "compare",
+          "duration": 25.2,
+          "startY": -219.8,
+          "endY": -219.8,
+          "startSubjectDistance": 36.5,
+          "maxSubjectDistance": 36.5,
+          "endSubjectDistance": 36.5,
+          "endSurfaceDistance": 775.9,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 17,
+          "occludedSamples": 0,
+          "stage": false,
+          "minSamplerHeight720": 139,
+          "samplerHeight720": [
+            139,
+            186,
+            260.2
+          ],
+          "samplerCameraPositions": [
+            [
+              -39.5,
+              -180.6,
+              -114.2
+            ],
+            [
+              -29.8,
+              -189.5,
+              -125.5
+            ],
+            [
+              -20,
+              -198.3,
+              -136.8
+            ]
+          ],
+          "samplerVisibleProbes": [
+            {
+              "visible": 15,
+              "total": 16
+            },
+            {
+              "visible": 15,
+              "total": 16
+            }
+          ]
+        },
+        {
+          "id": "canyon-channel",
+          "kind": "compare",
+          "duration": 26,
+          "startY": -207.9,
+          "endY": -207.9,
+          "startSubjectDistance": 36,
+          "maxSubjectDistance": 36,
+          "endSubjectDistance": 36,
+          "endSurfaceDistance": 789.4,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 18,
+          "occludedSamples": 0,
+          "stage": false,
+          "minSamplerHeight720": 139,
+          "samplerHeight720": [
+            139,
+            185.9,
+            260.2
+          ],
+          "samplerCameraPositions": [
+            [
+              109.3,
+              -167.5,
+              133.8
+            ],
+            [
+              119,
+              -176.2,
+              122.5
+            ],
+            [
+              128.8,
+              -185,
+              111.2
+            ]
+          ],
+          "samplerVisibleProbes": [
+            {
+              "visible": 13,
+              "total": 16
+            },
+            {
+              "visible": 16,
+              "total": 16
+            }
+          ]
+        },
+        {
+          "id": "canyon-compare",
+          "kind": "comparison",
+          "duration": 26.5,
+          "startY": -207.9,
+          "endY": -207.9,
+          "startSubjectDistance": 36,
+          "maxSubjectDistance": 36,
+          "endSubjectDistance": 36,
+          "endSurfaceDistance": 789.4,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 0,
+          "occludedSamples": 0,
+          "stage": true
+        },
+        {
+          "id": "canyon-sponges",
+          "kind": "detail",
+          "duration": 20.8,
+          "startY": 25.8,
+          "endY": 25.8,
+          "startSubjectDistance": 36.3,
+          "maxSubjectDistance": 36.3,
+          "endSubjectDistance": 36.3,
+          "endSurfaceDistance": 532.7,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 11,
+          "occludedSamples": 0,
+          "stage": false
+        },
+        {
+          "id": "canyon-summary",
+          "kind": "summary",
+          "duration": 27.4,
+          "startY": 22.4,
+          "endY": 22.4,
+          "startSubjectDistance": 37.4,
+          "maxSubjectDistance": 37.4,
+          "endSubjectDistance": 37.4,
+          "endSurfaceDistance": 466.9,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 0,
+          "occludedSamples": 0,
+          "stage": false
+        },
+        {
+          "id": "canyon-depart",
+          "kind": "departure",
+          "duration": 26.6,
+          "startY": 22.4,
+          "endY": 438,
+          "startSubjectDistance": 37.4,
+          "maxSubjectDistance": 467.4,
+          "endSubjectDistance": 467.4,
+          "endSurfaceDistance": 0,
+          "unsafeFrames": 0,
+          "invisibleFrames": 0,
+          "sightlineSamples": 0,
+          "occludedSamples": 0,
+          "stage": false
+        }
+      ],
+      "phoneCuts": 33,
+      "framingRegression": {
+        "chapters": 6,
+        "framings": [
+          "establishing",
+          "approach",
+          "orbit",
+          "detail",
+          "compare",
+          "departure"
+        ],
+        "samples": 108,
+        "maxPositionShift": 0
+      }
+    }
+  ]
+}

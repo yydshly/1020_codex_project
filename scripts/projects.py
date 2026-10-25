@@ -56,6 +56,11 @@ def markdown_summary(project):
     return "<br>".join(parts)
 
 
+def web_path(project):
+    """A validated optional HTML entry; omitted entries retain the directory URL."""
+    return f"projects/{project['directory'].name}/" + project.get("web_entry", "")
+
+
 def load_projects():
     projects = []
     ids = set()
@@ -115,6 +120,13 @@ def load_projects():
             require(sources == set(repositories), "工具摘要必须覆盖所有 repositories 来源")
         require(p["status"] in STATUSES, "不支持的研究状态")
         require(type(p.get("web")) is bool, "web 必须为布尔值")
+        if "web_entry" in p:
+            require(p["web"], "web_entry 只能用于启用 Web 的项目")
+            entry = p["web_entry"]
+            require(isinstance(entry, str) and bool(re.fullmatch(
+                r"(?:[A-Za-z0-9_-][A-Za-z0-9_.-]*/)*[A-Za-z0-9_-][A-Za-z0-9_.-]*\.html", entry)),
+                "web_entry 必须是 Web 目录内的相对 .html 文件路径")
+            local_file(directory / "web", entry)
         require(isinstance(p.get("cover"), str), "cover 必须为字符串")
         require(isinstance(p.get("cover_alt"), str), "cover_alt 必须为字符串")
         local_file(directory, "README.md")
@@ -145,12 +157,12 @@ def catalog(projects):
         sources = " · ".join(f"[{text(label)}]({url})" for label, url in source_links(p))
         links = f"[研究说明]({path}/README.md) · {sources}"
         if p["web"]:
-            links = f"[在线研究页]({PAGES}/{path}/) · " + links
+            links = f"[在线研究页]({PAGES}/{web_path(p)}) · " + links
         lines.append(f"| {p['id']:03d} | {text(p['name'])} | {markdown_summary(p)} | {p['status']} | {links} |")
     for p in projects:
         if p["cover"]:
             path = f"projects/{p['directory'].name}"
-            cover_link = f"{PAGES}/{path}/" if p["web"] else f"{path}/README.md"
+            cover_link = f"{PAGES}/{web_path(p)}" if p["web"] else f"{path}/README.md"
             lines.extend([
                 "", f"### {p['id']:03d} · {text(p['name'])}", "",
                 f'<a href="{cover_link}"><img src="{path}/{html.escape(p["cover"], quote=True)}" '
@@ -221,7 +233,7 @@ def build(projects):
             shutil.copyfile(cover, output / "covers" / image_name)
             image = (f'<a class="cover-link" href="covers/{image_name}" title="点击查看完整引导图">'
                      f'<img src="covers/{image_name}" alt="{html.escape(p["cover_alt"], quote=True)}" loading="lazy"></a>')
-        demo = f'<a class="live-link" href="projects/{name}/">在线研究页 →</a>' if p["web"] else ""
+        demo = f'<a class="live-link" href="{web_path(p)}">在线研究页 →</a>' if p["web"] else ""
         sources = "".join(
             f'<a href="{html.escape(url, quote=True)}">{html.escape(label)}</a>'
             for label, url in source_links(p))

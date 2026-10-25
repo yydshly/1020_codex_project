@@ -1,0 +1,383 @@
+{
+  "repository": "https://github.com/DeanChensj/jiangshan-map",
+  "commit": "53059f1c7fed305807b19365857a5f135daf3ac6",
+  "retrieved_on": "2026-10-24",
+  "license": "GPL-3.0",
+  "changes": [
+    "index.html: remove remote font requests and analytics; system font fallbacks remain"
+  ],
+  "files": [
+    {
+      "path": "assets/favicon.svg",
+      "upstream_sha256": "227e6e6568260e91127a50327964ecf381b53ef9056a941ceeff69f254b72943",
+      "local_sha256": "227e6e6568260e91127a50327964ecf381b53ef9056a941ceeff69f254b72943",
+      "modified": false
+    },
+    {
+      "path": "assets/icons/apple-touch-icon.png",
+      "upstream_sha256": "09f11c0466d591ea289061d74e5d592c800f4c168b377a4c054ac4323c41c877",
+      "local_sha256": "09f11c0466d591ea289061d74e5d592c800f4c168b377a4c054ac4323c41c877",
+      "modified": false
+    },
+    {
+      "path": "assets/icons/icon-192.png",
+      "upstream_sha256": "9b1c0c0d6c2c5c0a73ef553b3fd887d636562607f14cf34b5a52d20cac9e2494",
+      "local_sha256": "9b1c0c0d6c2c5c0a73ef553b3fd887d636562607f14cf34b5a52d20cac9e2494",
+      "modified": false
+    },
+    {
+      "path": "assets/icons/icon-512-maskable.png",
+      "upstream_sha256": "242f47e35532466cd2e5bb6081badd9ff620d58773d919e21fa987243b6b3f38",
+      "local_sha256": "242f47e35532466cd2e5bb6081badd9ff620d58773d919e21fa987243b6b3f38",
+      "modified": false
+    },
+    {
+      "path": "assets/icons/icon-512.png",
+      "upstream_sha256": "98f09f5433cd80c5c29a6f67bc8bd808a3a982fad5f1d63469ff5a3bd9d5d984",
+      "local_sha256": "98f09f5433cd80c5c29a6f67bc8bd808a3a982fad5f1d63469ff5a3bd9d5d984",
+      "modified": false
+    },
+    {
+      "path": "assets/preview_1415_ming_yingtian.webp",
+      "upstream_sha256": "f67579be0101c2dcbb3becb4e96cb8abd934a4cc8dc37860ffe0820f4b107b25",
+      "local_sha256": "f67579be0101c2dcbb3becb4e96cb8abd934a4cc8dc37860ffe0820f4b107b25",
+      "modified": false
+    },
+    {
+      "path": "assets/preview_741_tang_trace.webp",
+      "upstream_sha256": "45fd2bf018e77b04588643adfdb003d359bd778e5e1510fde7417acc5ca0176f",
+      "local_sha256": "45fd2bf018e77b04588643adfdb003d359bd778e5e1510fde7417acc5ca0176f",
+      "modified": false
+    },
+    {
+      "path": "assets/preview_journey_sushi.webp",
+      "upstream_sha256": "9f597678ea8e682baa757f4106d43b5fe1653d492800751ffa4c47e5f184ce6e",
+      "local_sha256": "9f597678ea8e682baa757f4106d43b5fe1653d492800751ffa4c47e5f184ce6e",
+      "modified": false
+    },
+    {
+      "path": "assets/preview_quiz_challenge.webp",
+      "upstream_sha256": "2845dc1acbb1c0c175a64ca4527acda0bc8fa0b55e9faa002d471dfc1e3d6d70",
+      "local_sha256": "2845dc1acbb1c0c175a64ca4527acda0bc8fa0b55e9faa002d471dfc1e3d6d70",
+      "modified": false
+    },
+    {
+      "path": "assets/terrain_relief.webp",
+      "upstream_sha256": "24e95b021ab44848a19920cd5a197a62dd77c10990eb229aed033b718f010367",
+      "local_sha256": "24e95b021ab44848a19920cd5a197a62dd77c10990eb229aed033b718f010367",
+      "modified": false
+    },
+    {
+      "path": "CONTRIBUTING_ZH.md",
+      "upstream_sha256": "e823033ad61addce9079ffab045c0ff8b71a669d5598517cdee31599bb6d7700",
+      "local_sha256": "e823033ad61addce9079ffab045c0ff8b71a669d5598517cdee31599bb6d7700",
+      "modified": false
+    },
+    {
+      "path": "css/style.css",
+      "upstream_sha256": "dd2ab2907876371ac0d61f6bccd0888e5bc5f6704019f22eec938f680a0d4c69",
+      "local_sha256": "dd2ab2907876371ac0d61f6bccd0888e5bc5f6704019f22eec938f680a0d4c69",
+      "modified": false
+    },
+    {
+      "path": "geojson/demo.html",
+      "upstream_sha256": "e9519ea90212bccf0645dc66307eed649a02a3c4ad2bf79af42a824a13df47c4",
+      "local_sha256": "e9519ea90212bccf0645dc66307eed649a02a3c4ad2bf79af42a824a13df47c4",
+      "modified": false
+    },
+    {
+      "path": "geojson/jiangshan-locate.js",
+      "upstream_sha256": "01edb8b74677218e6b357cccb31df9615f2c63a4a8c186cec5cac40b7d892395",
+      "local_sha256": "01edb8b74677218e6b357cccb31df9615f2c63a4a8c186cec5cac40b7d892395",
+      "modified": false
+    },
+    {
+      "path": "index.html",
+      "upstream_sha256": "653cd76964e83181efaf7bddbb3fe70f3418908e57be71bb5c8ea9b6115fba56",
+      "local_sha256": "333956209154b9c7618e2c5432feefd6b183e0ea4908840593ddba20e4fbd554",
+      "modified": true
+    },
+    {
+      "path": "js/app.js",
+      "upstream_sha256": "d323e5c5e64924fa98402fd21f326b98bb799d78c959341ace220cd0402941e7",
+      "local_sha256": "d323e5c5e64924fa98402fd21f326b98bb799d78c959341ace220cd0402941e7",
+      "modified": false
+    },
+    {
+      "path": "js/atlas_boot.js",
+      "upstream_sha256": "9b00e00052962ac448647fe9f1ee13db38b209d24933e29b2285d4adc009985e",
+      "local_sha256": "9b00e00052962ac448647fe9f1ee13db38b209d24933e29b2285d4adc009985e",
+      "modified": false
+    },
+    {
+      "path": "js/atlas_snapshots.js",
+      "upstream_sha256": "aeb99c6117ef7dc1dce941fe1c92d549ddb748acc9425369d24e171ffb22e996",
+      "local_sha256": "aeb99c6117ef7dc1dce941fe1c92d549ddb748acc9425369d24e171ffb22e996",
+      "modified": false
+    },
+    {
+      "path": "js/china_geo_data.js",
+      "upstream_sha256": "5c8bd5202dab8eafb6047106884ec92d839a82a8020f9953f7fb6399604ca8ef",
+      "local_sha256": "5c8bd5202dab8eafb6047106884ec92d839a82a8020f9953f7fb6399604ca8ef",
+      "modified": false
+    },
+    {
+      "path": "js/i18n_dict.js",
+      "upstream_sha256": "083f864c388169d7e00c255375984d9b7f926783ec1ec5b6d8161e52b1108c39",
+      "local_sha256": "083f864c388169d7e00c255375984d9b7f926783ec1ec5b6d8161e52b1108c39",
+      "modified": false
+    },
+    {
+      "path": "js/lore_data.js",
+      "upstream_sha256": "5c50817d72f9f99f820850b26e436fa9d21640f4b5636dc2d799dc63aeaacc1e",
+      "local_sha256": "5c50817d72f9f99f820850b26e436fa9d21640f4b5636dc2d799dc63aeaacc1e",
+      "modified": false
+    },
+    {
+      "path": "js/map_data.js",
+      "upstream_sha256": "ce44c1a5c9a012639202633d31e3985e3053f4a17308a9ce784a06b2070de8a8",
+      "local_sha256": "ce44c1a5c9a012639202633d31e3985e3053f4a17308a9ce784a06b2070de8a8",
+      "modified": false
+    },
+    {
+      "path": "js/zh_hant.js",
+      "upstream_sha256": "8dead99e639c48890b2827faf49fd46a637507f03679b806042293b0d4ac71ef",
+      "local_sha256": "8dead99e639c48890b2827faf49fd46a637507f03679b806042293b0d4ac71ef",
+      "modified": false
+    },
+    {
+      "path": "LICENSE",
+      "upstream_sha256": "e57f1c320b8cf8798a7d2ff83a6f9e06a33a03585f6e065fea97f1d86db84052",
+      "local_sha256": "e57f1c320b8cf8798a7d2ff83a6f9e06a33a03585f6e065fea97f1d86db84052",
+      "modified": false
+    },
+    {
+      "path": "llms.txt",
+      "upstream_sha256": "d67460a8ee2dcf028ea8dc4d49d3ea8330a91db9908cc40ddbf990dc24131881",
+      "local_sha256": "d67460a8ee2dcf028ea8dc4d49d3ea8330a91db9908cc40ddbf990dc24131881",
+      "modified": false
+    },
+    {
+      "path": "manifest.webmanifest",
+      "upstream_sha256": "d623fc7accc3b8405d12aa75689b3908e5ca12eaee1ae555d7483af1d4f8da53",
+      "local_sha256": "d623fc7accc3b8405d12aa75689b3908e5ca12eaee1ae555d7483af1d4f8da53",
+      "modified": false
+    },
+    {
+      "path": "README_ZH.md",
+      "upstream_sha256": "925f1c7799b27efd8add5847b65d2c7c09399f880d80af16222c01fdb7da1469",
+      "local_sha256": "925f1c7799b27efd8add5847b65d2c7c09399f880d80af16222c01fdb7da1469",
+      "modified": false
+    },
+    {
+      "path": "topics/battle-changping.html",
+      "upstream_sha256": "ad7b22d8e9c7323722534831384d711988486811fc459b465f6f87c06cb28e01",
+      "local_sha256": "ad7b22d8e9c7323722534831384d711988486811fc459b465f6f87c06cb28e01",
+      "modified": false
+    },
+    {
+      "path": "topics/battle-chibi.html",
+      "upstream_sha256": "3354a748ce428f58991594b302a208e995482cada68eda472bc76f46953e0d3d",
+      "local_sha256": "3354a748ce428f58991594b302a208e995482cada68eda472bc76f46953e0d3d",
+      "modified": false
+    },
+    {
+      "path": "topics/battle-feishui.html",
+      "upstream_sha256": "7c9429d941bdba9b4a98207982885768da71dc028987de5ae32203efc6ef3682",
+      "local_sha256": "7c9429d941bdba9b4a98207982885768da71dc028987de5ae32203efc6ef3682",
+      "modified": false
+    },
+    {
+      "path": "topics/beisong.html",
+      "upstream_sha256": "dc17ff141a39a5a19d10db008371c7193f24d96d2ce3ae0eb823ba6ff74850b0",
+      "local_sha256": "dc17ff141a39a5a19d10db008371c7193f24d96d2ce3ae0eb823ba6ff74850b0",
+      "modified": false
+    },
+    {
+      "path": "topics/donghan.html",
+      "upstream_sha256": "a29b24ce765a8d567208032ece22adf513086bc4d39dd411f9f2b495c441ea9c",
+      "local_sha256": "a29b24ce765a8d567208032ece22adf513086bc4d39dd411f9f2b495c441ea9c",
+      "modified": false
+    },
+    {
+      "path": "topics/dongjin.html",
+      "upstream_sha256": "200f5389d91054be3f5566e05cb727a642b3b294f67118e3603baeb8d4299999",
+      "local_sha256": "200f5389d91054be3f5566e05cb727a642b3b294f67118e3603baeb8d4299999",
+      "modified": false
+    },
+    {
+      "path": "topics/dufu-763.html",
+      "upstream_sha256": "7e680cf9aee4daa202bde37df32e5d3e3e420536a6900c41aff31620c4656ab4",
+      "local_sha256": "7e680cf9aee4daa202bde37df32e5d3e3e420536a6900c41aff31620c4656ab4",
+      "modified": false
+    },
+    {
+      "path": "topics/hanyu-languan.html",
+      "upstream_sha256": "2d7cf9871f1f400ece2fd4e3dbd15c65877486cbeda6104ca6d48184043a4269",
+      "local_sha256": "2d7cf9871f1f400ece2fd4e3dbd15c65877486cbeda6104ca6d48184043a4269",
+      "modified": false
+    },
+    {
+      "path": "topics/index.html",
+      "upstream_sha256": "0847a05e28c1bd750060f94f06d9d579d15e8ce0d394f09a9eee5f768b1f9521",
+      "local_sha256": "0847a05e28c1bd750060f94f06d9d579d15e8ce0d394f09a9eee5f768b1f9521",
+      "modified": false
+    },
+    {
+      "path": "topics/journey-libai.html",
+      "upstream_sha256": "4e1d3fbc6290b2c105d3c38f8f42ea76531fdde1f052ad9bf046ebdc60525c44",
+      "local_sha256": "4e1d3fbc6290b2c105d3c38f8f42ea76531fdde1f052ad9bf046ebdc60525c44",
+      "modified": false
+    },
+    {
+      "path": "topics/journey-qinshihuang.html",
+      "upstream_sha256": "ca8822bb01f0f7b1679b45acd43623d10bdb80d92888dea2885f294a5d00228f",
+      "local_sha256": "ca8822bb01f0f7b1679b45acd43623d10bdb80d92888dea2885f294a5d00228f",
+      "modified": false
+    },
+    {
+      "path": "topics/journey-sushi.html",
+      "upstream_sha256": "4fff1b48582c1d71f3a507d945ec963763e56e99e663227ab193c09a2784a9a3",
+      "local_sha256": "4fff1b48582c1d71f3a507d945ec963763e56e99e663227ab193c09a2784a9a3",
+      "modified": false
+    },
+    {
+      "path": "topics/journey-wangyangming.html",
+      "upstream_sha256": "6f15f99b82f9a25febcefeab4ed8ed65c059ceac1bced5b053e8814d03178d24",
+      "local_sha256": "6f15f99b82f9a25febcefeab4ed8ed65c059ceac1bced5b053e8814d03178d24",
+      "modified": false
+    },
+    {
+      "path": "topics/journey-xuanzang.html",
+      "upstream_sha256": "b6de8af514a730a90f80a09caabecbcfd895d9e8140867b3b161085dad8c8d3a",
+      "local_sha256": "b6de8af514a730a90f80a09caabecbcfd895d9e8140867b3b161085dad8c8d3a",
+      "modified": false
+    },
+    {
+      "path": "topics/journey-zhangqian.html",
+      "upstream_sha256": "089cef9a43337805c837930a3ae4536a6797d9f790de08e3e9daea557dfa3915",
+      "local_sha256": "089cef9a43337805c837930a3ae4536a6797d9f790de08e3e9daea557dfa3915",
+      "modified": false
+    },
+    {
+      "path": "topics/journey-zhugeliang.html",
+      "upstream_sha256": "5ce55df942b10788d7f28ecfcf1e65b72ce8b5e4d9fd9aa74e8589c563d8f163",
+      "local_sha256": "5ce55df942b10788d7f28ecfcf1e65b72ce8b5e4d9fd9aa74e8589c563d8f163",
+      "modified": false
+    },
+    {
+      "path": "topics/ming.html",
+      "upstream_sha256": "09fbc3405bdd1ee006ea4f9bee90aa0cab5f62ee366c3ff1fa64751a5c922cec",
+      "local_sha256": "09fbc3405bdd1ee006ea4f9bee90aa0cab5f62ee366c3ff1fa64751a5c922cec",
+      "modified": false
+    },
+    {
+      "path": "topics/nanbei.html",
+      "upstream_sha256": "d67c31bc89c638da814658866db942831df673d550177afd1a7dbd6a6d963fa5",
+      "local_sha256": "d67c31bc89c638da814658866db942831df673d550177afd1a7dbd6a6d963fa5",
+      "modified": false
+    },
+    {
+      "path": "topics/nansong.html",
+      "upstream_sha256": "e960668bc9b2feedece257c1101bb69a85455716ba52a27d03546cc593b235a2",
+      "local_sha256": "e960668bc9b2feedece257c1101bb69a85455716ba52a27d03546cc593b235a2",
+      "modified": false
+    },
+    {
+      "path": "topics/prc.html",
+      "upstream_sha256": "503e8fd861eae4e0ab0bbc6d926cc33f7b759ef2aa5a8752a2f564231089cc93",
+      "local_sha256": "503e8fd861eae4e0ab0bbc6d926cc33f7b759ef2aa5a8752a2f564231089cc93",
+      "modified": false
+    },
+    {
+      "path": "topics/qin.html",
+      "upstream_sha256": "d66c74b9e9980e7672796c317c92e042c8e37d30ef10e94e4f6bc0a6d9f35012",
+      "local_sha256": "d66c74b9e9980e7672796c317c92e042c8e37d30ef10e94e4f6bc0a6d9f35012",
+      "modified": false
+    },
+    {
+      "path": "topics/qing.html",
+      "upstream_sha256": "80b1fe2336d2edd92d6888432aeca266288246b45e5d5709ee0be725767a0eae",
+      "local_sha256": "80b1fe2336d2edd92d6888432aeca266288246b45e5d5709ee0be725767a0eae",
+      "modified": false
+    },
+    {
+      "path": "topics/roc.html",
+      "upstream_sha256": "33d0af88b9954f75f198442f658f99a147696fd8e018e10c73fe5e771a457442",
+      "local_sha256": "33d0af88b9954f75f198442f658f99a147696fd8e018e10c73fe5e771a457442",
+      "modified": false
+    },
+    {
+      "path": "topics/sanguo.html",
+      "upstream_sha256": "a6850d90d39e3b3c13102b123dd3ce3799f7ab98e72749ad5b65b9c1c9f8e2dc",
+      "local_sha256": "a6850d90d39e3b3c13102b123dd3ce3799f7ab98e72749ad5b65b9c1c9f8e2dc",
+      "modified": false
+    },
+    {
+      "path": "topics/shuihu-jiangzhou.html",
+      "upstream_sha256": "fc3a1ad5ac6b7e9f5fe7fe08f21ea195b70031828e7947b195cece876e9c6b2b",
+      "local_sha256": "fc3a1ad5ac6b7e9f5fe7fe08f21ea195b70031828e7947b195cece876e9c6b2b",
+      "modified": false
+    },
+    {
+      "path": "topics/sui.html",
+      "upstream_sha256": "5b0f1fcf09b6881bd4ace342329731987d0555bce1bf9c434c30c24de8c53e39",
+      "local_sha256": "5b0f1fcf09b6881bd4ace342329731987d0555bce1bf9c434c30c24de8c53e39",
+      "modified": false
+    },
+    {
+      "path": "topics/sushi-exile.html",
+      "upstream_sha256": "7f3bcd12513bb0ca1f2c6901db25ba3d29b339b9f9276f5370453346812089ea",
+      "local_sha256": "7f3bcd12513bb0ca1f2c6901db25ba3d29b339b9f9276f5370453346812089ea",
+      "modified": false
+    },
+    {
+      "path": "topics/tang.html",
+      "upstream_sha256": "e4a813fb6eb4540477aa84921c4d3cc68926d24a1f7ac6e264faabc3931fb9c4",
+      "local_sha256": "e4a813fb6eb4540477aa84921c4d3cc68926d24a1f7ac6e264faabc3931fb9c4",
+      "modified": false
+    },
+    {
+      "path": "topics/wentianxiang-lingdingyang.html",
+      "upstream_sha256": "0d541de1c123a351614c9b2848f91c859afe8277923c96bfb77aa859327fc99f",
+      "local_sha256": "0d541de1c123a351614c9b2848f91c859afe8277923c96bfb77aa859327fc99f",
+      "modified": false
+    },
+    {
+      "path": "topics/wudai.html",
+      "upstream_sha256": "d78aa8fceb96040899c729f34d292f077326f41da0b10e0eac6549b5bc9c8538",
+      "local_sha256": "d78aa8fceb96040899c729f34d292f077326f41da0b10e0eac6549b5bc9c8538",
+      "modified": false
+    },
+    {
+      "path": "topics/xihan.html",
+      "upstream_sha256": "6aa16db8f299f699f652ec94bfdf5771b059204862f350775e179262d541d058",
+      "local_sha256": "6aa16db8f299f699f652ec94bfdf5771b059204862f350775e179262d541d058",
+      "modified": false
+    },
+    {
+      "path": "topics/xijin.html",
+      "upstream_sha256": "8bc8c3a7c2ef631e862c549ab4bd1862b9504c18373155f057bff3110c52b99f",
+      "local_sha256": "8bc8c3a7c2ef631e862c549ab4bd1862b9504c18373155f057bff3110c52b99f",
+      "modified": false
+    },
+    {
+      "path": "topics/xinqiji-jingkou.html",
+      "upstream_sha256": "785e60b3ce2b64605d64b0207deb418710c4897a58e88b96a7a022b2aec755e8",
+      "local_sha256": "785e60b3ce2b64605d64b0207deb418710c4897a58e88b96a7a022b2aec755e8",
+      "modified": false
+    },
+    {
+      "path": "topics/yuan.html",
+      "upstream_sha256": "a7ceb23927b05374885f41507b3cdf4413b9bef1b0c40a0e6610331aa97ef84f",
+      "local_sha256": "a7ceb23927b05374885f41507b3cdf4413b9bef1b0c40a0e6610331aa97ef84f",
+      "modified": false
+    },
+    {
+      "path": "topics/zhanguo.html",
+      "upstream_sha256": "caa94d26e795f9b16aebe17718ca783b378825026598e1203bc02f57a4488cc7",
+      "local_sha256": "caa94d26e795f9b16aebe17718ca783b378825026598e1203bc02f57a4488cc7",
+      "modified": false
+    }
+  ]
+}

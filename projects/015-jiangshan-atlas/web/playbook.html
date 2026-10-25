@@ -1,0 +1,174 @@
+<!doctype html>
+<!-- SPDX-License-Identifier: GPL-3.0-only -->
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="从江山时序理解数据、地图与交互如何组合成作品；收藏五阶段规划、首版需求填写器、六组可复制指令和交付验收清单。">
+  <title>实现与指令手册 · 江山时序研究</title>
+  <link rel="icon" href="upstream/assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="playbook.css">
+  <script src="playbook.js" defer></script>
+</head>
+<body class="manual-page">
+  <a class="skip" href="#mechanism">跳到手册正文</a>
+  <header class="topbar wrap manual-topbar">
+    <a class="brand" href="./"><span class="seal" aria-hidden="true">江山</span><span>实现与指令<small>项目实践手册 · 015</small></span></a>
+    <nav aria-label="项目导航"><a href="./">回到原作体验 ↗</a><a href="engineering.html">源码与迁移 ↗</a><a href="#templates">使用指令模板 ↓</a></nav>
+  </header>
+
+  <main>
+    <section class="manual-hero wrap">
+      <div><p class="eyebrow">A FIELD GUIDE / 从理解到实现</p><h1>把一个主题，<br>做成可用的作品<span class="red-dot">。</span></h1><p class="manual-lead">用江山时序这个例子，弄清效果怎样实现、怎样规划首版，以及如何给 AI 下发能落地的指令。以后做地图、交互故事或知识展示页，都可以从这里开始。</p></div>
+      <aside class="manual-principle"><span class="small-seal">实践</span><h2>让真实体验，<br>决定下一轮怎么改。</h2><p>你确定受众、目标与取舍；AI 负责实现、调试和检查。每一阶段先达到验收条件，再进入下一步。</p><div><span><strong>5</strong> 个规划阶段</span><span><strong>6</strong> 组指令模板</span></div></aside>
+    </section>
+
+    <div class="manual-callout wrap"><strong>先学会方法，再扩展作品。</strong><p>新增技术研究页：源码证据 → 通用原理 → 跨领域验证 → 可复用模块。八个工程模式、两个可操作的迁移案例，以及专门用于技术沉淀的指令，见 <a href="engineering.html">源码与迁移实验 ↗</a>。本页继续提供完整项目的执行规划与验收模板。</p></div>
+
+    <div class="manual-layout wrap">
+      <aside class="manual-toc"><p class="eyebrow">随时查阅</p><nav aria-label="手册目录"><a href="#mechanism"><span>01</span> 效果如何实现</a><a href="#ai-role"><span>02</span> AI 参与什么</a><a href="#plan"><span>03</span> 五阶段规划</a><a href="#templates"><span>04</span> 指令模板</a><a href="#review"><span>05</span> 反馈与验收</a></nav><p class="toc-note">建议顺序<br>理解机制 → 选一个场景<br>生成首版指令 → 实际验收</p></aside>
+
+      <div class="manual-content">
+        <section id="mechanism" class="manual-section" aria-labelledby="mechanism-title">
+          <p class="eyebrow">01 / 已核对的实现机制</p><h2 id="mechanism-title">视觉、数据和交互，共同构成效果</h2><p class="section-intro">地图的精细感来自多个部分的组合。山脉底图、边界、地名、路线与卡片各自承担一层工作，浏览器把它们组织在同一个界面里。</p>
+          <div class="manual-table"><table><caption class="sr-only">可见效果与实际实现方式</caption><thead><tr><th scope="col">看到的效果</th><th scope="col">实际实现方式</th><th scope="col">可以迁移的思路</th></tr></thead><tbody>
+            <tr><th scope="row">古舆图的风格</th><td>CSS 统一纸色背景、墨色文字、朱砂强调、字体与阴影。</td><td>先确定视觉语言，再让各个组件共同遵循。</td></tr>
+            <tr><th scope="row">山脉的立体感</th><td>地形晕渲图片作为底图，上面叠加 SVG 地理要素。</td><td>选择合适素材与图层，建立画面层次。</td></tr>
+            <tr><th scope="row">年份改变疆域</th><td>年份对应历史阶段，程序切换预先整理的疆域多边形。</td><td>把时间变化整理成有依据的状态与数据。</td></tr>
+            <tr><th scope="row">人物跨年行迹</th><td>每站保存年份、坐标和事件；连线与事件导航同步更新地图。</td><td>围绕一条任务主线组织内容与交互。</td></tr>
+            <tr><th scope="row">点城查看沿革</th><td>按地理位置查询历代政区、古今名称与当地史事，填入卡片。</td><td>把同一对象的多份资料关联起来。</td></tr>
+            <tr><th scope="row">古地名挑战</th><td>从已有地点资料选题，比较落针与答案坐标，按距离给分。</td><td>用已有数据构造可操作、可反馈的学习任务。</td></tr>
+          </tbody></table></div>
+          <div class="mechanism-flow" aria-label="简化数据流程"><span>年份／地点／人物</span><span aria-hidden="true">→</span><span>数据查询与状态更新</span><span aria-hidden="true">→</span><span>地图＋路线＋卡片</span></div>
+          <p class="evidence-note">依据：固定版本的 <a href="https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/js/app.js" target="_blank" rel="noopener noreferrer">地图控制器</a>、<a href="https://github.com/DeanChensj/jiangshan-map/blob/53059f1c7fed305807b19365857a5f135daf3ac6/index.html" target="_blank" rel="noopener noreferrer">SVG 图层</a>与 <a href="upstream/CONTRIBUTING_ZH.md">数据结构说明</a>。正常地图操作无需调用大模型。</p>
+        </section>
+
+        <section id="ai-role" class="manual-section" aria-labelledby="ai-role-title">
+          <p class="eyebrow">02 / 开发过程与运行机制</p><h2 id="ai-role-title">AI 帮助构建，程序负责运行</h2><p class="section-intro">可以用“确定方向 → AI 编码 → 运行检查 → 多轮修改”的方式制作类似作品。完成度取决于数据、设计与实际验收共同推进。</p>
+          <div class="role-grid"><article><span>你来决定</span><h3>作品意图与取舍</h3><p>服务谁、解决什么问题、希望有什么感受；根据真实页面反馈，决定哪里值得继续改。</p></article><article><span>可以交给 AI</span><h3>实现与迭代</h3><p>分析现有代码，组织数据和组件，编写交互，排查问题，再用可复核的结果验证修改。</p></article><article><span>成品依靠</span><h3>代码、数据与浏览器</h3><p>读取位置与事件，绘制地图、更新界面、处理操作。这份地图的运行无需调用 Claude。</p></article></div>
+          <div class="manual-callout"><strong>这个库的开发过程，能确认到哪里？</strong><p>公开提交中存在 Claude 联合署名，例如 <a href="https://github.com/DeanChensj/jiangshan-map/commit/5e940f6bc1f8aa50ac7fe0e2406baee7ef5ef7e7" target="_blank" rel="noopener noreferrer">GeoJSON 导出功能的提交</a>。这能支持“部分开发使用过 AI”，不能据此确定整站的 AI 贡献比例或完整提示词。下面的规划与模板，是我们基于源码和实测整理的实践建议。</p></div>
+          <p class="evidence-note">本子项目沿用原库的地图引擎与历史数据，新增能力展示、场景导航、路线表单和这份手册；没有从零重新生成全部历史地图。</p>
+        </section>
+
+        <section id="plan" class="manual-section" aria-labelledby="plan-title">
+          <p class="eyebrow">03 / 用验收条件推进</p><h2 id="plan-title">先做一条完整体验，再扩充内容</h2><p class="section-intro">以“跟着苏轼走过黄州、惠州、儋州”为首版：打开页面 → 看懂主题 → 选择站点 → 地图定位 → 年份与事件同步 → 前往下一站。这个范围能同时检验内容、视觉与操作。</p>
+          <ol class="phase-list">
+            <li><div class="phase-number">01</div><div><h3>资料准备<span>先确认内容能落到哪里</span></h3><dl><div><dt>动作</dt><dd>确定受众与阅读困惑，核对地点、年份、事件、可复用代码和数据来源。</dd></div><div><dt>产物</dt><dd>一句体验目标、一份有出处的站点清单与首版范围。</dd></div><div><dt>通过条件</dt><dd>地点可定位，年份与事件对应；未确认内容有明确标记。</dd></div><div><dt>个人用途</dt><dd>控制投入，把时间用在有依据的内容上。</dd></div></dl><a href="#prompt-data">资料核对指令 ↓</a></div></li>
+            <li><div class="phase-number">02</div><div><h3>功能首版<span>把主要任务从头走通</span></h3><dl><div><dt>动作</dt><dd>实现三个站点、路线总览、前后站导航，以及地图、年份和事件的同步。</dd></div><div><dt>产物</dt><dd>可以打开并实际操作的网页。</dd></div><div><dt>通过条件</dt><dd>用户能连续浏览三个站点，并返回总览。</dd></div><div><dt>个人用途</dt><dd>用可运行的作品检查最初的想法是否表达清楚。</dd></div></dl><a href="#prompt-start">首版实现指令 ↓</a></div></li>
+            <li><div class="phase-number">03</div><div><h3>视觉打磨<span>让重点、层次与风格一致</span></h3><dl><div><dt>动作</dt><dd>统一字体、配色、布局、选中状态；调整地名密度和卡片位置。</dd></div><div><dt>产物</dt><dd>有明确主题、地图与说明互相配合的页面。</dd></div><div><dt>通过条件</dt><dd>当前地点和行程关系清楚，主要内容可读、可操作。</dd></div><div><dt>个人用途</dt><dd>把审美判断转成能执行的反馈。</dd></div></dl><a href="#prompt-visual">视觉修改指令 ↓</a></div></li>
+            <li><div class="phase-number">04</div><div><h3>体验修正<span>从真实操作中找问题</span></h3><dl><div><dt>动作</dt><dd>检查手机布局、遮挡、连续导航、异常输入与卡顿，针对观察到的问题修改。</dd></div><div><dt>产物</dt><dd>修复后的交互与相同场景的验证结果。</dd></div><div><dt>通过条件</dt><dd>主要任务能够连续完成，错误反馈明确；关键性能问题已定位并处理。</dd></div><div><dt>个人用途</dt><dd>知道问题出在资料、布局还是程序，安排下一步投入。</dd></div></dl><a href="#prompt-interaction">交互检查指令 ↓</a> <a href="#prompt-performance">性能排查指令 ↓</a></div></li>
+            <li><div class="phase-number">05</div><div><h3>交付验收<span>让别人也能打开并使用</span></h3><dl><div><dt>动作</dt><dd>启动网页，补齐必要介绍、来源、操作提示与已知限制，按首次使用过程验收。</dd></div><div><dt>产物</dt><dd>可访问地址、运行方法与实测结果。</dd></div><div><dt>通过条件</dt><dd>网页保持可访问，普通用户能找到开始入口并完成主要任务。</dd></div><div><dt>个人用途</dt><dd>以实际可用的结果决定是否继续做更多人物或专题。</dd></div></dl><a href="#prompt-acceptance">交付验收指令 ↓</a></div></li>
+          </ol>
+          <div class="manual-callout"><strong>让问题指向下一步</strong><p>地点或年份不对，回到资料核对；操作流程断开，补完整交互；信息难读或卡片挡图，调整视觉布局。主线达到验收条件后，再扩充人物、朝代和玩法。</p></div>
+        </section>
+
+        <section id="templates" class="manual-section" aria-labelledby="templates-title">
+          <p class="eyebrow">04 / 保存下来，按阶段使用</p><h2 id="templates-title">六组可直接复制的指令</h2><p class="section-intro">先填写自己的主题与首版范围，生成第一条指令。后续按实际问题选择模板，把其中的场景与现象换成你正在做的作品。</p>
+
+          <form id="brief-form" class="brief-form" aria-labelledby="brief-title">
+            <div class="brief-heading"><h3 id="brief-title">先把主题补成具体体验</h3><button type="button" id="reset-brief">恢复苏轼样例</button></div>
+            <div class="brief-grid">
+              <label for="brief-theme">作品主题<input id="brief-theme" name="theme" maxlength="160" required value="跟着苏轼走过黄州、惠州、儋州"></label>
+              <label for="brief-audience">目标用户<input id="brief-audience" name="audience" maxlength="240" required value="读过苏轼诗词，但不清楚这些地方的位置和经历先后的人"></label>
+              <label for="brief-experience">希望用户完成什么<textarea id="brief-experience" name="experience" rows="3" maxlength="1000" required>沿三个站点探索。选择站点时，地图位置、年份、人物事件和说明同步变化；支持上一站、下一站和返回路线总览。</textarea></label>
+              <label for="brief-scope">首版范围<textarea id="brief-scope" name="scope" rows="3" maxlength="1000" required>先完成三个站点和一条完整可操作的路线，能够从头浏览并返回总览。</textarea></label>
+              <label for="brief-style">视觉与感受<textarea id="brief-style" name="style" rows="3" maxlength="1000" required>古舆图的雅致感，纸色背景、墨色正文、朱砂强调。地图作为主要画面，文字清楚，操作入口容易发现。</textarea></label>
+              <label for="brief-source">代码与资料从哪里来<textarea id="brief-source" name="source" rows="3" maxlength="1000" required>评估并复用江山时序的地图与数据能力，核对关键资料并保留来源；先确认代码与各类数据的使用条款。</textarea></label>
+            </div>
+            <div class="brief-bottom"><p>表单内容只用于生成本页指令；刷新页面会恢复样例。</p><button class="primary" type="submit">生成首版指令 ↗</button></div>
+            <p id="brief-feedback" class="feedback-message" role="status" aria-live="polite">下方首版指令已填入苏轼样例。</p>
+          </form>
+
+          <div class="templates-heading"><p>展开需要的模板，复制后发给编码助手。</p><button type="button" id="download-prompts">下载全部指令 .txt ↓</button></div>
+
+          <details class="prompt-card" id="prompt-start" open><summary><span class="prompt-index">01</span><span><strong>首版实现</strong><small>把主题、范围、感受和可运行交付说明白</small></span><span class="details-mark" aria-hidden="true">＋</span></summary><div class="prompt-body"><div class="prompt-actions"><span>由上方表单生成</span><button type="button" data-copy="text-start" aria-label="复制首版实现指令">复制指令 ↗</button></div><pre id="text-start" data-template-title="01 · 首版实现" tabindex="0">请按当前工作区的项目约定，新建一个独立子项目，制作“跟着苏轼走过黄州、惠州、儋州”的交互网页。
+
+目标用户：
+读过苏轼诗词，但不清楚这些地方的位置和经历先后的人。
+
+核心体验：
+沿三个站点探索。选择站点时，地图位置、年份、人物事件和说明同步变化；支持上一站、下一站和返回路线总览。
+
+首版范围：
+先完成三个站点和一条完整可操作的路线，能够从头浏览并返回总览。
+
+视觉方向：
+古舆图的雅致感，纸色背景、墨色正文、朱砂强调。地图作为主要画面，文字清楚，操作入口容易发现。
+
+代码与资料：
+评估并复用江山时序的地图与数据能力，核对关键资料并保留来源；先确认代码与各类数据的使用条款。对无法确认的内容明确标注。
+
+技术沉淀要求：
+说明借鉴的源码机制，分别记录直接复用、提炼改写和新增实现。把适合迁移的规则与界面分开，至少用一份不同主题的数据验证，并留下输入输出、适用边界与验收证据。
+
+交付要求：
+页面说明它展示什么、可以怎么玩、从哪里开始。
+完成后启动网页并在浏览器打开，保留服务运行；实际操作验证主流程，记录已知限制和再次启动的方法。
+
+请先简短说明主线、资料来源和实现计划，然后直接开始完成首版。技术细节可以自主决定，并说明影响体验的重要取舍。</pre></div></details>
+
+          <details class="prompt-card" id="prompt-data"><summary><span class="prompt-index">02</span><span><strong>资料与数据核对</strong><small>让时间、位置和来源彼此对应</small></span><span class="details-mark" aria-hidden="true">＋</span></summary><div class="prompt-body"><div class="prompt-actions"><span>使用时填入自己的主题与已有资料</span><button type="button" data-copy="text-data" aria-label="复制资料与数据核对指令">复制指令 ↗</button></div><pre id="text-data" data-template-title="02 · 资料与数据核对" tabindex="0">请核对当前专题首版所需的资料与数据，形成可以直接用于页面的站点清单。
+
+逐项整理名称、年份、位置、事件说明和来源；需要引用诗文时，核对文本与对应场景。
+区分已确认事实、推断和待核实内容。对同名地点、跨年关系和坐标偏差给出处理依据。
+检查拟复用代码、图片和数据各自的使用条款。
+
+先完成首版必需的内容。对无法核实的项目明确标注，说明它是否影响主线。
+完成后用现有地图或原型实际定位，确认资料能转成正确的页面内容。</pre></div></details>
+
+          <details class="prompt-card" id="prompt-visual"><summary><span class="prompt-index">03</span><span><strong>视觉与布局修改</strong><small>描述问题、期望结果和需要保留的内容</small></span><span class="details-mark" aria-hidden="true">＋</span></summary><div class="prompt-body"><div class="prompt-actions"><span>示例问题：卡片挡路线、地名拥挤</span><button type="button" data-copy="text-visual" aria-label="复制视觉与布局修改指令">复制指令 ↗</button></div><pre id="text-visual" data-template-title="03 · 视觉与布局修改" tabindex="0">当前问题：人物介绍卡片遮住了路线，地图中的地名也偏拥挤。
+
+期望结果：选择站点后，用户仍能看见当前地点及前后站关系；标题、事件正文和补充资料有清晰的层次。
+请统一地图、卡片、按钮的字体、配色和选中状态，让主题与当前操作重点容易识别。
+
+保持现有路线、年份和操作逻辑。
+完成后在桌面和手机布局中实际检查，提供能看到修改结果的页面或截图，并说明剩余问题。</pre></div></details>
+
+          <details class="prompt-card" id="prompt-interaction"><summary><span class="prompt-index">04</span><span><strong>交互同步检查</strong><small>走通完整操作，核对界面是否一起更新</small></span><span class="details-mark" aria-hidden="true">＋</span></summary><div class="prompt-body"><div class="prompt-actions"><span>示例主线：选择站点 → 前进 → 返回总览</span><button type="button" data-copy="text-interaction" aria-label="复制交互同步检查指令">复制指令 ↗</button></div><pre id="text-interaction" data-template-title="04 · 交互同步检查" tabindex="0">选择站点后，我需要同时知道：
+现在是哪一年、到了哪里、发生了什么、下一步可以做什么。
+
+请检查这些信息是否随选中站点同步更新，补清楚当前站点的强调状态和前后站导航。
+实际走完首版所有站点，再检查返回总览、重新开始和重复操作。
+若有输入框，检查无效输入和未找到资料时的反馈。
+
+修复主流程中的断点，并用实际页面结果验证。保持已经正确的内容与交互。</pre></div></details>
+
+          <details class="prompt-card" id="prompt-performance"><summary><span class="prompt-index">05</span><span><strong>性能排查</strong><small>先定位卡顿，再验证针对性修改</small></span><span class="details-mark" aria-hidden="true">＋</span></summary><div class="prompt-body"><div class="prompt-actions"><span>把操作、设备与复现条件换成实际情况</span><button type="button" data-copy="text-performance" aria-label="复制性能排查指令">复制指令 ↗</button></div><pre id="text-performance" data-template-title="05 · 性能排查" tabindex="0">拖动时间轴时有明显卡顿，请先复现并定位造成卡顿的环节。
+
+记录相同设备、数据和操作条件，检查输入处理、数据加载、地图绘制及界面更新中实际耗时的位置。
+针对定位到的瓶颈修改，并提供同一场景下修改前后的验证结果。
+保持地图内容和已有交互行为。
+
+说明解决了什么、验证到什么程度，以及仍然存在的限制；用测量和实际体验支持结论。</pre></div></details>
+
+          <details class="prompt-card" id="prompt-acceptance"><summary><span class="prompt-index">06</span><span><strong>交付与首次使用验收</strong><small>交付可访问、能理解、能完成任务的网页</small></span><span class="details-mark" aria-hidden="true">＋</span></summary><div class="prompt-body"><div class="prompt-actions"><span>适合首版收尾与每次重要更新后使用</span><button type="button" data-copy="text-acceptance" aria-label="复制交付与首次使用验收指令">复制指令 ↗</button></div><pre id="text-acceptance" data-template-title="06 · 交付与首次使用验收" tabindex="0">请按普通用户首次使用的过程验收：
+
+1. 首次打开，能否理解主题并找到开始入口？
+2. 首版主流程能否连续完成，地图、年份和事件是否同步？
+3. 返回总览、重新开始和重复操作是否正常？
+4. 手机端是否存在遮挡、溢出或难以点击的操作？
+5. 无效输入或缺失资料时，是否有清楚的反馈？
+6. 关键资料能否追溯来源？
+
+修复影响主流程的问题后，把网页运行起来并保持可访问。
+给我访问地址、简短操作介绍、实际验证结果、再次启动方法和仍未解决的问题。
+说明哪些内容已经验证，哪些尚未验证。</pre></div></details>
+          <p id="template-feedback" class="feedback-message" role="status" aria-live="polite"></p>
+        </section>
+
+        <section id="review" class="manual-section" aria-labelledby="review-title">
+          <p class="eyebrow">05 / 看着页面，给出下一步</p><h2 id="review-title">把感受转成可执行的反馈</h2><p class="section-intro">每次挑出当前影响最大的具体问题。下面这个句式可以直接套用：</p><blockquote class="feedback-formula">当前出现了什么问题 ＋ 希望用户获得什么结果 ＋ 哪些内容需要保留 ＋ 怎样验证修改</blockquote>
+          <div class="feedback-example"><span>一条例子</span><p>“点击下一站后，文字切换了，但地图仍停在上一站。请让位置、年份和事件保持同步，保留现有路线顺序，并实际点击完三个站点确认。”</p></div>
+          <h3 class="checklist-title">交付时逐项核对</h3><p class="evidence-note">这是一份供你手动使用的清单，勾选状态代表当前浏览会话中的自查。</p>
+          <div class="manual-checklist"><label><input type="checkbox"> 首次打开能理解主题，并找到开始入口。</label><label><input type="checkbox"> 主要任务可以从头到尾完成。</label><label><input type="checkbox"> 位置、年份、事件和选中状态同步。</label><label><input type="checkbox"> 返回、重新开始和异常输入有明确结果。</label><label><input type="checkbox"> 手机端内容可读，关键操作可点击。</label><label><input type="checkbox"> 重要资料有来源，未确认内容有标记。</label><label><input type="checkbox"> 网页可访问，运行方法与已知限制已交代。</label></div>
+          <div class="manual-callout"><strong>以后换一个主题，哪些部分可以继续用？</strong><p>保留“受众 → 体验目标 → 首版范围 → 数据来源 → 视觉方向 → 验收条件”这套结构，把地图与站点换成作品中的核心对象。例如：城市记忆中的地点、交互故事中的章节、知识展示中的主题关系。</p></div>
+        </section>
+
+        <section class="manual-section manual-references" aria-labelledby="references-title"><p class="eyebrow">资料与使用范围</p><h2 id="references-title">机制有源码依据，规划是实践建议</h2><p>手册整理于 2026-10-24。实现说明对应固定版本 <code>53059f1c7fed</code>；规划与指令模板来自本子项目的讨论与实践整理，未被标为作者原始开发流程。</p><p>复用时核对代码与资料各自条款：上游代码采用 GPL-3.0；上游说明中，来自 CHGIS V6 与 Hartwell 的部分边界数据保留学术、非商业使用条款。详见 <a href="upstream/README_ZH.md">上游来源与许可说明</a>。</p><div class="source-links"><a href="./">返回能力展示 ↗</a><a href="guide.html">完整引导图 ↗</a><a href="https://github.com/DeanChensj/jiangshan-map/tree/53059f1c7fed305807b19365857a5f135daf3ac6" target="_blank" rel="noopener noreferrer">固定版本源码 ↗</a></div></section>
+      </div>
+    </div>
+  </main>
+  <footer class="wrap"><span>015 / 江山时序 · 实现与指令手册</span><a href="./">回到原作体验 ↗</a><a href="#templates">回到指令模板 ↑</a></footer>
+</body>
+</html>

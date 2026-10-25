@@ -1,0 +1,224 @@
+{
+  "repository": "https://github.com/DeanChensj/jiangshan-map",
+  "commit": "53059f1c7fed305807b19365857a5f135daf3ac6",
+  "license": "GPL-3.0",
+  "files": [
+    {
+      "path": "js/app.js",
+      "sha256": "d323e5c5e64924fa98402fd21f326b98bb799d78c959341ace220cd0402941e7"
+    },
+    {
+      "path": "js/atlas_boot.js",
+      "sha256": "9b00e00052962ac448647fe9f1ee13db38b209d24933e29b2285d4adc009985e"
+    },
+    {
+      "path": "js/atlas_snapshots.js",
+      "sha256": "aeb99c6117ef7dc1dce941fe1c92d549ddb748acc9425369d24e171ffb22e996"
+    },
+    {
+      "path": "js/china_geo_data.js",
+      "sha256": "5c8bd5202dab8eafb6047106884ec92d839a82a8020f9953f7fb6399604ca8ef"
+    },
+    {
+      "path": "js/i18n_dict.js",
+      "sha256": "083f864c388169d7e00c255375984d9b7f926783ec1ec5b6d8161e52b1108c39"
+    },
+    {
+      "path": "js/lore_data.js",
+      "sha256": "5c50817d72f9f99f820850b26e436fa9d21640f4b5636dc2d799dc63aeaacc1e"
+    },
+    {
+      "path": "js/map_data.js",
+      "sha256": "ce44c1a5c9a012639202633d31e3985e3053f4a17308a9ce784a06b2070de8a8"
+    },
+    {
+      "path": "js/zh_hant.js",
+      "sha256": "8dead99e639c48890b2827faf49fd46a637507f03679b806042293b0d4ac71ef"
+    },
+    {
+      "path": "css/style.css",
+      "sha256": "dd2ab2907876371ac0d61f6bccd0888e5bc5f6704019f22eec938f680a0d4c69"
+    },
+    {
+      "path": "assets/favicon.svg",
+      "sha256": "227e6e6568260e91127a50327964ecf381b53ef9056a941ceeff69f254b72943"
+    },
+    {
+      "path": "assets/preview_1415_ming_yingtian.webp",
+      "sha256": "f67579be0101c2dcbb3becb4e96cb8abd934a4cc8dc37860ffe0820f4b107b25"
+    },
+    {
+      "path": "assets/preview_741_tang_trace.webp",
+      "sha256": "45fd2bf018e77b04588643adfdb003d359bd778e5e1510fde7417acc5ca0176f"
+    },
+    {
+      "path": "assets/preview_journey_sushi.webp",
+      "sha256": "9f597678ea8e682baa757f4106d43b5fe1653d492800751ffa4c47e5f184ce6e"
+    },
+    {
+      "path": "assets/preview_quiz_challenge.webp",
+      "sha256": "2845dc1acbb1c0c175a64ca4527acda0bc8fa0b55e9faa002d471dfc1e3d6d70"
+    },
+    {
+      "path": "assets/terrain_relief.webp",
+      "sha256": "24e95b021ab44848a19920cd5a197a62dd77c10990eb229aed033b718f010367"
+    },
+    {
+      "path": "assets/icons/apple-touch-icon.png",
+      "sha256": "09f11c0466d591ea289061d74e5d592c800f4c168b377a4c054ac4323c41c877"
+    },
+    {
+      "path": "assets/icons/icon-192.png",
+      "sha256": "9b1c0c0d6c2c5c0a73ef553b3fd887d636562607f14cf34b5a52d20cac9e2494"
+    },
+    {
+      "path": "assets/icons/icon-512-maskable.png",
+      "sha256": "242f47e35532466cd2e5bb6081badd9ff620d58773d919e21fa987243b6b3f38"
+    },
+    {
+      "path": "assets/icons/icon-512.png",
+      "sha256": "98f09f5433cd80c5c29a6f67bc8bd808a3a982fad5f1d63469ff5a3bd9d5d984"
+    },
+    {
+      "path": "topics/battle-changping.html",
+      "sha256": "ad7b22d8e9c7323722534831384d711988486811fc459b465f6f87c06cb28e01"
+    },
+    {
+      "path": "topics/battle-chibi.html",
+      "sha256": "3354a748ce428f58991594b302a208e995482cada68eda472bc76f46953e0d3d"
+    },
+    {
+      "path": "topics/battle-feishui.html",
+      "sha256": "7c9429d941bdba9b4a98207982885768da71dc028987de5ae32203efc6ef3682"
+    },
+    {
+      "path": "topics/beisong.html",
+      "sha256": "dc17ff141a39a5a19d10db008371c7193f24d96d2ce3ae0eb823ba6ff74850b0"
+    },
+    {
+      "path": "topics/donghan.html",
+      "sha256": "a29b24ce765a8d567208032ece22adf513086bc4d39dd411f9f2b495c441ea9c"
+    },
+    {
+      "path": "topics/dongjin.html",
+      "sha256": "200f5389d91054be3f5566e05cb727a642b3b294f67118e3603baeb8d4299999"
+    },
+    {
+      "path": "topics/dufu-763.html",
+      "sha256": "7e680cf9aee4daa202bde37df32e5d3e3e420536a6900c41aff31620c4656ab4"
+    },
+    {
+      "path": "topics/hanyu-languan.html",
+      "sha256": "2d7cf9871f1f400ece2fd4e3dbd15c65877486cbeda6104ca6d48184043a4269"
+    },
+    {
+      "path": "topics/index.html",
+      "sha256": "0847a05e28c1bd750060f94f06d9d579d15e8ce0d394f09a9eee5f768b1f9521"
+    },
+    {
+      "path": "topics/journey-libai.html",
+      "sha256": "4e1d3fbc6290b2c105d3c38f8f42ea76531fdde1f052ad9bf046ebdc60525c44"
+    },
+    {
+      "path": "topics/journey-qinshihuang.html",
+      "sha256": "ca8822bb01f0f7b1679b45acd43623d10bdb80d92888dea2885f294a5d00228f"
+    },
+    {
+      "path": "topics/journey-sushi.html",
+      "sha256": "4fff1b48582c1d71f3a507d945ec963763e56e99e663227ab193c09a2784a9a3"
+    },
+    {
+      "path": "topics/journey-wangyangming.html",
+      "sha256": "6f15f99b82f9a25febcefeab4ed8ed65c059ceac1bced5b053e8814d03178d24"
+    },
+    {
+      "path": "topics/journey-xuanzang.html",
+      "sha256": "b6de8af514a730a90f80a09caabecbcfd895d9e8140867b3b161085dad8c8d3a"
+    },
+    {
+      "path": "topics/journey-zhangqian.html",
+      "sha256": "089cef9a43337805c837930a3ae4536a6797d9f790de08e3e9daea557dfa3915"
+    },
+    {
+      "path": "topics/journey-zhugeliang.html",
+      "sha256": "5ce55df942b10788d7f28ecfcf1e65b72ce8b5e4d9fd9aa74e8589c563d8f163"
+    },
+    {
+      "path": "topics/ming.html",
+      "sha256": "09fbc3405bdd1ee006ea4f9bee90aa0cab5f62ee366c3ff1fa64751a5c922cec"
+    },
+    {
+      "path": "topics/nanbei.html",
+      "sha256": "d67c31bc89c638da814658866db942831df673d550177afd1a7dbd6a6d963fa5"
+    },
+    {
+      "path": "topics/nansong.html",
+      "sha256": "e960668bc9b2feedece257c1101bb69a85455716ba52a27d03546cc593b235a2"
+    },
+    {
+      "path": "topics/prc.html",
+      "sha256": "503e8fd861eae4e0ab0bbc6d926cc33f7b759ef2aa5a8752a2f564231089cc93"
+    },
+    {
+      "path": "topics/qin.html",
+      "sha256": "d66c74b9e9980e7672796c317c92e042c8e37d30ef10e94e4f6bc0a6d9f35012"
+    },
+    {
+      "path": "topics/qing.html",
+      "sha256": "80b1fe2336d2edd92d6888432aeca266288246b45e5d5709ee0be725767a0eae"
+    },
+    {
+      "path": "topics/roc.html",
+      "sha256": "33d0af88b9954f75f198442f658f99a147696fd8e018e10c73fe5e771a457442"
+    },
+    {
+      "path": "topics/sanguo.html",
+      "sha256": "a6850d90d39e3b3c13102b123dd3ce3799f7ab98e72749ad5b65b9c1c9f8e2dc"
+    },
+    {
+      "path": "topics/shuihu-jiangzhou.html",
+      "sha256": "fc3a1ad5ac6b7e9f5fe7fe08f21ea195b70031828e7947b195cece876e9c6b2b"
+    },
+    {
+      "path": "topics/sui.html",
+      "sha256": "5b0f1fcf09b6881bd4ace342329731987d0555bce1bf9c434c30c24de8c53e39"
+    },
+    {
+      "path": "topics/sushi-exile.html",
+      "sha256": "7f3bcd12513bb0ca1f2c6901db25ba3d29b339b9f9276f5370453346812089ea"
+    },
+    {
+      "path": "topics/tang.html",
+      "sha256": "e4a813fb6eb4540477aa84921c4d3cc68926d24a1f7ac6e264faabc3931fb9c4"
+    },
+    {
+      "path": "topics/wentianxiang-lingdingyang.html",
+      "sha256": "0d541de1c123a351614c9b2848f91c859afe8277923c96bfb77aa859327fc99f"
+    },
+    {
+      "path": "topics/wudai.html",
+      "sha256": "d78aa8fceb96040899c729f34d292f077326f41da0b10e0eac6549b5bc9c8538"
+    },
+    {
+      "path": "topics/xihan.html",
+      "sha256": "6aa16db8f299f699f652ec94bfdf5771b059204862f350775e179262d541d058"
+    },
+    {
+      "path": "topics/xijin.html",
+      "sha256": "8bc8c3a7c2ef631e862c549ab4bd1862b9504c18373155f057bff3110c52b99f"
+    },
+    {
+      "path": "topics/xinqiji-jingkou.html",
+      "sha256": "785e60b3ce2b64605d64b0207deb418710c4897a58e88b96a7a022b2aec755e8"
+    },
+    {
+      "path": "topics/yuan.html",
+      "sha256": "a7ceb23927b05374885f41507b3cdf4413b9bef1b0c40a0e6610331aa97ef84f"
+    },
+    {
+      "path": "topics/zhanguo.html",
+      "sha256": "caa94d26e795f9b16aebe17718ca783b378825026598e1203bc02f57a4488cc7"
+    }
+  ],
+  "changes": "Complete engine/data files retained; independent shell and linked 3D map added in atlas-workbench.js and atlas-terrain.js."
+}

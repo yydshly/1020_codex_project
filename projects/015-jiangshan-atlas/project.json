@@ -1,0 +1,14 @@
+{
+  "id": 15,
+  "slug": "jiangshan-atlas",
+  "name": "江山时序 · 在地图上读中国历史",
+  "summary": "源库以SVG矢量地图与晕渲底图呈现山河，把年份解析为阶段疆域快照，并用地点、人物与事件联动地图、时间轴和内容卡；可看疆域演变、查城池沿革、沿人物或诗词路线读史及落针寻址。015直接本地集成原作，新增六个入口、源码方法与指令手册，另用自研时间核心做非历史数据实验。可扩展地方史、人物专题、文化行旅和其他地图叙事；展示、直接复用与自研边界分开记录。",
+  "repo": "https://github.com/DeanChensj/jiangshan-map",
+  "status": "研究中",
+  "cover": "assets/jiangshan-guide.svg",
+  "cover_alt": "江山时序完整引导图：历史地理问题、数据与地图原理、六类原作能力、个人参考价值、六步专题流程，以及配套实现与指令手册的交付范围。",
+  "web": true,
+  "research_date": "2026-10-24",
+  "upstream_commit": "53059f1c7fed305807b19365857a5f135daf3ac6",
+  "upstream_license": "GPL-3.0"
+}
