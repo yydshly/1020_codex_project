@@ -151,7 +151,7 @@ Na Pali 作者为 Leon Lin，固定版本 `4afb7c3a1aad3d0203193100305c46607134d
 - [首页实际入口与释放](hub-two-worlds-acceptance.d3d11.json)
 - [最终引导图证据清单](guide-final-evidence.json)
 - [交付记录](delivery-acceptance.json)
-- [打开引导图](../web/guide.html)
+- [打开历史研究引导图](../web/guide-history-20261025.html)
 - [SVG 原图](../assets/programmable-worlds-guide.svg)
 - [生成源码](../src/build_guide.py)
 - [固定版本 README](https://github.com/Leonxlnx/napali/blob/4afb7c3a1aad3d0203193100305c46607134d0f5/README.md)

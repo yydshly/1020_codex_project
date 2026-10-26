@@ -20,12 +20,13 @@ def main():
   for p in sorted((src/rel).rglob('*')):
    if p.is_file() and filter(p):copy(p.relative_to(src).as_posix())
  for rel in ['project.json','README.md','Start-Project.ps1']:copy(rel)
+ copy(json.loads((src/'project.json').read_text(encoding='utf-8'))['cover'])
  # Lightweight research/acceptance records only; render output and native caches stay local.
  for p in (src/'notes').iterdir():
   if p.is_file() and p.suffix in {'.md','.json'}:copy(p.relative_to(src).as_posix())
  for p in (src/'src').glob('*'):
   if p.is_file() and p.suffix in {'.py','.cjs','.js'}:copy(p.relative_to(src).as_posix())
- for rel in ['web/index.html','web/app.js','web/style.css','web/map.html','web/guide.html']:copy(rel)
+ for rel in ['web/index.html','web/app.js','web/style.css','web/map.html','web/guide.html','web/guide-history-20261025.html']:copy(rel)
  tree('web/assets',lambda p:p.suffix.lower() in {'.jpg','.png','.svg','.json','.md'} and p.name!='programmable-worlds-guide.svg')
  tree('web/upstream')
  tree('src/runtime-shell',lambda p:p.suffix in {'.js','.cjs','.json','.md'} and 'node_modules' not in p.parts and p.name!='renderer-config.json')
@@ -63,9 +64,9 @@ def main():
  for rel in image_rels:copy(rel)
  raw='https://raw.githubusercontent.com/yydshly/1020_codex_project/'+a.raw_ref+'/projects/014-programmable-worlds/'
  docs='https://github.com/yydshly/1020_codex_project/blob/main/projects/014-programmable-worlds/'
- for rel in ['web/index.html','web/map.html','web/guide.html']:
+ for rel in ['web/index.html','web/map.html','web/guide.html','web/guide-history-20261025.html']:
   p=dst/rel;s=p.read_text(encoding='utf-8').replace('../assets/',raw+'assets/').replace('../notes/',docs+'notes/').replace('../README.md',docs+'README.md')
-  s=s.replace('assets/programmable-worlds-guide.svg',raw+'assets/programmable-worlds-guide.svg') if rel=='web/guide.html' else s.replace('href="assets/programmable-worlds-guide.svg"','href="'+raw+'assets/programmable-worlds-guide.svg"')
+  s=s.replace('assets/programmable-worlds-guide.svg',raw+'assets/programmable-worlds-guide.svg') if rel in {'web/guide.html','web/guide-history-20261025.html'} else s.replace('href="assets/programmable-worlds-guide.svg"','href="'+raw+'assets/programmable-worlds-guide.svg"')
   s=s.replace('lijiang-m7-preview.html?revision=20261026-m7#lijiang',docs+'notes/project-wrap-up-20261026.md')
   p.write_text(s,encoding='utf-8')
  # Transport-only adapters for the exact original model, buffer and float16 pixels.

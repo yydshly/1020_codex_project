@@ -14,11 +14,11 @@
 
 [打开项目总览](web/index.html?revision=20261026-map-1#overview) · [进入漓江 M8](web/index.html?revision=20261026-map-1#lijiang) · [项目汇总与历史索引](notes/project-wrap-up-20261026.md)
 
-## 一张图汇总整个探索
+## 完整引导图 · 一张图汇总整个探索
 
 [打开可缩放总览图](web/map.html?revision=20261026-map-1) · [完整 PNG](assets/programmable-worlds-map-20261026.png) · [可缩放 SVG](assets/programmable-worlds-map-20261026.svg) · [本次图文与网页验收](notes/project-map-acceptance-20261026.json)
 
-1800×7280 的单张图，以 7 张带身份标注的效果图串起八部分：原作效果与原理、三处实践、三种后期参考、六类扩展与产品形态、技术路线、算法与控制流程、下次任务单、当前价值和证据边界。已实现成果、静态参考和未实现方案分别标注，原作来源及现有性能限制一并保留。
+本项目正式引导图使用上方已生成的 **1800×7280 完整总览图**，项目目录也展示同一张完整图。图中以 7 张带身份标注的效果图串起八部分：原作效果与原理、三处实践、三种后期参考、六类扩展与产品形态、技术路线、算法与控制流程、下次任务单、当前价值和证据边界。已实现成果、静态参考和未实现方案分别标注，原作来源及现有性能限制一并保留。
 
 网页支持缩放、原尺寸、适应宽度和章节定位。首页仅加入入口，不预加载完整长图。此轮检查图像解码与浏览功能，未重跑四个三维场景；旧研究引导图保留为历史快照。
 
@@ -116,7 +116,7 @@ M8 延续此前已经改善的叶冠体积、实际岩面根部支撑、林带�
 - 各作品既有证据：[原作页内实时](notes/source-live-acceptance.d3d11.json)、[老街窗景](notes/canal-real-window-functional.d3d11.json)、[独立车站](notes/station-functional.d3d11.json)、[A/B 视觉复核](notes/visual-acceptance-independent.md)。这些报告只对应各自版本与测试范围。
 - 漓江演进：[M5 视觉修复](notes/lijiang-m5-visual-review.json)、[M6 山群与接缝](notes/lijiang-m6-candidate.json)、[M7 性能候选](notes/lijiang-m7-candidate.json)。旧 M5 默认入口和 M7 候选定位已被 M8 正式入口取代，原文件与报告保留。
 - [项目汇总与完整历史链接索引](notes/project-wrap-up-20261026.md)保留早期失败、范围纠正、旧入口和各轮证据，历史通过不替代当前验证。
-- [历史研究引导图](web/guide.html) / [SVG](assets/programmable-worlds-guide.svg) / [生成源码](src/build_guide.py)：原作与 A/B 的研究快照，未包含后续漓江全套演进；[图中证据清单](notes/guide-final-evidence.json)保留。
+- [历史研究引导图](web/guide-history-20261025.html) / [SVG](assets/programmable-worlds-guide.svg) / [生成源码](src/build_guide.py)：原作与 A/B 的研究快照，未包含后续漓江全套演进；[图中证据清单](notes/guide-final-evidence.json)保留。
 
 ## 来源与许可
 

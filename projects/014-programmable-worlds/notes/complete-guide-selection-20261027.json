@@ -1,0 +1,17 @@
+{
+  "schema": "project14-complete-guide-selection-v1",
+  "projectId": 14,
+  "slug": "programmable-worlds",
+  "cover": "assets/programmable-worlds-map-20261026.webp",
+  "referencePNG": "assets/programmable-worlds-map-20261026.png",
+  "dimensions": [
+    1800,
+    7280
+  ],
+  "sameDecodedRGBAPixels": true,
+  "coverSHA256": "6f14d825492379a05fa569074feea72d9cb8d72a6b9ab33a438b14623893d86b",
+  "guideEntry": "web/guide.html",
+  "currentViewer": "web/map.html",
+  "historicalViewer": "web/guide-history-20261025.html",
+  "scope": "Use the previously generated complete map without regeneration; no 3D scene changes."
+}

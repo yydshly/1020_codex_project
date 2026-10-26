@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f2f1e8">
+<title>历史研究引导图 · 可编程世界</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#dfe7de;color:#203c36;font:14px/1.6 system-ui,'Microsoft YaHei',sans-serif}a{color:#2d6454;text-underline-offset:4px}button,input,select{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible,select:focus-visible{outline:3px solid #a16c32;outline-offset:3px}.toolbar{display:flex;align-items:center;gap:12px;flex-wrap:wrap;padding:14px 22px;background:#f8f8f1;border-bottom:1px solid #c3d0c0}.title{margin-right:auto}.title strong{display:block;font-size:16px}.title small{color:#58736a}.tools{display:flex;gap:8px;align-items:center}button,.download,select{padding:7px 11px;border:1px solid #b7c9b8;background:#fffef7;color:#2d6454;border-radius:5px;text-decoration:none;font-size:12px}input{accent-color:#2d6454;width:105px}.download{background:#2d6454;color:white;border-color:#2d6454}output{font:12px monospace;width:42px;text-align:center}.viewer{height:calc(100dvh - var(--toolbar-height,100px));padding:20px;overflow:auto;scrollbar-gutter:stable}.paper{width:fit-content;margin:auto;box-shadow:0 12px 32px #203c3620}img{display:block;width:1080px;max-width:none;height:auto}.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0)}@media(max-width:650px){.toolbar{padding:12px 14px;gap:10px}.title{width:100%}.title small{font-size:11px}.tools{gap:6px}input{width:70px}button{padding:6px 9px}.viewer{padding:10px}select{max-width:190px}}@media print{.toolbar{display:none}.viewer{height:auto;overflow:visible;padding:0}.paper{width:100%;box-shadow:none}img{width:100%!important}}
+</style>
+</head>
+<body>
+<p id="scope-note" style="margin:0;padding:12px 22px;background:#e8eee5;color:#385347">本图是 2026.10.25 的研究快照，包含原作、老街窗景与独立船坞车站。当前四处体验、漓江 M8 和使用说明见<a href="index.html?revision=20261026-wrapup-1#overview">最新成果总览</a>；<a href="index.html?revision=20261026-wrapup-1#status">本轮成果与使用边界</a>另行整理。</p>
+<header class="toolbar" id="toolbar">
+<div class="title"><strong>可编程世界 · 历史研究引导图</strong><small>资料快照 · 2026.10.25 · 当前状态请查看最新成果总览</small></div>
+<div class="tools" role="group" aria-label="引导图缩放">
+<button id="minus" aria-label="缩小">−</button><label class="sr" for="zoom">缩放百分比</label><input id="zoom" type="range" min="10" max="140" step="5" value="60"><output id="value" for="zoom">60%</output><button id="plus" aria-label="放大">＋</button><button id="fit">适应宽度</button><button id="actual">原尺寸</button>
+</div>
+<label class="sr" for="section">跳转章节</label><select id="section"><option value="0">从开头阅读</option><option value="250">01 · 页内实时原作与原理</option><option value="1020">02 · 我们的理解</option><option value="1340">03 · 六类扩展</option><option value="1890">04 · 老街窗景与独立船坞车站</option><option value="2940">05 · 制作与验收流程</option><option value="3850">06 · 证据边界</option><option value="4150">07 · 可选产品化</option><option value="4450">08 · 个人参考价值</option></select>
+<a class="download" href="https://raw.githubusercontent.com/yydshly/1020_codex_project/0e430bf7f464582764c32db17f7765bc800f4b15/projects/014-programmable-worlds/assets/programmable-worlds-guide.svg" download="可编程世界完整引导图.svg">下载 SVG ↓</a><a href="index.html#source">原作页内实时 ↗</a><a href="runtime/source-live.html">独立驾驶原作 ↗</a><a href="index.html?revision=20261026-wrapup-1#overview">返回成果总览 ↗</a>
+</header>
+<main id="viewer" class="viewer" tabindex="0" aria-label="完整引导图，可滚动阅读细节"><div class="paper"><img id="guide" src="https://raw.githubusercontent.com/yydshly/1020_codex_project/0e430bf7f464582764c32db17f7765bc800f4b15/projects/014-programmable-worlds/assets/programmable-worlds-guide.svg?v=20261025-independent-station" width="1800" height="4830" alt="可编程世界完整引导图：napali页内完整实时原作、六类候选扩展、独立制作的运河老街窗景与旧船坞车站。实际画面分别绑定功能、双场景视觉和正式首页集成证据；原始范围纠正和历史记录保留。资料日期2026年10月25日。"></div></main>
+<script>
+const slider=document.querySelector('#zoom'),value=document.querySelector('#value'),image=document.querySelector('#guide'),viewer=document.querySelector('#viewer'),bar=document.querySelector('#toolbar');
+function size(){document.documentElement.style.setProperty('--toolbar-height',(bar.offsetHeight+document.querySelector('#scope-note').offsetHeight)+'px')}
+function zoom(n){n=Math.max(10,Math.min(140,Math.round(Number(n)/5)*5));slider.value=n;value.textContent=n+'%';image.style.width=1800*n/100+'px';size()}
+function fit(){size();const css=getComputedStyle(viewer),padding=parseFloat(css.paddingLeft)+parseFloat(css.paddingRight);zoom(Math.floor((viewer.clientWidth-padding)/1800*100/5)*5)}
+slider.addEventListener('input',()=>zoom(+slider.value));
+document.querySelector('#minus').addEventListener('click',()=>zoom(+slider.value-10));document.querySelector('#plus').addEventListener('click',()=>zoom(+slider.value+10));document.querySelector('#fit').addEventListener('click',fit);document.querySelector('#actual').addEventListener('click',()=>zoom(100));
+document.querySelector('#section').addEventListener('change',e=>viewer.scrollTo({top:+e.target.value*(+slider.value/100),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'}));
+new ResizeObserver(size).observe(bar);addEventListener('resize',size);fit();
+</script>
+</body>
+</html>

@@ -5,14 +5,14 @@
   "summary": "原作以代码生成完整海岸；我们完成老街窗景、独立船坞和漓江晨航，沉淀“确认约束→固定模板→有界求解→独立验证”的场景制作流程。研究与演示已收口，完整自动管线尚未实现。",
   "repo": "https://github.com/Leonxlnx/napali",
   "status": "已完成",
-  "cover": "assets/project-map-cover.png",
-  "cover_alt": "可编程世界总览图封面：Na Pali实际实时画面及程序地形、生态、水体光照和镜头流程；完整探索与经验见网页总览图。",
+  "cover": "assets/programmable-worlds-map-20261026.webp",
+  "cover_alt": "可编程世界完整引导总览图：原作效果与原理、三处实践、三种扩展参考、六类方向、技术路线、约束与模板、有界求解与独立验证、下次任务单和价值边界；1800×7280完整图。",
   "web": true,
   "research_date": "2026-10-24",
   "upstream_commit": "4afb7c3a1aad3d0203193100305c46607134d0f5",
   "upstream_license": "MIT",
   "original_post": "https://x.com/LexnLin/status/2113720560920428685",
-  "last_verified": "2026-10-26",
+  "last_verified": "2026-10-27",
   "tool_summaries": [
     {
       "name": "原作效果",

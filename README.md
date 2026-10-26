@@ -126,9 +126,9 @@ AI 开发架构一图速览：代码是基石，需求是目标；六类问题�
 
 ### 014 · 可编程世界 · 从海岸航拍到自己的作品
 
-<a href="https://yydshly.github.io/1020_codex_project/projects/014-programmable-worlds/"><img src="projects/014-programmable-worlds/assets/project-map-cover.png" alt="可编程世界总览图封面：Na Pali实际实时画面及程序地形、生态、水体光照和镜头流程；完整探索与经验见网页总览图。" width="720"></a>
+<a href="https://yydshly.github.io/1020_codex_project/projects/014-programmable-worlds/"><img src="projects/014-programmable-worlds/assets/programmable-worlds-map-20261026.webp" alt="可编程世界完整引导总览图：原作效果与原理、三处实践、三种扩展参考、六类方向、技术路线、约束与模板、有界求解与独立验证、下次任务单和价值边界；1800×7280完整图。" width="720"></a>
 
-可编程世界总览图封面：Na Pali实际实时画面及程序地形、生态、水体光照和镜头流程；完整探索与经验见网页总览图。
+可编程世界完整引导总览图：原作效果与原理、三处实践、三种扩展参考、六类方向、技术路线、约束与模板、有界求解与独立验证、下次任务单和价值边界；1800×7280完整图。
 
 原作以代码生成完整海岸；我们完成老街窗景、独立船坞和漓江晨航，沉淀“确认约束→固定模板→有界求解→独立验证”的场景制作流程。研究与演示已收口，完整自动管线尚未实现。
 
