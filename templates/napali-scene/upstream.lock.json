@@ -1,0 +1,133 @@
+{
+  "repository": "https://github.com/Leonxlnx/napali",
+  "commit": "4afb7c3a1aad3d0203193100305c46607134d0f5",
+  "license": "MIT",
+  "files": [
+    {
+      "path": "LICENSE",
+      "bytes": 1065,
+      "sha256": "d9177365c7471d18ecd623ce7b8849e26ab8d7e7fea13e1fcbda62397ecb9db8",
+      "gitBlob": "cfa96d6a91fe8daca90f04a60e3e7031db61db90"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4361,
+      "sha256": "1ed8a3d125ba0ae8b95ea28b3b4628a016ce398f1ba8fd0dd3b1c9b35e3d98b5",
+      "gitBlob": "b7811bfaa0ec2f985da07f45c138194100b6353a"
+    },
+    {
+      "path": "index.html",
+      "bytes": 412592,
+      "sha256": "f1aa20b7cb47be4fc6312a7a7959a3f12ba61df55726bd326afebd42080c2ae2",
+      "gitBlob": "8e9bf3973fb142309c9cba973cb7cb85b03e07f5"
+    },
+    {
+      "path": "tools/build_v2.cjs",
+      "bytes": 613,
+      "sha256": "1258b08dc4f9f9f7f0818664a166abb1ded539b8be5009f6b424829e7d904163",
+      "gitBlob": "f973c3d93baf599ea3a9aa24cf97a7df659317d1"
+    },
+    {
+      "path": "tools/cdp.mjs",
+      "bytes": 7751,
+      "sha256": "9e3cef6dd402c6847670d9d070179986029d9c3681d400d0368e78dc8794937a",
+      "gitBlob": "989e5cd96c6c29a413fd2753d720700f31b85130"
+    },
+    {
+      "path": "tools/patch_v3.cjs",
+      "bytes": 12783,
+      "sha256": "246db69da6c013dd34811e87c6589a35a638b2772c5ec7dd15823edf9bde317b",
+      "gitBlob": "2655f2ea8829629b917545e52031c1f119abda96"
+    },
+    {
+      "path": "tools/patch_v4.cjs",
+      "bytes": 1254,
+      "sha256": "77acb094f5c6f86518d4845ed697efe475b57e559a0bc2d91c1e5c84e2e8ef79",
+      "gitBlob": "b78b7ad17224368a7f35589b85c98084b3ec4418"
+    },
+    {
+      "path": "tools/rebuild.cjs",
+      "bytes": 894,
+      "sha256": "f12ff442bcd9aceb43babb7e4db59a1f5150416c06475205dd43d61372382a4e",
+      "gitBlob": "2fcc42ec2402641b5878749f0eeead15464887db"
+    },
+    {
+      "path": "tools/server.mjs",
+      "bytes": 1943,
+      "sha256": "58750a624566ff50d8d19e026d7355efae9d366e1dd954e0ce5087643ef7c765",
+      "gitBlob": "38fbe20adc5992a32c377660f6db664599d9c214"
+    },
+    {
+      "path": "tools/shot.mjs",
+      "bytes": 1577,
+      "sha256": "151a8d9ad80129cd00c316ef259473c1d8e8032ec49f243e0261965d44105f77",
+      "gitBlob": "21c01bfa71a0500222637ce90ea68648523b3b36"
+    },
+    {
+      "path": "tools/tweaks.cjs",
+      "bytes": 42025,
+      "sha256": "285fda3ebc53b412fe690794b144f22fff9e3a0c2d05ff6573ddcb6fb9792a10",
+      "gitBlob": "1ae0b1b1891393ce20e159e6785ffa0eb6d8817f"
+    },
+    {
+      "path": "tools/v2_build.txt",
+      "bytes": 2648,
+      "sha256": "8e09fd6966c0f7f28f4d45a1e6903512b749e70f7ed1e1964702f0170c8c87a1",
+      "gitBlob": "d654fe86197f1698f1ba240a36953fa96ce34452"
+    },
+    {
+      "path": "tools/v2_coast.txt",
+      "bytes": 2615,
+      "sha256": "7322d053f82b847b37acb672cc7866a3e07797aeeb37dcbb4141bea4d7561a99",
+      "gitBlob": "dfbef03f4b4333a9d52922facbbfe3873442a8f4"
+    },
+    {
+      "path": "tools/v2_coastsdf.txt",
+      "bytes": 3306,
+      "sha256": "b872fce0295c81a737b960c99dcca9081fd533da65dc2051d09dfe623e4e5fcc",
+      "gitBlob": "6666836f2ab030bd87f08b00c45a8b3e48e3d103"
+    },
+    {
+      "path": "tools/v2_flight.js",
+      "bytes": 19100,
+      "sha256": "935920864ef67ba300a09ee24e9a4dd0289549a216232decf335c9ea763a7c5c",
+      "gitBlob": "a75e5944790fdd7f68c9620e24357bba6d821d80"
+    },
+    {
+      "path": "tools/v2_template_backup.html",
+      "bytes": 122725,
+      "sha256": "3be03d08aef2f26e7bd159e6e1123ae766b6d1f53e1b10180cf00bd290c9bddf",
+      "gitBlob": "5b882b79546ecd111d3d7b2983cfa1201dd983ef"
+    },
+    {
+      "path": "tools/v3_geo.glsl",
+      "bytes": 54458,
+      "sha256": "853524fb5f262f22096531bcad691c425f36e698bd302fa64f35c6afb6448976",
+      "gitBlob": "60f875eb28a7fbf3d69254ae70fe0028856f310b"
+    },
+    {
+      "path": "tools/v3_shade.glsl",
+      "bytes": 85707,
+      "sha256": "b5fff7634520490a8e558e2e65d42ce30fef5aae1d4f26d2b9fc7d93c77e3f18",
+      "gitBlob": "533605b823423e4d1d157bc45ed363b01feaae5b"
+    },
+    {
+      "path": "tools/v4_sky.glsl",
+      "bytes": 12112,
+      "sha256": "273258fd1bd2e312463857ff49a79db474b17cf83da68d15e17e27853754eaa8",
+      "gitBlob": "e7aa44d7d048f516245b78dae313a09d2a87faac"
+    },
+    {
+      "path": "tools/v4_water.glsl",
+      "bytes": 96030,
+      "sha256": "67465368252ebdc145201c74a443264ada56d230440b9915b87e56c0f6885f2d",
+      "gitBlob": "ece2a24062fde9770d5d78f98e9927a32877c0dc"
+    },
+    {
+      "path": "tools/video.mjs",
+      "bytes": 5213,
+      "sha256": "4b71b8a7365775fad948b58689d80a65bcd52d9a9a41cdd345be3fc96e9d9bd4",
+      "gitBlob": "6e619e4013a22f9e5a229aacba448307a41bd845"
+    }
+  ]
+}

@@ -36,6 +36,14 @@
 
 [![源库算法与扩展指导图](assets/napali-implementation-map-20261027.png)](web/source-implementation.html)
 
+## 可直接使用的场景复用模板
+
+[下载完整模板 ZIP](../../templates/napali-scene-starter.zip) · [使用说明与源代码](../../templates/napali-scene/README.md) · [给新对话的任务说明](../../templates/napali-scene/NEXT-CHAT.txt)
+
+模板直接保留固定源库的完整引擎和构建部件，复用地形/侵蚀、生态、海浪、天空、光照、后处理与电影镜头；通过有限参数、外部几何数据和独立航线扩展。包含一键创建副本、显式启动与停止、网页嵌入接口、哈希/GLSL 保留检查和实际运行验收工具。原作基线已实际运行，新题材仍需独立验收。
+
+下载解压后，在模板目录运行 `python scene.py serve`，再打开 `http://127.0.0.1:8820/`。下一件作品使用 `python scene.py new --output <新目录> --name <英文名称>` 创建副本，从 `configs/scene.json` 开始。流程是：**保留基线 → 确认约束 → 配置或局部替换 → 有限调整 → 实际验证 → 达到用途后收口。**
+
 ## 四部分内容各是什么
 
 | 部分 | 当前内容与入口 | 范围 |

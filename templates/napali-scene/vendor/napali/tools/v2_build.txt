@@ -1,0 +1,51 @@
+function buildCoastSegments() {
+  const segs = [];
+  const toW = (x, y) => unproject(x, y, 0);
+  // mainland: drop the image-corner point, extend both ends along the coast.
+  const pts = [];
+  for (let i = 0; i < COAST_IMG[0].length; i += 2) pts.push([COAST_IMG[0][i], COAST_IMG[0][i + 1]]);
+  const ci = pts.findIndex(([x, y]) => x >= 1660 && y <= 1);
+  const ordered = pts.slice(ci + 1).concat(pts.slice(0, ci)); // starts at right edge, ends at top edge
+  const w = ordered.map(([x, y]) => toW(x, y));
+  const a = w[0], b = w[w.length - 1];
+  let dx = b[0] - a[0], dz = b[1] - a[1]; const dl = Math.hypot(dx, dz); dx /= dl; dz /= dl;
+  // inland normal (+x,+z side)
+  let nx = dz, nz = -dx; if (nx + nz < 0) { nx = -nx; nz = -nz; }
+  const E = 4000, I = 9000;
+  const poly = [[a[0] - dx * E + nx * I, a[1] - dz * E + nz * I], [a[0] - dx * E, a[1] - dz * E],
+    [a[0] - dx * E * 0.35 - nx * 120, a[1] - dz * E * 0.35 - nz * 120], ...w,
+    [b[0] + dx * E * 0.35 - nx * 90, b[1] + dz * E * 0.35 - nz * 90],
+    [b[0] + dx * E, b[1] + dz * E], [b[0] + dx * E + nx * I, b[1] + dz * E + nz * I]];
+  const loops = [poly];
+  for (let k = 1; k < COAST_IMG.length; k++) {
+    const l = [];
+    for (let i = 0; i < COAST_IMG[k].length; i += 2) l.push(toW(COAST_IMG[k][i], COAST_IMG[k][i + 1]));
+    loops.push(l);
+  }
+  for (const l of loops) for (let i = 0; i < l.length; i++) {
+    const p = l[i], q = l[(i + 1) % l.length];
+    segs.push(p[0], p[1], q[0], q[1]);
+  }
+  return { segs: new Float32Array(segs), n: segs.length / 4, coastDir: [dx, dz], inland: [nx, nz] };
+}
+function buildValleys() {
+  const S = [], P = [];
+  for (const v of VALLEYS_IMG) {
+    for (let i = 0; i < v.length - 1; i++) {
+      const [x0, y0, h0, w0] = v[i], [x1, y1, h1, w1] = v[i + 1];
+      const a = unproject(x0, y0, h0), b = unproject(x1, y1, h1);
+      S.push(a[0], a[1], b[0], b[1]);
+      P.push(h0, h1, w0, w1);
+    }
+  }
+  const SH = [];
+  for (const [x, y, r, k] of SHELVES_IMG) { const w = unproject(x, y, 0); SH.push(w[0], w[1], r, k); }
+  const MS = [];
+  for (const [x, y, h, r] of MASSIF_IMG) { const w = unproject(x, y, h); MS.push(w[0], w[1], h, r); }
+  const CH = [];
+  for (const [x, y, h, r] of CLIFFS_IMG) { const w = unproject(x, y, 0); CH.push(w[0], w[1], h, r); }
+  const BZ = [];
+  for (const [x, y, r, k] of BEACHES_IMG) { const w = unproject(x, y, 0); BZ.push(w[0], w[1], r, k); }
+  return { S: new Float32Array(S), P: new Float32Array(P), n: S.length / 4, SH: new Float32Array(SH), nSH: SH.length / 4, BZ: new Float32Array(BZ), nBZ: BZ.length / 4, CH: new Float32Array(CH), nCH: CH.length / 4, MS: new Float32Array(MS), nMS: MS.length / 4 };
+}
+

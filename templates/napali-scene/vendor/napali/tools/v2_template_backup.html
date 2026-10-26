@@ -1,0 +1,1993 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Na Pali FPV</title>
+<style>
+  html,body{margin:0;height:100%;background:#000;overflow:hidden;font-family:ui-monospace,Consolas,monospace}
+  canvas{display:block;position:fixed;inset:0;width:100vw;height:100vh}
+  #load{position:fixed;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:14px;color:#cfe6ff;font-size:13px;letter-spacing:.12em;text-transform:uppercase;background:#030a14;transition:opacity .6s}
+  #load .bar{width:260px;height:2px;background:#17324f;overflow:hidden}
+  #load .bar i{display:block;height:100%;width:0;background:#7fc4ff}
+</style>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="load"><div id="loadtxt">Generating terrain</div><div class="bar"><i id="loadbar"></i></div></div>
+<script>
+'use strict';
+// ============================================================================
+//  Na Pali coast — 100% procedural. No textures, images, models or samples.
+//  The only data is a traced waterline (a vector path, like an artist's sketch)
+//  plus a few art-direction control points. Everything else is generated:
+//  stream-power erosion on the GPU, an FFT ocean, layered basalt, rainforest
+//  canopy, breaking surf, sky and a physically-driven FPV drone flight.
+// ============================================================================
+const Q = new URLSearchParams(location.search);
+const MODE = Q.get('mode') || 'drone';
+const DEG = Math.PI / 180;
+const num = (k, d) => (Q.has(k) ? parseFloat(Q.get(k)) : d);
+
+// Reference camera (the still frame) -----------------------------------------
+const REF_W = 1672, REF_H = 941;
+const STILL = { h: num('camH', 1000), pitch: num('pitch', 50) * DEG, vfov: num('vfov', 38) * DEG, aspect: REF_W / REF_H };
+
+function camBasis(yaw, pitch) {
+  // yaw around +y (0 = looking toward +z), pitch = down angle
+  const cp = Math.cos(pitch), sp = Math.sin(pitch), cy = Math.cos(yaw), sy = Math.sin(yaw);
+  const f = [sy * cp, -sp, cy * cp];
+  const r = [cy, 0, -sy];
+  const u = [sy * sp, cp, cy * sp];
+  return { r, u, f };
+}
+function unproject(px, py, planeY = 0) {
+  const t = Math.tan(STILL.vfov / 2);
+  const sx = (2 * px / REF_W - 1) * STILL.aspect * t, sy = (1 - 2 * py / REF_H) * t;
+  const { r, u, f } = camBasis(0, STILL.pitch);
+  const d = [f[0] + sx * r[0] + sy * u[0], f[1] + sx * r[1] + sy * u[1], f[2] + sx * r[2] + sy * u[2]];
+  const k = (STILL.h - planeY) / -d[1];
+  return [d[0] * k, d[2] * k];
+}
+
+// Traced waterline (image space, px). Loop 0 = mainland, rest = sea stacks.
+//@@COAST@@
+
+// Valley axes [x px, y px, floor height m, half-width m]
+const VALLEYS_IMG = [
+  [[1190, 488, 0.8, 75], [1212, 425, 8, 45], [1245, 335, 24, 30], [1295, 240, 48, 22], [1375, 125, 90, 18], [1460, 20, 140, 15]],
+  [[338, 184, 1.2, 42], [378, 150, 12, 30], [440, 98, 40, 22], [520, 30, 80, 18]],
+];
+// Sea-cliff heights along the coast [x px, y px, height m, rise width m]
+const CLIFFS_IMG = [[80, 60, 60, 45], [150, 150, 45, 40], [280, 300, 85, 40], [380, 250, 75, 45], [550, 360, 70, 45], [650, 420, 65, 45],
+  [830, 560, 95, 35], [890, 680, 80, 32], [985, 540, 35, 40], [1360, 620, 95, 22], [1450, 700, 120, 20], [1600, 800, 110, 22], [1660, 870, 100, 24]];
+// Massif bumps [x px, y px, peak height m, radius m]
+const MASSIF_IMG = [[1500, 320, 210, 330], [1650, 110, 300, 400], [1420, 540, 90, 180]];
+// Beach aprons [x px, y px, radius m, beach slope]
+const BEACHES_IMG = [[1185, 505, 175, 0.065], [338, 186, 55, 0.08]];
+// Shallow sandy shelves [x px, y px, radius m, strength]
+const SHELVES_IMG = [[1160, 640, 230, 1.0], [1300, 760, 120, 0.7], [270, 215, 90, 0.9], [490, 410, 110, 0.6], [1480, 800, 110, 0.5], [760, 610, 70, 0.4]];
+
+// ---------------------------------------------------------------------------
+//@@BUILD@@
+// ============================================================================
+//  GLSL
+// ============================================================================
+const GLSL_COMMON = `#version 300 es
+precision highp float; precision highp int; precision highp sampler2D;
+#define PI 3.14159265359
+uniform int uZero; // always 0: keeps D3D/fxc from unrolling loops (huge compile-time win)
+float hash11(float p){p=fract(p*.1031);p*=p+33.33;p*=p+p;return fract(p);}
+float hash12(vec2 p){vec3 p3=fract(vec3(p.xyx)*.1031);p3+=dot(p3,p3.yzx+33.33);return fract((p3.x+p3.y)*p3.z);}
+vec2 hash22(vec2 p){vec3 p3=fract(vec3(p.xyx)*vec3(.1031,.1030,.0973));p3+=dot(p3,p3.yzx+33.33);return fract((p3.xx+p3.yz)*p3.zy);}
+float hash13(vec3 p3){p3=fract(p3*.1031);p3+=dot(p3,p3.zyx+31.32);return fract((p3.x+p3.y)*p3.z);}
+vec3 hash33(vec3 p3){p3=fract(p3*vec3(.1031,.1030,.0973));p3+=dot(p3,p3.yxz+33.33);return fract((p3.xxy+p3.yxx)*p3.zyx);}
+float vnoise(vec2 x){vec2 i=floor(x),f=fract(x);vec2 u=f*f*(3.-2.*f);
+  float a=hash12(i),b=hash12(i+vec2(1,0)),c=hash12(i+vec2(0,1)),d=hash12(i+vec2(1,1));
+  return -1.+2.*(a+(b-a)*u.x+(c-a)*u.y+(a-b-c+d)*u.x*u.y);}
+vec3 vnoised(vec2 x){vec2 i=floor(x),f=fract(x);vec2 u=f*f*(3.-2.*f);vec2 du=6.*f*(1.-f);
+  float a=hash12(i),b=hash12(i+vec2(1,0)),c=hash12(i+vec2(0,1)),d=hash12(i+vec2(1,1));
+  float k1=b-a,k2=c-a,k4=a-b-c+d;
+  return vec3(-1.+2.*(a+k1*u.x+k2*u.y+k4*u.x*u.y),2.*du*vec2(k1+k4*u.y,k2+k4*u.x));}
+float noise3(vec3 x){vec3 i=floor(x),f=fract(x);vec3 u=f*f*(3.-2.*f);
+  float a=hash13(i),b=hash13(i+vec3(1,0,0)),c=hash13(i+vec3(0,1,0)),d=hash13(i+vec3(1,1,0)),
+        e=hash13(i+vec3(0,0,1)),f1=hash13(i+vec3(1,0,1)),g=hash13(i+vec3(0,1,1)),h=hash13(i+vec3(1,1,1));
+  return -1.+2.*mix(mix(mix(a,b,u.x),mix(c,d,u.x),u.y),mix(mix(e,f1,u.x),mix(g,h,u.x),u.y),u.z);}
+vec4 noised3(vec3 x){vec3 i=floor(x),f=fract(x);vec3 u=f*f*(3.-2.*f),du=6.*f*(1.-f);
+  float a=hash13(i),b=hash13(i+vec3(1,0,0)),c=hash13(i+vec3(0,1,0)),d=hash13(i+vec3(1,1,0)),
+        e=hash13(i+vec3(0,0,1)),f1=hash13(i+vec3(1,0,1)),g=hash13(i+vec3(0,1,1)),h=hash13(i+vec3(1,1,1));
+  float k1=b-a,k2=c-a,k3=e-a,k4=a-b-c+d,k5=a-c-e+g,k6=a-b-e+f1,k7=-a+b+c-d+e-f1-g+h;
+  return vec4(-1.+2.*(a+k1*u.x+k2*u.y+k3*u.z+k4*u.x*u.y+k5*u.y*u.z+k6*u.z*u.x+k7*u.x*u.y*u.z),
+    2.*du*vec3(k1+k4*u.y+k6*u.z+k7*u.y*u.z,k2+k5*u.z+k4*u.x+k7*u.z*u.x,k3+k6*u.x+k5*u.y+k7*u.x*u.y));}
+const mat2 M2=mat2(1.6,1.2,-1.2,1.6);
+const mat3 M3=mat3(0.00,1.60,1.20,-1.60,0.72,-0.96,-1.20,-0.96,1.28);
+float fbm(vec2 p,int o){float s=0.,a=.5;for(int i=uZero;i<o;i++){s+=a*vnoise(p);p=M2*p;a*=.5;}return s;}
+vec3 fbmd(vec2 p,int o){vec3 s=vec3(0);float a=.5;mat2 m=mat2(1,0,0,1);
+  for(int i=uZero;i<o;i++){vec3 n=vnoised(p);s.x+=a*n.x;s.yz+=a*(n.yz*m);p=M2*p;m=M2*m;a*=.5;}return s;}
+float fbm3(vec3 p,int o){float s=0.,a=.5;for(int i=uZero;i<o;i++){s+=a*noise3(p);p=M3*p;a*=.5;}return s;}
+vec4 fbm3d(vec3 p,int o){vec4 s=vec4(0);float a=.5;mat3 m=mat3(1.);
+  for(int i=uZero;i<o;i++){vec4 n=noised3(p);s.x+=a*n.x;s.yzw+=a*(n.yzw*m);p=M3*p;m=M3*m;a*=.5;}return s;}
+float ridged(vec2 p,int o){float s=0.,a=.5;for(int i=uZero;i<o;i++){float n=1.-abs(vnoise(p));s+=a*n*n;p=M2*p;a*=.5;}return s;}
+vec3 voronoi(vec2 x){vec2 n=floor(x),f=fract(x);float d1=8.,d2=8.,id=0.;
+  for(int j=uZero-1;j<=1;j++)for(int i=uZero-1;i<=1;i++){vec2 g=vec2(i,j);vec2 o=hash22(n+g);vec2 r=g+o-f;float d=dot(r,r);
+    if(d<d1){d2=d1;d1=d;id=hash12(n+g+17.);}else if(d<d2)d2=d;}
+  return vec3(sqrt(d1),sqrt(d2),id);}
+float smin(float a,float b,float k){float h=clamp(.5+.5*(b-a)/k,0.,1.);return mix(b,a,h)-k*h*(1.-h);}
+vec4 cubicW(float v){vec4 n=vec4(1,2,3,4)-v;vec4 s=n*n*n;float x=s.x,y=s.y-4.*s.x,z=s.z-4.*s.y+6.*s.x,w=6.-x-y-z;return vec4(x,y,z,w)/6.;}
+vec4 texBicubic(sampler2D t,vec2 uv){vec2 res=vec2(textureSize(t,0));uv=uv*res-.5;vec2 f=fract(uv);uv-=f;
+  vec4 xc=cubicW(f.x),yc=cubicW(f.y);vec4 c=uv.xxyy+vec2(-.5,1.5).xyxy;vec4 s=vec4(xc.xz+xc.yw,yc.xz+yc.yw);
+  vec4 off=(c+vec4(xc.yw,yc.yw)/s)/res.xxyy;
+  vec4 s0=textureLod(t,off.xz,0.),s1=textureLod(t,off.yz,0.),s2=textureLod(t,off.xw,0.),s3=textureLod(t,off.yw,0.);
+  float sx=s.x/(s.x+s.y),sy=s.z/(s.z+s.w);return mix(mix(s3,s2,sx),mix(s1,s0,sx),sy);}
+`;
+
+const VS = `#version 300 es
+in vec2 aPos; out vec2 vUv; void main(){ vUv=aPos*.5+.5; gl_Position=vec4(aPos,0,1); }`;
+
+// ---- terrain generation ------------------------------------------------------
+const TERRAIN_FUNCS = `
+uniform sampler2D uCoast; uniform vec4 uCR;
+float coastRaw(vec2 p){ return textureLod(uCoast,(p-uCR.xy)*uCR.w,0.).r; }
+float coastD(vec2 p){ return coastRaw(p) + 5.*vnoise(p*.035+3.7) + 2.2*vnoise(p*.12-1.3) + 0.8*vnoise(p*.4); }
+// (r13 fix) west bay reef terrace mask (world space): full inside ~half the ellipse, ragged edge (FS_HEIGHT floor + FS_RENDER water colour)
+float wBayM(vec2 p){ return smoothstep(1.,.5,length((p-vec2(-290.,860.))/vec2(230.,175.))+.25*fbm(p*.007+vec2(7.1,2.3),2)); }
+`;
+const BASE_FUNCS = TERRAIN_FUNCS + `
+uniform vec4 uRect; uniform vec2 uRes;
+uniform vec4 uVS[24]; uniform vec4 uVP[24]; uniform int uNV; uniform vec4 uSH[8]; uniform int uNSH;
+uniform float uMtnH, uMtnL, uVW; uniform vec4 uBZ[4]; uniform int uNBZ; uniform vec4 uCH[16]; uniform int uNCH; uniform vec4 uMS[4]; uniform int uNMS;
+float baseLand(vec2 p){
+  float d=coastD(p);
+  float L=max(d,0.);
+  float n1=vnoise(p*.0016+vec2(7.3,1.1))*.5+.5;
+  float n2=vnoise(p*.0055-vec2(3.1,8.2))*.5+.5;
+  float cw=.15, chs=mix(30.,80.,n2)*.15, crw=mix(28.,55.,n1)*.15;
+  for(int i=uZero;i<uNCH;i++){ vec2 dd=p-uCH[i].xy; float wi=1./(1.+dot(dd,dd)/(140.*140.)); wi*=wi; cw+=wi; chs+=wi*uCH[i].z*(.8+.4*n2); crw+=wi*uCH[i].w; }
+  float cliffH=chs/cw;
+  float hc=cliffH*smoothstep(0.,crw/cw*(.85+.3*n1),L);
+  float hm=uMtnH*mix(.72,1.12,n1)*(1.-exp(-L/uMtnL));
+  for(int i=uZero;i<uNMS;i++){ vec2 dd=p-uMS[i].xy; hm+=uMS[i].z*exp(-dot(dd,dd)/(uMS[i].w*uMS[i].w))*smoothstep(0.,80.,L); }
+  float vmin=1e9; float carve=1e9;
+  for(int i=uZero;i<uNV;i++){
+    vec4 s=uVS[i]; vec4 vp=uVP[i];
+    vec2 a=s.xy,b=s.zw,pa=p-a,ba=b-a;
+    float t=clamp(dot(pa,ba)/dot(ba,ba),0.,1.);
+    float dist=length(pa-ba*t);
+    float fl=mix(vp.x,vp.y,t), hw=mix(vp.z,vp.w,t);
+    carve=min(carve,fl+.06*min(dist,hw)+.62*max(dist-hw,0.));
+    vmin=min(vmin,max(dist-hw,0.)/uVW);
+  }
+  float broad=1.-exp(-vmin*vmin);
+  float h=hc+hm*mix(.55,1.,broad);
+  h=smin(h,carve,28.);
+  for(int i=uZero;i<uNBZ;i++){ vec4 z=uBZ[i]; float m=smoothstep(z.z,z.z*.6,length(p-z.xy)); h=mix(h,min(h,.35+L*z.w),m*(1.-smoothstep(40.,90.,L))); }
+  return h;
+}
+`;
+const FS_BASE = GLSL_COMMON + BASE_FUNCS + `
+out vec4 o;
+void main(){ vec2 p=uRect.xy+gl_FragCoord.xy/uRes*uRect.z; o=vec4(baseLand(p),0,0,1); }`;
+
+// GPU fluvial erosion: stream power law with multiple-flow-direction drainage + talus slumping.
+// state: r = height, g = drainage area (m^2), b = area / sum(slope^p) (outflow share), a = fixed (sea / border)
+const FS_EINIT = GLSL_COMMON + TERRAIN_FUNCS + `
+uniform sampler2D uBase; uniform vec4 uDom; uniform vec2 uRes; uniform float uRough, uRoughScale;
+out vec4 o;
+void main(){
+  ivec2 ic=ivec2(gl_FragCoord.xy); vec2 p=uDom.xy+(vec2(ic)+.5)*uDom.w;
+  float h=texelFetch(uBase,ic,0).r, cd=coastRaw(p);
+  bool border=ic.x==0||ic.y==0||ic.x==int(uRes.x)-1||ic.y==int(uRes.y)-1;
+  if(cd<0.){ o=vec4(min(h,0.),uDom.w*uDom.w,0.,1.); return; }
+  float land=clamp(cd/40.,0.,1.)*clamp(h/120.,0.,1.);
+  h+=uRough*fbm(p/uRoughScale,6)*land;
+  o=vec4(h,uDom.w*uDom.w,0.,border?1.:0.);
+}`;
+const FS_ERODE = GLSL_COMMON + TERRAIN_FUNCS + `
+uniform sampler2D uS; uniform vec4 uDom; uniform float uDt, uK, uP, uTalus, uThermal, uKvalley, uCoastHard;
+uniform vec4 uVS[24]; uniform vec4 uVP[24]; uniform int uNV;
+out vec4 o;
+const ivec2 OFF[8]=ivec2[8](ivec2(1,0),ivec2(-1,0),ivec2(0,1),ivec2(0,-1),ivec2(1,1),ivec2(-1,1),ivec2(1,-1),ivec2(-1,-1));
+void main(){
+  ivec2 ic=ivec2(gl_FragCoord.xy);
+  vec4 c=texelFetch(uS,ic,0);
+  if(c.a>.5){ o=c; return; }
+  float cell=uDom.w, h=c.r;
+  float Ain=cell*cell, sumS=0., Smax=0., hmin=1e9, th=0.;
+  for(int k=uZero;k<8;k++){
+    float d=(k<4?1.:1.41421356)*cell;
+    vec4 n=texelFetch(uS,ic+OFF[k],0);
+    float s=(h-n.r)/d;
+    if(s>0.){ float w=pow(s,uP); sumS+=w; Smax=max(Smax,s); }
+    else Ain+=n.b*pow(-s,uP);
+    hmin=min(hmin,n.r);
+    float lim=uTalus*d;
+    th+=max(n.r-h-lim,0.)-max(h-n.r-lim,0.);
+  }
+  vec2 p=uDom.xy+(vec2(ic)+.5)*cell;
+  float vw=0.;
+  for(int i=uZero;i<uNV;i++){ vec4 sg=uVS[i]; vec2 a=sg.xy,ba=sg.zw-sg.xy,pa=p-a; float t=clamp(dot(pa,ba)/dot(ba,ba),0.,1.);
+    float dd=length(pa-ba*t), w=mix(uVP[i].z,uVP[i].w,t)*1.1; vw=max(vw,exp(-dd*dd/(w*w))); }
+  float cd=max(coastRaw(p),0.);
+  float hard=mix(uCoastHard,1.,smoothstep(25.,320.,cd));
+  float K=uK*(1.+.4*vnoise(p/650.+5.))*mix(hard,1.+uKvalley,vw);
+  float hn=h-uDt*K*sqrt(Ain)*Smax;
+  hn=max(hn,min(h,hmin+.001));
+  if(Smax<=0.) hn=hmin+.02;
+  hn+=uThermal*th;
+  hn=max(hn,.6+.04*cd);
+  o=vec4(hn,Ain,sumS>0.?Ain/sumS:0.,0.);
+}`;
+
+// (r9 terrain) inland valley: knife-edge fins and a narrow V instead of the flat alluvial plain.
+// The stream-power pass floors the cove valley at its deposition level (.6 + .04 x coast distance), a ~450 m wide sunlit
+// plain from the beach to ~1.3 km inland; ref.png / r9 show a shaded V gorge between steep fins. After the erosion, this
+// pass raises the plain (never lowers anything) into spurs that run down from both walls to a narrow channel on the
+// valley axis: the gully lines climb the walls and point downstream (u = s - k |d|), knife-edge crests, rounded gully
+// floors, crest heights that vary from fin to fin. The fill rises steeply from the channel and saturates (inner gorge),
+// fades out ~260-360 m from the axis and after 480 m along it (the natural gorge takes over); the floor is a triangle
+// like r9 / ref.png: ~220 m wide behind the beach (s 40-180), ~110 m from s 330 (the view 5 camera keeps its view up the
+// valley). All parameters are URL-tunable (vf*); vfill=0 switches the pass off.
+// It works on the eroded field, so landH's crest sharpening, flutes and the vegetation masks all follow the new shape.
+const FS_VFILL = GLSL_COMMON + TERRAIN_FUNCS + `
+uniform sampler2D uS; uniform vec4 uDom; uniform vec4 uVF0, uVF1, uVF2, uVF3, uVF4, uVF5, uVF6, uVF7, uVF8, uVF9, uVSA, uVSB, uVSC;
+out vec4 o;
+const vec2 VAX[9]=vec2[9](vec2(335.,820.),vec2(360.,900.),vec2(405.,1000.),vec2(445.,1100.),vec2(480.,1180.),vec2(550.,1260.),vec2(640.,1350.),vec2(720.,1440.),vec2(790.,1540.));
+float gS(vec2 q){ return textureLod(uS,(q-uDom.xy)/uDom.z,0.).r; }
+vec2 axP(float s){ float sc=0.; for(int i=uZero;i<8;i++){ vec2 a=VAX[i], ba=VAX[i+1]-a; float L=length(ba); if(s<=sc+L||i==7) return a+ba*clamp((s-sc)/L,0.,1.); sc+=L; } return VAX[8]; }
+void vframe(vec2 p, out float s, out float d){   // the valley frame of vfill() (s along the axis, d across it, + = east)
+  float dist[8], sa[8], pd[8]; float dmin=1e9, s0=0.;
+  for(int i=uZero;i<8;i++){
+    vec2 a=VAX[i], ba=VAX[i+1]-a; float L=length(ba); vec2 tg=ba/L, pa=p-a;
+    float al=dot(pa,tg);
+    dist[i]=length(pa-tg*clamp(al,0.,L)); sa[i]=s0+al; pd[i]=pa.x*tg.y-pa.y*tg.x;
+    dmin=min(dmin,dist[i]); s0+=L;
+  }
+  float W=0.; s=0.; d=0.;
+  for(int i=uZero;i<8;i++){ float w=exp(-(dist[i]-dmin)/30.); W+=w; s+=w*sa[i]; d+=w*pd[i]; }
+  s/=W; d/=W;
+}
+void vfill(vec4 c, vec2 p){
+  if(p.x<-50.||p.x>1250.||p.y<760.||p.y>1800.) return;
+  // smooth valley frame (s along the axis, d across it, + = east side): soft-min blend of the segment projections
+  float dist[8], sa[8], pd[8]; float dmin=1e9, s0=0.;
+  for(int i=uZero;i<8;i++){
+    vec2 a=VAX[i], ba=VAX[i+1]-a; float L=length(ba); vec2 tg=ba/L, pa=p-a;
+    float al=dot(pa,tg);
+    dist[i]=length(pa-tg*clamp(al,0.,L)); sa[i]=s0+al; pd[i]=pa.x*tg.y-pa.y*tg.x;
+    dmin=min(dmin,dist[i]); s0+=L;
+  }
+  float W=0., s=0., d=0.;
+  for(int i=uZero;i<8;i++){ float w=exp(-(dist[i]-dmin)/30.); W+=w; s+=w*sa[i]; d+=w*pd[i]; }
+  s/=W; d/=W;
+  float ad=abs(d);
+  float sw=smoothstep(uVF0.x,uVF0.y,s+uVF4.w*max(ad-120.,0.))*(1.-smoothstep(uVF0.z,uVF0.w,s));   // beside the beach flat the fill starts earlier
+  if(sw<=0.||ad>380.) return;
+  // channel floor: the eroded height on the axis
+  vec2 ap=VAX[0]; float sc=0.;
+  for(int i=uZero;i<8;i++){ vec2 a=VAX[i], ba=VAX[i+1]-a; float L=length(ba); if(s<=sc+L||i==7){ ap=a+ba*clamp((s-sc)/L,0.,1.); break; } sc+=L; }
+  float fl=gS(ap);
+  float hw=mix(uVF1.x,uVF1.y,smoothstep(uVF1.z,uVF1.w,s));
+  float e=max(ad-hw,0.);
+  // inner gorge: steep rise from the channel, saturating (optional second stage uVF5 for tall outer fins; off)
+  float env=(uVF2.x*(1.-exp(-e/uVF2.y))+uVF5.x*smoothstep(uVF5.y,uVF5.z,e))*(1.-smoothstep(uVF2.z,uVF2.z+100.,ad))*sw;
+  // fins
+  bool R=d>0.; float k=R?uVF3.y:uVF3.x, lam=R?uVF3.w:uVF3.z;
+  float wx=vnoise(p*.006+vec2(3.1,0.))*42.+vnoise(p*.017+vec2(0.,7.))*14.+vnoise(p*.045+vec2(5.,1.))*5.;
+  float u=(s-k*ad+wx+(R?37.:0.))/lam;
+  float tri=1.-2.*abs(fract(u)-.5);
+  float u2=(s-k*ad+wx*1.3)/(lam*.37)+1.7;
+  float tri2=1.-2.*abs(fract(u2)-.5);
+  float u3=(s-k*ad*.8+wx*1.6)/(lam*.16)+4.3;                   // ribs / sub-gullies on the fin flanks
+  float tri3=1.-2.*abs(fract(u3)-.5);
+  float fa=.6+.4*hash12(vec2(floor(u)+(R?17.:0.),3.7));        // crest height varies from fin to fin
+  float crest=1.+.15*vnoise(vec2(ad*.03,floor(u)*3.1+(R?9.:0.)));   // pinnacles and saddles along each crest
+  float pwe=mix(uVF4.x,1.8,smoothstep(0.,uVF4.y,e));           // fin noses taper to thin ribs toward the channel
+  float fin=fa*crest*pow(tri,pwe)*.64+.22*tri2*tri2*tri+.14*tri3*tri;   // peaked crests (knife edges after landH), broad gully floors
+  float hf=fl+env*(uVF2.w+(1.-uVF2.w)*fin);
+  // (r10 terrain) spur cap: a fin crest never stands above a ridge that descends from the terrain further out (along the
+  // outward normal, 40..240 m) at slope uVF6.x. Round 9's fins rose 80-160 m over a low plain and stood in front of lower
+  // ground (saddles): seen from the valley floor they read as isolated cones / gumdrops (v5 right, v4 behind the beach,
+  // v3 valley mouth). Capped, every spur climbs into the wall behind it and the walls read continuous. Smooth min (uVF6.z).
+  if(uVF6.x>0.){
+    vec2 t2=axP(s+3.)-axP(s-3.); t2/=max(length(t2),1e-3); vec2 nO=(R?1.:-1.)*vec2(t2.y,-t2.x);
+    float wo=-1e9; for(int k=uZero;k<8;k++){ float r=40.*float(k+1); if(r>uVF6.y) break; wo=max(wo,gS(p+nO*r)-r*uVF6.x); }
+    float kc=uVF6.z, hc=clamp(.5+.5*(wo-hf)/kc,0.,1.); hf=mix(wo,hf,hc)-kc*hc*(1.-hc);
+  }
+  // (r10 terrain) bench fill: between the fins and the outer wall lay low benches and saddles (40-90 m below the wall
+  // 300-400 m from the axis), so the spurs stood free in front of the wall. The wall line (a steep face descending from the
+  // terrain further out along the outward normal, 20..uVF8.y m, at slope uVF8.x) fills them: the spurs become ribs of one
+  // continuous wall that rises from the gorge to the skyline ridge. Below the gullies between the fins the fill stays
+  // uVF8.w m under the wall line, so the fin gullies keep climbing the wall. Not near the channel, fades out at uVF8.z.
+  if(uVF8.x>0.){
+    vec2 t3=axP(s+3.)-axP(s-3.); t3/=max(length(t3),1e-3); vec2 nB=(R?1.:-1.)*vec2(t3.y,-t3.x);
+    float wl=-1e9; for(int k=uZero;k<16;k++){ float r=20.*float(k+1); if(r>uVF8.y) break; wl=max(wl,gS(p+nB*r)-r*uVF8.x); }
+    float wb=smoothstep(hw+40.,hw+160.,ad)*(1.-smoothstep(uVF8.z,uVF8.z+80.,ad))*sw;
+    float hb=c.r+max(wl-uVF8.w*(1.-fin)-c.r,0.)*wb;
+    float kb=10., h3=clamp(.5+.5*(hb-hf)/kb,0.,1.); hf=mix(hf,hb,h3)+kb*h3*(1.-h3);
+  }
+  float kk=uVF4.z*smoothstep(5.,40.,env)+.01;
+  float hm=max(c.r,hf)+pow(max(kk-abs(c.r-hf),0.),2.)/(4.*kk);   // smooth max: no knife-cut notches where a fin meets an old spur
+  if(hm>c.r+.01){
+    float rise=hf-c.r;
+    o.r=hm;
+    o.g=c.g*(1.-.97*smoothstep(4.,30.,rise)*smoothstep(.1,.5,fin));   // spur crests drain little (the old plain carried the whole valley's flow)
+  }
+}
+void main(){
+  ivec2 ic=ivec2(gl_FragCoord.xy);
+  vec4 c=texelFetch(uS,ic,0);
+  o=c;
+  vec2 p=uDom.xy+(vec2(ic)+.5)*uDom.w;
+  vfill(c,p);
+  // (r10 terrain) inland raise: the photos' valley walls fill the top of the frame (v3 / v4 / v5: the skyline sat 35-77 rows
+  // below the photos' at the same view). The massif rises with distance from the sea (0 within uVF7.z of the coast, full from
+  // uVF7.w): +uVF7.y m plus x(1+uVF7.x). Mostly additive, so slopes (and the bare-rock share) barely change; the coast, cliffs,
+  // beach, cove and headlands (< 250 m from the sea) do not move. Fades out well inside the erosion domain (no seam with bTex).
+  float ru=smoothstep(uVF7.z,uVF7.w,coastRaw(p))*smoothstep(-1400.,-1200.,p.x)*(1.-smoothstep(1200.,1400.,p.x))*(1.-smoothstep(2500.,2800.,p.y));
+  if(o.r>0.&&ru>0.) o.r=o.r*(1.+uVF7.x*ru)+uVF7.y*ru*smoothstep(0.,20.,o.r);
+  // (r10 terrain) west wall raise: the ridge west of the valley (250-650 m from the axis) formed the skyline at the left of
+  // views 3 / 4 / 5 some 50-90 rows below the photos' (whose left walls reach the top of the frame). +uVF9.x m there, ramping
+  // in from uVF9.y to uVF9.z m off the axis (the valley side of the ridge gets steeper), out from uVF9.w to uVF9.w+170 m;
+  // not within 150-350 m of the sea (headlands, cliffs, beach and cove keep their shape) and not near the domain edges.
+  if(uVF9.x>0.&&o.r>0.&&p.x>-700.&&p.x<1300.&&p.y>800.&&p.y<2100.){
+    float fs, fd; vframe(p, fs, fd);
+    float wr=smoothstep(uVF9.y,uVF9.z,-fd)*(1.-smoothstep(uVF9.w,uVF9.w+170.,-fd))*smoothstep(100.,250.,fs)*(1.-smoothstep(900.,1200.,fs))
+            *smoothstep(150.,350.,coastRaw(p))*smoothstep(-650.,-500.,p.x)*(1.-smoothstep(1800.,2050.,p.y));
+    o.r+=uVF9.x*wr*smoothstep(0.,20.,o.r);
+  }
+  // (r12 valley) valley head: the upper valley ran on as a narrow V for 1.2 km and climbed only at its far end (s 900-1150), so
+  //  views 4 / 5 looked up a long slot of hazy walls. The photos show an amphitheatre: the valley closes in a broad head wall that
+  //  faces down the valley (south-south-west). Facing the cameras and side-lit by the west sun, it is sunlit, and landH flutes it.
+  //  Smooth max with a ramp to uVSC.x m (crest +-15 %) from s = uVSC.y to uVSC.z (foot line +-25 m), rising on at 1:2 behind it, full width to |d| uVSC.w, out by +170 m; never lowers anything,
+  //  below the v4 skyline, behind the probe cameras' ground and off both flight paths. vsH=0 off.
+  if(uVSC.x>0.&&o.r>0.&&p.x>-700.&&p.x<1500.&&p.y>900.&&p.y<2300.){
+    float hs, hd; vframe(p, hs, hd);
+    float hw=hs+25.*vnoise(vec2(hd*.004,3.7));   // the foot of the head wall wanders (no straight dam line)
+    float hc0=1.+.25*(vnoise(vec2(hd*.007+.3,6.2))-.35)+.08*vnoise(vec2(hd*.025+.3,9.7));   // the crest rises and falls along the head (no table top)
+    float hh=(uVSC.x*hc0*smoothstep(uVSC.y,uVSC.z,hw)+.5*max(hw-uVSC.z,0.))   // keeps climbing behind the head (no bench)
+            *(1.-smoothstep(uVSC.w,uVSC.w+170.,abs(hd)))*smoothstep(150.,300.,coastRaw(p));
+    const float kh=20.;
+    if(hh>1.&&hh>o.r-kh){
+      float hc=clamp(.5+.5*(hh-o.r)/kh,0.,1.), vm=mix(o.r,hh,hc)+kh*hc*(1.-hc);
+      if(vm>o.r){ o.g*=1.-.97*smoothstep(4.,30.,vm-o.r); o.r=vm; }   // the raised floor no longer carries the valley's flow
+    }
+  }
+  // (r12 valley) west-wall facets. The west wall faces east-south-east, away from the afternoon sun (sunAz -15: light from the
+  //  west, slightly inland), so from the valley floor (v5) and the beach (v4) it was one big shaded face. Its fins (u = s - k d,
+  //  crest lines climbing up-valley as they go west) get an asymmetric saw profile: a broad facet rising up-valley over uVSA.w of
+  //  each period (normal turned toward the south-west: sunlit, and facing the cameras that look up the valley) and a short steep
+  //  drop (north-east facing: shaded, hidden from those cameras). +-uVSA.x/2 m, period uVSA.y m, crest slope uVSA.z; band uVSB
+  //  (m west of the axis), s 150..1100, not within 150-300 m of the sea, not on the floor. vsA=0 off.
+  if(uVSA.x>0.&&o.r>0.&&p.x>-700.&&p.x<1300.&&p.y>800.&&p.y<2100.){
+    float fs, fd; vframe(p, fs, fd);
+    float ad=-fd;
+    float w=smoothstep(uVSB.x,uVSB.y,ad)*(1.-smoothstep(uVSB.z,uVSB.w,ad))*smoothstep(150.,300.,fs)*(1.-smoothstep(1000.,1200.,fs))
+           *smoothstep(150.,300.,coastRaw(p))*smoothstep(-650.,-500.,p.x)*(1.-smoothstep(1800.,2050.,p.y));
+    if(w>0.){
+      float flr=gS(axP(fs));
+      // crest fade: within 15-75 m of the ridge top (300 m) further west the saw fades out, so the skyline keeps its line (no saw teeth)
+      vec2 t4=axP(fs+3.)-axP(fs-3.); t4/=max(length(t4),1e-3); vec2 nW=vec2(-t4.y,t4.x);
+      float g0=gS(p), top=g0; for(int k=uZero;k<10;k++) top=max(top,gS(p+nW*(30.*float(k+1))));
+      w*=smoothstep(15.,75.,top-g0);
+      float wx=vnoise(p*.006+vec2(3.1,0.))*30.+vnoise(p*.017+vec2(0.,7.))*10.;
+      float u=(fs-uVSA.z*ad+wx)/uVSA.y, f=fract(u);
+      float saw=f<uVSA.w?f/uVSA.w:(1.-f)/(1.-uVSA.w);
+      float fa=.55+.45*hash12(vec2(floor(u),5.3));   // fin-to-fin amplitude
+      o.r+=uVSA.x*fa*w*(saw-.5)*smoothstep(40.,120.,o.r-flr);
+    }
+  }
+}`;
+// Final height: eroded massif (bicubic) blended into the base outside the erosion domain,
+// plus domain-warped rock detail, basalt ledges on steep faces, and the sea floor offshore.
+const FS_HEIGHT = GLSL_COMMON + TERRAIN_FUNCS + `
+uniform sampler2D uB, uE; uniform vec4 uRect, uDom; uniform vec2 uRes;
+uniform vec4 uSH[8]; uniform int uNSH;
+uniform vec4 uWT;   // (r13 fix) west bay reef terrace (URL wt0-wt3): x strength (0 = r13m floor), y top depth (m), z extra depth toward the terrace edge (m), w halo-fade exemption (water)
+out vec4 o;
+float massif(vec2 p){
+  float b=textureLod(uB,(p-uRect.xy)*uRect.w,0.).r;
+  vec2 uv=(p-uDom.xy)/uDom.z;
+  float m=smoothstep(0.,.05,min(min(uv.x,uv.y),min(1.-uv.x,1.-uv.y)));
+  return m>0.?mix(b,texBicubic(uE,uv).r,m):b;
+}
+// (r10 terrain) erosion flutes: phasor noise (Gabor kernels on a jittered grid, summed as complex numbers; the profile is a
+// function of the phase, so every stripe keeps full contrast) whose stripes run down the fall line of the massif (ring
+// gradient over 14 / 28 m). Three octaves (56 / 28 / 14 m, amplitude halving); each octave is steered by the combined slope
+// of the terrain and the coarser flutes, so the finer gullies run diagonally into the coarser ones (branching, dendritic
+// sub-gullies). Triangle profile in the phase: knife-edge flute crests and V gullies. Where the kernels cancel (|Z| small)
+// the flute fades out: flutes start, end and fork there. Only on steep inland ground (slope ramp uER1.xy), not on the sea
+// cliff foot or the valley floor. Static geometry, smallest octave ~14 m (12 hTex texels): nothing to shimmer.
+uniform vec4 uER0, uER1, uER2, uER3;   // (r10f) uER3: crest fade (x,y convexity ramp of the massif over the 75 m ring, z positive / w negative flute share removed on crests)
+// x amplitude of the 56 m octave (m), y its spacing (m), z branch strength, w octaves | x,y slope ramp, z crest exponent, w carve bias | x,y,z steep-wall cut, w octave gain
+float eroFlutes(vec2 p, vec2 g){
+  float D=0., S=uER0.y, A=uER0.x; vec2 G=g;
+  for(int k=uZero;k<3;k++){
+    if(float(k)>=uER0.w) break;
+    float gl=length(G); if(gl<1e-4) break;
+    vec2 dir=vec2(G.y,-G.x)/gl;
+    vec2 q=p/S+vec2(float(k)*17.31,float(k)*9.17), iq=floor(q-.5);
+    float re=0., im=0., wt=0.;
+    for(int j=uZero-1;j<=2;j++) for(int i=uZero-1;i<=2;i++){
+      vec2 c=iq+vec2(i,j), pp=q-(c+.5+(hash22(c)-.5)*.5);
+      float w=exp(-2.*dot(pp,pp)), ph=6.2831853*dot(pp,dir);
+      re+=w*cos(ph); im+=w*sin(ph); wt+=w;
+    }
+    re/=wt; im/=wt;
+    float tri=1.-abs(atan(im,re))/3.14159265;
+    D+=A*(2.*pow(tri,uER1.z)-1.-uER1.w)*smoothstep(.1,.35,length(vec2(re,im)));   // carve bias uER1.w: flutes cut more than they build (no needles above the crests)
+    G+=(-A*im*6.2831853/S*uER0.z)*dir;
+    S*=.5; A*=uER2.w;
+  }
+  return D;
+}
+float landH(vec2 p){
+  float b=massif(p);
+  float eroD=0.;
+  // big clean facets between knife-edge crests (the eroded field alone has many small 40 m "worm" ridgelets):
+  // smooth it over ~20 m, then sharpen the large crests and gullies (unsharp mask at ~75 m); not on the sea cliffs
+  float inl=smoothstep(30.,110.,coastRaw(p))*smoothstep(20.,60.,b);
+  if(inl>0.){
+    float s1=0., s2=0.; vec2 gR=vec2(0);
+    for(int k=uZero;k<10;k++){ float a=float(k)*.6283+.2; vec2 d=vec2(cos(a),sin(a)); float rr=k%2==0?14.:28., mv=massif(p+d*rr); s1+=clamp(mv,b-14.,b+14.); gR+=(mv-b)*d/rr; s2+=clamp(massif(p+d*75.),b-50.,b+50.); }   // clamped: a narrow sink in the eroded field must not spread into a round bowl
+    gR*=.4;   // (r10) ring gradient of the massif (two rings of five directions)
+    float eg=smoothstep(uER1.x,uER1.y,length(gR))*(1.-uER2.x*smoothstep(uER2.y,uER2.z,length(gR)))*smoothstep(30.,110.,coastRaw(p))*smoothstep(20.,70.,b);   // less on near-vertical walls (bare-rock share)
+    if(eg>0.){ eroD=eg*eroFlutes(p,gR);
+      // (r10f) crest fade: on the convex crests of the massif (75 m ring convexity) the flute ribs crossing the crest stood up as
+      //  1-3 px rock needles / spires above the skyline (v2 / v3 / v4 / v5) and aliased; the ribs (positive part) fade out there and
+      //  the gullies keep 30 % (soft, rounded, tree-lined crests as in the photos), the flanks keep the full flutes.
+      //  Twin on the r10m read-back: isolated peaks (h - max ring 8 m > 1.5 m) 1.01 % -> .64 % (r9 .44 %); v1 ridge box lit +2 / shade -4 points
+      float cF=smoothstep(uER3.x,uER3.y,b-s2/10.); eroD*=eroD>0.?1.-uER3.z*cF:1.-uER3.w*cF; }
+    float bs=mix(b,(b+s1)/11.,.75);
+    float dv=clamp(bs-s2/10.,-30.,30.);
+    b=mix(b,bs+max(dv,0.)*.6+min(dv,0.)*.3,inl);   // crests up more than gullies down (no closed pits on the valley floors)
+  }
+  const float e=3.5;
+  vec2 g=vec2(massif(p+vec2(e,0))-massif(p-vec2(e,0)),massif(p+vec2(0,e))-massif(p-vec2(0,e)))/(2.*e);
+  float slope=length(g);
+  float land=smoothstep(0.,12.,b)*smoothstep(0.,6.,coastRaw(p));
+  // spurs and buttresses: domain-warped ridged noise, stronger on steep ground
+  vec2 w=p+vec2(fbm(p*.005,3),fbm(p*.005+7.7,3))*70.;
+  float r=ridged(w/55.,4)-.42;
+  float h=b+r*(1.+2.5*smoothstep(.2,1.4,slope))*land;
+  // knife-edge crests: unsharp mask of the eroded massif (crests pinched up, gully floors cut down), away from the sea cliffs
+  float bl=0.; for(int k=uZero;k<8;k++){ float a=float(k)*.7854+.39; bl+=massif(p+vec2(cos(a),sin(a))*48.); }
+  { float cv=clamp(b-bl/8.,-16.,16.); h+=(max(cv,0.)*mix(1.2,1.6,smoothstep(80.,220.,b))+min(cv,0.)*.5)*land*smoothstep(25.,90.,coastRaw(p))*smoothstep(20.,70.,b); }   // pinch the crests (knife edges), mild V gullies; not on the low knolls of the valley floor (needles)
+  // basalt ledges: soft terracing on steep faces (layer thickness varies laterally)
+  float tH=6.5+2.5*vnoise(p*.004+3.);
+  float hh=(h+3.*vnoise(p*.01))/tH, fl=floor(hh), fr=fract(hh);
+  float terr=(fl+smoothstep(.2,.8,fr))*tH-3.*vnoise(p*.01);
+  h=mix(h,terr,.07*smoothstep(.8,1.8,slope)*land*smoothstep(-.2,.4,fbm(p*.006+11.,3)));
+  // flutes: noise evaluated at the foot-of-slope projection so it runs straight down steep faces
+  float sl2=max(dot(g,g),.04);
+  vec2 qf=p-g*b/sl2*.92;
+  qf+=vec2(fbm(qf*.006,3),fbm(qf*.006+5.,3))*60.+vec2(fbm(qf*.03,2),fbm(qf*.03+9.,2))*10.;
+  float steepF=smoothstep(.55,1.4,slope)*land*(1.+1.2*smoothstep(1.6,3.,slope));
+  float fsc=mix(22.,50.,smoothstep(-.4,.4,fbm(p*.003+33.,2)));
+  float fl1=ridged(qf/fsc,3)-.5, fl2=ridged(qf/9.+3.,2)-.5;
+  float ageF=smoothstep(-.45,.45,fbm(p*.0045+21.,3));                // fluting strength varies along the coast
+  float fpatch=smoothstep(-.35,.35,fbm(p*.007+13.,3));               // fluted walls and smooth facets alternate
+  h+=(fl1*4.*fpatch+fl2*2.)*steepF*(.25+.75*ageF);
+  // fine rock relief
+  vec2 w2=p+vec2(fbm(p*.04,2),fbm(p*.04+3.1,2))*6.;
+  h+=(1.4*fbm(w2*.11,4)+.45*fbm(w2*.41,3))*land*(.5+.5*smoothstep(.3,1.,slope));
+  h+=eroD;   // (r10 terrain) erosion flutes
+  return max(h,.3+min(b,2.5));
+}
+float seaFloor(vec2 p, float w){
+  float cove=0.;
+  for(int i=uZero;i<uNSH;i++){ vec4 s=uSH[i]; cove=max(cove,s.w*smoothstep(s.z,s.z*.25,length(p-s.xy))); }
+  float k=mix(.28,.045,cove);
+  float dep=.5+w*k+w*w*.0002*(1.-cove*.6);
+  dep=mix(dep,dep*.8,smoothstep(.4,1.,cove)*(1.-smoothstep(60.,180.,w)));
+  dep=40.*(1.-exp(-dep/40.));
+  // (r13 fix, URL wt0-wt2) the west bay (between the left headland and the main headland, ref.png ~(380-680, 330-560)) is a broad
+  //  reef terrace: ref.png shows deep teal with dark reef heads out to ~150-200 m from the cliff foot, grading into the navy. Our
+  //  floor there dropped below 25 m within ~60 m of the rock, so the bay was navy up to the collar once the water round faded the
+  //  cyan halo (wk40). The terrace caps the depth at ~9-14 m inside a ragged ellipse; the first ~25 m off the rock keep their own
+  //  steeper profile (shallower than the cap: the collar surf is unchanged) and at 9+ m the swell does not break (shoal(): brk ~0).
+  float wbT=uWT.x*wBayM(p);
+  if(wbT>0.){ float tD=uWT.y+uWT.z*smoothstep(40.,240.,w)+2.5*fbm(p*.018+vec2(3.3,8.1),2); dep=mix(dep,min(dep,tD),wbT); }
+  // small reef flat off the east flank of the headland (surf breaking on it; the cove itself stays 5-15 m deep)
+  float rf=smoothstep(1.,.6,length((p-vec2(172.,626.))/vec2(62.,42.))+.3*fbm(p*.03+4.,2));
+  dep=mix(dep,min(dep,1.+1.5*(fbm(p*.03+1.,3)*.5+.5)),rf);
+  // reef: lumpy rock patches in the shallows, sand channels between
+  vec2 q=p+vec2(fbm(p*.02,3),fbm(p*.02+5.2,3))*25.;
+  float rz=fbm(q*.03+2.3,3)+.55*fbm(q*.11+7.,3)+.25*fbm(q*.4,3);
+  float reefM=smoothstep(.05,.3,rz)*(1.-smoothstep(5.,16.,dep));
+  float lumps=fbm(q*.35,4)*.5+.5;
+  dep-=reefM*(.9+1.6*lumps);
+  // boulders at the foot of the cliffs
+  vec3 v=voronoi(p*.22);
+  dep-=(1.-smoothstep(0.,.55,v.x))*1.6*exp(-w/18.)*(.4+.6*hash12(vec2(v.z*91.)));
+  dep+=.5*vnoise(p*.05)+.15*vnoise(p*.6);
+  return -max(dep,.25);
+}
+void main(){
+  vec2 p=uRect.xy+gl_FragCoord.xy/uRes*uRect.z;
+  float d=coastD(p);
+  o=vec4(d>=0.?landH(p):seaFloor(p,-d),0,0,1);
+}`;
+
+// Attributes: r=horizon AO, g=convexity, b=wave exposure, a=drainage (0..1)
+const FS_ATTR = GLSL_COMMON + TERRAIN_FUNCS + `
+uniform sampler2D uH, uE; uniform vec4 uRect, uDom; uniform vec2 uRes;
+out vec4 o;
+float Hs(vec2 p){ return textureLod(uH,(p-uRect.xy)*uRect.w,0.).r; }
+void main(){
+  vec2 p=uRect.xy+gl_FragCoord.xy/uRes*uRect.z;
+  float h=max(Hs(p),0.);
+  float occ=0.;
+  float j=hash12(gl_FragCoord.xy)*6.2831/12.;
+  for(int k=uZero;k<12;k++){
+    float a=float(k)*6.2831/12.+j; vec2 dir=vec2(cos(a),sin(a));
+    float mt=0., r=1.5;
+    for(int s=uZero;s<10;s++){ float hh=max(Hs(p+dir*r),0.); mt=max(mt,(hh-h)/r); r*=1.8; }
+    occ+=mt/sqrt(1.+mt*mt);
+  }
+  float ao=1.-occ/12.;
+  float m1=0.;
+  for(int k=uZero;k<8;k++){ float a=float(k)*.7854; m1+=Hs(p+vec2(cos(a),sin(a))*7.); }
+  float conv=Hs(p)-m1/8.;
+  float water=0.;
+  for(int k=uZero;k<16;k++){ float a=float(k)*.3927; water+=step(coastRaw(p+vec2(cos(a),sin(a))*(k%2==0?70.:150.)),0.); }
+  vec2 uv=(p-uDom.xy)/uDom.z;
+  float fl=0.;
+  if(min(min(uv.x,uv.y),min(1.-uv.x,1.-uv.y))>0.) fl=clamp((log(max(textureLod(uE,uv,0.).g,1.))-9.)/5.,0.,1.);
+  o=vec4(ao,conv,water/16.,fl);
+}`;
+
+// Material mask: r=vegetation, g=palm grove (land) / reef (sea), b=beach sand, a=canopy displacement weight
+const FS_VEG = GLSL_COMMON + TERRAIN_FUNCS + `
+uniform sampler2D uH, uA; uniform vec4 uRect; uniform vec2 uRes; uniform vec4 uBZ[4]; uniform int uNBZ;
+out vec4 o;
+float Hs(vec2 p){ return textureLod(uH,(p-uRect.xy)*uRect.w,0.).r; }
+void main(){
+  vec2 p=uRect.xy+gl_FragCoord.xy/uRes*uRect.z;
+  const float e=1.8;
+  float h=Hs(p);
+  vec3 Nm=normalize(vec3(Hs(p-vec2(e,0))-Hs(p+vec2(e,0)),2.*e,Hs(p-vec2(0,e))-Hs(p+vec2(0,e))));
+  float slope=1.-Nm.y;
+  float d=coastD(p);
+  vec4 at=textureLod(uA,(p-uRect.xy)*uRect.w,0.);
+  if(d<0.){
+    vec2 q=p+vec2(fbm(p*.02,3),fbm(p*.02+5.2,3))*25.;
+    float rz=fbm(q*.03+2.3,3)+.55*fbm(q*.11+7.,3)+.25*fbm(q*.4,3);
+    float reefM=smoothstep(.05,.3,rz)*(1.-smoothstep(-5.,-16.,h));
+    o=vec4(0.,reefM,0.,0.); return;
+  }
+  float n1=fbm(p*.011,3), n2=fbm(p*.047,3), n3=vnoise(p*.19);
+  float vegMax=.74+.10*n1+.05*n2+.08*at.a;
+  float veg=1.-smoothstep(vegMax-.10,vegMax+.05,slope+.07*n3);
+  // salt spray: bare rock low on exposed sea cliffs
+  float sprayH=mix(25.,95.,at.b)*(.6+.8*(n1*.5+.5));
+  float sea=1.-smoothstep(sprayH*.6,sprayH,h);
+  veg*=1.-sea*smoothstep(.12,.4,slope);
+  // bare rock patches on ridge crests and spur noses
+  veg*=1.-smoothstep(.6,1.6,at.g)*smoothstep(.35,.6,slope)*.8;
+  float bz=0.; for(int i=uZero;i<uNBZ;i++){ bz=max(bz,smoothstep(uBZ[i].z*1.15,uBZ[i].z*.8,length(p-uBZ[i].xy))); }
+  float beach=(1.-smoothstep(2.2,3.4+1.*n2,h))*(1.-smoothstep(.16,.34,slope))*(1.-smoothstep(30.,55.,d))*bz;
+  float palm=(1.-smoothstep(18.,40.,h))*(1.-smoothstep(.15,.35,slope))*smoothstep(3.3,5.5,h)*(1.-smoothstep(80.+40.*n2,150.+50.*n2,d))*bz;
+  veg*=(1.-beach)*step(.3,h);
+  float disp=veg*(1.-smoothstep(.45,.85,slope));
+  o=vec4(veg,palm,beach,disp);
+}`;
+
+// ---- FFT ocean -----------------------------------------------------------------
+// Directional JONSWAP spectrum, band-limited per cascade, evolved in time and inverse
+// transformed with a Stockham radix-2 FFT. Outputs height, choppy displacement, slopes
+// and the Jacobian (for whitecaps). Two real fields are packed per complex channel.
+const OCEAN_N = 256;
+const FS_OSPEC = GLSL_COMMON + `
+uniform float uL, uKmin, uKmax, uWind, uWindAng, uGamma, uScale, uSeed;
+uniform vec4 uSwell; // angle, wavelength, height scale, angular width
+out vec4 o;
+const float G=9.81;
+vec2 gauss(vec2 s){ float u1=max(hash12(s*1.31+uSeed),1e-6), u2=hash12(s*2.77+uSeed*1.7+13.1); float r=sqrt(-2.*log(u1)); return r*vec2(cos(6.2831853*u2),sin(6.2831853*u2)); }
+float psi(vec2 k){
+  float kl=length(k); if(kl<uKmin||kl>=uKmax||kl<1e-5) return 0.;
+  float w=sqrt(G*kl), wp=.877*G/uWind;
+  float sig=w<=wp?.07:.09;
+  float S=.0081*G*G*pow(w,-5.)*exp(-1.25*pow(wp/w,4.))*pow(uGamma,exp(-(w-wp)*(w-wp)/(2.*sig*sig*wp*wp)));
+  float Sk=S*G/(2.*w);
+  float th=atan(k.y,k.x)-uWindAng; th=atan(sin(th),cos(th));
+  // narrower spreading (cos^4) for the longer waves -> long-crested wind sea; short waves spread wider
+  float c2=cos(th)*cos(th), nar=smoothstep(14.,.6,kl);
+  float D=abs(th)<1.5707963?.92*mix((2./PI)*c2,(8./(3.*PI))*c2*c2,nar):0.; D+=.08/(2.*PI);
+  float ps=Sk*D/kl;
+  // long swell from the open ocean
+  float ks=6.2831853/uSwell.y, ths=atan(k.y,k.x)-uSwell.x; ths=atan(sin(ths),cos(ths));
+  ps+=uSwell.z*exp(-pow((kl-ks)/(.12*ks),2.))*exp(-pow(ths/uSwell.w,2.))/kl;
+  // damp tiny capillary scales
+  ps*=exp(-pow(kl/60.,2.));
+  return ps*uScale;
+}
+void main(){
+  vec2 c=gl_FragCoord.xy-.5;
+  float N=${OCEAN_N}.;
+  vec2 nm=vec2(c.x<N*.5?c.x:c.x-N, c.y<N*.5?c.y:c.y-N);
+  vec2 k=6.2831853*nm/uL;
+  float dk=6.2831853/uL;
+  vec2 h0=gauss(nm)*sqrt(psi(k))*dk*.5;
+  vec2 h0m=gauss(-nm)*sqrt(psi(-k))*dk*.5;
+  o=vec4(h0,h0m.x,-h0m.y);
+}`;
+const FS_OEVOLVE = GLSL_COMMON + `
+uniform sampler2D uH0; uniform float uL, uT;
+layout(location=0) out vec4 o0; layout(location=1) out vec4 o1;
+vec2 cmul(vec2 a,vec2 b){return vec2(a.x*b.x-a.y*b.y,a.x*b.y+a.y*b.x);}
+vec2 pk(vec2 a,vec2 b){return vec2(a.x-b.y,a.y+b.x);} // a + i*b
+void main(){
+  ivec2 ic=ivec2(gl_FragCoord.xy);
+  float N=${OCEAN_N}.;
+  vec2 nm=vec2(float(ic.x)<N*.5?float(ic.x):float(ic.x)-N, float(ic.y)<N*.5?float(ic.y):float(ic.y)-N);
+  vec2 k=6.2831853*nm/uL; float kl=length(k);
+  vec4 h0=texelFetch(uH0,ic,0);
+  float w=sqrt(9.81*kl);
+  vec2 e=vec2(cos(w*uT),sin(w*uT));
+  vec2 h=cmul(h0.xy,e)+cmul(h0.zw,vec2(e.x,-e.y));
+  vec2 ih=vec2(-h.y,h.x);
+  float ik=kl>1e-6?1./kl:0.;
+  vec2 Dx=-ih*k.x*ik, Dz=-ih*k.y*ik, Sx=ih*k.x, Sz=ih*k.y;
+  vec2 Dxx=h*k.x*k.x*ik, Dzz=h*k.y*k.y*ik, Dxz=h*k.x*k.y*ik;
+  o0=vec4(pk(h,Dx),pk(Dz,Sx));
+  o1=vec4(pk(Sz,Dxx),pk(Dzz,Dxz));
+}`;
+const FS_OFFT = GLSL_COMMON + `
+uniform sampler2D uA, uB; uniform float uSub; uniform int uDir;
+layout(location=0) out vec4 o0; layout(location=1) out vec4 o1;
+vec2 cmul(vec2 a,vec2 b){return vec2(a.x*b.x-a.y*b.y,a.x*b.y+a.y*b.x);}
+void main(){
+  ivec2 ic=ivec2(gl_FragCoord.xy);
+  int N=${OCEAN_N};
+  float idx=float(uDir==0?ic.x:ic.y);
+  float hf=uSub*.5;
+  int ev=int(floor(idx/uSub)*hf+mod(idx,hf));
+  ivec2 ie=uDir==0?ivec2(ev,ic.y):ivec2(ic.x,ev);
+  ivec2 io=uDir==0?ivec2(ev+N/2,ic.y):ivec2(ic.x,ev+N/2);
+  float ang=6.2831853*idx/uSub;
+  vec2 w=vec2(cos(ang),sin(ang));
+  vec4 ea=texelFetch(uA,ie,0), oa=texelFetch(uA,io,0), eb=texelFetch(uB,ie,0), ob=texelFetch(uB,io,0);
+  o0=vec4(ea.xy+cmul(w,oa.xy),ea.zw+cmul(w,oa.zw));
+  o1=vec4(eb.xy+cmul(w,ob.xy),eb.zw+cmul(w,ob.zw));
+}`;
+const FS_OFINAL = GLSL_COMMON + `
+uniform sampler2D uA, uB; uniform float uChop;
+layout(location=0) out vec4 oD; layout(location=1) out vec4 oS;
+void main(){
+  ivec2 ic=ivec2(gl_FragCoord.xy);
+  vec4 a=texelFetch(uA,ic,0), b=texelFetch(uB,ic,0);
+  float h=a.x, dx=a.y, dz=a.z, sx=a.w, sz=b.x, dxx=b.y, dzz=b.z, dxz=b.w;
+  float jx=1.+uChop*dxx, jz=1.+uChop*dzz, jxz=uChop*dxz;
+  float J=jx*jz-jxz*jxz;
+  vec2 s=vec2(sx/max(jx,.25), sz/max(jz,.25));
+  oD=vec4(dx*uChop,h,dz*uChop,J);
+  oS=vec4(s,s*s);
+}`;
+
+// ---- main renderer ------------------------------------------------------------
+const FS_RENDER = GLSL_COMMON + TERRAIN_FUNCS + `
+uniform sampler2D uH, uA, uV;
+uniform sampler2D uOD0, uOD1, uOD2, uOS0, uOS1, uOS2;
+uniform vec3 uOL; uniform float uOAmp;
+uniform vec4 uRect;
+uniform vec3 uRo; uniform mat3 uCam; uniform float uTan; uniform vec2 uRes, uJit;
+uniform float uTime; uniform vec3 uSun; uniform float uHmax; uniform vec2 uShore; uniform int uDbgM;
+uniform vec4 uWK, uWK2, uWK3, uWK4;   // (r10w) water knobs, URL wk0..wk15 (defaults = the shipped look)
+uniform vec4 uWK5, uWK6, uWK7, uWK8, uWK9, uWK10, uWK11, uWK12, uWT;   /* (r13w) uWK11: wk40 exposed-shelf halo fade, wk41 red absorption / bubble red cut, wk42 cove broad lacy bands, wk43 granular reef clusters; uWK12: wk44 horizon occlusion of down-facing facets, wk45 broken rock-foot surf line, wk46 ragged / sectioned shoal foam front, wk47 (r13 fix) soft clustered cove reef + broken cove arcs; uWT (r13 fix): west bay reef terrace */   /* (r12w) uWK9: wk32 churn foam scale, wk33 churn facet calming, wk34 collar width by exposure, wk35 collar inner structure; uWK10: wk36 cove arcs, wk37 cove arc reach (m), wk38 waterline fringe, wk39 far-band veil */   // (r11 fix) uWK8: wk28 collar breakup, wk29 solid-core onset, wk30 reef flat patches from the air, wk31 spare
+   // (r11w) water knobs, URL wk16..wk27 (collar core, fill cut, shore arcs, cove lines | sparkle, foam tint, v3 hue, swash seam | surf water from the air, core width, -, -)
+out vec4 o;
+
+const vec3 SUN=vec3(1.0,.94,.84)*3.6;
+float H(vec2 p){ vec2 uv=(p-uRect.xy)*uRect.w; vec2 ov=max(max(-uv,uv-1.),0.)*uRect.z; return textureLod(uH,uv,0.).r-(ov.x+ov.y)*.5; }
+float Hc(vec2 p){ return texBicubic(uH,(p-uRect.xy)*uRect.w).r; }
+vec4 ATT(vec2 p){ return textureLod(uA,(p-uRect.xy)*uRect.w,0.); }
+vec4 VEG(vec2 p){ return textureLod(uV,(p-uRect.xy)*uRect.w,0.); }
+
+// ---------------------------------------------------------------- sky
+vec3 skyCol(vec3 rd){
+  float y=max(rd.y,0.);
+  vec3 c=mix(vec3(.50,.66,.88),vec3(.10,.27,.66),pow(y,.45));
+  c=mix(c,vec3(.72,.80,.90),exp(-y*14.)*.6);
+  float s=max(dot(rd,uSun),0.);
+  c+=vec3(1.,.92,.75)*(pow(s,9.)*.25+pow(s,90.)*.5);
+  return c;
+}
+vec3 skyView(vec3 rd){
+  vec3 c=skyCol(rd);
+  float s=max(dot(rd,uSun),0.);
+  c+=vec3(1.,.95,.85)*smoothstep(.99985,.99995,s)*80.;
+  if(rd.y>.004){
+    vec2 cp=rd.xz/rd.y*1800.+vec2(uTime*4.,uTime*1.5);
+    vec2 wq=cp*.0006; wq+=vec2(fbm(wq*1.3,4),fbm(wq*1.3+3.3,4))*.45;
+    float base=fbm(wq,4)*.5+.5;
+    float det=fbm(wq*5.+1.7,4);
+    float cl=base+det*.12;
+    float lod=clamp(rd.y*3.,0.,1.);
+    float cov=smoothstep(.52,.62+.12*(1.-lod),cl)*smoothstep(.004,.08,rd.y);
+    float thick=smoothstep(.55,.9,cl);
+    float lit=clamp(.5+(cl-(fbm(wq+uSun.xz*.035,4)*.5+.5+fbm((wq+uSun.xz*.035)*5.+1.7,4)*.12))*6.,0.,1.);
+    vec3 cc=mix(vec3(.55,.62,.74),vec3(1.06,1.03,.99)*1.55,lit)*(1.-.3*thick);
+    cc=mix(cc,skyCol(rd),.3*exp(-rd.y*7.));
+    c=mix(c,cc,cov*.94);
+  }
+  return c;
+}
+vec3 skyIrr(vec3 N){
+  vec3 up=vec3(.17,.29,.58), hor=vec3(.36,.45,.58), gnd=vec3(.06,.08,.045);
+  float y=N.y;
+  return y>0.?mix(hor,up,y):mix(hor,gnd,-y);
+}
+
+// ---------------------------------------------------------------- canopy
+vec4 crowns(vec2 p, float cell, float seed){
+  vec2 q=p/cell; vec2 n=floor(q), f=fract(q);
+  float best=0., id=0.; vec2 g=vec2(0);
+  for(int j=uZero-1;j<=1;j++)for(int i=uZero-1;i<=1;i++){
+    vec2 c=vec2(i,j); vec2 h=hash22(n+c+seed);
+    vec2 r=c+.1+.8*h-f;
+    float rad=.45+.55*hash12(n+c+seed+3.1);
+    float d2=dot(r,r)/(rad*rad);
+    if(d2<1.){ float s=max(1.-d2,.02); float A=rad*(.55+.9*h.x); float hh=A*pow(s,.7);
+      if(hh>best){ best=hh; g=A*1.4*r/(rad*rad)*pow(s,-.3); id=hash12(n+c+seed+9.7); } }
+  }
+  return vec4(best,g/cell,id);
+}
+float palmH(vec2 p){
+  vec2 q=p/10.; vec2 n=floor(q), f=fract(q); float best=0.;
+  for(int j=uZero-1;j<=1;j++)for(int i=uZero-1;i<=1;i++){
+    vec2 c=vec2(i,j);
+    if(hash12(n+c+77.)>.8) continue;
+    vec2 h=hash22(n+c+41.);
+    vec2 r=(c+.15+.7*h-f)*10.;
+    float rad=4.6+2.4*hash12(n+c+9.);
+    float d=length(r)/rad;
+    if(d<1.){
+      float k=floor(8.+4.*h.y);
+      float fa=atan(r.y,r.x)/6.2832*k+h.x*7.;
+      float fi=abs(fract(fa)-.5);
+      float wdt=.34*(1.-.55*d);
+      float frond=1.-smoothstep(wdt*.55,wdt,fi);
+      frond*=.8+.2*step(.45,fract(d*rad*2.6+fa));
+      frond=max(frond,1.-smoothstep(.0,.16,d));
+      best=max(best,(4.6+2.2*h.y)*(1.-.6*d*d)*frond*(1.-smoothstep(.88,1.,d)));
+    }
+  }
+  return best;
+}
+const float CMAX=10.;
+float uLeafNear=1.;
+float leafBumps(vec2 p){
+  vec3 v=voronoi(p*.8); vec3 v2=voronoi(p*2.3+7.);
+  return sqrt(max(1.-v.x*1.15,0.))*1.25+sqrt(max(1.-v2.x*1.2,0.))*.4;
+}
+float roundH(vec2 p){
+  vec4 a=crowns(p,13.,0.), b=crowns(p,5.8,7.);
+  float h=max(a.x*7.6,b.x*3.6);
+  return h*(.9+.18*vnoise(p*.7));
+}
+float canopyH(vec2 p, vec4 vm){
+  if(vm.a<=.01) return 0.;
+  float r=roundH(p), pz=smoothstep(.15,.45,vm.g);
+  float dens=smoothstep(-.35,.25,fbm(p*.02+9.,3)+vm.a*.6-.2);
+  float leaf=uLeafNear>0.?(leafBumps(p)-.75)*uLeafNear*smoothstep(.4,2.,r):0.;
+  leaf+=fbm(p*.6,2)*.5*smoothstep(.5,2.5,r);
+  return vm.a*(mix(r*mix(.45,1.,dens),max(r*.3,palmH(p)),pz)+leaf*(1.-pz));
+}
+float detailAt(float t){ return 1.-smoothstep(2200.,3200.,t); }
+float Hd(vec2 p, float det){ float h=H(p); return det>0.?h+canopyH(p,VEG(p))*det:h; }
+
+// ---------------------------------------------------------------- terrain march / shadows
+bool march(vec3 ro, vec3 rd, float tmin, float tmax, out float tHit){
+  float t=tmin, lt=tmin;
+  bool near=false;
+  for(int i=uZero;i<400;i++){
+    if(t>tmax) return false;
+    vec3 p=ro+rd*t;
+    float d=p.y-H(p.xz)-CMAX;
+    if(d<0.){ near=true; break; }
+    lt=t;
+    t+=max(d*.45,.1+t*.001);
+  }
+  if(!near){ tHit=t; return true; }
+  t=lt;
+  for(int i=uZero;i<220;i++){
+    if(t>tmax) return false;
+    vec3 p=ro+rd*t;
+    float det=detailAt(t);
+    uLeafNear=1.-smoothstep(250.,600.,t);
+    float d=p.y-Hd(p.xz,det);
+    if(d<0.){
+      float a=lt,b=t;
+      for(int k=uZero;k<7;k++){ float m=.5*(a+b); vec3 q=ro+rd*m; if(q.y-Hd(q.xz,det)<0.) b=m; else a=m; }
+      tHit=.5*(a+b); return true;
+    }
+    lt=t;
+    t+=max(d*.4,.03+t*.0007);
+    if(d>CMAX*1.5){ // climbed back out of the canopy band: return to the coarse march
+      for(int j=uZero;j<200;j++){ if(t>tmax) return false; p=ro+rd*t; float dd=p.y-H(p.xz)-CMAX; if(dd<0.) break; lt=t; t+=max(dd*.45,.1+t*.001); }
+      t=lt;
+    }
+  }
+  tHit=t; return true;
+}
+float shadow(vec3 p, vec3 L, float near){
+  float res=1., t=.3;
+  for(int i=uZero;i<80;i++){
+    vec3 q=p+L*t;
+    if(q.y>uHmax) break;
+    float d=q.y-(t<near?Hd(q.xz,1.):H(q.xz));
+    res=min(res,7.*d/t);
+    if(res<-.2) break;
+    t+=clamp(d*.5,t<near?.25:.8,40.);
+  }
+  return smoothstep(-.2,1.,res);
+}
+
+// ---------------------------------------------------------------- ocean surface
+float oLod(float L, float pix){ return log2(max(pix*2.6/(L/${OCEAN_N}.),1.)); }
+// anti-tiling: cascades 1/2 are also sampled as a shifted, rescaled copy; a slow noise mask blends the two
+// (variance-preserving weights), so the 137 m / 20 m tiles never repeat visibly
+const vec2 OB_OFF=vec2(.373,.618); const float OB_SC=1.1736;
+vec2 oBlendW(vec2 p){ float m=smoothstep(-.32,.32,fbm(p*.0042+vec2(3.1,7.7),2)); vec2 w=vec2(1.-m,m); return w*inversesqrt(dot(w,w)); }
+vec2 gSCp=vec2(0);   // position for surfChop (set by the caller)
+// surf zone: broken, steep short waves (bores, reflected and refracted chop) -- more short-wave energy where waves break
+float surfChop(float depth, float w){ return 1.+1.1*smoothstep(7.,2.,depth)*min(1.,depth*.6)*smoothstep(0.,8.,w)*(1.-.75*smoothstep(.05,.4,VEG(gSCp).b)); }
+float shoreGain(float depth, float w){ return mix(.62,1.,smoothstep(1.,12.,depth))*smoothstep(-1.,4.,w)*min(1.,.15+.5*depth); }   // the surf zone stays choppy (but troughs never bare the bed)
+// smooth distance to the shore (m) for waves and surf: the traced coast SDF has polygon corners (they showed up
+// as zig-zag crests and foam bands); a 7-tap blur (~11 m) rounds them, the noise is the terrain coastline's (coastD)
+float coastW(vec2 p){
+  // the blur radius grows with the distance from the shore: wave crests far out are smooth arcs (refraction irons out
+  // the coastline's small features); a plain distance field has ridges / cusps along its medial axis (the crest
+  // lines in the cove interior drew heart-shaped loops)
+  float c0=coastRaw(p), r=11.+clamp(-c0-12.,0.,110.)*.5;
+  float c=c0*.28+(coastRaw(p+vec2(.955,.295)*r)+coastRaw(p+vec2(.221,.975)*r)+coastRaw(p+vec2(-.734,.68)*r)
+         +coastRaw(p-vec2(.955,.295)*r)+coastRaw(p-vec2(.221,.975)*r)+coastRaw(p-vec2(-.734,.68)*r))*.12;
+  return -(c+5.*vnoise(p*.035+3.7)+2.2*vnoise(p*.12-1.3));
+}
+float gShS=1.;   // phase behind the last breaker crest (0 at the crest), set by shoal()
+float gShB=0.;   // breaking intensity of the surf zone here (0 .. 1), set by shoal()
+float gShFW=0.;   // (r10w) the pixel's extent along the shore distance (m), set by shadeWater around its shoal() call (0: unfiltered)
+float gShBrk=0.;   // (r11w) breaking strength of the wave here (0 .. 1), set by shoal()
+float gShS0=1., gShLam=38.;   // (r12w) raw phase behind the crest (never footprint-averaged) and wave length, set by shoal()
+float gShCv=0.;   // (r11w) sheltered-cove weight (x URL wk19), set by shadeWater around its shoal() call: long, unbroken crest lines
+// breaking waves in the shallows: returns (height, d height / d w, foam, crest)
+vec4 shoal(vec2 p, float w, float depth){
+  gShS=1.; gShB=0.; gShBrk=0.; gShS0=1.;
+  if(w>260.||depth<=.02||depth>17.) return vec4(0);
+  float lam=34.+8.*vnoise(p*.004), c=4.2;
+  float warp=.35*fbm(p*.006+3.,3)+.12*vnoise(p*.03);
+  float ph=(w+c*uTime)/lam+warp;
+  float s=fract(ph), id=floor(ph); gShS=s; gShS0=s; gShLam=lam;
+  float set=.75+.25*sin(6.2831*(uTime/70.+id*.37))+.15*vnoise(p*.01+id);
+  // crests are broken into sections along the shore (each wave peaks in a few places, not one ring)
+  float sect=smoothstep(-.55,.35,vnoise(p*.022+id*7.31))*.6+.4;
+  sect=mix(sect,.88+.12*vnoise(p*.006+id*3.1),gShCv);   // (r11w) in the sheltered cove each wave breaks along most of its crest (the photos' parallel white lines), not in ~45 m sections (white blobs)
+  // sheltered water (cove interiors: low wave exposure) gets smaller waves -- they break only close to the shore
+  float shel=mix(.6,1.,smoothstep(.4,.75,ATT(p).z));
+  float A0=1.5*set*(.6+.4*vnoise(p*.008-4.))*sect*shel;
+  float A=A0*clamp(pow(8./max(depth,.4),.25),1.,1.7);
+  float brk=smoothstep(.2,.46,A/max(depth,.05)); gShBrk=brk;   // (r4f: softer onset: no solid slab with a cut-out outline where a reef patch crosses the threshold)
+  A=min(A,.48*depth+.05);
+  A*=smoothstep(260.,140.,w)*smoothstep(.0,.5,w)*smoothstep(17.,8.,depth);
+  float cr=.05+.08*(1.-brk);
+  float k=3.4;
+  float tail=exp(-.94*k);
+  float shp=smoothstep(0.,cr,s)*(exp(-(s-cr)*k)-tail)/(1.-tail);
+  float dsh=s<cr?(6.*s/cr*(1.-s/cr))/cr:-k*exp(-(s-cr)*k)/(1.-tail);
+  float h=A*shp;
+  // whitewater: thick on the face just behind the crest, a long thinning trail of residual foam behind it
+  // (a dense bore right behind the crest, decaying into lace over ~1/3 of the wave length, clear water before the next)
+  gShB=smoothstep(.15,.35,1.5*shel*(.6+.4*vnoise(p*.008-4.))/max(depth,.05))*smoothstep(260.,140.,w)*smoothstep(.0,.5,w)*smoothstep(17.,8.,depth);
+  // (over very shallow flats the bore keeps spilling: the whitewater stays dense across most of the wave period)
+  float flt=smoothstep(4.,1.8,depth)*(1.-smoothstep(.05,.4,VEG(p).b))*smoothstep(.45,.8,ATT(p).z);   // reef flats (beaches: plunging shore break) (r4f: exposed flats only -- in the sheltered cove the small waves spill in lines, no standing slabs)
+  // (r13w, URL wk46) the foam band's leading edge was one smooth isoline of the shore distance (a step from nothing to full white at the
+  //  crest): seen from a boat (v3) a straight horizontal seam across the mid-distance water. The foam's phase is jittered along the crest
+  //  (~17 m / ~5 m) and each wave's foam breaks into sections with clear gaps (not in the sheltered cove: its long crest lines stay)
+  float sF=s, secF=1.;
+  if(uWK12.z>0.){ sF=fract(s+uWK12.z*(.05*vnoise(p*.06+vec2(id*2.3,uTime*.04))+.02*vnoise(p*.21+vec2(1.7,id))));
+    secF=mix(1.,.25+.75*smoothstep(-.6,.2,vnoise(p*.035+id*vec2(4.1,2.9))),uWK12.z*(1.-gShCv)); }
+  float foam=brk*secF*(smoothstep(0.,.12,sF)*exp(-sF*mix(6.5,2.6,flt))*mix(1.8,1.6,flt)+mix(.32,.5,flt)*smoothstep(0.,.08,sF)*exp(-sF*mix(3.6,1.8,flt))*smoothstep(9.,2.,depth));
+  float lip=brk*smoothstep(.0,cr,s)*exp(-(s-cr)*14.);
+  // (r10w) a footprint longer than ~1/6 of the wave spacing along the shore distance (the far band of the boat views: one row
+  //  spans 30-130 m) point-sampled the crest lines -- some rows hit a white crest, the next did not: grey-white dashes. There
+  //  the profiles go to their mean over one wave period (exact for the exp profiles), the slope to 0, the phase to .35
+  //  (exp(-4 s) of the bores then equals its period mean)
+  float fsh=smoothstep(.15,.6,gShFW/lam);
+  if(fsh>0.){ float a1=mix(6.5,2.6,flt), a2=mix(3.6,1.8,flt);
+    float fm=brk*((1.-exp(-a1))/a1*exp(-.06*a1)*mix(1.8,1.6,flt)+mix(.32,.5,flt)*(1.-exp(-a2))/a2*exp(-.04*a2)*smoothstep(9.,2.,depth));
+    foam=mix(foam,fm*mix(1.,.79,uWK12.z*(1.-gShCv)),fsh); lip=mix(lip,brk*.07,fsh); h=mix(h,A*.25,fsh); dsh*=1.-fsh; gShS=mix(s,.35,fsh); }
+  return vec4(h,A*dsh/lam,foam,lip);
+}
+// swash on beaches: after every breaker the bore runs up the sand as a thin sheet (ballistic up-rush, back-wash)
+// and drains again. gh = sand height. Returns (sheet thickness, run-up height of this wave, swash phase 0..1).
+vec3 swash(vec2 p, float gh){
+  if(gh>1.05||gh<-.8) return vec3(0.,0.,1.);
+  float bz=VEG(p).b;
+  if(bz<.05) return vec3(0.,0.,1.);
+  float lam=34.+8.*vnoise(p*.004), c=4.2;                 // same wave train as shoal()
+  // (+ ~40 m phase variation: each wave runs up in lobes at slightly different times -> curved, cuspate fronts)
+  float warp=.35*fbm(p*.006+3.,3)+.12*vnoise(p*.03)+.05*vnoise(p*.11)+.2*vnoise(p*.024+7.7);
+  float ph=c*uTime/lam+warp+.2;
+  float s=fract(ph), id=floor(ph);
+  float set=.75+.25*sin(6.2831*(uTime/70.+id*.37))+.15*vnoise(p*.01+id);
+  // every bore runs up in lobes (each wave its own): the front is a scalloped line, never straight
+  float lobe=max(.72+.5*vnoise(p*.045+vec2(id*1.7,id*3.1))+.16*vnoise(p*.16+id*2.3),.15);
+  // fast up-rush, slower back-wash (the sheet decelerates uphill, then drains)
+  float sr=s<.38?s/.38*.5:.5+(s-.38)/.62*.5;
+  float Zr=(.12+.36*set)*lobe*4.*sr*(1.-sr)*(.8+.2*smoothstep(.2,.8,bz));
+  float th=clamp((Zr-gh)*.3,0.,.08)*smoothstep(.05,.4,bz);
+  return vec3(th,Zr,sr);
+}
+// ocean height at p (horizontal displacement ignored for the intersection)
+float oceanH(vec2 p, float pix, out vec4 sh){
+  float bedH=H(p), depth=max(-bedH,0.), w=max(coastW(p),0.);
+  float g=shoreGain(depth,w)*uOAmp;
+  float gust=.8+.4*fbm(p*.0011+vec2(uTime*.004,0.),3);
+  gSCp=p; float g2=smoothstep(-1.,4.,w)*uOAmp*surfChop(depth,w);
+  vec2 bw=oBlendW(p);
+  float l0=oLod(uOL.x,pix), l1=oLod(uOL.y,pix);
+  // choppy waves: the surface seen at p belongs to the water column that started at p - D(p)
+  vec2 pl=p-(textureLod(uOD0,p/uOL.x,l0).xz+(textureLod(uOD1,p/uOL.y,l1).xz*bw.x+textureLod(uOD1,p*OB_SC/uOL.y+OB_OFF,l1+.23).xz*bw.y)*gust)*g;
+  float h1=textureLod(uOD1,pl/uOL.y,l1).y*bw.x+textureLod(uOD1,pl*OB_SC/uOL.y+OB_OFF,l1+.23).y*bw.y;
+  float h=(textureLod(uOD0,pl/uOL.x,l0).y+h1*gust)*g
+           +textureLod(uOD2,pl/uOL.z,oLod(uOL.z,pix)).y*gust*g2;
+  sh=shoal(p,w,depth);
+  float sea=h+sh.x;
+  vec3 sw=swash(p,bedH);
+  return sw.x>0.?max(sea,bedH+sw.x):sea;
+}
+float oceanH(vec2 p, float pix){ vec4 sh; return oceanH(p,pix,sh); }
+bool waterHit(vec3 ro, vec3 rd, float tmax, out float tw){
+  const float MH=4.;   // bound of the surface height: deep troughs of big swell + choppy wind sea reach below -2.6 m
+  if(rd.y>=0.&&ro.y>MH) return false;
+  float pix0=uTan*2./uRes.y;
+  float t0=rd.y<0.?max((ro.y-MH)/-rd.y,0.):0.;
+  float t1=rd.y<0.?(ro.y+MH)/-rd.y:tmax;
+  t1=min(t1,tmax);
+  if(t0>t1) return false;
+  if(t0*pix0>1.5){ // far: iterate on the plane
+    float t=ro.y/-rd.y;
+    for(int i=uZero;i<3;i++){ vec3 p=ro+rd*t; t=(ro.y-oceanH(p.xz,t*pix0))/-rd.y; }
+    if(t>tmax) return false;
+    tw=t; return true;
+  }
+  float steps=24., dt=(t1-t0)/steps, t=t0, lf=1.;
+  for(int i=uZero;i<24;i++){
+    t+=dt;                                    // last sample lands exactly on t1 (thin swash sheets over the sand)
+    vec3 p=ro+rd*t;
+    float f=p.y-oceanH(p.xz,t*pix0);
+    if(f<0.){
+      float a=t-dt,b=t;
+      for(int k=uZero;k<6;k++){ float m=.5*(a+b); vec3 q=ro+rd*m; if(q.y-oceanH(q.xz,m*pix0)<0.) b=m; else a=m; }
+      tw=.5*(a+b); return tw<=tmax;
+    }
+  }
+  // no crossing found inside the slab (only possible for extreme troughs): fall back to the plane iteration -- the
+  // sea never has holes (they showed the deep sea floor as grey blobs)
+  if(rd.y<0.&&ro.y>0.){
+    float t=ro.y/-rd.y;
+    for(int i=uZero;i<3;i++){ vec3 p=ro+rd*t; t=(ro.y-oceanH(p.xz,t*pix0))/-rd.y; }
+    if(t<=tmax){ tw=t; return true; }
+  }
+  return false;
+}
+
+// ---------------------------------------------------------------- foam texture
+// Surf foam = the super-level set {S > th} of a fixed "foam potential" field S, with the threshold th chosen
+// from the foam density D so that the mean coverage is exactly C(D) (th = inverse CDF of S, measured once with
+// dbgm=42: FOAM_TH). S is built from
+//  * A: a warped Voronoi network (~0.9 m cells, stretched along the flow): -distance to its walls, the open
+//       water of each cell rounded into a blob; wall width varies along the walls (thick and thin stretches);
+//  * B: a finer network (~0.28 m): threads around / holes inside the A walls (old foam: more and bigger holes);
+//  * G: bubble-cluster fluff (~10 cm, ~3.5 cm): ragged, bubbly edges;
+//  * M: ~15 m patches drawn out along the flow: the foam gathers into swirls and bands, clear veins between.
+// Low D: only the highest ridges of S survive -> broken threads and flecks; mid D: a lace of walls; high D: a
+// sheet with rounded holes. Edges are anti-aliased exactly (edge width = change of S across the pixel footprint,
+// the anisotropic ellipse of grazing views included); octaves below the footprint are replaced by their mean and
+// their variance widens the edge, so a fully unresolved pattern returns C(D) itself.
+// Returns coverage; fo = (thickness 0..1, foam surface slope xz, brightness).
+vec4 gFoamDbg=vec4(0);
+// x: distance to the nearest Voronoi wall (2nd pass around the nearest site), yz: its gradient,
+// w: distance to the nearest site; dir: unit vector from the site to x; id: cell hash
+vec4 vorWall(vec2 x, out vec2 dir, out float id){
+  vec2 n=floor(x), f=fract(x), mr=vec2(0), mg=vec2(0); float md=8.;
+  for(int j=uZero-1;j<=1;j++) for(int i=uZero-1;i<=1;i++){ vec2 g=vec2(i,j), r=g+hash22(n+g)-f; float d=dot(r,r); if(d<md){ md=d; mr=r; mg=g; } }
+  float ed=8.; vec2 eg=vec2(0,1);
+  int R=uMG.y>.5?2:1;   // (r10m) URL mg1 = 1: the wall pass searches 5x5 cells around the nearest site (the standard border-distance search; 3x3 can miss
+  //  the nearest wall when the jitter is full, a jump along a straight Voronoi edge: the v4 foam seam the water round named)
+  for(int j=uZero-R;j<=R;j++) for(int i=uZero-R;i<=R;i++){ vec2 g=mg+vec2(i,j), r=g+hash22(n+g)-f, dr=r-mr;
+    if(dot(dr,dr)>1e-5){ vec2 nn=normalize(dr); float e=dot(.5*(mr+r),nn); if(e<ed){ ed=e; eg=-nn; } } }
+  id=hash12(n+mg+17.); dir=-mr/max(sqrt(md),1e-4);
+  return vec4(ed,eg,sqrt(md));
+}
+// soft cell interior: min(wall distance, rr - site distance), smoothly -> rounded blobs; returns (value, gradient)
+vec3 cellIn(vec4 v, vec2 dir, float rr, float k){
+  float a=v.x, b=rr-v.w; vec2 gb=-dir;
+  if(b<0.){ b=0.; gb=vec2(0); }                              // junctions beyond rr: foam nodes, never deeper
+  // (r10w) continuous across the walls: rr is per cell, so where the blob term b came within k of a wall the two cells met with
+  //  different values -- a jump of S along the straight Voronoi wall (the hard straight foam edges near the camera, e.g. the
+  //  v4 seam at x ~1040). Over the last .04 before the wall b fades to 0, the value of a foam node (the smooth min is then
+  //  -k/4 at the wall from both sides). Target 0, not a + k: most lace walls run between small blobs (b <= 0 there), and a + k
+  //  took their thick cores away (v4 lost most of its lace). The hole shapes are unchanged away from the walls; walls between
+  //  two big holes get ~.03 cell thicker. URL wk11 (1; 0 = r9f).
+  float wtW=mix(1.,smoothstep(0.,.04,a),uWK3.w); b*=wtW; gb*=wtW;
+  float h=clamp(.5+.5*(b-a)/k,0.,1.);
+  return vec3(mix(b,a,h)-k*h*(1.-h), mix(gb,v.yz,h));
+}
+// threshold of S for coverage C = 0, 1/8, .. 1 (measured with dbgm=42), for age 0 / .5 / 1
+const float FOAM_TH[27]=float[27](
+  .13,.060,.018,-.007,-.032,-.061,-.101,-.170,-.756,
+  .13,.054,.017,-.005,-.026,-.048,-.091,-.158,-.756,
+  .13,.05,.012,-.007,-.026,-.045,-.087,-.15,-.755);
+float foamTh(float C, float age){
+  float x=clamp(C,0.,1.)*8., ia=clamp(age,0.,1.)*2.;
+  int i=min(int(x),7), j=min(int(ia),1); float fx=x-float(i), fa=ia-float(j);
+  float t0=mix(FOAM_TH[j*9+i],FOAM_TH[j*9+i+1],fx), t1=mix(FOAM_TH[j*9+9+i],FOAM_TH[j*9+10+i],fx);
+  return mix(t0,t1,fa);
+}
+float gFoamSA=0., gFoamS=0.;   // A component, full foam potential (calibration)
+float gFoamSm=0.;   // mean of S (all unresolved components), set by foamS
+vec3 gFoamF2=vec3(0);   // optional second pattern frame (direction xy, weight z) for foamTex
+float gFoamST=2.3, gFoamST2=2.3;   // stretch of the pattern along the flow (main / second frame)
+float gFoamSoft=0.;   // (r10w) extra edge width of the lace threshold (churned surf seen from a boat: soft, bubbly edges)
+float gFoamBig=0.;   // (r12w) churned surf seen from a boat: the large-scale patches / coarse lace keep their weight close up (big foam sheets and big clear holes, not a field of 1 m blobs); set by shadeWater
+float gFoamCore=0.;   // (r11w) solid whitewater core (the rock collar): no sub-pixel lace holes, full cover, full brightness (set by shadeWater)
+float gFoamSK=0.;   // the large-scale part of S (patches M + filaments K), set by foamS
+float gFoamAK=0.;   // its edge width over one pixel
+vec3 gFoamU=vec3(0);   // optional flow coordinate for the filaments (u, du/dx, du/dz): foam lines follow its isolines
+// thresholds of the large-scale part only (patches + lines), measured with dbgm=45
+const float FOAM_THK[27]=float[27](
+  .14,.065,.015,-.017,-.049,-.084,-.118,-.176,-.75,
+  .14,.064,.015,-.016,-.048,-.083,-.118,-.177,-.75,
+  .14,.063,.013,-.018,-.049,-.085,-.124,-.18,-.75);
+float foamThK(float C, float age){
+  float x=clamp(C,0.,1.)*8., ia=clamp(age,0.,1.)*2.;
+  int i=min(int(x),7), j=min(int(ia),1); float fx=x-float(i), fa=ia-float(j);
+  float t0=mix(FOAM_THK[j*9+i],FOAM_THK[j*9+i+1],fx), t1=mix(FOAM_THK[j*9+9+i],FOAM_THK[j*9+10+i],fx);
+  return mix(t0,t1,fa);
+}
+float foamS(vec2 p, vec2 gx, vec2 gy, float age, vec2 fd, out vec2 gS, out vec4 aux){
+  vec2 fn=vec2(-fd.y,fd.x);
+  float ST=gFoamST;                                           // cells / threads stretched along the flow
+  vec2 fa=vec2(dot(gx,fd)/ST,dot(gx,fn)), fb=vec2(dot(gy,fd)/ST,dot(gy,fn));   // pixel footprint in pattern space
+  // octave fade-out: geometric mean of the footprint axes (anisotropic filtering, ratio <= 4), not the major
+  // axis -- at grazing views the fine lace stays (compressed, exactly anti-aliased per pixel) instead of vanishing
+  float pmj=max(max(length(fa),length(fb)),1e-4), pmn=max(min(length(fa),length(fb)),1e-4);
+  float pa=min(pmj,sqrt(pmj*max(pmn,pmj*.0625))*1.25);
+  vec2 q=p+vec2(uTime*.11,uTime*.04);
+  // fine octaves (B, bubbles): nearly unwarped coordinates -- a strong domain warp stretches them into smears
+  vec2 qf=q+vec2(vnoise(q*.9+2.2),vnoise(q*.9+7.4))*.18;
+  vec2 af=vec2(dot(qf,fd)/1.25,dot(qf,fn));
+  q+=vec2(fbm(q*.025,3),fbm(q*.025+5.3,3))*12.;               // ~40 m eddies bend the threads into swirls
+  vec2 a=vec2(dot(q,fd)/ST,dot(q,fn));
+  a+=vec2(vnoise(a*.33+1.7),vnoise(a*.33+8.3))*1.3;           // ~3 m wobble
+  float fM=clamp(2.5-pa*.7,0.,1.), fK=clamp(3.-pa*.9,0.,1.), fA=clamp(2.5-pa*4.4,0.,1.), fB=clamp(2.5-pa*13.,0.,1.), fG1=clamp(2.5-pa*38.,0.,1.), fG2=clamp(2.5-pa*110.,0.,1.);
+  float fA0=fA;
+  if(fA>0.) a+=vec2(vnoise(a*2.+5.5),vnoise(a*2.+1.9))*.14*fA;   // ~0.5 m wobble: wavy, never straight walls
+  // M: patches / bands
+  vec3 m=fbmd(a*vec2(.12,.08)+vec2(3.1,7.3),3);
+  float kM=mix(.24,.2,age);
+  float lw=1.-mix(.5,.78,age)*fA0*(1.-gFoamBig);                            // old foam close up: the lace network dominates (threads)                                         // large-scale weight: less once the lace is resolved
+  float S=kM*m.x*fM*lw; vec2 g=kM*m.yz*vec2(.12,.08)*fM*lw;
+  float var=kM*kM*.06*(1.-fM*fM);
+  // K: the coarse lace seen from the air (~4.5 m cells, stretched along the flow): walls of a warped Voronoi
+  // network, each cell's open water a rounded blob -- sparse foam = arcs and filaments, dense whitewater = white
+  // with rounded dark holes (the "marbling" of surf foam from above). Weakly modulated by lines that follow
+  // the shore (gFoamU), so the lace around rocks is drawn out into concentric arcs.
+  const float cK=4.5;
+  float kK=mix(.13,.15,age);
+  float mK=-.065*kK/.15;                                      // measured mean (dbgm=43)
+  vec2 gKp=vec2(0); float rK=mK;
+  if(fK>0.){
+    vec2 dr; float id; vec4 v=vorWall(a/cK+vec2(2.9,8.3)+vec2(vnoise(a*.15+.5),vnoise(a*.15+3.7))*.3,dr,id);
+    vec3 e=cellIn(v,dr,(.38+.2*id),.1);
+    rK=-e.x*kK*5.; gKp=-e.yz*kK*5./cK;
+    if(dot(gFoamU.yz,gFoamU.yz)>1e-6){                         // arcs along the shore
+      vec3 n=fbmd(vec2(gFoamU.x*.15,0.)+q*.03+vec2(8.1,2.6),2);
+      float r=(.5-abs(n.x)*3.)*.05; vec2 gn=-.15*sign(n.x)*(n.y*(.15*gFoamU.yz+vec2(.03,0.))+n.z*vec2(0.,.03));
+      rK+=r; gKp+=vec2(dot(gn,fd)*ST,dot(gn,fn));
+    }
+    S+=mix(mK,rK,fK)*lw; gFoamDbg.z=rK;
+  } else S+=mK*lw;
+  var+=kK*kK*.36*(1.-fK*fK);
+  g+=gKp*fK*lw;
+  // H: mottling (~2.8 m): breaks the coarse lace into beads, perforates dense foam -- the finest structure of
+  // whitewater resolvable from the air
+  float kH=mix(.09,.08,age), fH=clamp(2.5-pa*1.3,0.,1.);
+  float mH=0.;
+  float sH=mH; vec2 gH=vec2(0);
+  if(fH>0.){
+    vec3 h=fbmd(q*.36+vec2(4.4,1.2),2);
+    sH=h.x*kH*2.; gH=h.yz*.36*kH*2.; gH=vec2(dot(gH,fd)*ST,dot(gH,fn)); gFoamDbg.x=sH;   // world -> pattern space
+    S+=mix(mH,sH,fH)*lw; g+=gH*fH*lw;
+  } else S+=mH*lw;
+  var+=kH*kH*.25*(1.-fH*fH);
+  gFoamSK=kM*m.x+mix(mK,rK,fK)+mix(mH,sH,fH);
+  vec2 gAK=kM*m.yz*vec2(.12,.08)+gKp*fK+gH*fH;
+  gFoamAK=sqrt(.002*.002+pow(.7*length(vec2(dot(gAK,fa),dot(gAK,fb))),2.)+kH*kH*.25*(1.-fH*fH)+kK*kK*.36*(1.-fK*fK));
+  // A: walls; their width varies along them (S scaled by 1/vA)
+  const float cA=.9, cB=.28;
+  float vA=.5+1.1*smoothstep(-.6,.6,vnoise(a*1.4+3.3)), ivA=1./vA;
+  const float mA=-.036;                                       // measured mean of SA (dbgm=43)
+  float SA=mA;
+  if(fA>0.){
+    vec2 dr; float id; vec4 v=vorWall(a/cA+vec2(.37,.11),dr,id);
+    // the open water of a cell: a lobed, irregular blob (radius varies with direction), never a round hole
+    float lob=vnoise(dr*1.7+id*31.)*.55+vnoise(dr*3.9+id*17.)*.25;
+    vec3 e=cellIn(v,dr,(.22+.42*id*id)*(1.+lob),.12);       // hole sizes: many small, a few large
+    // shallow cells fill up first as the foam thickens: dense whitewater keeps only some (irregular) holes
+    float cap=.035+.5*pow(fract(id*7.31),2.);
+    float hc=clamp(.5+.5*(cap-e.x)/.04,0.,1.); e.x=mix(cap,e.x,hc)-.04*hc*(1.-hc); e.yz*=hc;
+    float an=mix(2.3,1.,abs(dr.y));                           // walls across the flow are thinner: lace drawn out into streaks
+    // (r10w) ... but dr belongs to this cell's site: on a wall the two cells used different an, and the wall core (e.x -k/4,
+    //  equal from both sides) was scaled x1 on one side and up to x2.3 on the other -- a straight step of S along the wall,
+    //  the v4 seam (x ~1042, y 845-870). Within .12 of the wall an fades to the shared 1.65.
+    an=mix(an,mix(1.65,an,smoothstep(0.,.12,v.x)),uWK3.w);
+    // (r9w: by the site-to-point direction dr, continuous inside the cell; the nearest wall's normal v.z switched on the
+    //  bisector lines between two walls, a jump of S up to x2.3 -- the hard straight foam edges near the camera, e.g. v4 x~1038)
+    SA=-e.x*cA*ivA*an; gFoamSA=SA; S+=mix(mA,SA,fA); g+=-e.yz*ivA*an*fA;
+  } else S+=mA;
+  var+=.012*(1.-fA*fA);
+  // B: fine threads / holes (stronger in old foam). Holes are cut only inside the foam mass (near / on the A walls):
+  // sparse foam stays a web of thin connected lines instead of breaking into blobs
+  float kB=mix(1.1,1.6,age)*(.7+.6*smoothstep(-.5,.5,vnoise(a*.8+2.2)));
+  float hw=smoothstep(-.14,-.03,mix(-.3,SA,fA));
+  float wB=mix(.03,.015,age);
+  float mB=.012;                                              // measured mean (dbgm=43)
+  if(fB>0.){
+    vec2 dr; float id; vec4 v=vorWall(af/cB+vec2(5.1,2.3),dr,id);
+    float lobB=vnoise(dr*2.1+id*23.)*.5;
+    vec3 e=cellIn(v,dr,(.15+.45*id*id)*(1.+lobB),.1);
+    float hB=hw*mix(.3,1.,age)*step(.35,fract(id*5.17));   // fine holes: mostly in ageing foam, not in every cell
+    float sb=kB*(wB-e.x*cB); sb=sb<0.?sb*hB:sb*.6;
+    S+=mix(mB,sb,fB); g+=-kB*e.yz*fB*(sb<0.?hB:.6); gFoamDbg.y=sb;
+  } else S+=mB;
+  var+=kB*kB*.0012*(1.-fB*fB);
+  // G: bubble clusters
+  vec3 g1=fG1>0.?vnoised(af*10.+vec2(1.3,9.1)):vec3(0), g2=fG2>0.?vnoised(af*28.+vec2(4.7,2.9)):vec3(0);
+  float kG=mix(.05,.035,age);
+  S+=(g1.x*fG1+g2.x*.55*fG2)*kG; g+=(g1.yz*10.*fG1+g2.yz*28.*.55*fG2)*kG;
+  var+=kG*kG*.2*((1.-fG1*fG1)+.3*(1.-fG2*fG2));
+  // aux: (edge width of the threshold transition, resolved fractions of the lace (A) and the lines (K), footprint)
+  float aa=length(vec2(dot(g,fa),dot(g,fb)));
+  gS=fd*(g.x/ST)+fn*g.y;                                      // pattern-space gradient back to world space
+  // (r8f) + a fringe of ~6 cm in world units: up close a foam edge is a gradient of thinning bubbles, not a 1-px cut-out
+  //  (the cel-shaded flakes of the boat views); from ~40 m on the pixel footprint dominates again, the aerial views do not change
+  aux=vec4(sqrt(.002*.002+pow(.7*aa,2.)+var*.25+pow(length(gS)*.06,2.)),fA,fK,pa);   // unresolved variance widens the edge only a little: crisp foam (small coverage bias)
+  gFoamDbg.w=g1.x*fG1;
+  gFoamSm=mA+mB+(mK+mH)*lw;
+  return S;
+}
+float foamTex(vec2 p, vec2 gx, vec2 gy, float D, float age, vec2 fd, out vec4 fo){
+  fo=vec4(0.,0.,0.,1.);
+  if(D<=.004) return 0.;
+  vec2 gS; vec4 aux;
+  float S=foamS(p,gx,gy,age,fd,gS,aux);
+  // second pattern frame (e.g. aligned with a beach): blended in where gFoamF2.z > 0 (fixed frames never shear)
+  if(gFoamF2.z>.001){
+    float sk=gFoamSK, ak=gFoamAK, sm=gFoamSm;
+    float st0=gFoamST; gFoamST=gFoamST2;
+    vec2 gS2; vec4 aux2; float S2=foamS(p,gx,gy,age,gFoamF2.xy,gS2,aux2);
+    gFoamST=st0;
+    float wf=gFoamF2.z;
+    S=mix(S,S2,wf); gS=mix(gS,gS2,wf); aux=mix(aux,aux2,wf);
+    gFoamSK=mix(sk,gFoamSK,wf); gFoamAK=mix(ak,gFoamAK,wf); gFoamSm=mix(sm,gFoamSm,wf);
+  }
+  gFoamS=S;
+  // target coverage from the density: D .1 -> ~5 %, .3 -> 18 %, .6 -> 45 %, 1 -> 75 %, 1.4 -> 92 %
+  // (seen from the air even the densest whitewater keeps some dark holes / gaps: max coverage lower there)
+  float C=clamp(1.-exp(-D*D*1.3-D*.35),0.,mix(mix(.78,.95,aux.y),.985,gFoamCore))*mix(1.,.9,age);   // (r11w: the rock collar core is solid white from the air too)   // (r9w: aerial max .86 -> .78: dense foam keeps more dark holes from the air -- lace, not flat white blobs)
+  float Cv=C;                                                  // mean coverage wanted
+  // three levels of detail, each with its own measured threshold: all octaves (lace), lines + patches only
+  // (seen from the air), patches only (far: the exact mean coverage C, modulated by the large patches)
+  float fr=1.-age;
+  float th=foamTh(C,age), s=aux.x;
+  float thK=foamThK(C,age);
+  // the two resolved levels are blended as signed distances to their thresholds, then thresholded once:
+  // one crisp edge through the LOD transition (blending two coverages would give grey double images)
+  float dS=mix(gFoamSK-thK,S-th,aux.y), sS=mix(gFoamAK*2.1,s,aux.y)+gFoamSoft;   // (r8w: K edge 1.5 -> 2.1 x its footprint change: soft outlines from the air, no paper cut-out edges)
+  float cov=smoothstep(-sS,sS,dS);
+  // lace below the pixel (aerial views): inside the outline the foam is a sub-pixel lace -- partial cover that
+  // thickens into solid white toward the core of each foam patch
+  cov*=mix(mix(.55,.65,fr)+mix(.45,.35,fr)*smoothstep(0.,.14+.12*age,dS),1.,max(aux.y,gFoamCore));   // (r8w: ramp .07+.05age -> .14+.12age, .6/.7 -> .55/.65: only the cores of the patches are solid white, the rest a lace veil -- no flat paper cut-outs from the air)
+  // lace below the pixel (aerial views): a crisp outline, but inside it the foam is a sub-pixel lace -- partial
+  // cover that thickens into solid white toward the core of each foam patch / line
+  float x0=.5-sin(asin(1.-2.*C)/3.);                          // inverse smoothstep
+  float covU=smoothstep(0.,1.,x0+(S-gFoamSm)*2.5);
+  cov=mix(covU,cov,aux.z);
+  // (r8w) ageing foam seen from the air (its lace below the pixel): a veil with blue holes and threads (~2-5 m) inside
+  // the outline instead of a flat white paper cut-out; gone once the lace itself is resolved (aux.y) or beyond ~2 m pixels
+  { float lf=clamp(2.2-aux.w*1.1,0.,1.)*(1.-aux.y)*smoothstep(.25,.75,age)*(1.-gFoamCore);
+    if(lf>0.){ vec2 pq=p+vec2(uTime*.11,uTime*.04);
+      float ln=vnoise(pq*.33+vec2(4.1,7.3))*.65+vnoise(pq*.6+1.7)*.35*clamp(2.-aux.w*2.,0.,1.);
+      cov*=1.-lf*.5*smoothstep(-.1,.5,ln); } }
+  // loose bubbles / tiny clumps (~3-8 cm) scattered around the foam (fresh foam sheds more)
+  float fD=clamp(2.5-aux.w*40.,0.,1.);
+  if(fD>0.){
+    vec2 dr; float id; vec4 v=vorWall(p/.1+vec2(7.3,1.1),dr,id);
+    float r=.07+.16*hash11(id*41.3)*hash11(id*7.9), aD=aux.w/.1*1.2+.02;   // mostly tiny, a few bigger
+    float pr=smoothstep(-.12,-.01,dS)*(.1+.25*fr)*smoothstep(.05,.3,C);
+    float bub=(1.-smoothstep(r-aD,r+aD,v.w))*step(hash11(id*17.9),pr)*fD;
+    cov=max(cov,bub*.95);
+  }
+  // thickness: how far above the threshold (thin lace / film edges are translucent)
+  float tkF=smoothstep(th,th+.02+.05*fr*smoothstep(.4,1.,C)+s*1.5,S), tkK=smoothstep(thK,thK+.08+.08*fr+gFoamAK,gFoamSK);
+  fo.x=mix(1.,tkF,aux.y);
+  // relief: rounded foam edges (S near th) and bubble lumps on top
+  float rim=smoothstep(th-s,th+s+.08,S)*(1.-smoothstep(th+s,th+s+.1,S));
+  fo.yz=gS*(rim*.35+.15*(.4+.6*fr))*clamp(1.5-aux.w*2.,0.,1.);
+  // brightness: fresh foam bright white, old foam a little greyer; bubble-scale shading in the mass
+  fo.w=(.85+.15*fr)*(1.-.1*(.5-.5*gFoamDbg.w)*fo.x)*mix(.72,1.,smoothstep(thK,thK+.18,gFoamSK));   // thin / edge foam greyer, thick cores bright (tonal texture from the air)
+  fo.w=mix(fo.w,1.,gFoamCore*.85);   // (r11w) the collar core: brilliant white, no grey edge tone
+  return cov*smoothstep(0.,.05,D);
+}
+float foamPattern(vec2 p, float pix, float D){ vec4 fo; return foamTex(p,vec2(pix,0.),vec2(0.,pix),D,.5,normalize(uShore+vec2(1e-4)),fo); }
+
+// ---------------------------------------------------------------- rock
+// joint-block pattern on one projection plane: x = crack mask, y = block id, z,w = facet tilt
+vec4 rockBlocks(vec2 wc, float li, float bf, float bf2){
+  vec2 bq=vec2(wc.x*.38+hash11(li)*7., wc.y*.22)+.35*vec2(fbm(wc*.08,2),fbm(wc*.08+4.,2));
+  vec3 vb=voronoi(bq);
+  float crack=(1.-smoothstep(.0,.035,vb.y-vb.x))*bf*.7;
+  vec3 vb2=voronoi(bq*3.1+5.);
+  crack=max(crack,(1.-smoothstep(.0,.03,vb2.y-vb2.x))*bf2*.35);
+  vec2 fct=(hash22(vec2(vb.z*17.,li))-.5)*.5*bf;
+  return vec4(crack,vb.z,fct);
+}
+vec3 rockMat(vec3 pos, vec3 N, float sprayW, float pix, out vec3 dn, out float rough){
+  vec3 aw=abs(N); aw=pow(aw,vec3(4.)); aw/=aw.x+aw.y+aw.z;
+  float bedc=pos.y+6.*fbm(pos.xz*.004,3)+1.5*fbm(pos.xz*.03,2);
+  float thick=3.5+3.*(noise3(pos*.01)*.5+.5);
+  float li=floor(bedc/thick);
+  float bf=clamp(1.-pix*.35,0.,1.), bf2=clamp(1.-pix*1.2,0.,1.);
+  vec4 bx=aw.x>.02?rockBlocks(pos.zy,li,bf,bf2):vec4(0);
+  vec4 bz=aw.z>.02?rockBlocks(pos.xy,li,bf,bf2):vec4(0);
+  vec4 by=aw.y>.02?rockBlocks(pos.xz*.8,li,bf,bf2):vec4(0);
+  float crack=bx.x*aw.x+bz.x*aw.z+by.x*aw.y;
+  float bid=bx.y*aw.x+bz.y*aw.z+by.y*aw.y;
+  // colours: weathered red-brown, dark basalt, ochre, grey lichen
+  float P1=fbm3(pos*vec3(.012,.03,.012),4)*.5+.5, P2=fbm3(pos*.05+3.,3)*.5+.5;
+  vec3 red=vec3(.15,.075,.05), brown=vec3(.085,.065,.052), dark=vec3(.042,.04,.038), ochre=vec3(.19,.12,.075), grey=vec3(.11,.105,.10);
+  vec3 c=mix(brown,red,smoothstep(.35,.7,P1));
+  c=mix(c,dark,smoothstep(.55,.8,P2)*.7);
+  c=mix(c,ochre,smoothstep(.72,.9,P1)*.45);
+  c*=.8+.4*hash12(vec2(bid*31.,li));
+  c=mix(c,grey,smoothstep(.45,.8,fbm3(pos*.04+9.,3)*.5+.5)*.55);
+  c*=.82+.36*(fbm3(pos*1.3,3)*.5+.5)*bf2+.18*(1.-bf2);
+  // vertical water stains (triplanar)
+  float stx=fbm(vec2(pos.z*.25,pos.y*.018),4)+.3*fbm(vec2(pos.z*1.1,pos.y*.06),2);
+  float stz=fbm(vec2(pos.x*.25,pos.y*.018),4)+.3*fbm(vec2(pos.x*1.1,pos.y*.06),2);
+  float streak=(stx*aw.x+stz*aw.z)/max(aw.x+aw.z,1e-3);
+  float wallW=1.-aw.y;
+  c*=mix(1.,.55,smoothstep(.15,.6,streak)*wallW);
+  c=mix(c,vec3(.04,.055,.03),smoothstep(.35,.65,streak)*.3*wallW);
+  c*=1.-.5*crack;
+  c=mix(c,c*.32,sprayW);
+  // facet normals + fine relief
+  vec3 fx=vec3(0.,bx.w,bx.z), fz=vec3(bz.z,bz.w,0.), fy=vec3(by.z,0.,by.w);
+  vec4 n1=fbm3d(pos*.15,3), n2=fbm3d(pos*.7+5.,3);
+  vec3 g=n1.yzw*.15*1.2+n2.yzw*.7*.35*bf2+fx*aw.x+fz*aw.z+fy*aw.y;
+  dn=(g-dot(g,N)*N)*.8*clamp(1.8-pix*.45,0.,1.);
+  rough=.75;
+  return c;
+}
+
+// ---------------------------------------------------------------- terrain shading
+float isVegD(float r,float b){ return (1.-r)*(1.-b); }
+vec3 shadeTerrain(vec3 pos, vec3 rd, float t){
+  vec2 p=pos.xz;
+  uLeafNear=1.-smoothstep(250.,600.,t);
+  float pix=t*uTan*2./uRes.y;
+  float det=detailAt(t);
+  bool nearS=pix<1.8;
+  float gh=nearS?Hc(p):H(p);
+  float e=max(.6,pix*.8);
+  vec3 Ng;
+  if(nearS) Ng=normalize(vec3(Hc(p-vec2(e,0))-Hc(p+vec2(e,0)),2.*e,Hc(p-vec2(0,e))-Hc(p+vec2(0,e))));
+  else Ng=normalize(vec3(H(p-vec2(e,0))-H(p+vec2(e,0)),2.*e,H(p-vec2(0,e))-H(p+vec2(0,e))));
+  vec4 at=ATT(p), vm=VEG(p);
+  float ao=at.x, conv=at.y, expo=at.z, flow=at.w;
+  float slope=1.-Ng.y;
+  float ch=max(pos.y-gh,0.);
+  float veg=vm.r, beach=vm.b, palmZ=smoothstep(.15,.45,vm.g);
+  // ---------- surfaces
+  // canopy surface normal (displaced) + triplanar crown detail on steep ground
+  float ee=max(.3,pix*.7);
+  vec3 Nd=normalize(vec3(Hd(p-vec2(ee,0),det)-Hd(p+vec2(ee,0),det),2.*ee,Hd(p-vec2(0,ee),det)-Hd(p+vec2(0,ee),det)));
+  vec3 w3=Ng*Ng; w3*=w3; w3/=(w3.x+w3.y+w3.z);
+  vec4 cx=crowns(pos.zy,6.,13.), cz=crowns(pos.xy,6.,29.);
+  vec3 tri=(vec3(0.,-cx.z,-cx.y)*w3.x+vec3(-cz.y,-cz.z,0.)*w3.z)*3.;
+  float triH=cx.x*w3.x+cz.x*w3.z;
+  float steep=smoothstep(.35,.75,slope);
+  float cfade=clamp(2.-pix*.35,0.,1.);
+  vec3 Nv=normalize(mix(Nd,Ng,steep*.5)+tri*cfade*steep);
+  // leaf clusters
+  float ff=clamp(2.4-pix*.9,0.,1.), ff2=clamp(1.8-pix*1.6,0.,1.);
+  vec4 fA=noised3(pos*.55), fB=noised3(pos*1.6+7.3);
+  vec3 lg=fA.yzw*.55*.55*ff+fB.yzw*1.6*.22*ff2;
+  Nv=normalize(Nv-(lg-dot(lg,Nv)*Nv)*1.2);
+  float lf1=clamp(1.-pix/.35,0.,1.), lf2=clamp(1.-pix/.12,0.,1.);
+  vec4 L1=noised3(pos*3.1+1.3), L2=noised3(pos*8.7+5.1);
+  vec3 lgr=L1.yzw*3.1*.09*lf1+L2.yzw*8.7*.035*lf2;
+  Nv=normalize(Nv-(lgr-dot(lgr,Nv)*Nv));
+  float leafSpk=1.+(.38*L1.x*lf1+.3*L2.x*lf2);
+  float crel=clamp(ch/(CMAX*max(vm.a,.2)),0.,1.);
+  float cav=mix(clamp(1.-pix*.12,0.,1.)*steep*(.4+.6*triH),crel,vm.a);   // 0 = deep gap between crowns
+  float leafAO=mix(1.,.16+.84*smoothstep(0.,.8,cav),max(vm.a,steep*.85)*det);
+  leafAO*=1.+.22*(fA.x*ff+fB.x*.5*ff2);
+  if(uLeafNear>0.){ float lb=leafBumps(p); leafAO*=mix(1.,.35+.65*smoothstep(.2,1.2,lb),uLeafNear*vm.a*(1.-palmZ)); }
+  // ---------- vegetation albedo
+  float n1=fbm(p*.009,3), n2=fbm(p*.045+3.,3);
+  float lush=clamp(.45+flow*.9-conv*.12+.35*n1,0.,1.);
+  float ridge=smoothstep(.2,1.2,conv)*(1.-flow);
+  vec4 cc=crowns(p,13.,0.);
+  float cid=cc.w;
+  vec3 vSun=vec3(.088,.13,.032), vMid=vec3(.036,.066,.024), vDeep=vec3(.017,.034,.017), vGrass=vec3(.12,.15,.04);
+  vec3 va=mix(vMid,vDeep,lush);
+  va=mix(va,vSun,smoothstep(.3,.9,cid)*.4*(1.-lush*.6));
+  va=mix(va,vGrass,ridge*.55+smoothstep(.6,.9,n2)*.15*(1.-lush));
+  va=mix(va,vec3(.085,.11,.06),step(.95,cid)*.45*(1.-palmZ));   // silvery kukui crowns
+  va=mix(va,vec3(.09,.07,.035),step(.988,hash12(vec2(cid*57.,3.)))*.45*(1.-palmZ));   // dry / flowering crowns
+  va*=.84+.32*hash12(vec2(cid*113.,7.));
+  va*=1.+.35*(fA.x*ff+fB.x*.6*ff2)+.25*fbm3(pos*.3,2)*clamp(1.4-pix*.3,0.,1.);
+  va*=leafSpk;
+  va*=.82+.36*smoothstep(-.5,.5,n2);
+  // clumps visible at every distance: 3D noise (works on any slope), filtered by footprint
+  float k1=fbm3(pos*.075,3), k2=fbm3(pos*.22+4.,3);
+  float kf1=clamp(1.5-pix*.12,0.,1.), kf2=clamp(1.5-pix*.4,0.,1.);
+  float clump=k1*kf1*.9+k2*kf2*.6;
+  va*=1.+.42*clump;
+  float clumpAO=clamp(1.+.9*min(clump,0.),.25,1.);
+  // palms: bright fronds over a dark understory
+  float phv=palmZ>0.?palmH(p):0.;
+  float frond=palmZ*smoothstep(.6,2.2,phv)*det;
+  va=mix(va,mix(vec3(.015,.026,.01),vec3(.06,.088,.024)*(.8+.4*hash12(floor(p/10.))),smoothstep(.6,2.2,phv)),palmZ*.92);
+  Nv=normalize(mix(Nv,normalize(Ng+vec3(0,.9,0)+(Nd-Ng)*.25),frond));
+  leafAO=mix(leafAO,mix(.5,1.,smoothstep(.6,2.2,phv)),palmZ);
+  // ---------- rock
+  float sprayW=(1.-smoothstep(1.,mix(6.,22.,expo),gh))*smoothstep(.15,.5,slope);
+  vec3 dn; float rr;
+  vec3 ra=rockMat(pos,Ng,sprayW,pix,dn,rr);
+  vec3 Nr=normalize(Ng+dn);
+  // mossy ledges on rock: upward-facing detail normals get green
+  float ledgeVeg=smoothstep(.15,.45,dot(Nr,vec3(0,1,0))-Ng.y*.5)*(1.-sprayW)*smoothstep(15.,40.,gh);
+  ra=mix(ra,vMid*1.1,ledgeVeg*.75*(1.-veg));
+  // ---------- sand
+  float wet=1.-smoothstep(.2,1.4,gh);
+  vec3 sa=mix(vec3(.44,.37,.26),vec3(.24,.20,.14),wet);
+  sa*=.92+.12*vnoise(p*1.7)+.06*vnoise(p*7.);
+  vec2 rip=vec2(sin(dot(p,vec2(.6,.8))*2.1+vnoise(p*.3)*3.),0.);
+  vec3 Ns=normalize(Ng+vec3(.04*rip.x*clamp(1.-pix,0.,1.),0.,.03*rip.x*clamp(1.-pix,0.,1.)));
+  // ---------- compose
+  float rockW=1.-veg;
+  vec3 alb=mix(va,ra,rockW);
+  vec3 N=normalize(mix(Nv,Nr,rockW));
+  float lao=mix(leafAO*clumpAO,1.,rockW);
+  alb=mix(alb,sa,beach); N=normalize(mix(N,Ns,beach)); lao=mix(lao,1.,beach);
+  // foot-of-cliff dark wet line + swash
+  alb=mix(alb,alb*.4,(1.-smoothstep(.0,.6,gh))*(1.-beach*.5));
+  if(uDbgM==1) return vec3(rockW,isVegD(rockW,beach),beach)*.6;
+  // ---------- lighting
+  float sh=shadow(pos+Ng*.6+N*.2,uSun,45.)*mix(1.,.55+.45*smoothstep(.0,.6,cav),vm.a*det*.7);
+  float isVeg=(1.-rockW)*(1.-beach);
+  float wrap=.3*isVeg;
+  float NdL=dot(N,uSun);
+  float dif=max((NdL+wrap)/(1.+wrap),0.);
+  vec3 amb=skyIrr(N)*ao*lao;
+  vec3 col=alb*(SUN*dif*sh+amb*.75);
+  // leaf translucency (sun through the canopy) + rim
+  float trans=pow(max(dot(-rd,uSun)*-1.+1.,0.)*.5,2.)*0.;
+  col+=isVeg*vec3(.10,.20,.02)*pow(clamp(1.-dot(N,-rd),0.,1.),3.)*sh*.25*SUN.x/3.6;
+  col+=isVeg*vec3(.08,.16,.015)*max(-NdL,0.)*sh*.5;
+  // specular (wet rock, leaves)
+  vec3 Hh=normalize(uSun-rd);
+  float r=mix(mix(.75,rr,rockW),.3,sprayW);
+  float a2=r*r*r*r;
+  float NdH=max(dot(N,Hh),0.), dd=NdH*NdH*(a2-1.)+1.;
+  float D=a2/(PI*dd*dd);
+  float F=.04+.96*pow(1.-max(dot(Hh,-rd),0.),5.);
+  col+=SUN*D*F*.25*max(NdL,0.)*sh*mix(mix(.12,.5,rockW),1.,sprayW);
+  return col;
+}
+
+// cheap terrain colour for water reflections
+vec3 terrainCheap(vec3 pos){
+  vec2 p=pos.xz; float e=2.;
+  vec3 N=normalize(vec3(H(p-vec2(e,0))-H(p+vec2(e,0)),2.*e,H(p-vec2(0,e))-H(p+vec2(0,e))));
+  vec4 vm=VEG(p);
+  vec3 alb=mix(vec3(.15,.08,.05),vec3(.04,.10,.02),vm.r);
+  alb=mix(alb,vec3(.55,.46,.33),vm.b);
+  return alb*(SUN*max(dot(N,uSun),0.)*.8+skyIrr(N)*ATT(p).x);
+}
+
+// ---------------------------------------------------------------- water shading
+vec3 shadeWater(vec3 pos, vec3 rd, float t){
+  vec2 p=pos.xz;
+  float pix=t*uTan*2./uRes.y;
+  float bed=H(p), depth=max(-bed,0.), w=max(-coastRaw(p),0.);
+  vec4 at=ATT(p), vm=VEG(p);
+  float expo=at.z;
+  float g=shoreGain(depth,w)*uOAmp;
+  float gust=.75+.45*fbm(p*.0011+vec2(uTime*.004,0.),3);
+  vec4 d0=textureLod(uOD0,p/uOL.x,oLod(uOL.x,pix)), d1=textureLod(uOD1,p/uOL.y,oLod(uOL.y,pix)), d2=textureLod(uOD2,p/uOL.z,oLod(uOL.z,pix));
+  vec4 s0=textureLod(uOS0,p/uOL.x,oLod(uOL.x,pix)), s1=textureLod(uOS1,p/uOL.y,oLod(uOL.y,pix)), s2=textureLod(uOS2,p/uOL.z,oLod(uOL.z,pix));
+  float g2=smoothstep(-1.,4.,w)*uOAmp;
+  vec2 sl=(s0.xy*.55+s1.xy*gust)*g+s2.xy*gust*g2;
+  vec2 var=max(s0.zw-s0.xy*s0.xy,0.)+max(s1.zw-s1.xy*s1.xy,0.)+max(s2.zw-s2.xy*s2.xy,0.);
+  float wh=(d0.y+d1.y*gust)*g+d2.y*gust*g2;
+  vec4 sh=shoal(p,w,depth);
+  // shoaling wave slope along the shore normal
+  float ce=2.; vec2 cg=vec2(coastRaw(p+vec2(ce,0))-coastRaw(p-vec2(ce,0)),coastRaw(p+vec2(0,ce))-coastRaw(p-vec2(0,ce)))/(2.*ce);
+  sl+= -cg*sh.y;
+  // fine capillary ripples close to the camera
+  float rf=clamp(1.4-pix*3.,0.,1.);
+  vec3 rp=fbmd(p*2.3+vec2(uTime*.6,uTime*.4),3);
+  sl+=rp.yz*2.3*.014*rf*g2;
+  vec3 N=normalize(vec3(-sl.x,1.,-sl.y));
+  float rough=sqrt(.0025+(var.x+var.y)*.5*g*g+.0004*pix);
+  float cosi=max(dot(-rd,N),.001);
+  float F=.02+.98*pow(1.-cosi,5.);
+  vec3 R=reflect(rd,N); if(R.y<.01) R=normalize(vec3(R.x,.01+abs(R.y)*.3,R.z));
+  vec3 refl=skyCol(R);
+  // terrain reflected in the water (cliffs, headlands)
+  if(t<1800.){
+    float tr=2.; bool hit=false; vec3 q;
+    for(int i=uZero;i<48;i++){ q=pos+R*tr; float dd=q.y-H(q.xz); if(dd<0.){hit=true;break;} tr+=max(dd*.6,1.5+tr*.02); if(tr>900.||q.y>uHmax) break; }
+    if(hit) refl=terrainCheap(q);
+  }
+  float sunSh=shadow(vec3(p.x,.6,p.y),uSun,0.);
+  // sun glint (GGX)
+  vec3 Hh=normalize(uSun-rd);
+  float a2=rough*rough, NdH=max(dot(N,Hh),0.), dd=NdH*NdH*(a2-1.)+1.;
+  float spec=a2/(PI*dd*dd)*F/(4.*cosi*max(dot(N,uSun),.05)+.001)*max(dot(N,uSun),0.);
+  // ---- water body: absorption + scattering over the sea bed
+  vec3 sigA=vec3(.45,.13,.085), sigS=vec3(.0001,.0011,.0028);
+  vec3 sigT=sigA+sigS;
+  vec3 Tr=refract(rd,N,.75);
+  float tb=depth/max(-Tr.y,.15);
+  vec2 bp=p+Tr.xz*tb;
+  float bdepth=max(-H(bp),0.);
+  tb=bdepth/max(-Tr.y,.15);
+  vec3 trans=exp(-sigT*tb);
+  // bed: sand / reef / rocks + caustics
+  vec4 vb=VEG(bp);
+  float reef=clamp(vb.g*(.75+.5*fbm(bp*.5,3)),0.,1.);
+  float rockBed=1.-smoothstep(4.,30.,max(-coastRaw(bp),0.));
+  float bfd=clamp(1.-pix*.6,0.,1.);
+  vec2 sdir=normalize(uShore+vec2(1e-4));
+  float rph=dot(bp,sdir)*1.9+fbm(bp*.15,3)*4.;
+  float ripple=(sin(rph)*.5+.5)*bfd;
+  vec3 sand=vec3(.22,.215,.17)*(.78+.3*(fbm(bp*.35,3)*.5+.5)+.12*vnoise(bp*2.))*(.88+.2*ripple);
+  float coral=smoothstep(.15,.45,fbm(bp*.9+11.,4)+.3*vnoise(bp*3.))*smoothstep(.1,.5,vb.g+.25);
+  float algae=smoothstep(.2,.6,fbm(bp*.2+4.,3))*(1.-vb.g)*.6;
+  sand=mix(sand,vec3(.11,.12,.07),algae*.6);
+  float rv=fbm(bp*.45,3)*.5+.5;
+  vec3 reefC=mix(mix(vec3(.045,.055,.04),vec3(.12,.10,.07),smoothstep(.3,.7,rv)),vec3(.09,.06,.07),smoothstep(.75,.9,fbm(bp*1.3+3.,2)*.5+.5));
+  vec3 bedA=mix(sand,reefC,clamp(max(reef,coral*bfd*.9),0.,1.));
+  bedA=mix(bedA,vec3(.06,.06,.055),rockBed*.7);
+  vec2 cpp=bp-uSun.xz/max(uSun.y,.3)*bdepth*.75;
+  float ex=.35;
+  float lap=0.;
+  lap+=(textureLod(uOS1,(cpp+vec2(ex,0))/uOL.y,0.).x-textureLod(uOS1,(cpp-vec2(ex,0))/uOL.y,0.).x+textureLod(uOS1,(cpp+vec2(0,ex))/uOL.y,0.).y-textureLod(uOS1,(cpp-vec2(0,ex))/uOL.y,0.).y)/(2.*ex);
+  lap+=(textureLod(uOS2,(cpp+vec2(ex,0))/uOL.z,0.).x-textureLod(uOS2,(cpp-vec2(ex,0))/uOL.z,0.).x+textureLod(uOS2,(cpp+vec2(0,ex))/uOL.z,0.).y-textureLod(uOS2,(cpp-vec2(0,ex))/uOL.z,0.).y)/(2.*ex);
+  float caus=clamp(1./max(1.+bdepth*.55*lap*g,.18),0.,4.);
+  caus=mix(1.,caus,clamp(1.-pix*.5,0.,1.)*smoothstep(.2,1.5,bdepth));
+  vec3 bedL=bedA*(SUN*uSun.y*exp(-sigT*bdepth/max(uSun.y,.3))*sunSh*caus+skyIrr(vec3(0,1,0))*.8*exp(-sigT*bdepth*.5));
+  vec3 inL=(SUN*uSun.y*sunSh*.9+skyIrr(vec3(0,1,0)))*sigS/sigT*(1.-trans)*vec3(.8,1.,1.);
+  vec3 body=bedL*trans+inL;
+  // light through wave crests
+  float crest=max((d1.y*gust)*g+d2.y*gust*g2,0.)+sh.x*.8;
+  body+=vec3(.01,.07,.06)*crest*.55*smoothstep(-.2,.6,dot(rd.xz,normalize(uSun.xz)))*(1.-trans.g*.5);
+  // suspended sand in the surf zone
+  float surf=smoothstep(4.,.5,depth)*smoothstep(-1.,5.,w);
+  body=mix(body,vec3(.06,.13,.12)*(SUN.x/3.6)*(.6+.4*sunSh),surf*.3);
+  vec3 col=body*(1.-F)+refl*F+SUN*spec*sunSh;
+  // ---- foam
+  float J=(d1.w+d2.w*.6)/1.6;
+  float wc=smoothstep(.28,-.15,J)*smoothstep(.55,.95,gust)*g*smoothstep(8.,20.,depth);
+  float shelf=smoothstep(.06,.16,depth/max(w,2.));          // steep rocky shore vs gentle sandy shelf
+  float head=smoothstep(.2,.6,expo)*smoothstep(300.,30.,w)*shelf;
+  float churn=.6+.6*fbm(p*.018-uTime*.025,4);
+  float contact=exp(-w/(3.+6.*smoothstep(3.,.5,depth)+14.*head))*(.7+.4*vnoise(p*.06+uTime*.2));
+  float crash=head*exp(-w/(26.+70.*head))*churn*(.75+.4*fbm(p*.05+uTime*.05,3));
+  float dens=max(max(contact*1.15,crash*1.3),sh.z*1.05)+wc;
+  dens+=.12*smoothstep(3.,1.,depth)*smoothstep(-1.,5.,w)*churn;
+  vec2 uvw=(p-uRect.xy)*uRect.w; dens*=smoothstep(0.,.03,min(min(uvw.x,uvw.y),min(1.-uvw.x,1.-uvw.y)));
+  float fb; float foam=foamTex(p,pix,dens,fb);
+  float rb; float resid=foamTex(p*1.3+vec2(uTime*.15,0.),pix,clamp(dens*.45,0.,.45),rb)*.55*(1.-foam);
+  vec3 Nf=normalize(N+vec3(0,1.5,0));
+  vec3 foamC=vec3(.90,.94,.97)*(SUN*max(dot(Nf,uSun),0.)*mix(.4,1.,sunSh)+skyIrr(Nf)*1.1);
+  float thick=smoothstep(.45,1.,dens);
+  col=mix(col,foamC*.7*rb,resid*.55);
+  col=mix(col,foamC*fb,foam*mix(.72,.96,thick));
+  col=mix(col,foamC*1.03,sh.w*.8*foamPattern(p*1.4,pix,.95));
+  return col;
+}
+
+// ---------------------------------------------------------------- atmosphere
+vec3 fogApply(vec3 col, vec3 ro, vec3 rd, float t){
+  float b=uFog, hf=1./420.;
+  float k=rd.y*hf;
+  float fogAmt=b*exp(-ro.y*hf)*(abs(k)>1e-7?(1.-exp(-t*k))/k:t);
+  float s=max(dot(rd,uSun),0.);
+  vec3 fc=mix(vec3(.46,.60,.80),vec3(.95,.90,.80),pow(s,10.)*.6);
+  return mix(col,fc,1.-exp(-fogAmt));
+}
+
+void main(){
+  vec2 fc=gl_FragCoord.xy+uJit;
+  vec2 uv=(2.*fc-uRes)/uRes.y;
+  vec3 rd=normalize(uCam*vec3(uv*uTan,1.));
+  vec3 ro=uRo;
+  float tmin=0.;
+  if(ro.y>uHmax){ if(rd.y>=0.) tmin=1e9; else tmin=(ro.y-uHmax)/-rd.y; }
+  float far=14000.;
+  float tT=1e9; bool hitT=false;
+  if(tmin<far) hitT=march(ro,rd,tmin,far,tT);
+  float tW; bool hitW=waterHit(ro,rd,hitT?tT:far,tW);
+  vec3 col; float tt;
+  if(hitW){ col=shadeWater(ro+rd*tW,rd,tW); tt=tW; }
+  else if(hitT){ col=shadeTerrain(ro+rd*tT,rd,tT); tt=tT; }
+  else { col=skyView(rd); tt=-1.; }
+  if(hitT&&!hitW) col=waterEdge(ro+rd*tT,rd,tT,col);   // (r12w) soft whitewater fringe over the rock base at the waterline
+  if(tt>0.) col=fogApply(col,ro,rd,tt);
+  o=vec4(col,1.);
+}`.replace('uniform vec2 uShore;', 'uniform vec2 uShore; uniform float uFog;');
+
+// ---- post: bloom + filmic tonemap + grade + FPV lens -----------------------------
+const FS_BRIGHT = GLSL_COMMON + `
+uniform sampler2D uAcc; uniform float uInvN; uniform vec2 uRes;
+out vec4 o;
+void main(){
+  vec2 uv=gl_FragCoord.xy/uRes;
+  vec2 tx=1./vec2(textureSize(uAcc,0));
+  vec3 c=(textureLod(uAcc,uv+tx*vec2(-1,-1),0.).rgb+textureLod(uAcc,uv+tx*vec2(1,-1),0.).rgb+textureLod(uAcc,uv+tx*vec2(-1,1),0.).rgb+textureLod(uAcc,uv+tx*vec2(1,1),0.).rgb)*.25*uInvN;
+  float l=dot(c,vec3(.2126,.7152,.0722));
+  o=vec4(c*smoothstep(1.,3.,l),1.);
+}`;
+const FS_BLUR = GLSL_COMMON + `
+uniform sampler2D uT; uniform vec2 uDir; uniform vec2 uRes;
+out vec4 o;
+void main(){
+  vec2 uv=gl_FragCoord.xy/uRes, tx=uDir/vec2(textureSize(uT,0));
+  vec3 c=textureLod(uT,uv,0.).rgb*.227;
+  c+=(textureLod(uT,uv+tx*1.385,0.).rgb+textureLod(uT,uv-tx*1.385,0.).rgb)*.316;
+  c+=(textureLod(uT,uv+tx*3.231,0.).rgb+textureLod(uT,uv-tx*3.231,0.).rgb)*.0703;
+  o=vec4(c,1.);
+}`;
+const FS_POST = GLSL_COMMON + `
+uniform sampler2D uAcc, uBloom, uHud; uniform float uInvN, uHudOn, uLens, uCA, uGrain, uFrame; uniform vec2 uRes, uOut;
+uniform float uExpo, uSat, uSharp, uContrast;
+out vec4 o;
+vec3 aces(vec3 x){ // Narkowicz fit
+  return clamp((x*(2.51*x+.03))/(x*(2.43*x+.59)+.14),0.,1.);
+}
+vec3 srgb(vec3 c){ return mix(12.92*c,1.055*pow(c,vec3(1./2.4))-.055,step(.0031308,c)); }
+vec3 getUV(vec2 uv){ return textureLod(uAcc,uv,0.).rgb*uInvN; }
+vec2 lens(vec2 uv, float k){
+  vec2 q=(uv-.5)*vec2(uOut.x/uOut.y,1.);
+  float rmax2=dot(vec2(uOut.x/uOut.y,1.)*.5,vec2(uOut.x/uOut.y,1.)*.5);
+  float r2=dot(q,q);
+  q*=(1.+k*r2)/(1.+k*rmax2);
+  return q/vec2(uOut.x/uOut.y,1.)+.5;
+}
+void main(){
+  vec2 uv0=gl_FragCoord.xy/uOut;
+  vec2 uvG=lens(uv0,uLens), uvR=lens(uv0,uLens*(1.+uCA)), uvB=lens(uv0,uLens*(1.-uCA));
+  vec2 tx=1./uRes;
+  vec3 c=vec3(getUV(uvR).r,getUV(uvG).g,getUV(uvB).b);
+  vec3 bl=(getUV(uvG+vec2(tx.x,0))+getUV(uvG-vec2(tx.x,0))+getUV(uvG+vec2(0,tx.y))+getUV(uvG-vec2(0,tx.y)))*.25;
+  c=max(c+(c-bl)*uSharp,0.);
+  c+=textureLod(uBloom,uvG,0.).rgb*.06;
+  c*=uExpo;
+  c=aces(c);
+  // grade: gentle S-curve + saturation
+  c=clamp(c,0.,1.);
+  c=mix(c,c*c*(3.-2.*c),uContrast);
+  float l=dot(c,vec3(.2126,.7152,.0722));
+  c=max(mix(vec3(l),c,uSat),0.);
+  c=srgb(clamp(c,0.,1.));
+  vec2 q=uv0-.5;
+  c*=1.-.22*dot(q,q)*2.;
+  c+=(hash12(gl_FragCoord.xy+uFrame*17.31)-.5)*uGrain;
+  if(uHudOn>0.){ vec4 hd=textureLod(uHud,uv0,0.); c=mix(c,hd.rgb,hd.a); }
+  c+=(hash12(gl_FragCoord.xy*1.7+fract(uInvN*91.7))-.5)/255.;
+  o=vec4(c,1);
+}`;
+
+// ============================================================================
+//  WebGL plumbing
+// ============================================================================
+const cv = document.getElementById('c');
+const gl = cv.getContext('webgl2', { antialias: false, alpha: false, preserveDrawingBuffer: true, powerPreference: 'high-performance' });
+if (!gl) throw new Error('WebGL2 required');
+cv.addEventListener('webglcontextlost', (e) => { console.log('CONTEXT LOST', e.statusMessage || ''); });
+if (!gl.getExtension('EXT_color_buffer_float')) throw new Error('EXT_color_buffer_float required');
+const LINF = !!gl.getExtension('OES_texture_float_linear');
+gl.getExtension('EXT_float_blend');
+
+function sh(type, src) {
+  const s = gl.createShader(type); gl.shaderSource(s, src); gl.compileShader(s);
+  if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) {
+    const log = gl.getShaderInfoLog(s) + (gl.isContextLost() ? ' [context lost]' : '');
+    const m = /0:(\d+)/.exec(log); const ln = m ? +m[1] : 0;
+    const ctx = src.split('\n').slice(Math.max(0, ln - 4), ln + 2).map((l, i) => (Math.max(0, ln - 4) + i + 1) + ': ' + l).join(' / ');
+    console.error(log + ' | ' + ctx);
+    throw new Error(log + ' | ' + ctx);
+  }
+  return s;
+}
+function prog(fs) {
+  const p = gl.createProgram();
+  gl.attachShader(p, sh(gl.VERTEX_SHADER, VS)); gl.attachShader(p, sh(gl.FRAGMENT_SHADER, fs));
+  gl.bindAttribLocation(p, 0, 'aPos'); gl.linkProgram(p);
+  if (!gl.getProgramParameter(p, gl.LINK_STATUS)) throw new Error(gl.getProgramInfoLog(p));
+  const u = {}; const n = gl.getProgramParameter(p, gl.ACTIVE_UNIFORMS);
+  for (let i = 0; i < n; i++) { const info = gl.getActiveUniform(p, i); const nm = info.name.replace(/\[0\]$/, ''); u[nm] = gl.getUniformLocation(p, info.name); }
+  return { p, u };
+}
+const vao = gl.createVertexArray(); gl.bindVertexArray(vao);
+const vb = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, vb);
+gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), gl.STATIC_DRAW);
+gl.enableVertexAttribArray(0); gl.vertexAttribPointer(0, 2, gl.FLOAT, false, 0, 0);
+function tex(w, h, ifmt, fmt, type, filt, data = null, wrap = gl.CLAMP_TO_EDGE) {
+  const t = gl.createTexture(); gl.bindTexture(gl.TEXTURE_2D, t);
+  gl.texImage2D(gl.TEXTURE_2D, 0, ifmt, w, h, 0, fmt, type, data);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, filt); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, filt === gl.LINEAR_MIPMAP_LINEAR ? gl.LINEAR : filt);
+  gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, wrap); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, wrap);
+  return t;
+}
+function fbo(t, t2) {
+  const f = gl.createFramebuffer(); gl.bindFramebuffer(gl.FRAMEBUFFER, f);
+  gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT0, gl.TEXTURE_2D, t, 0);
+  if (t2) { gl.framebufferTexture2D(gl.FRAMEBUFFER, gl.COLOR_ATTACHMENT1, gl.TEXTURE_2D, t2, 0); gl.drawBuffers([gl.COLOR_ATTACHMENT0, gl.COLOR_ATTACHMENT1]); }
+  return f;
+}
+function bindTex(unit, t) { gl.activeTexture(gl.TEXTURE0 + unit); gl.bindTexture(gl.TEXTURE_2D, t); }
+const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+async function gpuWait() { const f = gl.fenceSync(gl.SYNC_GPU_COMMANDS_COMPLETE, 0); gl.flush(); while (gl.getSyncParameter(f, gl.SYNC_STATUS) !== gl.SIGNALED) await sleep(1); gl.deleteSync(f); }
+async function tiled(f, W, H, tile, onTile) {
+  gl.bindFramebuffer(gl.FRAMEBUFFER, f); gl.viewport(0, 0, W, H); gl.enable(gl.SCISSOR_TEST);
+  let k = 0; const nT = Math.ceil(W / tile) * Math.ceil(H / tile);
+  for (let y = 0; y < H; y += tile) for (let x = 0; x < W; x += tile) {
+    gl.scissor(x, y, tile, tile); gl.drawArrays(gl.TRIANGLES, 0, 3);
+    await gpuWait();
+    onTile && onTile(++k / nT);
+  }
+  gl.disable(gl.SCISSOR_TEST);
+}
+
+// ============================================================================
+//  World generation
+// ============================================================================
+const PARAMS = {
+  mtnH: num('mtnH', 320), mtnL: num('mtnL', 520), vw: num('vw', 110),
+  K: num('K', 0.0022), mfd: num('mfd', 1.3), talus: num('talus', 1.8), thermal: num('thermal', 0.04), Kvalley: num('Kvalley', 0.25),
+  coastHard: num('coastHard', 0.08), eiters: num('eiters', 4000), rough: num('rough', 70), roughScale: num('roughScale', 300),
+  expo: num('expo', 1.0), sat: num('sat', 1.12), sharp: num('sharp', 0.3), contrast: num('contrast', 0.15), fog: num('fog', 0.00004),
+  sunAz: num('sunAz', -4), sunEl: num('sunEl', 45),
+  wind: num('wind', 9.5), waveScale: num('waveScale', 1.6), chop: num('chop', 1.55), swellH: num('swellH', 1.0),
+};
+// direction TO the sun: comes from the left (-x); sunAz rotates it toward the camera side (-z)
+const sunDir = (() => {
+  const a = PARAMS.sunAz * DEG, el = PARAMS.sunEl * DEG;
+  return [-Math.cos(el) * Math.cos(a), Math.sin(el), -Math.cos(el) * Math.sin(a)];
+})();
+
+const RECT = [-2400, -700, 4800]; // x0, z0, size (meters)
+const SPLR = [-1600, -200, 3200];  // erosion simulation domain (meters)
+const HRES = num('hres', 4096), CRES = 2048, ARES = 2048;
+const loadbar = document.getElementById('loadbar'), loadtxt = document.getElementById('loadtxt');
+const world = {};
+
+//@@COASTSDF@@
+
+async function generate() {
+  const T0 = performance.now();
+  const coast = buildCoastSegments();
+  const val = buildValleys();
+  world.coast = coast; world.val = val;
+  const filt = LINF ? gl.LINEAR : gl.NEAREST;
+  const setRect = (P, R) => gl.uniform4f(P.u.uRect, R[0], R[1], R[2], 1 / R[2]);
+  const setCoast = (P, unit = 0) => { bindTex(unit, world.coastTex); gl.uniform1i(P.u.uCoast, unit); gl.uniform4f(P.u.uCR, RECT[0], RECT[1], RECT[2], 1 / RECT[2]); };
+  // 1. coast SDF
+  loadtxt.textContent = 'Tracing coastline'; await sleep(0);
+  world.coastCPU = coastSDF(coast.segs, coast.n, CRES);
+  world.coastTex = tex(CRES, CRES, gl.R32F, gl.RED, gl.FLOAT, filt, world.coastCPU);
+  loadbar.style.width = '8%';
+  // 2. base massif (whole world + erosion domain)
+  const setBase = (P) => {
+    setCoast(P, 0);
+    gl.uniform4fv(P.u.uVS, val.S); gl.uniform4fv(P.u.uVP, val.P); gl.uniform1i(P.u.uNV, val.n);
+    gl.uniform4fv(P.u.uBZ, val.BZ); gl.uniform1i(P.u.uNBZ, val.nBZ);
+    gl.uniform4fv(P.u.uCH, val.CH); gl.uniform1i(P.u.uNCH, val.nCH);
+    gl.uniform4fv(P.u.uMS, val.MS); gl.uniform1i(P.u.uNMS, val.nMS);
+    gl.uniform1f(P.u.uMtnH, PARAMS.mtnH); gl.uniform1f(P.u.uMtnL, PARAMS.mtnL); gl.uniform1f(P.u.uVW, PARAMS.vw);
+  };
+  const BRES = 2048;
+  world.bTex = tex(BRES, BRES, gl.R32F, gl.RED, gl.FLOAT, filt);
+  const pb = prog(FS_BASE);
+  gl.useProgram(pb.p); setBase(pb); setRect(pb, RECT); gl.uniform2f(pb.u.uRes, BRES, BRES);
+  loadtxt.textContent = 'Raising the massif';
+  await tiled(fbo(world.bTex), BRES, BRES, 1024, null);
+  const EN = num('en', 1024), cellE = SPLR[2] / EN;
+  const ebT = tex(EN, EN, gl.R32F, gl.RED, gl.FLOAT, gl.NEAREST);
+  gl.useProgram(pb.p); setBase(pb); setRect(pb, SPLR); gl.uniform2f(pb.u.uRes, EN, EN);
+  await tiled(fbo(ebT), EN, EN, 1024, null);
+  loadbar.style.width = '12%';
+  // 3. fluvial erosion
+  loadtxt.textContent = 'Eroding valleys';
+  const eS = [tex(EN, EN, gl.RGBA32F, gl.RGBA, gl.FLOAT, gl.NEAREST), tex(EN, EN, gl.RGBA32F, gl.RGBA, gl.FLOAT, gl.NEAREST)];
+  const eF = eS.map((t) => fbo(t));
+  const pei = prog(FS_EINIT);
+  gl.useProgram(pei.p); setCoast(pei, 0);
+  bindTex(1, ebT); gl.uniform1i(pei.u.uBase, 1); gl.uniform4f(pei.u.uDom, SPLR[0], SPLR[1], SPLR[2], cellE); gl.uniform2f(pei.u.uRes, EN, EN);
+  gl.uniform1f(pei.u.uRough, PARAMS.rough); gl.uniform1f(pei.u.uRoughScale, PARAMS.roughScale);
+  gl.bindFramebuffer(gl.FRAMEBUFFER, eF[0]); gl.viewport(0, 0, EN, EN); gl.drawArrays(gl.TRIANGLES, 0, 3);
+  const pe = prog(FS_ERODE);
+  gl.useProgram(pe.p); gl.uniform4f(pe.u.uDom, SPLR[0], SPLR[1], SPLR[2], cellE);
+  setCoast(pe, 1);
+  gl.uniform1f(pe.u.uDt, 1); gl.uniform1f(pe.u.uK, PARAMS.K); gl.uniform1f(pe.u.uP, PARAMS.mfd);
+  gl.uniform1f(pe.u.uTalus, PARAMS.talus); gl.uniform1f(pe.u.uThermal, PARAMS.thermal); gl.uniform1f(pe.u.uKvalley, PARAMS.Kvalley); gl.uniform1f(pe.u.uCoastHard, PARAMS.coastHard);
+  gl.uniform4fv(pe.u.uVS, val.S); gl.uniform4fv(pe.u.uVP, val.P); gl.uniform1i(pe.u.uNV, val.n);
+  const TE = performance.now(), EIT = PARAMS.eiters;
+  for (let it = 0; it < EIT; it++) {
+    bindTex(0, eS[it & 1]); gl.uniform1i(pe.u.uS, 0);
+    gl.bindFramebuffer(gl.FRAMEBUFFER, eF[(it + 1) & 1]); gl.drawArrays(gl.TRIANGLES, 0, 3);
+    if (it % 40 === 39) { await gpuWait(); loadbar.style.width = (12 + 38 * it / EIT) + '%'; }
+  }
+  world.eTex = eS[EIT & 1];
+  gl.bindTexture(gl.TEXTURE_2D, world.eTex); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.LINEAR);
+  console.log('erosion ms', (performance.now() - TE).toFixed(0));
+  // (r9 terrain) valley fin fill on the eroded field (one cheap pass on the 1024^2 erosion grid)
+  // (r9m) vfsk (smooth-max width where a new fin meets an old spur) 20 -> 70 m: the notch between the west fin and the old spur at
+  //  x ~240, z ~1160 drew a dark slot with hard shadow strips in views 1 / 9; filled now. Read-back checked: CINE crosses no changed
+  //  ground, FPV >= 38 m over it (was 35.5), probe cameras unchanged.
+  if (num('vfill', 1) > 0) {
+    const vT = tex(EN, EN, gl.RGBA32F, gl.RGBA, gl.FLOAT, gl.LINEAR);
+    const pvf = prog(FS_VFILL);
+    gl.useProgram(pvf.p); bindTex(0, world.eTex); gl.uniform1i(pvf.u.uS, 0); gl.uniform4f(pvf.u.uDom, SPLR[0], SPLR[1], SPLR[2], cellE);
+    gl.uniform4f(pvf.u.uVF0, num('vfa', 40), num('vfb', 180), num('vfc', 480), num('vfd', 630)); gl.uniform4f(pvf.u.uVF1, num('vfh0', 110), num('vfh1', 55), num('vfhA', 120), num('vfhB', 330));   // (r12 valley) vfL 100 -> 130: lower, broader fin noses beside the floor (v5); vfh1 70 / vfhB 380 widened the floor but turned the v1 V floor into a round bowl
+    gl.uniform4f(pvf.u.uVF2, num('vfH', 160), num('vfL', 130), num('vfO', 260), num('vfg', .22)); gl.uniform4f(pvf.u.uVF3, num('vfkL', .6), num('vfkR', 1.2), num('vflL', 100), num('vflR', 150)); gl.uniform4f(pvf.u.uVF5, num('vfHo', 0), num('vfEa', 75), num('vfEb', 240), 0); gl.uniform4f(pvf.u.uVF4, num('vfpN', 3.5), num('vfpE', 150), num('vfsk', 70), num('vfsl', 1));
+    gl.uniform4f(pvf.u.uVF6, num('vfcT', .6), num('vfcR', 240), num('vfcK', 15), 0);   // (r10 terrain) spur cap (vfcT=0 off)
+    gl.uniform4f(pvf.u.uVF8, num('vbT', .9), num('vbR', 300), num('vbO', 300), num('vbG', 25));   // (r10 terrain) bench fill (vbT=0 off)
+    gl.uniform4f(pvf.u.uVF9, num('vwB', 40), num('vw0', 250), num('vw1', 400), num('vw2', 480));   // (r10 terrain) west wall raise (vwB=0 off)
+    gl.uniform4f(pvf.u.uVSA, num('vsA', 60), num('vsL', 120), num('vsK', 1.1), num('vsP', .72)); gl.uniform4f(pvf.u.uVSB, num('vsb0', 140), num('vsb1', 260), num('vsb2', 520), num('vsb3', 680));   // (r12 valley) west-wall facets (vsA=0 off)
+    gl.uniform4f(pvf.u.uVSC, num('vsH', 320), num('vsh0', 620), num('vsh1', 960), num('vshw', 250));   // (r12 valley) valley head (vsH=0 off)
+    gl.uniform4f(pvf.u.uVF7, num('upA', .05), num('upB', 70), num('up0', 250), num('up1', 800)); setCoast(pvf, 1);   // (r10 terrain) inland raise (upA=upB=0 off)
+    gl.bindFramebuffer(gl.FRAMEBUFFER, fbo(vT)); gl.viewport(0, 0, EN, EN); gl.drawArrays(gl.TRIANGLES, 0, 3);
+    await gpuWait();
+    world.eTex = vT;
+  }
+  // 4. final height
+  loadtxt.textContent = 'Sculpting cliffs';
+  world.hTex = tex(HRES, HRES, gl.R32F, gl.RED, gl.FLOAT, filt);
+  const ph = prog(FS_HEIGHT);
+  gl.useProgram(ph.p); setCoast(ph, 0); setRect(ph, RECT); gl.uniform2f(ph.u.uRes, HRES, HRES);
+  bindTex(1, world.bTex); gl.uniform1i(ph.u.uB, 1); bindTex(2, world.eTex); gl.uniform1i(ph.u.uE, 2);
+  gl.uniform4f(ph.u.uDom, SPLR[0], SPLR[1], SPLR[2], cellE);
+  gl.uniform4f(ph.u.uER0, num('erA', 10), num('erS', 56), num('erB', 1), num('erO', 3)); gl.uniform4f(ph.u.uER1, num('ers0', .35), num('ers1', 1), num('erP', 1), num('erC', .5)); gl.uniform4f(ph.u.uER2, num('erhK', .4), num('erh0', 1.6), num('erh1', 3), num('erG', .7)); gl.uniform4f(ph.u.uER3, num('erc0', 0), num('erc1', 10), num('erkP', 1), num('erkN', .7));   // (r10 terrain) erosion flutes (erO=0 off)
+  gl.uniform4fv(ph.u.uSH, val.SH); gl.uniform1i(ph.u.uNSH, val.nSH);
+  gl.uniform4f(ph.u.uWT, num('wt0', 1), num('wt1', 12.5), num('wt2', 9), num('wt3', .85));   // (r13 fix) west bay reef terrace (wt0=0: r13m floor)
+  await tiled(fbo(world.hTex), HRES, HRES, 512, (f) => loadbar.style.width = (50 + f * 25) + '%');
+  // 5. attributes
+  loadtxt.textContent = 'Measuring light and water';
+  world.aTex = tex(ARES, ARES, gl.RGBA16F, gl.RGBA, gl.HALF_FLOAT, gl.LINEAR);
+  const pa = prog(FS_ATTR);
+  gl.useProgram(pa.p); setCoast(pa, 0); setRect(pa, RECT); gl.uniform2f(pa.u.uRes, ARES, ARES);
+  bindTex(1, world.hTex); gl.uniform1i(pa.u.uH, 1); bindTex(2, world.eTex); gl.uniform1i(pa.u.uE, 2);
+  gl.uniform4f(pa.u.uDom, SPLR[0], SPLR[1], SPLR[2], cellE);
+  await tiled(fbo(world.aTex), ARES, ARES, 512, (f) => loadbar.style.width = (75 + f * 15) + '%');
+  // 6. vegetation / materials
+  loadtxt.textContent = 'Growing rainforest';
+  world.vTex = tex(ARES, ARES, gl.RGBA8, gl.RGBA, gl.UNSIGNED_BYTE, gl.LINEAR);
+  const pv = prog(FS_VEG);
+  gl.useProgram(pv.p); setCoast(pv, 0); setRect(pv, RECT); gl.uniform2f(pv.u.uRes, ARES, ARES);
+  bindTex(1, world.hTex); gl.uniform1i(pv.u.uH, 1); bindTex(2, world.aTex); gl.uniform1i(pv.u.uA, 2);
+  gl.uniform4fv(pv.u.uBZ, val.BZ); gl.uniform1i(pv.u.uNBZ, val.nBZ);
+  await tiled(fbo(world.vTex), ARES, ARES, 1024, null);
+  loadbar.style.width = '95%';
+  console.log('generate ms', (performance.now() - T0).toFixed(0));
+}
+
+// ============================================================================
+//  FFT ocean
+// ============================================================================
+const ocean = { L: [num('oL0', 1013), num('oL1', 137.3), num('oL2', 19.7)], c: [] };
+function oceanInit() {
+  const N = OCEAN_N;
+  ocean.pSpec = prog(FS_OSPEC); ocean.pEvo = prog(FS_OEVOLVE); ocean.pFFT = prog(FS_OFFT); ocean.pFin = prog(FS_OFINAL);
+  const L = ocean.L;
+  const kb = [0, 2 * Math.PI / 60, 2 * Math.PI / 7.5, 1e9];
+  const windAng = Math.atan2(world.coast.inland[1], world.coast.inland[0]) + 0.35;
+  const swellAng = Math.atan2(world.coast.inland[1], world.coast.inland[0]) - 0.12;
+  for (let c = 0; c < 3; c++) {
+    const C = {};
+    C.h0 = tex(N, N, gl.RGBA32F, gl.RGBA, gl.FLOAT, gl.NEAREST);
+    gl.useProgram(ocean.pSpec.p);
+    const u = ocean.pSpec.u;
+    gl.uniform1f(u.uL, L[c]); gl.uniform1f(u.uKmin, kb[c]); gl.uniform1f(u.uKmax, kb[c + 1]);
+    gl.uniform1f(u.uWind, PARAMS.wind); gl.uniform1f(u.uWindAng, windAng); gl.uniform1f(u.uGamma, 3.3);
+    gl.uniform1f(u.uScale, PARAMS.waveScale); gl.uniform1f(u.uSeed, 17.3 + c * 31.7);
+    gl.uniform4f(u.uSwell, swellAng, 160, c === 0 ? 0.0035 * PARAMS.swellH : 0, 0.18);
+    gl.bindFramebuffer(gl.FRAMEBUFFER, fbo(C.h0)); gl.viewport(0, 0, N, N); gl.drawArrays(gl.TRIANGLES, 0, 3);
+    C.ping = [0, 1].map(() => [tex(N, N, gl.RGBA32F, gl.RGBA, gl.FLOAT, gl.NEAREST), tex(N, N, gl.RGBA32F, gl.RGBA, gl.FLOAT, gl.NEAREST)]);
+    C.pf = C.ping.map((pp) => fbo(pp[0], pp[1]));
+    C.disp = tex(N, N, gl.RGBA16F, gl.RGBA, gl.HALF_FLOAT, gl.LINEAR_MIPMAP_LINEAR, null, gl.REPEAT);
+    C.slope = tex(N, N, gl.RGBA16F, gl.RGBA, gl.HALF_FLOAT, gl.LINEAR_MIPMAP_LINEAR, null, gl.REPEAT);
+    const AF = gl.getExtension('EXT_texture_filter_anisotropic');
+    for (const t of [C.disp, C.slope]) { gl.bindTexture(gl.TEXTURE_2D, t); gl.generateMipmap(gl.TEXTURE_2D); if (AF) gl.texParameterf(gl.TEXTURE_2D, AF.TEXTURE_MAX_ANISOTROPY_EXT, Math.max(1, Math.min(num('oaf', 8), gl.getParameter(AF.MAX_TEXTURE_MAX_ANISOTROPY_EXT)))); }
+    C.ff = fbo(C.disp, C.slope);
+    ocean.c.push(C);
+  }
+}
+function oceanUpdate(t) {
+  const N = OCEAN_N, logN = Math.log2(N);
+  gl.viewport(0, 0, N, N);
+  for (let c = 0; c < 3; c++) {
+    const C = ocean.c[c];
+    gl.useProgram(ocean.pEvo.p); bindTex(0, C.h0); gl.uniform1i(ocean.pEvo.u.uH0, 0);
+    gl.uniform1f(ocean.pEvo.u.uL, ocean.L[c]); gl.uniform1f(ocean.pEvo.u.uT, t);
+    gl.bindFramebuffer(gl.FRAMEBUFFER, C.pf[0]); gl.drawArrays(gl.TRIANGLES, 0, 3);
+    let src = 0;
+    gl.useProgram(ocean.pFFT.p); gl.uniform1i(ocean.pFFT.u.uA, 0); gl.uniform1i(ocean.pFFT.u.uB, 1);
+    for (let dir = 0; dir < 2; dir++) for (let s = 0; s < logN; s++) {
+      bindTex(0, C.ping[src][0]); bindTex(1, C.ping[src][1]);
+      gl.uniform1f(ocean.pFFT.u.uSub, Math.pow(2, s + 1)); gl.uniform1i(ocean.pFFT.u.uDir, dir);
+      gl.bindFramebuffer(gl.FRAMEBUFFER, C.pf[1 - src]); gl.drawArrays(gl.TRIANGLES, 0, 3);
+      src = 1 - src;
+    }
+    gl.useProgram(ocean.pFin.p); bindTex(0, C.ping[src][0]); bindTex(1, C.ping[src][1]);
+    gl.uniform1i(ocean.pFin.u.uA, 0); gl.uniform1i(ocean.pFin.u.uB, 1); gl.uniform1f(ocean.pFin.u.uChop, PARAMS.chop);
+    gl.bindFramebuffer(gl.FRAMEBUFFER, C.ff); gl.drawArrays(gl.TRIANGLES, 0, 3);
+    for (const tx of [C.disp, C.slope]) { gl.bindTexture(gl.TEXTURE_2D, tx); gl.generateMipmap(gl.TEXTURE_2D); }
+  }
+}
+
+// ============================================================================
+//  Rendering
+// ============================================================================
+let R = null;
+let pr, pp, pbr, pbl;
+function resize(w, h) {
+  if (R && R.w === w && R.h === h) return;
+  R = { w, h, acc: tex(w, h, gl.RGBA32F, gl.RGBA, gl.FLOAT, LINF ? gl.LINEAR : gl.NEAREST) };
+  R.f = fbo(R.acc); R.n = 0;
+  const bw = Math.max(1, w >> 2), bh = Math.max(1, h >> 2);
+  R.b = [0, 1].map(() => tex(bw, bh, gl.RGBA16F, gl.RGBA, gl.HALF_FLOAT, gl.LINEAR)); R.bf = R.b.map((t) => fbo(t)); R.bw = bw; R.bh = bh;
+}
+function camMatrix(yaw, pitch, roll = 0) {
+  const { r, u, f } = camBasis(yaw, pitch);
+  const cr = Math.cos(roll), sr = Math.sin(roll);
+  const r2 = r.map((v, i) => v * cr + u[i] * sr), u2 = u.map((v, i) => u[i] * cr - r[i] * sr);
+  return new Float32Array([...r2, ...u2, ...f]);
+}
+function basisMatrix(r, u, f) { return new Float32Array([...r, ...u, ...f]); }
+function renderSample(cam, time, jit, oceanReady) {
+  if (!oceanReady) oceanUpdate(time);
+  gl.bindFramebuffer(gl.FRAMEBUFFER, R.f); gl.viewport(0, 0, R.w, R.h);
+  gl.useProgram(pr.p);
+  const u = pr.u;
+  bindTex(0, world.hTex); gl.uniform1i(u.uH, 0);
+  bindTex(1, world.aTex); gl.uniform1i(u.uA, 1);
+  bindTex(2, world.coastTex); gl.uniform1i(u.uCoast, 2);
+  bindTex(3, world.vTex); gl.uniform1i(u.uV, 3);
+  for (let c = 0; c < 3; c++) { bindTex(4 + c, ocean.c[c].disp); gl.uniform1i(u['uOD' + c], 4 + c); bindTex(7 + c, ocean.c[c].slope); gl.uniform1i(u['uOS' + c], 7 + c); }
+  gl.uniform3f(u.uOL, ocean.L[0], ocean.L[1], ocean.L[2]); gl.uniform1f(u.uOAmp, 1);
+  gl.uniform4f(u.uRect, RECT[0], RECT[1], RECT[2], 1 / RECT[2]);
+  gl.uniform4f(u.uCR, RECT[0], RECT[1], RECT[2], 1 / RECT[2]);
+  gl.uniform3fv(u.uRo, cam.pos); gl.uniformMatrix3fv(u.uCam, false, cam.mat);
+  gl.uniform1f(u.uTan, Math.tan(cam.vfov / 2)); gl.uniform2f(u.uRes, R.w, R.h); gl.uniform2f(u.uJit, jit[0], jit[1]);
+  gl.uniform1f(u.uTime, time); gl.uniform3fv(u.uSun, sunDir); gl.uniform1f(u.uHmax, 1100); gl.uniform1f(u.uFog, PARAMS.fog);
+  gl.uniform2f(u.uShore, world.coast.inland[0], world.coast.inland[1]); gl.uniform1i(u.uDbgM, num('dbgm', 0));
+  gl.uniform4f(u.uWK, num('wk0', .3), num('wk1', 1), num('wk2', .5), num('wk3', 30)); gl.uniform4f(u.uWK2, num('wk4', .6), num('wk5', .5), num('wk6', 1), num('wk7', .5)); /* (r12 fix) wk7 0 -> .5: the exposed-shelf bed fades into the navy within ~8-20 m (v9's cyan halo round the coast narrower; 1 thinned v1's bay turquoise too much) */ gl.uniform4f(u.uWK3, num('wk8', .6), num('wk9', .5), num('wk10', .3), num('wk11', 1)); gl.uniform4f(u.uWK4, num('wk12', 1), num('wk13', 1.133), num('wk14', .25), num('wk15', 0)); gl.uniform4f(u.uWK5, num('wk16', 1), num('wk17', 1), num('wk18', 1), num('wk19', 1)); gl.uniform4f(u.uWK6, num('wk20', 1), num('wk21', 1), num('wk22', 1), num('wk23', 1)); gl.uniform4f(u.uWK7, num('wk24', 1), num('wk25', 1.45), num('wk26', 1), num('wk27', 0)); gl.uniform4f(u.uWK8, num('wk28', .8), num('wk29', .5), num('wk30', 1), num('wk31', 1)); gl.uniform4f(u.uWK9, num('wk32', .7), num('wk33', .6), num('wk34', 0), num('wk35', 1)); gl.uniform4f(u.uWK10, num('wk36', 1), num('wk37', 175), num('wk38', 1), num('wk39', 1)); gl.uniform4f(u.uWK11, num('wk40', 1), num('wk41', 1), num('wk42', 1), num('wk43', 1)); gl.uniform4f(u.uWK12, num('wk44', 1), num('wk45', 1), num('wk46', 1), num('wk47', 1)); gl.uniform4f(u.uWT, num('wt0', 1), num('wt1', 12.5), num('wt2', 9), num('wt3', .85));   /* (r13w) water knobs, all 0 (and wk8 .45) = r12f; wk8 .45 -> .6: the v3 churn foam share lost to the sectioned bores (wk46) */   /* (r12w) all 0 (wk37 any) = r11f */   /* (r11 fix) collar breakup, solid-core onset, reef flat patches from the air, collar width kept; all 0 = r11m */   /* (r11w) water knobs: defaults = the r11 look; wk16..wk24 = 0 & wk25 = 1 & wk26 = 0 gives r10f. wk27 = debug bit mask of foam sources */   // (r10w) water knobs   (r10m) wk10 1 -> .3: the churn streaks (stretched along the swell, which here runs along the view) read as vertical paint drips fanning to the vanishing point; wk8 .08 -> 0: shorter streaks cover more, so no extra churn density (v3 water L* 35/52/91, L>60 42.2 %; photo 30/52/90, 42.5 %)   (r12 merge) wk8 .35 -> .45: v3 foam share (L*>60, lower half) 39 -> 44 % (photo 43 %), water in the holes 44/87/113 -> 47/90/116 (photo 47/84/105); only the churned surf seen from a boat changes
+  gl.enable(gl.BLEND); gl.blendFunc(gl.ONE, gl.ONE);
+  const bands = Math.max(1, Math.ceil(R.w * R.h / (num("bandpx", 15000))));
+  if (bands > 1) gl.enable(gl.SCISSOR_TEST);
+  for (let b = 0; b < bands; b++) {
+    const y0 = Math.floor(R.h * b / bands), y1 = Math.floor(R.h * (b + 1) / bands);
+    if (bands > 1) gl.scissor(0, y0, R.w, y1 - y0);
+    gl.drawArrays(gl.TRIANGLES, 0, 3);
+    if (bands > 1) gl.flush();
+  }
+  gl.disable(gl.SCISSOR_TEST); gl.disable(gl.BLEND);
+  R.n++;
+}
+const LOOK = { lens: 0, ca: 0, grain: 0 };
+let frameNo = 0;
+function present(withHud = false) {
+  // bloom
+  gl.useProgram(pbr.p); bindTex(0, R.acc); gl.uniform1i(pbr.u.uAcc, 0); gl.uniform1f(pbr.u.uInvN, 1 / Math.max(R.n, 1)); gl.uniform2f(pbr.u.uRes, R.bw, R.bh);
+  gl.bindFramebuffer(gl.FRAMEBUFFER, R.bf[0]); gl.viewport(0, 0, R.bw, R.bh); gl.drawArrays(gl.TRIANGLES, 0, 3);
+  gl.useProgram(pbl.p); gl.uniform1i(pbl.u.uT, 0); gl.uniform2f(pbl.u.uRes, R.bw, R.bh);
+  for (let i = 0; i < 2; i++) {
+    bindTex(0, R.b[0]); gl.uniform2f(pbl.u.uDir, 1 + i * 2, 0); gl.bindFramebuffer(gl.FRAMEBUFFER, R.bf[1]); gl.drawArrays(gl.TRIANGLES, 0, 3);
+    bindTex(0, R.b[1]); gl.uniform2f(pbl.u.uDir, 0, 1 + i * 2); gl.bindFramebuffer(gl.FRAMEBUFFER, R.bf[0]); gl.drawArrays(gl.TRIANGLES, 0, 3);
+  }
+  gl.bindFramebuffer(gl.FRAMEBUFFER, null); gl.viewport(0, 0, cv.width, cv.height);
+  gl.useProgram(pp.p); bindTex(0, R.acc); gl.uniform1i(pp.u.uAcc, 0); bindTex(1, R.b[0]); gl.uniform1i(pp.u.uBloom, 1);
+  gl.uniform1f(pp.u.uInvN, 1 / Math.max(R.n, 1)); gl.uniform2f(pp.u.uRes, R.w, R.h); gl.uniform2f(pp.u.uOut, cv.width, cv.height);
+  gl.uniform1f(pp.u.uExpo, PARAMS.expo); gl.uniform1f(pp.u.uSat, PARAMS.sat); gl.uniform1f(pp.u.uSharp, PARAMS.sharp); gl.uniform1f(pp.u.uContrast, PARAMS.contrast);
+  gl.uniform1f(pp.u.uLens, LOOK.lens); gl.uniform1f(pp.u.uCA, LOOK.ca); gl.uniform1f(pp.u.uGrain, LOOK.grain); gl.uniform1f(pp.u.uFrame, frameNo++ % 1000);
+  const useHud = withHud && hudTex; gl.uniform1f(pp.u.uHudOn, useHud ? 1 : 0); if (useHud) { bindTex(2, hudTex); gl.uniform1i(pp.u.uHud, 2); }
+  gl.drawArrays(gl.TRIANGLES, 0, 3);
+}
+function clearAcc() { gl.bindFramebuffer(gl.FRAMEBUFFER, R.f); gl.clearColor(0, 0, 0, 0); gl.clear(gl.COLOR_BUFFER_BIT); R.n = 0; }
+const jitter = (i) => [((0.5 + i * 0.7548776662) % 1) - 0.5, ((0.5 + i * 0.5698402909) % 1) - 0.5];
+async function postFrame(i) {
+  const w = cv.width, h = cv.height, px = new Uint8Array(w * h * 4);
+  gl.bindFramebuffer(gl.FRAMEBUFFER, null); gl.readPixels(0, 0, w, h, gl.RGBA, gl.UNSIGNED_BYTE, px);
+  await fetch('/frame?w=' + w + '&h=' + h + '&i=' + i, { method: 'POST', body: px });
+}
+function stillCam() {
+  if (Q.get('view') === 'top') return { pos: [num('tx', -100), num('ty', 4200), num('tz', 1150)], mat: camMatrix(0, 89.999 * DEG), vfov: num('tfov', 30) * DEG };
+  if (Q.has('cx')) return { pos: [num('cx', 0), num('cy', 50), num('cz', 0)], mat: camMatrix(num('cyaw', 0) * DEG, num('cpitch', 20) * DEG), vfov: num('cfov', 60) * DEG };
+  return { pos: [0, STILL.h, 0], mat: camMatrix(0, STILL.pitch), vfov: STILL.vfov };
+}
+
+// ============================================================================
+//  FPV flight
+// ============================================================================
+//@@FLIGHT@@
+
+// (r9 terrain) URL hdump=1&hi=I&hj=J: offline height read-back. The canvas (W x H) gets hTex texels [I, I+W) x [J, J+H/2)
+// in its lower half and massif() (eroded field before landH) of the same texels in its upper half, as 24-bit
+// (h+200)*1000 in RGB. Generation only: no render shader, no ray march (GPU-cheap).
+async function hdumpPass() {
+  const P = prog(GLSL_COMMON + TERRAIN_FUNCS + `
+uniform sampler2D uH, uB, uE; uniform vec4 uRect, uDom; uniform ivec2 uOff; uniform int uHalf; uniform float uHres;
+out vec4 o;
+float massif(vec2 p){
+  float b=textureLod(uB,(p-uRect.xy)*uRect.w,0.).r;
+  vec2 uv=(p-uDom.xy)/uDom.z;
+  float m=smoothstep(0.,.05,min(min(uv.x,uv.y),min(1.-uv.x,1.-uv.y)));
+  return m>0.?mix(b,texBicubic(uE,uv).r,m):b;
+}
+void main(){
+  ivec2 ic=ivec2(gl_FragCoord.xy); bool top=ic.y>=uHalf; if(top) ic.y-=uHalf;
+  ivec2 t=ic+uOff;
+  float v=top?massif(uRect.xy+(vec2(t)+.5)*uRect.z/uHres):texelFetch(uH,t,0).r;
+  float q=floor(clamp((v+200.)*1000.,0.,16777215.));
+  float r=floor(q/65536.), g=floor((q-r*65536.)/256.), b=q-r*65536.-g*256.;
+  o=vec4(r,g,b,255.)/255.;
+}`);
+  gl.useProgram(P.p);
+  bindTex(0, world.hTex); gl.uniform1i(P.u.uH, 0); bindTex(1, world.bTex); gl.uniform1i(P.u.uB, 1); bindTex(2, world.eTex); gl.uniform1i(P.u.uE, 2);
+  gl.uniform4f(P.u.uRect, RECT[0], RECT[1], RECT[2], 1 / RECT[2]); gl.uniform4f(P.u.uDom, SPLR[0], SPLR[1], SPLR[2], SPLR[2] / num('en', 1024));
+  gl.uniform2i(P.u.uOff, num('hi', 0), num('hj', 0)); gl.uniform1i(P.u.uHalf, cv.height >> 1); gl.uniform1f(P.u.uHres, HRES);
+  gl.bindFramebuffer(gl.FRAMEBUFFER, null); gl.viewport(0, 0, cv.width, cv.height); gl.drawArrays(gl.TRIANGLES, 0, 3);
+}
+async function main() {
+  if (Q.has('hdump')) { cv.width = Math.round(innerWidth); cv.height = Math.round(innerHeight); await generate(); hdumpPass(); await gpuWait(); window.__ready = true; await postFrame(0); return; }
+  const TC0 = performance.now();
+  pr = prog(FS_RENDER); pp = prog(FS_POST); pbr = prog(FS_BRIGHT); pbl = prog(FS_BLUR);
+  console.log('render compiled ms', (performance.now() - TC0).toFixed(0));
+  await generate();
+  oceanInit();
+  cv.width = Math.round(innerWidth); cv.height = Math.round(innerHeight);
+  const RS = num('rs', 1); resize(Math.round(cv.width * RS), Math.round(cv.height * RS));
+  if (MODE === 'still') document.getElementById('load').remove();
+  else { document.getElementById('load').style.opacity = 0; setTimeout(() => document.getElementById('load').remove(), 700); }
+  if (MODE === 'still') {
+    const spp = num('spp', 16); const TR = performance.now();
+    const cam = stillCam(), t = num('t', 3.0);
+    oceanUpdate(t);
+    clearAcc();
+    for (let i = 0; i < spp; i++) {
+      renderSample(cam, t, spp > 1 ? jitter(i) : [0, 0], true);
+      await gpuWait();   // never queue more than one sample of GPU work
+    }
+    present();
+    await gpuWait();
+    console.log('render done ms', (performance.now() - TR).toFixed(0));
+    window.__ready = true;
+    if (Q.has('post')) await postFrame(0);
+  } else {
+    await readGround();
+    startDrone();
+  }
+}
+main().catch((e) => { console.error(e.stack || e); if (Q.has('post')) fetch('/log', { method: 'POST', body: 'FATAL ' + e.message }); const lt = document.getElementById('loadtxt'); if (lt) lt.textContent = 'Error: ' + e.message; });
+</script>
+</body>
+</html>

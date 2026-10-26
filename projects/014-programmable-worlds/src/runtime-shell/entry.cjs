@@ -46,6 +46,11 @@ else if (process.argv.includes('--world-hub-wrapup-qa')) {
   const config=require('./renderer-config.json');
   require(path.join(config.workspaceDirectory,'projects','014-programmable-worlds','src','runtime-shell','world-hub-wrapup-qa.cjs'));
 }
+else if (process.argv.includes('--napali-template-qa')) {
+  const path=require('node:path');
+  const config=require('./renderer-config.json');
+  require(path.join(config.workspaceDirectory,'templates','napali-scene','tools','electron-acceptance.cjs'));
+}
 else if (process.argv.includes('--lijiang-native-bridge')) require('./lijiang-native-bridge-main.cjs');
 else if (process.argv.includes('--source-bridge')) require('./source-bridge-main.cjs');
 else require('./main.cjs');

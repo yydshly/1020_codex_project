@@ -1,0 +1,10 @@
+{
+  "schema": "napali-scene-v1",
+  "id": "coast-light-study",
+  "title": "海岸光照练习 · 参数变体",
+  "description": "同一原作海岸的参数练习：仅改变光向、曝光与风浪，不是新的场景作品。",
+  "params": { "sunEl": 32, "sunAz": -30, "expo": 1.02, "wind": 8, "waveScale": 1.3 },
+  "render": { "scale": 0.5, "autoQuality": true, "startTime": 35 },
+  "camera": {},
+  "geometry": null
+}

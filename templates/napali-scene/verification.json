@@ -1,0 +1,75 @@
+{
+  "date": "2026-10-27",
+  "status": "baseline-functional-acceptance-passed",
+  "template": "templates/napali-scene",
+  "upstreamCommit": "4afb7c3a1aad3d0203193100305c46607134d0f5",
+  "vendorFilesVerified": 21,
+  "unitContractsPassed": 5,
+  "browserChecks": [
+    {
+      "name": "explicit-start-desktop-mobile-and-hidden-window",
+      "passed": true
+    },
+    {
+      "name": "full-baseline-actual-world-and-frames",
+      "passed": true
+    },
+    {
+      "name": "driving-time-quality-and-route-diagnostic",
+      "passed": true
+    },
+    {
+      "name": "stop-unloads-and-window-remains-hidden",
+      "passed": true
+    },
+    {
+      "name": "real-embed-module-postmessage-visibility-and-disposal",
+      "passed": true
+    }
+  ],
+  "hardware": {
+    "renderer": "ANGLE (NVIDIA Corporation, NVIDIA GeForce RTX 4070 Laptop GPU/PCIe/SSE2, OpenGL 4.5.0)",
+    "backend": "ANGLE OpenGL",
+    "evidence": "Runtime graphics-context console output"
+  },
+  "worldGeneration": {
+    "hres": 4096,
+    "erosionGrid": 1024,
+    "erosionIterations": 4000,
+    "shaderTemplatesUnchanged": true
+  },
+  "renderScope": {
+    "viewport": [
+      640,
+      480
+    ],
+    "initialScale": 0.5,
+    "firstFramePixels": [
+      313,
+      240
+    ],
+    "completedFrames": 5,
+    "fullScreenPerformanceAccepted": false
+  },
+  "reuse": [
+    "complete procedural renderer",
+    "bounded parameters",
+    "external geometry data",
+    "independent cinematic camera keys",
+    "standalone static build",
+    "same-origin embed lifecycle",
+    "next-chat instructions"
+  ],
+  "boundaries": [
+    "Light/camera examples are variations of the same source coast, not independent works.",
+    "New terrain themes and routes require independent visual and performance acceptance.",
+    "First compilation depends on GPU/backend; a browser test on Intel D3D11 stalled and was stopped; the complete baseline passed on the established RTX 4070 OpenGL host.",
+    "Existing canal and Lijiang scenes were not rebuilt."
+  ],
+  "evidenceSHA256": {
+    "electron-acceptance.json": "50a1aab299522c34e0a19ac8387e7cf2ce728b01cec7c33c5e69cb4b719cc7af",
+    "launcher-desktop.png": "cb629f9242d2587299de67a70efe5c229ed5b088b288fb5c9543ea4f79cbf510",
+    "launcher-mobile.png": "a488238fc49173a8a27d4fca2c5e55793b531984f5c4fe7e4a678e2adc9dc804",
+    "runtime-driven.png": "61c428781a8b2b1e6fd92248096eb6052edc689d0eac6bbc6ec1d617e4f37ae9"
+  }
+}

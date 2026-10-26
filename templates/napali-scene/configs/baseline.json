@@ -1,0 +1,16 @@
+{
+  "schema": "napali-scene-v1",
+  "id": "napali-baseline",
+  "title": "Na Pali · 可复用基线",
+  "description": "完整保留源库的海岸、侵蚀、森林、FFT 海浪、天空、光照与电影镜头。此版本是原作基线，不代表新题材已完成。",
+  "params": {
+    "mtnH": 320, "mtnL": 520, "vw": 110,
+    "K": 0.0022, "eiters": 4000, "en": 1024, "hres": 4096,
+    "treeDens": 1.7, "vegRange": 2600,
+    "wind": 9.5, "waveScale": 1.6, "chop": 1.55,
+    "fog": 0.0002, "sunEl": 44, "sunAz": -15, "expo": 1.04, "sat": 1, "spp": 16
+  },
+  "render": { "scale": 0.5, "autoQuality": true, "startTime": 0 },
+  "camera": {},
+  "geometry": null
+}
