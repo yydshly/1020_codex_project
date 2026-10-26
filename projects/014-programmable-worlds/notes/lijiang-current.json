@@ -82,5 +82,13 @@
   "currentScopeComplete": true,
   "futureProductsEntry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?revision=20261026-map-1#future-products",
   "understandingEntry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?revision=20261026-map-1#understanding",
-  "projectMapEntry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/map.html?revision=20261026-map-1"
+  "projectMapEntry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/map.html?revision=20261026-map-1",
+  "publicRelease": {
+    "site": "https://yydshly.github.io/1020_codex_project/projects/014-programmable-worlds/",
+    "siteCommit": "7c3148838c92ebe2431dd4221654422a97f1e7d2",
+    "imageArchiveCommit": "0e430bf7f464582764c32db17f7765bc800f4b15",
+    "deployWorkflow": "https://github.com/yydshly/1020_codex_project/actions/runs/40362250453",
+    "status": "passed",
+    "record": "published-browser-acceptance-20261027.json"
+  }
 }

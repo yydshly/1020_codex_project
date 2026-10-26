@@ -1,0 +1,356 @@
+{
+  "schema": "programmable-worlds-publication-acceptance-v1",
+  "status": "passed",
+  "recordedAt": "2026-10-26T16:55:11.282463+00:00",
+  "site": "https://yydshly.github.io/1020_codex_project/projects/014-programmable-worlds/",
+  "siteCommit": "7c3148838c92ebe2431dd4221654422a97f1e7d2",
+  "imageArchiveCommit": "0e430bf7f464582764c32db17f7765bc800f4b15",
+  "deployWorkflow": "https://github.com/yydshly/1020_codex_project/actions/runs/40362250453",
+  "deployConclusion": "success",
+  "catalogProjects": 16,
+  "unitTestsPassed": 15,
+  "siteLocalMirrorBytes": 995938939,
+  "summary": [
+    "原作：代码生成海岸地形、侵蚀、森林、海浪、天空与光照。",
+    "我们的效果：老街窗景、独立船坞车站、漓江晨航三处不同空间。",
+    "流程：确认约束→固定模板→有界求解→独立验证；完整自动管线尚未实现。"
+  ],
+  "staticPublicBrowser": {
+    "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-world-hub-wrapup\\2026-10-26T16-50-10-904Z\\result.json",
+    "checksPassed": 10,
+    "tests": [
+      {
+        "name": "release-three-summary-cards-four-step-process-and-honest-boundaries",
+        "passed": true
+      },
+      {
+        "name": "release-summary-links-navigate-without-starting-scenes",
+        "passed": true
+      },
+      {
+        "name": "release-original-entry-and-API-remain-local-only",
+        "passed": true
+      },
+      {
+        "name": "release-five-original-reference-images-switch-and-decode",
+        "passed": true
+      },
+      {
+        "name": "release-three-future-reference-images-actually-decode",
+        "passed": true
+      },
+      {
+        "name": "release-desktop-1440x900-and-mobile-390x844-summary-layout",
+        "passed": true
+      },
+      {
+        "name": "release-reading-preview-decode-zoom-chapter-and-archive-HEAD-only",
+        "passed": true
+      },
+      {
+        "name": "release-static-only-no-local-bridge-no-3D-start",
+        "passed": true
+      },
+      {
+        "name": "owned-hidden-content-page-unloaded",
+        "passed": true
+      },
+      {
+        "name": "page-freeze-and-accepted-M8-3D-source-preserved",
+        "passed": true
+      }
+    ],
+    "summary": {
+      "href": "https://yydshly.github.io/1020_codex_project/projects/014-programmable-worlds/?revision=7c31488#research-summary",
+      "heading": "原作给了启发，探索留下了一套制作流程。",
+      "cards": [
+        {
+          "heading": "Na Pali · 程序化海岸",
+          "text": "原作效果Na Pali · 程序化海岸Leon Lin 用代码生成地形、侵蚀、森林、海浪、天空和光照，再以航线与镜头组织观看。它是针对特定风景持续调校的完整作品，提供技术与创意参考。看原作画面、原理与来源 ↓",
+          "link": "#source"
+        },
+        {
+          "heading": "三个空间，三种参与方式",
+          "text": "我们的成果三个空间，三种参与方式老街窗景用于停留与观察，独立船坞车站提供呼船、靠泊和去留选择，漓江晨航支持航线、自由驾驶与画质调节。运河作品采用有来源素材，漓江由代码生成。进入已有场景 ↓",
+          "link": "#overview"
+        },
+        {
+          "heading": "把试改变成受约束的制作",
+          "text": "沉淀的流程把试改变成受约束的制作确认约束 → 固定模板 → 有界求解 → 独立验证。先锁定构图、尺度、素材和已认可模块，在限定参数与计算预算内迭代，再以多视角、连续运动、操作和性能验收。展开四步流程 ↓",
+          "link": "#controlled-process"
+        }
+      ],
+      "boundary": "现有代码与检查机制可以复用，完整自动拟合管线尚未实现。三种后期乘船方向仍是候选；以实际用途与可验证的质量、效率或体验增量决定下一步。",
+      "process": {
+        "heading": "确认约束 → 固定模板 → 有界求解 → 独立验证。",
+        "text": "确认约束 → 固定模板 → 有界求解 → 独立验证。建议沉淀的能力 · 尚未完整实现我们已有部分固定规则、参数和验收机制，尚未整合成下面这套自动系统。可先让少量关键参数受控，再逐步增加自动化。\n        01提取并确认参考约束记录山体轮廓、水面边界、主体位置、相机和远近关系。分割与深度估计可以辅助提取；估计值需要核对，单张图无法唯一确定被遮挡的空间。\n        02固定模板与有限参数固定场景模板、素材版本、随机种子和成熟渲染模块，只开放山形、布局、相机、光雾等少量参数。通过的部分冻结，重复生成与局部迭代才有稳定基础。\n        03自动渲染、比较与求解在同机位比较轮廓、主体位置、色彩与层次，在明确边界内搜索参数。反向渲染是更深入的技术参考；搜索仍有计算成本，评分也不能代替审美判断。\n        04多视角与连续使用验收检查近、中、远机位和一段真实路线，同时测操作、碰撞、等待与帧率。避免只拟合一张图；达到约定展示用途后收口，以实际反馈决定后续修改。\n      能带到新对话继续使用的沉淀，应包括：场景模板、参数文件、参考约束、自动对照脚本。说明文档用于指导，不能代替这些可运行能力。",
+        "steps": [
+          "01提取并确认参考约束记录山体轮廓、水面边界、主体位置、相机和远近关系。分割与深度估计可以辅助提取；估计值需要核对，单张图无法唯一确定被遮挡的空间。",
+          "02固定模板与有限参数固定场景模板、素材版本、随机种子和成熟渲染模块，只开放山形、布局、相机、光雾等少量参数。通过的部分冻结，重复生成与局部迭代才有稳定基础。",
+          "03自动渲染、比较与求解在同机位比较轮廓、主体位置、色彩与层次，在明确边界内搜索参数。反向渲染是更深入的技术参考；搜索仍有计算成本，评分也不能代替审美判断。",
+          "04多视角与连续使用验收检查近、中、远机位和一段真实路线，同时测操作、碰撞、等待与帧率。避免只拟合一张图；达到约定展示用途后收口，以实际反馈决定后续修改。"
+        ]
+      },
+      "hub": {
+        "verifiedGLHost": false,
+        "sourceTrialAllowed": false,
+        "activation": "explicit",
+        "switching": false,
+        "active": null,
+        "activeId": null,
+        "previews": [
+          {
+            "id": "source",
+            "sectionId": "source",
+            "source": "runtime/source-live.html?embed=1",
+            "loaded": false,
+            "active": false,
+            "ready": false,
+            "error": null
+          },
+          {
+            "id": "concepts-window",
+            "sectionId": "concepts",
+            "source": "canal-real/index.html?experience=window&giSet=r5&probes=1&streetProbes=1&embed=1",
+            "loaded": false,
+            "active": false,
+            "ready": false,
+            "error": null
+          },
+          {
+            "id": "concepts-station",
+            "sectionId": "concepts",
+            "source": "shipyard-station/index.html?embed=1",
+            "loaded": false,
+            "active": false,
+            "ready": false,
+            "error": null
+          },
+          {
+            "id": "lijiang",
+            "sectionId": "lijiang",
+            "source": "lijiang-m8/raster.html?surface=1&material=1&embed=1&revision=20261026-m8",
+            "loaded": false,
+            "active": false,
+            "ready": false,
+            "error": null
+          }
+        ]
+      },
+      "galleryInitiallyOpen": true,
+      "startButtons": [
+        {
+          "id": "source",
+          "text": "本机运行专用",
+          "disabled": true,
+          "hidden": false
+        },
+        {
+          "id": "concepts-window",
+          "text": "启动窗外世界",
+          "disabled": false,
+          "hidden": false
+        },
+        {
+          "id": "concepts-station",
+          "text": "启动旧船坞车站",
+          "disabled": false,
+          "hidden": false
+        },
+        {
+          "id": "lijiang",
+          "text": "启动漓江晨航",
+          "disabled": false,
+          "hidden": false
+        }
+      ],
+      "sourceLink": {
+        "href": "#source-gallery",
+        "target": null
+      }
+    },
+    "futureImages": {
+      "images": [
+        {
+          "src": "https://raw.githubusercontent.com/yydshly/1020_codex_project/0e430bf7f464582764c32db17f7765bc800f4b15/projects/014-programmable-worlds/assets/extension-references/lijiang-raft-clean-v1.png",
+          "relative": "https://raw.githubusercontent.com/yydshly/1020_codex_project/0e430bf7f464582764c32db17f7765bc800f4b15/projects/014-programmable-worlds/assets/extension-references/lijiang-raft-clean-v1.png",
+          "complete": true,
+          "width": 940,
+          "height": 1672,
+          "alt": "竹筏船头与绳索位于前景，小筏驶向层叠雾山，江面呈现低位行进视角",
+          "direction": "lijiang-raft",
+          "stage": "reference",
+          "seconds": 3.169699999809265
+        },
+        {
+          "src": "https://raw.githubusercontent.com/yydshly/1020_codex_project/0e430bf7f464582764c32db17f7765bc800f4b15/projects/014-programmable-worlds/assets/extension-references/island-lagoon-clean-v1.png",
+          "relative": "https://raw.githubusercontent.com/yydshly/1020_codex_project/0e430bf7f464582764c32db17f7765bc800f4b15/projects/014-programmable-worlds/assets/extension-references/island-lagoon-clean-v1.png",
+          "complete": true,
+          "width": 941,
+          "height": 1672,
+          "alt": "长尾船行于明亮碧水，近处高大石灰岩峭壁与植被围合出海岛泻湖",
+          "direction": "island-lagoon",
+          "stage": "reference",
+          "seconds": 0.22990000009536743
+        },
+        {
+          "src": "https://raw.githubusercontent.com/yydshly/1020_codex_project/0e430bf7f464582764c32db17f7765bc800f4b15/projects/014-programmable-worlds/assets/extension-references/cosmic-harbor-clean-v1.png",
+          "relative": "https://raw.githubusercontent.com/yydshly/1020_codex_project/0e430bf7f464582764c32db17f7765bc800f4b15/projects/014-programmable-worlds/assets/extension-references/cosmic-harbor-clean-v1.png",
+          "complete": true,
+          "width": 941,
+          "height": 1672,
+          "alt": "摩天轮、城市和游艇位于港湾前方，粉金色奇幻天幕横贯天空并映入水面",
+          "direction": "cosmic-harbor",
+          "stage": "reference",
+          "seconds": 0.22390000009536742
+        }
+      ],
+      "staticReference": true,
+      "notDeveloped": true,
+      "scope": "Three static future reference images actually decoded; no product or 3D capability executed."
+    },
+    "readingMap": {
+      "href": "https://yydshly.github.io/1020_codex_project/projects/014-programmable-worlds/map.html?revision=20261026-release-1",
+      "preview": {
+        "src": "https://yydshly.github.io/1020_codex_project/projects/014-programmable-worlds/assets/reading/programmable-worlds-map-20261026.webp",
+        "width": 1800,
+        "height": 7280,
+        "complete": true
+      },
+      "links": [
+        {
+          "kind": "svg",
+          "href": "https://raw.githubusercontent.com/yydshly/1020_codex_project/0e430bf7f464582764c32db17f7765bc800f4b15/projects/014-programmable-worlds/assets/programmable-worlds-map-20261026.svg",
+          "download": "可编程世界完整总览图-20261026.svg"
+        },
+        {
+          "kind": "png",
+          "href": "https://raw.githubusercontent.com/yydshly/1020_codex_project/0e430bf7f464582764c32db17f7765bc800f4b15/projects/014-programmable-worlds/assets/programmable-worlds-map-20261026.png",
+          "download": "可编程世界完整总览图-20261026.png"
+        }
+      ],
+      "scope": "Actual same-origin reading-preview decode only. Archived SVG/PNG are checked separately by HTTP HEAD; their bodies are not downloaded or decoded by this release check."
+    },
+    "downloadVerification": "SVG/PNG archive HTTP HEAD200 only; no download/body decode in this check.",
+    "screenSizes": [
+      "1440x900",
+      "390x844"
+    ],
+    "sourceBridge": "Public entry/button/API remains local-only; no visitor loopback requests or 3D startup during static checks."
+  },
+  "publicM8Runtime": {
+    "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-world-hub-wrapup\\2026-10-26T16-40-19-147Z\\result.json",
+    "checksPassed": 4,
+    "tests": [
+      {
+        "name": "lijiangRaster-loads-with-startup-plus-completed-idle-frame",
+        "passed": true
+      },
+      {
+        "name": "M8-four-presets-present-mountains-smooth-and-one-up-hold",
+        "passed": true
+      },
+      {
+        "name": "selected-scenes-loaded-once-and-released-without-local-bridges",
+        "passed": true
+      },
+      {
+        "name": "page-freeze-and-accepted-M8-3D-source-preserved",
+        "passed": true
+      }
+    ],
+    "scenes": [
+      {
+        "api": "lijiangRaster",
+        "url": "https://yydshly.github.io/1020_codex_project/projects/014-programmable-worlds/lijiang-m8/raster.html?surface=1&material=1&qa=1&revision=pages",
+        "seconds": 70.796,
+        "initial": {
+          "label": "lijiangRaster-initial",
+          "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-world-hub-wrapup\\2026-10-26T16-40-19-147Z\\lijiangRaster-initial-state.json",
+          "sha256": "7eac701dffe96220f787aaa973e4d086eee4b773309a416ee37f7d627e4deac3",
+          "ready": true,
+          "frames": 2,
+          "phase": "ready",
+          "camera": {
+            "position": [
+              -13.1824,
+              36,
+              1350
+            ],
+            "quaternion": [
+              0.02787289264575203,
+              -0.20440494677132542,
+              0.0058227073067323104,
+              0.9784721844133281
+            ]
+          }
+        }
+      }
+    ],
+    "actions": [
+      {
+        "selector": "[data-view-preset=\"mountains\"]",
+        "text": "群山"
+      },
+      {
+        "selector": "[data-quality-preset=\"smooth\"]",
+        "text": "流畅"
+      },
+      {
+        "selector": "#rf-navigation [data-move=\"up\"]",
+        "before": {
+          "position": [
+            4.651999016785015,
+            64.46361620641,
+            904.5192722017098
+          ],
+          "quaternion": [
+            0.01308901940955027,
+            -0.21007810190770002,
+            0.0028127416225170146,
+            0.9775929404175948
+          ]
+        },
+        "after": {
+          "position": [
+            4.651999016785015,
+            74.2580162064105,
+            904.5192722017098
+          ],
+          "quaternion": [
+            0.013089019409550267,
+            -0.2100781019077,
+            0.0028127416225170137,
+            0.9775929404175949
+          ]
+        },
+        "held": "false",
+        "source": "DOM PointerEvent on actual up control; no system input"
+      }
+    ],
+    "scope": "One sequential desktop load of selected scenes [m8] only, with limited actual DOM operations and one screenshot per selected scene. Unselected scenes are not rerun or accepted by this report. This explicitly regenerates M8 once. It is not a full flight, complete export, mobile, performance benchmark or renewed comprehensive art acceptance."
+  },
+  "canalRuntimeStagingRecord": "pages-A-B-staging-20261027.json",
+  "canalRuntimeScope": "A/B published package on repository-prefix local static server only; public binary transfer is checked separately, not a repeated public docking performance test.",
+  "screenshots": {
+    "desktopSummary": "assets/published-qa/desktop-release-summary.png",
+    "mobileSummary": "assets/published-qa/mobile-release-summary.png",
+    "publicM8": "assets/published-qa/runtime-M8-mountains-after-up.png"
+  },
+  "m8OriginalSourceFilesPreserved": 51,
+  "losslessSceneTransport": {
+    "assets": 51,
+    "sourceBytes": 534297167,
+    "packedBytes": 287089669,
+    "savedBytes": 247207498,
+    "allSourceBytesRestored": true,
+    "manifest": "web/packed-assets/manifest.json"
+  },
+  "readingPixelIdentity": "PNG→losslessWebP decoded RGBA compared byte-for-byte, no visual/content change.",
+  "limits": [
+    "Original Na Pali live renderer remains local-only; no cloud GPU/WebRTC backend was deployed.",
+    "This release does not repeat full45-second export, mobile3D hardware test, every art view or all station choices.",
+    "Source107-second cold-generation and23/18fps short-drive samples remain historical, not new public performance promises.",
+    "RuntimeQA initial M8 timeout was an idle-frame predicate error; corrected M8-only public test requires completed frame increments after actual controls."
+  ]
+}

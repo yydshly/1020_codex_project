@@ -80,6 +80,13 @@ def main():
  p=dst/'web/canal-real/vegetation.js';s=p.read_text(encoding='utf-8');s="import {packedBufferManager} from '../packed-assets/loader.js';\n"+s
  s=s.replace('const gltf=new GLTFLoader(),textures=',"const gltf=new GLTFLoader(await packedBufferManager(new THREE.LoadingManager(),new URL('./assets/tree_small_02/tree_small_02.bin',import.meta.url))),textures=",1)
  p.write_text(s,encoding='utf-8')
+ # Lossless same-origin reading image; source PNG/SVG remain fixed archive downloads.
+ from PIL import Image
+ reading=dst/'web/assets/reading/programmable-worlds-map-20261026.webp';reading.parent.mkdir(parents=True,exist_ok=True)
+ with Image.open(src/'assets/programmable-worlds-map-20261026.png') as im:
+  im.save(reading,format='WEBP',lossless=True,method=4)
+  with Image.open(reading) as restored:assert im.convert('RGBA').tobytes()==restored.convert('RGBA').tobytes()
+ p=dst/'web/map.html';s=p.read_text(encoding='utf-8').replace('src="'+raw+'assets/programmable-worlds-map-20261026.svg"','src="assets/reading/programmable-worlds-map-20261026.webp"');p.write_text(s,encoding='utf-8')
  # Canonical M8 source and original import paths remain byte-for-byte unchanged.
  for p in (src/'web/lijiang-m8').rglob('*'):
   if p.is_file():assert sha(p)==sha(dst/p.relative_to(src))

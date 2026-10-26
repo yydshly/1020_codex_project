@@ -1,0 +1,933 @@
+{
+  "schema": "pages-published-resource-verification-v1",
+  "base": "https://yydshly.github.io/1020_codex_project/projects/014-programmable-worlds/",
+  "status": "passed",
+  "sourceCommit": "7c3148838c92ebe2431dd4221654422a97f1e7d2",
+  "requests": 115,
+  "fullByteComparisons": 64,
+  "packedPayloadHeadersOnly": 51,
+  "seconds": 84.0640759000089,
+  "errors": [],
+  "resources": [
+    {
+      "path": "app.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 15227,
+      "sha256": "ff54e3622b46ef5df34996bfeb29ad1660d527f5acf750bb98fd22baf91f7608",
+      "matchesLocal": true
+    },
+    {
+      "path": "assets/reading/programmable-worlds-map-20261026.webp",
+      "method": "GET",
+      "status": 200,
+      "bytes": 3430602,
+      "sha256": "6f14d825492379a05fa569074feea72d9cb8d72a6b9ab33a438b14623893d86b",
+      "matchesLocal": true
+    },
+    {
+      "path": "canal-real/gi.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 7461,
+      "sha256": "67b0716a1ffe322b7a9217030d2823b5ec2784fa44766a847309919a78679f7a",
+      "matchesLocal": true
+    },
+    {
+      "path": "canal-real/main.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 22280,
+      "sha256": "ed99ae5a9a88e9cad23f0922f2600a0939e369b2801ab455e49daa42d077bbdf",
+      "matchesLocal": true
+    },
+    {
+      "path": "canal-real/vegetation.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 2852,
+      "sha256": "6f13533b74cc54e8783d5042647689e52a8bf04292ae4a7770ca2df0d5fcd788",
+      "matchesLocal": true
+    },
+    {
+      "path": "index.html",
+      "method": "GET",
+      "status": 200,
+      "bytes": 49623,
+      "sha256": "1892021ceb094f0a4fa568cc964668b896dded3e1bed3342c0a24d8a33438f30",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/README.md",
+      "method": "GET",
+      "status": 200,
+      "bytes": 954,
+      "sha256": "cc5894ec990bcfd9b781e822154da17c763b530467f30294abfa278467b68a67",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/client.css",
+      "method": "GET",
+      "status": 200,
+      "bytes": 8051,
+      "sha256": "be48ccd159ebeba1231e42f9681608538915763420cf8b6c6090eef4ff5d44a7",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/client.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 47328,
+      "sha256": "00047605a07d0203e4bc15e93d7479d854339822a07e84b89e49a8b25322a118",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/credits.html",
+      "method": "GET",
+      "status": 200,
+      "bytes": 2113,
+      "sha256": "b86cef0a9d6bd39e8d8b25756db3c17440959a72ba96b9748a24e60c22da61a2",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/engine-preview.html",
+      "method": "GET",
+      "status": 200,
+      "bytes": 371827,
+      "sha256": "78f01ae2a0b7376d11558adf479cc69c0f8be54351adb2932583ea42900689c4",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/engine-preview.manifest.json",
+      "method": "GET",
+      "status": 200,
+      "bytes": 33854,
+      "sha256": "7205c3f17fd9301a981105da0cc0f06aac1449d976db0ac715813598c2af773d",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/engine.html",
+      "method": "GET",
+      "status": 200,
+      "bytes": 496418,
+      "sha256": "02a008fc4893500527e8cfcaaf5e14479381a6bf7fe59a73b3f3459e73e36a5e",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/engine.manifest.json",
+      "method": "GET",
+      "status": 200,
+      "bytes": 138239,
+      "sha256": "9a2563226a5a483e25054ad927bfe95a3d3ddd741ff4d1099a9eccc9eae4710d",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/index.html",
+      "method": "GET",
+      "status": 200,
+      "bytes": 4180,
+      "sha256": "f0bb73ec193c91edc38ff9fe03a54ee802bc94b26eff79097427ed09f57d8a38",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/live-settings.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 2759,
+      "sha256": "31951dc64b6b08881f225d912bf61717dace4559ae950621b24b9e4f4dbc7a4e",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/live-viewport.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 4310,
+      "sha256": "df168e38f5c17b0091d20c836e01b2be40ceca8d502606fdbe4852c5cad0a1c0",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/mountain-botanical-crown.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 11034,
+      "sha256": "ca4bce57fbfb184b7cbdec0804946546e6258a36d559ce7e437bc39a5a47923f",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/mountain-horizon-sprays.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 14645,
+      "sha256": "31945561bffa547bded7c02981167e0229f11faf1e44a3b3168b87ab5a3d9d8c",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/mountain-surface-habitat.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 978,
+      "sha256": "6820abfbe35596ef0808b9a434db04a0eec7e4d5f422e0a13327834d8df2c5d0",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/native-field-material.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 17225,
+      "sha256": "8116fa409b85bad4ef17d4667e936b0705361fdf940c6f4ed3b05c4ccd05aa92",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/native-fields.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 3533,
+      "sha256": "6098ee3e1b7691380879935f7acfb081d56b134b4af46626b1dab9f21baac306",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/native-geometry-shader.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 5914,
+      "sha256": "5162b50dd642fc3d9f4cb9df84385c3751a77425404ee93e84f1b6e0b4691831",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/native-ground-shader.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 15576,
+      "sha256": "44ff7625abebffa29375ac752b89ac217c2a103ce996ee8e3f273b065002e616",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/native-marching-kernel.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 10622,
+      "sha256": "b9f39ec714f66a91bf3fb281ccbd5827c4f0376d67d4dfea573c1f01195e5a44",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/native-marching-worker.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 620,
+      "sha256": "ca5a5edb21cf1a2c25396a3b59220d7a6b924faf6a0ec49d323769e464c3a403",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/native-material-shader.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 9692,
+      "sha256": "5a501be382c205ff3ab360c9c46e3fb8268f312e2103bbca6e7654457fc245ca",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/native-mc-tables.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 19355,
+      "sha256": "bd0dc7d64f7c82264d6c57426d8e89a5881a783cee55cce7c4e29c9518f997a0",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/native-mesh-builder.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 2304,
+      "sha256": "8caec79f18ffbef4f1030061e9526988462f4b37dc4cb5ef27b741201bdf0ced",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/native-pilot-batch.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 10829,
+      "sha256": "bf2fc5b8362efd4db694f046cd697cc4a36d41cc576df3a61aed61d4ac7940a2",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/native-pilot-builder.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 2303,
+      "sha256": "1c59f0706a652537fbdc1d30785223f14e14db60bd379157ba7a79d3bccc7d75",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/native-radiance-field.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 10144,
+      "sha256": "d2acce84da21b21388a43ee491ebec661f6369f61ab2acc197be7f13730577c3",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/native-sdf-fields.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 26152,
+      "sha256": "e419a21c783cd248a97127a0e9fda919763e17db80e6203ff0c3643fff34783c",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/native-surface-compare.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 7771,
+      "sha256": "a3528d68792cd24207ccf1b4812b1c710813c34927734b1d171be96cb5510720",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/native-surface-fields.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 25217,
+      "sha256": "fdf619bbe7c278da27eedd03ccb6ae5d4f36422768ed07368c30632692946e83",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/offline-export.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 11043,
+      "sha256": "7d4d1effc26e5161f0d52f53e4e77626071b7f736a89cadd06bdd89b89b0e29c",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/raster-air.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 7937,
+      "sha256": "96ec60e46a258844cf38f7a02daa5ccca26a7f029d7158114f0e9cc28eb43d38",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/raster-cliff-gardens.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 13072,
+      "sha256": "4aad3ea1ffbb24e4ca6781dcde1923b18790a8564389fa3729377f83ede2e145",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/raster-color-grade.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 864,
+      "sha256": "a705bb8a48648214befa3b0d378f0dc888d6d88c8ab1399ddd269b4d0e03eb2c",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/raster-experience-ui.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 32241,
+      "sha256": "58fbcb12aa48f1cbe13125229f06be84a366b9dfad4232143eebd0f62cf03f02",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/raster-forest.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 57218,
+      "sha256": "1031727dae5ebb93b76cf8c342d3beb9d373e55cb4268a180056e69701705748",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/raster-frame-queue.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 1852,
+      "sha256": "0af8c843deeed6e02d50ad47a3b677015e7a98e497d340174b4be4858394d68f",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/raster-ground-detail.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 6301,
+      "sha256": "3abd9ef0a1464787a9cfaab19ca386a77b01195a258ea4b1a9a4b95cc233d41e",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/raster-habitat.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 9413,
+      "sha256": "748e0f0cbbb52adb80e459aa3213ea1b9a82a7e77c3eb2fb2d44bd0a0415337a",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/raster-main.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 40432,
+      "sha256": "d6d66ffd303fc07c592ff604e3023d8dcb66c270669840df8b3e3095a92eda98",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/raster-mountain-canopy.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 32010,
+      "sha256": "278a4d4229e36d4234d5132bcfd5683750e8e524cc33714a6a2955032e3a16c8",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/raster-mountain-contact.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 11562,
+      "sha256": "702c2e63e7d6cfbb1805c5417be71b6234aa1b0335bf50e17114c9faa44d5753",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/raster-mountain-ecology.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 26413,
+      "sha256": "9ca19dc85ddf626293a9d27d07a19561b82510200df0ff5dd8441eacf51cfef3",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/raster-riparian.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 24786,
+      "sha256": "39b5bef4cd2957f1d881e0f9e951595ce90e4e02604cc6d6f56efd2510017fe0",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/raster-rock-cull.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 5426,
+      "sha256": "62f03c72ca56b2547de9238101ba51bafc5176d6e3d433f2026afa8722929d24",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/raster-rock-material.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 13467,
+      "sha256": "69b5df40b43ce80be71410b66bc6acba5bf669598a7a6ea8c041a305f7bf957e",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/raster-rock-navigation.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 4472,
+      "sha256": "57d1c95fe96b62a9a95ac0bee0bce4f40ec609d0c91878f1a991e4029779a115",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/raster-rock-seams.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 8980,
+      "sha256": "d294bcb7d9b6162ae1af63ee10600869bc263148e1bf70bbd758202f84528b40",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/raster-sdf-mesh.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 24460,
+      "sha256": "0604c4aed87f46862f98738925f013126f9df71358524948ef9aa323995bee6c",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/raster-terrain.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 26161,
+      "sha256": "39cc972ddc8455e58cdbdd358bff1df0aa3ed0604c095ea58f5484416758e0f8",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/raster-water-sky.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 20879,
+      "sha256": "adbf6eed2c47489abf9d5b15fee5fbcfe2bd760f09e7b9a7e9b35486cb26c6c7",
+      "matchesLocal": true
+    },
+    {
+      "path": "lijiang-m8/raster.html",
+      "method": "GET",
+      "status": 200,
+      "bytes": 4180,
+      "sha256": "f0bb73ec193c91edc38ff9fe03a54ee802bc94b26eff79097427ed09f57d8a38",
+      "matchesLocal": true
+    },
+    {
+      "path": "map.html",
+      "method": "GET",
+      "status": 200,
+      "bytes": 6933,
+      "sha256": "eec790083be5d3277069a4545e79c5d83512a9e16b9d9eeede85dfcd620b7ed2",
+      "matchesLocal": true
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_blueWood.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "3402663",
+      "expectedBytes": 3402663,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_brick.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "10062251",
+      "expectedBytes": 10062251,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_brickDark.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "11125757",
+      "expectedBytes": 11125757,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_brickWarm.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "8562037",
+      "expectedBytes": 8562037,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_ceramic.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "182895",
+      "expectedBytes": 182895,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_distantTownRecess.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "1711744",
+      "expectedBytes": 1711744,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_distantTownWindowGlazing.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "2782655",
+      "expectedBytes": 2782655,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_fabric.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "4561819",
+      "expectedBytes": 4561819,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_greenWood.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "2972221",
+      "expectedBytes": 2972221,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_interior.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "3827780",
+      "expectedBytes": 3827780,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_metal.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "1575159",
+      "expectedBytes": 1575159,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_oak.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "3320468",
+      "expectedBytes": 3320468,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_paper.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "3598343",
+      "expectedBytes": 3598343,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_paving.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "12829096",
+      "expectedBytes": 12829096,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_plaster.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "1161578",
+      "expectedBytes": 1161578,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_roomOak.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "7115101",
+      "expectedBytes": 7115101,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_roomPlaster.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "7189232",
+      "expectedBytes": 7189232,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_slate.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "10949486",
+      "expectedBytes": 10949486,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_soil.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "59898",
+      "expectedBytes": 59898,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_stone.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "11130479",
+      "expectedBytes": 11130479,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_stonePale.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "9806303",
+      "expectedBytes": 9806303,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_tea.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "123150",
+      "expectedBytes": 123150,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_Canal_zinc.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "269726",
+      "expectedBytes": 269726,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_book_encyclopedia_set_01_cover.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "3047996",
+      "expectedBytes": 3047996,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_book_encyclopedia_set_01_paper.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "3990170",
+      "expectedBytes": 3990170,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/canal-r5/CanalGI_wooden_bookshelf_worn.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "3195483",
+      "expectedBytes": 3195483,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/geometry/canal-lightmapped.glb.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "31555186",
+      "expectedBytes": 31555186,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/geometry/tree-small-02.bin.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "35295738",
+      "expectedBytes": 35295738,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/loader.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 2970,
+      "sha256": "0f9409978856998082ab984ed1f9a9d6f18875374481d9b9d73323c9cf6d9a11",
+      "matchesLocal": true
+    },
+    {
+      "path": "packed-assets/manifest.json",
+      "method": "GET",
+      "status": 200,
+      "bytes": 59047,
+      "sha256": "f2d7edbb27a81d364a9ec917ce4237e00f939376334849e593276823eca48405",
+      "matchesLocal": true
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_blackened_iron.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "1696888",
+      "expectedBytes": 1696888,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_clock_face.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "1569852",
+      "expectedBytes": 1569852,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_corrugated_zinc.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "2054272",
+      "expectedBytes": 2054272,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_dressed_coping.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "8106263",
+      "expectedBytes": 8106263,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_faded_boat_paint.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "2032510",
+      "expectedBytes": 2032510,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_framed_canal_route.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "1726810",
+      "expectedBytes": 1726810,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_framed_departure_table.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "1654113",
+      "expectedBytes": 1654113,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_harbour_cobbles.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "10911703",
+      "expectedBytes": 10911703,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_interior_shadow.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "1245515",
+      "expectedBytes": 1245515,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_oiled_oak-2048.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "2552222",
+      "expectedBytes": 2552222,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_old_firebrick.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "8753132",
+      "expectedBytes": 8753132,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_old_platform_paint.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "3265016",
+      "expectedBytes": 3265016,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_platform_paving.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "5867658",
+      "expectedBytes": 5867658,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_quay_stone.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "11659445",
+      "expectedBytes": 11659445,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_repair_yard_sign.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "994449",
+      "expectedBytes": 994449,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_riveted_blue_steel.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "3209796",
+      "expectedBytes": 3209796,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_slipway_stone.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "12726620",
+      "expectedBytes": 12726620,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_station_name.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "1753328",
+      "expectedBytes": 1753328,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_ticket_machine_brass.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "2272991",
+      "expectedBytes": 2272991,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_ticket_sign.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "2020604",
+      "expectedBytes": 2020604,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_ticket_stock.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "1968748",
+      "expectedBytes": 1968748,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_waiting_room_plaster.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "1194137",
+      "expectedBytes": 1194137,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "packed-assets/station-oak2048/ShipyardGI_Station_yard_timber.rgba16f.gz",
+      "method": "HEAD",
+      "status": 200,
+      "contentLength": "2449183",
+      "expectedBytes": 2449183,
+      "scope": "Header only; complete binary integrity is verified by the runtime decoder, not this network check."
+    },
+    {
+      "path": "quality-window/RoundedBoxGeometry.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 6470,
+      "sha256": "c5feab96123858ed8823c889b238dc8734adab7e760e3cfd21e7f3f2f3e348e3",
+      "matchesLocal": true
+    },
+    {
+      "path": "shipyard-station/gi.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 8076,
+      "sha256": "8a8b7dd10085ad8508cf0e3462d778a28aa607b5a89ed975b836129b60942a48",
+      "matchesLocal": true
+    },
+    {
+      "path": "shipyard-station/main.js",
+      "method": "GET",
+      "status": 200,
+      "bytes": 16666,
+      "sha256": "71c35634e562bf7648da3c47f0cbbc5eddf1ddd26b049ff59b8ebbf2e8882498",
+      "matchesLocal": true
+    },
+    {
+      "path": "style.css",
+      "method": "GET",
+      "status": 200,
+      "bytes": 32806,
+      "sha256": "917b6fff41d249bff1cbd07dae2276d3459e9a39e1739873f3da4f48db3617c8",
+      "matchesLocal": true
+    }
+  ]
+}

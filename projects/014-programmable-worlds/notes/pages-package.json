@@ -426,5 +426,13 @@
     "assets/extension-references/lijiang-raft-clean-v1.png"
   ],
   "localResearchPreserved": true,
-  "imageArchiveCommit": "0e430bf7f464582764c32db17f7765bc800f4b15"
+  "imageArchiveCommit": "0e430bf7f464582764c32db17f7765bc800f4b15",
+  "publishedSiteCommit": "7c3148838c92ebe2431dd4221654422a97f1e7d2",
+  "publishedSiteBytes": 995938939,
+  "readingImage": {
+    "file": "web/assets/reading/programmable-worlds-map-20261026.webp",
+    "source": "assets/programmable-worlds-map-20261026.png",
+    "sha256": "6f14d825492379a05fa569074feea72d9cb8d72a6b9ab33a438b14623893d86b",
+    "pixelExact": true
+  }
 }

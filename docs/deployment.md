@@ -1,5 +1,7 @@
 # 多个 Web 演示的部署
 
+2026-10-27 新增并验证：[014 · 可编程世界](https://yydshly.github.io/1020_codex_project/projects/014-programmable-worlds/#research-summary) · [完整总览图](https://yydshly.github.io/1020_codex_project/projects/014-programmable-worlds/map.html)。摘要明确原作程序海岸、我们的老街/船坞/漓江，以及“确认约束→固定模板→有界求解→独立验证”；完整自动管线尚未实现。原作完整实时控制保留本机限定。Pages成功，15项构建测试、10项公网静态检查、4项公网漓江有限运行检查、115项资源核对通过；运河在发布包暂存环境完成加载与有限操作，不称作公网全流程。详见[014发布记录与边界](../projects/014-programmable-worlds/notes/release-20261027.md)。
+
 2026-10-25 新增并验证：[015 · 江山时序能力研究](https://yydshly.github.io/1020_codex_project/projects/015-jiangshan-atlas/) · [016 · 三维历史地图](https://yydshly.github.io/1020_codex_project/projects/016-dongpo-journey/) · [017 · 源库与我们的能力、原理、效果及扩展摘要](https://yydshly.github.io/1020_codex_project/projects/017-abyss-expedition/research.html#capability-summary) · [一图总览](https://yydshly.github.io/1020_codex_project/projects/017-abyss-expedition/overview.html)。目录进入研究档案，原深海入口保留。Pages成功；587项线上资源核对通过，原作SVG浮雕、016新增真三维、017独立流程与后续铁路目标分别说明。详见[发布记录与验收边界](releases/map-research-20261025.md)。
 
 
