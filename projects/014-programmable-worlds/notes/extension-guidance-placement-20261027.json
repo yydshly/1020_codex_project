@@ -1,0 +1,27 @@
+{
+  "date": "2026-10-27",
+  "request": "补充源库实现图对后续扩展的指导意义，并放在完整引导图下方",
+  "placement": [
+    "项目首页：完整项目引导图后，追加完整源库解析图与说明",
+    "引导图阅读页：两图顺序排列，共用缩放，提供源库图跳转与独立阅读入口",
+    "项目说明与总目录：原完整引导图保持在前，源库图置后"
+  ],
+  "extensionGuidance": "先复现原作基线，复用成熟地形、生态、水体、光照、镜头与输出模块，再限定结构、参数和镜头改动，以画面和性能验收；新题材需要独立验证。",
+  "checks": {
+    "unitTests": 15,
+    "browserChecks": 12,
+    "browserResult": "passed",
+    "desktop": "1440x900",
+    "mobile": "390x844",
+    "fullImage": "2160x6460",
+    "orderAndImageDecode": true,
+    "sharedZoomAndJump": true,
+    "screenshots": 6,
+    "buildBytes": 998041298,
+    "scenesStarted": false,
+    "m8FrozenFilesUnchanged": 51
+  },
+  "imageArchiveCommit": "2ef47ab2818b70d12533f64e1666ff1a0d6617fd",
+  "mainGuidePreserved": true,
+  "diagramRegenerated": false
+}

@@ -23,7 +23,7 @@
 | 011 | Jev Ultrafast · 从网页选项到自动执行 | 把网页 DOM/ARIA 控件转成候选操作，由 Jev 结合目标、当前状态与历史选择，程序检查后驱动浏览器并循环观察。价值是复用动态网页 Agent 的观察、执行、重试与调试骨架，可用于查询筛选、导航和普通表单原型；可继续开发其他模型适配、复杂控件支持、任务恢复、业务验收与对比评测。扩展属于待实现方向，DONE 仍需独立核验。 | 研究中 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/011-jev-browser-agent-study/) · [研究说明](projects/011-jev-browser-agent-study/README.md) · [browser-use/jev-ultrafast](https://github.com/browser-use/jev-ultrafast) |
 | 012 | 入库之间 · C1 科二科三 3D 练车与复盘 | 以驾驶位观察、自己判断和纠错重练为主线，把倒库原型扩展为 C1 科二五项与科三17章教学串联：先用全景说明路线和完成要求，再通过前方、内外镜与盲区辨认车身、库线及道路变化；191段真实 MiniMax 配合分步示范、自动切镜与操作提示，支持接手驾驶、风险分类提醒、轨迹对照、错误改法和出错前重练。探索重点是让新手理解看到什么、为何操作，区分前轮回中、车身朝向与偏边，并按车辆几何、观察时机和完整过程判断。沿用生成的项目引导图，保留倒库专项；整科实时带练、风险判断题、因果复盘、实车标定、完整C1操控、记录保存和弱设备优化待继续完善。当前为工程教学原型，非当地考线或官方评分，自动测试不代替实车验收。 | 研究中 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/012-parking-lab/) · [研究说明](projects/012-parking-lab/README.md) · [灵感原帖](https://x.com/RyanSael/status/2113306254647120334) |
 | 013 | AI 开发架构手册 · 代码是基石，需求是目标 | 代码是基石，需求是目标：探索如何持续把控 AI 实现。按六类问题理解 DDD、分层、垂直切片、六边形、整洁、洋葱、模块化单体、微服务、插件式、事件驱动、CQRS、事件溯源的场景与组合，将选择落实为规则归属、代码边界、自动检查和交付证据。一图速览建立全貌，详细手册帮助实践。 | 研究中 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/013-ai-architecture-compass/) · [研究说明](projects/013-ai-architecture-compass/README.md) · [架构参考起点](https://martinfowler.com/bliki/DomainDrivenDesign.html) |
-| 014 | 可编程世界 · 从海岸航拍到自己的作品 | 原作以代码生成完整海岸；我们完成老街窗景、独立船坞和漓江晨航，沉淀“确认约束→固定模板→有界求解→独立验证”的场景制作流程。研究与演示已收口，完整自动管线尚未实现。<br>**原作效果**：Na Pali：程序地形、侵蚀、森林、海浪、天空与光照；本机完整实时控制，在线保留参考与来源。<br>**我们的效果**：老街窗景的停留观察、独立船坞的呼船靠泊、漓江的航拍与自由驾驶；三处不同空间。<br>**制作流程**：确认参考与范围约束，固定模板和素材版本，在有界参数及预算内迭代，以独立机位、连续操作和性能验证。 | 已完成 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/014-programmable-worlds/) · [研究说明](projects/014-programmable-worlds/README.md) · [Leonxlnx/napali](https://github.com/Leonxlnx/napali) · [yydshly/1020_codex_project](https://github.com/yydshly/1020_codex_project) |
+| 014 | 可编程世界 · 从海岸航拍到自己的作品 | 原作以代码生成完整海岸；我们完成老街窗景、独立船坞和漓江晨航，沉淀“确认约束→固定模板→有界求解→独立验证”的场景制作流程。研究与演示已收口，完整自动管线尚未实现。源库技术图为后续扩展提供复用指导。<br>**原作效果**：Na Pali：程序地形、侵蚀、森林、海浪、天空与光照；本机完整实时控制，在线保留参考与来源。<br>**我们的效果**：老街窗景的停留观察、独立船坞的呼船靠泊、漓江的航拍与自由驾驶；三处不同空间。<br>**制作流程**：确认参考与范围约束，固定模板和素材版本，在有界参数及预算内迭代，以独立机位、连续操作和性能验证。 | 已完成 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/014-programmable-worlds/) · [研究说明](projects/014-programmable-worlds/README.md) · [Leonxlnx/napali](https://github.com/Leonxlnx/napali) · [yydshly/1020_codex_project](https://github.com/yydshly/1020_codex_project) |
 | 015 | 江山时序 · 在地图上读中国历史 | 源库以SVG矢量地图与晕渲底图呈现山河，把年份解析为阶段疆域快照，并用地点、人物与事件联动地图、时间轴和内容卡；可看疆域演变、查城池沿革、沿人物或诗词路线读史及落针寻址。015直接本地集成原作，新增六个入口、源码方法与指令手册，另用自研时间核心做非历史数据实验。可扩展地方史、人物专题、文化行旅和其他地图叙事；展示、直接复用与自研边界分开记录。 | 研究中 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/015-jiangshan-atlas/) · [研究说明](projects/015-jiangshan-atlas/README.md) · [DeanChensj/jiangshan-map](https://github.com/DeanChensj/jiangshan-map) |
 | 016 | 山河行记 · 历史时空地图 | 直接复用江山时序54份历史引擎与资料输入，新增Three.js现代高程地形、疆域与行迹叠加、2D/3D同状态切换及2–20站路线编辑。用户可旋转山河、切年份、点城池和人物经历，地图、路线与说明同步变化；真三维为我们新增，现代DEM不代表古地貌复原。可继续拆分投影、图层、标注与镜头接口，用于地方史、行旅或铁路网络；现仍与历史控制器耦合，不能只换JSON视为通用地图引擎。 | 研究中 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/016-dongpo-journey/) · [研究说明](projects/016-dongpo-journey/README.md) · [DeanChensj/jiangshan-map](https://github.com/DeanChensj/jiangshan-map) |
 | 017 | 深蓝航迹 · 深海科考交互档案 | 独立实现热液与峡谷两条各11章深海教学航次：程序化Three.js场景、设备与原理动画、MiniMax预生成本地讲解、同类采水对照、导演播放、自由驾驶与镜头，并汇总源库效果、探索修正、九个自研纯核心及验收。时间和实体状态组织视图，音频时间驱动对应提示；海域与读数为教学设计。可扩展设备教学、实验操作、巡检培训等流程作品；地图叙事迁移仍待第二实例验证。中国铁路网络演进保留为后续地图目标，暂不启动。 | 已归档 | [在线研究页](https://yydshly.github.io/1020_codex_project/projects/017-abyss-expedition/research.html) · [研究说明](projects/017-abyss-expedition/README.md) · [DeanChensj/jiangshan-map](https://github.com/DeanChensj/jiangshan-map) |
@@ -130,7 +130,13 @@ AI 开发架构一图速览：代码是基石，需求是目标；六类问题�
 
 可编程世界完整引导总览图：原作效果与原理、三处实践、三种扩展参考、六类方向、技术路线、约束与模板、有界求解与独立验证、下次任务单和价值边界；1800×7280完整图。
 
-原作以代码生成完整海岸；我们完成老街窗景、独立船坞和漓江晨航，沉淀“确认约束→固定模板→有界求解→独立验证”的场景制作流程。研究与演示已收口，完整自动管线尚未实现。
+原作以代码生成完整海岸；我们完成老街窗景、独立船坞和漓江晨航，沉淀“确认约束→固定模板→有界求解→独立验证”的场景制作流程。研究与演示已收口，完整自动管线尚未实现。源库技术图为后续扩展提供复用指导。
+
+#### 源库算法与扩展指导图
+
+这张图将 Claude Code 驱动开发后形成的地形、生态、水体、光照、镜头与输出能力整理为可复用技术地图，可为我们的场景和交互扩展提供指导。先复现原作基线，选择并保留成熟模块，再在有限的结构、参数与镜头改动中验收画面和性能。
+
+<a href="https://yydshly.github.io/1020_codex_project/projects/014-programmable-worlds/source-implementation.html"><img src="projects/014-programmable-worlds/assets/napali-implementation-map-20261027.png" alt="Na Pali 源库实现解析图，Claude Code开发、12项算法、18个参数及渲染镜头与扩展方法，2160×6460完整图。" width="720"></a>
 
 ### 015 · 江山时序 · 在地图上读中国历史
 

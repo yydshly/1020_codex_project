@@ -2,7 +2,7 @@
   "id": 14,
   "slug": "programmable-worlds",
   "name": "可编程世界 · 从海岸航拍到自己的作品",
-  "summary": "原作以代码生成完整海岸；我们完成老街窗景、独立船坞和漓江晨航，沉淀“确认约束→固定模板→有界求解→独立验证”的场景制作流程。研究与演示已收口，完整自动管线尚未实现。",
+  "summary": "原作以代码生成完整海岸；我们完成老街窗景、独立船坞和漓江晨航，沉淀“确认约束→固定模板→有界求解→独立验证”的场景制作流程。研究与演示已收口，完整自动管线尚未实现。源库技术图为后续扩展提供复用指导。",
   "repo": "https://github.com/Leonxlnx/napali",
   "status": "已完成",
   "cover": "assets/programmable-worlds-map-20261026.webp",
@@ -43,5 +43,13 @@
   "repositories": [
     "https://github.com/Leonxlnx/napali",
     "https://github.com/yydshly/1020_codex_project"
-  ]
+  ],
+  "guide_supplement": {
+    "title": "源库算法与扩展指导图",
+    "image": "assets/napali-implementation-map-20261027.png",
+    "alt": "Na Pali 源库实现解析图，Claude Code开发、12项算法、18个参数及渲染镜头与扩展方法，2160×6460完整图。",
+    "summary": "这张图将 Claude Code 驱动开发后形成的地形、生态、水体、光照、镜头与输出能力整理为可复用技术地图，可为我们的场景和交互扩展提供指导。先复现原作基线，选择并保留成熟模块，再在有限的结构、参数与镜头改动中验收画面和性能。",
+    "viewer": "source-implementation.html",
+    "source_ref": "2ef47ab2818b70d12533f64e1666ff1a0d6617fd"
+  }
 }

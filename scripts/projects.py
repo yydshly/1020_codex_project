@@ -71,6 +71,30 @@ def source_links(project):
     return [(urlparse(url).path.strip("/"), url) for url in repository_urls(project)]
 
 
+def validate_guide_supplement(directory, project):
+    supplement = project.get("guide_supplement")
+    if supplement is None:
+        return
+    require(project.get("web") is True and isinstance(supplement, dict),
+            "补充引导图需要启用 Web，且必须为对象")
+    for key in ("title", "image", "alt", "summary", "viewer", "source_ref"):
+        require(isinstance(supplement.get(key), str) and supplement[key].strip(),
+                f"补充引导图 {key} 必须为非空字符串")
+    require(local_file(directory, supplement["image"]).suffix.lower() in
+            {".png", ".jpg", ".jpeg", ".webp", ".svg"}, "补充引导图图片格式不支持")
+    require(bool(re.fullmatch(r"(?:[A-Za-z0-9_-][A-Za-z0-9_.-]*/)*[A-Za-z0-9_-][A-Za-z0-9_.-]*\.html",
+                              supplement["viewer"])), "补充引导图 viewer 必须为 Web 内 HTML")
+    local_file(directory / "web", supplement["viewer"])
+    require(bool(re.fullmatch(r"[a-f0-9]{40}", supplement["source_ref"])),
+            "补充引导图必须固定到完整提交")
+
+
+def guide_supplement_image_url(project):
+    supplement = project["guide_supplement"]
+    return ("https://raw.githubusercontent.com/yydshly/1020_codex_project/"
+            f"{supplement['source_ref']}/projects/{project['directory'].name}/{supplement['image']}")
+
+
 def markdown_summary(project):
     parts = [text(project["summary"])]
     parts.extend(f"**{text(tool['name'])}**：{text(tool['summary'])}"
@@ -162,6 +186,7 @@ def load_projects():
             local_file(directory, "web/index.html")
             require(not any(path.is_symlink() for path in [directory, directory / "web", *(directory / "web").rglob("*")]),
                     "Web 发布目录不能包含符号链接")
+        validate_guide_supplement(directory, p)
         ids.add(ident)
         slugs.add(slug)
         projects.append({**p, "directory": directory})
@@ -192,6 +217,14 @@ def catalog(projects):
                 f'alt="{html.escape(p["cover_alt"], quote=True)}" width="720"></a>',
                 "", text(p["cover_alt"]), "", text(p["summary"]),
             ])
+            if p.get("guide_supplement"):
+                extra = p["guide_supplement"]
+                viewer = f"{PAGES}/projects/{p['directory'].name}/{extra['viewer']}"
+                lines.extend([
+                    "", f"#### {text(extra['title'])}", "", text(extra["summary"]), "",
+                    f'<a href="{viewer}"><img src="{path}/{html.escape(extra["image"], quote=True)}" '
+                    f'alt="{html.escape(extra["alt"], quote=True)}" width="720"></a>',
+                ])
     return "\n".join(lines)
 
 
@@ -263,6 +296,14 @@ def build(projects):
             shutil.copyfile(cover, output / "covers" / image_name)
             image = (f'<a class="cover-link" href="covers/{image_name}" title="点击查看完整引导图">'
                      f'<img src="covers/{image_name}" alt="{html.escape(p["cover_alt"], quote=True)}" loading="lazy"></a>')
+        if p.get("guide_supplement"):
+            extra = p["guide_supplement"]
+            viewer = f"projects/{name}/{extra['viewer']}"
+            image += (f'<section class="guide-supplement" data-guide-supplement="{p["id"]}">'
+                      f'<h3>{html.escape(extra["title"])}</h3><p>{html.escape(extra["summary"])}</p>'
+                      f'<a href="{viewer}"><img src="{html.escape(guide_supplement_image_url(p), quote=True)}" '
+                      f'alt="{html.escape(extra["alt"], quote=True)}" loading="lazy"></a>'
+                      f'<p><a href="{viewer}">放大阅读与源码定位 →</a></p></section>')
         demo = f'<a class="live-link" href="{web_path(p)}">在线研究页 →</a>' if p["web"] else ""
         sources = "".join(
             f'<a href="{html.escape(url, quote=True)}">{html.escape(label)}</a>'
@@ -294,7 +335,7 @@ grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:24px}
 article{background:white;border:1px solid #dddeda;padding:24px;border-radius:12px;
 overflow-wrap:anywhere}.cover-link{display:block}article img{display:block;width:100%;height:auto;background:#f7f6f2}
 nav{display:flex;flex-wrap:wrap;gap:16px}.empty{padding:36px 0;border-top:1px solid #ccc}
-.live-link{font-weight:700}
+.live-link{font-weight:700}.guide-supplement{margin-top:24px;padding-top:20px;border-top:1px solid #dddeda}.guide-supplement h3{font-size:18px;line-height:1.5}.guide-supplement p{font-size:13px;line-height:1.85}
 .tool-summaries{font-size:14px;margin:24px 0}.tool-summaries>div{margin:15px 0;padding-top:12px;border-top:1px solid #e3e6df}
 .tool-summaries dt{font-weight:700;color:#165e55}.tool-summaries dd{margin:5px 0 0}
 footer{margin-top:60px;color:#50625e;font-size:14px}

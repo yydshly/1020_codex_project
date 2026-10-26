@@ -14,12 +14,6 @@
 
 [打开项目总览](web/index.html?revision=20261026-map-1#overview) · [进入漓江 M8](web/index.html?revision=20261026-map-1#lijiang) · [项目汇总与历史索引](notes/project-wrap-up-20261026.md)
 
-## Na Pali 源库实现解析图
-
-[放大阅读源库专属技术图](web/source-implementation.html) · [完整 PNG](assets/napali-implementation-map-20261027.png) · [SVG 与源码定位链接](assets/napali-implementation-map-20261027.svg) · [证据和参数清单](notes/napali-implementation-map-20261027.json)
-
-固定提交 `4afb7c3` 的单图技术沉淀：作者记载的 Claude Code 开发方式、初始化和逐帧 GPU 流程、12 项算法、18 个真实参数、模块重建、实时/静帧/离线影片输出与后续复用建议。图中区分作者自述、源码事实和我们的归纳建议；本次沿用原作真实抓帧，不重跑三维场景。
-
 ## 完整引导图 · 一张图汇总整个探索
 
 [打开可缩放总览图](web/map.html?revision=20261026-map-1) · [完整 PNG](assets/programmable-worlds-map-20261026.png) · [可缩放 SVG](assets/programmable-worlds-map-20261026.svg) · [本次图文与网页验收](notes/project-map-acceptance-20261026.json)
@@ -27,6 +21,20 @@
 本项目正式引导图使用上方已生成的 **1800×7280 完整总览图**，项目目录也展示同一张完整图。图中以 7 张带身份标注的效果图串起八部分：原作效果与原理、三处实践、三种后期参考、六类扩展与产品形态、技术路线、算法与控制流程、下次任务单、当前价值和证据边界。已实现成果、静态参考和未实现方案分别标注，原作来源及现有性能限制一并保留。
 
 网页支持缩放、原尺寸、适应宽度和章节定位。首页仅加入入口，不预加载完整长图。此轮检查图像解码与浏览功能，未重跑四个三维场景；旧研究引导图保留为历史快照。
+
+[![完整项目引导图](assets/programmable-worlds-map-20261026.webp)](web/map.html)
+
+## Na Pali 源库实现解析图
+
+[放大阅读源库专属技术图](web/source-implementation.html) · [完整 PNG](assets/napali-implementation-map-20261027.png) · [SVG 与源码定位链接](assets/napali-implementation-map-20261027.svg) · [证据和参数清单](notes/napali-implementation-map-20261027.json)
+
+固定提交 `4afb7c3` 的单图技术沉淀：作者记载的 Claude Code 开发方式、初始化和逐帧 GPU 流程、12 项算法、18 个真实参数、模块重建、实时/静帧/离线影片输出与后续复用建议。图中区分作者自述、源码事实和我们的归纳建议；本次沿用原作真实抓帧，不重跑三维场景。
+
+这张图将 Claude Code 驱动开发后形成的地形、生态、水体、光照、镜头与输出能力整理为可复用技术地图，可为我们的场景和交互扩展提供指导。先复现原作基线，选择并保留成熟模块，再在有限的结构、参数与镜头改动中验收画面和性能。
+
+它帮助我们判断哪些实现可以继承、哪些部分需要适配。泻湖可重点研究海浪与近岸水色，山水可重点研究地形、生态与镜头配合；新题材仍需独立验证。
+
+[![源库算法与扩展指导图](assets/napali-implementation-map-20261027.png)](web/source-implementation.html)
 
 ## 四部分内容各是什么
 
