@@ -26,7 +26,7 @@ def main():
   if p.is_file() and p.suffix in {'.md','.json'}:copy(p.relative_to(src).as_posix())
  for p in (src/'src').glob('*'):
   if p.is_file() and p.suffix in {'.py','.cjs','.js'}:copy(p.relative_to(src).as_posix())
- for rel in ['web/index.html','web/app.js','web/style.css','web/map.html','web/guide.html','web/guide-history-20261025.html']:copy(rel)
+ for rel in ['web/index.html','web/app.js','web/style.css','web/map.html','web/source-implementation.html','web/guide.html','web/guide-history-20261025.html']:copy(rel)
  tree('web/assets',lambda p:p.suffix.lower() in {'.jpg','.png','.svg','.json','.md'} and p.name!='programmable-worlds-guide.svg')
  tree('web/upstream')
  tree('src/runtime-shell',lambda p:p.suffix in {'.js','.cjs','.json','.md'} and 'node_modules' not in p.parts and p.name!='renderer-config.json')
@@ -59,12 +59,12 @@ def main():
  out=dst/'web/packed-assets/manifest.json';shutil.copyfile(pack/'manifest.json',out)
  # Same research image bytes are archived once in Git and served by GitHub raw;
  # this avoids duplicating 30+ MB into the shared Pages quota.
- image_rels=['assets/project-map-cover.png','assets/programmable-worlds-map-20261026.svg','assets/programmable-worlds-map-20261026.png','assets/programmable-worlds-guide.svg']
+ image_rels=['assets/napali-implementation-map-20261027.svg','assets/napali-implementation-map-20261027.png','assets/source-live-qa/2026-10-24T08-42-44-256Z/04-headland-35-decoded-video.png','assets/project-map-cover.png','assets/programmable-worlds-map-20261026.svg','assets/programmable-worlds-map-20261026.png','assets/programmable-worlds-guide.svg']
  image_rels += [p.relative_to(src).as_posix() for p in (src/'assets/extension-references').iterdir() if p.suffix=='.png']
  for rel in image_rels:copy(rel)
  raw='https://raw.githubusercontent.com/yydshly/1020_codex_project/'+a.raw_ref+'/projects/014-programmable-worlds/'
  docs='https://github.com/yydshly/1020_codex_project/blob/main/projects/014-programmable-worlds/'
- for rel in ['web/index.html','web/map.html','web/guide.html','web/guide-history-20261025.html']:
+ for rel in ['web/index.html','web/map.html','web/source-implementation.html','web/guide.html','web/guide-history-20261025.html']:
   p=dst/rel;s=p.read_text(encoding='utf-8').replace('../assets/',raw+'assets/').replace('../notes/',docs+'notes/').replace('../README.md',docs+'README.md')
   s=s.replace('assets/programmable-worlds-guide.svg',raw+'assets/programmable-worlds-guide.svg') if rel in {'web/guide.html','web/guide-history-20261025.html'} else s.replace('href="assets/programmable-worlds-guide.svg"','href="'+raw+'assets/programmable-worlds-guide.svg"')
   s=s.replace('lijiang-m7-preview.html?revision=20261026-m7#lijiang',docs+'notes/project-wrap-up-20261026.md')

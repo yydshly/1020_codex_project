@@ -14,6 +14,12 @@
 
 [打开项目总览](web/index.html?revision=20261026-map-1#overview) · [进入漓江 M8](web/index.html?revision=20261026-map-1#lijiang) · [项目汇总与历史索引](notes/project-wrap-up-20261026.md)
 
+## Na Pali 源库实现解析图
+
+[放大阅读源库专属技术图](web/source-implementation.html) · [完整 PNG](assets/napali-implementation-map-20261027.png) · [SVG 与源码定位链接](assets/napali-implementation-map-20261027.svg) · [证据和参数清单](notes/napali-implementation-map-20261027.json)
+
+固定提交 `4afb7c3` 的单图技术沉淀：作者记载的 Claude Code 开发方式、初始化和逐帧 GPU 流程、12 项算法、18 个真实参数、模块重建、实时/静帧/离线影片输出与后续复用建议。图中区分作者自述、源码事实和我们的归纳建议；本次沿用原作真实抓帧，不重跑三维场景。
+
 ## 完整引导图 · 一张图汇总整个探索
 
 [打开可缩放总览图](web/map.html?revision=20261026-map-1) · [完整 PNG](assets/programmable-worlds-map-20261026.png) · [可缩放 SVG](assets/programmable-worlds-map-20261026.svg) · [本次图文与网页验收](notes/project-map-acceptance-20261026.json)
