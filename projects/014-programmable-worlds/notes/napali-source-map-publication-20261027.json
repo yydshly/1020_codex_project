@@ -3,5 +3,17 @@
   "archiveCommit": "2ef47ab2818b70d12533f64e1666ff1a0d6617fd",
   "viewer": "https://yydshly.github.io/1020_codex_project/projects/014-programmable-worlds/source-implementation.html",
   "sourceOnly": true,
-  "scope": "New technical diagram, no scene renderer changes. Original project guide remains selected."
+  "scope": "New technical diagram, no scene renderer changes. Original project guide remains selected.",
+  "status": "published-and-verified",
+  "pageHTTP200": true,
+  "sourceSVGHEAD200": true,
+  "onlinePNGMatchesLocalBytes": true,
+  "onlinePNGDimensions": [
+    2160,
+    6460
+  ],
+  "onlinePNGSHA256": "eced6026d80d21c53e7c9a4cfbd94a9ab2e520ca70bd41b286b04f70ab3d91a0",
+  "deployCommit": "df54c09483e74c3853d577141292c3ae503ef97e",
+  "deployWorkflow": "https://github.com/yydshly/1020_codex_project/actions/runs/40374435916",
+  "gpuSceneStarted": false
 }

@@ -236,5 +236,139 @@
     "scope": "CPU export and visual layout review; original runtime not regenerated.",
     "viewer": "web/source-implementation.html",
     "inlineJavaScriptSyntaxChecked": true
-  }
+  },
+  "algorithmDetails": [
+    {
+      "title": "海岸与基础山体",
+      "visualEffect": "海岸距离、噪声和山谷约束先确定海湾、山脊、峡谷及整体空间尺度。",
+      "codeReference": "baseLand / coastSDF · L188 / L4531",
+      "sourceLine": 188
+    },
+    {
+      "title": "GPU 流水侵蚀",
+      "visualEffect": "八邻域多流向汇水 MFD，结合 stream-power 下切及坡面松弛，组织沟壑与坡脚。",
+      "codeReference": "FS_EINIT / FS_ERODE · L222–279",
+      "sourceLine": 234
+    },
+    {
+      "title": "岩壁沟槽与山谷补形",
+      "visualEffect": "山谷补形、phasor / Gabor 条带、域扭曲及岩层台阶共同形成冲刷槽与岩台。",
+      "codeReference": "FS_VFILL / eroFlutes / landH",
+      "sourceLine": 451
+    },
+    {
+      "title": "生态分布规则",
+      "visualEffect": "依据高度、坡度和海岸距离分配地面植被、树与灌木，控制林带与裸岩关系。",
+      "codeReference": "FS_ATTR / FS_VEG / FS_PLANTS",
+      "sourceLine": 583
+    },
+    {
+      "title": "SDF 树冠与岩块",
+      "visualEffect": "树冠簇、叶丛、棕榈叶和岩块通过距离场构成三维形态，能够相互遮挡。",
+      "codeReference": "crownSD / treesSD / rockField",
+      "sourceLine": 1264
+    },
+    {
+      "title": "求交、材质与光照",
+      "visualEffect": "相机射线求交，近景几何阴影、远景高度场阴影和 AO，配湿润、苔藓与天空补光。",
+      "codeReference": "march / shadow / shadeScene",
+      "sourceLine": 1844
+    },
+    {
+      "title": "三尺度 FFT 海浪",
+      "visualEffect": "方向性 JONSWAP 波谱与涌浪，经过时间演化及 Stockham 逆 FFT，输出位移和坡度。",
+      "codeReference": "FS_OSPEC → OEVOLVE → OFFT → OFINAL",
+      "sourceLine": 803
+    },
+    {
+      "title": "水色、浅滩与泡沫",
+      "visualEffect": "Fresnel 反射、海床与吸收水色、浅水变形、破浪、白帽泡沫和湿岩衔接。",
+      "codeReference": "waterHit / foamS / shadeWater",
+      "sourceLine": 3364
+    },
+    {
+      "title": "体积云与天空",
+      "visualEffect": "在世界坐标中定义积云密度，沿视线积分透射率及光学厚度，另叠加卷云。",
+      "codeReference": "cuDens / cirrus / skyView",
+      "sourceLine": 991
+    },
+    {
+      "title": "空气与山谷雾",
+      "visualEffect": "高度衰减雾、薄霾、前向散射与山谷路径权重，使远近山体产生颜色和对比差异。",
+      "codeReference": "mistVis / fogApply · L4227–4295",
+      "sourceLine": 4227
+    },
+    {
+      "title": "电影镜头与构图",
+      "visualEffect": "PCHIP 单调三次 Hermite 插值位置、注视点和视角，加入轻微侧倾并收束到静帧。",
+      "codeReference": "pchip / cineCam · L5161–5211",
+      "sourceLine": 5182
+    },
+    {
+      "title": "采样与最终呈现",
+      "visualEffect": "抖动多采样累积后，再做亮部扩散、ACES 拟合色调映射、调色和锐化。",
+      "codeReference": "renderSample / present / FS_POST",
+      "sourceLine": 4837
+    }
+  ],
+  "recordedDevelopmentWorkflow": [
+    {
+      "stage": "目标与参考",
+      "description": "围绕纳帕利海岸照片与明确观看效果进行制作。"
+    },
+    {
+      "stage": "Claude Code 分工实现",
+      "description": "作者记载使用 Claude Code / Opus 5.5；水、天空、地形和植被并行。"
+    },
+    {
+      "stage": "合并与照片对照",
+      "description": "合并模块，由 judge 将渲染结果与海岸参考照片比较。"
+    },
+    {
+      "stage": "多轮返修与固化",
+      "description": "README 记载 13 轮 agent 工作；结果保存在算法、参数和构建代码中。"
+    },
+    {
+      "stage": "运行与输出",
+      "description": "浏览器执行独立 HTML，产生实时画面、静帧或离线影片。"
+    }
+  ],
+  "outputModes": [
+    {
+      "mode": "实时航线",
+      "entry": "index.html",
+      "implementation": "当前默认电影镜头；实时会根据负载调整分辨率。首次需要编译着色器并生成世界。",
+      "boundary": "WebGL2 画面质量和真实完成帧率需分别测量。"
+    },
+    {
+      "mode": "高质量静帧",
+      "entry": "?mode=still&spp=16",
+      "implementation": "shot.mjs 通过 CDP 驱动浏览器，取得 RGBA，再由 ffmpeg 输出图片。默认图幅 1672×941。",
+      "boundary": "多采样累积可以改善静帧，不等于实时同样快速。"
+    },
+    {
+      "mode": "离线影片",
+      "entry": "video.mjs",
+      "implementation": "工具默认 1920×1080、30fps、每帧 4 采样。发布片记录为 SPEED=2.5、1584 帧。",
+      "boundary": "机器级 GPU 锁与分块渲染用于约束负载；离线 30fps 不是实时 30fps。"
+    }
+  ],
+  "derivedReuseAdvice": [
+    {
+      "stage": "确认约束",
+      "description": "先复现原作实际画面，明确目标机位、构图、尺度、光色和可更改范围。"
+    },
+    {
+      "stage": "固定模板",
+      "description": "锁定提交、模块、参数与构建工具，保留完整成熟管线作为对照基线。"
+    },
+    {
+      "stage": "有界改造",
+      "description": "从数据和少量关键参数开始；限制变量、候选次数与计算预算，再逐个替换模块。"
+    },
+    {
+      "stage": "独立验证",
+      "description": "固定机位对照后，再看近中远景、连续运动、操作、加载与实际完成帧率。"
+    }
+  ]
 }
