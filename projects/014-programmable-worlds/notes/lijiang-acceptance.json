@@ -1,0 +1,198 @@
+{
+  "schema": "lijiang-delivery-v1",
+  "status": "reopened",
+  "recorded_at": "2026-10-25T05:07:43.949888+00:00",
+  "display_timezone": "Asia/Shanghai",
+  "source_goal": {
+    "path": "notes/lijiang-goal-source.json",
+    "sha256": "e544de7ccdc4b094d86a709e2e47c50589b56698f27d483b7709f8a539da6f66"
+  },
+  "sceneId": "lijiang-flythrough",
+  "runtimeRevision": "lijiang-pure-code-3",
+  "controlsRevision": "complete-atmosphere-1",
+  "terrainVersion": "lijiang-wooded-karst-3",
+  "surfaceDetailRevision": "short-joints-1",
+  "defaultSettings": {
+    "seed": 147,
+    "peakCount": 86,
+    "meanHeight": 340,
+    "steepness": 0.72,
+    "riverWidth": 340,
+    "treeCount": 2550,
+    "vegetationDensity": 1,
+    "rippleStrength": 0.85,
+    "waveSpeed": 1,
+    "waterColor": "#235451",
+    "reflectionStrength": 1,
+    "sunElevation": 15.5,
+    "sunAzimuth": -42,
+    "sunIntensity": 2.3,
+    "ambientIntensity": 1.05,
+    "ambientOcclusion": 0.65,
+    "skyIntensity": 0.88,
+    "fogDensity": 0.0003,
+    "mist": 0.62,
+    "mistCount": 7,
+    "mistHeight": 0,
+    "colorTemperature": 0,
+    "flightDuration": 45,
+    "exposure": 1
+  },
+  "visual_review": {
+    "path": "notes/lijiang-visual-acceptance.md",
+    "sha256": "144a31d617f913cd099fe7bae58f65867ce31c0cf0518c45ed00424f20503ff1",
+    "status": "superseded-by-user-quality-rejection",
+    "scope": "Program-generated Xingping/Li River landscape intent, four flight views, complete central reflection and actual embedded phone clean frame. No claim of photographic fidelity or artistic equivalence to napali; no user approval inferred."
+  },
+  "reports": {
+    "functional": {
+      "path": "notes/lijiang-functional.d3d11.json",
+      "sha256": "450209f65c7468a883f29773a12b2d5ffabfb037bb0f9201574252fe88a231f7",
+      "status": "passed",
+      "runId": "2026-10-25T04-16-32-477Z",
+      "checks": 15,
+      "scope": "Actual procedural Li River flight and controls"
+    },
+    "recording": {
+      "path": "notes/lijiang-recording.d3d11.json",
+      "sha256": "716958c047139a7d0584796e953036e4b4c5a0b4a4b7045b8391750f5fb738cd",
+      "status": "passed",
+      "runId": "2026-10-25T04-20-57-291Z",
+      "checks": 6,
+      "scope": "Actual procedural scene captures; independent visual review required"
+    },
+    "hub": {
+      "path": "notes/lijiang-hub-acceptance.d3d11.json",
+      "sha256": "b4c488d5b3d1a45244d6b2e9f7c4ebbd5d52921e9dc67bc5e336030065469e20",
+      "status": "passed",
+      "runId": "2026-10-25T04-50-53-221Z",
+      "checks": 21,
+      "scope": "Actual four production iframe entries and APIs; serial document/renderer lifecycle; Lijiang native input, controls, 375/390 phone layouts, clean-frame captures and a small cancelled encoder job. Previous full-flight and 1080p60 export reports remain separate. No artwork-quality claim."
+    },
+    "atmosphere": {
+      "path": "notes/lijiang-atmosphere.d3d11.json",
+      "sha256": "908714f36ce87009d3e94ddfacaa51e1ebd357d4e7d4729bcb5752e712766680",
+      "status": "passed",
+      "runId": "2026-10-25T04-56-11-308Z",
+      "checks": 5,
+      "scope": "Actual procedural scene captures; independent visual review required"
+    }
+  },
+  "actual_video": {
+    "path": "assets/lijiang-qa/2026-10-25T04-20-57-291Z/actual-flight.webm",
+    "sha256": "0dd529568fd109849dffb27be1cfdab01795a4074bb8642c3cd62fc22fb89c77",
+    "bytes": 78797616,
+    "ffprobe": {
+      "path": "assets/lijiang-qa/2026-10-25T04-20-57-291Z/ffprobe.json",
+      "sha256": "28b12d18e11c4a8f2141587e12f967718c35aa2b3ce568f924332b21f2533bac"
+    },
+    "codec": "vp9",
+    "width": 1920,
+    "height": 1080,
+    "fps": 60,
+    "decodedFrames": 2700,
+    "duration": 45,
+    "encoderSeconds": 58.3695
+  },
+  "static_checks": {
+    "path": "notes/lijiang-static-checks.json",
+    "sha256": "d439c42142badccc35823df4dda657bc826badb0c502d4072e14edcd709589ef"
+  },
+  "entry": "web/lijiang-flythrough/build/index.html?revision=3",
+  "embedded_entry": "web/lijiang-flythrough/build/index.html?embed=1&revision=3",
+  "hub_entry": "web/index.html#lijiang",
+  "lifecycle": {
+    "fourEntries": [
+      "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/source-live.html?embed=1",
+      "http://127.0.0.1:8796/projects/014-programmable-worlds/web/canal-real/index.html?experience=window&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "http://127.0.0.1:8796/projects/014-programmable-worlds/web/shipyard-station/index.html?embed=1",
+      "http://127.0.0.1:8796/projects/014-programmable-worlds/web/lijiang-flythrough/build/index.html?embed=1&revision=3"
+    ],
+    "peakLiveSceneDocuments": 1,
+    "peakOwnHeavyScenes": 1,
+    "bridge_after": {
+      "service": "napali-source-bridge",
+      "version": 1,
+      "backend": "gl",
+      "pid": 81768,
+      "sessionActive": false,
+      "offscreen": true,
+      "offscreenFrameRate": 30
+    }
+  },
+  "evidence_boundary": "Full functional/encoding reports remain immutable. Later hub verifies the clean-frame button, native own-window input and cancellation; the final atmospheric GUI supplement verifies three additional controls. Default art parameters and path are retained. Same-run return to default pixels has MAD 0. Different launches can vary in SSAO sampling.",
+  "recording_method": "Fixed-step WebCodecs+Mediabunny with actual encoded-packet timestamps; selected instead of captureStream/MediaRecorder to verify 2700 unique fixed-time rendered frames.",
+  "assets_policy": "No external models, images, material textures or HDR; current runtime resource requests checked. Procedural in-memory render targets, geometry and noise are used.",
+  "previous_delivery": {
+    "path": "notes/delivery-acceptance.before-lijiang.json",
+    "sha256": "89d0e0586a9dba773a54e3fc7de70110ba50d546e7fabb0834f0959d452c7aae"
+  },
+  "iteration_history": {
+    "path": "notes/lijiang-iteration-log.md",
+    "sha256": "3387c7dc93696eb2fefac6d5159e467daa33c9ee2edbef79d05c61830285e3cf"
+  },
+  "execution_policy": {
+    "hidden_own_windows_only": true,
+    "desktop_input_used": false,
+    "user_tab_navigated": false,
+    "published_or_committed": false
+  },
+  "release_files": {
+    "README.md": "a2b2bd9031766351475f87c8fc70320264abb37d16b52de485c7452fee435555",
+    "notes/lijiang-iteration-log.md": "3387c7dc93696eb2fefac6d5159e467daa33c9ee2edbef79d05c61830285e3cf",
+    "notes/verification-current.md": "a53bd1d1b81f367281d386e4c34b1c8d5652bad422aff3ec0addffa8088c559f",
+    "project.json": "f84637c77bf9f32e2a92895a85ac6a06674503e508f2e13e6ea7863aabd505e5",
+    "src/runtime-shell/lijiang-acceptance.cjs": "25711f73697933cbfe0ac8a530b697aa14a82bc9a150de13b9c9e881a4e686c7",
+    "src/runtime-shell/lijiang-hub-acceptance.cjs": "203318891596da7ccf00f6f8f75b03a1e487ba8d64c4ed7256aaa3607ba38705",
+    "src/runtime-shell/main.cjs": "388729863481b702d6f5a2c467133ac0cbbefcff22d300a2db0d365c541ca9a3",
+    "src/runtime-shell/prepare-shell.cjs": "4d92345e814dab4b589b7c0624ae903aab0e85dd0aa370670cddee39a0383526",
+    "web/app.js": "0afd8bccb9c5490d0cacf8218b0c87d892fda26daa6da6cb54dc7a2a28eb4d3f",
+    "web/guide.html": "a788e4e2069de902f7e7a57bfd82ee9fd9376bf2154acdfe7caf95c2bb7dd2f6",
+    "web/index.html": "16776c5d4948e9112dc14bd7bd446f9b1a0ec3c8c1057e6e623e01198f3dc1cf",
+    "web/lijiang-flythrough/README.md": "db69817b7dca237e7918b67f39cfb7a50cde98c26be87a93904eee91d61b4358",
+    "web/lijiang-flythrough/build/assets/index-BlVeFlsE.js": "fcdcf60d4dca514353d680c4a845b6ecbb779776d0d6b2c21cb6933a38874d08",
+    "web/lijiang-flythrough/build/assets/index-DxTDCvpc.css": "297f6723c603242df51b69c44d4545da60e24037018bbc71382fb8aecb4a7b53",
+    "web/lijiang-flythrough/build/assets/src-CR-FzBBe.js": "a1d112d5d57c2ed07711244331dc0bd3075961cb60786004b40abf84180cb294",
+    "web/lijiang-flythrough/build/index.html": "6e4550f2c508319457c1a613c7754680ccd6c6acfe7d0d02fa770c34cbca4592",
+    "web/lijiang-flythrough/credits.html": "9440d22bfec2ec800bbd7a4b5ca58ebd91855992c982049e241bb7465f8be742",
+    "web/lijiang-flythrough/index.html": "88cf389ec5b7a0430af13c893d0f0baf8c667e0216709437e7ad4d26e410ee4a",
+    "web/lijiang-flythrough/licenses/lil-gui-MIT.txt": "8cf4a9691239b14c715613ed8e41580d18ee433c862e263058393b35be6c8e53",
+    "web/lijiang-flythrough/licenses/mediabunny-MPL-2.0.txt": "3f3d9e0024b1921b067d6f7f88deb4a60cbe7a78e76c64e3f1d7fc3b779b9d04",
+    "web/lijiang-flythrough/licenses/three-MIT.txt": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+    "web/lijiang-flythrough/package-lock.json": "db43b158093d888ed617a4d60f91e9ebb2dd9a59f0bb488ee620dc9ed638ce82",
+    "web/lijiang-flythrough/package.json": "27f4c2733c89dbb8c6d165d078ffe19feab0a2d166dea286ce608e7438feca6d",
+    "web/lijiang-flythrough/src/camera-path.js": "bbb88c93d23fc3cf607d3a39d6cca1cab44bda5de7124eccf5fe9cc64d4b5a50",
+    "web/lijiang-flythrough/src/details.js": "2301444a1d6b610d46d4d24ea63ecf25c839ee1ed5690e6da13529bc4ebf099b",
+    "web/lijiang-flythrough/src/main.js": "1925868cceb480f72d22ccfdb4a6ec7e3f1520158e0b4bdb3a5dbc7206596e5d",
+    "web/lijiang-flythrough/src/mist.js": "2d03773f047d887b67091b0703eeab7483669f0cfeebf4d662c2cfd4a9ceb60e",
+    "web/lijiang-flythrough/src/noise.js": "41e458598d98071f8d770562e35ad2ee757f2630fdd4489b031c346016058528",
+    "web/lijiang-flythrough/src/recorder.js": "86657aae8b05ae5a6166d8c722675a57f3627f2352c8a61e658d91f3fa2f1546",
+    "web/lijiang-flythrough/src/sky.js": "e979c997b58a9fffb110e26cb097fb30a041396d8b0f551fa0db0632416e29cf",
+    "web/lijiang-flythrough/src/terrain.js": "43d72f0c3377cd39a11d3e13d4106de0d72fefed3cdaaaeaae5f2b7bc3a96f4a",
+    "web/lijiang-flythrough/src/vegetation.js": "01eb726253a46495bcdcff244b0a371127d653a546c03811fc9edc0069173b55",
+    "web/lijiang-flythrough/src/water.js": "cf2973e03b4dc33ea4b962a16f01548fccc67ea0487e2c1bc3214cd3df398a62",
+    "web/lijiang-flythrough/style.css": "b5f85d0a768d14aa7ba996f97e2b496316fec4ee58babba0b17f690df8f88912",
+    "web/lijiang-flythrough/vite.config.js": "3b604eecd484cc31d934e276baec737934a22c46c72374326c4532a0be759b5c",
+    "web/style.css": "ead4d6d0de572a12a761ff1c64ac1b11739775225e20182cf3021641a6cc5a80"
+  },
+  "artwork_quality_accepted": false,
+  "acceptance_pending": [
+    "lijiang-overall-scene-naturalness-and-art-direction",
+    "native-realtime-performance",
+    "native-current-full-flight-film",
+    "native-remaining-goal-authoring-controls-and-mist"
+  ],
+  "quality_reopened": {
+    "at": "2026-10-25T05:31:56.251678+00:00",
+    "reason": "User rejected the visible quality as far below the source. The prior review lowered the bar to a procedural CG intent and did not satisfy the source-level requirement.",
+    "historical_functional_records_preserved": true,
+    "visual_target": "Source-quality comparable scene structure, detailed vegetation and rock, coherent lighting and atmosphere; fixed-view visual gate before full flight."
+  },
+  "current_native_rework": "notes/lijiang-native-current.json",
+  "current_native_visual_scope_accepted": false,
+  "current_record_notice": "旧Three.js重开记录继续保留；当前原生预览的通过范围、真实证据和未完成目标见current_native_rework。整体未标最终完成。",
+  "current_native_quality_gap": "notes/lijiang-native-quality-gap.md",
+  "acceptance_basis": "actual-artwork-effect-and-usability",
+  "source_role": "creative-and-technical-reference",
+  "effect_acceptance_note": "notes/lijiang-effect-acceptance.md"
+}

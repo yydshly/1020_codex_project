@@ -1,0 +1,127 @@
+{
+  "schema": "lijiang-m4-progress-v1",
+  "recordedAt": "2026-10-26T06:34:56.341766+00:00",
+  "status": "mountain-vegetation-runtime-verified-art-polish-remaining",
+  "mainEntryStillM3": false,
+  "fullGoalComplete": false,
+  "candidate": "web/lijiang-m4/raster.html",
+  "goals": [
+    "Mountain slope forests and ledge/shrub patches across76 peaks",
+    "Exact visible SDF support; real foliage above a shared dark surface habitat",
+    "Bare cliff planes retain geology and local wet fissures",
+    "No empty node traversal regression or film-time cache aging"
+  ],
+  "referenceNotes": "lijiang-m4-art-direction.md",
+  "validation": "Actual production parent:19 required checks and1 optional component diagnostic passed; full45s/2700-frame film independently decoded. Incremental art improvement accepted, final visual/performance targets remain open.",
+  "fieldGenerator": {
+    "module": "src/lijiang_m4_ecology.py",
+    "sameFieldResolutions": true,
+    "samePeakCount": 76,
+    "sameNativePacking": true
+  },
+  "mountainAnchors": {
+    "module": "web/lijiang-m4/raster-mountain-ecology.js",
+    "method": "Exact indexed surface triangle barycentrics, outward gradient-oriented face normals, own/exclusion clip checks and local root-disk support",
+    "firstCPUFixtureResult": "Old real geometry only; not M4 actual scene acceptance",
+    "actualM4RenderPending": false
+  },
+  "material": {
+    "actualSupportNormals": true,
+    "sourceHabitatGreenRetained": true,
+    "bareWallFacesRetained": true
+  },
+  "firstRun": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m4/2026-10-26T03-40-58-099Z",
+  "checks": {
+    "mainAndEngineSyntax": "passed",
+    "hiddenDispatch": "verified-without-opening-normal-app",
+    "M3ProtectedFiles": 40,
+    "mountainRootCPUFixture": "Final support-cache comparison preserves all records and anchors on3 retained real meshes, including transformed geometry; full current scene was actually rendered."
+  },
+  "firstRunResult": {
+    "status": "passed-core-but-art-rejected",
+    "loadSeconds": 53.085,
+    "completedFrameMilliseconds": 48.2833,
+    "actualMountainTrees": 2329,
+    "actualMountainBushes": 19999,
+    "peaksWithPlants": 74,
+    "artFailure": "Wide views still read as nearly bare stone; subpixel foliage and repeated cover/slope gates prevented visible contiguous mountainside plant cover",
+    "evidence": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m4/2026-10-26T03-40-58-099Z"
+  },
+  "secondChanges": [
+    "CPU supported mountain cover encoded as an explicit green residual, decoded once in live shader",
+    "Actual slope support applied only in CPU material, not multiplied repeatedly",
+    "Mid/distant nonuniform real canopy volumes for existing SDF-rooted mountain groups",
+    "Mountain QA viewpoints check exposed root visibility instead of accepting dark in-rock views"
+  ],
+  "thirdRun": {
+    "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m4/2026-10-26T04-42-01-233Z",
+    "loadSeconds": 75.831,
+    "status": "rejected",
+    "reason": "Sparse small crowns and broad smooth green stains still leave mountain cliffs visually bare; WebGL context was genuinely lost during close-range views. Hardware cause unproven."
+  },
+  "fourthChanges": [
+    "Separate small rooted support footprint from broad branching crown; mountain trees radius2.8–6.8m, shrubs1.2–3.8m. Root sample3-of4 on actual SDF surface.",
+    "4–6 upright asymmetrical lobes per distant crown;65–115m overlap;720k shared triangle cap and4 drawcalls.",
+    "Dark coherent living ground cover with derivative-filtered world-space detail; no repeated diluted green mix.",
+    "Skip duplicate mountain far twig tier covered by opaque crowns; invisible forest cache expires on monotonic wall time even near camera.",
+    "QA records real WebGL loss and resource evidence, and captures six rooted mountain views before existing closeups."
+  ],
+  "currentRun": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m4\\2026-10-26T06-26-47-267Z",
+  "fifthActual": {
+    "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m4\\2026-10-26T05-15-20-306Z\\result.json",
+    "functionalStatus": "passed",
+    "loadSeconds": 68.949,
+    "completedFrameMilliseconds": 49.99999998013178,
+    "artAccepted": false,
+    "artReview": "Opaque flat green lobes gone; foliage reads as branches. Star-shaped coarse proxy branches and sparse slope mass remain."
+  },
+  "isolation": {
+    "report": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m4/2026-10-26T05-22-42-127Z/result.json",
+    "scope": "Diagnostic only, not full-functional acceptance",
+    "finding": "Same-camera canopy-off removes stars; forest-off retains them, locating the defect in coarse canopy. Ordinary atlas final2/1 mip alpha eliminates all far crowns."
+  },
+  "completedChanges": [
+    "Dense independent short-leaf atlas option for mountain crowns; same leaf scale, final mips no longer erase whole distant crowns.",
+    "Coarse rooted proxy branches and leaf planes revised to eliminate radial star silhouettes.",
+    "Short crack-rooted cliff scrub/creepers, separately supported and excluded from upward-growing main forest.",
+    "Quality budget1.2m mountain-canopy triangles, still4 drawcalls; actual GPU cost must be measured."
+  ],
+  "remaining": [
+    "Close-range leaf clusters still reveal repeated curved planar silhouettes",
+    "Cliff scrub has exact geometric roots but visible branch/root-to-rock connection remains weak",
+    "Distant slope woodland remains discontinuous in places and large limestone faces remain soft/clay-like",
+    "First generation remains lengthy; realtime60fps target is not met by the recorded completed-frame measurement"
+  ],
+  "finalRun": {
+    "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m4\\2026-10-26T06-26-47-267Z\\result.json",
+    "status": "passed",
+    "totalPassed": 20,
+    "loadSeconds": 64.116,
+    "completedFrameMilliseconds": 28.549999972184498,
+    "actualHiddenFlight": {
+      "seconds": 44.768,
+      "completedFrames": 890,
+      "completedFramesPerSecond": 19.88027162258756,
+      "note": "Observed hidden-window cadence at the stated presentation target, not universal device FPS."
+    },
+    "filmSHA256": "7ee60ae750c3f3c77ec35cd91afb495e6556ca552f23afec8af76bc54d7e7c7f",
+    "filmUnchangedByCPUOptimizations": true,
+    "overallFinalArtSignoff": false,
+    "population": {
+      "peakCount": 76,
+      "peaksWithPlants": 76,
+      "trees": 13484,
+      "bushes": 78436,
+      "cliffScrub": 44924
+    }
+  },
+  "performanceOptimizations": {
+    "ecology": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m4-ecology/support-query-cache/comparison.json",
+    "forest": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m4/forest-bound-optimization/verification.json"
+  },
+  "preOptimizationFullRun": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m4\\2026-10-26T05-48-19-250Z\\result.json",
+  "preflightServiceFailure": {
+    "run": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m4/2026-10-26T06-26-09-928Z",
+    "reason": "Local8796/8797/8798 services were absent; failed fetch before scene load. Services restarted hidden, then final actual run completed. No scene result inferred from this failed preflight."
+  }
+}

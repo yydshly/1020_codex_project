@@ -1,0 +1,5029 @@
+{
+  "runId": "2026-10-24T14-24-12-913Z",
+  "scene": "hub",
+  "backend": "d3d11",
+  "status": "failed",
+  "candidateOverride": "r5",
+  "tests": [
+    {
+      "name": "source-live-and-new-canal-entry-map",
+      "passed": true,
+      "evidence": {
+        "entries": [
+          "runtime/source-live.html?embed=1",
+          "canal-real/index.html?embed=1&experience=window&giSet=r5&probes=1&streetProbes=1",
+          "canal-real/index.html?embed=1&experience=story&giSet=r5&probes=1&streetProbes=1"
+        ],
+        "candidateOverride": "r5"
+      }
+    }
+  ],
+  "captures": [],
+  "timingSamples": [
+    {
+      "monotonicMs": 533.4835,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851852919
+      }
+    },
+    {
+      "monotonicMs": 688.732,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 7,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851853066
+      }
+    },
+    {
+      "monotonicMs": 1002.5616,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 16,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851853365
+      }
+    },
+    {
+      "monotonicMs": 1319.048,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 26,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851853696
+      }
+    },
+    {
+      "monotonicMs": 1633.8391,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 35,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851853995
+      }
+    },
+    {
+      "monotonicMs": 1936.4448,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 44,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851854299
+      }
+    },
+    {
+      "monotonicMs": 2252.5201,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 54,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851854629
+      }
+    },
+    {
+      "monotonicMs": 2568.4229,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 63,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851854932
+      }
+    },
+    {
+      "monotonicMs": 2884.0405,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 73,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851855264
+      }
+    },
+    {
+      "monotonicMs": 3199.8069,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 82,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851855579
+      }
+    },
+    {
+      "monotonicMs": 3516.6449,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 92,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851855906
+      }
+    },
+    {
+      "monotonicMs": 3826.2637,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 101,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851856206
+      }
+    },
+    {
+      "monotonicMs": 4141.9076,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 110,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851856496
+      }
+    },
+    {
+      "monotonicMs": 4456.5113,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 120,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851856831
+      }
+    },
+    {
+      "monotonicMs": 4776.409,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 130,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851857166
+      }
+    },
+    {
+      "monotonicMs": 5089.9353,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 139,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851857468
+      }
+    },
+    {
+      "monotonicMs": 5409.9684,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 148,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851857773
+      }
+    },
+    {
+      "monotonicMs": 5725.9512,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 158,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851858106
+      }
+    },
+    {
+      "monotonicMs": 6031.1933,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 167,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851858409
+      }
+    },
+    {
+      "monotonicMs": 6350.9085,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 177,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851858740
+      }
+    },
+    {
+      "monotonicMs": 6665.1417,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 186,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851859043
+      }
+    },
+    {
+      "monotonicMs": 6968.3095,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 195,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851859331
+      }
+    },
+    {
+      "monotonicMs": 7274.1352,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 205,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851859664
+      }
+    },
+    {
+      "monotonicMs": 7590.6149,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 214,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851859969
+      }
+    },
+    {
+      "monotonicMs": 7908.4888,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 223,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851860271
+      }
+    },
+    {
+      "monotonicMs": 8225.4421,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 233,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851860602
+      }
+    },
+    {
+      "monotonicMs": 8544.6598,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 242,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851860906
+      }
+    },
+    {
+      "monotonicMs": 8860.1807,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 252,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851861240
+      }
+    },
+    {
+      "monotonicMs": 9178.8426,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 261,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851861542
+      }
+    },
+    {
+      "monotonicMs": 9504.8859,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 271,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851861874
+      }
+    },
+    {
+      "monotonicMs": 9810.9003,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 281,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851862197
+      }
+    },
+    {
+      "monotonicMs": 10116.1619,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 289,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851862466
+      }
+    },
+    {
+      "monotonicMs": 10429.8587,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 299,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851862810
+      }
+    },
+    {
+      "monotonicMs": 10746.8804,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 309,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851863132
+      }
+    },
+    {
+      "monotonicMs": 11063.0633,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 318,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851863442
+      }
+    },
+    {
+      "monotonicMs": 11380.7106,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 328,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851863762
+      }
+    },
+    {
+      "monotonicMs": 11698.3005,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 337,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851864078
+      }
+    },
+    {
+      "monotonicMs": 12017.3245,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 347,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851864403
+      }
+    },
+    {
+      "monotonicMs": 12328.1618,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 356,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851864708
+      }
+    },
+    {
+      "monotonicMs": 12646.0954,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 365,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851865004
+      }
+    },
+    {
+      "monotonicMs": 12962.1927,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 375,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851865343
+      }
+    },
+    {
+      "monotonicMs": 13295.7892,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 385,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851865685
+      }
+    },
+    {
+      "monotonicMs": 13611.4089,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 394,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851865992
+      }
+    },
+    {
+      "monotonicMs": 13928.9592,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 404,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851866310
+      }
+    },
+    {
+      "monotonicMs": 14248.9576,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 414,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851866638
+      }
+    },
+    {
+      "monotonicMs": 14587.3064,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 423,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851866976
+      }
+    },
+    {
+      "monotonicMs": 14913.4781,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 434,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851867303
+      }
+    },
+    {
+      "monotonicMs": 15225.541,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 443,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851867604
+      }
+    },
+    {
+      "monotonicMs": 15539.0516,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 452,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851867909
+      }
+    },
+    {
+      "monotonicMs": 15855.0445,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 462,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851868236
+      }
+    },
+    {
+      "monotonicMs": 16168.704,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 471,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851868551
+      }
+    },
+    {
+      "monotonicMs": 16484.7042,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 480,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851868834
+      }
+    },
+    {
+      "monotonicMs": 16798.2233,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 490,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851869167
+      }
+    },
+    {
+      "monotonicMs": 17119.3491,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 500,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851869509
+      }
+    },
+    {
+      "monotonicMs": 17428.6022,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 509,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851869800
+      }
+    },
+    {
+      "monotonicMs": 17743.0658,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 518,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851870106
+      }
+    },
+    {
+      "monotonicMs": 18055.9945,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 528,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851870436
+      }
+    },
+    {
+      "monotonicMs": 18371.8251,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 537,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851870736
+      }
+    },
+    {
+      "monotonicMs": 18683.043,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 547,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851871064
+      }
+    },
+    {
+      "monotonicMs": 18999.3477,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 556,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851871377
+      }
+    },
+    {
+      "monotonicMs": 19315.7729,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 565,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851871679
+      }
+    },
+    {
+      "monotonicMs": 19630.8179,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 575,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851872010
+      }
+    },
+    {
+      "monotonicMs": 19944.6085,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 585,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851872330
+      }
+    },
+    {
+      "monotonicMs": 20260.6035,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 594,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851872640
+      }
+    },
+    {
+      "monotonicMs": 20581.3709,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 604,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851872971
+      }
+    },
+    {
+      "monotonicMs": 20893.7922,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 613,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851873273
+      }
+    },
+    {
+      "monotonicMs": 21212.5376,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 623,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851873602
+      }
+    },
+    {
+      "monotonicMs": 21522.7089,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 632,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851873901
+      }
+    },
+    {
+      "monotonicMs": 21839.7898,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 641,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851874202
+      }
+    },
+    {
+      "monotonicMs": 22155.0735,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 651,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851874536
+      }
+    },
+    {
+      "monotonicMs": 22470.3593,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 660,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851874833
+      }
+    },
+    {
+      "monotonicMs": 22781.1816,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 670,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851875165
+      }
+    },
+    {
+      "monotonicMs": 23098.2571,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 679,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851875477
+      }
+    },
+    {
+      "monotonicMs": 23411.4575,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 688,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851875776
+      }
+    },
+    {
+      "monotonicMs": 23725.9398,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 698,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851876104
+      }
+    },
+    {
+      "monotonicMs": 24046.0064,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 708,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851876435
+      }
+    },
+    {
+      "monotonicMs": 24356.6287,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 717,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851876735
+      }
+    },
+    {
+      "monotonicMs": 24674.0614,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 727,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851877064
+      }
+    },
+    {
+      "monotonicMs": 24985.1732,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 736,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851877363
+      }
+    },
+    {
+      "monotonicMs": 25300.1779,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 745,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851877663
+      }
+    },
+    {
+      "monotonicMs": 25617.6721,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 754,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851877965
+      }
+    },
+    {
+      "monotonicMs": 25933.4436,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 764,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851878296
+      }
+    },
+    {
+      "monotonicMs": 26250.0428,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 773,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851878612
+      }
+    },
+    {
+      "monotonicMs": 26562.0148,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 783,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851878932
+      }
+    },
+    {
+      "monotonicMs": 26878.5399,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 792,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851879230
+      }
+    },
+    {
+      "monotonicMs": 27192.8507,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 802,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851879572
+      }
+    },
+    {
+      "monotonicMs": 27509.7723,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 811,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851879870
+      }
+    },
+    {
+      "monotonicMs": 27824.0908,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 821,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851880202
+      }
+    },
+    {
+      "monotonicMs": 28127.3287,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 830,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851880505
+      }
+    },
+    {
+      "monotonicMs": 28448.1632,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 840,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851880838
+      }
+    },
+    {
+      "monotonicMs": 28761.6198,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 849,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851881141
+      }
+    },
+    {
+      "monotonicMs": 29079.7538,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 859,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851881469
+      }
+    },
+    {
+      "monotonicMs": 29387.8959,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 868,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851881766
+      }
+    },
+    {
+      "monotonicMs": 29701.1648,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 877,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851882065
+      }
+    },
+    {
+      "monotonicMs": 30018.8778,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 886,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851882366
+      }
+    },
+    {
+      "monotonicMs": 30333.804,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 896,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851882712
+      }
+    },
+    {
+      "monotonicMs": 30652.5533,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 906,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851883042
+      }
+    },
+    {
+      "monotonicMs": 30963.5042,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 915,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851883342
+      }
+    },
+    {
+      "monotonicMs": 31283.3164,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 925,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851883673
+      }
+    },
+    {
+      "monotonicMs": 31594.1845,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 934,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851883973
+      }
+    },
+    {
+      "monotonicMs": 31916.4822,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 944,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851884306
+      }
+    },
+    {
+      "monotonicMs": 32229.3769,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 953,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851884598
+      }
+    },
+    {
+      "monotonicMs": 32545.735,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 963,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851884930
+      }
+    },
+    {
+      "monotonicMs": 32861.3871,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 972,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851885238
+      }
+    },
+    {
+      "monotonicMs": 33165.1168,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 981,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851885543
+      }
+    },
+    {
+      "monotonicMs": 33472.7522,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 991,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851885862
+      }
+    },
+    {
+      "monotonicMs": 33788.797,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1000,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851886166
+      }
+    },
+    {
+      "monotonicMs": 34106.2033,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1009,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851886470
+      }
+    },
+    {
+      "monotonicMs": 34412.6159,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1019,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851886802
+      }
+    },
+    {
+      "monotonicMs": 34725.1818,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1028,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851887102
+      }
+    },
+    {
+      "monotonicMs": 35042.4315,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1037,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851887404
+      }
+    },
+    {
+      "monotonicMs": 35345.3769,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1046,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851887707
+      }
+    },
+    {
+      "monotonicMs": 35648.3555,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1056,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851888030
+      }
+    },
+    {
+      "monotonicMs": 35963.6923,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1065,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851888335
+      }
+    },
+    {
+      "monotonicMs": 36281.402,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1074,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851888647
+      }
+    },
+    {
+      "monotonicMs": 36597.0513,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1084,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851888975
+      }
+    },
+    {
+      "monotonicMs": 36900.7398,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1093,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851889266
+      }
+    },
+    {
+      "monotonicMs": 37207.1685,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1103,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851889597
+      }
+    },
+    {
+      "monotonicMs": 37519.0877,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1112,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851889897
+      }
+    },
+    {
+      "monotonicMs": 37853.1455,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1121,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851890239
+      }
+    },
+    {
+      "monotonicMs": 38164.3748,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1130,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851890504
+      }
+    },
+    {
+      "monotonicMs": 38486.3552,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0.013899999976158142
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1141,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851890873
+      }
+    },
+    {
+      "monotonicMs": 38802.7761,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0.013899999976158142
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1147,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851891192
+      }
+    },
+    {
+      "monotonicMs": 42179.5691,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 3,
+          "decodedFrames": 0,
+          "time": 0.31389999997615814
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1250,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851894540
+      }
+    },
+    {
+      "monotonicMs": 42493.5122,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 3,
+          "decodedFrames": 0,
+          "time": 0.31389999997615814
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1260,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851894870
+      }
+    },
+    {
+      "monotonicMs": 42808.1452,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 3,
+          "decodedFrames": 0,
+          "time": 0.31389999997615814
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1269,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851895172
+      }
+    },
+    {
+      "monotonicMs": 43123.8152,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 3,
+          "decodedFrames": 0,
+          "time": 0.31389999997615814
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1279,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851895504
+      }
+    },
+    {
+      "monotonicMs": 43439.9934,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 3,
+          "decodedFrames": 0,
+          "time": 0.31389999997615814
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1288,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851895796
+      }
+    },
+    {
+      "monotonicMs": 43753.2781,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 3,
+          "decodedFrames": 0,
+          "time": 0.31389999997615814
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1298,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851896132
+      }
+    },
+    {
+      "monotonicMs": 44066.6542,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 3,
+          "decodedFrames": 0,
+          "time": 0.31389999997615814
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1307,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851896445
+      }
+    },
+    {
+      "monotonicMs": 44415.0719,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 3,
+          "decodedFrames": 0,
+          "time": 0.31389999997615814
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1318,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851896799
+      }
+    },
+    {
+      "monotonicMs": 44725.5153,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 3,
+          "decodedFrames": 0,
+          "time": 0.31389999997615814
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1323,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851897100
+      }
+    },
+    {
+      "monotonicMs": 45040.5505,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 13,
+          "decodedFrames": 0,
+          "time": 1.3138999999761583
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1332,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851897402
+      }
+    },
+    {
+      "monotonicMs": 45354.1372,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 13,
+          "decodedFrames": 0,
+          "time": 1.3138999999761583
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1340,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851897540
+      }
+    },
+    {
+      "monotonicMs": 45669.9515,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 13,
+          "decodedFrames": 1,
+          "time": 1.3138999999761583
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1349,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851897865
+      }
+    },
+    {
+      "monotonicMs": 45984.5764,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 16,
+          "decodedFrames": 1,
+          "time": 1.6138999999761585
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1350,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851898125
+      }
+    },
+    {
+      "monotonicMs": 46302.2595,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 16,
+          "decodedFrames": 1,
+          "time": 1.6138999999761585
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1350,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851898125
+      }
+    },
+    {
+      "monotonicMs": 46615.4635,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 17,
+          "decodedFrames": 1,
+          "time": 1.7138999999761586
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1351,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851898920
+      }
+    },
+    {
+      "monotonicMs": 46933.1126,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 17,
+          "decodedFrames": 1,
+          "time": 1.7138999999761586
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1351,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851898920
+      }
+    },
+    {
+      "monotonicMs": 47242.7452,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 19,
+          "decodedFrames": 2,
+          "time": 1.9138999999761588
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1352,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851899469
+      }
+    },
+    {
+      "monotonicMs": 47553.1697,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 19,
+          "decodedFrames": 2,
+          "time": 1.9138999999761588
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1353,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851899654
+      }
+    },
+    {
+      "monotonicMs": 47870.2673,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 21,
+          "decodedFrames": 3,
+          "time": 2.1138999999761587
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1355,
+        "firstPaintAt": 1792851852919,
+        "lastPaintAt": 1792851900101
+      }
+    }
+  ],
+  "activations": [
+    {
+      "leg": 0,
+      "label": "source",
+      "monotonicStartMs": 535.1435,
+      "monotonicReadyMs": 47870.3222,
+      "seconds": 47.3351812,
+      "sourceFrames": 21,
+      "decodedFrames": 3
+    }
+  ],
+  "errors": [
+    "Error: Previous scene retained its document or rendering surface\n    at invariant (F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\hub-acceptance.cjs:8:51)\n    at runHubAcceptance (F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\hub-acceptance.cjs:79:53)\n    at async F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\main.cjs:143:22"
+  ],
+  "peakObservedLiveSceneDocuments": 1,
+  "peakObservedHeavyScenes": 1,
+  "windowPolicy": {
+    "show": false,
+    "focusable": false,
+    "skipTaskbar": true,
+    "offscreen": true,
+    "targetFrameRate": 30,
+    "paints": 0,
+    "firstPaintAt": null,
+    "lastPaintAt": null
+  },
+  "scope": "Actual sourceLive/canalReal entry, DOM controls and serialized release. No artwork-equivalence or instantaneous-warm-start claim.",
+  "elapsedSeconds": 47.433,
+  "presentation": {
+    "offscreen": true,
+    "targetFrameRate": 30,
+    "paints": 1358,
+    "firstPaintAt": 1792851852919,
+    "lastPaintAt": 1792851900332
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "schema": "shipyard-station-visual-review-v1",
+  "status": "accepted",
+  "sceneId": "shipyard-station",
+  "runtimeRevision": "shipyard-oak2048-aftdeck-2",
+  "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+  "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+  "manifestSha256": "97eb5a39b308d200f0011f9732725a812b7794cca48553178a11e4841b0f882e",
+  "reviewRecord": "../../notes/visual-acceptance-independent.md",
+  "actualRunId": "2026-10-24T18-17-51-965Z",
+  "actualFunctionalReportSha256": "4fabd985a07c4b59343902b17c63ca163891c560b15ba989bca9978db31668e8",
+  "reviewedAt": "2026-10-24T18:25:14.445941+00:00",
+  "scope": "Actual independent scene frames, two completed journeys and standalone narrow idle viewports visually reviewed. Official parent-page lifecycle and embedded mobile idle/docked integration remain separately recorded. Functional report retains its honest pre-review accepted=false; this later review is not a mutation of that evidence."
+}

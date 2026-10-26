@@ -1,0 +1,5595 @@
+{
+  "runId": "2026-10-24T14-13-54-032Z",
+  "status": "passed",
+  "scene": "canal-real",
+  "backend": "d3d11",
+  "tests": [
+    {
+      "name": "new-canal-initializes-without-script-errors",
+      "passed": true,
+      "evidence": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 0.21659999999999857,
+        "paused": false,
+        "frames": 6,
+        "view": "story",
+        "experience": "story",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 16.700000047683716,
+        "quality": "benchmark / not accepted",
+        "runtimeLighting": {
+          "revision": "r5-cloudbreak",
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "probeBackground": "deSunHDR",
+          "environmentRotationY": -1.7362243408943674,
+          "backgroundRotationY": -1.7362243408943674,
+          "sun": {
+            "position": [
+              -16.195299832700535,
+              30.708856143855655,
+              18.061570692961837
+            ],
+            "target": [
+              3,
+              0,
+              -2
+            ],
+            "intensity": 4.562767782748515,
+            "colorLinear": [
+              0.991978082879707,
+              1,
+              0.9084521146029024
+            ]
+          }
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 26,
+          "accepted": false,
+          "model": "../baked-r4/canal-lightmapped.glb",
+          "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+          "proof": null,
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 99.4783270211304,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "giSet": "r5",
+          "appliedPracticalScale": 0.25
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-unbaked-auxiliary",
+          "receivesLiveLighting": true,
+          "sourceGeometryUnchanged": true,
+          "extent": {
+            "x": [
+              -260,
+              260
+            ],
+            "z": [
+              -300,
+              300
+            ]
+          },
+          "openWaterChannelWidth": 8.3,
+          "boxes": [
+            {
+              "name": "Continuous land beyond left bank",
+              "min": [
+                -260,
+                -2.4,
+                -300
+              ],
+              "max": [
+                -9.8,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous low building footing -1",
+              "min": [
+                -17.4,
+                0.35,
+                -77
+              ],
+              "max": [
+                -10.25,
+                0.725,
+                65
+              ]
+            },
+            {
+              "name": "Canal bank continuation north -1",
+              "min": [
+                -9.8,
+                -2.4,
+                -300
+              ],
+              "max": [
+                -4.15,
+                0.625,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bank continuation south -1",
+              "min": [
+                -9.8,
+                -2.4,
+                64.99
+              ],
+              "max": [
+                -4.15,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous land beyond right bank",
+              "min": [
+                9.8,
+                -2.4,
+                -300
+              ],
+              "max": [
+                260,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous low building footing 1",
+              "min": [
+                10.25,
+                0.35,
+                -77
+              ],
+              "max": [
+                17.4,
+                0.725,
+                65
+              ]
+            },
+            {
+              "name": "Canal bank continuation north 1",
+              "min": [
+                4.15,
+                -2.4,
+                -300
+              ],
+              "max": [
+                9.8,
+                0.625,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bank continuation south 1",
+              "min": [
+                4.15,
+                -2.4,
+                64.99
+              ],
+              "max": [
+                9.8,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Observation-room foundation",
+              "min": [
+                -14.7,
+                0.35,
+                7.5
+              ],
+              "max": [
+                -9.35,
+                1.125,
+                15.5
+              ]
+            },
+            {
+              "name": "Left-bank courtyard masonry plinth",
+              "min": [
+                -10.65,
+                0.55,
+                -2.1
+              ],
+              "max": [
+                -10.21,
+                0.94,
+                6.7
+              ]
+            },
+            {
+              "name": "Left-bank courtyard brick wall",
+              "min": [
+                -10.61,
+                0.91,
+                -2.1
+              ],
+              "max": [
+                -10.25,
+                2.64,
+                6.7
+              ]
+            },
+            {
+              "name": "Left-bank courtyard stone coping",
+              "min": [
+                -10.7,
+                2.62,
+                -2.16
+              ],
+              "max": [
+                -10.16,
+                2.77,
+                6.76
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier -1.85",
+              "min": [
+                -10.69,
+                0.63,
+                -2.0500000000000003
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                -1.6500000000000001
+              ]
+            },
+            {
+              "name": "Courtyard pier cap -1.85",
+              "min": [
+                -10.73,
+                2.77,
+                -2.1
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                -1.6
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 1",
+              "min": [
+                -10.69,
+                0.63,
+                0.8
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                1.2
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 1",
+              "min": [
+                -10.73,
+                2.77,
+                0.75
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                1.25
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 3.85",
+              "min": [
+                -10.69,
+                0.63,
+                3.65
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                4.05
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 3.85",
+              "min": [
+                -10.73,
+                2.77,
+                3.6
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                4.1
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 6.52",
+              "min": [
+                -10.69,
+                0.63,
+                6.319999999999999
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                6.72
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 6.52",
+              "min": [
+                -10.73,
+                2.77,
+                6.27
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                6.77
+              ]
+            },
+            {
+              "name": "Canal bed continuation north",
+              "min": [
+                -4.13,
+                -2.4,
+                -300
+              ],
+              "max": [
+                4.13,
+                -1.52,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bed continuation south",
+              "min": [
+                -4.13,
+                -2.4,
+                66.99
+              ],
+              "max": [
+                4.13,
+                -1.52,
+                300
+              ]
+            }
+          ]
+        },
+        "navigation": {
+          "mode": "room-look",
+          "manual": false,
+          "bounds": {
+            "x": [
+              -14.1,
+              -9.65
+            ],
+            "y": [
+              1.65,
+              4.35
+            ],
+            "z": [
+              7.9,
+              15.1
+            ]
+          },
+          "lastConstraint": null,
+          "position": [
+            -11.699999999999998,
+            2.450000000000003,
+            13.7
+          ]
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 27,
+          "bakedMaterials": 26,
+          "glazingMaterials": 1,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "window-room",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                -11.85,
+                2.85,
+                11.5
+              ],
+              "min": [
+                -14.65,
+                1.08,
+                7.48
+              ],
+              "max": [
+                -9.02,
+                4.94,
+                15.52
+              ]
+            },
+            {
+              "name": "bookshop",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                12.05,
+                2.08,
+                6.7
+              ],
+              "min": [
+                10.4,
+                0.8,
+                4.43
+              ],
+              "max": [
+                14.06,
+                3.56,
+                8.98
+              ]
+            },
+            {
+              "name": "canal-street",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                0,
+                3,
+                7
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -20
+              ],
+              "max": [
+                11.2,
+                15.5,
+                38
+              ]
+            },
+            {
+              "name": "bridge-street",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                0,
+                4,
+                -30
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -76
+              ],
+              "max": [
+                11.2,
+                15.5,
+                2
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 13,
+            "observedProgramMaximum": 13
+          }
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": true
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            0.9033785135033627,
+            -0.07219985145424285,
+            9.8
+          ],
+          "letterPosition": [
+            0.9173882300579379,
+            0.10455247927568534,
+            9.919546398622455
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1,
+          "readingLayout": null,
+          "paperScreenBounds": null
+        },
+        "camera": {
+          "position": [
+            -11.699999999999998,
+            2.450000000000003,
+            13.7
+          ],
+          "target": [
+            7.3000000000000025,
+            1.7000000000000004,
+            -4.7
+          ],
+          "fov": 52
+        },
+        "renderer": {
+          "width": 1440,
+          "height": 902,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "actual-room-look-and-movement-stay-inside-room",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "position": [
+            -11.7,
+            2.4500000000000024,
+            13.7
+          ],
+          "target": [
+            7.300000000000001,
+            1.7000000000000002,
+            -4.7
+          ],
+          "fov": 52
+        },
+        "after": {
+          "position": [
+            -9.65,
+            4.350000000000001,
+            7.899999999999999
+          ],
+          "target": [
+            -9.614509784076446,
+            13.959006544083225,
+            -16.75336150873425
+          ],
+          "fov": 52
+        },
+        "navigation": {
+          "mode": "room-look",
+          "manual": true,
+          "bounds": {
+            "x": [
+              -14.1,
+              -9.65
+            ],
+            "y": [
+              1.65,
+              4.35
+            ],
+            "z": [
+              7.9,
+              15.1
+            ]
+          },
+          "lastConstraint": "room:z",
+          "position": [
+            -9.65,
+            4.350000000000001,
+            7.899999999999999
+          ]
+        }
+      }
+    },
+    {
+      "name": "actual-swept-navigation-respects-solid-bridge-and-open-arch",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "solid-bridge-crown",
+          "camera": {
+            "position": [
+              -3.092233167847068e-16,
+              1.800000000000001,
+              -26.525
+            ],
+            "target": [
+              -2.268658195420472e-15,
+              1.8,
+              -42.525
+            ],
+            "fov": 52
+          },
+          "navigation": {
+            "mode": "outdoor-orbit",
+            "manual": true,
+            "bounds": {
+              "x": [
+                -9.6,
+                9.6
+              ],
+              "y": [
+                1.1,
+                null
+              ],
+              "z": [
+                -70,
+                50
+              ]
+            },
+            "lastConstraint": "bridge-bank",
+            "position": [
+              -3.092233167847068e-16,
+              1.800000000000001,
+              -26.525
+            ]
+          }
+        },
+        {
+          "label": "open-bridge-arch",
+          "camera": {
+            "position": [
+              -1.224646799147353e-15,
+              1.100000000000001,
+              -34
+            ],
+            "target": [
+              -3.1840816777831186e-15,
+              1.1,
+              -50
+            ],
+            "fov": 52
+          },
+          "navigation": {
+            "mode": "outdoor-orbit",
+            "manual": true,
+            "bounds": {
+              "x": [
+                -9.6,
+                9.6
+              ],
+              "y": [
+                1.1,
+                null
+              ],
+              "z": [
+                -70,
+                50
+              ]
+            },
+            "lastConstraint": null,
+            "position": [
+              -1.224646799147353e-15,
+              1.100000000000001,
+              -34
+            ]
+          }
+        },
+        {
+          "label": "above-bridge-deck",
+          "camera": {
+            "position": [
+              -1.224646799147353e-15,
+              3.000000000000001,
+              -34
+            ],
+            "target": [
+              -3.1840816777831186e-15,
+              3,
+              -50
+            ],
+            "fov": 52
+          },
+          "navigation": {
+            "mode": "outdoor-orbit",
+            "manual": true,
+            "bounds": {
+              "x": [
+                -9.6,
+                9.6
+              ],
+              "y": [
+                1.1,
+                null
+              ],
+              "z": [
+                -70,
+                50
+              ]
+            },
+            "lastConstraint": null,
+            "position": [
+              -1.224646799147353e-15,
+              3.000000000000001,
+              -34
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "actual-window-opening-and-height-varying-railings",
+      "passed": true,
+      "evidence": [
+        {
+          "label": "window-solid-pier",
+          "camera": {
+            "position": [
+              -8.765,
+              2.700000000000002,
+              8.600000000000003
+            ],
+            "target": [
+              -12.765,
+              2.7000000000000015,
+              8.600000000000003
+            ],
+            "fov": 54
+          },
+          "navigation": {
+            "mode": "outdoor-orbit",
+            "manual": true,
+            "bounds": {
+              "x": [
+                -9.6,
+                9.6
+              ],
+              "y": [
+                1.1,
+                null
+              ],
+              "z": [
+                -70,
+                50
+              ]
+            },
+            "lastConstraint": "window-wall",
+            "position": [
+              -8.765,
+              2.700000000000002,
+              8.600000000000003
+            ]
+          }
+        },
+        {
+          "label": "window-open-centre",
+          "camera": {
+            "position": [
+              -9.3,
+              2.7000000000000006,
+              11.5
+            ],
+            "target": [
+              -13.3,
+              2.7,
+              11.5
+            ],
+            "fov": 54
+          },
+          "navigation": {
+            "mode": "outdoor-orbit",
+            "manual": true,
+            "bounds": {
+              "x": [
+                -9.6,
+                9.6
+              ],
+              "y": [
+                1.1,
+                null
+              ],
+              "z": [
+                -70,
+                50
+              ]
+            },
+            "lastConstraint": null,
+            "position": [
+              -9.3,
+              2.7000000000000006,
+              11.5
+            ]
+          }
+        },
+        {
+          "label": "central-bridge-railing",
+          "camera": {
+            "position": [
+              -1.5797943709000867e-15,
+              2.6000000000000014,
+              -26.449999999999996
+            ],
+            "target": [
+              -5.253734768342147e-15,
+              2.5999999999999996,
+              -56.449999999999996
+            ],
+            "fov": 54
+          },
+          "navigation": {
+            "mode": "outdoor-orbit",
+            "manual": true,
+            "bounds": {
+              "x": [
+                -9.6,
+                9.6
+              ],
+              "y": [
+                1.1,
+                null
+              ],
+              "z": [
+                -70,
+                50
+              ]
+            },
+            "lastConstraint": "bridge-railing",
+            "position": [
+              -1.5797943709000867e-15,
+              2.6000000000000014,
+              -26.449999999999996
+            ]
+          }
+        },
+        {
+          "label": "lower-side-railing",
+          "camera": {
+            "position": [
+              5.6999999999999975,
+              2.600000000000002,
+              -39.99999999999999
+            ],
+            "target": [
+              5.699999999999994,
+              2.6,
+              -70
+            ],
+            "fov": 54
+          },
+          "navigation": {
+            "mode": "outdoor-orbit",
+            "manual": true,
+            "bounds": {
+              "x": [
+                -9.6,
+                9.6
+              ],
+              "y": [
+                1.1,
+                null
+              ],
+              "z": [
+                -70,
+                50
+              ]
+            },
+            "lastConstraint": null,
+            "position": [
+              5.6999999999999975,
+              2.600000000000002,
+              -39.99999999999999
+            ]
+          }
+        },
+        {
+          "label": "above-central-railing",
+          "camera": {
+            "position": [
+              -2.449293598294706e-15,
+              2.950000000000002,
+              -40
+            ],
+            "target": [
+              -6.123233995736767e-15,
+              2.95,
+              -70
+            ],
+            "fov": 54
+          },
+          "navigation": {
+            "mode": "outdoor-orbit",
+            "manual": true,
+            "bounds": {
+              "x": [
+                -9.6,
+                9.6
+              ],
+              "y": [
+                1.1,
+                null
+              ],
+              "z": [
+                -70,
+                50
+              ]
+            },
+            "lastConstraint": null,
+            "position": [
+              -2.449293598294706e-15,
+              2.950000000000002,
+              -40
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "actual-interrupted-window-return-retains-outdoor-position",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "position": [
+            6.8,
+            1.8599999999999985,
+            8.800000000000002
+          ],
+          "target": [
+            8.3,
+            3.8999999999999995,
+            -7.799999999999999
+          ],
+          "fov": 54
+        },
+        "after": {
+          "position": [
+            6.8,
+            1.8599999999999985,
+            8.800000000000002
+          ],
+          "target": [
+            4.972188975563847,
+            3.8999999999999995,
+            -7.767109188357201
+          ],
+          "fov": 52
+        },
+        "navigation": {
+          "mode": "outdoor-orbit",
+          "manual": true,
+          "bounds": {
+            "x": [
+              -9.6,
+              9.6
+            ],
+            "y": [
+              1.1,
+              null
+            ],
+            "z": [
+              -70,
+              50
+            ]
+          },
+          "lastConstraint": null,
+          "position": [
+            6.8,
+            1.8599999999999985,
+            8.800000000000002
+          ]
+        }
+      }
+    },
+    {
+      "name": "actual-calm-water-bands-animate",
+      "passed": true,
+      "evidence": {
+        "difference": 1.65625,
+        "timeA": 8.25,
+        "timeB": 11.25
+      }
+    },
+    {
+      "name": "actual-390-845-viewport-without-horizontal-overflow",
+      "passed": true,
+      "evidence": {
+        "requestedViewport": {
+          "width": 390,
+          "height": 844
+        },
+        "actualViewport": {
+          "width": 390,
+          "height": 845
+        },
+        "layout": {
+          "overflow": false,
+          "elements": [
+            {
+              "text": "重新开始",
+              "rect": {
+                "x": 18,
+                "y": 787,
+                "width": 72,
+                "height": 40,
+                "top": 787,
+                "right": 90,
+                "bottom": 827,
+                "left": 18
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "actual-390-845-letter-fits-reading-area",
+      "passed": true,
+      "evidence": {
+        "requestedViewport": {
+          "width": 390,
+          "height": 844
+        },
+        "actualViewport": {
+          "width": 390,
+          "height": 845
+        },
+        "paper": {
+          "left": 46.4048986894524,
+          "right": 341.8645548775391,
+          "top": 223.21998466052983,
+          "bottom": 620.2702792121186,
+          "bodyFontEstimate": 25.411218851301683
+        },
+        "readingLayout": {
+          "width": 390,
+          "height": 845,
+          "area": {
+            "left": 31.2,
+            "right": 358.8,
+            "top": 72.5,
+            "bottom": 771
+          },
+          "bodyFontSourcePixels": 96,
+          "distance": 0.8819615653021563
+        }
+      }
+    },
+    {
+      "name": "actual-640-521-viewport-without-horizontal-overflow",
+      "passed": true,
+      "evidence": {
+        "requestedViewport": {
+          "width": 640,
+          "height": 520
+        },
+        "actualViewport": {
+          "width": 640,
+          "height": 521
+        },
+        "layout": {
+          "overflow": false,
+          "elements": [
+            {
+              "text": "重新开始",
+              "rect": {
+                "x": 18,
+                "y": 463,
+                "width": 72,
+                "height": 40,
+                "top": 463,
+                "right": 90,
+                "bottom": 503,
+                "left": 18
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "name": "actual-640-521-letter-fits-reading-area",
+      "passed": true,
+      "evidence": {
+        "requestedViewport": {
+          "width": 640,
+          "height": 520
+        },
+        "actualViewport": {
+          "width": 640,
+          "height": 521
+        },
+        "paper": {
+          "left": 192.58065377977246,
+          "right": 445.30616572320287,
+          "top": 89.69864868778961,
+          "bottom": 429.7878258373843,
+          "bodyFontEstimate": 21.765707337574057
+        },
+        "readingLayout": {
+          "width": 640,
+          "height": 521,
+          "area": {
+            "left": 51.2,
+            "right": 588.8,
+            "top": 72.5,
+            "bottom": 447
+          },
+          "bodyFontSourcePixels": 96,
+          "distance": 0.6364614041608432
+        }
+      }
+    },
+    {
+      "name": "task-owned-renderer-disposes",
+      "passed": true,
+      "evidence": {
+        "disposed": true
+      }
+    }
+  ],
+  "captures": [
+    {
+      "name": "water-bands-a",
+      "canvas": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/water-bands-a-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/water-bands-a-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "b9554d0e4f958a1db39fa85cf65fb7f9716b6844156d085a5850eb4e88f50114",
+      "monotonicMs": 50453.5871,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 63,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851282426
+      },
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 8.25,
+        "paused": true,
+        "frames": 19,
+        "view": "quay",
+        "experience": "story",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 13.399999976158142,
+        "quality": "benchmark / not accepted",
+        "runtimeLighting": {
+          "revision": "r5-cloudbreak",
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "probeBackground": "deSunHDR",
+          "environmentRotationY": -1.7362243408943674,
+          "backgroundRotationY": -1.7362243408943674,
+          "sun": {
+            "position": [
+              -16.195299832700535,
+              30.708856143855655,
+              18.061570692961837
+            ],
+            "target": [
+              3,
+              0,
+              -2
+            ],
+            "intensity": 4.562767782748515,
+            "colorLinear": [
+              0.991978082879707,
+              1,
+              0.9084521146029024
+            ]
+          }
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 26,
+          "accepted": false,
+          "model": "../baked-r4/canal-lightmapped.glb",
+          "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+          "proof": null,
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 99.4783270211304,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "giSet": "r5",
+          "appliedPracticalScale": 0.25
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-unbaked-auxiliary",
+          "receivesLiveLighting": true,
+          "sourceGeometryUnchanged": true,
+          "extent": {
+            "x": [
+              -260,
+              260
+            ],
+            "z": [
+              -300,
+              300
+            ]
+          },
+          "openWaterChannelWidth": 8.3,
+          "boxes": [
+            {
+              "name": "Continuous land beyond left bank",
+              "min": [
+                -260,
+                -2.4,
+                -300
+              ],
+              "max": [
+                -9.8,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous low building footing -1",
+              "min": [
+                -17.4,
+                0.35,
+                -77
+              ],
+              "max": [
+                -10.25,
+                0.725,
+                65
+              ]
+            },
+            {
+              "name": "Canal bank continuation north -1",
+              "min": [
+                -9.8,
+                -2.4,
+                -300
+              ],
+              "max": [
+                -4.15,
+                0.625,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bank continuation south -1",
+              "min": [
+                -9.8,
+                -2.4,
+                64.99
+              ],
+              "max": [
+                -4.15,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous land beyond right bank",
+              "min": [
+                9.8,
+                -2.4,
+                -300
+              ],
+              "max": [
+                260,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous low building footing 1",
+              "min": [
+                10.25,
+                0.35,
+                -77
+              ],
+              "max": [
+                17.4,
+                0.725,
+                65
+              ]
+            },
+            {
+              "name": "Canal bank continuation north 1",
+              "min": [
+                4.15,
+                -2.4,
+                -300
+              ],
+              "max": [
+                9.8,
+                0.625,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bank continuation south 1",
+              "min": [
+                4.15,
+                -2.4,
+                64.99
+              ],
+              "max": [
+                9.8,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Observation-room foundation",
+              "min": [
+                -14.7,
+                0.35,
+                7.5
+              ],
+              "max": [
+                -9.35,
+                1.125,
+                15.5
+              ]
+            },
+            {
+              "name": "Left-bank courtyard masonry plinth",
+              "min": [
+                -10.65,
+                0.55,
+                -2.1
+              ],
+              "max": [
+                -10.21,
+                0.94,
+                6.7
+              ]
+            },
+            {
+              "name": "Left-bank courtyard brick wall",
+              "min": [
+                -10.61,
+                0.91,
+                -2.1
+              ],
+              "max": [
+                -10.25,
+                2.64,
+                6.7
+              ]
+            },
+            {
+              "name": "Left-bank courtyard stone coping",
+              "min": [
+                -10.7,
+                2.62,
+                -2.16
+              ],
+              "max": [
+                -10.16,
+                2.77,
+                6.76
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier -1.85",
+              "min": [
+                -10.69,
+                0.63,
+                -2.0500000000000003
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                -1.6500000000000001
+              ]
+            },
+            {
+              "name": "Courtyard pier cap -1.85",
+              "min": [
+                -10.73,
+                2.77,
+                -2.1
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                -1.6
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 1",
+              "min": [
+                -10.69,
+                0.63,
+                0.8
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                1.2
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 1",
+              "min": [
+                -10.73,
+                2.77,
+                0.75
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                1.25
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 3.85",
+              "min": [
+                -10.69,
+                0.63,
+                3.65
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                4.05
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 3.85",
+              "min": [
+                -10.73,
+                2.77,
+                3.6
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                4.1
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 6.52",
+              "min": [
+                -10.69,
+                0.63,
+                6.319999999999999
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                6.72
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 6.52",
+              "min": [
+                -10.73,
+                2.77,
+                6.27
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                6.77
+              ]
+            },
+            {
+              "name": "Canal bed continuation north",
+              "min": [
+                -4.13,
+                -2.4,
+                -300
+              ],
+              "max": [
+                4.13,
+                -1.52,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bed continuation south",
+              "min": [
+                -4.13,
+                -2.4,
+                66.99
+              ],
+              "max": [
+                4.13,
+                -1.52,
+                300
+              ]
+            }
+          ]
+        },
+        "navigation": {
+          "mode": "outdoor-orbit",
+          "manual": false,
+          "bounds": {
+            "x": [
+              -9.6,
+              9.6
+            ],
+            "y": [
+              1.1,
+              null
+            ],
+            "z": [
+              -70,
+              50
+            ]
+          },
+          "lastConstraint": null,
+          "position": [
+            6.8,
+            1.8599999999999985,
+            8.800000000000002
+          ]
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 27,
+          "bakedMaterials": 26,
+          "glazingMaterials": 1,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "window-room",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                -11.85,
+                2.85,
+                11.5
+              ],
+              "min": [
+                -14.65,
+                1.08,
+                7.48
+              ],
+              "max": [
+                -9.02,
+                4.94,
+                15.52
+              ]
+            },
+            {
+              "name": "bookshop",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                12.05,
+                2.08,
+                6.7
+              ],
+              "min": [
+                10.4,
+                0.8,
+                4.43
+              ],
+              "max": [
+                14.06,
+                3.56,
+                8.98
+              ]
+            },
+            {
+              "name": "canal-street",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                0,
+                3,
+                7
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -20
+              ],
+              "max": [
+                11.2,
+                15.5,
+                38
+              ]
+            },
+            {
+              "name": "bridge-street",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                0,
+                4,
+                -30
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -76
+              ],
+              "max": [
+                11.2,
+                15.5,
+                2
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 13,
+            "observedProgramMaximum": 13
+          }
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            1.0054077686816139,
+            -0.07476929890873864,
+            9.8
+          ],
+          "letterPosition": [
+            1.0219384707408288,
+            0.10178361777618687,
+            9.919519050780515
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1,
+          "readingLayout": null,
+          "paperScreenBounds": null
+        },
+        "camera": {
+          "position": [
+            6.8,
+            1.8599999999999985,
+            8.800000000000002
+          ],
+          "target": [
+            8.3,
+            3.8999999999999995,
+            -7.799999999999999
+          ],
+          "fov": 54
+        },
+        "renderer": {
+          "width": 1440,
+          "height": 902,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "water-bands-b",
+      "canvas": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/water-bands-b-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/water-bands-b-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "41fe9d48612123872fef3257a8b04ee1b2ddece7528cb3983e48932a4924f3ef",
+      "monotonicMs": 51861.3601,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 100,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851283841
+      },
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 11.25,
+        "paused": true,
+        "frames": 61,
+        "view": "quay",
+        "experience": "story",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 13.399999976158142,
+        "quality": "benchmark / not accepted",
+        "runtimeLighting": {
+          "revision": "r5-cloudbreak",
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "probeBackground": "deSunHDR",
+          "environmentRotationY": -1.7362243408943674,
+          "backgroundRotationY": -1.7362243408943674,
+          "sun": {
+            "position": [
+              -16.195299832700535,
+              30.708856143855655,
+              18.061570692961837
+            ],
+            "target": [
+              3,
+              0,
+              -2
+            ],
+            "intensity": 4.562767782748515,
+            "colorLinear": [
+              0.991978082879707,
+              1,
+              0.9084521146029024
+            ]
+          }
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 26,
+          "accepted": false,
+          "model": "../baked-r4/canal-lightmapped.glb",
+          "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+          "proof": null,
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 99.4783270211304,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "giSet": "r5",
+          "appliedPracticalScale": 0.25
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-unbaked-auxiliary",
+          "receivesLiveLighting": true,
+          "sourceGeometryUnchanged": true,
+          "extent": {
+            "x": [
+              -260,
+              260
+            ],
+            "z": [
+              -300,
+              300
+            ]
+          },
+          "openWaterChannelWidth": 8.3,
+          "boxes": [
+            {
+              "name": "Continuous land beyond left bank",
+              "min": [
+                -260,
+                -2.4,
+                -300
+              ],
+              "max": [
+                -9.8,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous low building footing -1",
+              "min": [
+                -17.4,
+                0.35,
+                -77
+              ],
+              "max": [
+                -10.25,
+                0.725,
+                65
+              ]
+            },
+            {
+              "name": "Canal bank continuation north -1",
+              "min": [
+                -9.8,
+                -2.4,
+                -300
+              ],
+              "max": [
+                -4.15,
+                0.625,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bank continuation south -1",
+              "min": [
+                -9.8,
+                -2.4,
+                64.99
+              ],
+              "max": [
+                -4.15,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous land beyond right bank",
+              "min": [
+                9.8,
+                -2.4,
+                -300
+              ],
+              "max": [
+                260,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous low building footing 1",
+              "min": [
+                10.25,
+                0.35,
+                -77
+              ],
+              "max": [
+                17.4,
+                0.725,
+                65
+              ]
+            },
+            {
+              "name": "Canal bank continuation north 1",
+              "min": [
+                4.15,
+                -2.4,
+                -300
+              ],
+              "max": [
+                9.8,
+                0.625,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bank continuation south 1",
+              "min": [
+                4.15,
+                -2.4,
+                64.99
+              ],
+              "max": [
+                9.8,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Observation-room foundation",
+              "min": [
+                -14.7,
+                0.35,
+                7.5
+              ],
+              "max": [
+                -9.35,
+                1.125,
+                15.5
+              ]
+            },
+            {
+              "name": "Left-bank courtyard masonry plinth",
+              "min": [
+                -10.65,
+                0.55,
+                -2.1
+              ],
+              "max": [
+                -10.21,
+                0.94,
+                6.7
+              ]
+            },
+            {
+              "name": "Left-bank courtyard brick wall",
+              "min": [
+                -10.61,
+                0.91,
+                -2.1
+              ],
+              "max": [
+                -10.25,
+                2.64,
+                6.7
+              ]
+            },
+            {
+              "name": "Left-bank courtyard stone coping",
+              "min": [
+                -10.7,
+                2.62,
+                -2.16
+              ],
+              "max": [
+                -10.16,
+                2.77,
+                6.76
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier -1.85",
+              "min": [
+                -10.69,
+                0.63,
+                -2.0500000000000003
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                -1.6500000000000001
+              ]
+            },
+            {
+              "name": "Courtyard pier cap -1.85",
+              "min": [
+                -10.73,
+                2.77,
+                -2.1
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                -1.6
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 1",
+              "min": [
+                -10.69,
+                0.63,
+                0.8
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                1.2
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 1",
+              "min": [
+                -10.73,
+                2.77,
+                0.75
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                1.25
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 3.85",
+              "min": [
+                -10.69,
+                0.63,
+                3.65
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                4.05
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 3.85",
+              "min": [
+                -10.73,
+                2.77,
+                3.6
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                4.1
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 6.52",
+              "min": [
+                -10.69,
+                0.63,
+                6.319999999999999
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                6.72
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 6.52",
+              "min": [
+                -10.73,
+                2.77,
+                6.27
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                6.77
+              ]
+            },
+            {
+              "name": "Canal bed continuation north",
+              "min": [
+                -4.13,
+                -2.4,
+                -300
+              ],
+              "max": [
+                4.13,
+                -1.52,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bed continuation south",
+              "min": [
+                -4.13,
+                -2.4,
+                66.99
+              ],
+              "max": [
+                4.13,
+                -1.52,
+                300
+              ]
+            }
+          ]
+        },
+        "navigation": {
+          "mode": "outdoor-orbit",
+          "manual": false,
+          "bounds": {
+            "x": [
+              -9.6,
+              9.6
+            ],
+            "y": [
+              1.1,
+              null
+            ],
+            "z": [
+              -70,
+              50
+            ]
+          },
+          "lastConstraint": null,
+          "position": [
+            6.8,
+            1.8599999999999985,
+            8.800000000000002
+          ]
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 27,
+          "bakedMaterials": 26,
+          "glazingMaterials": 1,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "window-room",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                -11.85,
+                2.85,
+                11.5
+              ],
+              "min": [
+                -14.65,
+                1.08,
+                7.48
+              ],
+              "max": [
+                -9.02,
+                4.94,
+                15.52
+              ]
+            },
+            {
+              "name": "bookshop",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                12.05,
+                2.08,
+                6.7
+              ],
+              "min": [
+                10.4,
+                0.8,
+                4.43
+              ],
+              "max": [
+                14.06,
+                3.56,
+                8.98
+              ]
+            },
+            {
+              "name": "canal-street",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                0,
+                3,
+                7
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -20
+              ],
+              "max": [
+                11.2,
+                15.5,
+                38
+              ]
+            },
+            {
+              "name": "bridge-street",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                0,
+                4,
+                -30
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -76
+              ],
+              "max": [
+                11.2,
+                15.5,
+                2
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 13,
+            "observedProgramMaximum": 13
+          }
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            1.0192970018083483,
+            -0.0709547261297614,
+            9.8
+          ],
+          "letterPosition": [
+            1.0359025661225023,
+            0.10545490619002611,
+            9.919720077090712
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1,
+          "readingLayout": null,
+          "paperScreenBounds": null
+        },
+        "camera": {
+          "position": [
+            6.8,
+            1.8599999999999985,
+            8.800000000000002
+          ],
+          "target": [
+            8.3,
+            3.8999999999999995,
+            -7.799999999999999
+          ],
+          "fov": 54
+        },
+        "renderer": {
+          "width": 1440,
+          "height": 902,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "final-story-choice",
+      "canvas": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/final-story-choice-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/final-story-choice-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "f3c339a21e6c1a970f8e2f2629b4afd3d363486c134d6f923d435ba591ebe0d0",
+      "monotonicMs": 53602.1551,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 143,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851285542
+      },
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 11.25,
+        "paused": true,
+        "frames": 109,
+        "view": "story",
+        "experience": "story",
+        "visible": true,
+        "choice": null,
+        "storyTime": 25,
+        "disposed": false,
+        "lastFrameMs": 7.199999928474426,
+        "quality": "benchmark / not accepted",
+        "runtimeLighting": {
+          "revision": "r5-cloudbreak",
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "probeBackground": "deSunHDR",
+          "environmentRotationY": -1.7362243408943674,
+          "backgroundRotationY": -1.7362243408943674,
+          "sun": {
+            "position": [
+              -16.195299832700535,
+              30.708856143855655,
+              18.061570692961837
+            ],
+            "target": [
+              3,
+              0,
+              -2
+            ],
+            "intensity": 4.562767782748515,
+            "colorLinear": [
+              0.991978082879707,
+              1,
+              0.9084521146029024
+            ]
+          }
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 26,
+          "accepted": false,
+          "model": "../baked-r4/canal-lightmapped.glb",
+          "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+          "proof": null,
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 99.4783270211304,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "giSet": "r5",
+          "appliedPracticalScale": 0.25
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-unbaked-auxiliary",
+          "receivesLiveLighting": true,
+          "sourceGeometryUnchanged": true,
+          "extent": {
+            "x": [
+              -260,
+              260
+            ],
+            "z": [
+              -300,
+              300
+            ]
+          },
+          "openWaterChannelWidth": 8.3,
+          "boxes": [
+            {
+              "name": "Continuous land beyond left bank",
+              "min": [
+                -260,
+                -2.4,
+                -300
+              ],
+              "max": [
+                -9.8,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous low building footing -1",
+              "min": [
+                -17.4,
+                0.35,
+                -77
+              ],
+              "max": [
+                -10.25,
+                0.725,
+                65
+              ]
+            },
+            {
+              "name": "Canal bank continuation north -1",
+              "min": [
+                -9.8,
+                -2.4,
+                -300
+              ],
+              "max": [
+                -4.15,
+                0.625,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bank continuation south -1",
+              "min": [
+                -9.8,
+                -2.4,
+                64.99
+              ],
+              "max": [
+                -4.15,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous land beyond right bank",
+              "min": [
+                9.8,
+                -2.4,
+                -300
+              ],
+              "max": [
+                260,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous low building footing 1",
+              "min": [
+                10.25,
+                0.35,
+                -77
+              ],
+              "max": [
+                17.4,
+                0.725,
+                65
+              ]
+            },
+            {
+              "name": "Canal bank continuation north 1",
+              "min": [
+                4.15,
+                -2.4,
+                -300
+              ],
+              "max": [
+                9.8,
+                0.625,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bank continuation south 1",
+              "min": [
+                4.15,
+                -2.4,
+                64.99
+              ],
+              "max": [
+                9.8,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Observation-room foundation",
+              "min": [
+                -14.7,
+                0.35,
+                7.5
+              ],
+              "max": [
+                -9.35,
+                1.125,
+                15.5
+              ]
+            },
+            {
+              "name": "Left-bank courtyard masonry plinth",
+              "min": [
+                -10.65,
+                0.55,
+                -2.1
+              ],
+              "max": [
+                -10.21,
+                0.94,
+                6.7
+              ]
+            },
+            {
+              "name": "Left-bank courtyard brick wall",
+              "min": [
+                -10.61,
+                0.91,
+                -2.1
+              ],
+              "max": [
+                -10.25,
+                2.64,
+                6.7
+              ]
+            },
+            {
+              "name": "Left-bank courtyard stone coping",
+              "min": [
+                -10.7,
+                2.62,
+                -2.16
+              ],
+              "max": [
+                -10.16,
+                2.77,
+                6.76
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier -1.85",
+              "min": [
+                -10.69,
+                0.63,
+                -2.0500000000000003
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                -1.6500000000000001
+              ]
+            },
+            {
+              "name": "Courtyard pier cap -1.85",
+              "min": [
+                -10.73,
+                2.77,
+                -2.1
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                -1.6
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 1",
+              "min": [
+                -10.69,
+                0.63,
+                0.8
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                1.2
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 1",
+              "min": [
+                -10.73,
+                2.77,
+                0.75
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                1.25
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 3.85",
+              "min": [
+                -10.69,
+                0.63,
+                3.65
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                4.05
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 3.85",
+              "min": [
+                -10.73,
+                2.77,
+                3.6
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                4.1
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 6.52",
+              "min": [
+                -10.69,
+                0.63,
+                6.319999999999999
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                6.72
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 6.52",
+              "min": [
+                -10.73,
+                2.77,
+                6.27
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                6.77
+              ]
+            },
+            {
+              "name": "Canal bed continuation north",
+              "min": [
+                -4.13,
+                -2.4,
+                -300
+              ],
+              "max": [
+                4.13,
+                -1.52,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bed continuation south",
+              "min": [
+                -4.13,
+                -2.4,
+                66.99
+              ],
+              "max": [
+                4.13,
+                -1.52,
+                300
+              ]
+            }
+          ]
+        },
+        "navigation": {
+          "mode": "outdoor-orbit",
+          "manual": false,
+          "bounds": {
+            "x": [
+              -9.6,
+              9.6
+            ],
+            "y": [
+              1.1,
+              null
+            ],
+            "z": [
+              -70,
+              50
+            ]
+          },
+          "lastConstraint": null,
+          "position": [
+            4.650000000000001,
+            1.3500000000000005,
+            9.8
+          ]
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 27,
+          "bakedMaterials": 26,
+          "glazingMaterials": 1,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "window-room",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                -11.85,
+                2.85,
+                11.5
+              ],
+              "min": [
+                -14.65,
+                1.08,
+                7.48
+              ],
+              "max": [
+                -9.02,
+                4.94,
+                15.52
+              ]
+            },
+            {
+              "name": "bookshop",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                12.05,
+                2.08,
+                6.7
+              ],
+              "min": [
+                10.4,
+                0.8,
+                4.43
+              ],
+              "max": [
+                14.06,
+                3.56,
+                8.98
+              ]
+            },
+            {
+              "name": "canal-street",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                0,
+                3,
+                7
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -20
+              ],
+              "max": [
+                11.2,
+                15.5,
+                38
+              ]
+            },
+            {
+              "name": "bridge-street",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                0,
+                4,
+                -30
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -76
+              ],
+              "max": [
+                11.2,
+                15.5,
+                2
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 13,
+            "observedProgramMaximum": 13
+          }
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 25,
+          "duration": 25,
+          "phase": "letter",
+          "ended": true,
+          "active": true
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            1.0192970018083483,
+            -0.0709547261297614,
+            5.300000000000001
+          ],
+          "letterPosition": [
+            1.0359025661225023,
+            0.10545490619002611,
+            5.419720077090712
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1,
+          "readingLayout": null,
+          "paperScreenBounds": null
+        },
+        "camera": {
+          "position": [
+            4.650000000000001,
+            1.3500000000000005,
+            9.8
+          ],
+          "target": [
+            0.9499999999999992,
+            0.07500000000000018,
+            5.299999999999999
+          ],
+          "fov": 50
+        },
+        "renderer": {
+          "width": 1440,
+          "height": 902,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "final-story-read",
+      "canvas": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/final-story-read-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/final-story-read-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "3743ca9e6692d81d5ba1de1e5403d8ea33c3528c14274ddca1d598a786ea7595",
+      "monotonicMs": 56198.9587,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 192,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851288167
+      },
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 12.133100000000006,
+        "paused": false,
+        "frames": 165,
+        "view": "story",
+        "experience": "story",
+        "visible": true,
+        "choice": "read",
+        "storyTime": 26.63320000000001,
+        "disposed": false,
+        "lastFrameMs": 13.800000071525574,
+        "quality": "benchmark / not accepted",
+        "runtimeLighting": {
+          "revision": "r5-cloudbreak",
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "probeBackground": "deSunHDR",
+          "environmentRotationY": -1.7362243408943674,
+          "backgroundRotationY": -1.7362243408943674,
+          "sun": {
+            "position": [
+              -16.195299832700535,
+              30.708856143855655,
+              18.061570692961837
+            ],
+            "target": [
+              3,
+              0,
+              -2
+            ],
+            "intensity": 4.562767782748515,
+            "colorLinear": [
+              0.991978082879707,
+              1,
+              0.9084521146029024
+            ]
+          }
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 26,
+          "accepted": false,
+          "model": "../baked-r4/canal-lightmapped.glb",
+          "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+          "proof": null,
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 99.4783270211304,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "giSet": "r5",
+          "appliedPracticalScale": 0.25
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-unbaked-auxiliary",
+          "receivesLiveLighting": true,
+          "sourceGeometryUnchanged": true,
+          "extent": {
+            "x": [
+              -260,
+              260
+            ],
+            "z": [
+              -300,
+              300
+            ]
+          },
+          "openWaterChannelWidth": 8.3,
+          "boxes": [
+            {
+              "name": "Continuous land beyond left bank",
+              "min": [
+                -260,
+                -2.4,
+                -300
+              ],
+              "max": [
+                -9.8,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous low building footing -1",
+              "min": [
+                -17.4,
+                0.35,
+                -77
+              ],
+              "max": [
+                -10.25,
+                0.725,
+                65
+              ]
+            },
+            {
+              "name": "Canal bank continuation north -1",
+              "min": [
+                -9.8,
+                -2.4,
+                -300
+              ],
+              "max": [
+                -4.15,
+                0.625,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bank continuation south -1",
+              "min": [
+                -9.8,
+                -2.4,
+                64.99
+              ],
+              "max": [
+                -4.15,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous land beyond right bank",
+              "min": [
+                9.8,
+                -2.4,
+                -300
+              ],
+              "max": [
+                260,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous low building footing 1",
+              "min": [
+                10.25,
+                0.35,
+                -77
+              ],
+              "max": [
+                17.4,
+                0.725,
+                65
+              ]
+            },
+            {
+              "name": "Canal bank continuation north 1",
+              "min": [
+                4.15,
+                -2.4,
+                -300
+              ],
+              "max": [
+                9.8,
+                0.625,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bank continuation south 1",
+              "min": [
+                4.15,
+                -2.4,
+                64.99
+              ],
+              "max": [
+                9.8,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Observation-room foundation",
+              "min": [
+                -14.7,
+                0.35,
+                7.5
+              ],
+              "max": [
+                -9.35,
+                1.125,
+                15.5
+              ]
+            },
+            {
+              "name": "Left-bank courtyard masonry plinth",
+              "min": [
+                -10.65,
+                0.55,
+                -2.1
+              ],
+              "max": [
+                -10.21,
+                0.94,
+                6.7
+              ]
+            },
+            {
+              "name": "Left-bank courtyard brick wall",
+              "min": [
+                -10.61,
+                0.91,
+                -2.1
+              ],
+              "max": [
+                -10.25,
+                2.64,
+                6.7
+              ]
+            },
+            {
+              "name": "Left-bank courtyard stone coping",
+              "min": [
+                -10.7,
+                2.62,
+                -2.16
+              ],
+              "max": [
+                -10.16,
+                2.77,
+                6.76
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier -1.85",
+              "min": [
+                -10.69,
+                0.63,
+                -2.0500000000000003
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                -1.6500000000000001
+              ]
+            },
+            {
+              "name": "Courtyard pier cap -1.85",
+              "min": [
+                -10.73,
+                2.77,
+                -2.1
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                -1.6
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 1",
+              "min": [
+                -10.69,
+                0.63,
+                0.8
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                1.2
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 1",
+              "min": [
+                -10.73,
+                2.77,
+                0.75
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                1.25
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 3.85",
+              "min": [
+                -10.69,
+                0.63,
+                3.65
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                4.05
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 3.85",
+              "min": [
+                -10.73,
+                2.77,
+                3.6
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                4.1
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 6.52",
+              "min": [
+                -10.69,
+                0.63,
+                6.319999999999999
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                6.72
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 6.52",
+              "min": [
+                -10.73,
+                2.77,
+                6.27
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                6.77
+              ]
+            },
+            {
+              "name": "Canal bed continuation north",
+              "min": [
+                -4.13,
+                -2.4,
+                -300
+              ],
+              "max": [
+                4.13,
+                -1.52,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bed continuation south",
+              "min": [
+                -4.13,
+                -2.4,
+                66.99
+              ],
+              "max": [
+                4.13,
+                -1.52,
+                300
+              ]
+            }
+          ]
+        },
+        "navigation": {
+          "mode": "outdoor-orbit",
+          "manual": false,
+          "bounds": {
+            "x": [
+              -9.6,
+              9.6
+            ],
+            "y": [
+              1.1,
+              null
+            ],
+            "z": [
+              -70,
+              50
+            ]
+          },
+          "lastConstraint": null,
+          "position": [
+            4.650000000000001,
+            1.3500000000000005,
+            9.8
+          ]
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 27,
+          "bakedMaterials": 26,
+          "glazingMaterials": 1,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "window-room",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                -11.85,
+                2.85,
+                11.5
+              ],
+              "min": [
+                -14.65,
+                1.08,
+                7.48
+              ],
+              "max": [
+                -9.02,
+                4.94,
+                15.52
+              ]
+            },
+            {
+              "name": "bookshop",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                12.05,
+                2.08,
+                6.7
+              ],
+              "min": [
+                10.4,
+                0.8,
+                4.43
+              ],
+              "max": [
+                14.06,
+                3.56,
+                8.98
+              ]
+            },
+            {
+              "name": "canal-street",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                0,
+                3,
+                7
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -20
+              ],
+              "max": [
+                11.2,
+                15.5,
+                38
+              ]
+            },
+            {
+              "name": "bridge-street",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                0,
+                4,
+                -30
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -76
+              ],
+              "max": [
+                11.2,
+                15.5,
+                2
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 13,
+            "observedProgramMaximum": 13
+          }
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 25,
+          "duration": 25,
+          "phase": "letter",
+          "ended": true,
+          "active": false
+        },
+        "dynamic": {
+          "choice": "read",
+          "boatPosition": [
+            1.01999745980119,
+            -0.08111243845227345,
+            4.940696
+          ],
+          "letterPosition": [
+            4.2582368709628655,
+            1.1828177678021108,
+            9.323972111248048
+          ],
+          "letterParent": "held",
+          "paperVisible": true,
+          "paperUnfold": 1,
+          "readingLayout": {
+            "width": 1440,
+            "height": 902,
+            "area": {
+              "left": 115.2,
+              "right": 1324.8,
+              "top": 82.5,
+              "bottom": 818
+            },
+            "bodyFontSourcePixels": 96,
+            "distance": 0.63
+          },
+          "paperScreenBounds": {
+            "left": 497.10837521401265,
+            "right": 939.1545900020249,
+            "top": 152.8004646811901,
+            "bottom": 747.6858698602688,
+            "bodyFontEstimate": 38.07266593146104
+          }
+        },
+        "camera": {
+          "position": [
+            4.650000000000001,
+            1.3500000000000005,
+            9.8
+          ],
+          "target": [
+            0.9499999999999992,
+            0.07500000000000018,
+            5.299999999999999
+          ],
+          "fov": 50
+        },
+        "renderer": {
+          "width": 1440,
+          "height": 902,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "final-story-drift",
+      "canvas": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/final-story-drift-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/final-story-drift-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "34ab1e7b61ed58a7a28114acb5d72fa92fe4d2561c9fca0339f31d2a7606a740",
+      "monotonicMs": 59502.1886,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 283,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851291426
+      },
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 15.349899999999998,
+        "paused": false,
+        "frames": 261,
+        "view": "story",
+        "experience": "story",
+        "visible": true,
+        "choice": "drift",
+        "storyTime": 27.03330000000002,
+        "disposed": false,
+        "lastFrameMs": 12,
+        "quality": "benchmark / not accepted",
+        "runtimeLighting": {
+          "revision": "r5-cloudbreak",
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "probeBackground": "deSunHDR",
+          "environmentRotationY": -1.7362243408943674,
+          "backgroundRotationY": -1.7362243408943674,
+          "sun": {
+            "position": [
+              -16.195299832700535,
+              30.708856143855655,
+              18.061570692961837
+            ],
+            "target": [
+              3,
+              0,
+              -2
+            ],
+            "intensity": 4.562767782748515,
+            "colorLinear": [
+              0.991978082879707,
+              1,
+              0.9084521146029024
+            ]
+          }
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 26,
+          "accepted": false,
+          "model": "../baked-r4/canal-lightmapped.glb",
+          "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+          "proof": null,
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 99.4783270211304,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "giSet": "r5",
+          "appliedPracticalScale": 0.25
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-unbaked-auxiliary",
+          "receivesLiveLighting": true,
+          "sourceGeometryUnchanged": true,
+          "extent": {
+            "x": [
+              -260,
+              260
+            ],
+            "z": [
+              -300,
+              300
+            ]
+          },
+          "openWaterChannelWidth": 8.3,
+          "boxes": [
+            {
+              "name": "Continuous land beyond left bank",
+              "min": [
+                -260,
+                -2.4,
+                -300
+              ],
+              "max": [
+                -9.8,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous low building footing -1",
+              "min": [
+                -17.4,
+                0.35,
+                -77
+              ],
+              "max": [
+                -10.25,
+                0.725,
+                65
+              ]
+            },
+            {
+              "name": "Canal bank continuation north -1",
+              "min": [
+                -9.8,
+                -2.4,
+                -300
+              ],
+              "max": [
+                -4.15,
+                0.625,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bank continuation south -1",
+              "min": [
+                -9.8,
+                -2.4,
+                64.99
+              ],
+              "max": [
+                -4.15,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous land beyond right bank",
+              "min": [
+                9.8,
+                -2.4,
+                -300
+              ],
+              "max": [
+                260,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous low building footing 1",
+              "min": [
+                10.25,
+                0.35,
+                -77
+              ],
+              "max": [
+                17.4,
+                0.725,
+                65
+              ]
+            },
+            {
+              "name": "Canal bank continuation north 1",
+              "min": [
+                4.15,
+                -2.4,
+                -300
+              ],
+              "max": [
+                9.8,
+                0.625,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bank continuation south 1",
+              "min": [
+                4.15,
+                -2.4,
+                64.99
+              ],
+              "max": [
+                9.8,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Observation-room foundation",
+              "min": [
+                -14.7,
+                0.35,
+                7.5
+              ],
+              "max": [
+                -9.35,
+                1.125,
+                15.5
+              ]
+            },
+            {
+              "name": "Left-bank courtyard masonry plinth",
+              "min": [
+                -10.65,
+                0.55,
+                -2.1
+              ],
+              "max": [
+                -10.21,
+                0.94,
+                6.7
+              ]
+            },
+            {
+              "name": "Left-bank courtyard brick wall",
+              "min": [
+                -10.61,
+                0.91,
+                -2.1
+              ],
+              "max": [
+                -10.25,
+                2.64,
+                6.7
+              ]
+            },
+            {
+              "name": "Left-bank courtyard stone coping",
+              "min": [
+                -10.7,
+                2.62,
+                -2.16
+              ],
+              "max": [
+                -10.16,
+                2.77,
+                6.76
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier -1.85",
+              "min": [
+                -10.69,
+                0.63,
+                -2.0500000000000003
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                -1.6500000000000001
+              ]
+            },
+            {
+              "name": "Courtyard pier cap -1.85",
+              "min": [
+                -10.73,
+                2.77,
+                -2.1
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                -1.6
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 1",
+              "min": [
+                -10.69,
+                0.63,
+                0.8
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                1.2
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 1",
+              "min": [
+                -10.73,
+                2.77,
+                0.75
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                1.25
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 3.85",
+              "min": [
+                -10.69,
+                0.63,
+                3.65
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                4.05
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 3.85",
+              "min": [
+                -10.73,
+                2.77,
+                3.6
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                4.1
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 6.52",
+              "min": [
+                -10.69,
+                0.63,
+                6.319999999999999
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                6.72
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 6.52",
+              "min": [
+                -10.73,
+                2.77,
+                6.27
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                6.77
+              ]
+            },
+            {
+              "name": "Canal bed continuation north",
+              "min": [
+                -4.13,
+                -2.4,
+                -300
+              ],
+              "max": [
+                4.13,
+                -1.52,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bed continuation south",
+              "min": [
+                -4.13,
+                -2.4,
+                66.99
+              ],
+              "max": [
+                4.13,
+                -1.52,
+                300
+              ]
+            }
+          ]
+        },
+        "navigation": {
+          "mode": "outdoor-orbit",
+          "manual": false,
+          "bounds": {
+            "x": [
+              -9.6,
+              9.6
+            ],
+            "y": [
+              1.1,
+              null
+            ],
+            "z": [
+              -70,
+              50
+            ]
+          },
+          "lastConstraint": null,
+          "position": [
+            4.6499999999999995,
+            1.3499999999999999,
+            9.8
+          ]
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 27,
+          "bakedMaterials": 26,
+          "glazingMaterials": 1,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "window-room",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                -11.85,
+                2.85,
+                11.5
+              ],
+              "min": [
+                -14.65,
+                1.08,
+                7.48
+              ],
+              "max": [
+                -9.02,
+                4.94,
+                15.52
+              ]
+            },
+            {
+              "name": "bookshop",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                12.05,
+                2.08,
+                6.7
+              ],
+              "min": [
+                10.4,
+                0.8,
+                4.43
+              ],
+              "max": [
+                14.06,
+                3.56,
+                8.98
+              ]
+            },
+            {
+              "name": "canal-street",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                0,
+                3,
+                7
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -20
+              ],
+              "max": [
+                11.2,
+                15.5,
+                38
+              ]
+            },
+            {
+              "name": "bridge-street",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                0,
+                4,
+                -30
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -76
+              ],
+              "max": [
+                11.2,
+                15.5,
+                2
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 13,
+            "observedProgramMaximum": 13
+          }
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 25,
+          "duration": 25,
+          "phase": "letter",
+          "ended": true,
+          "active": false
+        },
+        "dynamic": {
+          "choice": "drift",
+          "boatPosition": [
+            1.0093399477478875,
+            -0.08044159933548266,
+            4.039354000000003
+          ],
+          "letterPosition": [
+            1.024959109141732,
+            0.09694998003760512,
+            4.157748549557297
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1,
+          "readingLayout": null,
+          "paperScreenBounds": null
+        },
+        "camera": {
+          "position": [
+            4.6499999999999995,
+            1.3499999999999999,
+            9.8
+          ],
+          "target": [
+            0.9499999999999992,
+            0.07499999999999996,
+            5.3
+          ],
+          "fov": 50
+        },
+        "renderer": {
+          "width": 1440,
+          "height": 902,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "viewport-390-845",
+      "canvas": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/viewport-390-845-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/viewport-390-845-page.png",
+      "width": 390,
+      "height": 845,
+      "sha256": "6fc1c1d5eb5431fb7c974e41c76803126a4864b99e397156da80bf0adf6b0669",
+      "monotonicMs": 62125.2136,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 366,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851294366
+      },
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 18.666400000000035,
+        "paused": false,
+        "frames": 360,
+        "view": "story",
+        "experience": "story",
+        "visible": true,
+        "choice": "read",
+        "storyTime": 27.066600000000022,
+        "disposed": false,
+        "lastFrameMs": 10.899999976158142,
+        "quality": "benchmark / not accepted",
+        "runtimeLighting": {
+          "revision": "r5-cloudbreak",
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "probeBackground": "deSunHDR",
+          "environmentRotationY": -1.7362243408943674,
+          "backgroundRotationY": -1.7362243408943674,
+          "sun": {
+            "position": [
+              -16.195299832700535,
+              30.708856143855655,
+              18.061570692961837
+            ],
+            "target": [
+              3,
+              0,
+              -2
+            ],
+            "intensity": 4.562767782748515,
+            "colorLinear": [
+              0.991978082879707,
+              1,
+              0.9084521146029024
+            ]
+          }
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 26,
+          "accepted": false,
+          "model": "../baked-r4/canal-lightmapped.glb",
+          "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+          "proof": null,
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 99.4783270211304,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "giSet": "r5",
+          "appliedPracticalScale": 0.25
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-unbaked-auxiliary",
+          "receivesLiveLighting": true,
+          "sourceGeometryUnchanged": true,
+          "extent": {
+            "x": [
+              -260,
+              260
+            ],
+            "z": [
+              -300,
+              300
+            ]
+          },
+          "openWaterChannelWidth": 8.3,
+          "boxes": [
+            {
+              "name": "Continuous land beyond left bank",
+              "min": [
+                -260,
+                -2.4,
+                -300
+              ],
+              "max": [
+                -9.8,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous low building footing -1",
+              "min": [
+                -17.4,
+                0.35,
+                -77
+              ],
+              "max": [
+                -10.25,
+                0.725,
+                65
+              ]
+            },
+            {
+              "name": "Canal bank continuation north -1",
+              "min": [
+                -9.8,
+                -2.4,
+                -300
+              ],
+              "max": [
+                -4.15,
+                0.625,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bank continuation south -1",
+              "min": [
+                -9.8,
+                -2.4,
+                64.99
+              ],
+              "max": [
+                -4.15,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous land beyond right bank",
+              "min": [
+                9.8,
+                -2.4,
+                -300
+              ],
+              "max": [
+                260,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous low building footing 1",
+              "min": [
+                10.25,
+                0.35,
+                -77
+              ],
+              "max": [
+                17.4,
+                0.725,
+                65
+              ]
+            },
+            {
+              "name": "Canal bank continuation north 1",
+              "min": [
+                4.15,
+                -2.4,
+                -300
+              ],
+              "max": [
+                9.8,
+                0.625,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bank continuation south 1",
+              "min": [
+                4.15,
+                -2.4,
+                64.99
+              ],
+              "max": [
+                9.8,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Observation-room foundation",
+              "min": [
+                -14.7,
+                0.35,
+                7.5
+              ],
+              "max": [
+                -9.35,
+                1.125,
+                15.5
+              ]
+            },
+            {
+              "name": "Left-bank courtyard masonry plinth",
+              "min": [
+                -10.65,
+                0.55,
+                -2.1
+              ],
+              "max": [
+                -10.21,
+                0.94,
+                6.7
+              ]
+            },
+            {
+              "name": "Left-bank courtyard brick wall",
+              "min": [
+                -10.61,
+                0.91,
+                -2.1
+              ],
+              "max": [
+                -10.25,
+                2.64,
+                6.7
+              ]
+            },
+            {
+              "name": "Left-bank courtyard stone coping",
+              "min": [
+                -10.7,
+                2.62,
+                -2.16
+              ],
+              "max": [
+                -10.16,
+                2.77,
+                6.76
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier -1.85",
+              "min": [
+                -10.69,
+                0.63,
+                -2.0500000000000003
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                -1.6500000000000001
+              ]
+            },
+            {
+              "name": "Courtyard pier cap -1.85",
+              "min": [
+                -10.73,
+                2.77,
+                -2.1
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                -1.6
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 1",
+              "min": [
+                -10.69,
+                0.63,
+                0.8
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                1.2
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 1",
+              "min": [
+                -10.73,
+                2.77,
+                0.75
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                1.25
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 3.85",
+              "min": [
+                -10.69,
+                0.63,
+                3.65
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                4.05
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 3.85",
+              "min": [
+                -10.73,
+                2.77,
+                3.6
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                4.1
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 6.52",
+              "min": [
+                -10.69,
+                0.63,
+                6.319999999999999
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                6.72
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 6.52",
+              "min": [
+                -10.73,
+                2.77,
+                6.27
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                6.77
+              ]
+            },
+            {
+              "name": "Canal bed continuation north",
+              "min": [
+                -4.13,
+                -2.4,
+                -300
+              ],
+              "max": [
+                4.13,
+                -1.52,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bed continuation south",
+              "min": [
+                -4.13,
+                -2.4,
+                66.99
+              ],
+              "max": [
+                4.13,
+                -1.52,
+                300
+              ]
+            }
+          ]
+        },
+        "navigation": {
+          "mode": "outdoor-orbit",
+          "manual": false,
+          "bounds": {
+            "x": [
+              -9.6,
+              9.6
+            ],
+            "y": [
+              1.1,
+              null
+            ],
+            "z": [
+              -70,
+              50
+            ]
+          },
+          "lastConstraint": null,
+          "position": [
+            4.6499999999999995,
+            1.3499999999999999,
+            9.8
+          ]
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 27,
+          "bakedMaterials": 26,
+          "glazingMaterials": 1,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "window-room",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                -11.85,
+                2.85,
+                11.5
+              ],
+              "min": [
+                -14.65,
+                1.08,
+                7.48
+              ],
+              "max": [
+                -9.02,
+                4.94,
+                15.52
+              ]
+            },
+            {
+              "name": "bookshop",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                12.05,
+                2.08,
+                6.7
+              ],
+              "min": [
+                10.4,
+                0.8,
+                4.43
+              ],
+              "max": [
+                14.06,
+                3.56,
+                8.98
+              ]
+            },
+            {
+              "name": "canal-street",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                0,
+                3,
+                7
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -20
+              ],
+              "max": [
+                11.2,
+                15.5,
+                38
+              ]
+            },
+            {
+              "name": "bridge-street",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                0,
+                4,
+                -30
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -76
+              ],
+              "max": [
+                11.2,
+                15.5,
+                2
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 13,
+            "observedProgramMaximum": 13
+          }
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 25,
+          "duration": 25,
+          "phase": "letter",
+          "ended": true,
+          "active": false
+        },
+        "dynamic": {
+          "choice": "read",
+          "boatPosition": [
+            0.9786705247177485,
+            -0.08052068169739142,
+            4.845348000000001
+          ],
+          "letterPosition": [
+            4.101881826371942,
+            1.1291859005617773,
+            9.133810570529361
+          ],
+          "letterParent": "held",
+          "paperVisible": true,
+          "paperUnfold": 1,
+          "readingLayout": {
+            "width": 390,
+            "height": 845,
+            "area": {
+              "left": 31.2,
+              "right": 358.8,
+              "top": 72.5,
+              "bottom": 771
+            },
+            "bodyFontSourcePixels": 96,
+            "distance": 0.8819615653021563
+          },
+          "paperScreenBounds": {
+            "left": 46.4048986894524,
+            "right": 341.8645548775391,
+            "top": 223.21998466052983,
+            "bottom": 620.2702792121186,
+            "bodyFontEstimate": 25.411218851301683
+          }
+        },
+        "camera": {
+          "position": [
+            4.6499999999999995,
+            1.3499999999999999,
+            9.8
+          ],
+          "target": [
+            0.9499999999999992,
+            0.07499999999999996,
+            5.3
+          ],
+          "fov": 50
+        },
+        "renderer": {
+          "width": 390,
+          "height": 845,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      },
+      "requestedViewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actualViewport": {
+        "width": 390,
+        "height": 845
+      }
+    },
+    {
+      "name": "viewport-640-521",
+      "canvas": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/viewport-640-521-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/viewport-640-521-page.png",
+      "width": 640,
+      "height": 521,
+      "sha256": "80a96869998db8509e34d9c6370e150ef3f8f1ed77902bc44210f5a1161030df",
+      "monotonicMs": 62820.3299,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 384,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851295049
+      },
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 19.399800000000045,
+        "paused": false,
+        "frames": 382,
+        "view": "story",
+        "experience": "story",
+        "visible": true,
+        "choice": "read",
+        "storyTime": 27.800000000000033,
+        "disposed": false,
+        "lastFrameMs": 12.699999928474426,
+        "quality": "benchmark / not accepted",
+        "runtimeLighting": {
+          "revision": "r5-cloudbreak",
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "probeBackground": "deSunHDR",
+          "environmentRotationY": -1.7362243408943674,
+          "backgroundRotationY": -1.7362243408943674,
+          "sun": {
+            "position": [
+              -16.195299832700535,
+              30.708856143855655,
+              18.061570692961837
+            ],
+            "target": [
+              3,
+              0,
+              -2
+            ],
+            "intensity": 4.562767782748515,
+            "colorLinear": [
+              0.991978082879707,
+              1,
+              0.9084521146029024
+            ]
+          }
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 26,
+          "accepted": false,
+          "model": "../baked-r4/canal-lightmapped.glb",
+          "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+          "proof": null,
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 99.4783270211304,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "giSet": "r5",
+          "appliedPracticalScale": 0.25
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-unbaked-auxiliary",
+          "receivesLiveLighting": true,
+          "sourceGeometryUnchanged": true,
+          "extent": {
+            "x": [
+              -260,
+              260
+            ],
+            "z": [
+              -300,
+              300
+            ]
+          },
+          "openWaterChannelWidth": 8.3,
+          "boxes": [
+            {
+              "name": "Continuous land beyond left bank",
+              "min": [
+                -260,
+                -2.4,
+                -300
+              ],
+              "max": [
+                -9.8,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous low building footing -1",
+              "min": [
+                -17.4,
+                0.35,
+                -77
+              ],
+              "max": [
+                -10.25,
+                0.725,
+                65
+              ]
+            },
+            {
+              "name": "Canal bank continuation north -1",
+              "min": [
+                -9.8,
+                -2.4,
+                -300
+              ],
+              "max": [
+                -4.15,
+                0.625,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bank continuation south -1",
+              "min": [
+                -9.8,
+                -2.4,
+                64.99
+              ],
+              "max": [
+                -4.15,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous land beyond right bank",
+              "min": [
+                9.8,
+                -2.4,
+                -300
+              ],
+              "max": [
+                260,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Continuous low building footing 1",
+              "min": [
+                10.25,
+                0.35,
+                -77
+              ],
+              "max": [
+                17.4,
+                0.725,
+                65
+              ]
+            },
+            {
+              "name": "Canal bank continuation north 1",
+              "min": [
+                4.15,
+                -2.4,
+                -300
+              ],
+              "max": [
+                9.8,
+                0.625,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bank continuation south 1",
+              "min": [
+                4.15,
+                -2.4,
+                64.99
+              ],
+              "max": [
+                9.8,
+                0.625,
+                300
+              ]
+            },
+            {
+              "name": "Observation-room foundation",
+              "min": [
+                -14.7,
+                0.35,
+                7.5
+              ],
+              "max": [
+                -9.35,
+                1.125,
+                15.5
+              ]
+            },
+            {
+              "name": "Left-bank courtyard masonry plinth",
+              "min": [
+                -10.65,
+                0.55,
+                -2.1
+              ],
+              "max": [
+                -10.21,
+                0.94,
+                6.7
+              ]
+            },
+            {
+              "name": "Left-bank courtyard brick wall",
+              "min": [
+                -10.61,
+                0.91,
+                -2.1
+              ],
+              "max": [
+                -10.25,
+                2.64,
+                6.7
+              ]
+            },
+            {
+              "name": "Left-bank courtyard stone coping",
+              "min": [
+                -10.7,
+                2.62,
+                -2.16
+              ],
+              "max": [
+                -10.16,
+                2.77,
+                6.76
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier -1.85",
+              "min": [
+                -10.69,
+                0.63,
+                -2.0500000000000003
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                -1.6500000000000001
+              ]
+            },
+            {
+              "name": "Courtyard pier cap -1.85",
+              "min": [
+                -10.73,
+                2.77,
+                -2.1
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                -1.6
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 1",
+              "min": [
+                -10.69,
+                0.63,
+                0.8
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                1.2
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 1",
+              "min": [
+                -10.73,
+                2.77,
+                0.75
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                1.25
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 3.85",
+              "min": [
+                -10.69,
+                0.63,
+                3.65
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                4.05
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 3.85",
+              "min": [
+                -10.73,
+                2.77,
+                3.6
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                4.1
+              ]
+            },
+            {
+              "name": "Courtyard masonry pier 6.52",
+              "min": [
+                -10.69,
+                0.63,
+                6.319999999999999
+              ],
+              "max": [
+                -10.17,
+                2.79,
+                6.72
+              ]
+            },
+            {
+              "name": "Courtyard pier cap 6.52",
+              "min": [
+                -10.73,
+                2.77,
+                6.27
+              ],
+              "max": [
+                -10.13,
+                2.89,
+                6.77
+              ]
+            },
+            {
+              "name": "Canal bed continuation north",
+              "min": [
+                -4.13,
+                -2.4,
+                -300
+              ],
+              "max": [
+                4.13,
+                -1.52,
+                -76.99
+              ]
+            },
+            {
+              "name": "Canal bed continuation south",
+              "min": [
+                -4.13,
+                -2.4,
+                66.99
+              ],
+              "max": [
+                4.13,
+                -1.52,
+                300
+              ]
+            }
+          ]
+        },
+        "navigation": {
+          "mode": "outdoor-orbit",
+          "manual": false,
+          "bounds": {
+            "x": [
+              -9.6,
+              9.6
+            ],
+            "y": [
+              1.1,
+              null
+            ],
+            "z": [
+              -70,
+              50
+            ]
+          },
+          "lastConstraint": null,
+          "position": [
+            4.6499999999999995,
+            1.3499999999999999,
+            9.8
+          ]
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 27,
+          "bakedMaterials": 26,
+          "glazingMaterials": 1,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "window-room",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                -11.85,
+                2.85,
+                11.5
+              ],
+              "min": [
+                -14.65,
+                1.08,
+                7.48
+              ],
+              "max": [
+                -9.02,
+                4.94,
+                15.52
+              ]
+            },
+            {
+              "name": "bookshop",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                12.05,
+                2.08,
+                6.7
+              ],
+              "min": [
+                10.4,
+                0.8,
+                4.43
+              ],
+              "max": [
+                14.06,
+                3.56,
+                8.98
+              ]
+            },
+            {
+              "name": "canal-street",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                0,
+                3,
+                7
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -20
+              ],
+              "max": [
+                11.2,
+                15.5,
+                38
+              ]
+            },
+            {
+              "name": "bridge-street",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                0,
+                4,
+                -30
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -76
+              ],
+              "max": [
+                11.2,
+                15.5,
+                2
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 13,
+            "observedProgramMaximum": 13
+          }
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 25,
+          "duration": 25,
+          "phase": "letter",
+          "ended": true,
+          "active": false
+        },
+        "dynamic": {
+          "choice": "read",
+          "boatPosition": [
+            0.9696869698402184,
+            -0.08021012693591453,
+            4.684
+          ],
+          "letterPosition": [
+            4.254178392766589,
+            1.181793834488063,
+            9.31903612425258
+          ],
+          "letterParent": "held",
+          "paperVisible": true,
+          "paperUnfold": 1,
+          "readingLayout": {
+            "width": 640,
+            "height": 521,
+            "area": {
+              "left": 51.2,
+              "right": 588.8,
+              "top": 72.5,
+              "bottom": 447
+            },
+            "bodyFontSourcePixels": 96,
+            "distance": 0.6364614041608432
+          },
+          "paperScreenBounds": {
+            "left": 192.58065377977246,
+            "right": 445.30616572320287,
+            "top": 89.69864868778961,
+            "bottom": 429.7878258373843,
+            "bodyFontEstimate": 21.765707337574057
+          }
+        },
+        "camera": {
+          "position": [
+            4.6499999999999995,
+            1.3499999999999999,
+            9.8
+          ],
+          "target": [
+            0.9499999999999992,
+            0.07499999999999996,
+            5.3
+          ],
+          "fov": 50
+        },
+        "renderer": {
+          "width": 640,
+          "height": 521,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      },
+      "requestedViewport": {
+        "width": 640,
+        "height": 520
+      },
+      "actualViewport": {
+        "width": 640,
+        "height": 521
+      }
+    }
+  ],
+  "timingSamples": [
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 1811.7143,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 2,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851234040
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 11311.4186,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 2,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851234040
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 11840.1383,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 3,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851243683
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 12486.9312,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 4,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851244239
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 12910.8198,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 8,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851245275
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 13326.2434,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 9,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851245502
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 13768.3306,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 15,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851246078
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 14175.1463,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 17,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851246498
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 14584.8964,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 19,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851246906
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 15094.798,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 20,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851247238
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 15607.6591,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 24,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851247694
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 16018.0996,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 26,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851248331
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 23919.9315,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 29,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851248645
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 48613.4103,
+      "frames": 1,
+      "time": 0,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 30,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851256348
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 49037.2782,
+      "frames": 6,
+      "time": 0.21659999999999857,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 35,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851281387
+      }
+    },
+    {
+      "label": "Actual broad water bands at time A",
+      "monotonicMs": 49052.4727,
+      "frames": 6,
+      "time": 8.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 35,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851281387
+      }
+    },
+    {
+      "label": "Actual broad water bands at time A",
+      "monotonicMs": 49467.4491,
+      "frames": 19,
+      "time": 8.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 49,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851281814
+      }
+    },
+    {
+      "label": "Actual broad water bands at time B",
+      "monotonicMs": 50507.0203,
+      "frames": 48,
+      "time": 11.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 75,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851282871
+      }
+    },
+    {
+      "label": "Actual broad water bands at time B",
+      "monotonicMs": 50918.9684,
+      "frames": 60,
+      "time": 11.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 87,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851283267
+      }
+    },
+    {
+      "label": "Final courtyard and actual boat at choice",
+      "monotonicMs": 52167.9109,
+      "frames": 97,
+      "time": 11.25,
+      "tourElapsed": 25,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 119,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851284532
+      }
+    },
+    {
+      "label": "Final courtyard and actual boat at choice",
+      "monotonicMs": 52584.3389,
+      "frames": 109,
+      "time": 11.25,
+      "tourElapsed": 25,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 131,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851284931
+      }
+    },
+    {
+      "label": "Read outcome before portrait view",
+      "monotonicMs": 53639.5172,
+      "frames": 139,
+      "time": 11.25,
+      "tourElapsed": 25,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 154,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851286004
+      }
+    },
+    {
+      "label": "Read outcome before portrait view",
+      "monotonicMs": 54432.5958,
+      "frames": 140,
+      "time": 11.283200000000004,
+      "tourElapsed": 25,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 155,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851286010
+      }
+    },
+    {
+      "label": "Read outcome before portrait view",
+      "monotonicMs": 54837.6992,
+      "frames": 153,
+      "time": 11.733200000000005,
+      "tourElapsed": 25,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 168,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851287200
+      }
+    },
+    {
+      "label": "Read outcome before portrait view",
+      "monotonicMs": 55246.8446,
+      "frames": 165,
+      "time": 12.133100000000006,
+      "tourElapsed": 25,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 180,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851287597
+      }
+    },
+    {
+      "label": "Final paper before narrow layout",
+      "monotonicMs": 59750.599,
+      "frames": 298,
+      "time": 16.599800000000013,
+      "tourElapsed": 25,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 301,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851292099
+      }
+    },
+    {
+      "label": "Final paper before narrow layout",
+      "monotonicMs": 60168.2125,
+      "frames": 311,
+      "time": 17.03320000000001,
+      "tourElapsed": 25,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 314,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851292531
+      }
+    },
+    {
+      "label": "Final paper before narrow layout",
+      "monotonicMs": 60575.5211,
+      "frames": 323,
+      "time": 17.43310000000002,
+      "tourElapsed": 25,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 326,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851292933
+      }
+    },
+    {
+      "label": "Final paper before narrow layout",
+      "monotonicMs": 60979.8591,
+      "frames": 335,
+      "time": 17.833100000000023,
+      "tourElapsed": 25,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 338,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851293333
+      }
+    },
+    {
+      "label": "Final paper before narrow layout",
+      "monotonicMs": 61385.3167,
+      "frames": 347,
+      "time": 18.23310000000003,
+      "tourElapsed": 25,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 350,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851293732
+      }
+    },
+    {
+      "label": "Actual 390 by 844 viewport rendering",
+      "monotonicMs": 61406.1372,
+      "frames": 348,
+      "time": 18.26650000000003,
+      "tourElapsed": 25,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 351,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851293765
+      }
+    },
+    {
+      "label": "Actual 390 by 844 viewport rendering",
+      "monotonicMs": 61808.6258,
+      "frames": 360,
+      "time": 18.666400000000035,
+      "tourElapsed": 25,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 360,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851294153
+      }
+    },
+    {
+      "label": "Actual 640 by 520 viewport rendering",
+      "monotonicMs": 62137.8616,
+      "frames": 370,
+      "time": 18.99980000000004,
+      "tourElapsed": 25,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 369,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851294494
+      }
+    },
+    {
+      "label": "Actual 640 by 520 viewport rendering",
+      "monotonicMs": 62547.1059,
+      "frames": 382,
+      "time": 19.399800000000045,
+      "tourElapsed": 25,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 379,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851294888
+      }
+    }
+  ],
+  "errors": [],
+  "artQuality": "requires visual review; no equivalence claim",
+  "windowPolicy": {
+    "show": false,
+    "focusable": false,
+    "skipTaskbar": true,
+    "offscreen": true,
+    "targetFrameRate": 30,
+    "paints": 1,
+    "firstPaintAt": 1792851233085,
+    "lastPaintAt": 1792851233085
+  },
+  "experience": "story",
+  "scope": "focused actual navigation and responsive reading supplement; complete tour retained in its earlier run",
+  "elapsedSeconds": 61.259,
+  "presentation": {
+    "offscreen": true,
+    "targetFrameRate": 30,
+    "paints": 389,
+    "firstPaintAt": 1792851233085,
+    "lastPaintAt": 1792851295260
+  }
+}

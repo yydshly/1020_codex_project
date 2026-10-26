@@ -167,6 +167,75 @@ class CatalogTests(unittest.TestCase):
         with self.assertRaisesRegex(ValueError, "启用 Web"):
             projects.load_projects()
 
+    def vendor_fixture(self):
+        directory = self.add(14, "vendor-demo", web=True)
+        (directory / "web/node_modules/package").mkdir(parents=True)
+        (directory / "web/index.html").write_text("<h1>Runtime</h1>", encoding="utf-8")
+        (directory / "web/node_modules/package/runtime.js").write_bytes(b"export const value = 1;\r\n")
+        (directory / "web/node_modules/package/LICENSE").write_bytes(b"Runtime license\n")
+        (directory / "web/node_modules/package/unlisted.js").write_text("not published", encoding="utf-8")
+        metadata = directory / "project.json"
+        return directory, metadata, json.loads(metadata.read_text(encoding="utf-8"))
+
+    def test_vendor_allowlist_copies_only_named_files_with_original_bytes(self):
+        directory, metadata, data = self.vendor_fixture()
+        allowed = ["node_modules/package/runtime.js", "node_modules/package/LICENSE"]
+        metadata.write_text(json.dumps({**data, "web_vendor_files": allowed}), encoding="utf-8")
+        projects.build(projects.load_projects())
+        output = projects.ROOT / "_site/projects/014-vendor-demo"
+        for relative in allowed:
+            self.assertEqual((output / relative).read_bytes(), (directory / "web" / relative).read_bytes())
+        self.assertEqual(sorted(p.relative_to(output).as_posix() for p in output.rglob("*") if p.is_file()),
+                         sorted(["index.html", *allowed]))
+
+    def test_dependencies_stay_ignored_when_vendor_allowlist_is_absent(self):
+        self.vendor_fixture()
+        projects.build(projects.load_projects())
+        output = projects.ROOT / "_site/projects/014-vendor-demo"
+        self.assertTrue((output / "index.html").is_file())
+        self.assertFalse((output / "node_modules").exists())
+
+    def test_vendor_allowlist_rejects_invalid_type_duplicates_and_disabled_web(self):
+        _, metadata, data = self.vendor_fixture()
+        runtime = "node_modules/package/runtime.js"
+        for invalid in [None, runtime, {}, [None], [runtime, runtime],
+                        [runtime, "node_modules/package/RUNTIME.js"]]:
+            with self.subTest(value=invalid):
+                metadata.write_text(json.dumps({**data, "web_vendor_files": invalid}), encoding="utf-8")
+                with self.assertRaises(ValueError):
+                    projects.load_projects()
+        metadata.write_text(json.dumps({**data, "web": False, "web_vendor_files": []}), encoding="utf-8")
+        with self.assertRaisesRegex(ValueError, "启用 Web"):
+            projects.load_projects()
+
+    def test_vendor_allowlist_rejects_traversal_hidden_paths_and_missing_files(self):
+        directory, metadata, data = self.vendor_fixture()
+        # These exist: rejection must come from the allowlist boundary, not absence.
+        (directory / "web/.env").write_text("PRIVATE=not-for-publication", encoding="utf-8")
+        (directory / "web/node_modules/package/.git").mkdir()
+        (directory / "web/node_modules/package/.git/config").write_text("private", encoding="utf-8")
+        invalid = ["../README.md", "node_modules/../../README.md", "/index.html", "C:/index.html",
+                   "node_modules\\package\\runtime.js", "node_modules/package/./runtime.js",
+                   "node_modules/package/runtime.js.", "node_modules/package./runtime.js",
+                   "node_modules/package/runtime.js?raw=1", "%2e%2e/README.md", ".env",
+                   "node_modules/package/.env.production", "node_modules/package/.git/config",
+                   "node_modules/package/.gitkeep", "node_modules/package/missing.js"]
+        for relative in invalid:
+            with self.subTest(relative=relative):
+                metadata.write_text(json.dumps({**data, "web_vendor_files": [relative]}), encoding="utf-8")
+                with self.assertRaises(ValueError):
+                    projects.load_projects()
+
+    def test_vendor_allowlist_revalidates_missing_source_at_build_time(self):
+        directory, metadata, data = self.vendor_fixture()
+        relative = "node_modules/package/runtime.js"
+        metadata.write_text(json.dumps({**data, "web_vendor_files": [relative]}), encoding="utf-8")
+        entries = projects.load_projects()
+        (directory / "web" / relative).rename(directory / "web/node_modules/package/moved.js")
+        with self.assertRaisesRegex(ValueError, "文件不存在"):
+            projects.build(entries)
+        self.assertFalse((projects.ROOT / "_site/projects/014-vendor-demo/node_modules").exists())
+
     def test_multiple_sources_and_tool_summaries_render_in_both_indexes(self):
         directory = self.add(2, "toolkit")
         metadata = directory / "project.json"

@@ -1,0 +1,86 @@
+{
+  "status": "complete",
+  "fullGoalComplete": true,
+  "recordedAt": "2026-10-25T16:01:49.303284+00:00",
+  "mainEntryReplaced": true,
+  "desktopInputUsed": false,
+  "nativeChanges": [
+    "76 distinct asymmetric rounded karst masses within unchanged foot bounds",
+    "precomputed wet-fissure and grove/clearing ecology",
+    "shared low moving mist banks with analytic optical integration",
+    "humid morning sky"
+  ],
+  "actualNativeEvidence": {
+    "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-native-performance\\2026-10-25T10-51-53-471Z\\result.json",
+    "batch12000MeanMs": 18958.999999940395,
+    "batch60000MeanMs": 8691.850000023842,
+    "batchPixelsIdentical": true,
+    "realtimeAccepted": false,
+    "adapter": "NVIDIA GeForce RTX 4070 Laptop GPU / ANGLE OpenGL4.5",
+    "artAccepted": false
+  },
+  "independentActualFrameReview": [
+    "More varied rounded/split macro forms and calmer reflected sky",
+    "Blocky source rock still reads as masonry",
+    "Vegetation remains too concentrated on caps and shoulders",
+    "Bank forest remains too uniform",
+    "Foreground river needs restrained jade transmission"
+  ],
+  "rasterCandidate": {
+    "entry": "web/lijiang-native/raster.html",
+    "sceneData": "Same runtime native H/V/A and tree/bush placements",
+    "firstHiddenRun": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-raster-qa\\2026-10-25T11-05-12-976Z\\result.json",
+    "firstRunStatus": "failed: black frame, GPU process crash",
+    "cpuFPSRejectedAsPerformanceEvidence": true,
+    "fixInProgress": [
+      "Fence each real GPU frame; do not queue an unbounded CPU render loop",
+      "D3D11 hidden layer isolation",
+      "Reduce per-frame forest geometry without replacing near leaves with flat images"
+    ],
+    "publicEntryReplaced": true,
+    "actualFullSceneGPUFrameMeanMilliseconds": 24.243333331743877,
+    "actualFullSceneEvidence": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-raster-qa\\2026-10-25T11-42-55-772Z\\result.json",
+    "timingScope": "35 forced GPU-completed 1440x902 material/PBR scene draws with 1024px planar reflection. Actual 45-second live playback separately measured ~29.59 completed FPS with a 30fps offscreen target.",
+    "artAccepted": true,
+    "currentQualityLimit": "Accepted as an artistic procedural landscape; no photographic-realism claim. Canopies and some rock folds remain stylized.",
+    "nextPilot": "Completed: all 76 runtime signed-field rock surfaces, with generated material and live lighting.",
+    "latestV4Evidence": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-raster-qa\\2026-10-25T11-50-14-928Z\\result.json",
+    "latestV4Status": "Historical failed experiment; not the current renderer. See formal M1 standalone and parent records.",
+    "latestVisualEvidence": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-raster-qa\\2026-10-25T14-40-58-063Z\\result.json",
+    "completeNativeRockSurfaces": 76,
+    "rawVertices": 9722731,
+    "renderedRockTrianglesAfterConservativeCull": 10994005,
+    "currentProductionBlocker": null,
+    "latestFullRuntimeEvidence": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-raster-interaction-qa\\2026-10-25T15-38-42-575Z\\result.json",
+    "productionParentEvidence": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-raster-hub-qa\\2026-10-25T15-48-17-319Z\\acceptance.json"
+  },
+  "nativePausedFix": {
+    "status": "actual-native-engine-and-client-verified",
+    "patch": "native-paused-dirty-render-2",
+    "coreEvidence": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-native-idle-qa\\2026-10-25T11-59-36-346Z\\result.json",
+    "clientEvidence": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-native-idle-client-qa\\2026-10-25T12-13-45-205Z\\result.json",
+    "scope": "Static actual pixels held without GPU redraw; seek, settings and transport still deliver fresh real frames",
+    "bridgeVersion": 6,
+    "bridgePid": 30880,
+    "scopeDoesNotIncludeArtAcceptance": true
+  },
+  "currentFunctionalRun": {
+    "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-raster-interaction-qa\\2026-10-25T15-38-42-575Z\\result.json",
+    "checks": 10,
+    "overallStatus": "passed",
+    "source": "Complete runtime procedural generation, real 45-second flight and full 2700-frame export; no QA field cache."
+  },
+  "strictPrunedEquivalence": {
+    "status": "historical-HDR-byte-equivalence-failed",
+    "freezeDebugVariant": {
+      "maximumAbsoluteRGBDifference": 0.01041159,
+      "meanAbsoluteRGBDifference": 2.47142e-05
+    },
+    "uniformPreservedVariant": {
+      "maximumAbsoluteRGBDifference": 0.05293029919266701,
+      "meanAbsoluteRGBDifference": 0.0011680467553959286
+    },
+    "formalRenderer": "Generated base material plus live Three lighting; no source-HDR numerical-equivalence claim."
+  },
+  "canonicalAcceptance": "notes/lijiang-current.json"
+}

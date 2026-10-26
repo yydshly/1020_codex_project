@@ -1,0 +1,12 @@
+{
+  "samples": 1000,
+  "flatNormalMaxUVError": 2.482534153247273e-16,
+  "naiveWorldInputMaxUVError": 0.9668636585600066,
+  "angularSlopeMagnitude": 0.03,
+  "angularBlend": 0.25,
+  "visibleSamples": 1000,
+  "angularPixelOffsetMedian": 8.888285393758677,
+  "angularPixelOffsetP90": 11.816013747905087,
+  "currentMaxUVOffsetAtSlope003": 0.00081,
+  "scope": "CPU math only. TextureMatrix includes reflector matrixWorld, so worldQ MUST first transform through inverse reflector matrixWorld. Baseline shader unchanged; actual GPU look acceptance pending."
+}

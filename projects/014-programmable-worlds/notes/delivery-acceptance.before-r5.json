@@ -1,0 +1,200 @@
+{
+  "status": "quality-target-not-met",
+  "source_inpage_current": {
+    "status": "passed",
+    "report": "notes/source-live-acceptance.d3d11.json",
+    "run": "2026-10-24T08-42-44-256Z",
+    "checks": 15,
+    "description": "普通页面实际接收完整原作实时视频，页面控制、驾驶、画质、重启和释放均验证。"
+  },
+  "photoreal_rebuild": {
+    "status": "in-progress",
+    "user_direction": "保留运河题材，重新制作写实场景、植被、水体与完整光照",
+    "artwork_quality_accepted": false
+  },
+  "recorded_at": "2026-10-24T04:53:26.293704+00:00",
+  "display_timezone": "Asia/Shanghai",
+  "reports": {
+    "runtime": {
+      "file": "notes/runtime-acceptance.gl.json",
+      "bytes": 27008,
+      "sha256": "89dd290e02022919d82f059be5b55e68ffd26f64400ae6f3e0ae54333aaff38e",
+      "run": "2026-10-24T01-07-18-256Z",
+      "status": "passed",
+      "checks": 15,
+      "captures": 8
+    },
+    "window": {
+      "file": "notes/window-acceptance.gl.json",
+      "bytes": 249884,
+      "sha256": "3a364914589d5e11f72c45f6d0cf979a981e8519a93f8729a8e4558f0c28b2d5",
+      "run": "2026-10-24T04-16-18-511Z",
+      "status": "passed",
+      "checks": 21,
+      "captures": 15
+    },
+    "story": {
+      "file": "notes/story-acceptance.gl.json",
+      "bytes": 207181,
+      "sha256": "8b338b048aa43f482fad5bce65c48669998937b14c52162825f6c606f9b99a51",
+      "run": "2026-10-24T04-29-30-176Z",
+      "status": "passed",
+      "checks": 26,
+      "captures": 16
+    },
+    "hub": {
+      "file": "notes/hub-acceptance.gl.json",
+      "bytes": 150724,
+      "sha256": "c6c01b7b3409aadee7978d23ac37a48d49e59c99e65244cc40048811eb179d11",
+      "run": "2026-10-24T04-23-45-212Z",
+      "status": "passed",
+      "checks": 32,
+      "captures": 22
+    }
+  },
+  "visual_reviews": [
+    {
+      "file": "notes/visual-acceptance-final.md",
+      "bytes": 3360,
+      "sha256": "c8351e66ab1b8e56e7e5b3f2b504df3b943f2a8900dbb90e416b63f825cba7ad"
+    },
+    {
+      "file": "notes/quality-independent-final-review.md",
+      "bytes": 4109,
+      "sha256": "0f8776ee868137c31cae6e57c3de6bac5fe8bf9c0c7b90cde32f6d85504561ba"
+    }
+  ],
+  "quality_defaults": {
+    "source_scale": 1,
+    "source_auto_quality": false,
+    "static_diffuse_groups": 24,
+    "source_exposure": 2,
+    "water_angular_strength": 0.35,
+    "fixed_dusk": true,
+    "landscape_triangles": 14589472
+  },
+  "execution_policy": {
+    "hidden_own_windows_only": true,
+    "desktop_input_used": false,
+    "normal_visible_entry_not_auto_launched": true
+  },
+  "files": [
+    {
+      "file": "Start-Project.ps1",
+      "bytes": 3785,
+      "sha256": "ba508be716de98287a102cb797d5732118baaae76612b0b3800488ea060274d2"
+    },
+    {
+      "file": "web/index.html",
+      "bytes": 16371,
+      "sha256": "2bfaf5df1a77319f936d7681192c8f67793d1aa131fa1cc5a70c56a918c353e4"
+    },
+    {
+      "file": "web/app.js",
+      "bytes": 8787,
+      "sha256": "00cf6aa14a1c8f4cef5430ad2f1f4aadd7d1294bbbc91e2352d7002b851ea72c"
+    },
+    {
+      "file": "web/style.css",
+      "bytes": 15117,
+      "sha256": "debb53a7fcb6ec99dbb70baef5bff8d5afb1cc7c26e90d8f30c74ad27dc59da6"
+    },
+    {
+      "file": "web/runtime/index.html",
+      "bytes": 427186,
+      "sha256": "1e6235db469ff444cac6a81a6740e1e88656796f7bdf745d758f2344649a6037"
+    },
+    {
+      "file": "web/runtime/controller.js",
+      "bytes": 8510,
+      "sha256": "7e06530ddb6c390eeb801c109b96d61977a28d0a50f45e12a4b9cd2947c72f0b"
+    },
+    {
+      "file": "web/demos/window.html",
+      "bytes": 3342,
+      "sha256": "db29f96cfc515a85c8d04ca76cb051ed44a4d1c78ade22864e696fbaaf037878"
+    },
+    {
+      "file": "web/demos/window.css",
+      "bytes": 5610,
+      "sha256": "3529026421ad7af2c3259ae46d75820711ab17515779b39056d0c363f267e3ad"
+    },
+    {
+      "file": "web/demos/window.js",
+      "bytes": 41,
+      "sha256": "90f8e3e69ee1ba22d41a626faf6ec16d0cdb6b1333ff993d66736fe554159de5"
+    },
+    {
+      "file": "web/demos/story.html",
+      "bytes": 4343,
+      "sha256": "322e70ccf66ce78b3bcfce3b95a730e7c9a60c97e6b0c9e84d25d573d5e93c5a"
+    },
+    {
+      "file": "web/demos/story.css",
+      "bytes": 9047,
+      "sha256": "cbf1da3c49f80fbd19d037c56f82d3646b010ab345fa3e64209dfe8cf5138bab"
+    },
+    {
+      "file": "web/demos/story.js",
+      "bytes": 18684,
+      "sha256": "05d57e5afff835ea719fafc456539839f591aa8294cd1b92609d75a7baa66b3c"
+    },
+    {
+      "file": "web/quality-window/window3d.js",
+      "bytes": 51103,
+      "sha256": "1793c0091686cfd14330860720905536b9766fe95cf8d01e8fdf910fa7b76b1a"
+    },
+    {
+      "file": "web/quality-window/scene.js",
+      "bytes": 29938,
+      "sha256": "80cd5655cde76f0e676ad92853c88135dbc154724d6fc80619a3b03e66bdfa30"
+    },
+    {
+      "file": "web/quality-story/props.js",
+      "bytes": 7370,
+      "sha256": "52a1791fbd3e62e7047295c907d419978fb4724a19d52380dcae631c2cc74107"
+    },
+    {
+      "file": "web/quality-story/environment.js",
+      "bytes": 2666,
+      "sha256": "901b8a8180dda9f1c8bf4581a7dcead7f3c9a7ab41d9d263cbcbd28edfac46a3"
+    },
+    {
+      "file": "web/shared-scene/landscape.js",
+      "bytes": 22455,
+      "sha256": "6e1c116c686039e2a490c0bbc06adebde5a53d1ea484458c5802b5392d12d752"
+    },
+    {
+      "file": "web/shared-scene/color-look.js",
+      "bytes": 10026,
+      "sha256": "1adb7e9a9801abb15d73a1228ad4d2a84bda6045ef3f52957be55fc69e4f34c8"
+    },
+    {
+      "file": "web/shared-scene/manifest-full-diffuse.json",
+      "bytes": 171025,
+      "sha256": "f4d5eaecc9765562fad86bf07ca32773e214b8be9393194916f9c38d3780bc51"
+    },
+    {
+      "file": "web/shared-scene/look/manifest.json",
+      "bytes": 1330,
+      "sha256": "31ecf8372276ac3f9c1789176d513f7679ea632e9f71492b3442737552b50dc5"
+    },
+    {
+      "file": "web/quality-window/materials/wood-table-001/manifest.json",
+      "bytes": 1409,
+      "sha256": "f4fa544a4e83977a79fdb6f4385bc5f807cac0bc292714bad7fd8d577728b564"
+    },
+    {
+      "file": "assets/programmable-worlds-guide.svg",
+      "bytes": 7024283,
+      "sha256": "1cd160bbc0cc6958a620a21f9036a3b1be727985829bfa6b4cc360aada9205b6"
+    },
+    {
+      "file": "web/assets/programmable-worlds-guide.svg",
+      "bytes": 7024283,
+      "sha256": "1cd160bbc0cc6958a620a21f9036a3b1be727985829bfa6b4cc360aada9205b6"
+    }
+  ],
+  "previous_status": "accepted",
+  "reassessment": "Functional checks remain valid. Previous visual acceptance did not establish the requested source-level quality. In-page original presentation and artwork direction require correction."
+}

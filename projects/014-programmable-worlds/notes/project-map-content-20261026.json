@@ -1,0 +1,95 @@
+{
+  "schema": "project-map-content-v1",
+  "width": 1800,
+  "height": 7280,
+  "status": "layout-and-viewer-verified",
+  "svg": "assets\\programmable-worlds-map-20261026.svg",
+  "svgSHA256": "5e54054f645e083cd21c6428dca1e52d989ac2571076a35ea9f74be54ca78902",
+  "embeddedImages": [
+    {
+      "key": "source",
+      "path": "assets/source-live-qa/2026-10-24T08-42-44-256Z/04-headland-35-decoded-video.png",
+      "role": "原库完整实时画面的实际解码帧，2026-10-24",
+      "sha256": "4430aef1c7f866382a9d78c33be2e87359bc1176bae3b1e5b5ef1a8fe31df257"
+    },
+    {
+      "key": "window",
+      "path": "assets/canal-real-qa/2026-10-24T14-18-59-251Z/01-window-canvas.png",
+      "role": "老街窗景实际网页抓帧，2026-10-24",
+      "sha256": "a3adf5e8712961b199e9aa98bb3d5255dceee291ad90f4bdd11fe85c202c2fdd"
+    },
+    {
+      "key": "station",
+      "path": "assets/shipyard-station-qa/2026-10-24T18-17-51-965Z/05-actual-docked-canvas.png",
+      "role": "独立船坞车站实际靠泊抓帧，2026-10-24",
+      "sha256": "979c829a92feb6583041334d497f65db7c735113a88384632474066a6f7555d7"
+    },
+    {
+      "key": "lijiang",
+      "path": "assets/map-evidence/lijiang-m8-free-20261026.png",
+      "role": "漓江M8实际网页画布，2026-10-26",
+      "sha256": "fef3a81412699f4215ec4e2a4377b855420de23ab1f69f31a4463a64f64f3fa4"
+    },
+    {
+      "key": "raft",
+      "path": "assets/extension-references/lijiang-raft-clean-v1.png",
+      "role": "用户截图经AI去除界面的静态参考，待开发",
+      "sha256": "e865ea9afa7d7a4efc1936a859071f914f547c2f5f972e1c9ebc7b6b796324c1"
+    },
+    {
+      "key": "lagoon",
+      "path": "assets/extension-references/island-lagoon-clean-v1.png",
+      "role": "用户截图经AI去除界面的静态参考，待开发",
+      "sha256": "7c9940f875f4838f9b9b5e0bfee1e44c3ddbd267938b9f8dcb98d21e61cb9591"
+    },
+    {
+      "key": "cosmic",
+      "path": "assets/extension-references/cosmic-harbor-clean-v1.png",
+      "role": "用户截图经AI去除界面的静态参考，待开发",
+      "sha256": "0a77ea90c072e1c0f267b297dd29ec582c092bcc4c1fb2b4bf429bbf3dffdf59"
+    }
+  ],
+  "sections": [
+    {
+      "y": 0,
+      "title": "总览"
+    },
+    {
+      "y": 350,
+      "title": "源库效果与原理"
+    },
+    {
+      "y": 1170,
+      "title": "我们的探索"
+    },
+    {
+      "y": 2140,
+      "title": "三种扩展效果"
+    },
+    {
+      "y": 3460,
+      "title": "六类延续与产品形态"
+    },
+    {
+      "y": 4040,
+      "title": "技术路线与生成器"
+    },
+    {
+      "y": 4880,
+      "title": "算法与控制管线"
+    },
+    {
+      "y": 5620,
+      "title": "下次实现任务单"
+    },
+    {
+      "y": 6340,
+      "title": "价值与证据边界"
+    }
+  ],
+  "textCount": 181,
+  "runtimeRegenerated": false,
+  "png": "assets/programmable-worlds-map-20261026.png",
+  "pngSHA256": "f8bfdcda2c872b34ac4cc2d758dd41072ace1272718770fd0467a45bfc424795",
+  "acceptance": "project-map-acceptance-20261026.json"
+}

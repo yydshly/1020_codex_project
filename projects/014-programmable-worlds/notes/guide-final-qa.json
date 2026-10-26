@@ -1,0 +1,191 @@
+{
+  "status": "layout-and-current-evidence-passed",
+  "version": "2026-10-24-r5-current",
+  "date": "2026-10-24",
+  "functional_acceptance": "Story and production hub use documented composite acceptance; each original failed status/error/hash remains preserved.",
+  "artwork_quality_accepted": true,
+  "artwork_quality_basis": "Attributed independent R5 visual review in notes/visual-acceptance-r5.md; not inferred from guide layout or functional test counts.",
+  "scope": "Current guide layout, embedded actual browser-canvas provenance, current functional report mapping and status accuracy only. No GPU/browser rerun and no replacement of independent artwork judgement.",
+  "renderer": "CPU @resvg/resvg-js 2.6.2 full SVG render; QA-only rectangular crops from that full render using Pillow; no image content changes",
+  "size": [
+    1800,
+    4830
+  ],
+  "embedded_actual_images": 3,
+  "svg_bytes": 6928254,
+  "svg_sha256": "feafacc014091273e714808c75bab1582a1dee13dd847e91eb1ab81bcaa5dc88",
+  "asset_copies_identical": true,
+  "reports": {
+    "source_live": {
+      "runId": "2026-10-24T08-42-44-256Z",
+      "status": "passed",
+      "checks": 15
+    },
+    "window_current": {
+      "runId": "2026-10-24T14-18-59-251Z",
+      "status": "passed",
+      "checks": 13
+    },
+    "story_composite": {
+      "runId": "2026-10-24-r5-story-composite-13-59-53+14-13-54",
+      "status": "passed",
+      "checks": 24,
+      "sourceReports": [
+        {
+          "path": "assets/canal-real-qa/2026-10-24T13-59-53-797Z/result.json",
+          "runId": "2026-10-24T13-59-53-797Z",
+          "originalStatus": "failed",
+          "sha256": "300dc5b3ea7e85b899cfab5d3a82eabc42fb552bac580bd1dfeaa973fa8ad06a",
+          "checks": 14,
+          "originalErrors": [
+            "Error: Hidden client minimum size prevented the requested viewport\n    at assert (F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\canal-acceptance.cjs:7:48)\n    at viewportChecks (F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\canal-acceptance.cjs:45:7)\n    at async runCanalAcceptance (F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\canal-acceptance.cjs:194:5)\n    at async F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\main.cjs:143:22"
+          ]
+        },
+        {
+          "path": "notes/canal-real-story-navigation-layout.d3d11.json",
+          "runId": "2026-10-24T14-13-54-032Z",
+          "originalStatus": "passed",
+          "sha256": "50d81a0fba99ac2818e6cde57b389e84cf028f9b49f63c94b84109772f8b6c75",
+          "checks": 11,
+          "originalErrors": []
+        }
+      ],
+      "resolvedHarnessFailure": {
+        "originalRunStatusPreserved": "failed",
+        "requestedViewport": [
+          390,
+          844
+        ],
+        "actualViewport": [
+          390,
+          845
+        ],
+        "cause": "Electron offscreen/DPI content height differed by one pixel; exact requested-size assertion aborted before responsive checks",
+        "replacementReport": "notes/canal-real-story-navigation-layout.d3d11.json",
+        "replacementChecks": [
+          "actual-390-845-viewport-without-horizontal-overflow",
+          "actual-390-845-letter-fits-reading-area",
+          "actual-640-521-viewport-without-horizontal-overflow",
+          "actual-640-521-letter-fits-reading-area"
+        ],
+        "finalOutcomeCaptures": [
+          "final-story-choice",
+          "final-story-read",
+          "final-story-drift"
+        ]
+      },
+      "limitations": "The full clock-timed tour preceded the last courtyard/refraction visual fix; the final supplement rechecks navigation, visible final outcomes and actual 390x845/640x521 reading, without claiming a second full wall-clock tour."
+    },
+    "story_final_navigation_reading": {
+      "runId": "2026-10-24T14-13-54-032Z",
+      "status": "passed",
+      "checks": 11
+    },
+    "hub_current": {
+      "runId": "2026-10-24-hub-production-composite-2026-10-24T14-41-24-504Z+2026-10-24T14-51-58-482Z",
+      "status": "passed",
+      "checks": 13,
+      "historical": false,
+      "scope": "composite production-entry acceptance: preserved complete desktop five-leg source/window/story/source/window and DOM-control observations, plus the passed final focused actual mobile supplement; not one wholly passed raw run",
+      "sourceReports": [
+        {
+          "path": "assets/hub-qa/d3d11/2026-10-24T14-41-24-504Z/acceptance.json",
+          "runId": "2026-10-24T14-41-24-504Z",
+          "originalStatus": "failed",
+          "sha256": "d0b142bc25fe736d05117b28be5363c6589dae414c98b58a4545532732aced5c",
+          "checks": 8,
+          "originalErrors": [
+            "Error: Actual mobile hub dimensions or overflow failed\n    at invariant (F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\hub-acceptance.cjs:8:51)\n    at mobilePreviews (F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\hub-acceptance.cjs:84:4)\n    at async runHubAcceptance (F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\hub-acceptance.cjs:105:13)\n    at async F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\main.cjs:143:22"
+          ]
+        },
+        {
+          "path": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/acceptance.json",
+          "runId": "2026-10-24T14-51-58-482Z",
+          "originalStatus": "passed",
+          "sha256": "80bf5b73adc7a76398d64c259054a639fc227766487af4c0a902f9b6a686c990",
+          "checks": 5,
+          "originalErrors": []
+        }
+      ],
+      "resolvedHarnessFailure": {
+        "originalDesktopStatusPreserved": "failed",
+        "originalError": [
+          "Error: Actual mobile hub dimensions or overflow failed\n    at invariant (F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\hub-acceptance.cjs:8:51)\n    at mobilePreviews (F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\hub-acceptance.cjs:84:4)\n    at async runHubAcceptance (F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\hub-acceptance.cjs:105:13)\n    at async F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\main.cjs:143:22"
+        ],
+        "cause": "The production desktop run reached all five legs. Its later mobile gate required an exact requested CSS width, but native 1.5-DPI offscreen rounding produced a one-pixel difference. The final harness accepts at most one CSS pixel, uses actual viewport names and still rejects overflow, clipped controls or unreadable paper.",
+        "replacementReport": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/acceptance.json",
+        "replacementTests": [
+          "actual-376-845-hub-preview-has-readable-paper-and-complete-replay-control",
+          "actual-390-845-hub-preview-has-readable-paper-and-complete-replay-control"
+        ],
+        "scope": "Only the mobile portion is supplemented; the five desktop legs were not rerun or relabeled."
+      },
+      "actualActivationWaitSeconds": [
+        24.519953500000003,
+        42.6922684,
+        40.6173649,
+        70.08286919999999,
+        46.20257809999998
+      ]
+    }
+  },
+  "embedded_actual_captures": [
+    {
+      "runId": "2026-10-24T08-42-44-256Z",
+      "capture": "04-headland-35",
+      "path": "assets/source-live-qa/2026-10-24T08-42-44-256Z/04-headland-35-decoded-video.png",
+      "sha256": "4430aef1c7f866382a9d78c33be2e87359bc1176bae3b1e5b5ef1a8fe31df257",
+      "width": 1440,
+      "height": 902
+    },
+    {
+      "runId": "2026-10-24T14-18-59-251Z",
+      "capture": "01-window",
+      "path": "assets/canal-real-qa/2026-10-24T14-18-59-251Z/01-window-canvas.png",
+      "sha256": "a3adf5e8712961b199e9aa98bb3d5255dceee291ad90f4bdd11fe85c202c2fdd",
+      "width": 1440,
+      "height": 902
+    },
+    {
+      "runId": "2026-10-24-r5-story-composite-13-59-53+14-13-54",
+      "capture": "final-story-choice",
+      "path": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/final-story-choice-canvas.png",
+      "sha256": "f3c339a21e6c1a970f8e2f2629b4afd3d363486c134d6f923d435ba591ebe0d0",
+      "width": 1440,
+      "height": 902
+    }
+  ],
+  "independent_visual_review": {
+    "path": "notes/visual-acceptance-r5.md",
+    "sha256": "85b48b5fb661e2da2042bbb27d3b0d8362e1ae7f35bb1bc41f52ad61d3096488",
+    "judgement": "R5 independent review accepted; this guide QA does not infer art quality from functional checks"
+  },
+  "performance_claim": {
+    "source_completed_fps": 2.5173819228002876,
+    "source_decoded_fps": 2.6372572524574442,
+    "window_current_completed_fps": 24.230469635711835,
+    "window_current_paint_callbacks_per_second": 20.233691139099573,
+    "window_observed_seconds": 4.003224100000007,
+    "scheduler_cap_fps": 30,
+    "cap_is_not_actual_fps": true,
+    "earlier_story_30fps_measurement_not_claimed_for_final_render": true
+  },
+  "preview": "D:\\codex\\tmp\\014-guide-r5-qa-20261024\\guide-r5-full.png",
+  "crops": {
+    "source": "D:\\codex\\tmp\\014-guide-r5-qa-20261024\\guide-r5-source.png",
+    "works": "D:\\codex\\tmp\\014-guide-r5-qa-20261024\\guide-r5-works.png",
+    "workflow": "D:\\codex\\tmp\\014-guide-r5-qa-20261024\\guide-r5-workflow.png",
+    "evidence": "D:\\codex\\tmp\\014-guide-r5-qa-20261024\\guide-r5-evidence.png"
+  },
+  "manual_layout_review": "Directly inspected CPU full/source, R5 work cards and actual images, workflow table, evidence cards and footer. Chinese labels, body text, captions and links are legible; no text/image/card overlap. Section crop boundaries do not alter the full guide.",
+  "source_accuracy_checks": {
+    "source_live_15_checks_preserved": true,
+    "source_approx_2_52fps_and_33_GLSL_preserved": true,
+    "current_r5_captures_replace_007_prototypes": true,
+    "full_story_and_final_supplement_honestly_composed": true,
+    "failed_raw_story_report_unchanged": true,
+    "hub_current_passed": true,
+    "historical_17_source_cameras_not_current_hub_proof": true
+  },
+  "superseded_record_preserved": "notes/guide-qa-history/2026-10-24-before-r5.json"
+}

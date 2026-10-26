@@ -1,0 +1,74 @@
+{
+  "schema": "lijiang-m6-visual-review-v1",
+  "baseline": "lijiang-current.m5-history.json",
+  "scope": "Mountain group structure and inter-domain continuity; not overall photoreal or realtime60 signoff.",
+  "sourceReference": "Real karst relationships guide shared feet/saddles and retained isolated peaks.",
+  "sample": {
+    "report": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m6-preview/2026-10-26T10-22-32-321Z/result.json",
+    "accepted": true,
+    "views": 6,
+    "findings": [
+      "High/secondary peaks, saddles, descending spurs and open ground read as one local landform",
+      "Broad green connection panel and white seams eliminated by actual SDF coverage"
+    ]
+  },
+  "fullStatic": {
+    "report": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m6-full/2026-10-26T11-09-47-672Z/status.json",
+    "acceptedForRequestedMountainRevision": true,
+    "reviewers": [
+      "root",
+      "m5_ecology_contact",
+      "m5_qa_scaffold"
+    ],
+    "exactRetainedFailedM6Poses": true,
+    "rejectedComparison": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m6-full/2026-10-26T10-26-54-373Z/status.json",
+    "acceptedImages": [
+      "m6-fixed-crack-primary-right.png",
+      "m6-fixed-crack-mountain-primary-slope-root.png",
+      "flight-25.png",
+      "primary-back.png",
+      "group-oblique-group-footprint.png"
+    ],
+    "findings": [
+      "Same-pose bright cracks closed after shared2m world lattice",
+      "Riverside clearance and open ground retained; no uniform base/platform across landscape",
+      "Every new bridge/rock domain uses the same generated scalar terrain; no skirt geometry used in accepted candidate"
+    ]
+  },
+  "motionAndFilm": {
+    "status": "sampled-visual-pass",
+    "actualFunctionalReport": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m6-full/2026-10-26T11-09-47-672Z/result.json",
+    "motionFrames": 107,
+    "horizonFrames": 9,
+    "decodedFilmSampleFrames": 9,
+    "reviewedFilmFullFrames": [
+      5,
+      9
+    ],
+    "findings": [
+      "No recurrence of bright inter-domain cracks in inspected images",
+      "Mountain connections, riverside woodland and reflection intact"
+    ],
+    "limit": "Not a human frame-by-frame inspection of2700frames; not realtime performance acceptance."
+  },
+  "remaining": [
+    "Some ridge crests and limestone faces remain too smooth",
+    "Some local vegetation silhouettes remain regular",
+    "Full-scene generation and realtime rendering speed goals remain open"
+  ],
+  "fullGoalComplete": false,
+  "exactRetainedCrackReview": {
+    "accepted": true,
+    "views": [
+      "m6-fixed-crack-primary-right",
+      "m6-fixed-crack-mountain-primary-slope-root"
+    ],
+    "basis": "Same original rejected poses; root and both independent reviewers directly read full images. Previously observed white cracks absent.",
+    "sharedLatticeSpacingMetres": 2,
+    "seamTrianglesUsed": 0
+  },
+  "productionPromotion": {
+    "accepted": false,
+    "reason": "Significant runtime/load regression; preserve a separate candidate entry instead of replacing M5 default."
+  }
+}

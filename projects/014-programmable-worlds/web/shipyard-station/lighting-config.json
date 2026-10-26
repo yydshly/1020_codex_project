@@ -1,0 +1,119 @@
+{
+  "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+  "fingerprintDefinition": "sha256 of the exact UTF-8 lighting-canonical.json bytes, recursively sorted keys, compact JSON",
+  "lighting": {
+    "schema": "shipyard-station-lighting-v1",
+    "revision": "shipyard-first-light-1",
+    "fullHDR": {
+      "url": "../canal-real/assets/lighting-r5/kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+      "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+      "bytes": 5451493
+    },
+    "deSunHDR": {
+      "url": "../canal-real/assets/lighting-r5/kloofendal_48d_partly_cloudy_puresky_2k-desun.hdr",
+      "sha256": "64ff36c899ea3b94543140cb0a5a00c4c32a97b5c4670cc62fcabe27c8797832",
+      "bytes": 5450691
+    },
+    "environmentIntensity": 1.031923772120808,
+    "backgroundIntensity": 1.031923772120808,
+    "environmentRotationYRadians": -0.35,
+    "backgroundRotationYRadians": -0.35,
+    "blenderMappingRotationZDegrees": 20.05352282957881,
+    "viewExposureEV": 0,
+    "practicalScale": 1.0,
+    "sun": {
+      "directionToLight": [
+        0.3912557941714868,
+        0.7417598102380594,
+        0.5447121142794946
+      ],
+      "colorLinear": [
+        0.991978082879707,
+        1.0,
+        0.9084521146029024
+      ],
+      "intensity": 4.562767782748515,
+      "normalIrradianceRGB": [
+        4.526165637756163,
+        4.562767782748515,
+        4.145056040679885
+      ],
+      "target": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance": 80.0
+    },
+    "runtimePolicy": {
+      "IBL": "deSunHDR",
+      "background": "fullHDR",
+      "probeBackground": "deSunHDR",
+      "staticGI": "New shipyard geometry integrated under fullHDR; replace all live diffuse only on its own mapped receivers",
+      "dynamicDiffuseAndShadows": "deSun IBL + one DirectionalLight with extracted beam",
+      "water": "fullHDR for sky reflection; do not additionally add extracted sun specular to that same reflection"
+    },
+    "sceneId": "shipyard-station",
+    "bakePolicy": {
+      "analyticSunScale": 0.0,
+      "practicalScale": 1.0,
+      "practicalConvention": "Export the actual runtime light intensities; do not multiply the earlier canal .25 calibration again",
+      "sceneIdentityRequired": "shipyard-station"
+    }
+  },
+  "sharedAssetProvenance": {
+    "asset": "kloofendal_48d_partly_cloudy_puresky",
+    "source": "https://polyhaven.com/a/kloofendal_48d_partly_cloudy_puresky",
+    "license": "CC0-1.0",
+    "authors": {
+      "Greg Zaal": "Original",
+      "Jarod Guest": "Sky edits"
+    },
+    "url": "https://dl.polyhaven.org/file/ph-assets/HDRIs/hdr/2k/kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+    "path": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+    "bytes": 5451493,
+    "apiMd5": "2eba3a4d7eeb23cbfbeca364c97e7980",
+    "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+    "role": "actual scene radiance and background; no pre-rendered city image"
+  },
+  "sharedHDRDecomposition": {
+    "method": "Subtract nonnegative radiance excess over local 2-3.5deg sky median; full removal <=1.2deg, cosine feather to1.8deg. Integrate actual removed residual over equirectangular solid angles; replace by one energy-matched collimated beam.",
+    "baselineRGB": [
+      7.40625,
+      7.3125,
+      8.90625
+    ],
+    "solarCentroidUnrotatedYUp": [
+      0.5543156064689873,
+      0.7417598102380594,
+      0.37752694253591623
+    ],
+    "solarElevationDegrees": 47.88154094256723,
+    "worldAzimuthXZDegrees": 54.3110703272326,
+    "fullHorizontalIrradianceRGB": [
+      4.727537417938767,
+      4.962729115861264,
+      5.3484912880916795
+    ],
+    "deSunPlusBeamHorizontalRGB": [
+      4.727304754477421,
+      4.962725279400162,
+      5.34921439183273
+    ],
+    "relativeHorizontalConservationError": 0.00013519770381980456,
+    "allPhotometry": "relative scene-linear units; no absolute lux calibration claimed",
+    "encodedDeSunPlusBeamHorizontalRGB": [
+      4.727197455757665,
+      4.9626473858201114,
+      5.34909089008292
+    ],
+    "encodedRGBERelativeHorizontalErrorRGB": [
+      7.191105030966443e-05,
+      1.6468769349393548e-05,
+      0.00011210675290342331
+    ],
+    "encodedRGBEMaxRelativeHorizontalError": 0.00011210675290342331
+  },
+  "independence": "Only source HDR radiance assets and the decomposition algorithm are reused. No canal GLB, UV scene, lightmap or source-4 identity is valid for this world.",
+  "status": "Input rig prepared; new scene geometry, Cycles proof, integration and realtime artwork remain unaccepted."
+}

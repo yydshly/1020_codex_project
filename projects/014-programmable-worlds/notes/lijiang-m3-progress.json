@@ -1,0 +1,152 @@
+{
+  "schema": "lijiang-m3-progress-v1",
+  "recordedAt": "2026-10-26T02:38:00.987661+00:00",
+  "status": "m3-improvement-pass-verified-local",
+  "productionStillM2": false,
+  "fullGoalComplete": false,
+  "experiment": "web/lijiang-m3/index.html",
+  "firstRun": {
+    "evidence": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m3/2026-10-26T00-39-27-846Z",
+    "functional": "passed",
+    "artAccepted": false,
+    "loadSeconds": 109.72,
+    "defects": [
+      "cone-shaped narrowing lost broad shoulders",
+      "smooth/clay rock walls",
+      "evenly scattered low vegetation",
+      "ground sky seam at original tree-family-2 root pose",
+      "family0 evidence cameras inside neighbour crown"
+    ]
+  },
+  "secondRun": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m3/2026-10-26T00-58-48-563Z",
+  "secondChanges": [
+    "restore authored unequal crown/flank curves; bounded planes and real finite dissolution clefts",
+    "restrain pebbled bump and add unequal solution weathering",
+    "folded individual near leaves and strong patch ecology",
+    "widen lowland substrate seam coverage; same original defect pose retained",
+    "exact active-cell MC; GPU/worker workload ordering and readback overlap; preserve all field resolutions",
+    "shared exclusion shader capacity and actual count; extra first-frame timing phases"
+  ],
+  "constraints": {
+    "externalSceneAssetFiles": 0,
+    "modifyOrFocusUserWindow": false,
+    "m2NativeFilesProtected": 34,
+    "sourceAndABPreserved": true
+  },
+  "secondRunMeasured": {
+    "status": "passed-functional",
+    "artAccepted": false,
+    "loadSeconds": 51.794,
+    "m2BaselineLoadSeconds": 84.862,
+    "gpuCompletedFrameMilliseconds": 50.5,
+    "samePoseSeamRepairsObserved": [
+      "seam-regression prior white triangle",
+      "forest-floor prior vertical bright seam"
+    ],
+    "rejected": [
+      "pinnate giant near leaves",
+      "soft/clay rock faces"
+    ]
+  },
+  "thirdChanges": [
+    "four separate forked shoot geometries with short alternate leaves in real world units",
+    "M3 explicit rockField structural block-face override; reduced rounded relief",
+    "combined bicubic/rock relief bounded to +/-10 in bare-rock path",
+    "unresolved centimetre fractures stop at .45m/pixel"
+  ],
+  "thirdRun": {
+    "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m3/2026-10-26T01-21-45-255Z",
+    "status": "failed-optional-diagnostic-exact-pixel-restoration",
+    "productFunctionalChecksAndContinuousFlight": "passed before the added component diagnostic assertion",
+    "loadSeconds": 38.952,
+    "artAccepted": false,
+    "improvements": [
+      "natural four-forked small leaves replacing giant pinnate shoots",
+      "broad shoulders and actual longer planar rock breaks retained",
+      "two same-pose ground sky seams remain repaired"
+    ],
+    "unresolved": [
+      "screen-space LOD stipple at mid distance",
+      "some dense-forest views exceed M2 submitted triangle budget",
+      "soft large bright limestone faces remain",
+      "slow GPU-completed runtime frames; no realtime60 claim"
+    ],
+    "diagnosticPixelDifference": {
+      "changedPixels": 163,
+      "totalPixels": 1298880,
+      "maxChannelDifference": 5,
+      "meanChannelDifference": 0.000113431
+    },
+    "diagnosticResolution": "Harness optional component profiling no longer forces a shadow-cache redraw. It records full image differences and is separated from required scene checks. Real GPU fix confirmation pending."
+  },
+  "comparisonStandard": "Actual appearance, usable driving and motion. Na Pali is a creative/technical reference, not a visual-similarity or reuse benchmark.",
+  "preservedProductionBaseline": {
+    "directory": "web/lijiang-native",
+    "files": 34,
+    "changed": false,
+    "mainHomepageStillM2": false
+  },
+  "fourthChanges": [
+    "Stable per-shoot and plant identity replacement instead of screen-space LOD dot grid",
+    "Matching forked foliage shape on medium level",
+    "Per-view forest submission cap relative to M2 without enlarging small leaves",
+    "More legible unequal damp solution stains; real structural rock field retained"
+  ],
+  "fourthCpuBudget": {
+    "matchedViews": 17,
+    "allAtOrBelowM2": true,
+    "primaryFrontTriangles": 5491000,
+    "primaryFrontM2Triangles": 5943000,
+    "nearRockRatio": 0.653,
+    "forestFloorRatio": 0.269,
+    "scope": "CPU submission budget only; pending actual GPU visual/LOD test",
+    "postTraversalFix": "17 matching CPU views remain numerically identical to the fourth iteration; mounted nodes, not logical chunks, enter scene traversal"
+  },
+  "fourthRun": {
+    "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m3/2026-10-26T01-46-57-454Z",
+    "status": "passed-core",
+    "loadSeconds": 38.771,
+    "completedFrameMilliseconds": 74.6833,
+    "promoted": false
+  },
+  "pairedFreshM2": {
+    "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m2/2026-10-26T01-49-44-820Z",
+    "status": "passed",
+    "loadSeconds": 93.931,
+    "completedFrameMilliseconds": 37.7333
+  },
+  "runtimeRepair": [
+    "restore static clip specialization while isolating performance regression",
+    "lazy mount forest chunks with actual content; avoid 63374 empty scene nodes in matrix/render traversals",
+    "use monotonic cache aging independently of paused/reversed film time",
+    "record CPU submission and GPU fence phases in a dedicated actual-generation timing run"
+  ],
+  "performanceRepairRun": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m3/2026-10-26T02-09-31-777Z",
+  "performanceRepairPreserves": {
+    "geometriesAndLayouts": "Fourth-iteration forest results unchanged; 17 matched CPU views exactly match the fourth iteration",
+    "codePrecision": "All original field/peak resolutions retained",
+    "sourceAndM2": "Unchanged",
+    "air": "All pre-created forest materials now receive the common atmosphere so later streamed levels match initial levels"
+  },
+  "performanceRepairResult": {
+    "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m3/2026-10-26T02-09-31-777Z",
+    "status": "passed",
+    "loadSeconds": 51.218,
+    "completedFrameMilliseconds": 31.75,
+    "meanCPUSubmissionMilliseconds": 13.5667,
+    "meanFenceCreatedToResolvedMilliseconds": 10.35,
+    "scope": "Original view45 following actual generation; no full motion/art verification in this dedicated timing run",
+    "m2PairedActualStatus": "Fresh same-period M2 passed at37.733ms; M3 dedicated direct-view timing31.750ms; differing view history documented in acceptance record"
+  },
+  "entry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?revision=20261026-m3#lijiang",
+  "improvementPassComplete": true,
+  "finalParentRun": {
+    "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m3\\2026-10-26T02-29-53-061Z\\result.json",
+    "status": "passed",
+    "requiredTests": 18,
+    "loadSeconds": 41.623,
+    "completedFrameMilliseconds": 21.633333325386047,
+    "videoDecodedFrames": 2700,
+    "ownOriginalAndReloadedContextsDisposed": true
+  }
+}

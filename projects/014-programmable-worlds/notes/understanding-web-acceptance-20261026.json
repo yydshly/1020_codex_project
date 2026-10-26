@@ -1,0 +1,40 @@
+{
+  "schema": "understanding-web-v1",
+  "recordedAt": "2026-10-26T15:07:42.017960+00:00",
+  "status": "integrated-and-verified",
+  "entry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?revision=20261026-understanding-1#understanding",
+  "runtime": "lijiang-m8-unchanged",
+  "scope": "Summarize discussion about reference images, production routes, constrained control, dedicated3D generators and current project value; no new generation system, model integration or live scene development.",
+  "content": [
+    "Current value is research/methods/examples and some reusable engineering; differentiated efficiency and commercial value remain unproven.",
+    "Distinguish LLM coding, dedicated asset/world generators, and production/experience integration.",
+    "Compare2.5D, asset-based3D, dedicated generation, and all-procedural routes.",
+    "Four proposed control stages: reference constraints, fixed templates/limited parameters, bounded rendering comparison/optimization, multiview/continuous/performance checks.",
+    "Clearly state that the complete automatic reference-to-world pipeline is not implemented.",
+    "Three disclosures: technical sources, reusable new-chat task brief, and conditions for further investment."
+  ],
+  "verification": {
+    "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-world-hub-wrapup\\2026-10-26T15-05-56-743Z\\result.json",
+    "passedChecks": 10,
+    "localPageLinksHTTP200": 29,
+    "localMarkdownLinks": 140,
+    "viewports": [
+      "1440x900 desktop",
+      "390x844 small viewport in hidden Electron, not phone hardware"
+    ],
+    "screenshots": 22,
+    "rootReviewed": [
+      "desktop-understanding",
+      "mobile-understanding-routes",
+      "mobile-understanding-task-open"
+    ],
+    "blankIframeChecks": 28,
+    "liveScenesStarted": 0,
+    "m8SourceFilesPreserved": 51,
+    "sourceSHA256": {
+      "index.html": "9396fdc0f573facb2b506ab05241699c9133e5d477869da5998af5a33f605513",
+      "style.css": "6e8c3679aaa95a9592907261693f7744a2ccf7ad1b7f6ab139c65257b09d70b3",
+      "app.js": "68561d9bf6b63eeff5dc18527cd30ad5f7a148470a48f57f25e001ba8753af3b"
+    }
+  }
+}

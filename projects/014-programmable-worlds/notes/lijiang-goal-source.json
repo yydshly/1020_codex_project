@@ -1,0 +1,15 @@
+{
+  "source": "C:\\Users\\yun68\\Desktop\\lijiang-codex-prompts.md",
+  "sha256": "bbd937a07708437d56251978469f30c0c0f94840f47056f420214da9320ed59e",
+  "goal": "Code-generated Li River karst, quiet reflected water, dawn mist, 45-second flight, live controls, parameter panel, UI hide and 1080p60 offline export; integrated into the existing project page.",
+  "sceneAssetsPolicy": "No external models, images, textures or HDR. In-memory procedural geometry, noise, render targets and generated light/occlusion sampling are allowed. Libraries are local pinned code.",
+  "referencePolicy": "Photographs are observation references only; no reference photograph is rendered, downloaded as a scene asset or used as a background.",
+  "acceptance": "Actual images judged separately from function, whole flight, frame-rate measurement, output WebM decoding, narrow layouts and parent-page lifecycle.",
+  "versions": {
+    "three": "0.186.1",
+    "vite": "8.3.5",
+    "lil-gui": "0.21.0",
+    "mediabunny": "1.62.1"
+  },
+  "versionVerification": "npm official registry dist-tags read on 2026-10-25; installation retried against mirror after connection reset; exact versions pinned."
+}

@@ -1,0 +1,316 @@
+{
+  "schema": "lijiang-native-current-v1",
+  "recordedAt": "2026-10-25T12:19:04.426418+00:00",
+  "status": "superseded-by-live-material-renderer",
+  "fullGoalComplete": false,
+  "sceneId": "lijiang-native",
+  "runtimeRevision": "lijiang-native-client-6-idle-1",
+  "entry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?revision=20261025-native5r3#lijiang",
+  "standaloneEntry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/lijiang-native/index.html?revision=5",
+  "visualScope": {
+    "accepted": false,
+    "baseline": "The intended Li River artwork and its actual viewing/interaction experience; the original repository is creative and technical reference only.",
+    "report": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\notes\\lijiang-effect-acceptance.md",
+      "sha256": "f65d475961c6ab3482364eb005f8e7d05a79968e6bd52e57e768457a203758ba",
+      "bytes": 2698
+    },
+    "covers": [
+      "fixed near forest and rock quality",
+      "desktop final composition and complete primary-peak reflection",
+      "real portrait viewport and UI/clean-frame presentation"
+    ],
+    "doesNotClaim": [
+      "fluid real-time performance",
+      "quality of an unrendered complete current film",
+      "every arbitrary free-camera pose"
+    ],
+    "withdrawn": true,
+    "withdrawalReason": "局部细节恢复不足以证明整体成品质感同档；自然地貌、生态分布、岩植衔接与整体光影仍有明显差距。",
+    "currentAssessment": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\notes\\lijiang-native-quality-gap.md",
+      "sha256": "474d21493e1bce9a74478267f83d0485ede99d06880153e8be235e0a0584a850",
+      "bytes": 2338
+    },
+    "priorWithdrawnReport": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\notes\\lijiang-native-visual-acceptance.before-quality-gap-review.md",
+      "sha256": "ec46c60cc7d658ba8c5b0cc62226c97398558bbe8e37ae3d90c1cf901f73926e",
+      "bytes": 3617
+    },
+    "priorSourceComparisonBaseline": "Actual upstream 75-second decoded video frame, not a lower-detail CG scope"
+  },
+  "functionalEvidence": {
+    "standalone": {
+      "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-native-client-qa\\2026-10-25T09-15-04-452Z\\result.json",
+      "sha256": "7519218238e390eded5ba531370258fc2ce4661b5e4a389aaab8d76f26755f28",
+      "bytes": 279531,
+      "checks": 11,
+      "revision": "lijiang-native-client-5",
+      "scope": "Actual lossless pixel hashes, control/parameter changes, native portrait allocation, phone-sized UI/touch and standard 2700-frame export start/two submitted frames/cancel/restore"
+    },
+    "finalParent": {
+      "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-native-hub-qa\\2026-10-25T09-58-21-171Z\\acceptance.json",
+      "sha256": "723d68502a5048e77995a7362cfafea1577a3a0178a2a141bd124ae8d1736ddd",
+      "bytes": 261282,
+      "checks": 8,
+      "revision": "lijiang-native-client-5-atomic-seek-1",
+      "scope": "Actual four production entries, rapid seek/play, full live flight, 12-to-45 shot, same-document portrait at time45, native retirement before unchanged independent station and final blank"
+    },
+    "verificationChain": "After the standalone run only seek/pause was made atomic and parent resize anchoring changed. Final parent regression exercises both fixes; renderer, viewport implementation, water and exporter remain byte-identical to the standalone run. Later quality-review changes affect status copy and assessment records only; these functional results do not constitute visual acceptance.",
+    "frozenRendererAndModuleHashBaseline": {
+      "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-v5-start-hashes.json",
+      "sha256": "e7500cc2ba61d22e8cdf207bad361531f3d2a9059bee4473ee0d4a9bb9dfafec",
+      "bytes": 1518
+    },
+    "onlyBaselineFileChanges": [
+      "web/lijiang-native/index.html",
+      "web/lijiang-native/client.js",
+      "src/runtime-shell/lijiang-native-bridge-main.cjs"
+    ],
+    "scopeAfterRework": "Historical v5 checks describe the renderer before the current landform/ecology/atmosphere rework. They are not acceptance of the changed current renderer or experimental raster candidate."
+  },
+  "fullLiveFlight": {
+    "complete": true,
+    "pathDurationSeconds": 45,
+    "observedWallSecondsToFinalPresentedFrame": 58.89191679999999,
+    "quickSeekPlayUnpausedMs": 408.74059999999736,
+    "endedPaused": true,
+    "heldSubsequentFrame": true,
+    "offlineFilm": false
+  },
+  "portrait": {
+    "sameParentDocumentAcrossResize": true,
+    "preservedTimeSeconds": 45,
+    "phoneSizedChromiumNotPhysicalPhone": true,
+    "pixelBudget": 1298880,
+    "standaloneActualSize": [
+      774,
+      1678
+    ],
+    "parentActualViewport": {
+      "width": 333,
+      "height": 620,
+      "overflow": false
+    },
+    "parentActualNativeSize": [
+      836,
+      1556
+    ]
+  },
+  "performance": {
+    "timingType": "Completed source-renderer frame wall time, including CPU/IPC/GPU waits; not a hardware GPU timer query",
+    "observedFinalFrameMilliseconds": [
+      7582.699999928474,
+      7537.699999928474,
+      7488.799999952316,
+      7410.699999928474,
+      7410.699999928474,
+      7410.699999928474,
+      7558.600000023842
+    ],
+    "fluidRealTimeAccepted": false,
+    "offline60fpsDoesNotMeanRealtime60fps": true
+  },
+  "film": {
+    "currentFull45SecondFilmProduced": false,
+    "earlierNativeSixFrameQAOnly": {
+      "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-native-qa\\2026-10-25T07-18-28-125Z\\lijiang-native-qa-1920x1080-60fps-6frames.webm",
+      "sha256": "612f7777bddebc24dd0cf4db7e72343c1892bd9777565be94975b0cf2c98e1b4",
+      "bytes": 735548
+    },
+    "sixFrameDecodeEvidence": {
+      "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-native-qa\\2026-10-25T07-18-28-125Z\\ffprobe.json",
+      "sha256": "b5851db94060a9896005ab1e6f7e5dd7dee0099ddba121f99474d8d96066951a",
+      "bytes": 331
+    },
+    "scope": "Earlier native six-frame producer/encoder sanity check; not this current complete flight film. Standard current-job cancellation is covered by standalone functional evidence."
+  },
+  "remainingTargets": [
+    "Natural, coherent intended Li River effect and usable real-time interaction",
+    "Fluid real-time performance",
+    "Complete current 45-second 2700-frame film has not been generated",
+    "Terrain count/height/steepness/width/seed editing and independent moving-mist controls have not all been migrated",
+    "Optional raft/birds have not been migrated"
+  ],
+  "sourceIntegrity": {
+    "source_sha256": "616d20c66e82d070f8c6bff921c8a78b2f04309b8cf279835ce4cdeaa90f4dfd",
+    "runtime_sha256": "1e6235db469ff444cac6a81a6740e1e88656796f7bdf745d758f2344649a6037",
+    "preserved_template_literals": 33,
+    "glsl_unchanged": true,
+    "adaptations": [
+      "all program compiles deferred",
+      "quality-preserving GPU work partitioning",
+      "disabled HUD work elision",
+      "completed-stage wall-time diagnostics",
+      "phase diagnostics",
+      "drone control API",
+      "explicit quality",
+      "suspend lifecycle",
+      "controller UI links"
+    ]
+  },
+  "previousProtectedReleaseFilesUnchanged": {
+    "web/shipyard-station/index.html": "9809f2b9941292453fd346db400551377e108bb3aeba01f9ff0a11b046c74437",
+    "web/shipyard-station/main.js": "71c35634e562bf7648da3c47f0cbbc5eddf1ddd26b049ff59b8ebbf2e8882498",
+    "web/shipyard-station/journey.js": "ad02b755ee98be97737b9a6bf4eec2b25881f20bd6608fd159bd94660ec02fa7",
+    "web/shipyard-station/gi.js": "82f1ee217af555cad78ecce57f00ce7b26e030f6a0ed692b19d744708b93f32d",
+    "web/shipyard-station/visual-review.json": "e1f186b05ec05427c84088314e6bc29b485d2be5916c0191b6a910269b4637c0",
+    "web/shipyard-station/baked-r1/manifest-oak2048.json": "97eb5a39b308d200f0011f9732725a812b7794cca48553178a11e4841b0f882e"
+  },
+  "bridgeAfterAcceptance": {
+    "8797": {
+      "service": "napali-source-bridge",
+      "version": 1,
+      "backend": "gl",
+      "pid": 81768,
+      "sessionActive": false,
+      "offscreen": true,
+      "offscreenFrameRate": 30
+    },
+    "8798": {
+      "service": "lijiang-native-bridge",
+      "version": 5,
+      "capabilities": [
+        "native-fixed-frame-export",
+        "authenticated-chunked-download",
+        "native-live-settings",
+        "native-lossless-live-frames",
+        "native-live-viewport"
+      ],
+      "backend": "gl",
+      "pid": 21072,
+      "sessionActive": false,
+      "offscreen": true,
+      "offscreenFrameRate": 30,
+      "duration": 45,
+      "nativeProvenance": {
+        "sceneId": "lijiang-native",
+        "renderer": "source-derived-full-glsl",
+        "presentation": "lossless-live-renderer-frames",
+        "flightDuration": 45,
+        "sourceURL": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/lijiang-native/engine.html?embed=1&qa=1&rs=1&t=0&bandpx=12000",
+        "streamAdapter": "source-stream-engine.js",
+        "declaration": "bridge configuration; actual engine provenance is reported separately"
+      },
+      "engineProvenance": null
+    }
+  },
+  "executionPolicy": "Only task-owned invisible windows and own app Chromium input; no user IAB navigation or OS keyboard/mouse. GPU runs serialized. Original source bridge was observed, not stopped or reset.",
+  "history": "Rejected Three.js visuals, full old film, failed/re-scoped QA and earlier native experiments remain preserved. Their results are not relabelled as this renderer.",
+  "currentFiles": {
+    "src/build_lijiang_native.py": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\build_lijiang_native.py",
+      "sha256": "421a1dbb7a5701d8c57a259b2506529df2d1a5020db35df5f8aa7581afaf7ba1",
+      "bytes": 28945
+    },
+    "src/lijiang_native_river.py": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\lijiang_native_river.py",
+      "sha256": "b39d76791a9b8b5f8013353a9560ccd116eb02e7de4d9940ec016fcb334b5391",
+      "bytes": 19972
+    },
+    "src/lijiang_native_march.py": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\lijiang_native_march.py",
+      "sha256": "15f4c92c9cde520c742ce68b6ac992f2dbfe789e0b52e614dee557fe0c93c51e",
+      "bytes": 16766
+    },
+    "src/lijiang_native_accel.py": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\lijiang_native_accel.py",
+      "sha256": "0e4b5505cfb332cf66729f60880b4532de35c709cac237c20cd2d5a4edee00a6",
+      "bytes": 13944
+    },
+    "web/lijiang-native/engine.html": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\lijiang-native\\engine.html",
+      "sha256": "53152af7abadffa4933f42aa68e371faa62861ee49a42a130a14093753876392",
+      "bytes": 359360
+    },
+    "web/lijiang-native/engine.manifest.json": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\lijiang-native\\engine.manifest.json",
+      "sha256": "b2de13640ec27666e63a42e84ee5df1549539d3d507b369dda38e5de2569bb43",
+      "bytes": 35098
+    },
+    "web/lijiang-native/index.html": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\lijiang-native\\index.html",
+      "sha256": "0eb51da5160ba6e1fa9392c0d4e7f2dc7b1bb06167b2aced8242cff8c9f3f223",
+      "bytes": 7411
+    },
+    "web/lijiang-native/client.js": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\lijiang-native\\client.js",
+      "sha256": "0d1a6648bb777915326218c1dfd6687a745c04ef7ace22720fb403c6b7e489ac",
+      "bytes": 47244
+    },
+    "web/lijiang-native/client.css": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\lijiang-native\\client.css",
+      "sha256": "16eea3e094891066970eba1ee446cacafb82632e0a6ec7f8eaa8443eb29dc81d",
+      "bytes": 8041
+    },
+    "web/lijiang-native/live-settings.js": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\lijiang-native\\live-settings.js",
+      "sha256": "31951dc64b6b08881f225d912bf61717dace4559ae950621b24b9e4f4dbc7a4e",
+      "bytes": 2759
+    },
+    "web/lijiang-native/live-viewport.js": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\lijiang-native\\live-viewport.js",
+      "sha256": "df168e38f5c17b0091d20c836e01b2be40ceca8d502606fdbe4852c5cad0a1c0",
+      "bytes": 4310
+    },
+    "web/lijiang-native/offline-export.js": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\lijiang-native\\offline-export.js",
+      "sha256": "7d4d1effc26e5161f0d52f53e4e77626071b7f736a89cadd06bdd89b89b0e29c",
+      "bytes": 11043
+    },
+    "web/lijiang-native/credits.html": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\lijiang-native\\credits.html",
+      "sha256": "6bdd1cf59c7ed1eef699a99e8ee422cba1d9f9cf114d6bb047d98daa76fcc211",
+      "bytes": 1742
+    },
+    "web/index.html": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\index.html",
+      "sha256": "eb295c2e90da80db0b62f7612eb522f8a8a80f5fdfed5a466ae458e389c5b29c",
+      "bytes": 19075
+    },
+    "web/app.js": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\app.js",
+      "sha256": "28fb219e1dead3ed7dd5af8ab49f668abaff353a594e1d1ce9ef08a792a6563d",
+      "bytes": 10147
+    },
+    "src/runtime-shell/lijiang-native-bridge-main.cjs": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\lijiang-native-bridge-main.cjs",
+      "sha256": "0558ad1e29db366b0718c580bc62371a69dc53206aebb57470d795ee69ca85ff",
+      "bytes": 28860
+    },
+    "src/runtime-shell/lijiang-native-client-acceptance.cjs": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\lijiang-native-client-acceptance.cjs",
+      "sha256": "ed7d2f454e804c0460de1d8e8a6addb3d4266431bef6ce58e4b5bd3632e9bcab",
+      "bytes": 34030
+    },
+    "src/runtime-shell/lijiang-native-hub-acceptance.cjs": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\lijiang-native-hub-acceptance.cjs",
+      "sha256": "28dd88b6cbb382166473f0e5b3fc2ae5cd5c0616bcf5a156bb8d7f5f489ddd48",
+      "bytes": 33136
+    },
+    "Start-Project.ps1": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\Start-Project.ps1",
+      "sha256": "b3e65a4c331acfdca69c40bb86b782a10f9676706952d8057f7cf4cac019dbf1",
+      "bytes": 4287
+    }
+  },
+  "previousVerifiedPreview": "notes/lijiang-native-current.before-quality-gap-review.json",
+  "qualityReopenedAt": "2026-10-25T10:26:14.222429+00:00",
+  "acceptanceBasis": {
+    "referenceRole": "creative-and-technical-reference",
+    "criteria": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\notes\\lijiang-effect-acceptance.md",
+      "sha256": "f65d475961c6ab3482364eb005f8e7d05a79968e6bd52e57e768457a203758ba",
+      "bytes": 2698
+    },
+    "implementationChoice": "Choose the rendering and scene-making approach by actual visual and usability results, retaining the user constraints.",
+    "automaticAcceptanceFromCriteriaChange": false,
+    "updatedAt": "2026-10-25T10:38:18.219002+00:00"
+  },
+  "newReworkProgress": "lijiang-rework-progress.json",
+  "nativePausedFix": "lijiang-rework-progress.json",
+  "role": "Historical full-native-ray experiment; not the formal product entry",
+  "supersededAt": "2026-10-25T16:01:49.303284+00:00",
+  "currentProductEntry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?revision=20261026-m2#lijiang",
+  "canonicalCurrentAcceptance": "notes/lijiang-current.json"
+}

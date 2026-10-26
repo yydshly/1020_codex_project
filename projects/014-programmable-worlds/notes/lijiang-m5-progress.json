@@ -1,0 +1,158 @@
+{
+  "schema": "lijiang-m5-progress-v1",
+  "status": "verified-local-current",
+  "fullGoalComplete": false,
+  "mainEntryStillM4": false,
+  "firstActual": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T06-47-37-169Z/result.json",
+  "functionalPassed": true,
+  "artAccepted": true,
+  "observedFailures": [
+    "Actual small-leaf count insufficient: winter-like sparse branch silhouettes",
+    "Contact substrate patches read as polygonal badges",
+    "Woodland continuity not yet established visually; old productive shoulder pockets shifted away"
+  ],
+  "preservedEvidence": "First full hidden direct scene run retained; all39views plus sun captures. Original M4 remains current home.",
+  "nextChanges": [
+    "Distinct adulttree,basalmultistemshrub,clingingcurtain architectures",
+    "Adulttree roots require meaningful ledge support; steeper sites usecompactshrubs",
+    "Shorter mostlyburiedsurfacecontactroots without exposedclaws",
+    "Small porous3Dleafclouds replacebroadfarleafplanes"
+  ],
+  "secondActual": {
+    "report": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T07-03-36-575Z/result.json",
+    "status": "failed-QA-camera-heuristic-before-near-capture",
+    "sceneLoadedSeconds": 69.209,
+    "reason": "Opaque crown envelope exclusion could not find right angular camera; fixed by treating porous envelopes as scoring, while actualSDF visibility remains required."
+  },
+  "thirdActual": {
+    "report": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T07-08-14-530Z/result.json",
+    "functionalPassed": true,
+    "artAccepted": false,
+    "loadSeconds": 61.985,
+    "completedFrameMs": 38.35,
+    "findings": [
+      "Dense individual small leaves resolve sparsewinterbranch failure",
+      "Unsupported-looking clawroots and adult-like bush skeleton remain",
+      "primary-left shows improved shoulder/gully woodland continuity; exposedtruewalls intentionally retained",
+      "Far representations still show broadleafmat silhouettes and requirevolumetric replacement"
+    ]
+  },
+  "fourthActual": {
+    "report": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T07-38-44-491Z/result.json",
+    "functionalPassed": false,
+    "artAccepted": false,
+    "failure": "New QA navigation fixture could not find below-coarse-H outside point among its limited selected plants; five flight captures retained, no near captures.",
+    "flight25Canopy": {
+      "candidateClusters": 40666,
+      "renderedClusters": 20712,
+      "farTriangles": 5999984
+    },
+    "finding": "Hard far-triangle cap omitted half the candidate clusters; new distant lower-cost 3D crowns will retain coverage instead of removing plants."
+  },
+  "fifthActual": {
+    "report": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T07-51-11-879Z/result.json",
+    "functionalPassed": true,
+    "functionalChecks": 10,
+    "artAccepted": false,
+    "loadSeconds": 38.861,
+    "completedFrameMs": 25.816666662693024,
+    "independentVisualReview": {
+      "woodlandContinuity": "pass: restored original lower shoulder belt and gully links",
+      "nearRockAttachment": "pass: short basal roots, no obvious air gaps/claw feet or soil badges",
+      "crossDistanceFoliage": "fail: visible green faceted/octagonal proxy crowns at middle distances"
+    },
+    "next": "Replace every closed proxy shell with open connected small folded leaves; keep full population coverage and fixed distance thresholds."
+  },
+  "sixthActual": {
+    "report": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T08-08-06-170Z/result.json",
+    "functionalPassed": false,
+    "artAccepted": false,
+    "captures": 0,
+    "failure": "GPU shader link failed: Too many attributes (liCanopyFarCutoff). Packing four scalar attributes into one vec4 before rerun.",
+    "additionalCPUFinding": "Merged middle/low crowns lose projected leaf area versus actual near members. Preserve actual members at every tier and calibrate distant leaf coverage."
+  },
+  "seventhActual": {
+    "report": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T08-18-47-689Z/result.json",
+    "functionalPassed": true,
+    "checks": 12,
+    "staticCaptures": 43,
+    "motionFrames": 107,
+    "artAccepted": false,
+    "loadSeconds": 64.099,
+    "motionMeanFrameMs": 54.39999999844025,
+    "issues": [
+      "Adult leaf count did not scale with crown area; large crowns read as leafless/sparse branches.",
+      "Close root placement valid, but tiny two-leaf contact decoration insufficient to blend with smooth wall."
+    ],
+    "confirmedFixes": [
+      "Closed faceted green proxies gone",
+      "Every existing member retained at near/middle/distant tiers",
+      "WASD moves and key-up stops; below-H idle stable; real-wall crossing stops with clearance"
+    ],
+    "navigationCrossingMilliseconds": 4.799999952316284
+  },
+  "eighthActual": {
+    "report": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T08-43-40-345Z/result.json",
+    "functionalPassed": true,
+    "checks": 12,
+    "artAccepted": false,
+    "loadSeconds": 86.332,
+    "motionMeanFrameMs": 78.04392523520461,
+    "fixedCompletedFrameMs": 75.36666663487752,
+    "acceptedStaticImprovements": [
+      "Adult dense broadleaf crowns replace sparse winter branches",
+      "Root moss/short fern transition remains supported, without badges or claws",
+      "Shoulder and gully woodland restored"
+    ],
+    "blockingFindings": [
+      "Same adult crown visibly changes leaf scale, brightness and silhouette at root distances52.717/54.217m.",
+      "Distant detailed geometry drives54M canopy triangles in flight00 and high completed-frame cost."
+    ],
+    "reviewScope": "Ecology review accepts current programmatic-scale static roots/continuity; QA still disputes photoreal blending. Root retains static gains but rejects delivery on visible LOD jump and cost.",
+    "next": [
+      "Filtered world-space alpha-hash LOD transition",
+      "Additional distant small-spray code-generated atlas/geometry tier, preserving every real member"
+    ]
+  },
+  "mainEntry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?revision=20261026-m5#lijiang",
+  "artAcceptanceScope": "Ninth actual target improvements accepted at current procedural-scene scale; full-project photoreal quality and realtime60 remain unverified.",
+  "ninthActual": {
+    "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m5\\2026-10-26T09-12-34-506Z\\result.json",
+    "functionalPassed": true,
+    "checks": 13,
+    "staticCaptures": 43,
+    "motionFrames": 107,
+    "horizonFrames": 9,
+    "artAcceptedForRequestedImprovements": true,
+    "loadSeconds": 70.13,
+    "fixedCompletedFrameMs": 46.1666667064031,
+    "motionMeanFrameMs": 72.45,
+    "findings": [
+      "Folded individual leaves and dense adult crowns preserve volume; no closed green proxy shells.",
+      "Supported roots with irregular moss and fern transition replace exposed claws/badges.",
+      "Shoulder/gully woodland and all candidate root members retained at every distance.",
+      "52.717/54.217m abrupt crown brightness/leaf-size jump replaced by filtered overlap.",
+      "688.55–813.55m horizon transition retains crown and woodland continuity."
+    ],
+    "limitations": [
+      "Extreme close rock still soft/programmatic.",
+      "Motion average approximately72.45ms; realtime60 not met.",
+      "Distant leaf detail is simplified."
+    ]
+  },
+  "improvementPassComplete": true,
+  "formalParentFinal": {
+    "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m5\\2026-10-26T09-19-36-835Z\\result.json",
+    "functionalPassed": true,
+    "checks": 23,
+    "artAcceptedForRequestedImprovements": true,
+    "fullFilmSha256": "ed166de883ac1a4e7d4757c1f13734995f7664704685829425df8f2a9bc5b4bd",
+    "canonical": "lijiang-current.json",
+    "remaining": [
+      "大片岩壁仍偏柔和，尚未完成整体照片级艺术质量目标。",
+      "部分贴壁灌木侧面较扁、分枝较规则，暗处根岩接合细节仍不够鲜明。",
+      "首次生成约70秒；本机隐藏窗口完整航线约14fps，实时60fps目标未实现。",
+      "极远景小叶细节被简化；关键帧复核不等于逐一人工审查全部2700帧。"
+    ]
+  }
+}

@@ -1,0 +1,157 @@
+{
+  "schema": "lijiang-current-v6",
+  "recordedAt": "2026-10-26T09:32:24.585870+00:00",
+  "status": "m5-foliage-contact-continuity-verified-local",
+  "fullGoalComplete": false,
+  "improvementPassComplete": true,
+  "scope": "本轮三项植被改进通过实际画面与正式网页功能验收；整体照片级质量和实时60fps不在已完成声明内。",
+  "runtime": "lijiang-raster-field-material-m5",
+  "entry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?revision=20261026-m5#lijiang",
+  "standaloneEntry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/lijiang-m5/raster.html?surface=1&material=1&revision=20261026-m5",
+  "previousBaseline": "lijiang-current.m4-history.json",
+  "renderer": "76 native SDF rock meshes, rooted mountain woodland, folded small leaves, supported moss/ferns, live lighting/shadows and planar reflection",
+  "sceneAssets": "Code-generated geometry and runtime atlases; no external scene model/image/texture/HDR or QA binary cache.",
+  "sourceRole": "Creative and technical reference; actual appearance, interaction and cost determine acceptance.",
+  "visualScope": {
+    "incrementalImprovementAccepted": true,
+    "overallFinalArtSignoff": false,
+    "improvements": [
+      "小叶沿开放分枝生长，成年冠密度随冠幅增加；替换大薄片与封闭绿色冠壳。",
+      "短根、苔藓与小蕨的基部贴合真实可见岩面，替换突出爪根和底座补丁。",
+      "保留原有可生长坡肩并连接沟谷林丛，各距离保留实际植株，不以漏画满足预算。",
+      "近中景及极远景渐变衔接，实际往返检查未复现整冠亮度和尺度突变。"
+    ],
+    "remaining": [
+      "大片岩壁仍偏柔和，尚未完成整体照片级艺术质量目标。",
+      "部分贴壁灌木侧面较扁、分枝较规则，暗处根岩接合细节仍不够鲜明。",
+      "首次生成约70秒；本机隐藏窗口完整航线约14fps，实时60fps目标未实现。",
+      "极远景小叶细节被简化；关键帧复核不等于逐一人工审查全部2700帧。"
+    ],
+    "independentReview": "lijiang-m5-visual-review.json",
+    "formalParentReview": {
+      "acceptedForThisRevision": true,
+      "rootReviewed": [
+        "M4 same-pose shoulder/cliff comparisons",
+        "mountain-primary-slope-root",
+        "mountain-same-cliff-front",
+        "primary-left",
+        "52.717m/54.217m motion pair",
+        "horizon nine-frame sheet",
+        "film nine-frame sheet",
+        "full-resolution film04 and film09"
+      ],
+      "independentEcologyReviewed": [
+        "same-cliff front/left",
+        "slope-root",
+        "flight25",
+        "nine-frame film sheet",
+        "full-resolution film05/07/09"
+      ],
+      "scope": "Actual captures/decoded keyframes plus 107 near-motion and9horizon evidence. Not a claim of human frame-by-frame inspection of2700frames."
+    }
+  },
+  "mountainPopulation": {
+    "peakCount": 76,
+    "peaksWithPlants": 76,
+    "trees": 7766,
+    "bushes": 91884,
+    "cliffScrub": 37917
+  },
+  "verification": {
+    "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m5\\2026-10-26T09-19-36-835Z\\result.json",
+    "status": "passed",
+    "requiredTests": 23,
+    "totalPassed": 23,
+    "tests": [
+      "actual-production-parent-loads-only-Li-live-iframe",
+      "actual-M5-production-generation-without-QA-cache",
+      "M5-panorama-and-primary-four-side-vegetation-evidence-recorded",
+      "five-flight-seventeen-retained-seven-current-seven-frozen-M4-three-angular-and-one-rejected-view-captures",
+      "actual-SDF-navigation-idle-below-H-and-rock-crossing-resolve",
+      "actual-free-motion-both-LOD-thresholds-covered-with-completed-frames",
+      "actual-hidden-page-mode-button-WASD-key-release-and-idle-below-H",
+      "actual-visible-horizon-root-nine-band-and-centre-views-with-completed-frames",
+      "setEnvironment-live-sun-14-35-14-changes-and-restores-real-pixels",
+      "actual-continuous-45-second-flight",
+      "actual-full-1080p60-45s-2700-frame-WebM-saved-without-download",
+      "independent-ffprobe-decodes-1920x1080-60fps-45s-2700-frames",
+      "nine-actual-WebM-decoded-frame-samples-saved",
+      "paused-scene-stops-redundant-draws",
+      "actual-GPU-completed-frame-timing-recorded",
+      "production-parent-guide-text-holds-pose-and-stops-child-draws",
+      "production-parent-return-preserves-original-document-and-free-pose",
+      "production-parent-disposeAll-unloads-child-and-loses-original-context",
+      "production-parent-reloads-new-M5-document-after-original-context-release",
+      "production-parent-reloaded-M5-context-disposes-and-unloads",
+      "own-scene-disposes-context-and-unloads",
+      "M5-source-freeze-M4-43-M3-40-and-M2-34-file-baselines-preserved",
+      "original-source-A-B-bytes-and-bridge-process-identities-preserved"
+    ],
+    "sourceFreeze": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m5\\2026-10-26T09-19-36-835Z\\source\\source-freeze-manifest.json",
+    "frozenFiles": 47,
+    "staticCaptures": 46,
+    "nearMotionFrames": 107,
+    "horizonFrames": 9,
+    "parentLifecycle": "Guide suspends without losing pose; return resumes same document; dispose releases old context; reload generates new document; second disposal releases new context.",
+    "fullFilm": {
+      "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m5\\2026-10-26T09-19-36-835Z\\lijiang-m5-1920x1080-60fps-2700frames.webm",
+      "bytes": 133253405,
+      "sha256": "ed166de883ac1a4e7d4757c1f13734995f7664704685829425df8f2a9bc5b4bd",
+      "width": 1920,
+      "height": 1080,
+      "fps": 60,
+      "durationSeconds": 45,
+      "decodedFrames": 2700,
+      "ffprobe": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m5\\2026-10-26T09-19-36-835Z\\ffprobe-verified.json",
+      "decodedContactSheet": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m5\\2026-10-26T09-19-36-835Z\\film-contact-sheet.png"
+    }
+  },
+  "performance": {
+    "parentLoadSeconds": 69.795,
+    "parentGPUCompletedWallFrameMilliseconds": 38.79999999205271,
+    "parentCanvas": {
+      "width": 1174,
+      "height": 680
+    },
+    "hiddenTargetFrameRate": 20,
+    "actualHiddenFlight": {
+      "seconds": 45.131,
+      "completedFrames": 630,
+      "completedFramesPerSecond": 13.959362744011877,
+      "note": "Observed hidden-window cadence at the stated presentation target, not universal device FPS."
+    },
+    "nearMotion": {
+      "frames": 107,
+      "allCovered": true,
+      "gpuCompletedFrames": 120,
+      "meanFrameMilliseconds": 53.43925234090502,
+      "maxFrameMilliseconds": 70.19999992847443,
+      "meanCompletedWaitMilliseconds": 139.99439251645703,
+      "maxCompletedWaitMilliseconds": 318.10000002384186,
+      "detailPlantRange": [
+        0,
+        108
+      ]
+    },
+    "horizonMotion": {
+      "frames": 9,
+      "allCovered": true,
+      "allRootsSubmitted": true,
+      "meanFrameMilliseconds": 45.733333322736954,
+      "maxFrameMilliseconds": 52.699999928474426
+    },
+    "realtime60fpsVerified": false,
+    "measurementScope": "Same formal parent canvas; fixed-view fences include CPU/driver wall time. Hidden flight target20fps. Host load affects timing; offline60fps does not establish realtime60fps.",
+    "previousM4Performance": "lijiang-current.m4-history.json"
+  },
+  "preservation": {
+    "m4Files": 43,
+    "m3Files": 40,
+    "m2Files": 34,
+    "allBaselineHashesUnchanged": true,
+    "originalSourceAndABPreserved": true,
+    "userExistingTabNavigated": false,
+    "ownContextsDisposed": true,
+    "previousHome": "lijiang-home.m4-baseline.html"
+  }
+}

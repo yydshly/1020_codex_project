@@ -1,0 +1,10 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path');
+const {spawnSync}=require('node:child_process');
+const source=__dirname;
+const prepared=spawnSync(process.execPath,[path.join(source,'prepare-shell.cjs')],{windowsHide:true,encoding:'utf8'});
+if(prepared.status!==0)throw new Error(prepared.stderr||'Could not prepare packaged source bridge');
+const result=JSON.parse(prepared.stdout),bridge=result.appDirectory;
+const manifest=JSON.parse(fs.readFileSync(path.join(bridge,'package.json'),'utf8'));
+if(manifest.main!=='entry.cjs')throw new Error('The background bridge requires the explicit safe entry dispatcher');
+process.stdout.write(JSON.stringify({bridgeDirectory:bridge,modeArgument:'--source-bridge'})+'\n');

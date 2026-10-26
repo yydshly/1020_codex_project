@@ -1,0 +1,1872 @@
+{
+  "runId": "2026-10-24T01-41-08-169Z",
+  "scene": "story",
+  "backend": "gl",
+  "pid": 14780,
+  "status": "passed",
+  "startedAt": "2026-10-24T01:41:08.169Z",
+  "mode": "hidden-own-application",
+  "windowPolicy": {
+    "show": false,
+    "skipTaskbar": true,
+    "focusable": false,
+    "backgroundThrottling": false,
+    "occludedWindowBackgrounding": false
+  },
+  "security": {
+    "sandbox": true,
+    "contextIsolation": true,
+    "nodeIntegration": false,
+    "webSecurity": true
+  },
+  "tests": [
+    {
+      "name": "window-remains-hidden-and-unfocused",
+      "passed": true,
+      "evidence": {
+        "visible": false,
+        "focused": false
+      }
+    },
+    {
+      "name": "real-3d-scene-ready",
+      "passed": true,
+      "evidence": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "实时三维 · 精细 · 0 FPS",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "frames": 2,
+          "loaded": true,
+          "paused": false,
+          "parentVisible": true,
+          "mode": "shot",
+          "shot": 0,
+          "time": 0.05,
+          "tourTime": 0,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "camera": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "letter": [
+            -2.25,
+            0.130824584125406,
+            3
+          ],
+          "boat": [
+            -6.986500011390623,
+            0.0012247499111517667,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "same-resolution-acceptance-canvas",
+      "passed": true,
+      "evidence": {
+        "width": 1426,
+        "height": 864
+      }
+    },
+    {
+      "name": "live-scene-time-and-pixels-change",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "frames": 6,
+          "loaded": true,
+          "paused": false,
+          "parentVisible": true,
+          "mode": "shot",
+          "shot": 0,
+          "time": 0.18080000000000293,
+          "tourTime": 0,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "camera": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "letter": [
+            -2.25,
+            0.13296357297777966,
+            3
+          ],
+          "boat": [
+            -6.951184538556635,
+            0.0044177843294943234,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "after": {
+          "frames": 14,
+          "loaded": true,
+          "paused": false,
+          "parentVisible": true,
+          "mode": "shot",
+          "shot": 0,
+          "time": 0.580800000000003,
+          "tourTime": 0,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "camera": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "letter": [
+            -2.25,
+            0.13894445079610657,
+            3
+          ],
+          "boat": [
+            -6.843201852643443,
+            0.013840822803040853,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 0.10343424479166667,
+          "changedChannelFraction": 0.01318359375
+        }
+      }
+    },
+    {
+      "name": "completed-frame-throughput-sample",
+      "passed": true,
+      "evidence": {
+        "completedFrames": 8,
+        "elapsedMilliseconds": 7348,
+        "completedFramesPerSecond": 1.0887316276537835,
+        "scope": "One hidden full-resolution interval, not an artistic-quality or stable-device benchmark."
+      }
+    },
+    {
+      "name": "03-pause",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "frames": 20,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "shot",
+          "shot": 0,
+          "time": 0.6530999999999986,
+          "tourTime": 0,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "camera": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "letter": [
+            -2.25,
+            0.13987282701806183,
+            3
+          ],
+          "boat": [
+            -6.823688383870103,
+            0.015449367640545162,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "after": {
+          "frames": 25,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "shot",
+          "shot": 0,
+          "time": 0.6530999999999986,
+          "tourTime": 0,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "camera": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "letter": [
+            -2.25,
+            0.13987282701806183,
+            3
+          ],
+          "boat": [
+            -6.823688383870103,
+            0.015449367640545162,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 0,
+          "changedChannelFraction": 0
+        }
+      }
+    },
+    {
+      "name": "story-second-actual-camera",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "frames": 36,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "shot",
+          "shot": 0,
+          "time": 0.6530999999999986,
+          "tourTime": 0,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "camera": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "letter": [
+            -2.25,
+            0.13987282701806183,
+            3
+          ],
+          "boat": [
+            -6.823688383870103,
+            0.015449367640545162,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "after": {
+          "frames": 38,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "shot",
+          "shot": 1,
+          "time": 0.6530999999999986,
+          "tourTime": 0,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -11.812081963892895,
+            3.298207046857678,
+            7.406828936113377
+          ],
+          "camera": [
+            -11.812081963892895,
+            3.298207046857678,
+            7.406828936113377
+          ],
+          "letter": [
+            -2.25,
+            0.13987282701806183,
+            3
+          ],
+          "boat": [
+            -6.823688383870103,
+            0.015449367640545162,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 35.940185546875,
+          "changedChannelFraction": 0.90771484375
+        }
+      }
+    },
+    {
+      "name": "story-third-actual-camera",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "frames": 42,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "shot",
+          "shot": 1,
+          "time": 0.6530999999999986,
+          "tourTime": 0,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -11.812081963892895,
+            3.298207046857678,
+            7.406828936113377
+          ],
+          "camera": [
+            -11.812081963892895,
+            3.298207046857678,
+            7.406828936113377
+          ],
+          "letter": [
+            -2.25,
+            0.13987282701806183,
+            3
+          ],
+          "boat": [
+            -6.823688383870103,
+            0.015449367640545162,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "after": {
+          "frames": 44,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "shot",
+          "shot": 2,
+          "time": 0.6530999999999986,
+          "tourTime": 0,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -3.747890762427743,
+            1.421450425910554,
+            5.545226462336471
+          ],
+          "camera": [
+            -3.747890762427743,
+            1.421450425910554,
+            5.545226462336471
+          ],
+          "letter": [
+            -2.25,
+            0.13987282701806183,
+            3
+          ],
+          "boat": [
+            -6.823688383870103,
+            0.015449367640545162,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 52.768798828125,
+          "changedChannelFraction": 0.9671223958333334
+        }
+      }
+    },
+    {
+      "name": "two-choices-change-visible-3d-outcome",
+      "passed": true,
+      "evidence": {
+        "pick": {
+          "before": {
+            "frames": 48,
+            "loaded": true,
+            "paused": true,
+            "parentVisible": true,
+            "mode": "shot",
+            "shot": 2,
+            "time": 0.6530999999999986,
+            "tourTime": 0,
+            "choice": null,
+            "choiceAge": 0,
+            "quality": "high",
+            "ready": true,
+            "rendering": false,
+            "position": [
+              -3.747890762427743,
+              1.421450425910554,
+              5.545226462336471
+            ],
+            "camera": [
+              -3.747890762427743,
+              1.421450425910554,
+              5.545226462336471
+            ],
+            "letter": [
+              -2.25,
+              0.13987282701806183,
+              3
+            ],
+            "boat": [
+              -6.823688383870103,
+              0.015449367640545162,
+              6.3
+            ],
+            "residentVisible": false
+          },
+          "after": {
+            "frames": 50,
+            "loaded": true,
+            "paused": true,
+            "parentVisible": true,
+            "mode": "shot",
+            "shot": 2,
+            "time": 0.6530999999999986,
+            "tourTime": 0,
+            "choice": "pick",
+            "choiceAge": 2.2,
+            "quality": "high",
+            "ready": true,
+            "rendering": false,
+            "position": [
+              -3.747890762427743,
+              1.421450425910554,
+              5.545226462336471
+            ],
+            "camera": [
+              -3.747890762427743,
+              1.421450425910554,
+              5.545226462336471
+            ],
+            "letter": [
+              -2.95,
+              0.96,
+              4.12
+            ],
+            "boat": [
+              -6.823688383870103,
+              0.015449367640545162,
+              6.3
+            ],
+            "residentVisible": true
+          }
+        },
+        "drift": {
+          "before": {
+            "frames": 54,
+            "loaded": true,
+            "paused": true,
+            "parentVisible": true,
+            "mode": "shot",
+            "shot": 2,
+            "time": 0.6530999999999986,
+            "tourTime": 0,
+            "choice": "pick",
+            "choiceAge": 2.2,
+            "quality": "high",
+            "ready": true,
+            "rendering": false,
+            "position": [
+              -3.747890762427743,
+              1.421450425910554,
+              5.545226462336471
+            ],
+            "camera": [
+              -3.747890762427743,
+              1.421450425910554,
+              5.545226462336471
+            ],
+            "letter": [
+              -2.95,
+              0.96,
+              4.12
+            ],
+            "boat": [
+              -6.823688383870103,
+              0.015449367640545162,
+              6.3
+            ],
+            "residentVisible": true
+          },
+          "after": {
+            "frames": 56,
+            "loaded": true,
+            "paused": true,
+            "parentVisible": true,
+            "mode": "shot",
+            "shot": 2,
+            "time": 0.6530999999999986,
+            "tourTime": 0,
+            "choice": "drift",
+            "choiceAge": 2.2,
+            "quality": "high",
+            "ready": true,
+            "rendering": false,
+            "position": [
+              -3.747890762427743,
+              1.421450425910554,
+              5.545226462336471
+            ],
+            "camera": [
+              -3.747890762427743,
+              1.421450425910554,
+              5.545226462336471
+            ],
+            "letter": [
+              -0.5339999999999998,
+              0.14109023933505827,
+              3.1306718072326647
+            ],
+            "boat": [
+              -6.823688383870103,
+              0.015449367640545162,
+              6.3
+            ],
+            "residentVisible": false
+          }
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 9.63916015625,
+          "changedChannelFraction": 0.6288248697916666
+        }
+      }
+    },
+    {
+      "name": "reset-clears-choice-and-first-shot",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "frames": 60,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "shot",
+          "shot": 2,
+          "time": 0.6530999999999986,
+          "tourTime": 0,
+          "choice": "drift",
+          "choiceAge": 2.2,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -3.747890762427743,
+            1.421450425910554,
+            5.545226462336471
+          ],
+          "camera": [
+            -3.747890762427743,
+            1.421450425910554,
+            5.545226462336471
+          ],
+          "letter": [
+            -0.5339999999999998,
+            0.14109023933505827,
+            3.1306718072326647
+          ],
+          "boat": [
+            -6.823688383870103,
+            0.015449367640545162,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "after": {
+          "frames": 62,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "shot",
+          "shot": 0,
+          "time": 0,
+          "tourTime": 0,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "camera": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "letter": [
+            -2.25,
+            0.13,
+            3
+          ],
+          "boat": [
+            -7,
+            0,
+            6.3
+          ],
+          "residentVisible": false
+        }
+      }
+    },
+    {
+      "name": "river-navigation-moves-camera-and-pixels",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "frames": 64,
+          "loaded": true,
+          "paused": false,
+          "parentVisible": true,
+          "mode": "tour",
+          "shot": 0,
+          "time": 0.1,
+          "tourTime": 0.1,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.26468449099925,
+            4.068487213054846,
+            10.940149381505636
+          ],
+          "camera": [
+            -16.26468449099925,
+            4.068487213054846,
+            10.940149381505636
+          ],
+          "letter": [
+            -2.25,
+            0.13164667451255763,
+            3
+          ],
+          "boat": [
+            -6.9730000911249075,
+            0.0024479996568136466,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "after": {
+          "frames": 76,
+          "loaded": true,
+          "paused": false,
+          "parentVisible": true,
+          "mode": "tour",
+          "shot": 0,
+          "time": 0.5798999999999942,
+          "tourTime": 0.5798999999999942,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.22985958781102,
+            4.048842807374615,
+            10.912535927580427
+          ],
+          "camera": [
+            -16.22985958781102,
+            4.048842807374615,
+            10.912535927580427
+          ],
+          "letter": [
+            -2.25,
+            0.13893252536773956,
+            3
+          ],
+          "boat": [
+            -6.843444769781202,
+            0.013820567427923404,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 4.570556640625,
+          "changedChannelFraction": 0.2633463541666667
+        }
+      }
+    },
+    {
+      "name": "11-tour-pause",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "frames": 82,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "tour",
+          "shot": 0,
+          "time": 0.6438000000000029,
+          "tourTime": 0.6438000000000029,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.221683758998196,
+            4.0442308979860035,
+            10.906053127872324
+          ],
+          "camera": [
+            -16.221683758998196,
+            4.0442308979860035,
+            10.906053127872324
+          ],
+          "letter": [
+            -2.25,
+            0.13975678710403625,
+            3
+          ],
+          "boat": [
+            -6.826198314885722,
+            0.015244590704705218,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "after": {
+          "frames": 87,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "tour",
+          "shot": 0,
+          "time": 0.6438000000000029,
+          "tourTime": 0.6438000000000029,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.221683758998196,
+            4.0442308979860035,
+            10.906053127872324
+          ],
+          "camera": [
+            -16.221683758998196,
+            4.0442308979860035,
+            10.906053127872324
+          ],
+          "letter": [
+            -2.25,
+            0.13975678710403625,
+            3
+          ],
+          "boat": [
+            -6.826198314885722,
+            0.015244590704705218,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 0,
+          "changedChannelFraction": 0
+        }
+      }
+    },
+    {
+      "name": "free-camera-drives-real-three-dimensional-scene",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "frames": 92,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "tour",
+          "shot": 0,
+          "time": 0.6438000000000029,
+          "tourTime": 0.6438000000000029,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.221683758998196,
+            4.0442308979860035,
+            10.906053127872324
+          ],
+          "camera": [
+            -16.221683758998196,
+            4.0442308979860035,
+            10.906053127872324
+          ],
+          "letter": [
+            -2.25,
+            0.13975678710403625,
+            3
+          ],
+          "boat": [
+            -6.826198314885722,
+            0.015244590704705218,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "after": {
+          "frames": 94,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "free",
+          "shot": 0,
+          "time": 0.6438000000000029,
+          "tourTime": 0.6438000000000029,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -17.003056919803146,
+            4.2942308979860035,
+            12.105826432948614
+          ],
+          "camera": [
+            -17.003056919803146,
+            4.2942308979860035,
+            12.105826432948614
+          ],
+          "letter": [
+            -2.25,
+            0.13975678710403625,
+            3
+          ],
+          "boat": [
+            -6.826198314885722,
+            0.015244590704705218,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 45.526123046875,
+          "changedChannelFraction": 0.9290364583333334
+        }
+      }
+    },
+    {
+      "name": "quality-comparison-remains-a-separate-acceptance",
+      "passed": true,
+      "evidence": {
+        "automatedFunctionalPassDoesNotMeanSourceEquivalentArtQuality": true
+      }
+    }
+  ],
+  "captures": [
+    {
+      "name": "01-default",
+      "canvas": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/01-default-canvas.png",
+      "page": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/01-default-page.png",
+      "sha256": "88a9e446a285899db304fec12a545e7b3b088b073389c55d2b6c9335f944dd18",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 107.64726669921869,
+      "luminanceStdDev": 45.500318546850735,
+      "nonBlackFraction": 0.99462890625,
+      "meanChannelRange": 40.2568359375,
+      "capturedAt": "2026-10-24T01:41:45.029Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "实时三维 · 精细 · 1 FPS",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "frames": 6,
+          "loaded": true,
+          "paused": false,
+          "parentVisible": true,
+          "mode": "shot",
+          "shot": 0,
+          "time": 0.18080000000000293,
+          "tourTime": 0,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "camera": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "letter": [
+            -2.25,
+            0.13296357297777966,
+            3
+          ],
+          "boat": [
+            -6.951184538556635,
+            0.0044177843294943234,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "02-live-motion",
+      "canvas": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/02-live-motion-canvas.png",
+      "page": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/02-live-motion-page.png",
+      "sha256": "fa62c859d76cf968adeabcf21d41537d7e65f5a26d136567d231120e0cf24ea4",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 107.62701005859354,
+      "luminanceStdDev": 45.518621756358975,
+      "nonBlackFraction": 0.994384765625,
+      "meanChannelRange": 40.26806640625,
+      "capturedAt": "2026-10-24T01:41:53.640Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "实时三维 · 精细 · 1 FPS",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "frames": 18,
+          "loaded": true,
+          "paused": false,
+          "parentVisible": true,
+          "mode": "shot",
+          "shot": 0,
+          "time": 0.6530999999999986,
+          "tourTime": 0,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "camera": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "letter": [
+            -2.25,
+            0.13987282701806183,
+            3
+          ],
+          "boat": [
+            -6.823688383870103,
+            0.015449367640545162,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "03-pause-a",
+      "canvas": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/03-pause-a-canvas.png",
+      "page": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/03-pause-a-page.png",
+      "sha256": "3c10034a99d94d1005cbfce84f314c07d0ebdbe505892aad25280b95a6524172",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 107.65083115234354,
+      "luminanceStdDev": 45.50007748751839,
+      "nonBlackFraction": 0.994384765625,
+      "meanChannelRange": 40.2724609375,
+      "capturedAt": "2026-10-24T01:41:56.389Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "实时三维 · 精细 · 1 FPS",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "frames": 24,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "shot",
+          "shot": 0,
+          "time": 0.6530999999999986,
+          "tourTime": 0,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "camera": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "letter": [
+            -2.25,
+            0.13987282701806183,
+            3
+          ],
+          "boat": [
+            -6.823688383870103,
+            0.015449367640545162,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "03-pause-b",
+      "canvas": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/03-pause-b-canvas.png",
+      "page": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/03-pause-b-page.png",
+      "sha256": "3c10034a99d94d1005cbfce84f314c07d0ebdbe505892aad25280b95a6524172",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 107.65083115234354,
+      "luminanceStdDev": 45.50007748751839,
+      "nonBlackFraction": 0.994384765625,
+      "meanChannelRange": 40.2724609375,
+      "capturedAt": "2026-10-24T01:41:58.678Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "实时三维 · 精细 · 1 FPS",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "frames": 30,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "shot",
+          "shot": 0,
+          "time": 0.6530999999999986,
+          "tourTime": 0,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "camera": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "letter": [
+            -2.25,
+            0.13987282701806183,
+            3
+          ],
+          "boat": [
+            -6.823688383870103,
+            0.015449367640545162,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "04-story-shot-01",
+      "canvas": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/04-story-shot-01-canvas.png",
+      "page": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/04-story-shot-01-page.png",
+      "sha256": "3c10034a99d94d1005cbfce84f314c07d0ebdbe505892aad25280b95a6524172",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 107.65083115234354,
+      "luminanceStdDev": 45.50007748751839,
+      "nonBlackFraction": 0.994384765625,
+      "meanChannelRange": 40.2724609375,
+      "capturedAt": "2026-10-24T01:42:01.543Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "实时三维 · 精细 · 1 FPS",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "frames": 36,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "shot",
+          "shot": 0,
+          "time": 0.6530999999999986,
+          "tourTime": 0,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "camera": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "letter": [
+            -2.25,
+            0.13987282701806183,
+            3
+          ],
+          "boat": [
+            -6.823688383870103,
+            0.015449367640545162,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "05-story-shot-02",
+      "canvas": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/05-story-shot-02-canvas.png",
+      "page": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/05-story-shot-02-page.png",
+      "sha256": "37b7477c18db1842818221316f193060f011f007b709b6d17f528d951b79bab1",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 111.56248554687477,
+      "luminanceStdDev": 43.27724744290474,
+      "nonBlackFraction": 0.99853515625,
+      "meanChannelRange": 43.208251953125,
+      "capturedAt": "2026-10-24T01:42:04.235Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "实时三维 · 精细 · 2 FPS",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "frames": 42,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "shot",
+          "shot": 1,
+          "time": 0.6530999999999986,
+          "tourTime": 0,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -11.812081963892895,
+            3.298207046857678,
+            7.406828936113377
+          ],
+          "camera": [
+            -11.812081963892895,
+            3.298207046857678,
+            7.406828936113377
+          ],
+          "letter": [
+            -2.25,
+            0.13987282701806183,
+            3
+          ],
+          "boat": [
+            -6.823688383870103,
+            0.015449367640545162,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "06-story-shot-03",
+      "canvas": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/06-story-shot-03-canvas.png",
+      "page": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/06-story-shot-03-page.png",
+      "sha256": "5fdf2d6be30b335aba2dca99420d76d7394dd1ca4a4cf337b3a42fd9a4fe654a",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 123.60791054687407,
+      "luminanceStdDev": 44.25198327842726,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 39.361572265625,
+      "capturedAt": "2026-10-24T01:42:07.226Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "实时三维 · 精细 · 1 FPS",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "frames": 48,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "shot",
+          "shot": 2,
+          "time": 0.6530999999999986,
+          "tourTime": 0,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -3.747890762427743,
+            1.421450425910554,
+            5.545226462336471
+          ],
+          "camera": [
+            -3.747890762427743,
+            1.421450425910554,
+            5.545226462336471
+          ],
+          "letter": [
+            -2.25,
+            0.13987282701806183,
+            3
+          ],
+          "boat": [
+            -6.823688383870103,
+            0.015449367640545162,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "07-story-pick",
+      "canvas": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/07-story-pick-canvas.png",
+      "page": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/07-story-pick-page.png",
+      "sha256": "cda1b37a64a8463b6dab525c9f63fff4956a8c1b72485f255a1ff5d314f89eb9",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 130.9174119628897,
+      "luminanceStdDev": 44.294315151859074,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 40.43408203125,
+      "capturedAt": "2026-10-24T01:42:09.859Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "实时三维 · 精细 · 2 FPS",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "frames": 54,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "shot",
+          "shot": 2,
+          "time": 0.6530999999999986,
+          "tourTime": 0,
+          "choice": "pick",
+          "choiceAge": 2.2,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -3.747890762427743,
+            1.421450425910554,
+            5.545226462336471
+          ],
+          "camera": [
+            -3.747890762427743,
+            1.421450425910554,
+            5.545226462336471
+          ],
+          "letter": [
+            -2.95,
+            0.96,
+            4.12
+          ],
+          "boat": [
+            -6.823688383870103,
+            0.015449367640545162,
+            6.3
+          ],
+          "residentVisible": true
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "08-story-drift",
+      "canvas": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/08-story-drift-canvas.png",
+      "page": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/08-story-drift-page.png",
+      "sha256": "2ead1b149c9ed4f05011efd3c61b97087545bf23e457933d8684eb0d1b73ff67",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 121.21740869140558,
+      "luminanceStdDev": 44.32161417536628,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 38.731689453125,
+      "capturedAt": "2026-10-24T01:42:12.875Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "实时三维 · 精细 · 1 FPS",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "frames": 60,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "shot",
+          "shot": 2,
+          "time": 0.6530999999999986,
+          "tourTime": 0,
+          "choice": "drift",
+          "choiceAge": 2.2,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -3.747890762427743,
+            1.421450425910554,
+            5.545226462336471
+          ],
+          "camera": [
+            -3.747890762427743,
+            1.421450425910554,
+            5.545226462336471
+          ],
+          "letter": [
+            -0.5339999999999998,
+            0.14109023933505827,
+            3.1306718072326647
+          ],
+          "boat": [
+            -6.823688383870103,
+            0.015449367640545162,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "09-story-tour-start",
+      "canvas": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/09-story-tour-start-canvas.png",
+      "page": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/09-story-tour-start-page.png",
+      "sha256": "7beb22055b5664a6c57427853821609ebed31e6993489f8bb76573a57b99d3e9",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 107.71027983398405,
+      "luminanceStdDev": 45.27463410969475,
+      "nonBlackFraction": 0.994140625,
+      "meanChannelRange": 40.32373046875,
+      "capturedAt": "2026-10-24T01:42:17.801Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "实时三维 · 精细 · 1 FPS",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "frames": 68,
+          "loaded": true,
+          "paused": false,
+          "parentVisible": true,
+          "mode": "tour",
+          "shot": 0,
+          "time": 0.17989999999999423,
+          "tourTime": 0.17989999999999423,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.262240663941753,
+            4.067108672822579,
+            10.938211615720943
+          ],
+          "camera": [
+            -16.262240663941753,
+            4.067108672822579,
+            10.938211615720943
+          ],
+          "letter": [
+            -2.25,
+            0.13294901424403835,
+            3
+          ],
+          "boat": [
+            -6.951427530554021,
+            0.004395909810850211,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "10-story-tour-moving",
+      "canvas": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/10-story-tour-moving-canvas.png",
+      "page": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/10-story-tour-moving-page.png",
+      "sha256": "4461943cb1daa2f871a52e5783750d412e575c26933c527bc1a824b32a5eac97",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 107.66008979492152,
+      "luminanceStdDev": 45.20776518764156,
+      "nonBlackFraction": 0.99462890625,
+      "meanChannelRange": 40.513671875,
+      "capturedAt": "2026-10-24T01:42:26.369Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "实时三维 · 精细 · 1 FPS",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "frames": 80,
+          "loaded": true,
+          "paused": false,
+          "parentVisible": true,
+          "mode": "tour",
+          "shot": 0,
+          "time": 0.6438000000000029,
+          "tourTime": 0.6438000000000029,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.221683758998196,
+            4.0442308979860035,
+            10.906053127872324
+          ],
+          "camera": [
+            -16.221683758998196,
+            4.0442308979860035,
+            10.906053127872324
+          ],
+          "letter": [
+            -2.25,
+            0.13975678710403625,
+            3
+          ],
+          "boat": [
+            -6.826198314885722,
+            0.015244590704705218,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "11-tour-pause-a",
+      "canvas": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/11-tour-pause-a-canvas.png",
+      "page": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/11-tour-pause-a-page.png",
+      "sha256": "b0781004c771c79060756e0ae80115c56c2c9f5205f71da28c083549b39bc5e4",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 107.59173662109359,
+      "luminanceStdDev": 45.120122585937985,
+      "nonBlackFraction": 0.99462890625,
+      "meanChannelRange": 40.521240234375,
+      "capturedAt": "2026-10-24T01:42:29.107Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "实时三维 · 精细 · 1 FPS",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "frames": 86,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "tour",
+          "shot": 0,
+          "time": 0.6438000000000029,
+          "tourTime": 0.6438000000000029,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.221683758998196,
+            4.0442308979860035,
+            10.906053127872324
+          ],
+          "camera": [
+            -16.221683758998196,
+            4.0442308979860035,
+            10.906053127872324
+          ],
+          "letter": [
+            -2.25,
+            0.13975678710403625,
+            3
+          ],
+          "boat": [
+            -6.826198314885722,
+            0.015244590704705218,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "11-tour-pause-b",
+      "canvas": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/11-tour-pause-b-canvas.png",
+      "page": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/11-tour-pause-b-page.png",
+      "sha256": "b0781004c771c79060756e0ae80115c56c2c9f5205f71da28c083549b39bc5e4",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 107.59173662109359,
+      "luminanceStdDev": 45.120122585937985,
+      "nonBlackFraction": 0.99462890625,
+      "meanChannelRange": 40.521240234375,
+      "capturedAt": "2026-10-24T01:42:31.473Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "实时三维 · 精细 · 1 FPS",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "frames": 92,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "tour",
+          "shot": 0,
+          "time": 0.6438000000000029,
+          "tourTime": 0.6438000000000029,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.221683758998196,
+            4.0442308979860035,
+            10.906053127872324
+          ],
+          "camera": [
+            -16.221683758998196,
+            4.0442308979860035,
+            10.906053127872324
+          ],
+          "letter": [
+            -2.25,
+            0.13975678710403625,
+            3
+          ],
+          "boat": [
+            -6.826198314885722,
+            0.015244590704705218,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "12-story-free-camera",
+      "canvas": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/12-story-free-camera-canvas.png",
+      "page": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/12-story-free-camera-page.png",
+      "sha256": "f2c03e2102c073447945c237d7a72c93dcf489f9b0c19bba538b97fabc97e165",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 105.9697914062498,
+      "luminanceStdDev": 43.30204042122128,
+      "nonBlackFraction": 0.996337890625,
+      "meanChannelRange": 39.231689453125,
+      "capturedAt": "2026-10-24T01:42:34.165Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "实时三维 · 精细 · 1 FPS",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "frames": 98,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "free",
+          "shot": 0,
+          "time": 0.6438000000000029,
+          "tourTime": 0.6438000000000029,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -17.003056919803146,
+            4.2942308979860035,
+            12.105826432948614
+          ],
+          "camera": [
+            -17.003056919803146,
+            4.2942308979860035,
+            12.105826432948614
+          ],
+          "letter": [
+            -2.25,
+            0.13975678710403625,
+            3
+          ],
+          "boat": [
+            -6.826198314885722,
+            0.015244590704705218,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "13-story-reset",
+      "canvas": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/13-story-reset-canvas.png",
+      "page": "assets/quality-qa/story/2026-10-24T01-41-08-169Z/13-story-reset-page.png",
+      "sha256": "906c993004eef09ea8ae5ddbb23d5bd87f73b919f6e6f0065443ad9ee9c54715",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 107.67243374023431,
+      "luminanceStdDev": 45.47189310629917,
+      "nonBlackFraction": 0.994384765625,
+      "meanChannelRange": 40.255859375,
+      "capturedAt": "2026-10-24T01:42:37.078Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "实时三维 · 精细 · 1 FPS",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "frames": 104,
+          "loaded": true,
+          "paused": true,
+          "parentVisible": true,
+          "mode": "shot",
+          "shot": 0,
+          "time": 0,
+          "tourTime": 0.6438000000000029,
+          "choice": null,
+          "choiceAge": 0,
+          "quality": "high",
+          "ready": true,
+          "rendering": false,
+          "position": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "camera": [
+            -16.2644461677167,
+            4.1032966146849645,
+            10.94017980405984
+          ],
+          "letter": [
+            -2.25,
+            0.13,
+            3
+          ],
+          "boat": [
+            -7,
+            0,
+            6.3
+          ],
+          "residentVisible": false
+        },
+        "drive": null
+      }
+    }
+  ],
+  "errors": [],
+  "visualQualityAcceptance": "requires-separate-human-comparison-with-source",
+  "priorPassedBaseline": null,
+  "finishedAt": "2026-10-24T01:42:37.079Z",
+  "elapsedSeconds": 88.91
+}

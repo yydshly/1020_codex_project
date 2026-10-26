@@ -1,0 +1,232 @@
+{
+  "schema": "programmable-worlds-project-map-acceptance-v1",
+  "recordedAt": "2026-10-26T15:46:09.436326+00:00",
+  "status": "passed",
+  "scope": "One comprehensive image and static zoomable viewer only; previously captured scene evidence reused without re-running any 3D scene.",
+  "entry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/map.html?revision=20261026-map-1",
+  "homepageEntry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?revision=20261026-map-1#project-map",
+  "artifact": {
+    "width": 1800,
+    "height": 7280,
+    "embeddedImageCount": 7,
+    "contentManifest": "project-map-content-20261026.json",
+    "svgSHA256": "5e54054f645e083cd21c6428dca1e52d989ac2571076a35ea9f74be54ca78902",
+    "pngSHA256": "f8bfdcda2c872b34ac4cc2d758dd41072ace1272718770fd0467a45bfc424795",
+    "render": "CPU @resvg/resvg-js; Microsoft YaHei fonts; original scene/reference pixels embedded without edits"
+  },
+  "contentSections": [
+    "源库效果与原理",
+    "我们的探索",
+    "三种扩展效果",
+    "六类延续与产品形态",
+    "技术路线与生成器",
+    "算法与控制管线",
+    "下次实现任务单",
+    "价值与证据边界"
+  ],
+  "visualReview": {
+    "allEightPanelsReviewed": true,
+    "panels": "artifacts/project-map-20261026/",
+    "desktopAndMobileViewerScreenshotsReviewed": true,
+    "reviewNotes": [
+      "Actual source/A/B/M8 frames are captioned with capture scope and date.",
+      "Three AI-cleaned still references are explicitly pending, not completed products.",
+      "Automatic control pipeline and dedicated generators are marked unimplemented/not integrated.",
+      "Current performance samples and M8 export/mobile limits are retained.",
+      "Original guide remains a dated historical document."
+    ],
+    "mobileScope": "Static viewer at390x844 only; full image requires zoom and panning. Not a mobile3D performance test."
+  },
+  "browserQA": {
+    "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-world-hub-wrapup\\2026-10-26T15-43-04-644Z\\result.json",
+    "mode": "map-only",
+    "checksPassed": 8,
+    "screenshots": [
+      {
+        "name": "desktop-map-homepage-entry",
+        "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-world-hub-wrapup\\2026-10-26T15-43-04-644Z\\desktop-map-homepage-entry.png",
+        "selector": "section#project-map",
+        "box": {
+          "x": 84.5,
+          "y": 113.203125,
+          "width": 1256,
+          "height": 288.890625,
+          "top": 113.203125,
+          "right": 1340.5,
+          "bottom": 402.09375,
+          "left": 84.5
+        },
+        "scrollY": 11728,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "heading": "一张图，串起效果、原理与下一次制作。",
+        "size": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      {
+        "name": "desktop-map-fit",
+        "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-world-hub-wrapup\\2026-10-26T15-43-04-644Z\\desktop-map-fit.png",
+        "selector": "#map-viewer",
+        "box": {
+          "x": 0,
+          "y": 75.640625,
+          "width": 1440,
+          "height": 792.859375,
+          "top": 75.640625,
+          "right": 1440,
+          "bottom": 868.5,
+          "left": 0
+        },
+        "scrollY": 0,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "heading": "",
+        "size": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      {
+        "name": "desktop-map-technical-routes-actual-size",
+        "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-world-hub-wrapup\\2026-10-26T15-43-04-644Z\\desktop-map-technical-routes-actual-size.png",
+        "selector": "#map-viewer",
+        "box": {
+          "x": 0,
+          "y": 75.640625,
+          "width": 1440,
+          "height": 792.859375,
+          "top": 75.640625,
+          "right": 1440,
+          "bottom": 868.5,
+          "left": 0
+        },
+        "scrollY": 0,
+        "viewport": {
+          "width": 1440,
+          "height": 900
+        },
+        "heading": "",
+        "size": {
+          "width": 1440,
+          "height": 900
+        }
+      },
+      {
+        "name": "mobile-map-fit",
+        "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-world-hub-wrapup\\2026-10-26T15-43-04-644Z\\mobile-map-fit.png",
+        "selector": "#map-viewer",
+        "box": {
+          "x": 0,
+          "y": 200.703125,
+          "width": 390,
+          "height": 597.296875,
+          "top": 200.703125,
+          "right": 390,
+          "bottom": 798,
+          "left": 0
+        },
+        "scrollY": 0,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "heading": "",
+        "size": {
+          "width": 390,
+          "height": 844
+        }
+      },
+      {
+        "name": "mobile-map-task-zoomed",
+        "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-world-hub-wrapup\\2026-10-26T15-43-04-644Z\\mobile-map-task-zoomed.png",
+        "selector": "#map-viewer",
+        "box": {
+          "x": 0,
+          "y": 200.703125,
+          "width": 390,
+          "height": 597.296875,
+          "top": 200.703125,
+          "right": 390,
+          "bottom": 798,
+          "left": 0
+        },
+        "scrollY": 0,
+        "viewport": {
+          "width": 390,
+          "height": 844
+        },
+        "heading": "",
+        "size": {
+          "width": 390,
+          "height": 844
+        }
+      }
+    ],
+    "errors": [],
+    "tests": [
+      {
+        "name": "homepage-map-entry-with-four-unstarted-scenes",
+        "passed": true
+      },
+      {
+        "name": "full-svg-and-png-actually-decode-with-valid-downloads-and-chapters",
+        "passed": true
+      },
+      {
+        "name": "actual-map-zoom-buttons-range-and-fit",
+        "passed": true
+      },
+      {
+        "name": "all-nine-map-chapter-selections-scroll-to-real-coordinates",
+        "passed": true
+      },
+      {
+        "name": "mobile-map-fit-zoom-chapter-and-contained-layout",
+        "passed": true
+      },
+      {
+        "name": "map-stayed-static-with-no-3D-or-download-start",
+        "passed": true
+      },
+      {
+        "name": "owned-hidden-content-page-unloaded",
+        "passed": true
+      },
+      {
+        "name": "page-freeze-and-accepted-M8-3D-source-preserved",
+        "passed": true
+      }
+    ],
+    "scope": "Image decode, DOM controls, section positions, download target HTTP200 and narrow-page layout. Downloads were not initiated. Owned hidden nonfocusable window was disposed."
+  },
+  "sourceFreeze": {
+    "sha256": {
+      "index.html": "22e93c349cacb251ba54b14975fd3e56b81a31ec7919df7f38afcaa488ec44d3",
+      "style.css": "4213cce60a9c90b5b7102488137aa86d2dbc2447da2b054ae2b4202e0739a913",
+      "app.js": "68561d9bf6b63eeff5dc18527cd30ad5f7a148470a48f57f25e001ba8753af3b",
+      "map.html": "09cf470edde887cc61fc7f0c480f03aa17e905c940c660212e9768e17071e9ed"
+    },
+    "mapAssets": {
+      "programmable-worlds-map-20261026.svg": "5e54054f645e083cd21c6428dca1e52d989ac2571076a35ea9f74be54ca78902",
+      "programmable-worlds-map-20261026.png": "f8bfdcda2c872b34ac4cc2d758dd41072ace1272718770fd0467a45bfc424795"
+    },
+    "verifiedUnchanged": true
+  },
+  "protectedM8": {
+    "fileCount": 51,
+    "reference": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m8-experience/2026-10-26T13-11-44-861Z/source/source-freeze-manifest.json",
+    "unchanged": true
+  },
+  "runtimeRegenerated": false,
+  "sceneAssetsModified": false,
+  "limitations": [
+    "No new scene-wide functional, visual or performance acceptance; prior evidence remains version-scoped.",
+    "No claim of full automated image-to-interactive-world system or validated commercial value."
+  ]
+}

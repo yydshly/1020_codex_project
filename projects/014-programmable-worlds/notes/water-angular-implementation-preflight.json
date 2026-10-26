@@ -1,0 +1,19 @@
+{
+  "checks": {
+    "default_strength": true,
+    "fragment_world_conversion": true,
+    "fallback_behind": true,
+    "fallback_bounds": true,
+    "fresnel_normal_unchanged": true,
+    "inverse_updates_for_parent_transform": true,
+    "strength_clamp": true,
+    "nonfinite_rejected": true,
+    "flat_plane_projection": true
+  },
+  "allPassed": true,
+  "inverseError": 4.440892098500626e-16,
+  "flatPlaneMaxUVError": 2.482534153247273e-16,
+  "waterWorldY": 0.035,
+  "defaultStrength": 0.25,
+  "scope": "CPU construction using actual pinned Reflector, matrix update, shader source guards and strength API; no GPU render or desktop interaction."
+}

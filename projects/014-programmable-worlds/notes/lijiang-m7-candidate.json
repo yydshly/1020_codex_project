@@ -1,0 +1,194 @@
+{
+  "schema": "lijiang-m7-candidate-v1",
+  "status": "performance-improvement-verified-goals-open",
+  "fullGoalComplete": false,
+  "performanceGoalMet": false,
+  "promotedAsDefault": false,
+  "entry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/lijiang-m7-preview.html?revision=20261026-m7#lijiang",
+  "standaloneEntry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/lijiang-m7/raster.html?surface=1&material=1&revision=20261026-m7",
+  "baseline": "lijiang-m6-candidate.json",
+  "defaultRuntime": "M5",
+  "changes": [
+    "Reuse final aligned primary volume instead of generating it twice",
+    "Pipeline52 connecting-domain samples with CPU mesh/color work; preserve128domain specs/order",
+    "Remove only subpixel horizon fine-twig indices, preserving every leaf spray/adult trunk/root/instance",
+    "Bound interactive rendering to2inflight GL fences; counters increment only on actual completion; strict capture drains first"
+  ],
+  "sourceFreeze": {
+    "directory": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\lijiang-m7",
+    "sha256": {
+      "README.md": "273474f5059ba0cb44355bb520e0fe632756908b653801a6a6cc84736f74856d",
+      "client.css": "be48ccd159ebeba1231e42f9681608538915763420cf8b6c6090eef4ff5d44a7",
+      "client.js": "00047605a07d0203e4bc15e93d7479d854339822a07e84b89e49a8b25322a118",
+      "credits.html": "b86cef0a9d6bd39e8d8b25756db3c17440959a72ba96b9748a24e60c22da61a2",
+      "engine-preview.html": "3e63f8f67bf74b49cf6c64a7a042896c27770b7a2f2bbdb4485a324571f341da",
+      "engine-preview.manifest.json": "d5f40d3432abe6368e837d964ab529f2079968dc5bc4eb593f4852081378779e",
+      "engine.html": "07ea0a60d90e0fab85cdf48ae50c21819872bf4daae713184aefab3c2d90ec94",
+      "engine.manifest.json": "ce5f4fcd6f1cf43f163116afd9754aa0f54eaf3e4ef2816d296df1f6c892ff2b",
+      "index.html": "794a6434427e0f6c462abf2232b9c36db2646e1031b199366221aa195c5c4d1b",
+      "live-settings.js": "31951dc64b6b08881f225d912bf61717dace4559ae950621b24b9e4f4dbc7a4e",
+      "live-viewport.js": "df168e38f5c17b0091d20c836e01b2be40ceca8d502606fdbe4852c5cad0a1c0",
+      "mountain-botanical-crown.js": "ca4bce57fbfb184b7cbdec0804946546e6258a36d559ce7e437bc39a5a47923f",
+      "mountain-horizon-sprays.js": "3cc6d6e29c628b7e64fdf7959616976420cefcb9db82df9f20051d216baee736",
+      "mountain-surface-habitat.js": "f580b6e860b6fbd269c682e89420e9ac8ca93e6723141e8cacb782be7f8cf438",
+      "native-field-material.js": "8116fa409b85bad4ef17d4667e936b0705361fdf940c6f4ed3b05c4ccd05aa92",
+      "native-fields.js": "6098ee3e1b7691380879935f7acfb081d56b134b4af46626b1dab9f21baac306",
+      "native-geometry-shader.js": "5162b50dd642fc3d9f4cb9df84385c3751a77425404ee93e84f1b6e0b4691831",
+      "native-ground-shader.js": "44ff7625abebffa29375ac752b89ac217c2a103ce996ee8e3f273b065002e616",
+      "native-marching-kernel.js": "b9f39ec714f66a91bf3fb281ccbd5827c4f0376d67d4dfea573c1f01195e5a44",
+      "native-marching-worker.js": "ca5a5edb21cf1a2c25396a3b59220d7a6b924faf6a0ec49d323769e464c3a403",
+      "native-material-shader.js": "5a501be382c205ff3ab360c9c46e3fb8268f312e2103bbca6e7654457fc245ca",
+      "native-mc-tables.js": "bd0dc7d64f7c82264d6c57426d8e89a5881a783cee55cce7c4e29c9518f997a0",
+      "native-mesh-builder.js": "8caec79f18ffbef4f1030061e9526988462f4b37dc4cb5ef27b741201bdf0ced",
+      "native-pilot-batch.js": "bf2fc5b8362efd4db694f046cd697cc4a36d41cc576df3a61aed61d4ac7940a2",
+      "native-pilot-builder.js": "1c59f0706a652537fbdc1d30785223f14e14db60bd379157ba7a79d3bccc7d75",
+      "native-radiance-field.js": "d2acce84da21b21388a43ee491ebec661f6369f61ab2acc197be7f13730577c3",
+      "native-sdf-fields.js": "e419a21c783cd248a97127a0e9fda919763e17db80e6203ff0c3643fff34783c",
+      "native-surface-compare.js": "a3528d68792cd24207ccf1b4812b1c710813c34927734b1d171be96cb5510720",
+      "native-surface-fields.js": "fdf619bbe7c278da27eedd03ccb6ae5d4f36422768ed07368c30632692946e83",
+      "offline-export.js": "7d4d1effc26e5161f0d52f53e4e77626071b7f736a89cadd06bdd89b89b0e29c",
+      "raster-air.js": "96ec60e46a258844cf38f7a02daa5ccca26a7f029d7158114f0e9cc28eb43d38",
+      "raster-cliff-gardens.js": "4aad3ea1ffbb24e4ca6781dcde1923b18790a8564389fa3729377f83ede2e145",
+      "raster-color-grade.js": "a705bb8a48648214befa3b0d378f0dc888d6d88c8ab1399ddd269b4d0e03eb2c",
+      "raster-experience-ui.js": "170c28848ec2337826021d416abf5a583128983af5fd37294cdcde721a3c1e47",
+      "raster-forest.js": "f408cb1fa30a7cab40e37ba17de440b2991c130af8c2ff8f51bb0d5306a9deb9",
+      "raster-frame-queue.js": "0af8c843deeed6e02d50ad47a3b677015e7a98e497d340174b4be4858394d68f",
+      "raster-ground-detail.js": "3abd9ef0a1464787a9cfaab19ca386a77b01195a258ea4b1a9a4b95cc233d41e",
+      "raster-habitat.js": "748e0f0cbbb52adb80e459aa3213ea1b9a82a7e77c3eb2fb2d44bd0a0415337a",
+      "raster-main.js": "5f6560f9709881e24b4d7b2f9936699584b7b1e3d89ae381e439241506bb0ba8",
+      "raster-mountain-canopy.js": "139635c0e6708c837f54e983da14a81ad30fbcd334fbade19a23adc5d58ee7d6",
+      "raster-mountain-contact.js": "702c2e63e7d6cfbb1805c5417be71b6234aa1b0335bf50e17114c9faa44d5753",
+      "raster-mountain-ecology.js": "94de58e5324f2d15b9ba31999ef012344e02c186c0ae81a9ddfdab83a4da6188",
+      "raster-riparian.js": "225d0a39ce6fd5f9048ec8f62f9773ba2a84ac694664bc614eb7b9f3c170c344",
+      "raster-rock-cull.js": "62f03c72ca56b2547de9238101ba51bafc5176d6e3d433f2026afa8722929d24",
+      "raster-rock-material.js": "69b5df40b43ce80be71410b66bc6acba5bf669598a7a6ea8c041a305f7bf957e",
+      "raster-rock-navigation.js": "57d1c95fe96b62a9a95ac0bee0bce4f40ec609d0c91878f1a991e4029779a115",
+      "raster-rock-seams.js": "d294bcb7d9b6162ae1af63ee10600869bc263148e1bf70bbd758202f84528b40",
+      "raster-sdf-mesh.js": "0604c4aed87f46862f98738925f013126f9df71358524948ef9aa323995bee6c",
+      "raster-terrain.js": "39cc972ddc8455e58cdbdd358bff1df0aa3ed0604c095ea58f5484416758e0f8",
+      "raster-water-sky.js": "105d9d0ff4457f16d47de7294d6a5483f0f8e6bd1bfc4d67c3624da526919ae8",
+      "raster.html": "794a6434427e0f6c462abf2232b9c36db2646e1031b199366221aa195c5c4d1b"
+    },
+    "fileCount": 51,
+    "verifiedUnchanged": true
+  },
+  "performance": {
+    "comparison": "lijiang-m7-performance-comparison.json",
+    "pairedStandaloneLoad": {
+      "m6Seconds": 117.903,
+      "m7Seconds": 96.609,
+      "observedReductionPercent": 18.060609144805483
+    },
+    "sameM7SceneKeyboardDriving": [
+      {
+        "mode": "serial",
+        "seconds": 10.390699999928474,
+        "completedFramesPerSecond": 12.222468168734947,
+        "maxObservedPending": 0,
+        "stableDrift": 0,
+        "idleFrameAdvance": 0,
+        "maxDisplacement": 103.50479999999511
+      },
+      {
+        "mode": "pipelined",
+        "seconds": 10.350699999928475,
+        "completedFramesPerSecond": 19.708811964544395,
+        "maxObservedPending": 2,
+        "stableDrift": 0,
+        "idleFrameAdvance": 0,
+        "maxDisplacement": 140.65239999999324
+      }
+    ],
+    "parentColdLoadSeconds": 153.16,
+    "parentActualContinuousFlight": {
+      "completedFrames": 443,
+      "completedFramesPerSecond": 9.731536989720773,
+      "liveFrameMode": "pipelined",
+      "paused": true,
+      "queueAfter": {
+        "completedFrames": 444,
+        "disposed": false,
+        "maxPending": 2,
+        "measurement": "Counters retire actual GL fences, not command submissions",
+        "pending": 0,
+        "submittedFrames": 444
+      },
+      "queueBefore": {
+        "completedFrames": 1,
+        "disposed": false,
+        "maxPending": 2,
+        "measurement": "Counters retire actual GL fences, not command submissions",
+        "pending": 0,
+        "submittedFrames": 1
+      },
+      "scope": "Actual GPU-completed frames over one wall-clock flight plus final queue/LOD settling, at hidden presentation target60. Half-second observations; not an achieved60 claim.",
+      "seconds": 45.52210000002384,
+      "time": 45
+    },
+    "realtime60fpsVerified": false,
+    "limits": [
+      "First load remains variable: standalone96.609s, parent153.16s in these runs; no stable universal loading-speed promise.",
+      "Keyboard trajectories differ due production dt cap and scheduling; same inputs/start pose are not identical-path GPU benchmarks.",
+      "Horizon mean50.89→56.28ms includes retained96.9ms outlier; not every view became faster.",
+      "The parent flight9.73fps remains low; M5 stays default."
+    ]
+  },
+  "verification": {
+    "performanceReport": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m7-performance\\2026-10-26T12-06-27-759Z\\result.json",
+    "performanceChecks": 11,
+    "parentReport": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m7-parent-smoke\\2026-10-26T12-27-17-193Z\\result.json",
+    "parentChecks": 8,
+    "parentScope": "One actual cold generation,45s continuous flight,active suspension/drain,return preserving document/context/pose,dispose/unload; no second cold reload or full2700frame export.",
+    "shortExport": "Actually encoded at least3frames then canceled, drained and restored camera; fullM6 film retained as history, not re-labeled M7.",
+    "guardResult": {
+      "m6FileCount": 50,
+      "m6HarnessFiles": [
+        "lijiang-quality-m6-qa.cjs",
+        "lijiang-quality-m6-preview-qa.cjs",
+        "lijiang-quality-m6-full-qa.cjs",
+        "launch-lijiang-quality-m6-qa.cjs",
+        "lijiang-m6-crack-regressions.json"
+      ],
+      "m5": {
+        "fileCount": 47,
+        "harnessFiles": [
+          "lijiang-quality-m5-qa.cjs",
+          "launch-lijiang-quality-m5-qa.cjs"
+        ],
+        "pinnedAt": "2026-10-26T10:08:14.075Z",
+        "unchanged": true
+      },
+      "unchanged": true
+    },
+    "contextsReleased": true,
+    "userTabNavigated": false
+  },
+  "visual": {
+    "acceptedForThisRevision": true,
+    "reviewers": [
+      "root",
+      "m5_ecology_contact",
+      "m5_leaf_volume"
+    ],
+    "samePoseM6AndM7": [
+      "flight25",
+      "flight45",
+      "two exact old crack poses"
+    ],
+    "sameSceneHorizonAB": {
+      "closeViewsPixelIdentical": 3,
+      "distantChangedPixelsPercentRange": [
+        0.0044,
+        0.0699
+      ],
+      "noObservedCanopyOrReflectionLoss": true
+    },
+    "baselineRestorePixelPerfect": false,
+    "restoreLimit": "Original images followed repeated strict renderCurrent; restore images used RAF idle with different ordinary-forest cache state. Tiny ground differences retained, not claimed byte-equal.",
+    "remaining": [
+      "Some limestone faces remain too smooth",
+      "Local vegetation has procedural repetition",
+      "Loading and interactive FPS targets remain open"
+    ]
+  }
+}

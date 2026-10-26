@@ -1,0 +1,1508 @@
+{
+  "runId": "2026-10-24T17-59-33-904Z",
+  "status": "passed",
+  "scene": "shipyard-station",
+  "backend": "d3d11",
+  "tests": [
+    {
+      "name": "independent-station-identity-and-actual-renderer",
+      "passed": true,
+      "evidence": {
+        "sceneId": "shipyard-station",
+        "setting": "old-dry-dock-and-passenger-station",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "error": null,
+        "frames": 7,
+        "time": 0.3166999999999971,
+        "paused": false,
+        "visible": true,
+        "view": "platform",
+        "quality": "work in progress / not accepted",
+        "runtimeLighting": {
+          "sceneId": "shipyard-station",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "sunDirection": [
+            0.3912557941714868,
+            0.7417598102380594,
+            0.5447121142794946
+          ]
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 23,
+          "accepted": false,
+          "model": "shipyard-lightmapped.glb",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "proof": null,
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "lightingCalibration": {
+            "practicalScale": 1,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 20.05352282957881,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 6,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+            "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+            "integrationInputs": {
+              "sceneId": "shipyard-station",
+              "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+              "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+              "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "environmentStrength": 1.031923772120808,
+              "mappingRotationZDegrees": 20.05352282957881,
+              "analyticSunScale": 0,
+              "practicalScale": 1
+            }
+          }
+        },
+        "visualReview": {
+          "sceneId": "shipyard-station",
+          "status": "pending-runtime-review",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "reviewRecord": null
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 25,
+          "bakedMaterials": 23,
+          "glazingMaterials": 2,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "station-waiting-hall",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                28.3,
+                2.4,
+                6
+              ],
+              "min": [
+                24.4,
+                0.6,
+                -1.3
+              ],
+              "max": [
+                33.5,
+                5.3,
+                13.3
+              ]
+            },
+            {
+              "name": "station-covered-platform",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                22.1,
+                2.5,
+                5
+              ],
+              "min": [
+                19.6,
+                0.6,
+                -14.5
+              ],
+              "max": [
+                24.65,
+                5.2,
+                22.5
+              ]
+            },
+            {
+              "name": "station-basin",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                9,
+                3,
+                4
+              ],
+              "min": [
+                -20,
+                -2,
+                -40
+              ],
+              "max": [
+                24.5,
+                13,
+                38
+              ]
+            },
+            {
+              "name": "repair-slipway",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                -27,
+                3,
+                1
+              ],
+              "min": [
+                -44,
+                0.5,
+                -16
+              ],
+              "max": [
+                -20,
+                13,
+                16
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 10,
+            "observedProgramMaximum": 10
+          }
+        },
+        "journey": {
+          "phase": "idle",
+          "elapsed": 0,
+          "duration": 0,
+          "progress": 0,
+          "totalElapsed": 0,
+          "paused": false,
+          "choice": null,
+          "boatPosition": [
+            12,
+            -0.11721349703132049,
+            -28
+          ],
+          "boatHeading": 3.141592653589793,
+          "velocityDir": [
+            0,
+            -1
+          ],
+          "speed": 0,
+          "gangwayOpen": 0,
+          "canChoose": false,
+          "boarding": false,
+          "cameraFollow": false,
+          "cameraLocked": false,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "disposed": false
+        },
+        "camera": {
+          "position": [
+            21.95,
+            2.3000000000000007,
+            22.2
+          ],
+          "target": [
+            18.4,
+            1.8,
+            6.2
+          ],
+          "fov": 60
+        },
+        "navigation": {
+          "view": "platform",
+          "bounds": {
+            "x": [
+              20.85,
+              23.35
+            ],
+            "y": [
+              1.7,
+              3.1
+            ],
+            "z": [
+              -13.5,
+              22.8
+            ]
+          }
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-lit-far-support",
+          "sourceAtlasExcluded": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "own-independent-geometry-and-complete-lighting",
+      "passed": true,
+      "evidence": {
+        "mode": "full-diffuse",
+        "bound": 23,
+        "accepted": false,
+        "model": "shipyard-lightmapped.glb",
+        "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+        "proof": null,
+        "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+        "lightingCalibration": {
+          "practicalScale": 1,
+          "sunScale": 0,
+          "environmentScale": 1,
+          "environmentOverride": {
+            "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+            "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+            "mappingRotationZDegrees": 20.05352282957881,
+            "strength": 1.031923770904541,
+            "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+            "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+          },
+          "areaSourceVisibleToCamera": false,
+          "cyclesClosed8mmPanes": 6,
+          "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+          "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+          "integrationInputs": {
+            "sceneId": "shipyard-station",
+            "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+            "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+            "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+            "environmentStrength": 1.031923772120808,
+            "mappingRotationZDegrees": 20.05352282957881,
+            "analyticSunScale": 0,
+            "practicalScale": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "actual-independent-camera-hall",
+      "passed": true,
+      "evidence": {
+        "position": [
+          25.5,
+          2.3000000000000007,
+          10.4
+        ],
+        "target": [
+          30.5,
+          2,
+          4
+        ],
+        "fov": 53
+      }
+    },
+    {
+      "name": "own-independent-renderer-disposes",
+      "passed": true,
+      "evidence": {
+        "disposed": true
+      }
+    }
+  ],
+  "captures": [
+    {
+      "name": "01-hall",
+      "canvas": "assets/shipyard-station-qa/2026-10-24T17-59-33-904Z/01-hall-canvas.png",
+      "page": "assets/shipyard-station-qa/2026-10-24T17-59-33-904Z/01-hall-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "4dc90ea4daa85c804bb6a846ca6646125c62b981c8ca5e111970c3d9a8042c5a",
+      "state": {
+        "sceneId": "shipyard-station",
+        "setting": "old-dry-dock-and-passenger-station",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "error": null,
+        "frames": 17,
+        "time": 0.3166999999999971,
+        "paused": true,
+        "visible": true,
+        "view": "hall",
+        "quality": "work in progress / not accepted",
+        "runtimeLighting": {
+          "sceneId": "shipyard-station",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "sunDirection": [
+            0.3912557941714868,
+            0.7417598102380594,
+            0.5447121142794946
+          ]
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 23,
+          "accepted": false,
+          "model": "shipyard-lightmapped.glb",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "proof": null,
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "lightingCalibration": {
+            "practicalScale": 1,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 20.05352282957881,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 6,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+            "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+            "integrationInputs": {
+              "sceneId": "shipyard-station",
+              "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+              "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+              "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "environmentStrength": 1.031923772120808,
+              "mappingRotationZDegrees": 20.05352282957881,
+              "analyticSunScale": 0,
+              "practicalScale": 1
+            }
+          }
+        },
+        "visualReview": {
+          "sceneId": "shipyard-station",
+          "status": "pending-runtime-review",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "reviewRecord": null
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 25,
+          "bakedMaterials": 23,
+          "glazingMaterials": 2,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "station-waiting-hall",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                28.3,
+                2.4,
+                6
+              ],
+              "min": [
+                24.4,
+                0.6,
+                -1.3
+              ],
+              "max": [
+                33.5,
+                5.3,
+                13.3
+              ]
+            },
+            {
+              "name": "station-covered-platform",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                22.1,
+                2.5,
+                5
+              ],
+              "min": [
+                19.6,
+                0.6,
+                -14.5
+              ],
+              "max": [
+                24.65,
+                5.2,
+                22.5
+              ]
+            },
+            {
+              "name": "station-basin",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                9,
+                3,
+                4
+              ],
+              "min": [
+                -20,
+                -2,
+                -40
+              ],
+              "max": [
+                24.5,
+                13,
+                38
+              ]
+            },
+            {
+              "name": "repair-slipway",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                -27,
+                3,
+                1
+              ],
+              "min": [
+                -44,
+                0.5,
+                -16
+              ],
+              "max": [
+                -20,
+                13,
+                16
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 10,
+            "observedProgramMaximum": 10
+          }
+        },
+        "journey": {
+          "phase": "idle",
+          "elapsed": 0,
+          "duration": 0,
+          "progress": 0,
+          "totalElapsed": 0,
+          "paused": true,
+          "choice": null,
+          "boatPosition": [
+            12,
+            -0.11721349703132049,
+            -28
+          ],
+          "boatHeading": 3.141592653589793,
+          "velocityDir": [
+            0,
+            -1
+          ],
+          "speed": 0,
+          "gangwayOpen": 0,
+          "canChoose": false,
+          "boarding": false,
+          "cameraFollow": false,
+          "cameraLocked": false,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "disposed": false
+        },
+        "camera": {
+          "position": [
+            25.5,
+            2.3000000000000007,
+            10.4
+          ],
+          "target": [
+            30.5,
+            2,
+            4
+          ],
+          "fov": 53
+        },
+        "navigation": {
+          "view": "hall",
+          "bounds": {
+            "x": [
+              24.65,
+              29.95
+            ],
+            "y": [
+              1.9,
+              3.1
+            ],
+            "z": [
+              -0.6,
+              12.6
+            ]
+          }
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-lit-far-support",
+          "sourceAtlasExcluded": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "hall-combined",
+      "canvas": "assets/shipyard-station-qa/2026-10-24T17-59-33-904Z/hall-combined-canvas.png",
+      "page": "assets/shipyard-station-qa/2026-10-24T17-59-33-904Z/hall-combined-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "4dc90ea4daa85c804bb6a846ca6646125c62b981c8ca5e111970c3d9a8042c5a",
+      "state": {
+        "sceneId": "shipyard-station",
+        "setting": "old-dry-dock-and-passenger-station",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "error": null,
+        "frames": 49,
+        "time": 0.3166999999999971,
+        "paused": true,
+        "visible": true,
+        "view": "hall",
+        "quality": "work in progress / not accepted",
+        "runtimeLighting": {
+          "sceneId": "shipyard-station",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "sunDirection": [
+            0.3912557941714868,
+            0.7417598102380594,
+            0.5447121142794946
+          ]
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 23,
+          "accepted": false,
+          "model": "shipyard-lightmapped.glb",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "proof": null,
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "lightingCalibration": {
+            "practicalScale": 1,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 20.05352282957881,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 6,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+            "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+            "integrationInputs": {
+              "sceneId": "shipyard-station",
+              "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+              "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+              "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "environmentStrength": 1.031923772120808,
+              "mappingRotationZDegrees": 20.05352282957881,
+              "analyticSunScale": 0,
+              "practicalScale": 1
+            }
+          }
+        },
+        "visualReview": {
+          "sceneId": "shipyard-station",
+          "status": "pending-runtime-review",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "reviewRecord": null
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 25,
+          "bakedMaterials": 23,
+          "glazingMaterials": 2,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "station-waiting-hall",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                28.3,
+                2.4,
+                6
+              ],
+              "min": [
+                24.4,
+                0.6,
+                -1.3
+              ],
+              "max": [
+                33.5,
+                5.3,
+                13.3
+              ]
+            },
+            {
+              "name": "station-covered-platform",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                22.1,
+                2.5,
+                5
+              ],
+              "min": [
+                19.6,
+                0.6,
+                -14.5
+              ],
+              "max": [
+                24.65,
+                5.2,
+                22.5
+              ]
+            },
+            {
+              "name": "station-basin",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                9,
+                3,
+                4
+              ],
+              "min": [
+                -20,
+                -2,
+                -40
+              ],
+              "max": [
+                24.5,
+                13,
+                38
+              ]
+            },
+            {
+              "name": "repair-slipway",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                -27,
+                3,
+                1
+              ],
+              "min": [
+                -44,
+                0.5,
+                -16
+              ],
+              "max": [
+                -20,
+                13,
+                16
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 10,
+            "observedProgramMaximum": 10
+          }
+        },
+        "journey": {
+          "phase": "idle",
+          "elapsed": 0,
+          "duration": 0,
+          "progress": 0,
+          "totalElapsed": 0,
+          "paused": true,
+          "choice": null,
+          "boatPosition": [
+            12,
+            -0.11721349703132049,
+            -28
+          ],
+          "boatHeading": 3.141592653589793,
+          "velocityDir": [
+            0,
+            -1
+          ],
+          "speed": 0,
+          "gangwayOpen": 0,
+          "canChoose": false,
+          "boarding": false,
+          "cameraFollow": false,
+          "cameraLocked": false,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "disposed": false
+        },
+        "camera": {
+          "position": [
+            25.5,
+            2.3000000000000007,
+            10.4
+          ],
+          "target": [
+            30.5,
+            2,
+            4
+          ],
+          "fov": 53
+        },
+        "navigation": {
+          "view": "hall",
+          "bounds": {
+            "x": [
+              24.65,
+              29.95
+            ],
+            "y": [
+              1.9,
+              3.1
+            ],
+            "z": [
+              -0.6,
+              12.6
+            ]
+          }
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-lit-far-support",
+          "sourceAtlasExcluded": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "hall-diffuse",
+      "canvas": "assets/shipyard-station-qa/2026-10-24T17-59-33-904Z/hall-diffuse-canvas.png",
+      "page": "assets/shipyard-station-qa/2026-10-24T17-59-33-904Z/hall-diffuse-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "49cdb7b8da6740cc26c55d9cc34a3ef1b327576c4b0c4a11c10cfb8ec8329df1",
+      "state": {
+        "sceneId": "shipyard-station",
+        "setting": "old-dry-dock-and-passenger-station",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "error": null,
+        "frames": 81,
+        "time": 0.3166999999999971,
+        "paused": true,
+        "visible": true,
+        "view": "hall",
+        "quality": "work in progress / not accepted",
+        "runtimeLighting": {
+          "sceneId": "shipyard-station",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "sunDirection": [
+            0.3912557941714868,
+            0.7417598102380594,
+            0.5447121142794946
+          ]
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 23,
+          "accepted": false,
+          "model": "shipyard-lightmapped.glb",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "proof": null,
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "lightingCalibration": {
+            "practicalScale": 1,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 20.05352282957881,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 6,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+            "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+            "integrationInputs": {
+              "sceneId": "shipyard-station",
+              "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+              "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+              "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "environmentStrength": 1.031923772120808,
+              "mappingRotationZDegrees": 20.05352282957881,
+              "analyticSunScale": 0,
+              "practicalScale": 1
+            }
+          }
+        },
+        "visualReview": {
+          "sceneId": "shipyard-station",
+          "status": "pending-runtime-review",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "reviewRecord": null
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 25,
+          "bakedMaterials": 23,
+          "glazingMaterials": 2,
+          "diagnostic": "diffuse",
+          "volumes": [
+            {
+              "name": "station-waiting-hall",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                28.3,
+                2.4,
+                6
+              ],
+              "min": [
+                24.4,
+                0.6,
+                -1.3
+              ],
+              "max": [
+                33.5,
+                5.3,
+                13.3
+              ]
+            },
+            {
+              "name": "station-covered-platform",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                22.1,
+                2.5,
+                5
+              ],
+              "min": [
+                19.6,
+                0.6,
+                -14.5
+              ],
+              "max": [
+                24.65,
+                5.2,
+                22.5
+              ]
+            },
+            {
+              "name": "station-basin",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                9,
+                3,
+                4
+              ],
+              "min": [
+                -20,
+                -2,
+                -40
+              ],
+              "max": [
+                24.5,
+                13,
+                38
+              ]
+            },
+            {
+              "name": "repair-slipway",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                -27,
+                3,
+                1
+              ],
+              "min": [
+                -44,
+                0.5,
+                -16
+              ],
+              "max": [
+                -20,
+                13,
+                16
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 10,
+            "observedProgramMaximum": 10
+          }
+        },
+        "journey": {
+          "phase": "idle",
+          "elapsed": 0,
+          "duration": 0,
+          "progress": 0,
+          "totalElapsed": 0,
+          "paused": true,
+          "choice": null,
+          "boatPosition": [
+            12,
+            -0.11721349703132049,
+            -28
+          ],
+          "boatHeading": 3.141592653589793,
+          "velocityDir": [
+            0,
+            -1
+          ],
+          "speed": 0,
+          "gangwayOpen": 0,
+          "canChoose": false,
+          "boarding": false,
+          "cameraFollow": false,
+          "cameraLocked": false,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "disposed": false
+        },
+        "camera": {
+          "position": [
+            25.5,
+            2.3000000000000007,
+            10.4
+          ],
+          "target": [
+            30.5,
+            2,
+            4
+          ],
+          "fov": 53
+        },
+        "navigation": {
+          "view": "hall",
+          "bounds": {
+            "x": [
+              24.65,
+              29.95
+            ],
+            "y": [
+              1.9,
+              3.1
+            ],
+            "z": [
+              -0.6,
+              12.6
+            ]
+          }
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-lit-far-support",
+          "sourceAtlasExcluded": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "hall-specular",
+      "canvas": "assets/shipyard-station-qa/2026-10-24T17-59-33-904Z/hall-specular-canvas.png",
+      "page": "assets/shipyard-station-qa/2026-10-24T17-59-33-904Z/hall-specular-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "d4f9125fbd564aa70c77983542a74f1b0e57b94f93705bbae9021310eb515c53",
+      "state": {
+        "sceneId": "shipyard-station",
+        "setting": "old-dry-dock-and-passenger-station",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "error": null,
+        "frames": 109,
+        "time": 0.3166999999999971,
+        "paused": true,
+        "visible": true,
+        "view": "hall",
+        "quality": "work in progress / not accepted",
+        "runtimeLighting": {
+          "sceneId": "shipyard-station",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "sunDirection": [
+            0.3912557941714868,
+            0.7417598102380594,
+            0.5447121142794946
+          ]
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 23,
+          "accepted": false,
+          "model": "shipyard-lightmapped.glb",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "proof": null,
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "lightingCalibration": {
+            "practicalScale": 1,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 20.05352282957881,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 6,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+            "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+            "integrationInputs": {
+              "sceneId": "shipyard-station",
+              "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+              "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+              "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "environmentStrength": 1.031923772120808,
+              "mappingRotationZDegrees": 20.05352282957881,
+              "analyticSunScale": 0,
+              "practicalScale": 1
+            }
+          }
+        },
+        "visualReview": {
+          "sceneId": "shipyard-station",
+          "status": "pending-runtime-review",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "reviewRecord": null
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 25,
+          "bakedMaterials": 23,
+          "glazingMaterials": 2,
+          "diagnostic": "specular",
+          "volumes": [
+            {
+              "name": "station-waiting-hall",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                28.3,
+                2.4,
+                6
+              ],
+              "min": [
+                24.4,
+                0.6,
+                -1.3
+              ],
+              "max": [
+                33.5,
+                5.3,
+                13.3
+              ]
+            },
+            {
+              "name": "station-covered-platform",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                22.1,
+                2.5,
+                5
+              ],
+              "min": [
+                19.6,
+                0.6,
+                -14.5
+              ],
+              "max": [
+                24.65,
+                5.2,
+                22.5
+              ]
+            },
+            {
+              "name": "station-basin",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                9,
+                3,
+                4
+              ],
+              "min": [
+                -20,
+                -2,
+                -40
+              ],
+              "max": [
+                24.5,
+                13,
+                38
+              ]
+            },
+            {
+              "name": "repair-slipway",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                -27,
+                3,
+                1
+              ],
+              "min": [
+                -44,
+                0.5,
+                -16
+              ],
+              "max": [
+                -20,
+                13,
+                16
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 10,
+            "observedProgramMaximum": 10
+          }
+        },
+        "journey": {
+          "phase": "idle",
+          "elapsed": 0,
+          "duration": 0,
+          "progress": 0,
+          "totalElapsed": 0,
+          "paused": true,
+          "choice": null,
+          "boatPosition": [
+            12,
+            -0.11721349703132049,
+            -28
+          ],
+          "boatHeading": 3.141592653589793,
+          "velocityDir": [
+            0,
+            -1
+          ],
+          "speed": 0,
+          "gangwayOpen": 0,
+          "canChoose": false,
+          "boarding": false,
+          "cameraFollow": false,
+          "cameraLocked": false,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "disposed": false
+        },
+        "camera": {
+          "position": [
+            25.5,
+            2.3000000000000007,
+            10.4
+          ],
+          "target": [
+            30.5,
+            2,
+            4
+          ],
+          "fov": 53
+        },
+        "navigation": {
+          "view": "hall",
+          "bounds": {
+            "x": [
+              24.65,
+              29.95
+            ],
+            "y": [
+              1.9,
+              3.1
+            ],
+            "z": [
+              -0.6,
+              12.6
+            ]
+          }
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-lit-far-support",
+          "sourceAtlasExcluded": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "hall-no-ibl",
+      "canvas": "assets/shipyard-station-qa/2026-10-24T17-59-33-904Z/hall-no-ibl-canvas.png",
+      "page": "assets/shipyard-station-qa/2026-10-24T17-59-33-904Z/hall-no-ibl-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "4a2c4345eb3c1608c5a53659c7cc1c367f36eadd2b80f21eda14a8c4bafcf2ac",
+      "state": {
+        "sceneId": "shipyard-station",
+        "setting": "old-dry-dock-and-passenger-station",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "error": null,
+        "frames": 134,
+        "time": 0.3166999999999971,
+        "paused": true,
+        "visible": true,
+        "view": "hall",
+        "quality": "work in progress / not accepted",
+        "runtimeLighting": {
+          "sceneId": "shipyard-station",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "sunDirection": [
+            0.3912557941714868,
+            0.7417598102380594,
+            0.5447121142794946
+          ]
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 23,
+          "accepted": false,
+          "model": "shipyard-lightmapped.glb",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "proof": null,
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "lightingCalibration": {
+            "practicalScale": 1,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 20.05352282957881,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 6,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+            "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+            "integrationInputs": {
+              "sceneId": "shipyard-station",
+              "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+              "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+              "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "environmentStrength": 1.031923772120808,
+              "mappingRotationZDegrees": 20.05352282957881,
+              "analyticSunScale": 0,
+              "practicalScale": 1
+            }
+          }
+        },
+        "visualReview": {
+          "sceneId": "shipyard-station",
+          "status": "pending-runtime-review",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "reviewRecord": null
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 25,
+          "bakedMaterials": 23,
+          "glazingMaterials": 2,
+          "diagnostic": "no-ibl",
+          "volumes": [
+            {
+              "name": "station-waiting-hall",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                28.3,
+                2.4,
+                6
+              ],
+              "min": [
+                24.4,
+                0.6,
+                -1.3
+              ],
+              "max": [
+                33.5,
+                5.3,
+                13.3
+              ]
+            },
+            {
+              "name": "station-covered-platform",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                22.1,
+                2.5,
+                5
+              ],
+              "min": [
+                19.6,
+                0.6,
+                -14.5
+              ],
+              "max": [
+                24.65,
+                5.2,
+                22.5
+              ]
+            },
+            {
+              "name": "station-basin",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                9,
+                3,
+                4
+              ],
+              "min": [
+                -20,
+                -2,
+                -40
+              ],
+              "max": [
+                24.5,
+                13,
+                38
+              ]
+            },
+            {
+              "name": "repair-slipway",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                -27,
+                3,
+                1
+              ],
+              "min": [
+                -44,
+                0.5,
+                -16
+              ],
+              "max": [
+                -20,
+                13,
+                16
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 10,
+            "observedProgramMaximum": 10
+          }
+        },
+        "journey": {
+          "phase": "idle",
+          "elapsed": 0,
+          "duration": 0,
+          "progress": 0,
+          "totalElapsed": 0,
+          "paused": true,
+          "choice": null,
+          "boatPosition": [
+            12,
+            -0.11721349703132049,
+            -28
+          ],
+          "boatHeading": 3.141592653589793,
+          "velocityDir": [
+            0,
+            -1
+          ],
+          "speed": 0,
+          "gangwayOpen": 0,
+          "canChoose": false,
+          "boarding": false,
+          "cameraFollow": false,
+          "cameraLocked": false,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "disposed": false
+        },
+        "camera": {
+          "position": [
+            25.5,
+            2.3000000000000007,
+            10.4
+          ],
+          "target": [
+            30.5,
+            2,
+            4
+          ],
+          "fov": 53
+        },
+        "navigation": {
+          "view": "hall",
+          "bounds": {
+            "x": [
+              24.65,
+              29.95
+            ],
+            "y": [
+              1.9,
+              3.1
+            ],
+            "z": [
+              -0.6,
+              12.6
+            ]
+          }
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-lit-far-support",
+          "sourceAtlasExcluded": true
+        },
+        "errors": []
+      }
+    }
+  ],
+  "errors": [],
+  "exporting": false,
+  "scope": "Actual hall diffuse and specular channel isolation; diagnostic only, no artwork acceptance",
+  "windowPolicy": {
+    "show": false,
+    "focusable": false,
+    "skipTaskbar": true
+  },
+  "elapsedSeconds": 27.815,
+  "presentation": {
+    "offscreen": true,
+    "targetFrameRate": 30,
+    "paints": 176,
+    "firstPaintAt": 1792864773054,
+    "lastPaintAt": 1792864801718
+  }
+}

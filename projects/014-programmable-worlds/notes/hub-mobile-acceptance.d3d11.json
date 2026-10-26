@@ -1,0 +1,5706 @@
+{
+  "runId": "2026-10-24T14-51-58-482Z",
+  "scene": "hub",
+  "backend": "d3d11",
+  "status": "passed",
+  "candidateOverride": null,
+  "mobileOnly": true,
+  "tests": [
+    {
+      "name": "source-live-and-new-canal-entry-map",
+      "passed": true,
+      "evidence": {
+        "entries": [
+          "runtime/source-live.html?embed=1",
+          "canal-real/index.html?experience=window&giSet=r5&probes=1&streetProbes=1&embed=1",
+          "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1"
+        ],
+        "candidateOverride": null
+      }
+    },
+    {
+      "name": "leg-0-story-starts-after-previous-scene-unloads",
+      "passed": true,
+      "evidence": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0&qaRun=1792853517981",
+        "host": {
+          "backend": "d3d11",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": false,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+          "previews": [
+            {
+              "source": "runtime/source-live.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "canal-real/index.html?experience=window&giSet=r5&probes=1&streetProbes=1&embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+              "loaded": true,
+              "active": true
+            }
+          ]
+        },
+        "bridge": {
+          "service": "napali-source-bridge",
+          "version": 1,
+          "backend": "gl",
+          "pid": 81768,
+          "sessionActive": false,
+          "offscreen": true,
+          "offscreenFrameRate": 30
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/source-live.html?embed=1",
+            "sourceAttribute": "about:blank",
+            "href": "about:blank",
+            "active": false,
+            "kind": null,
+            "apiExposed": false,
+            "state": null,
+            "canvas": null,
+            "media": null
+          },
+          {
+            "index": 1,
+            "source": "canal-real/index.html?experience=window&giSet=r5&probes=1&streetProbes=1&embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "kind": null,
+            "apiExposed": false,
+            "state": null,
+            "canvas": null,
+            "media": null
+          },
+          {
+            "index": 2,
+            "source": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1&qa=1",
+            "active": true,
+            "kind": "canal-real",
+            "apiExposed": true,
+            "state": {
+              "ready": true,
+              "phase": "ready",
+              "error": null,
+              "time": 0.13330000000000292,
+              "paused": false,
+              "frames": 4,
+              "view": "story",
+              "experience": "story",
+              "visible": true,
+              "choice": null,
+              "storyTime": 0,
+              "disposed": false,
+              "lastFrameMs": 16.700000047683716,
+              "quality": "reviewed / R5 actual runtime",
+              "runtimeLighting": {
+                "revision": "r5-cloudbreak",
+                "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+                "environment": "deSunHDR",
+                "background": "fullHDR",
+                "probeBackground": "deSunHDR",
+                "environmentRotationY": -1.7362243408943674,
+                "backgroundRotationY": -1.7362243408943674,
+                "sun": {
+                  "position": [
+                    -16.195299832700535,
+                    30.708856143855655,
+                    18.061570692961837
+                  ],
+                  "target": [
+                    3,
+                    0,
+                    -2
+                  ],
+                  "intensity": 4.562767782748515,
+                  "colorLinear": [
+                    0.991978082879707,
+                    1,
+                    0.9084521146029024
+                  ]
+                }
+              },
+              "lighting": {
+                "mode": "full-diffuse",
+                "bound": 26,
+                "accepted": true,
+                "model": "../baked-r4/canal-lightmapped.glb",
+                "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+                "proof": null,
+                "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+                "lightingCalibration": {
+                  "practicalScale": 0.25,
+                  "sunScale": 0,
+                  "environmentScale": 1,
+                  "environmentOverride": {
+                    "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+                    "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+                    "mappingRotationZDegrees": 99.4783270211304,
+                    "strength": 1.031923770904541,
+                    "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+                    "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+                  },
+                  "areaSourceVisibleToCamera": false,
+                  "cyclesClosed8mmPanes": 102,
+                  "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+                },
+                "giSet": "r5",
+                "appliedPracticalScale": 0.25,
+                "reviewRecord": "notes/visual-acceptance-r5.md"
+              },
+              "auxiliaryGeometry": {
+                "mode": "runtime-unbaked-auxiliary",
+                "receivesLiveLighting": true,
+                "sourceGeometryUnchanged": true,
+                "extent": {
+                  "x": [
+                    -260,
+                    260
+                  ],
+                  "z": [
+                    -300,
+                    300
+                  ]
+                },
+                "openWaterChannelWidth": 8.3,
+                "boxes": [
+                  {
+                    "name": "Continuous land beyond left bank",
+                    "min": [
+                      -260,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      -9.8,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Continuous low building footing -1",
+                    "min": [
+                      -17.4,
+                      0.35,
+                      -77
+                    ],
+                    "max": [
+                      -10.25,
+                      0.725,
+                      65
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation north -1",
+                    "min": [
+                      -9.8,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      -4.15,
+                      0.625,
+                      -76.99
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation south -1",
+                    "min": [
+                      -9.8,
+                      -2.4,
+                      64.99
+                    ],
+                    "max": [
+                      -4.15,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Continuous land beyond right bank",
+                    "min": [
+                      9.8,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      260,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Continuous low building footing 1",
+                    "min": [
+                      10.25,
+                      0.35,
+                      -77
+                    ],
+                    "max": [
+                      17.4,
+                      0.725,
+                      65
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation north 1",
+                    "min": [
+                      4.15,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      9.8,
+                      0.625,
+                      -76.99
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation south 1",
+                    "min": [
+                      4.15,
+                      -2.4,
+                      64.99
+                    ],
+                    "max": [
+                      9.8,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Observation-room foundation",
+                    "min": [
+                      -14.7,
+                      0.35,
+                      7.5
+                    ],
+                    "max": [
+                      -9.35,
+                      1.125,
+                      15.5
+                    ]
+                  },
+                  {
+                    "name": "Left-bank courtyard masonry plinth",
+                    "min": [
+                      -10.65,
+                      0.55,
+                      -2.1
+                    ],
+                    "max": [
+                      -10.21,
+                      0.94,
+                      6.7
+                    ]
+                  },
+                  {
+                    "name": "Left-bank courtyard brick wall",
+                    "min": [
+                      -10.61,
+                      0.91,
+                      -2.1
+                    ],
+                    "max": [
+                      -10.25,
+                      2.64,
+                      6.7
+                    ]
+                  },
+                  {
+                    "name": "Left-bank courtyard stone coping",
+                    "min": [
+                      -10.7,
+                      2.62,
+                      -2.16
+                    ],
+                    "max": [
+                      -10.16,
+                      2.77,
+                      6.76
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier -1.85",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      -2.0500000000000003
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      -1.6500000000000001
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap -1.85",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      -2.1
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      -1.6
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier 1",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      0.8
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      1.2
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap 1",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      0.75
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      1.25
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier 3.85",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      3.65
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      4.05
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap 3.85",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      3.6
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      4.1
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier 6.52",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      6.319999999999999
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      6.72
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap 6.52",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      6.27
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      6.77
+                    ]
+                  },
+                  {
+                    "name": "Canal bed continuation north",
+                    "min": [
+                      -4.13,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      4.13,
+                      -1.52,
+                      -76.99
+                    ]
+                  },
+                  {
+                    "name": "Canal bed continuation south",
+                    "min": [
+                      -4.13,
+                      -2.4,
+                      66.99
+                    ],
+                    "max": [
+                      4.13,
+                      -1.52,
+                      300
+                    ]
+                  }
+                ]
+              },
+              "navigation": {
+                "mode": "room-look",
+                "manual": false,
+                "bounds": {
+                  "x": [
+                    -14.1,
+                    -9.65
+                  ],
+                  "y": [
+                    1.65,
+                    4.35
+                  ],
+                  "z": [
+                    7.9,
+                    15.1
+                  ]
+                },
+                "lastConstraint": null,
+                "position": [
+                  -11.699999999999998,
+                  2.450000000000003,
+                  13.7
+                ]
+              },
+              "reflections": {
+                "ready": true,
+                "enabled": true,
+                "streetProbes": true,
+                "cubeResolution": 512,
+                "materials": 27,
+                "bakedMaterials": 26,
+                "glazingMaterials": 1,
+                "diagnostic": "combined",
+                "volumes": [
+                  {
+                    "name": "window-room",
+                    "uniform": "uCanalRoomProbe",
+                    "position": [
+                      -11.85,
+                      2.85,
+                      11.5
+                    ],
+                    "min": [
+                      -14.65,
+                      1.08,
+                      7.48
+                    ],
+                    "max": [
+                      -9.02,
+                      4.94,
+                      15.52
+                    ]
+                  },
+                  {
+                    "name": "bookshop",
+                    "uniform": "uCanalShopProbe",
+                    "position": [
+                      12.05,
+                      2.08,
+                      6.7
+                    ],
+                    "min": [
+                      10.4,
+                      0.8,
+                      4.43
+                    ],
+                    "max": [
+                      14.06,
+                      3.56,
+                      8.98
+                    ]
+                  },
+                  {
+                    "name": "canal-street",
+                    "uniform": "uCanalStreetNearProbe",
+                    "position": [
+                      0,
+                      3,
+                      7
+                    ],
+                    "min": [
+                      -11.2,
+                      -2,
+                      -20
+                    ],
+                    "max": [
+                      11.2,
+                      15.5,
+                      38
+                    ]
+                  },
+                  {
+                    "name": "bridge-street",
+                    "uniform": "uCanalStreetFarProbe",
+                    "position": [
+                      0,
+                      4,
+                      -30
+                    ],
+                    "min": [
+                      -11.2,
+                      -2,
+                      -76
+                    ],
+                    "max": [
+                      11.2,
+                      15.5,
+                      2
+                    ]
+                  }
+                ],
+                "samplerBudget": {
+                  "fragmentLimit": 16,
+                  "combinedLimit": 32,
+                  "probeSamplers": 4,
+                  "estimatedMaximum": 13,
+                  "observedProgramMaximum": 13
+                }
+              },
+              "tour": {
+                "playing": false,
+                "elapsed": 0,
+                "duration": 25,
+                "phase": "window",
+                "ended": false,
+                "active": true
+              },
+              "dynamic": {
+                "choice": null,
+                "boatPosition": [
+                  0.9020793759255847,
+                  -0.0732460031785326,
+                  9.8
+                ],
+                "letterPosition": [
+                  0.9162241015819025,
+                  0.1036013777087189,
+                  9.919389826239202
+                ],
+                "letterParent": "boat",
+                "paperVisible": false,
+                "paperUnfold": 1,
+                "readingLayout": null,
+                "paperScreenBounds": null
+              },
+              "camera": {
+                "position": [
+                  -11.699999999999998,
+                  2.450000000000003,
+                  13.7
+                ],
+                "target": [
+                  7.3000000000000025,
+                  1.7000000000000004,
+                  -4.7
+                ],
+                "fov": 52
+              },
+              "renderer": {
+                "width": 668,
+                "height": 570,
+                "calls": 1,
+                "triangles": 1
+              },
+              "errors": []
+            },
+            "canvas": {
+              "width": 668,
+              "height": 570
+            },
+            "media": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "actual-376-845-hub-preview-has-readable-paper-and-complete-replay-control",
+      "passed": true,
+      "evidence": {
+        "layout": {
+          "requestedViewport": {
+            "width": 375,
+            "height": 844
+          },
+          "actualViewport": {
+            "width": 376,
+            "height": 845
+          },
+          "documentWidth": 361,
+          "candidateStyleOverride": false,
+          "frame": {
+            "x": 20,
+            "y": 176.015625,
+            "width": 321,
+            "height": 520,
+            "top": 176.015625,
+            "right": 341,
+            "bottom": 696.015625,
+            "left": 20
+          },
+          "preview": {
+            "width": 321,
+            "height": 520
+          },
+          "overflow": false,
+          "overflowElements": [],
+          "buttons": [
+            {
+              "text": "重新开始",
+              "disabled": false,
+              "rect": {
+                "x": 18,
+                "y": 464,
+                "width": 72,
+                "height": 40,
+                "top": 464,
+                "right": 90,
+                "bottom": 504,
+                "left": 18
+              }
+            }
+          ]
+        },
+        "paper": {
+          "left": 47.45096704769307,
+          "right": 269.48321127926755,
+          "top": 86.79566250808914,
+          "bottom": 383.27770025096936,
+          "bodyFontEstimate": 18.97485041554433
+        },
+        "readingLayout": {
+          "width": 321,
+          "height": 520,
+          "area": {
+            "left": 25.68,
+            "right": 295.32,
+            "top": 18,
+            "bottom": 448
+          },
+          "bodyFontSourcePixels": 96,
+          "distance": 0.6594105161137618
+        }
+      }
+    },
+    {
+      "name": "actual-390-845-hub-preview-has-readable-paper-and-complete-replay-control",
+      "passed": true,
+      "evidence": {
+        "layout": {
+          "requestedViewport": {
+            "width": 390,
+            "height": 844
+          },
+          "actualViewport": {
+            "width": 390,
+            "height": 845
+          },
+          "documentWidth": 375,
+          "candidateStyleOverride": false,
+          "frame": {
+            "x": 20,
+            "y": 176.328125,
+            "width": 335,
+            "height": 520,
+            "top": 176.328125,
+            "right": 355,
+            "bottom": 696.328125,
+            "left": 20
+          },
+          "preview": {
+            "width": 335,
+            "height": 520
+          },
+          "overflow": false,
+          "overflowElements": [],
+          "buttons": [
+            {
+              "text": "重新开始",
+              "disabled": false,
+              "rect": {
+                "x": 18,
+                "y": 464,
+                "width": 72,
+                "height": 40,
+                "top": 464,
+                "right": 90,
+                "bottom": 504,
+                "left": 18
+              }
+            }
+          ]
+        },
+        "paper": {
+          "left": 39.385512433141145,
+          "right": 293.47322493423457,
+          "top": 61.787479913594346,
+          "bottom": 403.72201946543,
+          "bodyFontEstimate": 21.88381053131748
+        },
+        "readingLayout": {
+          "width": 335,
+          "height": 520,
+          "area": {
+            "left": 26.8,
+            "right": 308.2,
+            "top": 18,
+            "bottom": 448
+          },
+          "bodyFontSourcePixels": 96,
+          "distance": 0.6318530617090075
+        }
+      }
+    },
+    {
+      "name": "single-live-world-during-focused-mobile-supplement",
+      "passed": true,
+      "evidence": {
+        "peakDocuments": 1,
+        "peakHeavyScenes": 1,
+        "activations": [
+          {
+            "leg": 0,
+            "label": "story",
+            "monotonicStartMs": 564.8509,
+            "monotonicReadyMs": 56459.4358,
+            "seconds": 55.894586800000006,
+            "sourceFrames": 4,
+            "decodedFrames": null
+          }
+        ]
+      }
+    }
+  ],
+  "captures": [
+    {
+      "name": "01-story",
+      "frame": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/01-story-live-frame.png",
+      "page": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/01-story-page.png",
+      "width": 668,
+      "height": 570,
+      "meanLuminance": 55.36557300347206,
+      "luminanceStdDev": 41.07522389226292,
+      "monotonicMs": 57642.603,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0&qaRun=1792853517981",
+        "host": {
+          "backend": "d3d11",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": false,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+          "previews": [
+            {
+              "source": "runtime/source-live.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "canal-real/index.html?experience=window&giSet=r5&probes=1&streetProbes=1&embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+              "loaded": true,
+              "active": true
+            }
+          ]
+        },
+        "bridge": {
+          "service": "napali-source-bridge",
+          "version": 1,
+          "backend": "gl",
+          "pid": 81768,
+          "sessionActive": false,
+          "offscreen": true,
+          "offscreenFrameRate": 30
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/source-live.html?embed=1",
+            "sourceAttribute": "about:blank",
+            "href": "about:blank",
+            "active": false,
+            "kind": null,
+            "apiExposed": false,
+            "state": null,
+            "canvas": null,
+            "media": null
+          },
+          {
+            "index": 1,
+            "source": "canal-real/index.html?experience=window&giSet=r5&probes=1&streetProbes=1&embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "kind": null,
+            "apiExposed": false,
+            "state": null,
+            "canvas": null,
+            "media": null
+          },
+          {
+            "index": 2,
+            "source": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1&qa=1",
+            "active": true,
+            "kind": "canal-real",
+            "apiExposed": true,
+            "state": {
+              "ready": true,
+              "phase": "ready",
+              "error": null,
+              "time": 0.46670000000000433,
+              "paused": true,
+              "frames": 36,
+              "view": "story",
+              "experience": "story",
+              "visible": true,
+              "choice": null,
+              "storyTime": 0.3271000000238419,
+              "disposed": false,
+              "lastFrameMs": 15.599999904632568,
+              "quality": "reviewed / R5 actual runtime",
+              "runtimeLighting": {
+                "revision": "r5-cloudbreak",
+                "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+                "environment": "deSunHDR",
+                "background": "fullHDR",
+                "probeBackground": "deSunHDR",
+                "environmentRotationY": -1.7362243408943674,
+                "backgroundRotationY": -1.7362243408943674,
+                "sun": {
+                  "position": [
+                    -16.195299832700535,
+                    30.708856143855655,
+                    18.061570692961837
+                  ],
+                  "target": [
+                    3,
+                    0,
+                    -2
+                  ],
+                  "intensity": 4.562767782748515,
+                  "colorLinear": [
+                    0.991978082879707,
+                    1,
+                    0.9084521146029024
+                  ]
+                }
+              },
+              "lighting": {
+                "mode": "full-diffuse",
+                "bound": 26,
+                "accepted": true,
+                "model": "../baked-r4/canal-lightmapped.glb",
+                "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+                "proof": null,
+                "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+                "lightingCalibration": {
+                  "practicalScale": 0.25,
+                  "sunScale": 0,
+                  "environmentScale": 1,
+                  "environmentOverride": {
+                    "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+                    "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+                    "mappingRotationZDegrees": 99.4783270211304,
+                    "strength": 1.031923770904541,
+                    "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+                    "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+                  },
+                  "areaSourceVisibleToCamera": false,
+                  "cyclesClosed8mmPanes": 102,
+                  "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+                },
+                "giSet": "r5",
+                "appliedPracticalScale": 0.25,
+                "reviewRecord": "notes/visual-acceptance-r5.md"
+              },
+              "auxiliaryGeometry": {
+                "mode": "runtime-unbaked-auxiliary",
+                "receivesLiveLighting": true,
+                "sourceGeometryUnchanged": true,
+                "extent": {
+                  "x": [
+                    -260,
+                    260
+                  ],
+                  "z": [
+                    -300,
+                    300
+                  ]
+                },
+                "openWaterChannelWidth": 8.3,
+                "boxes": [
+                  {
+                    "name": "Continuous land beyond left bank",
+                    "min": [
+                      -260,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      -9.8,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Continuous low building footing -1",
+                    "min": [
+                      -17.4,
+                      0.35,
+                      -77
+                    ],
+                    "max": [
+                      -10.25,
+                      0.725,
+                      65
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation north -1",
+                    "min": [
+                      -9.8,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      -4.15,
+                      0.625,
+                      -76.99
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation south -1",
+                    "min": [
+                      -9.8,
+                      -2.4,
+                      64.99
+                    ],
+                    "max": [
+                      -4.15,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Continuous land beyond right bank",
+                    "min": [
+                      9.8,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      260,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Continuous low building footing 1",
+                    "min": [
+                      10.25,
+                      0.35,
+                      -77
+                    ],
+                    "max": [
+                      17.4,
+                      0.725,
+                      65
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation north 1",
+                    "min": [
+                      4.15,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      9.8,
+                      0.625,
+                      -76.99
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation south 1",
+                    "min": [
+                      4.15,
+                      -2.4,
+                      64.99
+                    ],
+                    "max": [
+                      9.8,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Observation-room foundation",
+                    "min": [
+                      -14.7,
+                      0.35,
+                      7.5
+                    ],
+                    "max": [
+                      -9.35,
+                      1.125,
+                      15.5
+                    ]
+                  },
+                  {
+                    "name": "Left-bank courtyard masonry plinth",
+                    "min": [
+                      -10.65,
+                      0.55,
+                      -2.1
+                    ],
+                    "max": [
+                      -10.21,
+                      0.94,
+                      6.7
+                    ]
+                  },
+                  {
+                    "name": "Left-bank courtyard brick wall",
+                    "min": [
+                      -10.61,
+                      0.91,
+                      -2.1
+                    ],
+                    "max": [
+                      -10.25,
+                      2.64,
+                      6.7
+                    ]
+                  },
+                  {
+                    "name": "Left-bank courtyard stone coping",
+                    "min": [
+                      -10.7,
+                      2.62,
+                      -2.16
+                    ],
+                    "max": [
+                      -10.16,
+                      2.77,
+                      6.76
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier -1.85",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      -2.0500000000000003
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      -1.6500000000000001
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap -1.85",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      -2.1
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      -1.6
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier 1",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      0.8
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      1.2
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap 1",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      0.75
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      1.25
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier 3.85",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      3.65
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      4.05
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap 3.85",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      3.6
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      4.1
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier 6.52",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      6.319999999999999
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      6.72
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap 6.52",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      6.27
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      6.77
+                    ]
+                  },
+                  {
+                    "name": "Canal bed continuation north",
+                    "min": [
+                      -4.13,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      4.13,
+                      -1.52,
+                      -76.99
+                    ]
+                  },
+                  {
+                    "name": "Canal bed continuation south",
+                    "min": [
+                      -4.13,
+                      -2.4,
+                      66.99
+                    ],
+                    "max": [
+                      4.13,
+                      -1.52,
+                      300
+                    ]
+                  }
+                ]
+              },
+              "navigation": {
+                "mode": "room-look",
+                "manual": false,
+                "bounds": {
+                  "x": [
+                    -14.1,
+                    -9.65
+                  ],
+                  "y": [
+                    1.65,
+                    4.35
+                  ],
+                  "z": [
+                    7.9,
+                    15.1
+                  ]
+                },
+                "lastConstraint": null,
+                "position": [
+                  -11.693577078814037,
+                  2.4516672263504,
+                  13.694806999892204
+                ]
+              },
+              "reflections": {
+                "ready": true,
+                "enabled": true,
+                "streetProbes": true,
+                "cubeResolution": 512,
+                "materials": 27,
+                "bakedMaterials": 26,
+                "glazingMaterials": 1,
+                "diagnostic": "combined",
+                "volumes": [
+                  {
+                    "name": "window-room",
+                    "uniform": "uCanalRoomProbe",
+                    "position": [
+                      -11.85,
+                      2.85,
+                      11.5
+                    ],
+                    "min": [
+                      -14.65,
+                      1.08,
+                      7.48
+                    ],
+                    "max": [
+                      -9.02,
+                      4.94,
+                      15.52
+                    ]
+                  },
+                  {
+                    "name": "bookshop",
+                    "uniform": "uCanalShopProbe",
+                    "position": [
+                      12.05,
+                      2.08,
+                      6.7
+                    ],
+                    "min": [
+                      10.4,
+                      0.8,
+                      4.43
+                    ],
+                    "max": [
+                      14.06,
+                      3.56,
+                      8.98
+                    ]
+                  },
+                  {
+                    "name": "canal-street",
+                    "uniform": "uCanalStreetNearProbe",
+                    "position": [
+                      0,
+                      3,
+                      7
+                    ],
+                    "min": [
+                      -11.2,
+                      -2,
+                      -20
+                    ],
+                    "max": [
+                      11.2,
+                      15.5,
+                      38
+                    ]
+                  },
+                  {
+                    "name": "bridge-street",
+                    "uniform": "uCanalStreetFarProbe",
+                    "position": [
+                      0,
+                      4,
+                      -30
+                    ],
+                    "min": [
+                      -11.2,
+                      -2,
+                      -76
+                    ],
+                    "max": [
+                      11.2,
+                      15.5,
+                      2
+                    ]
+                  }
+                ],
+                "samplerBudget": {
+                  "fragmentLimit": 16,
+                  "combinedLimit": 32,
+                  "probeSamplers": 4,
+                  "estimatedMaximum": 13,
+                  "observedProgramMaximum": 13
+                }
+              },
+              "tour": {
+                "playing": false,
+                "elapsed": 0.3271000000238419,
+                "duration": 25,
+                "phase": "window",
+                "ended": false,
+                "active": true
+              },
+              "dynamic": {
+                "choice": null,
+                "boatPosition": [
+                  0.9072760542590824,
+                  -0.06957493406492542,
+                  9.741121999995709
+                ],
+                "letterPosition": [
+                  0.9209114428427128,
+                  0.10689844594645746,
+                  9.861122926348514
+                ],
+                "letterParent": "boat",
+                "paperVisible": false,
+                "paperUnfold": 1,
+                "readingLayout": null,
+                "paperScreenBounds": null
+              },
+              "camera": {
+                "position": [
+                  -11.693577078814037,
+                  2.4516672263504,
+                  13.694806999892204
+                ],
+                "target": [
+                  7.302733157951475,
+                  1.7032797895417686,
+                  -4.6786813679785055
+                ],
+                "fov": 52
+              },
+              "renderer": {
+                "width": 668,
+                "height": 570,
+                "calls": 1,
+                "triangles": 1
+              },
+              "errors": []
+            },
+            "canvas": {
+              "width": 668,
+              "height": 570
+            },
+            "media": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-375-actual-choice",
+      "frame": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/mobile-375-actual-choice-live-frame.png",
+      "page": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/mobile-375-actual-choice-page.png",
+      "width": 321,
+      "height": 520,
+      "meanLuminance": 55.94451553819428,
+      "luminanceStdDev": 25.40706669320106,
+      "monotonicMs": 58621.0124,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0&qaRun=1792853517981",
+        "host": {
+          "backend": "d3d11",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": false,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+          "previews": [
+            {
+              "source": "runtime/source-live.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "canal-real/index.html?experience=window&giSet=r5&probes=1&streetProbes=1&embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+              "loaded": true,
+              "active": true
+            }
+          ]
+        },
+        "bridge": {
+          "service": "napali-source-bridge",
+          "version": 1,
+          "backend": "gl",
+          "pid": 81768,
+          "sessionActive": false,
+          "offscreen": true,
+          "offscreenFrameRate": 30
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/source-live.html?embed=1",
+            "sourceAttribute": "about:blank",
+            "href": "about:blank",
+            "active": false,
+            "kind": null,
+            "apiExposed": false,
+            "state": null,
+            "canvas": null,
+            "media": null
+          },
+          {
+            "index": 1,
+            "source": "canal-real/index.html?experience=window&giSet=r5&probes=1&streetProbes=1&embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "kind": null,
+            "apiExposed": false,
+            "state": null,
+            "canvas": null,
+            "media": null
+          },
+          {
+            "index": 2,
+            "source": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1&qa=1",
+            "active": true,
+            "kind": "canal-real",
+            "apiExposed": true,
+            "state": {
+              "ready": true,
+              "phase": "ready",
+              "error": null,
+              "time": 0.46670000000000433,
+              "paused": true,
+              "frames": 58,
+              "view": "story",
+              "experience": "story",
+              "visible": true,
+              "choice": null,
+              "storyTime": 25,
+              "disposed": false,
+              "lastFrameMs": 13.5,
+              "quality": "reviewed / R5 actual runtime",
+              "runtimeLighting": {
+                "revision": "r5-cloudbreak",
+                "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+                "environment": "deSunHDR",
+                "background": "fullHDR",
+                "probeBackground": "deSunHDR",
+                "environmentRotationY": -1.7362243408943674,
+                "backgroundRotationY": -1.7362243408943674,
+                "sun": {
+                  "position": [
+                    -16.195299832700535,
+                    30.708856143855655,
+                    18.061570692961837
+                  ],
+                  "target": [
+                    3,
+                    0,
+                    -2
+                  ],
+                  "intensity": 4.562767782748515,
+                  "colorLinear": [
+                    0.991978082879707,
+                    1,
+                    0.9084521146029024
+                  ]
+                }
+              },
+              "lighting": {
+                "mode": "full-diffuse",
+                "bound": 26,
+                "accepted": true,
+                "model": "../baked-r4/canal-lightmapped.glb",
+                "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+                "proof": null,
+                "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+                "lightingCalibration": {
+                  "practicalScale": 0.25,
+                  "sunScale": 0,
+                  "environmentScale": 1,
+                  "environmentOverride": {
+                    "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+                    "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+                    "mappingRotationZDegrees": 99.4783270211304,
+                    "strength": 1.031923770904541,
+                    "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+                    "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+                  },
+                  "areaSourceVisibleToCamera": false,
+                  "cyclesClosed8mmPanes": 102,
+                  "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+                },
+                "giSet": "r5",
+                "appliedPracticalScale": 0.25,
+                "reviewRecord": "notes/visual-acceptance-r5.md"
+              },
+              "auxiliaryGeometry": {
+                "mode": "runtime-unbaked-auxiliary",
+                "receivesLiveLighting": true,
+                "sourceGeometryUnchanged": true,
+                "extent": {
+                  "x": [
+                    -260,
+                    260
+                  ],
+                  "z": [
+                    -300,
+                    300
+                  ]
+                },
+                "openWaterChannelWidth": 8.3,
+                "boxes": [
+                  {
+                    "name": "Continuous land beyond left bank",
+                    "min": [
+                      -260,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      -9.8,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Continuous low building footing -1",
+                    "min": [
+                      -17.4,
+                      0.35,
+                      -77
+                    ],
+                    "max": [
+                      -10.25,
+                      0.725,
+                      65
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation north -1",
+                    "min": [
+                      -9.8,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      -4.15,
+                      0.625,
+                      -76.99
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation south -1",
+                    "min": [
+                      -9.8,
+                      -2.4,
+                      64.99
+                    ],
+                    "max": [
+                      -4.15,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Continuous land beyond right bank",
+                    "min": [
+                      9.8,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      260,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Continuous low building footing 1",
+                    "min": [
+                      10.25,
+                      0.35,
+                      -77
+                    ],
+                    "max": [
+                      17.4,
+                      0.725,
+                      65
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation north 1",
+                    "min": [
+                      4.15,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      9.8,
+                      0.625,
+                      -76.99
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation south 1",
+                    "min": [
+                      4.15,
+                      -2.4,
+                      64.99
+                    ],
+                    "max": [
+                      9.8,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Observation-room foundation",
+                    "min": [
+                      -14.7,
+                      0.35,
+                      7.5
+                    ],
+                    "max": [
+                      -9.35,
+                      1.125,
+                      15.5
+                    ]
+                  },
+                  {
+                    "name": "Left-bank courtyard masonry plinth",
+                    "min": [
+                      -10.65,
+                      0.55,
+                      -2.1
+                    ],
+                    "max": [
+                      -10.21,
+                      0.94,
+                      6.7
+                    ]
+                  },
+                  {
+                    "name": "Left-bank courtyard brick wall",
+                    "min": [
+                      -10.61,
+                      0.91,
+                      -2.1
+                    ],
+                    "max": [
+                      -10.25,
+                      2.64,
+                      6.7
+                    ]
+                  },
+                  {
+                    "name": "Left-bank courtyard stone coping",
+                    "min": [
+                      -10.7,
+                      2.62,
+                      -2.16
+                    ],
+                    "max": [
+                      -10.16,
+                      2.77,
+                      6.76
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier -1.85",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      -2.0500000000000003
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      -1.6500000000000001
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap -1.85",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      -2.1
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      -1.6
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier 1",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      0.8
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      1.2
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap 1",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      0.75
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      1.25
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier 3.85",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      3.65
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      4.05
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap 3.85",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      3.6
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      4.1
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier 6.52",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      6.319999999999999
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      6.72
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap 6.52",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      6.27
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      6.77
+                    ]
+                  },
+                  {
+                    "name": "Canal bed continuation north",
+                    "min": [
+                      -4.13,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      4.13,
+                      -1.52,
+                      -76.99
+                    ]
+                  },
+                  {
+                    "name": "Canal bed continuation south",
+                    "min": [
+                      -4.13,
+                      -2.4,
+                      66.99
+                    ],
+                    "max": [
+                      4.13,
+                      -1.52,
+                      300
+                    ]
+                  }
+                ]
+              },
+              "navigation": {
+                "mode": "outdoor-orbit",
+                "manual": false,
+                "bounds": {
+                  "x": [
+                    -9.6,
+                    9.6
+                  ],
+                  "y": [
+                    1.1,
+                    null
+                  ],
+                  "z": [
+                    -70,
+                    50
+                  ]
+                },
+                "lastConstraint": null,
+                "position": [
+                  4.649999999999999,
+                  1.3499999999999999,
+                  9.8
+                ]
+              },
+              "reflections": {
+                "ready": true,
+                "enabled": true,
+                "streetProbes": true,
+                "cubeResolution": 512,
+                "materials": 27,
+                "bakedMaterials": 26,
+                "glazingMaterials": 1,
+                "diagnostic": "combined",
+                "volumes": [
+                  {
+                    "name": "window-room",
+                    "uniform": "uCanalRoomProbe",
+                    "position": [
+                      -11.85,
+                      2.85,
+                      11.5
+                    ],
+                    "min": [
+                      -14.65,
+                      1.08,
+                      7.48
+                    ],
+                    "max": [
+                      -9.02,
+                      4.94,
+                      15.52
+                    ]
+                  },
+                  {
+                    "name": "bookshop",
+                    "uniform": "uCanalShopProbe",
+                    "position": [
+                      12.05,
+                      2.08,
+                      6.7
+                    ],
+                    "min": [
+                      10.4,
+                      0.8,
+                      4.43
+                    ],
+                    "max": [
+                      14.06,
+                      3.56,
+                      8.98
+                    ]
+                  },
+                  {
+                    "name": "canal-street",
+                    "uniform": "uCanalStreetNearProbe",
+                    "position": [
+                      0,
+                      3,
+                      7
+                    ],
+                    "min": [
+                      -11.2,
+                      -2,
+                      -20
+                    ],
+                    "max": [
+                      11.2,
+                      15.5,
+                      38
+                    ]
+                  },
+                  {
+                    "name": "bridge-street",
+                    "uniform": "uCanalStreetFarProbe",
+                    "position": [
+                      0,
+                      4,
+                      -30
+                    ],
+                    "min": [
+                      -11.2,
+                      -2,
+                      -76
+                    ],
+                    "max": [
+                      11.2,
+                      15.5,
+                      2
+                    ]
+                  }
+                ],
+                "samplerBudget": {
+                  "fragmentLimit": 16,
+                  "combinedLimit": 32,
+                  "probeSamplers": 4,
+                  "estimatedMaximum": 13,
+                  "observedProgramMaximum": 13
+                }
+              },
+              "tour": {
+                "playing": false,
+                "elapsed": 25,
+                "duration": 25,
+                "phase": "letter",
+                "ended": true,
+                "active": true
+              },
+              "dynamic": {
+                "choice": null,
+                "boatPosition": [
+                  0.9072760542590824,
+                  -0.06957493406492542,
+                  5.300000000000001
+                ],
+                "letterPosition": [
+                  0.9209114428427128,
+                  0.10689844594645746,
+                  5.420000926352806
+                ],
+                "letterParent": "boat",
+                "paperVisible": false,
+                "paperUnfold": 1,
+                "readingLayout": null,
+                "paperScreenBounds": null
+              },
+              "camera": {
+                "position": [
+                  4.649999999999999,
+                  1.3499999999999999,
+                  9.8
+                ],
+                "target": [
+                  0.9499999999999992,
+                  0.07499999999999996,
+                  5.300000000000001
+                ],
+                "fov": 50
+              },
+              "renderer": {
+                "width": 321,
+                "height": 520,
+                "calls": 1,
+                "triangles": 1
+              },
+              "errors": []
+            },
+            "canvas": {
+              "width": 321,
+              "height": 520
+            },
+            "media": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-376-845-physical-letter",
+      "frame": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/mobile-376-845-physical-letter-live-frame.png",
+      "page": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/mobile-376-845-physical-letter-page.png",
+      "width": 321,
+      "height": 520,
+      "meanLuminance": 145.17492786458303,
+      "luminanceStdDev": 48.818322990358084,
+      "monotonicMs": 60498.7562,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0&qaRun=1792853517981",
+        "host": {
+          "backend": "d3d11",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": false,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+          "previews": [
+            {
+              "source": "runtime/source-live.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "canal-real/index.html?experience=window&giSet=r5&probes=1&streetProbes=1&embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+              "loaded": true,
+              "active": true
+            }
+          ]
+        },
+        "bridge": {
+          "service": "napali-source-bridge",
+          "version": 1,
+          "backend": "gl",
+          "pid": 81768,
+          "sessionActive": false,
+          "offscreen": true,
+          "offscreenFrameRate": 30
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/source-live.html?embed=1",
+            "sourceAttribute": "about:blank",
+            "href": "about:blank",
+            "active": false,
+            "kind": null,
+            "apiExposed": false,
+            "state": null,
+            "canvas": null,
+            "media": null
+          },
+          {
+            "index": 1,
+            "source": "canal-real/index.html?experience=window&giSet=r5&probes=1&streetProbes=1&embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "kind": null,
+            "apiExposed": false,
+            "state": null,
+            "canvas": null,
+            "media": null
+          },
+          {
+            "index": 2,
+            "source": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1&qa=1",
+            "active": true,
+            "kind": "canal-real",
+            "apiExposed": true,
+            "state": {
+              "ready": true,
+              "phase": "ready",
+              "error": null,
+              "time": 1.683400000000002,
+              "paused": false,
+              "frames": 94,
+              "view": "story",
+              "experience": "story",
+              "visible": true,
+              "choice": "read",
+              "storyTime": 26.900000000000016,
+              "disposed": false,
+              "lastFrameMs": 15.199999928474426,
+              "quality": "reviewed / R5 actual runtime",
+              "runtimeLighting": {
+                "revision": "r5-cloudbreak",
+                "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+                "environment": "deSunHDR",
+                "background": "fullHDR",
+                "probeBackground": "deSunHDR",
+                "environmentRotationY": -1.7362243408943674,
+                "backgroundRotationY": -1.7362243408943674,
+                "sun": {
+                  "position": [
+                    -16.195299832700535,
+                    30.708856143855655,
+                    18.061570692961837
+                  ],
+                  "target": [
+                    3,
+                    0,
+                    -2
+                  ],
+                  "intensity": 4.562767782748515,
+                  "colorLinear": [
+                    0.991978082879707,
+                    1,
+                    0.9084521146029024
+                  ]
+                }
+              },
+              "lighting": {
+                "mode": "full-diffuse",
+                "bound": 26,
+                "accepted": true,
+                "model": "../baked-r4/canal-lightmapped.glb",
+                "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+                "proof": null,
+                "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+                "lightingCalibration": {
+                  "practicalScale": 0.25,
+                  "sunScale": 0,
+                  "environmentScale": 1,
+                  "environmentOverride": {
+                    "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+                    "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+                    "mappingRotationZDegrees": 99.4783270211304,
+                    "strength": 1.031923770904541,
+                    "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+                    "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+                  },
+                  "areaSourceVisibleToCamera": false,
+                  "cyclesClosed8mmPanes": 102,
+                  "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+                },
+                "giSet": "r5",
+                "appliedPracticalScale": 0.25,
+                "reviewRecord": "notes/visual-acceptance-r5.md"
+              },
+              "auxiliaryGeometry": {
+                "mode": "runtime-unbaked-auxiliary",
+                "receivesLiveLighting": true,
+                "sourceGeometryUnchanged": true,
+                "extent": {
+                  "x": [
+                    -260,
+                    260
+                  ],
+                  "z": [
+                    -300,
+                    300
+                  ]
+                },
+                "openWaterChannelWidth": 8.3,
+                "boxes": [
+                  {
+                    "name": "Continuous land beyond left bank",
+                    "min": [
+                      -260,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      -9.8,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Continuous low building footing -1",
+                    "min": [
+                      -17.4,
+                      0.35,
+                      -77
+                    ],
+                    "max": [
+                      -10.25,
+                      0.725,
+                      65
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation north -1",
+                    "min": [
+                      -9.8,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      -4.15,
+                      0.625,
+                      -76.99
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation south -1",
+                    "min": [
+                      -9.8,
+                      -2.4,
+                      64.99
+                    ],
+                    "max": [
+                      -4.15,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Continuous land beyond right bank",
+                    "min": [
+                      9.8,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      260,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Continuous low building footing 1",
+                    "min": [
+                      10.25,
+                      0.35,
+                      -77
+                    ],
+                    "max": [
+                      17.4,
+                      0.725,
+                      65
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation north 1",
+                    "min": [
+                      4.15,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      9.8,
+                      0.625,
+                      -76.99
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation south 1",
+                    "min": [
+                      4.15,
+                      -2.4,
+                      64.99
+                    ],
+                    "max": [
+                      9.8,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Observation-room foundation",
+                    "min": [
+                      -14.7,
+                      0.35,
+                      7.5
+                    ],
+                    "max": [
+                      -9.35,
+                      1.125,
+                      15.5
+                    ]
+                  },
+                  {
+                    "name": "Left-bank courtyard masonry plinth",
+                    "min": [
+                      -10.65,
+                      0.55,
+                      -2.1
+                    ],
+                    "max": [
+                      -10.21,
+                      0.94,
+                      6.7
+                    ]
+                  },
+                  {
+                    "name": "Left-bank courtyard brick wall",
+                    "min": [
+                      -10.61,
+                      0.91,
+                      -2.1
+                    ],
+                    "max": [
+                      -10.25,
+                      2.64,
+                      6.7
+                    ]
+                  },
+                  {
+                    "name": "Left-bank courtyard stone coping",
+                    "min": [
+                      -10.7,
+                      2.62,
+                      -2.16
+                    ],
+                    "max": [
+                      -10.16,
+                      2.77,
+                      6.76
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier -1.85",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      -2.0500000000000003
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      -1.6500000000000001
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap -1.85",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      -2.1
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      -1.6
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier 1",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      0.8
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      1.2
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap 1",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      0.75
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      1.25
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier 3.85",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      3.65
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      4.05
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap 3.85",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      3.6
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      4.1
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier 6.52",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      6.319999999999999
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      6.72
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap 6.52",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      6.27
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      6.77
+                    ]
+                  },
+                  {
+                    "name": "Canal bed continuation north",
+                    "min": [
+                      -4.13,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      4.13,
+                      -1.52,
+                      -76.99
+                    ]
+                  },
+                  {
+                    "name": "Canal bed continuation south",
+                    "min": [
+                      -4.13,
+                      -2.4,
+                      66.99
+                    ],
+                    "max": [
+                      4.13,
+                      -1.52,
+                      300
+                    ]
+                  }
+                ]
+              },
+              "navigation": {
+                "mode": "outdoor-orbit",
+                "manual": false,
+                "bounds": {
+                  "x": [
+                    -9.6,
+                    9.6
+                  ],
+                  "y": [
+                    1.1,
+                    null
+                  ],
+                  "z": [
+                    -70,
+                    50
+                  ]
+                },
+                "lastConstraint": null,
+                "position": [
+                  4.649999999999999,
+                  1.3499999999999999,
+                  9.8
+                ]
+              },
+              "reflections": {
+                "ready": true,
+                "enabled": true,
+                "streetProbes": true,
+                "cubeResolution": 512,
+                "materials": 27,
+                "bakedMaterials": 26,
+                "glazingMaterials": 1,
+                "diagnostic": "combined",
+                "volumes": [
+                  {
+                    "name": "window-room",
+                    "uniform": "uCanalRoomProbe",
+                    "position": [
+                      -11.85,
+                      2.85,
+                      11.5
+                    ],
+                    "min": [
+                      -14.65,
+                      1.08,
+                      7.48
+                    ],
+                    "max": [
+                      -9.02,
+                      4.94,
+                      15.52
+                    ]
+                  },
+                  {
+                    "name": "bookshop",
+                    "uniform": "uCanalShopProbe",
+                    "position": [
+                      12.05,
+                      2.08,
+                      6.7
+                    ],
+                    "min": [
+                      10.4,
+                      0.8,
+                      4.43
+                    ],
+                    "max": [
+                      14.06,
+                      3.56,
+                      8.98
+                    ]
+                  },
+                  {
+                    "name": "canal-street",
+                    "uniform": "uCanalStreetNearProbe",
+                    "position": [
+                      0,
+                      3,
+                      7
+                    ],
+                    "min": [
+                      -11.2,
+                      -2,
+                      -20
+                    ],
+                    "max": [
+                      11.2,
+                      15.5,
+                      38
+                    ]
+                  },
+                  {
+                    "name": "bridge-street",
+                    "uniform": "uCanalStreetFarProbe",
+                    "position": [
+                      0,
+                      4,
+                      -30
+                    ],
+                    "min": [
+                      -11.2,
+                      -2,
+                      -76
+                    ],
+                    "max": [
+                      11.2,
+                      15.5,
+                      2
+                    ]
+                  }
+                ],
+                "samplerBudget": {
+                  "fragmentLimit": 16,
+                  "combinedLimit": 32,
+                  "probeSamplers": 4,
+                  "estimatedMaximum": 13,
+                  "observedProgramMaximum": 13
+                }
+              },
+              "tour": {
+                "playing": false,
+                "elapsed": 25,
+                "duration": 25,
+                "phase": "letter",
+                "ended": true,
+                "active": false
+              },
+              "dynamic": {
+                "choice": "read",
+                "boatPosition": [
+                  0.9260519265321714,
+                  -0.07539785690602341,
+                  4.882000000000001
+                ],
+                "letterPosition": [
+                  4.235720599247602,
+                  1.2072459132948077,
+                  9.29658745645922
+                ],
+                "letterParent": "held",
+                "paperVisible": true,
+                "paperUnfold": 1,
+                "readingLayout": {
+                  "width": 321,
+                  "height": 520,
+                  "area": {
+                    "left": 25.68,
+                    "right": 295.32,
+                    "top": 18,
+                    "bottom": 448
+                  },
+                  "bodyFontSourcePixels": 96,
+                  "distance": 0.6594105161137618
+                },
+                "paperScreenBounds": {
+                  "left": 37.80685307417489,
+                  "right": 281.23401145460787,
+                  "top": 69.00488295835817,
+                  "bottom": 396.5252933003339,
+                  "bodyFontEstimate": 20.961306261886445
+                }
+              },
+              "camera": {
+                "position": [
+                  4.649999999999999,
+                  1.3499999999999999,
+                  9.8
+                ],
+                "target": [
+                  0.9499999999999992,
+                  0.07499999999999996,
+                  5.300000000000001
+                ],
+                "fov": 50
+              },
+              "renderer": {
+                "width": 321,
+                "height": 520,
+                "calls": 1,
+                "triangles": 1
+              },
+              "errors": []
+            },
+            "canvas": {
+              "width": 321,
+              "height": 520
+            },
+            "media": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-390-actual-choice",
+      "frame": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/mobile-390-actual-choice-live-frame.png",
+      "page": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/mobile-390-actual-choice-page.png",
+      "width": 335,
+      "height": 520,
+      "meanLuminance": 56.04741779513884,
+      "luminanceStdDev": 25.032269926104483,
+      "monotonicMs": 61196.8129,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0&qaRun=1792853517981",
+        "host": {
+          "backend": "d3d11",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": false,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+          "previews": [
+            {
+              "source": "runtime/source-live.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "canal-real/index.html?experience=window&giSet=r5&probes=1&streetProbes=1&embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+              "loaded": true,
+              "active": true
+            }
+          ]
+        },
+        "bridge": {
+          "service": "napali-source-bridge",
+          "version": 1,
+          "backend": "gl",
+          "pid": 81768,
+          "sessionActive": false,
+          "offscreen": true,
+          "offscreenFrameRate": 30
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/source-live.html?embed=1",
+            "sourceAttribute": "about:blank",
+            "href": "about:blank",
+            "active": false,
+            "kind": null,
+            "apiExposed": false,
+            "state": null,
+            "canvas": null,
+            "media": null
+          },
+          {
+            "index": 1,
+            "source": "canal-real/index.html?experience=window&giSet=r5&probes=1&streetProbes=1&embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "kind": null,
+            "apiExposed": false,
+            "state": null,
+            "canvas": null,
+            "media": null
+          },
+          {
+            "index": 2,
+            "source": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1&qa=1",
+            "active": true,
+            "kind": "canal-real",
+            "apiExposed": true,
+            "state": {
+              "ready": true,
+              "phase": "ready",
+              "error": null,
+              "time": 2.350099999999999,
+              "paused": false,
+              "frames": 115,
+              "view": "story",
+              "experience": "story",
+              "visible": true,
+              "choice": null,
+              "storyTime": 25,
+              "disposed": false,
+              "lastFrameMs": 16.200000047683716,
+              "quality": "reviewed / R5 actual runtime",
+              "runtimeLighting": {
+                "revision": "r5-cloudbreak",
+                "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+                "environment": "deSunHDR",
+                "background": "fullHDR",
+                "probeBackground": "deSunHDR",
+                "environmentRotationY": -1.7362243408943674,
+                "backgroundRotationY": -1.7362243408943674,
+                "sun": {
+                  "position": [
+                    -16.195299832700535,
+                    30.708856143855655,
+                    18.061570692961837
+                  ],
+                  "target": [
+                    3,
+                    0,
+                    -2
+                  ],
+                  "intensity": 4.562767782748515,
+                  "colorLinear": [
+                    0.991978082879707,
+                    1,
+                    0.9084521146029024
+                  ]
+                }
+              },
+              "lighting": {
+                "mode": "full-diffuse",
+                "bound": 26,
+                "accepted": true,
+                "model": "../baked-r4/canal-lightmapped.glb",
+                "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+                "proof": null,
+                "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+                "lightingCalibration": {
+                  "practicalScale": 0.25,
+                  "sunScale": 0,
+                  "environmentScale": 1,
+                  "environmentOverride": {
+                    "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+                    "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+                    "mappingRotationZDegrees": 99.4783270211304,
+                    "strength": 1.031923770904541,
+                    "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+                    "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+                  },
+                  "areaSourceVisibleToCamera": false,
+                  "cyclesClosed8mmPanes": 102,
+                  "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+                },
+                "giSet": "r5",
+                "appliedPracticalScale": 0.25,
+                "reviewRecord": "notes/visual-acceptance-r5.md"
+              },
+              "auxiliaryGeometry": {
+                "mode": "runtime-unbaked-auxiliary",
+                "receivesLiveLighting": true,
+                "sourceGeometryUnchanged": true,
+                "extent": {
+                  "x": [
+                    -260,
+                    260
+                  ],
+                  "z": [
+                    -300,
+                    300
+                  ]
+                },
+                "openWaterChannelWidth": 8.3,
+                "boxes": [
+                  {
+                    "name": "Continuous land beyond left bank",
+                    "min": [
+                      -260,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      -9.8,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Continuous low building footing -1",
+                    "min": [
+                      -17.4,
+                      0.35,
+                      -77
+                    ],
+                    "max": [
+                      -10.25,
+                      0.725,
+                      65
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation north -1",
+                    "min": [
+                      -9.8,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      -4.15,
+                      0.625,
+                      -76.99
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation south -1",
+                    "min": [
+                      -9.8,
+                      -2.4,
+                      64.99
+                    ],
+                    "max": [
+                      -4.15,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Continuous land beyond right bank",
+                    "min": [
+                      9.8,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      260,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Continuous low building footing 1",
+                    "min": [
+                      10.25,
+                      0.35,
+                      -77
+                    ],
+                    "max": [
+                      17.4,
+                      0.725,
+                      65
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation north 1",
+                    "min": [
+                      4.15,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      9.8,
+                      0.625,
+                      -76.99
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation south 1",
+                    "min": [
+                      4.15,
+                      -2.4,
+                      64.99
+                    ],
+                    "max": [
+                      9.8,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Observation-room foundation",
+                    "min": [
+                      -14.7,
+                      0.35,
+                      7.5
+                    ],
+                    "max": [
+                      -9.35,
+                      1.125,
+                      15.5
+                    ]
+                  },
+                  {
+                    "name": "Left-bank courtyard masonry plinth",
+                    "min": [
+                      -10.65,
+                      0.55,
+                      -2.1
+                    ],
+                    "max": [
+                      -10.21,
+                      0.94,
+                      6.7
+                    ]
+                  },
+                  {
+                    "name": "Left-bank courtyard brick wall",
+                    "min": [
+                      -10.61,
+                      0.91,
+                      -2.1
+                    ],
+                    "max": [
+                      -10.25,
+                      2.64,
+                      6.7
+                    ]
+                  },
+                  {
+                    "name": "Left-bank courtyard stone coping",
+                    "min": [
+                      -10.7,
+                      2.62,
+                      -2.16
+                    ],
+                    "max": [
+                      -10.16,
+                      2.77,
+                      6.76
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier -1.85",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      -2.0500000000000003
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      -1.6500000000000001
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap -1.85",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      -2.1
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      -1.6
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier 1",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      0.8
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      1.2
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap 1",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      0.75
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      1.25
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier 3.85",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      3.65
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      4.05
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap 3.85",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      3.6
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      4.1
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier 6.52",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      6.319999999999999
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      6.72
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap 6.52",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      6.27
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      6.77
+                    ]
+                  },
+                  {
+                    "name": "Canal bed continuation north",
+                    "min": [
+                      -4.13,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      4.13,
+                      -1.52,
+                      -76.99
+                    ]
+                  },
+                  {
+                    "name": "Canal bed continuation south",
+                    "min": [
+                      -4.13,
+                      -2.4,
+                      66.99
+                    ],
+                    "max": [
+                      4.13,
+                      -1.52,
+                      300
+                    ]
+                  }
+                ]
+              },
+              "navigation": {
+                "mode": "outdoor-orbit",
+                "manual": false,
+                "bounds": {
+                  "x": [
+                    -9.6,
+                    9.6
+                  ],
+                  "y": [
+                    1.1,
+                    null
+                  ],
+                  "z": [
+                    -70,
+                    50
+                  ]
+                },
+                "lastConstraint": null,
+                "position": [
+                  4.6499999999999995,
+                  1.3499999999999999,
+                  9.8
+                ]
+              },
+              "reflections": {
+                "ready": true,
+                "enabled": true,
+                "streetProbes": true,
+                "cubeResolution": 512,
+                "materials": 27,
+                "bakedMaterials": 26,
+                "glazingMaterials": 1,
+                "diagnostic": "combined",
+                "volumes": [
+                  {
+                    "name": "window-room",
+                    "uniform": "uCanalRoomProbe",
+                    "position": [
+                      -11.85,
+                      2.85,
+                      11.5
+                    ],
+                    "min": [
+                      -14.65,
+                      1.08,
+                      7.48
+                    ],
+                    "max": [
+                      -9.02,
+                      4.94,
+                      15.52
+                    ]
+                  },
+                  {
+                    "name": "bookshop",
+                    "uniform": "uCanalShopProbe",
+                    "position": [
+                      12.05,
+                      2.08,
+                      6.7
+                    ],
+                    "min": [
+                      10.4,
+                      0.8,
+                      4.43
+                    ],
+                    "max": [
+                      14.06,
+                      3.56,
+                      8.98
+                    ]
+                  },
+                  {
+                    "name": "canal-street",
+                    "uniform": "uCanalStreetNearProbe",
+                    "position": [
+                      0,
+                      3,
+                      7
+                    ],
+                    "min": [
+                      -11.2,
+                      -2,
+                      -20
+                    ],
+                    "max": [
+                      11.2,
+                      15.5,
+                      38
+                    ]
+                  },
+                  {
+                    "name": "bridge-street",
+                    "uniform": "uCanalStreetFarProbe",
+                    "position": [
+                      0,
+                      4,
+                      -30
+                    ],
+                    "min": [
+                      -11.2,
+                      -2,
+                      -76
+                    ],
+                    "max": [
+                      11.2,
+                      15.5,
+                      2
+                    ]
+                  }
+                ],
+                "samplerBudget": {
+                  "fragmentLimit": 16,
+                  "combinedLimit": 32,
+                  "probeSamplers": 4,
+                  "estimatedMaximum": 13,
+                  "observedProgramMaximum": 13
+                }
+              },
+              "tour": {
+                "playing": false,
+                "elapsed": 25,
+                "duration": 25,
+                "phase": "letter",
+                "ended": true,
+                "active": true
+              },
+              "dynamic": {
+                "choice": null,
+                "boatPosition": [
+                  0.9360938950992648,
+                  -0.08178721122272467,
+                  5.300000000000001
+                ],
+                "letterPosition": [
+                  0.9508183597805284,
+                  0.09383633014094722,
+                  5.421113838427873
+                ],
+                "letterParent": "boat",
+                "paperVisible": false,
+                "paperUnfold": 1,
+                "readingLayout": null,
+                "paperScreenBounds": null
+              },
+              "camera": {
+                "position": [
+                  4.6499999999999995,
+                  1.3499999999999999,
+                  9.8
+                ],
+                "target": [
+                  0.9499999999999992,
+                  0.07499999999999996,
+                  5.3
+                ],
+                "fov": 50
+              },
+              "renderer": {
+                "width": 335,
+                "height": 520,
+                "calls": 1,
+                "triangles": 1
+              },
+              "errors": []
+            },
+            "canvas": {
+              "width": 335,
+              "height": 520
+            },
+            "media": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "mobile-390-845-physical-letter",
+      "frame": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/mobile-390-845-physical-letter-live-frame.png",
+      "page": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/mobile-390-845-physical-letter-page.png",
+      "width": 335,
+      "height": 520,
+      "meanLuminance": 149.40167282986022,
+      "luminanceStdDev": 45.240809622192764,
+      "monotonicMs": 63302.1678,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0&qaRun=1792853517981",
+        "host": {
+          "backend": "d3d11",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": false,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+          "previews": [
+            {
+              "source": "runtime/source-live.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "canal-real/index.html?experience=window&giSet=r5&probes=1&streetProbes=1&embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+              "loaded": true,
+              "active": true
+            }
+          ]
+        },
+        "bridge": {
+          "service": "napali-source-bridge",
+          "version": 1,
+          "backend": "gl",
+          "pid": 81768,
+          "sessionActive": false,
+          "offscreen": true,
+          "offscreenFrameRate": 30
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/source-live.html?embed=1",
+            "sourceAttribute": "about:blank",
+            "href": "about:blank",
+            "active": false,
+            "kind": null,
+            "apiExposed": false,
+            "state": null,
+            "canvas": null,
+            "media": null
+          },
+          {
+            "index": 1,
+            "source": "canal-real/index.html?experience=window&giSet=r5&probes=1&streetProbes=1&embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "kind": null,
+            "apiExposed": false,
+            "state": null,
+            "canvas": null,
+            "media": null
+          },
+          {
+            "index": 2,
+            "source": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1&qa=1",
+            "active": true,
+            "kind": "canal-real",
+            "apiExposed": true,
+            "state": {
+              "ready": true,
+              "phase": "ready",
+              "error": null,
+              "time": 4.450099999999998,
+              "paused": false,
+              "frames": 178,
+              "view": "story",
+              "experience": "story",
+              "visible": true,
+              "choice": "read",
+              "storyTime": 27.100000000000016,
+              "disposed": false,
+              "lastFrameMs": 15.800000071525574,
+              "quality": "reviewed / R5 actual runtime",
+              "runtimeLighting": {
+                "revision": "r5-cloudbreak",
+                "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+                "environment": "deSunHDR",
+                "background": "fullHDR",
+                "probeBackground": "deSunHDR",
+                "environmentRotationY": -1.7362243408943674,
+                "backgroundRotationY": -1.7362243408943674,
+                "sun": {
+                  "position": [
+                    -16.195299832700535,
+                    30.708856143855655,
+                    18.061570692961837
+                  ],
+                  "target": [
+                    3,
+                    0,
+                    -2
+                  ],
+                  "intensity": 4.562767782748515,
+                  "colorLinear": [
+                    0.991978082879707,
+                    1,
+                    0.9084521146029024
+                  ]
+                }
+              },
+              "lighting": {
+                "mode": "full-diffuse",
+                "bound": 26,
+                "accepted": true,
+                "model": "../baked-r4/canal-lightmapped.glb",
+                "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+                "proof": null,
+                "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+                "lightingCalibration": {
+                  "practicalScale": 0.25,
+                  "sunScale": 0,
+                  "environmentScale": 1,
+                  "environmentOverride": {
+                    "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+                    "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+                    "mappingRotationZDegrees": 99.4783270211304,
+                    "strength": 1.031923770904541,
+                    "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+                    "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+                  },
+                  "areaSourceVisibleToCamera": false,
+                  "cyclesClosed8mmPanes": 102,
+                  "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+                },
+                "giSet": "r5",
+                "appliedPracticalScale": 0.25,
+                "reviewRecord": "notes/visual-acceptance-r5.md"
+              },
+              "auxiliaryGeometry": {
+                "mode": "runtime-unbaked-auxiliary",
+                "receivesLiveLighting": true,
+                "sourceGeometryUnchanged": true,
+                "extent": {
+                  "x": [
+                    -260,
+                    260
+                  ],
+                  "z": [
+                    -300,
+                    300
+                  ]
+                },
+                "openWaterChannelWidth": 8.3,
+                "boxes": [
+                  {
+                    "name": "Continuous land beyond left bank",
+                    "min": [
+                      -260,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      -9.8,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Continuous low building footing -1",
+                    "min": [
+                      -17.4,
+                      0.35,
+                      -77
+                    ],
+                    "max": [
+                      -10.25,
+                      0.725,
+                      65
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation north -1",
+                    "min": [
+                      -9.8,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      -4.15,
+                      0.625,
+                      -76.99
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation south -1",
+                    "min": [
+                      -9.8,
+                      -2.4,
+                      64.99
+                    ],
+                    "max": [
+                      -4.15,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Continuous land beyond right bank",
+                    "min": [
+                      9.8,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      260,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Continuous low building footing 1",
+                    "min": [
+                      10.25,
+                      0.35,
+                      -77
+                    ],
+                    "max": [
+                      17.4,
+                      0.725,
+                      65
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation north 1",
+                    "min": [
+                      4.15,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      9.8,
+                      0.625,
+                      -76.99
+                    ]
+                  },
+                  {
+                    "name": "Canal bank continuation south 1",
+                    "min": [
+                      4.15,
+                      -2.4,
+                      64.99
+                    ],
+                    "max": [
+                      9.8,
+                      0.625,
+                      300
+                    ]
+                  },
+                  {
+                    "name": "Observation-room foundation",
+                    "min": [
+                      -14.7,
+                      0.35,
+                      7.5
+                    ],
+                    "max": [
+                      -9.35,
+                      1.125,
+                      15.5
+                    ]
+                  },
+                  {
+                    "name": "Left-bank courtyard masonry plinth",
+                    "min": [
+                      -10.65,
+                      0.55,
+                      -2.1
+                    ],
+                    "max": [
+                      -10.21,
+                      0.94,
+                      6.7
+                    ]
+                  },
+                  {
+                    "name": "Left-bank courtyard brick wall",
+                    "min": [
+                      -10.61,
+                      0.91,
+                      -2.1
+                    ],
+                    "max": [
+                      -10.25,
+                      2.64,
+                      6.7
+                    ]
+                  },
+                  {
+                    "name": "Left-bank courtyard stone coping",
+                    "min": [
+                      -10.7,
+                      2.62,
+                      -2.16
+                    ],
+                    "max": [
+                      -10.16,
+                      2.77,
+                      6.76
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier -1.85",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      -2.0500000000000003
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      -1.6500000000000001
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap -1.85",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      -2.1
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      -1.6
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier 1",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      0.8
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      1.2
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap 1",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      0.75
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      1.25
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier 3.85",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      3.65
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      4.05
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap 3.85",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      3.6
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      4.1
+                    ]
+                  },
+                  {
+                    "name": "Courtyard masonry pier 6.52",
+                    "min": [
+                      -10.69,
+                      0.63,
+                      6.319999999999999
+                    ],
+                    "max": [
+                      -10.17,
+                      2.79,
+                      6.72
+                    ]
+                  },
+                  {
+                    "name": "Courtyard pier cap 6.52",
+                    "min": [
+                      -10.73,
+                      2.77,
+                      6.27
+                    ],
+                    "max": [
+                      -10.13,
+                      2.89,
+                      6.77
+                    ]
+                  },
+                  {
+                    "name": "Canal bed continuation north",
+                    "min": [
+                      -4.13,
+                      -2.4,
+                      -300
+                    ],
+                    "max": [
+                      4.13,
+                      -1.52,
+                      -76.99
+                    ]
+                  },
+                  {
+                    "name": "Canal bed continuation south",
+                    "min": [
+                      -4.13,
+                      -2.4,
+                      66.99
+                    ],
+                    "max": [
+                      4.13,
+                      -1.52,
+                      300
+                    ]
+                  }
+                ]
+              },
+              "navigation": {
+                "mode": "outdoor-orbit",
+                "manual": false,
+                "bounds": {
+                  "x": [
+                    -9.6,
+                    9.6
+                  ],
+                  "y": [
+                    1.1,
+                    null
+                  ],
+                  "z": [
+                    -70,
+                    50
+                  ]
+                },
+                "lastConstraint": null,
+                "position": [
+                  4.6499999999999995,
+                  1.3499999999999999,
+                  9.8
+                ]
+              },
+              "reflections": {
+                "ready": true,
+                "enabled": true,
+                "streetProbes": true,
+                "cubeResolution": 512,
+                "materials": 27,
+                "bakedMaterials": 26,
+                "glazingMaterials": 1,
+                "diagnostic": "combined",
+                "volumes": [
+                  {
+                    "name": "window-room",
+                    "uniform": "uCanalRoomProbe",
+                    "position": [
+                      -11.85,
+                      2.85,
+                      11.5
+                    ],
+                    "min": [
+                      -14.65,
+                      1.08,
+                      7.48
+                    ],
+                    "max": [
+                      -9.02,
+                      4.94,
+                      15.52
+                    ]
+                  },
+                  {
+                    "name": "bookshop",
+                    "uniform": "uCanalShopProbe",
+                    "position": [
+                      12.05,
+                      2.08,
+                      6.7
+                    ],
+                    "min": [
+                      10.4,
+                      0.8,
+                      4.43
+                    ],
+                    "max": [
+                      14.06,
+                      3.56,
+                      8.98
+                    ]
+                  },
+                  {
+                    "name": "canal-street",
+                    "uniform": "uCanalStreetNearProbe",
+                    "position": [
+                      0,
+                      3,
+                      7
+                    ],
+                    "min": [
+                      -11.2,
+                      -2,
+                      -20
+                    ],
+                    "max": [
+                      11.2,
+                      15.5,
+                      38
+                    ]
+                  },
+                  {
+                    "name": "bridge-street",
+                    "uniform": "uCanalStreetFarProbe",
+                    "position": [
+                      0,
+                      4,
+                      -30
+                    ],
+                    "min": [
+                      -11.2,
+                      -2,
+                      -76
+                    ],
+                    "max": [
+                      11.2,
+                      15.5,
+                      2
+                    ]
+                  }
+                ],
+                "samplerBudget": {
+                  "fragmentLimit": 16,
+                  "combinedLimit": 32,
+                  "probeSamplers": 4,
+                  "estimatedMaximum": 13,
+                  "observedProgramMaximum": 13
+                }
+              },
+              "tour": {
+                "playing": false,
+                "elapsed": 25,
+                "duration": 25,
+                "phase": "letter",
+                "ended": true,
+                "active": false
+              },
+              "dynamic": {
+                "choice": "read",
+                "boatPosition": [
+                  0.9656135413683808,
+                  -0.06922743097583314,
+                  4.838000000000001
+                ],
+                "letterPosition": [
+                  4.2529990167357345,
+                  1.2118339290164708,
+                  9.317601747998838
+                ],
+                "letterParent": "held",
+                "paperVisible": true,
+                "paperUnfold": 1,
+                "readingLayout": {
+                  "width": 335,
+                  "height": 520,
+                  "area": {
+                    "left": 26.8,
+                    "right": 308.2,
+                    "top": 18,
+                    "bottom": 448
+                  },
+                  "bodyFontSourcePixels": 96,
+                  "distance": 0.6318530617090075
+                },
+                "paperScreenBounds": {
+                  "left": 39.385512433141145,
+                  "right": 293.47322493423457,
+                  "top": 61.787479913594346,
+                  "bottom": 403.72201946543,
+                  "bodyFontEstimate": 21.88381053131748
+                }
+              },
+              "camera": {
+                "position": [
+                  4.6499999999999995,
+                  1.3499999999999999,
+                  9.8
+                ],
+                "target": [
+                  0.9499999999999992,
+                  0.07499999999999996,
+                  5.3
+                ],
+                "fov": 50
+              },
+              "renderer": {
+                "width": 335,
+                "height": 520,
+                "calls": 1,
+                "triangles": 1
+              },
+              "errors": []
+            },
+            "canvas": {
+              "width": 335,
+              "height": 520
+            },
+            "media": null
+          }
+        ]
+      }
+    }
+  ],
+  "timingSamples": [
+    {
+      "monotonicMs": 563.9682,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853518493
+      }
+    },
+    {
+      "monotonicMs": 569.7572,
+      "active": "runtime/source-live.html?embed=1",
+      "bridgeActive": true,
+      "previews": [
+        {
+          "index": 0,
+          "kind": "source-live",
+          "frames": 0,
+          "decodedFrames": 0,
+          "time": 0
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853518493
+      }
+    },
+    {
+      "monotonicMs": 1792.1828,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 0,
+          "decodedFrames": null,
+          "time": 0
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 7,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853518841
+      }
+    },
+    {
+      "monotonicMs": 11246.4185,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 0,
+          "decodedFrames": null,
+          "time": 0
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 9,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853529164
+      }
+    },
+    {
+      "monotonicMs": 11574.9623,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 0,
+          "decodedFrames": null,
+          "time": 0
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 9,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853529164
+      }
+    },
+    {
+      "monotonicMs": 11888.5534,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 0,
+          "decodedFrames": null,
+          "time": 0
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 9,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853529164
+      }
+    },
+    {
+      "monotonicMs": 12197.5539,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 0,
+          "decodedFrames": null,
+          "time": 0
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 10,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853529882
+      }
+    },
+    {
+      "monotonicMs": 12635.4195,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 0,
+          "decodedFrames": null,
+          "time": 0
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 10,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853529882
+      }
+    },
+    {
+      "monotonicMs": 12944.1523,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 0,
+          "decodedFrames": null,
+          "time": 0
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 13,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853530843
+      }
+    },
+    {
+      "monotonicMs": 13270.7635,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 0,
+          "decodedFrames": null,
+          "time": 0
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 14,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853531116
+      }
+    },
+    {
+      "monotonicMs": 13693.0786,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 0,
+          "decodedFrames": null,
+          "time": 0
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 15,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853531391
+      }
+    },
+    {
+      "monotonicMs": 14038.4648,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 0,
+          "decodedFrames": null,
+          "time": 0
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 19,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853531944
+      }
+    },
+    {
+      "monotonicMs": 14365.8496,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 0,
+          "decodedFrames": null,
+          "time": 0
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 22,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853532230
+      }
+    },
+    {
+      "monotonicMs": 14811.8369,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 0,
+          "decodedFrames": null,
+          "time": 0
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 23,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853532506
+      }
+    },
+    {
+      "monotonicMs": 15119.0055,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 0,
+          "decodedFrames": null,
+          "time": 0
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 26,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853533042
+      }
+    },
+    {
+      "monotonicMs": 15437.2368,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 0,
+          "decodedFrames": null,
+          "time": 0
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 29,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853533344
+      }
+    },
+    {
+      "monotonicMs": 16040.4955,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 0,
+          "decodedFrames": null,
+          "time": 0
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 31,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853533597
+      }
+    },
+    {
+      "monotonicMs": 33660.3631,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 0,
+          "decodedFrames": null,
+          "time": 0
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 35,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853534203
+      }
+    },
+    {
+      "monotonicMs": 56459.3966,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 4,
+          "decodedFrames": null,
+          "time": 0.13330000000000292
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 41,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853574391
+      }
+    },
+    {
+      "monotonicMs": 56484.6884,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 5,
+          "decodedFrames": null,
+          "time": 0.16670000000000437
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 41,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853574391
+      }
+    },
+    {
+      "monotonicMs": 56790.3764,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 14,
+          "decodedFrames": null,
+          "time": 0.46670000000000433
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 49,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853574688
+      }
+    },
+    {
+      "monotonicMs": 56794.7086,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 14,
+          "decodedFrames": null,
+          "time": 0.46670000000000433
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 50,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853574726
+      }
+    },
+    {
+      "monotonicMs": 57646.4781,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 36,
+          "decodedFrames": null,
+          "time": 0.46670000000000433
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 69,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853575578
+      }
+    },
+    {
+      "monotonicMs": 57810.2954,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 38,
+          "decodedFrames": null,
+          "time": 0.46670000000000433
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 75,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853575684
+      }
+    },
+    {
+      "monotonicMs": 58623.6607,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 58,
+          "decodedFrames": null,
+          "time": 0.46670000000000433
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 91,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853576554
+      }
+    },
+    {
+      "monotonicMs": 58627.8041,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 58,
+          "decodedFrames": null,
+          "time": 0.46670000000000433
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 91,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853576554
+      }
+    },
+    {
+      "monotonicMs": 59377.2345,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 60,
+          "decodedFrames": null,
+          "time": 0.5500000000000073
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 93,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853576924
+      }
+    },
+    {
+      "monotonicMs": 59690.0594,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 69,
+          "decodedFrames": null,
+          "time": 0.8501000000000057
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 101,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853577584
+      }
+    },
+    {
+      "monotonicMs": 60010.0335,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 79,
+          "decodedFrames": null,
+          "time": 1.1834000000000016
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 112,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853577930
+      }
+    },
+    {
+      "monotonicMs": 60512.9017,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 94,
+          "decodedFrames": null,
+          "time": 1.683400000000002
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 126,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853578432
+      }
+    },
+    {
+      "monotonicMs": 60518.9083,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 94,
+          "decodedFrames": null,
+          "time": 1.683400000000002
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 126,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853578432
+      }
+    },
+    {
+      "monotonicMs": 61213.1857,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 115,
+          "decodedFrames": null,
+          "time": 2.350099999999999
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 146,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853579143
+      }
+    },
+    {
+      "monotonicMs": 61217.1855,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 115,
+          "decodedFrames": null,
+          "time": 2.350099999999999
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 146,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853579143
+      }
+    },
+    {
+      "monotonicMs": 61220.2835,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 115,
+          "decodedFrames": null,
+          "time": 2.350099999999999
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 146,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853579143
+      }
+    },
+    {
+      "monotonicMs": 61540.9138,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 125,
+          "decodedFrames": null,
+          "time": 2.683400000000002
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 155,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853579441
+      }
+    },
+    {
+      "monotonicMs": 61855.8064,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 134,
+          "decodedFrames": null,
+          "time": 2.9834000000000023
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 164,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853579772
+      }
+    },
+    {
+      "monotonicMs": 62183.212,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 144,
+          "decodedFrames": null,
+          "time": 3.316800000000003
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 175,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853580109
+      }
+    },
+    {
+      "monotonicMs": 62490.8735,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 153,
+          "decodedFrames": null,
+          "time": 3.616800000000003
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 184,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853580404
+      }
+    },
+    {
+      "monotonicMs": 62811.4376,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 163,
+          "decodedFrames": null,
+          "time": 3.950099999999999
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 193,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853580709
+      }
+    },
+    {
+      "monotonicMs": 63313.1701,
+      "active": "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1",
+      "bridgeActive": false,
+      "previews": [
+        {
+          "index": 0,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 1,
+          "kind": null,
+          "frames": null,
+          "decodedFrames": null,
+          "time": null
+        },
+        {
+          "index": 2,
+          "kind": "canal-real",
+          "frames": 178,
+          "decodedFrames": null,
+          "time": 4.450099999999998
+        }
+      ],
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 207,
+        "firstPaintAt": 1792853518493,
+        "lastPaintAt": 1792853581236
+      }
+    }
+  ],
+  "activations": [
+    {
+      "leg": 0,
+      "label": "story",
+      "monotonicStartMs": 564.8509,
+      "monotonicReadyMs": 56459.4358,
+      "seconds": 55.894586800000006,
+      "sourceFrames": 4,
+      "decodedFrames": null
+    }
+  ],
+  "errors": [],
+  "peakObservedLiveSceneDocuments": 1,
+  "peakObservedHeavyScenes": 1,
+  "windowPolicy": {
+    "show": false,
+    "focusable": false,
+    "skipTaskbar": true,
+    "offscreen": true,
+    "targetFrameRate": 30,
+    "paints": 0,
+    "firstPaintAt": null,
+    "lastPaintAt": null
+  },
+  "scope": "Focused actual mobile front-door letter/readability supplement; no repeated full route.",
+  "mobileChoiceSamples": [
+    {
+      "monotonicMs": 58020.1245,
+      "requestedWidth": 375,
+      "actualViewport": {
+        "width": 376,
+        "height": 845
+      },
+      "previewOpen": {
+        "x": 233.4375,
+        "y": 643.421875,
+        "width": 89.5625,
+        "height": 35.59375,
+        "top": 643.421875,
+        "right": 323,
+        "bottom": 679.015625,
+        "left": 233.4375
+      },
+      "buttons": [
+        {
+          "text": "再走一遍",
+          "rect": {
+            "left": 38,
+            "right": 110,
+            "top": 640.015625,
+            "bottom": 680.015625
+          },
+          "overlapArea": 0
+        },
+        {
+          "text": "重新开始",
+          "rect": {
+            "left": 117,
+            "right": 189,
+            "top": 640.015625,
+            "bottom": 680.015625
+          },
+          "overlapArea": 0
+        },
+        {
+          "text": "拾起信",
+          "rect": {
+            "left": 54,
+            "right": 176.5,
+            "top": 572.015625,
+            "bottom": 612.015625
+          },
+          "overlapArea": 0
+        },
+        {
+          "text": "让它继续漂流",
+          "rect": {
+            "left": 184.5,
+            "right": 307,
+            "top": 572.015625,
+            "bottom": 612.015625
+          },
+          "overlapArea": 0
+        }
+      ]
+    },
+    {
+      "monotonicMs": 60726.2069,
+      "requestedWidth": 390,
+      "actualViewport": {
+        "width": 390,
+        "height": 845
+      },
+      "previewOpen": {
+        "x": 247.4375,
+        "y": 643.734375,
+        "width": 89.5625,
+        "height": 35.59375,
+        "top": 643.734375,
+        "right": 337,
+        "bottom": 679.328125,
+        "left": 247.4375
+      },
+      "buttons": [
+        {
+          "text": "再走一遍",
+          "rect": {
+            "left": 38,
+            "right": 110,
+            "top": 640.328125,
+            "bottom": 680.328125
+          },
+          "overlapArea": 0
+        },
+        {
+          "text": "重新开始",
+          "rect": {
+            "left": 117,
+            "right": 189,
+            "top": 640.328125,
+            "bottom": 680.328125
+          },
+          "overlapArea": 0
+        },
+        {
+          "text": "拾起信",
+          "rect": {
+            "left": 54,
+            "right": 183.5,
+            "top": 572.328125,
+            "bottom": 612.328125
+          },
+          "overlapArea": 0
+        },
+        {
+          "text": "让它继续漂流",
+          "rect": {
+            "left": 191.5,
+            "right": 321,
+            "top": 572.328125,
+            "bottom": 612.328125
+          },
+          "overlapArea": 0
+        }
+      ]
+    }
+  ],
+  "mobileLayoutSamples": [
+    {
+      "monotonicMs": 60024.728,
+      "requestedViewport": {
+        "width": 375,
+        "height": 844
+      },
+      "actualViewport": {
+        "width": 376,
+        "height": 845
+      },
+      "documentWidth": 361,
+      "candidateStyleOverride": false,
+      "frame": {
+        "x": 20,
+        "y": 176.015625,
+        "width": 321,
+        "height": 520,
+        "top": 176.015625,
+        "right": 341,
+        "bottom": 696.015625,
+        "left": 20
+      },
+      "preview": {
+        "width": 321,
+        "height": 520
+      },
+      "overflow": false,
+      "overflowElements": [],
+      "buttons": [
+        {
+          "text": "重新开始",
+          "disabled": false,
+          "rect": {
+            "x": 18,
+            "y": 464,
+            "width": 72,
+            "height": 40,
+            "top": 464,
+            "right": 90,
+            "bottom": 504,
+            "left": 18
+          }
+        }
+      ],
+      "dynamic": {
+        "choice": "read",
+        "boatPosition": [
+          0.9183883054422173,
+          -0.06954672237128134,
+          4.992000000000001
+        ],
+        "letterPosition": [
+          4.193487475180814,
+          1.1932266714885917,
+          9.247196872520085
+        ],
+        "letterParent": "held",
+        "paperVisible": true,
+        "paperUnfold": 1,
+        "readingLayout": {
+          "width": 321,
+          "height": 520,
+          "area": {
+            "left": 25.68,
+            "right": 295.32,
+            "top": 18,
+            "bottom": 448
+          },
+          "bodyFontSourcePixels": 96,
+          "distance": 0.6594105161137618
+        },
+        "paperScreenBounds": {
+          "left": 47.45096704769307,
+          "right": 269.48321127926755,
+          "top": 86.79566250808914,
+          "bottom": 383.27770025096936,
+          "bodyFontEstimate": 18.97485041554433
+        }
+      }
+    },
+    {
+      "monotonicMs": 62814.3407,
+      "requestedViewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actualViewport": {
+        "width": 390,
+        "height": 845
+      },
+      "documentWidth": 375,
+      "candidateStyleOverride": false,
+      "frame": {
+        "x": 20,
+        "y": 176.328125,
+        "width": 335,
+        "height": 520,
+        "top": 176.328125,
+        "right": 355,
+        "bottom": 696.328125,
+        "left": 20
+      },
+      "preview": {
+        "width": 335,
+        "height": 520
+      },
+      "overflow": false,
+      "overflowElements": [],
+      "buttons": [
+        {
+          "text": "重新开始",
+          "disabled": false,
+          "rect": {
+            "x": 18,
+            "y": 464,
+            "width": 72,
+            "height": 40,
+            "top": 464,
+            "right": 90,
+            "bottom": 504,
+            "left": 18
+          }
+        }
+      ],
+      "dynamic": {
+        "choice": "read",
+        "boatPosition": [
+          0.9589488215635414,
+          -0.06842149538903097,
+          4.948
+        ],
+        "letterPosition": [
+          4.2529990167357345,
+          1.2118339290164708,
+          9.317601747998838
+        ],
+        "letterParent": "held",
+        "paperVisible": true,
+        "paperUnfold": 1,
+        "readingLayout": {
+          "width": 335,
+          "height": 520,
+          "area": {
+            "left": 26.8,
+            "right": 308.2,
+            "top": 18,
+            "bottom": 448
+          },
+          "bodyFontSourcePixels": 96,
+          "distance": 0.6318530617090075
+        },
+        "paperScreenBounds": {
+          "left": 39.385512433141145,
+          "right": 293.47322493423457,
+          "top": 61.787479913594346,
+          "bottom": 403.72201946543,
+          "bodyFontEstimate": 21.88381053131748
+        }
+      }
+    }
+  ],
+  "elapsedSeconds": 62.868,
+  "presentation": {
+    "offscreen": true,
+    "targetFrameRate": 30,
+    "paints": 210,
+    "firstPaintAt": 1792853518493,
+    "lastPaintAt": 1792853581350
+  },
+  "activatedIndices": [
+    0,
+    2
+  ]
+}

@@ -1,0 +1,66 @@
+{
+  "schema": "world-hub-wrapup-v1",
+  "recordedAt": "2026-10-26T13:43:53.863505+00:00",
+  "status": "closed-current-scope",
+  "entry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?revision=20261026-wrapup-1#overview",
+  "runtime": "lijiang-m8",
+  "scope": "Summarize existing works and improve information, navigation and use instructions; no scene/art/quality algorithm changes.",
+  "changes": [
+    "Four-entry overview distinguishing source reference and three creative practices.",
+    "Unified startup and pause/release explanation; scene-specific launch labels.",
+    "Current achievements, known limits, five use questions and optional future directions.",
+    "Historical guide clearly dated; original source/credits and old evidence retained.",
+    "Project README, summary, metadata and catalog synchronized; current scope closed."
+  ],
+  "verification": {
+    "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-world-hub-wrapup\\2026-10-26T13-40-34-596Z\\result.json",
+    "passedChecks": 8,
+    "localLinksHTTP200": 24,
+    "screenshots": 9,
+    "viewports": [
+      "1440x900 desktop",
+      "390x844 small viewport in hidden desktop Electron; not phone hardware"
+    ],
+    "rootReviewed": [
+      "desktop-overview",
+      "desktop-status",
+      "mobile-overview",
+      "mobile-faq-open"
+    ],
+    "heavyScenesStarted": 0,
+    "iframeBlankChecks": 15,
+    "m8SourceFilesPreserved": 51,
+    "sourceSHA256": {
+      "index.html": "4632a4333cd1b9a7efc2b6e2c96d435a69a813c6c15f6f04c398c1c8eb7c4224",
+      "style.css": "0e6ae918d1ad6ced3a4b7169d645263df73713b29689215fc4489501a283a5f9",
+      "app.js": "68561d9bf6b63eeff5dc18527cd30ad5f7a148470a48f57f25e001ba8753af3b"
+    },
+    "servedVerification": [
+      {
+        "path": "web/index.html?revision=20261026-wrapup-1",
+        "http": 200,
+        "servedMatchesDisk": true
+      },
+      {
+        "path": "web/guide.html",
+        "http": 200,
+        "servedMatchesDisk": true
+      },
+      {
+        "path": "README.md",
+        "http": 200,
+        "servedMatchesDisk": true
+      },
+      {
+        "path": "notes/project-wrap-up-20261026.md",
+        "http": 200,
+        "servedMatchesDisk": true
+      }
+    ],
+    "catalog": "python scripts/projects.py check passed;17 projects"
+  },
+  "runtimeLimitations": [
+    "M8 existing cold generation107.147seconds and short drive23.36/18.36fps remain historical measured limits, not changed here.",
+    "Mobile 3D device experience and complete45-second M8 export still require their own validation if used."
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "name": "napali-local-renderer",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Task-scoped sandboxed Electron shell for the full Na Pali WebGL renderer",
+  "main": "main.cjs",
+  "scripts": {
+    "prepare-shell": "node prepare-shell.cjs",
+    "qa": "node launch-qa.cjs"
+  },
+  "devDependencies": {
+    "electron": "45.0.0"
+  }
+}

@@ -1,0 +1,65 @@
+'use strict';
+const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
+const {nativeImage}=require('electron');
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+function assert(value,message){if(!value)throw new Error(message);}
+async function runLijiangAcceptance({window,projectDirectory,workspaceDirectory,backend,record,getFatal,getPresentation}){
+ const runId=new Date().toISOString().replace(/[:.]/g,'-'),started=Date.now(),full=process.env.LIJIANG_QA_FULL==='1',recording=process.env.LIJIANG_QA_RECORDING==='1';
+ const folder=path.join(projectDirectory,'assets','lijiang-qa',runId);fs.mkdirSync(folder,{recursive:true});
+ const report={runId,status:'running',scene:'lijiang-flythrough',backend,tests:[],captures:[],errors:[],scope:full?'Actual procedural Li River flight and controls':'Actual procedural scene captures; independent visual review required',windowPolicy:{show:false,focusable:false,skipTaskbar:true},recording};
+ async function call(js){assert(!window.isVisible()&&!window.isFocused(),'Own QA window became visible or focused');if(getFatal())throw new Error(getFatal());return window.webContents.executeJavaScript(js,false);}
+ function progress(phase,state){fs.writeFileSync(path.join(workspaceDirectory,'.cache','lijiang-qa-status.json'),JSON.stringify({...report,phase,state,elapsedSeconds:(Date.now()-started)/1000},null,2));}
+ async function wait(predicate,label,timeout=180000){const until=Date.now()+timeout;while(Date.now()<until){const s=await call('window.lijiangWorld?.getState()||null');if(s?.error||s?.errors?.length)throw new Error(JSON.stringify(s));progress(label,s);if(predicate(s))return s;await sleep(200);}throw new Error(label+' timed out');}
+ async function pixels(){return nativeImage.createFromDataURL(await call('document.querySelector("#world canvas").toDataURL("image/png")')).toBitmap();}
+ function difference(a,b){let sum=0,n=0;for(let i=0;i<Math.min(a.length,b.length);i+=52){sum+=Math.abs(a[i]-b[i])+Math.abs(a[i+1]-b[i+1])+Math.abs(a[i+2]-b[i+2]);n+=3;}return sum/Math.max(1,n);}
+ function pass(name,evidence){report.tests.push({name,passed:true,evidence});}
+ async function capture(name){const s=await call('window.lijiangWorld.getState()'),data=await call('document.querySelector("#world canvas").toDataURL("image/png")'),im=nativeImage.createFromDataURL(data),bytes=im.toPNG();const canvas=path.join(folder,name+'-canvas.png'),page=path.join(folder,name+'-page.png');fs.writeFileSync(canvas,bytes);fs.writeFileSync(page,(await window.webContents.capturePage(undefined,{stayHidden:true})).toPNG());report.captures.push({name,canvas:path.relative(projectDirectory,canvas).replaceAll('\\','/'),page:path.relative(projectDirectory,page).replaceAll('\\','/'),sha256:crypto.createHash('sha256').update(bytes).digest('hex'),...im.getSize(),state:s});return s;}
+ try{
+  let s=await wait(s=>s?.ready&&s.frames>=3,'Code-generated river actual first frames');assert(s.sceneId==='lijiang-flythrough'&&s.runtimeRevision==='lijiang-pure-code-3'&&s.terrain.version==='lijiang-wooded-karst-3'&&s.terrain.surfaceDetailRevision==='short-joints-1','Wrong or stale procedural scene revision');pass('actual-procedural-scene-renderer',s);
+  const resources=await call('performance.getEntriesByType("resource").map(r=>r.name)');assert(!resources.some(r=>/\.(?:png|jpe?g|webp|avif|hdr|exr|glb|gltf|obj|fbx|ktx2?)(?:[?#]|$)/i.test(r)),'External scene/image asset was fetched');pass('runtime-requests-contain-no-external-scene-assets',resources);
+  for(const [i,t]of (process.env.LIJIANG_QA_FINAL_ONLY==='1'?[45]:[0,12,25,45]).entries()){const before=await call(`window.lijiangWorld.seek(${t})`);s=await wait(s=>s.frames>=before.frames+3,'Actual flight view '+t);await capture('0'+(i+1)+'-flight-'+t);}
+  if(process.env.LIJIANG_QA_WATER==='1'){for(const mode of ['refraction','reflection','depth']){const before=await call(`window.lijiangWorld.setWaterDiagnostic('${mode}')`);await wait(s=>s.frames>before.frames+2,'Actual water '+mode);await capture('water-'+mode);}await call('window.lijiangWorld.setWaterDiagnostic("combined")');}
+  const audit=await call('window.lijiangWorld.auditPath()');assert(audit.passed,'Flight path clearance failed');pass('whole-flight-near-plane-clearance',audit);
+  if(process.env.LIJIANG_QA_AIR==='1'){
+   await call('document.getElementById("parameters").click()');
+   const controls=await call('[...document.querySelectorAll(".lil-controller .lil-name")].map(e=>e.textContent)');
+   assert(['雾团数量','雾团高度偏移 · 米','整体色温 · 冷/暖'].every(label=>controls.includes(label)),'Target atmospheric GUI controls missing');
+   async function input(label,value,key){
+    const before=await call(`(()=>{const row=[...document.querySelectorAll('.lil-controller')].find(e=>e.querySelector('.lil-name')?.textContent===${JSON.stringify(label)}),input=row?.querySelector('input');if(!input)throw new Error('Actual GUI input missing');input.value=${JSON.stringify(String(value))};input.dispatchEvent(new Event('input',{bubbles:true}));return window.lijiangWorld.getState();})()`);
+    assert(before.settings[key]===value,'GUI did not update actual '+key);return wait(s=>s.frames>before.frames+2,'Actual atmospheric GUI '+key);
+   }
+   const baseline=await pixels();await input('雾团数量',0,'mistCount');const noMist=await pixels();const countDifference=difference(baseline,noMist);assert(countDifference>.001,'Mist count did not change actual pixels');await input('雾团数量',7,'mistCount');
+   await input('雾团高度偏移 · 米',60,'mistHeight');const raised=await pixels(),heightDifference=difference(baseline,raised);assert(heightDifference>.001,'Mist height did not change actual pixels');await input('雾团高度偏移 · 米',0,'mistHeight');
+   await input('整体色温 · 冷/暖',1,'colorTemperature');const warm=await pixels();await input('整体色温 · 冷/暖',-1,'colorTemperature');const cool=await pixels(),temperatureDifference=difference(warm,cool);assert(temperatureDifference>1,'Color temperature did not change actual pixels');await input('整体色温 · 冷/暖',0,'colorTemperature');
+   const restored=await pixels(),restoreDifference=difference(baseline,restored);assert(restoreDifference<.02,'Default atmosphere did not restore accepted pixels');
+   pass('actual-GUI-mist-count-height-and-color-temperature-change-rendered-pixels',{controls,countDifference,heightDifference,temperatureDifference,restoreDifference,method:'Actual lil-gui numeric input events, same held final camera/time, actual framebuffer comparison'});
+   await call('document.getElementById("parameters").click()');await capture('atmosphere-default-restored');
+  }
+  if(full){
+   await call('window.lijiangWorld.seek(0);window.lijiangWorld.play(true)');const before=await call('window.lijiangWorld.getState()'),paintBefore=getPresentation(),start=performance.now();await sleep(4000);s=await call('window.lijiangWorld.getState()');const elapsed=(performance.now()-start)/1000;assert(s.time>before.time+3&&s.frames>before.frames+5,'Real-time flight stalled');pass('actual-wall-clock-flight-and-frame-cadence',{seconds:elapsed,fps:(s.frames-before.frames)/elapsed,paintFps:(getPresentation().paints-paintBefore.paints)/elapsed});
+   await call('document.getElementById("play").click()');const paused=await call('window.lijiangWorld.getState()');await sleep(1200);s=await call('window.lijiangWorld.getState()');assert(Math.abs(s.time-paused.time)<.02,'Pause did not hold flight');pass('actual-pause-button-holds-camera-time',{before:paused.path,after:s.path});
+   await call('document.getElementById("mode").click()');const old=await call('window.lijiangWorld.getState()');await call('window.lijiangWorld.drive({forward:12,right:5,up:4,yaw:.15})');s=await wait(s=>s.frames>old.frames+2,'Actual driven free viewpoint');assert(s.path.mode==='free'&&Math.hypot(...s.camera.position.map((v,i)=>v-old.camera.position[i]))>5,'Free drive failed');await capture('05-free-view');pass('free-mode-and-actual-camera-drive',s.camera);
+   await call('document.getElementById("final-shot").click()');s=await wait(s=>s.time===45&&s.path.mode==='path','Return to actual composed final view');pass('actual-final-view-button',s.path);
+   await call('window.lijiangWorld.toggleUI(true)');assert(await call('getComputedStyle(document.querySelector("header")).display==="none"'),'Hiding UI failed');await call('window.lijiangWorld.toggleUI(false)');pass('ui-hide-and-restore',{hiddenAndRestored:true});
+   await call('document.getElementById("parameters").click()');const panel=await call('(()=>{const p=document.querySelector(".lil-gui.lil-root");return !!p&&getComputedStyle(p).display!=="none";})()');assert(panel,'Actual parameter panel did not open');await call('document.getElementById("parameters").click()');pass('actual-parameter-panel-opens-and-closes',{opened:panel});
+   await call('window.lijiangWorld.setSettings({rippleStrength:0})');const calm=await pixels();await call('window.lijiangWorld.setSettings({rippleStrength:1.7})');const rippled=await pixels(),rippleDifference=difference(calm,rippled);assert(rippleDifference>.1,'Ripple parameter did not change actual water pixels');await call('window.lijiangWorld.setSettings({rippleStrength:.85})');pass('ripple-slider-parameter-changes-real-water',{meanAbsolutePixelDifference:rippleDifference});
+   const clear=await pixels();await call('window.lijiangWorld.setSettings({fogDensity:.00065})');const hazy=await pixels(),fogDifference=difference(clear,hazy);assert(fogDifference>1,'Fog parameter did not change actual scene pixels');await call('window.lijiangWorld.setSettings({fogDensity:.00030})');pass('fog-parameter-changes-real-atmospheric-depth',{meanAbsolutePixelDifference:fogDifference});
+   const flightStart=performance.now();await call('window.dispatchEvent(new KeyboardEvent("keydown",{code:"KeyR",key:"r",bubbles:true}))');await wait(s=>s.time>=45&&s.paused,'Whole actual forty-five-second flight completes',55000);s=await capture('06-full-flight-complete');pass('whole-forty-five-second-flight-reaches-final',{monotonicSeconds:(performance.now()-flightStart)/1000,path:s.path});
+   for(const [w,h]of [[390,844],[640,520]]){window.setContentSize(w,h);const before=await call('window.lijiangWorld.getState()');await wait(s=>s.frames>before.frames+3,'Actual narrow Li River');const layout=await call('({width:innerWidth,height:innerHeight,overflow:document.documentElement.scrollWidth>innerWidth+1,buttons:[...document.querySelectorAll(".chrome button")].filter(b=>b.getClientRects().length).map(b=>({id:b.id,rect:b.getBoundingClientRect().toJSON()}))})');assert(!layout.overflow&&layout.buttons.every(b=>b.rect.left>=-1&&b.rect.right<=layout.width+1&&b.rect.top>=-1&&b.rect.bottom<=layout.height+1),'Narrow controls clipped');await capture('viewport-'+layout.width+'-'+layout.height);pass('actual-controls-fit-'+layout.width+'-'+layout.height,layout);}
+  }
+  if(recording){
+   window.setContentSize(1440,900);await call('window.lijiangWorld.seek(45)');
+   const fullRecord=process.env.LIJIANG_QA_RECORD_FULL==='1';
+   if(fullRecord)await call('window.dispatchEvent(new KeyboardEvent("keydown",{code:"KeyV",key:"v",bubbles:true}))');
+   else await call('window.__lijiangExport=window.lijiangWorld.record({duration:1,width:640,height:360,fps:30,download:false}).catch(e=>console.error(e));true');
+   s=await wait(s=>['complete','error','cancelled'].includes(s.recorder?.phase),'Actual fixed-frame WebCodecs export',3600000);
+   assert(s.recorder.phase==='complete'&&s.recorder.metadata?.frameCount>0&&s.recorder.metadata.timestampGridVerified,'Actual video encoding failed');
+   const video=await call('window.lijiangWorld.recordingData()');const output=path.join(folder,'actual-flight.webm');fs.writeFileSync(output,Buffer.from(video.data,video.encoding==='base64'?'base64':undefined));
+   pass('actual-fixed-frame-webm-recording',{...video.metadata,path:path.relative(projectDirectory,output).replaceAll('\\','/')});
+   s=await capture('07-after-recording-restore');assert(!s.recording&&!s.uiHidden&&s.time===45,'Export failed to restore the prior view/UI');pass('export-restores-live-view-and-ui',s);
+  }
+  await call('window.lijiangWorld.dispose()');pass('own-procedural-scene-disposes',{disposed:true});report.status='passed';
+ }catch(e){report.status='failed';report.errors.push(String(e.stack||e));try{await capture('failure');}catch{}try{await call('window.lijiangWorld?.dispose()');}catch{}}
+ report.elapsedSeconds=(Date.now()-started)/1000;report.presentation=getPresentation();const category=recording?'lijiang-recording':full?'lijiang-functional':process.env.LIJIANG_QA_AIR==='1'?'lijiang-atmosphere':'lijiang-captures';fs.writeFileSync(path.join(folder,'result.json'),JSON.stringify(report,null,2));fs.writeFileSync(path.join(projectDirectory,'notes',category+'.'+backend+'.latest.json'),JSON.stringify(report,null,2));if(report.status==='passed')fs.writeFileSync(path.join(projectDirectory,'notes',category+'.'+backend+'.json'),JSON.stringify(report,null,2));progress('finished',null);return report;
+}
+module.exports={runLijiangAcceptance};

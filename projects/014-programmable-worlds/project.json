@@ -1,0 +1,47 @@
+{
+  "id": 14,
+  "slug": "programmable-worlds",
+  "name": "可编程世界 · 从海岸航拍到自己的作品",
+  "summary": "原作以代码生成完整海岸；我们完成老街窗景、独立船坞和漓江晨航，沉淀“确认约束→固定模板→有界求解→独立验证”的场景制作流程。研究与演示已收口，完整自动管线尚未实现。",
+  "repo": "https://github.com/Leonxlnx/napali",
+  "status": "已完成",
+  "cover": "assets/project-map-cover.png",
+  "cover_alt": "可编程世界总览图封面：Na Pali实际实时画面及程序地形、生态、水体光照和镜头流程；完整探索与经验见网页总览图。",
+  "web": true,
+  "research_date": "2026-10-24",
+  "upstream_commit": "4afb7c3a1aad3d0203193100305c46607134d0f5",
+  "upstream_license": "MIT",
+  "original_post": "https://x.com/LexnLin/status/2113720560920428685",
+  "last_verified": "2026-10-26",
+  "tool_summaries": [
+    {
+      "name": "原作效果",
+      "summary": "Na Pali：程序地形、侵蚀、森林、海浪、天空与光照；本机完整实时控制，在线保留参考与来源。",
+      "repo": "https://github.com/Leonxlnx/napali"
+    },
+    {
+      "name": "我们的效果",
+      "summary": "老街窗景的停留观察、独立船坞的呼船靠泊、漓江的航拍与自由驾驶；三处不同空间。",
+      "repo": "https://github.com/yydshly/1020_codex_project"
+    },
+    {
+      "name": "制作流程",
+      "summary": "确认参考与范围约束，固定模板和素材版本，在有界参数及预算内迭代，以独立机位、连续操作和性能验证。",
+      "repo": "https://github.com/yydshly/1020_codex_project"
+    }
+  ],
+  "web_vendor_files": [
+    "lijiang-flythrough/node_modules/three/build/three.module.js",
+    "lijiang-flythrough/node_modules/three/build/three.core.js",
+    "lijiang-flythrough/node_modules/three/examples/jsm/objects/Reflector.js",
+    "lijiang-flythrough/node_modules/three/examples/jsm/objects/Sky.js",
+    "lijiang-flythrough/node_modules/three/examples/jsm/objects/MarchingCubes.js",
+    "lijiang-flythrough/node_modules/three/LICENSE",
+    "lijiang-flythrough/node_modules/mediabunny/dist/bundles/mediabunny.min.mjs",
+    "lijiang-flythrough/node_modules/mediabunny/LICENSE"
+  ],
+  "repositories": [
+    "https://github.com/Leonxlnx/napali",
+    "https://github.com/yydshly/1020_codex_project"
+  ]
+}

@@ -1,0 +1,4610 @@
+{
+  "runId": "2026-10-24T04-23-45-212Z",
+  "scene": "hub",
+  "backend": "gl",
+  "status": "passed",
+  "mode": "hidden-own-application",
+  "startedAt": "2026-10-24T04:23:45.212Z",
+  "tests": [
+    {
+      "name": "research-hub-front-door-initialized",
+      "passed": true,
+      "evidence": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": false,
+            "state": null,
+            "phase": {
+              "phase": "compile-start",
+              "at": 193,
+              "id": 1,
+              "label": "FS_RENDER",
+              "bytes": 290037
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 300,
+              "height": 150
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "source-boots-actual-completed-frames-through-hub",
+      "passed": true,
+      "evidence": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "time": 0.2,
+              "duration": 132,
+              "paused": false,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 2,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 207.79999995231628,
+              "averageFrameMs": 312.89999997615814,
+              "renderSampleMs": 206.29999995231628,
+              "hudMs": 0,
+              "presentMs": 1.399999976158142
+            },
+            "phase": {
+              "phase": "first-frame-ready",
+              "at": 38275,
+              "width": 1175,
+              "height": 621,
+              "time": 0.1,
+              "frameMs": 418
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 1175,
+              "height": 621
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "source-explicit-quality-select-50-percent-completes-real-frames",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "time": 0.2,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 8,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 199.5,
+          "averageFrameMs": 245.06249997019768,
+          "renderSampleMs": 198.60000002384186,
+          "hudMs": 0,
+          "presentMs": 0.7999999523162842
+        },
+        "after": {
+          "time": 0.2,
+          "duration": 132,
+          "paused": true,
+          "scale": 0.5,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 10,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 87.39999997615814,
+          "averageFrameMs": 210.63999997377397,
+          "renderSampleMs": 86,
+          "hudMs": 0,
+          "presentMs": 1.2999999523162842
+        },
+        "completedFramesAfterSelection": 2,
+        "frameTimingScope": "Application wall time through fence completion, including CPU/IPC waits. Hidden compositor cadence is not a device FPS benchmark."
+      }
+    },
+    {
+      "name": "source-explicit-quality-select-100-percent-completes-real-frames",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "time": 0.2,
+          "duration": 132,
+          "paused": true,
+          "scale": 0.5,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 13,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 71.60000002384186,
+          "averageFrameMs": 185.16153844503256,
+          "renderSampleMs": 70.80000007152557,
+          "hudMs": 0,
+          "presentMs": 0.7999999523162842
+        },
+        "after": {
+          "time": 0.2,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 15,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 202.89999997615814,
+          "averageFrameMs": 193.27333331108093,
+          "renderSampleMs": 201.39999997615814,
+          "hudMs": 0,
+          "presentMs": 1.5
+        },
+        "completedFramesAfterSelection": 2,
+        "frameTimingScope": "Application wall time through fence completion, including CPU/IPC waits. Hidden compositor cadence is not a device FPS benchmark."
+      }
+    },
+    {
+      "name": "source-original-cine-key-0-renders-without-error",
+      "passed": true,
+      "evidence": {
+        "seconds": 0,
+        "completedFramesAfterSeek": 2,
+        "state": {
+          "time": 0,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 21,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 220.80000007152557,
+          "averageFrameMs": 198.5380952244713,
+          "renderSampleMs": 219.29999995231628,
+          "hudMs": 0,
+          "presentMs": 1.4000000953674316
+        }
+      }
+    },
+    {
+      "name": "source-original-cine-key-7-renders-without-error",
+      "passed": true,
+      "evidence": {
+        "seconds": 7,
+        "completedFramesAfterSeek": 2,
+        "state": {
+          "time": 7,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 26,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 198.39999997615814,
+          "averageFrameMs": 200.38076921151236,
+          "renderSampleMs": 197.10000002384186,
+          "hudMs": 0.09999990463256836,
+          "presentMs": 1.2000000476837158
+        }
+      }
+    },
+    {
+      "name": "source-original-cine-key-14-renders-without-error",
+      "passed": true,
+      "evidence": {
+        "seconds": 14,
+        "completedFramesAfterSeek": 2,
+        "state": {
+          "time": 14,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 32,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 214.69999992847443,
+          "averageFrameMs": 202.67499997839332,
+          "renderSampleMs": 213.39999997615814,
+          "hudMs": 0,
+          "presentMs": 1.2999999523162842
+        }
+      }
+    },
+    {
+      "name": "source-original-cine-key-21-renders-without-error",
+      "passed": true,
+      "evidence": {
+        "seconds": 21,
+        "completedFramesAfterSeek": 2,
+        "state": {
+          "time": 21,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 37,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 230.30000007152557,
+          "averageFrameMs": 206.81081079792332,
+          "renderSampleMs": 228.80000007152557,
+          "hudMs": 0,
+          "presentMs": 1.5
+        }
+      }
+    },
+    {
+      "name": "source-original-cine-key-28-renders-without-error",
+      "passed": true,
+      "evidence": {
+        "seconds": 28,
+        "completedFramesAfterSeek": 2,
+        "state": {
+          "time": 28,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 43,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 290.39999997615814,
+          "averageFrameMs": 214.28139533830245,
+          "renderSampleMs": 288.89999997615814,
+          "hudMs": 0,
+          "presentMs": 1.2999999523162842
+        }
+      }
+    },
+    {
+      "name": "source-original-cine-key-35-renders-without-error",
+      "passed": true,
+      "evidence": {
+        "seconds": 35,
+        "completedFramesAfterSeek": 2,
+        "state": {
+          "time": 35,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 48,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 329.39999997615814,
+          "averageFrameMs": 223.9520833219091,
+          "renderSampleMs": 328.2000000476837,
+          "hudMs": 0,
+          "presentMs": 1.1999999284744263
+        }
+      }
+    },
+    {
+      "name": "source-original-cine-key-42-renders-without-error",
+      "passed": true,
+      "evidence": {
+        "seconds": 42,
+        "completedFramesAfterSeek": 2,
+        "state": {
+          "time": 42,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 53,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 317.7000000476837,
+          "averageFrameMs": 234.17547168596735,
+          "renderSampleMs": 316.3000000715256,
+          "hudMs": 0,
+          "presentMs": 1.399999976158142
+        }
+      }
+    },
+    {
+      "name": "source-original-cine-key-49-renders-without-error",
+      "passed": true,
+      "evidence": {
+        "seconds": 49,
+        "completedFramesAfterSeek": 2,
+        "state": {
+          "time": 49,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 58,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 337.89999997615814,
+          "averageFrameMs": 242.18620688545292,
+          "renderSampleMs": 336.5,
+          "hudMs": 0,
+          "presentMs": 1.399999976158142
+        }
+      }
+    },
+    {
+      "name": "source-original-cine-key-55-renders-without-error",
+      "passed": true,
+      "evidence": {
+        "seconds": 55,
+        "completedFramesAfterSeek": 2,
+        "state": {
+          "time": 55,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 63,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 375.2000000476837,
+          "averageFrameMs": 251.73650792666845,
+          "renderSampleMs": 373.89999997615814,
+          "hudMs": 0,
+          "presentMs": 1.3000000715255737
+        }
+      }
+    },
+    {
+      "name": "source-original-cine-key-61-renders-without-error",
+      "passed": true,
+      "evidence": {
+        "seconds": 61,
+        "completedFramesAfterSeek": 2,
+        "state": {
+          "time": 61,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 68,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 499,
+          "averageFrameMs": 264.7191176379428,
+          "renderSampleMs": 497.60000002384186,
+          "hudMs": 0,
+          "presentMs": 1.399999976158142
+        }
+      }
+    },
+    {
+      "name": "source-original-cine-key-68-renders-without-error",
+      "passed": true,
+      "evidence": {
+        "seconds": 68,
+        "completedFramesAfterSeek": 2,
+        "state": {
+          "time": 68,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 72,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 519,
+          "averageFrameMs": 278.4819444368283,
+          "renderSampleMs": 517.6000000238419,
+          "hudMs": 0,
+          "presentMs": 1.2999999523162842
+        }
+      }
+    },
+    {
+      "name": "source-original-cine-key-75-renders-without-error",
+      "passed": true,
+      "evidence": {
+        "seconds": 75,
+        "completedFramesAfterSeek": 2,
+        "state": {
+          "time": 75,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 76,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 487.60000002384186,
+          "averageFrameMs": 291.33815788752156,
+          "renderSampleMs": 486.3000000715256,
+          "hudMs": 0,
+          "presentMs": 1.2999999523162842
+        }
+      }
+    },
+    {
+      "name": "source-original-cine-key-84-renders-without-error",
+      "passed": true,
+      "evidence": {
+        "seconds": 84,
+        "completedFramesAfterSeek": 2,
+        "state": {
+          "time": 84,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 81,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 450.2999999523163,
+          "averageFrameMs": 303.25432097911835,
+          "renderSampleMs": 448.89999997615814,
+          "hudMs": 0,
+          "presentMs": 1.399999976158142
+        }
+      }
+    },
+    {
+      "name": "source-original-cine-key-94-renders-without-error",
+      "passed": true,
+      "evidence": {
+        "seconds": 94,
+        "completedFramesAfterSeek": 2,
+        "state": {
+          "time": 94,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 86,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 393.60000002384186,
+          "averageFrameMs": 310.84999999057413,
+          "renderSampleMs": 392.10000002384186,
+          "hudMs": 0,
+          "presentMs": 1.5
+        }
+      }
+    },
+    {
+      "name": "source-original-cine-key-106-renders-without-error",
+      "passed": true,
+      "evidence": {
+        "seconds": 106,
+        "completedFramesAfterSeek": 2,
+        "state": {
+          "time": 106,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 91,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 327.5,
+          "averageFrameMs": 314.52637361694167,
+          "renderSampleMs": 325.89999997615814,
+          "hudMs": 0,
+          "presentMs": 1.600000023841858
+        }
+      }
+    },
+    {
+      "name": "source-original-cine-key-117-renders-without-error",
+      "passed": true,
+      "evidence": {
+        "seconds": 117,
+        "completedFramesAfterSeek": 2,
+        "state": {
+          "time": 117,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 96,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 239.89999997615814,
+          "averageFrameMs": 313.93229165673256,
+          "renderSampleMs": 238.69999992847443,
+          "hudMs": 0,
+          "presentMs": 1.2000000476837158
+        }
+      }
+    },
+    {
+      "name": "source-original-cine-key-128-renders-without-error",
+      "passed": true,
+      "evidence": {
+        "seconds": 128,
+        "completedFramesAfterSeek": 2,
+        "state": {
+          "time": 128,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 102,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 204.79999995231628,
+          "averageFrameMs": 309.43529410689484,
+          "renderSampleMs": 202.39999997615814,
+          "hudMs": 0,
+          "presentMs": 2.399999976158142
+        }
+      }
+    },
+    {
+      "name": "all-seventeen-original-cine-keys-complete-at-full-quality",
+      "passed": true,
+      "evidence": {
+        "routeTimes": [
+          0,
+          7,
+          14,
+          21,
+          28,
+          35,
+          42,
+          49,
+          55,
+          61,
+          68,
+          75,
+          84,
+          94,
+          106,
+          117,
+          128
+        ],
+        "states": [
+          {
+            "seconds": 0,
+            "completedFramesAfterSeek": 2,
+            "state": {
+              "time": 0,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 21,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 220.80000007152557,
+              "averageFrameMs": 198.5380952244713,
+              "renderSampleMs": 219.29999995231628,
+              "hudMs": 0,
+              "presentMs": 1.4000000953674316
+            }
+          },
+          {
+            "seconds": 7,
+            "completedFramesAfterSeek": 2,
+            "state": {
+              "time": 7,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 26,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 198.39999997615814,
+              "averageFrameMs": 200.38076921151236,
+              "renderSampleMs": 197.10000002384186,
+              "hudMs": 0.09999990463256836,
+              "presentMs": 1.2000000476837158
+            }
+          },
+          {
+            "seconds": 14,
+            "completedFramesAfterSeek": 2,
+            "state": {
+              "time": 14,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 32,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 214.69999992847443,
+              "averageFrameMs": 202.67499997839332,
+              "renderSampleMs": 213.39999997615814,
+              "hudMs": 0,
+              "presentMs": 1.2999999523162842
+            }
+          },
+          {
+            "seconds": 21,
+            "completedFramesAfterSeek": 2,
+            "state": {
+              "time": 21,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 37,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 230.30000007152557,
+              "averageFrameMs": 206.81081079792332,
+              "renderSampleMs": 228.80000007152557,
+              "hudMs": 0,
+              "presentMs": 1.5
+            }
+          },
+          {
+            "seconds": 28,
+            "completedFramesAfterSeek": 2,
+            "state": {
+              "time": 28,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 43,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 290.39999997615814,
+              "averageFrameMs": 214.28139533830245,
+              "renderSampleMs": 288.89999997615814,
+              "hudMs": 0,
+              "presentMs": 1.2999999523162842
+            }
+          },
+          {
+            "seconds": 35,
+            "completedFramesAfterSeek": 2,
+            "state": {
+              "time": 35,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 48,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 329.39999997615814,
+              "averageFrameMs": 223.9520833219091,
+              "renderSampleMs": 328.2000000476837,
+              "hudMs": 0,
+              "presentMs": 1.1999999284744263
+            }
+          },
+          {
+            "seconds": 42,
+            "completedFramesAfterSeek": 2,
+            "state": {
+              "time": 42,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 53,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 317.7000000476837,
+              "averageFrameMs": 234.17547168596735,
+              "renderSampleMs": 316.3000000715256,
+              "hudMs": 0,
+              "presentMs": 1.399999976158142
+            }
+          },
+          {
+            "seconds": 49,
+            "completedFramesAfterSeek": 2,
+            "state": {
+              "time": 49,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 58,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 337.89999997615814,
+              "averageFrameMs": 242.18620688545292,
+              "renderSampleMs": 336.5,
+              "hudMs": 0,
+              "presentMs": 1.399999976158142
+            }
+          },
+          {
+            "seconds": 55,
+            "completedFramesAfterSeek": 2,
+            "state": {
+              "time": 55,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 63,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 375.2000000476837,
+              "averageFrameMs": 251.73650792666845,
+              "renderSampleMs": 373.89999997615814,
+              "hudMs": 0,
+              "presentMs": 1.3000000715255737
+            }
+          },
+          {
+            "seconds": 61,
+            "completedFramesAfterSeek": 2,
+            "state": {
+              "time": 61,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 68,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 499,
+              "averageFrameMs": 264.7191176379428,
+              "renderSampleMs": 497.60000002384186,
+              "hudMs": 0,
+              "presentMs": 1.399999976158142
+            }
+          },
+          {
+            "seconds": 68,
+            "completedFramesAfterSeek": 2,
+            "state": {
+              "time": 68,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 72,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 519,
+              "averageFrameMs": 278.4819444368283,
+              "renderSampleMs": 517.6000000238419,
+              "hudMs": 0,
+              "presentMs": 1.2999999523162842
+            }
+          },
+          {
+            "seconds": 75,
+            "completedFramesAfterSeek": 2,
+            "state": {
+              "time": 75,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 76,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 487.60000002384186,
+              "averageFrameMs": 291.33815788752156,
+              "renderSampleMs": 486.3000000715256,
+              "hudMs": 0,
+              "presentMs": 1.2999999523162842
+            }
+          },
+          {
+            "seconds": 84,
+            "completedFramesAfterSeek": 2,
+            "state": {
+              "time": 84,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 81,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 450.2999999523163,
+              "averageFrameMs": 303.25432097911835,
+              "renderSampleMs": 448.89999997615814,
+              "hudMs": 0,
+              "presentMs": 1.399999976158142
+            }
+          },
+          {
+            "seconds": 94,
+            "completedFramesAfterSeek": 2,
+            "state": {
+              "time": 94,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 86,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 393.60000002384186,
+              "averageFrameMs": 310.84999999057413,
+              "renderSampleMs": 392.10000002384186,
+              "hudMs": 0,
+              "presentMs": 1.5
+            }
+          },
+          {
+            "seconds": 106,
+            "completedFramesAfterSeek": 2,
+            "state": {
+              "time": 106,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 91,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 327.5,
+              "averageFrameMs": 314.52637361694167,
+              "renderSampleMs": 325.89999997615814,
+              "hudMs": 0,
+              "presentMs": 1.600000023841858
+            }
+          },
+          {
+            "seconds": 117,
+            "completedFramesAfterSeek": 2,
+            "state": {
+              "time": 117,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 96,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 239.89999997615814,
+              "averageFrameMs": 313.93229165673256,
+              "renderSampleMs": 238.69999992847443,
+              "hudMs": 0,
+              "presentMs": 1.2000000476837158
+            }
+          },
+          {
+            "seconds": 128,
+            "completedFramesAfterSeek": 2,
+            "state": {
+              "time": 128,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 102,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 204.79999995231628,
+              "averageFrameMs": 309.43529410689484,
+              "renderSampleMs": 202.39999997615814,
+              "hudMs": 0,
+              "presentMs": 2.399999976158142
+            }
+          }
+        ],
+        "scope": "Full original camera route sampled at every CINE key with two completed frames each. This is not a wall-clock playback or device FPS claim."
+      }
+    },
+    {
+      "name": "only-source-document-and-previous-worlds-unloaded",
+      "passed": true,
+      "evidence": [
+        {
+          "index": 0,
+          "source": "runtime/index.html?embed=1",
+          "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+          "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+          "active": true,
+          "apiExposed": true,
+          "state": {
+            "time": 0.2,
+            "duration": 132,
+            "paused": false,
+            "scale": 1,
+            "suspended": false,
+            "rendering": false,
+            "ready": true,
+            "frames": 2,
+            "autoQuality": false,
+            "error": null,
+            "lastFrameMs": 207.79999995231628,
+            "averageFrameMs": 312.89999997615814,
+            "renderSampleMs": 206.29999995231628,
+            "hudMs": 0,
+            "presentMs": 1.399999976158142
+          },
+          "phase": {
+            "phase": "first-frame-ready",
+            "at": 38275,
+            "width": 1175,
+            "height": 621,
+            "time": 0.1,
+            "frameMs": 418
+          },
+          "visibleError": null,
+          "canvas": {
+            "width": 1175,
+            "height": 621
+          }
+        },
+        {
+          "index": 1,
+          "source": "demos/window.html?embed=1",
+          "sourceAttribute": null,
+          "href": "about:blank",
+          "active": false,
+          "apiExposed": false,
+          "state": null,
+          "phase": null,
+          "visibleError": null,
+          "canvas": null
+        },
+        {
+          "index": 2,
+          "source": "demos/story.html?embed=1",
+          "sourceAttribute": null,
+          "href": "about:blank",
+          "active": false,
+          "apiExposed": false,
+          "state": null,
+          "phase": null,
+          "visibleError": null,
+          "canvas": null
+        }
+      ]
+    },
+    {
+      "name": "window-boots-actual-completed-frames-through-hub",
+      "passed": true,
+      "evidence": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "demos/window.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "about:blank",
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "ready": true,
+              "error": null,
+              "frames": 4,
+              "time": 0,
+              "paused": false,
+              "rendering": false,
+              "visible": true,
+              "camera": {
+                "position": [
+                  -16.265785,
+                  4.069108,
+                  10.941022
+                ],
+                "quaternion": [
+                  -0.030778673468068587,
+                  -0.48319690744797517,
+                  -0.017000535951501822,
+                  0.8748053518752734
+                ],
+                "mode": "window",
+                "view": "window",
+                "fov": 58
+              },
+              "mode": "window",
+              "view": "window",
+              "light": "dusk",
+              "wet": true,
+              "lastFrameMs": 30.800000071525574,
+              "averageFrameMs": 190.4500000178814,
+              "quality": {
+                "pixelRatio": 1,
+                "width": 668,
+                "height": 537,
+                "antialias": true,
+                "qa": true,
+                "frameTiming": "CPU submission; harness frame intervals measure throughput",
+                "lighting": "PBR with fixed dusk source direct and indirect diffuse",
+                "foregroundWood": {
+                  "asset": "wood_table_001",
+                  "license": "CC0-1.0",
+                  "resolution": 4096,
+                  "metresPerRepeat": 1.5,
+                  "albedoDetail": 0.26,
+                  "anisotropy": 16,
+                  "maps": [
+                    "diffuse-sRGB",
+                    "normal-OpenGL-linear",
+                    "roughness-linear"
+                  ],
+                  "linearMean": [
+                    0.05370953933147812,
+                    0.01164609329087303,
+                    0.0034808516029409434
+                  ],
+                  "variants": 23
+                },
+                "localAreaEmitter": {
+                  "width": 0.36,
+                  "height": 0.018,
+                  "luminance": 700,
+                  "powerLumens": 14.2502642766833
+                },
+                "localReflectionProbe": {
+                  "ready": true,
+                  "cubeResolution": 256,
+                  "materials": 29,
+                  "position": [
+                    -14.980866500928874,
+                    3.0862052605508787,
+                    9.17580624674823
+                  ],
+                  "static": true
+                },
+                "modelTriangles": 407537,
+                "evaluatedBevels": 686,
+                "indirectLightmaps": 24,
+                "reflectionResolution": 1536,
+                "waterModel": "warped five-scale current + capillary rain rings / angularly perturbed linear planar reflection",
+                "waterAngularStrength": 0.35,
+                "lightingModel": "Original Cycles direct + indirect diffuse on all static source meshes; live direct/IBL specular and clearcoat",
+                "realtimeLights": 21,
+                "shadowMapResolution": 2048,
+                "continuousAnimation": true,
+                "asset": "models/quality-canal-full-diffuse.glb",
+                "assetStage": "baked",
+                "rain": true,
+                "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+                "lightmapUnits": "source diffuse radiance with runtime irradiance multiplier",
+                "lightmapMode": "full-diffuse",
+                "fullDiffuseGroups": 24,
+                "fullDiffuseBoundMaterials": 24,
+                "staticDiffuse": "Source direct + indirect only; live diffuse disabled, specular preserved",
+                "localShopShadowCount": 3,
+                "shopFillModel": "Three source-pose wide shadow Spots replace unshadowed LTC interior fills; upstairs reach bounded to rooms",
+                "displayPipeline": {
+                  "mode": "source",
+                  "sourceLook": "AgX - Medium High Contrast",
+                  "lutSize": 65,
+                  "input": "raw scene-linear HDR",
+                  "output": "linear Rec.709 then renderer output transfer once",
+                  "rawTarget": "RGBA16F",
+                  "samples": 4,
+                  "width": 668,
+                  "height": 537,
+                  "frames": 4,
+                  "lutSHA256": "4daf8616ca2b985abe98554a9836271bdb1bb518710c25acd985111b51177db1",
+                  "lutHashVerified": true,
+                  "sourceLutValidation": {
+                    "swatches": 134,
+                    "max_absolute_linear_error": 0.006342739559108801,
+                    "mean_absolute_linear_error": 0.000685918917745179,
+                    "midgrey_reference": [
+                      0.17999759316444397,
+                      0.17994651198387146,
+                      0.17994651198387146
+                    ],
+                    "midgrey_interpolated": [
+                      0.18087892861105548,
+                      0.18150099867582323,
+                      0.18137209247797734
+                    ],
+                    "method": "Actual independent OCIO display swatches compared with trilinear half-float LUT sampling."
+                  },
+                  "exposure": 2
+                },
+                "lightingTuning": {
+                  "exposure": 2,
+                  "indirectScale": 3.141592653589793,
+                  "environmentIntensity": 0.8,
+                  "keyIntensity": 0.9,
+                  "practicalScale": 1,
+                  "iblDiffuseScale": 0.08,
+                  "atmosphere": "dusk"
+                }
+              }
+            },
+            "phase": null,
+            "visibleError": null,
+            "canvas": {
+              "width": 668,
+              "height": 537
+            }
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "final-full-diffuse-and-source-display-configuration",
+      "passed": true,
+      "evidence": {
+        "quality": {
+          "pixelRatio": 1,
+          "width": 668,
+          "height": 537,
+          "antialias": true,
+          "qa": true,
+          "frameTiming": "CPU submission; harness frame intervals measure throughput",
+          "lighting": "PBR with fixed dusk source direct and indirect diffuse",
+          "foregroundWood": {
+            "asset": "wood_table_001",
+            "license": "CC0-1.0",
+            "resolution": 4096,
+            "metresPerRepeat": 1.5,
+            "albedoDetail": 0.26,
+            "anisotropy": 16,
+            "maps": [
+              "diffuse-sRGB",
+              "normal-OpenGL-linear",
+              "roughness-linear"
+            ],
+            "linearMean": [
+              0.05370953933147812,
+              0.01164609329087303,
+              0.0034808516029409434
+            ],
+            "variants": 23
+          },
+          "localAreaEmitter": {
+            "width": 0.36,
+            "height": 0.018,
+            "luminance": 700,
+            "powerLumens": 14.2502642766833
+          },
+          "localReflectionProbe": {
+            "ready": true,
+            "cubeResolution": 256,
+            "materials": 29,
+            "position": [
+              -14.980866500928874,
+              3.0862052605508787,
+              9.17580624674823
+            ],
+            "static": true
+          },
+          "modelTriangles": 407537,
+          "evaluatedBevels": 686,
+          "indirectLightmaps": 24,
+          "reflectionResolution": 1536,
+          "waterModel": "warped five-scale current + capillary rain rings / angularly perturbed linear planar reflection",
+          "waterAngularStrength": 0.35,
+          "lightingModel": "Original Cycles direct + indirect diffuse on all static source meshes; live direct/IBL specular and clearcoat",
+          "realtimeLights": 21,
+          "shadowMapResolution": 2048,
+          "continuousAnimation": true,
+          "asset": "models/quality-canal-full-diffuse.glb",
+          "assetStage": "baked",
+          "rain": true,
+          "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+          "lightmapUnits": "source diffuse radiance with runtime irradiance multiplier",
+          "lightmapMode": "full-diffuse",
+          "fullDiffuseGroups": 24,
+          "fullDiffuseBoundMaterials": 24,
+          "staticDiffuse": "Source direct + indirect only; live diffuse disabled, specular preserved",
+          "localShopShadowCount": 3,
+          "shopFillModel": "Three source-pose wide shadow Spots replace unshadowed LTC interior fills; upstairs reach bounded to rooms",
+          "displayPipeline": {
+            "mode": "source",
+            "sourceLook": "AgX - Medium High Contrast",
+            "lutSize": 65,
+            "input": "raw scene-linear HDR",
+            "output": "linear Rec.709 then renderer output transfer once",
+            "rawTarget": "RGBA16F",
+            "samples": 4,
+            "width": 668,
+            "height": 537,
+            "frames": 4,
+            "lutSHA256": "4daf8616ca2b985abe98554a9836271bdb1bb518710c25acd985111b51177db1",
+            "lutHashVerified": true,
+            "sourceLutValidation": {
+              "swatches": 134,
+              "max_absolute_linear_error": 0.006342739559108801,
+              "mean_absolute_linear_error": 0.000685918917745179,
+              "midgrey_reference": [
+                0.17999759316444397,
+                0.17994651198387146,
+                0.17994651198387146
+              ],
+              "midgrey_interpolated": [
+                0.18087892861105548,
+                0.18150099867582323,
+                0.18137209247797734
+              ],
+              "method": "Actual independent OCIO display swatches compared with trilinear half-float LUT sampling."
+            },
+            "exposure": 2
+          },
+          "lightingTuning": {
+            "exposure": 2,
+            "indirectScale": 3.141592653589793,
+            "environmentIntensity": 0.8,
+            "keyIntensity": 0.9,
+            "practicalScale": 1,
+            "iblDiffuseScale": 0.08,
+            "atmosphere": "dusk"
+          }
+        },
+        "configurationOnly": true,
+        "artisticQualityEstablished": false
+      }
+    },
+    {
+      "name": "window-foreground-pbr-and-real-local-light-configuration",
+      "passed": true,
+      "evidence": {
+        "wood": {
+          "asset": "wood_table_001",
+          "license": "CC0-1.0",
+          "resolution": 4096,
+          "metresPerRepeat": 1.5,
+          "albedoDetail": 0.26,
+          "anisotropy": 16,
+          "maps": [
+            "diffuse-sRGB",
+            "normal-OpenGL-linear",
+            "roughness-linear"
+          ],
+          "linearMean": [
+            0.05370953933147812,
+            0.01164609329087303,
+            0.0034808516029409434
+          ],
+          "variants": 23
+        },
+        "probe": {
+          "ready": true,
+          "cubeResolution": 256,
+          "materials": 29,
+          "position": [
+            -14.980866500928874,
+            3.0862052605508787,
+            9.17580624674823
+          ],
+          "static": true
+        },
+        "emitter": {
+          "width": 0.36,
+          "height": 0.018,
+          "luminance": 700,
+          "powerLumens": 14.2502642766833
+        }
+      }
+    },
+    {
+      "name": "only-window-document-and-previous-worlds-unloaded",
+      "passed": true,
+      "evidence": [
+        {
+          "index": 0,
+          "source": "runtime/index.html?embed=1",
+          "sourceAttribute": "about:blank",
+          "href": "about:blank",
+          "active": false,
+          "apiExposed": false,
+          "state": null,
+          "phase": null,
+          "visibleError": null,
+          "canvas": null
+        },
+        {
+          "index": 1,
+          "source": "demos/window.html?embed=1",
+          "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?embed=1&qa=1",
+          "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?embed=1&qa=1",
+          "active": true,
+          "apiExposed": true,
+          "state": {
+            "ready": true,
+            "error": null,
+            "frames": 4,
+            "time": 0,
+            "paused": false,
+            "rendering": false,
+            "visible": true,
+            "camera": {
+              "position": [
+                -16.265785,
+                4.069108,
+                10.941022
+              ],
+              "quaternion": [
+                -0.030778673468068587,
+                -0.48319690744797517,
+                -0.017000535951501822,
+                0.8748053518752734
+              ],
+              "mode": "window",
+              "view": "window",
+              "fov": 58
+            },
+            "mode": "window",
+            "view": "window",
+            "light": "dusk",
+            "wet": true,
+            "lastFrameMs": 30.800000071525574,
+            "averageFrameMs": 190.4500000178814,
+            "quality": {
+              "pixelRatio": 1,
+              "width": 668,
+              "height": 537,
+              "antialias": true,
+              "qa": true,
+              "frameTiming": "CPU submission; harness frame intervals measure throughput",
+              "lighting": "PBR with fixed dusk source direct and indirect diffuse",
+              "foregroundWood": {
+                "asset": "wood_table_001",
+                "license": "CC0-1.0",
+                "resolution": 4096,
+                "metresPerRepeat": 1.5,
+                "albedoDetail": 0.26,
+                "anisotropy": 16,
+                "maps": [
+                  "diffuse-sRGB",
+                  "normal-OpenGL-linear",
+                  "roughness-linear"
+                ],
+                "linearMean": [
+                  0.05370953933147812,
+                  0.01164609329087303,
+                  0.0034808516029409434
+                ],
+                "variants": 23
+              },
+              "localAreaEmitter": {
+                "width": 0.36,
+                "height": 0.018,
+                "luminance": 700,
+                "powerLumens": 14.2502642766833
+              },
+              "localReflectionProbe": {
+                "ready": true,
+                "cubeResolution": 256,
+                "materials": 29,
+                "position": [
+                  -14.980866500928874,
+                  3.0862052605508787,
+                  9.17580624674823
+                ],
+                "static": true
+              },
+              "modelTriangles": 407537,
+              "evaluatedBevels": 686,
+              "indirectLightmaps": 24,
+              "reflectionResolution": 1536,
+              "waterModel": "warped five-scale current + capillary rain rings / angularly perturbed linear planar reflection",
+              "waterAngularStrength": 0.35,
+              "lightingModel": "Original Cycles direct + indirect diffuse on all static source meshes; live direct/IBL specular and clearcoat",
+              "realtimeLights": 21,
+              "shadowMapResolution": 2048,
+              "continuousAnimation": true,
+              "asset": "models/quality-canal-full-diffuse.glb",
+              "assetStage": "baked",
+              "rain": true,
+              "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+              "lightmapUnits": "source diffuse radiance with runtime irradiance multiplier",
+              "lightmapMode": "full-diffuse",
+              "fullDiffuseGroups": 24,
+              "fullDiffuseBoundMaterials": 24,
+              "staticDiffuse": "Source direct + indirect only; live diffuse disabled, specular preserved",
+              "localShopShadowCount": 3,
+              "shopFillModel": "Three source-pose wide shadow Spots replace unshadowed LTC interior fills; upstairs reach bounded to rooms",
+              "displayPipeline": {
+                "mode": "source",
+                "sourceLook": "AgX - Medium High Contrast",
+                "lutSize": 65,
+                "input": "raw scene-linear HDR",
+                "output": "linear Rec.709 then renderer output transfer once",
+                "rawTarget": "RGBA16F",
+                "samples": 4,
+                "width": 668,
+                "height": 537,
+                "frames": 4,
+                "lutSHA256": "4daf8616ca2b985abe98554a9836271bdb1bb518710c25acd985111b51177db1",
+                "lutHashVerified": true,
+                "sourceLutValidation": {
+                  "swatches": 134,
+                  "max_absolute_linear_error": 0.006342739559108801,
+                  "mean_absolute_linear_error": 0.000685918917745179,
+                  "midgrey_reference": [
+                    0.17999759316444397,
+                    0.17994651198387146,
+                    0.17994651198387146
+                  ],
+                  "midgrey_interpolated": [
+                    0.18087892861105548,
+                    0.18150099867582323,
+                    0.18137209247797734
+                  ],
+                  "method": "Actual independent OCIO display swatches compared with trilinear half-float LUT sampling."
+                },
+                "exposure": 2
+              },
+              "lightingTuning": {
+                "exposure": 2,
+                "indirectScale": 3.141592653589793,
+                "environmentIntensity": 0.8,
+                "keyIntensity": 0.9,
+                "practicalScale": 1,
+                "iblDiffuseScale": 0.08,
+                "atmosphere": "dusk"
+              }
+            }
+          },
+          "phase": null,
+          "visibleError": null,
+          "canvas": {
+            "width": 668,
+            "height": 537
+          }
+        },
+        {
+          "index": 2,
+          "source": "demos/story.html?embed=1",
+          "sourceAttribute": null,
+          "href": "about:blank",
+          "active": false,
+          "apiExposed": false,
+          "state": null,
+          "phase": null,
+          "visibleError": null,
+          "canvas": null
+        }
+      ]
+    },
+    {
+      "name": "story-boots-actual-completed-frames-through-hub",
+      "passed": true,
+      "evidence": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "demos/story.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": true,
+              "active": true
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "about:blank",
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": "about:blank",
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "frames": 2,
+              "loaded": true,
+              "paused": false,
+              "parentVisible": true,
+              "mode": "shot",
+              "shot": 1,
+              "time": 2,
+              "tourTime": 0,
+              "choice": null,
+              "choiceAge": 0,
+              "quality": "high",
+              "ready": true,
+              "rendering": false,
+              "position": [
+                -11.812081963892895,
+                3.298207046857678,
+                7.406828936113377
+              ],
+              "camera": [
+                -11.812081963892895,
+                3.298207046857678,
+                7.406828936113377
+              ],
+              "letter": [
+                -2.25,
+                0.14212744605729385,
+                3
+              ],
+              "boat": [
+                -6.460728704811935,
+                0.03449074054959611,
+                6.3
+              ],
+              "residentVisible": false,
+              "renderQuality": {
+                "modelTriangles": 407537,
+                "evaluatedBevels": 686,
+                "indirectLightmaps": 24,
+                "reflectionResolution": 1536,
+                "waterModel": "warped five-scale current + capillary rain rings / angularly perturbed linear planar reflection",
+                "waterAngularStrength": 0.35,
+                "lightingModel": "Original Cycles direct + indirect diffuse on all static source meshes; live direct/IBL specular and clearcoat",
+                "realtimeLights": 21,
+                "shadowMapResolution": 2048,
+                "continuousAnimation": true,
+                "asset": "models/quality-canal-full-diffuse.glb",
+                "assetStage": "baked",
+                "rain": true,
+                "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+                "lightmapUnits": "source diffuse radiance with runtime irradiance multiplier",
+                "lightmapMode": "full-diffuse",
+                "fullDiffuseGroups": 24,
+                "fullDiffuseBoundMaterials": 24,
+                "staticDiffuse": "Source direct + indirect only; live diffuse disabled, specular preserved",
+                "localShopShadowCount": 3,
+                "shopFillModel": "Three source-pose wide shadow Spots replace unshadowed LTC interior fills; upstairs reach bounded to rooms",
+                "displayPipeline": {
+                  "mode": "source",
+                  "sourceLook": "AgX - Medium High Contrast",
+                  "lutSize": 65,
+                  "input": "raw scene-linear HDR",
+                  "output": "linear Rec.709 then renderer output transfer once",
+                  "rawTarget": "RGBA16F",
+                  "samples": 4,
+                  "width": 668,
+                  "height": 547,
+                  "frames": 2,
+                  "lutSHA256": "4daf8616ca2b985abe98554a9836271bdb1bb518710c25acd985111b51177db1",
+                  "lutHashVerified": true,
+                  "sourceLutValidation": {
+                    "swatches": 134,
+                    "max_absolute_linear_error": 0.006342739559108801,
+                    "mean_absolute_linear_error": 0.000685918917745179,
+                    "midgrey_reference": [
+                      0.17999759316444397,
+                      0.17994651198387146,
+                      0.17994651198387146
+                    ],
+                    "midgrey_interpolated": [
+                      0.18087892861105548,
+                      0.18150099867582323,
+                      0.18137209247797734
+                    ],
+                    "method": "Actual independent OCIO display swatches compared with trilinear half-float LUT sampling."
+                  },
+                  "exposure": 2
+                },
+                "lightingTuning": {
+                  "exposure": 2,
+                  "indirectScale": 3.141592653589793,
+                  "environmentIntensity": 0.8,
+                  "keyIntensity": 0.9,
+                  "practicalScale": 1,
+                  "iblDiffuseScale": 0.08,
+                  "atmosphere": "dusk"
+                }
+              },
+              "response": {
+                "position": [
+                  -1.3,
+                  3.25,
+                  -2.55
+                ],
+                "intensityCandela": 2.4,
+                "emitterIntensity": 1.1,
+                "shadowed": true
+              }
+            },
+            "phase": null,
+            "visibleError": null,
+            "canvas": {
+              "width": 668,
+              "height": 547
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "final-full-diffuse-and-source-display-configuration",
+      "passed": true,
+      "evidence": {
+        "quality": {
+          "modelTriangles": 407537,
+          "evaluatedBevels": 686,
+          "indirectLightmaps": 24,
+          "reflectionResolution": 1536,
+          "waterModel": "warped five-scale current + capillary rain rings / angularly perturbed linear planar reflection",
+          "waterAngularStrength": 0.35,
+          "lightingModel": "Original Cycles direct + indirect diffuse on all static source meshes; live direct/IBL specular and clearcoat",
+          "realtimeLights": 21,
+          "shadowMapResolution": 2048,
+          "continuousAnimation": true,
+          "asset": "models/quality-canal-full-diffuse.glb",
+          "assetStage": "baked",
+          "rain": true,
+          "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+          "lightmapUnits": "source diffuse radiance with runtime irradiance multiplier",
+          "lightmapMode": "full-diffuse",
+          "fullDiffuseGroups": 24,
+          "fullDiffuseBoundMaterials": 24,
+          "staticDiffuse": "Source direct + indirect only; live diffuse disabled, specular preserved",
+          "localShopShadowCount": 3,
+          "shopFillModel": "Three source-pose wide shadow Spots replace unshadowed LTC interior fills; upstairs reach bounded to rooms",
+          "displayPipeline": {
+            "mode": "source",
+            "sourceLook": "AgX - Medium High Contrast",
+            "lutSize": 65,
+            "input": "raw scene-linear HDR",
+            "output": "linear Rec.709 then renderer output transfer once",
+            "rawTarget": "RGBA16F",
+            "samples": 4,
+            "width": 668,
+            "height": 547,
+            "frames": 2,
+            "lutSHA256": "4daf8616ca2b985abe98554a9836271bdb1bb518710c25acd985111b51177db1",
+            "lutHashVerified": true,
+            "sourceLutValidation": {
+              "swatches": 134,
+              "max_absolute_linear_error": 0.006342739559108801,
+              "mean_absolute_linear_error": 0.000685918917745179,
+              "midgrey_reference": [
+                0.17999759316444397,
+                0.17994651198387146,
+                0.17994651198387146
+              ],
+              "midgrey_interpolated": [
+                0.18087892861105548,
+                0.18150099867582323,
+                0.18137209247797734
+              ],
+              "method": "Actual independent OCIO display swatches compared with trilinear half-float LUT sampling."
+            },
+            "exposure": 2
+          },
+          "lightingTuning": {
+            "exposure": 2,
+            "indirectScale": 3.141592653589793,
+            "environmentIntensity": 0.8,
+            "keyIntensity": 0.9,
+            "practicalScale": 1,
+            "iblDiffuseScale": 0.08,
+            "atmosphere": "dusk"
+          }
+        },
+        "configurationOnly": true,
+        "artisticQualityEstablished": false
+      }
+    },
+    {
+      "name": "story-live-interior-response-fixture-configuration",
+      "passed": true,
+      "evidence": {
+        "position": [
+          -1.3,
+          3.25,
+          -2.55
+        ],
+        "intensityCandela": 2.4,
+        "emitterIntensity": 1.1,
+        "shadowed": true
+      }
+    },
+    {
+      "name": "only-story-document-and-previous-worlds-unloaded",
+      "passed": true,
+      "evidence": [
+        {
+          "index": 0,
+          "source": "runtime/index.html?embed=1",
+          "sourceAttribute": "about:blank",
+          "href": "about:blank",
+          "active": false,
+          "apiExposed": false,
+          "state": null,
+          "phase": null,
+          "visibleError": null,
+          "canvas": null
+        },
+        {
+          "index": 1,
+          "source": "demos/window.html?embed=1",
+          "sourceAttribute": "about:blank",
+          "href": "about:blank",
+          "active": false,
+          "apiExposed": false,
+          "state": null,
+          "phase": null,
+          "visibleError": null,
+          "canvas": null
+        },
+        {
+          "index": 2,
+          "source": "demos/story.html?embed=1",
+          "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?embed=1&qa=1",
+          "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?embed=1&qa=1",
+          "active": true,
+          "apiExposed": true,
+          "state": {
+            "frames": 2,
+            "loaded": true,
+            "paused": false,
+            "parentVisible": true,
+            "mode": "shot",
+            "shot": 1,
+            "time": 2,
+            "tourTime": 0,
+            "choice": null,
+            "choiceAge": 0,
+            "quality": "high",
+            "ready": true,
+            "rendering": false,
+            "position": [
+              -11.812081963892895,
+              3.298207046857678,
+              7.406828936113377
+            ],
+            "camera": [
+              -11.812081963892895,
+              3.298207046857678,
+              7.406828936113377
+            ],
+            "letter": [
+              -2.25,
+              0.14212744605729385,
+              3
+            ],
+            "boat": [
+              -6.460728704811935,
+              0.03449074054959611,
+              6.3
+            ],
+            "residentVisible": false,
+            "renderQuality": {
+              "modelTriangles": 407537,
+              "evaluatedBevels": 686,
+              "indirectLightmaps": 24,
+              "reflectionResolution": 1536,
+              "waterModel": "warped five-scale current + capillary rain rings / angularly perturbed linear planar reflection",
+              "waterAngularStrength": 0.35,
+              "lightingModel": "Original Cycles direct + indirect diffuse on all static source meshes; live direct/IBL specular and clearcoat",
+              "realtimeLights": 21,
+              "shadowMapResolution": 2048,
+              "continuousAnimation": true,
+              "asset": "models/quality-canal-full-diffuse.glb",
+              "assetStage": "baked",
+              "rain": true,
+              "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+              "lightmapUnits": "source diffuse radiance with runtime irradiance multiplier",
+              "lightmapMode": "full-diffuse",
+              "fullDiffuseGroups": 24,
+              "fullDiffuseBoundMaterials": 24,
+              "staticDiffuse": "Source direct + indirect only; live diffuse disabled, specular preserved",
+              "localShopShadowCount": 3,
+              "shopFillModel": "Three source-pose wide shadow Spots replace unshadowed LTC interior fills; upstairs reach bounded to rooms",
+              "displayPipeline": {
+                "mode": "source",
+                "sourceLook": "AgX - Medium High Contrast",
+                "lutSize": 65,
+                "input": "raw scene-linear HDR",
+                "output": "linear Rec.709 then renderer output transfer once",
+                "rawTarget": "RGBA16F",
+                "samples": 4,
+                "width": 668,
+                "height": 547,
+                "frames": 2,
+                "lutSHA256": "4daf8616ca2b985abe98554a9836271bdb1bb518710c25acd985111b51177db1",
+                "lutHashVerified": true,
+                "sourceLutValidation": {
+                  "swatches": 134,
+                  "max_absolute_linear_error": 0.006342739559108801,
+                  "mean_absolute_linear_error": 0.000685918917745179,
+                  "midgrey_reference": [
+                    0.17999759316444397,
+                    0.17994651198387146,
+                    0.17994651198387146
+                  ],
+                  "midgrey_interpolated": [
+                    0.18087892861105548,
+                    0.18150099867582323,
+                    0.18137209247797734
+                  ],
+                  "method": "Actual independent OCIO display swatches compared with trilinear half-float LUT sampling."
+                },
+                "exposure": 2
+              },
+              "lightingTuning": {
+                "exposure": 2,
+                "indirectScale": 3.141592653589793,
+                "environmentIntensity": 0.8,
+                "keyIntensity": 0.9,
+                "practicalScale": 1,
+                "iblDiffuseScale": 0.08,
+                "atmosphere": "dusk"
+              }
+            },
+            "response": {
+              "position": [
+                -1.3,
+                3.25,
+                -2.55
+              ],
+              "intensityCandela": 2.4,
+              "emitterIntensity": 1.1,
+              "shadowed": true
+            }
+          },
+          "phase": null,
+          "visibleError": null,
+          "canvas": {
+            "width": 668,
+            "height": 547
+          }
+        }
+      ]
+    },
+    {
+      "name": "single-live-scene-document-through-all-three-worlds",
+      "passed": true,
+      "evidence": {
+        "peakObservedLiveSceneDocuments": 1
+      }
+    }
+  ],
+  "captures": [
+    {
+      "name": "01-source-100-percent",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-source-100-percent-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-source-100-percent-hub-page.png",
+      "width": 1175,
+      "height": 621,
+      "meanLuminance": 149.93011970486162,
+      "luminanceStdDev": 46.88897511086594,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "time": 0.2,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 8,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 199.5,
+              "averageFrameMs": 245.06249997019768,
+              "renderSampleMs": 198.60000002384186,
+              "hudMs": 0,
+              "presentMs": 0.7999999523162842
+            },
+            "phase": {
+              "phase": "first-frame-ready",
+              "at": 38275,
+              "width": 1175,
+              "height": 621,
+              "time": 0.1,
+              "frameMs": 418
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 1175,
+              "height": 621
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "01b-source-50-percent",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01b-source-50-percent-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01b-source-50-percent-hub-page.png",
+      "width": 1175,
+      "height": 621,
+      "meanLuminance": 150.3104196180556,
+      "luminanceStdDev": 45.443627834799734,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "time": 0.2,
+              "duration": 132,
+              "paused": true,
+              "scale": 0.5,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 13,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 71.60000002384186,
+              "averageFrameMs": 185.16153844503256,
+              "renderSampleMs": 70.80000007152557,
+              "hudMs": 0,
+              "presentMs": 0.7999999523162842
+            },
+            "phase": {
+              "phase": "first-frame-ready",
+              "at": 38275,
+              "width": 1175,
+              "height": 621,
+              "time": 0.1,
+              "frameMs": 418
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 1175,
+              "height": 621
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "01c-source-100-percent-restored",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01c-source-100-percent-restored-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01c-source-100-percent-restored-hub-page.png",
+      "width": 1175,
+      "height": 621,
+      "meanLuminance": 149.93667907986122,
+      "luminanceStdDev": 46.89268767031895,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "time": 0.2,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 19,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 203.10000002384186,
+              "averageFrameMs": 197.18421050749328,
+              "renderSampleMs": 202.29999995231628,
+              "hudMs": 0,
+              "presentMs": 0.8000000715255737
+            },
+            "phase": {
+              "phase": "first-frame-ready",
+              "at": 38275,
+              "width": 1175,
+              "height": 621,
+              "time": 0.1,
+              "frameMs": 418
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 1175,
+              "height": 621
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "01-route-000-seconds",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-000-seconds-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-000-seconds-hub-page.png",
+      "width": 1175,
+      "height": 621,
+      "meanLuminance": 150.45695390624954,
+      "luminanceStdDev": 46.76567661828845,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "time": 0,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 24,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 197.5,
+              "averageFrameMs": 200.574999983112,
+              "renderSampleMs": 196.79999995231628,
+              "hudMs": 0,
+              "presentMs": 0.7000000476837158
+            },
+            "phase": {
+              "phase": "first-frame-ready",
+              "at": 38275,
+              "width": 1175,
+              "height": 621,
+              "time": 0.1,
+              "frameMs": 418
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 1175,
+              "height": 621
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "01-route-007-seconds",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-007-seconds-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-007-seconds-hub-page.png",
+      "width": 1175,
+      "height": 621,
+      "meanLuminance": 138.19302682291618,
+      "luminanceStdDev": 51.17448252983139,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "time": 7,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 30,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 197.69999992847443,
+              "averageFrameMs": 201.52333331108093,
+              "renderSampleMs": 196.69999992847443,
+              "hudMs": 0,
+              "presentMs": 0.8999999761581421
+            },
+            "phase": {
+              "phase": "first-frame-ready",
+              "at": 38275,
+              "width": 1175,
+              "height": 621,
+              "time": 0.1,
+              "frameMs": 418
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 1175,
+              "height": 621
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "01-route-014-seconds",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-014-seconds-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-014-seconds-hub-page.png",
+      "width": 1175,
+      "height": 621,
+      "meanLuminance": 121.81633862847222,
+      "luminanceStdDev": 56.406623132676614,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "time": 14,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 35,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 219.20000004768372,
+              "averageFrameMs": 205.27142855439868,
+              "renderSampleMs": 218.5,
+              "hudMs": 0,
+              "presentMs": 0.7000000476837158
+            },
+            "phase": {
+              "phase": "first-frame-ready",
+              "at": 38275,
+              "width": 1175,
+              "height": 621,
+              "time": 0.1,
+              "frameMs": 418
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 1175,
+              "height": 621
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "01-route-021-seconds",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-021-seconds-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-021-seconds-hub-page.png",
+      "width": 1175,
+      "height": 621,
+      "meanLuminance": 98.24961024305587,
+      "luminanceStdDev": 54.121855859722245,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "time": 21,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 41,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 223.30000007152557,
+              "averageFrameMs": 210.2682926742042,
+              "renderSampleMs": 222.20000004768372,
+              "hudMs": 0,
+              "presentMs": 1
+            },
+            "phase": {
+              "phase": "first-frame-ready",
+              "at": 38275,
+              "width": 1175,
+              "height": 621,
+              "time": 0.1,
+              "frameMs": 418
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 1175,
+              "height": 621
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "01-route-028-seconds",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-028-seconds-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-028-seconds-hub-page.png",
+      "width": 1175,
+      "height": 621,
+      "meanLuminance": 102.67953975694444,
+      "luminanceStdDev": 60.45185226734749,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "time": 28,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 46,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 279.39999997615814,
+              "averageFrameMs": 219.34565216302872,
+              "renderSampleMs": 278.5,
+              "hudMs": 0,
+              "presentMs": 0.7999999523162842
+            },
+            "phase": {
+              "phase": "first-frame-ready",
+              "at": 38275,
+              "width": 1175,
+              "height": 621,
+              "time": 0.1,
+              "frameMs": 418
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 1175,
+              "height": 621
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "01-route-035-seconds",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-035-seconds-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-035-seconds-hub-page.png",
+      "width": 1175,
+      "height": 621,
+      "meanLuminance": 112.20756145833316,
+      "luminanceStdDev": 62.16100358798043,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "time": 35,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 51,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 327.59999990463257,
+              "averageFrameMs": 230.99411763396918,
+              "renderSampleMs": 326.89999997615814,
+              "hudMs": 0,
+              "presentMs": 0.6999999284744263
+            },
+            "phase": {
+              "phase": "first-frame-ready",
+              "at": 38275,
+              "width": 1175,
+              "height": 621,
+              "time": 0.1,
+              "frameMs": 418
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 1175,
+              "height": 621
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "01-route-042-seconds",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-042-seconds-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-042-seconds-hub-page.png",
+      "width": 1175,
+      "height": 621,
+      "meanLuminance": 123.84022526041616,
+      "luminanceStdDev": 65.83344110178113,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "time": 42,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": true,
+              "ready": true,
+              "frames": 56,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 311.8000000715256,
+              "averageFrameMs": 239.20178570491927,
+              "renderSampleMs": 311.10000002384186,
+              "hudMs": 0,
+              "presentMs": 0.7000000476837158
+            },
+            "phase": {
+              "phase": "first-frame-ready",
+              "at": 38275,
+              "width": 1175,
+              "height": 621,
+              "time": 0.1,
+              "frameMs": 418
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 1175,
+              "height": 621
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "01-route-049-seconds",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-049-seconds-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-049-seconds-hub-page.png",
+      "width": 1175,
+      "height": 621,
+      "meanLuminance": 117.91554487847219,
+      "luminanceStdDev": 60.03332773795592,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "time": 49,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 61,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 340.7999999523163,
+              "averageFrameMs": 247.78852458078353,
+              "renderSampleMs": 339.89999997615814,
+              "hudMs": 0,
+              "presentMs": 0.7999999523162842
+            },
+            "phase": {
+              "phase": "first-frame-ready",
+              "at": 38275,
+              "width": 1175,
+              "height": 621,
+              "time": 0.1,
+              "frameMs": 418
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 1175,
+              "height": 621
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "01-route-055-seconds",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-055-seconds-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-055-seconds-hub-page.png",
+      "width": 1175,
+      "height": 621,
+      "meanLuminance": 128.08252569444423,
+      "luminanceStdDev": 74.55983467716818,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "time": 55,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 66,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 368,
+              "averageFrameMs": 257.7106060512138,
+              "renderSampleMs": 367,
+              "hudMs": 0,
+              "presentMs": 1
+            },
+            "phase": {
+              "phase": "first-frame-ready",
+              "at": 38275,
+              "width": 1175,
+              "height": 621,
+              "time": 0.1,
+              "frameMs": 418
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 1175,
+              "height": 621
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "01-route-061-seconds",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-061-seconds-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-061-seconds-hub-page.png",
+      "width": 1175,
+      "height": 621,
+      "meanLuminance": 80.01015685763888,
+      "luminanceStdDev": 49.130600000665,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "time": 61,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": true,
+              "ready": true,
+              "frames": 70,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 541.8000000715256,
+              "averageFrameMs": 271.9542857067926,
+              "renderSampleMs": 540.8999999761581,
+              "hudMs": 0,
+              "presentMs": 0.9000000953674316
+            },
+            "phase": {
+              "phase": "first-frame-ready",
+              "at": 38275,
+              "width": 1175,
+              "height": 621,
+              "time": 0.1,
+              "frameMs": 418
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 1175,
+              "height": 621
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "01-route-068-seconds",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-068-seconds-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-068-seconds-hub-page.png",
+      "width": 1175,
+      "height": 621,
+      "meanLuminance": 77.07975156250012,
+      "luminanceStdDev": 45.639284389802285,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "time": 68,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": true,
+              "ready": true,
+              "frames": 74,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 566.1999999284744,
+              "averageFrameMs": 285.61351350513667,
+              "renderSampleMs": 565.2999999523163,
+              "hudMs": 0,
+              "presentMs": 0.8999999761581421
+            },
+            "phase": {
+              "phase": "first-frame-ready",
+              "at": 38275,
+              "width": 1175,
+              "height": 621,
+              "time": 0.1,
+              "frameMs": 418
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 1175,
+              "height": 621
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "01-route-075-seconds",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-075-seconds-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-075-seconds-hub-page.png",
+      "width": 1175,
+      "height": 621,
+      "meanLuminance": 69.47154227430553,
+      "luminanceStdDev": 45.97341811460662,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "time": 75,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 79,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 496.7000000476837,
+              "averageFrameMs": 299.58987341047845,
+              "renderSampleMs": 492.5,
+              "hudMs": 0.10000002384185791,
+              "presentMs": 4
+            },
+            "phase": {
+              "phase": "first-frame-ready",
+              "at": 38275,
+              "width": 1175,
+              "height": 621,
+              "time": 0.1,
+              "frameMs": 418
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 1175,
+              "height": 621
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "01-route-084-seconds",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-084-seconds-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-084-seconds-hub-page.png",
+      "width": 1175,
+      "height": 621,
+      "meanLuminance": 65.73960208333325,
+      "luminanceStdDev": 39.55640002613875,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "time": 84,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 84,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 439.39999997615814,
+              "averageFrameMs": 308.909523800725,
+              "renderSampleMs": 438.5,
+              "hudMs": 0,
+              "presentMs": 0.7999999523162842
+            },
+            "phase": {
+              "phase": "first-frame-ready",
+              "at": 38275,
+              "width": 1175,
+              "height": 621,
+              "time": 0.1,
+              "frameMs": 418
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 1175,
+              "height": 621
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "01-route-094-seconds",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-094-seconds-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-094-seconds-hub-page.png",
+      "width": 1175,
+      "height": 621,
+      "meanLuminance": 66.9429072916667,
+      "luminanceStdDev": 41.99314284181943,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "time": 94,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 89,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 397.6999999284744,
+              "averageFrameMs": 314.2101123493709,
+              "renderSampleMs": 396.7999999523163,
+              "hudMs": 0,
+              "presentMs": 0.7999999523162842
+            },
+            "phase": {
+              "phase": "first-frame-ready",
+              "at": 38275,
+              "width": 1175,
+              "height": 621,
+              "time": 0.1,
+              "frameMs": 418
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 1175,
+              "height": 621
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "01-route-106-seconds",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-106-seconds-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-106-seconds-hub-page.png",
+      "width": 1175,
+      "height": 621,
+      "meanLuminance": 79.98806362847222,
+      "luminanceStdDev": 47.63502160116398,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "time": 106,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 94,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 328.3000000715256,
+              "averageFrameMs": 315.4521276506972,
+              "renderSampleMs": 327.5,
+              "hudMs": 0,
+              "presentMs": 0.8000000715255737
+            },
+            "phase": {
+              "phase": "first-frame-ready",
+              "at": 38275,
+              "width": 1175,
+              "height": 621,
+              "time": 0.1,
+              "frameMs": 418
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 1175,
+              "height": 621
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "01-route-117-seconds",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-117-seconds-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-117-seconds-hub-page.png",
+      "width": 1175,
+      "height": 621,
+      "meanLuminance": 91.97361145833332,
+      "luminanceStdDev": 52.73207281510125,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "time": 117,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 100,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 240.20000004768372,
+              "averageFrameMs": 311.46299998998643,
+              "renderSampleMs": 239,
+              "hudMs": 0.10000002384185791,
+              "presentMs": 1.100000023841858
+            },
+            "phase": {
+              "phase": "first-frame-ready",
+              "at": 38275,
+              "width": 1175,
+              "height": 621,
+              "time": 0.1,
+              "frameMs": 418
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 1175,
+              "height": 621
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "01-route-128-seconds",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-128-seconds-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/01-route-128-seconds-hub-page.png",
+      "width": 1175,
+      "height": 621,
+      "meanLuminance": 92.30474071180522,
+      "luminanceStdDev": 52.21793507082119,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "runtime/index.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "time": 128,
+              "duration": 132,
+              "paused": true,
+              "scale": 1,
+              "suspended": false,
+              "rendering": false,
+              "ready": true,
+              "frames": 106,
+              "autoQuality": false,
+              "error": null,
+              "lastFrameMs": 208.10000002384186,
+              "averageFrameMs": 305.88962263093805,
+              "renderSampleMs": 207,
+              "hudMs": 0,
+              "presentMs": 1.100000023841858
+            },
+            "phase": {
+              "phase": "first-frame-ready",
+              "at": 38275,
+              "width": 1175,
+              "height": 621,
+              "time": 0.1,
+              "frameMs": 418
+            },
+            "visibleError": null,
+            "canvas": {
+              "width": 1175,
+              "height": 621
+            }
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "02-window",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/02-window-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/02-window-hub-page.png",
+      "width": 668,
+      "height": 537,
+      "meanLuminance": 82.15280347222216,
+      "luminanceStdDev": 34.94945656053565,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "demos/window.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": true,
+              "active": true
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": false,
+              "active": false
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "about:blank",
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "ready": true,
+              "error": null,
+              "frames": 10,
+              "time": 0.2443000000000029,
+              "paused": false,
+              "rendering": false,
+              "visible": true,
+              "camera": {
+                "position": [
+                  -16.265785,
+                  4.069108,
+                  10.941022
+                ],
+                "quaternion": [
+                  -0.030778673468068587,
+                  -0.48319690744797517,
+                  -0.017000535951501822,
+                  0.8748053518752734
+                ],
+                "mode": "window",
+                "view": "window",
+                "fov": 58
+              },
+              "mode": "window",
+              "view": "window",
+              "light": "dusk",
+              "wet": true,
+              "lastFrameMs": 18.5,
+              "averageFrameMs": 93.58000000715256,
+              "quality": {
+                "pixelRatio": 1,
+                "width": 668,
+                "height": 537,
+                "antialias": true,
+                "qa": true,
+                "frameTiming": "CPU submission; harness frame intervals measure throughput",
+                "lighting": "PBR with fixed dusk source direct and indirect diffuse",
+                "foregroundWood": {
+                  "asset": "wood_table_001",
+                  "license": "CC0-1.0",
+                  "resolution": 4096,
+                  "metresPerRepeat": 1.5,
+                  "albedoDetail": 0.26,
+                  "anisotropy": 16,
+                  "maps": [
+                    "diffuse-sRGB",
+                    "normal-OpenGL-linear",
+                    "roughness-linear"
+                  ],
+                  "linearMean": [
+                    0.05370953933147812,
+                    0.01164609329087303,
+                    0.0034808516029409434
+                  ],
+                  "variants": 23
+                },
+                "localAreaEmitter": {
+                  "width": 0.36,
+                  "height": 0.018,
+                  "luminance": 700,
+                  "powerLumens": 14.2502642766833
+                },
+                "localReflectionProbe": {
+                  "ready": true,
+                  "cubeResolution": 256,
+                  "materials": 29,
+                  "position": [
+                    -14.980866500928874,
+                    3.0862052605508787,
+                    9.17580624674823
+                  ],
+                  "static": true
+                },
+                "modelTriangles": 407537,
+                "evaluatedBevels": 686,
+                "indirectLightmaps": 24,
+                "reflectionResolution": 1536,
+                "waterModel": "warped five-scale current + capillary rain rings / angularly perturbed linear planar reflection",
+                "waterAngularStrength": 0.35,
+                "lightingModel": "Original Cycles direct + indirect diffuse on all static source meshes; live direct/IBL specular and clearcoat",
+                "realtimeLights": 21,
+                "shadowMapResolution": 2048,
+                "continuousAnimation": true,
+                "asset": "models/quality-canal-full-diffuse.glb",
+                "assetStage": "baked",
+                "rain": true,
+                "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+                "lightmapUnits": "source diffuse radiance with runtime irradiance multiplier",
+                "lightmapMode": "full-diffuse",
+                "fullDiffuseGroups": 24,
+                "fullDiffuseBoundMaterials": 24,
+                "staticDiffuse": "Source direct + indirect only; live diffuse disabled, specular preserved",
+                "localShopShadowCount": 3,
+                "shopFillModel": "Three source-pose wide shadow Spots replace unshadowed LTC interior fills; upstairs reach bounded to rooms",
+                "displayPipeline": {
+                  "mode": "source",
+                  "sourceLook": "AgX - Medium High Contrast",
+                  "lutSize": 65,
+                  "input": "raw scene-linear HDR",
+                  "output": "linear Rec.709 then renderer output transfer once",
+                  "rawTarget": "RGBA16F",
+                  "samples": 4,
+                  "width": 668,
+                  "height": 537,
+                  "frames": 10,
+                  "lutSHA256": "4daf8616ca2b985abe98554a9836271bdb1bb518710c25acd985111b51177db1",
+                  "lutHashVerified": true,
+                  "sourceLutValidation": {
+                    "swatches": 134,
+                    "max_absolute_linear_error": 0.006342739559108801,
+                    "mean_absolute_linear_error": 0.000685918917745179,
+                    "midgrey_reference": [
+                      0.17999759316444397,
+                      0.17994651198387146,
+                      0.17994651198387146
+                    ],
+                    "midgrey_interpolated": [
+                      0.18087892861105548,
+                      0.18150099867582323,
+                      0.18137209247797734
+                    ],
+                    "method": "Actual independent OCIO display swatches compared with trilinear half-float LUT sampling."
+                  },
+                  "exposure": 2
+                },
+                "lightingTuning": {
+                  "exposure": 2,
+                  "indirectScale": 3.141592653589793,
+                  "environmentIntensity": 0.8,
+                  "keyIntensity": 0.9,
+                  "practicalScale": 1,
+                  "iblDiffuseScale": 0.08,
+                  "atmosphere": "dusk"
+                }
+              }
+            },
+            "phase": null,
+            "visibleError": null,
+            "canvas": {
+              "width": 668,
+              "height": 537
+            }
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": null,
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          }
+        ]
+      }
+    },
+    {
+      "name": "03-story",
+      "canvas": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/03-story-iframe-canvas.png",
+      "page": "assets/hub-qa/gl/2026-10-24T04-23-45-212Z/03-story-hub-page.png",
+      "width": 668,
+      "height": 547,
+      "meanLuminance": 88.08177343749986,
+      "luminanceStdDev": 42.89443057780801,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1&rs=1&t=0",
+        "host": {
+          "backend": "gl",
+          "localRenderer": true
+        },
+        "hub": {
+          "verifiedGLHost": true,
+          "sourceTrialAllowed": true,
+          "switching": false,
+          "active": "demos/story.html?embed=1",
+          "previews": [
+            {
+              "source": "runtime/index.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/window.html?embed=1",
+              "loaded": false,
+              "active": false
+            },
+            {
+              "source": "demos/story.html?embed=1",
+              "loaded": true,
+              "active": true
+            }
+          ]
+        },
+        "previews": [
+          {
+            "index": 0,
+            "source": "runtime/index.html?embed=1",
+            "sourceAttribute": "about:blank",
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 1,
+            "source": "demos/window.html?embed=1",
+            "sourceAttribute": "about:blank",
+            "href": "about:blank",
+            "active": false,
+            "apiExposed": false,
+            "state": null,
+            "phase": null,
+            "visibleError": null,
+            "canvas": null
+          },
+          {
+            "index": 2,
+            "source": "demos/story.html?embed=1",
+            "sourceAttribute": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?embed=1&qa=1",
+            "href": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/story.html?embed=1&qa=1",
+            "active": true,
+            "apiExposed": true,
+            "state": {
+              "frames": 8,
+              "loaded": true,
+              "paused": false,
+              "parentVisible": true,
+              "mode": "shot",
+              "shot": 1,
+              "time": 4.314099999999999,
+              "tourTime": 0,
+              "choice": null,
+              "choiceAge": 0,
+              "quality": "high",
+              "ready": true,
+              "rendering": false,
+              "position": [
+                -11.812081963892895,
+                3.298207046857678,
+                7.406828936113377
+              ],
+              "camera": [
+                -11.812081963892895,
+                3.298207046857678,
+                7.406828936113377
+              ],
+              "letter": [
+                -2.25,
+                0.1150082267624469,
+                3
+              ],
+              "boat": [
+                -5.842495805583229,
+                0.004249780296247882,
+                6.3
+              ],
+              "residentVisible": false,
+              "renderQuality": {
+                "modelTriangles": 407537,
+                "evaluatedBevels": 686,
+                "indirectLightmaps": 24,
+                "reflectionResolution": 1536,
+                "waterModel": "warped five-scale current + capillary rain rings / angularly perturbed linear planar reflection",
+                "waterAngularStrength": 0.35,
+                "lightingModel": "Original Cycles direct + indirect diffuse on all static source meshes; live direct/IBL specular and clearcoat",
+                "realtimeLights": 21,
+                "shadowMapResolution": 2048,
+                "continuousAnimation": true,
+                "asset": "models/quality-canal-full-diffuse.glb",
+                "assetStage": "baked",
+                "rain": true,
+                "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+                "lightmapUnits": "source diffuse radiance with runtime irradiance multiplier",
+                "lightmapMode": "full-diffuse",
+                "fullDiffuseGroups": 24,
+                "fullDiffuseBoundMaterials": 24,
+                "staticDiffuse": "Source direct + indirect only; live diffuse disabled, specular preserved",
+                "localShopShadowCount": 3,
+                "shopFillModel": "Three source-pose wide shadow Spots replace unshadowed LTC interior fills; upstairs reach bounded to rooms",
+                "displayPipeline": {
+                  "mode": "source",
+                  "sourceLook": "AgX - Medium High Contrast",
+                  "lutSize": 65,
+                  "input": "raw scene-linear HDR",
+                  "output": "linear Rec.709 then renderer output transfer once",
+                  "rawTarget": "RGBA16F",
+                  "samples": 4,
+                  "width": 668,
+                  "height": 547,
+                  "frames": 8,
+                  "lutSHA256": "4daf8616ca2b985abe98554a9836271bdb1bb518710c25acd985111b51177db1",
+                  "lutHashVerified": true,
+                  "sourceLutValidation": {
+                    "swatches": 134,
+                    "max_absolute_linear_error": 0.006342739559108801,
+                    "mean_absolute_linear_error": 0.000685918917745179,
+                    "midgrey_reference": [
+                      0.17999759316444397,
+                      0.17994651198387146,
+                      0.17994651198387146
+                    ],
+                    "midgrey_interpolated": [
+                      0.18087892861105548,
+                      0.18150099867582323,
+                      0.18137209247797734
+                    ],
+                    "method": "Actual independent OCIO display swatches compared with trilinear half-float LUT sampling."
+                  },
+                  "exposure": 2
+                },
+                "lightingTuning": {
+                  "exposure": 2,
+                  "indirectScale": 3.141592653589793,
+                  "environmentIntensity": 0.8,
+                  "keyIntensity": 0.9,
+                  "practicalScale": 1,
+                  "iblDiffuseScale": 0.08,
+                  "atmosphere": "dusk"
+                }
+              },
+              "response": {
+                "position": [
+                  -1.3,
+                  3.25,
+                  -2.55
+                ],
+                "intensityCandela": 2.4,
+                "emitterIntensity": 1.1,
+                "shadowed": true
+              }
+            },
+            "phase": null,
+            "visibleError": null,
+            "canvas": {
+              "width": 668,
+              "height": 547
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "errors": [],
+  "windowPolicy": {
+    "show": false,
+    "skipTaskbar": true,
+    "focusable": false,
+    "backgroundThrottling": false
+  },
+  "security": {
+    "sandbox": true,
+    "contextIsolation": true,
+    "nodeIntegration": false,
+    "webSecurity": true
+  },
+  "peakObservedLiveSceneDocuments": 1,
+  "note": "Front-door integration and single-context lifecycle acceptance only. Source and artwork quality baselines remain separate.",
+  "finishedAt": "2026-10-24T04:27:26.134Z",
+  "elapsedSeconds": 220.922
+}

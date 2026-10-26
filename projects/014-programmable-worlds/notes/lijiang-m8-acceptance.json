@@ -1,0 +1,69 @@
+{
+  "schema": "lijiang-current-v8",
+  "recordedAt": "2026-10-26T13:16:28.441670+00:00",
+  "status": "m8-practical-navigation-and-explicit-start-verified-local",
+  "entry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?revision=20261026-m8#lijiang",
+  "standaloneEntry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/lijiang-m8/raster.html?surface=1&material=1&revision=20261026-m8",
+  "runtime": "lijiang-m8",
+  "scope": "Practical usability: explicit startup, retained offscreen scene, visible desktop/mobile navigation, presets and user-selected quality. Existing M7 scene geometry preserved; no further art-detail iteration.",
+  "iterationComplete": true,
+  "fullGoalComplete": false,
+  "previousDefault": "lijiang-current.before-m8.json",
+  "visualPolicy": "User says sufficient visual quality is enough; photoreal equivalence and 60fps are optional future work, not this usability release gate. No claim of individual visual signoff for every view.",
+  "changes": [
+    "No automatic heavy iframe launch on page open or scroll; only explicit start.",
+    "Only one GPU world; offscreen retains document and pauses drawing; active generation may continue until stopped.",
+    "Always-present navigation supports four view presets, six translation and four look directions, press/release, blur/cancel/offscreen safety and manual collapse.",
+    "Smooth default: 75% linear canvas, 2048 shadow and 512 reflection; clear: full canvas, 4096 shadow and 1024 reflection. Full geometry and plants retained.",
+    "Existing capture temporarily uses clear quality and restores user quality/pose; complete 45-second export not repeated this iteration."
+  ],
+  "verification": {
+    "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m8-experience\\2026-10-26T13-11-44-861Z\\result.json",
+    "actualColdGenerationSeconds": 107.147,
+    "actualDOMUIActionsPassed": 24,
+    "lifecycleTestsPassed": 9,
+    "sourceFreezeVerified": true,
+    "parentPromotion": "Tested candidate HTML copied byte-for-byte to index.html, same directory and app/style/runtime. Final index URL not regenerated separately.",
+    "promotedHTMLSHA256": "e755d584c39b487d1bf72a620efb2f4b35e820d893f246a17dcdcc8dc9830aeb",
+    "desktopImageReviewed": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m8-experience\\2026-10-26T13-11-44-861Z\\desktop-controls.png",
+    "smallViewport": "Child DOM bounds/no-overflow and same document/context verified at resized parent width550. Whole-parent screenshot missed Li due responsive page reflow; not a phone/device or visual mobile signoff.",
+    "qualityDriveSamples": [
+      {
+        "quality": "smooth",
+        "completedFPS": 23.36084721919177,
+        "drawingBuffer": {
+          "cssHeight": 680,
+          "cssWidth": 1174,
+          "height": 510,
+          "pixelRatio": 1,
+          "width": 881
+        },
+        "sampleScope": "Short actual DOM-button hold at corresponding quality; not universal or full-flight FPS."
+      },
+      {
+        "quality": "clear",
+        "completedFPS": 18.36034166218478,
+        "drawingBuffer": {
+          "cssHeight": 680,
+          "cssWidth": 1174,
+          "height": 680,
+          "pixelRatio": 1,
+          "width": 1174
+        },
+        "sampleScope": "Short actual DOM-button hold at corresponding quality; not universal or full-flight FPS."
+      }
+    ],
+    "userComputer": "Own hidden, non-focusable Electron process; no OS mouse/keyboard or user tab navigation; process exited."
+  },
+  "remaining": [
+    "Cold generation remains about 1-3 minutes; measured107 seconds in this run.",
+    "Realtime frame rate remains view/device dependent and below60fps in tested short driving.",
+    "Generation does not pause solely because the scene leaves the viewport; Stop releases it.",
+    "Full45-second export was not repeated for this UI/performance-setting iteration."
+  ],
+  "preserved": [
+    "M5/M6/M7 source and QA baselines",
+    "Original source library and both canal scenes",
+    "All scene assets remain code-generated; no model/image/HDR replacement"
+  ]
+}

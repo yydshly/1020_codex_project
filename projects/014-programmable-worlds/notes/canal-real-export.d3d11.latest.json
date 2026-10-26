@@ -1,0 +1,196 @@
+{
+  "runId": "2026-10-24T10-41-12-245Z",
+  "status": "passed",
+  "scene": "canal-real",
+  "backend": "d3d11",
+  "tests": [
+    {
+      "name": "new-canal-initializes-without-script-errors",
+      "passed": true,
+      "evidence": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 0.1,
+        "paused": false,
+        "frames": 3,
+        "view": "window",
+        "experience": "benchmark",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 13.699999928474426,
+        "quality": "benchmark / not accepted",
+        "lighting": {
+          "mode": "unbaked",
+          "bound": 0,
+          "accepted": false
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            0.9015599560603713,
+            -0.0736779877351645,
+            9.8
+          ],
+          "letterPosition": [
+            0.9157594619896731,
+            0.10320750841906755,
+            9.919326842251168
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1
+        },
+        "camera": {
+          "position": [
+            -11.699999999999998,
+            2.450000000000003,
+            13.7
+          ],
+          "target": [
+            7.3000000000000025,
+            1.7000000000000004,
+            -4.7
+          ],
+          "fov": 52
+        },
+        "renderer": {
+          "width": 1426,
+          "height": 864,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "exact-current-scene-exported-for-light-transport",
+      "passed": true,
+      "evidence": {
+        "pid": 32752,
+        "endpoint": "http://127.0.0.1:8798/export/95ad30f02a60b86b1bb622b90be55bd0500b37c947d1754b",
+        "directory": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\artifacts\\canal-real\\exports\\2026-10-24T10-40-01-646Z",
+        "metadataPath": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\artifacts\\canal-real\\exports\\2026-10-24T10-40-01-646Z\\source-scene.json",
+        "glbPath": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\artifacts\\canal-real\\exports\\2026-10-24T10-40-01-646Z\\source-scene.glb",
+        "startedAt": "2026-10-24T10:40:01.654Z",
+        "bytes": 358724032,
+        "sha256": "bab33778df0185369750ccd30631ea6c8efa9f24a65a30a768cd0fd6bc39b851",
+        "sourceRevision": {
+          "name": "photoreal-freeze-4-room-atlas-handle",
+          "files": {
+            "architecture.js": "eeefb9837164d54bf8533dd0ec11663daad8e88d5db23c9a6fd90f8cd9de8d46",
+            "distant-town.js": "0c1df3f147eb4d9b0cdee3664130b6e21cc010b26ece27b7c4177952e720fe0f",
+            "experience-ui.js": "71988ed8af765974f56eb683ac24f6913861b633b354362b015637d111590759",
+            "gi.js": "d33cfb139c50524095e32c7f58b05830fd2591d3fa2ff86c0d23c7cbdfc6bcf0",
+            "interior.js": "1381a0142ddf007dc18324704bb0e7917834908deaba2b36411c3ceb81b8e992",
+            "local-reflections.js": "4712a3813e53c1cf76b3e7c4d1d37d4eb4b548005409ab8feee5e2d9e028c1c8",
+            "main.js": "7693b12861b64c2bab0f9dafbbc21cac58006f0ca32b847eb9ea3ee0290de0fa",
+            "materials.js": "60541bf72e9f686fbba65c60317b624291f971589571ddc1a706ad5f91c632a7",
+            "scene-export.js": "621080f5fb8a922961472fc4710390b8c10c529c4c334df76ba3058df3e4f5c6",
+            "shop-assets.js": "dd366a3a63d2e717495ae615369ecc1fa370979c53a1d0c0efb1cef979d5457a",
+            "story-world.js": "9ff5f767841a6cb63ba4b4cb664a7ec7499cb47dea8b880b85d092d5b6e0eef0",
+            "tour.js": "40e79e2c36f1a50e4eb46558b3c0dfaf0f070cb88a05c1985e289a16c389297d",
+            "vegetation.js": "e231c74e98fa3c8dbd74fd5f4e27c0c11375e2a9a79bc15a996527b9d29ce92d",
+            "water.js": "188cc2f2a0bc7d671aec9ec51235169a5fae1e65570b64dcd0fb188e22e490a7"
+          },
+          "sha256": "62690d878552f2ee5419d79aab561d1a6439454896f0b9081320ba629dd7ec95"
+        },
+        "finishedAt": "2026-10-24T10:41:47.697Z"
+      }
+    }
+  ],
+  "captures": [
+    {
+      "name": "00-export-window",
+      "canvas": "assets/canal-real-qa/2026-10-24T10-41-12-245Z/00-export-window-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T10-41-12-245Z/00-export-window-page.png",
+      "width": 1426,
+      "height": 864,
+      "sha256": "bb1c21389c7263de27cd8dde99220fb895962f7b15d9c4b851a0df7d94ca7e92",
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 0.8500000000000002,
+        "paused": false,
+        "frames": 18,
+        "view": "window",
+        "experience": "benchmark",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 73.19999992847443,
+        "quality": "benchmark / not accepted",
+        "lighting": {
+          "mode": "unbaked",
+          "bound": 0,
+          "accepted": false
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            0.9132330318171791,
+            -0.06800683776303244,
+            9.8
+          ],
+          "letterPosition": [
+            0.9264563816724504,
+            0.10807984206444589,
+            9.920613532432892
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1
+        },
+        "camera": {
+          "position": [
+            -11.699999999999998,
+            2.450000000000003,
+            13.7
+          ],
+          "target": [
+            7.3000000000000025,
+            1.7000000000000004,
+            -4.7
+          ],
+          "fov": 52
+        },
+        "renderer": {
+          "width": 1426,
+          "height": 864,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    }
+  ],
+  "errors": [],
+  "artQuality": "requires visual review; no equivalence claim",
+  "windowPolicy": {
+    "show": false,
+    "focusable": false,
+    "skipTaskbar": true
+  },
+  "scope": "exact-scene-export-only; not a functional replay or artwork pass",
+  "elapsedSeconds": 37.598
+}

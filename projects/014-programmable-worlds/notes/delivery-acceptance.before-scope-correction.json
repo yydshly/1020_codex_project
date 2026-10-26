@@ -1,0 +1,157 @@
+{
+  "schema": "programmable-worlds-delivery-v2",
+  "status": "accepted",
+  "recorded_at": "2026-10-24T15:03:02.805219+00:00",
+  "display_timezone": "Asia/Shanghai",
+  "user_direction": "保留运河题材，重新制作写实场景、植被、水体与完整光照",
+  "artwork_quality_accepted": true,
+  "visual_review": "notes/visual-acceptance-r5.md",
+  "reports": {
+    "source_inpage": {
+      "file": "notes/source-live-acceptance.d3d11.json",
+      "sha256": "8bdfc6348ee79eaacc641ecc3cf0475e264fa8226dd03074b68cf78e3b862a36",
+      "status": "passed",
+      "run": "2026-10-24T08-42-44-256Z",
+      "checks": 15,
+      "scope": "Actual WebRTC video decoding and original-renderer control. Source shader fidelity is checked separately; no artwork-quality claim."
+    },
+    "window": {
+      "file": "notes/canal-real-window-functional.d3d11.json",
+      "sha256": "9bcd42414650077b98889f2a520a5b4faba392cc11d6955b082a5eccb3b4460b",
+      "status": "passed",
+      "run": "2026-10-24T14-18-59-251Z",
+      "checks": 13,
+      "scope": "Actual run; see source report"
+    },
+    "story_composite": {
+      "file": "notes/canal-real-story-acceptance.composite.d3d11.json",
+      "sha256": "75ed127b6b8511374ec7f7ed086e0352382e2468dc718b923f528bb396463a6e",
+      "status": "passed",
+      "run": "2026-10-24-r5-story-composite-13-59-53+14-13-54",
+      "checks": 24,
+      "scope": "composite functional acceptance; full 25-second wall-clock tour/pause/read/drift plus final navigation, visible outcomes and responsive reading supplement"
+    },
+    "hub_composite": {
+      "file": "notes/hub-acceptance.composite.d3d11.json",
+      "sha256": "7bf0c1b19dac13563713c787dd22c836cf15bb215cf09e80b1e7dd1d58306d15",
+      "status": "passed",
+      "run": "2026-10-24-hub-production-composite-2026-10-24T14-41-24-504Z+2026-10-24T14-51-58-482Z",
+      "checks": 13,
+      "scope": "composite production-entry acceptance: preserved complete desktop five-leg source/window/story/source/window and DOM-control observations, plus the passed final focused actual mobile supplement; not one wholly passed raw run"
+    },
+    "mobile": {
+      "file": "notes/hub-mobile-acceptance.d3d11.json",
+      "sha256": "80bf5b73adc7a76398d64c259054a639fc227766487af4c0a902f9b6a686c990",
+      "status": "passed",
+      "run": "2026-10-24T14-51-58-482Z",
+      "checks": 5,
+      "scope": "Focused actual mobile front-door letter/readability supplement; no repeated full route."
+    }
+  },
+  "evidence_policy": "Composite story/hub evidence preserves original failed statuses, exact scopes and replacement mappings; no claim of one uninterrupted all-green run.",
+  "quality_defaults": {
+    "source_scale": 1,
+    "source_auto_quality": false,
+    "original_template_literals_preserved": 33,
+    "gi_set": "r5",
+    "static_diffuse_groups": 26,
+    "local_probes": 4,
+    "auxiliary_land": "Explicit runtime lighting, outside immutable 26-group bake"
+  },
+  "r5_manifest_sha256": "8a30c040d0b2f56a2ae13c3e17c470f4fbd77602319074914eabc6e458d0b5a4",
+  "lighting_fingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+  "execution_policy": {
+    "hidden_own_windows_only": true,
+    "desktop_input_used": false,
+    "user_tab_navigated": false,
+    "normal_visible_entry_not_auto_launched": true
+  },
+  "files": [
+    {
+      "file": "Start-Project.ps1",
+      "bytes": 4107,
+      "sha256": "15a56e5ee3e197d750ad484bd777c78885585e0244b31c14874f8d85b245ef37"
+    },
+    {
+      "file": "project.json",
+      "bytes": 786,
+      "sha256": "f931650f0a84681c794f32b3b7c56d60175d086ae5849326716dc5ce77cb9dde"
+    },
+    {
+      "file": "README.md",
+      "bytes": 11844,
+      "sha256": "6ecd831e3e51eed2a2123b6655ef7da3acad151fdf43effa64ebddebe4190c75"
+    },
+    {
+      "file": "web/index.html",
+      "bytes": 16134,
+      "sha256": "58ded16b1409bb2ecfa43d30a60e648b1185151912c1d87f2fee3d49066c5c89"
+    },
+    {
+      "file": "web/app.js",
+      "bytes": 8878,
+      "sha256": "82d96ac838b87b47c9fdd2b95c127efbb454a4448d88706a471da65214d48af0"
+    },
+    {
+      "file": "web/style.css",
+      "bytes": 15117,
+      "sha256": "3a8c496907a0a94dd5d8a7b40f467dad109597e4f345c5d55c32531c76bf7245"
+    },
+    {
+      "file": "web/guide.html",
+      "bytes": 5196,
+      "sha256": "c82662389759dbed918c4ae7d6098785a33ba37a934498b0d9a4890f48932598"
+    },
+    {
+      "file": "assets/programmable-worlds-guide.svg",
+      "bytes": 6928254,
+      "sha256": "feafacc014091273e714808c75bab1582a1dee13dd847e91eb1ab81bcaa5dc88"
+    },
+    {
+      "file": "web/assets/programmable-worlds-guide.svg",
+      "bytes": 6928254,
+      "sha256": "feafacc014091273e714808c75bab1582a1dee13dd847e91eb1ab81bcaa5dc88"
+    },
+    {
+      "file": "web/runtime/source-live.js",
+      "bytes": 17109,
+      "sha256": "86e4c1ea75f0f93733c8e91a7b0e9d6ceface1f504263321edb909a71043e428"
+    },
+    {
+      "file": "web/canal-real/main.js",
+      "bytes": 22255,
+      "sha256": "3edb2bf7896dcd7f8ed178502bef1ed29f1e8894b7dbeb0245c91f2ccdc82ee0"
+    },
+    {
+      "file": "web/canal-real/water.js",
+      "bytes": 12023,
+      "sha256": "4f778d2db6cdf1a844f01f2b01e0540bc65fdbefc1c541dc1b98d8af5cb453fc"
+    },
+    {
+      "file": "web/canal-real/auxiliary-ground.js",
+      "bytes": 3911,
+      "sha256": "97225ef91a6d400edd6d91d70dfb4c749cdf9afa83f4dadb3e00eefc921b854a"
+    },
+    {
+      "file": "web/canal-real/lighting-config.js",
+      "bytes": 3533,
+      "sha256": "d7d751cb132e343ad3d56ff1491298d6d34a260ed8dbfe8a1c43e51783fd479b"
+    },
+    {
+      "file": "web/canal-real/credits.html",
+      "bytes": 4550,
+      "sha256": "47eaf5fa5221a33a030df6b50f5b9cea1291494ea20bf329bb10841899410288"
+    },
+    {
+      "file": "notes/visual-acceptance-r5.md",
+      "bytes": 4391,
+      "sha256": "85b48b5fb661e2da2042bbb27d3b0d8362e1ae7f35bb1bc41f52ad61d3096488"
+    },
+    {
+      "file": "notes/guide-final-qa.json",
+      "bytes": 11108,
+      "sha256": "4f5ce8b995c8922b9f53ad1e635e9698e0d8ef8d8faa961709537ab7fabddb93"
+    }
+  ],
+  "previous_record": "notes/delivery-acceptance.before-r5.json"
+}

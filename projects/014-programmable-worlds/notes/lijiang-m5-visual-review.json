@@ -1,0 +1,308 @@
+{
+  "schemaVersion": 1,
+  "iteration": "M5",
+  "reviewer": {
+    "agent": "/root/m5_leaf_volume",
+    "role": "独立只读图像复核；主代理独占实际GPU运行"
+  },
+  "reviewedAtUtc": "2026-10-26T09:25:29.062189+00:00",
+  "scope": "本次叶片薄片感、植物与岩壁衔接、林带连续性的视觉改进；包含近中与远段LOD。不是整项目完美或原库等质的证明。",
+  "decision": {
+    "requestedVisualRevision": "accepted_for_inspected_views_with_limits",
+    "wholeProjectComplete": false,
+    "perfectOrReferenceEquivalentClaim": false,
+    "smoothRealtimePerformanceClaim": false,
+    "basis": "第八静态成年冠恢复后，第九保持密度并消除已定位的近中硬跳；新增远档在已检视范围没有明显板片或缺林。性能及正式父页结果单独列示。"
+  },
+  "runs": {
+    "eighth": {
+      "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T08-43-40-345Z",
+      "role": "改进前的LOD断点对照；成年冠静态密度已改善",
+      "functionalStatus": "passed"
+    },
+    "ninth": {
+      "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z",
+      "role": "本次已观察的视觉候选",
+      "functionalStatus": "passed"
+    },
+    "formalParent": {
+      "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-19-36-835Z",
+      "status": "pending",
+      "reviewed": false,
+      "note": "正式父页测试尚未由本独立记录复核。由主代理在完成后整合其真实结果，不据此记录提前宣称父页验收完成。"
+    }
+  },
+  "goals": [
+    {
+      "id": "leaf_sheet_feel",
+      "target": "叶片的薄片感",
+      "judgment": "accepted_for_this_revision_in_reviewed_views",
+      "observations": [
+        "第八与第九的坡肩成年树已形成连续的阔叶冠，褐色裸枝不再主导；没有此前绿色多面体壳或整冠宽片的回归。",
+        "近层能辨认分散小叶与细枝；第九近中阈值两侧不再整冠突然换成更亮粗叶花束。",
+        "第九远档九格与阈值两侧原图没有可辨的大平板、黑片或全冠替换。"
+      ],
+      "evidence": [
+        "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T08-43-40-345Z/mountain-primary-slope-root.png",
+        "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/mountain-primary-slope-root.png",
+        "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/mountain-same-cliff-right.png",
+        "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/motion/frame-004-out-52.717m.png",
+        "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/motion/frame-005-out-54.217m.png",
+        "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/horizon-key-contact-sheet.png"
+      ],
+      "limits": [
+        "贴壁垂丛侧看仍比阔叶树冠扁，部分分枝轮廓较规则；本记录不声称所有角度都完全自然。",
+        "少数成年冠偏鲜绿、细叶纹理较密，仍可继续做美术微调。"
+      ]
+    },
+    {
+      "id": "plant_rock_contact",
+      "target": "植物和岩壁的衔接",
+      "judgment": "accepted_as_visible_improvement_with_limits",
+      "observations": [
+        "近壁视图的根点周围出现小尺度苔藓/蕨叶过渡，裸露根点的突兀感降低。",
+        "本次所看根点没有旧式突出爪根、圆形土底座或大型悬浮贴片。"
+      ],
+      "evidence": [
+        "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T08-43-40-345Z/mountain-same-cliff-left.png",
+        "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/mountain-same-cliff-right.png",
+        "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/mountain-primary-slope-root.png"
+      ],
+      "limits": [
+        "阴面较暗，小根与岩缝的贴合在截图中不总能清楚辨认；精确SDF支撑属于另行几何验证，不由目视代替。",
+        "植物团簇与大块裸岩之间仍有明确边界；未宣称整座山达到摄影级自然融合。"
+      ]
+    },
+    {
+      "id": "woodland_continuity",
+      "target": "林带连续性",
+      "judgment": "accepted_for_inspected_route_and_lod_boundaries",
+      "observations": [
+        "第八到第九的primary-left对照保留山脚、肩部及高处冠量，没有因远档优化重新稀成冬枝/细点。",
+        "第九flight-25保留山脚林带；688.549–813.551m九格中，顶冠、肩带与下缘小丛持续存在。",
+        "750.300m与751.800m两张原图没有整冠掉叶、突然变黑或黄绿换色。"
+      ],
+      "evidence": [
+        "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T08-43-40-345Z/primary-left.png",
+        "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/primary-left.png",
+        "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/flight-25.png",
+        "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/horizon-key-contact-sheet.png",
+        "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/horizon/horizon-03-750.300m.png",
+        "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/horizon/horizon-05-751.800m.png"
+      ],
+      "limits": [
+        "裸岩和生态空隙仍存在；连续性不等于将每块岩壁填满。",
+        "极远小簇更紧凑，在已检查约800m尺度可接受；未穷尽所有山峰、光照和观看角度。"
+      ]
+    }
+  ],
+  "nearMiddleRegression": {
+    "worldRootDistancesMetres": [
+      52.717,
+      54.217
+    ],
+    "eighth": {
+      "judgment": "fail",
+      "images": [
+        "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T08-43-40-345Z/motion/frame-004-out-52.717m.png",
+        "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T08-43-40-345Z/motion/frame-005-out-54.217m.png"
+      ],
+      "observed": "仅后退1.5m，中央同一树从细碎蓬松叶冠突然变成更亮、叶片更粗的紧凑花束。"
+    },
+    "ninth": {
+      "judgment": "pass_for_known_boundary",
+      "images": [
+        "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/motion/frame-004-out-52.717m.png",
+        "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/motion/frame-005-out-54.217m.png"
+      ],
+      "observed": "同一对距离两侧中心树的轮廓、细碎纹理和亮度相近，整冠硬切消失。",
+      "mechanism": "固定阈值±12m、世界坐标filtered alpha-hash混合；保持本轮成年树密度。",
+      "limit": "依据实际帧对与候选运动资料，不把几何权重和等于1单独当作视觉通过证据。"
+    }
+  },
+  "horizonReview": {
+    "judgment": "pass_for_inspected_boundary",
+    "contactSheet": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/horizon-key-contact-sheet.png",
+    "rangeMetres": [
+      688.549,
+      813.551
+    ],
+    "thresholdSideOriginals": [
+      "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/horizon/horizon-03-750.300m.png",
+      "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/horizon/horizon-05-751.800m.png"
+    ],
+    "observed": "九格与相邻阈值原图没有大板、黑片、整冠消失或突发换色。",
+    "limit": "小喷簇为极远代理；不意味着所有尺度都使用逐片真实叶几何。"
+  },
+  "performance": {
+    "judgment": "remaining_limit_not_smooth_realtime_pass",
+    "measurement": "runtime frameMs包围renderer.render及GPU fence完成等待；不包含全部预渲染更新，也不等价完整交互帧率。截图瞬时值不能替代稳定性能测试。",
+    "eighthMotion": {
+      "frames": 107,
+      "allCovered": true,
+      "gpuCompletedFrames": 124,
+      "meanFrameMilliseconds": 78.04392523520461,
+      "maxFrameMilliseconds": 125.79999995231628,
+      "meanCompletedWaitMilliseconds": 180.22523364619673,
+      "maxCompletedWaitMilliseconds": 660.5,
+      "detailPlantRange": [
+        0,
+        67
+      ]
+    },
+    "ninthMotion": {
+      "frames": 107,
+      "allCovered": true,
+      "gpuCompletedFrames": 121,
+      "meanFrameMilliseconds": 72.4514018620286,
+      "maxFrameMilliseconds": 108.5,
+      "meanCompletedWaitMilliseconds": 154.17009346061778,
+      "maxCompletedWaitMilliseconds": 371.39999997615814,
+      "detailPlantRange": [
+        0,
+        108
+      ]
+    },
+    "geometrySnapshots": {
+      "flight00": {
+        "eighth": {
+          "frameMsSnapshot": 99.5,
+          "canopySubmittedTriangles": 54529968,
+          "gpuReportedTriangles": 119662957
+        },
+        "ninth": {
+          "frameMsSnapshot": 87.80000007152557,
+          "canopySubmittedTriangles": 19511926,
+          "gpuReportedTriangles": 49626873
+        }
+      },
+      "flight25": {
+        "eighth": {
+          "frameMsSnapshot": 236.39999997615814,
+          "canopySubmittedTriangles": 47233788,
+          "gpuReportedTriangles": 103815651
+        },
+        "ninth": {
+          "frameMsSnapshot": 257.60000002384186,
+          "canopySubmittedTriangles": 17591120,
+          "gpuReportedTriangles": 44530315
+        }
+      }
+    },
+    "interpretation": "远景提交三角形明显下降，但motion平均frameMs仅从约78.04降到72.45；不能据此宣称流畅60fps。下一步性能应另行定位与复验，不回退已通过的成年冠外观。"
+  },
+  "sourceHashes": {
+    "raster-mountain-canopy.js": "877b4859aebf16a20f4fdb046b60a3538887be2e72932fb906b32d26fda23883",
+    "mountain-botanical-crown.js": "3eee3b8af77f7fd0cd6949f0b666bb34ed86bf721dac802fd117c4b88cdffa7e",
+    "mountain-horizon-sprays.js": "cdf806e7b80a3b9c84a0d38c53194bfe331eb70de0e977667147ac507ee64ffb"
+  },
+  "directlyViewedEvidence": {
+    "eighth": [
+      {
+        "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T08-43-40-345Z/mountain-primary-slope-root.png",
+        "sha256": "f01bfdef74541e97ee9b931d952d18c8f4864504a22715e4d586a8f7cf8a7375",
+        "inspection": "原始图直接目视"
+      },
+      {
+        "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T08-43-40-345Z/m4-reference-mountain-primary-shoulder.png",
+        "sha256": "d7823759ce3893115b063824a01da0054f052cb8e1f9405b36cedcef85b25d53",
+        "inspection": "原始图直接目视"
+      },
+      {
+        "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T08-43-40-345Z/mountain-same-cliff-left.png",
+        "sha256": "987d20baebe332b4b614fd0b01a2b2e2d4dcc01a8e853d8879fa81a9853d8257",
+        "inspection": "原始图直接目视"
+      },
+      {
+        "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T08-43-40-345Z/primary-left.png",
+        "sha256": "d6cadeaa6a23b4f44a55d2331c15908a7b27f7bd24a680e629584244c1a1b6ed",
+        "inspection": "原始图直接目视"
+      },
+      {
+        "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T08-43-40-345Z/motion/frame-004-out-52.717m.png",
+        "sha256": "4e8344cc0e0edd92299d61f912d449f01ecf39c0748555bf6ecfc0a34a3c861a",
+        "inspection": "原始图直接目视"
+      },
+      {
+        "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T08-43-40-345Z/motion/frame-005-out-54.217m.png",
+        "sha256": "95b7712a3a1a0f782f2a1a1b6995fe18204d55e749750ea41237a8310fef9d8f",
+        "inspection": "原始图直接目视"
+      }
+    ],
+    "ninth": [
+      {
+        "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/mountain-primary-slope-root.png",
+        "sha256": "c2e837f6cdf1315b8bb1b909feb409425d197f2708df858206a459fc55f894a5",
+        "inspection": "原始图直接目视"
+      },
+      {
+        "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/flight-25.png",
+        "sha256": "e72dcb198898036dd110936cee5faf052eadad17e043a984255025616220a817",
+        "inspection": "原始图直接目视"
+      },
+      {
+        "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/primary-left.png",
+        "sha256": "36b0a401e7612e7e2c3a44b02d85f05ba87695106196a49e6c67eba511c8df1d",
+        "inspection": "原始图直接目视"
+      },
+      {
+        "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/mountain-same-cliff-right.png",
+        "sha256": "2acfa8d162f616880dbd0f07ad629f777f290a7b8554c1b898d977f1c82caf40",
+        "inspection": "原始图直接目视"
+      },
+      {
+        "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/motion/frame-004-out-52.717m.png",
+        "sha256": "82b9fd6c6a3d8bf2c8ac43df088189784b89c5452a7890bf098790f97eb2fffd",
+        "inspection": "原始图直接目视"
+      },
+      {
+        "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/motion/frame-005-out-54.217m.png",
+        "sha256": "d39dfc4c604ccc87e302046b60ecdf225dbfe945b5dbbef7e65a81db1284900f",
+        "inspection": "原始图直接目视"
+      },
+      {
+        "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/horizon-key-contact-sheet.png",
+        "sha256": "e92c437b1c5b9f5257ee62ca9eb55e4b10c459090b4fccb7bf79ccd0565535c2",
+        "inspection": "九格接触表全部单元目视，覆盖688.549–813.551m"
+      },
+      {
+        "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/horizon/horizon-03-750.300m.png",
+        "sha256": "4c8c4c11f8cd17dccbfa655e48be3e56bcc7e588690570de7890b56b676643e9",
+        "inspection": "原始图直接目视"
+      },
+      {
+        "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-12-34-506Z/horizon/horizon-05-751.800m.png",
+        "sha256": "071393269e7825acde989b97a46f3ee08401eccead6aecd11e6b42d64e327a31",
+        "inspection": "原始图直接目视"
+      }
+    ]
+  },
+  "reviewMethod": {
+    "runtimeEditsDuringReview": false,
+    "gpuRunsByThisReviewer": 0,
+    "desktopInputOrFocusChanges": false,
+    "evidenceType": "真实GPU运行已保存PNG及对应result.json；只读人工视觉判断与记录",
+    "notAsserted": [
+      "整项目完美",
+      "达到或超越原库全部画质",
+      "稳定60fps",
+      "正式父页已通过",
+      "所有生态/光照/视角穷尽验收"
+    ]
+  },
+  "rootFinalIntegration": {
+    "formalParentStatus": "passed",
+    "requiredChecks": 23,
+    "report": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m5/2026-10-26T09-19-36-835Z/result.json",
+    "acceptedForRequestedImprovements": true,
+    "reviewers": [
+      "root",
+      "m5_ecology_contact",
+      "m5_qa_scaffold"
+    ],
+    "note": "此补充为主代理完成正式父页后的整合；上方叶冠代理的独立评审保留原始时间与pending范围，不回写其未做过的审核。",
+    "filmReview": "Root read film nine-frame sheet and full04/09; ecology reviewer read nine-frame sheet and full05/07/09.",
+    "fullGoalComplete": false,
+    "realtime60fpsVerified": false
+  }
+}

@@ -1,0 +1,647 @@
+{
+  "runId": "2026-10-24-hub-production-composite-2026-10-24T14-41-24-504Z+2026-10-24T14-51-58-482Z",
+  "status": "passed",
+  "scope": "composite production-entry acceptance: preserved complete desktop five-leg source/window/story/source/window and DOM-control observations, plus the passed final focused actual mobile supplement; not one wholly passed raw run",
+  "tests": [
+    {
+      "name": "source-live-and-new-canal-entry-map",
+      "passed": true,
+      "source": {
+        "path": "assets/hub-qa/d3d11/2026-10-24T14-41-24-504Z/acceptance.json",
+        "runId": "2026-10-24T14-41-24-504Z",
+        "test": "source-live-and-new-canal-entry-map"
+      },
+      "evidence": {
+        "entries": [
+          "runtime/source-live.html?embed=1",
+          "canal-real/index.html?experience=window&giSet=r5&probes=1&streetProbes=1&embed=1",
+          "canal-real/index.html?experience=story&giSet=r5&probes=1&streetProbes=1&embed=1"
+        ],
+        "candidateOverride": null
+      }
+    },
+    {
+      "name": "source-live-track-and-real-free-drive-with-bounded-huge-dom-drag",
+      "passed": true,
+      "source": {
+        "path": "assets/hub-qa/d3d11/2026-10-24T14-41-24-504Z/acceptance.json",
+        "runId": "2026-10-24T14-41-24-504Z",
+        "test": "source-live-track-and-real-free-drive-with-bounded-huge-dom-drag"
+      }
+    },
+    {
+      "name": "leg-0-source-starts-after-previous-scene-unloads",
+      "passed": true,
+      "source": {
+        "path": "assets/hub-qa/d3d11/2026-10-24T14-41-24-504Z/acceptance.json",
+        "runId": "2026-10-24T14-41-24-504Z",
+        "test": "leg-0-source-starts-after-previous-scene-unloads"
+      }
+    },
+    {
+      "name": "actual-canal-pointer-and-held-dom-WASD-input",
+      "passed": true,
+      "source": {
+        "path": "assets/hub-qa/d3d11/2026-10-24T14-41-24-504Z/acceptance.json",
+        "runId": "2026-10-24T14-41-24-504Z",
+        "test": "actual-canal-pointer-and-held-dom-WASD-input"
+      }
+    },
+    {
+      "name": "leg-1-window-starts-after-previous-scene-unloads",
+      "passed": true,
+      "source": {
+        "path": "assets/hub-qa/d3d11/2026-10-24T14-41-24-504Z/acceptance.json",
+        "runId": "2026-10-24T14-41-24-504Z",
+        "test": "leg-1-window-starts-after-previous-scene-unloads"
+      }
+    },
+    {
+      "name": "leg-2-story-starts-after-previous-scene-unloads",
+      "passed": true,
+      "source": {
+        "path": "assets/hub-qa/d3d11/2026-10-24T14-41-24-504Z/acceptance.json",
+        "runId": "2026-10-24T14-41-24-504Z",
+        "test": "leg-2-story-starts-after-previous-scene-unloads"
+      }
+    },
+    {
+      "name": "leg-3-source-starts-after-previous-scene-unloads",
+      "passed": true,
+      "source": {
+        "path": "assets/hub-qa/d3d11/2026-10-24T14-41-24-504Z/acceptance.json",
+        "runId": "2026-10-24T14-41-24-504Z",
+        "test": "leg-3-source-starts-after-previous-scene-unloads"
+      }
+    },
+    {
+      "name": "leg-4-window-starts-after-previous-scene-unloads",
+      "passed": true,
+      "source": {
+        "path": "assets/hub-qa/d3d11/2026-10-24T14-41-24-504Z/acceptance.json",
+        "runId": "2026-10-24T14-41-24-504Z",
+        "test": "leg-4-window-starts-after-previous-scene-unloads"
+      }
+    },
+    {
+      "name": "leg-0-story-starts-after-previous-scene-unloads",
+      "passed": true,
+      "source": {
+        "path": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/acceptance.json",
+        "runId": "2026-10-24T14-51-58-482Z",
+        "test": "leg-0-story-starts-after-previous-scene-unloads"
+      }
+    },
+    {
+      "name": "actual-376-845-hub-preview-has-readable-paper-and-complete-replay-control",
+      "passed": true,
+      "source": {
+        "path": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/acceptance.json",
+        "runId": "2026-10-24T14-51-58-482Z",
+        "test": "actual-376-845-hub-preview-has-readable-paper-and-complete-replay-control"
+      }
+    },
+    {
+      "name": "actual-390-845-hub-preview-has-readable-paper-and-complete-replay-control",
+      "passed": true,
+      "source": {
+        "path": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/acceptance.json",
+        "runId": "2026-10-24T14-51-58-482Z",
+        "test": "actual-390-845-hub-preview-has-readable-paper-and-complete-replay-control"
+      }
+    },
+    {
+      "name": "single-live-world-during-focused-mobile-supplement",
+      "passed": true,
+      "source": {
+        "path": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/acceptance.json",
+        "runId": "2026-10-24T14-51-58-482Z",
+        "test": "single-live-world-during-focused-mobile-supplement"
+      }
+    },
+    {
+      "name": "composite-desktop-five-leg-single-live-world-evidence",
+      "passed": true,
+      "source": {
+        "path": "assets/hub-qa/d3d11/2026-10-24T14-41-24-504Z/acceptance.json",
+        "runId": "2026-10-24T14-41-24-504Z"
+      },
+      "verification": "Structural validation of the five already-executed leg observations, actual activation order and peakDocs/peakHeavy=1; no additional browser run or rewritten original test status"
+    }
+  ],
+  "errors": [],
+  "captures": [
+    {
+      "name": "01-source",
+      "frame": "assets/hub-qa/d3d11/2026-10-24T14-41-24-504Z/01-source-live-frame.png",
+      "page": "assets/hub-qa/d3d11/2026-10-24T14-41-24-504Z/01-source-page.png",
+      "width": 1440,
+      "height": 902,
+      "meanLuminance": 152.2963980034721,
+      "luminanceStdDev": 31.25298522591703,
+      "monotonicMs": 28464.7207,
+      "frameSha256": "cbe2134b6101e1387a98413d71cf2a33da5c3477618658357df4a38548820006",
+      "pageSha256": "a935b1dd165ae2094fab5ffed910fb8ce26641d0c8ea24d954f91630d5a141ec"
+    },
+    {
+      "name": "02-window",
+      "frame": "assets/hub-qa/d3d11/2026-10-24T14-41-24-504Z/02-window-live-frame.png",
+      "page": "assets/hub-qa/d3d11/2026-10-24T14-41-24-504Z/02-window-page.png",
+      "width": 668,
+      "height": 561,
+      "meanLuminance": 78.16649131944448,
+      "luminanceStdDev": 38.219783116758904,
+      "monotonicMs": 72332.7683,
+      "frameSha256": "0f4212812d38975ea4ada8694f622d74acf08fffdf54a45e47de4ae7563f9498",
+      "pageSha256": "560994c21812fa4999eead5c6752bbd8f8bc11934fab17697ed47dd0dc84b701"
+    },
+    {
+      "name": "03-story",
+      "frame": "assets/hub-qa/d3d11/2026-10-24T14-41-24-504Z/03-story-live-frame.png",
+      "page": "assets/hub-qa/d3d11/2026-10-24T14-41-24-504Z/03-story-page.png",
+      "width": 668,
+      "height": 570,
+      "meanLuminance": 55.45287256944431,
+      "luminanceStdDev": 41.112966247726966,
+      "monotonicMs": 114450.9064,
+      "frameSha256": "fb80916d5f81445d518e6c79aab2dcc2ad8ca5075731edf24ce33f5749248683",
+      "pageSha256": "9651e65908f4b8faafd27871434ddae9a8d9b3318c143b8d03bc0780873edc3e"
+    },
+    {
+      "name": "04-source",
+      "frame": "assets/hub-qa/d3d11/2026-10-24T14-41-24-504Z/04-source-live-frame.png",
+      "page": "assets/hub-qa/d3d11/2026-10-24T14-41-24-504Z/04-source-page.png",
+      "width": 1440,
+      "height": 902,
+      "meanLuminance": 142.6633141493052,
+      "luminanceStdDev": 49.433227814302185,
+      "monotonicMs": 187050.8972,
+      "frameSha256": "0849d0ab205e90b15d7e9fddde4e0bce29d1bb0c6eadfc7ce1e29fb8245b32f8",
+      "pageSha256": "6ba003835727a1821a0e2af188e591bd557f9caf23320a04b76fcfc4dc850371"
+    },
+    {
+      "name": "05-window",
+      "frame": "assets/hub-qa/d3d11/2026-10-24T14-41-24-504Z/05-window-live-frame.png",
+      "page": "assets/hub-qa/d3d11/2026-10-24T14-41-24-504Z/05-window-page.png",
+      "width": 668,
+      "height": 561,
+      "meanLuminance": 55.38640425347218,
+      "luminanceStdDev": 40.75629171228436,
+      "monotonicMs": 233954.1224,
+      "frameSha256": "2b52f0adad15453bf12fcccf3890166c797f8fa8fe95bbf06c51cacb18a4dcdf",
+      "pageSha256": "ba9df1c2bd7671b886df5ce17c9a972c151f5bb01f34626414ab2d56f26ef7ba"
+    },
+    {
+      "name": "01-story",
+      "frame": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/01-story-live-frame.png",
+      "page": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/01-story-page.png",
+      "width": 668,
+      "height": 570,
+      "meanLuminance": 55.36557300347206,
+      "luminanceStdDev": 41.07522389226292,
+      "monotonicMs": 57642.603,
+      "frameSha256": "656f80ebaf8a9c40a9e440e4f646a5057542f27f09e8402a8d954bef0e4cad04",
+      "pageSha256": "2de663a3ee5f5c9ccbd18feed1c6d98193cb76eafc037fd110b64beea4d57414"
+    },
+    {
+      "name": "mobile-375-actual-choice",
+      "frame": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/mobile-375-actual-choice-live-frame.png",
+      "page": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/mobile-375-actual-choice-page.png",
+      "width": 321,
+      "height": 520,
+      "meanLuminance": 55.94451553819428,
+      "luminanceStdDev": 25.40706669320106,
+      "monotonicMs": 58621.0124,
+      "frameSha256": "ded04d0ca16cf8af7314af7aeba0849e85ff4c4b0bfde31c24654a655abbfd79",
+      "pageSha256": "6dc71531609b745d7d2580af47ec8aa913afab998bda0524a88b80ef791a015a"
+    },
+    {
+      "name": "mobile-376-845-physical-letter",
+      "frame": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/mobile-376-845-physical-letter-live-frame.png",
+      "page": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/mobile-376-845-physical-letter-page.png",
+      "width": 321,
+      "height": 520,
+      "meanLuminance": 145.17492786458303,
+      "luminanceStdDev": 48.818322990358084,
+      "monotonicMs": 60498.7562,
+      "frameSha256": "28475981a685099a999f2d1873d3808811874759705b921a5f7e001cf6774f4e",
+      "pageSha256": "91ebade9c60a8a6ddc4b3a25d9a29a7098609f516b58573612d65fc7ab0af995"
+    },
+    {
+      "name": "mobile-390-actual-choice",
+      "frame": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/mobile-390-actual-choice-live-frame.png",
+      "page": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/mobile-390-actual-choice-page.png",
+      "width": 335,
+      "height": 520,
+      "meanLuminance": 56.04741779513884,
+      "luminanceStdDev": 25.032269926104483,
+      "monotonicMs": 61196.8129,
+      "frameSha256": "65f352e503f4d1fae12c5e976b794c9437a36b6f0ca9943fda7dcc98612917ef",
+      "pageSha256": "7d421dfc5529ed957ba7c0570419e03947f13e5b3d212d1ba622ee3551a37da6"
+    },
+    {
+      "name": "mobile-390-845-physical-letter",
+      "frame": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/mobile-390-845-physical-letter-live-frame.png",
+      "page": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/mobile-390-845-physical-letter-page.png",
+      "width": 335,
+      "height": 520,
+      "meanLuminance": 149.40167282986022,
+      "luminanceStdDev": 45.240809622192764,
+      "monotonicMs": 63302.1678,
+      "frameSha256": "b054d22449f42d58b3968ed2b0ec6d9d2fec50971f5ac9de5d64be61c8a3d8bb",
+      "pageSha256": "58f80ffe53adec391621296837f5fb5c179183524d83277e7022af5e42df7dcc"
+    }
+  ],
+  "candidateOverride": null,
+  "sourceReports": [
+    {
+      "path": "assets/hub-qa/d3d11/2026-10-24T14-41-24-504Z/acceptance.json",
+      "runId": "2026-10-24T14-41-24-504Z",
+      "originalStatus": "failed",
+      "sha256": "d0b142bc25fe736d05117b28be5363c6589dae414c98b58a4545532732aced5c",
+      "checks": 8,
+      "originalErrors": [
+        "Error: Actual mobile hub dimensions or overflow failed\n    at invariant (F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\hub-acceptance.cjs:8:51)\n    at mobilePreviews (F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\hub-acceptance.cjs:84:4)\n    at async runHubAcceptance (F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\hub-acceptance.cjs:105:13)\n    at async F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\main.cjs:143:22"
+      ]
+    },
+    {
+      "path": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/acceptance.json",
+      "runId": "2026-10-24T14-51-58-482Z",
+      "originalStatus": "passed",
+      "sha256": "80bf5b73adc7a76398d64c259054a639fc227766487af4c0a902f9b6a686c990",
+      "checks": 5,
+      "originalErrors": []
+    }
+  ],
+  "peakObservedLiveSceneDocuments": 1,
+  "peakObservedHeavyScenes": 1,
+  "activations": [
+    {
+      "leg": 0,
+      "label": "source",
+      "monotonicStartMs": 677.7096,
+      "monotonicReadyMs": 25197.6612,
+      "seconds": 24.519953500000003,
+      "sourceFrames": 17,
+      "decodedFrames": 3
+    },
+    {
+      "leg": 1,
+      "label": "window",
+      "monotonicStartMs": 28467.6111,
+      "monotonicReadyMs": 71159.8789,
+      "seconds": 42.6922684,
+      "sourceFrames": 12,
+      "decodedFrames": null
+    },
+    {
+      "leg": 2,
+      "label": "story",
+      "monotonicStartMs": 72337.7963,
+      "monotonicReadyMs": 112955.161,
+      "seconds": 40.6173649,
+      "sourceFrames": 13,
+      "decodedFrames": null
+    },
+    {
+      "leg": 3,
+      "label": "source",
+      "monotonicStartMs": 114456.4118,
+      "monotonicReadyMs": 184539.2809,
+      "seconds": 70.08286919999999,
+      "sourceFrames": 11,
+      "decodedFrames": 3
+    },
+    {
+      "leg": 4,
+      "label": "window",
+      "monotonicStartMs": 187054.3103,
+      "monotonicReadyMs": 233256.8881,
+      "seconds": 46.20257809999998,
+      "sourceFrames": 13,
+      "decodedFrames": null
+    }
+  ],
+  "originalSourceQualityEvidence": [
+    {
+      "leg": 0,
+      "scale": 1,
+      "autoQuality": false,
+      "renderSize": {
+        "width": 1440,
+        "height": 902
+      },
+      "decodedFrames": 3
+    },
+    {
+      "leg": 3,
+      "scale": 1,
+      "autoQuality": false,
+      "renderSize": {
+        "width": 1440,
+        "height": 902
+      },
+      "decodedFrames": 3
+    }
+  ],
+  "mobileLayoutSamples": [
+    {
+      "monotonicMs": 60024.728,
+      "requestedViewport": {
+        "width": 375,
+        "height": 844
+      },
+      "actualViewport": {
+        "width": 376,
+        "height": 845
+      },
+      "documentWidth": 361,
+      "candidateStyleOverride": false,
+      "frame": {
+        "x": 20,
+        "y": 176.015625,
+        "width": 321,
+        "height": 520,
+        "top": 176.015625,
+        "right": 341,
+        "bottom": 696.015625,
+        "left": 20
+      },
+      "preview": {
+        "width": 321,
+        "height": 520
+      },
+      "overflow": false,
+      "overflowElements": [],
+      "buttons": [
+        {
+          "text": "重新开始",
+          "disabled": false,
+          "rect": {
+            "x": 18,
+            "y": 464,
+            "width": 72,
+            "height": 40,
+            "top": 464,
+            "right": 90,
+            "bottom": 504,
+            "left": 18
+          }
+        }
+      ],
+      "dynamic": {
+        "choice": "read",
+        "boatPosition": [
+          0.9183883054422173,
+          -0.06954672237128134,
+          4.992000000000001
+        ],
+        "letterPosition": [
+          4.193487475180814,
+          1.1932266714885917,
+          9.247196872520085
+        ],
+        "letterParent": "held",
+        "paperVisible": true,
+        "paperUnfold": 1,
+        "readingLayout": {
+          "width": 321,
+          "height": 520,
+          "area": {
+            "left": 25.68,
+            "right": 295.32,
+            "top": 18,
+            "bottom": 448
+          },
+          "bodyFontSourcePixels": 96,
+          "distance": 0.6594105161137618
+        },
+        "paperScreenBounds": {
+          "left": 47.45096704769307,
+          "right": 269.48321127926755,
+          "top": 86.79566250808914,
+          "bottom": 383.27770025096936,
+          "bodyFontEstimate": 18.97485041554433
+        }
+      }
+    },
+    {
+      "monotonicMs": 62814.3407,
+      "requestedViewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actualViewport": {
+        "width": 390,
+        "height": 845
+      },
+      "documentWidth": 375,
+      "candidateStyleOverride": false,
+      "frame": {
+        "x": 20,
+        "y": 176.328125,
+        "width": 335,
+        "height": 520,
+        "top": 176.328125,
+        "right": 355,
+        "bottom": 696.328125,
+        "left": 20
+      },
+      "preview": {
+        "width": 335,
+        "height": 520
+      },
+      "overflow": false,
+      "overflowElements": [],
+      "buttons": [
+        {
+          "text": "重新开始",
+          "disabled": false,
+          "rect": {
+            "x": 18,
+            "y": 464,
+            "width": 72,
+            "height": 40,
+            "top": 464,
+            "right": 90,
+            "bottom": 504,
+            "left": 18
+          }
+        }
+      ],
+      "dynamic": {
+        "choice": "read",
+        "boatPosition": [
+          0.9589488215635414,
+          -0.06842149538903097,
+          4.948
+        ],
+        "letterPosition": [
+          4.2529990167357345,
+          1.2118339290164708,
+          9.317601747998838
+        ],
+        "letterParent": "held",
+        "paperVisible": true,
+        "paperUnfold": 1,
+        "readingLayout": {
+          "width": 335,
+          "height": 520,
+          "area": {
+            "left": 26.8,
+            "right": 308.2,
+            "top": 18,
+            "bottom": 448
+          },
+          "bodyFontSourcePixels": 96,
+          "distance": 0.6318530617090075
+        },
+        "paperScreenBounds": {
+          "left": 39.385512433141145,
+          "right": 293.47322493423457,
+          "top": 61.787479913594346,
+          "bottom": 403.72201946543,
+          "bodyFontEstimate": 21.88381053131748
+        }
+      }
+    }
+  ],
+  "mobileChoiceSamples": [
+    {
+      "monotonicMs": 58020.1245,
+      "requestedWidth": 375,
+      "actualViewport": {
+        "width": 376,
+        "height": 845
+      },
+      "previewOpen": {
+        "x": 233.4375,
+        "y": 643.421875,
+        "width": 89.5625,
+        "height": 35.59375,
+        "top": 643.421875,
+        "right": 323,
+        "bottom": 679.015625,
+        "left": 233.4375
+      },
+      "buttons": [
+        {
+          "text": "再走一遍",
+          "rect": {
+            "left": 38,
+            "right": 110,
+            "top": 640.015625,
+            "bottom": 680.015625
+          },
+          "overlapArea": 0
+        },
+        {
+          "text": "重新开始",
+          "rect": {
+            "left": 117,
+            "right": 189,
+            "top": 640.015625,
+            "bottom": 680.015625
+          },
+          "overlapArea": 0
+        },
+        {
+          "text": "拾起信",
+          "rect": {
+            "left": 54,
+            "right": 176.5,
+            "top": 572.015625,
+            "bottom": 612.015625
+          },
+          "overlapArea": 0
+        },
+        {
+          "text": "让它继续漂流",
+          "rect": {
+            "left": 184.5,
+            "right": 307,
+            "top": 572.015625,
+            "bottom": 612.015625
+          },
+          "overlapArea": 0
+        }
+      ]
+    },
+    {
+      "monotonicMs": 60726.2069,
+      "requestedWidth": 390,
+      "actualViewport": {
+        "width": 390,
+        "height": 845
+      },
+      "previewOpen": {
+        "x": 247.4375,
+        "y": 643.734375,
+        "width": 89.5625,
+        "height": 35.59375,
+        "top": 643.734375,
+        "right": 337,
+        "bottom": 679.328125,
+        "left": 247.4375
+      },
+      "buttons": [
+        {
+          "text": "再走一遍",
+          "rect": {
+            "left": 38,
+            "right": 110,
+            "top": 640.328125,
+            "bottom": 680.328125
+          },
+          "overlapArea": 0
+        },
+        {
+          "text": "重新开始",
+          "rect": {
+            "left": 117,
+            "right": 189,
+            "top": 640.328125,
+            "bottom": 680.328125
+          },
+          "overlapArea": 0
+        },
+        {
+          "text": "拾起信",
+          "rect": {
+            "left": 54,
+            "right": 183.5,
+            "top": 572.328125,
+            "bottom": 612.328125
+          },
+          "overlapArea": 0
+        },
+        {
+          "text": "让它继续漂流",
+          "rect": {
+            "left": 191.5,
+            "right": 321,
+            "top": 572.328125,
+            "bottom": 612.328125
+          },
+          "overlapArea": 0
+        }
+      ]
+    }
+  ],
+  "resolvedHarnessFailure": {
+    "originalDesktopStatusPreserved": "failed",
+    "originalError": [
+      "Error: Actual mobile hub dimensions or overflow failed\n    at invariant (F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\hub-acceptance.cjs:8:51)\n    at mobilePreviews (F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\hub-acceptance.cjs:84:4)\n    at async runHubAcceptance (F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\hub-acceptance.cjs:105:13)\n    at async F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\main.cjs:143:22"
+    ],
+    "cause": "The production desktop run reached all five legs. Its later mobile gate required an exact requested CSS width, but native 1.5-DPI offscreen rounding produced a one-pixel difference. The final harness accepts at most one CSS pixel, uses actual viewport names and still rejects overflow, clipped controls or unreadable paper.",
+    "replacementReport": "assets/hub-qa/d3d11/2026-10-24T14-51-58-482Z/acceptance.json",
+    "replacementTests": [
+      "actual-376-845-hub-preview-has-readable-paper-and-complete-replay-control",
+      "actual-390-845-hub-preview-has-readable-paper-and-complete-replay-control"
+    ],
+    "scope": "Only the mobile portion is supplemented; the five desktop legs were not rerun or relabeled."
+  },
+  "timingScope": "Actual observed activation waits retained per leg. No instantaneous switch, seconds-to-open promise, fixed FPS or all-devices claim.",
+  "rawSourceReportsUnmodified": true,
+  "artQuality": "Separate independent review in notes/visual-acceptance-r5.md; this composite is functional evidence."
+}

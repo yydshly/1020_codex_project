@@ -1,0 +1,32 @@
+{
+  "triangles": 14645856,
+  "meshes": 492,
+  "instances": 254752,
+  "finite": true,
+  "plantingCollisions": 0,
+  "nearTown": {
+    "count": 735,
+    "footprintViolations": 0,
+    "smallTrees": 25,
+    "shrubs": 450,
+    "grassBlades": 20000,
+    "gravelPebbles": 1500,
+    "fallenLeaves": 4000,
+    "backGardenPath": true,
+    "boundaryFenceSegments": 3
+  },
+  "transformsSHA": "033c8736a510731b6d324f48425c74fdf5613be0eb41171bf4c4e942c87ec008",
+  "baselineTriangles": 13680684,
+  "addedTriangles": 965172,
+  "under2MAdditional": true,
+  "deterministic": true,
+  "checks": {
+    "finiteGeometryAndInstanceMatrices": true,
+    "noTownFootprintRootCollisions": true,
+    "nearTownAuditClear": true,
+    "deterministic": true,
+    "triangleBudget": true
+  },
+  "scope": "CPU real geometry/instance build only; actual edge views still require GPU art review.",
+  "allPassed": true
+}

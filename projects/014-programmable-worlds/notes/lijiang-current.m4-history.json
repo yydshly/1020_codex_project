@@ -1,0 +1,157 @@
+{
+  "schema": "lijiang-current-v5",
+  "recordedAt": "2026-10-26T06:34:56.341766+00:00",
+  "status": "m4-mountain-vegetation-verified-local",
+  "fullGoalComplete": false,
+  "improvementPassComplete": true,
+  "scope": "Mountain vegetation integration and two visually preserving CPU optimizations passed this iteration. Functional success is separate from final visual quality and realtime60fps.",
+  "runtime": "lijiang-raster-field-material-m4",
+  "entry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?revision=20261026-m4#lijiang",
+  "standaloneEntry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/lijiang-m4/raster.html?surface=1&material=1&revision=20261026-m4",
+  "previousBaseline": "lijiang-current.m3-history.json",
+  "renderer": "76 native signed-field rock meshes with rooted mountain woodland and cliff scrub, live lighting/shadows, planar reflection and code-generated foliage",
+  "sceneAssets": "Code-generated geometry and runtime textures; no external scene model, image, texture, HDR or QA binary cache.",
+  "sourceRole": "Creative and technical reference; actual appearance, usable interaction and cost determine acceptance.",
+  "visualScope": {
+    "incrementalImprovementAccepted": true,
+    "overallFinalArtSignoff": false,
+    "improvements": [
+      "Visible summit and shoulder woodland added above the lowland forest",
+      "Cliff fissure scrub uses short outward/downward growth with separately supported root disks",
+      "Mountain vegetation roots use actual visible SDF triangles rather than height-field relocation",
+      "Porous fixed 3D short-leaf tufts replace rejected opaque green lobes; black backface clumps and radial coarse-branch stars corrected"
+    ],
+    "remaining": [
+      "Close-range leaf clusters still reveal repeated curved planar silhouettes",
+      "Cliff scrub has exact geometric roots but visible branch/root-to-rock connection remains weak",
+      "Distant slope woodland remains discontinuous in places and large limestone faces remain soft/clay-like",
+      "First generation remains lengthy; realtime60fps target is not met by the recorded completed-frame measurement"
+    ],
+    "finalIndependentReview": {
+      "reviewedViews": [
+        "flight-25",
+        "mountain-highest-supported-pocket",
+        "mountain-primary-shoulder",
+        "mountain-cliff-scrub-root",
+        "film-contact-sheet",
+        "film-frame-04",
+        "film-frame-09"
+      ],
+      "actualDecodedFramesOnReviewedContactSheet": 9,
+      "fullFilmUnchangedByCPUOptimizations": true,
+      "samePoseStillByteIdentical": [
+        "flight-25",
+        "mountain-highest-supported-pocket",
+        "mountain-primary-shoulder"
+      ],
+      "cliffScrubStillDifference": {
+        "changedPixelPercent": 1.89,
+        "meanAbsoluteRGBDeltaOf255": 0.409,
+        "causeConfirmed": false,
+        "newGrossLayoutDefectObserved": false
+      },
+      "conclusion": "Visible improvement over M3 accepted for this iteration. Full optimized WebM is byte-identical to the pre-optimization M4 film. This preserves the result but does not prove the original film has no transient pops or meets final photoreal quality."
+    }
+  },
+  "mountainPopulation": {
+    "peakCount": 76,
+    "peaksWithPlants": 76,
+    "trees": 13484,
+    "bushes": 78436,
+    "cliffScrub": 44924
+  },
+  "verification": {
+    "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m4\\2026-10-26T06-26-47-267Z\\result.json",
+    "status": "passed",
+    "requiredTests": 19,
+    "optionalDiagnosticTests": 1,
+    "totalPassed": 20,
+    "tests": [
+      "actual-production-parent-loads-only-Li-live-iframe",
+      "actual-M4-production-generation-without-QA-cache",
+      "M4-panorama-and-primary-four-side-vegetation-evidence-recorded",
+      "five-flight-seventeen-retained-and-seven-SDF-mountain-anchor-canvas-captures",
+      "setEnvironment-live-sun-14-35-14-changes-and-restores-real-pixels",
+      "actual-continuous-45-second-flight",
+      "actual-full-1080p60-45s-2700-frame-WebM-saved-without-download",
+      "independent-ffprobe-decodes-1920x1080-60fps-45s-2700-frames",
+      "nine-actual-WebM-decoded-frame-samples-saved",
+      "paused-scene-stops-redundant-draws",
+      "actual-GPU-completed-frame-timing-recorded",
+      "optional-view45-component-timing-recorded-with-restoration-evidence",
+      "production-parent-guide-text-holds-pose-and-stops-child-draws",
+      "production-parent-return-preserves-original-document-and-free-pose",
+      "production-parent-disposeAll-unloads-child-and-loses-original-context",
+      "production-parent-reloads-new-M4-document-after-original-context-release",
+      "production-parent-reloaded-M4-context-disposes-and-unloads",
+      "own-scene-disposes-context-and-unloads",
+      "M4-source-freeze-M3-40-file-and-M2-34-file-baselines-preserved",
+      "original-source-A-B-bytes-and-bridge-process-identities-preserved"
+    ],
+    "sourceFreeze": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m4\\2026-10-26T06-26-47-267Z\\source\\source-freeze-manifest.json",
+    "frozenFiles": 43,
+    "parentLifecycle": "Child stops drawing offscreen, preserves free pose on return, releases original GL, reloads a new M4 document/context, and releases it again",
+    "fullFilm": {
+      "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m4\\2026-10-26T06-26-47-267Z\\lijiang-m4-1920x1080-60fps-2700frames.webm",
+      "bytes": 132818468,
+      "sha256": "7ee60ae750c3f3c77ec35cd91afb495e6556ca552f23afec8af76bc54d7e7c7f",
+      "width": 1920,
+      "height": 1080,
+      "fps": 60,
+      "durationSeconds": 45,
+      "decodedFrames": 2700,
+      "ffprobe": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m4\\2026-10-26T06-26-47-267Z\\ffprobe-verified.json",
+      "decodedContactSheet": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m4\\2026-10-26T06-26-47-267Z\\film-contact-sheet.png"
+    },
+    "componentDiagnostic": {
+      "status": "passed",
+      "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m4\\2026-10-26T06-26-47-267Z\\component-timing.json",
+      "scope": "Temporary diagnostic layer visibility only, fully restored; these variants are not production quality reductions."
+    }
+  },
+  "performance": {
+    "parentLoadSeconds": 64.116,
+    "parentGPUCompletedWallFrameMilliseconds": 28.549999972184498,
+    "parentCanvas": {
+      "width": 1174,
+      "height": 680
+    },
+    "hiddenTargetFrameRate": 20,
+    "actualHiddenFlight": {
+      "seconds": 44.768,
+      "completedFrames": 890,
+      "completedFramesPerSecond": 19.88027162258756,
+      "note": "Observed hidden-window cadence at the stated presentation target, not universal device FPS."
+    },
+    "realtime60fpsVerified": false,
+    "preOptimizationM4": {
+      "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m4\\2026-10-26T05-48-19-250Z\\result.json",
+      "loadSeconds": 115.299,
+      "completedFrameMilliseconds": 37.80000001192093,
+      "actualHiddenFlight": {
+        "seconds": 44.377,
+        "completedFrames": 488,
+        "completedFramesPerSecond": 10.996687473240643,
+        "note": "Observed hidden-window cadence at the stated presentation target, not universal device FPS."
+      }
+    },
+    "M3HistoricalParent": {
+      "report": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m3/2026-10-26T02-29-53-061Z/result.json",
+      "loadSeconds": 41.623,
+      "completedFrameMilliseconds": 21.633333325386047
+    },
+    "optimizationEvidence": {
+      "ecology": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m4-ecology/support-query-cache/comparison.json",
+      "forest": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m4/forest-bound-optimization/verification.json"
+    },
+    "measurementScope": "Same parent1174x680. Fixed-view fences include CPU/driver wall time; hidden flight targets20fps. Host load, caches and generation history vary, so do not attribute every timing difference to code or infer realtime60fps from the offline video."
+  },
+  "preservation": {
+    "m3Files": 40,
+    "m2Files": 34,
+    "allBaselineHashesUnchanged": true,
+    "originalSourceAndABPreserved": true,
+    "userExistingTabNavigated": false,
+    "ownContextsDisposed": true
+  }
+}

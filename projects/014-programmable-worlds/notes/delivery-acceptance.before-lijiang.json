@@ -1,0 +1,224 @@
+{
+  "schema": "programmable-worlds-delivery-v3",
+  "status": "accepted",
+  "recorded_at": "2026-10-24T18:54:08.256283+00:00",
+  "display_timezone": "Asia/Shanghai",
+  "artwork_quality_accepted": true,
+  "independent_works_accepted": true,
+  "sceneIds": [
+    "canal-street",
+    "shipyard-station"
+  ],
+  "world_identities": {
+    "window": {
+      "sceneId": "canal-street",
+      "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+      "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34"
+    },
+    "station": {
+      "sceneId": "shipyard-station",
+      "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+      "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+      "runtimeRevision": "shipyard-oak2048-aftdeck-2",
+      "manifestSha256": "97eb5a39b308d200f0011f9732725a812b7794cca48553178a11e4841b0f882e",
+      "giManifest": {
+        "path": "web/shipyard-station/baked-r1/manifest-oak2048.json",
+        "sha256": "97eb5a39b308d200f0011f9732725a812b7794cca48553178a11e4841b0f882e"
+      },
+      "inputRevision": "station-manual-input-2"
+    }
+  },
+  "reports": {
+    "source": {
+      "path": "notes/source-live-acceptance.d3d11.json",
+      "sha256": "8bdfc6348ee79eaacc641ecc3cf0475e264fa8226dd03074b68cf78e3b862a36",
+      "minimumChecks": 15,
+      "requiredChecks": [
+        "original-renderer-live-track-decoded-in-ordinary-page",
+        "page-drives-real-original-camera"
+      ],
+      "capture": "04-headland-35",
+      "status": "passed",
+      "runId": "2026-10-24T08-42-44-256Z",
+      "actualStatus": "passed",
+      "checks": 15,
+      "reasons": [],
+      "scope": "Actual WebRTC video decoding and original-renderer control. Source shader fidelity is checked separately; no artwork-quality claim.",
+      "presentation": null
+    },
+    "window": {
+      "path": "notes/canal-real-window-functional.d3d11.json",
+      "sha256": "9bcd42414650077b98889f2a520a5b4faba392cc11d6955b082a5eccb3b4460b",
+      "minimumChecks": 13,
+      "requiredChecks": [
+        "drive-moves-actual-camera",
+        "water-time-changes-actual-rendered-pixels",
+        "task-owned-renderer-disposes"
+      ],
+      "capture": "01-window",
+      "status": "passed",
+      "runId": "2026-10-24T14-18-59-251Z",
+      "actualStatus": "passed",
+      "checks": 13,
+      "reasons": [],
+      "scope": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 541,
+        "firstPaintAt": 1792851538440,
+        "lastPaintAt": 1792851610963
+      }
+    },
+    "station": {
+      "path": "notes/station-functional.d3d11.json",
+      "sha256": "4fabd985a07c4b59343902b17c63ca163891c560b15ba989bca9978db31668e8",
+      "minimumChecks": 15,
+      "requiredChecks": [
+        "own-independent-geometry-and-complete-lighting",
+        "real-passenger-launch-pause-holds",
+        "whole-approach-moors-and-opens-physical-gangway",
+        "complete-boarding-and-departure-carries-camera",
+        "complete-shore-outcome-keeps-view-and-departs-boat",
+        "own-independent-renderer-disposes"
+      ],
+      "capture": "05-actual-docked",
+      "status": "passed",
+      "runId": "2026-10-24T18-17-51-965Z",
+      "actualStatus": "passed",
+      "checks": 15,
+      "reasons": [],
+      "scope": "Independent station actual user journey and controls",
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 3987,
+        "firstPaintAt": 1792865871012,
+        "lastPaintAt": 1792866018179
+      }
+    },
+    "hub": {
+      "path": "notes/hub-two-worlds-acceptance.d3d11.json",
+      "sha256": "a709368e35dfb035c8a78f080af4d2a55d3abd6edc3b25fd86c95ad1fa11386e",
+      "minimumChecks": 13,
+      "requiredChecks": [
+        "original-window-and-independent-station-entry-map",
+        "independent-station-three-actual-view-buttons",
+        "independent-station-call-pause-and-redundant-visible-message",
+        "two-actual-authored-worlds-have-independent-models-and-lighting",
+        "single-live-world-through-source-window-independent-station-window"
+      ],
+      "status": "passed",
+      "runId": "2026-10-24T18-38-15-177Z",
+      "actualStatus": "passed",
+      "checks": 18,
+      "reasons": [],
+      "scope": "Actual sourceLive / canalReal window / independent stationWorld entries, model identities, native input and serialized release. No artwork-quality claim.",
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1899,
+        "firstPaintAt": 1792867095269,
+        "lastPaintAt": 1792867286928
+      }
+    },
+    "hub_mobile": {
+      "path": "notes/hub-two-worlds-acceptance.d3d11.json",
+      "sha256": "a709368e35dfb035c8a78f080af4d2a55d3abd6edc3b25fd86c95ad1fa11386e",
+      "minimumChecks": 13,
+      "requiredChecks": [
+        "mobile-station-actual-approach-reaches-docked-choices",
+        "single-live-world-through-source-window-independent-station-window"
+      ],
+      "status": "passed",
+      "runId": "2026-10-24T18-38-15-177Z",
+      "actualStatus": "passed",
+      "checks": 18,
+      "reasons": [],
+      "scope": "Actual sourceLive / canalReal window / independent stationWorld entries, model identities, native input and serialized release. No artwork-quality claim.",
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1899,
+        "firstPaintAt": 1792867095269,
+        "lastPaintAt": 1792867286928
+      }
+    }
+  },
+  "visual_review": {
+    "path": "notes/visual-acceptance-independent.md",
+    "sha256": "fb107d0c9e6823744740a69d87614c59fc71f7f5a752795620505174a539b29b",
+    "status": "accepted",
+    "sceneIds": [
+      "canal-street",
+      "shipyard-station"
+    ]
+  },
+  "guide_evidence": {
+    "path": "notes/guide-final-evidence.json",
+    "sha256": "04384b082b555c6d164e4dcedca6d0dd6de9113fda2fea97951be77ad0ab9be1"
+  },
+  "acceptance_pending": [],
+  "history": {
+    "scope_correction": "notes/scope-correction-20261024.md",
+    "previous_delivery_record": "notes/delivery-acceptance.scope-reopened.json",
+    "old_shared_story_counts_as_second_work": false,
+    "original_pre_correction_record": "notes/delivery-acceptance.before-scope-correction.json"
+  },
+  "execution_policy": {
+    "hidden_own_windows_only": true,
+    "desktop_input_used": false,
+    "user_tab_navigated": false,
+    "visible_entry_auto_launched": false
+  },
+  "evidence_policy": "Pending metadata preparation only. Each report keeps its actual status/run/hash. Functional and visual acceptance remain separate: do not alter the full functional report's accepted=false or replay both journeys merely to turn that value true. Final external visual SHA and the later production hub's accepted=true must bind the same resources. Historical source/window success does not transfer acceptance to the independent station.",
+  "guide": {
+    "path": "assets/programmable-worlds-guide.svg",
+    "sha256": "eebd2ed64ab9ed77c61d4374d37e2c4b5b83bfba83035b8dbd2149cf32b3227c",
+    "web_copy_identical": true,
+    "width": 1800,
+    "height": 4830,
+    "layout_review": {
+      "path": "F:\\codex_project\\1020_codex_project\\.cache\\014-guide-qa\\guide-independent-20261025-layout-review.json",
+      "workspaceRelativePath": ".cache/014-guide-qa/guide-independent-20261025-layout-review.json",
+      "sha256": "a0c42ade40c438a4d2a7c8dd398eb906c63f95fec10a57fd3babe9c29e217049",
+      "status": "passed"
+    }
+  },
+  "same_report_reused_for_hub_mobile": true,
+  "source_integrity": {
+    "templates_preserved": 33,
+    "glsl_unchanged": true,
+    "upstream_sha256": "616d20c66e82d070f8c6bff921c8a78b2f04309b8cf279835ce4cdeaa90f4dfd",
+    "runtime_sha256": "1e6235db469ff444cac6a81a6740e1e88656796f7bdf745d758f2344649a6037"
+  },
+  "source_bridge_after_acceptance": {
+    "service": "napali-source-bridge",
+    "version": 1,
+    "backend": "gl",
+    "pid": 81768,
+    "sessionActive": false,
+    "offscreen": true,
+    "offscreenFrameRate": 30
+  },
+  "preserved_failed_runs": [
+    "assets/hub-qa/d3d11/2026-10-24T18-29-33-944Z/acceptance.json",
+    "assets/hub-qa/d3d11/2026-10-24T18-35-03-197Z/acceptance.json",
+    "notes/station-cache-correction.md"
+  ],
+  "quality_policy": "Visual quality is a separate recorded judgement; report counts, sample counts and hashes establish neither artistic equivalence nor universal device performance. Full station-functional retains its actual pre-review accepted=false; later official hub observed accepted=true for the same scene, lighting and refined GI.",
+  "final_files": {
+    "project.json": "2aa9165908f7199af9b15cb39188ac1a95f0b719a1eb0ba7a81875d509ddfe75",
+    "README.md": "922446eb7aef187b20be3ed5093027fdabbe2c07e036050d304434dc01dba290",
+    "web/index.html": "e98bdc32d22a6e90196380fbbf7013be53d4ac2395faf7723628f7639e5ab853",
+    "web/guide.html": "8d55d741c15df756657643b2cd9f48f2e2f7332d1c029954b8f3a971a5b5e214",
+    "web/app.js": "bf66019442ecaddc65bdabb2527f1f835d97c31d28c8b22dd1910a07459ff3a0",
+    "web/style.css": "00eb7580c1616615e9737dd7083b32a1f414bbbfc1c2ea9ea0258635aa525a2d",
+    "web/shipyard-station/index.html": "9809f2b9941292453fd346db400551377e108bb3aeba01f9ff0a11b046c74437",
+    "web/shipyard-station/main.js": "71c35634e562bf7648da3c47f0cbbc5eddf1ddd26b049ff59b8ebbf2e8882498",
+    "web/shipyard-station/journey.js": "ad02b755ee98be97737b9a6bf4eec2b25881f20bd6608fd159bd94660ec02fa7",
+    "web/shipyard-station/gi.js": "82f1ee217af555cad78ecce57f00ce7b26e030f6a0ed692b19d744708b93f32d",
+    "web/shipyard-station/visual-review.json": "e1f186b05ec05427c84088314e6bc29b485d2be5916c0191b6a910269b4637c0",
+    "web/shipyard-station/baked-r1/manifest-oak2048.json": "97eb5a39b308d200f0011f9732725a812b7794cca48553178a11e4841b0f882e"
+  }
+}

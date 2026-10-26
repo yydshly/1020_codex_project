@@ -1,0 +1,185 @@
+{
+  "revision": "m3-rounded-crown-finite-joint-flanks-2",
+  "count": 76,
+  "max_fraction": 0.9999984325646262,
+  "outside_support_max": 0.0,
+  "edge_inside_max": 0.0,
+  "support_radius": 1.2,
+  "ray_envelope_radius": 1.28,
+  "distinct_sampled_shapes": 76,
+  "mean_absolute_M2_difference": 0.0308054081387734,
+  "max_absolute_M2_difference": 0.6826926792429636,
+  "sampled_points_raised": 2986,
+  "sampled_points_lowered": 21511,
+  "composed": [
+    {
+      "index": 0,
+      "top_fraction": 0.99994,
+      "top_local": [
+        0.1499999999999999,
+        -0.1499999999999999
+      ],
+      "areas_above_20_50_80": [
+        1.01812,
+        0.50062,
+        0.18
+      ],
+      "mean_absolute_M2_difference": 0.044415980258059304
+    },
+    {
+      "index": 1,
+      "top_fraction": 0.999955,
+      "top_local": [
+        -0.22499999999999998,
+        -0.22499999999999998
+      ],
+      "areas_above_20_50_80": [
+        0.81562,
+        0.44437,
+        0.19125
+      ],
+      "mean_absolute_M2_difference": 0.027190026002899863
+    },
+    {
+      "index": 2,
+      "top_fraction": 0.999921,
+      "top_local": [
+        -0.1499999999999999,
+        -0.1499999999999999
+      ],
+      "areas_above_20_50_80": [
+        0.84937,
+        0.27563,
+        0.10687
+      ],
+      "mean_absolute_M2_difference": 0.036958594272837174
+    },
+    {
+      "index": 3,
+      "top_fraction": 0.999965,
+      "top_local": [
+        -0.30000000000000004,
+        -0.22499999999999998
+      ],
+      "areas_above_20_50_80": [
+        0.79875,
+        0.36562,
+        0.11812
+      ],
+      "mean_absolute_M2_difference": 0.023249739795254902
+    },
+    {
+      "index": 4,
+      "top_fraction": 0.987735,
+      "top_local": [
+        0.0,
+        0.0
+      ],
+      "areas_above_20_50_80": [
+        0.945,
+        0.55125,
+        0.24187
+      ],
+      "mean_absolute_M2_difference": 0.031844492239562726
+    },
+    {
+      "index": 5,
+      "top_fraction": 0.999163,
+      "top_local": [
+        -0.1499999999999999,
+        -0.30000000000000004
+      ],
+      "areas_above_20_50_80": [
+        0.82687,
+        0.28125,
+        0.12937
+      ],
+      "mean_absolute_M2_difference": 0.026964740252855484
+    },
+    {
+      "index": 6,
+      "top_fraction": 0.997899,
+      "top_local": [
+        -0.07499999999999996,
+        0.07499999999999996
+      ],
+      "areas_above_20_50_80": [
+        0.95625,
+        0.55688,
+        0.28125
+      ],
+      "mean_absolute_M2_difference": 0.040738960438766215
+    },
+    {
+      "index": 7,
+      "top_fraction": 0.998921,
+      "top_local": [
+        -0.375,
+        -0.1499999999999999
+      ],
+      "areas_above_20_50_80": [
+        0.6975,
+        0.27563,
+        0.10125
+      ],
+      "mean_absolute_M2_difference": 0.03581944489887151
+    },
+    {
+      "index": 8,
+      "top_fraction": 0.999997,
+      "top_local": [
+        0.30000000000000004,
+        -0.22499999999999998
+      ],
+      "areas_above_20_50_80": [
+        0.6975,
+        0.30375,
+        0.12375
+      ],
+      "mean_absolute_M2_difference": 0.021452580327506514
+    },
+    {
+      "index": 9,
+      "top_fraction": 0.999976,
+      "top_local": [
+        0.1499999999999999,
+        0.2250000000000001
+      ],
+      "areas_above_20_50_80": [
+        0.89437,
+        0.43875,
+        0.18562
+      ],
+      "mean_absolute_M2_difference": 0.022484672800892513
+    },
+    {
+      "index": 10,
+      "top_fraction": 0.995239,
+      "top_local": [
+        -0.22499999999999998,
+        -0.1499999999999999
+      ],
+      "areas_above_20_50_80": [
+        0.88875,
+        0.48375,
+        0.20813
+      ],
+      "mean_absolute_M2_difference": 0.03786713779301201
+    },
+    {
+      "index": 11,
+      "top_fraction": 0.999024,
+      "top_local": [
+        -0.30000000000000004,
+        -0.30000000000000004
+      ],
+      "areas_above_20_50_80": [
+        0.79312,
+        0.30375,
+        0.10125
+      ],
+      "mean_absolute_M2_difference": 0.03144499249794235
+    }
+  ],
+  "validation": "CPU scalar field and bounds only; actual GPU visual/continuity/performance acceptance outstanding"
+}

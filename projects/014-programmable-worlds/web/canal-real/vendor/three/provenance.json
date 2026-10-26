@@ -1,0 +1,128 @@
+{
+  "package": "three",
+  "version": "0.180.0",
+  "license": "MIT",
+  "modified": false,
+  "files": {
+    "build/three.module.min.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.min.js",
+      "bytes": 338908,
+      "sha256": "e2b5ee6bccd38fd6d8a2428546b83c5f2426d84b152ef82be8055556e3b40eb6"
+    },
+    "examples/jsm/controls/OrbitControls.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/controls/OrbitControls.js",
+      "bytes": 38703,
+      "sha256": "b97879c748170baadeb3fb84cea1ffdf4674e283dc06042f34e2acb95a76042c"
+    },
+    "examples/jsm/loaders/GLTFLoader.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/loaders/GLTFLoader.js",
+      "bytes": 114739,
+      "sha256": "67ac5551fdafa6e349bd80c8f8e5e39c136d6b2fb1ad647db9abb21dc86f9e4a"
+    },
+    "examples/jsm/loaders/HDRLoader.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/loaders/HDRLoader.js",
+      "bytes": 12456,
+      "sha256": "d7053cfc4019f520335ae07e0fe82b4ef5a66b6766e8b253d066616184995e89"
+    },
+    "examples/jsm/objects/Reflector.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/objects/Reflector.js",
+      "bytes": 9476,
+      "sha256": "0908d87a7251268dd6d12310b9633f08fd3be9c6faf2e2a4076fce0e87bdd26d"
+    },
+    "examples/jsm/lights/RectAreaLightUniformsLib.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/lights/RectAreaLightUniformsLib.js",
+      "bytes": 1014,
+      "sha256": "494fef2d731ff1689050cc6040ad78d927c22b9125a12f532beb0374c2811c6e"
+    },
+    "examples/jsm/postprocessing/EffectComposer.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/postprocessing/EffectComposer.js",
+      "bytes": 8477,
+      "sha256": "4b8c855f28eed2570bed898adc0ab89c585a8a281ecb6d905c09d00697f9f50a"
+    },
+    "examples/jsm/postprocessing/RenderPass.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/postprocessing/RenderPass.js",
+      "bytes": 4112,
+      "sha256": "fd91229aacc5830e3984b0f2bdefcf566163ea028f4c1f1ab233fa6665a133ac"
+    },
+    "examples/jsm/postprocessing/GTAOPass.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/postprocessing/GTAOPass.js",
+      "bytes": 19890,
+      "sha256": "855fd7953e81c1050a4abea8af4bfeb5ad9b6d879f793a9c650e3768aaec62a3"
+    },
+    "examples/jsm/postprocessing/OutputPass.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/postprocessing/OutputPass.js",
+      "bytes": 4029,
+      "sha256": "f5b81c96e76b6b28b4b3ba8c41c4aeb982b1e03f3d82883242d951b2ab082fa2"
+    },
+    "examples/jsm/postprocessing/ShaderPass.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/postprocessing/ShaderPass.js",
+      "bytes": 3228,
+      "sha256": "e2500a5913b26bbf5148ceaae644c6edcff06a18b01494ee37bf856353d2ab9d"
+    },
+    "examples/jsm/shaders/FXAAShader.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/shaders/FXAAShader.js",
+      "bytes": 6815,
+      "sha256": "b8303d179f9d5d40a052483e8cfb49c29afb6e60396080e472a6950b51700dac"
+    },
+    "examples/jsm/exporters/GLTFExporter.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/exporters/GLTFExporter.js",
+      "bytes": 86392,
+      "sha256": "e7c29444454eb321b39e4c8b3062944f4fd5299a0e7483e9cb8c0594cdec829f"
+    },
+    "LICENSE": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/LICENSE",
+      "bytes": 1081,
+      "sha256": "bfe119ea4fd413f5f7ca3fcd63adb0c4a073ed39daa2fe7d3e6b769e21272601"
+    },
+    "build/three.core.min.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.core.min.js",
+      "bytes": 381124,
+      "sha256": "61ba0df005b05991361d040d8ff670e1aadfd0ce7aeebd1fdb0725957a8957de"
+    },
+    "examples/jsm/utils/BufferGeometryUtils.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/utils/BufferGeometryUtils.js",
+      "bytes": 35539,
+      "sha256": "fda7e946b8e0b5ab39b779206589e7a1079a22eb24efb89d7223e03fdfb1f751"
+    },
+    "examples/jsm/lights/RectAreaLightTexturesLib.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/lights/RectAreaLightTexturesLib.js",
+      "bytes": 314770,
+      "sha256": "8acc50043aebc3ff0f63e21607ef2394cda41d634f92093bcb7ad6f1d1e2eb11"
+    },
+    "examples/jsm/shaders/CopyShader.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/shaders/CopyShader.js",
+      "bytes": 729,
+      "sha256": "a33057d5ac91c43304c186ac0e8816e62bb2ed471d3a00ff3018dfd5c0389718"
+    },
+    "examples/jsm/postprocessing/MaskPass.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/postprocessing/MaskPass.js",
+      "bytes": 4694,
+      "sha256": "7cd08eee9d5d6f5578beaddbdcbe9c384f6873810af27f22ab7db3ceeb127aa3"
+    },
+    "examples/jsm/postprocessing/Pass.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/postprocessing/Pass.js",
+      "bytes": 4218,
+      "sha256": "444b409c235ead986893c472e720da1b779a56985c7d10b279c7944b52bd61c5"
+    },
+    "examples/jsm/shaders/GTAOShader.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/shaders/GTAOShader.js",
+      "bytes": 11910,
+      "sha256": "d4b06ed5bbb7a177be6b0030986916f6f085721e2745e4632ab1773d02ca743c"
+    },
+    "examples/jsm/shaders/PoissonDenoiseShader.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/shaders/PoissonDenoiseShader.js",
+      "bytes": 6945,
+      "sha256": "e01b574599d31ae3b9f08c6112da72c06bbd536ccbde094fd46e4bebe579e473"
+    },
+    "examples/jsm/math/SimplexNoise.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/math/SimplexNoise.js",
+      "bytes": 15154,
+      "sha256": "dd1f3c42c1bc9fa1b76c1c0796d352521accf0a3a95cc7d0caf479abc5a444a2"
+    },
+    "examples/jsm/shaders/OutputShader.js": {
+      "url": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/shaders/OutputShader.js",
+      "bytes": 1876,
+      "sha256": "353479f77a8d7e2629d49ccac9fc2f5dbfdda5442e0adf867b00377a2fcb0cb2"
+    }
+  }
+}

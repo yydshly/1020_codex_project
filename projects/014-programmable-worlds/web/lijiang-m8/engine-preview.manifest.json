@@ -1,0 +1,1158 @@
+{
+  "sceneId": "lijiang-native",
+  "duration": 45,
+  "renderer": "source-derived-full-glsl",
+  "terrainRevision": "lijiang-m6-grouped-karst-saddles-1",
+  "generationRevision": "m7-shared-primary-and-connection-pipeline-1",
+  "sourceSHA256": "1e6235db469ff444cac6a81a6740e1e88656796f7bdf745d758f2344649a6037",
+  "upstreamSHA256": "616d20c66e82d070f8c6bff921c8a78b2f04309b8cf279835ce4cdeaa90f4dfd",
+  "qualityStatus": "candidate",
+  "artAccepted": false,
+  "composedPeakCount": 12,
+  "terrainTracing": "native-terrain-sign-root-4",
+  "peakCount": 5,
+  "externalAssets": 0,
+  "riverDescription": "340 m sinuous fresh-water river; complete isolated peak feet clear its banks",
+  "m4RockRelief": {
+    "revision": "m4-rock-substrate-independent-of-v-1",
+    "function": "rockField",
+    "changes": 9,
+    "sourceSHA256": "128926495c3a993aa257458683db48f1f7349b34b003c5e32d05eb1fd67da249",
+    "resultSHA256": "80b8309689f2ffebc6835c7ecea13495a6f9d9d5607bd55567188f952adf5e59",
+    "scope": "Larger unequal planar block faces, shorter risers, restrained rounded knobs; full source terrain/mesh sampling resolution unchanged; fixed bare=1 decouples rock relief and bicubic correction from M4 vegetation potential",
+    "externalAssets": 0,
+    "gpuReviewed": false,
+    "terrainCombinedOffsetBound": [
+      -10,
+      10
+    ],
+    "terrainOffsetSHA256": "c5f64a02baa43715a7926914f9335d46cf0c505ef8fbb682dbd24d7836e2d062",
+    "terrainOriginalSHA256": "7189dc185eb254ea0a6f121486b236994ba12f851e72744be88eacb31cf8745d",
+    "baseReliefRevision": "m3-limestone-finite-block-faces-1",
+    "baseTerrSDSHA256": "7c4229282b5918077b5738dfd76495791ccf62d561b4d62c522d00c937a16740",
+    "rockBareWeight": 1,
+    "exportedRockGeometryDependsOnVegetation": false,
+    "invarianceScope": "terrSD gVeg=false volume export; canopy evaluation with gVeg=true still uses V",
+    "steepRockMaskRetained": true
+  },
+  "sourceFile": "../runtime/index.html",
+  "upstreamRepository": "https://github.com/Leonxlnx/napali",
+  "upstreamCommit": "4afb7c3a1aad3d0203193100305c46607134d0f5",
+  "license": "MIT; Copyright (c) 2026 Leon Lin",
+  "preservedBeforeRiverPatch": {
+    "GLSL_COMMON": "adcd4eded2ef4997131848b88153e9caf66f520140db6142cea5ef67dd5126b8",
+    "VS": "061cbb921798eee066baa2c60a56e8f56ec36bfe8c0bd8708b1e9c610b756a0b",
+    "TERRAIN_FUNCS": "2ae81c8fbf06a26382568fcfc7c977ea5db035b2405c1c4478ca9f9ccaef7ea1",
+    "FS_BASE": "7c10f2dd0a0825a142fb7da2274f82b68c5e17a9f1cedf68833fe17c8d5523a6",
+    "FS_EINIT": "580c0a021c910522eea576a5403064901218b0a50ace470fcf05913e386c79e8",
+    "FS_VFILL": "d87c1b29e85683dab455b978bd565c61d5b60716d4fe5c061e37edc25f82f250",
+    "FS_HEIGHT": "28473d23adf1fbe878f4539d664e3950dbd8807f43383a599986d18c52e735bd",
+    "FS_ATTR": "becad54932e815acac715f92f0488d3ec0914968afb9f7732c071e371c73cffb",
+    "FS_TREEB": "be5c0efd423c0e33ab5adef441ec0e1e31ace2afe99ee6e65cb5dfc72be7aba8",
+    "FS_MAXSLOPE": "a18421e3d6e0ee43b6512e2bc640466f80dc70f5f6d5e79aa2a67917c152709c",
+    "FS_OSPEC": "cbbdedac252e5b79ae2786f39ff622af125c0815e44940f8939a7069b8abf724",
+    "FS_OEVOLVE": "43bee441dac0e88fb5fd40e086bde297caf93ce5fe698b3a78eedb129d99e4ac",
+    "FS_OFFT": "578e6948d99f2a8737592d9faf82030cb75b751d2f7e5e8b25e2e138749a2555",
+    "FS_OFINAL": "42b6aaef29fb6e165f337c4371a91d23141518464053c65aa1b3cbd9ef9f3b93",
+    "FS_RENDER": "7a451b924c38a6513afd05053e8076cb5a7cfa7bc4c4476220512cc370d23ef5",
+    "FS_BRIGHT": "356568995c8468b703f1f16124f93001c5fe4b1250b673e21657ea9267d4ea56",
+    "FS_BLUR": "19c54ad6535920e3fe547cfea3a46cd583002e91c28f038672d73b0f8dd2100d",
+    "FS_POST": "71f9d67479ae5326e66f8f29970af80c5ecf1e88e4f84bc7150cc06d37383028",
+    "P": "f89e2475ff74a0e33398b9eb3eac3d4f94a28ced553adc84bc0da36efe0b5b4a",
+    "mono": "ae7a9bdcfdb52eddb5e7d56276c80529d27a9b0baa070dac28896b52a724dc78"
+  },
+  "modifiedTerrainLiterals": [
+    "BASE_FUNCS",
+    "FS_ERODE",
+    "FS_PLANTS",
+    "FS_VEG"
+  ],
+  "addedPass": "FS_NATIVE_ANCHOR: 20% linear negative erosion, max 20% base/62m cut, convex crest protection, drainage channels preserved",
+  "terrainStructure": "Small shared-foot mountain groups joined by finite curved variable-width saddles and descending side spurs, irregular low hills, preserved isolated peaks; one BASE/erosion/H/terrSD chain",
+  "landscape": {
+    "revision": "lijiang-m6-grouped-karst-saddles-1",
+    "groups": [
+      {
+        "id": 0,
+        "peakIds": [
+          0,
+          1,
+          3,
+          9
+        ],
+        "kind": "shared-foot-group"
+      },
+      {
+        "id": 8,
+        "peakIds": [
+          8
+        ],
+        "kind": "isolated"
+      }
+    ],
+    "connections": [
+      {
+        "from": 0,
+        "to": 1,
+        "kind": "shared-saddle",
+        "A": [
+          575,
+          -170
+        ],
+        "B": [
+          835,
+          -560
+        ],
+        "control": [
+          754.0689024619402,
+          -392.1032419620383
+        ],
+        "width": 110.08,
+        "height": [
+          137.8793341627492,
+          172.85632521555948
+        ],
+        "phase": 12.427,
+        "saddleDepth": 0.42395813100968516,
+        "length": 468.7216658103186,
+        "riverClearance": 329.19481510279786,
+        "bounds": {
+          "min": [
+            455.01279999999997,
+            0,
+            -679.9872
+          ],
+          "max": [
+            954.9872,
+            184.85632521555948,
+            -50.0128
+          ]
+        },
+        "midpoint": [
+          729.53445123097,
+          -378.55162098101914
+        ],
+        "midpointHeight": 89.4983749951094
+      },
+      {
+        "from": 1,
+        "to": 3,
+        "kind": "shared-saddle",
+        "A": [
+          835,
+          -560
+        ],
+        "B": [
+          830,
+          -1360
+        ],
+        "control": [
+          879.6409409867201,
+          -948.0957137270673
+        ],
+        "width": 115.2,
+        "height": [
+          160.9009541927918,
+          147.7423065157723
+        ],
+        "phase": 59.942,
+        "saddleDepth": 0.33064991150082806,
+        "length": 800.0156248474151,
+        "riverClearance": 696.7104142116477,
+        "bounds": {
+          "min": [
+            704.432,
+            0,
+            -1485.568
+          ],
+          "max": [
+            1005.2089409867201,
+            172.9009541927918,
+            -434.432
+          ]
+        },
+        "midpoint": [
+          856.0704704933601,
+          -954.0478568635336
+        ],
+        "midpointHeight": 103.29519693497517
+      },
+      {
+        "from": 0,
+        "to": 9,
+        "kind": "shared-saddle",
+        "A": [
+          575,
+          -170
+        ],
+        "B": [
+          1220,
+          120
+        ],
+        "control": [
+          932.3690012543971,
+          -6.68228053985905
+        ],
+        "width": 110.08,
+        "height": [
+          127.71220489814831,
+          147.24255794252667
+        ],
+        "phase": 111.843,
+        "saddleDepth": 0.34419006966707727,
+        "length": 707.1951640106146,
+        "riverClearance": 346.0500753208027,
+        "bounds": {
+          "min": [
+            455.01279999999997,
+            0,
+            -289.98720000000003
+          ],
+          "max": [
+            1339.9872,
+            159.24255794252667,
+            239.9872
+          ]
+        },
+        "midpoint": [
+          914.9345006271985,
+          -15.841140269929525
+        ],
+        "midpointHeight": 90.1590319316242
+      }
+    ],
+    "branches": [
+      {
+        "from": 0,
+        "to": 1,
+        "kind": "descending-side-spur",
+        "A": [
+          696.9212668400662,
+          -330.9710476125124
+        ],
+        "B": [
+          877.1818243770052,
+          -319.25751754624986
+        ],
+        "control": [
+          812.0515456085357,
+          -355.5825869198235
+        ],
+        "width": 70.4512,
+        "height": [
+          74.69731629820744,
+          28.376759589489833
+        ],
+        "phase": 14.597,
+        "saddleDepth": -0.12,
+        "length": 180.6407356886628,
+        "riverClearance": 513.3078829014772,
+        "bounds": {
+          "min": [
+            620.1294588400663,
+            0,
+            -432.3743949198235
+          ],
+          "max": [
+            953.9736323770053,
+            86.69731629820744,
+            -242.46570954624985
+          ]
+        },
+        "midpoint": [
+          799.5515456085358,
+          -340.3484347496023
+        ],
+        "midpointHeight": 57.72148249711048
+      },
+      {
+        "from": 1,
+        "to": 3,
+        "kind": "descending-side-spur",
+        "A": [
+          852.8568543148401,
+          -1082.6573563207078
+        ],
+        "B": [
+          977.122982992841,
+          -1063.1645717539766
+        ],
+        "control": [
+          939.9899186538405,
+          -1050.4956411221208
+        ],
+        "width": 73.72800000000001,
+        "height": [
+          88.58221622674516,
+          19.04435477966682
+        ],
+        "phase": 62.112,
+        "saddleDepth": -0.12,
+        "length": 125.78568832256899,
+        "riverClearance": 1038.4102326126106,
+        "bounds": {
+          "min": [
+            772.4933343148401,
+            0,
+            -1163.0208763207079
+          ],
+          "max": [
+            1057.486502992841,
+            100.58221622674516,
+            -970.1321211221208
+          ]
+        },
+        "midpoint": [
+          927.4899186538406,
+          -1061.7033025797316
+        ],
+        "midpointHeight": 60.27087976359071
+      }
+    ],
+    "lowHills": [
+      {
+        "peakIds": [
+          0,
+          1,
+          3,
+          9
+        ],
+        "center": [
+          1496.1399999999999,
+          214.3
+        ],
+        "axes": [
+          94,
+          69
+        ],
+        "height": 24,
+        "angle": 1.0,
+        "phase": 4.9
+      }
+    ],
+    "previewPeakIds": [
+      0,
+      1,
+      3,
+      9,
+      8
+    ],
+    "previewViews": [
+      {
+        "name": "river-group-and-isolated",
+        "position": [
+          90,
+          80,
+          430
+        ],
+        "target": [
+          830,
+          165,
+          -420
+        ],
+        "fov": 58
+      },
+      {
+        "name": "oblique-group-footprint",
+        "position": [
+          1620,
+          870,
+          520
+        ],
+        "target": [
+          880,
+          100,
+          -480
+        ],
+        "fov": 58
+      },
+      {
+        "name": "land-side-saddles",
+        "position": [
+          1840,
+          230,
+          -540
+        ],
+        "target": [
+          780,
+          170,
+          -600
+        ],
+        "fov": 58
+      },
+      {
+        "name": "saddle-0-1",
+        "position": [
+          480,
+          210,
+          -360
+        ],
+        "target": [
+          745,
+          100,
+          -375
+        ],
+        "fov": 58
+      },
+      {
+        "name": "saddle-1-3",
+        "position": [
+          520,
+          205,
+          -960
+        ],
+        "target": [
+          870,
+          130,
+          -960
+        ],
+        "fov": 58
+      },
+      {
+        "name": "low-spur-and-open-ground",
+        "position": [
+          1650,
+          115,
+          -20
+        ],
+        "target": [
+          1090,
+          65,
+          -130
+        ],
+        "fov": 58
+      }
+    ],
+    "riverClearanceMinimum": 164.79176458633344,
+    "supportContract": "Finite curved swept-disc ridges and rotated low hills, minimum 48m outside river; no common flat base; same BASE/H/terrSD chain",
+    "isolatedPeakIds": [
+      8
+    ],
+    "validation": {
+      "cpuOnly": true,
+      "finite": true,
+      "midpointSamples": [
+        {
+          "from": 0,
+          "to": 1,
+          "kind": "shared-saddle",
+          "xz": [
+            729.53445123097,
+            -378.55162098101914
+          ],
+          "baseReliefMetres": 89.4983749951094,
+          "riverClearanceMetres": 329.19481510279786
+        },
+        {
+          "from": 1,
+          "to": 3,
+          "kind": "shared-saddle",
+          "xz": [
+            856.0704704933601,
+            -954.0478568635336
+          ],
+          "baseReliefMetres": 103.29519693497517,
+          "riverClearanceMetres": 696.7104142116477
+        },
+        {
+          "from": 0,
+          "to": 9,
+          "kind": "shared-saddle",
+          "xz": [
+            914.9345006271985,
+            -15.841140269929525
+          ],
+          "baseReliefMetres": 90.1590319316242,
+          "riverClearanceMetres": 346.0500753208027
+        },
+        {
+          "from": 0,
+          "to": 1,
+          "kind": "descending-side-spur",
+          "xz": [
+            799.5515456085358,
+            -340.3484347496023
+          ],
+          "baseReliefMetres": 57.72148249711048,
+          "riverClearanceMetres": 513.3078829014772
+        },
+        {
+          "from": 1,
+          "to": 3,
+          "kind": "descending-side-spur",
+          "xz": [
+            927.4899186538406,
+            -1061.7033025797316
+          ],
+          "baseReliefMetres": 60.27087976359071,
+          "riverClearanceMetres": 1038.4102326126106
+        }
+      ],
+      "isolatedPeaks": 1,
+      "largestGroup": 4
+    }
+  },
+  "preview": true,
+  "previewPeakIds": [
+    0,
+    1,
+    3,
+    9,
+    8
+  ],
+  "stablePeakIds": [
+    0,
+    1,
+    3,
+    9,
+    8
+  ],
+  "ecologyPatch": {
+    "revision": "m4-montane-vegetation-potential-2",
+    "derivedFrom": "native-riparian-mosaic-2-local-relief",
+    "material": "Montane green-patch potential across shoulders and moist gullies; macro heightfield slope does not erase unresolved SDF shelves. Actual surface support rejects vertical faces during material/plant construction.",
+    "riparianForest": "Retained lowland grove/clearing mosaic; compact montane tree candidates and dwarf shrub colonies follow the same V habitat fields",
+    "classification": "Local 9m slope, 60m relative relief, aspect, convexity, flow and warped 35–150m patches; no absolute altitude vegetation band",
+    "vegetationContract": {
+      "r": "montane green-patch potential; retained lowland cover",
+      "a": "forest occupancy times potential",
+      "g": 0,
+      "b": 0
+    },
+    "sourceTreeEncodingPreserved": true,
+    "rootSupport": "Four crown-footprint height samples; smaller montane crowns and local relief budget; actual SDF surface reanchoring remains mandatory in the raster forest",
+    "fullyMontaneTreeRadiusMetres": [
+      0.89466,
+      3.9
+    ],
+    "fullyMontaneShrubRadiusMetres": [
+      0.44,
+      1.65
+    ],
+    "transition": "Continuous blend with retained lowland radii where relative-relief/slope mountain classification is between zero and one",
+    "sourceResolutionsChanged": false,
+    "newVegetationHeightLookups": 0,
+    "newPlantHeightLookupsPerCandidate": 4,
+    "newNoiseCalls": 0,
+    "perRayFunctionsChanged": [],
+    "vegetationSHA256": "1ef689e48858d367068847cd954411a659f2e09ff804880c501e4ae2d871e883",
+    "plantsSHA256": "2dbea7843aae276dce7c559efce0b25e68cd4727b308464bd2f5063fcab5b496",
+    "geometrySemantics": "M4 rock wrapper fixes terrSD bare=1, so exported gVeg=false rock geometry is independent of this V potential. Base height/76 peak layout and all sampling resolutions remain unchanged.",
+    "externalAssets": 0,
+    "artAccepted": false
+  },
+  "atmospherePatch": {
+    "applied": true,
+    "revision": "lijiang-morning-air-1",
+    "banks": 5,
+    "method": "analytic 3D Gaussian optical-depth integrals",
+    "sharedAcrossReflections": true,
+    "externalAssets": 0
+  },
+  "idlePatch": {
+    "applied": true,
+    "revision": "native-paused-dirty-render-2",
+    "scope": "Independent native startDrone CPU scheduling only; all GLSL and the preserved source renderer remain unchanged",
+    "startupCompletedFrames": 2,
+    "idleOnlyWhenPausedAndInputsIdentical": true,
+    "continuesFreeCameraEvaluationWhileIdle": true,
+    "newControlMethod": "napaliControl.invalidate(reason)",
+    "transportSignatureFields": [
+      "connectionState",
+      "iceConnectionState",
+      "trackReadyState"
+    ],
+    "transportCountersAffectSignature": false,
+    "newStateFields": [
+      "idle",
+      "invalidationRevision",
+      "completedInvalidationRevision",
+      "lastInvalidationReason"
+    ],
+    "unmodifiedPrefixSHA256": "1f2c03ef3542ab84b01b4f2f0800ee4e71dc9677ad580b5916ad001502052bc1",
+    "unmodifiedSuffixSHA256": "87b1b5bc2cbd242eeaf751e210742ad9877fe54a30d8cc5c8a07281c5495523f",
+    "startDroneBeforeSHA256": "af3308fe07fc307ada45c80f3b61b009c08e8f96b00108dc01c255b1997755e0",
+    "startDroneAfterSHA256": "b261ac90e0d73b739b76a7d75c7b3543fc2450b49ecd806218da3dbf6fd156b8"
+  },
+  "treeRootSupport": "Four crown-footprint samples at radius R*1.2; reject >6.5..11m relief, shared lowland grove/clearing mosaic",
+  "riverPatch": {
+    "schema": "lijiang-native-river-transform-v1",
+    "revision": "native-river-grazing-filter-4",
+    "inputSha256": "c9aaab6a7f589e6c39ef6e3549b0860a7d82121d0c08414e496ed971fe505f64",
+    "outputSha256": "dabafe51bcd346f58719acbde7f52f336a9228eb2ee782763cee79c7d100fff9",
+    "replacements": [
+      {
+        "function": "oceanH",
+        "originalSha256": "b451838bebd9af039fdaa9cf1bdad7a98428c5bfaa99988d70adbfcb9084cceb",
+        "replacementSha256": "82147b6672ffd3e5d86df30565d70c004c2d045aa421b1a5467b175457e51451",
+        "originalLines": 17,
+        "replacementLines": 38
+      },
+      {
+        "function": "waterHit",
+        "originalSha256": "3f41a90bd32ab3bf2ad468865c819ef890c6cb51bca3cde9311639be285e3c99",
+        "replacementSha256": "a589f46cfaf1455b6331c307f2f441a045958940287c48c7ebbdd739d5b78d4d",
+        "originalLines": 34,
+        "replacementLines": 24
+      },
+      {
+        "function": "shadeWater",
+        "originalSha256": "3d538fd83fd30120296fe2afcf442bae0ae5f9eee0382a7791d8e43244a02b0b",
+        "replacementSha256": "ae151a20b0b9f5a7897bbdde8ee02edd3ad18a86f3cdce9a5df8d700bf578722",
+        "originalLines": 818,
+        "replacementLines": 207
+      },
+      {
+        "function": "waterEdge",
+        "originalSha256": "5ae3444001b679bbf5d44ebefabbeca70bc83b5362a6f5ed4ab74d28a4157721",
+        "replacementSha256": "2500e065fbe5156496141418049d36265609b75ca625e6ecf636c8fdfd5df415",
+        "originalLines": 39,
+        "replacementLines": 4
+      },
+      {
+        "function": "seaFloor",
+        "originalSha256": "e16b9c43dd4ca1f2c8f096d94e5f0828ef859f170cd8cf6a8f6bb0d4b0abb038",
+        "replacementSha256": "64a37d562e90daa5f51af65ded76f88bc8878fa876826e778bee5b7d40d9a5bc",
+        "originalLines": 29,
+        "replacementLines": 26
+      }
+    ],
+    "preservedFunctionSha256": {
+      "landH": [
+        "2e46f900b7eb03c5421f37bbfe459391b8e25e0831e2ba8f2381a1eced1d4878"
+      ],
+      "terrSD": [
+        "7189dc185eb254ea0a6f121486b236994ba12f851e72744be88eacb31cf8745d"
+      ],
+      "sceneSD": [
+        "c4fcbe2f575c857f0e6b29a7783f6dc0ea5fdf9a8fbf9d6698656cfd18feb078"
+      ],
+      "march": [
+        "6bacad5344d402aec1c2ed431af1d902ca61aabfcc60ff7d088f424d638c2bb5"
+      ],
+      "treesSD": [
+        "8b431d3ed9417a65f854bb9db6dcd82af807388c893f0dfb7e54ca26719752f9",
+        "df524dea3ca87425b5a506e9288f34eecf8f4176d5503602045008ff0b360e40"
+      ],
+      "bushSD": [
+        "cc105d7e89e49c90fbc325cb07e9baa5485bbc781b53dbf9831a205e4ad7622f",
+        "e1e5154b9ac2f4556fe5e1abe91a55d9611bba78a3d178cd77887274a2168994"
+      ],
+      "crownSD": [
+        "90c81e8ffbf8d23ea1d2593ecda2834815580dd54bc9544ec43f1f7a8cdc35cb"
+      ],
+      "leafyShade": [
+        "f75b8b26a7053f1554acf597e7ab19f15b42e27c8d0d0a1fdb27cea4d9e86381"
+      ],
+      "shadeScene": [
+        "e06c0e06478e1b69d3af35ed5fddf05f32b8636a2a323494a18eb56fb2eb6c8f"
+      ],
+      "sceneNormal": [
+        "0ce65857e55e643a610ed2ed4c079483c2bba5adff871c2680303e499b035003"
+      ],
+      "sceneAO": [
+        "1744dbacaced0b9b8ca7963a69badf2b4e96a0d4b6ea95705676d7f481d21755"
+      ],
+      "rockField": [
+        "128926495c3a993aa257458683db48f1f7349b34b003c5e32d05eb1fd67da249"
+      ],
+      "rockAlbedo": [
+        "f7727babfdcade6deeafdb1ea3ceacac84ecc7096291b6009d1099ac1b95e7c8"
+      ],
+      "skyView": [
+        "ff2b59c42b34246945f2c69bba145bbfd8846cc6a2d85f63f46b24e660143145"
+      ],
+      "skyDome": [
+        "227a312717a64cc18d7480548fa2fa6a609be7941767b80de4628040b2c5809a"
+      ],
+      "skyIrr": [
+        "37dfbec5f3d62d9b7484557b77cdd333834ef61191bc3df08f545205c3d7634e"
+      ],
+      "skyFill": [
+        "5f0dd15f52e455100492e5a68d88b5038df948b9e6c29d4bd8bd74ab5631c410"
+      ],
+      "shadow": [
+        "85f20849cf49857a52b9342fe9b00d3ae761a654aa3a93bb20737ca55272d2ee"
+      ],
+      "shadowH": [
+        "a7456b84c77e054c5c7c4c6bc0a875da0a1c2b7fc01bc9ac38ea5423ec575bb5"
+      ],
+      "fogApply": [
+        "36e1dbfd625cb85c4d666ff898e968ab13cdf4ec7f933934dec6a140a55cb0db"
+      ],
+      "eroFlutes": [
+        "10baafadffdd566940edf6b43b913d92da39ce84acdb17c39ef1f91246ff558a"
+      ],
+      "massif": [
+        "aeea3259edfd5816de9c47b749aae3872e6dee4853da1beb587cdbf5744b56c0",
+        "aeea3259edfd5816de9c47b749aae3872e6dee4853da1beb587cdbf5744b56c0"
+      ]
+    },
+    "globalStateSavedAndRestored": {
+      "float": [
+        "gCuT",
+        "gCuK",
+        "gCuE",
+        "gCuH",
+        "gCuS",
+        "gPix",
+        "gEpsM",
+        "gClId",
+        "gDe",
+        "gSpr",
+        "gLeafId",
+        "gLeafW",
+        "gInner",
+        "gCarpIn",
+        "gCarpHit",
+        "tClId",
+        "tDe",
+        "tSpr",
+        "tLeafId",
+        "tLeafW",
+        "tInner",
+        "gRkSl",
+        "gRkSt",
+        "gRkC",
+        "gRkSlab",
+        "gRkS10",
+        "gRkRdY",
+        "gRkAn",
+        "gCanW",
+        "gCanAO",
+        "gWhy",
+        "gIt",
+        "gShStart",
+        "gShG",
+        "gRkSea",
+        "gFrCav",
+        "gFrWt",
+        "gFrUp",
+        "gFrTn",
+        "gCCsh",
+        "gNau",
+        "gInw",
+        "gCCid",
+        "gDbgW",
+        "gHz"
+      ],
+      "bool": [
+        "gVeg"
+      ],
+      "vec3": [
+        "gClOff",
+        "tClOff",
+        "gCrownOff"
+      ],
+      "vec4": [
+        "gCrC",
+        "gFr",
+        "tFr",
+        "gFrW",
+        "gPalmC",
+        "tPalmC",
+        "gRk"
+      ]
+    },
+    "globalDeclarationRelocation": {
+      "name": "gHz",
+      "reason": "Allow nested fogApply state save/restore; atmosphere function body unchanged"
+    },
+    "reflection": "One real march + unchanged shadeScene + unchanged fogApply; same source skyView for sky misses. No terrainCheap brightness cap, no recursive water.",
+    "waterGeometry": "Shared analytic 12-wave height/gradient and shared grazing-correct footprint for intersection and shading, at unchanged 0.75 quiet amplitude, with conservative-slab bracketed Newton intersection; peak envelope 0.039165m < 0.065m at uOAmp<=2.",
+    "waveSampling": {
+      "footprint": "max(0.001, t*2*uTan/uRes.y) / max(-rd.y,0.02), shared by waterHit and shadeWater",
+      "directionDistribution": "First three long waves keep the existing wind directions; remaining nine advance by the golden angle 2.39996323 radians",
+      "zeroWeightWork": "Return exact zero beyond the longest-wave filter cutoff; skip each exact-zero filter before wave direction/dispersion/phase evaluation",
+      "bedDetail": "Unchanged base screen-pixel footprint, without grazing correction",
+      "amplitudesChanged": false,
+      "brightnessClampAdded": false
+    },
+    "transmission": "Snell ray intersects actual Hc bed through at most eight brackets and ten bisections, then uses Hc normal, code-only wet-silt albedo and per-metre two-way attenuation.",
+    "freshwaterBed": "New seaFloor function only: ~0.20m irregular wet foot to a 4-8m along-channel/transverse alluvial bed; no inherited Pacific reef/cove coordinates or shelf terms.",
+    "opticsLinear": {
+      "bedLow": [
+        0.03,
+        0.033,
+        0.027
+      ],
+      "bedHigh": [
+        0.066,
+        0.07,
+        0.06
+      ],
+      "absorptionPerMetre": [
+        0.26,
+        0.13,
+        0.31
+      ],
+      "deepReflectance": [
+        0.012,
+        0.029,
+        0.019
+      ],
+      "deepScale": 0.2
+    },
+    "marineEffects": "Disabled at all live water entries; inherited unreachable helper definitions remain for transparent source provenance.",
+    "performance": "Reflection retains one extra full land/crown/shadow shade. The bed uses <=18 bracket/bisection Hc lookups instead of the full scene/SDF/tree marcher; actual cost requires hidden GPU measurement. No FPS promise.",
+    "knownApproximation": "skyView retains the source uRo-based cloud origin; clouds are distant, while reflected land/crowns use the true water-surface ray origin.",
+    "gpuStarted": false,
+    "externalAssets": 0,
+    "cpuReservedDeclarationCheck": {
+      "checkedIdentifiers": 160,
+      "forbidden": [],
+      "scope": "Static declaration check, not GPU compilation"
+    }
+  },
+  "marchPatch": {
+    "schema": "lijiang-native-march-transform-v1",
+    "revision": "native-terrain-sign-root-4",
+    "inputSha256": "dabafe51bcd346f58719acbde7f52f336a9228eb2ee782763cee79c7d100fff9",
+    "outputSha256": "419f00aaf5f3944bceded9f4589ce49e041b04d4b85cbbb89865d80c307b25e2",
+    "replacedFunction": {
+      "name": "march",
+      "originalSha256": "6bacad5344d402aec1c2ed431af1d902ca61aabfcc60ff7d088f424d638c2bb5",
+      "replacementSha256": "b6c8852c5d1294aaf3ddd31455aebd53e5736a76e7aa6a0d6d64b27821a609db"
+    },
+    "addedFunction": {
+      "name": "liNativeGroundRoot",
+      "sha256": "b3343b743cc0af6f5a6fecb97e6b7936a96612ec3097118e12f83893d5b43684"
+    },
+    "peakSearch": {
+      "function": "liNativePeakInterval",
+      "sha256": "56781cf9eb9cac9437310789b80be2120fcc6d7981327cd1dbeeed312389ecee",
+      "peakCount": 11,
+      "footRadius": 1.28,
+      "horizontalPaddingMetres": 48,
+      "heightEnvelope": "peakHeight*1.3+80",
+      "coarseStepInsideAggregateMetres": 4,
+      "lowlandBoundaryMetres": 60,
+      "outsideAggregate": "Jump to ray entry or downward y60 boundary; upward empty sky exits immediately."
+    },
+    "preservedFunctionSha256": {
+      "landH": [
+        "2e46f900b7eb03c5421f37bbfe459391b8e25e0831e2ba8f2381a1eced1d4878"
+      ],
+      "terrSD": [
+        "7189dc185eb254ea0a6f121486b236994ba12f851e72744be88eacb31cf8745d"
+      ],
+      "sceneSD": [
+        "c4fcbe2f575c857f0e6b29a7783f6dc0ea5fdf9a8fbf9d6698656cfd18feb078"
+      ],
+      "H": [
+        "ae79baa79a885f917e336ba990a7570346b98a01b267c039c4d6e64228f07f9c"
+      ],
+      "Hc": [
+        "b57cb4110aecbf06b8a203e0b3620aa3f40d08f694b267d0293e5551d79092bb"
+      ],
+      "treesSD": [
+        "8b431d3ed9417a65f854bb9db6dcd82af807388c893f0dfb7e54ca26719752f9",
+        "df524dea3ca87425b5a506e9288f34eecf8f4176d5503602045008ff0b360e40"
+      ],
+      "bushSD": [
+        "cc105d7e89e49c90fbc325cb07e9baa5485bbc781b53dbf9831a205e4ad7622f",
+        "e1e5154b9ac2f4556fe5e1abe91a55d9611bba78a3d178cd77887274a2168994"
+      ],
+      "crownSD": [
+        "90c81e8ffbf8d23ea1d2593ecda2834815580dd54bc9544ec43f1f7a8cdc35cb"
+      ],
+      "leafyShade": [
+        "f75b8b26a7053f1554acf597e7ab19f15b42e27c8d0d0a1fdb27cea4d9e86381"
+      ],
+      "rockField": [
+        "128926495c3a993aa257458683db48f1f7349b34b003c5e32d05eb1fd67da249"
+      ],
+      "rockAlbedo": [
+        "f7727babfdcade6deeafdb1ea3ceacac84ecc7096291b6009d1099ac1b95e7c8"
+      ],
+      "sceneNormal": [
+        "0ce65857e55e643a610ed2ed4c079483c2bba5adff871c2680303e499b035003"
+      ],
+      "sceneAO": [
+        "1744dbacaced0b9b8ca7963a69badf2b4e96a0d4b6ea95705676d7f481d21755"
+      ],
+      "shadeScene": [
+        "e06c0e06478e1b69d3af35ed5fddf05f32b8636a2a323494a18eb56fb2eb6c8f"
+      ],
+      "shadow": [
+        "85f20849cf49857a52b9342fe9b00d3ae761a654aa3a93bb20737ca55272d2ee"
+      ],
+      "shadowH": [
+        "a7456b84c77e054c5c7c4c6bc0a875da0a1c2b7fc01bc9ac38ea5423ec575bb5"
+      ],
+      "skyView": [
+        "ff2b59c42b34246945f2c69bba145bbfd8846cc6a2d85f63f46b24e660143145"
+      ],
+      "skyDome": [
+        "227a312717a64cc18d7480548fa2fa6a609be7941767b80de4628040b2c5809a"
+      ],
+      "skyIrr": [
+        "37dfbec5f3d62d9b7484557b77cdd333834ef61191bc3df08f545205c3d7634e"
+      ],
+      "skyFill": [
+        "5f0dd15f52e455100492e5a68d88b5038df948b9e6c29d4bd8bd74ab5631c410"
+      ],
+      "fogApply": [
+        "36e1dbfd625cb85c4d666ff898e968ab13cdf4ec7f933934dec6a140a55cb0db"
+      ],
+      "oceanH": [
+        "e8f1fc601ee221413f9359fa9f49b6dcd870179dd56c230b7d60a193e11b1322",
+        "c548813155a10a9d80f878bef878135a8108a8b9e5e34be0e38725ce3b9e3e06"
+      ],
+      "waterHit": [
+        "a589f46cfaf1455b6331c307f2f441a045958940287c48c7ebbdd739d5b78d4d"
+      ],
+      "shadeWater": [
+        "f003ff1a7acb3da6cc9da9bfd4bcb6ac98cbeb3de81db72069a1fa803b8ff945"
+      ],
+      "waterEdge": [
+        "2500e065fbe5156496141418049d36265609b75ca625e6ecf636c8fdfd5df415"
+      ]
+    },
+    "rationale": "A conservative max-slope distance bounds travel but does not prove surface proximity.",
+    "steepSlopeThreshold": 1.8,
+    "activeIteration": "Only environment sceneSD visits increment the epsilon index; pure high-air H samples keep tolerances unchanged. Total gIt and 3000-step budget are retained.",
+    "sourceFastGroundHeightRange": [
+      0.25,
+      35.0
+    ],
+    "primaryWaterOrder": "Test the same physical water surface first, cap primary terrain traversal at it, preserve real above-water occlusion and avoid marching the submerged bed twice.",
+    "groundHit": "Only gentle dry lowland retains the source correction; high, steep or submerged candidates use directional secant/Newton seeks a positive/negative sceneSD bracket, safeguarded secant contracts it, final exact point refreshes all source material state.",
+    "rootToleranceMetres": {
+      "minimum": 0.012,
+      "maximum": 0.12,
+      "pixelFraction": 0.14
+    },
+    "primaryTrees": "On gentle ground original source acceptance retained. On steep terrain original three correction steps and crown/branch/leaf geometry retained; actual acceptance capped at 0.45 pixel independent of iteration count. Any final switch to ground requires the terrain sign bracket.",
+    "treeThresholdPixelFraction": 0.45,
+    "negativeEntry": "Bracket from the last tested exterior ray point; exponential backtracking is a fallback when no exterior point was supplied.",
+    "limits": {
+      "marchIterations": 3000,
+      "groundRefinementSamples": 80,
+      "maximumRefinementAdvanceMetres": 3,
+      "maximumLocalTravelMetres": 96
+    },
+    "exhaustion": "No invented hit on march/refinement budget exhaustion.",
+    "shaderCompiler": "One additional sceneSD call site in a non-unrolled state loop.",
+    "gpuStarted": false,
+    "qualityStatus": "candidate; actual GPU frame required"
+  },
+  "airAcceleration": {
+    "applied": false,
+    "reason": "Experimental max-height air traversal did not improve the fixed-view actual frame time; retained behind --air-accel for comparison."
+  },
+  "modifiedHeightFunctions": [
+    "seaFloor"
+  ],
+  "postWhiteBalance": "Uniform linear camera tint, identity at default zero temperature",
+  "liveWaveUniforms": [
+    "uOAmp",
+    "uLiWaveSpeed"
+  ],
+  "outputSHA256": "3e63f8f67bf74b49cf6c64a7a042896c27770b7a2f2bbdb4485a324571f341da",
+  "peakLayoutSHA256": "0d89121bb66d15350ab9cfc7dd719422acae269e4f232b9b4637a63227b4dca5",
+  "minPeakFootRiverClearanceMetres": 47.914,
+  "peaks": [
+    [
+      575,
+      -170,
+      358,
+      222,
+      194,
+      -0.22,
+      0,
+      2.1
+    ],
+    [
+      835,
+      -560,
+      422,
+      210,
+      248,
+      0.24,
+      1,
+      5.7
+    ],
+    [
+      830,
+      -1360,
+      446,
+      245,
+      255,
+      0.35,
+      3,
+      4.3
+    ],
+    [
+      1220,
+      120,
+      385,
+      258,
+      205,
+      0.55,
+      0,
+      4.9
+    ],
+    [
+      555,
+      775,
+      288,
+      205,
+      238,
+      -0.27,
+      2,
+      6.2
+    ]
+  ],
+  "flightKeys": [
+    [
+      0,
+      -13.1824,
+      36,
+      1350,
+      380,
+      92,
+      450,
+      58
+    ],
+    [
+      8,
+      -4.4702,
+      48,
+      1280,
+      420,
+      120,
+      180,
+      58
+    ],
+    [
+      18,
+      14.7384,
+      76,
+      1050,
+      500,
+      125,
+      -100,
+      58
+    ],
+    [
+      29,
+      -5,
+      54,
+      830,
+      530,
+      75,
+      -320,
+      58
+    ],
+    [
+      38,
+      -33,
+      28,
+      690,
+      525,
+      22,
+      -440,
+      58
+    ],
+    [
+      45,
+      -50,
+      16,
+      650,
+      520,
+      0,
+      -480,
+      58
+    ]
+  ],
+  "qualityProbeFlightKeys": [
+    [
+      0,
+      71.8176,
+      64,
+      1350,
+      360,
+      140,
+      500,
+      58
+    ],
+    [
+      9,
+      107.3201,
+      70,
+      1150,
+      470,
+      145,
+      240,
+      58
+    ],
+    [
+      18,
+      138.575,
+      72,
+      920,
+      560,
+      145,
+      0,
+      58
+    ],
+    [
+      28,
+      155.6236,
+      70,
+      730,
+      590,
+      140,
+      -100,
+      58
+    ],
+    [
+      37,
+      155.5901,
+      66,
+      565,
+      550,
+      130,
+      -190,
+      58
+    ],
+    [
+      45,
+      152.6776,
+      64,
+      500,
+      530,
+      125,
+      -200,
+      58
+    ]
+  ],
+  "productionLight": {
+    "sunElevationDegrees": 18,
+    "qualityProbeSunElevationDegrees": 44
+  },
+  "portraitCamera": {
+    "enabledBelowAspect": 0.85,
+    "target": [
+      575,
+      0,
+      -170
+    ],
+    "method": "Render a real portrait viewport with its own camera framing; no post-crop or stretched wide frame."
+  },
+  "flightHeightMetres": {
+    "mainFlight": [
+      28,
+      76
+    ],
+    "terminal": 16,
+    "note": "Final low river composition is deliberately lower than the main flight."
+  },
+  "validation": {
+    "cpuOnly": true,
+    "javascriptSyntax": "pending external node --check",
+    "gpu": "not run by generator",
+    "artQuality": "candidate; requires actual frame review"
+  }
+}

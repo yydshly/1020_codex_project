@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#182b30"><meta name="description" content="旧船坞与运河车站：呼来一班实际靠泊的客船，选择上船离开或留在站台目送。"><title>旧船坞的下一班船</title><link rel="stylesheet" href="style.css?v=station-independent-1"><script type="importmap">{"imports":{"three":"../canal-real/vendor/three/build/three.module.min.js","three/addons/":"../canal-real/vendor/three/examples/jsm/"}}</script><script type="module" src="main.js?v=shipyard-oak2048-aftdeck-input-4"></script></head>
+<body><main id="app"><div id="world" tabindex="0" aria-label="独立旧船坞与运河车站，拖动观察，WASD 移动"></div>
+<header><a href="../index.html#concepts">← 可编程世界</a><span>NORTH DOCK / CANAL STATION</span><button id="fullscreen" type="button">全屏 ↗</button></header>
+<section id="loading" aria-live="polite"><span>THE NEXT BOAT</span><h1>旧船坞，等下一班。</h1><p id="status">正在准备船坞与车站…</p><progress id="progress" max="1" value="0"></progress></section>
+<div id="experience-overlay"><section class="caption"><span id="phase-label">01 / 等一班船</span><h1 id="scene-title">旧船坞的下一班船</h1><p id="scene-description">修船架还在岸边。你可以等一会儿，也可以呼来下一班客船。</p></section>
+<section id="journey-time" aria-label="当前旅程时间"><output id="journey-clock">等候中</output><progress id="journey-progress" max="1" value="0" hidden aria-label="当前阶段进度"></progress></section>
+<nav id="view-controls" aria-label="观察位置"><button type="button" data-shot="shipyard">旧船坞</button><button type="button" data-shot="platform" aria-pressed="true">站台</button><button type="button" data-shot="hall">候船厅</button></nav>
+<nav id="journey-controls" aria-label="客船旅程"><button type="button" id="callBoat">呼来客船</button><button type="button" id="pause" disabled>暂停</button><button type="button" id="reset">重新开始</button></nav>
+<section id="decision" hidden aria-label="靠泊后的选择"><p id="decision-prompt">这一班，你上船吗？</p><div><button type="button" id="board">上船离开</button><button type="button" id="stay">留在站台</button></div></section>
+<p id="interaction-hint">拖动观察 · WASD 移动 · 可切换船坞、站台与候船厅</p><p id="notice" role="alert" hidden></p>
+</div></main></body></html>

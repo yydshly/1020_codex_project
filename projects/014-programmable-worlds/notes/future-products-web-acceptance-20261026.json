@@ -1,0 +1,184 @@
+{
+  "schema": "future-products-web-v1",
+  "recordedAt": "2026-10-26T14:10:12.061877+00:00",
+  "status": "integrated-and-verified",
+  "entry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?revision=20261026-futures-1#future-products",
+  "scope": "Three static cleaned reference images and optional future product directions, including experience intentions, minimal first versions, relationship to existing works and six expansion ideas. No new live product or scene development.",
+  "directions": [
+    "lijiang-raft",
+    "island-lagoon",
+    "cosmic-harbor"
+  ],
+  "productForms": [
+    "Companion landscapes",
+    "Participatory journeys",
+    "Camera and scene creation tools"
+  ],
+  "imageRole": "User-provided screenshots cleaned via image_gen; generatively edited static visual references, labelled not yet developed.",
+  "images": [
+    {
+      "name": "lijiang-raft",
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\assets\\extension-references\\lijiang-raft-clean-v1.png",
+      "sha256": "e865ea9afa7d7a4efc1936a859071f914f547c2f5f972e1c9ebc7b6b796324c1",
+      "size": [
+        940,
+        1672
+      ]
+    },
+    {
+      "name": "cosmic-harbor",
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\assets\\extension-references\\cosmic-harbor-clean-v1.png",
+      "sha256": "0a77ea90c072e1c0f267b297dd29ec582c092bcc4c1fb2b4bf429bbf3dffdf59",
+      "size": [
+        941,
+        1672
+      ]
+    },
+    {
+      "name": "island-lagoon",
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\assets\\extension-references\\island-lagoon-clean-v1.png",
+      "sha256": "7c9940f875f4838f9b9b5e0bfee1e44c3ddbd267938b9f8dcb98d21e61cb9591",
+      "size": [
+        941,
+        1672
+      ]
+    }
+  ],
+  "verification": {
+    "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-world-hub-wrapup\\2026-10-26T14-08-51-109Z\\result.json",
+    "checks": 9,
+    "localLinksHTTP200": 28,
+    "futureImagesActuallyDecoded": {
+      "articleCount": 3,
+      "imageCount": 3,
+      "fullLinkCount": 3,
+      "staticReference": true,
+      "notDeveloped": true,
+      "articles": [
+        {
+          "index": 0,
+          "direction": "lijiang-raft",
+          "stage": "reference",
+          "heading": "漓江竹筏慢游",
+          "source": "../assets/extension-references/lijiang-raft-clean-v1.png",
+          "naturalWidth": 940,
+          "naturalHeight": 1672,
+          "complete": true,
+          "alt": "竹筏船头与绳索位于前景，小筏驶向层叠雾山，江面呈现低位行进视角",
+          "link": {
+            "href": "../assets/extension-references/lijiang-raft-clean-v1.png",
+            "target": "_blank",
+            "matchesImage": true
+          },
+          "baseLink": {
+            "href": "#lijiang",
+            "text": "现有基础：漓江晨航 M8 →",
+            "exists": true
+          },
+          "roleLabels": [
+            "可能成为",
+            "最小首版",
+            "承接的扩展思路"
+          ],
+          "roles": {
+            "usage": true,
+            "minimumVersion": true,
+            "existingRelationship": true
+          },
+          "statusText": [
+            "          视觉参考 · 待开发查看完整参考图 ↗"
+          ]
+        },
+        {
+          "index": 1,
+          "direction": "island-lagoon",
+          "stage": "reference",
+          "heading": "海岛泻湖巡游",
+          "source": "../assets/extension-references/island-lagoon-clean-v1.png",
+          "naturalWidth": 941,
+          "naturalHeight": 1672,
+          "complete": true,
+          "alt": "长尾船行于明亮碧水，近处高大石灰岩峭壁与植被围合出海岛泻湖",
+          "link": {
+            "href": "../assets/extension-references/island-lagoon-clean-v1.png",
+            "target": "_blank",
+            "matchesImage": true
+          },
+          "baseLink": {
+            "href": "#source",
+            "text": "方法参考：Na Pali 海岸 →",
+            "exists": true
+          },
+          "roleLabels": [
+            "可能成为",
+            "最小首版",
+            "承接的扩展思路"
+          ],
+          "roles": {
+            "usage": true,
+            "minimumVersion": true,
+            "existingRelationship": true
+          },
+          "statusText": [
+            "          视觉参考 · 待开发查看完整参考图 ↗",
+            "方法参考：Na Pali 海岸 →"
+          ]
+        },
+        {
+          "index": 2,
+          "direction": "cosmic-harbor",
+          "stage": "reference",
+          "heading": "星河港湾夜航",
+          "source": "../assets/extension-references/cosmic-harbor-clean-v1.png",
+          "naturalWidth": 941,
+          "naturalHeight": 1672,
+          "complete": true,
+          "alt": "摩天轮、城市和游艇位于港湾前方，粉金色奇幻天幕横贯天空并映入水面",
+          "link": {
+            "href": "../assets/extension-references/cosmic-harbor-clean-v1.png",
+            "target": "_blank",
+            "matchesImage": true
+          },
+          "baseLink": {
+            "href": "#station-title",
+            "text": "交互基础：旧船坞的下一班船 →",
+            "exists": true
+          },
+          "roleLabels": [
+            "可能成为",
+            "最小首版",
+            "承接的扩展思路"
+          ],
+          "roles": {
+            "usage": true,
+            "minimumVersion": true,
+            "existingRelationship": true
+          },
+          "statusText": [
+            "          视觉参考 · 待开发查看完整参考图 ↗"
+          ]
+        }
+      ],
+      "scope": "Actual decoded static reference images and labelled future directions only. Full-image links are inspected, never opened; no product functionality or 3D scene is invoked."
+    },
+    "viewports": [
+      "1440x900 desktop",
+      "390x844 small viewport; not phone hardware"
+    ],
+    "screenshots": 17,
+    "rootReviewed": [
+      "desktop-future-products",
+      "desktop-future-copy",
+      "mobile-future-2-image",
+      "mobile-future-1-text"
+    ],
+    "heavyScenesStarted": 0,
+    "iframeBlankChecks": 23,
+    "m8SourceFilesUnchanged": 51,
+    "sourceSHA256": {
+      "index.html": "57f13aca4c421d0e0a55784620eaaf4fab709fa998485d5a10196ef36e335631",
+      "style.css": "81ca2934d8b89482e658584a91dda532987c5cbae573a71ceab4f760cdc51bc0",
+      "app.js": "68561d9bf6b63eeff5dc18527cd30ad5f7a148470a48f57f25e001ba8753af3b"
+    }
+  }
+}

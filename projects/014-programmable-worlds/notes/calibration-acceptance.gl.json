@@ -1,0 +1,2587 @@
+{
+  "runId": "2026-10-24T02-08-54-101Z",
+  "scene": "calibration",
+  "backend": "gl",
+  "pid": 57892,
+  "status": "passed",
+  "startedAt": "2026-10-24T02:08:54.101Z",
+  "mode": "hidden-own-application",
+  "windowPolicy": {
+    "show": false,
+    "skipTaskbar": true,
+    "focusable": false,
+    "backgroundThrottling": false,
+    "occludedWindowBackgrounding": false
+  },
+  "security": {
+    "sandbox": true,
+    "contextIsolation": true,
+    "nodeIntegration": false,
+    "webSecurity": true
+  },
+  "tests": [
+    {
+      "name": "window-remains-hidden-and-unfocused",
+      "passed": true,
+      "evidence": {
+        "visible": false,
+        "focused": false
+      }
+    },
+    {
+      "name": "real-window-scene-ready-for-paused-calibration",
+      "passed": true,
+      "evidence": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "窗边 · 黄昏微雨",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 4,
+          "time": 0,
+          "paused": false,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 20.100000023841858,
+          "averageFrameMs": 3013.9500000178814,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.8,
+              "indirectScale": 3.141592653589793,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.22,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "own-window-exposes-lighting-calibration-api",
+      "passed": true,
+      "evidence": {
+        "api": "worldAcceptance.tuneLookdev",
+        "noOperatingSystemInput": true
+      }
+    },
+    {
+      "name": "paused-full-preset-captured-01-theory-window",
+      "passed": true,
+      "evidence": {
+        "preset": {
+          "exposure": 1.8,
+          "indirectScale": 3.141592653589793,
+          "environmentIntensity": 0.6,
+          "keyIntensity": 0.78,
+          "practicalScale": 1,
+          "iblDiffuseScale": 0.22
+        },
+        "view": "window",
+        "before": {
+          "ready": true,
+          "error": null,
+          "frames": 4,
+          "time": 0,
+          "paused": false,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 20.100000023841858,
+          "averageFrameMs": 3013.9500000178814,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.8,
+              "indirectScale": 3.141592653589793,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.22,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "after": {
+          "ready": true,
+          "error": null,
+          "frames": 10,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 17.200000047683716,
+          "averageFrameMs": 1214.9800000190735,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.8,
+              "indirectScale": 3.141592653589793,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.22,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "completedFrames": 2,
+        "pixelsAgainstTheoryWindow": null
+      }
+    },
+    {
+      "name": "paused-full-preset-captured-02-theory-low-exposure-window",
+      "passed": true,
+      "evidence": {
+        "preset": {
+          "exposure": 1.35,
+          "indirectScale": 3.141592653589793,
+          "environmentIntensity": 0.6,
+          "keyIntensity": 0.78,
+          "practicalScale": 1,
+          "iblDiffuseScale": 0.22
+        },
+        "view": "window",
+        "before": {
+          "ready": true,
+          "error": null,
+          "frames": 14,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 14.100000023841858,
+          "averageFrameMs": 872.2857142942293,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.8,
+              "indirectScale": 3.141592653589793,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.22,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "after": {
+          "ready": true,
+          "error": null,
+          "frames": 20,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 11.800000071525574,
+          "averageFrameMs": 614.3899999976159,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.35,
+              "indirectScale": 3.141592653589793,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.22,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "completedFrames": 2,
+        "pixelsAgainstTheoryWindow": {
+          "meanAbsoluteDifference": 11.820393880208334,
+          "changedChannelFraction": 1
+        }
+      }
+    },
+    {
+      "name": "paused-full-preset-captured-03-no-sky-diffuse-window",
+      "passed": true,
+      "evidence": {
+        "preset": {
+          "exposure": 1.8,
+          "indirectScale": 3.141592653589793,
+          "environmentIntensity": 0.6,
+          "keyIntensity": 0.78,
+          "practicalScale": 1,
+          "iblDiffuseScale": 0
+        },
+        "view": "window",
+        "before": {
+          "ready": true,
+          "error": null,
+          "frames": 24,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 9.899999976158142,
+          "averageFrameMs": 513.8416666636864,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.35,
+              "indirectScale": 3.141592653589793,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.22,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "after": {
+          "ready": true,
+          "error": null,
+          "frames": 30,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 10.200000047683716,
+          "averageFrameMs": 413.25000000397364,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.8,
+              "indirectScale": 3.141592653589793,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "completedFrames": 2,
+        "pixelsAgainstTheoryWindow": {
+          "meanAbsoluteDifference": 0.4064127604166667,
+          "changedChannelFraction": 0.052327473958333336
+        }
+      }
+    },
+    {
+      "name": "paused-full-preset-captured-04-no-bounce-window",
+      "passed": true,
+      "evidence": {
+        "preset": {
+          "exposure": 1.8,
+          "indirectScale": 0,
+          "environmentIntensity": 0.6,
+          "keyIntensity": 0.78,
+          "practicalScale": 1,
+          "iblDiffuseScale": 0.22
+        },
+        "view": "window",
+        "before": {
+          "ready": true,
+          "error": null,
+          "frames": 34,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 8.5,
+          "averageFrameMs": 365.7941176435527,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.8,
+              "indirectScale": 3.141592653589793,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "after": {
+          "ready": true,
+          "error": null,
+          "frames": 40,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 13.399999976158142,
+          "averageFrameMs": 312.45249999463556,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.8,
+              "indirectScale": 0,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.22,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "completedFrames": 2,
+        "pixelsAgainstTheoryWindow": {
+          "meanAbsoluteDifference": 1.0904134114583333,
+          "changedChannelFraction": 0.164306640625
+        }
+      }
+    },
+    {
+      "name": "paused-full-preset-captured-05-no-practicals-window",
+      "passed": true,
+      "evidence": {
+        "preset": {
+          "exposure": 1.8,
+          "indirectScale": 3.141592653589793,
+          "environmentIntensity": 0.6,
+          "keyIntensity": 0.78,
+          "practicalScale": 0,
+          "iblDiffuseScale": 0.22
+        },
+        "view": "window",
+        "before": {
+          "ready": true,
+          "error": null,
+          "frames": 44,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 12.799999952316284,
+          "averageFrameMs": 285.6681818095121,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.8,
+              "indirectScale": 0,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.22,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "after": {
+          "ready": true,
+          "error": null,
+          "frames": 50,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 15.600000023841858,
+          "averageFrameMs": 252.7819999909401,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.8,
+              "indirectScale": 3.141592653589793,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 0,
+              "iblDiffuseScale": 0.22,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "completedFrames": 2,
+        "pixelsAgainstTheoryWindow": {
+          "meanAbsoluteDifference": 11.204996744791666,
+          "changedChannelFraction": 0.3382975260416667
+        }
+      }
+    },
+    {
+      "name": "paused-full-preset-captured-06-balanced-window",
+      "passed": true,
+      "evidence": {
+        "preset": {
+          "exposure": 1.55,
+          "indirectScale": 2.4,
+          "environmentIntensity": 0.8,
+          "keyIntensity": 0.9,
+          "practicalScale": 1,
+          "iblDiffuseScale": 0.08
+        },
+        "view": "window",
+        "before": {
+          "ready": true,
+          "error": null,
+          "frames": 54,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 10.399999976158142,
+          "averageFrameMs": 234.9462962879075,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.8,
+              "indirectScale": 3.141592653589793,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 0,
+              "iblDiffuseScale": 0.22,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "after": {
+          "ready": true,
+          "error": null,
+          "frames": 60,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 11.399999976158142,
+          "averageFrameMs": 212.37999999523163,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.55,
+              "indirectScale": 2.4,
+              "environmentIntensity": 0.8,
+              "keyIntensity": 0.9,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.08,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "completedFrames": 2,
+        "pixelsAgainstTheoryWindow": {
+          "meanAbsoluteDifference": 3.2802734375,
+          "changedChannelFraction": 0.5581868489583334
+        }
+      }
+    },
+    {
+      "name": "paused-full-preset-captured-07-restrained-window",
+      "passed": true,
+      "evidence": {
+        "preset": {
+          "exposure": 1.35,
+          "indirectScale": 2.1,
+          "environmentIntensity": 0.75,
+          "keyIntensity": 0.85,
+          "practicalScale": 0.75,
+          "iblDiffuseScale": 0.06
+        },
+        "view": "window",
+        "before": {
+          "ready": true,
+          "error": null,
+          "frames": 64,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 10.399999976158142,
+          "averageFrameMs": 199.90468749590218,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.55,
+              "indirectScale": 2.4,
+              "environmentIntensity": 0.8,
+              "keyIntensity": 0.9,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.08,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "after": {
+          "ready": true,
+          "error": null,
+          "frames": 70,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 9.799999952316284,
+          "averageFrameMs": 183.59999999659402,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.35,
+              "indirectScale": 2.1,
+              "environmentIntensity": 0.75,
+              "keyIntensity": 0.85,
+              "practicalScale": 0.75,
+              "iblDiffuseScale": 0.06,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "completedFrames": 2,
+        "pixelsAgainstTheoryWindow": {
+          "meanAbsoluteDifference": 11.319173177083334,
+          "changedChannelFraction": 0.9962565104166666
+        }
+      }
+    },
+    {
+      "name": "paused-full-preset-captured-08-moody-window",
+      "passed": true,
+      "evidence": {
+        "preset": {
+          "exposure": 1.65,
+          "indirectScale": 1.5,
+          "environmentIntensity": 0.75,
+          "keyIntensity": 0.75,
+          "practicalScale": 1.3,
+          "iblDiffuseScale": 0.02
+        },
+        "view": "window",
+        "before": {
+          "ready": true,
+          "error": null,
+          "frames": 74,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 7.5,
+          "averageFrameMs": 174.10810810649718,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.35,
+              "indirectScale": 2.1,
+              "environmentIntensity": 0.75,
+              "keyIntensity": 0.85,
+              "practicalScale": 0.75,
+              "iblDiffuseScale": 0.06,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "after": {
+          "ready": true,
+          "error": null,
+          "frames": 80,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 9.800000071525574,
+          "averageFrameMs": 161.76624999940395,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.65,
+              "indirectScale": 1.5,
+              "environmentIntensity": 0.75,
+              "keyIntensity": 0.75,
+              "practicalScale": 1.3,
+              "iblDiffuseScale": 0.02,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "completedFrames": 2,
+        "pixelsAgainstTheoryWindow": {
+          "meanAbsoluteDifference": 2.564697265625,
+          "changedChannelFraction": 0.4724934895833333
+        }
+      }
+    },
+    {
+      "name": "paused-full-preset-captured-09-balanced-detail",
+      "passed": true,
+      "evidence": {
+        "preset": {
+          "exposure": 1.55,
+          "indirectScale": 2.4,
+          "environmentIntensity": 0.8,
+          "keyIntensity": 0.9,
+          "practicalScale": 1,
+          "iblDiffuseScale": 0.08
+        },
+        "view": "detail",
+        "before": {
+          "ready": true,
+          "error": null,
+          "frames": 84,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 8.200000047683716,
+          "averageFrameMs": 154.56428571400187,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.65,
+              "indirectScale": 1.5,
+              "environmentIntensity": 0.75,
+              "keyIntensity": 0.75,
+              "practicalScale": 1.3,
+              "iblDiffuseScale": 0.02,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "after": {
+          "ready": true,
+          "error": null,
+          "frames": 90,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -15.98846006470463,
+              3.887536483903604,
+              10.081357725526601
+            ],
+            "quaternion": [
+              -0.2551547466485841,
+              -0.36810139850784424,
+              -0.11144883950386182,
+              0.8871170000921574
+            ],
+            "mode": "detail",
+            "view": "detail",
+            "fov": 52
+          },
+          "mode": "detail",
+          "view": "detail",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 14,
+          "averageFrameMs": 144.83888888756434,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.55,
+              "indirectScale": 2.4,
+              "environmentIntensity": 0.8,
+              "keyIntensity": 0.9,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.08,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "completedFrames": 2,
+        "pixelsAgainstTheoryWindow": {
+          "meanAbsoluteDifference": 39.333577473958336,
+          "changedChannelFraction": 0.9515787760416666
+        }
+      }
+    },
+    {
+      "name": "paused-full-preset-captured-10-balanced-orbit",
+      "passed": true,
+      "evidence": {
+        "preset": {
+          "exposure": 1.55,
+          "indirectScale": 2.4,
+          "environmentIntensity": 0.8,
+          "keyIntensity": 0.9,
+          "practicalScale": 1,
+          "iblDiffuseScale": 0.08
+        },
+        "view": "orbit",
+        "before": {
+          "ready": true,
+          "error": null,
+          "frames": 94,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -15.98846006470463,
+              3.887536483903604,
+              10.081357725526601
+            ],
+            "quaternion": [
+              -0.2551547466485841,
+              -0.36810139850784424,
+              -0.11144883950386182,
+              0.8871170000921574
+            ],
+            "mode": "detail",
+            "view": "detail",
+            "fov": 52
+          },
+          "mode": "detail",
+          "view": "detail",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 6.699999928474426,
+          "averageFrameMs": 138.98723404077774,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.55,
+              "indirectScale": 2.4,
+              "environmentIntensity": 0.8,
+              "keyIntensity": 0.9,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.08,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "after": {
+          "ready": true,
+          "error": null,
+          "frames": 102,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -10.5,
+              3.6000000000000005,
+              16.5
+            ],
+            "quaternion": [
+              -0.017273067107804962,
+              -0.3151881921605367,
+              -0.005737724809847564,
+              0.9488546375442702
+            ],
+            "mode": "orbit",
+            "view": "orbit",
+            "fov": 45
+          },
+          "mode": "orbit",
+          "view": "orbit",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 5.900000095367432,
+          "averageFrameMs": 232.85490196008308,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.55,
+              "indirectScale": 2.4,
+              "environmentIntensity": 0.8,
+              "keyIntensity": 0.9,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.08,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "completedFrames": 2,
+        "pixelsAgainstTheoryWindow": {
+          "meanAbsoluteDifference": 39.890299479166664,
+          "changedChannelFraction": 0.9436848958333334
+        }
+      }
+    },
+    {
+      "name": "calibration-captures-do-not-approve-artistic-quality",
+      "passed": true,
+      "evidence": {
+        "profiles": [
+          {
+            "name": "theory",
+            "preset": {
+              "exposure": 1.8,
+              "indirectScale": 3.141592653589793,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.22
+            }
+          },
+          {
+            "name": "theory-low-exposure",
+            "preset": {
+              "exposure": 1.35,
+              "indirectScale": 3.141592653589793,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.22
+            }
+          },
+          {
+            "name": "no-sky-diffuse",
+            "preset": {
+              "exposure": 1.8,
+              "indirectScale": 3.141592653589793,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0
+            }
+          },
+          {
+            "name": "no-bounce",
+            "preset": {
+              "exposure": 1.8,
+              "indirectScale": 0,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.22
+            }
+          },
+          {
+            "name": "no-practicals",
+            "preset": {
+              "exposure": 1.8,
+              "indirectScale": 3.141592653589793,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 0,
+              "iblDiffuseScale": 0.22
+            }
+          },
+          {
+            "name": "balanced",
+            "preset": {
+              "exposure": 1.55,
+              "indirectScale": 2.4,
+              "environmentIntensity": 0.8,
+              "keyIntensity": 0.9,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.08
+            }
+          },
+          {
+            "name": "restrained",
+            "preset": {
+              "exposure": 1.35,
+              "indirectScale": 2.1,
+              "environmentIntensity": 0.75,
+              "keyIntensity": 0.85,
+              "practicalScale": 0.75,
+              "iblDiffuseScale": 0.06
+            }
+          },
+          {
+            "name": "moody",
+            "preset": {
+              "exposure": 1.65,
+              "indirectScale": 1.5,
+              "environmentIntensity": 0.75,
+              "keyIntensity": 0.75,
+              "practicalScale": 1.3,
+              "iblDiffuseScale": 0.02
+            }
+          }
+        ],
+        "capturedWindowProfiles": 8,
+        "additionalBalancedViews": [
+          "detail",
+          "orbit"
+        ],
+        "numericalPassMeansParametersAppliedAndActualPausedFramesCaptured": true,
+        "visualComparisonRequired": true
+      }
+    }
+  ],
+  "captures": [
+    {
+      "name": "01-theory-window",
+      "canvas": "assets/quality-qa/calibration/2026-10-24T02-08-54-101Z/01-theory-window-canvas.png",
+      "page": "assets/quality-qa/calibration/2026-10-24T02-08-54-101Z/01-theory-window-page.png",
+      "sha256": "f27799c64e27a86fcecb0af02eea66b454294ca7d3a7778b8f6a15a02f96ff7b",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 87.02065942382815,
+      "luminanceStdDev": 32.93276739730841,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 31.431640625,
+      "capturedAt": "2026-10-24T02:09:39.137Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "窗边 · 黄昏微雨",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 14,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 14.100000023841858,
+          "averageFrameMs": 872.2857142942293,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.8,
+              "indirectScale": 3.141592653589793,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.22,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "02-theory-low-exposure-window",
+      "canvas": "assets/quality-qa/calibration/2026-10-24T02-08-54-101Z/02-theory-low-exposure-window-canvas.png",
+      "page": "assets/quality-qa/calibration/2026-10-24T02-08-54-101Z/02-theory-low-exposure-window-page.png",
+      "sha256": "22ec142f6c825705e3a5b881974522ef7c678ec6afb586c25eddcce77022c024",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 75.1904265136717,
+      "luminanceStdDev": 31.677468109580392,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 30.320556640625,
+      "capturedAt": "2026-10-24T02:09:41.528Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "窗边 · 黄昏微雨",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 24,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 9.899999976158142,
+          "averageFrameMs": 513.8416666636864,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.35,
+              "indirectScale": 3.141592653589793,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.22,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "03-no-sky-diffuse-window",
+      "canvas": "assets/quality-qa/calibration/2026-10-24T02-08-54-101Z/03-no-sky-diffuse-window-canvas.png",
+      "page": "assets/quality-qa/calibration/2026-10-24T02-08-54-101Z/03-no-sky-diffuse-window-page.png",
+      "sha256": "869e93daba1f853061b6e8ffe819cc5b637dbd45d38c03b29623330c68389fa8",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 86.65086103515614,
+      "luminanceStdDev": 32.88420035860816,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 31.620849609375,
+      "capturedAt": "2026-10-24T02:09:44.217Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "窗边 · 黄昏微雨",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 34,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 8.5,
+          "averageFrameMs": 365.7941176435527,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.8,
+              "indirectScale": 3.141592653589793,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "04-no-bounce-window",
+      "canvas": "assets/quality-qa/calibration/2026-10-24T02-08-54-101Z/04-no-bounce-window-canvas.png",
+      "page": "assets/quality-qa/calibration/2026-10-24T02-08-54-101Z/04-no-bounce-window-page.png",
+      "sha256": "56f1818068dc80032ba889f59447f5334bb39d231d7fe67d3cc27401632b4751",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 85.90614145507811,
+      "luminanceStdDev": 32.31935328276772,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 30.95263671875,
+      "capturedAt": "2026-10-24T02:09:46.732Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "窗边 · 黄昏微雨",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 44,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 12.799999952316284,
+          "averageFrameMs": 285.6681818095121,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.8,
+              "indirectScale": 0,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.22,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "05-no-practicals-window",
+      "canvas": "assets/quality-qa/calibration/2026-10-24T02-08-54-101Z/05-no-practicals-window-canvas.png",
+      "page": "assets/quality-qa/calibration/2026-10-24T02-08-54-101Z/05-no-practicals-window-page.png",
+      "sha256": "bb07ea7a95ecf722ea082afe86b9ec09b483f4b9c7283fa8efcc7b0622988500",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 75.15303154296856,
+      "luminanceStdDev": 26.96139731177076,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 23.705322265625,
+      "capturedAt": "2026-10-24T02:09:49.380Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "窗边 · 黄昏微雨",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 54,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 10.399999976158142,
+          "averageFrameMs": 234.9462962879075,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.8,
+              "indirectScale": 3.141592653589793,
+              "environmentIntensity": 0.6,
+              "keyIntensity": 0.78,
+              "practicalScale": 0,
+              "iblDiffuseScale": 0.22,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "06-balanced-window",
+      "canvas": "assets/quality-qa/calibration/2026-10-24T02-08-54-101Z/06-balanced-window-canvas.png",
+      "page": "assets/quality-qa/calibration/2026-10-24T02-08-54-101Z/06-balanced-window-page.png",
+      "sha256": "e1216e42a2de354a886cfdd53c3f0b21c3f0d3cb878a918a90c240a9ca11452b",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 84.3431419921877,
+      "luminanceStdDev": 30.80684252555611,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 30.11474609375,
+      "capturedAt": "2026-10-24T02:09:52.058Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "窗边 · 黄昏微雨",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 64,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 10.399999976158142,
+          "averageFrameMs": 199.90468749590218,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.55,
+              "indirectScale": 2.4,
+              "environmentIntensity": 0.8,
+              "keyIntensity": 0.9,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.08,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "07-restrained-window",
+      "canvas": "assets/quality-qa/calibration/2026-10-24T02-08-54-101Z/07-restrained-window-canvas.png",
+      "page": "assets/quality-qa/calibration/2026-10-24T02-08-54-101Z/07-restrained-window-page.png",
+      "sha256": "c541720728111a8b434d58c0785d6cbf76a341fb0acf03b4ecbcc858d018b85d",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 75.42313461914024,
+      "luminanceStdDev": 28.885957594359176,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 28.642333984375,
+      "capturedAt": "2026-10-24T02:09:54.678Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "窗边 · 黄昏微雨",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 74,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 7.5,
+          "averageFrameMs": 174.10810810649718,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.35,
+              "indirectScale": 2.1,
+              "environmentIntensity": 0.75,
+              "keyIntensity": 0.85,
+              "practicalScale": 0.75,
+              "iblDiffuseScale": 0.06,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "08-moody-window",
+      "canvas": "assets/quality-qa/calibration/2026-10-24T02-08-54-101Z/08-moody-window-canvas.png",
+      "page": "assets/quality-qa/calibration/2026-10-24T02-08-54-101Z/08-moody-window-page.png",
+      "sha256": "db2e99f79cfb0e6c7397c4ec75aa793c8de52c7dc73646d657bd716ee499d4f9",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 86.6434895019535,
+      "luminanceStdDev": 33.11433050256897,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 31.628662109375,
+      "capturedAt": "2026-10-24T02:09:57.326Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "窗边 · 黄昏微雨",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 84,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 8.200000047683716,
+          "averageFrameMs": 154.56428571400187,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.65,
+              "indirectScale": 1.5,
+              "environmentIntensity": 0.75,
+              "keyIntensity": 0.75,
+              "practicalScale": 1.3,
+              "iblDiffuseScale": 0.02,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "09-balanced-detail",
+      "canvas": "assets/quality-qa/calibration/2026-10-24T02-08-54-101Z/09-balanced-detail-canvas.png",
+      "page": "assets/quality-qa/calibration/2026-10-24T02-08-54-101Z/09-balanced-detail-page.png",
+      "sha256": "873a474db5ea4b4b7c352f87ca62acb5e51307fb42663fa9425aa81818d76234",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 70.97929999999931,
+      "luminanceStdDev": 28.503289273004306,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 20.8271484375,
+      "capturedAt": "2026-10-24T02:10:00.005Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "茶与书 · 黄昏微雨",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 94,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -15.98846006470463,
+              3.887536483903604,
+              10.081357725526601
+            ],
+            "quaternion": [
+              -0.2551547466485841,
+              -0.36810139850784424,
+              -0.11144883950386182,
+              0.8871170000921574
+            ],
+            "mode": "detail",
+            "view": "detail",
+            "fov": 52
+          },
+          "mode": "detail",
+          "view": "detail",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 6.699999928474426,
+          "averageFrameMs": 138.98723404077774,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.55,
+              "indirectScale": 2.4,
+              "environmentIntensity": 0.8,
+              "keyIntensity": 0.9,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.08,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "10-balanced-orbit",
+      "canvas": "assets/quality-qa/calibration/2026-10-24T02-08-54-101Z/10-balanced-orbit-canvas.png",
+      "page": "assets/quality-qa/calibration/2026-10-24T02-08-54-101Z/10-balanced-orbit-page.png",
+      "sha256": "e55ccd8a993f59651022e401fb191e4616f67c76b872c29833e629870611c862",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 81.91838173828097,
+      "luminanceStdDev": 40.43894151398223,
+      "nonBlackFraction": 0.9970703125,
+      "meanChannelRange": 34.835693359375,
+      "capturedAt": "2026-10-24T02:10:13.941Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "河岸环看 · 黄昏微雨",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 106,
+          "time": 0,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -10.5,
+              3.6000000000000005,
+              16.5
+            ],
+            "quaternion": [
+              -0.017273067107804962,
+              -0.3151881921605367,
+              -0.005737724809847564,
+              0.9488546375442702
+            ],
+            "mode": "orbit",
+            "view": "orbit",
+            "fov": 45
+          },
+          "mode": "orbit",
+          "view": "orbit",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 4.5,
+          "averageFrameMs": 224.25754716711225,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "warped five-scale current + capillary rain rings / linear planar reflection",
+            "lightingModel": "PBR direct/specular lighting + source dusk indirect radiance + separately scaled sky diffuse",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked",
+            "rain": true,
+            "sourceGlazing": "thin physical transmission, opacity1, IOR1.45",
+            "lightmapUnits": "indirect diffuse radiance multiplied to irradiance; initial multiplier PI",
+            "lightingTuning": {
+              "exposure": 1.55,
+              "indirectScale": 2.4,
+              "environmentIntensity": 0.8,
+              "keyIntensity": 0.9,
+              "practicalScale": 1,
+              "iblDiffuseScale": 0.08,
+              "atmosphere": "dusk"
+            }
+          }
+        },
+        "drive": null
+      }
+    }
+  ],
+  "errors": [],
+  "visualQualityAcceptance": "requires-separate-human-comparison-with-source",
+  "priorPassedBaseline": "notes/calibration-acceptance.gl.baseline.json",
+  "finishedAt": "2026-10-24T02:10:13.943Z",
+  "elapsedSeconds": 79.842
+}

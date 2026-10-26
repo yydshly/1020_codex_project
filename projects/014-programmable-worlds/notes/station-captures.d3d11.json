@@ -1,0 +1,3714 @@
+{
+  "runId": "2026-10-24T18-12-49-173Z",
+  "status": "passed",
+  "scene": "shipyard-station",
+  "backend": "d3d11",
+  "tests": [
+    {
+      "name": "independent-station-identity-and-actual-renderer",
+      "passed": true,
+      "evidence": {
+        "runtimeRevision": "shipyard-oak2048-aftdeck-2",
+        "sceneId": "shipyard-station",
+        "setting": "old-dry-dock-and-passenger-station",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "error": null,
+        "frames": 6,
+        "time": 0.25,
+        "paused": false,
+        "visible": true,
+        "view": "platform",
+        "quality": "work in progress / not accepted",
+        "runtimeLighting": {
+          "sceneId": "shipyard-station",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "sunDirection": [
+            0.3912557941714868,
+            0.7417598102380594,
+            0.5447121142794946
+          ]
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 23,
+          "accepted": false,
+          "manifestURL": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/shipyard-station/baked-r1/manifest-oak2048.json",
+          "sampling": [
+            {
+              "key": "ShipyardGI_Station_blackened_iron",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_clock_face",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_corrugated_zinc",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_dressed_coping",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_faded_boat_paint",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_framed_canal_route",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_framed_departure_table",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_harbour_cobbles",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_interior_shadow",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_oiled_oak",
+              "samples": 2048
+            },
+            {
+              "key": "ShipyardGI_Station_old_firebrick",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_old_platform_paint",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_platform_paving",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_quay_stone",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_repair_yard_sign",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_riveted_blue_steel",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_slipway_stone",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_station_name",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_machine_brass",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_sign",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_stock",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_waiting_room_plaster",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_yard_timber",
+              "samples": 128
+            }
+          ],
+          "model": "shipyard-lightmapped.glb",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "proof": null,
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "lightingCalibration": {
+            "practicalScale": 1,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 20.05352282957881,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 6,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+            "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+            "integrationInputs": {
+              "sceneId": "shipyard-station",
+              "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+              "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+              "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "environmentStrength": 1.031923772120808,
+              "mappingRotationZDegrees": 20.05352282957881,
+              "analyticSunScale": 0,
+              "practicalScale": 1
+            }
+          }
+        },
+        "visualReview": {
+          "sceneId": "shipyard-station",
+          "status": "pending-runtime-review",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "reviewRecord": null
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 25,
+          "bakedMaterials": 23,
+          "glazingMaterials": 2,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "station-waiting-hall",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                28.3,
+                2.4,
+                6
+              ],
+              "min": [
+                24.4,
+                0.6,
+                -1.3
+              ],
+              "max": [
+                33.5,
+                5.3,
+                13.3
+              ]
+            },
+            {
+              "name": "station-covered-platform",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                22.1,
+                2.5,
+                5
+              ],
+              "min": [
+                19.6,
+                0.6,
+                -14.5
+              ],
+              "max": [
+                24.65,
+                5.2,
+                22.5
+              ]
+            },
+            {
+              "name": "station-basin",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                9,
+                3,
+                4
+              ],
+              "min": [
+                -20,
+                -2,
+                -40
+              ],
+              "max": [
+                24.5,
+                13,
+                38
+              ]
+            },
+            {
+              "name": "repair-slipway",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                -27,
+                3,
+                1
+              ],
+              "min": [
+                -44,
+                0.5,
+                -16
+              ],
+              "max": [
+                -20,
+                13,
+                16
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 10,
+            "observedProgramMaximum": 10
+          }
+        },
+        "journey": {
+          "phase": "idle",
+          "elapsed": 0,
+          "duration": 0,
+          "progress": 0,
+          "totalElapsed": 0,
+          "paused": false,
+          "choice": null,
+          "boatPosition": [
+            12,
+            -0.12342697161193723,
+            -28
+          ],
+          "boatHeading": 3.141592653589793,
+          "velocityDir": [
+            0,
+            -1
+          ],
+          "speed": 0,
+          "gangwayOpen": 0,
+          "canChoose": false,
+          "boarding": false,
+          "cameraFollow": false,
+          "cameraLocked": false,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "passengerSurface": {
+            "method": "bounded real principal-geometry AO / indirectDiffuse only",
+            "sampledVertices": 2119,
+            "hemisphereSamples": 24,
+            "principalOccluders": 42,
+            "rayBoxTests": 2092272,
+            "minAO": 0.24,
+            "meanAO": 0.44365095978122004,
+            "maxDistance": 2.15,
+            "physicalBevels": true
+          },
+          "disposed": false
+        },
+        "camera": {
+          "position": [
+            21.95,
+            2.3000000000000007,
+            22.2
+          ],
+          "target": [
+            18.4,
+            1.8,
+            6.2
+          ],
+          "fov": 60
+        },
+        "navigation": {
+          "view": "platform",
+          "bounds": {
+            "x": [
+              20.85,
+              23.35
+            ],
+            "y": [
+              1.7,
+              3.1
+            ],
+            "z": [
+              -13.5,
+              22.8
+            ]
+          }
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-lit-far-support",
+          "sourceAtlasExcluded": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "own-independent-geometry-and-complete-lighting",
+      "passed": true,
+      "evidence": {
+        "mode": "full-diffuse",
+        "bound": 23,
+        "accepted": false,
+        "manifestURL": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/shipyard-station/baked-r1/manifest-oak2048.json",
+        "sampling": [
+          {
+            "key": "ShipyardGI_Station_blackened_iron",
+            "samples": 128
+          },
+          {
+            "key": "ShipyardGI_Station_clock_face",
+            "samples": 128
+          },
+          {
+            "key": "ShipyardGI_Station_corrugated_zinc",
+            "samples": 128
+          },
+          {
+            "key": "ShipyardGI_Station_dressed_coping",
+            "samples": 128
+          },
+          {
+            "key": "ShipyardGI_Station_faded_boat_paint",
+            "samples": 128
+          },
+          {
+            "key": "ShipyardGI_Station_framed_canal_route",
+            "samples": 128
+          },
+          {
+            "key": "ShipyardGI_Station_framed_departure_table",
+            "samples": 128
+          },
+          {
+            "key": "ShipyardGI_Station_harbour_cobbles",
+            "samples": 128
+          },
+          {
+            "key": "ShipyardGI_Station_interior_shadow",
+            "samples": 128
+          },
+          {
+            "key": "ShipyardGI_Station_oiled_oak",
+            "samples": 2048
+          },
+          {
+            "key": "ShipyardGI_Station_old_firebrick",
+            "samples": 128
+          },
+          {
+            "key": "ShipyardGI_Station_old_platform_paint",
+            "samples": 128
+          },
+          {
+            "key": "ShipyardGI_Station_platform_paving",
+            "samples": 128
+          },
+          {
+            "key": "ShipyardGI_Station_quay_stone",
+            "samples": 128
+          },
+          {
+            "key": "ShipyardGI_Station_repair_yard_sign",
+            "samples": 128
+          },
+          {
+            "key": "ShipyardGI_Station_riveted_blue_steel",
+            "samples": 128
+          },
+          {
+            "key": "ShipyardGI_Station_slipway_stone",
+            "samples": 128
+          },
+          {
+            "key": "ShipyardGI_Station_station_name",
+            "samples": 128
+          },
+          {
+            "key": "ShipyardGI_Station_ticket_machine_brass",
+            "samples": 128
+          },
+          {
+            "key": "ShipyardGI_Station_ticket_sign",
+            "samples": 128
+          },
+          {
+            "key": "ShipyardGI_Station_ticket_stock",
+            "samples": 128
+          },
+          {
+            "key": "ShipyardGI_Station_waiting_room_plaster",
+            "samples": 128
+          },
+          {
+            "key": "ShipyardGI_Station_yard_timber",
+            "samples": 128
+          }
+        ],
+        "model": "shipyard-lightmapped.glb",
+        "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+        "proof": null,
+        "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+        "lightingCalibration": {
+          "practicalScale": 1,
+          "sunScale": 0,
+          "environmentScale": 1,
+          "environmentOverride": {
+            "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+            "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+            "mappingRotationZDegrees": 20.05352282957881,
+            "strength": 1.031923770904541,
+            "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+            "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+          },
+          "areaSourceVisibleToCamera": false,
+          "cyclesClosed8mmPanes": 6,
+          "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+          "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+          "integrationInputs": {
+            "sceneId": "shipyard-station",
+            "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+            "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+            "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+            "environmentStrength": 1.031923772120808,
+            "mappingRotationZDegrees": 20.05352282957881,
+            "analyticSunScale": 0,
+            "practicalScale": 1
+          }
+        }
+      }
+    },
+    {
+      "name": "actual-independent-camera-platform",
+      "passed": true,
+      "evidence": {
+        "position": [
+          21.95,
+          2.3000000000000007,
+          22.2
+        ],
+        "target": [
+          18.4,
+          1.8,
+          6.2
+        ],
+        "fov": 60
+      }
+    },
+    {
+      "name": "actual-independent-camera-shipyard",
+      "passed": true,
+      "evidence": {
+        "position": [
+          -21.800000000000004,
+          2.9999999999999996,
+          23
+        ],
+        "target": [
+          -30.000000000000004,
+          3.8999999999999995,
+          -4.5
+        ],
+        "fov": 53
+      }
+    },
+    {
+      "name": "actual-independent-camera-hall",
+      "passed": true,
+      "evidence": {
+        "position": [
+          25.5,
+          2.3000000000000007,
+          10.4
+        ],
+        "target": [
+          30.5,
+          2,
+          4
+        ],
+        "fov": 53
+      }
+    },
+    {
+      "name": "actual-independent-camera-basin",
+      "passed": true,
+      "evidence": {
+        "position": [
+          -21.400000000000016,
+          2.599999999999996,
+          27.000000000000014
+        ],
+        "target": [
+          0,
+          3,
+          -7
+        ],
+        "fov": 58
+      }
+    },
+    {
+      "name": "pilot-real-arrival-for-visual-review",
+      "passed": true,
+      "evidence": {
+        "phase": "docked",
+        "elapsed": 1.4331000000000151,
+        "duration": 0,
+        "progress": 0,
+        "totalElapsed": 23.43310000000003,
+        "paused": false,
+        "choice": null,
+        "boatPosition": [
+          17.6,
+          -0.11675140749033538,
+          8
+        ],
+        "boatHeading": 0,
+        "velocityDir": [
+          0,
+          -1
+        ],
+        "speed": 0,
+        "gangwayOpen": 1,
+        "canChoose": true,
+        "boarding": false,
+        "cameraFollow": false,
+        "cameraLocked": false,
+        "completed": false,
+        "history": {
+          "completedTrips": 0,
+          "lastChoice": null
+        },
+        "passengerSurface": {
+          "method": "bounded real principal-geometry AO / indirectDiffuse only",
+          "sampledVertices": 2119,
+          "hemisphereSamples": 24,
+          "principalOccluders": 42,
+          "rayBoxTests": 2092272,
+          "minAO": 0.24,
+          "meanAO": 0.44365095978122004,
+          "maxDistance": 2.15,
+          "physicalBevels": true
+        },
+        "disposed": false
+      }
+    },
+    {
+      "name": "pilot-boarding-and-onboard-for-visual-review",
+      "passed": true,
+      "evidence": {
+        "runtimeRevision": "shipyard-oak2048-aftdeck-2",
+        "sceneId": "shipyard-station",
+        "setting": "old-dry-dock-and-passenger-station",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "error": null,
+        "frames": 1185,
+        "time": 34.64960000000014,
+        "paused": false,
+        "visible": true,
+        "view": "platform",
+        "quality": "work in progress / not accepted",
+        "runtimeLighting": {
+          "sceneId": "shipyard-station",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "sunDirection": [
+            0.3912557941714868,
+            0.7417598102380594,
+            0.5447121142794946
+          ]
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 23,
+          "accepted": false,
+          "manifestURL": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/shipyard-station/baked-r1/manifest-oak2048.json",
+          "sampling": [
+            {
+              "key": "ShipyardGI_Station_blackened_iron",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_clock_face",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_corrugated_zinc",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_dressed_coping",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_faded_boat_paint",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_framed_canal_route",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_framed_departure_table",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_harbour_cobbles",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_interior_shadow",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_oiled_oak",
+              "samples": 2048
+            },
+            {
+              "key": "ShipyardGI_Station_old_firebrick",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_old_platform_paint",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_platform_paving",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_quay_stone",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_repair_yard_sign",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_riveted_blue_steel",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_slipway_stone",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_station_name",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_machine_brass",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_sign",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_stock",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_waiting_room_plaster",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_yard_timber",
+              "samples": 128
+            }
+          ],
+          "model": "shipyard-lightmapped.glb",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "proof": null,
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "lightingCalibration": {
+            "practicalScale": 1,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 20.05352282957881,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 6,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+            "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+            "integrationInputs": {
+              "sceneId": "shipyard-station",
+              "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+              "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+              "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "environmentStrength": 1.031923772120808,
+              "mappingRotationZDegrees": 20.05352282957881,
+              "analyticSunScale": 0,
+              "practicalScale": 1
+            }
+          }
+        },
+        "visualReview": {
+          "sceneId": "shipyard-station",
+          "status": "pending-runtime-review",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "reviewRecord": null
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 25,
+          "bakedMaterials": 23,
+          "glazingMaterials": 2,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "station-waiting-hall",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                28.3,
+                2.4,
+                6
+              ],
+              "min": [
+                24.4,
+                0.6,
+                -1.3
+              ],
+              "max": [
+                33.5,
+                5.3,
+                13.3
+              ]
+            },
+            {
+              "name": "station-covered-platform",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                22.1,
+                2.5,
+                5
+              ],
+              "min": [
+                19.6,
+                0.6,
+                -14.5
+              ],
+              "max": [
+                24.65,
+                5.2,
+                22.5
+              ]
+            },
+            {
+              "name": "station-basin",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                9,
+                3,
+                4
+              ],
+              "min": [
+                -20,
+                -2,
+                -40
+              ],
+              "max": [
+                24.5,
+                13,
+                38
+              ]
+            },
+            {
+              "name": "repair-slipway",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                -27,
+                3,
+                1
+              ],
+              "min": [
+                -44,
+                0.5,
+                -16
+              ],
+              "max": [
+                -20,
+                13,
+                16
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 10,
+            "observedProgramMaximum": 10
+          }
+        },
+        "journey": {
+          "phase": "departing",
+          "elapsed": 3.166500000000002,
+          "duration": 32,
+          "progress": 0.09895312500000006,
+          "totalElapsed": 34.26630000000015,
+          "paused": false,
+          "choice": "board",
+          "boatPosition": [
+            17.566421950928532,
+            -0.11607187424853012,
+            7.677474002339823
+          ],
+          "boatHeading": 0.014304155381722692,
+          "velocityDir": [
+            -0.10354992269353971,
+            -0.994624257451105
+          ],
+          "speed": 0.5485717082174297,
+          "gangwayOpen": 0,
+          "canChoose": false,
+          "boarding": false,
+          "cameraFollow": true,
+          "cameraLocked": false,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "passengerSurface": {
+            "method": "bounded real principal-geometry AO / indirectDiffuse only",
+            "sampledVertices": 2119,
+            "hemisphereSamples": 24,
+            "principalOccluders": 42,
+            "rayBoxTests": 2092272,
+            "minAO": 0.24,
+            "meanAO": 0.44365095978122004,
+            "maxDistance": 2.15,
+            "physicalBevels": true
+          },
+          "disposed": false
+        },
+        "camera": {
+          "position": [
+            18.0878519325859,
+            2.2942365421599535,
+            9.780425221932571
+          ],
+          "target": [
+            24.74733368975261,
+            1.0516031684868012,
+            20.581145800884634
+          ],
+          "fov": 60
+        },
+        "navigation": {
+          "view": "platform",
+          "bounds": {
+            "x": [
+              20.85,
+              23.35
+            ],
+            "y": [
+              1.7,
+              3.1
+            ],
+            "z": [
+              -13.5,
+              22.8
+            ]
+          }
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-lit-far-support",
+          "sourceAtlasExcluded": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "own-independent-renderer-disposes",
+      "passed": true,
+      "evidence": {
+        "disposed": true
+      }
+    }
+  ],
+  "captures": [
+    {
+      "name": "01-platform",
+      "canvas": "assets/shipyard-station-qa/2026-10-24T18-12-49-173Z/01-platform-canvas.png",
+      "page": "assets/shipyard-station-qa/2026-10-24T18-12-49-173Z/01-platform-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "a5c940370441153d5ef51a315371a6828bb98877f7301e256a724a798847084d",
+      "state": {
+        "runtimeRevision": "shipyard-oak2048-aftdeck-2",
+        "sceneId": "shipyard-station",
+        "setting": "old-dry-dock-and-passenger-station",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "error": null,
+        "frames": 15,
+        "time": 0.25,
+        "paused": true,
+        "visible": true,
+        "view": "platform",
+        "quality": "work in progress / not accepted",
+        "runtimeLighting": {
+          "sceneId": "shipyard-station",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "sunDirection": [
+            0.3912557941714868,
+            0.7417598102380594,
+            0.5447121142794946
+          ]
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 23,
+          "accepted": false,
+          "manifestURL": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/shipyard-station/baked-r1/manifest-oak2048.json",
+          "sampling": [
+            {
+              "key": "ShipyardGI_Station_blackened_iron",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_clock_face",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_corrugated_zinc",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_dressed_coping",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_faded_boat_paint",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_framed_canal_route",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_framed_departure_table",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_harbour_cobbles",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_interior_shadow",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_oiled_oak",
+              "samples": 2048
+            },
+            {
+              "key": "ShipyardGI_Station_old_firebrick",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_old_platform_paint",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_platform_paving",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_quay_stone",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_repair_yard_sign",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_riveted_blue_steel",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_slipway_stone",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_station_name",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_machine_brass",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_sign",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_stock",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_waiting_room_plaster",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_yard_timber",
+              "samples": 128
+            }
+          ],
+          "model": "shipyard-lightmapped.glb",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "proof": null,
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "lightingCalibration": {
+            "practicalScale": 1,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 20.05352282957881,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 6,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+            "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+            "integrationInputs": {
+              "sceneId": "shipyard-station",
+              "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+              "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+              "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "environmentStrength": 1.031923772120808,
+              "mappingRotationZDegrees": 20.05352282957881,
+              "analyticSunScale": 0,
+              "practicalScale": 1
+            }
+          }
+        },
+        "visualReview": {
+          "sceneId": "shipyard-station",
+          "status": "pending-runtime-review",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "reviewRecord": null
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 25,
+          "bakedMaterials": 23,
+          "glazingMaterials": 2,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "station-waiting-hall",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                28.3,
+                2.4,
+                6
+              ],
+              "min": [
+                24.4,
+                0.6,
+                -1.3
+              ],
+              "max": [
+                33.5,
+                5.3,
+                13.3
+              ]
+            },
+            {
+              "name": "station-covered-platform",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                22.1,
+                2.5,
+                5
+              ],
+              "min": [
+                19.6,
+                0.6,
+                -14.5
+              ],
+              "max": [
+                24.65,
+                5.2,
+                22.5
+              ]
+            },
+            {
+              "name": "station-basin",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                9,
+                3,
+                4
+              ],
+              "min": [
+                -20,
+                -2,
+                -40
+              ],
+              "max": [
+                24.5,
+                13,
+                38
+              ]
+            },
+            {
+              "name": "repair-slipway",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                -27,
+                3,
+                1
+              ],
+              "min": [
+                -44,
+                0.5,
+                -16
+              ],
+              "max": [
+                -20,
+                13,
+                16
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 10,
+            "observedProgramMaximum": 10
+          }
+        },
+        "journey": {
+          "phase": "idle",
+          "elapsed": 0,
+          "duration": 0,
+          "progress": 0,
+          "totalElapsed": 0,
+          "paused": true,
+          "choice": null,
+          "boatPosition": [
+            12,
+            -0.12342697161193723,
+            -28
+          ],
+          "boatHeading": 3.141592653589793,
+          "velocityDir": [
+            0,
+            -1
+          ],
+          "speed": 0,
+          "gangwayOpen": 0,
+          "canChoose": false,
+          "boarding": false,
+          "cameraFollow": false,
+          "cameraLocked": false,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "passengerSurface": {
+            "method": "bounded real principal-geometry AO / indirectDiffuse only",
+            "sampledVertices": 2119,
+            "hemisphereSamples": 24,
+            "principalOccluders": 42,
+            "rayBoxTests": 2092272,
+            "minAO": 0.24,
+            "meanAO": 0.44365095978122004,
+            "maxDistance": 2.15,
+            "physicalBevels": true
+          },
+          "disposed": false
+        },
+        "camera": {
+          "position": [
+            21.95,
+            2.3000000000000007,
+            22.2
+          ],
+          "target": [
+            18.4,
+            1.8,
+            6.2
+          ],
+          "fov": 60
+        },
+        "navigation": {
+          "view": "platform",
+          "bounds": {
+            "x": [
+              20.85,
+              23.35
+            ],
+            "y": [
+              1.7,
+              3.1
+            ],
+            "z": [
+              -13.5,
+              22.8
+            ]
+          }
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-lit-far-support",
+          "sourceAtlasExcluded": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "02-shipyard",
+      "canvas": "assets/shipyard-station-qa/2026-10-24T18-12-49-173Z/02-shipyard-canvas.png",
+      "page": "assets/shipyard-station-qa/2026-10-24T18-12-49-173Z/02-shipyard-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "454e6f222fd849d8a489490d738775132bd37601d00beff12a134ec1bb9e8d30",
+      "state": {
+        "runtimeRevision": "shipyard-oak2048-aftdeck-2",
+        "sceneId": "shipyard-station",
+        "setting": "old-dry-dock-and-passenger-station",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "error": null,
+        "frames": 45,
+        "time": 0.25,
+        "paused": true,
+        "visible": true,
+        "view": "shipyard",
+        "quality": "work in progress / not accepted",
+        "runtimeLighting": {
+          "sceneId": "shipyard-station",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "sunDirection": [
+            0.3912557941714868,
+            0.7417598102380594,
+            0.5447121142794946
+          ]
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 23,
+          "accepted": false,
+          "manifestURL": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/shipyard-station/baked-r1/manifest-oak2048.json",
+          "sampling": [
+            {
+              "key": "ShipyardGI_Station_blackened_iron",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_clock_face",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_corrugated_zinc",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_dressed_coping",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_faded_boat_paint",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_framed_canal_route",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_framed_departure_table",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_harbour_cobbles",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_interior_shadow",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_oiled_oak",
+              "samples": 2048
+            },
+            {
+              "key": "ShipyardGI_Station_old_firebrick",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_old_platform_paint",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_platform_paving",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_quay_stone",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_repair_yard_sign",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_riveted_blue_steel",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_slipway_stone",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_station_name",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_machine_brass",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_sign",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_stock",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_waiting_room_plaster",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_yard_timber",
+              "samples": 128
+            }
+          ],
+          "model": "shipyard-lightmapped.glb",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "proof": null,
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "lightingCalibration": {
+            "practicalScale": 1,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 20.05352282957881,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 6,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+            "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+            "integrationInputs": {
+              "sceneId": "shipyard-station",
+              "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+              "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+              "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "environmentStrength": 1.031923772120808,
+              "mappingRotationZDegrees": 20.05352282957881,
+              "analyticSunScale": 0,
+              "practicalScale": 1
+            }
+          }
+        },
+        "visualReview": {
+          "sceneId": "shipyard-station",
+          "status": "pending-runtime-review",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "reviewRecord": null
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 25,
+          "bakedMaterials": 23,
+          "glazingMaterials": 2,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "station-waiting-hall",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                28.3,
+                2.4,
+                6
+              ],
+              "min": [
+                24.4,
+                0.6,
+                -1.3
+              ],
+              "max": [
+                33.5,
+                5.3,
+                13.3
+              ]
+            },
+            {
+              "name": "station-covered-platform",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                22.1,
+                2.5,
+                5
+              ],
+              "min": [
+                19.6,
+                0.6,
+                -14.5
+              ],
+              "max": [
+                24.65,
+                5.2,
+                22.5
+              ]
+            },
+            {
+              "name": "station-basin",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                9,
+                3,
+                4
+              ],
+              "min": [
+                -20,
+                -2,
+                -40
+              ],
+              "max": [
+                24.5,
+                13,
+                38
+              ]
+            },
+            {
+              "name": "repair-slipway",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                -27,
+                3,
+                1
+              ],
+              "min": [
+                -44,
+                0.5,
+                -16
+              ],
+              "max": [
+                -20,
+                13,
+                16
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 10,
+            "observedProgramMaximum": 10
+          }
+        },
+        "journey": {
+          "phase": "idle",
+          "elapsed": 0,
+          "duration": 0,
+          "progress": 0,
+          "totalElapsed": 0,
+          "paused": true,
+          "choice": null,
+          "boatPosition": [
+            12,
+            -0.12342697161193723,
+            -28
+          ],
+          "boatHeading": 3.141592653589793,
+          "velocityDir": [
+            0,
+            -1
+          ],
+          "speed": 0,
+          "gangwayOpen": 0,
+          "canChoose": false,
+          "boarding": false,
+          "cameraFollow": false,
+          "cameraLocked": false,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "passengerSurface": {
+            "method": "bounded real principal-geometry AO / indirectDiffuse only",
+            "sampledVertices": 2119,
+            "hemisphereSamples": 24,
+            "principalOccluders": 42,
+            "rayBoxTests": 2092272,
+            "minAO": 0.24,
+            "meanAO": 0.44365095978122004,
+            "maxDistance": 2.15,
+            "physicalBevels": true
+          },
+          "disposed": false
+        },
+        "camera": {
+          "position": [
+            -21.800000000000004,
+            2.9999999999999996,
+            23
+          ],
+          "target": [
+            -30.000000000000004,
+            3.8999999999999995,
+            -4.5
+          ],
+          "fov": 53
+        },
+        "navigation": {
+          "view": "shipyard",
+          "bounds": {
+            "x": [
+              -39,
+              -20.7
+            ],
+            "y": [
+              1.7,
+              3.1
+            ],
+            "z": [
+              9.2,
+              29
+            ]
+          }
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-lit-far-support",
+          "sourceAtlasExcluded": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "03-hall",
+      "canvas": "assets/shipyard-station-qa/2026-10-24T18-12-49-173Z/03-hall-canvas.png",
+      "page": "assets/shipyard-station-qa/2026-10-24T18-12-49-173Z/03-hall-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "cf362b8c3d206c7be00d09c91f28e45dd082d7711b468fa95ce9c40dfd057be8",
+      "state": {
+        "runtimeRevision": "shipyard-oak2048-aftdeck-2",
+        "sceneId": "shipyard-station",
+        "setting": "old-dry-dock-and-passenger-station",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "error": null,
+        "frames": 73,
+        "time": 0.25,
+        "paused": true,
+        "visible": true,
+        "view": "hall",
+        "quality": "work in progress / not accepted",
+        "runtimeLighting": {
+          "sceneId": "shipyard-station",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "sunDirection": [
+            0.3912557941714868,
+            0.7417598102380594,
+            0.5447121142794946
+          ]
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 23,
+          "accepted": false,
+          "manifestURL": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/shipyard-station/baked-r1/manifest-oak2048.json",
+          "sampling": [
+            {
+              "key": "ShipyardGI_Station_blackened_iron",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_clock_face",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_corrugated_zinc",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_dressed_coping",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_faded_boat_paint",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_framed_canal_route",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_framed_departure_table",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_harbour_cobbles",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_interior_shadow",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_oiled_oak",
+              "samples": 2048
+            },
+            {
+              "key": "ShipyardGI_Station_old_firebrick",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_old_platform_paint",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_platform_paving",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_quay_stone",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_repair_yard_sign",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_riveted_blue_steel",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_slipway_stone",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_station_name",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_machine_brass",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_sign",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_stock",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_waiting_room_plaster",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_yard_timber",
+              "samples": 128
+            }
+          ],
+          "model": "shipyard-lightmapped.glb",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "proof": null,
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "lightingCalibration": {
+            "practicalScale": 1,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 20.05352282957881,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 6,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+            "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+            "integrationInputs": {
+              "sceneId": "shipyard-station",
+              "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+              "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+              "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "environmentStrength": 1.031923772120808,
+              "mappingRotationZDegrees": 20.05352282957881,
+              "analyticSunScale": 0,
+              "practicalScale": 1
+            }
+          }
+        },
+        "visualReview": {
+          "sceneId": "shipyard-station",
+          "status": "pending-runtime-review",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "reviewRecord": null
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 25,
+          "bakedMaterials": 23,
+          "glazingMaterials": 2,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "station-waiting-hall",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                28.3,
+                2.4,
+                6
+              ],
+              "min": [
+                24.4,
+                0.6,
+                -1.3
+              ],
+              "max": [
+                33.5,
+                5.3,
+                13.3
+              ]
+            },
+            {
+              "name": "station-covered-platform",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                22.1,
+                2.5,
+                5
+              ],
+              "min": [
+                19.6,
+                0.6,
+                -14.5
+              ],
+              "max": [
+                24.65,
+                5.2,
+                22.5
+              ]
+            },
+            {
+              "name": "station-basin",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                9,
+                3,
+                4
+              ],
+              "min": [
+                -20,
+                -2,
+                -40
+              ],
+              "max": [
+                24.5,
+                13,
+                38
+              ]
+            },
+            {
+              "name": "repair-slipway",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                -27,
+                3,
+                1
+              ],
+              "min": [
+                -44,
+                0.5,
+                -16
+              ],
+              "max": [
+                -20,
+                13,
+                16
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 10,
+            "observedProgramMaximum": 10
+          }
+        },
+        "journey": {
+          "phase": "idle",
+          "elapsed": 0,
+          "duration": 0,
+          "progress": 0,
+          "totalElapsed": 0,
+          "paused": true,
+          "choice": null,
+          "boatPosition": [
+            12,
+            -0.12342697161193723,
+            -28
+          ],
+          "boatHeading": 3.141592653589793,
+          "velocityDir": [
+            0,
+            -1
+          ],
+          "speed": 0,
+          "gangwayOpen": 0,
+          "canChoose": false,
+          "boarding": false,
+          "cameraFollow": false,
+          "cameraLocked": false,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "passengerSurface": {
+            "method": "bounded real principal-geometry AO / indirectDiffuse only",
+            "sampledVertices": 2119,
+            "hemisphereSamples": 24,
+            "principalOccluders": 42,
+            "rayBoxTests": 2092272,
+            "minAO": 0.24,
+            "meanAO": 0.44365095978122004,
+            "maxDistance": 2.15,
+            "physicalBevels": true
+          },
+          "disposed": false
+        },
+        "camera": {
+          "position": [
+            25.5,
+            2.3000000000000007,
+            10.4
+          ],
+          "target": [
+            30.5,
+            2,
+            4
+          ],
+          "fov": 53
+        },
+        "navigation": {
+          "view": "hall",
+          "bounds": {
+            "x": [
+              24.65,
+              29.95
+            ],
+            "y": [
+              1.9,
+              3.1
+            ],
+            "z": [
+              -0.6,
+              12.6
+            ]
+          }
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-lit-far-support",
+          "sourceAtlasExcluded": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "03-hall-diffuse",
+      "canvas": "assets/shipyard-station-qa/2026-10-24T18-12-49-173Z/03-hall-diffuse-canvas.png",
+      "page": "assets/shipyard-station-qa/2026-10-24T18-12-49-173Z/03-hall-diffuse-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "c52ec667d710f7b3f7d543a2f4a413ea647eeab36152e4ee4166dc638ba4d17c",
+      "state": {
+        "runtimeRevision": "shipyard-oak2048-aftdeck-2",
+        "sceneId": "shipyard-station",
+        "setting": "old-dry-dock-and-passenger-station",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "error": null,
+        "frames": 105,
+        "time": 0.25,
+        "paused": true,
+        "visible": true,
+        "view": "hall",
+        "quality": "work in progress / not accepted",
+        "runtimeLighting": {
+          "sceneId": "shipyard-station",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "sunDirection": [
+            0.3912557941714868,
+            0.7417598102380594,
+            0.5447121142794946
+          ]
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 23,
+          "accepted": false,
+          "manifestURL": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/shipyard-station/baked-r1/manifest-oak2048.json",
+          "sampling": [
+            {
+              "key": "ShipyardGI_Station_blackened_iron",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_clock_face",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_corrugated_zinc",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_dressed_coping",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_faded_boat_paint",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_framed_canal_route",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_framed_departure_table",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_harbour_cobbles",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_interior_shadow",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_oiled_oak",
+              "samples": 2048
+            },
+            {
+              "key": "ShipyardGI_Station_old_firebrick",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_old_platform_paint",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_platform_paving",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_quay_stone",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_repair_yard_sign",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_riveted_blue_steel",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_slipway_stone",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_station_name",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_machine_brass",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_sign",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_stock",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_waiting_room_plaster",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_yard_timber",
+              "samples": 128
+            }
+          ],
+          "model": "shipyard-lightmapped.glb",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "proof": null,
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "lightingCalibration": {
+            "practicalScale": 1,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 20.05352282957881,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 6,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+            "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+            "integrationInputs": {
+              "sceneId": "shipyard-station",
+              "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+              "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+              "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "environmentStrength": 1.031923772120808,
+              "mappingRotationZDegrees": 20.05352282957881,
+              "analyticSunScale": 0,
+              "practicalScale": 1
+            }
+          }
+        },
+        "visualReview": {
+          "sceneId": "shipyard-station",
+          "status": "pending-runtime-review",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "reviewRecord": null
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 25,
+          "bakedMaterials": 23,
+          "glazingMaterials": 2,
+          "diagnostic": "diffuse",
+          "volumes": [
+            {
+              "name": "station-waiting-hall",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                28.3,
+                2.4,
+                6
+              ],
+              "min": [
+                24.4,
+                0.6,
+                -1.3
+              ],
+              "max": [
+                33.5,
+                5.3,
+                13.3
+              ]
+            },
+            {
+              "name": "station-covered-platform",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                22.1,
+                2.5,
+                5
+              ],
+              "min": [
+                19.6,
+                0.6,
+                -14.5
+              ],
+              "max": [
+                24.65,
+                5.2,
+                22.5
+              ]
+            },
+            {
+              "name": "station-basin",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                9,
+                3,
+                4
+              ],
+              "min": [
+                -20,
+                -2,
+                -40
+              ],
+              "max": [
+                24.5,
+                13,
+                38
+              ]
+            },
+            {
+              "name": "repair-slipway",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                -27,
+                3,
+                1
+              ],
+              "min": [
+                -44,
+                0.5,
+                -16
+              ],
+              "max": [
+                -20,
+                13,
+                16
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 10,
+            "observedProgramMaximum": 10
+          }
+        },
+        "journey": {
+          "phase": "idle",
+          "elapsed": 0,
+          "duration": 0,
+          "progress": 0,
+          "totalElapsed": 0,
+          "paused": true,
+          "choice": null,
+          "boatPosition": [
+            12,
+            -0.12342697161193723,
+            -28
+          ],
+          "boatHeading": 3.141592653589793,
+          "velocityDir": [
+            0,
+            -1
+          ],
+          "speed": 0,
+          "gangwayOpen": 0,
+          "canChoose": false,
+          "boarding": false,
+          "cameraFollow": false,
+          "cameraLocked": false,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "passengerSurface": {
+            "method": "bounded real principal-geometry AO / indirectDiffuse only",
+            "sampledVertices": 2119,
+            "hemisphereSamples": 24,
+            "principalOccluders": 42,
+            "rayBoxTests": 2092272,
+            "minAO": 0.24,
+            "meanAO": 0.44365095978122004,
+            "maxDistance": 2.15,
+            "physicalBevels": true
+          },
+          "disposed": false
+        },
+        "camera": {
+          "position": [
+            25.5,
+            2.3000000000000007,
+            10.4
+          ],
+          "target": [
+            30.5,
+            2,
+            4
+          ],
+          "fov": 53
+        },
+        "navigation": {
+          "view": "hall",
+          "bounds": {
+            "x": [
+              24.65,
+              29.95
+            ],
+            "y": [
+              1.9,
+              3.1
+            ],
+            "z": [
+              -0.6,
+              12.6
+            ]
+          }
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-lit-far-support",
+          "sourceAtlasExcluded": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "04-basin",
+      "canvas": "assets/shipyard-station-qa/2026-10-24T18-12-49-173Z/04-basin-canvas.png",
+      "page": "assets/shipyard-station-qa/2026-10-24T18-12-49-173Z/04-basin-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "ba32a7de8c1a4a7a120745244115c6598d3c213b70b1ffe8b825e184c8cfa990",
+      "state": {
+        "runtimeRevision": "shipyard-oak2048-aftdeck-2",
+        "sceneId": "shipyard-station",
+        "setting": "old-dry-dock-and-passenger-station",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "error": null,
+        "frames": 133,
+        "time": 0.25,
+        "paused": true,
+        "visible": true,
+        "view": "basin",
+        "quality": "work in progress / not accepted",
+        "runtimeLighting": {
+          "sceneId": "shipyard-station",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "sunDirection": [
+            0.3912557941714868,
+            0.7417598102380594,
+            0.5447121142794946
+          ]
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 23,
+          "accepted": false,
+          "manifestURL": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/shipyard-station/baked-r1/manifest-oak2048.json",
+          "sampling": [
+            {
+              "key": "ShipyardGI_Station_blackened_iron",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_clock_face",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_corrugated_zinc",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_dressed_coping",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_faded_boat_paint",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_framed_canal_route",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_framed_departure_table",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_harbour_cobbles",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_interior_shadow",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_oiled_oak",
+              "samples": 2048
+            },
+            {
+              "key": "ShipyardGI_Station_old_firebrick",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_old_platform_paint",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_platform_paving",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_quay_stone",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_repair_yard_sign",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_riveted_blue_steel",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_slipway_stone",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_station_name",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_machine_brass",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_sign",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_stock",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_waiting_room_plaster",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_yard_timber",
+              "samples": 128
+            }
+          ],
+          "model": "shipyard-lightmapped.glb",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "proof": null,
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "lightingCalibration": {
+            "practicalScale": 1,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 20.05352282957881,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 6,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+            "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+            "integrationInputs": {
+              "sceneId": "shipyard-station",
+              "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+              "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+              "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "environmentStrength": 1.031923772120808,
+              "mappingRotationZDegrees": 20.05352282957881,
+              "analyticSunScale": 0,
+              "practicalScale": 1
+            }
+          }
+        },
+        "visualReview": {
+          "sceneId": "shipyard-station",
+          "status": "pending-runtime-review",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "reviewRecord": null
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 25,
+          "bakedMaterials": 23,
+          "glazingMaterials": 2,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "station-waiting-hall",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                28.3,
+                2.4,
+                6
+              ],
+              "min": [
+                24.4,
+                0.6,
+                -1.3
+              ],
+              "max": [
+                33.5,
+                5.3,
+                13.3
+              ]
+            },
+            {
+              "name": "station-covered-platform",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                22.1,
+                2.5,
+                5
+              ],
+              "min": [
+                19.6,
+                0.6,
+                -14.5
+              ],
+              "max": [
+                24.65,
+                5.2,
+                22.5
+              ]
+            },
+            {
+              "name": "station-basin",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                9,
+                3,
+                4
+              ],
+              "min": [
+                -20,
+                -2,
+                -40
+              ],
+              "max": [
+                24.5,
+                13,
+                38
+              ]
+            },
+            {
+              "name": "repair-slipway",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                -27,
+                3,
+                1
+              ],
+              "min": [
+                -44,
+                0.5,
+                -16
+              ],
+              "max": [
+                -20,
+                13,
+                16
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 10,
+            "observedProgramMaximum": 10
+          }
+        },
+        "journey": {
+          "phase": "idle",
+          "elapsed": 0,
+          "duration": 0,
+          "progress": 0,
+          "totalElapsed": 0,
+          "paused": true,
+          "choice": null,
+          "boatPosition": [
+            12,
+            -0.12342697161193723,
+            -28
+          ],
+          "boatHeading": 3.141592653589793,
+          "velocityDir": [
+            0,
+            -1
+          ],
+          "speed": 0,
+          "gangwayOpen": 0,
+          "canChoose": false,
+          "boarding": false,
+          "cameraFollow": false,
+          "cameraLocked": false,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "passengerSurface": {
+            "method": "bounded real principal-geometry AO / indirectDiffuse only",
+            "sampledVertices": 2119,
+            "hemisphereSamples": 24,
+            "principalOccluders": 42,
+            "rayBoxTests": 2092272,
+            "minAO": 0.24,
+            "meanAO": 0.44365095978122004,
+            "maxDistance": 2.15,
+            "physicalBevels": true
+          },
+          "disposed": false
+        },
+        "camera": {
+          "position": [
+            -21.400000000000016,
+            2.599999999999996,
+            27.000000000000014
+          ],
+          "target": [
+            0,
+            3,
+            -7
+          ],
+          "fov": 58
+        },
+        "navigation": {
+          "view": "basin",
+          "bounds": {
+            "x": [
+              -39,
+              -20.7
+            ],
+            "y": [
+              1.7,
+              3.1
+            ],
+            "z": [
+              9.2,
+              29
+            ]
+          }
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-lit-far-support",
+          "sourceAtlasExcluded": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "05-pilot-actual-docked",
+      "canvas": "assets/shipyard-station-qa/2026-10-24T18-12-49-173Z/05-pilot-actual-docked-canvas.png",
+      "page": "assets/shipyard-station-qa/2026-10-24T18-12-49-173Z/05-pilot-actual-docked-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "de463176791ef4d32282a6b27e55940342d4156b6ac50942eaec226f4697da20",
+      "state": {
+        "runtimeRevision": "shipyard-oak2048-aftdeck-2",
+        "sceneId": "shipyard-station",
+        "setting": "old-dry-dock-and-passenger-station",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "error": null,
+        "frames": 859,
+        "time": 23.783100000000033,
+        "paused": false,
+        "visible": true,
+        "view": "platform",
+        "quality": "work in progress / not accepted",
+        "runtimeLighting": {
+          "sceneId": "shipyard-station",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "sunDirection": [
+            0.3912557941714868,
+            0.7417598102380594,
+            0.5447121142794946
+          ]
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 23,
+          "accepted": false,
+          "manifestURL": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/shipyard-station/baked-r1/manifest-oak2048.json",
+          "sampling": [
+            {
+              "key": "ShipyardGI_Station_blackened_iron",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_clock_face",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_corrugated_zinc",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_dressed_coping",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_faded_boat_paint",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_framed_canal_route",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_framed_departure_table",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_harbour_cobbles",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_interior_shadow",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_oiled_oak",
+              "samples": 2048
+            },
+            {
+              "key": "ShipyardGI_Station_old_firebrick",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_old_platform_paint",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_platform_paving",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_quay_stone",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_repair_yard_sign",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_riveted_blue_steel",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_slipway_stone",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_station_name",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_machine_brass",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_sign",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_stock",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_waiting_room_plaster",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_yard_timber",
+              "samples": 128
+            }
+          ],
+          "model": "shipyard-lightmapped.glb",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "proof": null,
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "lightingCalibration": {
+            "practicalScale": 1,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 20.05352282957881,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 6,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+            "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+            "integrationInputs": {
+              "sceneId": "shipyard-station",
+              "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+              "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+              "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "environmentStrength": 1.031923772120808,
+              "mappingRotationZDegrees": 20.05352282957881,
+              "analyticSunScale": 0,
+              "practicalScale": 1
+            }
+          }
+        },
+        "visualReview": {
+          "sceneId": "shipyard-station",
+          "status": "pending-runtime-review",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "reviewRecord": null
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 25,
+          "bakedMaterials": 23,
+          "glazingMaterials": 2,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "station-waiting-hall",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                28.3,
+                2.4,
+                6
+              ],
+              "min": [
+                24.4,
+                0.6,
+                -1.3
+              ],
+              "max": [
+                33.5,
+                5.3,
+                13.3
+              ]
+            },
+            {
+              "name": "station-covered-platform",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                22.1,
+                2.5,
+                5
+              ],
+              "min": [
+                19.6,
+                0.6,
+                -14.5
+              ],
+              "max": [
+                24.65,
+                5.2,
+                22.5
+              ]
+            },
+            {
+              "name": "station-basin",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                9,
+                3,
+                4
+              ],
+              "min": [
+                -20,
+                -2,
+                -40
+              ],
+              "max": [
+                24.5,
+                13,
+                38
+              ]
+            },
+            {
+              "name": "repair-slipway",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                -27,
+                3,
+                1
+              ],
+              "min": [
+                -44,
+                0.5,
+                -16
+              ],
+              "max": [
+                -20,
+                13,
+                16
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 10,
+            "observedProgramMaximum": 10
+          }
+        },
+        "journey": {
+          "phase": "docked",
+          "elapsed": 1.4331000000000151,
+          "duration": 0,
+          "progress": 0,
+          "totalElapsed": 23.43310000000003,
+          "paused": false,
+          "choice": null,
+          "boatPosition": [
+            17.6,
+            -0.11675140749033538,
+            8
+          ],
+          "boatHeading": 0,
+          "velocityDir": [
+            0,
+            -1
+          ],
+          "speed": 0,
+          "gangwayOpen": 1,
+          "canChoose": true,
+          "boarding": false,
+          "cameraFollow": false,
+          "cameraLocked": false,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "passengerSurface": {
+            "method": "bounded real principal-geometry AO / indirectDiffuse only",
+            "sampledVertices": 2119,
+            "hemisphereSamples": 24,
+            "principalOccluders": 42,
+            "rayBoxTests": 2092272,
+            "minAO": 0.24,
+            "meanAO": 0.44365095978122004,
+            "maxDistance": 2.15,
+            "physicalBevels": true
+          },
+          "disposed": false
+        },
+        "camera": {
+          "position": [
+            21.95,
+            2.3000000000000007,
+            22.2
+          ],
+          "target": [
+            18.4,
+            1.8,
+            6.2
+          ],
+          "fov": 60
+        },
+        "navigation": {
+          "view": "platform",
+          "bounds": {
+            "x": [
+              20.85,
+              23.35
+            ],
+            "y": [
+              1.7,
+              3.1
+            ],
+            "z": [
+              -13.5,
+              22.8
+            ]
+          }
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-lit-far-support",
+          "sourceAtlasExcluded": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "06-pilot-boarding-path",
+      "canvas": "assets/shipyard-station-qa/2026-10-24T18-12-49-173Z/06-pilot-boarding-path-canvas.png",
+      "page": "assets/shipyard-station-qa/2026-10-24T18-12-49-173Z/06-pilot-boarding-path-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "f29ccc317ebfdd156a12c1479ad9d0a41b242db2efe8383793c682fbb21e97ed",
+      "state": {
+        "runtimeRevision": "shipyard-oak2048-aftdeck-2",
+        "sceneId": "shipyard-station",
+        "setting": "old-dry-dock-and-passenger-station",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "error": null,
+        "frames": 975,
+        "time": 27.64970000000007,
+        "paused": false,
+        "visible": true,
+        "view": "platform",
+        "quality": "work in progress / not accepted",
+        "runtimeLighting": {
+          "sceneId": "shipyard-station",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "sunDirection": [
+            0.3912557941714868,
+            0.7417598102380594,
+            0.5447121142794946
+          ]
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 23,
+          "accepted": false,
+          "manifestURL": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/shipyard-station/baked-r1/manifest-oak2048.json",
+          "sampling": [
+            {
+              "key": "ShipyardGI_Station_blackened_iron",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_clock_face",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_corrugated_zinc",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_dressed_coping",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_faded_boat_paint",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_framed_canal_route",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_framed_departure_table",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_harbour_cobbles",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_interior_shadow",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_oiled_oak",
+              "samples": 2048
+            },
+            {
+              "key": "ShipyardGI_Station_old_firebrick",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_old_platform_paint",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_platform_paving",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_quay_stone",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_repair_yard_sign",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_riveted_blue_steel",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_slipway_stone",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_station_name",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_machine_brass",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_sign",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_stock",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_waiting_room_plaster",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_yard_timber",
+              "samples": 128
+            }
+          ],
+          "model": "shipyard-lightmapped.glb",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "proof": null,
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "lightingCalibration": {
+            "practicalScale": 1,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 20.05352282957881,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 6,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+            "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+            "integrationInputs": {
+              "sceneId": "shipyard-station",
+              "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+              "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+              "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "environmentStrength": 1.031923772120808,
+              "mappingRotationZDegrees": 20.05352282957881,
+              "analyticSunScale": 0,
+              "practicalScale": 1
+            }
+          }
+        },
+        "visualReview": {
+          "sceneId": "shipyard-station",
+          "status": "pending-runtime-review",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "reviewRecord": null
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 25,
+          "bakedMaterials": 23,
+          "glazingMaterials": 2,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "station-waiting-hall",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                28.3,
+                2.4,
+                6
+              ],
+              "min": [
+                24.4,
+                0.6,
+                -1.3
+              ],
+              "max": [
+                33.5,
+                5.3,
+                13.3
+              ]
+            },
+            {
+              "name": "station-covered-platform",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                22.1,
+                2.5,
+                5
+              ],
+              "min": [
+                19.6,
+                0.6,
+                -14.5
+              ],
+              "max": [
+                24.65,
+                5.2,
+                22.5
+              ]
+            },
+            {
+              "name": "station-basin",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                9,
+                3,
+                4
+              ],
+              "min": [
+                -20,
+                -2,
+                -40
+              ],
+              "max": [
+                24.5,
+                13,
+                38
+              ]
+            },
+            {
+              "name": "repair-slipway",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                -27,
+                3,
+                1
+              ],
+              "min": [
+                -44,
+                0.5,
+                -16
+              ],
+              "max": [
+                -20,
+                13,
+                16
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 10,
+            "observedProgramMaximum": 10
+          }
+        },
+        "journey": {
+          "phase": "boarding",
+          "elapsed": 3.166599999999999,
+          "duration": 7,
+          "progress": 0.4523714285714284,
+          "totalElapsed": 27.266400000000072,
+          "paused": false,
+          "choice": "board",
+          "boatPosition": [
+            17.6,
+            -0.1173793436216906,
+            8
+          ],
+          "boatHeading": 0,
+          "velocityDir": [
+            0,
+            -1
+          ],
+          "speed": 0,
+          "gangwayOpen": 1,
+          "canChoose": false,
+          "boarding": true,
+          "cameraFollow": false,
+          "cameraLocked": true,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "passengerSurface": {
+            "method": "bounded real principal-geometry AO / indirectDiffuse only",
+            "sampledVertices": 2119,
+            "hemisphereSamples": 24,
+            "principalOccluders": 42,
+            "rayBoxTests": 2092272,
+            "minAO": 0.24,
+            "meanAO": 0.44365095978122004,
+            "maxDistance": 2.15,
+            "physicalBevels": true
+          },
+          "disposed": false
+        },
+        "camera": {
+          "position": [
+            21.426067290781486,
+            2.3661809737960224,
+            14.975243693934171
+          ],
+          "target": [
+            18.037146937987394,
+            1.437146937987395,
+            9.022190482320262
+          ],
+          "fov": 60
+        },
+        "navigation": {
+          "view": "platform",
+          "bounds": {
+            "x": [
+              20.85,
+              23.35
+            ],
+            "y": [
+              1.7,
+              3.1
+            ],
+            "z": [
+              -13.5,
+              22.8
+            ]
+          }
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-lit-far-support",
+          "sourceAtlasExcluded": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "07-pilot-onboard",
+      "canvas": "assets/shipyard-station-qa/2026-10-24T18-12-49-173Z/07-pilot-onboard-canvas.png",
+      "page": "assets/shipyard-station-qa/2026-10-24T18-12-49-173Z/07-pilot-onboard-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "c720121835888f44e5e8babe97cf615d57330d71204ac021b7be4c8d90827296",
+      "state": {
+        "runtimeRevision": "shipyard-oak2048-aftdeck-2",
+        "sceneId": "shipyard-station",
+        "setting": "old-dry-dock-and-passenger-station",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "error": null,
+        "frames": 1185,
+        "time": 34.64960000000014,
+        "paused": false,
+        "visible": true,
+        "view": "platform",
+        "quality": "work in progress / not accepted",
+        "runtimeLighting": {
+          "sceneId": "shipyard-station",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "sunDirection": [
+            0.3912557941714868,
+            0.7417598102380594,
+            0.5447121142794946
+          ]
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 23,
+          "accepted": false,
+          "manifestURL": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/shipyard-station/baked-r1/manifest-oak2048.json",
+          "sampling": [
+            {
+              "key": "ShipyardGI_Station_blackened_iron",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_clock_face",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_corrugated_zinc",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_dressed_coping",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_faded_boat_paint",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_framed_canal_route",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_framed_departure_table",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_harbour_cobbles",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_interior_shadow",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_oiled_oak",
+              "samples": 2048
+            },
+            {
+              "key": "ShipyardGI_Station_old_firebrick",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_old_platform_paint",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_platform_paving",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_quay_stone",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_repair_yard_sign",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_riveted_blue_steel",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_slipway_stone",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_station_name",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_machine_brass",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_sign",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_ticket_stock",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_waiting_room_plaster",
+              "samples": 128
+            },
+            {
+              "key": "ShipyardGI_Station_yard_timber",
+              "samples": 128
+            }
+          ],
+          "model": "shipyard-lightmapped.glb",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "proof": null,
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "lightingCalibration": {
+            "practicalScale": 1,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 20.05352282957881,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 6,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+            "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+            "integrationInputs": {
+              "sceneId": "shipyard-station",
+              "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+              "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+              "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "environmentStrength": 1.031923772120808,
+              "mappingRotationZDegrees": 20.05352282957881,
+              "analyticSunScale": 0,
+              "practicalScale": 1
+            }
+          }
+        },
+        "visualReview": {
+          "sceneId": "shipyard-station",
+          "status": "pending-runtime-review",
+          "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "reviewRecord": null
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 25,
+          "bakedMaterials": 23,
+          "glazingMaterials": 2,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "station-waiting-hall",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                28.3,
+                2.4,
+                6
+              ],
+              "min": [
+                24.4,
+                0.6,
+                -1.3
+              ],
+              "max": [
+                33.5,
+                5.3,
+                13.3
+              ]
+            },
+            {
+              "name": "station-covered-platform",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                22.1,
+                2.5,
+                5
+              ],
+              "min": [
+                19.6,
+                0.6,
+                -14.5
+              ],
+              "max": [
+                24.65,
+                5.2,
+                22.5
+              ]
+            },
+            {
+              "name": "station-basin",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                9,
+                3,
+                4
+              ],
+              "min": [
+                -20,
+                -2,
+                -40
+              ],
+              "max": [
+                24.5,
+                13,
+                38
+              ]
+            },
+            {
+              "name": "repair-slipway",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                -27,
+                3,
+                1
+              ],
+              "min": [
+                -44,
+                0.5,
+                -16
+              ],
+              "max": [
+                -20,
+                13,
+                16
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 10,
+            "observedProgramMaximum": 10
+          }
+        },
+        "journey": {
+          "phase": "departing",
+          "elapsed": 3.166500000000002,
+          "duration": 32,
+          "progress": 0.09895312500000006,
+          "totalElapsed": 34.26630000000015,
+          "paused": false,
+          "choice": "board",
+          "boatPosition": [
+            17.566421950928532,
+            -0.11607187424853012,
+            7.677474002339823
+          ],
+          "boatHeading": 0.014304155381722692,
+          "velocityDir": [
+            -0.10354992269353971,
+            -0.994624257451105
+          ],
+          "speed": 0.5485717082174297,
+          "gangwayOpen": 0,
+          "canChoose": false,
+          "boarding": false,
+          "cameraFollow": true,
+          "cameraLocked": false,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "passengerSurface": {
+            "method": "bounded real principal-geometry AO / indirectDiffuse only",
+            "sampledVertices": 2119,
+            "hemisphereSamples": 24,
+            "principalOccluders": 42,
+            "rayBoxTests": 2092272,
+            "minAO": 0.24,
+            "meanAO": 0.44365095978122004,
+            "maxDistance": 2.15,
+            "physicalBevels": true
+          },
+          "disposed": false
+        },
+        "camera": {
+          "position": [
+            18.0878519325859,
+            2.2942365421599535,
+            9.780425221932571
+          ],
+          "target": [
+            24.74733368975261,
+            1.0516031684868012,
+            20.581145800884634
+          ],
+          "fov": 60
+        },
+        "navigation": {
+          "view": "platform",
+          "bounds": {
+            "x": [
+              20.85,
+              23.35
+            ],
+            "y": [
+              1.7,
+              3.1
+            ],
+            "z": [
+              -13.5,
+              22.8
+            ]
+          }
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-lit-far-support",
+          "sourceAtlasExcluded": true
+        },
+        "errors": []
+      }
+    }
+  ],
+  "errors": [],
+  "exporting": false,
+  "scope": "Actual independent station and real arrival/boarding/onboard captures; complete outcome acceptance remains separate",
+  "windowPolicy": {
+    "show": false,
+    "focusable": false,
+    "skipTaskbar": true
+  },
+  "elapsedSeconds": 65.059,
+  "presentation": {
+    "offscreen": true,
+    "targetFrameRate": 30,
+    "paints": 1237,
+    "firstPaintAt": 1792865568186,
+    "lastPaintAt": 1792865634226
+  }
+}

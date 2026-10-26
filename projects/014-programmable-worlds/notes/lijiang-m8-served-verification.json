@@ -1,0 +1,32 @@
+[
+  {
+    "file": "index.html",
+    "http": 200,
+    "bytes": 19651,
+    "servedMatchesDisk": true
+  },
+  {
+    "file": "app.js",
+    "http": 200,
+    "bytes": 14096,
+    "servedMatchesDisk": true
+  },
+  {
+    "file": "style.css",
+    "http": 200,
+    "bytes": 18080,
+    "servedMatchesDisk": true
+  },
+  {
+    "file": "lijiang-m8/raster-main.js",
+    "http": 200,
+    "bytes": 40432,
+    "servedMatchesDisk": true
+  },
+  {
+    "file": "lijiang-m8/raster-experience-ui.js",
+    "http": 200,
+    "bytes": 32241,
+    "servedMatchesDisk": true
+  }
+]

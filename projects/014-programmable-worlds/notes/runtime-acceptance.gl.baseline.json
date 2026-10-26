@@ -1,0 +1,812 @@
+{
+  "runId": "2026-10-24T00-55-02-644Z",
+  "scene": "source",
+  "backend": "gl",
+  "pid": 81216,
+  "status": "passed",
+  "startedAt": "2026-10-24T00:55:02.644Z",
+  "mode": "hidden-own-application",
+  "windowPolicy": {
+    "show": false,
+    "skipTaskbar": true,
+    "focusable": false,
+    "backgroundThrottling": false
+  },
+  "security": {
+    "sandbox": true,
+    "contextIsolation": true,
+    "nodeIntegration": false,
+    "webSecurity": true
+  },
+  "tests": [
+    {
+      "name": "window-remains-hidden-and-unfocused",
+      "passed": true,
+      "evidence": {
+        "visible": false,
+        "focused": false
+      }
+    },
+    {
+      "name": "complete-source-initialized",
+      "passed": true,
+      "evidence": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?qa=1&rs=1&t=0",
+        "load": "着色器编译 auxiliary · 0 秒",
+        "uiStatus": "原作航拍 · 100% 分辨率 · 0.0 fps",
+        "visibleError": null,
+        "sourceSHA256": "616d20c66e82d070f8c6bff921c8a78b2f04309b8cf279835ce4cdeaa90f4dfd",
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "time": 0,
+          "duration": 132,
+          "paused": false,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 0,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 0,
+          "averageFrameMs": 0
+        },
+        "drive": {
+          "mode": "flight",
+          "position": [
+            -470,
+            4,
+            240
+          ],
+          "yaw": 0,
+          "pitch": 0
+        }
+      }
+    },
+    {
+      "name": "runtime-metadata-matches-preserved-source",
+      "passed": true,
+      "evidence": {
+        "metaSHA256": "616d20c66e82d070f8c6bff921c8a78b2f04309b8cf279835ce4cdeaa90f4dfd",
+        "fileSHA256": "616d20c66e82d070f8c6bff921c8a78b2f04309b8cf279835ce4cdeaa90f4dfd"
+      }
+    },
+    {
+      "name": "actual-full-resolution-frames",
+      "passed": true,
+      "evidence": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "原作航拍 · 100% 分辨率 · 0.0 fps",
+        "visibleError": null,
+        "sourceSHA256": "616d20c66e82d070f8c6bff921c8a78b2f04309b8cf279835ce4cdeaa90f4dfd",
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "time": 0.2,
+          "duration": 132,
+          "paused": false,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 2,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 440,
+          "averageFrameMs": 497.3499999642372
+        },
+        "drive": {
+          "mode": "flight",
+          "position": [
+            -470,
+            4,
+            240
+          ],
+          "yaw": 0,
+          "pitch": 0
+        }
+      }
+    },
+    {
+      "name": "completed-frame-throughput-sample",
+      "passed": true,
+      "evidence": {
+        "completedFrames": 8,
+        "elapsedMilliseconds": 8532,
+        "completedFramesPerSecond": 0.9376465072667605,
+        "meanMillisecondsPerCompletedFrame": 1066.5,
+        "applicationLastFrameMs": 432.10000002384186,
+        "applicationAverageFrameMs": 442.77499997615814,
+        "scope": "One measured interval; not a stable cross-device benchmark."
+      }
+    },
+    {
+      "name": "live-playback-changes-time-and-pixels",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "time": 0.4,
+          "duration": 132,
+          "paused": false,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 4,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 428.10000002384186,
+          "averageFrameMs": 469.3749999701977
+        },
+        "after": {
+          "time": 1.2,
+          "duration": 132,
+          "paused": false,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 12,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 432.10000002384186,
+          "averageFrameMs": 442.77499997615814
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 15.0751953125,
+          "changedChannelFraction": 0.6642252604166666
+        }
+      }
+    },
+    {
+      "name": "pause-holds-simulation-time",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "time": 1.4000000000000001,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 16,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 425.7999999523163,
+          "averageFrameMs": 440.33749996870756
+        },
+        "after": {
+          "time": 1.4000000000000001,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 19,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 430.7000000476837,
+          "averageFrameMs": 438.38947366413316
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 0.5165201822916666,
+          "changedChannelFraction": 0
+        },
+        "note": "Per-frame grain/dither is allowed; pixel identity is not required."
+      }
+    },
+    {
+      "name": "motion-exceeds-paused-noise",
+      "passed": true,
+      "evidence": {
+        "moving": {
+          "meanAbsoluteDifference": 15.0751953125,
+          "changedChannelFraction": 0.6642252604166666
+        },
+        "paused": {
+          "meanAbsoluteDifference": 0.5165201822916666,
+          "changedChannelFraction": 0
+        }
+      }
+    },
+    {
+      "name": "seek-35-changes-camera-and-pixels",
+      "passed": true,
+      "evidence": {
+        "state": {
+          "time": 35,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 23,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 723.4000000953674,
+          "averageFrameMs": 449.4130434627118
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 63.626871744791664,
+          "changedChannelFraction": 0.9754231770833334
+        }
+      }
+    },
+    {
+      "name": "seek-75-changes-camera-and-pixels",
+      "passed": true,
+      "evidence": {
+        "state": {
+          "time": 75,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 26,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 1068.9000000953674,
+          "averageFrameMs": 495.2038461474272
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 66.06022135416667,
+          "changedChannelFraction": 0.97314453125
+        }
+      }
+    },
+    {
+      "name": "seek-128-changes-camera-and-pixels",
+      "passed": true,
+      "evidence": {
+        "state": {
+          "time": 128,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 28,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 516.3999999761581,
+          "averageFrameMs": 516.9464285629136
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 65.17919921875,
+          "changedChannelFraction": 0.9697265625
+        }
+      }
+    },
+    {
+      "name": "free-driving-changes-position-and-pixels",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "mode": "free",
+          "position": [
+            0,
+            1000,
+            0
+          ],
+          "yaw": 0,
+          "pitch": 0.8726646259971649
+        },
+        "after": {
+          "mode": "free",
+          "position": [
+            10,
+            1012,
+            25
+          ],
+          "yaw": 0.08,
+          "pitch": 0.8926646259971649
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 46.130289713541664,
+          "changedChannelFraction": 0.90576171875
+        }
+      }
+    },
+    {
+      "name": "resume-advances-simulation",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "time": 128,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 33,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 362.7000000476837,
+          "averageFrameMs": 501.91212120561886
+        },
+        "after": {
+          "time": 128.1,
+          "duration": 132,
+          "paused": false,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 33,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 362.7000000476837,
+          "averageFrameMs": 501.91212120561886
+        }
+      }
+    },
+    {
+      "name": "suspend-stops-time-and-GPU-frame-submission",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "time": 128.1,
+          "duration": 132,
+          "paused": false,
+          "scale": 1,
+          "suspended": true,
+          "rendering": false,
+          "ready": true,
+          "frames": 34,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 506.3000000715256,
+          "averageFrameMs": 502.0411764663809
+        },
+        "after": {
+          "time": 128.1,
+          "duration": 132,
+          "paused": false,
+          "scale": 1,
+          "suspended": true,
+          "rendering": false,
+          "ready": true,
+          "frames": 34,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 506.3000000715256,
+          "averageFrameMs": 502.0411764663809
+        }
+      }
+    }
+  ],
+  "captures": [
+    {
+      "name": "01-sea-start",
+      "canvas": "assets/runtime-qa/2026-10-24T00-55-02-644Z/01-sea-start-canvas.png",
+      "page": "assets/runtime-qa/2026-10-24T00-55-02-644Z/01-sea-start-page.png",
+      "sha256": "7b0bb532fca79b9e93a1cfeca9322dd1fed3d5340985e3861471c060061a2d67",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 147.53744804687463,
+      "luminanceStdDev": 47.66867458099965,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 29.195556640625,
+      "capturedAt": "2026-10-24T00:56:24.383Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "原作航拍 · 100% 分辨率 · 1.5 fps",
+        "visibleError": null,
+        "sourceSHA256": "616d20c66e82d070f8c6bff921c8a78b2f04309b8cf279835ce4cdeaa90f4dfd",
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "time": 0.4,
+          "duration": 132,
+          "paused": false,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 4,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 428.10000002384186,
+          "averageFrameMs": 469.3749999701977
+        },
+        "drive": {
+          "mode": "flight",
+          "position": [
+            -470,
+            4,
+            240
+          ],
+          "yaw": 0,
+          "pitch": 0
+        }
+      }
+    },
+    {
+      "name": "02-sea-moving",
+      "canvas": "assets/runtime-qa/2026-10-24T00-55-02-644Z/02-sea-moving-canvas.png",
+      "page": "assets/runtime-qa/2026-10-24T00-55-02-644Z/02-sea-moving-page.png",
+      "sha256": "db9897056f8dd821d3f22a5a2a7c68ba20f0d919cd07ecf912c355f2e4ad6f31",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 144.70434951171882,
+      "luminanceStdDev": 48.54849975648987,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 30.4775390625,
+      "capturedAt": "2026-10-24T00:56:34.308Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "原作航拍 · 100% 分辨率 · 1.4 fps",
+        "visibleError": null,
+        "sourceSHA256": "616d20c66e82d070f8c6bff921c8a78b2f04309b8cf279835ce4cdeaa90f4dfd",
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "time": 1.4000000000000001,
+          "duration": 132,
+          "paused": false,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 14,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 437.7999999523163,
+          "averageFrameMs": 441.9499999710492
+        },
+        "drive": {
+          "mode": "flight",
+          "position": [
+            -470,
+            4,
+            240
+          ],
+          "yaw": 0,
+          "pitch": 0
+        }
+      }
+    },
+    {
+      "name": "02a-paused-noise-baseline",
+      "canvas": "assets/runtime-qa/2026-10-24T00-55-02-644Z/02a-paused-noise-baseline-canvas.png",
+      "page": "assets/runtime-qa/2026-10-24T00-55-02-644Z/02a-paused-noise-baseline-page.png",
+      "sha256": "005663473a09aa5df6b45cf420a8f87e341998a1c8d8dc67869b1a20a197fc62",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 143.82709946289071,
+      "luminanceStdDev": 49.45891537287813,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 31.067138671875,
+      "capturedAt": "2026-10-24T00:56:38.348Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "原作航拍 · 100% 分辨率 · 2.9 fps",
+        "visibleError": null,
+        "sourceSHA256": "616d20c66e82d070f8c6bff921c8a78b2f04309b8cf279835ce4cdeaa90f4dfd",
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "time": 1.4000000000000001,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 18,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 423.10000002384186,
+          "averageFrameMs": 438.8166666428248
+        },
+        "drive": {
+          "mode": "flight",
+          "position": [
+            -470,
+            4,
+            240
+          ],
+          "yaw": 0,
+          "pitch": 0
+        }
+      }
+    },
+    {
+      "name": "02b-paused-noise-baseline",
+      "canvas": "assets/runtime-qa/2026-10-24T00-55-02-644Z/02b-paused-noise-baseline-canvas.png",
+      "page": "assets/runtime-qa/2026-10-24T00-55-02-644Z/02b-paused-noise-baseline-page.png",
+      "sha256": "079bb1b469f1f3b47800b441068237b6c63a9c76ed640af0091dd29255598336",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 143.79820078124993,
+      "luminanceStdDev": 49.45044623076953,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 31.071044921875,
+      "capturedAt": "2026-10-24T00:56:41.169Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "原作航拍 · 100% 分辨率 · 2.9 fps",
+        "visibleError": null,
+        "sourceSHA256": "616d20c66e82d070f8c6bff921c8a78b2f04309b8cf279835ce4cdeaa90f4dfd",
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "time": 1.4000000000000001,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 21,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 427.89999997615814,
+          "averageFrameMs": 437.5999999784288
+        },
+        "drive": {
+          "mode": "flight",
+          "position": [
+            -470,
+            4,
+            240
+          ],
+          "yaw": 0,
+          "pitch": 0
+        }
+      }
+    },
+    {
+      "name": "03-headland-35s",
+      "canvas": "assets/runtime-qa/2026-10-24T00-55-02-644Z/03-headland-35s-canvas.png",
+      "page": "assets/runtime-qa/2026-10-24T00-55-02-644Z/03-headland-35s-page.png",
+      "sha256": "501e4b7dd7296ff61642d2f1fd81c7df49016fd0de41ba670977888eccd67313",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 117.48476977539133,
+      "luminanceStdDev": 60.240565696227584,
+      "nonBlackFraction": 0.996337890625,
+      "meanChannelRange": 30.125732421875,
+      "capturedAt": "2026-10-24T00:56:44.375Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "原作航拍 · 100% 分辨率 · 1.4 fps",
+        "visibleError": null,
+        "sourceSHA256": "616d20c66e82d070f8c6bff921c8a78b2f04309b8cf279835ce4cdeaa90f4dfd",
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "time": 35,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 24,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 719.8000000715256,
+          "averageFrameMs": 460.67916665474576
+        },
+        "drive": {
+          "mode": "flight",
+          "position": [
+            -470,
+            4,
+            240
+          ],
+          "yaw": 0,
+          "pitch": 0
+        }
+      }
+    },
+    {
+      "name": "04-valley-75s",
+      "canvas": "assets/runtime-qa/2026-10-24T00-55-02-644Z/04-valley-75s-canvas.png",
+      "page": "assets/runtime-qa/2026-10-24T00-55-02-644Z/04-valley-75s-page.png",
+      "sha256": "4cfe56778c7db73a5aa11906e5bd47c044372a51ed2e1aa9251bdebcc562d664",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 70.3813420410158,
+      "luminanceStdDev": 46.588033450979495,
+      "nonBlackFraction": 0.9951171875,
+      "meanChannelRange": 28.639892578125,
+      "capturedAt": "2026-10-24T00:56:47.189Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "原作航拍 · 100% 分辨率 · 1.5 fps",
+        "visibleError": null,
+        "sourceSHA256": "616d20c66e82d070f8c6bff921c8a78b2f04309b8cf279835ce4cdeaa90f4dfd",
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "time": 75,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 26,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 1068.9000000953674,
+          "averageFrameMs": 495.2038461474272
+        },
+        "drive": {
+          "mode": "flight",
+          "position": [
+            -470,
+            4,
+            240
+          ],
+          "yaw": 0,
+          "pitch": 0
+        }
+      }
+    },
+    {
+      "name": "05-aerial-128s",
+      "canvas": "assets/runtime-qa/2026-10-24T00-55-02-644Z/05-aerial-128s-canvas.png",
+      "page": "assets/runtime-qa/2026-10-24T00-55-02-644Z/05-aerial-128s-page.png",
+      "sha256": "430e4fdd121c78d69221148f2c7e405f22a4107f6b95d62d7f1de710b51fcee4",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 90.32114902343716,
+      "luminanceStdDev": 52.05230036869812,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 57.1181640625,
+      "capturedAt": "2026-10-24T00:56:49.356Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "原作航拍 · 100% 分辨率 · 1.4 fps",
+        "visibleError": null,
+        "sourceSHA256": "616d20c66e82d070f8c6bff921c8a78b2f04309b8cf279835ce4cdeaa90f4dfd",
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "time": 128,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 29,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 503.7999999523163,
+          "averageFrameMs": 516.4931034384102
+        },
+        "drive": {
+          "mode": "flight",
+          "position": [
+            -470,
+            4,
+            240
+          ],
+          "yaw": 0,
+          "pitch": 0
+        }
+      }
+    },
+    {
+      "name": "06-free-driving",
+      "canvas": "assets/runtime-qa/2026-10-24T00-55-02-644Z/06-free-driving-canvas.png",
+      "page": "assets/runtime-qa/2026-10-24T00-55-02-644Z/06-free-driving-page.png",
+      "sha256": "8876ab664a7f987c8af4ea87e54f55b7655c95c4c21d3036e8fdcc2421426ae9",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 84.83724160156241,
+      "luminanceStdDev": 48.20736644816835,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 57.886962890625,
+      "capturedAt": "2026-10-24T00:56:52.136Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/index.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "自由驾驶 · 100% 分辨率 · 2.9 fps",
+        "visibleError": null,
+        "sourceSHA256": "616d20c66e82d070f8c6bff921c8a78b2f04309b8cf279835ce4cdeaa90f4dfd",
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "time": 128,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 33,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 362.7000000476837,
+          "averageFrameMs": 501.91212120561886
+        },
+        "drive": {
+          "mode": "free",
+          "position": [
+            10,
+            1012,
+            25
+          ],
+          "yaw": 0.08,
+          "pitch": 0.8926646259971649
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "visualQualityAcceptance": "original-shader-integrity-plus-rendered-evidence",
+  "priorPassedBaseline": "notes/runtime-acceptance.baseline.json",
+  "sourceIntegrity": {
+    "preservedUpstream": {
+      "path": "web/upstream/index.html",
+      "bytes": 417865,
+      "sha256": "616d20c66e82d070f8c6bff921c8a78b2f04309b8cf279835ce4cdeaa90f4dfd"
+    },
+    "adaptedRuntime": {
+      "path": "web/runtime/index.html",
+      "bytes": 426364,
+      "sha256": "3af3f37f48313862251a8a5f9362c7d455c7f4f8e5ec45bfee86bb7147525a14"
+    }
+  },
+  "finishedAt": "2026-10-24T00:56:54.885Z",
+  "elapsedSeconds": 112.241
+}

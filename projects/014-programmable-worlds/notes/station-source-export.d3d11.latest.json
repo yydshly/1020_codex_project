@@ -1,0 +1,662 @@
+{
+  "runId": "2026-10-24T16-30-39-097Z",
+  "status": "passed",
+  "scene": "shipyard-station",
+  "backend": "d3d11",
+  "tests": [
+    {
+      "name": "independent-station-identity-and-actual-renderer",
+      "passed": true,
+      "evidence": {
+        "sceneId": "shipyard-station",
+        "setting": "old-dry-dock-and-passenger-station",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "error": null,
+        "frames": 11,
+        "time": 0.37510000000000043,
+        "paused": false,
+        "visible": true,
+        "view": "platform",
+        "quality": "work in progress / not accepted",
+        "runtimeLighting": {
+          "sceneId": "shipyard-station",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "sunDirection": [
+            0.3912557941714868,
+            0.7417598102380594,
+            0.5447121142794946
+          ]
+        },
+        "lighting": {
+          "mode": "unbaked",
+          "bound": 0,
+          "sceneId": "shipyard-station",
+          "accepted": false
+        },
+        "reflections": null,
+        "journey": {
+          "phase": "idle",
+          "elapsed": 0,
+          "duration": 0,
+          "progress": 0,
+          "totalElapsed": 0,
+          "paused": false,
+          "choice": null,
+          "boatPosition": [
+            12,
+            -0.11719106329539246,
+            -28
+          ],
+          "boatHeading": 3.141592653589793,
+          "velocityDir": [
+            0,
+            -1
+          ],
+          "speed": 0,
+          "gangwayOpen": 0,
+          "canChoose": false,
+          "boarding": false,
+          "cameraFollow": false,
+          "cameraLocked": false,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "disposed": false
+        },
+        "camera": {
+          "position": [
+            21.95,
+            2.3000000000000007,
+            22.2
+          ],
+          "target": [
+            18.4,
+            1.8,
+            6.2
+          ],
+          "fov": 60
+        },
+        "navigation": {
+          "view": "platform",
+          "bounds": {
+            "x": [
+              20.85,
+              23.35
+            ],
+            "y": [
+              1.7,
+              3.1
+            ],
+            "z": [
+              -13.5,
+              22.8
+            ]
+          }
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-lit-far-support",
+          "sourceAtlasExcluded": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "actual-independent-camera-platform",
+      "passed": true,
+      "evidence": {
+        "position": [
+          21.95,
+          2.3000000000000007,
+          22.2
+        ],
+        "target": [
+          18.4,
+          1.8,
+          6.2
+        ],
+        "fov": 60
+      }
+    },
+    {
+      "name": "actual-independent-camera-shipyard",
+      "passed": true,
+      "evidence": {
+        "position": [
+          -21.800000000000004,
+          2.9999999999999996,
+          23
+        ],
+        "target": [
+          -30.000000000000004,
+          3.8999999999999995,
+          -4.5
+        ],
+        "fov": 53
+      }
+    },
+    {
+      "name": "actual-independent-camera-hall",
+      "passed": true,
+      "evidence": {
+        "position": [
+          25.5,
+          2.3000000000000007,
+          10.4
+        ],
+        "target": [
+          30.5,
+          2,
+          4
+        ],
+        "fov": 53
+      }
+    },
+    {
+      "name": "actual-independent-camera-basin",
+      "passed": true,
+      "evidence": {
+        "position": [
+          -21.400000000000016,
+          2.599999999999996,
+          27.000000000000014
+        ],
+        "target": [
+          0,
+          3,
+          -7
+        ],
+        "fov": 58
+      }
+    },
+    {
+      "name": "independent-source-exported-with-own-receiver",
+      "passed": true,
+      "evidence": {
+        "sceneId": "shipyard-station",
+        "pid": 34584,
+        "endpoint": "http://127.0.0.1:8799/export/6f9a4e3b386124a8aee4c8c938673dc3e098978f35efbe16",
+        "directory": "D:\\codex\\tmp\\014-shipyard-20261024\\exports\\2026-10-24T16-30-07-943Z",
+        "metadataPath": "D:\\codex\\tmp\\014-shipyard-20261024\\exports\\2026-10-24T16-30-07-943Z\\source-scene.json",
+        "glbPath": "D:\\codex\\tmp\\014-shipyard-20261024\\exports\\2026-10-24T16-30-07-943Z\\source-scene.glb",
+        "startedAt": "2026-10-24T16:30:07.957Z",
+        "bytes": 168994644,
+        "sha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+        "sourceRevision": {
+          "name": "shipyard-freeze-2-context",
+          "sceneId": "shipyard-station",
+          "files": {
+            "context.js": "929b82dbdc41d90a10cbbd56d12b454860eaad33970c083210210401a510f571",
+            "experience.js": "d9dd19240cd6f55c50df56456e5c89c1991411ba4feae8939b5da0f68d271862",
+            "export.js": "6783c72c2e47425b02f7c1ffb7d7e76dc689d6c73c9d855590b876ffcf83f751",
+            "gi.js": "b2fce670bdefba9084ee5c3f3c3477e411df9f766b6a1b88b7b2b9cda0f0cf49",
+            "journey.js": "c99812496a1276c419be8df74057cdfb3837cf6c581ffc3ac4a733130136cee7",
+            "lighting-config.js": "2105c7f83db5fbe35daf6a94f79b62d05a259b0481b2acfdd076d3ffce056292",
+            "main.js": "85ce4c97fcae2ad9919b028193f1c04888a849e0136e00fada02d905bdbb1f8f",
+            "reflections.js": "6b4862c21a5f1c401930173eacb1ebab66e81b8bed28e9be4a8bc3333d5fcf91",
+            "scene.js": "681a32381dafa971b8d3b7db968f50a2eb168b85d2828cec24365ff33b40dc20",
+            "vegetation.js": "35e1c77ccf7e86fe6c472851436335b68deee368e867fd70ad3ce50fde912238",
+            "water.js": "4afe932c241b2bc893af8300667c0448dbbb81a4e08b97099526ce57fc6b1a1d"
+          },
+          "sha256": "fa1ad84e99f5635e47b79dae0ad94579dfb4ca80bc97aca3310d2ced287a377d"
+        },
+        "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+        "finishedAt": "2026-10-24T16:31:05.788Z"
+      }
+    },
+    {
+      "name": "own-independent-renderer-disposes",
+      "passed": true,
+      "evidence": {
+        "disposed": true
+      }
+    }
+  ],
+  "captures": [
+    {
+      "name": "01-platform",
+      "canvas": "assets/shipyard-station-qa/2026-10-24T16-30-39-097Z/01-platform-canvas.png",
+      "page": "assets/shipyard-station-qa/2026-10-24T16-30-39-097Z/01-platform-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "cf1b600c42bcc52fe6aafb1128eda4a712ac40e65ef410619f451976b7c57705",
+      "state": {
+        "sceneId": "shipyard-station",
+        "setting": "old-dry-dock-and-passenger-station",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "error": null,
+        "frames": 21,
+        "time": 0.4083999999999997,
+        "paused": true,
+        "visible": true,
+        "view": "platform",
+        "quality": "work in progress / not accepted",
+        "runtimeLighting": {
+          "sceneId": "shipyard-station",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "sunDirection": [
+            0.3912557941714868,
+            0.7417598102380594,
+            0.5447121142794946
+          ]
+        },
+        "lighting": {
+          "mode": "unbaked",
+          "bound": 0,
+          "sceneId": "shipyard-station",
+          "accepted": false
+        },
+        "reflections": null,
+        "journey": {
+          "phase": "idle",
+          "elapsed": 0,
+          "duration": 0,
+          "progress": 0,
+          "totalElapsed": 0,
+          "paused": true,
+          "choice": null,
+          "boatPosition": [
+            12,
+            -0.11703443601375646,
+            -28
+          ],
+          "boatHeading": 3.141592653589793,
+          "velocityDir": [
+            0,
+            -1
+          ],
+          "speed": 0,
+          "gangwayOpen": 0,
+          "canChoose": false,
+          "boarding": false,
+          "cameraFollow": false,
+          "cameraLocked": false,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "disposed": false
+        },
+        "camera": {
+          "position": [
+            21.95,
+            2.3000000000000007,
+            22.2
+          ],
+          "target": [
+            18.4,
+            1.8,
+            6.2
+          ],
+          "fov": 60
+        },
+        "navigation": {
+          "view": "platform",
+          "bounds": {
+            "x": [
+              20.85,
+              23.35
+            ],
+            "y": [
+              1.7,
+              3.1
+            ],
+            "z": [
+              -13.5,
+              22.8
+            ]
+          }
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-lit-far-support",
+          "sourceAtlasExcluded": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "02-shipyard",
+      "canvas": "assets/shipyard-station-qa/2026-10-24T16-30-39-097Z/02-shipyard-canvas.png",
+      "page": "assets/shipyard-station-qa/2026-10-24T16-30-39-097Z/02-shipyard-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "9fa0846fc0688d15b52bb40f32c97f1a935e24eec9a86134b22ba013b68bda8b",
+      "state": {
+        "sceneId": "shipyard-station",
+        "setting": "old-dry-dock-and-passenger-station",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "error": null,
+        "frames": 55,
+        "time": 0.4083999999999997,
+        "paused": true,
+        "visible": true,
+        "view": "shipyard",
+        "quality": "work in progress / not accepted",
+        "runtimeLighting": {
+          "sceneId": "shipyard-station",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "sunDirection": [
+            0.3912557941714868,
+            0.7417598102380594,
+            0.5447121142794946
+          ]
+        },
+        "lighting": {
+          "mode": "unbaked",
+          "bound": 0,
+          "sceneId": "shipyard-station",
+          "accepted": false
+        },
+        "reflections": null,
+        "journey": {
+          "phase": "idle",
+          "elapsed": 0,
+          "duration": 0,
+          "progress": 0,
+          "totalElapsed": 0,
+          "paused": true,
+          "choice": null,
+          "boatPosition": [
+            12,
+            -0.11703443601375646,
+            -28
+          ],
+          "boatHeading": 3.141592653589793,
+          "velocityDir": [
+            0,
+            -1
+          ],
+          "speed": 0,
+          "gangwayOpen": 0,
+          "canChoose": false,
+          "boarding": false,
+          "cameraFollow": false,
+          "cameraLocked": false,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "disposed": false
+        },
+        "camera": {
+          "position": [
+            -21.800000000000004,
+            2.9999999999999996,
+            23
+          ],
+          "target": [
+            -30.000000000000004,
+            3.8999999999999995,
+            -4.5
+          ],
+          "fov": 53
+        },
+        "navigation": {
+          "view": "shipyard",
+          "bounds": {
+            "x": [
+              -39,
+              -20.7
+            ],
+            "y": [
+              1.7,
+              3.1
+            ],
+            "z": [
+              9.2,
+              29
+            ]
+          }
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-lit-far-support",
+          "sourceAtlasExcluded": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "03-hall",
+      "canvas": "assets/shipyard-station-qa/2026-10-24T16-30-39-097Z/03-hall-canvas.png",
+      "page": "assets/shipyard-station-qa/2026-10-24T16-30-39-097Z/03-hall-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "9ddf40161afce52bad389df33619e98250952347255e8846cad7204ab06116bf",
+      "state": {
+        "sceneId": "shipyard-station",
+        "setting": "old-dry-dock-and-passenger-station",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "error": null,
+        "frames": 89,
+        "time": 0.4083999999999997,
+        "paused": true,
+        "visible": true,
+        "view": "hall",
+        "quality": "work in progress / not accepted",
+        "runtimeLighting": {
+          "sceneId": "shipyard-station",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "sunDirection": [
+            0.3912557941714868,
+            0.7417598102380594,
+            0.5447121142794946
+          ]
+        },
+        "lighting": {
+          "mode": "unbaked",
+          "bound": 0,
+          "sceneId": "shipyard-station",
+          "accepted": false
+        },
+        "reflections": null,
+        "journey": {
+          "phase": "idle",
+          "elapsed": 0,
+          "duration": 0,
+          "progress": 0,
+          "totalElapsed": 0,
+          "paused": true,
+          "choice": null,
+          "boatPosition": [
+            12,
+            -0.11703443601375646,
+            -28
+          ],
+          "boatHeading": 3.141592653589793,
+          "velocityDir": [
+            0,
+            -1
+          ],
+          "speed": 0,
+          "gangwayOpen": 0,
+          "canChoose": false,
+          "boarding": false,
+          "cameraFollow": false,
+          "cameraLocked": false,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "disposed": false
+        },
+        "camera": {
+          "position": [
+            25.5,
+            2.3000000000000007,
+            10.4
+          ],
+          "target": [
+            30.5,
+            2,
+            4
+          ],
+          "fov": 53
+        },
+        "navigation": {
+          "view": "hall",
+          "bounds": {
+            "x": [
+              24.65,
+              29.95
+            ],
+            "y": [
+              1.9,
+              3.1
+            ],
+            "z": [
+              -0.6,
+              12.6
+            ]
+          }
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-lit-far-support",
+          "sourceAtlasExcluded": true
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "04-basin",
+      "canvas": "assets/shipyard-station-qa/2026-10-24T16-30-39-097Z/04-basin-canvas.png",
+      "page": "assets/shipyard-station-qa/2026-10-24T16-30-39-097Z/04-basin-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "cf2c12d9a1030bcbf27f840257fa8b620012a8d62bd871d1b195aa56341323e1",
+      "state": {
+        "sceneId": "shipyard-station",
+        "setting": "old-dry-dock-and-passenger-station",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "error": null,
+        "frames": 125,
+        "time": 0.4083999999999997,
+        "paused": true,
+        "visible": true,
+        "view": "basin",
+        "quality": "work in progress / not accepted",
+        "runtimeLighting": {
+          "sceneId": "shipyard-station",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "sunDirection": [
+            0.3912557941714868,
+            0.7417598102380594,
+            0.5447121142794946
+          ]
+        },
+        "lighting": {
+          "mode": "unbaked",
+          "bound": 0,
+          "sceneId": "shipyard-station",
+          "accepted": false
+        },
+        "reflections": null,
+        "journey": {
+          "phase": "idle",
+          "elapsed": 0,
+          "duration": 0,
+          "progress": 0,
+          "totalElapsed": 0,
+          "paused": true,
+          "choice": null,
+          "boatPosition": [
+            12,
+            -0.11703443601375646,
+            -28
+          ],
+          "boatHeading": 3.141592653589793,
+          "velocityDir": [
+            0,
+            -1
+          ],
+          "speed": 0,
+          "gangwayOpen": 0,
+          "canChoose": false,
+          "boarding": false,
+          "cameraFollow": false,
+          "cameraLocked": false,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "disposed": false
+        },
+        "camera": {
+          "position": [
+            -21.400000000000016,
+            2.599999999999996,
+            27.000000000000014
+          ],
+          "target": [
+            0,
+            3,
+            -7
+          ],
+          "fov": 58
+        },
+        "navigation": {
+          "view": "basin",
+          "bounds": {
+            "x": [
+              -39,
+              -20.7
+            ],
+            "y": [
+              1.7,
+              3.1
+            ],
+            "z": [
+              9.2,
+              29
+            ]
+          }
+        },
+        "auxiliaryGeometry": {
+          "mode": "runtime-lit-far-support",
+          "sourceAtlasExcluded": true
+        },
+        "errors": []
+      }
+    }
+  ],
+  "errors": [],
+  "exporting": true,
+  "scope": "Independent geometry source export and real-frame preview; artwork not accepted",
+  "windowPolicy": {
+    "show": false,
+    "focusable": false,
+    "skipTaskbar": true
+  },
+  "elapsedSeconds": 26.856,
+  "presentation": {
+    "offscreen": true,
+    "targetFrameRate": 30,
+    "paints": 440,
+    "firstPaintAt": 1792859438247,
+    "lastPaintAt": 1792859465906
+  }
+}

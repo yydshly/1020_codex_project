@@ -1,0 +1,377 @@
+{
+  "runId": "2026-10-25T03-59-52-984Z",
+  "status": "passed",
+  "scene": "lijiang-flythrough",
+  "backend": "d3d11",
+  "tests": [
+    {
+      "name": "actual-procedural-scene-renderer",
+      "passed": true,
+      "evidence": {
+        "sceneId": "lijiang-flythrough",
+        "runtimeRevision": "lijiang-pure-code-3",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "visible": true,
+        "time": 6.033182000000002,
+        "paused": false,
+        "frames": 16,
+        "fps": 1.193388626989407,
+        "uiHidden": false,
+        "recording": false,
+        "error": null,
+        "externalSceneAssets": 0,
+        "settings": {
+          "seed": 147,
+          "peakCount": 86,
+          "meanHeight": 340,
+          "steepness": 0.72,
+          "riverWidth": 340,
+          "treeCount": 2550,
+          "vegetationDensity": 1,
+          "rippleStrength": 0.85,
+          "waveSpeed": 1,
+          "waterColor": "#235451",
+          "reflectionStrength": 1,
+          "sunElevation": 15.5,
+          "sunAzimuth": -42,
+          "sunIntensity": 2.3,
+          "ambientIntensity": 1.05,
+          "ambientOcclusion": 0.65,
+          "skyIntensity": 0.88,
+          "fogDensity": 0.0003,
+          "mist": 0.62,
+          "flightDuration": 45,
+          "exposure": 1
+        },
+        "camera": {
+          "position": [
+            26.98728396139752,
+            75.93798707177017,
+            1203.2414201506083
+          ],
+          "target": [
+            38.04751027206191,
+            133.3450193529568,
+            452.7535143899971
+          ],
+          "fov": 52
+        },
+        "path": {
+          "mode": "path",
+          "time": 6.033182000000002,
+          "duration": 45,
+          "progress": 0.13407071111111116,
+          "finished": false,
+          "position": [
+            26.98728396139752,
+            75.93798707177017,
+            1203.2414201506083
+          ],
+          "target": [
+            38.04751027206191,
+            133.3450193529568,
+            452.7535143899971
+          ],
+          "up": [
+            -0.0011318387057987617,
+            0.9970878204587201,
+            0.07625350637199038
+          ],
+          "bank": -0.000008060843556987978,
+          "clearance": {
+            "terrainClearance": 80.73878929844523,
+            "nearPlaneClearance": 80.61628907293179,
+            "waterClearance": 75.81497009883638,
+            "bankMargin": 183.2162941972551
+          }
+        },
+        "terrain": {
+          "version": "lijiang-wooded-karst-3",
+          "footprintClearanceMinimum": 30.373628922466168,
+          "silhouetteMethod": "composed jointed bodies and offset saddle summits; no river clipping",
+          "peakCount": 86,
+          "backgroundPeakCount": 27,
+          "forestCanopyBanks": 2,
+          "authoredPeaks": 16,
+          "vertices": 1059102,
+          "triangles": 1085417,
+          "externalAssets": 0
+        },
+        "vegetation": {
+          "trees": 2550,
+          "closerTrees": 480,
+          "rockLedgeLeafClumps": 10500,
+          "bambooCulms": 569,
+          "individualBambooLeaves": 10242,
+          "grassBlades": 5500,
+          "externalAssets": 0
+        },
+        "water": {
+          "reflectionPasses": 16,
+          "refractionPasses": 16,
+          "reflectionSize": [
+            1536,
+            1536
+          ],
+          "refractionSize": [
+            1440,
+            902
+          ],
+          "waves": 36,
+          "externalAssets": 0
+        },
+        "recorder": {
+          "phase": "idle",
+          "active": false,
+          "progress": 0,
+          "frameCount": 0,
+          "encodedFrameCount": 0,
+          "totalFrames": 0
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "runtime-requests-contain-no-external-scene-assets",
+      "passed": true,
+      "evidence": [
+        "http://127.0.0.1:8796/projects/014-programmable-worlds/web/lijiang-flythrough/build/assets/index-DKaoEGpz.js",
+        "http://127.0.0.1:8796/projects/014-programmable-worlds/web/lijiang-flythrough/build/assets/index-ChEdYr1r.css"
+      ]
+    },
+    {
+      "name": "whole-flight-near-plane-clearance",
+      "passed": true,
+      "evidence": {
+        "passed": true,
+        "terrainChecked": true,
+        "samples": 451,
+        "probesPerSample": 14,
+        "duration": 45,
+        "minimum": {
+          "terrainClearance": 49.796376845439646,
+          "nearPlaneClearance": 49.68655099388636,
+          "waterClearance": 44.886472843847464,
+          "bankMargin": 141.34240809307255
+        },
+        "maxAltitude": 119.99797336480054,
+        "maxBankDegrees": 0.13351935108431254,
+        "first": {
+          "time": 0,
+          "duration": 45,
+          "progress": 0,
+          "position": [
+            19.37732294797882,
+            68,
+            1250
+          ],
+          "target": [
+            30.703828326890164,
+            126,
+            510
+          ],
+          "up": [
+            -0.0011957191244485648,
+            0.9969432076460898,
+            0.07812049016807902
+          ],
+          "bank": 0,
+          "clearance": {
+            "terrainClearance": 72.80246115126775,
+            "nearPlaneClearance": 72.68087517428584,
+            "waterClearance": 67.87756638476154,
+            "bankMargin": 186.7770218218207
+          }
+        },
+        "last": {
+          "time": 45,
+          "duration": 45,
+          "progress": 1,
+          "position": [
+            0,
+            45,
+            180
+          ],
+          "target": [
+            0,
+            150,
+            -800
+          ],
+          "up": [
+            -1.1588315108032126e-19,
+            0.994309153919809,
+            0.10653312363426526
+          ],
+          "bank": -1.1588315108032126e-19,
+          "clearance": {
+            "terrainClearance": 49.796376845439646,
+            "nearPlaneClearance": 49.68655099388636,
+            "waterClearance": 44.886472843847464,
+            "bankMargin": 141.34240809307255
+          }
+        },
+        "violations": []
+      }
+    },
+    {
+      "name": "own-procedural-scene-disposes",
+      "passed": true,
+      "evidence": {
+        "disposed": true
+      }
+    }
+  ],
+  "captures": [
+    {
+      "name": "01-flight-45",
+      "canvas": "assets/lijiang-qa/2026-10-25T03-59-52-984Z/01-flight-45-canvas.png",
+      "page": "assets/lijiang-qa/2026-10-25T03-59-52-984Z/01-flight-45-page.png",
+      "sha256": "1ba0c879049becbd77d7dbdd71d8a89f470314fe9b51106071653b88721501ae",
+      "width": 1440,
+      "height": 902,
+      "state": {
+        "sceneId": "lijiang-flythrough",
+        "runtimeRevision": "lijiang-pure-code-3",
+        "phase": "ready",
+        "ready": true,
+        "disposed": false,
+        "visible": true,
+        "time": 45,
+        "paused": true,
+        "frames": 31,
+        "fps": 1.193388626989407,
+        "uiHidden": false,
+        "recording": false,
+        "error": null,
+        "externalSceneAssets": 0,
+        "settings": {
+          "seed": 147,
+          "peakCount": 86,
+          "meanHeight": 340,
+          "steepness": 0.72,
+          "riverWidth": 340,
+          "treeCount": 2550,
+          "vegetationDensity": 1,
+          "rippleStrength": 0.85,
+          "waveSpeed": 1,
+          "waterColor": "#235451",
+          "reflectionStrength": 1,
+          "sunElevation": 15.5,
+          "sunAzimuth": -42,
+          "sunIntensity": 2.3,
+          "ambientIntensity": 1.05,
+          "ambientOcclusion": 0.65,
+          "skyIntensity": 0.88,
+          "fogDensity": 0.0003,
+          "mist": 0.62,
+          "flightDuration": 45,
+          "exposure": 1
+        },
+        "camera": {
+          "position": [
+            0,
+            45,
+            180
+          ],
+          "target": [
+            0,
+            150,
+            -800
+          ],
+          "fov": 52
+        },
+        "path": {
+          "mode": "path",
+          "time": 45,
+          "duration": 45,
+          "progress": 1,
+          "finished": true,
+          "position": [
+            0,
+            45,
+            180
+          ],
+          "target": [
+            0,
+            150,
+            -800
+          ],
+          "up": [
+            -1.1588315108032126e-19,
+            0.994309153919809,
+            0.10653312363426526
+          ],
+          "bank": -1.1588315108032126e-19,
+          "clearance": {
+            "terrainClearance": 49.796376845439646,
+            "nearPlaneClearance": 49.68655099388636,
+            "waterClearance": 44.886472843847464,
+            "bankMargin": 141.34240809307255
+          }
+        },
+        "terrain": {
+          "version": "lijiang-wooded-karst-3",
+          "footprintClearanceMinimum": 30.373628922466168,
+          "silhouetteMethod": "composed jointed bodies and offset saddle summits; no river clipping",
+          "peakCount": 86,
+          "backgroundPeakCount": 27,
+          "forestCanopyBanks": 2,
+          "authoredPeaks": 16,
+          "vertices": 1059102,
+          "triangles": 1085417,
+          "externalAssets": 0
+        },
+        "vegetation": {
+          "trees": 2550,
+          "closerTrees": 480,
+          "rockLedgeLeafClumps": 10500,
+          "bambooCulms": 569,
+          "individualBambooLeaves": 10242,
+          "grassBlades": 5500,
+          "externalAssets": 0
+        },
+        "water": {
+          "reflectionPasses": 31,
+          "refractionPasses": 31,
+          "reflectionSize": [
+            1536,
+            1536
+          ],
+          "refractionSize": [
+            1440,
+            902
+          ],
+          "waves": 36,
+          "externalAssets": 0
+        },
+        "recorder": {
+          "phase": "idle",
+          "active": false,
+          "progress": 0,
+          "frameCount": 0,
+          "encodedFrameCount": 0,
+          "totalFrames": 0
+        },
+        "errors": []
+      }
+    }
+  ],
+  "errors": [],
+  "scope": "Actual procedural scene captures; independent visual review required",
+  "windowPolicy": {
+    "show": false,
+    "focusable": false,
+    "skipTaskbar": true
+  },
+  "recording": false,
+  "elapsedSeconds": 8.464,
+  "presentation": {
+    "offscreen": true,
+    "targetFrameRate": 60,
+    "paints": 68,
+    "firstPaintAt": 1792900793050,
+    "lastPaintAt": 1792900801394
+  }
+}

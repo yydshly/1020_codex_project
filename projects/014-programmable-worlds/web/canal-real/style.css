@@ -1,0 +1,47 @@
+:root{color-scheme:dark;font:14px/1.5 Inter,"Segoe UI","Microsoft YaHei",sans-serif;color:#f1eee3;background:#303a3b}*{box-sizing:border-box}body{margin:0}#app,#world{position:absolute;inset:0;overflow:hidden}#world:focus{outline:none}canvas{display:block;width:100%;height:100%}header{position:absolute;top:28px;left:32px;right:32px;display:flex;align-items:center;justify-content:space-between;font-size:11px;letter-spacing:.15em}a,button{color:inherit}a{text-decoration:none}button{font:inherit;background:#242c2ba3;border:1px solid #e6e1cc38;border-radius:3px;padding:9px 14px;cursor:pointer;backdrop-filter:blur(12px)}button:hover,button[aria-pressed=true]{background:#e8e2cf;color:#28312f;border-color:#e8e2cf}header button{font-size:11px}.caption{position:absolute;left:34px;bottom:104px;pointer-events:none;text-shadow:0 1px 10px #0008}.caption span{font-size:10px;letter-spacing:.18em}.caption h1{font:300 clamp(25px,3vw,42px)/1.4 Georgia,"Noto Serif SC",serif;margin:10px 0}.caption p{font-size:11px;color:#e5e4d3b5;letter-spacing:.05em}nav{position:absolute;bottom:40px;left:32px;display:flex;gap:6px}.hint{position:absolute;right:32px;bottom:35px;font-size:10px;color:#eae6d3b0;letter-spacing:.05em}#loading{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#263331;z-index:10;transition:opacity .7s}#loading.done{opacity:0;pointer-events:none}#loading span{font-size:10px;letter-spacing:.3em;color:#c7c4af}#loading h1{font:300 40px Georgia,serif}#loading p{font-size:12px;color:#c2c5b8}progress{width:240px;height:2px;accent-color:#b9c4ac}#choice{position:absolute;right:30px;bottom:110px;max-width:300px;padding:22px;background:#182824d9;backdrop-filter:blur(20px);border:1px solid #e0dfc12b}#choice[hidden]{display:none}#choice p{font:20px Georgia,serif}body.embed header,body.embed .hint{display:none}body.embed .caption{bottom:90px}body.embed nav{bottom:22px}@media(max-width:700px){header{left:18px;right:18px;top:18px}header span{display:none}.caption{left:20px;bottom:140px}nav{left:18px;right:18px;bottom:30px;flex-wrap:wrap}nav button{padding:8px;font-size:11px}.hint{display:none}}
+
+[hidden]{display:none!important}
+a:focus-visible,button:focus-visible{outline:2px solid #e9d8ab;outline-offset:4px}
+button:disabled{opacity:.42;cursor:wait}
+#choice .choice-actions{display:flex;gap:8px;flex-wrap:wrap}
+body[data-experience] header{z-index:2;text-shadow:0 1px 12px #101b1bd9}
+body[data-experience] header::before{content:'';position:fixed;inset:0 0 auto;height:110px;background:linear-gradient(#15222288,transparent);z-index:-1;pointer-events:none}
+body[data-experience] #experience-overlay{position:absolute;left:32px;right:32px;bottom:28px;z-index:2;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:14px 28px;max-height:calc(100dvh - 120px);overflow-y:auto;overscroll-behavior:contain;pointer-events:none}
+body[data-experience] #experience-overlay::before{content:'';position:fixed;inset:auto 0 0;height:min(48vh,380px);background:linear-gradient(transparent,#111e1bd4);z-index:-1;pointer-events:none}
+body[data-experience] .caption{position:static;grid-column:1;grid-row:1;max-width:720px;margin:0}
+body[data-experience] .caption h1{font-size:clamp(26px,3vw,40px);margin:7px 0}
+body[data-experience] .caption p{max-width:640px;margin:0;color:#e8e6d4d9;line-height:1.8}
+body[data-experience] nav{position:static;grid-column:1;grid-row:3;display:flex;flex-wrap:wrap;gap:7px;pointer-events:auto}
+body[data-experience] nav button{font-size:12px;min-height:40px;padding:9px 15px;backdrop-filter:blur(8px)}
+body[data-experience] .hint{position:static;grid-column:2;grid-row:3;max-width:350px;margin:0 0 9px;white-space:nowrap}
+body[data-experience='window'] nav,body[data-experience='window'] .hint{grid-row:2}
+body[data-experience='story'] .hint{display:none}
+body[data-experience] #experience-timeline{grid-column:1;grid-row:2;width:min(460px,100%);padding:3px 0;color:#e7e4d3d9}
+#experience-timeline>div{display:flex;justify-content:space-between;align-items:baseline;gap:16px;font-size:11px}
+#experience-clock{font-variant-numeric:tabular-nums;letter-spacing:.05em;white-space:nowrap;font-size:10px}
+#experience-progress{display:block;width:100%;height:3px;margin-top:10px;border:0;border-radius:0;accent-color:#d7caa4}
+#experience-progress::-webkit-progress-bar{background:#e8e3cc38}
+#experience-progress::-webkit-progress-value{background:#d7caa4}
+body[data-experience] #choice{position:static;grid-column:2;grid-row:1/4;align-self:end;width:320px;max-width:320px;padding:20px;background:#172923e8;pointer-events:auto}
+body[data-experience] #choice p{margin:0 0 15px;font:400 22px/1.5 Georgia,'Noto Serif SC','SimSun',serif}
+body[data-experience] #choice button{font-size:12px;flex:1;padding:10px 11px;white-space:normal}
+body[data-experience] #experience-notice{grid-column:1/-1;grid-row:4;margin:0;font-size:11px;color:#f4ddba;pointer-events:auto}
+body.embed[data-experience] #experience-overlay{left:24px;right:24px;bottom:20px}
+body.reading-letter .caption,body.reading-letter #experience-timeline,body.reading-letter .hint{display:none!important}
+body.reading-letter #experience-overlay{display:flex;flex-direction:row;justify-content:flex-start;align-items:center;gap:12px;max-height:none;overflow:visible}
+body.reading-letter #experience-overlay::before{height:100px}
+body.reading-letter nav{margin:0}
+@media(max-width:800px){
+ body[data-experience] #experience-overlay{left:18px;right:18px;bottom:18px;display:flex;flex-direction:column;align-items:stretch;gap:12px;max-height:calc(100dvh - 110px)}
+ body[data-experience] .caption{order:1;max-width:100%}
+ body[data-experience] .caption h1{font-size:clamp(23px,5vw,32px);line-height:1.4;margin:5px 0 7px}
+ body[data-experience] .caption p{font-size:11px;line-height:1.65}
+ body[data-experience] #experience-timeline{order:2;width:100%}
+ body[data-experience] #choice{order:3;width:100%;max-width:none;padding:15px}
+ body[data-experience] #choice p{font-size:20px;margin-bottom:12px}
+ body[data-experience] nav{order:4}
+ body[data-experience] nav button{font-size:11px;padding:9px 13px}
+ body[data-experience] .hint{order:5;white-space:normal;margin:0;max-width:none}
+ body[data-experience] #experience-notice{order:6}
+ body.embed[data-experience] #experience-overlay{left:18px;right:18px;bottom:16px}
+}

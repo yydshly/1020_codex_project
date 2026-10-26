@@ -1,0 +1,4 @@
+web/** -text whitespace=cr-at-eol,-blank-at-eol
+assets/** -text whitespace=cr-at-eol,-blank-at-eol
+web/canal-real/vendor/** -whitespace
+web/lijiang-flythrough/node_modules/** -whitespace

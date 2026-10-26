@@ -1,0 +1,43 @@
+{
+  "runId": "2026-10-24T01-00-28-859Z",
+  "backend": "d3d11",
+  "scene": "source",
+  "mode": "hidden-own-application-compile-only",
+  "status": "failed",
+  "startedAt": "2026-10-24T01:00:28.859Z",
+  "timeoutMilliseconds": 1200000,
+  "windowPolicy": {
+    "show": false,
+    "skipTaskbar": true,
+    "focusable": false,
+    "backgroundThrottling": false,
+    "occludedWindowBackgrounding": false
+  },
+  "security": {
+    "sandbox": true,
+    "contextIsolation": true,
+    "nodeIntegration": false,
+    "webSecurity": true
+  },
+  "tests": [
+    {
+      "name": "window-remains-hidden-and-unfocused",
+      "passed": true
+    }
+  ],
+  "phases": [
+    {
+      "phase": "compile-start",
+      "at": 533,
+      "id": 1,
+      "label": "FS_RENDER",
+      "bytes": 290037
+    }
+  ],
+  "errors": [
+    "Error: Full source renderer program compilation exceeded 20 minutes\n    at runCompileAcceptance (F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\compile-acceptance.cjs:77:43)\n    at async F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\main.cjs:110:22"
+  ],
+  "note": "Compiles the four source renderer programs only. This does not accept world generation, actual GPU frames, driving, or artistic quality.",
+  "finishedAt": "2026-10-24T01:20:29.160Z",
+  "elapsedSeconds": 1200.301
+}

@@ -1,0 +1,401 @@
+{
+  "runId": "2026-10-24-r5-story-composite-13-59-53+14-13-54",
+  "status": "passed",
+  "scope": "composite functional acceptance; full 25-second wall-clock tour/pause/read/drift plus final navigation, visible outcomes and responsive reading supplement",
+  "tests": [
+    {
+      "name": "actual-offscreen-frame-and-paint-cadence",
+      "passed": true,
+      "source": {
+        "report": "assets/canal-real-qa/2026-10-24T13-59-53-797Z/result.json",
+        "runId": "2026-10-24T13-59-53-797Z",
+        "test": "actual-offscreen-frame-and-paint-cadence"
+      }
+    },
+    {
+      "name": "actual-camera-window",
+      "passed": true,
+      "source": {
+        "report": "assets/canal-real-qa/2026-10-24T13-59-53-797Z/result.json",
+        "runId": "2026-10-24T13-59-53-797Z",
+        "test": "actual-camera-window"
+      }
+    },
+    {
+      "name": "actual-camera-quay",
+      "passed": true,
+      "source": {
+        "report": "assets/canal-real-qa/2026-10-24T13-59-53-797Z/result.json",
+        "runId": "2026-10-24T13-59-53-797Z",
+        "test": "actual-camera-quay"
+      }
+    },
+    {
+      "name": "actual-camera-shop",
+      "passed": true,
+      "source": {
+        "report": "assets/canal-real-qa/2026-10-24T13-59-53-797Z/result.json",
+        "runId": "2026-10-24T13-59-53-797Z",
+        "test": "actual-camera-shop"
+      }
+    },
+    {
+      "name": "actual-camera-story",
+      "passed": true,
+      "source": {
+        "report": "assets/canal-real-qa/2026-10-24T13-59-53-797Z/result.json",
+        "runId": "2026-10-24T13-59-53-797Z",
+        "test": "actual-camera-story"
+      }
+    },
+    {
+      "name": "water-time-changes-actual-rendered-pixels",
+      "passed": true,
+      "source": {
+        "report": "assets/canal-real-qa/2026-10-24T13-59-53-797Z/result.json",
+        "runId": "2026-10-24T13-59-53-797Z",
+        "test": "water-time-changes-actual-rendered-pixels"
+      }
+    },
+    {
+      "name": "drive-moves-actual-camera",
+      "passed": true,
+      "source": {
+        "report": "assets/canal-real-qa/2026-10-24T13-59-53-797Z/result.json",
+        "runId": "2026-10-24T13-59-53-797Z",
+        "test": "drive-moves-actual-camera"
+      }
+    },
+    {
+      "name": "choices-change-visible-scene-state",
+      "passed": true,
+      "source": {
+        "report": "assets/canal-real-qa/2026-10-24T13-59-53-797Z/result.json",
+        "runId": "2026-10-24T13-59-53-797Z",
+        "test": "choices-change-visible-scene-state"
+      }
+    },
+    {
+      "name": "animation-continues-after-resume",
+      "passed": true,
+      "source": {
+        "report": "assets/canal-real-qa/2026-10-24T13-59-53-797Z/result.json",
+        "runId": "2026-10-24T13-59-53-797Z",
+        "test": "animation-continues-after-resume"
+      }
+    },
+    {
+      "name": "actual-story-tour-pause-holds-time",
+      "passed": true,
+      "source": {
+        "report": "assets/canal-real-qa/2026-10-24T13-59-53-797Z/result.json",
+        "runId": "2026-10-24T13-59-53-797Z",
+        "test": "actual-story-tour-pause-holds-time"
+      }
+    },
+    {
+      "name": "whole-twenty-five-second-wall-clock-tour-reaches-choice",
+      "passed": true,
+      "source": {
+        "report": "assets/canal-real-qa/2026-10-24T13-59-53-797Z/result.json",
+        "runId": "2026-10-24T13-59-53-797Z",
+        "test": "whole-twenty-five-second-wall-clock-tour-reaches-choice"
+      }
+    },
+    {
+      "name": "read-reparents-and-unfolds-same-physical-letter",
+      "passed": true,
+      "source": {
+        "report": "assets/canal-real-qa/2026-10-24T13-59-53-797Z/result.json",
+        "runId": "2026-10-24T13-59-53-797Z",
+        "test": "read-reparents-and-unfolds-same-physical-letter"
+      }
+    },
+    {
+      "name": "drift-retains-letter-and-moves-boat-downstream",
+      "passed": true,
+      "source": {
+        "report": "assets/canal-real-qa/2026-10-24T13-59-53-797Z/result.json",
+        "runId": "2026-10-24T13-59-53-797Z",
+        "test": "drift-retains-letter-and-moves-boat-downstream"
+      }
+    },
+    {
+      "name": "new-canal-initializes-without-script-errors",
+      "passed": true,
+      "source": {
+        "report": "notes/canal-real-story-navigation-layout.d3d11.json",
+        "runId": "2026-10-24T14-13-54-032Z",
+        "test": "new-canal-initializes-without-script-errors"
+      }
+    },
+    {
+      "name": "actual-room-look-and-movement-stay-inside-room",
+      "passed": true,
+      "source": {
+        "report": "notes/canal-real-story-navigation-layout.d3d11.json",
+        "runId": "2026-10-24T14-13-54-032Z",
+        "test": "actual-room-look-and-movement-stay-inside-room"
+      }
+    },
+    {
+      "name": "actual-swept-navigation-respects-solid-bridge-and-open-arch",
+      "passed": true,
+      "source": {
+        "report": "notes/canal-real-story-navigation-layout.d3d11.json",
+        "runId": "2026-10-24T14-13-54-032Z",
+        "test": "actual-swept-navigation-respects-solid-bridge-and-open-arch"
+      }
+    },
+    {
+      "name": "actual-window-opening-and-height-varying-railings",
+      "passed": true,
+      "source": {
+        "report": "notes/canal-real-story-navigation-layout.d3d11.json",
+        "runId": "2026-10-24T14-13-54-032Z",
+        "test": "actual-window-opening-and-height-varying-railings"
+      }
+    },
+    {
+      "name": "actual-interrupted-window-return-retains-outdoor-position",
+      "passed": true,
+      "source": {
+        "report": "notes/canal-real-story-navigation-layout.d3d11.json",
+        "runId": "2026-10-24T14-13-54-032Z",
+        "test": "actual-interrupted-window-return-retains-outdoor-position"
+      }
+    },
+    {
+      "name": "actual-calm-water-bands-animate",
+      "passed": true,
+      "source": {
+        "report": "notes/canal-real-story-navigation-layout.d3d11.json",
+        "runId": "2026-10-24T14-13-54-032Z",
+        "test": "actual-calm-water-bands-animate"
+      }
+    },
+    {
+      "name": "actual-390-845-viewport-without-horizontal-overflow",
+      "passed": true,
+      "source": {
+        "report": "notes/canal-real-story-navigation-layout.d3d11.json",
+        "runId": "2026-10-24T14-13-54-032Z",
+        "test": "actual-390-845-viewport-without-horizontal-overflow"
+      }
+    },
+    {
+      "name": "actual-390-845-letter-fits-reading-area",
+      "passed": true,
+      "source": {
+        "report": "notes/canal-real-story-navigation-layout.d3d11.json",
+        "runId": "2026-10-24T14-13-54-032Z",
+        "test": "actual-390-845-letter-fits-reading-area"
+      }
+    },
+    {
+      "name": "actual-640-521-viewport-without-horizontal-overflow",
+      "passed": true,
+      "source": {
+        "report": "notes/canal-real-story-navigation-layout.d3d11.json",
+        "runId": "2026-10-24T14-13-54-032Z",
+        "test": "actual-640-521-viewport-without-horizontal-overflow"
+      }
+    },
+    {
+      "name": "actual-640-521-letter-fits-reading-area",
+      "passed": true,
+      "source": {
+        "report": "notes/canal-real-story-navigation-layout.d3d11.json",
+        "runId": "2026-10-24T14-13-54-032Z",
+        "test": "actual-640-521-letter-fits-reading-area"
+      }
+    },
+    {
+      "name": "task-owned-renderer-disposes",
+      "passed": true,
+      "source": {
+        "report": "notes/canal-real-story-navigation-layout.d3d11.json",
+        "runId": "2026-10-24T14-13-54-032Z",
+        "test": "task-owned-renderer-disposes"
+      }
+    }
+  ],
+  "captures": [
+    {
+      "name": "water-bands-a",
+      "canvas": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/water-bands-a-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/water-bands-a-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "b9554d0e4f958a1db39fa85cf65fb7f9716b6844156d085a5850eb4e88f50114",
+      "monotonicMs": 50453.5871,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 63,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851282426
+      }
+    },
+    {
+      "name": "water-bands-b",
+      "canvas": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/water-bands-b-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/water-bands-b-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "41fe9d48612123872fef3257a8b04ee1b2ddece7528cb3983e48932a4924f3ef",
+      "monotonicMs": 51861.3601,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 100,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851283841
+      }
+    },
+    {
+      "name": "final-story-choice",
+      "canvas": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/final-story-choice-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/final-story-choice-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "f3c339a21e6c1a970f8e2f2629b4afd3d363486c134d6f923d435ba591ebe0d0",
+      "monotonicMs": 53602.1551,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 143,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851285542
+      }
+    },
+    {
+      "name": "final-story-read",
+      "canvas": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/final-story-read-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/final-story-read-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "3743ca9e6692d81d5ba1de1e5403d8ea33c3528c14274ddca1d598a786ea7595",
+      "monotonicMs": 56198.9587,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 192,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851288167
+      }
+    },
+    {
+      "name": "final-story-drift",
+      "canvas": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/final-story-drift-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/final-story-drift-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "34ab1e7b61ed58a7a28114acb5d72fa92fe4d2561c9fca0339f31d2a7606a740",
+      "monotonicMs": 59502.1886,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 283,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851291426
+      }
+    },
+    {
+      "name": "viewport-390-845",
+      "canvas": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/viewport-390-845-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/viewport-390-845-page.png",
+      "width": 390,
+      "height": 845,
+      "sha256": "6fc1c1d5eb5431fb7c974e41c76803126a4864b99e397156da80bf0adf6b0669",
+      "monotonicMs": 62125.2136,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 366,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851294366
+      },
+      "requestedViewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actualViewport": {
+        "width": 390,
+        "height": 845
+      }
+    },
+    {
+      "name": "viewport-640-521",
+      "canvas": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/viewport-640-521-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T14-13-54-032Z/viewport-640-521-page.png",
+      "width": 640,
+      "height": 521,
+      "sha256": "80a96869998db8509e34d9c6370e150ef3f8f1ed77902bc44210f5a1161030df",
+      "monotonicMs": 62820.3299,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 384,
+        "firstPaintAt": 1792851233085,
+        "lastPaintAt": 1792851295049
+      },
+      "requestedViewport": {
+        "width": 640,
+        "height": 520
+      },
+      "actualViewport": {
+        "width": 640,
+        "height": 521
+      }
+    }
+  ],
+  "errors": [],
+  "rawSourceReportsUnmodified": true,
+  "sourceReports": [
+    {
+      "path": "assets/canal-real-qa/2026-10-24T13-59-53-797Z/result.json",
+      "runId": "2026-10-24T13-59-53-797Z",
+      "originalStatus": "failed",
+      "sha256": "300dc5b3ea7e85b899cfab5d3a82eabc42fb552bac580bd1dfeaa973fa8ad06a",
+      "checks": 14,
+      "originalErrors": [
+        "Error: Hidden client minimum size prevented the requested viewport\n    at assert (F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\canal-acceptance.cjs:7:48)\n    at viewportChecks (F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\canal-acceptance.cjs:45:7)\n    at async runCanalAcceptance (F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\canal-acceptance.cjs:194:5)\n    at async F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\src\\runtime-shell\\node_modules\\electron\\dist\\resources\\app\\main.cjs:143:22"
+      ]
+    },
+    {
+      "path": "notes/canal-real-story-navigation-layout.d3d11.json",
+      "runId": "2026-10-24T14-13-54-032Z",
+      "originalStatus": "passed",
+      "sha256": "50d81a0fba99ac2818e6cde57b389e84cf028f9b49f63c94b84109772f8b6c75",
+      "checks": 11,
+      "originalErrors": []
+    }
+  ],
+  "resolvedHarnessFailure": {
+    "originalRunStatusPreserved": "failed",
+    "requestedViewport": [
+      390,
+      844
+    ],
+    "actualViewport": [
+      390,
+      845
+    ],
+    "cause": "Electron offscreen/DPI content height differed by one pixel; exact requested-size assertion aborted before responsive checks",
+    "replacementReport": "notes/canal-real-story-navigation-layout.d3d11.json",
+    "replacementChecks": [
+      "actual-390-845-viewport-without-horizontal-overflow",
+      "actual-390-845-letter-fits-reading-area",
+      "actual-640-521-viewport-without-horizontal-overflow",
+      "actual-640-521-letter-fits-reading-area"
+    ],
+    "finalOutcomeCaptures": [
+      "final-story-choice",
+      "final-story-read",
+      "final-story-drift"
+    ]
+  },
+  "limitations": "The full clock-timed tour preceded the last courtyard/refraction visual fix; the final supplement rechecks navigation, visible final outcomes and actual 390x845/640x521 reading, without claiming a second full wall-clock tour.",
+  "artQuality": "Functional composite only; independent visual judgement is recorded separately in notes/visual-acceptance-r5.md"
+}

@@ -1,0 +1,20 @@
+{
+  "checks": {
+    "full_diffuse_replaces_ambient": true,
+    "direct_diffuse_disabled": true,
+    "ibl_diffuse_removed": true,
+    "ibl_specular_preserved": true,
+    "clearcoat_preserved": true,
+    "physical_brdf_unmodified": true,
+    "cache_key": true,
+    "half_float_decoded": true,
+    "no_mips": true
+  },
+  "allPassed": true,
+  "textureBytes": 33554432,
+  "orientation": {
+    "HDRLoader_mean_abs_error": 0.0004975687896973113,
+    "flipped_mean_abs_error": 0.22462706887542083
+  },
+  "scope": "CPU shader assembly and gzip/checksum/half-float decoding. Actual GPU composed-scene acceptance remains required."
+}

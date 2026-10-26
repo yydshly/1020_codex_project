@@ -1,0 +1,14 @@
+{
+  "schema": "lijiang-m2-progress-v1",
+  "recordedAt": "2026-10-25T18:20:27.874159+00:00",
+  "status": "m2-repairs-verified-local",
+  "fullGoalComplete": false,
+  "repairPassComplete": true,
+  "canonical": "lijiang-current.json",
+  "entry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?revision=20261026-m2#lijiang",
+  "history": "lijiang-rework-progress.m1-history.json",
+  "actualStandalone": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m2\\2026-10-25T17-59-55-986Z\\result.json",
+  "actualParent": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m2\\2026-10-25T17-56-34-735Z\\result.json",
+  "actualFullMovie": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m2\\2026-10-25T17-59-55-986Z\\lijiang-m2-1920x1080-60fps-2700frames.webm",
+  "remaining": "Overall artistic signoff stays open; rounded rock/crown/root style limits are explicitly retained."
+}

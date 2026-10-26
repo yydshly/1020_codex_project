@@ -37,6 +37,28 @@ def local_file(directory, relative):
     return path
 
 
+def web_vendor_files(directory, project):
+    """Validate explicit runtime files without publishing an entire dependency tree."""
+    if "web_vendor_files" not in project:
+        return []
+    require(project["web"], "web_vendor_files 只能用于启用 Web 的项目")
+    files = project["web_vendor_files"]
+    require(isinstance(files, list), "web_vendor_files 必须为文件路径数组")
+    seen = set()
+    validated = []
+    for relative in files:
+        # Canonical slash-separated names exclude traversal, URL suffixes,
+        # Windows drives/streams and hidden .env/.git files or directories.
+        require(isinstance(relative, str) and bool(re.fullmatch(
+            r"(?:[A-Za-z0-9_@-][A-Za-z0-9_.@+-]*/)*[A-Za-z0-9_@-][A-Za-z0-9_.@+-]*",
+            relative)) and all(not part.endswith(".") for part in relative.split("/")),
+                "web_vendor_files 必须是 Web 目录内的安全相对文件路径，不能包含隐藏路径")
+        require(relative.casefold() not in seen, "web_vendor_files 文件路径不能重复")
+        seen.add(relative.casefold())
+        validated.append((relative, local_file(directory / "web", relative)))
+    return validated
+
+
 def repository_urls(project):
     """Multi-tool studies retain all upstream sources; older entries use repo."""
     return project.get("repositories", [project["repo"]])
@@ -120,6 +142,7 @@ def load_projects():
             require(sources == set(repositories), "工具摘要必须覆盖所有 repositories 来源")
         require(p["status"] in STATUSES, "不支持的研究状态")
         require(type(p.get("web")) is bool, "web 必须为布尔值")
+        web_vendor_files(directory, p)
         if "web_entry" in p:
             require(p["web"], "web_entry 只能用于启用 Web 的项目")
             entry = p["web_entry"]
@@ -225,6 +248,13 @@ def build(projects):
         if p["web"]:
             shutil.copytree(p["directory"] / "web", destination,
                             ignore=shutil.ignore_patterns(".gitkeep", ".env", ".env.*", ".git", "node_modules"))
+            # Revalidate at copy time as well, in case files changed after load.
+            for relative, source in web_vendor_files(p["directory"], p):
+                target = destination / relative
+                require(target.resolve().is_relative_to(destination.resolve()),
+                        "vendor 文件不能位于 Web 发布目录之外")
+                target.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copyfile(source, target)
         image = ""
         if p["cover"]:
             cover = local_file(p["directory"], p["cover"])

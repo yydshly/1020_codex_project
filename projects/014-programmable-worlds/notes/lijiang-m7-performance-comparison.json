@@ -1,0 +1,105 @@
+{
+  "baselineReport": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m7-performance\\2026-10-26T11-56-20-542Z\\result.json",
+  "m7Report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m7-performance\\2026-10-26T12-06-27-759Z\\result.json",
+  "canvas": [
+    1174,
+    680
+  ],
+  "targetPresentationRate": 60,
+  "load": {
+    "m6Seconds": 117.903,
+    "m7Seconds": 96.609,
+    "observedReductionPercent": 18.060609144805483,
+    "scope": "Separate actual cold scene generations in same QA setup; host load and cache history vary."
+  },
+  "sameSceneScheduling": {
+    "modes": [
+      {
+        "mode": "serial",
+        "seconds": 10.390699999928474,
+        "completedFrames": 127,
+        "completedFramesPerSecond": 12.222468168734947,
+        "stableDrift": 0,
+        "idleFrameAdvance": 0,
+        "maxObservedPending": 0,
+        "maxDisplacement": 103.50479999999511
+      },
+      {
+        "mode": "pipelined",
+        "seconds": 10.350699999928475,
+        "completedFrames": 204,
+        "completedFramesPerSecond": 19.708811964544395,
+        "stableDrift": 0,
+        "idleFrameAdvance": 0,
+        "maxObservedPending": 2,
+        "maxDisplacement": 140.65239999999324
+      }
+    ],
+    "scope": "Same generated M7 scene, same starting camera/environment and keyboard durations. Actual movement paths differ because the production dt cap and frame cadence differ; not an identical-path GPU benchmark."
+  },
+  "horizonAB": [
+    {
+      "pose": "flight-0",
+      "baselineMeanMs": 65.3125,
+      "optimizedMeanMs": 61.8374999910593,
+      "baselineMedianMs": 64.14999997615814,
+      "optimizedMedianMs": 55.44999998807907,
+      "scope": "Same generated scene and same renderCurrent path. All8samples retained, including96.9ms horizon outlier."
+    },
+    {
+      "pose": "flight-25",
+      "baselineMeanMs": 59.6875,
+      "optimizedMeanMs": 52.462500020861626,
+      "baselineMedianMs": 58.09999996423721,
+      "optimizedMedianMs": 52.35000002384186,
+      "scope": "Same generated scene and same renderCurrent path. All8samples retained, including96.9ms horizon outlier."
+    },
+    {
+      "pose": "flight-45",
+      "baselineMeanMs": 52.87500001490116,
+      "optimizedMeanMs": 43.2124999910593,
+      "baselineMedianMs": 52.90000003576279,
+      "optimizedMedianMs": 43.09999996423721,
+      "scope": "Same generated scene and same renderCurrent path. All8samples retained, including96.9ms horizon outlier."
+    },
+    {
+      "pose": "m6-fixed-crack-primary-right",
+      "baselineMeanMs": 85.48749999701977,
+      "optimizedMeanMs": 81.2124999910593,
+      "baselineMedianMs": 86.59999996423721,
+      "optimizedMedianMs": 79.64999997615814,
+      "scope": "Same generated scene and same renderCurrent path. All8samples retained, including96.9ms horizon outlier."
+    },
+    {
+      "pose": "m6-fixed-crack-mountain-primary-slope-root",
+      "baselineMeanMs": 36.8374999910593,
+      "optimizedMeanMs": 35.525000005960464,
+      "baselineMedianMs": 36.34999996423721,
+      "optimizedMedianMs": 34.10000002384186,
+      "scope": "Same generated scene and same renderCurrent path. All8samples retained, including96.9ms horizon outlier."
+    },
+    {
+      "pose": "near-leaf",
+      "baselineMeanMs": 41.38750000298023,
+      "optimizedMeanMs": 41.67499999701977,
+      "baselineMedianMs": 41.85000002384186,
+      "optimizedMedianMs": 42.5,
+      "scope": "Same generated scene and same renderCurrent path. All8samples retained, including96.9ms horizon outlier."
+    },
+    {
+      "pose": "horizon",
+      "baselineMeanMs": 50.88750001788139,
+      "optimizedMeanMs": 56.275000005960464,
+      "baselineMedianMs": 50.89999997615814,
+      "optimizedMedianMs": 50.69999998807907,
+      "scope": "Same generated scene and same renderCurrent path. All8samples retained, including96.9ms horizon outlier."
+    }
+  ],
+  "quality": {
+    "exactPixelEqualCloseViews": 3,
+    "maximumChangedPixelPercentInDistantAB": 0.0699,
+    "baselineRestorationPixelPerfect": false,
+    "restorationCaveat": "Restored snapshots used RAF-idle; original snapshots followed strict repeated renders. Ground/ordinary forest cache states differ, so no exact full-canvas restoration claim."
+  },
+  "realtime60Verified": false
+}

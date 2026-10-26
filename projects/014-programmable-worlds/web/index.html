@@ -1,0 +1,202 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="从 Na Pali 原作参考，到运河老街、旧船坞车站与漓江晨航。原作是程序化海岸；我们完成老街窗景、独立船坞与漓江晨航，沉淀确认约束、固定模板、有界求解、独立验证的制作流程。">
+  <meta name="theme-color" content="#f5f3eb">
+  <title>可编程世界 · 从海岸航拍到自己的作品</title>
+  <link rel="stylesheet" href="style.css?v=20261026-release-1">
+  <script src="app.js?v=20261026-release-1" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#overview">跳到体验总览</a>
+  <header class="masthead wrap">
+    <a class="brand" href="#top"><span class="brand-mark">世</span><span>可编程世界<small>014 / 互动风景集</small></span></a>
+    <nav aria-label="页面导航"><a href="#research-summary">研究摘要</a><a href="#overview">体验总览</a><a href="#source">原作参考</a><a href="#concepts">运河作品</a><a href="#lijiang">漓江晨航</a><a href="#future-products">后续方向</a><a href="#status">成果与说明</a><a href="#understanding">理解与复盘</a><a href="#project-map">总览图</a></nav>
+  </header>
+  <main id="top">
+    <section class="intro wrap">
+      <p class="eyebrow">FROM A COASTLINE TO A WORLD OF YOUR OWN</p>
+      <div class="intro-grid"><h1>从一段海岸航拍，<br>到我们自己的世界。</h1><div class="intro-note"><p>从一处海岸的技术参考，<br>到窗边停留、运河启程，<br>再到自己掌镜的漓江山水。</p><span>实时生成 · 可以进入 · 可以操作</span></div></div>
+    </section>
+
+    <section class="research-summary wrap" id="research-summary" aria-labelledby="research-summary-title">
+      <div class="section-heading"><div><p class="eyebrow">ORIGINAL / OUR WORK / REUSABLE METHOD</p><h2 id="research-summary-title">原作给了启发，探索留下了一套制作流程。</h2></div></div>
+      <div class="research-summary-grid">
+        <article><span class="small-label">原作效果</span><h3>Na Pali · 程序化海岸</h3><p>Leon Lin 用代码生成地形、侵蚀、森林、海浪、天空和光照，再以航线与镜头组织观看。它是针对特定风景持续调校的完整作品，提供技术与创意参考。</p><a href="#source">看原作画面、原理与来源 ↓</a></article>
+        <article><span class="small-label">我们的成果</span><h3>三个空间，三种参与方式</h3><p>老街窗景用于停留与观察，独立船坞车站提供呼船、靠泊和去留选择，漓江晨航支持航线、自由驾驶与画质调节。运河作品采用有来源素材，漓江由代码生成。</p><a href="#overview">进入已有场景 ↓</a></article>
+        <article><span class="small-label">沉淀的流程</span><h3>把试改变成受约束的制作</h3><p>确认约束 → 固定模板 → 有界求解 → 独立验证。先锁定构图、尺度、素材和已认可模块，在限定参数与计算预算内迭代，再以多视角、连续运动、操作和性能验收。</p><a href="#controlled-process">展开四步流程 ↓</a></article>
+      </div>
+      <p class="research-summary-boundary">现有代码与检查机制可以复用，完整自动拟合管线尚未实现。三种后期乘船方向仍是候选；以实际用途与可验证的质量、效率或体验增量决定下一步。</p>
+    </section>
+
+    <section class="overview-section wrap" id="overview" aria-labelledby="overview-title">
+      <div class="section-heading"><div><p class="eyebrow">THE COLLECTION / 2026.10.26</p><h2 id="overview-title">先选一处风景，再进入。</h2></div><p class="section-aside">一份原作参考 · 三处创作实践<br>本轮已收口，进入实际使用</p></div>
+      <p class="section-lead">同一种创作思路，延续出不同的空间和参与方式。本机版提供原作与三处实践的完整入口。在线版可运行我们的三处作品；原作提供画面、原理和来源，完整实时控制需本机运行服务。</p>
+      <div class="experience-index">
+        <a class="experience-entry" data-experience-link="source" href="#source"><span class="experience-no">01</span><div><span class="small-label">原作参考 / LEON LIN</span><h3>Na Pali 海岸</h3><p>完整原库的海岸、海浪、植被与天空。沿原作航线观看，也可以自己驾驶。</p><span class="entry-foot">看创作方法与原始效果 <b aria-hidden="true">↗</b></span></div></a>
+        <a class="experience-entry" data-experience-link="window" href="#window-title"><span class="experience-no">02</span><div><span class="small-label">作品 A / 日常陪伴</span><h3>一扇窗外的世界</h3><p>在木窗、河岸与书店之间停留。让一处有深度的雨后老街，成为日常的片刻风景。</p><span class="entry-foot">窗边 · 河岸 · 书店 <b aria-hidden="true">↗</b></span></div></a>
+        <a class="experience-entry" data-experience-link="station" href="#station-title"><span class="experience-no">03</span><div><span class="small-label">作品 B / 互动叙事</span><h3>旧船坞的下一班船</h3><p>另建的船坞与车站。呼船、等待靠泊，再选择登船离开，或在站台目送。</p><span class="entry-foot">候船 · 靠泊 · 去或留 <b aria-hidden="true">↗</b></span></div></a>
+        <a class="experience-entry" data-experience-link="lijiang" href="#lijiang"><span class="experience-no">04</span><div><span class="small-label">山水实践 / 自由取景</span><h3>漓江晨航</h3><p>峰林、岸林、晨雾与江面倒影。播放 45 秒航线，或用方向按钮自由观察。</p><span class="entry-foot">四个机位 · 虚拟驾驶 · 两档画质 <b aria-hidden="true">↗</b></span></div></a>
+      </div>
+      <div class="start-guide"><strong>怎样开始</strong><ol><li><span>1</span>选择一处体验</li><li><span>2</span>点击启动，等待准备</li><li><span>3</span>用画面内控件观看或驾驶</li></ol><p>每次只运行一个场景。准备完成后，离开画面暂停绘制，返回保留原视角；切换作品或停止后，需要重新准备。漓江首次生成约需 1—3 分钟。<a href="#usage-faq">查看使用说明 ↓</a></p></div>
+    </section>
+
+    <section class="source-section wrap" id="source" aria-labelledby="source-title">
+      <div class="section-heading"><div><p class="eyebrow">01 / THE ORIGINAL · LIVE</p><h2 id="source-title">Na Pali：原作效果与制作参考。</h2></div><p class="section-aside">原库场景 · 本机可驾驶<br>夏威夷 · 纳帕利海岸</p></div>
+      <div class="source-live"><iframe class="world-frame" data-src="runtime/source-live.html?embed=1" title="Na Pali 原作完整实时海岸，直接在本页播放、暂停、切换机位与自由驾驶" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+      <div class="live-caption"><span>完整原作与驾驶控制依赖本机运行服务。在线版可查看下方作者画面、原理和源库；本机版点击启动后进入实时场景。</span><a id="source-live-link" href="runtime/source-live.html" target="_blank" rel="noopener">本机原作实时界面 ↗</a></div>
+      <details class="source-reference" id="source-gallery"><summary>补充对照：作者原库的五张渲染图</summary>
+      <figure class="source-viewer" tabindex="0" aria-label="原库效果画廊，可用左右方向键切换五张原图">
+        <div class="image-stage"><img id="source-image" src="assets/upstream/05_aerial.jpg" alt="作者原库渲染：从高处俯瞰绿色山脊、海湾与蓝绿色海水" width="1672" height="941" fetchpriority="high"><span class="image-credit">源库渲染图 · 非本机实时截图</span><div class="image-controls"><button type="button" id="gallery-prev" aria-label="上一张原库效果图">←</button><button type="button" id="gallery-next" aria-label="下一张原库效果图">→</button></div></div>
+        <figcaption><div><span id="source-number">05 / 05</span><strong id="source-caption">俯瞰海岸</strong><span id="source-description">把海湾、山脊、森林和浪花放进同一个航拍构图。</span></div><a id="source-full" href="assets/upstream/05_aerial.jpg" target="_blank" rel="noopener">查看原图 ↗</a></figcaption>
+        <div class="thumbnails" role="group" aria-label="选择原库效果图">
+          <button type="button" data-frame="0" aria-pressed="false"><img src="assets/upstream/01_open_sea.jpg" alt="" width="320" height="180"><span>01 海面</span></button>
+          <button type="button" data-frame="1" aria-pressed="false"><img src="assets/upstream/02_headland.jpg" alt="" width="320" height="180"><span>02 海岬</span></button>
+          <button type="button" data-frame="2" aria-pressed="false"><img src="assets/upstream/03_beach.jpg" alt="" width="320" height="180"><span>03 沙滩</span></button>
+          <button type="button" data-frame="3" aria-pressed="false"><img src="assets/upstream/04_valley.jpg" alt="" width="320" height="180"><span>04 山谷</span></button>
+          <button type="button" data-frame="4" aria-pressed="true"><img src="assets/upstream/05_aerial.jpg" alt="" width="320" height="180"><span>05 俯瞰</span></button>
+        </div>
+        <span id="gallery-status" class="sr-only" aria-live="polite">第 5 张，共 5 张，俯瞰海岸</span>
+      </figure></details>
+      <div class="source-explainer">
+        <div><h3>山、海和云，都在代码里生长。</h3><p>作者让 AI 编写地形、侵蚀、森林、海浪、泡沫、云雾和光照，再沿预设路线移动相机，得到一段模拟无人机航拍。画面由 WebGL2 着色器和 JavaScript 计算，不依赖下载的贴图或现成三维模型。</p><p>这是一件针对特定海岸反复精调的作品：README 记录了 13 轮开发；海岸线有描摹数据与艺术控制点。它为我们提供了制作方法和可研究的实现，并非输入任意地名就能生成世界的工具。</p></div>
+        <aside class="source-links"><p class="small-label">原始来源</p><a href="https://github.com/Leonxlnx/napali" target="_blank" rel="noopener">Leonxlnx / napali <span>GitHub ↗</span></a><a href="https://x.com/LexnLin/status/2113720560920428685" target="_blank" rel="noopener">作者原帖与 52.8 秒影片 <span>X ↗</span></a><a href="runtime/source-live.html" target="_blank" rel="noopener">完整实时海岸与驾驶控制 <span>直接运行 ↗</span></a><a href="upstream/index.html" target="_blank" rel="noopener">未经修改的原始文件 <span>保留副本 ↗</span></a><a href="https://github.com/Leonxlnx/napali/blob/4afb7c3a1aad3d0203193100305c46607134d0f5/README.md" target="_blank" rel="noopener">运行方法与实现说明 <span>README ↗</span></a><p class="version">研究版本 4afb7c3 · MIT<br>资料日期 2026-10-24</p></aside>
+      </div>
+      <div class="verification-note"><span class="status-dot" aria-hidden="true"></span><p><strong>运行方式</strong>　这里使用原库完整的地形、水、植被、天空与着色器，增加运行适配和驾驶控制；原样文件另行保留。原作实时计算较重，可在界面中选择分辨率。原库是创意与技术参考，我们的作品按自身的实际效果判断。</p></div>
+      <div class="principle" aria-label="创作方法"><span>参考与创作意图</span><i aria-hidden="true">→</i><span>可修改的场景规则</span><i aria-hidden="true">→</i><span>时间、镜头与事件</span><i aria-hidden="true">→</i><strong>图像 / 短片 / 互动作品</strong></div>
+    </section>
+
+    <section class="directions-section" id="directions" aria-labelledby="directions-title"><div class="wrap">
+      <div class="section-heading"><div><p class="eyebrow">02 / POSSIBLE DIRECTIONS</p><h2 id="directions-title">可扩展的，是整个创作方式。</h2></div><p class="section-aside">供后续选择的方向<br>由实际使用决定是否继续</p></div>
+      <p class="section-lead">围绕一个可持续修改的世界，扩展题材、时间、参与方式和用途。每个方向先回答：观众具体能看到或做什么？</p>
+      <ol class="direction-list">
+        <li><span class="direction-number">01</span><div><h3>创造自己的风景</h3><p>江南水巷、雪夜车站、沙漠遗迹、漂浮岛屿。建立统一的建筑、植物、光色规则，形成有辨识度的系列。</p><span class="checkpoint">先验证：换三个机位，场景是否仍然成立？</span></div></li>
+        <li><span class="direction-number">02</span><div><h3>让世界经历变化</h3><p>清晨走向夜晚，雨季转入落雪，城市从繁华渐渐荒芜。用同一空间里的变化表达时间。</p><span class="checkpoint">先验证：变化是否连贯，是否带来新的感受？</span></div></li>
+        <li><span class="direction-number">03</span><div><h3>让观众进入作品</h3><p>坐在窗边看雨，乘小船穿过街巷，选择路线和停留。把观看变成一段由自己掌握节奏的体验。</p><span class="checkpoint">先验证：观众是否愿意停留、再回来？</span></div></li>
+        <li><span class="direction-number">04</span><div><h3>让故事发生在里面</h3><p>漂来的信、亮起的灯、即将离开的船。给场景加入事件与回应，让选择改变后续画面。</p><span class="checkpoint">先验证：一个小选择，是否真的改变故事？</span></div></li>
+        <li><span class="direction-number">05</span><div><h3>解释看不见的旅程</h3><p>跟随水滴进入地下，穿过植物内部，观察机器运转。用空间与镜头解释过程，具体知识仍需独立核验。</p><span class="checkpoint">先验证：观众能否说清过程，而不只记得画面？</span></div></li>
+        <li><span class="direction-number">06</span><div><h3>积累成创作工具</h3><p>把场景、天气、色调和运镜变成可选项，逐步导出壁纸、循环动画、分镜与短片，复用已经做好的世界。</p><span class="checkpoint">先验证：第二件作品是否更省力、更可控？</span></div></li>
+      </ol>
+      <p class="scope-note">下方的窗景、车站和漓江已分别尝试了陪伴、叙事与自由取景。下面将这六类思路落到三种水上旅程，以及陪伴、参与和镜头创作三类产品形态。它们是后续候选，当前可以继续使用已有成果。</p>
+    </div></section>
+
+    <section class="future-section wrap" id="future-products" aria-labelledby="future-title">
+      <div class="section-heading"><div><p class="eyebrow">FUTURE COLLECTION / THREE POSSIBLE JOURNEYS</p><h2 id="future-title">坐在船上，进入风景。</h2></div><p class="section-aside">三张效果参考 · 后续产品方向<br>静态参考，实时体验待开发</p></div>
+      <p class="section-lead">船头建立观看的位置，水面带来行进感，远处的山群或天幕展开空间。沿着这个共同体验，可以把现有的风景观看，延续成三段可以启程、停留与回看的旅程。</p>
+      <div class="future-grid">
+        <article class="future-card" id="future-lijiang-raft" data-product-direction="lijiang-raft" data-stage="reference">
+          <figure><a data-future-full href="https://raw.githubusercontent.com/yydshly/1020_codex_project/main/projects/014-programmable-worlds/assets/extension-references/lijiang-raft-clean-v1.png" target="_blank" rel="noopener" aria-label="放大查看漓江竹筏慢游的视觉参考"><img data-future-image="lijiang-raft" src="https://raw.githubusercontent.com/yydshly/1020_codex_project/main/projects/014-programmable-worlds/assets/extension-references/lijiang-raft-clean-v1.png" alt="竹筏船头与绳索位于前景，小筏驶向层叠雾山，江面呈现低位行进视角" width="940" height="1672" loading="lazy" decoding="async"></a><figcaption><span>视觉参考 · 待开发</span><a href="https://raw.githubusercontent.com/yydshly/1020_codex_project/main/projects/014-programmable-worlds/assets/extension-references/lijiang-raft-clean-v1.png" target="_blank" rel="noopener">查看完整参考图 ↗</a></figcaption></figure>
+          <div class="future-copy"><p class="small-label">01 / 最接近现有成果的延续</p><h3>漓江竹筏慢游</h3><p class="future-intent">从空中掌镜，走向坐在筏头看山。</p><p>保留漓江峰林与水面，增加可见筏头、低位乘坐视角、缓慢前进和自由转头。让人可以跟着水流走，也可以停下来听一会儿。</p><dl><div><dt>可能成为</dt><dd>短程山水游览、可暂停的环境陪伴，或一段自己的旅行镜头。</dd></div><div><dt>最小首版</dt><dd>一段河心航线，提供启程、暂停、重播与转头；先验证低位水面、倒影和船体、镜头的稳定感。</dd></div><div><dt>承接的扩展思路</dt><dd>让观众进入作品；再逐步加入晨雾变化、环境声与停留点。</dd></div></dl><a class="future-base" href="#lijiang">现有基础：漓江晨航 M8 →</a></div>
+        </article>
+        <article class="future-card" id="future-island-lagoon" data-product-direction="island-lagoon" data-stage="reference">
+          <figure><a data-future-full href="https://raw.githubusercontent.com/yydshly/1020_codex_project/main/projects/014-programmable-worlds/assets/extension-references/island-lagoon-clean-v1.png" target="_blank" rel="noopener" aria-label="放大查看海岛泻湖巡游的视觉参考"><img data-future-image="island-lagoon" src="https://raw.githubusercontent.com/yydshly/1020_codex_project/main/projects/014-programmable-worlds/assets/extension-references/island-lagoon-clean-v1.png" alt="长尾船行于明亮碧水，近处高大石灰岩峭壁与植被围合出海岛泻湖" width="941" height="1672" loading="lazy" decoding="async"></a><figcaption><span>视觉参考 · 待开发</span><a href="https://raw.githubusercontent.com/yydshly/1020_codex_project/main/projects/014-programmable-worlds/assets/extension-references/island-lagoon-clean-v1.png" target="_blank" rel="noopener">查看完整参考图 ↗</a></figcaption></figure>
+          <div class="future-copy"><p class="small-label">02 / 新地点与近距离观察</p><h3>海岛泻湖巡游</h3><p class="future-intent">沿着碧水，接近一面巨大的岩壁。</p><p>另建泻湖地形、临水峭壁和浅水层次，以长尾船作为观看位置。近处的岩纹、植被、船只和水色，一起建立空间尺度。</p><dl><div><dt>可能成为</dt><dd>网页中的海岛微旅行、可以选择停留位置的风景体验，或短镜头场景库。</dd></div><div><dt>最小首版</dt><dd>一处独立泻湖、一段贴崖巡游路线和一个停留点；先验证崖壁尺度、浅水层次与船水关系。</dd></div><div><dt>承接的扩展思路</dt><dd>创造自己的风景；逐步加入时间、光色与观看路线变化。</dd></div></dl><a class="future-base" href="#source">方法参考：Na Pali 海岸 →</a></div>
+        </article>
+        <article class="future-card" id="future-cosmic-harbor" data-product-direction="cosmic-harbor" data-stage="reference">
+          <figure><a data-future-full href="https://raw.githubusercontent.com/yydshly/1020_codex_project/main/projects/014-programmable-worlds/assets/extension-references/cosmic-harbor-clean-v1.png" target="_blank" rel="noopener" aria-label="放大查看星河港湾夜航的视觉参考"><img data-future-image="cosmic-harbor" src="https://raw.githubusercontent.com/yydshly/1020_codex_project/main/projects/014-programmable-worlds/assets/extension-references/cosmic-harbor-clean-v1.png" alt="摩天轮、城市和游艇位于港湾前方，粉金色奇幻天幕横贯天空并映入水面" width="941" height="1672" loading="lazy" decoding="async"></a><figcaption><span>视觉参考 · 待开发</span><a href="https://raw.githubusercontent.com/yydshly/1020_codex_project/main/projects/014-programmable-worlds/assets/extension-references/cosmic-harbor-clean-v1.png" target="_blank" rel="noopener">查看完整参考图 ↗</a></figcaption></figure>
+          <div class="future-copy"><p class="small-label">03 / 从风景走向想象世界</p><h3>星河港湾夜航</h3><p class="future-intent">熟悉的城市上空，出现另一种天空。</p><p>以港湾、城市轮廓与摩天轮建立日常空间，让巨大的星河天幕、灯光和水面反射共同变化。游船缓慢经过，成为进入奇幻世界的路径。</p><dl><div><dt>可能成为</dt><dd>沉浸夜航、节日或情绪主题场景，以及由一次出发串起的短篇故事。</dd></div><div><dt>最小首版</dt><dd>一段港湾航线和一组天幕变化；先验证天空、城市灯光与水面倒影的协调，以及动态画面的舒适感。</dd></div><div><dt>承接的扩展思路</dt><dd>让世界经历变化、让故事发生；再逐步加入旅人、目的地与选择。</dd></div></dl><a class="future-base" href="#station-title">交互基础：旧船坞的下一班船 →</a></div>
+        </article>
+      </div>
+      <p class="future-provenance">图片来自你提供的截图，已用 AI 清理文字与平台界面，作为构图、色彩和体验方向参考。上方展示的是静态参考图；三种实时产品均需另行制作和验收。<a href="https://raw.githubusercontent.com/yydshly/1020_codex_project/main/projects/014-programmable-worlds/assets/extension-references/image-edits-v1.json">图片编辑记录 ↗</a></p>
+      <div class="product-forms" aria-labelledby="product-forms-title"><h3 id="product-forms-title">把风景延续成怎样的产品？</h3><div class="product-form-grid">
+        <article><span>陪伴型风景</span><p>从窗边、竹筏和港湾中选择一处停留，逐步增加环境声、昼夜与天气。可探索专注背景、休息陪伴与个人风景收藏。</p></article>
+        <article><span>可参与的旅程</span><p>沿用车站的出发与选择，让观众掌握启程、停靠、去留和观看方向。可探索短程游览、叙事路线和有标记的知识旅程；解释性内容需独立核验。</p></article>
+        <article><span>自己的镜头工作台</span><p>把地点、时间、天气、机位和路线逐步变成可保存的选项。可探索壁纸、循环片段、分镜与短片制作；正式导出能力按实际用途专项验证。</p></article>
+      </div><p>这些形态对应上方的<a href="#directions">六类扩展思路</a>。后续可先用一段可体验的小样验证停留意愿、控制感与重访价值，再决定是否产品化；商业需求与付费方式尚未验证。</p></div>
+    </section>
+
+    <section class="concepts-section wrap" id="concepts" aria-labelledby="concepts-title">
+      <div class="section-heading"><div><p class="eyebrow">03 / TWO PLACES · TWO EXPERIENCES</p><h2 id="concepts-title">一扇窗，一座等船的车站。</h2></div><p class="section-aside">运河老街 · 旧船坞车站<br>两个独立的空间与体验</p></div>
+      <p class="section-lead">从窗边看一座老街，或在旧船坞旁等待下一班船。两件作品使用不同的建筑布局、地标、光照与事件；打开各自的实时场景，亲自停留或作出选择。</p>
+      <article class="concept concept-window" aria-labelledby="window-title">
+        <div class="concept-preview"><iframe class="world-frame" data-src="canal-real/index.html?experience=window&amp;giSet=r5&amp;probes=1&amp;streetProbes=1&amp;embed=1" title="作品 A：运河老街中的实时窗边世界" allow="fullscreen"></iframe><span class="preview-badge">作品 A · 窗外世界</span><a class="preview-open" href="canal-real/index.html?experience=window&amp;giSet=r5&amp;probes=1&amp;streetProbes=1" aria-label="进入运河老街的窗外世界">窗外世界 ↗</a></div>
+        <div class="concept-copy"><span class="small-label">给日常留一处可以停下来的地方</span><h3 id="window-title">一扇窗外的世界</h3><p class="concept-poem">窗外一直在发生，<br>你可以只是坐一会儿。</p><p>雨停之后，坐在木窗边看云、河水与对岸的灯。近处留着茶杯与书，远处是有真实深度的窗、树和街道。也可以走到河岸，再看看那间书店。</p><dl><div><dt>现在可以体验</dt><dd>窗边、河岸与书店三个机位；拖动观察，滚轮走近，WASD 移动，暂停水流或回到窗边。</dd></div><div><dt>可以继续生长</dt><dd>动态壁纸、窗边专注、自己的小屋与窗外收藏。</dd></div><div><dt>判断它有没有价值</dt><dd>是否愿意留它开着，第二天再回来看看。</dd></div></dl><a class="text-cta" href="canal-real/index.html?experience=window&amp;giSet=r5&amp;probes=1&amp;streetProbes=1">打开窗外世界 <span>→</span></a></div>
+      </article>
+      <article class="concept concept-story concept-station" aria-labelledby="station-title">
+        <div class="concept-preview"><iframe class="world-frame" data-src="shipyard-station/index.html?embed=1" title="作品 B：旧船坞与运河车站，实时呼船、靠泊、登船或目送" allow="fullscreen"></iframe><span class="preview-badge">作品 B · 旧船坞与运河车站</span><a class="preview-open" href="shipyard-station/index.html" aria-label="进入独立的旧船坞与运河车站">下一班船 ↗</a></div>
+        <div class="concept-copy"><span class="small-label">在另一处运河空间，决定去或留</span><h3 id="station-title">旧船坞的<br>下一班船。</h3><p class="concept-poem">船会靠岸，<br>你可以启程，也可以留下。</p><p>门吊与修理船守着旧船坞。跨过宽阔航道，是拱顶候船厅、票务台和临水站台。发出信号后，客船会真实驶来、转向、停靠，放下栈桥等你决定。</p><dl><div><dt>现在可以体验</dt><dd>船坞、站台与候船厅三个机位；呼船后等待约 22 秒，靠泊后选择沿栈桥上船离开，或留在站台目送。可暂停、继续和重新来一次。</dd></div><div><dt>可以继续生长</dt><dd>不同班次与目的地、候船厅里的旅人、返程与季节变化；先让一次出发值得记住。</dd></div><div><dt>判断它有没有价值</dt><dd>去和留是否形成不同的记忆，是否愿意回来等下一班船。</dd></div></dl><p class="mini-note">这是另建的船坞与车站：空间、主体模型、光照包和互动流程均独立于老街窗景。本站只记住这件作品中你上次的选择，供下次简短延续。</p><a class="text-cta" href="shipyard-station/index.html">走进旧船坞车站 <span>→</span></a></div>
+      </article>
+      <details class="source-reference"><summary>制作记录：此前的来信模式与范围纠正</summary><p>此前“窗边”和“来信”使用同一套运河老街，只是两种交互模式。当时把它们称为两个独立作品，是交付范围错误。来信作为老街中的历史互动原型保留，独立第二件现在由上方的船坞车站承担。</p><p><a href="canal-real/index.html?experience=story&amp;giSet=r5&amp;probes=1&amp;streetProbes=1">打开老街来信原型 ↗</a> · <a href="https://github.com/yydshly/1020_codex_project/blob/main/projects/014-programmable-worlds/notes/scope-correction-20261024.md">查看范围纠正记录 ↗</a></p></details>
+    </section>
+
+    <section class="lijiang-section wrap" id="lijiang" aria-labelledby="lijiang-title">
+      <div class="section-heading"><div><p class="eyebrow">04 / ANOTHER LANDSCAPE, WRITTEN IN CODE</p><h2 id="lijiang-title">把镜头带到漓江。</h2></div><p class="section-aside">兴坪山水意象 · 纯代码生成<br>45 秒晨航 / 自由观察</p></div>
+      <p class="section-lead">以黄布倒影的山水关系为参考，让峰林、相连山脚、岸林、晨雾与江面在浏览器里生成。沿江起飞，经过开阔水湾，最后停在主峰与完整倒影之间。山、水、植被和天空均由代码构建，场景不加载外部模型、图片、贴图或 HDR。</p>
+      <p class="section-lead">把晨光、峰林与水影连成一段可以自行掌镜的旅程。点击“启动漓江晨航”后再生成整片场景，生成期间会显示进度。首次准备仍需约一至三分钟；离开画面后暂停绘制，返回继续原来的视角。</p>
+      <div class="lijiang-live"><iframe class="world-frame" data-src="lijiang-m8/raster.html?surface=1&amp;material=1&amp;embed=1&amp;revision=20261026-m8" title="漓江晨航：实时峰林、坡肩草木、岩缝植被、江面倒影与自由驾驶" allow="autoplay; fullscreen" allowfullscreen></iframe></div>
+      <div class="live-caption"><span>直接点选四个视角，或长按画面内的方向与升降按钮驾驶。默认使用“流畅”，也可选“清晰”；H 隐藏界面后可点“显示控件”恢复操作。</span><a href="lijiang-m8/raster.html?surface=1&amp;material=1&amp;revision=20261026-m8">独立打开漓江晨航 ↗</a></div>
+      <p class="runtime-note">默认“流畅”保留山形与草木，以较低渲染分辨率减轻负担；“清晰”提高画面、阴影与倒影分辨率。实际速度取决于设备和视角。<a href="#status">查看当前效果与使用边界 ↓</a></p>
+      <div class="lijiang-details"><div><h3>同一片山水，也能成为自己的镜头。</h3><p>自由观察时拖动、WASD 移动，Q/E 升降；C 返回航线，R 重新起飞，H 隐藏界面。画面内提供方向、升降与转头按钮；长按移动，松手停止，也可主动收起面板。</p></div><div><h3>把这段旅程带走。</h3><p>已有 V /“导出航拍”入口，目标规格为 45 秒、1920×1080、60 帧/秒 WebM，支持取消。当前版本未重新验收完整影片，正式使用导出前需专项复测；视频规格与实时帧率分别计算。</p><a href="lijiang-m8/credits.html">代码来源与许可 ↗</a></div></div>
+    </section>
+
+    <section class="status-section wrap" id="status" aria-labelledby="status-title">
+      <div class="section-heading"><div><p class="eyebrow">WHAT WE HAVE / WHAT TO EXPECT</p><h2 id="status-title">这轮做到这里。</h2></div><p class="section-aside">漓江当前版本 M8<br>2026.10.26 整理</p></div>
+      <p class="section-lead">已有成果作为网页中的互动展示模块使用。画面保持当前版本，后续根据实际使用反馈修复问题；<a href="#future-products">三种后续产品方向</a>留作选择。研究与演示是当前定位，具体价值与下一步判断见<a href="#understanding">理解与复盘</a>。</p>
+      <div class="outcome-grid">
+        <article><span class="outcome-tag">已有成果</span><h3>能进入，也能操作。</h3><ul><li>原作参考与三个创作实践，各有独立入口。</li><li>漓江包含连峰、共同山脚、贴岩植被、连续林带、晨雾和实时倒影。</li><li>本轮漓江桌面驾驶、机位、画质切换和暂停恢复检查通过。</li></ul></article>
+        <article><span class="outcome-tag">已知限制</span><h3>需要等待，也有性能边界。</h3><ul><li>漓江首次生成仍约需 1—3 分钟。</li><li>实时驾驶仍可能卡顿，复杂视角和设备负载会影响速度。</li><li>准备中离屏可能继续计算；点击“停止并释放”可结束。</li></ul></article>
+        <article><span class="outcome-tag">使用前专项确认</span><h3>按实际用途补齐验证。</h3><ul><li>手机已适配小屏布局，尚未完成手机实机验收。</li><li>本轮未重新验收完整 45 秒视频导出。</li><li>声音、天气变化与场景收藏等，可沿三种后续产品方向逐步验证。</li></ul></article>
+      </div>
+      <details class="evidence-details"><summary>查看本轮实测与资料汇总</summary><div class="evidence-body"><p>漓江 M8 在独立隐藏测试窗口中完成 24 次页面内操作检查，覆盖十个移动/转头方向、松手与失焦停止、四个机位、两档画质、隐藏界面、离屏暂停与返回。本轮没有重新运行其他作品的完整验收。</p><dl class="measurement-list"><div><dt>首次生成</dt><dd>约 107 秒</dd></div><div><dt>流畅 / 清晰</dt><dd>短驾驶约 23 / 18 帧每秒</dd></div><div><dt>测量范围</dt><dd>1174 × 680 显示区域，单档约 2.5 秒驾驶；不代表完整航线或所有设备。</dd></div></dl><p>流畅模式使用 75% 画面尺寸、较低阴影及倒影分辨率，清晰模式使用完整尺寸；两档保留同一套场景几何和植被。此前版本与验收记录保留，分别对应当时的效果。</p><div class="record-links"><a href="https://github.com/yydshly/1020_codex_project/blob/main/projects/014-programmable-worlds/notes/project-wrap-up-20261026.md">项目成果汇总 ↗</a><a href="https://github.com/yydshly/1020_codex_project/blob/main/projects/014-programmable-worlds/README.md">运行与资料说明 ↗</a><a href="https://github.com/yydshly/1020_codex_project/blob/main/projects/014-programmable-worlds/notes/lijiang-m8-acceptance.json">M8 验收记录 ↗</a><a href="https://github.com/yydshly/1020_codex_project/blob/main/projects/014-programmable-worlds/notes/project-wrap-up-20261026.md">上一版对照 ↗</a></div></div></details>
+      <div class="usage-faq" id="usage-faq"><h3>使用前，了解这几件事。</h3>
+        <details><summary>四处体验是什么关系？</summary><p>Na Pali 是 Leon Lin 的原作，提供创意和技术参考。窗外世界、旧船坞车站与漓江晨航是我们的三处实践；老街和船坞车站使用独立空间。旧老街的“来信”模式作为同场景历史原型保留。</p></details>
+        <details><summary>为什么启动后需要等待？离开后会怎样？</summary><p>实时场景需要准备地形、植被和光照。页面仅在你点击启动时载入，每次运行一处。准备完成后，离开画面暂停绘制，返回沿用原场景与视角；准备中的计算仍可能继续。主动停止、刷新页面或切换作品后，再次进入需要重新准备。</p></details>
+        <details><summary>感觉卡顿时，怎样操作？</summary><p>漓江先选“流畅”，尽量只保留一个正在运行的三维场景。可以暂停航拍、停在固定视角观看；需要结束计算时，点击预览上方的“停止并释放”。当前版本没有承诺实时 60 帧。</p></details>
+        <details><summary>漓江如何切换视角和移动？</summary><p>点“沿江、开阔水湾、群山、低位倒影”切换机位。按住方向、升降或转头按钮移动，松手停止；也可切到自由驾驶，使用 WASD 移动、Q/E 升降、拖动转向。C 切换驾驶与航拍，R 重新起飞，H 隐藏界面；点“显示控件”恢复。面板可手动收起。</p></details>
+        <details><summary>现在可以直接当作视频导出工具吗？</summary><p>漓江保留固定帧率的航拍导出入口，但当前 M8 完整影片尚未重新验收。若要制作正式影片，先做一次完整导出与播放核验。60 帧/秒是离线视频规格，和实时驾驶速度不同。</p></details>
+      </div>
+    </section>
+    <section class="understanding-section wrap" id="understanding" aria-labelledby="understanding-title">
+      <div class="section-heading"><div><p class="eyebrow">LESSONS / METHODS / CURRENT VALUE</p><h2 id="understanding-title">理解、技术选择与项目价值。</h2></div><p class="section-aside">研究与演示复盘<br>2026.10.26 · 当前共识</p></div>
+      <p class="section-lead">本项目主要积累了创作思路、可运行样例与部分工程能力。若以独特技术、稳定自动生产或直接产品化衡量，当前增量有限。已有成果可以使用，后续投入需要用具体用途和实际优势来证明。</p>
+      <div class="understanding-value">
+        <article><span class="small-label">已经留下的</span><h3>思路、样例与工程积累。</h3><p>原作参考、三个实践场景，以及播放驾驶、航线、画质档位、按需启动、离屏暂停和资源释放的代码与验收经验。这些能力可复用，替代性也较强。</p></article>
+        <article><span class="small-label">尚未形成的</span><h3>稳定的自动制作系统。</h3><p>尚未实现“任意参考图 → 快速生成高质量互动世界”的完整管线，也未证明比成熟工具更省时、画质更好或更易维护。自动参考拟合与商业需求均未验证。</p></article>
+        <article><span class="small-label">当前如何看待</span><h3>作为研究与演示收口。</h3><p>功能跑通、投入时间和测试数量，各自只能说明对应事实。新的研发应围绕明确用途，证明省时、质量改善或实际体验增量后，再决定是否继续。</p></article>
+      </div>
+
+      <div class="understanding-context"><h3>参考图给出目标，制作过程还需要约束。</h3><p>画面里的山、水、树只是元素；尺度、疏密、遮挡、光向、远近层次和观看位置共同决定质感。单张图只需当前视角成立，实时场景还要经得起转头、移动、倒影和连续运动。</p><p>最初的漓江指导把地形简化为大量独立孤峰，后来才补共同山脚、鞍部与低脊；增加树叶细节无法代替这些结构修正。前期还出现过将功能通过扩大为画质达标、将同场景两种模式算成两件作品的判断错误。复盘的重点，是把范围、视觉、操作和性能分别说清、分别验证。</p></div>
+
+      <div class="understanding-routes" aria-labelledby="routes-title"><h3 id="routes-title">先选择怎样制作，再决定怎样让 AI 参与。</h3><p>“让 AI 参考图片写代码”只是其中一种做法。参考图、生成工具和网页渲染器承担不同任务，换框架或加长提示词，不能单独保证画质。</p><table><caption>四类制作路线的用途与边界</caption><thead><tr><th scope="col">技术路线</th><th scope="col">主要做法与适合范围</th><th scope="col">需要接受的边界</th></tr></thead><tbody>
+        <tr><th scope="row">图片分层与深度视差<br><small>2.5D</small></th><td>用深度、前后层和遮挡补全保留图片外观，适合固定视角或小范围移动。</td><td>大幅转头、绕到背面或接近景物时，容易暴露缺失区域；不等于完整自由漫游。</td></tr>
+        <tr><th scope="row">成熟资产搭建真实三维</th><td>用模型、材质、布景与光照制作场景，接入网页交互。运河老街已有这类制作经验。</td><td>需要选材、整理尺度和材质、处理光照与性能；现成素材仍需组合和验收。</td></tr>
+        <tr><th scope="row">专用三维／世界生成</th><td>用训练好的模型生成物体或环境，再导出、修整并接入。可减少从零制作形状与材质的工作。</td><td>生成结果有差异；背面、可编辑性和网页性能需检查，动态水面及玩法需另外接入。</td></tr>
+        <tr><th scope="row">全程序化生成</th><td>通过算法控制地貌、植被、材质与变化。当前漓江主要采用这条路线。</td><td>复杂写实效果需要较多规则与调校；纯代码和无外部素材是制作约束，不自动带来产品优势。</td></tr>
+      </tbody></table></div>
+
+      <div class="controlled-pipeline" id="controlled-process"><div class="understanding-subhead"><h3>确认约束 → 固定模板 → 有界求解 → 独立验证。</h3><span>建议沉淀的能力 · 尚未完整实现</span></div><p>我们已有部分固定规则、参数和验收机制，尚未整合成下面这套自动系统。可先让少量关键参数受控，再逐步增加自动化。</p><ol>
+        <li><span>01</span><div><h4>提取并确认参考约束</h4><p>记录山体轮廓、水面边界、主体位置、相机和远近关系。分割与深度估计可以辅助提取；估计值需要核对，单张图无法唯一确定被遮挡的空间。</p></div></li>
+        <li><span>02</span><div><h4>固定模板与有限参数</h4><p>固定场景模板、素材版本、随机种子和成熟渲染模块，只开放山形、布局、相机、光雾等少量参数。通过的部分冻结，重复生成与局部迭代才有稳定基础。</p></div></li>
+        <li><span>03</span><div><h4>自动渲染、比较与求解</h4><p>在同机位比较轮廓、主体位置、色彩与层次，在明确边界内搜索参数。反向渲染是更深入的技术参考；搜索仍有计算成本，评分也不能代替审美判断。</p></div></li>
+        <li><span>04</span><div><h4>多视角与连续使用验收</h4><p>检查近、中、远机位和一段真实路线，同时测操作、碰撞、等待与帧率。避免只拟合一张图；达到约定展示用途后收口，以实际反馈决定后续修改。</p></div></li>
+      </ol><p class="pipeline-artifacts">能带到新对话继续使用的沉淀，应包括：<strong>场景模板、参数文件、参考约束、自动对照脚本</strong>。说明文档用于指导，不能代替这些可运行能力。</p></div>
+
+      <div class="generator-section"><h3>现成的 3D 生成能力，可以成为生产环节。</h3><p>专用生成模型把大量三维形状和外观经验学进模型，生成时推断三维资产；这与让编程模型逐次写造型代码不同。它们的优势是较快得到形状与材质初版，并能继续加工，但生成一个模型或环境后，仍需把它组织成可操作体验。</p><div class="generation-layers">
+        <article><span class="small-label">生成层</span><h4>制作模型或环境</h4><p>Hunyuan3D、TRELLIS.2 可生成三维资产及材质；Marble 面向环境生成，并提供多图、粗三维布局等控制方式。单个物体生成和整片世界生成应分别评估。</p></article>
+        <article><span class="small-label">制作与整合层</span><h4>布景、修整与适配</h4><p>编程 AI 与制作工具处理尺度、布局、材质、光照、格式和性能，结合实际参考约束验证。生成器可被替换，经过验证的流程与配置继续复用。</p></article>
+        <article><span class="small-label">体验层</span><h4>成为可使用的网页</h4><p>接入水面、航线、驾驶、事件、页面生命周期与交互控件。项目后续的实际价值，要由具体体验及相对现成方案的优势证明。</p></article>
+      </div></div>
+
+      <div class="understanding-notes">
+        <details id="understanding-sources"><summary>技术依据与进一步阅读</summary><div><p>以下链接解释各自技术能力，未在本项目完成整套接入或效果对比；工具能力与导出条件以其当前说明为准。</p><ul><li><a href="https://github.com/DepthAnything/Depth-Anything-V2" target="_blank" rel="noopener">Depth Anything V2</a>：从图像估计相对深度，作为空间层次的辅助约束。</li><li><a href="https://mitsuba.readthedocs.io/en/latest/src/inverse_rendering_tutorials.html" target="_blank" rel="noopener">Mitsuba 3 反向渲染</a>：从图像估计材质、几何、光照等属性的方法与教程。</li><li><a href="https://github.com/Tencent-Hunyuan/Hunyuan3D-2.1" target="_blank" rel="noopener">Hunyuan3D 2.1</a>、<a href="https://github.com/microsoft/TRELLIS.2" target="_blank" rel="noopener">TRELLIS.2</a>：图生三维资产与材质的专用生成能力。</li><li><a href="https://www.worldlabs.ai/blog/marble-world-model" target="_blank" rel="noopener">Marble 与 Chisel 布局控制</a>：环境生成、编辑与导出；先给粗三维布局再生成细节，是一种结构约束方式。</li><li><a href="https://shihmengli.github.io/3D-Photo-Inpainting/" target="_blank" rel="noopener">3D Photo Inpainting</a>：利用分层深度与补全产生图像视差，支持理解 2.5D 的能力边界。</li></ul></div></details>
+        <details id="understanding-task"><summary>新对话任务单：先说路线和约束</summary><div><p>附参考图，并说明本次做图片、影片还是实时场景。若延续本项目，先读取项目 README、当前状态和方向说明。已有模板可直接调用；缺失的模块应明确列为待制作。</p><pre>目标：一段可在网页操作的乘船小样。
+范围：一处场景、一段固定路线，支持启程、暂停和转头。
+路线：明确选择素材搭景、专用生成工具或程序化；素材规则单独写清。
+约束：固定参考构图、相机、素材版本、随机种子和已验证模块。
+迭代：只开放少量关键参数，提供同机位实际截图与差距说明。
+验收：分别检查画面、操作、连续运动、加载与帧率。
+收口：达到约定用途后结束，其余能力列为可选后续。</pre><p>这张任务单帮助组织工作，不能替代算法、工具和可运行模板，也不保证一次生成成功。</p></div></details>
+        <details id="understanding-investment"><summary>继续投入的条件：先证明具体价值</summary><div><p>下一次投入需要一个明确用途，并至少验证一种增量：比直接用成熟工具更省时间；同等成本下效果更好或更稳定；提供用户愿意停留、重访或实际使用的额外体验。商业需求、付费方式和相对优势仍需独立验证。</p><p>当前作为研究与演示子项目保留。三种水上产品方向继续作为候选，未因这份复盘自动进入研发或排期。</p></div></details>
+      </div>
+      <p class="understanding-record"><a href="https://github.com/yydshly/1020_codex_project/blob/main/projects/014-programmable-worlds/notes/understanding-and-value-20261026.md">完整理解与价值复盘 ↗</a><a href="#future-products">回看三种后续产品方向 ↑</a><a href="#status">查看当前成果与限制 ↑</a></p>
+    </section>
+
+    <section class="project-map-entry wrap" id="project-map" aria-labelledby="project-map-title"><div><p class="eyebrow">ONE MAP / THE WHOLE EXPLORATION</p><h2 id="project-map-title">一张图，串起效果、原理与下一次制作。</h2><p>原作与三处实践的实际画面、三张后期参考、六类扩展、技术路线、控制方法、下次任务单，以及当前价值和使用边界，汇总为八个部分。已实现成果、静态参考与建议方案分别标注。</p><span>1800 × 7280 · 7 张效果与参考图 · 支持缩放与章节定位</span></div><div class="project-map-actions"><a class="solid-button" href="map.html?revision=20261026-release-1">放大阅读完整总览图 ↗</a><a href="https://raw.githubusercontent.com/yydshly/1020_codex_project/main/projects/014-programmable-worlds/assets/programmable-worlds-map-20261026.png" download>下载完整 PNG ↓</a><a href="https://raw.githubusercontent.com/yydshly/1020_codex_project/main/projects/014-programmable-worlds/assets/programmable-worlds-map-20261026.svg" download>下载可缩放 SVG ↓</a></div></section>
+    <section class="guide-section wrap" id="guide"><div><p class="eyebrow">THE RESEARCH ARCHIVE</p><h2>保留来时的思路，也留好资料入口。</h2><p>历史引导图记录原库、六类扩展与两个运河空间的研究过程，资料截至 2026.10.25。新增漓江与当前状态，以本页和成果汇总为准。</p></div><div class="guide-actions"><a class="solid-button" href="guide.html">打开历史研究引导图 ↗</a><a href="https://raw.githubusercontent.com/yydshly/1020_codex_project/main/projects/014-programmable-worlds/assets/programmable-worlds-guide.svg" download>下载历史引导图 SVG ↓</a></div></section>
+    <section class="related wrap"><h2>同一创作路线的其他作品</h2><p>以下为作者的独立项目，用于拓宽参考，不作为本次演示的代码来源。</p><div><a href="https://github.com/Leonxlnx/shanshui" target="_blank" rel="noopener">水墨山水 <span>十幅代码山水与一分钟影片 ↗</span></a><a href="https://github.com/Leonxlnx/paper-fox" target="_blank" rel="noopener">剪纸狐狸 <span>用代码绘制与动画叙事 ↗</span></a><a href="https://github.com/Leonxlnx/golden-temple" target="_blank" rel="noopener">金色寺院 <span>程序建筑与离线摄影 ↗</span></a></div></section>
+  </main>
+  <footer class="wrap"><span>014 · 可编程世界 / 整理于 2026-10-26</span><p>原库代码与效果图：Leon Lin，MIT。<a href="upstream/LICENSE">查看上游许可</a>。运河老街与船坞车站分别制作，漓江为纯代码山水实践。当前成果与使用范围见上方说明。<a href="canal-real/credits.html">场景、素材与许可说明</a>。</p><a href="#top">回到顶部 ↑</a></footer>
+</body>
+</html>

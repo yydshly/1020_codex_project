@@ -1,0 +1,2230 @@
+{
+  "runId": "2026-10-24T08-42-44-256Z",
+  "scene": "source-live",
+  "backend": "d3d11",
+  "engineBackend": "gl",
+  "status": "passed",
+  "mode": "hidden-ordinary-browser-client",
+  "startedAt": "2026-10-24T08:42:44.256Z",
+  "tests": [
+    {
+      "name": "ordinary-d3d11-client-and-separate-gl-engine",
+      "passed": true,
+      "evidence": {
+        "client": "d3d11",
+        "bridge": {
+          "service": "napali-source-bridge",
+          "version": 1,
+          "backend": "gl",
+          "pid": 38872,
+          "sessionActive": true,
+          "offscreen": true,
+          "offscreenFrameRate": 30
+        }
+      }
+    },
+    {
+      "name": "original-renderer-live-track-decoded-in-ordinary-page",
+      "passed": true,
+      "evidence": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/source-live.html?qa=1&rs=1&t=0&qaRun=1792831363731",
+        "state": {
+          "time": 2.212899999976159,
+          "duration": 132,
+          "paused": false,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 22,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 389.5,
+          "averageFrameMs": 454.32727273485875,
+          "renderSampleMs": 359.7000000476837,
+          "hudMs": 0,
+          "presentMs": 29.59999990463257,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 3,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 3,
+            "receivedAt": 55442.90000009537,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              -470,
+              4,
+              240
+            ],
+            "yaw": 0,
+            "pitch": 0
+          }
+        },
+        "api": true,
+        "host": null,
+        "documentCanvases": 0,
+        "qualitySelect": {
+          "value": "1",
+          "options": [
+            "1",
+            "0.75",
+            "0.5"
+          ]
+        },
+        "media": {
+          "width": 1440,
+          "height": 902,
+          "readyState": 4,
+          "paused": false,
+          "mediaStream": true,
+          "tracks": [
+            {
+              "kind": "video",
+              "readyState": "live",
+              "enabled": true
+            }
+          ],
+          "decodedFrames": 6
+        }
+      }
+    },
+    {
+      "name": "source-time-and-received-video-pixels-advance",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "time": 3.31289999997616,
+          "duration": 132,
+          "paused": false,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 33,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 350.2999999523163,
+          "averageFrameMs": 419.89696970130456,
+          "renderSampleMs": 342.8000000715256,
+          "hudMs": 0,
+          "presentMs": 7.399999976158142,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 7,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 7,
+            "receivedAt": 58550.200000047684,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              -470,
+              4,
+              240
+            ],
+            "yaw": 0,
+            "pitch": 0
+          }
+        },
+        "after": {
+          "time": 5.412899999976156,
+          "duration": 132,
+          "paused": false,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 54,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 367.60000002384186,
+          "averageFrameMs": 394.5296296344863,
+          "renderSampleMs": 359.59999990463257,
+          "hudMs": 0,
+          "presentMs": 7.900000095367432,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 16,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 16,
+            "receivedAt": 67601.30000007153,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              -470,
+              4,
+              240
+            ],
+            "yaw": 0,
+            "pitch": 0
+          }
+        },
+        "meanAbsoluteDifference": 23.559244791666668,
+        "observedSeconds": 8.342,
+        "sourceCompletedFramesPerSecond": 2.5173819228002876,
+        "presentedVideoCallbacksPerSecond": 1.078877966914409,
+        "decodedFramesPerSecond": 2.6372572524574442
+      }
+    },
+    {
+      "name": "in-page-pause-holds-original-source-time",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "time": 6.412899999976152,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 66,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 358.7000000476837,
+          "averageFrameMs": 389.5909090945215,
+          "renderSampleMs": 351.7000000476837,
+          "hudMs": 0,
+          "presentMs": 6.799999952316284,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 21,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 21,
+            "receivedAt": 71934.60000002384,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              -470,
+              4,
+              240
+            ],
+            "yaw": 0,
+            "pitch": 0
+          }
+        },
+        "after": {
+          "time": 6.412899999976152,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 78,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 365.59999990463257,
+          "averageFrameMs": 384.800000002751,
+          "renderSampleMs": 363.7000000476837,
+          "hudMs": 0,
+          "presentMs": 1.7999999523162842,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 27,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 27,
+            "receivedAt": 76193,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              -470,
+              4,
+              240
+            ],
+            "yaw": 0,
+            "pitch": 0
+          }
+        },
+        "meanAbsoluteDifference": 0.8994140625
+      }
+    },
+    {
+      "name": "in-page-seek-35-drives-original-pixels",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "time": 6.412899999976152,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 88,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 350.6999999284744,
+          "averageFrameMs": 382.3079545470801,
+          "renderSampleMs": 345.2000000476837,
+          "hudMs": 0.10000002384185791,
+          "presentMs": 5.299999952316284,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 32,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 32,
+            "receivedAt": 79259.90000009537,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              -470,
+              4,
+              240
+            ],
+            "yaw": 0,
+            "pitch": 0
+          }
+        },
+        "after": {
+          "time": 35,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 92,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 624,
+          "averageFrameMs": 386.85652173990786,
+          "renderSampleMs": 620.1000000238419,
+          "hudMs": 0,
+          "presentMs": 3.600000023841858,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 35,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 35,
+            "receivedAt": 82267.90000009537,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              -470,
+              4,
+              240
+            ],
+            "yaw": 0,
+            "pitch": 0
+          }
+        },
+        "meanAbsoluteDifference": 58.772786458333336
+      }
+    },
+    {
+      "name": "in-page-seek-75-drives-original-pixels",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "time": 35,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 97,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 609.5,
+          "averageFrameMs": 398.3443298966614,
+          "renderSampleMs": 603.7999999523163,
+          "hudMs": 0,
+          "presentMs": 5.5,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 39,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 39,
+            "receivedAt": 85351.40000009537,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              -470,
+              4,
+              240
+            ],
+            "yaw": 0,
+            "pitch": 0
+          }
+        },
+        "after": {
+          "time": 75,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 103,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 902,
+          "averageFrameMs": 419.3077669895968,
+          "renderSampleMs": 898.3999999761581,
+          "hudMs": 0,
+          "presentMs": 3.600000023841858,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 42,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 42,
+            "receivedAt": 89972,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              -470,
+              4,
+              240
+            ],
+            "yaw": 0,
+            "pitch": 0
+          }
+        },
+        "meanAbsoluteDifference": 64.63530815972223
+      }
+    },
+    {
+      "name": "in-page-seek-128-drives-original-pixels",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "time": 75,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 106,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 934,
+          "averageFrameMs": 433.5349056608272,
+          "renderSampleMs": 929.2000000476837,
+          "hudMs": 0,
+          "presentMs": 4.699999928474426,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 45,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 45,
+            "receivedAt": 92459.60000002384,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              -470,
+              4,
+              240
+            ],
+            "yaw": 0,
+            "pitch": 0
+          }
+        },
+        "after": {
+          "time": 128,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 113,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 413.39999997615814,
+          "averageFrameMs": 441.2938053091016,
+          "renderSampleMs": 411.8000000715256,
+          "hudMs": 0,
+          "presentMs": 1.399999976158142,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 48,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 48,
+            "receivedAt": 96405.5,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              -470,
+              4,
+              240
+            ],
+            "yaw": 0,
+            "pitch": 0
+          }
+        },
+        "meanAbsoluteDifference": 66.76486545138889
+      }
+    },
+    {
+      "name": "page-drives-real-original-camera",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "time": 128,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 123,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 287.2999999523163,
+          "averageFrameMs": 438.278861787261,
+          "renderSampleMs": 276.8000000715256,
+          "hudMs": 0,
+          "presentMs": 10.099999904632568,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 54,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 54,
+            "receivedAt": 100727.5,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "free",
+            "position": [
+              0,
+              1000,
+              0
+            ],
+            "yaw": 0,
+            "pitch": 0.8726646259971649
+          }
+        },
+        "after": {
+          "time": 128,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 134,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 290.1999999284744,
+          "averageFrameMs": 426.4208955213205,
+          "renderSampleMs": 284.1999999284744,
+          "hudMs": 0,
+          "presentMs": 6,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 57,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 57,
+            "receivedAt": 103734.5,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "free",
+            "position": [
+              10,
+              1012,
+              25
+            ],
+            "yaw": 0.08,
+            "pitch": 0.8926646259971649
+          }
+        },
+        "meanAbsoluteDifference": 44.396701388888886
+      }
+    },
+    {
+      "name": "source-quality-0.5-changes-real-internal-framebuffer",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "time": 128,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 143,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 296.5,
+          "averageFrameMs": 417.9363636361969,
+          "renderSampleMs": 288.5,
+          "hudMs": 0,
+          "presentMs": 7.799999952316284,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 62,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 62,
+            "receivedAt": 106555.5,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "free",
+            "position": [
+              10,
+              1012,
+              25
+            ],
+            "yaw": 0.08,
+            "pitch": 0.8926646259971649
+          }
+        },
+        "after": {
+          "time": 128,
+          "duration": 132,
+          "paused": true,
+          "scale": 0.5,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 176,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 71.10000002384186,
+          "averageFrameMs": 353.8505681847984,
+          "renderSampleMs": 65.10000002384186,
+          "hudMs": 0,
+          "presentMs": 5.899999976158142,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 65,
+          "phase": "ready",
+          "renderSize": {
+            "width": 720,
+            "height": 451
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 65,
+            "receivedAt": 109559.70000004768,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "free",
+            "position": [
+              10,
+              1012,
+              25
+            ],
+            "yaw": 0.08,
+            "pitch": 0.8926646259971649
+          }
+        },
+        "receivedWidth": 1440,
+        "receivedHeight": 902,
+        "note": "Original quality controls change the internal render framebuffer, then present into a fixed-size canvas/video track."
+      }
+    },
+    {
+      "name": "source-quality-1-changes-real-internal-framebuffer",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "time": 128,
+          "duration": 132,
+          "paused": true,
+          "scale": 0.5,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 205,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 65.70000004768372,
+          "averageFrameMs": 313.49804878234863,
+          "renderSampleMs": 62.199999928474426,
+          "hudMs": 0,
+          "presentMs": 3.4000000953674316,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 70,
+          "phase": "ready",
+          "renderSize": {
+            "width": 720,
+            "height": 451
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 70,
+            "receivedAt": 112118,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "free",
+            "position": [
+              10,
+              1012,
+              25
+            ],
+            "yaw": 0.08,
+            "pitch": 0.8926646259971649
+          }
+        },
+        "after": {
+          "time": 128,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 219,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 295.2999999523163,
+          "averageFrameMs": 304.1885844757568,
+          "renderSampleMs": 289.10000002384186,
+          "hudMs": 0,
+          "presentMs": 6.100000023841858,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 73,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 73,
+            "receivedAt": 115122.20000004768,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "free",
+            "position": [
+              10,
+              1012,
+              25
+            ],
+            "yaw": 0.08,
+            "pitch": 0.8926646259971649
+          }
+        },
+        "receivedWidth": 1440,
+        "receivedHeight": 902,
+        "note": "Original quality controls change the internal render framebuffer, then present into a fixed-size canvas/video track."
+      }
+    },
+    {
+      "name": "page-restart-restores-original-flight",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "time": 128,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 231,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 292.8000000715256,
+          "averageFrameMs": 303.65974026066914,
+          "renderSampleMs": 283.1999999284744,
+          "hudMs": 0,
+          "presentMs": 9.400000095367432,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 78,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 78,
+            "receivedAt": 118247.90000009537,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "free",
+            "position": [
+              10,
+              1012,
+              25
+            ],
+            "yaw": 0.08,
+            "pitch": 0.8926646259971649
+          }
+        },
+        "after": {
+          "time": 0.6133999999523221,
+          "duration": 132,
+          "paused": false,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 238,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 350.5,
+          "averageFrameMs": 304.9050420182092,
+          "renderSampleMs": 345.10000002384186,
+          "hudMs": 0,
+          "presentMs": 5.199999928474426,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 81,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 81,
+            "receivedAt": 121251.30000007153,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              10,
+              1012,
+              25
+            ],
+            "yaw": 0.08,
+            "pitch": 0.8926646259971649
+          }
+        }
+      }
+    },
+    {
+      "name": "page-stop-retires-original-renderer",
+      "passed": true,
+      "evidence": {
+        "bridge": {
+          "service": "napali-source-bridge",
+          "version": 1,
+          "backend": "gl",
+          "pid": 38872,
+          "sessionActive": false,
+          "offscreen": true,
+          "offscreenFrameRate": 30
+        },
+        "stoppedState": {
+          "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/source-live.html?qa=1&rs=1&t=0&qaRun=1792831363731",
+          "state": {
+            "time": 1.3133999999523223,
+            "duration": 132,
+            "paused": false,
+            "scale": 1,
+            "suspended": false,
+            "rendering": true,
+            "ready": false,
+            "frames": 245,
+            "autoQuality": false,
+            "error": null,
+            "lastFrameMs": 350.60000002384186,
+            "averageFrameMs": 306.2506122467469,
+            "renderSampleMs": 345,
+            "hudMs": 0,
+            "presentMs": 5.600000023841858,
+            "sourceReady": false,
+            "connected": false,
+            "presentedFrames": 0,
+            "phase": "stopped",
+            "renderSize": {
+              "width": 1440,
+              "height": 902
+            },
+            "live": true,
+            "video": {
+              "width": 0,
+              "height": 0,
+              "decodedFrames": 0,
+              "receivedAt": 123980.40000009537,
+              "connection": "new"
+            },
+            "drive": {
+              "mode": "flight",
+              "position": [
+                10,
+                1012,
+                25
+              ],
+              "yaw": 0.08,
+              "pitch": 0.8926646259971649
+            }
+          },
+          "api": true,
+          "host": null,
+          "documentCanvases": 0,
+          "qualitySelect": {
+            "value": "1",
+            "options": [
+              "1",
+              "0.75",
+              "0.5"
+            ]
+          },
+          "media": {
+            "width": 0,
+            "height": 0,
+            "readyState": 0,
+            "paused": true,
+            "mediaStream": false,
+            "decodedFrames": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "inline-visibility-during-generation-does-not-submit-premature-controls",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1#source",
+          "state": {
+            "ready": false,
+            "sourceReady": false,
+            "connected": false,
+            "presentedFrames": 0,
+            "phase": "opening-source",
+            "error": null,
+            "frames": 0,
+            "time": 0,
+            "duration": 132,
+            "scale": 1,
+            "renderSize": null,
+            "paused": false,
+            "suspended": false,
+            "autoQuality": false,
+            "live": true,
+            "video": {
+              "width": 0,
+              "height": 0,
+              "decodedFrames": 0,
+              "receivedAt": null,
+              "connection": "new"
+            },
+            "drive": null
+          },
+          "api": true,
+          "host": null,
+          "documentCanvases": 0,
+          "qualitySelect": {
+            "value": "1",
+            "options": [
+              "1",
+              "0.75",
+              "0.5"
+            ]
+          },
+          "media": {
+            "width": 0,
+            "height": 0,
+            "readyState": 0,
+            "paused": true,
+            "mediaStream": false,
+            "decodedFrames": 0
+          }
+        },
+        "held": {
+          "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1#source",
+          "state": {
+            "ready": false,
+            "sourceReady": false,
+            "connected": false,
+            "presentedFrames": 0,
+            "phase": "compile-start",
+            "error": null,
+            "frames": 0,
+            "time": 0,
+            "duration": 132,
+            "scale": 1,
+            "renderSize": null,
+            "paused": false,
+            "suspended": false,
+            "autoQuality": false,
+            "live": true,
+            "video": {
+              "width": 0,
+              "height": 0,
+              "decodedFrames": 0,
+              "receivedAt": null,
+              "connection": "new"
+            },
+            "drive": {
+              "mode": "flight",
+              "position": [
+                -470,
+                4,
+                240
+              ],
+              "yaw": 0,
+              "pitch": 0
+            }
+          },
+          "api": true,
+          "host": null,
+          "documentCanvases": 0,
+          "qualitySelect": {
+            "value": "1",
+            "options": [
+              "1",
+              "0.75",
+              "0.5"
+            ]
+          },
+          "media": {
+            "width": 0,
+            "height": 0,
+            "readyState": 0,
+            "paused": true,
+            "mediaStream": false,
+            "decodedFrames": 0
+          }
+        }
+      }
+    },
+    {
+      "name": "ordinary-homepage-source-panel-contains-live-original-track",
+      "passed": true,
+      "evidence": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1#source",
+        "state": {
+          "time": 1.5061999999761586,
+          "duration": 132,
+          "paused": false,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 15,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 351.2999999523163,
+          "averageFrameMs": 1061.5333333412807,
+          "renderSampleMs": 348,
+          "hudMs": 0,
+          "presentMs": 3.1999999284744263,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 3,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 3,
+            "receivedAt": 22049.299999952316,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              -470,
+              4,
+              240
+            ],
+            "yaw": 0,
+            "pitch": 0
+          }
+        },
+        "api": true,
+        "host": null,
+        "documentCanvases": 0,
+        "qualitySelect": {
+          "value": "1",
+          "options": [
+            "1",
+            "0.75",
+            "0.5"
+          ]
+        },
+        "media": {
+          "width": 1440,
+          "height": 902,
+          "readyState": 4,
+          "paused": false,
+          "mediaStream": true,
+          "tracks": [
+            {
+              "kind": "video",
+              "readyState": "live",
+              "enabled": true
+            }
+          ],
+          "decodedFrames": 6
+        }
+      }
+    },
+    {
+      "name": "homepage-awaits-source-stop-before-next-preview",
+      "passed": true,
+      "evidence": {
+        "retired": {
+          "source": "about:blank",
+          "sourceHref": "about:blank",
+          "sourceAPI": false,
+          "next": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?embed=1&qa=1",
+          "nextActive": "true"
+        },
+        "bridge": {
+          "service": "napali-source-bridge",
+          "version": 1,
+          "backend": "gl",
+          "pid": 38872,
+          "sessionActive": false,
+          "offscreen": true,
+          "offscreenFrameRate": 30
+        },
+        "nextSceneScope": "Navigation has started; this test does not establish the next artwork GPU/quality acceptance."
+      }
+    }
+  ],
+  "captures": [
+    {
+      "name": "01-source-live-start",
+      "video": "assets/source-live-qa/2026-10-24T08-42-44-256Z/01-source-live-start-decoded-video.png",
+      "page": "assets/source-live-qa/2026-10-24T08-42-44-256Z/01-source-live-start-page.png",
+      "sha256": "335dee2f93cc768718e86fe16d7a3973f95af65db7b271ebd3715b71ce747246",
+      "width": 1440,
+      "height": 902,
+      "meanLuminance": 140.18827187500023,
+      "luminanceStdDev": 49.80021432033709,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/source-live.html?qa=1&rs=1&t=0&qaRun=1792831363731",
+        "state": {
+          "time": 3.31289999997616,
+          "duration": 132,
+          "paused": false,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 33,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 350.2999999523163,
+          "averageFrameMs": 419.89696970130456,
+          "renderSampleMs": 342.8000000715256,
+          "hudMs": 0,
+          "presentMs": 7.399999976158142,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 7,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 7,
+            "receivedAt": 58550.200000047684,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              -470,
+              4,
+              240
+            ],
+            "yaw": 0,
+            "pitch": 0
+          }
+        },
+        "api": true,
+        "host": null,
+        "documentCanvases": 0,
+        "qualitySelect": {
+          "value": "1",
+          "options": [
+            "1",
+            "0.75",
+            "0.5"
+          ]
+        },
+        "media": {
+          "width": 1440,
+          "height": 902,
+          "readyState": 4,
+          "paused": false,
+          "mediaStream": true,
+          "tracks": [
+            {
+              "kind": "video",
+              "readyState": "live",
+              "enabled": true
+            }
+          ],
+          "decodedFrames": 16
+        }
+      }
+    },
+    {
+      "name": "02-source-live-motion",
+      "video": "assets/source-live-qa/2026-10-24T08-42-44-256Z/02-source-live-motion-decoded-video.png",
+      "page": "assets/source-live-qa/2026-10-24T08-42-44-256Z/02-source-live-motion-page.png",
+      "sha256": "3b03534675b2a01d781dfe48e10c02c08b3346dbe0d246ad123c913acfc3501b",
+      "width": 1440,
+      "height": 902,
+      "meanLuminance": 134.1082690104165,
+      "luminanceStdDev": 53.03558164825891,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/source-live.html?qa=1&rs=1&t=0&qaRun=1792831363731",
+        "state": {
+          "time": 6.312899999976152,
+          "duration": 132,
+          "paused": false,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 63,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 390.2999999523163,
+          "averageFrameMs": 390.8428571451278,
+          "renderSampleMs": 379,
+          "hudMs": 0,
+          "presentMs": 11.100000023841858,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 20,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 20,
+            "receivedAt": 70577.10000002384,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              -470,
+              4,
+              240
+            ],
+            "yaw": 0,
+            "pitch": 0
+          }
+        },
+        "api": true,
+        "host": null,
+        "documentCanvases": 0,
+        "qualitySelect": {
+          "value": "1",
+          "options": [
+            "1",
+            "0.75",
+            "0.5"
+          ]
+        },
+        "media": {
+          "width": 1440,
+          "height": 902,
+          "readyState": 4,
+          "paused": false,
+          "mediaStream": true,
+          "tracks": [
+            {
+              "kind": "video",
+              "readyState": "live",
+              "enabled": true
+            }
+          ],
+          "decodedFrames": 46
+        }
+      }
+    },
+    {
+      "name": "03-paused-a",
+      "video": "assets/source-live-qa/2026-10-24T08-42-44-256Z/03-paused-a-decoded-video.png",
+      "page": "assets/source-live-qa/2026-10-24T08-42-44-256Z/03-paused-a-page.png",
+      "sha256": "8800498fc74ba70082a2cfb87dc6294f35576f8e365eb5f61e74dd3fd4f4fcd2",
+      "width": 1440,
+      "height": 902,
+      "meanLuminance": 131.53329290364584,
+      "luminanceStdDev": 54.99985108012479,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/source-live.html?qa=1&rs=1&t=0&qaRun=1792831363731",
+        "state": {
+          "time": 6.412899999976152,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 75,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 359.1999999284744,
+          "averageFrameMs": 385.8426666688919,
+          "renderSampleMs": 354.39999997615814,
+          "hudMs": 0,
+          "presentMs": 4.699999928474426,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 26,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 26,
+            "receivedAt": 75188.90000009537,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              -470,
+              4,
+              240
+            ],
+            "yaw": 0,
+            "pitch": 0
+          }
+        },
+        "api": true,
+        "host": null,
+        "documentCanvases": 0,
+        "qualitySelect": {
+          "value": "1",
+          "options": [
+            "1",
+            "0.75",
+            "0.5"
+          ]
+        },
+        "media": {
+          "width": 1440,
+          "height": 902,
+          "readyState": 4,
+          "paused": false,
+          "mediaStream": true,
+          "tracks": [
+            {
+              "kind": "video",
+              "readyState": "live",
+              "enabled": true
+            }
+          ],
+          "decodedFrames": 59
+        }
+      }
+    },
+    {
+      "name": "03-paused-b",
+      "video": "assets/source-live-qa/2026-10-24T08-42-44-256Z/03-paused-b-decoded-video.png",
+      "page": "assets/source-live-qa/2026-10-24T08-42-44-256Z/03-paused-b-page.png",
+      "sha256": "e9e750c80d6d443baa0fac469de63ef34d8dae10dadbdabce52cd5879c971e44",
+      "width": 1440,
+      "height": 902,
+      "meanLuminance": 131.43966901041628,
+      "luminanceStdDev": 54.99699087127745,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/source-live.html?qa=1&rs=1&t=0&qaRun=1792831363731",
+        "state": {
+          "time": 6.412899999976152,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": false,
+          "ready": true,
+          "frames": 88,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 350.6999999284744,
+          "averageFrameMs": 382.3079545470801,
+          "renderSampleMs": 345.2000000476837,
+          "hudMs": 0.10000002384185791,
+          "presentMs": 5.299999952316284,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 32,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 32,
+            "receivedAt": 79259.90000009537,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              -470,
+              4,
+              240
+            ],
+            "yaw": 0,
+            "pitch": 0
+          }
+        },
+        "api": true,
+        "host": null,
+        "documentCanvases": 0,
+        "qualitySelect": {
+          "value": "1",
+          "options": [
+            "1",
+            "0.75",
+            "0.5"
+          ]
+        },
+        "media": {
+          "width": 1440,
+          "height": 902,
+          "readyState": 4,
+          "paused": false,
+          "mediaStream": true,
+          "tracks": [
+            {
+              "kind": "video",
+              "readyState": "live",
+              "enabled": true
+            }
+          ],
+          "decodedFrames": 71
+        }
+      }
+    },
+    {
+      "name": "04-headland-35",
+      "video": "assets/source-live-qa/2026-10-24T08-42-44-256Z/04-headland-35-decoded-video.png",
+      "page": "assets/source-live-qa/2026-10-24T08-42-44-256Z/04-headland-35-page.png",
+      "sha256": "4430aef1c7f866382a9d78c33be2e87359bc1176bae3b1e5b5ef1a8fe31df257",
+      "width": 1440,
+      "height": 902,
+      "meanLuminance": 115.645177018229,
+      "luminanceStdDev": 58.22632741402933,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/source-live.html?qa=1&rs=1&t=0&qaRun=1792831363731",
+        "state": {
+          "time": 35,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 97,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 609.5,
+          "averageFrameMs": 398.3443298966614,
+          "renderSampleMs": 603.7999999523163,
+          "hudMs": 0,
+          "presentMs": 5.5,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 39,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 39,
+            "receivedAt": 85351.40000009537,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              -470,
+              4,
+              240
+            ],
+            "yaw": 0,
+            "pitch": 0
+          }
+        },
+        "api": true,
+        "host": null,
+        "documentCanvases": 0,
+        "qualitySelect": {
+          "value": "1",
+          "options": [
+            "1",
+            "0.75",
+            "0.5"
+          ]
+        },
+        "media": {
+          "width": 1440,
+          "height": 902,
+          "readyState": 4,
+          "paused": false,
+          "mediaStream": true,
+          "tracks": [
+            {
+              "kind": "video",
+              "readyState": "live",
+              "enabled": true
+            }
+          ],
+          "decodedFrames": 81
+        }
+      }
+    },
+    {
+      "name": "04-valley-75",
+      "video": "assets/source-live-qa/2026-10-24T08-42-44-256Z/04-valley-75-decoded-video.png",
+      "page": "assets/source-live-qa/2026-10-24T08-42-44-256Z/04-valley-75-page.png",
+      "sha256": "1c2bfa37d11c00a6d59b41aa3a98dc6f5f146e0a4369c8afad5a59fa385ee796",
+      "width": 1440,
+      "height": 902,
+      "meanLuminance": 72.83936979166663,
+      "luminanceStdDev": 48.20108120311843,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/source-live.html?qa=1&rs=1&t=0&qaRun=1792831363731",
+        "state": {
+          "time": 75,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 106,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 934,
+          "averageFrameMs": 433.5349056608272,
+          "renderSampleMs": 929.2000000476837,
+          "hudMs": 0,
+          "presentMs": 4.699999928474426,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 45,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 45,
+            "receivedAt": 92459.60000002384,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              -470,
+              4,
+              240
+            ],
+            "yaw": 0,
+            "pitch": 0
+          }
+        },
+        "api": true,
+        "host": null,
+        "documentCanvases": 0,
+        "qualitySelect": {
+          "value": "1",
+          "options": [
+            "1",
+            "0.75",
+            "0.5"
+          ]
+        },
+        "media": {
+          "width": 1440,
+          "height": 902,
+          "readyState": 4,
+          "paused": false,
+          "mediaStream": true,
+          "tracks": [
+            {
+              "kind": "video",
+              "readyState": "live",
+              "enabled": true
+            }
+          ],
+          "decodedFrames": 90
+        }
+      }
+    },
+    {
+      "name": "04-aerial-128",
+      "video": "assets/source-live-qa/2026-10-24T08-42-44-256Z/04-aerial-128-decoded-video.png",
+      "page": "assets/source-live-qa/2026-10-24T08-42-44-256Z/04-aerial-128-page.png",
+      "sha256": "677c0fdafbfcf8847dea68be77f2bb3344568c2376fa58bf0e96229a63bd7d74",
+      "width": 1440,
+      "height": 902,
+      "meanLuminance": 87.62807571614594,
+      "luminanceStdDev": 51.444584455205074,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/source-live.html?qa=1&rs=1&t=0&qaRun=1792831363731",
+        "state": {
+          "time": 128,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 120,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 422.2999999523163,
+          "averageFrameMs": 439.9199999988079,
+          "renderSampleMs": 416.10000002384186,
+          "hudMs": 0,
+          "presentMs": 6.100000023841858,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 52,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 52,
+            "receivedAt": 99309.60000002384,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              -470,
+              4,
+              240
+            ],
+            "yaw": 0,
+            "pitch": 0
+          }
+        },
+        "api": true,
+        "host": null,
+        "documentCanvases": 0,
+        "qualitySelect": {
+          "value": "1",
+          "options": [
+            "1",
+            "0.75",
+            "0.5"
+          ]
+        },
+        "media": {
+          "width": 1440,
+          "height": 902,
+          "readyState": 4,
+          "paused": false,
+          "mediaStream": true,
+          "tracks": [
+            {
+              "kind": "video",
+              "readyState": "live",
+              "enabled": true
+            }
+          ],
+          "decodedFrames": 104
+        }
+      }
+    },
+    {
+      "name": "05-original-free-driving",
+      "video": "assets/source-live-qa/2026-10-24T08-42-44-256Z/05-original-free-driving-decoded-video.png",
+      "page": "assets/source-live-qa/2026-10-24T08-42-44-256Z/05-original-free-driving-page.png",
+      "sha256": "48409485acf56a808a0ecf693705bdf64c7d36bc8c64b6332117d28fdf82bbfe",
+      "width": 1440,
+      "height": 902,
+      "meanLuminance": 81.29885748697932,
+      "luminanceStdDev": 47.88719090257139,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/source-live.html?qa=1&rs=1&t=0&qaRun=1792831363731",
+        "state": {
+          "time": 128,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 143,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 296.5,
+          "averageFrameMs": 417.9363636361969,
+          "renderSampleMs": 288.5,
+          "hudMs": 0,
+          "presentMs": 7.799999952316284,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 62,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 62,
+            "receivedAt": 106555.5,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "free",
+            "position": [
+              10,
+              1012,
+              25
+            ],
+            "yaw": 0.08,
+            "pitch": 0.8926646259971649
+          }
+        },
+        "api": true,
+        "host": null,
+        "documentCanvases": 0,
+        "qualitySelect": {
+          "value": "1",
+          "options": [
+            "1",
+            "0.75",
+            "0.5"
+          ]
+        },
+        "media": {
+          "width": 1440,
+          "height": 902,
+          "readyState": 4,
+          "paused": false,
+          "mediaStream": true,
+          "tracks": [
+            {
+              "kind": "video",
+              "readyState": "live",
+              "enabled": true
+            }
+          ],
+          "decodedFrames": 126
+        }
+      }
+    },
+    {
+      "name": "06-quality-50",
+      "video": "assets/source-live-qa/2026-10-24T08-42-44-256Z/06-quality-50-decoded-video.png",
+      "page": "assets/source-live-qa/2026-10-24T08-42-44-256Z/06-quality-50-page.png",
+      "sha256": "401fe22dfa7d9da653460db5d8371bb5981f926c231d7d1e1ba88347a93449ff",
+      "width": 1440,
+      "height": 902,
+      "meanLuminance": 84.87183802083338,
+      "luminanceStdDev": 46.93173272541777,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/source-live.html?qa=1&rs=1&t=0&qaRun=1792831363731",
+        "state": {
+          "time": 128,
+          "duration": 132,
+          "paused": true,
+          "scale": 0.5,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 205,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 65.70000004768372,
+          "averageFrameMs": 313.49804878234863,
+          "renderSampleMs": 62.199999928474426,
+          "hudMs": 0,
+          "presentMs": 3.4000000953674316,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 70,
+          "phase": "ready",
+          "renderSize": {
+            "width": 720,
+            "height": 451
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 70,
+            "receivedAt": 112118,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "free",
+            "position": [
+              10,
+              1012,
+              25
+            ],
+            "yaw": 0.08,
+            "pitch": 0.8926646259971649
+          }
+        },
+        "api": true,
+        "host": null,
+        "documentCanvases": 0,
+        "qualitySelect": {
+          "value": "0.5",
+          "options": [
+            "1",
+            "0.75",
+            "0.5"
+          ]
+        },
+        "media": {
+          "width": 1440,
+          "height": 902,
+          "readyState": 4,
+          "paused": false,
+          "mediaStream": true,
+          "tracks": [
+            {
+              "kind": "video",
+              "readyState": "live",
+              "enabled": true
+            }
+          ],
+          "decodedFrames": 194
+        }
+      }
+    },
+    {
+      "name": "07-quality-100",
+      "video": "assets/source-live-qa/2026-10-24T08-42-44-256Z/07-quality-100-decoded-video.png",
+      "page": "assets/source-live-qa/2026-10-24T08-42-44-256Z/07-quality-100-page.png",
+      "sha256": "81f00ece3b1f76de3088a9df041f2d299c521366b398e5a27f0070ccee43b2cc",
+      "width": 1440,
+      "height": 902,
+      "meanLuminance": 81.2918558593751,
+      "luminanceStdDev": 48.0545396570994,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/source-live.html?qa=1&rs=1&t=0&qaRun=1792831363731",
+        "state": {
+          "time": 128,
+          "duration": 132,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 231,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 292.8000000715256,
+          "averageFrameMs": 303.65974026066914,
+          "renderSampleMs": 283.1999999284744,
+          "hudMs": 0,
+          "presentMs": 9.400000095367432,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 78,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 78,
+            "receivedAt": 118247.90000009537,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "free",
+            "position": [
+              10,
+              1012,
+              25
+            ],
+            "yaw": 0.08,
+            "pitch": 0.8926646259971649
+          }
+        },
+        "api": true,
+        "host": null,
+        "documentCanvases": 0,
+        "qualitySelect": {
+          "value": "1",
+          "options": [
+            "1",
+            "0.75",
+            "0.5"
+          ]
+        },
+        "media": {
+          "width": 1440,
+          "height": 902,
+          "readyState": 4,
+          "paused": false,
+          "mediaStream": true,
+          "tracks": [
+            {
+              "kind": "video",
+              "readyState": "live",
+              "enabled": true
+            }
+          ],
+          "decodedFrames": 213
+        }
+      }
+    },
+    {
+      "name": "08-restarted-flight",
+      "video": "assets/source-live-qa/2026-10-24T08-42-44-256Z/08-restarted-flight-decoded-video.png",
+      "page": "assets/source-live-qa/2026-10-24T08-42-44-256Z/08-restarted-flight-page.png",
+      "sha256": "96d864bd09c4f3305f4ad7715a52bf9c3c1f34ba53d3e347bca5996b03f14d03",
+      "width": 1440,
+      "height": 902,
+      "meanLuminance": 140.8674487630204,
+      "luminanceStdDev": 50.46231598179429,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/source-live.html?qa=1&rs=1&t=0&qaRun=1792831363731",
+        "state": {
+          "time": 1.3133999999523223,
+          "duration": 132,
+          "paused": false,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 245,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 350.60000002384186,
+          "averageFrameMs": 306.2506122467469,
+          "renderSampleMs": 345,
+          "hudMs": 0,
+          "presentMs": 5.600000023841858,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 86,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 86,
+            "receivedAt": 123980.40000009537,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              10,
+              1012,
+              25
+            ],
+            "yaw": 0.08,
+            "pitch": 0.8926646259971649
+          }
+        },
+        "api": true,
+        "host": null,
+        "documentCanvases": 0,
+        "qualitySelect": {
+          "value": "1",
+          "options": [
+            "1",
+            "0.75",
+            "0.5"
+          ]
+        },
+        "media": {
+          "width": 1440,
+          "height": 902,
+          "readyState": 4,
+          "paused": false,
+          "mediaStream": true,
+          "tracks": [
+            {
+              "kind": "video",
+              "readyState": "live",
+              "enabled": true
+            }
+          ],
+          "decodedFrames": 228
+        }
+      }
+    },
+    {
+      "name": "09-source-inside-research-page",
+      "video": "assets/source-live-qa/2026-10-24T08-42-44-256Z/09-source-inside-research-page-decoded-video.png",
+      "page": "assets/source-live-qa/2026-10-24T08-42-44-256Z/09-source-inside-research-page-page.png",
+      "sha256": "c0c37ac98a48e48a4cabdab4849857d6c7eb603827fe1dd17e372200f9e16fe0",
+      "width": 1440,
+      "height": 902,
+      "meanLuminance": 137.59744492187488,
+      "luminanceStdDev": 51.836061564111596,
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?qa=1#source",
+        "state": {
+          "time": 2.106199999976159,
+          "duration": 132,
+          "paused": false,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 21,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 340,
+          "averageFrameMs": 856.1285714365188,
+          "renderSampleMs": 336.89999997615814,
+          "hudMs": 0,
+          "presentMs": 3.100000023841858,
+          "sourceReady": true,
+          "connected": true,
+          "presentedFrames": 7,
+          "phase": "ready",
+          "renderSize": {
+            "width": 1440,
+            "height": 902
+          },
+          "live": true,
+          "video": {
+            "width": 1440,
+            "height": 902,
+            "decodedFrames": 7,
+            "receivedAt": 24657.600000023842,
+            "connection": "connected"
+          },
+          "drive": {
+            "mode": "flight",
+            "position": [
+              -470,
+              4,
+              240
+            ],
+            "yaw": 0,
+            "pitch": 0
+          }
+        },
+        "api": true,
+        "host": null,
+        "documentCanvases": 0,
+        "qualitySelect": {
+          "value": "1",
+          "options": [
+            "1",
+            "0.75",
+            "0.5"
+          ]
+        },
+        "media": {
+          "width": 1440,
+          "height": 902,
+          "readyState": 4,
+          "paused": false,
+          "mediaStream": true,
+          "tracks": [
+            {
+              "kind": "video",
+              "readyState": "live",
+              "enabled": true
+            }
+          ],
+          "decodedFrames": 13
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "windowPolicy": {
+    "show": false,
+    "focusable": false,
+    "skipTaskbar": true
+  },
+  "scope": "Actual WebRTC video decoding and original-renderer control. Source shader fidelity is checked separately; no artwork-quality claim.",
+  "finishedAt": "2026-10-24T08:45:13.896Z",
+  "elapsedSeconds": 149.64
+}

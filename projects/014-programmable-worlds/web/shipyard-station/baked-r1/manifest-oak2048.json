@@ -1,0 +1,2931 @@
+{
+  "stage": "baked",
+  "source": {
+    "glb": "D:\\codex\\tmp\\014-shipyard-20261024\\exports\\2026-10-24T16-30-07-943Z\\source-scene.glb",
+    "sha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+    "metadata": "D:\\codex\\tmp\\014-shipyard-20261024\\exports\\2026-10-24T16-30-07-943Z\\source-scene.json",
+    "metadata_sha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352"
+  },
+  "lighting": {
+    "environment": {
+      "path": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+      "intensity": 1.031923772120808,
+      "mappingRotationZDegrees": 20.05352282957881
+    },
+    "sun": {
+      "name": "Station extracted physical sun",
+      "type": "DirectionalLight",
+      "position": [
+        31.300463533718947,
+        59.34078481904475,
+        43.57696914235957
+      ],
+      "quaternion": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "target": [
+        0,
+        0,
+        0
+      ],
+      "colorRGBlinear": [
+        0.991978082879707,
+        1,
+        0.9084521146029024
+      ],
+      "intensity": 4.562767782748515
+    },
+    "area_count": 0,
+    "point_count": 7,
+    "point_conversion": "glTF COMPAT: 4*PI*I",
+    "area_conversion": "PI*area*intensity",
+    "sceneId": "shipyard-station",
+    "thin_glass_shadow_approximation": [
+      "Station/clear-station-glass"
+    ]
+  },
+  "cameras": {
+    "platform": {
+      "position": [
+        21.95,
+        2.3,
+        22.2
+      ],
+      "target": [
+        18.4,
+        1.8,
+        6.2
+      ],
+      "fov": 60,
+      "width": 1440,
+      "height": 902,
+      "near": 0.045,
+      "far": 450
+    },
+    "shipyard": {
+      "position": [
+        -21.8,
+        3,
+        23
+      ],
+      "target": [
+        -30,
+        3.9,
+        -4.5
+      ],
+      "fov": 53,
+      "width": 1440,
+      "height": 902,
+      "near": 0.045,
+      "far": 450
+    },
+    "hall": {
+      "position": [
+        25.5,
+        2.3,
+        10.4
+      ],
+      "target": [
+        30.5,
+        2,
+        4
+      ],
+      "fov": 53,
+      "width": 1440,
+      "height": 902,
+      "near": 0.045,
+      "far": 450
+    },
+    "basin": {
+      "position": [
+        -21.4,
+        2.6,
+        27
+      ],
+      "target": [
+        0,
+        3,
+        -7
+      ],
+      "fov": 58,
+      "width": 1440,
+      "height": 902,
+      "near": 0.045,
+      "far": 450
+    }
+  },
+  "artifact": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lighting-proof.blend",
+  "prepared_sha256": "9816e767e103f2fc65d94ccc90076ae4fc925e8e1b02ec1ab745be29a9147370",
+  "same_geometry_and_pbr_images": true,
+  "runtime_custom_albedo_weathering": "Custom runtime GLSL is not glTF; source scan maps and material factors are preserved. No camera projection is used.",
+  "quality": "Not accepted. Requires actual Cycles proof and actual composed runtime review.",
+  "seconds": 5.101922799949534,
+  "sceneId": "shipyard-station",
+  "sourceIdentity": {
+    "sceneId": "shipyard-station",
+    "glb": "D:\\codex\\tmp\\014-shipyard-20261024\\exports\\2026-10-24T16-30-07-943Z\\source-scene.glb",
+    "sha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+    "metadata": "D:\\codex\\tmp\\014-shipyard-20261024\\exports\\2026-10-24T16-30-07-943Z\\source-scene.json",
+    "metadata_sha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+    "meshCount": 44,
+    "cameraNames": [
+      "platform",
+      "shipyard",
+      "hall",
+      "basin"
+    ],
+    "newGeometryRequired": true
+  },
+  "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+  "runtimeLighting": {
+    "schema": "shipyard-station-lighting-v1",
+    "revision": "shipyard-first-light-1",
+    "fullHDR": {
+      "url": "../canal-real/assets/lighting-r5/kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+      "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+      "bytes": 5451493
+    },
+    "deSunHDR": {
+      "url": "../canal-real/assets/lighting-r5/kloofendal_48d_partly_cloudy_puresky_2k-desun.hdr",
+      "sha256": "64ff36c899ea3b94543140cb0a5a00c4c32a97b5c4670cc62fcabe27c8797832",
+      "bytes": 5450691
+    },
+    "environmentIntensity": 1.031923772120808,
+    "backgroundIntensity": 1.031923772120808,
+    "environmentRotationYRadians": -0.35,
+    "backgroundRotationYRadians": -0.35,
+    "blenderMappingRotationZDegrees": 20.05352282957881,
+    "viewExposureEV": 0,
+    "practicalScale": 1.0,
+    "sun": {
+      "directionToLight": [
+        0.3912557941714868,
+        0.7417598102380594,
+        0.5447121142794946
+      ],
+      "colorLinear": [
+        0.991978082879707,
+        1.0,
+        0.9084521146029024
+      ],
+      "intensity": 4.562767782748515,
+      "normalIrradianceRGB": [
+        4.526165637756163,
+        4.562767782748515,
+        4.145056040679885
+      ],
+      "target": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "distance": 80.0
+    },
+    "runtimePolicy": {
+      "IBL": "deSunHDR",
+      "background": "fullHDR",
+      "probeBackground": "deSunHDR",
+      "staticGI": "New shipyard geometry integrated under fullHDR; replace all live diffuse only on its own mapped receivers",
+      "dynamicDiffuseAndShadows": "deSun IBL + one DirectionalLight with extracted beam",
+      "water": "fullHDR for sky reflection; do not additionally add extracted sun specular to that same reflection"
+    },
+    "sceneId": "shipyard-station",
+    "bakePolicy": {
+      "analyticSunScale": 0.0,
+      "practicalScale": 1.0,
+      "practicalConvention": "Export the actual runtime light intensities; do not multiply the earlier canal .25 calibration again",
+      "sceneIdentityRequired": "shipyard-station"
+    }
+  },
+  "lightingIntegrationInputs": {
+    "sceneId": "shipyard-station",
+    "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+    "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+    "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+    "environmentStrength": 1.031923772120808,
+    "mappingRotationZDegrees": 20.05352282957881,
+    "analyticSunScale": 0.0,
+    "practicalScale": 1.0
+  },
+  "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+  "independence": "New source GLB, new UV master and new radiance. Only generic algorithms and identified material/HDR assets are shared.",
+  "groups": [
+    {
+      "key": "ShipyardGI_Station_blackened_iron",
+      "mesh": "ShipyardGI_Station_blackened_iron",
+      "meshName": "ShipyardGI_Station_blackened_iron",
+      "originalMaterialName": "Station/blackened-iron",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 6025,
+        "verticesAfter": 6025,
+        "temporaryConnectedVertices": 3672,
+        "triangles": 6896,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "b051900cad4215b861c33473fbb772acf91d944416a202b7238dd9526f010578",
+      "triangles": 6896,
+      "file": "lightmaps/ShipyardGI_Station_blackened_iron.rgba16f.gz",
+      "sha256": "a1bb3eda3a1b8061fda49bb084cbfebc9f3211328d5c02a8209d6f79a20ab762",
+      "raw_sha256": "b107b93ef312956f7b8dccba2a9fdd57105b27a44c67d3fb73678d85ee549b1f",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 8388608,
+      "bytes": 2342442,
+      "width": 1024,
+      "height": 1024,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 5.53515020001214,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_blackened_iron.rgba16f.gz",
+        "sha256": "a1bb3eda3a1b8061fda49bb084cbfebc9f3211328d5c02a8209d6f79a20ab762",
+        "raw_sha256": "b107b93ef312956f7b8dccba2a9fdd57105b27a44c67d3fb73678d85ee549b1f",
+        "width": 1024,
+        "height": 1024,
+        "channels": 4,
+        "raw_bytes": 8388608,
+        "bytes": 2342442,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_blackened_iron.rgba16f.gz",
+        "sha256": "da5bcdcb304e2c88926d367a33b9367bbde241dc3c89d9cd4c98e48b4d9b0f68",
+        "raw_sha256": "496dfc45084d757cc941f2ff1db07676350f1fd9312543f5070bf8cca5db1cb4",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "79aa4801426651cbadeb3186f9bb32d052638eaf3ea55f8d3e85539e2ace7d70",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_blackened_iron.json"
+    },
+    {
+      "key": "ShipyardGI_Station_clock_face",
+      "mesh": "ShipyardGI_Station_clock_face",
+      "meshName": "ShipyardGI_Station_clock_face",
+      "originalMaterialName": "Station/clock-face",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 49,
+        "verticesAfter": 49,
+        "temporaryConnectedVertices": 49,
+        "triangles": 48,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "6a1e26cf33722141e913e4cb8c81ed7f99b645873c27c1af7122988c7d747df6",
+      "triangles": 48,
+      "file": "lightmaps/ShipyardGI_Station_clock_face.rgba16f.gz",
+      "sha256": "3b0d2e16567a7a7de921f38d3bf3d967c3d8a18eb1e597d80ce6299cc8e2d475",
+      "raw_sha256": "e06eb0674b64b3662155cdabff8871ea0191fa7610b5560b665be7b9c64ef586",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 8388608,
+      "bytes": 3112001,
+      "width": 1024,
+      "height": 1024,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 6.577979800058529,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_clock_face.rgba16f.gz",
+        "sha256": "3b0d2e16567a7a7de921f38d3bf3d967c3d8a18eb1e597d80ce6299cc8e2d475",
+        "raw_sha256": "e06eb0674b64b3662155cdabff8871ea0191fa7610b5560b665be7b9c64ef586",
+        "width": 1024,
+        "height": 1024,
+        "channels": 4,
+        "raw_bytes": 8388608,
+        "bytes": 3112001,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_clock_face.rgba16f.gz",
+        "sha256": "fcb4d3a6420423418cda0ca00d9637d18ac40c35b75ab0c6a469d276d21d6627",
+        "raw_sha256": "3b8f428e7db4e5fce4e706fe6e01f1d682a64f0a18fbdcb40d444da4a7c8278e",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "feae0935abe3e9ce48cb482b5e0ac52f42ecff8ca5dddbf25897119a64509b6a",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_clock_face.json"
+    },
+    {
+      "key": "ShipyardGI_Station_corrugated_zinc",
+      "mesh": "ShipyardGI_Station_corrugated_zinc",
+      "meshName": "ShipyardGI_Station_corrugated_zinc",
+      "originalMaterialName": "Station/corrugated-zinc",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 4394,
+        "verticesAfter": 4394,
+        "temporaryConnectedVertices": 2648,
+        "triangles": 4636,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "87f03a180aa0d447c8423c00741b7cff058160b8217ff818e0a87108380fff70",
+      "triangles": 4636,
+      "file": "lightmaps/ShipyardGI_Station_corrugated_zinc.rgba16f.gz",
+      "sha256": "78bb6c7719567126ab98cb69dfe897277acb283216d750013f8035e195e58074",
+      "raw_sha256": "78e025ad277bd540268598da93e8a4c2a436bba5597bdc385fa2228190b9c44a",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 8388608,
+      "bytes": 3483468,
+      "width": 1024,
+      "height": 1024,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 5.753043100005016,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_corrugated_zinc.rgba16f.gz",
+        "sha256": "78bb6c7719567126ab98cb69dfe897277acb283216d750013f8035e195e58074",
+        "raw_sha256": "78e025ad277bd540268598da93e8a4c2a436bba5597bdc385fa2228190b9c44a",
+        "width": 1024,
+        "height": 1024,
+        "channels": 4,
+        "raw_bytes": 8388608,
+        "bytes": 3483468,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_corrugated_zinc.rgba16f.gz",
+        "sha256": "9e350bef03b990f475dd78fc2803e81cf109fde21c7b3fbc751af29a445a7f54",
+        "raw_sha256": "32be74c90d781487db0614baad4f2ab2232593a3b08843b6dc18822c3fc96b25",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "636df491a4f4c643a1f4da71c9c7a7e70bf61f44ac26eecdf4d66fea4df8391e",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_corrugated_zinc.json"
+    },
+    {
+      "key": "ShipyardGI_Station_dressed_coping",
+      "mesh": "ShipyardGI_Station_dressed_coping",
+      "meshName": "ShipyardGI_Station_dressed_coping",
+      "originalMaterialName": "Station/dressed-coping",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 12656,
+        "verticesAfter": 12656,
+        "temporaryConnectedVertices": 12656,
+        "triangles": 24408,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "8e8bc19ffae218fa972c03459b1ca913f6c790d82d7d471d29041c4123d36ca4",
+      "triangles": 24408,
+      "file": "lightmaps/ShipyardGI_Station_dressed_coping.rgba16f.gz",
+      "sha256": "94e76a483158a1ad0ab4be80aa827646d20bba979ff1b9d25be722597f590818",
+      "raw_sha256": "e58273604f94434ecbc4d44b196b8ebdd2b575dd89b1b38abf857df9f05fb3bf",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 33554432,
+      "bytes": 11019104,
+      "width": 2048,
+      "height": 2048,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 21.26862510002684,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_dressed_coping.rgba16f.gz",
+        "sha256": "94e76a483158a1ad0ab4be80aa827646d20bba979ff1b9d25be722597f590818",
+        "raw_sha256": "e58273604f94434ecbc4d44b196b8ebdd2b575dd89b1b38abf857df9f05fb3bf",
+        "width": 2048,
+        "height": 2048,
+        "channels": 4,
+        "raw_bytes": 33554432,
+        "bytes": 11019104,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_dressed_coping.rgba16f.gz",
+        "sha256": "b92eafe095a9f194b989bdd8fecad8c2fbee8a558592407817ed178fff768e9b",
+        "raw_sha256": "e4480f3ce620e8475c1178d05dc8351ef9b94cb15150d2091a49647d4d7346e0",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "56431ea099bbe6ea467691c0fb13396a3552f039753695ab4f2cc6a2b323d8ba",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_dressed_coping.json"
+    },
+    {
+      "key": "ShipyardGI_Station_faded_boat_paint",
+      "mesh": "ShipyardGI_Station_faded_boat_paint",
+      "meshName": "ShipyardGI_Station_faded_boat_paint",
+      "originalMaterialName": "Station/faded-boat-paint",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 84,
+        "verticesAfter": 84,
+        "temporaryConnectedVertices": 56,
+        "triangles": 72,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "c39e313f2166465150f66770525c84610291987fcb6cb302cfaa90fb48c909f7",
+      "triangles": 72,
+      "file": "lightmaps/ShipyardGI_Station_faded_boat_paint.rgba16f.gz",
+      "sha256": "7ac44b3fe5fc7920f4e2ac7f2b58b7e892cefed2bca7199bdbefffc515c6cf3d",
+      "raw_sha256": "f076874304cca5b0258952ef79e97dbc6b3a29ccfc569edf613297fba96c4700",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 8388608,
+      "bytes": 2864496,
+      "width": 1024,
+      "height": 1024,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 10.739547799923457,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_faded_boat_paint.rgba16f.gz",
+        "sha256": "7ac44b3fe5fc7920f4e2ac7f2b58b7e892cefed2bca7199bdbefffc515c6cf3d",
+        "raw_sha256": "f076874304cca5b0258952ef79e97dbc6b3a29ccfc569edf613297fba96c4700",
+        "width": 1024,
+        "height": 1024,
+        "channels": 4,
+        "raw_bytes": 8388608,
+        "bytes": 2864496,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_faded_boat_paint.rgba16f.gz",
+        "sha256": "5c5fe025274689707245c5ad9858cc549b3681b9a091ff4b7bf0fdd634c3455f",
+        "raw_sha256": "62fdea68e18652f0c305364dbd836749e9c0d0d5a49e14a33f4afaf834676437",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "47b05eeb23881ba7dc264f8d839b51719c43dff441fe2ba496805b464d2e53a9",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_faded_boat_paint.json"
+    },
+    {
+      "key": "ShipyardGI_Station_framed_canal_route",
+      "mesh": "ShipyardGI_Station_framed_canal_route",
+      "meshName": "ShipyardGI_Station_framed_canal_route",
+      "originalMaterialName": "Station/framed-canal-route",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 4,
+        "verticesAfter": 4,
+        "temporaryConnectedVertices": 4,
+        "triangles": 2,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "d1d3ac7137eec7bf2c4d3d72ae9702c103f09bffc814ec4293e6409c3784d590",
+      "triangles": 2,
+      "file": "lightmaps/ShipyardGI_Station_framed_canal_route.rgba16f.gz",
+      "sha256": "2607bb2d2a5044e955591b7e005bb9425bdbff3a2519e81ea3b6b4c3b08b5c0f",
+      "raw_sha256": "a37882a8692f7a55e5836ba55c31485b0628e530a986f5c2406d2dea06300d84",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 8388608,
+      "bytes": 3650377,
+      "width": 1024,
+      "height": 1024,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 19.33370830002241,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_framed_canal_route.rgba16f.gz",
+        "sha256": "2607bb2d2a5044e955591b7e005bb9425bdbff3a2519e81ea3b6b4c3b08b5c0f",
+        "raw_sha256": "a37882a8692f7a55e5836ba55c31485b0628e530a986f5c2406d2dea06300d84",
+        "width": 1024,
+        "height": 1024,
+        "channels": 4,
+        "raw_bytes": 8388608,
+        "bytes": 3650377,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_framed_canal_route.rgba16f.gz",
+        "sha256": "3f4f7521729644440830fd0ad1d9b5f90531004b12c49e4c5d9ad399df6eebd1",
+        "raw_sha256": "38f049a9f9950c00baa75f11bc83fdf17e22b4c187441b1e1ba91c9ec69a8301",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "4a02cef9d421d111bdfae03c2fcb5f0d6b6cccfaf0862a6797156b71a7b5e264",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_framed_canal_route.json"
+    },
+    {
+      "key": "ShipyardGI_Station_framed_departure_table",
+      "mesh": "ShipyardGI_Station_framed_departure_table",
+      "meshName": "ShipyardGI_Station_framed_departure_table",
+      "originalMaterialName": "Station/framed-departure-table",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 4,
+        "verticesAfter": 4,
+        "temporaryConnectedVertices": 4,
+        "triangles": 2,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "d1d3ac7137eec7bf2c4d3d72ae9702c103f09bffc814ec4293e6409c3784d590",
+      "triangles": 2,
+      "file": "lightmaps/ShipyardGI_Station_framed_departure_table.rgba16f.gz",
+      "sha256": "4c1d4020e27714532bc391411e717ecb45f46b77eb88876aecc17eb3660b2661",
+      "raw_sha256": "8c0e4a112f0147766a62d5463619343b69dcaeb9f8b863956c321502c384e42a",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 8388608,
+      "bytes": 3541564,
+      "width": 1024,
+      "height": 1024,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 18.823345899931155,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_framed_departure_table.rgba16f.gz",
+        "sha256": "4c1d4020e27714532bc391411e717ecb45f46b77eb88876aecc17eb3660b2661",
+        "raw_sha256": "8c0e4a112f0147766a62d5463619343b69dcaeb9f8b863956c321502c384e42a",
+        "width": 1024,
+        "height": 1024,
+        "channels": 4,
+        "raw_bytes": 8388608,
+        "bytes": 3541564,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_framed_departure_table.rgba16f.gz",
+        "sha256": "113115dfdb3d21b4d9d4e6d08822d2f032b35e84bde6553fb0ddf163f4849910",
+        "raw_sha256": "22dd728eecc58b49ddd96b62d2b87a93e25cb997d268e702f0dea4c526ac43c6",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "422c49ac7193f6d272042cb98fb551bb9f227fb820937fba0a1e09406e2413bd",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_framed_departure_table.json"
+    },
+    {
+      "key": "ShipyardGI_Station_harbour_cobbles",
+      "mesh": "ShipyardGI_Station_harbour_cobbles",
+      "meshName": "ShipyardGI_Station_harbour_cobbles",
+      "originalMaterialName": "Station/harbour-cobbles",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 224,
+        "verticesAfter": 224,
+        "temporaryConnectedVertices": 220,
+        "triangles": 432,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "8e55739d76a74bab1a3a49168da731e827552a188d4269016d14edfd24554bf8",
+      "triangles": 432,
+      "file": "lightmaps/ShipyardGI_Station_harbour_cobbles.rgba16f.gz",
+      "sha256": "9e56bb253cfb8e3112854ac84366e37ee8bc95a72cc4003d02f01864bb06f008",
+      "raw_sha256": "2fb07a7b9802bffbbb9b85732b3d2df8b6d914a152f435ad1e98c7b93353f7a6",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 33554432,
+      "bytes": 14700188,
+      "width": 2048,
+      "height": 2048,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 41.86379499989562,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_harbour_cobbles.rgba16f.gz",
+        "sha256": "9e56bb253cfb8e3112854ac84366e37ee8bc95a72cc4003d02f01864bb06f008",
+        "raw_sha256": "2fb07a7b9802bffbbb9b85732b3d2df8b6d914a152f435ad1e98c7b93353f7a6",
+        "width": 2048,
+        "height": 2048,
+        "channels": 4,
+        "raw_bytes": 33554432,
+        "bytes": 14700188,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_harbour_cobbles.rgba16f.gz",
+        "sha256": "df28bb8080701d2abe9b338d62011b27de61555c2d9e387de98ccd38b4dc6c34",
+        "raw_sha256": "c5ad093469d6daf99ac5921051d1f7cafc52df3322f6496fc85c09fe532ac5b6",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "6f51edcf8ac7df6ea8c9129cce7031b5a950d351ad65644cecabeb54a49fb5ba",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_harbour_cobbles.json"
+    },
+    {
+      "key": "ShipyardGI_Station_interior_shadow",
+      "mesh": "ShipyardGI_Station_interior_shadow",
+      "meshName": "ShipyardGI_Station_interior_shadow",
+      "originalMaterialName": "Station/interior-shadow",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 224,
+        "verticesAfter": 224,
+        "temporaryConnectedVertices": 112,
+        "triangles": 192,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "e5f3ba81b5fb9e2c08a3390a1cbacae8a5475e66fab079a58af7aced41d179a4",
+      "triangles": 192,
+      "file": "lightmaps/ShipyardGI_Station_interior_shadow.rgba16f.gz",
+      "sha256": "5ec3cd31493eed30645560f2c246c8e6952531bdaa02229c69d4d79461a4e30f",
+      "raw_sha256": "034dddaaeb42f1279d130cc70f691fe8eca4c4005a7a8398bc659e7f30459cfa",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 8388608,
+      "bytes": 1795195,
+      "width": 1024,
+      "height": 1024,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 12.541637099930085,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_interior_shadow.rgba16f.gz",
+        "sha256": "5ec3cd31493eed30645560f2c246c8e6952531bdaa02229c69d4d79461a4e30f",
+        "raw_sha256": "034dddaaeb42f1279d130cc70f691fe8eca4c4005a7a8398bc659e7f30459cfa",
+        "width": 1024,
+        "height": 1024,
+        "channels": 4,
+        "raw_bytes": 8388608,
+        "bytes": 1795195,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_interior_shadow.rgba16f.gz",
+        "sha256": "08582ba8f96d926bb0f452f2b40cdf9adff7df1427da4c6bea90ca629ccbc4a2",
+        "raw_sha256": "3521344d906523291a7d286c6a6b01dbb66122d4f7aaaf8827a77f9e9439c963",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "ea5540c438ea49174c087c81dcbbf58db2f2c5e4500ac8f0efb8f9f984615e9a",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_interior_shadow.json"
+    },
+    {
+      "key": "ShipyardGI_Station_oiled_oak",
+      "mesh": "ShipyardGI_Station_oiled_oak",
+      "meshName": "ShipyardGI_Station_oiled_oak",
+      "originalMaterialName": "Station/oiled-oak",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 14787,
+        "verticesAfter": 14787,
+        "temporaryConnectedVertices": 10223,
+        "triangles": 19196,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "518ebca5c42bdc233cbb8f9bf5ff0d2d9ea9dad1488cbeafafc32420085edfd3",
+      "triangles": 19196,
+      "file": "lightmaps/ShipyardGI_Station_oiled_oak-2048.rgba16f.gz",
+      "sha256": "95b60398bb1e5b85cf5dcb959a27324c966359286255639166501a08a5ba35f9",
+      "raw_sha256": "0465f727604901528bee454cdc12a066a83b1b07c3d25e07558b73fbed31a821",
+      "bakeSignature": "d04ee4fac04a5f552fa65aaadfe0c89aadd83bb11015d56db9de30915011514c",
+      "raw_bytes": 8388608,
+      "bytes": 2931180,
+      "width": 1024,
+      "height": 1024,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 2048,
+      "plannedSamples": 2048,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 74.31803219998255,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_oiled_oak-2048.rgba16f.gz",
+        "sha256": "95b60398bb1e5b85cf5dcb959a27324c966359286255639166501a08a5ba35f9",
+        "raw_sha256": "0465f727604901528bee454cdc12a066a83b1b07c3d25e07558b73fbed31a821",
+        "width": 1024,
+        "height": 1024,
+        "channels": 4,
+        "raw_bytes": 8388608,
+        "bytes": 2931180,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\refinements\\oak-2048\\lightmaps\\ShipyardGI_Station_oiled_oak.rgba16f.gz",
+        "sha256": "2135fd2178fd9315281346e08bf9f356084401fb7ce80c282f33b579b10dc489",
+        "raw_sha256": "1f1b380ca35ee2a4a788e517b11afb4d89664cdeb1f5ed4bc0b54df729e3e56b",
+        "samples": 2048,
+        "bakeSignature": "d04ee4fac04a5f552fa65aaadfe0c89aadd83bb11015d56db9de30915011514c"
+      },
+      "processingSignature": "0d585f17f47807b285ddfce97a1d59b584e70ab7310d338f509aa25b16d6125e",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\refinements\\oak-2048\\processed\\ShipyardGI_Station_oiled_oak.json"
+    },
+    {
+      "key": "ShipyardGI_Station_old_firebrick",
+      "mesh": "ShipyardGI_Station_old_firebrick",
+      "meshName": "ShipyardGI_Station_old_firebrick",
+      "originalMaterialName": "Station/old-firebrick",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 1144,
+        "verticesAfter": 1144,
+        "temporaryConnectedVertices": 1016,
+        "triangles": 1968,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "b09942109b560a7f6f7a10ab2133ddb96cfa5ef4dc4c4303160bbf268e87eccb",
+      "triangles": 1968,
+      "file": "lightmaps/ShipyardGI_Station_old_firebrick.rgba16f.gz",
+      "sha256": "be34207f2e2c618c02d17bd3c059addf6a23fc88ae9d854ff4ae379b0d931948",
+      "raw_sha256": "331347c462d49d295b3870300bdaba3c0e50430e7fad1fe77810de74b338fe8a",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 33554432,
+      "bytes": 11932544,
+      "width": 2048,
+      "height": 2048,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 35.446108900010586,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_old_firebrick.rgba16f.gz",
+        "sha256": "be34207f2e2c618c02d17bd3c059addf6a23fc88ae9d854ff4ae379b0d931948",
+        "raw_sha256": "331347c462d49d295b3870300bdaba3c0e50430e7fad1fe77810de74b338fe8a",
+        "width": 2048,
+        "height": 2048,
+        "channels": 4,
+        "raw_bytes": 33554432,
+        "bytes": 11932544,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_old_firebrick.rgba16f.gz",
+        "sha256": "6e3a412254ed161a3534003b73db8f3d862ff791e2d7fbb565a0035ec570c2e9",
+        "raw_sha256": "cc8677d1c837406ba9a0edb427e9372a77ff6de22bb3b3e33a86ec0b280882f8",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "cdc0b20c8904201c67ca6c99f46f5f4c746263d6a522f03f89a0dff334bc3d9d",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_old_firebrick.json"
+    },
+    {
+      "key": "ShipyardGI_Station_old_platform_paint",
+      "mesh": "ShipyardGI_Station_old_platform_paint",
+      "meshName": "ShipyardGI_Station_old_platform_paint",
+      "originalMaterialName": "Station/old-platform-paint",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 648,
+        "verticesAfter": 648,
+        "temporaryConnectedVertices": 216,
+        "triangles": 324,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "fcae3ade0d68ce6a6ed21a7b860fca5414326855160c01155dbc7be98734689f",
+      "triangles": 324,
+      "file": "lightmaps/ShipyardGI_Station_old_platform_paint.rgba16f.gz",
+      "sha256": "568871242b8d2278436a5458bf0e9bbb64ab21bda85c66a46bbcf796784626e5",
+      "raw_sha256": "c011721953fa36b55368953b3f6f496bb41ddec9cecbb8ce0f3d42f49be37a54",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 8388608,
+      "bytes": 5219944,
+      "width": 1024,
+      "height": 1024,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 13.912159800063819,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_old_platform_paint.rgba16f.gz",
+        "sha256": "568871242b8d2278436a5458bf0e9bbb64ab21bda85c66a46bbcf796784626e5",
+        "raw_sha256": "c011721953fa36b55368953b3f6f496bb41ddec9cecbb8ce0f3d42f49be37a54",
+        "width": 1024,
+        "height": 1024,
+        "channels": 4,
+        "raw_bytes": 8388608,
+        "bytes": 5219944,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_old_platform_paint.rgba16f.gz",
+        "sha256": "e581ef75805b971987247e70f49ca14988187268c37ae3702c99d3b60ed34bdd",
+        "raw_sha256": "d9f3b06c7dc55f8cbf92f769b61a53367222505a787edafec68369a9d936f66c",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "94049f7a9b38e21d519716d8653f76e360ce53721c169bb52ff48cabfb7ca5b1",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_old_platform_paint.json"
+    },
+    {
+      "key": "ShipyardGI_Station_platform_paving",
+      "mesh": "ShipyardGI_Station_platform_paving",
+      "meshName": "ShipyardGI_Station_platform_paving",
+      "originalMaterialName": "Station/platform-paving",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 56,
+        "verticesAfter": 56,
+        "temporaryConnectedVertices": 56,
+        "triangles": 108,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "9e9e86c2cd5f6b76f74085de66969480487a53bf4bb15a20d9afd922e7d6c22d",
+      "triangles": 108,
+      "file": "lightmaps/ShipyardGI_Station_platform_paving.rgba16f.gz",
+      "sha256": "ddc4b7488147a81b978512be838b5a33ca3c1814d98850211b35aaf580f77499",
+      "raw_sha256": "25919056c4e4d60ba265fa9c2024bc15178dc3ac823bad821533b4f7f4b3375a",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 33554432,
+      "bytes": 9299648,
+      "width": 2048,
+      "height": 2048,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 54.60997979994863,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_platform_paving.rgba16f.gz",
+        "sha256": "ddc4b7488147a81b978512be838b5a33ca3c1814d98850211b35aaf580f77499",
+        "raw_sha256": "25919056c4e4d60ba265fa9c2024bc15178dc3ac823bad821533b4f7f4b3375a",
+        "width": 2048,
+        "height": 2048,
+        "channels": 4,
+        "raw_bytes": 33554432,
+        "bytes": 9299648,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_platform_paving.rgba16f.gz",
+        "sha256": "1a87bcf76f5a77ecda1a31a8663d97f865a2b8f0781c5310798ff40cde1544e4",
+        "raw_sha256": "c526522280c98551bb60f6d065ac868ce89c5e12c6d0523ae5621af0ff08191b",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "bd592bbe7776865e89788273e36273570abd8a6de0afc3207878e6dc42c088ef",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_platform_paving.json"
+    },
+    {
+      "key": "ShipyardGI_Station_quay_stone",
+      "mesh": "ShipyardGI_Station_quay_stone",
+      "meshName": "ShipyardGI_Station_quay_stone",
+      "originalMaterialName": "Station/quay-stone",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 3664,
+        "verticesAfter": 3664,
+        "temporaryConnectedVertices": 3648,
+        "triangles": 7032,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "ccf0bd82d656f6f876d5ae956c6d7b25641637fc82cfc218b0d7e5e835c23aea",
+      "triangles": 7032,
+      "file": "lightmaps/ShipyardGI_Station_quay_stone.rgba16f.gz",
+      "sha256": "b544989d0dfbe09a5466fb03e7babcc1f68c1fb27fc540c353a6b56717608dec",
+      "raw_sha256": "57ca708a77158fcf9874cf89f38d84c3f375febb2e4b9097f7845a3d050f48df",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 33554432,
+      "bytes": 15921424,
+      "width": 2048,
+      "height": 2048,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 21.44379139994271,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_quay_stone.rgba16f.gz",
+        "sha256": "b544989d0dfbe09a5466fb03e7babcc1f68c1fb27fc540c353a6b56717608dec",
+        "raw_sha256": "57ca708a77158fcf9874cf89f38d84c3f375febb2e4b9097f7845a3d050f48df",
+        "width": 2048,
+        "height": 2048,
+        "channels": 4,
+        "raw_bytes": 33554432,
+        "bytes": 15921424,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_quay_stone.rgba16f.gz",
+        "sha256": "59a68acbca4d1ab5652a160e410033868efd41540038ddfe1815a5500e6321e6",
+        "raw_sha256": "6a37e000706acb4563928d0613858aaf6fa59557532d76ae7b6df5d4176e15b6",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "ce106a313324656d071c6feb6a6d8074e640feaa389497376d111dd798e591f2",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_quay_stone.json"
+    },
+    {
+      "key": "ShipyardGI_Station_repair_yard_sign",
+      "mesh": "ShipyardGI_Station_repair_yard_sign",
+      "meshName": "ShipyardGI_Station_repair_yard_sign",
+      "originalMaterialName": "Station/repair-yard-sign",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 4,
+        "verticesAfter": 4,
+        "temporaryConnectedVertices": 4,
+        "triangles": 2,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "d1d3ac7137eec7bf2c4d3d72ae9702c103f09bffc814ec4293e6409c3784d590",
+      "triangles": 2,
+      "file": "lightmaps/ShipyardGI_Station_repair_yard_sign.rgba16f.gz",
+      "sha256": "cf6f47a26a140e73f5a3622dff8c5122c72c6644fcf57fb877b6b74ece5352fa",
+      "raw_sha256": "39935f52a9c545ac753bc601ff7fc76c7d9adb96dd0efbfdf67d2b5b7915304a",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 8388608,
+      "bytes": 1471325,
+      "width": 1024,
+      "height": 1024,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 7.163953299983405,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_repair_yard_sign.rgba16f.gz",
+        "sha256": "cf6f47a26a140e73f5a3622dff8c5122c72c6644fcf57fb877b6b74ece5352fa",
+        "raw_sha256": "39935f52a9c545ac753bc601ff7fc76c7d9adb96dd0efbfdf67d2b5b7915304a",
+        "width": 1024,
+        "height": 1024,
+        "channels": 4,
+        "raw_bytes": 8388608,
+        "bytes": 1471325,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_repair_yard_sign.rgba16f.gz",
+        "sha256": "0066a4221072cf84e2ece6d72ed379066a3d34a5e1ce6263f421302e19ec781e",
+        "raw_sha256": "126e0e4883c751bd30547752775a2d79c9d1abf9c5498ef700874c51b837753b",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "85dda3e068e972246861996a97767c2d47b5f86ea6f7e194b66be5be9399670e",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_repair_yard_sign.json"
+    },
+    {
+      "key": "ShipyardGI_Station_riveted_blue_steel",
+      "mesh": "ShipyardGI_Station_riveted_blue_steel",
+      "meshName": "ShipyardGI_Station_riveted_blue_steel",
+      "originalMaterialName": "Station/riveted-blue-steel",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 14971,
+        "verticesAfter": 14971,
+        "temporaryConnectedVertices": 10220,
+        "triangles": 19024,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "6c4bef8e2f365c633c18b6cb63a36c0e4bbb0ee6f50ebb858340a6ea14b59ee0",
+      "triangles": 19024,
+      "file": "lightmaps/ShipyardGI_Station_riveted_blue_steel.rgba16f.gz",
+      "sha256": "988d4fc37130014720b235cb3dbe61c35ffab4e57df1351c46eda28ed78e615d",
+      "raw_sha256": "08ee6d7159d349711a9b997edcdb0dc55cfff0c079447a06d2702e27f6342e16",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 8388608,
+      "bytes": 4293274,
+      "width": 1024,
+      "height": 1024,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 7.995943699963391,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_riveted_blue_steel.rgba16f.gz",
+        "sha256": "988d4fc37130014720b235cb3dbe61c35ffab4e57df1351c46eda28ed78e615d",
+        "raw_sha256": "08ee6d7159d349711a9b997edcdb0dc55cfff0c079447a06d2702e27f6342e16",
+        "width": 1024,
+        "height": 1024,
+        "channels": 4,
+        "raw_bytes": 8388608,
+        "bytes": 4293274,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_riveted_blue_steel.rgba16f.gz",
+        "sha256": "c2fd707fcc78d33f8ed6c56f3f3fac6605c2d466c7b32a6d257d13ab7a26ea85",
+        "raw_sha256": "c037741d7442b9164c79996e72303269d1e2c4d3ca38f274777c8862914c29dd",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "1f4b84a4c49d9c49da35d9c25ab98614907fd93ea7337e32e82e446b45d0ed0e",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_riveted_blue_steel.json"
+    },
+    {
+      "key": "ShipyardGI_Station_slipway_stone",
+      "mesh": "ShipyardGI_Station_slipway_stone",
+      "meshName": "ShipyardGI_Station_slipway_stone",
+      "originalMaterialName": "Station/slipway-stone",
+      "resolution": [
+        2048,
+        2048
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 187,
+        "verticesAfter": 187,
+        "temporaryConnectedVertices": 187,
+        "triangles": 320,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "7867e04500c07423ba1a4c8c2ddbf9eca24bc000bf7f763c61cc85f9c065a2bc",
+      "triangles": 320,
+      "file": "lightmaps/ShipyardGI_Station_slipway_stone.rgba16f.gz",
+      "sha256": "9662fcff6e88fb09b1429783d7a631f4f159b9ea26dc6600b2e62be8ba20b6a6",
+      "raw_sha256": "359a9a404378ebc96f4fb69e0a93883d46d96653c78b63956584777f2733c35b",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 33554432,
+      "bytes": 17720911,
+      "width": 2048,
+      "height": 2048,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 20.362335699959658,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_slipway_stone.rgba16f.gz",
+        "sha256": "9662fcff6e88fb09b1429783d7a631f4f159b9ea26dc6600b2e62be8ba20b6a6",
+        "raw_sha256": "359a9a404378ebc96f4fb69e0a93883d46d96653c78b63956584777f2733c35b",
+        "width": 2048,
+        "height": 2048,
+        "channels": 4,
+        "raw_bytes": 33554432,
+        "bytes": 17720911,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_slipway_stone.rgba16f.gz",
+        "sha256": "9d089d39c91ed00219657d0fef697b45eef146edf6e980722bb4ef7d8c2474a4",
+        "raw_sha256": "d21abbce0018a140800a3308f49ee547b348294fcab5baa519ee06f3cecd72f9",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "c81f0d90fb7ba896f5dd6cde4495454daf0439f2ff44504a410be9580efef0f4",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_slipway_stone.json"
+    },
+    {
+      "key": "ShipyardGI_Station_station_name",
+      "mesh": "ShipyardGI_Station_station_name",
+      "meshName": "ShipyardGI_Station_station_name",
+      "originalMaterialName": "Station/station-name",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 4,
+        "verticesAfter": 4,
+        "temporaryConnectedVertices": 4,
+        "triangles": 2,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "d1d3ac7137eec7bf2c4d3d72ae9702c103f09bffc814ec4293e6409c3784d590",
+      "triangles": 2,
+      "file": "lightmaps/ShipyardGI_Station_station_name.rgba16f.gz",
+      "sha256": "5687336f784ba96cb5862c2b85ab1ac247393fcefbcd4dae2f7db6fb89f7983f",
+      "raw_sha256": "f562425069c9b370989b8af36d8d0e2d5da7e9be3cfe5e156a760e0f1290dc3e",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 8388608,
+      "bytes": 3683899,
+      "width": 1024,
+      "height": 1024,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 6.118822599994019,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_station_name.rgba16f.gz",
+        "sha256": "5687336f784ba96cb5862c2b85ab1ac247393fcefbcd4dae2f7db6fb89f7983f",
+        "raw_sha256": "f562425069c9b370989b8af36d8d0e2d5da7e9be3cfe5e156a760e0f1290dc3e",
+        "width": 1024,
+        "height": 1024,
+        "channels": 4,
+        "raw_bytes": 8388608,
+        "bytes": 3683899,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_station_name.rgba16f.gz",
+        "sha256": "3b43bdeba2861813d4cab276ed018db57ea372cedd366ea64300ac585385fb55",
+        "raw_sha256": "a936eb7b4e4bd7ac1f9785f6f72befe31dafa1a19c70931ac16126d09e881c8f",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "230a5c8f2cdd0c71cc46b67ab3a58530063e5722141eb1ef48fa78ba0dbbf4fa",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_station_name.json"
+    },
+    {
+      "key": "ShipyardGI_Station_ticket_machine_brass",
+      "mesh": "ShipyardGI_Station_ticket_machine_brass",
+      "meshName": "ShipyardGI_Station_ticket_machine_brass",
+      "originalMaterialName": "Station/ticket-machine-brass",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 1697,
+        "verticesAfter": 1697,
+        "temporaryConnectedVertices": 788,
+        "triangles": 1372,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "65ba379a4aa343e51885640d25ad9544cee7b3ef0d9871998eb7c355b99799a8",
+      "triangles": 1372,
+      "file": "lightmaps/ShipyardGI_Station_ticket_machine_brass.rgba16f.gz",
+      "sha256": "bc7f177496dbac1f0b26b52fbf9434fefdd3b163f0ba42c29d8a0344a1839759",
+      "raw_sha256": "02f8017c75882f8702690a5daeac178a370cc8502d1b4d6650b9f97e8324b272",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 8388608,
+      "bytes": 3157850,
+      "width": 1024,
+      "height": 1024,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 4.909627199987881,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_ticket_machine_brass.rgba16f.gz",
+        "sha256": "bc7f177496dbac1f0b26b52fbf9434fefdd3b163f0ba42c29d8a0344a1839759",
+        "raw_sha256": "02f8017c75882f8702690a5daeac178a370cc8502d1b4d6650b9f97e8324b272",
+        "width": 1024,
+        "height": 1024,
+        "channels": 4,
+        "raw_bytes": 8388608,
+        "bytes": 3157850,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_ticket_machine_brass.rgba16f.gz",
+        "sha256": "daa2cc8c7f3dc1abe774783f7326ce741fa39cfce77dce1dc79bad1a0ef64638",
+        "raw_sha256": "779b57ddf8a391554c321fc3a0eb3d1057f25a8c5d9cbde499469c93421eee8e",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "9b35d1b947233cd72811738dbaee1da7156f2f196c2650030ece85ba0688cfa3",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_ticket_machine_brass.json"
+    },
+    {
+      "key": "ShipyardGI_Station_ticket_sign",
+      "mesh": "ShipyardGI_Station_ticket_sign",
+      "meshName": "ShipyardGI_Station_ticket_sign",
+      "originalMaterialName": "Station/ticket-sign",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 4,
+        "verticesAfter": 4,
+        "temporaryConnectedVertices": 4,
+        "triangles": 2,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "d1d3ac7137eec7bf2c4d3d72ae9702c103f09bffc814ec4293e6409c3784d590",
+      "triangles": 2,
+      "file": "lightmaps/ShipyardGI_Station_ticket_sign.rgba16f.gz",
+      "sha256": "f102b332794fdcef5dc6b02eaf616bd199b414c174586fe2727c32d0775905ee",
+      "raw_sha256": "83612834bc607f91215f82a6997cb02017fc128862f774d8fa93aa9f32b1c384",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 8388608,
+      "bytes": 3936381,
+      "width": 1024,
+      "height": 1024,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 6.71409250004217,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_ticket_sign.rgba16f.gz",
+        "sha256": "f102b332794fdcef5dc6b02eaf616bd199b414c174586fe2727c32d0775905ee",
+        "raw_sha256": "83612834bc607f91215f82a6997cb02017fc128862f774d8fa93aa9f32b1c384",
+        "width": 1024,
+        "height": 1024,
+        "channels": 4,
+        "raw_bytes": 8388608,
+        "bytes": 3936381,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_ticket_sign.rgba16f.gz",
+        "sha256": "d852f6ead94f23e1239cd1e9e2549ff09594b76f5d7fde2e3f26eb6802941b8c",
+        "raw_sha256": "f8341fe281e62d4ae696ae63ccb6bcca7d97cbccbce0dd479732391e409180ff",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "c32daebcd8c5413ad3ecbe798aad284907da8bb529520575d4d2e54302ae9f2b",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_ticket_sign.json"
+    },
+    {
+      "key": "ShipyardGI_Station_ticket_stock",
+      "mesh": "ShipyardGI_Station_ticket_stock",
+      "meshName": "ShipyardGI_Station_ticket_stock",
+      "originalMaterialName": "Station/ticket-stock",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 608,
+        "verticesAfter": 608,
+        "temporaryConnectedVertices": 352,
+        "triangles": 624,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "f90d0e211dad472c75e7255c53d4be863ff03c74dc3dbcac24538cd697b2471c",
+      "triangles": 624,
+      "file": "lightmaps/ShipyardGI_Station_ticket_stock.rgba16f.gz",
+      "sha256": "7a9cd2a56cf179be2f7aa6acdc088cdcb6f1bf7cc7cb0abe09a4079eb8d17d42",
+      "raw_sha256": "e9997e0741d92015dc7ed0518593fdb82e46ff35ed31917312c7c7e45546d40e",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 8388608,
+      "bytes": 3060193,
+      "width": 1024,
+      "height": 1024,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 6.882141400012188,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_ticket_stock.rgba16f.gz",
+        "sha256": "7a9cd2a56cf179be2f7aa6acdc088cdcb6f1bf7cc7cb0abe09a4079eb8d17d42",
+        "raw_sha256": "e9997e0741d92015dc7ed0518593fdb82e46ff35ed31917312c7c7e45546d40e",
+        "width": 1024,
+        "height": 1024,
+        "channels": 4,
+        "raw_bytes": 8388608,
+        "bytes": 3060193,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_ticket_stock.rgba16f.gz",
+        "sha256": "c614da04a71eefcfd0ec24a46ac846a1764c1c3cb4d72e38152daaba0f1bdfea",
+        "raw_sha256": "2d51dcdac51a83f8393437f1e2cf102f8be157c3df4dc23a747a4ba734c40208",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "d8dd40aaf787b6c9e515605b759a4c132d7e4278fad3e7899bb02da2782735c9",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_ticket_stock.json"
+    },
+    {
+      "key": "ShipyardGI_Station_waiting_room_plaster",
+      "mesh": "ShipyardGI_Station_waiting_room_plaster",
+      "meshName": "ShipyardGI_Station_waiting_room_plaster",
+      "originalMaterialName": "Station/waiting-room-plaster",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 72,
+        "verticesAfter": 72,
+        "temporaryConnectedVertices": 24,
+        "triangles": 36,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "50a4a63e789542f2bfff93ecfd5d8f103dfc00bbe998f44fdd7c4f056c68c1e6",
+      "triangles": 36,
+      "file": "lightmaps/ShipyardGI_Station_waiting_room_plaster.rgba16f.gz",
+      "sha256": "2494c0316f0371a1fa1a65a274e8fdef024bedbbc7c26051b3075d4f1a2de0f4",
+      "raw_sha256": "396ad4379a2a587b958c9de61e35cef3f2603d40f1bdb693532aa97d897eacdc",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 8388608,
+      "bytes": 1996017,
+      "width": 1024,
+      "height": 1024,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 5.839661099947989,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_waiting_room_plaster.rgba16f.gz",
+        "sha256": "2494c0316f0371a1fa1a65a274e8fdef024bedbbc7c26051b3075d4f1a2de0f4",
+        "raw_sha256": "396ad4379a2a587b958c9de61e35cef3f2603d40f1bdb693532aa97d897eacdc",
+        "width": 1024,
+        "height": 1024,
+        "channels": 4,
+        "raw_bytes": 8388608,
+        "bytes": 1996017,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_waiting_room_plaster.rgba16f.gz",
+        "sha256": "345f15fa2348944637b43c1037caf19f64727d13f0bb478b01c0e27862f2436b",
+        "raw_sha256": "0da71f95075d2a9ed7104a3df82fafc1f416eef31e648f5751a7b478ffdc4c5b",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "5bafd484393639ecbf18bc19d57d77a10f7baeaa3d008f59b7742af8bbc47b08",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_waiting_room_plaster.json"
+    },
+    {
+      "key": "ShipyardGI_Station_yard_timber",
+      "mesh": "ShipyardGI_Station_yard_timber",
+      "meshName": "ShipyardGI_Station_yard_timber",
+      "originalMaterialName": "Station/yard-timber",
+      "resolution": [
+        1024,
+        1024
+      ],
+      "uvChannel": 1,
+      "uvGutterPixels": 12,
+      "bakePaddingPixels": 4,
+      "topologyIndexing": {
+        "verticesBefore": 2972,
+        "verticesAfter": 2972,
+        "temporaryConnectedVertices": 2638,
+        "triangles": 5032,
+        "positionMaxErrorMetres": 0.0,
+        "temporaryPositionMaxErrorMetres": 0.0,
+        "cornerNormalMaxVectorError": 0.0,
+        "cornerNormalMaxAngleDegrees": 0.0,
+        "cornerNormalByteHashPreserved": true,
+        "uv0ByteHashPreserved": true,
+        "faceCornerOrderPreserved": true,
+        "separatedDegenerateOrDuplicateFaces": 0,
+        "strategy": "UV-only temporary connected topology; original render geometry and normal fans retained verbatim"
+      },
+      "sourceUv0Sha256": "8dc4b1d720054ce17275b22fb22870c23656858642d5eb655607d84e5c4b5be2",
+      "triangles": 5032,
+      "file": "lightmaps/ShipyardGI_Station_yard_timber.rgba16f.gz",
+      "sha256": "c42e4054092cb379f6c16ec436954113d58fbc5ab6bb0d5c88d4b7f0ad3cc89f",
+      "raw_sha256": "3065614e1854f105bd2da24361dc4d9dad46a127be77deb3cfcae628054b31b5",
+      "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707",
+      "raw_bytes": 8388608,
+      "bytes": 3249212,
+      "width": 1024,
+      "height": 1024,
+      "type": "RGBA16F_LE",
+      "row_order": "top-first; flipY=false",
+      "quantity": "Cycles scene-linear white diffuse radiance, DIRECT+INDIRECT, no receiving albedo or emission",
+      "irradiance_multiplier": 3.141592653589793,
+      "samples": 128,
+      "plannedSamples": 128,
+      "containsAlbedo": false,
+      "containsEmission": false,
+      "denoising": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "seconds": 5.53323449997697,
+      "runtime": {
+        "file": "lightmaps/ShipyardGI_Station_yard_timber.rgba16f.gz",
+        "sha256": "c42e4054092cb379f6c16ec436954113d58fbc5ab6bb0d5c88d4b7f0ad3cc89f",
+        "raw_sha256": "3065614e1854f105bd2da24361dc4d9dad46a127be77deb3cfcae628054b31b5",
+        "width": 1024,
+        "height": 1024,
+        "channels": 4,
+        "raw_bytes": 8388608,
+        "bytes": 3249212,
+        "type": "RGBA16F_LE",
+        "quantity": "whiteDiffuseRadiance",
+        "containsAlbedo": false,
+        "containsEmission": false
+      },
+      "rawIntegration": {
+        "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmaps\\ShipyardGI_Station_yard_timber.rgba16f.gz",
+        "sha256": "2e1087b9290fb624a0d84a9191fd189b36196e9de9f861c012039390c9f676d8",
+        "raw_sha256": "7848cee5b014a1526bb90caf287e60c1eb93d6337ae7cabc2e242ab76890ac66",
+        "samples": 128,
+        "bakeSignature": "9a907c6d7a5e4c92af2c89e6f697b2ee29454ee1c9369e967e03835bf778a707"
+      },
+      "processingSignature": "5b030f2a0c99106aa68ad759e139c9942d8977a21e5ae2dc70f43e084369b86e",
+      "processingRecord": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\processed\\ShipyardGI_Station_yard_timber.json"
+    }
+  ],
+  "uv_artifact": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\lightmap-prepared.blend",
+  "uv_artifact_sha256": "ac22320f28d09ce1676e3ae991c0b3466786c798a8cf8909717fe103c276e414",
+  "uv_prepare_seconds": 3.469956999993883,
+  "uvPlanning": {
+    "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\uv-plan.json",
+    "sha256": "29ceb59c9a25bd2d41af6d0657a3db38ff2820b6e2f10cc0c6f39347225046d0",
+    "policy": {
+      "schema": "shipyard-independent-uv-plan-v1",
+      "sceneId": "shipyard-station",
+      "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+      "resolutions": {
+        "Station/harbour-cobbles": 2048,
+        "Station/quay-stone": 2048,
+        "Station/dressed-coping": 2048,
+        "Station/old-firebrick": 2048,
+        "Station/platform-paving": 2048,
+        "Station/old-platform-paint": 1024,
+        "Station/blackened-iron": 1024,
+        "Station/corrugated-zinc": 1024,
+        "Station/slipway-stone": 2048,
+        "Station/yard-timber": 1024,
+        "Station/riveted-blue-steel": 1024,
+        "Station/oiled-oak": 1024,
+        "Station/faded-boat-paint": 1024,
+        "Station/interior-shadow": 1024,
+        "Station/waiting-room-plaster": 1024,
+        "Station/ticket-machine-brass": 1024,
+        "Station/ticket-stock": 1024,
+        "Station/framed-departure-table": 1024,
+        "Station/framed-canal-route": 1024,
+        "Station/warm-opal-lamp": 1024,
+        "Station/station-name": 1024,
+        "Station/ticket-sign": 1024,
+        "Station/clock-face": 1024,
+        "Station/repair-yard-sign": 1024
+      },
+      "sampling": "128 actual samples per eligible new receiver, no inherited R4 group policy",
+      "auxiliary": "Declared StationAux materials remain physical occluders, receive no atlas, omitted from new runtime geometry",
+      "storage": "Only independent D task; no old data removed"
+    }
+  },
+  "schema": "shipyard-station-gi-v1",
+  "model": "shipyard-lightmapped.glb",
+  "lightingMode": "full-diffuse",
+  "runtimeAsset": {
+    "file": "shipyard-lightmapped.glb",
+    "sha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+    "bytes": 4389940,
+    "selectedMeshes": 30,
+    "excludedRuntimeAuxiliary": [
+      {
+        "object": "Station static / StationAux/paving",
+        "materials": [
+          "StationAux/paving"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "Station static / StationAux/stone",
+        "materials": [
+          "StationAux/stone"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "Station static / StationAux/cap",
+        "materials": [
+          "StationAux/cap"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "Station static / StationAux/brick",
+        "materials": [
+          "StationAux/brick"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "Station static / StationAux/steel",
+        "materials": [
+          "StationAux/steel"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "Station static / StationAux/dark",
+        "materials": [
+          "StationAux/dark"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "Station static / StationAux/zinc",
+        "materials": [
+          "StationAux/zinc"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "Station static / StationAux/oak",
+        "materials": [
+          "StationAux/oak"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_04_LOD0",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_06_LOD0",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_03_LOD0",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_02_LOD0",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_05_LOD0",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_01_LOD0",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_04_LOD0.001",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_06_LOD0.001",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_03_LOD0.001",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_02_LOD0.001",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_05_LOD0.001",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_01_LOD0.001",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_04_LOD0.002",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_06_LOD0.002",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_03_LOD0.002",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_02_LOD0.002",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_05_LOD0.002",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_01_LOD0.002",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_04_LOD0.003",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_06_LOD0.003",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_03_LOD0.003",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_02_LOD0.003",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_05_LOD0.003",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_01_LOD0.003",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_04_LOD0.004",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_06_LOD0.004",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_03_LOD0.004",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_02_LOD0.004",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_05_LOD0.004",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_01_LOD0.004",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_04_LOD0.005",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_06_LOD0.005",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_03_LOD0.005",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      },
+      {
+        "object": "periwinkle_plant_02_LOD0.005",
+        "materials": [
+          "periwinkle_plant"
+        ],
+        "reason": "Declared live auxiliary geometry or foliage; remains an integration occluder"
+      }
+    ],
+    "pbrBinding": "Restore new-world live material slots by name; geometry payload does not duplicate scan textures"
+  },
+  "runtime": {
+    "lightmapUv": 1,
+    "decodedType": "HalfFloatType",
+    "decodedFormat": "RGBAFormat",
+    "colorSpace": "NoColorSpace",
+    "flipY": false,
+    "diffuseReplacement": "PI times independently baked white radiance replaces all live direct/indirect diffuse on listed receivers; live specular/glass/water preserved"
+  },
+  "samplingPlan": {
+    "policy": "22-receivers-128-plus-oak-2048",
+    "groups": {
+      "ShipyardGI_Station_blackened_iron": 128,
+      "ShipyardGI_Station_clock_face": 128,
+      "ShipyardGI_Station_corrugated_zinc": 128,
+      "ShipyardGI_Station_dressed_coping": 128,
+      "ShipyardGI_Station_faded_boat_paint": 128,
+      "ShipyardGI_Station_framed_canal_route": 128,
+      "ShipyardGI_Station_framed_departure_table": 128,
+      "ShipyardGI_Station_harbour_cobbles": 128,
+      "ShipyardGI_Station_interior_shadow": 128,
+      "ShipyardGI_Station_oiled_oak": 2048,
+      "ShipyardGI_Station_old_firebrick": 128,
+      "ShipyardGI_Station_old_platform_paint": 128,
+      "ShipyardGI_Station_platform_paving": 128,
+      "ShipyardGI_Station_quay_stone": 128,
+      "ShipyardGI_Station_repair_yard_sign": 128,
+      "ShipyardGI_Station_riveted_blue_steel": 128,
+      "ShipyardGI_Station_slipway_stone": 128,
+      "ShipyardGI_Station_station_name": 128,
+      "ShipyardGI_Station_ticket_machine_brass": 128,
+      "ShipyardGI_Station_ticket_sign": 128,
+      "ShipyardGI_Station_ticket_stock": 128,
+      "ShipyardGI_Station_waiting_room_plaster": 128,
+      "ShipyardGI_Station_yard_timber": 128
+    }
+  },
+  "bake_run": {
+    "samplePolicy": "mixed-refinement",
+    "samples": null,
+    "parent": {
+      "samplePolicy": "uniform",
+      "samples": 128,
+      "devices": [
+        "NVIDIA GeForce RTX 4070 Laptop GPU"
+      ],
+      "seconds": 354.18918310001027
+    },
+    "oakRefinement": {
+      "samplePolicy": "uniform",
+      "samples": 2048,
+      "devices": [
+        "NVIDIA GeForce RTX 4070 Laptop GPU"
+      ],
+      "seconds": 76.23706950002816
+    }
+  },
+  "lightingCalibration": {
+    "practicalScale": 1.0,
+    "sunScale": 0.0,
+    "environmentScale": 1.0,
+    "environmentOverride": {
+      "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+      "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+      "mappingRotationZDegrees": 20.05352282957881,
+      "strength": 1.031923770904541,
+      "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+      "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+    },
+    "areaSourceVisibleToCamera": false,
+    "cyclesClosed8mmPanes": 6,
+    "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+    "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+    "integrationInputs": {
+      "sceneId": "shipyard-station",
+      "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+      "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+      "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+      "environmentStrength": 1.031923772120808,
+      "mappingRotationZDegrees": 20.05352282957881,
+      "analyticSunScale": 0.0,
+      "practicalScale": 1.0
+    }
+  },
+  "radianceProcessing": {
+    "complete": true,
+    "method": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+    "groups": 23,
+    "originalRawIntegrationPreserved": true,
+    "seconds": 502.780999999959,
+    "artworkQualityAccepted": false,
+    "candidateRefinement": {
+      "complete": true,
+      "method": "OIDN_RT_HDR_WORLD_NORMAL_POSITION_CHART_V1_PADDING4",
+      "groups": 1,
+      "originalRawIntegrationPreserved": true,
+      "seconds": 8.21799999999348,
+      "artworkQualityAccepted": false
+    }
+  },
+  "publication": {
+    "complete": true,
+    "sceneId": "shipyard-station",
+    "newSourceGeometry": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+    "files": 24,
+    "oldCanalGeometryOrMapsReused": false,
+    "geometryRoundTrip": {
+      "status": "independent-geometry-uv0-normal-validated",
+      "sceneId": "shipyard-station",
+      "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+      "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+      "uvArtifactSha256": "ac22320f28d09ce1676e3ae991c0b3466786c798a8cf8909717fe103c276e414",
+      "groups": [
+        {
+          "material": "Station/blackened-iron",
+          "triangles": 6896,
+          "cornerCount": 20688,
+          "sourceOriginalCornerCount": 20688,
+          "runtimeOriginalCornerCount": 20688,
+          "sourceExactDuplicateTriangles": 0,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 4.76837158203125e-07,
+          "normalMaxAngleDegrees": 0.01719435542551533,
+          "scaledRoundTripMaximum": 0.05999881742672304
+        },
+        {
+          "material": "Station/clock-face",
+          "triangles": 48,
+          "cornerCount": 144,
+          "sourceOriginalCornerCount": 144,
+          "runtimeOriginalCornerCount": 144,
+          "sourceExactDuplicateTriangles": 0,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 2.9802322387695312e-08,
+          "normalMaxAngleDegrees": 0.0,
+          "scaledRoundTripMaximum": 0.0002980232238769531
+        },
+        {
+          "material": "Station/corrugated-zinc",
+          "triangles": 4636,
+          "cornerCount": 13908,
+          "sourceOriginalCornerCount": 13908,
+          "runtimeOriginalCornerCount": 13908,
+          "sourceExactDuplicateTriangles": 0,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 4.76837158203125e-07,
+          "normalMaxAngleDegrees": 0.019909144242274388,
+          "scaledRoundTripMaximum": 0.06877409103311205
+        },
+        {
+          "material": "Station/dressed-coping",
+          "triangles": 24408,
+          "cornerCount": 73224,
+          "sourceOriginalCornerCount": 73224,
+          "runtimeOriginalCornerCount": 73224,
+          "sourceExactDuplicateTriangles": 0,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 1.9073486328125e-06,
+          "normalMaxAngleDegrees": 0.11387113402136993,
+          "scaledRoundTripMaximum": 0.2802766254375513
+        },
+        {
+          "material": "Station/faded-boat-paint",
+          "triangles": 72,
+          "cornerCount": 216,
+          "sourceOriginalCornerCount": 216,
+          "runtimeOriginalCornerCount": 216,
+          "sourceExactDuplicateTriangles": 0,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 0.0,
+          "normalMaxAngleDegrees": 0.005807538607002463,
+          "scaledRoundTripMaximum": 0.016130692189136653
+        },
+        {
+          "material": "Station/framed-canal-route",
+          "triangles": 2,
+          "cornerCount": 6,
+          "sourceOriginalCornerCount": 6,
+          "runtimeOriginalCornerCount": 6,
+          "sourceExactDuplicateTriangles": 0,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 0.0,
+          "normalMaxAngleDegrees": 0.0,
+          "scaledRoundTripMaximum": 4.440892098500626e-14
+        },
+        {
+          "material": "Station/framed-departure-table",
+          "triangles": 2,
+          "cornerCount": 6,
+          "sourceOriginalCornerCount": 6,
+          "runtimeOriginalCornerCount": 6,
+          "sourceExactDuplicateTriangles": 0,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 0.0,
+          "normalMaxAngleDegrees": 0.0,
+          "scaledRoundTripMaximum": 0.0
+        },
+        {
+          "material": "Station/harbour-cobbles",
+          "triangles": 432,
+          "cornerCount": 1296,
+          "sourceOriginalCornerCount": 1296,
+          "runtimeOriginalCornerCount": 1296,
+          "sourceExactDuplicateTriangles": 0,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 4.76837158203125e-07,
+          "normalMaxAngleDegrees": 0.0057290292007120165,
+          "scaledRoundTripMaximum": 0.019998084249200226
+        },
+        {
+          "material": "Station/interior-shadow",
+          "triangles": 192,
+          "cornerCount": 576,
+          "sourceOriginalCornerCount": 576,
+          "runtimeOriginalCornerCount": 576,
+          "sourceExactDuplicateTriangles": 0,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 4.470348358154297e-08,
+          "normalMaxAngleDegrees": 0.02835742485967899,
+          "scaledRoundTripMaximum": 0.07001105094875015
+        },
+        {
+          "material": "Station/oiled-oak",
+          "triangles": 19196,
+          "cornerCount": 57588,
+          "sourceOriginalCornerCount": 57588,
+          "runtimeOriginalCornerCount": 57588,
+          "sourceExactDuplicateTriangles": 0,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 1.1920928955078125e-07,
+          "normalMaxAngleDegrees": 0.08021922999625246,
+          "scaledRoundTripMaximum": 0.2799985497618
+        },
+        {
+          "material": "Station/old-firebrick",
+          "triangles": 1968,
+          "cornerCount": 5904,
+          "sourceOriginalCornerCount": 5904,
+          "runtimeOriginalCornerCount": 5904,
+          "sourceExactDuplicateTriangles": 0,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 1.1920928955078125e-07,
+          "normalMaxAngleDegrees": 0.012377248829513925,
+          "scaledRoundTripMaximum": 0.03333758395237396
+        },
+        {
+          "material": "Station/old-platform-paint",
+          "triangles": 324,
+          "cornerCount": 972,
+          "sourceOriginalCornerCount": 972,
+          "runtimeOriginalCornerCount": 972,
+          "sourceExactDuplicateTriangles": 0,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 2.384185791015625e-07,
+          "normalMaxAngleDegrees": 0.0,
+          "scaledRoundTripMaximum": 0.002384185791015625
+        },
+        {
+          "material": "Station/platform-paving",
+          "triangles": 108,
+          "cornerCount": 324,
+          "sourceOriginalCornerCount": 324,
+          "runtimeOriginalCornerCount": 324,
+          "sourceExactDuplicateTriangles": 0,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 0.0,
+          "normalMaxAngleDegrees": 0.0057290292007120165,
+          "scaledRoundTripMaximum": 0.019998084249200226
+        },
+        {
+          "material": "Station/quay-stone",
+          "triangles": 7032,
+          "cornerCount": 21096,
+          "sourceOriginalCornerCount": 21096,
+          "runtimeOriginalCornerCount": 21096,
+          "sourceExactDuplicateTriangles": 0,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 9.5367431640625e-07,
+          "normalMaxAngleDegrees": 0.0203951020848107,
+          "scaledRoundTripMaximum": 0.053334869148983444
+        },
+        {
+          "material": "Station/repair-yard-sign",
+          "triangles": 2,
+          "cornerCount": 6,
+          "sourceOriginalCornerCount": 6,
+          "runtimeOriginalCornerCount": 6,
+          "sourceExactDuplicateTriangles": 0,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 0.0,
+          "normalMaxAngleDegrees": 0.0,
+          "scaledRoundTripMaximum": 0.0
+        },
+        {
+          "material": "Station/riveted-blue-steel",
+          "triangles": 19024,
+          "cornerCount": 57072,
+          "sourceOriginalCornerCount": 57264,
+          "runtimeOriginalCornerCount": 57072,
+          "sourceExactDuplicateTriangles": 64,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 4.76837158203125e-07,
+          "normalMaxAngleDegrees": 0.08102986600409474,
+          "scaledRoundTripMaximum": 0.20014480904629295
+        },
+        {
+          "material": "Station/slipway-stone",
+          "triangles": 320,
+          "cornerCount": 960,
+          "sourceOriginalCornerCount": 960,
+          "runtimeOriginalCornerCount": 960,
+          "sourceExactDuplicateTriangles": 0,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 2.384185791015625e-07,
+          "normalMaxAngleDegrees": 0.0004537507737771381,
+          "scaledRoundTripMaximum": 0.002384185791015625
+        },
+        {
+          "material": "Station/station-name",
+          "triangles": 2,
+          "cornerCount": 6,
+          "sourceOriginalCornerCount": 6,
+          "runtimeOriginalCornerCount": 6,
+          "sourceExactDuplicateTriangles": 0,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 0.0,
+          "normalMaxAngleDegrees": 0.0,
+          "scaledRoundTripMaximum": 4.440892098500626e-14
+        },
+        {
+          "material": "Station/ticket-machine-brass",
+          "triangles": 1372,
+          "cornerCount": 4116,
+          "sourceOriginalCornerCount": 4116,
+          "runtimeOriginalCornerCount": 4116,
+          "sourceExactDuplicateTriangles": 0,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 1.1920928955078125e-07,
+          "normalMaxAngleDegrees": 0.017197514025814608,
+          "scaledRoundTripMaximum": 0.06000102558854179
+        },
+        {
+          "material": "Station/ticket-sign",
+          "triangles": 2,
+          "cornerCount": 6,
+          "sourceOriginalCornerCount": 6,
+          "runtimeOriginalCornerCount": 6,
+          "sourceExactDuplicateTriangles": 0,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 0.0,
+          "normalMaxAngleDegrees": 0.0,
+          "scaledRoundTripMaximum": 4.440892098500626e-14
+        },
+        {
+          "material": "Station/ticket-stock",
+          "triangles": 624,
+          "cornerCount": 1872,
+          "sourceOriginalCornerCount": 1872,
+          "runtimeOriginalCornerCount": 1872,
+          "sourceExactDuplicateTriangles": 0,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 2.9802322387695312e-08,
+          "normalMaxAngleDegrees": 0.020392863182196835,
+          "scaledRoundTripMaximum": 0.05334552496307765
+        },
+        {
+          "material": "Station/waiting-room-plaster",
+          "triangles": 36,
+          "cornerCount": 108,
+          "sourceOriginalCornerCount": 108,
+          "runtimeOriginalCornerCount": 108,
+          "sourceExactDuplicateTriangles": 0,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 0.0,
+          "normalMaxAngleDegrees": 0.0,
+          "scaledRoundTripMaximum": 0.0
+        },
+        {
+          "material": "Station/yard-timber",
+          "triangles": 5032,
+          "cornerCount": 15096,
+          "sourceOriginalCornerCount": 23520,
+          "runtimeOriginalCornerCount": 15096,
+          "sourceExactDuplicateTriangles": 2808,
+          "runtimeExactDuplicateTriangles": 0,
+          "positionMaxErrorMetres": 0.0,
+          "uv0MaxComponentError": 5.960464477539063e-08,
+          "normalMaxAngleDegrees": 0.12167623348250345,
+          "scaledRoundTripMaximum": 0.300315033737121
+        }
+      ],
+      "uv1AtlasBounds": {
+        "ShipyardGI_Station_blackened_iron": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_clock_face": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_corrugated_zinc": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_dressed_coping": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_faded_boat_paint": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_framed_canal_route": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_framed_departure_table": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_harbour_cobbles": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_interior_shadow": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_oiled_oak": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_old_firebrick": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_old_platform_paint": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_platform_paving": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_quay_stone": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_repair_yard_sign": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_riveted_blue_steel": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_slipway_stone": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_station_name": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_ticket_machine_brass": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_ticket_sign": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_ticket_stock": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_waiting_room_plaster": [
+          0.0,
+          1.0
+        ],
+        "ShipyardGI_Station_yard_timber": [
+          0.0,
+          1.0
+        ]
+      },
+      "positionComponentToleranceMetres": 0.0001,
+      "uv0ComponentTolerance": 0.0001,
+      "normalComponentTolerance": 0.005,
+      "normalAngleToleranceDegrees": 0.25,
+      "normalEncodingScope": "UV-only preparation preserves imported Blender corner-normal bytes; glTF import/export normal-fan encoding is measured within the explicit angular tolerance, not claimed byte-identical to source Three normals.",
+      "comparison": "Bidirectional nearest triangle-corner matches per original material after exact glTF world transforms; equal unique rendered corner counts. Only exact duplicate attributes with identical winding are deduplicated, not distinct coplanar or reversed faces. No texture image or camera projection used.",
+      "artworkQualityAccepted": false
+    },
+    "proofReview": {
+      "status": "reviewed-for-integration",
+      "sceneId": "shipyard-station",
+      "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+      "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+      "proofs": [
+        {
+          "sceneId": "shipyard-station",
+          "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "camera": "platform",
+          "cameraPose": {
+            "position": [
+              21.95,
+              2.3,
+              22.2
+            ],
+            "target": [
+              18.4,
+              1.8,
+              6.2
+            ],
+            "fov": 60,
+            "width": 1440,
+            "height": 902,
+            "near": 0.045,
+            "far": 450
+          },
+          "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\proofs\\2026-10-24T16-39-33-platform.png",
+          "sha256": "83323ea85de84641800c4bd8ae413edc330078a8c915d36dfe47a0aa627cd62e",
+          "samples": 64,
+          "devices": [
+            "NVIDIA GeForce RTX 4070 Laptop GPU"
+          ],
+          "resolution": [
+            1440,
+            902
+          ],
+          "lightingCalibration": {
+            "practicalScale": 1.0,
+            "sunScale": 0.0,
+            "environmentScale": 1.0,
+            "environmentOverride": {
+              "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 20.05352282957881,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 6,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+            "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+            "integrationInputs": {
+              "sceneId": "shipyard-station",
+              "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+              "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+              "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "environmentStrength": 1.031923772120808,
+              "mappingRotationZDegrees": 20.05352282957881,
+              "analyticSunScale": 0.0,
+              "practicalScale": 1.0
+            }
+          },
+          "seconds": 16.009779699961655,
+          "scope": "Exact new-scene Cycles proof only, never a runtime backdrop or artwork completion claim"
+        },
+        {
+          "sceneId": "shipyard-station",
+          "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "camera": "hall",
+          "cameraPose": {
+            "position": [
+              25.5,
+              2.3,
+              10.4
+            ],
+            "target": [
+              30.5,
+              2,
+              4
+            ],
+            "fov": 53,
+            "width": 1440,
+            "height": 902,
+            "near": 0.045,
+            "far": 450
+          },
+          "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\proofs\\2026-10-24T16-43-04-hall.png",
+          "sha256": "b1a83e1b511553b85596a33f296e086935b15a0f427cc0f26d52d6577efa7024",
+          "samples": 64,
+          "devices": [
+            "NVIDIA GeForce RTX 4070 Laptop GPU"
+          ],
+          "resolution": [
+            1440,
+            902
+          ],
+          "lightingCalibration": {
+            "practicalScale": 1.0,
+            "sunScale": 0.0,
+            "environmentScale": 1.0,
+            "environmentOverride": {
+              "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 20.05352282957881,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 6,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+            "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+            "integrationInputs": {
+              "sceneId": "shipyard-station",
+              "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+              "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+              "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "environmentStrength": 1.031923772120808,
+              "mappingRotationZDegrees": 20.05352282957881,
+              "analyticSunScale": 0.0,
+              "practicalScale": 1.0
+            }
+          },
+          "seconds": 17.00917760003358,
+          "scope": "Exact new-scene Cycles proof only, never a runtime backdrop or artwork completion claim"
+        },
+        {
+          "sceneId": "shipyard-station",
+          "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+          "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+          "camera": "shipyard",
+          "cameraPose": {
+            "position": [
+              -21.8,
+              3,
+              23
+            ],
+            "target": [
+              -30,
+              3.9,
+              -4.5
+            ],
+            "fov": 53,
+            "width": 1440,
+            "height": 902,
+            "near": 0.045,
+            "far": 450
+          },
+          "file": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\proofs\\2026-10-24T16-46-11-shipyard.png",
+          "sha256": "100957504ac401d710f9e787885316b603f93cc6746621f10f84ab284e3ab904",
+          "samples": 64,
+          "devices": [
+            "NVIDIA GeForce RTX 4070 Laptop GPU"
+          ],
+          "resolution": [
+            1440,
+            902
+          ],
+          "lightingCalibration": {
+            "practicalScale": 1.0,
+            "sunScale": 0.0,
+            "environmentScale": 1.0,
+            "environmentOverride": {
+              "file": "F:\\codex_project\\1020_codex_project\\projects\\014-programmable-worlds\\web\\canal-real\\assets\\lighting-r5\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 20.05352282957881,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 6,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration.",
+            "lightingIntegrationSignature": "2e40997c908708490e61e02ee7936af7bc8ad742c77de56dac506deaad6cfbd7",
+            "integrationInputs": {
+              "sceneId": "shipyard-station",
+              "sourceSha256": "1438d3aee0e5a99edcda3426340d4e814313136049055094aaaf14d35d640690",
+              "metadataSha256": "2c8cedf87e0439a36d9b468460d1e04901190ae89732843cad5040406aaf8352",
+              "fullHDRSha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "environmentStrength": 1.031923772120808,
+              "mappingRotationZDegrees": 20.05352282957881,
+              "analyticSunScale": 0.0,
+              "practicalScale": 1.0
+            }
+          },
+          "seconds": 16.558487600064836,
+          "scope": "Exact new-scene Cycles proof only, never a runtime backdrop or artwork completion claim"
+        }
+      ],
+      "reviewNote": "Root explicitly inspected all three exact proofs and authorized independent UV, model export and 128-sample integration. Platform daylight and canopy shading, hall task/window light with oak reflections, and full gantry/dry-dock/industrial-bridge composition were accepted to proceed. Missing realtime water and moving launch are declared exclusions. This is not final realtime artwork acceptance.",
+      "scope": "Proof reviewed to proceed; not final realtime artwork acceptance"
+    },
+    "artworkQualityAccepted": false,
+    "scope": "Independent geometry/UV/radiance integrity only; final realtime artwork and interaction need separate review"
+  },
+  "refinement": {
+    "parentManifest": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\bake-manifest.json",
+    "parentManifestSha256": "00b8a2076f53e41108a0c6cdd718c756db633f0db6fe6477b8b9f1db076bbad2",
+    "reason": "Observed sparse warm radiance outliers in actual hall diffuse runtime",
+    "changes": [
+      "Only the oak receiver uses 2048 genuine uniform samples instead of 128"
+    ],
+    "unchanged": [
+      "Exact source",
+      "UV master",
+      "physical light rig",
+      "materials",
+      "random seed",
+      "bounces"
+    ],
+    "geometryGuidesReusedOnly": "D:\\codex\\tmp\\014-shipyard-20261024\\r1\\guides\\ShipyardGI_Station_oiled_oak.json",
+    "originalRawAndProcessedPreserved": true,
+    "artworkQualityAccepted": false,
+    "parentPublishedManifestSha256": "4ea56b2a06e465341666202568952c455a00cfb53869a2bad240bddb17a928ec"
+  },
+  "artworkQualityAccepted": false
+}

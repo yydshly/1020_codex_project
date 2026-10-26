@@ -1,0 +1,313 @@
+{
+  "schema": "programmable-worlds-delivery-v4",
+  "status": "accepted",
+  "recorded_at": "2026-10-25T05:07:43.949888+00:00",
+  "display_timezone": "Asia/Shanghai",
+  "artwork_quality_accepted": true,
+  "independent_works_accepted": true,
+  "sceneIds": [
+    "canal-street",
+    "shipyard-station",
+    "lijiang-flythrough"
+  ],
+  "world_identities": {
+    "window": {
+      "sceneId": "canal-street",
+      "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+      "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34"
+    },
+    "station": {
+      "sceneId": "shipyard-station",
+      "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+      "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+      "runtimeRevision": "shipyard-oak2048-aftdeck-2",
+      "manifestSha256": "97eb5a39b308d200f0011f9732725a812b7794cca48553178a11e4841b0f882e",
+      "giManifest": {
+        "path": "web/shipyard-station/baked-r1/manifest-oak2048.json",
+        "sha256": "97eb5a39b308d200f0011f9732725a812b7794cca48553178a11e4841b0f882e"
+      },
+      "inputRevision": "station-manual-input-2"
+    },
+    "lijiang": {
+      "sceneId": "lijiang-flythrough",
+      "runtimeRevision": "lijiang-pure-code-3",
+      "controlsRevision": "complete-atmosphere-1",
+      "terrainVersion": "lijiang-wooded-karst-3",
+      "surfaceDetailRevision": "short-joints-1",
+      "pure_code_scene": true,
+      "sourceFingerprint": "033242a8ed074730f28b0a42c3f8367a77e81131cb5eb187f370c340357a00b4"
+    }
+  },
+  "reports": {
+    "source": {
+      "path": "notes/source-live-acceptance.d3d11.json",
+      "sha256": "8bdfc6348ee79eaacc641ecc3cf0475e264fa8226dd03074b68cf78e3b862a36",
+      "minimumChecks": 15,
+      "requiredChecks": [
+        "original-renderer-live-track-decoded-in-ordinary-page",
+        "page-drives-real-original-camera"
+      ],
+      "capture": "04-headland-35",
+      "status": "passed",
+      "runId": "2026-10-24T08-42-44-256Z",
+      "actualStatus": "passed",
+      "checks": 15,
+      "reasons": [],
+      "scope": "Actual WebRTC video decoding and original-renderer control. Source shader fidelity is checked separately; no artwork-quality claim.",
+      "presentation": null
+    },
+    "window": {
+      "path": "notes/canal-real-window-functional.d3d11.json",
+      "sha256": "9bcd42414650077b98889f2a520a5b4faba392cc11d6955b082a5eccb3b4460b",
+      "minimumChecks": 13,
+      "requiredChecks": [
+        "drive-moves-actual-camera",
+        "water-time-changes-actual-rendered-pixels",
+        "task-owned-renderer-disposes"
+      ],
+      "capture": "01-window",
+      "status": "passed",
+      "runId": "2026-10-24T14-18-59-251Z",
+      "actualStatus": "passed",
+      "checks": 13,
+      "reasons": [],
+      "scope": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 541,
+        "firstPaintAt": 1792851538440,
+        "lastPaintAt": 1792851610963
+      }
+    },
+    "station": {
+      "path": "notes/station-functional.d3d11.json",
+      "sha256": "4fabd985a07c4b59343902b17c63ca163891c560b15ba989bca9978db31668e8",
+      "minimumChecks": 15,
+      "requiredChecks": [
+        "own-independent-geometry-and-complete-lighting",
+        "real-passenger-launch-pause-holds",
+        "whole-approach-moors-and-opens-physical-gangway",
+        "complete-boarding-and-departure-carries-camera",
+        "complete-shore-outcome-keeps-view-and-departs-boat",
+        "own-independent-renderer-disposes"
+      ],
+      "capture": "05-actual-docked",
+      "status": "passed",
+      "runId": "2026-10-24T18-17-51-965Z",
+      "actualStatus": "passed",
+      "checks": 15,
+      "reasons": [],
+      "scope": "Independent station actual user journey and controls",
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 3987,
+        "firstPaintAt": 1792865871012,
+        "lastPaintAt": 1792866018179
+      }
+    },
+    "hub": {
+      "path": "notes/hub-two-worlds-acceptance.d3d11.json",
+      "sha256": "a709368e35dfb035c8a78f080af4d2a55d3abd6edc3b25fd86c95ad1fa11386e",
+      "minimumChecks": 13,
+      "requiredChecks": [
+        "original-window-and-independent-station-entry-map",
+        "independent-station-three-actual-view-buttons",
+        "independent-station-call-pause-and-redundant-visible-message",
+        "two-actual-authored-worlds-have-independent-models-and-lighting",
+        "single-live-world-through-source-window-independent-station-window"
+      ],
+      "status": "passed",
+      "runId": "2026-10-24T18-38-15-177Z",
+      "actualStatus": "passed",
+      "checks": 18,
+      "reasons": [],
+      "scope": "Actual sourceLive / canalReal window / independent stationWorld entries, model identities, native input and serialized release. No artwork-quality claim.",
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1899,
+        "firstPaintAt": 1792867095269,
+        "lastPaintAt": 1792867286928
+      }
+    },
+    "hub_mobile": {
+      "path": "notes/hub-two-worlds-acceptance.d3d11.json",
+      "sha256": "a709368e35dfb035c8a78f080af4d2a55d3abd6edc3b25fd86c95ad1fa11386e",
+      "minimumChecks": 13,
+      "requiredChecks": [
+        "mobile-station-actual-approach-reaches-docked-choices",
+        "single-live-world-through-source-window-independent-station-window"
+      ],
+      "status": "passed",
+      "runId": "2026-10-24T18-38-15-177Z",
+      "actualStatus": "passed",
+      "checks": 18,
+      "reasons": [],
+      "scope": "Actual sourceLive / canalReal window / independent stationWorld entries, model identities, native input and serialized release. No artwork-quality claim.",
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1899,
+        "firstPaintAt": 1792867095269,
+        "lastPaintAt": 1792867286928
+      }
+    },
+    "lijiang_functional": {
+      "path": "notes/lijiang-functional.d3d11.json",
+      "sha256": "450209f65c7468a883f29773a12b2d5ffabfb037bb0f9201574252fe88a231f7",
+      "status": "passed",
+      "runId": "2026-10-25T04-16-32-477Z",
+      "checks": 15,
+      "scope": "Actual procedural Li River flight and controls"
+    },
+    "lijiang_recording": {
+      "path": "notes/lijiang-recording.d3d11.json",
+      "sha256": "716958c047139a7d0584796e953036e4b4c5a0b4a4b7045b8391750f5fb738cd",
+      "status": "passed",
+      "runId": "2026-10-25T04-20-57-291Z",
+      "checks": 6,
+      "scope": "Actual procedural scene captures; independent visual review required"
+    },
+    "lijiang_hub": {
+      "path": "notes/lijiang-hub-acceptance.d3d11.json",
+      "sha256": "b4c488d5b3d1a45244d6b2e9f7c4ebbd5d52921e9dc67bc5e336030065469e20",
+      "status": "passed",
+      "runId": "2026-10-25T04-50-53-221Z",
+      "checks": 21,
+      "scope": "Actual four production iframe entries and APIs; serial document/renderer lifecycle; Lijiang native input, controls, 375/390 phone layouts, clean-frame captures and a small cancelled encoder job. Previous full-flight and 1080p60 export reports remain separate. No artwork-quality claim."
+    },
+    "lijiang_atmosphere": {
+      "path": "notes/lijiang-atmosphere.d3d11.json",
+      "sha256": "908714f36ce87009d3e94ddfacaa51e1ebd357d4e7d4729bcb5752e712766680",
+      "status": "passed",
+      "runId": "2026-10-25T04-56-11-308Z",
+      "checks": 5,
+      "scope": "Actual procedural scene captures; independent visual review required"
+    }
+  },
+  "visual_review": {
+    "path": "notes/visual-acceptance-independent.md",
+    "sha256": "fb107d0c9e6823744740a69d87614c59fc71f7f5a752795620505174a539b29b",
+    "status": "accepted",
+    "sceneIds": [
+      "canal-street",
+      "shipyard-station"
+    ]
+  },
+  "guide_evidence": {
+    "path": "notes/guide-final-evidence.json",
+    "sha256": "04384b082b555c6d164e4dcedca6d0dd6de9113fda2fea97951be77ad0ab9be1"
+  },
+  "acceptance_pending": [],
+  "history": {
+    "scope_correction": "notes/scope-correction-20261024.md",
+    "previous_delivery_record": "notes/delivery-acceptance.scope-reopened.json",
+    "old_shared_story_counts_as_second_work": false,
+    "original_pre_correction_record": "notes/delivery-acceptance.before-scope-correction.json",
+    "previous_delivery_before_lijiang": "notes/delivery-acceptance.before-lijiang.json"
+  },
+  "execution_policy": {
+    "hidden_own_windows_only": true,
+    "desktop_input_used": false,
+    "user_tab_navigated": false,
+    "visible_entry_auto_launched": false
+  },
+  "evidence_policy": "Old reports retain actual hashes/status and remain archived in delivery-v3. Lijiang functional, full export, final GUI supplement, four-entry production hub and visual judgement are separate records; counts and hashes do not establish artistic equivalence or universal performance.",
+  "guide": {
+    "path": "assets/programmable-worlds-guide.svg",
+    "sha256": "eebd2ed64ab9ed77c61d4374d37e2c4b5b83bfba83035b8dbd2149cf32b3227c",
+    "web_copy_identical": true,
+    "width": 1800,
+    "height": 4830,
+    "layout_review": {
+      "path": "F:\\codex_project\\1020_codex_project\\.cache\\014-guide-qa\\guide-independent-20261025-layout-review.json",
+      "workspaceRelativePath": ".cache/014-guide-qa/guide-independent-20261025-layout-review.json",
+      "sha256": "a0c42ade40c438a4d2a7c8dd398eb906c63f95fec10a57fd3babe9c29e217049",
+      "status": "passed"
+    },
+    "scope": "Frozen source and two canal works research snapshot; Lijiang is linked separately from the guide page and has its own runtime/evidence."
+  },
+  "same_report_reused_for_hub_mobile": true,
+  "source_integrity": {
+    "templates_preserved": 33,
+    "glsl_unchanged": true,
+    "upstream_sha256": "616d20c66e82d070f8c6bff921c8a78b2f04309b8cf279835ce4cdeaa90f4dfd",
+    "runtime_sha256": "1e6235db469ff444cac6a81a6740e1e88656796f7bdf745d758f2344649a6037"
+  },
+  "source_bridge_after_acceptance": {
+    "service": "napali-source-bridge",
+    "version": 1,
+    "backend": "gl",
+    "pid": 81768,
+    "sessionActive": false,
+    "offscreen": true,
+    "offscreenFrameRate": 30
+  },
+  "preserved_failed_runs": [
+    "assets/hub-qa/d3d11/2026-10-24T18-29-33-944Z/acceptance.json",
+    "assets/hub-qa/d3d11/2026-10-24T18-35-03-197Z/acceptance.json",
+    "notes/station-cache-correction.md",
+    "assets/lijiang-qa/2026-10-25T03-12-43-367Z/result.json",
+    "assets/lijiang-qa/2026-10-25T03-36-49-369Z/result.json",
+    "assets/lijiang-qa/2026-10-25T04-12-07-705Z/result.json",
+    "assets/lijiang-hub-qa/2026-10-25T04-47-06-061Z/result.json"
+  ],
+  "quality_policy": "Visual quality is a separate recorded judgement; report counts, sample counts and hashes establish neither artistic equivalence nor universal device performance. Full station-functional retains its actual pre-review accepted=false; later official hub observed accepted=true for the same scene, lighting and refined GI. Lijiang acceptance is scoped to the pure-code landscape goal, with remaining procedural material/canopy style limits documented; no napali parity or photographic recreation is asserted.",
+  "final_files": {
+    "project.json": "f84637c77bf9f32e2a92895a85ac6a06674503e508f2e13e6ea7863aabd505e5",
+    "README.md": "a2b2bd9031766351475f87c8fc70320264abb37d16b52de485c7452fee435555",
+    "web/index.html": "16776c5d4948e9112dc14bd7bd446f9b1a0ec3c8c1057e6e623e01198f3dc1cf",
+    "web/guide.html": "a788e4e2069de902f7e7a57bfd82ee9fd9376bf2154acdfe7caf95c2bb7dd2f6",
+    "web/app.js": "0afd8bccb9c5490d0cacf8218b0c87d892fda26daa6da6cb54dc7a2a28eb4d3f",
+    "web/style.css": "ead4d6d0de572a12a761ff1c64ac1b11739775225e20182cf3021641a6cc5a80",
+    "web/shipyard-station/index.html": "9809f2b9941292453fd346db400551377e108bb3aeba01f9ff0a11b046c74437",
+    "web/shipyard-station/main.js": "71c35634e562bf7648da3c47f0cbbc5eddf1ddd26b049ff59b8ebbf2e8882498",
+    "web/shipyard-station/journey.js": "ad02b755ee98be97737b9a6bf4eec2b25881f20bd6608fd159bd94660ec02fa7",
+    "web/shipyard-station/gi.js": "82f1ee217af555cad78ecce57f00ce7b26e030f6a0ed692b19d744708b93f32d",
+    "web/shipyard-station/visual-review.json": "e1f186b05ec05427c84088314e6bc29b485d2be5916c0191b6a910269b4637c0",
+    "web/shipyard-station/baked-r1/manifest-oak2048.json": "97eb5a39b308d200f0011f9732725a812b7794cca48553178a11e4841b0f882e",
+    "notes/lijiang-iteration-log.md": "3387c7dc93696eb2fefac6d5159e467daa33c9ee2edbef79d05c61830285e3cf",
+    "notes/verification-current.md": "a53bd1d1b81f367281d386e4c34b1c8d5652bad422aff3ec0addffa8088c559f",
+    "src/runtime-shell/lijiang-acceptance.cjs": "25711f73697933cbfe0ac8a530b697aa14a82bc9a150de13b9c9e881a4e686c7",
+    "src/runtime-shell/lijiang-hub-acceptance.cjs": "203318891596da7ccf00f6f8f75b03a1e487ba8d64c4ed7256aaa3607ba38705",
+    "src/runtime-shell/main.cjs": "388729863481b702d6f5a2c467133ac0cbbefcff22d300a2db0d365c541ca9a3",
+    "src/runtime-shell/prepare-shell.cjs": "4d92345e814dab4b589b7c0624ae903aab0e85dd0aa370670cddee39a0383526",
+    "web/lijiang-flythrough/README.md": "db69817b7dca237e7918b67f39cfb7a50cde98c26be87a93904eee91d61b4358",
+    "web/lijiang-flythrough/build/assets/index-BlVeFlsE.js": "fcdcf60d4dca514353d680c4a845b6ecbb779776d0d6b2c21cb6933a38874d08",
+    "web/lijiang-flythrough/build/assets/index-DxTDCvpc.css": "297f6723c603242df51b69c44d4545da60e24037018bbc71382fb8aecb4a7b53",
+    "web/lijiang-flythrough/build/assets/src-CR-FzBBe.js": "a1d112d5d57c2ed07711244331dc0bd3075961cb60786004b40abf84180cb294",
+    "web/lijiang-flythrough/build/index.html": "6e4550f2c508319457c1a613c7754680ccd6c6acfe7d0d02fa770c34cbca4592",
+    "web/lijiang-flythrough/credits.html": "9440d22bfec2ec800bbd7a4b5ca58ebd91855992c982049e241bb7465f8be742",
+    "web/lijiang-flythrough/index.html": "88cf389ec5b7a0430af13c893d0f0baf8c667e0216709437e7ad4d26e410ee4a",
+    "web/lijiang-flythrough/licenses/lil-gui-MIT.txt": "8cf4a9691239b14c715613ed8e41580d18ee433c862e263058393b35be6c8e53",
+    "web/lijiang-flythrough/licenses/mediabunny-MPL-2.0.txt": "3f3d9e0024b1921b067d6f7f88deb4a60cbe7a78e76c64e3f1d7fc3b779b9d04",
+    "web/lijiang-flythrough/licenses/three-MIT.txt": "8b378ebe60e2fe500158cb0ac71cb5e8b7d92953c2abcc63a0eb90499653b5bc",
+    "web/lijiang-flythrough/package-lock.json": "db43b158093d888ed617a4d60f91e9ebb2dd9a59f0bb488ee620dc9ed638ce82",
+    "web/lijiang-flythrough/package.json": "27f4c2733c89dbb8c6d165d078ffe19feab0a2d166dea286ce608e7438feca6d",
+    "web/lijiang-flythrough/src/camera-path.js": "bbb88c93d23fc3cf607d3a39d6cca1cab44bda5de7124eccf5fe9cc64d4b5a50",
+    "web/lijiang-flythrough/src/details.js": "2301444a1d6b610d46d4d24ea63ecf25c839ee1ed5690e6da13529bc4ebf099b",
+    "web/lijiang-flythrough/src/main.js": "1925868cceb480f72d22ccfdb4a6ec7e3f1520158e0b4bdb3a5dbc7206596e5d",
+    "web/lijiang-flythrough/src/mist.js": "2d03773f047d887b67091b0703eeab7483669f0cfeebf4d662c2cfd4a9ceb60e",
+    "web/lijiang-flythrough/src/noise.js": "41e458598d98071f8d770562e35ad2ee757f2630fdd4489b031c346016058528",
+    "web/lijiang-flythrough/src/recorder.js": "86657aae8b05ae5a6166d8c722675a57f3627f2352c8a61e658d91f3fa2f1546",
+    "web/lijiang-flythrough/src/sky.js": "e979c997b58a9fffb110e26cb097fb30a041396d8b0f551fa0db0632416e29cf",
+    "web/lijiang-flythrough/src/terrain.js": "43d72f0c3377cd39a11d3e13d4106de0d72fefed3cdaaaeaae5f2b7bc3a96f4a",
+    "web/lijiang-flythrough/src/vegetation.js": "01eb726253a46495bcdcff244b0a371127d653a546c03811fc9edc0069173b55",
+    "web/lijiang-flythrough/src/water.js": "cf2973e03b4dc33ea4b962a16f01548fccc67ea0487e2c1bc3214cd3df398a62",
+    "web/lijiang-flythrough/style.css": "b5f85d0a768d14aa7ba996f97e2b496316fec4ee58babba0b17f690df8f88912",
+    "web/lijiang-flythrough/vite.config.js": "3b604eecd484cc31d934e276baec737934a22c46c72374326c4532a0be759b5c",
+    "notes/lijiang-acceptance.json": "f200995e11d2901a4e562ceb1bf2c86ece791913e3891b66c41876ec908c4377"
+  },
+  "lijiang_acceptance": {
+    "path": "notes/lijiang-acceptance.json",
+    "sha256": "f200995e11d2901a4e562ceb1bf2c86ece791913e3891b66c41876ec908c4377"
+  },
+  "lijiang_visual_review": {
+    "path": "notes/lijiang-visual-acceptance.md",
+    "sha256": "144a31d617f913cd099fe7bae58f65867ce31c0cf0518c45ed00424f20503ff1",
+    "status": "accepted",
+    "scope": "Program-generated Xingping/Li River landscape intent, four flight views, complete central reflection and actual embedded phone clean frame. No claim of photographic fidelity or artistic equivalence to napali; no user approval inferred."
+  }
+}

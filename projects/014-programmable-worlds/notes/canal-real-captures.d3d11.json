@@ -1,0 +1,3081 @@
+{
+  "runId": "2026-10-24T13-49-00-916Z",
+  "status": "passed",
+  "scene": "canal-real",
+  "backend": "d3d11",
+  "tests": [
+    {
+      "name": "new-canal-initializes-without-script-errors",
+      "passed": true,
+      "evidence": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 0.46670000000000067,
+        "paused": false,
+        "frames": 14,
+        "view": "window",
+        "experience": "window",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 9.199999928474426,
+        "quality": "benchmark / not accepted",
+        "runtimeLighting": {
+          "revision": "r5-cloudbreak",
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "probeBackground": "deSunHDR",
+          "environmentRotationY": -1.7362243408943674,
+          "backgroundRotationY": -1.7362243408943674,
+          "sun": {
+            "position": [
+              -16.195299832700535,
+              30.708856143855655,
+              18.061570692961837
+            ],
+            "target": [
+              3,
+              0,
+              -2
+            ],
+            "intensity": 4.562767782748515,
+            "colorLinear": [
+              0.991978082879707,
+              1,
+              0.9084521146029024
+            ]
+          }
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 26,
+          "accepted": false,
+          "model": "../baked-r4/canal-lightmapped.glb",
+          "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+          "proof": null,
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 99.4783270211304,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "giSet": "r5",
+          "appliedPracticalScale": 0.25
+        },
+        "navigation": {
+          "mode": "room-look",
+          "manual": false,
+          "bounds": {
+            "x": [
+              -14.1,
+              -9.65
+            ],
+            "y": [
+              1.65,
+              4.35
+            ],
+            "z": [
+              7.9,
+              15.1
+            ]
+          },
+          "lastConstraint": null,
+          "position": [
+            -11.699999999999998,
+            2.450000000000003,
+            13.7
+          ]
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 27,
+          "bakedMaterials": 26,
+          "glazingMaterials": 1,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "window-room",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                -11.85,
+                2.85,
+                11.5
+              ],
+              "min": [
+                -14.65,
+                1.08,
+                7.48
+              ],
+              "max": [
+                -9.02,
+                4.94,
+                15.52
+              ]
+            },
+            {
+              "name": "bookshop",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                12.05,
+                2.08,
+                6.7
+              ],
+              "min": [
+                10.4,
+                0.8,
+                4.43
+              ],
+              "max": [
+                14.06,
+                3.56,
+                8.98
+              ]
+            },
+            {
+              "name": "canal-street",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                0,
+                3,
+                7
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -20
+              ],
+              "max": [
+                11.2,
+                15.5,
+                38
+              ]
+            },
+            {
+              "name": "bridge-street",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                0,
+                4,
+                -30
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -76
+              ],
+              "max": [
+                11.2,
+                15.5,
+                2
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 13,
+            "observedProgramMaximum": 13
+          }
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            0.9072760542590824,
+            -0.06957493406492544,
+            9.8
+          ],
+          "letterPosition": [
+            0.9209114428427128,
+            0.10689844594645743,
+            9.920000926352806
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1,
+          "readingLayout": null,
+          "paperScreenBounds": null
+        },
+        "camera": {
+          "position": [
+            -11.699999999999998,
+            2.450000000000003,
+            13.7
+          ],
+          "target": [
+            7.3000000000000025,
+            1.7000000000000004,
+            -4.7
+          ],
+          "fov": 52
+        },
+        "renderer": {
+          "width": 1440,
+          "height": 902,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "actual-camera-window",
+      "passed": true,
+      "evidence": {
+        "camera": {
+          "position": [
+            -11.699999999999998,
+            2.450000000000003,
+            13.7
+          ],
+          "target": [
+            7.3000000000000025,
+            1.7000000000000004,
+            -4.7
+          ],
+          "fov": 52
+        },
+        "frames": 27
+      }
+    },
+    {
+      "name": "actual-camera-quay",
+      "passed": true,
+      "evidence": {
+        "camera": {
+          "position": [
+            6.8,
+            1.8600000000000008,
+            14.300000000000006
+          ],
+          "target": [
+            8.3,
+            3.8999999999999995,
+            -7.799999999999999
+          ],
+          "fov": 54
+        },
+        "frames": 67
+      }
+    },
+    {
+      "name": "actual-camera-shop",
+      "passed": true,
+      "evidence": {
+        "camera": {
+          "position": [
+            4.799999999999996,
+            1.7999999999999994,
+            5.099999999999999
+          ],
+          "target": [
+            10.9,
+            2,
+            6.4
+          ],
+          "fov": 48
+        },
+        "frames": 112
+      }
+    },
+    {
+      "name": "actual-camera-story",
+      "passed": true,
+      "evidence": {
+        "camera": {
+          "position": [
+            4.649999999999999,
+            1.549999999999999,
+            10.199999999999996
+          ],
+          "target": [
+            1.2,
+            0.2,
+            3.4
+          ],
+          "fov": 50
+        },
+        "frames": 153
+      }
+    },
+    {
+      "name": "task-owned-renderer-disposes",
+      "passed": true,
+      "evidence": {
+        "disposed": true
+      }
+    }
+  ],
+  "captures": [
+    {
+      "name": "01-window",
+      "canvas": "assets/canal-real-qa/2026-10-24T13-49-00-916Z/01-window-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T13-49-00-916Z/01-window-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "ba51f4367bd9fcacbf565a594e7c20c3bafbae29acf3f161d58957e3bc2fb5cf",
+      "monotonicMs": 22306.5867,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 64,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849760936
+      },
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 8.25,
+        "paused": true,
+        "frames": 27,
+        "view": "window",
+        "experience": "window",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 8.399999976158142,
+        "quality": "benchmark / not accepted",
+        "runtimeLighting": {
+          "revision": "r5-cloudbreak",
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "probeBackground": "deSunHDR",
+          "environmentRotationY": -1.7362243408943674,
+          "backgroundRotationY": -1.7362243408943674,
+          "sun": {
+            "position": [
+              -16.195299832700535,
+              30.708856143855655,
+              18.061570692961837
+            ],
+            "target": [
+              3,
+              0,
+              -2
+            ],
+            "intensity": 4.562767782748515,
+            "colorLinear": [
+              0.991978082879707,
+              1,
+              0.9084521146029024
+            ]
+          }
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 26,
+          "accepted": false,
+          "model": "../baked-r4/canal-lightmapped.glb",
+          "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+          "proof": null,
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 99.4783270211304,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "giSet": "r5",
+          "appliedPracticalScale": 0.25
+        },
+        "navigation": {
+          "mode": "room-look",
+          "manual": false,
+          "bounds": {
+            "x": [
+              -14.1,
+              -9.65
+            ],
+            "y": [
+              1.65,
+              4.35
+            ],
+            "z": [
+              7.9,
+              15.1
+            ]
+          },
+          "lastConstraint": null,
+          "position": [
+            -11.699999999999998,
+            2.450000000000003,
+            13.7
+          ]
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 27,
+          "bakedMaterials": 26,
+          "glazingMaterials": 1,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "window-room",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                -11.85,
+                2.85,
+                11.5
+              ],
+              "min": [
+                -14.65,
+                1.08,
+                7.48
+              ],
+              "max": [
+                -9.02,
+                4.94,
+                15.52
+              ]
+            },
+            {
+              "name": "bookshop",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                12.05,
+                2.08,
+                6.7
+              ],
+              "min": [
+                10.4,
+                0.8,
+                4.43
+              ],
+              "max": [
+                14.06,
+                3.56,
+                8.98
+              ]
+            },
+            {
+              "name": "canal-street",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                0,
+                3,
+                7
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -20
+              ],
+              "max": [
+                11.2,
+                15.5,
+                38
+              ]
+            },
+            {
+              "name": "bridge-street",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                0,
+                4,
+                -30
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -76
+              ],
+              "max": [
+                11.2,
+                15.5,
+                2
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 13,
+            "observedProgramMaximum": 13
+          }
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            1.0054077686816139,
+            -0.07476929890873864,
+            9.8
+          ],
+          "letterPosition": [
+            1.0219384707408288,
+            0.10178361777618687,
+            9.919519050780515
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1,
+          "readingLayout": null,
+          "paperScreenBounds": null
+        },
+        "camera": {
+          "position": [
+            -11.699999999999998,
+            2.450000000000003,
+            13.7
+          ],
+          "target": [
+            7.3000000000000025,
+            1.7000000000000004,
+            -4.7
+          ],
+          "fov": 52
+        },
+        "renderer": {
+          "width": 1440,
+          "height": 902,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "02-quay",
+      "canvas": "assets/canal-real-qa/2026-10-24T13-49-00-916Z/02-quay-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T13-49-00-916Z/02-quay-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "3b66aab46584b0dc671e0eb7e603f91b7eaab77f05371319c6f7c28171983c15",
+      "monotonicMs": 24787.0296,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 94,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849763425
+      },
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 8.25,
+        "paused": true,
+        "frames": 67,
+        "view": "quay",
+        "experience": "window",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 9.199999928474426,
+        "quality": "benchmark / not accepted",
+        "runtimeLighting": {
+          "revision": "r5-cloudbreak",
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "probeBackground": "deSunHDR",
+          "environmentRotationY": -1.7362243408943674,
+          "backgroundRotationY": -1.7362243408943674,
+          "sun": {
+            "position": [
+              -16.195299832700535,
+              30.708856143855655,
+              18.061570692961837
+            ],
+            "target": [
+              3,
+              0,
+              -2
+            ],
+            "intensity": 4.562767782748515,
+            "colorLinear": [
+              0.991978082879707,
+              1,
+              0.9084521146029024
+            ]
+          }
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 26,
+          "accepted": false,
+          "model": "../baked-r4/canal-lightmapped.glb",
+          "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+          "proof": null,
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 99.4783270211304,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "giSet": "r5",
+          "appliedPracticalScale": 0.25
+        },
+        "navigation": {
+          "mode": "outdoor-orbit",
+          "manual": false,
+          "bounds": {
+            "x": [
+              -9.6,
+              9.6
+            ],
+            "y": [
+              1.1,
+              null
+            ],
+            "z": [
+              -70,
+              50
+            ]
+          },
+          "lastConstraint": null,
+          "position": [
+            6.8,
+            1.8600000000000008,
+            14.300000000000006
+          ]
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 27,
+          "bakedMaterials": 26,
+          "glazingMaterials": 1,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "window-room",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                -11.85,
+                2.85,
+                11.5
+              ],
+              "min": [
+                -14.65,
+                1.08,
+                7.48
+              ],
+              "max": [
+                -9.02,
+                4.94,
+                15.52
+              ]
+            },
+            {
+              "name": "bookshop",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                12.05,
+                2.08,
+                6.7
+              ],
+              "min": [
+                10.4,
+                0.8,
+                4.43
+              ],
+              "max": [
+                14.06,
+                3.56,
+                8.98
+              ]
+            },
+            {
+              "name": "canal-street",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                0,
+                3,
+                7
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -20
+              ],
+              "max": [
+                11.2,
+                15.5,
+                38
+              ]
+            },
+            {
+              "name": "bridge-street",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                0,
+                4,
+                -30
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -76
+              ],
+              "max": [
+                11.2,
+                15.5,
+                2
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 13,
+            "observedProgramMaximum": 13
+          }
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            1.0054077686816139,
+            -0.07476929890873864,
+            9.8
+          ],
+          "letterPosition": [
+            1.0219384707408288,
+            0.10178361777618687,
+            9.919519050780515
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1,
+          "readingLayout": null,
+          "paperScreenBounds": null
+        },
+        "camera": {
+          "position": [
+            6.8,
+            1.8600000000000008,
+            14.300000000000006
+          ],
+          "target": [
+            8.3,
+            3.8999999999999995,
+            -7.799999999999999
+          ],
+          "fov": 54
+        },
+        "renderer": {
+          "width": 1440,
+          "height": 902,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "03-shop",
+      "canvas": "assets/canal-real-qa/2026-10-24T13-49-00-916Z/03-shop-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T13-49-00-916Z/03-shop-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "00ab03d82885ce35e6b4491fb667d0800738fe33e84b608a85ffed10063eb4cc",
+      "monotonicMs": 26997.2928,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 126,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849765623
+      },
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 8.25,
+        "paused": true,
+        "frames": 112,
+        "view": "shop",
+        "experience": "window",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 5.799999952316284,
+        "quality": "benchmark / not accepted",
+        "runtimeLighting": {
+          "revision": "r5-cloudbreak",
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "probeBackground": "deSunHDR",
+          "environmentRotationY": -1.7362243408943674,
+          "backgroundRotationY": -1.7362243408943674,
+          "sun": {
+            "position": [
+              -16.195299832700535,
+              30.708856143855655,
+              18.061570692961837
+            ],
+            "target": [
+              3,
+              0,
+              -2
+            ],
+            "intensity": 4.562767782748515,
+            "colorLinear": [
+              0.991978082879707,
+              1,
+              0.9084521146029024
+            ]
+          }
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 26,
+          "accepted": false,
+          "model": "../baked-r4/canal-lightmapped.glb",
+          "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+          "proof": null,
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 99.4783270211304,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "giSet": "r5",
+          "appliedPracticalScale": 0.25
+        },
+        "navigation": {
+          "mode": "outdoor-orbit",
+          "manual": false,
+          "bounds": {
+            "x": [
+              -9.6,
+              9.6
+            ],
+            "y": [
+              1.1,
+              null
+            ],
+            "z": [
+              -70,
+              50
+            ]
+          },
+          "lastConstraint": null,
+          "position": [
+            4.799999999999996,
+            1.7999999999999994,
+            5.099999999999999
+          ]
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 27,
+          "bakedMaterials": 26,
+          "glazingMaterials": 1,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "window-room",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                -11.85,
+                2.85,
+                11.5
+              ],
+              "min": [
+                -14.65,
+                1.08,
+                7.48
+              ],
+              "max": [
+                -9.02,
+                4.94,
+                15.52
+              ]
+            },
+            {
+              "name": "bookshop",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                12.05,
+                2.08,
+                6.7
+              ],
+              "min": [
+                10.4,
+                0.8,
+                4.43
+              ],
+              "max": [
+                14.06,
+                3.56,
+                8.98
+              ]
+            },
+            {
+              "name": "canal-street",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                0,
+                3,
+                7
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -20
+              ],
+              "max": [
+                11.2,
+                15.5,
+                38
+              ]
+            },
+            {
+              "name": "bridge-street",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                0,
+                4,
+                -30
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -76
+              ],
+              "max": [
+                11.2,
+                15.5,
+                2
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 13,
+            "observedProgramMaximum": 13
+          }
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            1.0054077686816139,
+            -0.07476929890873864,
+            9.8
+          ],
+          "letterPosition": [
+            1.0219384707408288,
+            0.10178361777618687,
+            9.919519050780515
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1,
+          "readingLayout": null,
+          "paperScreenBounds": null
+        },
+        "camera": {
+          "position": [
+            4.799999999999996,
+            1.7999999999999994,
+            5.099999999999999
+          ],
+          "target": [
+            10.9,
+            2,
+            6.4
+          ],
+          "fov": 48
+        },
+        "renderer": {
+          "width": 1440,
+          "height": 902,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "04-story",
+      "canvas": "assets/canal-real-qa/2026-10-24T13-49-00-916Z/04-story-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T13-49-00-916Z/04-story-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "015d18385558070ee85787a9a8bc09345f7896a90c1f8156bcd352fae187d950",
+      "monotonicMs": 29039.2275,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 163,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849767575
+      },
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 8.25,
+        "paused": true,
+        "frames": 153,
+        "view": "story",
+        "experience": "window",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 6.200000047683716,
+        "quality": "benchmark / not accepted",
+        "runtimeLighting": {
+          "revision": "r5-cloudbreak",
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "probeBackground": "deSunHDR",
+          "environmentRotationY": -1.7362243408943674,
+          "backgroundRotationY": -1.7362243408943674,
+          "sun": {
+            "position": [
+              -16.195299832700535,
+              30.708856143855655,
+              18.061570692961837
+            ],
+            "target": [
+              3,
+              0,
+              -2
+            ],
+            "intensity": 4.562767782748515,
+            "colorLinear": [
+              0.991978082879707,
+              1,
+              0.9084521146029024
+            ]
+          }
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 26,
+          "accepted": false,
+          "model": "../baked-r4/canal-lightmapped.glb",
+          "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+          "proof": null,
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 99.4783270211304,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "giSet": "r5",
+          "appliedPracticalScale": 0.25
+        },
+        "navigation": {
+          "mode": "outdoor-orbit",
+          "manual": false,
+          "bounds": {
+            "x": [
+              -9.6,
+              9.6
+            ],
+            "y": [
+              1.1,
+              null
+            ],
+            "z": [
+              -70,
+              50
+            ]
+          },
+          "lastConstraint": null,
+          "position": [
+            4.649999999999999,
+            1.549999999999999,
+            10.199999999999996
+          ]
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 27,
+          "bakedMaterials": 26,
+          "glazingMaterials": 1,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "window-room",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                -11.85,
+                2.85,
+                11.5
+              ],
+              "min": [
+                -14.65,
+                1.08,
+                7.48
+              ],
+              "max": [
+                -9.02,
+                4.94,
+                15.52
+              ]
+            },
+            {
+              "name": "bookshop",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                12.05,
+                2.08,
+                6.7
+              ],
+              "min": [
+                10.4,
+                0.8,
+                4.43
+              ],
+              "max": [
+                14.06,
+                3.56,
+                8.98
+              ]
+            },
+            {
+              "name": "canal-street",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                0,
+                3,
+                7
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -20
+              ],
+              "max": [
+                11.2,
+                15.5,
+                38
+              ]
+            },
+            {
+              "name": "bridge-street",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                0,
+                4,
+                -30
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -76
+              ],
+              "max": [
+                11.2,
+                15.5,
+                2
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 13,
+            "observedProgramMaximum": 13
+          }
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            1.0054077686816139,
+            -0.07476929890873864,
+            9.8
+          ],
+          "letterPosition": [
+            1.0219384707408288,
+            0.10178361777618687,
+            9.919519050780515
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1,
+          "readingLayout": null,
+          "paperScreenBounds": null
+        },
+        "camera": {
+          "position": [
+            4.649999999999999,
+            1.549999999999999,
+            10.199999999999996
+          ],
+          "target": [
+            1.2,
+            0.2,
+            3.4
+          ],
+          "fov": 50
+        },
+        "renderer": {
+          "width": 1440,
+          "height": 902,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "quay-A-past-lamp",
+      "canvas": "assets/canal-real-qa/2026-10-24T13-49-00-916Z/quay-A-past-lamp-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T13-49-00-916Z/quay-A-past-lamp-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "6d27488f75656c16f2434201e66d31c76eb711bf551ea135c7bf5ab554d19ad9",
+      "monotonicMs": 31495.6779,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 196,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849770085
+      },
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 8.25,
+        "paused": true,
+        "frames": 199,
+        "view": "quay",
+        "experience": "window",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 8.5,
+        "quality": "benchmark / not accepted",
+        "runtimeLighting": {
+          "revision": "r5-cloudbreak",
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "probeBackground": "deSunHDR",
+          "environmentRotationY": -1.7362243408943674,
+          "backgroundRotationY": -1.7362243408943674,
+          "sun": {
+            "position": [
+              -16.195299832700535,
+              30.708856143855655,
+              18.061570692961837
+            ],
+            "target": [
+              3,
+              0,
+              -2
+            ],
+            "intensity": 4.562767782748515,
+            "colorLinear": [
+              0.991978082879707,
+              1,
+              0.9084521146029024
+            ]
+          }
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 26,
+          "accepted": false,
+          "model": "../baked-r4/canal-lightmapped.glb",
+          "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+          "proof": null,
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 99.4783270211304,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "giSet": "r5",
+          "appliedPracticalScale": 0.25
+        },
+        "navigation": {
+          "mode": "qa-pose",
+          "manual": false,
+          "bounds": {
+            "x": [
+              -9.6,
+              9.6
+            ],
+            "y": [
+              1.1,
+              null
+            ],
+            "z": [
+              -70,
+              50
+            ]
+          },
+          "lastConstraint": null,
+          "position": [
+            6.8,
+            1.8599999999999985,
+            8.800000000000002
+          ]
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 27,
+          "bakedMaterials": 26,
+          "glazingMaterials": 1,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "window-room",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                -11.85,
+                2.85,
+                11.5
+              ],
+              "min": [
+                -14.65,
+                1.08,
+                7.48
+              ],
+              "max": [
+                -9.02,
+                4.94,
+                15.52
+              ]
+            },
+            {
+              "name": "bookshop",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                12.05,
+                2.08,
+                6.7
+              ],
+              "min": [
+                10.4,
+                0.8,
+                4.43
+              ],
+              "max": [
+                14.06,
+                3.56,
+                8.98
+              ]
+            },
+            {
+              "name": "canal-street",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                0,
+                3,
+                7
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -20
+              ],
+              "max": [
+                11.2,
+                15.5,
+                38
+              ]
+            },
+            {
+              "name": "bridge-street",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                0,
+                4,
+                -30
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -76
+              ],
+              "max": [
+                11.2,
+                15.5,
+                2
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 13,
+            "observedProgramMaximum": 13
+          }
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            1.0054077686816139,
+            -0.07476929890873864,
+            9.8
+          ],
+          "letterPosition": [
+            1.0219384707408288,
+            0.10178361777618687,
+            9.919519050780515
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1,
+          "readingLayout": null,
+          "paperScreenBounds": null
+        },
+        "camera": {
+          "position": [
+            6.8,
+            1.8599999999999985,
+            8.800000000000002
+          ],
+          "target": [
+            8.3,
+            3.8999999999999995,
+            -7.799999999999999
+          ],
+          "fov": 54
+        },
+        "renderer": {
+          "width": 1440,
+          "height": 902,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "quay-B-lamp-out-left",
+      "canvas": "assets/canal-real-qa/2026-10-24T13-49-00-916Z/quay-B-lamp-out-left-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T13-49-00-916Z/quay-B-lamp-out-left-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "daa5882638b544c71451aa4696fff0278fbf1f377b910f2b235e2d99f92d6c9c",
+      "monotonicMs": 33885.5042,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 228,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849772517
+      },
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 8.25,
+        "paused": true,
+        "frames": 242,
+        "view": "quay",
+        "experience": "window",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 7.899999976158142,
+        "quality": "benchmark / not accepted",
+        "runtimeLighting": {
+          "revision": "r5-cloudbreak",
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "probeBackground": "deSunHDR",
+          "environmentRotationY": -1.7362243408943674,
+          "backgroundRotationY": -1.7362243408943674,
+          "sun": {
+            "position": [
+              -16.195299832700535,
+              30.708856143855655,
+              18.061570692961837
+            ],
+            "target": [
+              3,
+              0,
+              -2
+            ],
+            "intensity": 4.562767782748515,
+            "colorLinear": [
+              0.991978082879707,
+              1,
+              0.9084521146029024
+            ]
+          }
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 26,
+          "accepted": false,
+          "model": "../baked-r4/canal-lightmapped.glb",
+          "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+          "proof": null,
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 99.4783270211304,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "giSet": "r5",
+          "appliedPracticalScale": 0.25
+        },
+        "navigation": {
+          "mode": "qa-pose",
+          "manual": false,
+          "bounds": {
+            "x": [
+              -9.6,
+              9.6
+            ],
+            "y": [
+              1.1,
+              null
+            ],
+            "z": [
+              -70,
+              50
+            ]
+          },
+          "lastConstraint": null,
+          "position": [
+            8.7,
+            1.8600000000000008,
+            12.699999999999994
+          ]
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 27,
+          "bakedMaterials": 26,
+          "glazingMaterials": 1,
+          "diagnostic": "combined",
+          "volumes": [
+            {
+              "name": "window-room",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                -11.85,
+                2.85,
+                11.5
+              ],
+              "min": [
+                -14.65,
+                1.08,
+                7.48
+              ],
+              "max": [
+                -9.02,
+                4.94,
+                15.52
+              ]
+            },
+            {
+              "name": "bookshop",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                12.05,
+                2.08,
+                6.7
+              ],
+              "min": [
+                10.4,
+                0.8,
+                4.43
+              ],
+              "max": [
+                14.06,
+                3.56,
+                8.98
+              ]
+            },
+            {
+              "name": "canal-street",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                0,
+                3,
+                7
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -20
+              ],
+              "max": [
+                11.2,
+                15.5,
+                38
+              ]
+            },
+            {
+              "name": "bridge-street",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                0,
+                4,
+                -30
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -76
+              ],
+              "max": [
+                11.2,
+                15.5,
+                2
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 13,
+            "observedProgramMaximum": 13
+          }
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            1.0054077686816139,
+            -0.07476929890873864,
+            9.8
+          ],
+          "letterPosition": [
+            1.0219384707408288,
+            0.10178361777618687,
+            9.919519050780515
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1,
+          "readingLayout": null,
+          "paperScreenBounds": null
+        },
+        "camera": {
+          "position": [
+            8.7,
+            1.8600000000000008,
+            12.699999999999994
+          ],
+          "target": [
+            8.3,
+            3.8999999999999995,
+            -7.799999999999999
+          ],
+          "fov": 54
+        },
+        "renderer": {
+          "width": 1440,
+          "height": 902,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "diagnostic-diffuse",
+      "canvas": "assets/canal-real-qa/2026-10-24T13-49-00-916Z/diagnostic-diffuse-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T13-49-00-916Z/diagnostic-diffuse-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "fd8081bf32426126fc47d4b11b6b07af12c857431e9a2539be6f0e93d0ab455e",
+      "monotonicMs": 36430.2556,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 260,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849774956
+      },
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 8.25,
+        "paused": true,
+        "frames": 284,
+        "view": "window",
+        "experience": "window",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 9.800000071525574,
+        "quality": "benchmark / not accepted",
+        "runtimeLighting": {
+          "revision": "r5-cloudbreak",
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "probeBackground": "deSunHDR",
+          "environmentRotationY": -1.7362243408943674,
+          "backgroundRotationY": -1.7362243408943674,
+          "sun": {
+            "position": [
+              -16.195299832700535,
+              30.708856143855655,
+              18.061570692961837
+            ],
+            "target": [
+              3,
+              0,
+              -2
+            ],
+            "intensity": 4.562767782748515,
+            "colorLinear": [
+              0.991978082879707,
+              1,
+              0.9084521146029024
+            ]
+          }
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 26,
+          "accepted": false,
+          "model": "../baked-r4/canal-lightmapped.glb",
+          "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+          "proof": null,
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 99.4783270211304,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "giSet": "r5",
+          "appliedPracticalScale": 0.25
+        },
+        "navigation": {
+          "mode": "room-look",
+          "manual": false,
+          "bounds": {
+            "x": [
+              -14.1,
+              -9.65
+            ],
+            "y": [
+              1.65,
+              4.35
+            ],
+            "z": [
+              7.9,
+              15.1
+            ]
+          },
+          "lastConstraint": null,
+          "position": [
+            -11.699999999999998,
+            2.450000000000003,
+            13.7
+          ]
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 27,
+          "bakedMaterials": 26,
+          "glazingMaterials": 1,
+          "diagnostic": "diffuse",
+          "volumes": [
+            {
+              "name": "window-room",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                -11.85,
+                2.85,
+                11.5
+              ],
+              "min": [
+                -14.65,
+                1.08,
+                7.48
+              ],
+              "max": [
+                -9.02,
+                4.94,
+                15.52
+              ]
+            },
+            {
+              "name": "bookshop",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                12.05,
+                2.08,
+                6.7
+              ],
+              "min": [
+                10.4,
+                0.8,
+                4.43
+              ],
+              "max": [
+                14.06,
+                3.56,
+                8.98
+              ]
+            },
+            {
+              "name": "canal-street",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                0,
+                3,
+                7
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -20
+              ],
+              "max": [
+                11.2,
+                15.5,
+                38
+              ]
+            },
+            {
+              "name": "bridge-street",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                0,
+                4,
+                -30
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -76
+              ],
+              "max": [
+                11.2,
+                15.5,
+                2
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 13,
+            "observedProgramMaximum": 13
+          }
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            1.0054077686816139,
+            -0.07476929890873864,
+            9.8
+          ],
+          "letterPosition": [
+            1.0219384707408288,
+            0.10178361777618687,
+            9.919519050780515
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1,
+          "readingLayout": null,
+          "paperScreenBounds": null
+        },
+        "camera": {
+          "position": [
+            -11.699999999999998,
+            2.450000000000003,
+            13.7
+          ],
+          "target": [
+            7.3000000000000025,
+            1.7000000000000004,
+            -4.7
+          ],
+          "fov": 52
+        },
+        "renderer": {
+          "width": 1440,
+          "height": 902,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "diagnostic-no-ibl",
+      "canvas": "assets/canal-real-qa/2026-10-24T13-49-00-916Z/diagnostic-no-ibl-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T13-49-00-916Z/diagnostic-no-ibl-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "730b3e25c809ad447ade02015ee6ae9c6af64471d6b7f637c23a4377ff34d143",
+      "monotonicMs": 38880.7555,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 290,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849777526
+      },
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 8.25,
+        "paused": true,
+        "frames": 325,
+        "view": "window",
+        "experience": "window",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 8.800000071525574,
+        "quality": "benchmark / not accepted",
+        "runtimeLighting": {
+          "revision": "r5-cloudbreak",
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "probeBackground": "deSunHDR",
+          "environmentRotationY": -1.7362243408943674,
+          "backgroundRotationY": -1.7362243408943674,
+          "sun": {
+            "position": [
+              -16.195299832700535,
+              30.708856143855655,
+              18.061570692961837
+            ],
+            "target": [
+              3,
+              0,
+              -2
+            ],
+            "intensity": 4.562767782748515,
+            "colorLinear": [
+              0.991978082879707,
+              1,
+              0.9084521146029024
+            ]
+          }
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 26,
+          "accepted": false,
+          "model": "../baked-r4/canal-lightmapped.glb",
+          "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+          "proof": null,
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 99.4783270211304,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "giSet": "r5",
+          "appliedPracticalScale": 0.25
+        },
+        "navigation": {
+          "mode": "room-look",
+          "manual": false,
+          "bounds": {
+            "x": [
+              -14.1,
+              -9.65
+            ],
+            "y": [
+              1.65,
+              4.35
+            ],
+            "z": [
+              7.9,
+              15.1
+            ]
+          },
+          "lastConstraint": null,
+          "position": [
+            -11.699999999999998,
+            2.450000000000003,
+            13.7
+          ]
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 27,
+          "bakedMaterials": 26,
+          "glazingMaterials": 1,
+          "diagnostic": "no-ibl",
+          "volumes": [
+            {
+              "name": "window-room",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                -11.85,
+                2.85,
+                11.5
+              ],
+              "min": [
+                -14.65,
+                1.08,
+                7.48
+              ],
+              "max": [
+                -9.02,
+                4.94,
+                15.52
+              ]
+            },
+            {
+              "name": "bookshop",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                12.05,
+                2.08,
+                6.7
+              ],
+              "min": [
+                10.4,
+                0.8,
+                4.43
+              ],
+              "max": [
+                14.06,
+                3.56,
+                8.98
+              ]
+            },
+            {
+              "name": "canal-street",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                0,
+                3,
+                7
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -20
+              ],
+              "max": [
+                11.2,
+                15.5,
+                38
+              ]
+            },
+            {
+              "name": "bridge-street",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                0,
+                4,
+                -30
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -76
+              ],
+              "max": [
+                11.2,
+                15.5,
+                2
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 13,
+            "observedProgramMaximum": 13
+          }
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            1.0054077686816139,
+            -0.07476929890873864,
+            9.8
+          ],
+          "letterPosition": [
+            1.0219384707408288,
+            0.10178361777618687,
+            9.919519050780515
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1,
+          "readingLayout": null,
+          "paperScreenBounds": null
+        },
+        "camera": {
+          "position": [
+            -11.699999999999998,
+            2.450000000000003,
+            13.7
+          ],
+          "target": [
+            7.3000000000000025,
+            1.7000000000000004,
+            -4.7
+          ],
+          "fov": 52
+        },
+        "renderer": {
+          "width": 1440,
+          "height": 902,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "diagnostic-specular",
+      "canvas": "assets/canal-real-qa/2026-10-24T13-49-00-916Z/diagnostic-specular-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T13-49-00-916Z/diagnostic-specular-page.png",
+      "width": 1440,
+      "height": 902,
+      "sha256": "9df545a22fadd04481b9ab0c0d2fa44174370a3097409be539766231c24950d8",
+      "monotonicMs": 41185.1188,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 321,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849779940
+      },
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 8.25,
+        "paused": true,
+        "frames": 367,
+        "view": "window",
+        "experience": "window",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 13.399999976158142,
+        "quality": "benchmark / not accepted",
+        "runtimeLighting": {
+          "revision": "r5-cloudbreak",
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "environment": "deSunHDR",
+          "background": "fullHDR",
+          "probeBackground": "deSunHDR",
+          "environmentRotationY": -1.7362243408943674,
+          "backgroundRotationY": -1.7362243408943674,
+          "sun": {
+            "position": [
+              -16.195299832700535,
+              30.708856143855655,
+              18.061570692961837
+            ],
+            "target": [
+              3,
+              0,
+              -2
+            ],
+            "intensity": 4.562767782748515,
+            "colorLinear": [
+              0.991978082879707,
+              1,
+              0.9084521146029024
+            ]
+          }
+        },
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 26,
+          "accepted": false,
+          "model": "../baked-r4/canal-lightmapped.glb",
+          "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+          "proof": null,
+          "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34",
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 0,
+            "environmentScale": 1,
+            "environmentOverride": {
+              "file": "D:\\codex\\tmp\\014-art-light-study-20261024\\kloofendal_48d_partly_cloudy_puresky_2k.hdr",
+              "sha256": "5244534e9cf5b606f2ff513aa00ddb161b0a4826ffd88a0d3bd03ac29247d198",
+              "mappingRotationZDegrees": 99.4783270211304,
+              "strength": 1.031923770904541,
+              "coordinates": "Blender background Generated world direction; equirectangular u=-atan2(y,x)/(2*pi)+0.5",
+              "directSunPolicy": "Full HDR radiance, analytic SUN energy multiplied by sunScale exactly once"
+            },
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "giSet": "r5",
+          "appliedPracticalScale": 0.25
+        },
+        "navigation": {
+          "mode": "room-look",
+          "manual": false,
+          "bounds": {
+            "x": [
+              -14.1,
+              -9.65
+            ],
+            "y": [
+              1.65,
+              4.35
+            ],
+            "z": [
+              7.9,
+              15.1
+            ]
+          },
+          "lastConstraint": null,
+          "position": [
+            -11.699999999999998,
+            2.450000000000003,
+            13.7
+          ]
+        },
+        "reflections": {
+          "ready": true,
+          "enabled": true,
+          "streetProbes": true,
+          "cubeResolution": 512,
+          "materials": 27,
+          "bakedMaterials": 26,
+          "glazingMaterials": 1,
+          "diagnostic": "specular",
+          "volumes": [
+            {
+              "name": "window-room",
+              "uniform": "uCanalRoomProbe",
+              "position": [
+                -11.85,
+                2.85,
+                11.5
+              ],
+              "min": [
+                -14.65,
+                1.08,
+                7.48
+              ],
+              "max": [
+                -9.02,
+                4.94,
+                15.52
+              ]
+            },
+            {
+              "name": "bookshop",
+              "uniform": "uCanalShopProbe",
+              "position": [
+                12.05,
+                2.08,
+                6.7
+              ],
+              "min": [
+                10.4,
+                0.8,
+                4.43
+              ],
+              "max": [
+                14.06,
+                3.56,
+                8.98
+              ]
+            },
+            {
+              "name": "canal-street",
+              "uniform": "uCanalStreetNearProbe",
+              "position": [
+                0,
+                3,
+                7
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -20
+              ],
+              "max": [
+                11.2,
+                15.5,
+                38
+              ]
+            },
+            {
+              "name": "bridge-street",
+              "uniform": "uCanalStreetFarProbe",
+              "position": [
+                0,
+                4,
+                -30
+              ],
+              "min": [
+                -11.2,
+                -2,
+                -76
+              ],
+              "max": [
+                11.2,
+                15.5,
+                2
+              ]
+            }
+          ],
+          "samplerBudget": {
+            "fragmentLimit": 16,
+            "combinedLimit": 32,
+            "probeSamplers": 4,
+            "estimatedMaximum": 13,
+            "observedProgramMaximum": 13
+          }
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            1.0054077686816139,
+            -0.07476929890873864,
+            9.8
+          ],
+          "letterPosition": [
+            1.0219384707408288,
+            0.10178361777618687,
+            9.919519050780515
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1,
+          "readingLayout": null,
+          "paperScreenBounds": null
+        },
+        "camera": {
+          "position": [
+            -11.699999999999998,
+            2.450000000000003,
+            13.7
+          ],
+          "target": [
+            7.3000000000000025,
+            1.7000000000000004,
+            -4.7
+          ],
+          "fov": 52
+        },
+        "renderer": {
+          "width": 1440,
+          "height": 902,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    }
+  ],
+  "timingSamples": [
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 1935.7997,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 2,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849740930
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 9393.7039,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 2,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849740930
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 9834.7241,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 3,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849748424
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 10251.047,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 4,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849749033
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 10659.0455,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 4,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849749033
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 11107.441,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 7,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849749960
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 11578.749,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 9,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849750435
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 12007.715,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 14,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849750956
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 12424.9128,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 17,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849751399
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 12871.4905,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 19,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849751660
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 13356.0283,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 24,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849752203
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 13782.5878,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 28,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849752743
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 18019.0658,
+      "frames": 0,
+      "time": 0,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 29,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849752837
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 19415.1936,
+      "frames": 1,
+      "time": 0,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 30,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849757121
+      }
+    },
+    {
+      "label": "Load actual new canal",
+      "monotonicMs": 19826.8291,
+      "frames": 14,
+      "time": 0.46670000000000067,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 35,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849758832
+      }
+    },
+    {
+      "label": "Render window",
+      "monotonicMs": 19828.6196,
+      "frames": 14,
+      "time": 8.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 35,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849758832
+      }
+    },
+    {
+      "label": "Render window",
+      "monotonicMs": 20259.788,
+      "frames": 27,
+      "time": 8.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 42,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849759271
+      }
+    },
+    {
+      "label": "Render quay",
+      "monotonicMs": 22328.3021,
+      "frames": 60,
+      "time": 8.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 69,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849761348
+      }
+    },
+    {
+      "label": "Render quay",
+      "monotonicMs": 22735.9805,
+      "frames": 67,
+      "time": 8.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 74,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849761680
+      }
+    },
+    {
+      "label": "Render shop",
+      "monotonicMs": 24829.9754,
+      "frames": 100,
+      "time": 8.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 101,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849763845
+      }
+    },
+    {
+      "label": "Render shop",
+      "monotonicMs": 25246.0819,
+      "frames": 112,
+      "time": 8.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 105,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849764078
+      }
+    },
+    {
+      "label": "Render story",
+      "monotonicMs": 27055.0293,
+      "frames": 139,
+      "time": 8.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 137,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849766075
+      }
+    },
+    {
+      "label": "Render story",
+      "monotonicMs": 27473.6606,
+      "frames": 153,
+      "time": 8.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 146,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849766486
+      }
+    },
+    {
+      "label": "Actual composition quay-A-past-lamp",
+      "monotonicMs": 29070.9598,
+      "frames": 189,
+      "time": 8.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 169,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849768091
+      }
+    },
+    {
+      "label": "Actual composition quay-A-past-lamp",
+      "monotonicMs": 29473.2222,
+      "frames": 199,
+      "time": 8.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 174,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849768477
+      }
+    },
+    {
+      "label": "Actual composition quay-B-lamp-out-left",
+      "monotonicMs": 31528.8025,
+      "frames": 229,
+      "time": 8.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 203,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849770549
+      }
+    },
+    {
+      "label": "Actual composition quay-B-lamp-out-left",
+      "monotonicMs": 31944.0091,
+      "frames": 242,
+      "time": 8.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 207,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849770695
+      }
+    },
+    {
+      "label": "Actual lighting diagnostic diffuse",
+      "monotonicMs": 33927.4543,
+      "frames": 275,
+      "time": 8.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 236,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849772946
+      }
+    },
+    {
+      "label": "Actual lighting diagnostic diffuse",
+      "monotonicMs": 34338.8765,
+      "frames": 284,
+      "time": 8.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 239,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849773115
+      }
+    },
+    {
+      "label": "Actual lighting diagnostic no-ibl",
+      "monotonicMs": 36459.1253,
+      "frames": 318,
+      "time": 8.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 266,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849775479
+      }
+    },
+    {
+      "label": "Actual lighting diagnostic no-ibl",
+      "monotonicMs": 36860.6758,
+      "frames": 325,
+      "time": 8.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 271,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849775827
+      }
+    },
+    {
+      "label": "Actual lighting diagnostic specular",
+      "monotonicMs": 38910.3634,
+      "frames": 357,
+      "time": 8.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 296,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849777930
+      }
+    },
+    {
+      "label": "Actual lighting diagnostic specular",
+      "monotonicMs": 39325.192,
+      "frames": 367,
+      "time": 8.25,
+      "tourElapsed": 0,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 301,
+        "firstPaintAt": 1792849739902,
+        "lastPaintAt": 1792849778154
+      }
+    }
+  ],
+  "errors": [],
+  "artQuality": "requires visual review; no equivalence claim",
+  "windowPolicy": {
+    "show": false,
+    "focusable": false,
+    "skipTaskbar": true,
+    "offscreen": true,
+    "targetFrameRate": 30,
+    "paints": 1,
+    "firstPaintAt": 1792849739902,
+    "lastPaintAt": 1792849739902
+  },
+  "experience": "window",
+  "scope": "actual framebuffer captures and lighting isolation; not a functional replay or artwork pass",
+  "elapsedSeconds": 40.129,
+  "presentation": {
+    "offscreen": true,
+    "targetFrameRate": 30,
+    "paints": 332,
+    "firstPaintAt": 1792849739902,
+    "lastPaintAt": 1792849781044
+  }
+}

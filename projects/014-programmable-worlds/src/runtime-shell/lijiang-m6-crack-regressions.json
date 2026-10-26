@@ -1,0 +1,39 @@
+[
+  {
+    "name": "m6-fixed-crack-primary-right",
+    "position": [
+      887,
+      20,
+      -170
+    ],
+    "source": {
+      "kind": "exact-retained-rejected-M6-pose",
+      "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m6-full\\2026-10-26T10-26-54-373Z\\status.json",
+      "originalName": "primary-right"
+    },
+    "target": [
+      575,
+      110,
+      -170
+    ]
+  },
+  {
+    "fov": 34,
+    "name": "m6-fixed-crack-mountain-primary-slope-root",
+    "position": [
+      632.8595375969084,
+      165.76450415048592,
+      -304.1237341139562
+    ],
+    "source": {
+      "kind": "exact-retained-rejected-M6-pose",
+      "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m6-full\\2026-10-26T10-26-54-373Z\\status.json",
+      "originalName": "mountain-primary-slope-root"
+    },
+    "target": [
+      707.5556805506436,
+      110.21550935991296,
+      -352.24306608367897
+    ]
+  }
+]

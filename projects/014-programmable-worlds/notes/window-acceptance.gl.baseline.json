@@ -1,0 +1,1994 @@
+{
+  "runId": "2026-10-24T01-38-17-386Z",
+  "scene": "window",
+  "backend": "gl",
+  "pid": 24052,
+  "status": "passed",
+  "startedAt": "2026-10-24T01:38:17.386Z",
+  "mode": "hidden-own-application",
+  "windowPolicy": {
+    "show": false,
+    "skipTaskbar": true,
+    "focusable": false,
+    "backgroundThrottling": false,
+    "occludedWindowBackgrounding": false
+  },
+  "security": {
+    "sandbox": true,
+    "contextIsolation": true,
+    "nodeIntegration": false,
+    "webSecurity": true
+  },
+  "tests": [
+    {
+      "name": "window-remains-hidden-and-unfocused",
+      "passed": true,
+      "evidence": {
+        "visible": false,
+        "focused": false
+      }
+    },
+    {
+      "name": "real-3d-scene-ready",
+      "passed": true,
+      "evidence": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "窗边 · 黄昏微雨",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 3,
+          "time": 0,
+          "paused": false,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 10.300000071525574,
+          "averageFrameMs": 4411.966666698456,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "same-resolution-acceptance-canvas",
+      "passed": true,
+      "evidence": {
+        "width": 1426,
+        "height": 864
+      }
+    },
+    {
+      "name": "live-scene-time-and-pixels-change",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "ready": true,
+          "error": null,
+          "frames": 8,
+          "time": 0.08329999999999563,
+          "paused": false,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 5.900000095367432,
+          "averageFrameMs": 1659.2625000178814,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "after": {
+          "ready": true,
+          "error": null,
+          "frames": 16,
+          "time": 0.5232999999999957,
+          "paused": false,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 7.600000023841858,
+          "averageFrameMs": 832.9812500029802,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 0.09505208333333333,
+          "changedChannelFraction": 0.010498046875
+        }
+      }
+    },
+    {
+      "name": "completed-frame-throughput-sample",
+      "passed": true,
+      "evidence": {
+        "completedFrames": 8,
+        "elapsedMilliseconds": 8211,
+        "completedFramesPerSecond": 0.9743027645840945,
+        "scope": "One hidden full-resolution interval, not an artistic-quality or stable-device benchmark."
+      }
+    },
+    {
+      "name": "03-pause",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "ready": true,
+          "error": null,
+          "frames": 22,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 8.900000095367432,
+          "averageFrameMs": 608.0090909275142,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "after": {
+          "ready": true,
+          "error": null,
+          "frames": 27,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 8.699999928474426,
+          "averageFrameMs": 497.0851851966646,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 0,
+          "changedChannelFraction": 0
+        }
+      }
+    },
+    {
+      "name": "walk-nearer-to-physical-window",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "ready": true,
+          "error": null,
+          "frames": 31,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 5.799999952316284,
+          "averageFrameMs": 433.89032258910515,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "after": {
+          "ready": true,
+          "error": null,
+          "frames": 34,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -15.166526858562236,
+              4.010188928220957,
+              10.249530798708555
+            ],
+            "quaternion": [
+              -0.01984148678221491,
+              -0.4833716593465199,
+              -0.01095940374825582,
+              0.8751217319963812
+            ],
+            "mode": "near",
+            "view": "near",
+            "fov": 58
+          },
+          "mode": "near",
+          "view": "near",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 5.100000023841858,
+          "averageFrameMs": 396.2794117717182,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 35.58642578125,
+          "changedChannelFraction": 0.9111328125
+        }
+      }
+    },
+    {
+      "name": "physical-sill-material-closeup",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "ready": true,
+          "error": null,
+          "frames": 39,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -15.166526858562236,
+              4.010188928220957,
+              10.249530798708555
+            ],
+            "quaternion": [
+              -0.01984148678221491,
+              -0.4833716593465199,
+              -0.01095940374825582,
+              0.8751217319963812
+            ],
+            "mode": "near",
+            "view": "near",
+            "fov": 58
+          },
+          "mode": "near",
+          "view": "near",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 3.299999952316284,
+          "averageFrameMs": 345.97435897741565,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "after": {
+          "ready": true,
+          "error": null,
+          "frames": 42,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -15.98846006470463,
+              3.887536483903604,
+              10.081357725526601
+            ],
+            "quaternion": [
+              -0.2551547466485841,
+              -0.36810139850784424,
+              -0.11144883950386182,
+              0.8871170000921574
+            ],
+            "mode": "detail",
+            "view": "detail",
+            "fov": 52
+          },
+          "mode": "detail",
+          "view": "detail",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 6.800000071525574,
+          "averageFrameMs": 321.7285714348157,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 44.722086588541664,
+          "changedChannelFraction": 0.9707845052083334
+        }
+      }
+    },
+    {
+      "name": "orbit-actual-river-geometry",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "ready": true,
+          "error": null,
+          "frames": 46,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -15.98846006470463,
+              3.887536483903604,
+              10.081357725526601
+            ],
+            "quaternion": [
+              -0.2551547466485841,
+              -0.36810139850784424,
+              -0.11144883950386182,
+              0.8871170000921574
+            ],
+            "mode": "detail",
+            "view": "detail",
+            "fov": 52
+          },
+          "mode": "detail",
+          "view": "detail",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 5.800000071525574,
+          "averageFrameMs": 294.2826087034267,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "after": {
+          "ready": true,
+          "error": null,
+          "frames": 51,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -10.5,
+              3.6000000000000005,
+              16.5
+            ],
+            "quaternion": [
+              -0.017273067107804962,
+              -0.3151881921605367,
+              -0.005737724809847564,
+              0.9488546375442702
+            ],
+            "mode": "orbit",
+            "view": "orbit",
+            "fov": 45
+          },
+          "mode": "orbit",
+          "view": "orbit",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 4.699999928474426,
+          "averageFrameMs": 438.0725490275551,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 43.771321614583336,
+          "changedChannelFraction": 0.9618326822916666
+        }
+      }
+    },
+    {
+      "name": "cool-dusk-preserves-3d-scene",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "ready": true,
+          "error": null,
+          "frames": 56,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -10.5,
+              3.6000000000000005,
+              16.5
+            ],
+            "quaternion": [
+              -0.017273067107804962,
+              -0.3151881921605367,
+              -0.005737724809847564,
+              0.9488546375442702
+            ],
+            "mode": "orbit",
+            "view": "orbit",
+            "fov": 45
+          },
+          "mode": "orbit",
+          "view": "orbit",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 4.800000071525574,
+          "averageFrameMs": 399.2428571539266,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "after": {
+          "ready": true,
+          "error": null,
+          "frames": 60,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "night",
+          "wet": true,
+          "lastFrameMs": 13.200000047683716,
+          "averageFrameMs": 373.8800000111262,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 43.756429036458336,
+          "changedChannelFraction": 0.9552408854166666
+        }
+      }
+    },
+    {
+      "name": "rain-switch-changes-state-and-pixels",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "ready": true,
+          "error": null,
+          "frames": 64,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "night",
+          "wet": true,
+          "lastFrameMs": 7.399999976158142,
+          "averageFrameMs": 351.0546875093132,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "after": {
+          "ready": true,
+          "error": null,
+          "frames": 67,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "night",
+          "wet": false,
+          "lastFrameMs": 10.599999904632568,
+          "averageFrameMs": 335.774626874212,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 1.0354817708333333,
+          "changedChannelFraction": 0.10416666666666667
+        }
+      }
+    },
+    {
+      "name": "warm-and-cool-dusk-have-distinct-lighting",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "ready": true,
+          "error": null,
+          "frames": 71,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "night",
+          "wet": false,
+          "lastFrameMs": 7.199999928474426,
+          "averageFrameMs": 317.3352112753291,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "after": {
+          "ready": true,
+          "error": null,
+          "frames": 74,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "day",
+          "wet": false,
+          "lastFrameMs": 14.5,
+          "averageFrameMs": 304.9175675736891,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "pixels": {
+          "meanAbsoluteDifference": 10.8720703125,
+          "changedChannelFraction": 0.89453125
+        }
+      }
+    },
+    {
+      "name": "reset-restores-window-dusk-rain",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "ready": true,
+          "error": null,
+          "frames": 78,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "day",
+          "wet": false,
+          "lastFrameMs": 14.800000071525574,
+          "averageFrameMs": 289.9474359063002,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "after": {
+          "ready": true,
+          "error": null,
+          "frames": 82,
+          "time": 0.055,
+          "paused": false,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 9,
+          "averageFrameMs": 276.3012195200455,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        }
+      }
+    },
+    {
+      "name": "quality-comparison-remains-a-separate-acceptance",
+      "passed": true,
+      "evidence": {
+        "automatedFunctionalPassDoesNotMeanSourceEquivalentArtQuality": true
+      }
+    }
+  ],
+  "captures": [
+    {
+      "name": "01-default",
+      "canvas": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/01-default-canvas.png",
+      "page": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/01-default-page.png",
+      "sha256": "bf2bbedfbca3c373072293d2bf383c096698a8d4750e5d818431168bcf512cad",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 109.52294389648497,
+      "luminanceStdDev": 39.383848498851556,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 39.1298828125,
+      "capturedAt": "2026-10-24T01:39:08.899Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "窗边 · 黄昏微雨",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 7,
+          "time": 0.075,
+          "paused": false,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 6.799999952316284,
+          "averageFrameMs": 1895.457142863955,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "02-live-motion",
+      "canvas": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/02-live-motion-canvas.png",
+      "page": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/02-live-motion-page.png",
+      "sha256": "b924114d906c984abf342a17aab54fd827c0a8288a81854d204f48d77a6ef148",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 109.49987880859432,
+      "luminanceStdDev": 39.391856206187796,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 39.136474609375,
+      "capturedAt": "2026-10-24T01:39:18.087Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "窗边 · 黄昏微雨",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 20,
+          "time": 0.65,
+          "paused": false,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 9.300000071525574,
+          "averageFrameMs": 668.0400000154972,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "03-pause-a",
+      "canvas": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/03-pause-a-canvas.png",
+      "page": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/03-pause-a-page.png",
+      "sha256": "c611c76737760f38b62c37510456d4f38578b246106f25e2aeb1eb51325a8d59",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 109.51868515625057,
+      "luminanceStdDev": 39.3905985046721,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 39.121826171875,
+      "capturedAt": "2026-10-24T01:39:20.579Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "窗边 · 黄昏微雨",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 26,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 7.5,
+          "averageFrameMs": 515.8692307839027,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "03-pause-b",
+      "canvas": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/03-pause-b-canvas.png",
+      "page": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/03-pause-b-page.png",
+      "sha256": "c611c76737760f38b62c37510456d4f38578b246106f25e2aeb1eb51325a8d59",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 109.51868515625057,
+      "luminanceStdDev": 39.3905985046721,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 39.121826171875,
+      "capturedAt": "2026-10-24T01:39:22.577Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "窗边 · 黄昏微雨",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 31,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 5.799999952316284,
+          "averageFrameMs": 433.89032258910515,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "04-window-near",
+      "canvas": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/04-window-near-canvas.png",
+      "page": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/04-window-near-page.png",
+      "sha256": "b9c763b98841573ef0c7fe23da2714b480c87165b1c0cf5b24e83f5ef73cf812",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 108.57624062500024,
+      "luminanceStdDev": 37.123874075754934,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 34.65234375,
+      "capturedAt": "2026-10-24T01:39:24.980Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "窗前 · 黄昏微雨",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 39,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -15.166526858562236,
+              4.010188928220957,
+              10.249530798708555
+            ],
+            "quaternion": [
+              -0.01984148678221491,
+              -0.4833716593465199,
+              -0.01095940374825582,
+              0.8751217319963812
+            ],
+            "mode": "near",
+            "view": "near",
+            "fov": 58
+          },
+          "mode": "near",
+          "view": "near",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 3.299999952316284,
+          "averageFrameMs": 345.97435897741565,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "04b-sill-detail",
+      "canvas": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/04b-sill-detail-canvas.png",
+      "page": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/04b-sill-detail-page.png",
+      "sha256": "851b922cc7ae0f56010b7cab9cac957b3c3342118f3453b7c1ad65780f8b2c04",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 90.98598686523442,
+      "luminanceStdDev": 32.89358543497346,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 32.77099609375,
+      "capturedAt": "2026-10-24T01:39:27.289Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "茶与书 · 黄昏微雨",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 46,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -15.98846006470463,
+              3.887536483903604,
+              10.081357725526601
+            ],
+            "quaternion": [
+              -0.2551547466485841,
+              -0.36810139850784424,
+              -0.11144883950386182,
+              0.8871170000921574
+            ],
+            "mode": "detail",
+            "view": "detail",
+            "fov": 52
+          },
+          "mode": "detail",
+          "view": "detail",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 5.800000071525574,
+          "averageFrameMs": 294.2826087034267,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "05-river-orbit",
+      "canvas": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/05-river-orbit-canvas.png",
+      "page": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/05-river-orbit-page.png",
+      "sha256": "397245c435785dc11f351d2ccd1e9d28ad1b3c0eb5f7b7029299f86bf4d64e73",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 102.73209785156223,
+      "luminanceStdDev": 41.46172689004522,
+      "nonBlackFraction": 0.999267578125,
+      "meanChannelRange": 37.960693359375,
+      "capturedAt": "2026-10-24T01:39:39.491Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "河岸环看 · 黄昏微雨",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 56,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -10.5,
+              3.6000000000000005,
+              16.5
+            ],
+            "quaternion": [
+              -0.017273067107804962,
+              -0.3151881921605367,
+              -0.005737724809847564,
+              0.9488546375442702
+            ],
+            "mode": "orbit",
+            "view": "orbit",
+            "fov": 45
+          },
+          "mode": "orbit",
+          "view": "orbit",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 4.800000071525574,
+          "averageFrameMs": 399.2428571539266,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "06-window-cool-dusk-rain",
+      "canvas": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/06-window-cool-dusk-rain-canvas.png",
+      "page": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/06-window-cool-dusk-rain-page.png",
+      "sha256": "5494362233b8dd9e56e9bfde0ee0168354e572eb8515dccf39668e231ba3f962",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 102.72871738281233,
+      "luminanceStdDev": 40.48985956406506,
+      "nonBlackFraction": 0.99951171875,
+      "meanChannelRange": 39.89453125,
+      "capturedAt": "2026-10-24T01:39:42.937Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "窗边 · 冷暮微雨",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 64,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "night",
+          "wet": true,
+          "lastFrameMs": 7.399999976158142,
+          "averageFrameMs": 351.0546875093132,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "07-window-cool-dusk-dry",
+      "canvas": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/07-window-cool-dusk-dry-canvas.png",
+      "page": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/07-window-cool-dusk-dry-page.png",
+      "sha256": "6562041b143406babe6774bf70965d3a288a81f555eb77e9b1744746761f6252",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 101.81179892578106,
+      "luminanceStdDev": 41.06576688123125,
+      "nonBlackFraction": 0.99951171875,
+      "meanChannelRange": 40.185546875,
+      "capturedAt": "2026-10-24T01:39:45.422Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "窗边 · 冷暮雨歇",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 71,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "night",
+          "wet": false,
+          "lastFrameMs": 7.199999928474426,
+          "averageFrameMs": 317.3352112753291,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "08-window-warm-dusk",
+      "canvas": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/08-window-warm-dusk-canvas.png",
+      "page": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/08-window-warm-dusk-page.png",
+      "sha256": "702d295d928c56aafdcb359cee9e32d96ad4d870a33c4011cdf764077d1e4fa0",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 112.22604687500072,
+      "luminanceStdDev": 38.978688031273244,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 38.47705078125,
+      "capturedAt": "2026-10-24T01:39:47.980Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "窗边 · 暖暮雨歇",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 78,
+          "time": 0.65,
+          "paused": true,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "day",
+          "wet": false,
+          "lastFrameMs": 14.800000071525574,
+          "averageFrameMs": 289.9474359063002,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "drive": null
+      }
+    },
+    {
+      "name": "09-window-reset",
+      "canvas": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/09-window-reset-canvas.png",
+      "page": "assets/quality-qa/window/2026-10-24T01-38-17-386Z/09-window-reset-page.png",
+      "sha256": "d6fd6d7d4ec7408228af675ee52c133715f12976c64a8874bdbe43274852081f",
+      "width": 1426,
+      "height": 864,
+      "sampledPixels": 4096,
+      "meanLuminance": 109.51419624023502,
+      "luminanceStdDev": 39.3952519361572,
+      "nonBlackFraction": 1,
+      "meanChannelRange": 39.13134765625,
+      "capturedAt": "2026-10-24T01:39:50.577Z",
+      "state": {
+        "url": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/demos/window.html?qa=1&rs=1&t=0",
+        "load": null,
+        "uiStatus": "窗边 · 黄昏微雨",
+        "visibleError": null,
+        "sourceSHA256": null,
+        "canvas": {
+          "width": 1426,
+          "height": 864
+        },
+        "hidden": false,
+        "state": {
+          "ready": true,
+          "error": null,
+          "frames": 86,
+          "time": 0.15200000000000002,
+          "paused": false,
+          "rendering": false,
+          "visible": true,
+          "camera": {
+            "position": [
+              -16.265785,
+              4.069108,
+              10.941022
+            ],
+            "quaternion": [
+              -0.030778673468068587,
+              -0.48319690744797517,
+              -0.017000535951501822,
+              0.8748053518752734
+            ],
+            "mode": "window",
+            "view": "window",
+            "fov": 58
+          },
+          "mode": "window",
+          "view": "window",
+          "light": "dusk",
+          "wet": true,
+          "lastFrameMs": 14.299999952316284,
+          "averageFrameMs": 264.1267441927001,
+          "quality": {
+            "pixelRatio": 1,
+            "width": 1426,
+            "height": 864,
+            "antialias": true,
+            "qa": true,
+            "frameTiming": "CPU submission; harness frame intervals measure throughput",
+            "lighting": "PBR with fixed dusk indirect lightmap",
+            "modelTriangles": 407537,
+            "evaluatedBevels": 686,
+            "indirectLightmaps": 15,
+            "reflectionResolution": 1536,
+            "waterModel": "analytic-gradient four-scale advection / linear planar reflection",
+            "lightingModel": "PBR direct lighting + fixed dusk indirect-only lightmaps",
+            "realtimeLights": 21,
+            "shadowMapResolution": 2048,
+            "continuousAnimation": true,
+            "asset": "models/quality-canal.glb",
+            "assetStage": "baked"
+          }
+        },
+        "drive": null
+      }
+    }
+  ],
+  "errors": [],
+  "visualQualityAcceptance": "requires-separate-human-comparison-with-source",
+  "priorPassedBaseline": null,
+  "finishedAt": "2026-10-24T01:39:50.578Z",
+  "elapsedSeconds": 93.192
+}

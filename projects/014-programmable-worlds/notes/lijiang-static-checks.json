@@ -1,0 +1,36 @@
+{
+  "status": "passed",
+  "checkedLocalHtmlReferences": 47,
+  "missing": [],
+  "http": [
+    {
+      "path": "web/index.html",
+      "status": 200,
+      "contentLength": "18995"
+    },
+    {
+      "path": "web/lijiang-flythrough/build/index.html",
+      "status": 200,
+      "contentLength": "2482"
+    },
+    {
+      "path": "web/lijiang-flythrough/credits.html",
+      "status": 200,
+      "contentLength": "2772"
+    },
+    {
+      "path": "assets/lijiang-qa/2026-10-25T04-20-57-291Z/actual-flight.webm",
+      "status": 200,
+      "contentLength": "78797616"
+    }
+  ],
+  "sourceBridge": {
+    "service": "napali-source-bridge",
+    "version": 1,
+    "backend": "gl",
+    "pid": 81768,
+    "sessionActive": false,
+    "offscreen": true,
+    "offscreenFrameRate": 30
+  }
+}

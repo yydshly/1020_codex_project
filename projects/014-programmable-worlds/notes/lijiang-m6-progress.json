@@ -1,0 +1,89 @@
+{
+  "schema": "lijiang-m6-progress-v1",
+  "status": "landform-candidate-verified-not-promoted-performance-open",
+  "baseline": "lijiang-current.json / M5",
+  "promoted": false,
+  "fullGoalComplete": false,
+  "stage": "A/B/C verified; E functional verified; D performance open",
+  "work": [
+    "Shared-base/saddle/branch-ridge group geometry from same formal generator",
+    "Five-peak preview entry",
+    "Conservative skip of full reflection only when all river segments outside camera frustum"
+  ],
+  "qualityGates": [
+    "Real geometry connected from multiple views",
+    "River clearances and clip-domain seams",
+    "Root/forest/navigation rebuilt against changed surface",
+    "Visible water reflection retained",
+    "Actual hidden preview before full propagation"
+  ],
+  "gpuRuns": [
+    {
+      "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m6-preview/2026-10-26T10-09-31-747Z/result.json",
+      "functionalSceneChecks": 8,
+      "overallPassed": false,
+      "reason": "Water source changed during source freeze; actual images also exposed uncovered native/H connection seam."
+    },
+    {
+      "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m6-preview/2026-10-26T10-22-32-321Z/result.json",
+      "passed": true,
+      "checks": 9,
+      "loadSeconds": 34.029,
+      "elapsedSeconds": 71.988,
+      "authoredPeaks": 5,
+      "connectionSdfPatches": 8,
+      "artAcceptedForGroupSample": true,
+      "findings": [
+        "Previous green smooth rectangle and white seams gone",
+        "Shared feet, saddles, descending ridges visible from six views",
+        "Navigation, controls, sun, visible reflections and out-of-view skip verified",
+        "M5 bytes preserved and all M6 frozen bytes stable"
+      ]
+    }
+  ],
+  "fullCandidate": {
+    "report": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m6-full/2026-10-26T10-26-54-373Z/result.json",
+    "authoredPeaks": 76,
+    "connectionSdfPatches": 52,
+    "shapeGroups": 36,
+    "groupedPeaks": 58,
+    "isolatedPeaks": 18,
+    "mainEntryCandidateM6": true,
+    "rollbackHome": "lijiang-home.m5-baseline.html",
+    "export": true,
+    "componentProfile": true
+  },
+  "rejectedFull": {
+    "path": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m6-full/2026-10-26T10-26-54-373Z/root-art-rejection.json",
+    "loadSeconds": 125.229,
+    "reason": "Visible inter-domain white cracks; incomplete export stopped and M5 homepage restored."
+  },
+  "seamSkirtExperiment": {
+    "report": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m6-full/2026-10-26T10-50-22-477Z/result.json",
+    "functionalPassed": true,
+    "artAccepted": false,
+    "reason": "Cracks reduced but not all closed; skirt module retained as rejected experiment, not used by current renderer."
+  },
+  "sharedLattice": {
+    "spacingMetres": 2,
+    "worldOriginPhase": [
+      0,
+      0,
+      0
+    ],
+    "domainCount": 128,
+    "cpuProof": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m6-lattice/cpu.json",
+    "focusedReport": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m6-full/2026-10-26T10-59-49-802Z/result.json",
+    "functionalPassed": true,
+    "loadSeconds": 168.88,
+    "artAccepted": "New views clear; exact retained failed poses required in final checkpoint."
+  },
+  "performanceCaveat": "Shared lattice removes mismatched sampling but increases cold generation work; realtime60 and faster full load are not yet achieved.",
+  "promotionDecision": "Keep M5 as default after final verification; preserve M6 as separately accessible mountain-group candidate.",
+  "performanceGoalMet": false,
+  "reason": "Full hidden flight at target30 observed7.733fps vs historicalM5 about13.96fps; first load136.282s vs M5 about69.795s.",
+  "landformPassComplete": true,
+  "finalReport": "lijiang-m6-candidate.json",
+  "defaultEntry": "M5",
+  "candidateLinkedFromHome": true
+}

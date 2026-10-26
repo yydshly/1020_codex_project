@@ -1,0 +1,28 @@
+{
+  "schema": "lijiang-m7-progress-v1",
+  "status": "performance-improvement-verified-candidate-linked",
+  "promoted": false,
+  "fullGoalComplete": false,
+  "baseline": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m7-performance/2026-10-26T11-56-20-542Z/result.json",
+  "candidate": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m7-performance/2026-10-26T12-06-27-759Z/result.json",
+  "observed": {
+    "baselineLoadSeconds": 117.903,
+    "m7LoadSeconds": 96.609,
+    "sameSceneSerialDrivingFPS": 12.222468168734947,
+    "sameScenePipelinedDrivingFPS": 19.708811964544395,
+    "maxInFlight": 2
+  },
+  "limitations": [
+    "Different movement paths under actual keyboard input; this is an interaction measurement, not a strictly identical-path hardware benchmark.",
+    "One horizon sample has96.9ms outlier; retained in raw mean.",
+    "Baseline-restored snapshots used different settling path and are not byte-equal; no claim of exact full-canvas restoration.",
+    "60fps target remains unmet."
+  ],
+  "visual": "Independent same-pose comparisons show no new cracks, tree displacement, lost canopy or reflected geometry. Three close views baseline/optimized byte-identical; distant changes below0.07% pixels.",
+  "next": "Optimize remaining native-generation and mountain geometry cost with same-image guards; performance/60fps target remains unmet.",
+  "parentSmoke": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m7-parent-smoke/2026-10-26T12-27-17-193Z/result.json",
+  "candidateRecord": "lijiang-m7-candidate.json",
+  "defaultRuntime": "M5",
+  "firstParentLoadSeconds": 153.16,
+  "parentContinuousFlightFPS": 9.731536989720773
+}

@@ -1,0 +1,143 @@
+{
+  "schema": "lijiang-next-stage-plan-v1",
+  "date": "2026-10-26",
+  "status": "closed-current-scope-maintain-from-usage-feedback",
+  "baseline": "lijiang-current.json / verified M5",
+  "purpose": "执行山群样板、局部预览及有证据的可见性性能优化；正式入口M5保持至验收。",
+  "constraints": [
+    "质量以实际可驱动画面判断；原库和真实地貌作为参考。",
+    "所有场景内容继续由代码生成。",
+    "不抢占用户窗口、鼠标或键盘；实际GPU验收串行，分析和独立代码任务可并行。",
+    "保留M5及源库、运河作品和历史证据。"
+  ],
+  "verifiedBaseline": {
+    "formalChecksPassed": 23,
+    "generationSeconds": 69.795,
+    "fixedViewCompletedFrameMilliseconds": 38.8,
+    "hiddenFlightFramesPerSecond": 13.959362744011877,
+    "hiddenTargetFramesPerSecond": 20,
+    "fullAcceptanceElapsedSeconds": 671.268,
+    "performanceCaveat": "隐藏目标20fps的航拍结果不能当作前台最高帧率；离线1080p60与实时性能分开。"
+  },
+  "problems": [
+    {
+      "priority": "P0",
+      "item": "地貌骨架",
+      "status": "confirmed",
+      "detail": "独立峰柱偏多；缺少共同山脚、峰间鞍部、支脊及低丘层次，轮廓语法相似。"
+    },
+    {
+      "priority": "P0",
+      "item": "执行反馈过慢",
+      "status": "confirmed",
+      "detail": "局部修改反复触发完整生成和大量检查；缺少可复用的局部迭代入口。"
+    },
+    {
+      "priority": "P0",
+      "item": "加载与实时成本",
+      "status": "confirmed",
+      "detail": "首次生成约70秒；完整隐藏航拍约14fps，60fps目标未验证。CPU更新、主视图、阴影和反射成本需一次定位后针对处理。"
+    },
+    {
+      "priority": "P1",
+      "item": "岩壁材质和形态",
+      "status": "confirmed",
+      "detail": "大块岩壁偏软、偏平滑，侵蚀沟槽、层理和破碎尺度仍不足。"
+    },
+    {
+      "priority": "P1",
+      "item": "植被剩余瑕疵",
+      "status": "partially-improved",
+      "detail": "薄片冠和硬切已明显改善；部分贴壁灌木仍扁且规则，暗部根岩接合不鲜明。"
+    },
+    {
+      "priority": "P1",
+      "item": "整体构图与远近层次",
+      "status": "recheck-after-landform-change",
+      "detail": "新山群会影响江面留白、山体遮挡、林带、阴影与倒影；当前未认定这些全部存在缺陷。"
+    }
+  ],
+  "goals": {
+    "visual": "保留孤峰节奏，混合局部连峰、共同基座、低丘和鞍部；主次峰轮廓有变化，岩面有尺度合理的侵蚀细节，植被与新地形协调。",
+    "interaction": "同一正式页可完整航拍和自由驾驶；无穿岩、浮根、大片掉林、明显换冠或倒影遗漏。",
+    "performance": "Practical responsive use and acceptable waiting time determine completion; realtime60fps is now optional rather than a release gate.",
+    "iteration": "局部修改以分钟级反馈为工程目标；相同失败出现两次即查根因，停止无依据调参。"
+  },
+  "stages": [
+    {
+      "id": "A",
+      "task": "固定基线和最小预览",
+      "output": "固定种子、相机、光照；一组3至5峰的小样与同机位M5对照；记录一次组件成本。",
+      "gate": "只重建变更资源；确认局部预览调用正式生成器，相同输入得到相同几何。工具建设以最小实现为限。"
+    },
+    {
+      "id": "B",
+      "task": "山群结构样板",
+      "output": "主峰、次峰、共脚、鞍部、低丘的组合，包含沿江中景、斜俯视、侧面和近壁机位。",
+      "gate": "能看见真实几何连接与高低层次；保留孤峰和开阔处；移动观察不穿插、不堵河、不形成统一土包底座。最多先做两轮有明确假设的局部迭代，再决定扩展或诊断。"
+    },
+    {
+      "id": "C",
+      "task": "扩展及岩植协调",
+      "output": "按山群扩展全场；统一岩面中尺度细节；重新生成受影响的植被支撑和碰撞。",
+      "gate": "固定M5机位和问题机位通过；无浮根、破洞、接缝、重复盖帽、林带中断；光照、阴影和倒影同步。"
+    },
+    {
+      "id": "D",
+      "task": "按瓶颈完成性能优化",
+      "output": "依据同机位组件耗时优化主视图、反射、阴影和更新/生成；复查可见质量。",
+      "gate": "相同分辨率和画质、相同路线比较；不以省略群落或暗降画质换取数字。60fps测量解除20fps调度上限，记录实际帧间隔与GPU完成耗时；未达到则如实列为未完成。"
+    },
+    {
+      "id": "E",
+      "task": "最终正式页验收",
+      "output": "一次禁缓存现场生成、完整航线/驾驶、页面生命周期、1080p60完整导出与实际解码。",
+      "gate": "功能检查与人工画面复核分别通过；源码冻结；交付后改相关代码则重跑相应检查。既有11分钟左右是历史耗时，不作为未来保证。"
+    }
+  ],
+  "speedAndQualityRules": [
+    "山体结构优先于岩面微细节和植被微调；性能定位可并行，最终整合串行。",
+    "开发预览复用未变的生成结果；缓存键包含输入、种子、生成器和依赖哈希，依赖改变即失效。",
+    "山体几何或变换改变后，重新计算关联生态锚点、域裁剪、碰撞索引和反射/阴影边界，禁止盲用旧结果。",
+    "开发缓存不替代最终禁缓存冷启动；本计划不改正式入口为缓存加载模式。",
+    "日常只查变更相关的固定近景、山群全景和短距离往返；局部通过再扩大范围。",
+    "完整2700帧导出集中在最终发布关口，导出相关代码变化时补测。",
+    "同问题连续两次失败，停止全场重跑，先区分形态、材质、光照、覆盖率或碰撞原因。",
+    "总耗时待样板和成本定位后估算；以每阶段可检视结果推进，不用未经验证的完工时间承诺替代。"
+  ],
+  "stageResults": {
+    "A": "Five-peak preview and focused actual regressions implemented.",
+    "B": "Shared-foot/saddle sample passed six actual views.",
+    "C": "Full76 peaks/128 domains pass retained same-pose crack regression.",
+    "D": "M7 duplicate generation/pipeline/far-twig/render scheduling optimizations tested. Single-page load118→97s; same-scene actual driving12.2→19.7fps. Embedded full-flight9.73fps and load153s remain inadequate; no60fps claim.",
+    "E": "M7 targeted fixed-view/performance/short-export checks and real embedded-parent45s/suspend/resume/dispose passed; did not repeat unchanged2700frame film. M6 full film remains versioned history."
+  },
+  "nextPriority": "Freeze scenery details; resolve practical loading/interaction bottlenecks and obvious defects, then deliver without opening a further visual-polish cycle.",
+  "latestCandidate": "lijiang-m7-candidate.json",
+  "acceptancePolicyUpdate": {
+    "date": "2026-10-26",
+    "source": "User prefers sufficient practical quality and considers excessive detail work poor value.",
+    "visualPolicy": "Freeze current M7 visual direction as the working baseline; overall natural appearance and no obvious defects are sufficient. No claim that the user explicitly signed off every M7 view.",
+    "stopPolishing": [
+      "Subpixel twig/leaf differences",
+      "Extreme-close realism outside normal use",
+      "Minor material differences without visible benefit"
+    ],
+    "remainingReleaseBlockers": [
+      "Long initial wait",
+      "Severe interaction stutter",
+      "Cracks, missing groups, obvious clipping or broken controls if encountered"
+    ],
+    "completionPolicy": "Ship once practical usability and stability are adequate. Photoreal equivalence and realtime60fps are optional future improvements, not this iteration completion requirements.",
+    "workScope": "Loading, responsiveness and stability; no new scenery details."
+  },
+  "currentUsabilityIteration": {
+    "id": "m8",
+    "status": "verified-default-and-closed",
+    "entry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/index.html?revision=20261026-wrapup-1#lijiang",
+    "evidence": "lijiang-m8-acceptance.json",
+    "policy": "Freeze scene art. Future work only practical blockers/obvious defects unless user requests further visual detail.",
+    "webSummary": "web-wrapup-acceptance-20261026.json"
+  },
+  "currentScope": "Existing interactive web display accepted as sufficient. Earlier stages remain historical planning, not an instruction to continue research."
+}

@@ -1,0 +1,25 @@
+{
+  "cameraSamples": 5356,
+  "conservativeFrontCrownSpheres": 269,
+  "cameraCrownSphereIntersections": 0,
+  "minCameraSphereClearance": 5.194855176944793,
+  "actual08dCamera": [
+    13.17,
+    3.78,
+    26.3
+  ],
+  "actual08dCrownClearance": 14.746414168243973,
+  "viewingLawnShrubs": 118,
+  "maximumLawnShrubHeightAboveGround": 0.5518414352954253,
+  "treeRootViolations": 0,
+  "triangles": 14589472,
+  "finite": true,
+  "checks": {
+    "noCameraInsideFoliage": true,
+    "lowShrubs": true,
+    "noTreeRootsInViewingLawn": true,
+    "finite": true
+  },
+  "scope": "CPU conservative crown spheres against permitted orbit samples and actual rejected-frame camera. No GPU render.",
+  "allPassed": true
+}

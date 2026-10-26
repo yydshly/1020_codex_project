@@ -1,0 +1,1245 @@
+{
+  "runId": "2026-10-24T10-12-19-774Z",
+  "status": "passed",
+  "scene": "canal-real",
+  "backend": "d3d11",
+  "tests": [
+    {
+      "name": "new-canal-initializes-without-script-errors",
+      "passed": true,
+      "evidence": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 0.1,
+        "paused": false,
+        "frames": 3,
+        "view": "window",
+        "experience": "window",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 7.100000023841858,
+        "quality": "benchmark / not accepted",
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 24,
+          "accepted": false,
+          "model": "canal-lightmapped.glb",
+          "modelSha256": "454f1961c964518916edf7b012f3b2ed3797448778a59d35aad71632c7d027bc",
+          "proof": null,
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 1,
+            "environmentScale": 1,
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "appliedPracticalScale": 0.25
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            0.9015599560603713,
+            -0.0736779877351645,
+            9.8
+          ],
+          "letterPosition": [
+            0.9157594619896731,
+            0.10320750841906755,
+            9.919326842251168
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1
+        },
+        "camera": {
+          "position": [
+            -11.699999999999998,
+            2.450000000000003,
+            13.7
+          ],
+          "target": [
+            7.3000000000000025,
+            1.7000000000000004,
+            -4.7
+          ],
+          "fov": 52
+        },
+        "renderer": {
+          "width": 1426,
+          "height": 864,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "actual-camera-window",
+      "passed": true,
+      "evidence": {
+        "camera": {
+          "position": [
+            -11.699999999999998,
+            2.450000000000003,
+            13.7
+          ],
+          "target": [
+            7.3000000000000025,
+            1.7000000000000004,
+            -4.7
+          ],
+          "fov": 52
+        },
+        "frames": 6
+      }
+    },
+    {
+      "name": "actual-camera-quay",
+      "passed": true,
+      "evidence": {
+        "camera": {
+          "position": [
+            5.699999999999999,
+            1.8599999999999977,
+            14.300000000000002
+          ],
+          "target": [
+            8.3,
+            3.8999999999999995,
+            -7.799999999999999
+          ],
+          "fov": 54
+        },
+        "frames": 13
+      }
+    },
+    {
+      "name": "actual-camera-shop",
+      "passed": true,
+      "evidence": {
+        "camera": {
+          "position": [
+            4.799999999999996,
+            1.7999999999999994,
+            5.099999999999999
+          ],
+          "target": [
+            10.9,
+            2,
+            6.4
+          ],
+          "fov": 48
+        },
+        "frames": 20
+      }
+    },
+    {
+      "name": "actual-camera-story",
+      "passed": true,
+      "evidence": {
+        "camera": {
+          "position": [
+            4.649999999999999,
+            1.549999999999999,
+            10.199999999999996
+          ],
+          "target": [
+            1.2,
+            0.2,
+            3.4
+          ],
+          "fov": 50
+        },
+        "frames": 27
+      }
+    },
+    {
+      "name": "water-time-changes-actual-rendered-pixels",
+      "passed": true,
+      "evidence": {
+        "timeA": 8.25,
+        "timeB": 11.25
+      }
+    },
+    {
+      "name": "drive-moves-actual-camera",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "position": [
+            5.699999999999999,
+            1.8599999999999977,
+            14.300000000000002
+          ],
+          "target": [
+            8.3,
+            3.8999999999999995,
+            -7.799999999999999
+          ],
+          "fov": 54
+        },
+        "after": {
+          "position": [
+            5.983193650502222,
+            1.887387784161485,
+            14.032509316809076
+          ],
+          "target": [
+            7.69734964229615,
+            3.9273877841614864,
+            -8.153785309283784
+          ],
+          "fov": 54
+        }
+      }
+    },
+    {
+      "name": "choices-change-visible-scene-state",
+      "passed": true,
+      "evidence": {
+        "read": "boat removed after reading",
+        "drift": "boat continues"
+      }
+    },
+    {
+      "name": "animation-continues-after-resume",
+      "passed": true,
+      "evidence": {
+        "samples": [
+          {
+            "frames": 67,
+            "time": 11.775000000000007,
+            "lastFrameMs": 32.699999928474426
+          },
+          {
+            "frames": 67,
+            "time": 11.775000000000007,
+            "lastFrameMs": 32.699999928474426
+          },
+          {
+            "frames": 67,
+            "time": 11.775000000000007,
+            "lastFrameMs": 32.699999928474426
+          },
+          {
+            "frames": 68,
+            "time": 11.825000000000008,
+            "lastFrameMs": 7.199999928474426
+          },
+          {
+            "frames": 68,
+            "time": 11.825000000000008,
+            "lastFrameMs": 7.199999928474426
+          },
+          {
+            "frames": 69,
+            "time": 11.875000000000009,
+            "lastFrameMs": 5.200000047683716
+          },
+          {
+            "frames": 69,
+            "time": 11.875000000000009,
+            "lastFrameMs": 5.200000047683716
+          },
+          {
+            "frames": 69,
+            "time": 11.875000000000009,
+            "lastFrameMs": 5.200000047683716
+          }
+        ]
+      }
+    },
+    {
+      "name": "narrow-viewport-renders-without-horizontal-overflow",
+      "passed": true,
+      "evidence": {
+        "overflow": false,
+        "elements": [
+          {
+            "text": "沿着水，留一盏灯。",
+            "rect": {
+              "x": 32,
+              "y": 698.8125,
+              "width": 597.7396240234375,
+              "height": 36.395835876464844,
+              "top": 698.8125,
+              "right": 629.7396240234375,
+              "bottom": 735.2083358764648,
+              "left": 32
+            }
+          },
+          {
+            "text": "雨后的空气很静。对岸的书店刚刚点灯。",
+            "rect": {
+              "x": 32,
+              "y": 742.2083740234375,
+              "width": 597.7396240234375,
+              "height": 19.791667938232422,
+              "top": 742.2083740234375,
+              "right": 629.7396240234375,
+              "bottom": 762.0000419616699,
+              "left": 32
+            }
+          },
+          {
+            "text": "窗边",
+            "rect": {
+              "x": 32,
+              "y": 776,
+              "width": 55.333335876464844,
+              "height": 40,
+              "top": 776,
+              "right": 87.33333587646484,
+              "bottom": 816,
+              "left": 32
+            }
+          },
+          {
+            "text": "走到河岸",
+            "rect": {
+              "x": 94.33333587646484,
+              "y": 776,
+              "width": 79.33333587646484,
+              "height": 40,
+              "top": 776,
+              "right": 173.6666717529297,
+              "bottom": 816,
+              "left": 94.33333587646484
+            }
+          },
+          {
+            "text": "对岸的店",
+            "rect": {
+              "x": 180.6666717529297,
+              "y": 776,
+              "width": 79.33333587646484,
+              "height": 40,
+              "top": 776,
+              "right": 260.00000762939453,
+              "bottom": 816,
+              "left": 180.6666717529297
+            }
+          },
+          {
+            "text": "暂停水流",
+            "rect": {
+              "x": 267,
+              "y": 776,
+              "width": 79.33333587646484,
+              "height": 40,
+              "top": 776,
+              "right": 346.33333587646484,
+              "bottom": 816,
+              "left": 267
+            }
+          },
+          {
+            "text": "回到窗边",
+            "rect": {
+              "x": 353.3333435058594,
+              "y": 776,
+              "width": 79.33333587646484,
+              "height": 40,
+              "top": 776,
+              "right": 432.6666793823242,
+              "bottom": 816,
+              "left": 353.3333435058594
+            }
+          },
+          {
+            "text": "拖动观察 · 滚轮走近 · WASD 移动",
+            "rect": {
+              "x": 657.7396240234375,
+              "y": 792,
+              "width": 156.2604217529297,
+              "height": 15,
+              "top": 792,
+              "right": 814.0000457763672,
+              "bottom": 807,
+              "left": 657.7396240234375
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "task-owned-renderer-disposes",
+      "passed": true,
+      "evidence": {
+        "disposed": true
+      }
+    }
+  ],
+  "captures": [
+    {
+      "name": "01-window",
+      "canvas": "assets/canal-real-qa/2026-10-24T10-12-19-774Z/01-window-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T10-12-19-774Z/01-window-page.png",
+      "width": 1426,
+      "height": 864,
+      "sha256": "c8f361f489a5bce987be278cd19b857090e3451faa0351810b95c2b6fe09e212",
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 8.25,
+        "paused": true,
+        "frames": 6,
+        "view": "window",
+        "experience": "window",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 5,
+        "quality": "benchmark / not accepted",
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 24,
+          "accepted": false,
+          "model": "canal-lightmapped.glb",
+          "modelSha256": "454f1961c964518916edf7b012f3b2ed3797448778a59d35aad71632c7d027bc",
+          "proof": null,
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 1,
+            "environmentScale": 1,
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "appliedPracticalScale": 0.25
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            1.0054077686816139,
+            -0.07476929890873864,
+            9.8
+          ],
+          "letterPosition": [
+            1.0219384707408288,
+            0.10178361777618687,
+            9.919519050780515
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1
+        },
+        "camera": {
+          "position": [
+            -11.699999999999998,
+            2.450000000000003,
+            13.7
+          ],
+          "target": [
+            7.3000000000000025,
+            1.7000000000000004,
+            -4.7
+          ],
+          "fov": 52
+        },
+        "renderer": {
+          "width": 1426,
+          "height": 864,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "02-quay",
+      "canvas": "assets/canal-real-qa/2026-10-24T10-12-19-774Z/02-quay-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T10-12-19-774Z/02-quay-page.png",
+      "width": 1426,
+      "height": 864,
+      "sha256": "a4466378efaee62eb4d6e8e7f857ad4db2f6ce1e06f0a312b7e9a04256a85fdb",
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 8.25,
+        "paused": true,
+        "frames": 13,
+        "view": "quay",
+        "experience": "window",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 5.200000047683716,
+        "quality": "benchmark / not accepted",
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 24,
+          "accepted": false,
+          "model": "canal-lightmapped.glb",
+          "modelSha256": "454f1961c964518916edf7b012f3b2ed3797448778a59d35aad71632c7d027bc",
+          "proof": null,
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 1,
+            "environmentScale": 1,
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "appliedPracticalScale": 0.25
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            1.0054077686816139,
+            -0.07476929890873864,
+            9.8
+          ],
+          "letterPosition": [
+            1.0219384707408288,
+            0.10178361777618687,
+            9.919519050780515
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1
+        },
+        "camera": {
+          "position": [
+            5.699999999999999,
+            1.8599999999999977,
+            14.300000000000002
+          ],
+          "target": [
+            8.3,
+            3.8999999999999995,
+            -7.799999999999999
+          ],
+          "fov": 54
+        },
+        "renderer": {
+          "width": 1426,
+          "height": 864,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "03-shop",
+      "canvas": "assets/canal-real-qa/2026-10-24T10-12-19-774Z/03-shop-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T10-12-19-774Z/03-shop-page.png",
+      "width": 1426,
+      "height": 864,
+      "sha256": "93a6dff95715af9489e1c32c4c02a9e0fb2c350dca6880641d35c9e49c98a37b",
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 8.25,
+        "paused": true,
+        "frames": 20,
+        "view": "shop",
+        "experience": "window",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 9.299999952316284,
+        "quality": "benchmark / not accepted",
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 24,
+          "accepted": false,
+          "model": "canal-lightmapped.glb",
+          "modelSha256": "454f1961c964518916edf7b012f3b2ed3797448778a59d35aad71632c7d027bc",
+          "proof": null,
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 1,
+            "environmentScale": 1,
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "appliedPracticalScale": 0.25
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            1.0054077686816139,
+            -0.07476929890873864,
+            9.8
+          ],
+          "letterPosition": [
+            1.0219384707408288,
+            0.10178361777618687,
+            9.919519050780515
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1
+        },
+        "camera": {
+          "position": [
+            4.799999999999996,
+            1.7999999999999994,
+            5.099999999999999
+          ],
+          "target": [
+            10.9,
+            2,
+            6.4
+          ],
+          "fov": 48
+        },
+        "renderer": {
+          "width": 1426,
+          "height": 864,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "04-story",
+      "canvas": "assets/canal-real-qa/2026-10-24T10-12-19-774Z/04-story-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T10-12-19-774Z/04-story-page.png",
+      "width": 1426,
+      "height": 864,
+      "sha256": "b2fc349eb6d580e4c1e8e57b59cf89f3c9cf907f48db38503d0d225a1deb6869",
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 8.25,
+        "paused": true,
+        "frames": 27,
+        "view": "story",
+        "experience": "window",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 5.200000047683716,
+        "quality": "benchmark / not accepted",
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 24,
+          "accepted": false,
+          "model": "canal-lightmapped.glb",
+          "modelSha256": "454f1961c964518916edf7b012f3b2ed3797448778a59d35aad71632c7d027bc",
+          "proof": null,
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 1,
+            "environmentScale": 1,
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "appliedPracticalScale": 0.25
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            1.0054077686816139,
+            -0.07476929890873864,
+            9.8
+          ],
+          "letterPosition": [
+            1.0219384707408288,
+            0.10178361777618687,
+            9.919519050780515
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1
+        },
+        "camera": {
+          "position": [
+            4.649999999999999,
+            1.549999999999999,
+            10.199999999999996
+          ],
+          "target": [
+            1.2,
+            0.2,
+            3.4
+          ],
+          "fov": 50
+        },
+        "renderer": {
+          "width": 1426,
+          "height": 864,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "05-water-time-a",
+      "canvas": "assets/canal-real-qa/2026-10-24T10-12-19-774Z/05-water-time-a-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T10-12-19-774Z/05-water-time-a-page.png",
+      "width": 1426,
+      "height": 864,
+      "sha256": "a4466378efaee62eb4d6e8e7f857ad4db2f6ce1e06f0a312b7e9a04256a85fdb",
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 8.25,
+        "paused": true,
+        "frames": 34,
+        "view": "quay",
+        "experience": "window",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 9.699999928474426,
+        "quality": "benchmark / not accepted",
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 24,
+          "accepted": false,
+          "model": "canal-lightmapped.glb",
+          "modelSha256": "454f1961c964518916edf7b012f3b2ed3797448778a59d35aad71632c7d027bc",
+          "proof": null,
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 1,
+            "environmentScale": 1,
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "appliedPracticalScale": 0.25
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            1.0054077686816139,
+            -0.07476929890873864,
+            9.8
+          ],
+          "letterPosition": [
+            1.0219384707408288,
+            0.10178361777618687,
+            9.919519050780515
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1
+        },
+        "camera": {
+          "position": [
+            5.699999999999999,
+            1.8599999999999977,
+            14.300000000000002
+          ],
+          "target": [
+            8.3,
+            3.8999999999999995,
+            -7.799999999999999
+          ],
+          "fov": 54
+        },
+        "renderer": {
+          "width": 1426,
+          "height": 864,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "06-water-time-b",
+      "canvas": "assets/canal-real-qa/2026-10-24T10-12-19-774Z/06-water-time-b-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T10-12-19-774Z/06-water-time-b-page.png",
+      "width": 1426,
+      "height": 864,
+      "sha256": "7996123c8c840f36f6e7776502cc89fc0998323642368f89b66ca85489c51be3",
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 11.25,
+        "paused": true,
+        "frames": 41,
+        "view": "quay",
+        "experience": "window",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 4.600000023841858,
+        "quality": "benchmark / not accepted",
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 24,
+          "accepted": false,
+          "model": "canal-lightmapped.glb",
+          "modelSha256": "454f1961c964518916edf7b012f3b2ed3797448778a59d35aad71632c7d027bc",
+          "proof": null,
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 1,
+            "environmentScale": 1,
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "appliedPracticalScale": 0.25
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            1.0192970018083483,
+            -0.0709547261297614,
+            9.8
+          ],
+          "letterPosition": [
+            1.0359025661225023,
+            0.10545490619002611,
+            9.919720077090712
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1
+        },
+        "camera": {
+          "position": [
+            5.699999999999999,
+            1.8599999999999977,
+            14.300000000000002
+          ],
+          "target": [
+            8.3,
+            3.8999999999999995,
+            -7.799999999999999
+          ],
+          "fov": 54
+        },
+        "renderer": {
+          "width": 1426,
+          "height": 864,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "07-drive",
+      "canvas": "assets/canal-real-qa/2026-10-24T10-12-19-774Z/07-drive-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T10-12-19-774Z/07-drive-page.png",
+      "width": 1426,
+      "height": 864,
+      "sha256": "3ac50d26ca9c3027e722bfa89436429bdfffded4ac4f5223064a90be4827d326",
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 11.25,
+        "paused": true,
+        "frames": 48,
+        "view": "quay",
+        "experience": "window",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 7.399999976158142,
+        "quality": "benchmark / not accepted",
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 24,
+          "accepted": false,
+          "model": "canal-lightmapped.glb",
+          "modelSha256": "454f1961c964518916edf7b012f3b2ed3797448778a59d35aad71632c7d027bc",
+          "proof": null,
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 1,
+            "environmentScale": 1,
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "appliedPracticalScale": 0.25
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            1.0192970018083483,
+            -0.0709547261297614,
+            9.8
+          ],
+          "letterPosition": [
+            1.0359025661225023,
+            0.10545490619002611,
+            9.919720077090712
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1
+        },
+        "camera": {
+          "position": [
+            5.983193650502222,
+            1.887387784161485,
+            14.032509316809076
+          ],
+          "target": [
+            7.69734964229615,
+            3.9273877841614864,
+            -8.153785309283784
+          ],
+          "fov": 54
+        },
+        "renderer": {
+          "width": 1426,
+          "height": 864,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "08-read",
+      "canvas": "assets/canal-real-qa/2026-10-24T10-12-19-774Z/08-read-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T10-12-19-774Z/08-read-page.png",
+      "width": 1426,
+      "height": 864,
+      "sha256": "64c40f8f75e8d2edab98fdc306d40230eb38d9038de9945d369fc06852f67aef",
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 11.400000000000002,
+        "paused": false,
+        "frames": 55,
+        "view": "story",
+        "experience": "window",
+        "visible": true,
+        "choice": "read",
+        "storyTime": 3.008300000000003,
+        "disposed": false,
+        "lastFrameMs": 10.200000047683716,
+        "quality": "benchmark / not accepted",
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 24,
+          "accepted": false,
+          "model": "canal-lightmapped.glb",
+          "modelSha256": "454f1961c964518916edf7b012f3b2ed3797448778a59d35aad71632c7d027bc",
+          "proof": null,
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 1,
+            "environmentScale": 1,
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "appliedPracticalScale": 0.25
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": "read",
+          "boatPosition": [
+            1.0195272235085577,
+            -0.07272409409416344,
+            8.59668
+          ],
+          "letterPosition": [
+            4.452342218323666,
+            1.4057048600161313,
+            9.611497396845323
+          ],
+          "letterParent": "held",
+          "paperVisible": true,
+          "paperUnfold": 1
+        },
+        "camera": {
+          "position": [
+            4.649999999999999,
+            1.549999999999999,
+            10.199999999999996
+          ],
+          "target": [
+            1.2,
+            0.2,
+            3.4
+          ],
+          "fov": 50
+        },
+        "renderer": {
+          "width": 1426,
+          "height": 864,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "09-drift",
+      "canvas": "assets/canal-real-qa/2026-10-24T10-12-19-774Z/09-drift-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T10-12-19-774Z/09-drift-page.png",
+      "width": 1426,
+      "height": 864,
+      "sha256": "23b3d0e5752ec82428c30cb28bccd27089bd3007ebda447c1db8ce6e965edb6b",
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 11.625000000000005,
+        "paused": false,
+        "frames": 62,
+        "view": "story",
+        "experience": "window",
+        "visible": true,
+        "choice": "drift",
+        "storyTime": 3.008300000000003,
+        "disposed": false,
+        "lastFrameMs": 6,
+        "quality": "benchmark / not accepted",
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 24,
+          "accepted": false,
+          "model": "canal-lightmapped.glb",
+          "modelSha256": "454f1961c964518916edf7b012f3b2ed3797448778a59d35aad71632c7d027bc",
+          "proof": null,
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 1,
+            "environmentScale": 1,
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "appliedPracticalScale": 0.25
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": "drift",
+          "boatPosition": [
+            1.0197873169527332,
+            -0.07567341688928979,
+            7.393359999999999
+          ],
+          "letterPosition": [
+            1.035332098945981,
+            0.10114806700928396,
+            7.512614025444378
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1
+        },
+        "camera": {
+          "position": [
+            4.649999999999999,
+            1.549999999999999,
+            10.199999999999996
+          ],
+          "target": [
+            1.2,
+            0.2,
+            3.4
+          ],
+          "fov": 50
+        },
+        "renderer": {
+          "width": 1426,
+          "height": 864,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    },
+    {
+      "name": "16-mobile-390",
+      "canvas": "assets/canal-real-qa/2026-10-24T10-12-19-774Z/16-mobile-390-canvas.png",
+      "page": "assets/canal-real-qa/2026-10-24T10-12-19-774Z/16-mobile-390-page.png",
+      "width": 846,
+      "height": 844,
+      "sha256": "6fa8f450ad371b8f1e8507a42db4d72c1b42d6737323ee064412053a8dff726c",
+      "state": {
+        "ready": true,
+        "phase": "ready",
+        "error": null,
+        "time": 12.075000000000012,
+        "paused": false,
+        "frames": 73,
+        "view": "window",
+        "experience": "window",
+        "visible": true,
+        "choice": null,
+        "storyTime": 0,
+        "disposed": false,
+        "lastFrameMs": 8.899999976158142,
+        "quality": "benchmark / not accepted",
+        "lighting": {
+          "mode": "full-diffuse",
+          "bound": 24,
+          "accepted": false,
+          "model": "canal-lightmapped.glb",
+          "modelSha256": "454f1961c964518916edf7b012f3b2ed3797448778a59d35aad71632c7d027bc",
+          "proof": null,
+          "lightingCalibration": {
+            "practicalScale": 0.25,
+            "sunScale": 1,
+            "environmentScale": 1,
+            "areaSourceVisibleToCamera": false,
+            "cyclesClosed8mmPanes": 102,
+            "reason": "Explicit cross-renderer light calibration; HDR radiance has no absolute photometric calibration."
+          },
+          "appliedPracticalScale": 0.25
+        },
+        "tour": {
+          "playing": false,
+          "elapsed": 0,
+          "duration": 25,
+          "phase": "window",
+          "ended": false,
+          "active": false
+        },
+        "dynamic": {
+          "choice": null,
+          "boatPosition": [
+            1.0199999343120203,
+            -0.08069940603927972,
+            9.8
+          ],
+          "letterPosition": [
+            1.0343709423791125,
+            0.09662762163941549,
+            9.918649059759337
+          ],
+          "letterParent": "boat",
+          "paperVisible": false,
+          "paperUnfold": 1
+        },
+        "camera": {
+          "position": [
+            -11.699999999999998,
+            2.450000000000003,
+            13.7
+          ],
+          "target": [
+            7.3000000000000025,
+            1.7000000000000004,
+            -4.7
+          ],
+          "fov": 52
+        },
+        "renderer": {
+          "width": 846,
+          "height": 844,
+          "calls": 1,
+          "triangles": 1
+        },
+        "errors": []
+      }
+    }
+  ],
+  "errors": [],
+  "artQuality": "requires visual review; no equivalence claim",
+  "windowPolicy": {
+    "show": false,
+    "focusable": false,
+    "skipTaskbar": true
+  },
+  "elapsedSeconds": 53.743
+}

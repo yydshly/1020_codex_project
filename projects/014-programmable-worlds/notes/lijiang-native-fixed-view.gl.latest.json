@@ -1,0 +1,381 @@
+{
+  "runId": "2026-10-25T08-45-49-870Z",
+  "status": "passed",
+  "scene": "lijiang-native",
+  "backend": "gl",
+  "tests": [
+    {
+      "name": "complete-native-source-pipeline-real-frames-at-full-scale",
+      "passed": true,
+      "evidence": {
+        "control": {
+          "time": 45,
+          "duration": 45,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 2,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 7009.299999952316,
+          "averageFrameMs": 7909.300000011921,
+          "renderSampleMs": 7007,
+          "hudMs": 0,
+          "presentMs": 2.100000023841858
+        },
+        "diagnostics": {
+          "phase": "first-frame-ready",
+          "at": 49379,
+          "width": 1440,
+          "height": 902,
+          "time": 45,
+          "frameMs": 8809.300000071526
+        },
+        "native": {
+          "sceneId": "lijiang-native",
+          "duration": 45,
+          "renderer": "source-derived-full-glsl",
+          "terrainRevision": "native-independent-karst-3",
+          "sourceSHA256": "1e6235db469ff444cac6a81a6740e1e88656796f7bdf745d758f2344649a6037",
+          "upstreamSHA256": "616d20c66e82d070f8c6bff921c8a78b2f04309b8cf279835ce4cdeaa90f4dfd",
+          "qualityStatus": "candidate",
+          "artAccepted": false,
+          "composedPeakCount": 12,
+          "terrainTracing": "native-terrain-sign-root-4",
+          "peakCount": 76,
+          "externalAssets": 0,
+          "riverDescription": "340 m sinuous fresh-water river; complete isolated peak feet clear its banks",
+          "time": 45,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 2,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 7009.299999952316,
+          "averageFrameMs": 7909.300000011921,
+          "renderSampleMs": 7007,
+          "hudMs": 0,
+          "presentMs": 2.100000023841858
+        }
+      }
+    },
+    {
+      "name": "actual-paused-view-holds-time-while-rendering",
+      "passed": true,
+      "evidence": {
+        "before": {
+          "time": 45,
+          "duration": 45,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 5,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 6979.699999928474,
+          "averageFrameMs": 7363.87999997139,
+          "renderSampleMs": 6974.100000023842,
+          "hudMs": 0,
+          "presentMs": 5.5
+        },
+        "after": {
+          "time": 45,
+          "duration": 45,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 6,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 6964.399999976158,
+          "averageFrameMs": 7297.299999972184,
+          "renderSampleMs": 6962.699999928474,
+          "hudMs": 0,
+          "presentMs": 1.600000023841858
+        }
+      }
+    },
+    {
+      "name": "no-external-scene-assets",
+      "passed": true,
+      "evidence": [
+        "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/controller.css",
+        "http://127.0.0.1:8796/projects/014-programmable-worlds/web/runtime/controller.js",
+        "http://127.0.0.1:8796/projects/014-programmable-worlds/web/lijiang-native/live-settings.js",
+        "http://127.0.0.1:8796/projects/014-programmable-worlds/web/lijiang-native/offline-export.js",
+        "http://127.0.0.1:8796/projects/014-programmable-worlds/web/lijiang-flythrough/src/recorder.js"
+      ]
+    },
+    {
+      "name": "own-native-candidate-suspended",
+      "passed": true,
+      "evidence": {
+        "suspended": true
+      }
+    }
+  ],
+  "captures": [
+    {
+      "name": "fixed-45-full",
+      "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-native-qa\\2026-10-25T08-45-49-870Z\\fixed-45-full.png",
+      "sha256": "3f09bfbfba2c38445346edec7726858f7137badef7ba9bb48bce58ea928d6f3b",
+      "width": 1440,
+      "height": 902,
+      "state": {
+        "control": {
+          "time": 45,
+          "duration": 45,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 2,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 7009.299999952316,
+          "averageFrameMs": 7909.300000011921,
+          "renderSampleMs": 7007,
+          "hudMs": 0,
+          "presentMs": 2.100000023841858
+        },
+        "camera": {
+          "pos": [
+            152.6776,
+            64,
+            500
+          ],
+          "mat": {
+            "0": -0.8802616000175476,
+            "1": 0.00000494198775413679,
+            "2": -0.4744887351989746,
+            "3": -0.0362863652408123,
+            "4": 0.997070848941803,
+            "5": 0.0673280879855156,
+            "6": 0.4730992019176483,
+            "7": 0.07648380100727081,
+            "8": -0.8776829838752747
+          },
+          "vfov": 1.0122909661567112,
+          "speed": 0,
+          "thrust": 9.81,
+          "f": [
+            0.47309920027167196,
+            0.07648380063460845,
+            -0.8776829581020643
+          ],
+          "u": [
+            -0.036286363815396704,
+            0.997070824072223,
+            0.06732808912329566
+          ],
+          "r": [
+            -0.880261578454587,
+            0.0000049419877859418705,
+            -0.4744887284985973
+          ],
+          "settle": 1
+        },
+        "diagnostic": null,
+        "native": {
+          "sceneId": "lijiang-native",
+          "duration": 45,
+          "renderer": "source-derived-full-glsl",
+          "terrainRevision": "native-independent-karst-3",
+          "sourceSHA256": "1e6235db469ff444cac6a81a6740e1e88656796f7bdf745d758f2344649a6037",
+          "upstreamSHA256": "616d20c66e82d070f8c6bff921c8a78b2f04309b8cf279835ce4cdeaa90f4dfd",
+          "qualityStatus": "candidate",
+          "artAccepted": false,
+          "composedPeakCount": 12,
+          "terrainTracing": "native-terrain-sign-root-4",
+          "peakCount": 76,
+          "externalAssets": 0,
+          "riverDescription": "340 m sinuous fresh-water river; complete isolated peak feet clear its banks",
+          "time": 45,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 2,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 7009.299999952316,
+          "averageFrameMs": 7909.300000011921,
+          "renderSampleMs": 7007,
+          "hudMs": 0,
+          "presentMs": 2.100000023841858
+        }
+      }
+    },
+    {
+      "name": "rock-crop",
+      "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-native-qa\\2026-10-25T08-45-49-870Z\\rock-crop.png",
+      "sha256": "9c41e692621c7d992774b7a5a93a6f5d5d2d48967846393bd4433719a3063736",
+      "source": "fixed-45-full",
+      "rect": {
+        "x": 576,
+        "y": 135,
+        "width": 518,
+        "height": 469
+      }
+    },
+    {
+      "name": "near-forest-crop",
+      "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-native-qa\\2026-10-25T08-45-49-870Z\\near-forest-crop.png",
+      "sha256": "8dd1c18cb151f7ff1f84ea4d49530a161a7ebac8f282a66b9377624cc7d4abf6",
+      "source": "fixed-45-full",
+      "rect": {
+        "x": 0,
+        "y": 432,
+        "width": 547,
+        "height": 387
+      }
+    },
+    {
+      "name": "bank-water-crop",
+      "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-native-qa\\2026-10-25T08-45-49-870Z\\bank-water-crop.png",
+      "sha256": "eb4cb2cc37292bf60a0320b7e7343e73b9d9348321a3da17ea6f6d3d863c5a0e",
+      "source": "fixed-45-full",
+      "rect": {
+        "x": 503,
+        "y": 487,
+        "width": 835,
+        "height": 396
+      }
+    },
+    {
+      "name": "three-water-states-same-camera",
+      "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-native-qa\\2026-10-25T08-45-49-870Z\\three-water-states-same-camera.png",
+      "sha256": "3f09bfbfba2c38445346edec7726858f7137badef7ba9bb48bce58ea928d6f3b",
+      "width": 1440,
+      "height": 902,
+      "state": {
+        "control": {
+          "time": 45,
+          "duration": 45,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 5,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 6979.699999928474,
+          "averageFrameMs": 7363.87999997139,
+          "renderSampleMs": 6974.100000023842,
+          "hudMs": 0,
+          "presentMs": 5.5
+        },
+        "camera": {
+          "pos": [
+            152.6776,
+            64,
+            500
+          ],
+          "mat": {
+            "0": -0.8802616000175476,
+            "1": 0.00000494198775413679,
+            "2": -0.4744887351989746,
+            "3": -0.0362863652408123,
+            "4": 0.997070848941803,
+            "5": 0.0673280879855156,
+            "6": 0.4730992019176483,
+            "7": 0.07648380100727081,
+            "8": -0.8776829838752747
+          },
+          "vfov": 1.0122909661567112,
+          "speed": 0,
+          "thrust": 9.81,
+          "f": [
+            0.47309920027167196,
+            0.07648380063460845,
+            -0.8776829581020643
+          ],
+          "u": [
+            -0.036286363815396704,
+            0.997070824072223,
+            0.06732808912329566
+          ],
+          "r": [
+            -0.880261578454587,
+            0.0000049419877859418705,
+            -0.4744887284985973
+          ],
+          "settle": 1
+        },
+        "diagnostic": null,
+        "native": {
+          "sceneId": "lijiang-native",
+          "duration": 45,
+          "renderer": "source-derived-full-glsl",
+          "terrainRevision": "native-independent-karst-3",
+          "sourceSHA256": "1e6235db469ff444cac6a81a6740e1e88656796f7bdf745d758f2344649a6037",
+          "upstreamSHA256": "616d20c66e82d070f8c6bff921c8a78b2f04309b8cf279835ce4cdeaa90f4dfd",
+          "qualityStatus": "candidate",
+          "artAccepted": false,
+          "composedPeakCount": 12,
+          "terrainTracing": "native-terrain-sign-root-4",
+          "peakCount": 76,
+          "externalAssets": 0,
+          "riverDescription": "340 m sinuous fresh-water river; complete isolated peak feet clear its banks",
+          "time": 45,
+          "paused": true,
+          "scale": 1,
+          "suspended": false,
+          "rendering": true,
+          "ready": true,
+          "frames": 5,
+          "autoQuality": false,
+          "error": null,
+          "lastFrameMs": 6979.699999928474,
+          "averageFrameMs": 7363.87999997139,
+          "renderSampleMs": 6974.100000023842,
+          "hudMs": 0,
+          "presentMs": 5.5
+        }
+      }
+    }
+  ],
+  "errors": [],
+  "artworkQualityAccepted": false,
+  "scope": "Source-renderer-derived fixed-camera quality candidate; functionality and screenshots alone do not pass the source-quality visual gate.",
+  "output": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-native-qa\\2026-10-25T08-45-49-870Z",
+  "actualEntry": "http://127.0.0.1:8796/projects/014-programmable-worlds/web/lijiang-native/engine.html?qa=1&rs=1&t=40&qaRun=1792917948894&embed=1&bandpx=12000&hud=0&qualityview=1",
+  "loadedSource": {
+    "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-native-qa\\2026-10-25T08-45-49-870Z\\loaded-engine-script.js",
+    "sha256": "6f819e9624edc032e04e9e37652fce21fc59e7dedc2d25641e018bd50181e39a",
+    "bytes": 355902
+  },
+  "floatFiltering": {
+    "floatLinear": true,
+    "min": 9729,
+    "mag": 9729
+  },
+  "airAcceleration": null,
+  "waterStateComparison": {
+    "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-native-qa\\2026-10-25T08-45-49-870Z\\three-live-water-states.fs.glsl",
+    "meanAbsoluteRGBDifference": 0,
+    "fractionPixelsAnyChannelDifferenceOver40": 0,
+    "pixelBytesIdentical": true,
+    "scope": "Same actual field, camera, time and full geometry; only three post-water live scalar states are preserved. GPU timing is measured rather than inferred from source size."
+  },
+  "elapsedSeconds": 116.196,
+  "presentation": {
+    "offscreen": true,
+    "targetFrameRate": 30,
+    "paints": 172,
+    "firstPaintAt": 1792917950005,
+    "lastPaintAt": 1792918066034
+  }
+}

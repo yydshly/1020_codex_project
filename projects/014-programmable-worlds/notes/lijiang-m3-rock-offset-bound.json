@@ -1,0 +1,12 @@
+{
+  "schema": "m3-rock-offset-bound-v1",
+  "combinedCorrectionBound": [
+    -10,
+    10
+  ],
+  "earlyOutBaseDistance": 12,
+  "minimumPositiveFinalBound": 1.2,
+  "randomFiniteCases": 100000,
+  "observedMinimum": 1.3925925356642892,
+  "scope": "For rw>.01 rock path, combined bicubic+perpendicular correction is explicitly clamped. This proves zero cannot move beyond base distance10; existing vegetation-only paths are unchanged. This is not an art or all-scene numerical proof."
+}

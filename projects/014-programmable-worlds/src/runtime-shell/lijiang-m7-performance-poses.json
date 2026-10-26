@@ -1,0 +1,96 @@
+[
+  {
+    "name": "flight-0",
+    "time": 0,
+    "kind": "flight"
+  },
+  {
+    "name": "flight-25",
+    "time": 25,
+    "kind": "flight"
+  },
+  {
+    "name": "flight-45",
+    "time": 45,
+    "kind": "flight"
+  },
+  {
+    "name": "m6-fixed-crack-primary-right",
+    "position": [
+      887,
+      20,
+      -170
+    ],
+    "source": {
+      "kind": "exact-retained-rejected-M6-pose",
+      "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m6-full\\2026-10-26T10-26-54-373Z\\status.json",
+      "originalName": "primary-right"
+    },
+    "target": [
+      575,
+      110,
+      -170
+    ]
+  },
+  {
+    "fov": 34,
+    "name": "m6-fixed-crack-mountain-primary-slope-root",
+    "position": [
+      632.8595375969084,
+      165.76450415048592,
+      -304.1237341139562
+    ],
+    "source": {
+      "kind": "exact-retained-rejected-M6-pose",
+      "report": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-lijiang-m6-full\\2026-10-26T10-26-54-373Z\\status.json",
+      "originalName": "mountain-primary-slope-root"
+    },
+    "target": [
+      707.5556805506436,
+      110.21550935991296,
+      -352.24306608367897
+    ]
+  },
+  {
+    "name": "near-leaf",
+    "position": [
+      572.444551192534,
+      281.13838007398346,
+      -160.1273496569958
+    ],
+    "target": [
+      583.7669610589564,
+      276.5112858326418,
+      -167.6160462536844
+    ],
+    "fov": 42,
+    "source": {
+      "report": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m6-full/2026-10-26T11-09-47-672Z/result.json",
+      "originalName": "mountain-same-cliff-front"
+    }
+  },
+  {
+    "name": "horizon",
+    "position": [
+      -179.53573926958705,
+      495.97718565839943,
+      221.37903015972577
+    ],
+    "quaternion": [
+      -0.20532236405763246,
+      -0.44449642440881193,
+      -0.10544377073430686,
+      0.8655329379745738
+    ],
+    "fov": 42,
+    "source": {
+      "report": "C:/Users/yun68/CodexTaskArtifacts/014-lijiang-m6-full/2026-10-26T11-09-47-672Z/result.json",
+      "frame": 4,
+      "root": [
+        442.6867980957031,
+        106.169921875,
+        -224.6991424560547
+      ]
+    }
+  }
+]

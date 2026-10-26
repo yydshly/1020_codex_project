@@ -1,0 +1,167 @@
+{
+  "schema": "programmable-worlds-final-guide-v1",
+  "status": "accepted",
+  "generatedAt": "2026-10-24T18:42:53.391086+00:00",
+  "sceneIds": [
+    "canal-street",
+    "shipyard-station"
+  ],
+  "reports": {
+    "source": {
+      "path": "notes/source-live-acceptance.d3d11.json",
+      "sha256": "8bdfc6348ee79eaacc641ecc3cf0475e264fa8226dd03074b68cf78e3b862a36",
+      "minimumChecks": 15,
+      "requiredChecks": [
+        "original-renderer-live-track-decoded-in-ordinary-page",
+        "page-drives-real-original-camera"
+      ],
+      "capture": "04-headland-35"
+    },
+    "window": {
+      "path": "notes/canal-real-window-functional.d3d11.json",
+      "sha256": "9bcd42414650077b98889f2a520a5b4faba392cc11d6955b082a5eccb3b4460b",
+      "minimumChecks": 13,
+      "requiredChecks": [
+        "drive-moves-actual-camera",
+        "water-time-changes-actual-rendered-pixels",
+        "task-owned-renderer-disposes"
+      ],
+      "capture": "01-window"
+    },
+    "station": {
+      "path": "notes/station-functional.d3d11.json",
+      "sha256": "4fabd985a07c4b59343902b17c63ca163891c560b15ba989bca9978db31668e8",
+      "minimumChecks": 15,
+      "requiredChecks": [
+        "own-independent-geometry-and-complete-lighting",
+        "real-passenger-launch-pause-holds",
+        "whole-approach-moors-and-opens-physical-gangway",
+        "complete-boarding-and-departure-carries-camera",
+        "complete-shore-outcome-keeps-view-and-departs-boat",
+        "own-independent-renderer-disposes"
+      ],
+      "capture": "05-actual-docked"
+    },
+    "hub": {
+      "path": "notes/hub-two-worlds-acceptance.d3d11.json",
+      "sha256": "a709368e35dfb035c8a78f080af4d2a55d3abd6edc3b25fd86c95ad1fa11386e",
+      "minimumChecks": 13,
+      "requiredChecks": [
+        "original-window-and-independent-station-entry-map",
+        "independent-station-three-actual-view-buttons",
+        "independent-station-call-pause-and-redundant-visible-message",
+        "two-actual-authored-worlds-have-independent-models-and-lighting",
+        "single-live-world-through-source-window-independent-station-window"
+      ]
+    },
+    "hub_mobile": {
+      "path": "notes/hub-two-worlds-acceptance.d3d11.json",
+      "sha256": "a709368e35dfb035c8a78f080af4d2a55d3abd6edc3b25fd86c95ad1fa11386e",
+      "minimumChecks": 13,
+      "requiredChecks": [
+        "mobile-station-actual-approach-reaches-docked-choices",
+        "single-live-world-through-source-window-independent-station-window"
+      ]
+    }
+  },
+  "visual": {
+    "path": "notes/visual-acceptance-independent.md",
+    "sha256": "fb107d0c9e6823744740a69d87614c59fc71f7f5a752795620505174a539b29b",
+    "status": "accepted",
+    "sceneIds": [
+      "canal-street",
+      "shipyard-station"
+    ]
+  },
+  "identities": {
+    "window": {
+      "sceneId": "canal-street",
+      "modelSha256": "819b849b252ff22970c66e6349cf9eb4f470ad1ec775260e355ab2480c7da227",
+      "lightingFingerprint": "80836c3f6f8529ef088136e9628e75e100a820760c3c27c148ade87356a01b34"
+    },
+    "station": {
+      "sceneId": "shipyard-station",
+      "modelSha256": "1655d4c60ba1c3c1b41d3e71e5ff4d66e081ac92e1e52642b9bad93b7f03b265",
+      "lightingFingerprint": "62d64e53da7ccf5775e19ee4c704a2c3c105a7dafa9bae52fbc8cce8d889610c",
+      "runtimeRevision": "shipyard-oak2048-aftdeck-2",
+      "manifestSha256": "97eb5a39b308d200f0011f9732725a812b7794cca48553178a11e4841b0f882e",
+      "giManifest": {
+        "path": "web/shipyard-station/baked-r1/manifest-oak2048.json",
+        "sha256": "97eb5a39b308d200f0011f9732725a812b7794cca48553178a11e4841b0f882e"
+      },
+      "inputRevision": "station-manual-input-2"
+    }
+  },
+  "observations": {
+    "source": {
+      "status": "passed",
+      "runId": "2026-10-24T08-42-44-256Z",
+      "actualStatus": "passed",
+      "checks": 15,
+      "reasons": [],
+      "scope": "Actual WebRTC video decoding and original-renderer control. Source shader fidelity is checked separately; no artwork-quality claim.",
+      "presentation": null
+    },
+    "window": {
+      "status": "passed",
+      "runId": "2026-10-24T14-18-59-251Z",
+      "actualStatus": "passed",
+      "checks": 13,
+      "reasons": [],
+      "scope": null,
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 541,
+        "firstPaintAt": 1792851538440,
+        "lastPaintAt": 1792851610963
+      }
+    },
+    "station": {
+      "status": "passed",
+      "runId": "2026-10-24T18-17-51-965Z",
+      "actualStatus": "passed",
+      "checks": 15,
+      "reasons": [],
+      "scope": "Independent station actual user journey and controls",
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 3987,
+        "firstPaintAt": 1792865871012,
+        "lastPaintAt": 1792866018179
+      }
+    },
+    "hub": {
+      "status": "passed",
+      "runId": "2026-10-24T18-38-15-177Z",
+      "actualStatus": "passed",
+      "checks": 18,
+      "reasons": [],
+      "scope": "Actual sourceLive / canalReal window / independent stationWorld entries, model identities, native input and serialized release. No artwork-quality claim.",
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1899,
+        "firstPaintAt": 1792867095269,
+        "lastPaintAt": 1792867286928
+      }
+    },
+    "hub_mobile": {
+      "status": "passed",
+      "runId": "2026-10-24T18-38-15-177Z",
+      "actualStatus": "passed",
+      "checks": 18,
+      "reasons": [],
+      "scope": "Actual sourceLive / canalReal window / independent stationWorld entries, model identities, native input and serialized release. No artwork-quality claim.",
+      "presentation": {
+        "offscreen": true,
+        "targetFrameRate": 30,
+        "paints": 1899,
+        "firstPaintAt": 1792867095269,
+        "lastPaintAt": 1792867286928
+      }
+    }
+  },
+  "notes": "Actual completed source/window/station functional reports, separate two-space visual judgement and official source→window→station→window plus mobile idle/docked report pinned. The original full station-functional report honestly retains its pre-review accepted=false; the later official hub reports visual accepted=true for the identical geometry, lighting and refined GI manifest. Historical shared-story and failed/cached candidates are preserved and are not counted as an independent second work."
+}
