@@ -4,7 +4,7 @@ import argparse,hashlib,json,shutil,re
 
 def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 def main():
- ap=argparse.ArgumentParser();ap.add_argument('--source',required=True);ap.add_argument('--destination',required=True);a=ap.parse_args()
+ ap=argparse.ArgumentParser();ap.add_argument('--source',required=True);ap.add_argument('--destination',required=True);ap.add_argument('--raw-ref',default='main');a=ap.parse_args()
  src=Path(a.source).resolve();dst=Path(a.destination).resolve()
  assert src.name==dst.name=='014-programmable-worlds' and src!=dst
  pack=dst/'packed-assets';manifest=json.loads((pack/'manifest.json').read_text(encoding='utf-8'))
@@ -27,8 +27,11 @@ def main():
   if p.is_file() and p.suffix in {'.py','.cjs','.js'}:copy(p.relative_to(src).as_posix())
  for rel in ['web/index.html','web/app.js','web/style.css','web/map.html','web/guide.html']:copy(rel)
  tree('web/assets',lambda p:p.suffix.lower() in {'.jpg','.png','.svg','.json','.md'} and p.name!='programmable-worlds-guide.svg')
- tree('web/upstream',lambda p:p.name in {'LICENSE','README.md'})
- for name in ['controller.js','controller.css','source-live.html','source-live.css','source-live.js']:copy('web/runtime/'+name)
+ tree('web/upstream')
+ tree('src/runtime-shell',lambda p:p.suffix in {'.js','.cjs','.json','.md'} and 'node_modules' not in p.parts and p.name!='renderer-config.json')
+ (dst/'src/runtime-shell/renderer-config.json').write_text('{"backend":"gl"}\n',encoding='utf-8')
+ copy('web/quality-window/RoundedBoxGeometry.js')
+ for name in ['index.html','controller.js','controller.css','source-live.html','source-live.css','source-live.js']:copy('web/runtime/'+name)
  tree('web/lijiang-m8')
  copy('web/lijiang-flythrough/src/recorder.js')
  vendor=['three/build/three.module.js','three/build/three.core.js','three/examples/jsm/objects/Reflector.js','three/examples/jsm/objects/Sky.js','three/examples/jsm/objects/MarchingCubes.js','three/LICENSE','mediabunny/dist/bundles/mediabunny.min.mjs','mediabunny/LICENSE']
@@ -58,7 +61,7 @@ def main():
  image_rels=['assets/project-map-cover.png','assets/programmable-worlds-map-20261026.svg','assets/programmable-worlds-map-20261026.png','assets/programmable-worlds-guide.svg']
  image_rels += [p.relative_to(src).as_posix() for p in (src/'assets/extension-references').iterdir() if p.suffix=='.png']
  for rel in image_rels:copy(rel)
- raw='https://raw.githubusercontent.com/yydshly/1020_codex_project/main/projects/014-programmable-worlds/'
+ raw='https://raw.githubusercontent.com/yydshly/1020_codex_project/'+a.raw_ref+'/projects/014-programmable-worlds/'
  docs='https://github.com/yydshly/1020_codex_project/blob/main/projects/014-programmable-worlds/'
  for rel in ['web/index.html','web/map.html','web/guide.html']:
   p=dst/rel;s=p.read_text(encoding='utf-8').replace('../assets/',raw+'assets/').replace('../notes/',docs+'notes/').replace('../README.md',docs+'README.md')

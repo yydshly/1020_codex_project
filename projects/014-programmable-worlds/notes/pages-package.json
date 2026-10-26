@@ -1,6 +1,6 @@
 {
   "schema": "programmable-worlds-pages-package-v1",
-  "rawImageBase": "https://raw.githubusercontent.com/yydshly/1020_codex_project/main/projects/014-programmable-worlds/",
+  "rawImageBase": "https://raw.githubusercontent.com/yydshly/1020_codex_project/0e430bf7f464582764c32db17f7765bc800f4b15/projects/014-programmable-worlds/",
   "m8FilesUnchanged": 51,
   "packedAssets": 51,
   "rawImageFiles": [
@@ -425,5 +425,6 @@
     "assets/extension-references/island-lagoon-clean-v1.png",
     "assets/extension-references/lijiang-raft-clean-v1.png"
   ],
-  "localResearchPreserved": true
+  "localResearchPreserved": true,
+  "imageArchiveCommit": "0e430bf7f464582764c32db17f7765bc800f4b15"
 }

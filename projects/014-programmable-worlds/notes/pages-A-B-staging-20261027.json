@@ -1,0 +1,191 @@
+{
+  "schema": "pages-A-B-staging-subset-v1",
+  "status": "selected-checks-passed",
+  "sourceReport": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-world-hub-wrapup\\2026-10-26T16-28-33-742Z\\result.json",
+  "sourceReportOverall": "failed",
+  "failureReason": "M8 was already phase=ready,frames=2 and idle; test incorrectly required an additional unsolicited frame. Correcting the predicate before a separate M8 run.",
+  "tests": [
+    {
+      "name": "canalReal-loads-and-completes-at-least-three-frames",
+      "passed": true,
+      "evidence": {
+        "api": "canalReal",
+        "url": "http://127.0.0.1:8814/1020_codex_project/projects/014-programmable-worlds/canal-real/index.html?experience=window&giSet=r5&probes=1&streetProbes=1&qa=1",
+        "seconds": 31.038,
+        "initial": {
+          "label": "canalReal-initial",
+          "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-world-hub-wrapup\\2026-10-26T16-28-33-742Z\\canalReal-initial-state.json",
+          "sha256": "866036662ee45320c997174041c740304d634b08ea95b64f43f478329aa7a700",
+          "ready": true,
+          "frames": 6,
+          "phase": "ready",
+          "camera": {
+            "position": [
+              -11.699999999999998,
+              2.450000000000003,
+              13.7
+            ],
+            "target": [
+              7.3000000000000025,
+              1.7000000000000004,
+              -4.7
+            ],
+            "fov": 52
+          }
+        }
+      }
+    },
+    {
+      "name": "canal-actual-quay-and-two-pause-clicks",
+      "passed": true,
+      "evidence": {
+        "view": "quay",
+        "initialPaused": false,
+        "firstPaused": true,
+        "restoredPaused": false
+      }
+    },
+    {
+      "name": "stationWorld-loads-and-completes-at-least-three-frames",
+      "passed": true,
+      "evidence": {
+        "api": "stationWorld",
+        "url": "http://127.0.0.1:8814/1020_codex_project/projects/014-programmable-worlds/shipyard-station/index.html?qa=1",
+        "seconds": 18.996,
+        "initial": {
+          "label": "stationWorld-initial",
+          "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-world-hub-wrapup\\2026-10-26T16-28-33-742Z\\stationWorld-initial-state.json",
+          "sha256": "44b582014fb7576d659e24c32aee9ce8d2e7ecaf8c217f6911251e5d1a5c7c6c",
+          "ready": true,
+          "frames": 8,
+          "phase": "ready",
+          "camera": {
+            "position": [
+              21.95,
+              2.3000000000000007,
+              22.2
+            ],
+            "target": [
+              18.4,
+              1.8,
+              6.2
+            ],
+            "fov": 60
+          }
+        }
+      }
+    },
+    {
+      "name": "station-actual-call-and-docking-with-gangway",
+      "passed": true,
+      "evidence": {
+        "seconds": 23.322,
+        "journey": {
+          "phase": "docked",
+          "elapsed": 1.3000000000000682,
+          "duration": 0,
+          "progress": 0,
+          "totalElapsed": 23.300000000000068,
+          "paused": false,
+          "choice": null,
+          "boatPosition": [
+            17.6,
+            -0.11645692650372844,
+            8
+          ],
+          "boatHeading": 0,
+          "velocityDir": [
+            0,
+            -1
+          ],
+          "speed": 0,
+          "gangwayOpen": 1,
+          "canChoose": true,
+          "boarding": false,
+          "cameraFollow": false,
+          "cameraLocked": false,
+          "completed": false,
+          "history": {
+            "completedTrips": 0,
+            "lastChoice": null
+          },
+          "passengerSurface": {
+            "method": "bounded real principal-geometry AO / indirectDiffuse only",
+            "sampledVertices": 2119,
+            "hemisphereSamples": 24,
+            "principalOccluders": 42,
+            "rayBoxTests": 2092272,
+            "minAO": 0.24,
+            "meanAO": 0.44365095978122004,
+            "maxDistance": 2.15,
+            "physicalBevels": true
+          },
+          "disposed": false
+        }
+      }
+    }
+  ],
+  "screenshots": [
+    {
+      "name": "runtime-A-canal-quay",
+      "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-world-hub-wrapup\\2026-10-26T16-28-33-742Z\\runtime-A-canal-quay.png",
+      "sha256": "527e152921525788e61019f006819ea47b7ec5602f9b10b9b74516b69417b4d8",
+      "size": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": {
+        "label": "runtime-A-canal-quay",
+        "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-world-hub-wrapup\\2026-10-26T16-28-33-742Z\\runtime-A-canal-quay-state.json",
+        "sha256": "f28972e51049927f30050948033a91f3947da83faac20b1383c95ed74778498e",
+        "ready": true,
+        "frames": 58,
+        "phase": "ready",
+        "camera": {
+          "position": [
+            6.799999999999999,
+            1.8599999999999985,
+            8.800000000000002
+          ],
+          "target": [
+            8.3,
+            3.8999999999999995,
+            -7.799999999999999
+          ],
+          "fov": 54
+        }
+      }
+    },
+    {
+      "name": "runtime-B-station-docked",
+      "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-world-hub-wrapup\\2026-10-26T16-28-33-742Z\\runtime-B-station-docked.png",
+      "sha256": "71448c4896c592c9f4c0848cb81032fb1ca8a29b48b9d8653cd0214a2c46c719",
+      "size": {
+        "width": 1440,
+        "height": 900
+      },
+      "state": {
+        "label": "runtime-B-station-docked",
+        "path": "C:\\Users\\yun68\\CodexTaskArtifacts\\014-world-hub-wrapup\\2026-10-26T16-28-33-742Z\\runtime-B-station-docked-state.json",
+        "sha256": "156c31282e559ed6321f735d903e136bbf4898198bde656f6b70ef40dc5c6c09",
+        "ready": true,
+        "frames": 475,
+        "phase": "ready",
+        "camera": {
+          "position": [
+            21.95,
+            2.3000000000000007,
+            22.2
+          ],
+          "target": [
+            18.4,
+            1.8,
+            6.2
+          ],
+          "fov": 60
+        }
+      }
+    }
+  ],
+  "scope": "Actual published A/B package on repository-prefix local static server; loading, A quay/pause and B real docking only. Not public network/full-station branches/full-flight/mobile acceptance."
+}
