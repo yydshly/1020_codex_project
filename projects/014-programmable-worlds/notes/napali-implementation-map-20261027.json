@@ -1,0 +1,240 @@
+{
+  "schema": "napali-implementation-map-v1",
+  "title": "Na Pali：从 Claude Code 到程序海岸",
+  "width": 2160,
+  "height": 6460,
+  "upstreamCommit": "4afb7c3a1aad3d0203193100305c46607134d0f5",
+  "upstreamFileSHA256": "616d20c66e82d070f8c6bff921c8a78b2f04309b8cf279835ce4cdeaa90f4dfd",
+  "svg": "assets/napali-implementation-map-20261027.svg",
+  "svgSHA256": "c0ccb8b55ec6ac5de06f03fc9082359802da566177796856e6c96b684ccb6fea",
+  "status": "layout-reviewed-and-source-defaults-checked",
+  "authorStatements": "README self-report: Claude Code, Opus5.5,13 rounds,parallel specialists and photo judge; complete history unavailable.",
+  "sourceImage": {
+    "path": "assets/source-live-qa/2026-10-24T08-42-44-256Z/04-headland-35-decoded-video.png",
+    "sha256": "4430aef1c7f866382a9d78c33be2e87359bc1176bae3b1e5b5ef1a8fe31df257",
+    "role": "2026-10-24 actual full original decoded video frame; reused unchanged"
+  },
+  "algorithmCount": 12,
+  "parameters": [
+    {
+      "parameter": "mtnH",
+      "default": "320",
+      "meaning": "山体高度尺度；不等于实际最高峰。",
+      "sourceLine": 4511
+    },
+    {
+      "parameter": "mtnL",
+      "default": "520",
+      "meaning": "山体随离岸距离抬升的尺度，改变整体坡势。",
+      "sourceLine": 4511
+    },
+    {
+      "parameter": "vw",
+      "default": "110",
+      "meaning": "谷地之外恢复山体高度的过渡宽度。",
+      "sourceLine": 4511
+    },
+    {
+      "parameter": "K",
+      "default": "0.0022",
+      "meaning": "流水侵蚀强度，要结合迭代次数判断形态。",
+      "sourceLine": 4512
+    },
+    {
+      "parameter": "eiters",
+      "default": "4000",
+      "meaning": "侵蚀迭代次数，直接影响生成工作量。",
+      "sourceLine": 4513
+    },
+    {
+      "parameter": "hres",
+      "default": "4096",
+      "meaning": "最终高度纹理分辨率；更高意味着更多显存与预计算。",
+      "sourceLine": 4527
+    },
+    {
+      "parameter": "treeDens",
+      "default": "1.7",
+      "meaning": "树木布点密度系数，改变森林的疏密。",
+      "sourceLine": 4516
+    },
+    {
+      "parameter": "vegRange",
+      "default": "2600",
+      "meaning": "精细植被及部分冠层阴影参与距离；增大会增加开销。",
+      "sourceLine": 4516
+    },
+    {
+      "parameter": "wind",
+      "default": "9.5",
+      "meaning": "频谱海浪的风速参数，影响波浪谱。",
+      "sourceLine": 4517
+    },
+    {
+      "parameter": "waveScale",
+      "default": "1.6",
+      "meaning": "三组海浪级联的总幅度系数。",
+      "sourceLine": 4517
+    },
+    {
+      "parameter": "chop",
+      "default": "1.55",
+      "meaning": "海面水平位移与浪形尖锐程度。",
+      "sourceLine": 4517
+    },
+    {
+      "parameter": "fog",
+      "default": "0.0002",
+      "meaning": "距离雾与空气透视系数，影响远山层次。",
+      "sourceLine": 4514
+    },
+    {
+      "parameter": "sunEl",
+      "default": "44°",
+      "meaning": "太阳高度角，改变光向和明暗关系。",
+      "sourceLine": 4515
+    },
+    {
+      "parameter": "expo",
+      "default": "1.04",
+      "meaning": "后处理曝光乘数，调节整体亮度。",
+      "sourceLine": 4514
+    },
+    {
+      "parameter": "camH",
+      "default": "1000",
+      "meaning": "静帧与航线最终参考构图的相机高度。",
+      "sourceLine": 34
+    },
+    {
+      "parameter": "vfov",
+      "default": "38°",
+      "meaning": "静帧与收尾参考构图的垂直视场角。",
+      "sourceLine": 34
+    },
+    {
+      "parameter": "rs",
+      "default": "实时 0.5 / 静帧 1",
+      "meaning": "初始线性分辨率比例；像素量约随比例平方变化。",
+      "sourceLine": 5132
+    },
+    {
+      "parameter": "spp",
+      "default": "16（静帧）",
+      "meaning": "抖动多采样次数；增加质量，也增加渲染工作。",
+      "sourceLine": 5252
+    }
+  ],
+  "links": [
+    {
+      "label": "baseLand / coastSDF · L188 / L4531",
+      "url": "https://github.com/Leonxlnx/napali/blob/4afb7c3a1aad3d0203193100305c46607134d0f5/index.html#L188"
+    },
+    {
+      "label": "FS_EINIT / FS_ERODE · L222–279",
+      "url": "https://github.com/Leonxlnx/napali/blob/4afb7c3a1aad3d0203193100305c46607134d0f5/index.html#L234"
+    },
+    {
+      "label": "FS_VFILL / eroFlutes / landH",
+      "url": "https://github.com/Leonxlnx/napali/blob/4afb7c3a1aad3d0203193100305c46607134d0f5/index.html#L451"
+    },
+    {
+      "label": "FS_ATTR / FS_VEG / FS_PLANTS",
+      "url": "https://github.com/Leonxlnx/napali/blob/4afb7c3a1aad3d0203193100305c46607134d0f5/index.html#L583"
+    },
+    {
+      "label": "crownSD / treesSD / rockField",
+      "url": "https://github.com/Leonxlnx/napali/blob/4afb7c3a1aad3d0203193100305c46607134d0f5/index.html#L1264"
+    },
+    {
+      "label": "march / shadow / shadeScene",
+      "url": "https://github.com/Leonxlnx/napali/blob/4afb7c3a1aad3d0203193100305c46607134d0f5/index.html#L1844"
+    },
+    {
+      "label": "FS_OSPEC → OEVOLVE → OFFT → OFINAL",
+      "url": "https://github.com/Leonxlnx/napali/blob/4afb7c3a1aad3d0203193100305c46607134d0f5/index.html#L803"
+    },
+    {
+      "label": "waterHit / foamS / shadeWater",
+      "url": "https://github.com/Leonxlnx/napali/blob/4afb7c3a1aad3d0203193100305c46607134d0f5/index.html#L3364"
+    },
+    {
+      "label": "cuDens / cirrus / skyView",
+      "url": "https://github.com/Leonxlnx/napali/blob/4afb7c3a1aad3d0203193100305c46607134d0f5/index.html#L991"
+    },
+    {
+      "label": "mistVis / fogApply · L4227–4295",
+      "url": "https://github.com/Leonxlnx/napali/blob/4afb7c3a1aad3d0203193100305c46607134d0f5/index.html#L4227"
+    },
+    {
+      "label": "pchip / cineCam · L5161–5211",
+      "url": "https://github.com/Leonxlnx/napali/blob/4afb7c3a1aad3d0203193100305c46607134d0f5/index.html#L5182"
+    },
+    {
+      "label": "renderSample / present / FS_POST",
+      "url": "https://github.com/Leonxlnx/napali/blob/4afb7c3a1aad3d0203193100305c46607134d0f5/index.html#L4837"
+    },
+    {
+      "label": "github.com/Leonxlnx/napali  ·  Leon Lin  ·  MIT",
+      "url": "https://github.com/Leonxlnx/napali/blob/4afb7c3a1aad3d0203193100305c46607134d0f5/README.md"
+    },
+    {
+      "label": "开发记录：README  /  构建：tools/rebuild.cjs、build_v2.cjs",
+      "url": "https://github.com/Leonxlnx/napali/blob/4afb7c3a1aad3d0203193100305c46607134d0f5/tools/rebuild.cjs"
+    },
+    {
+      "label": "模块：v3_geo.glsl、v3_shade.glsl、v4_water.glsl、v4_sky.glsl、v2_flight.js",
+      "url": "https://github.com/Leonxlnx/napali/blob/4afb7c3a1aad3d0203193100305c46607134d0f5/tools/v3_geo.glsl"
+    },
+    {
+      "label": "输出工具：shot.mjs、video.mjs、cdp.mjs  /  参数与调用入口：index.html",
+      "url": "https://github.com/Leonxlnx/napali/blob/4afb7c3a1aad3d0203193100305c46607134d0f5/tools/video.mjs"
+    }
+  ],
+  "sections": [
+    {
+      "y": 0,
+      "title": "总览"
+    },
+    {
+      "y": 325,
+      "title": "Claude Code与原作效果"
+    },
+    {
+      "y": 1290,
+      "title": "两条GPU数据流"
+    },
+    {
+      "y": 1980,
+      "title": "十二项算法"
+    },
+    {
+      "y": 3290,
+      "title": "十八个真实参数"
+    },
+    {
+      "y": 4460,
+      "title": "构建与三类输出"
+    },
+    {
+      "y": 5180,
+      "title": "复用建议与来源"
+    }
+  ],
+  "textCount": 208,
+  "runtimeRegenerated": false,
+  "png": "assets/napali-implementation-map-20261027.png",
+  "pngSHA256": "eced6026d80d21c53e7c9a4cfbd94a9ab2e520ca70bd41b286b04f70ab3d91a0",
+  "review": {
+    "panelsReviewed": [
+      "source",
+      "pipeline-algorithms",
+      "parameters",
+      "tools-reuse"
+    ],
+    "parameterDefaultsChecked": 18,
+    "scope": "CPU export and visual layout review; original runtime not regenerated.",
+    "viewer": "web/source-implementation.html",
+    "inlineJavaScriptSyntaxChecked": true
+  }
+}
