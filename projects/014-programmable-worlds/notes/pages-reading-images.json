@@ -1,0 +1,30 @@
+[
+  {
+    "source": "assets/programmable-worlds-map-20261026.png",
+    "output": "projects/014-programmable-worlds/web/assets/reading/programmable-worlds-map-20261026.webp",
+    "bytes": 3430602,
+    "pixelsBitExact": true,
+    "selectedForPages": true
+  },
+  {
+    "source": "assets/extension-references/lijiang-raft-clean-v1.png",
+    "output": "projects/014-programmable-worlds/web/assets/reading/lijiang-raft-clean-v1.webp",
+    "bytes": 1960678,
+    "pixelsBitExact": true,
+    "selectedForPages": false
+  },
+  {
+    "source": "assets/extension-references/island-lagoon-clean-v1.png",
+    "output": "projects/014-programmable-worlds/web/assets/reading/island-lagoon-clean-v1.webp",
+    "bytes": 2027962,
+    "pixelsBitExact": true,
+    "selectedForPages": false
+  },
+  {
+    "source": "assets/extension-references/cosmic-harbor-clean-v1.png",
+    "output": "projects/014-programmable-worlds/web/assets/reading/cosmic-harbor-clean-v1.webp",
+    "bytes": 2111958,
+    "pixelsBitExact": true,
+    "selectedForPages": false
+  }
+]
